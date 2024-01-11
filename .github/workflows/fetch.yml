@@ -58,6 +58,6 @@ jobs:
         done
         echo "urls=${urls%,*}" >> $GITHUB_OUTPUT
     - name: 清除 JsDelivr CDN 缓存
-      uses: egad13/purge-jsdelivr-cache@v1
+      uses: gacts/purge-jsdelivr-cache@v1.1.0
       with:
         url: ${{ steps.purge_urls.outputs.urls }}
