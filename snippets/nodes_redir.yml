@@ -1,36 +1,65 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: '0,2,3,4,17|🇭🇰 _US_美国->🇭🇰_HK_香港 #2'
   network: ws
-  port: '2083'
-  server: 104.19.180.169
-  tls: true
+  port: '2086'
+  server: go.wumaojichang.com
+  tls: false
   type: vmess
-  uuid: b36e93b8-21b4-4495-ac81-0109f65cb1ad
+  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
   ws-opts:
     headers:
-      Host: kingofilter2.hamedgeek.sbs
+      Host: au.wumaojichang.com
     path: /
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸 _US_美国->🇨🇦_CA_加拿大
+  name: '0,2,3,4,17|🇺🇸 _US_美国->🇫🇷_FR_法国 #2'
   network: ws
-  port: '80'
-  server: cname.volcengine.eu.org
+  port: '2086'
+  server: fr.wumaojichang.com
   tls: false
   type: vmess
-  uuid: ebc8ef6e-961d-4315-9258-46fb81605bd7
+  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
   ws-opts:
     headers:
-      Host: ca2-amazonwebservices.volcengine.eu.org
-    path: /centos/7.9.2009/isos/x86_64/CentOS-7-x86_64-Minimal-2009.iso
+      Host: fr.wumaojichang.com
+    path: /
 - alterId: 0
   cipher: auto
-  name: '0,7|🇺🇸_US_美国->🇺🇦_UA_乌克兰 #4'
+  name: 1|_US_->_HK_
   network: ws
-  port: 80
-  server: glasco.fx-trader.shop
+  port: 2086
+  server: go.wumaojichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
+  ws-opts:
+    headers:
+      host: au.wumaojichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_FR_
+  network: ws
+  port: 2086
+  server: fr.wumaojichang.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
+  ws-opts:
+    headers:
+      host: fr.wumaojichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '6,7,11,12|github.com/freefq - 美国CloudFla... #4'
+  network: ws
+  port: '80'
+  server: 104.17.2.183
+  servername: ''
   tls: false
   type: vmess
   uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
@@ -40,24 +69,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_UA_
+  name: '7|🇺🇸_US_美国->🇺🇦_UA_乌克兰 #2'
   network: ws
   port: 80
-  server: 104.17.2.183
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
-  ws-opts:
-    headers:
-      host: v3ra3do.wakeuptimerap.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '2,3,4,6,7,11,12,17|🇺🇸 _US_美国->🇺🇦_UA_乌克兰 #2'
-  network: ws
-  port: '80'
-  server: 104.17.2.183
+  server: glasco.fx-trader.shop
   tls: false
   type: vmess
   uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
