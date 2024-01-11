@@ -1,12 +1,12 @@
-# NoMoreWalls
+# AutoMergePublicNodes
 
-[![Fetch Status](https://github.com/peasoft/NoMoreWalls/actions/workflows/fetch.yml/badge.svg)](https://github.com/peasoft/NoMoreWalls/actions/workflows/fetch.yml) [![Stars](https://img.shields.io/github/stars/peasoft/NoMoreWalls)](https://github.com/peasoft/NoMoreWalls/stargazers) [![Watchers](https://img.shields.io/github/watchers/peasoft/NoMoreWalls)](https://github.com/peasoft/NoMoreWalls/watchers) [![Forks](https://img.shields.io/github/forks/peasoft/NoMoreWalls)](https://github.com/peasoft/NoMoreWalls/forks) ![Vistors](https://visitor-badge.laobi.icu/badge?page_id=peasoft.NoMoreWalls) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu) [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/peasoft/NoMoreWalls/blob/master/LICENSE.md) [![暮光计划](https://img.shields.io/badge/link-暮光计划--向戒网瘾学校宣战-red.svg)](https://proj3ctaurora.tilda.ws/)
+[![Fetch Status](https://github.com/chengaopan/AutoMergePublicNodes/actions/workflows/fetch.yml/badge.svg)](https://github.com/chengaopan/AutoMergePublicNodes/actions/workflows/fetch.yml) [![Stars](https://img.shields.io/github/stars/chengaopan/AutoMergePublicNodes)](https://github.com/chengaopan/AutoMergePublicNodes/stargazers) [![Watchers](https://img.shields.io/github/watchers/chengaopan/AutoMergePublicNodes)](https://github.com/chengaopan/AutoMergePublicNodes/watchers) [![Forks](https://img.shields.io/github/forks/chengaopan/AutoMergePublicNodes)](https://github.com/chengaopan/AutoMergePublicNodes/forks) [![996.icu](https://img.shields.io/badge/link-996.icu-red.svg)](https://996.icu) [![LICENSE](https://img.shields.io/badge/license-Anti%20996-blue.svg)](https://github.com/chengaopan/AutoMergePublicNodes/blob/master/LICENSE.md) [![暮光计划](https://img.shields.io/badge/link-暮光计划--向戒网瘾学校宣战-red.svg)](https://proj3ctaurora.tilda.ws/)
 
 自动抓取合并互联网上的公开节点。
 
 ## 公告
-
-为防止失联，我们建立了镜像：<https://peasoft.github.io/NWalls.html>
+本项目fork [NoMoreWalls](https://github.com/peasoft/NoMoreWalls)
+为防止失联，[peasoft](https://github.com/peasoft)建立了镜像：<https://peasoft.github.io/NWalls.html>
 
 ## 关于 Google Play 等服务在国内无法使用的解决方法
 
@@ -33,28 +33,28 @@
 ## 使用方法
 
 添加 Base64 订阅：
-- [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.txt)
-- [JsDelivr 反代（zzko.cn）](https://cdn.jsdelivr.us/gh/peasoft/NoMoreWalls@master/list.txt)
-- [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
-- [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
-- [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.txt)
-- [KKGithub](https://raw.kkgithub.com/peasoft/NoMoreWalls/master/list.txt)
-- [FastGit](https://raw.fgit.cf/peasoft/NoMoreWalls/master/list.txt)
+- [原始链接](https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.txt)
+- [JsDelivr 反代（zzko.cn）](https://cdn.jsdelivr.us/gh/chengaopan/AutoMergePublicNodes@master/list.txt)
+- [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.txt)
+- [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.txt)
+- [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.txt)
+- [KKGithub](https://raw.kkgithub.com/chengaopan/AutoMergePublicNodes/master/list.txt)
+- [FastGit](https://raw.fgit.cf/chengaopan/AutoMergePublicNodes/master/list.txt)
 
 以下加速链接可能无效：
-- [KGithub](https://raw.kgithub.com/peasoft/NoMoreWalls/master/list.txt)
+- [KGithub](https://raw.kgithub.com/chengaopan/AutoMergePublicNodes/master/list.txt)
 
 或添加 Clash 订阅：
-- [原始链接](https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/list.yml)
-- [JsDelivr 反代（zzko.cn）](https://cdn.jsdelivr.us/gh/peasoft/NoMoreWalls@master/list.yml)
-- [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.yml)
-- [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.yml)
-- [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/peasoft/NoMoreWalls@master/list.yml)
-- [KKGithub](https://raw.kkgithub.com/peasoft/NoMoreWalls/master/list.yml)
-- [FastGit](https://raw.fgit.cf/peasoft/NoMoreWalls/master/list.yml)
+- [原始链接](https://raw.githubusercontent.com/chengaopan/AutoMergePublicNodes/master/list.yml)
+- [JsDelivr 反代（zzko.cn）](https://cdn.jsdelivr.us/gh/chengaopan/AutoMergePublicNodes@master/list.yml)
+- [JsDelivr Fastly CDN](https://fastly.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.yml)
+- [JsDelivr Cloudflare CDN](https://testingcf.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.yml)
+- [JsDelivr GCore CDN](https://gcore.jsdelivr.net/gh/chengaopan/AutoMergePublicNodes@master/list.yml)
+- [KKGithub](https://raw.kkgithub.com/chengaopan/AutoMergePublicNodes/master/list.yml)
+- [FastGit](https://raw.fgit.cf/chengaopan/AutoMergePublicNodes/master/list.yml)
 
 以下加速链接可能无效：
-- [KGithub](https://raw.kgithub.com/peasoft/NoMoreWalls/master/list.yml)
+- [KGithub](https://raw.kgithub.com/chengaopan/AutoMergePublicNodes/master/list.yml)
 
 ## 免责声明
 
@@ -64,7 +64,7 @@
 
 各位看一看：
 
-- **[【独家恢复】我们的教育弄虚作假，到底是为了什么](https://peasoft.github.io/2023/08/26/cnedu.html)：如此视频，为何惨遭删除？我们恢复了这段视频，只为让更多人可以看清现实。**
+- **[【独家恢复】我们的教育弄虚作假，到底是为了什么](https://chengaopan.github.io/2023/08/26/cnedu.html)：如此视频，为何惨遭删除？我们恢复了这段视频，只为让更多人可以看清现实。**
 - **[最流氓的软件可以流氓到什么程度？](https://www.zhihu.com/question/29129310)我翻开其他网页一查，歪歪斜斜的每页上都写着“危险网页”几个字。我横竖睡不着，仔细看了半夜，才从字缝里看出字来，满本都写着两个字是“霸权”！**
 - **[百度？百毒！](https://user.guancha.cn/main/content?id=100552)魏则西去世3周年：害死他的百度广告和莆田系医院**
 - **[《满江红》的行为艺术](https://www.bilibili.com/video/BV11v4y1t7Gw/)：秦桧竟是我自己？**
@@ -76,10 +76,10 @@
 
 ## Star History
 
-<a href="https://star-history.com/#peasoft/NoMoreWalls">
+<a href="https://star-history.com/#chengaopan/AutoMergePublicNodes">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=peasoft/NoMoreWalls&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=peasoft/NoMoreWalls" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=peasoft/NoMoreWalls" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=chengaopan/AutoMergePublicNodes&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=chengaopan/AutoMergePublicNodes" />
+    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=chengaopan/AutoMergePublicNodes" />
   </picture>
 </a>
