@@ -1,9 +1,9 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,2,3,4,6|🇺🇸_US_美国->🇺🇦_UA_乌克兰 #4'
+  name: '0,2,3,4,6,17|🇺🇸 _US_美国->🇺🇦_UA_乌克兰 #4'
   network: ws
-  port: 80
+  port: '80'
   server: glasco.fx-trader.shop
   tls: false
   type: vmess
@@ -14,9 +14,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,3,4,6|🇦🇺_AU_澳大利亚->🇦🇪_AE_阿联酋 #2'
+  name: '0,2,3,4,6,17|🇦🇪 _AU_澳大利亚->🇦🇪_AE_阿联酋 #2'
   network: ws
-  port: 13914
+  port: '13914'
   server: 202.139.228.24
   tls: true
   type: vmess
@@ -27,7 +27,7 @@ proxies:
     path: /vm-tls1-tls1?ed=2048
 - alterId: 0
   cipher: auto
-  name: '0,2,3,4,6,11|美国 CloudFlare节点 #1'
+  name: '0,2,3,4,6,11,17|🇺🇸 _US_美国->🇺🇦_UA_乌克兰 #5'
   network: ws
   port: '80'
   server: 104.17.2.183
@@ -130,7 +130,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 7,13|FR-OVH_SAS-vm
+  name: 7,12,13|FR-OVH_SAS-vm
   network: ws
   port: '443'
   server: hexsen.com
@@ -142,29 +142,3 @@ proxies:
     headers:
       Host: sources-routines-switching-palmer.trycloudflare.com
     path: /argo-vmess?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 17|🇺🇸 _US_美国->🇫🇷_FR_法国
-  network: ws
-  port: '2086'
-  server: fr.wumaojichang.com
-  tls: false
-  type: vmess
-  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
-  ws-opts:
-    headers:
-      Host: fr.wumaojichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 17|🇭🇰 _US_美国->🇭🇰_HK_香港
-  network: ws
-  port: '2086'
-  server: go.wumaojichang.com
-  tls: false
-  type: vmess
-  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
-  ws-opts:
-    headers:
-      Host: au.wumaojichang.com
-    path: /
