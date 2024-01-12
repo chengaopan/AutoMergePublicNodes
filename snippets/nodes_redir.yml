@@ -1,9 +1,9 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,3|🇺🇸 _US_美国->🇺🇦_UA_乌克兰 #2'
+  name: '0,2,3,4|🇺🇸_US_美国->🇺🇦_UA_乌克兰 #2'
   network: ws
-  port: '80'
+  port: 80
   server: glasco.fx-trader.shop
   tls: false
   type: vmess
@@ -14,9 +14,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3|🇦🇪 _AU_澳大利亚->🇦🇪_AE_阿联酋 #1'
+  name: '0,2,3,4|🇦🇺_AU_澳大利亚->🇦🇪_AE_阿联酋 #1'
   network: ws
-  port: '13914'
+  port: 13914
   server: 202.139.228.24
   tls: true
   type: vmess
@@ -27,7 +27,7 @@ proxies:
     path: /vm-tls1-tls1?ed=2048
 - alterId: 0
   cipher: auto
-  name: '0,3,11,12|github.com/freefq - 美国CloudFla... #1'
+  name: '0,2,3,4,11,12|github.com/freefq - 美国CloudFla... #2'
   network: ws
   port: '80'
   server: 104.17.2.183
@@ -40,35 +40,97 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_HK_
+  name: 1|_US_->_UA__1
   network: ws
-  port: 2086
-  server: go.wumaojichang.com
+  port: 80
+  server: glasco.fx-trader.shop
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
+  uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
   ws-opts:
     headers:
-      host: au.wumaojichang.com
+      host: v3ra3do.wakeuptimerap.shop
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_FR_
+  name: 1|_AU_->_AE_
   network: ws
-  port: 2086
-  server: fr.wumaojichang.com
+  port: 13914
+  server: 202.139.228.24
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: a3dfbdd6-7e01-4735-9973-e3dd056c129e
+  ws-opts:
+    headers:
+      host: db.changding.tech
+    path: /vm-tls1-tls1?ed=2048
+- name: 1|_US_->_CA__1
+  network: tcp
+  password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8
+  port: 443
+  server: ca.liangyuandiancloud.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 1|_US_->_CA__2
+  network: tcp
+  password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8
+  port: 443
+  server: cajs.liangyuandiancloud.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 1|_HK_->_IN_
+  network: tcp
+  password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8
+  port: 443
+  server: in.liangyuandiancloud.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 1|_HK_->_CH_
+  network: tcp
+  password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8
+  port: 443
+  server: chjs.liangyuandiancloud.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 1|_HK_->_US_
+  network: tcp
+  password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8
+  port: 443
+  server: usa.liangyuandiancloud.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 1|_US_->_FR_
+  network: tcp
+  password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8
+  port: 443
+  server: uk.liangyuandiancloud.com
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_UA__2
+  network: ws
+  port: 80
+  server: 104.17.2.183
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
+  uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
   ws-opts:
     headers:
-      host: fr.wumaojichang.com
+      host: v3ra3do.wakeuptimerap.shop
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,4,6,17|🇭🇰 _US_美国->🇭🇰_HK_香港
+  name: 6,17|🇭🇰 _US_美国->🇭🇰_HK_香港
   network: ws
   port: '2086'
   server: go.wumaojichang.com
@@ -81,7 +143,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2,4,6,17|🇺🇸 _US_美国->🇫🇷_FR_法国
+  name: 6,17|🇺🇸 _US_美国->🇫🇷_FR_法国
   network: ws
   port: '2086'
   server: fr.wumaojichang.com
