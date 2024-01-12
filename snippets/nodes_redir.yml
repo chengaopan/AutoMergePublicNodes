@@ -1,10 +1,11 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,2,3,4|🇺🇸_US_美国->🇺🇦_UA_乌克兰 #2'
+  name: 0,2,3,4,6,13|美国
   network: ws
-  port: 80
+  port: '80'
   server: glasco.fx-trader.shop
+  servername: ''
   tls: false
   type: vmess
   uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
@@ -14,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,3,4|🇦🇺_AU_澳大利亚->🇦🇪_AE_阿联酋 #1'
+  name: '0,2,3,4,6|🇦🇺_AU_澳大利亚->🇦🇪_AE_阿联酋 #2'
   network: ws
   port: 13914
   server: 202.139.228.24
@@ -27,7 +28,7 @@ proxies:
     path: /vm-tls1-tls1?ed=2048
 - alterId: 0
   cipher: auto
-  name: '0,2,3,4,11,12|github.com/freefq - 美国CloudFla... #2'
+  name: '0,2,3,4,6,11,12|github.com/freefq - 美国CloudFla... #2'
   network: ws
   port: '80'
   server: 104.17.2.183
@@ -130,32 +131,6 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 6,17|🇭🇰 _US_美国->🇭🇰_HK_香港
-  network: ws
-  port: '2086'
-  server: go.wumaojichang.com
-  tls: false
-  type: vmess
-  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
-  ws-opts:
-    headers:
-      Host: au.wumaojichang.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 6,17|🇺🇸 _US_美国->🇫🇷_FR_法国
-  network: ws
-  port: '2086'
-  server: fr.wumaojichang.com
-  tls: false
-  type: vmess
-  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
-  ws-opts:
-    headers:
-      Host: fr.wumaojichang.com
-    path: /
-- alterId: 0
-  cipher: auto
   name: 7,13|FR-OVH_SAS-vm
   network: ws
   port: '443'
@@ -168,3 +143,29 @@ proxies:
     headers:
       Host: sources-routines-switching-palmer.trycloudflare.com
     path: /argo-vmess?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 17|🇺🇸 _US_美国->🇫🇷_FR_法国
+  network: ws
+  port: '2086'
+  server: fr.wumaojichang.com
+  tls: false
+  type: vmess
+  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
+  ws-opts:
+    headers:
+      Host: fr.wumaojichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 17|🇭🇰 _US_美国->🇭🇰_HK_香港
+  network: ws
+  port: '2086'
+  server: go.wumaojichang.com
+  tls: false
+  type: vmess
+  uuid: 05744c0c-7e93-4336-b126-2a52e2f013ef
+  ws-opts:
+    headers:
+      Host: au.wumaojichang.com
+    path: /
