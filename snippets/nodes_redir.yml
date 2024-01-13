@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,13|🇨🇦加拿大3丨电报群@bp520
+  name: 0,2,3,4,13|🇨🇦加拿大3丨电报群@bp520
   network: ws
   port: '80'
   server: 162.159.200.3
@@ -14,7 +14,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,2,3,4,6,11,17|🇺🇸 _US_美国->🇺🇦_UA_乌克兰 #4'
+  name: '0,2,3,4,6,17|🇺🇸 _US_美国->🇺🇦_UA_乌克兰 #3'
   network: ws
   port: '80'
   server: 104.17.2.183
@@ -27,11 +27,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,11|利比亚 v2rayfree.eu.org
+  name: '0,2,3,4|🇱🇾_LY_利比亚->🇹🇷_TR_土耳其 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 197.215.140.234
-  servername: ''
   tls: false
   type: vmess
   uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
@@ -41,9 +40,9 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '0|🇺🇸 _US_美国->🇨🇦_CA_加拿大 #1'
+  name: '0,2,3,4|🇺🇸_US_美国->🇨🇦_CA_加拿大 #3'
   network: ws
-  port: '80'
+  port: 80
   server: 162.159.200.4
   tls: false
   type: vmess
@@ -54,83 +53,33 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_UA__1
+  name: 1|_US_->_CA__1
   network: ws
   port: 80
-  server: glasco.fx-trader.shop
+  server: 162.159.200.3
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: f256a3ae-0f85-4a1d-d0cd-2d0b4b73f4f1
+  uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d
   ws-opts:
     headers:
-      host: v3ra3do.wakeuptimerap.shop
+      host: ca3.889611.com
     path: /
-- alterId: 0
-  cipher: auto
-  name: 1|_AU_->_AE_
-  network: ws
-  port: 13914
-  server: 202.139.228.24
-  skip-cert-verify: true
+- grpc-opts:
+    grpc-service-name: mahanvip.mahantu.top
+  name: 1|_US_->_DE_
+  network: grpc
+  password: Mahanvpn
+  port: 443
+  server: 104.17.186.227
+  skip-cert-verify: false
+  sni: mahanvip.mahantu.top
   tls: true
-  type: vmess
-  uuid: a3dfbdd6-7e01-4735-9973-e3dd056c129e
-  ws-opts:
-    headers:
-      host: db.changding.tech
-    path: /vm-tls1-tls1?ed=2048
-- name: 1|_US_->_CA__1
-  network: tcp
-  password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8
-  port: 443
-  server: ca.liangyuandiancloud.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 1|_US_->_CA__2
-  network: tcp
-  password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8
-  port: 443
-  server: cajs.liangyuandiancloud.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 1|_HK_->_IN_
-  network: tcp
-  password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8
-  port: 443
-  server: in.liangyuandiancloud.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 1|_HK_->_CH_
-  network: tcp
-  password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8
-  port: 443
-  server: chjs.liangyuandiancloud.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 1|_HK_->_US_
-  network: tcp
-  password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8
-  port: 443
-  server: usa.liangyuandiancloud.com
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 1|_US_->_FR_
-  network: tcp
-  password: 272cd64a-9f71-4e08-8fbd-0988d7fa99c8
-  port: 443
-  server: uk.liangyuandiancloud.com
-  skip-cert-verify: true
   type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_UA__2
+  name: 1|_US_->_UA_
   network: ws
   port: 80
   server: 104.17.2.183
@@ -144,7 +93,35 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,3,4,6,12,17|🇺🇸 _US_美国->🇺🇦_UA_乌克兰 #3'
+  name: 1|_LY_->_TR_
+  network: ws
+  port: 80
+  server: 197.215.140.234
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b82493e3-07b4-4cf2-b585-965575cfeb32
+  ws-opts:
+    headers:
+      host: softiri.serveirc.com
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_CA__2
+  network: ws
+  port: 80
+  server: 162.159.200.4
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b2d821b2-f727-4e67-898d-1a29bf41ee0d
+  ws-opts:
+    headers:
+      host: ca3.889611.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '6,11,12,17|🇺🇸 _US_美国->🇺🇦_UA_乌克兰 #2'
   network: ws
   port: '80'
   server: glasco.fx-trader.shop
@@ -157,7 +134,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '2,3,4,6,17|🇦🇪 _AU_澳大利亚->🇦🇪_AE_阿联酋 #1'
+  name: 6,17|🇦🇪 _AU_澳大利亚->🇦🇪_AE_阿联酋
   network: ws
   port: '13914'
   server: 202.139.228.24
