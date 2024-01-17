@@ -1,13 +1,4 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 13|🇹🇼|TW|台湾|@wxgqlfx|50
-  network: tcp
-  port: 21353
-  server: 1.162.170.105
-  tls: false
-  type: vmess
-  uuid: c24b520b-e0c6-4bb0-b951-dd87cc07a518
 - cipher: aes-128-gcm
   name: 15|🇹🇼 台湾KT|@ripaojiedian
   password: oiwym4ovI4Yb
@@ -20,15 +11,26 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 443
-  server: 122.118.171.66
+  server: 122.118.169.169
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 15|🇹🇼 台湾|@ripaojiedian
+  password: 99e39047-9298-404e-b632-1867f7ed1b37
+  port: 7773
+  server: b13.ntbq.dynu.net
   type: ss
 - alterId: 0
   cipher: auto
-  name: 16|台湾2|@ripaojiedian
-  network: tcp
-  port: '12002'
-  server: nb22.ntbq.dynu.net
+  name: 15,16|台湾2|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: cfcdn1.sanfencdn9.com
   servername: ''
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 14327f86-7734-4d5b-9561-b58ad95cbcfb
+  uuid: f0df1cd4-5a87-482a-9f19-218a393d6f9c
+  ws-opts:
+    headers:
+      Host: tw1bQiWSE4x.fzbqfrse.xyz
+    path: /video/GQ2qE5Us9g
