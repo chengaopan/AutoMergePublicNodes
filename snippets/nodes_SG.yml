@@ -8,7 +8,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: ea966f4f-efaf-4a08-9780-700d95e34efb
+  uuid: 7e6940ca-bd28-49f7-a936-4b955773076a
 - alterId: 0
   cipher: auto
   name: 10|🇸🇬新加坡05
@@ -18,7 +18,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: ea966f4f-efaf-4a08-9780-700d95e34efb
+  uuid: 7e6940ca-bd28-49f7-a936-4b955773076a
 - alterId: 0
   cipher: auto
   name: 10|🇸🇬新加坡06
@@ -28,7 +28,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: ea966f4f-efaf-4a08-9780-700d95e34efb
+  uuid: 7e6940ca-bd28-49f7-a936-4b955773076a
 - alterId: 0
   cipher: auto
   name: 11|新加坡Amazon数据中心 13
@@ -44,17 +44,39 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|🇸🇬 𝐒𝐊𝐘𝐇𝐓 𝐒𝐈𝐍𝐆𝐀𝐏𝐎𝐑𝐄 🇸🇬
-  network: ws
-  port: 80
-  server: sg.vpndata.vn
+  name: 13|【直连】狮城 - 2 - A Group
+  network: tcp
+  port: '38756'
+  server: 00000000000000000000000000000000000000000000000000000000000026.agroup-node-for-bigairport.sbs
   tls: false
   type: vmess
-  uuid: fbccfed7-1aeb-416a-a4fd-7af1747f9f3b
+  uuid: 843764ed-637a-4085-856e-72c507df3447
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-WS-NONE 🇸🇬 SG-178.128.31....
+  network: ws
+  port: 46198
+  server: 178.128.31.223
+  tls: false
+  type: vmess
+  uuid: ac0686e9-6361-43c0-b73a-87e8ba20d6a6
   ws-opts:
     headers:
-      Host: lienquan.garena.vn
-    path: /VPNDATA.xYx
+      Host: m.youtube.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|🔒 VM-WS-NONE 🇸🇬 SG-178.128.31.... #1'
+  network: ws
+  port: 30734
+  server: 178.128.31.223
+  tls: false
+  type: vmess
+  uuid: 7a558a8e-4e14-4574-84d4-a486d866165a
+  ws-opts:
+    headers:
+      Host: media-exp1.licdn.com
+    path: /king master
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-WS-NA 🇸🇬 SG-146.190.89.21...
@@ -68,46 +90,6 @@ proxies:
   ws-opts:
     headers:
       Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13|[7]› [🇸🇬] -  Singapore 2
-  network: ws
-  port: 80
-  server: sg3.uudai4g.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 054c82f7-9b61-4223-86a4-c231e9fafcf0
-  ws-opts:
-    headers:
-      Host: ''
-    path: /uudai4g.com
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-WS-NONE 🇸🇬 SG-178.128.31....
-  network: ws
-  port: 30734
-  server: 178.128.31.223
-  tls: false
-  type: vmess
-  uuid: 7a558a8e-4e14-4574-84d4-a486d866165a
-  ws-opts:
-    headers:
-      Host: media-exp1.licdn.com
-    path: /king master
-- alterId: 0
-  cipher: auto
-  name: '13|🔒 VM-WS-NONE 🇸🇬 SG-178.128.31.... #1'
-  network: ws
-  port: 46198
-  server: 178.128.31.223
-  tls: false
-  type: vmess
-  uuid: ac0686e9-6361-43c0-b73a-87e8ba20d6a6
-  ws-opts:
-    headers:
-      Host: m.youtube.com
     path: /
 - alterId: 0
   cipher: auto
@@ -131,7 +113,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c25a7233-94ce-472b-b568-74a4bf85ffbd
+  uuid: b65c8915-fd76-4d85-a677-718db44b8150
 - alterId: 0
   cipher: auto
   name: 14|【BGP】新加坡 05 | 1x SG
@@ -141,7 +123,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c25a7233-94ce-472b-b568-74a4bf85ffbd
+  uuid: b65c8915-fd76-4d85-a677-718db44b8150
 - alterId: 0
   cipher: auto
   name: 14|【BGP】新加坡 06 | 1x SG
@@ -151,16 +133,22 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: c25a7233-94ce-472b-b568-74a4bf85ffbd
+  uuid: b65c8915-fd76-4d85-a677-718db44b8150
+- cipher: aes-128-gcm
+  name: 15|🇸🇬 新加坡|@ripaojiedian
+  password: f3882346f62347359ae4343f9185f7ea
+  port: 46054
+  server: any.hmbiplc-02.com
+  type: ss
 - cipher: aes-256-cfb
   name: 15|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 43.201.100.232
+  server: 57.181.27.179
   type: ss
 - cipher: aes-256-cfb
   name: 15|🇸🇬 狮城特殊2|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.142.250.63
+  server: 3.112.128.205
   type: ss
