@@ -8,7 +8,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 14b89bd7-541f-4bfe-84dc-169a3ccfa471
+  uuid: 5339226b-df3a-4128-a0e5-136e06ce3d38
 - alterId: 0
   cipher: auto
   name: 10|🇸🇬新加坡05
@@ -18,7 +18,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 14b89bd7-541f-4bfe-84dc-169a3ccfa471
+  uuid: 5339226b-df3a-4128-a0e5-136e06ce3d38
 - alterId: 0
   cipher: auto
   name: 10|🇸🇬新加坡06
@@ -28,21 +28,20 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 14b89bd7-541f-4bfe-84dc-169a3ccfa471
+  uuid: 5339226b-df3a-4128-a0e5-136e06ce3d38
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-WS-NONE 🇸🇬 SG-45.77.240.2...
+  name: 13|🔒 VM-WS-NONE 🇸🇬 SG-146.190.82....
   network: ws
-  port: '13851'
-  server: 45.77.240.25
-  servername: ''
+  port: 52107
+  server: 146.190.82.68
   tls: false
   type: vmess
-  uuid: b7f80715-e15a-4816-ac55-712181089e04
+  uuid: 6f678bca-6231-485d-8bb3-e2cef76e3392
   ws-opts:
     headers:
-      Host: m.zoom.us
-    path: /
+      Host: media-exp1.licdn.com
+    path: /isuru
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-WS-NA 🇸🇬 SG-146.190.89.21...
@@ -59,6 +58,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 13|🔒 VM-WS-NONE 🇸🇬 SG-45.77.240.2...
+  network: ws
+  port: '13851'
+  server: 45.77.240.25
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b7f80715-e15a-4816-ac55-712181089e04
+  ws-opts:
+    headers:
+      Host: m.zoom.us
+    path: /
+- alterId: 0
+  cipher: auto
   name: 14|【BGP】新加坡 04 | 1x SG
   network: tcp
   port: '31201'
@@ -66,7 +79,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cfb16c3a-3131-477e-bf18-08836b104e38
+  uuid: 357b7885-ac27-467a-a5f0-f5a62a658259
 - alterId: 0
   cipher: auto
   name: 14|【BGP】新加坡 05 | 1x SG
@@ -76,7 +89,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cfb16c3a-3131-477e-bf18-08836b104e38
+  uuid: 357b7885-ac27-467a-a5f0-f5a62a658259
 - alterId: 0
   cipher: auto
   name: 14|【BGP】新加坡 06 | 1x SG
@@ -86,22 +99,37 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: cfb16c3a-3131-477e-bf18-08836b104e38
-- cipher: aes-128-gcm
+  uuid: 357b7885-ac27-467a-a5f0-f5a62a658259
+- cipher: aes-256-cfb
   name: 15|🇸🇬 新加坡|@ripaojiedian
-  password: f3882346f62347359ae4343f9185f7ea
-  port: 46054
-  server: any.hmbiplc-02.com
+  password: 4R3hUfZ2FHhDmNcP
+  port: 9061
+  server: 103.172.116.94
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 15,16|新加坡3|@ripaojiedian
+  network: ws
+  port: '80'
+  server: 104.17.25.1
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d6664518-c8e1-42cf-f2c1-d33dcc01a8a6
+  ws-opts:
+    headers:
+      Host: sgvpn.catnipballs.gay
+    path: /
 - cipher: aes-256-cfb
   name: 15|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 57.181.27.179
+  server: 43.201.255.57
   type: ss
 - cipher: aes-256-cfb
   name: 15|🇸🇬 狮城特殊2|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.112.128.205
+  server: 54.199.181.215
   type: ss
