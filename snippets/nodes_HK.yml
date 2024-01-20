@@ -1,14 +1,18 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇭🇰 HK-103.30.76.17...
-  network: tcp
-  port: '30515'
-  server: 103.30.76.173
+  name: 13|🔒 VM-WS-NA 🇭🇰 HK-182.16.1.194:...
+  network: ws
+  port: 80
+  server: 182.16.1.194
   servername: ''
   tls: false
   type: vmess
-  uuid: d027cd70-ed8b-4cb6-98f3-fc6b974d086c
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: ''
+    path: /opt/video/images
 - cipher: aes-128-gcm
   name: 15|🇭🇰 香港KT|@ripaojiedian
   password: a-wym4ovY4Yw
@@ -35,20 +39,20 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 15|🇸🇬 新加坡2|@ripaojiedian
-  password: abff9d83-a05f-4473-8fa7-7d2714ca099a
-  port: 20230
-  server: sg7.421421.xyz
+  name: 15|🇹🇼 台湾2|@ripaojiedian
+  password: 76572d7a-2692-44cd-afe7-43da9a75d80d
+  port: 6122
+  server: c12.twtc.dynu.net
   skip-cert-verify: false
-  sni: 421421.xyz
+  sni: download.xn--mes358a9urctx.com
   tls: false
-  type: trojan
-  uuid: b6fdc502-3ae5-47a7-9fa4-3fa7febb76c4
-- cipher: aes-128-gcm
-  name: 15|🇭🇰 香港3|@ripaojiedian
-  password: f0a383b8-7c0e-429d-bda8-06d1cf08b0f5
-  port: 42336
-  server: gaosu.laotiehj6.top
+  type: vmess
+  uuid: 867b8e57-9355-40dc-a696-9ca2518b091e
+- cipher: aes-256-gcm
+  name: 15|🇭🇰 香港|@ripaojiedian
+  password: 96fef8a1-93d6-414a-8537-e1ffb465e066
+  port: 48267
+  server: aizai798.infois.top
   type: ss
 - alterId: 0
   cipher: auto
@@ -60,13 +64,3 @@ proxies:
   tls: false
   type: vmess
   uuid: e820d6f7-57ef-4575-99da-bcd7d318c742
-- alterId: 64
-  cipher: auto
-  name: 16|香港|@ripaojiedian
-  network: tcp
-  port: '41492'
-  server: 120.232.242.91
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
