@@ -1,14 +1,26 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '13,16|香港2|@ripaojiedian #1'
+  name: 13|🔒 VM-TCP-NONE 🇭🇰 HK-52.184.85....
   network: tcp
-  port: '10241'
-  server: 38.147.191.185
-  servername: ''
+  port: 45643
+  server: 52.184.85.135
   tls: false
   type: vmess
-  uuid: e820d6f7-57ef-4575-99da-bcd7d318c742
+  uuid: 988bf7cd-fe3c-4a41-df98-e7fc681a49e2
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-WS-NONE 🇭🇰 HK-52.184.85.1...
+  network: ws
+  port: 14572
+  server: 52.184.85.135
+  tls: false
+  type: vmess
+  uuid: 5deb517b-2512-42bb-f48d-9267327efa4e
+  ws-opts:
+    headers:
+      Host: m.zoom.us
+    path: /xROAST
 - cipher: aes-128-gcm
   name: 15|🇭🇰 香港KT|@ripaojiedian
   password: a-wym4ovY4Yw
@@ -40,11 +52,26 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 15|🇺🇸 美国3|@ripaojiedian
-  password: d9f21aefda2e47cd80a69647d22b4529
+  password: 7ceeb22c-bb4d-4e9e-9bbe-de3975f7295a
   port: 13489
   server: 35.87.209.22
   skip-cert-verify: false
-  sni: www.gpt123.one
+  sni: cloudflare.node-ssl.cdn-alibaba.com
   tls: false
   type: vmess
   uuid: 61761e55-dff5-4f94-f75f-b0a4718bba98
+- alterId: 0
+  cipher: auto
+  name: 15,16|香港4|@ripaojiedian
+  network: ws
+  port: '80'
+  server: 104.156.85.242
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d5dc4073-06c1-40d6-96df-2df86f0ad713
+  ws-opts:
+    headers:
+      Host: zhejiang2024.com
+    path: /
