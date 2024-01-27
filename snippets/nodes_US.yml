@@ -1,9 +1,9 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,4,6,7,11,12,13|🇺🇸_US_美国 #21'
+  name: '0,3,4,6,7,11,12,13,17|🇺🇸 _US_美国 #14'
   network: ws
-  port: 80
+  port: '80'
   server: 172.67.217.144
   servername: ''
   tls: false
@@ -15,7 +15,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,12,13,17|🇺🇸 _US_美国 #13'
+  name: '0,3,4,6,7,11,12,13,17|🇺🇸 _US_美国->🇩🇪_DE_德国 #3'
   network: ws
   port: '8080'
   server: 104.31.16.104
@@ -28,7 +28,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,6,7|🇺🇸_US_美国 #16'
+  name: '0,6|🇺🇸_US_美国 #6'
   network: ws
   port: 80
   server: 104.18.15.147
@@ -41,7 +41,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,13,15,16,17|🇺🇸 _US_美国 #11'
+  name: '0,3,4,6,7,13,15,16,17|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #4'
   network: ws
   port: '8080'
   server: www.coldstone.club
@@ -56,7 +56,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0|🇺🇸 _US_美国 #4'
+  name: '0,3,17|🇺🇸 _US_美国 #13'
   network: ws
   port: '80'
   server: be1-vmess.sshmax.xyz
@@ -69,7 +69,7 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,11,12,13,17|🇺🇸 _US_美国 #12'
+  name: '0,3,4,6,7,11,12,13,17|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #5'
   network: ws
   port: '8080'
   server: www.crispyrainbow.biz
@@ -83,7 +83,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,6,7|🇺🇸_US_美国 #15'
+  name: '0,6|🇺🇸_US_美国 #10'
   network: ws
   port: 80
   server: 104.18.15.150
@@ -109,50 +109,20 @@ proxies:
       host: lv1.xv2ray.net
     path: /
 - alterId: 0
-  cipher: auto
-  name: 1|_US__2
+  cipher: chacha20-poly1305
+  name: 1,13|🇺🇸|US|美国|@wxgqlfx|15
   network: ws
   port: 8080
-  server: 104.31.16.104
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 3a6752b4-8353-4172-85b1-32202116714d
-  ws-opts:
-    headers:
-      host: asan3.azad1.tech
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1|_US__3
-  network: ws
-  port: 80
-  server: 104.18.15.147
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4899b015-5823-486d-bfe6-06c3239260f5
-  ws-opts:
-    headers:
-      host: er3.889611.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1|_US__4
-  network: ws
-  port: 8080
-  server: www.coldstone.club
+  server: www.crispyrainbow.online
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
-    headers:
-      host: www.coldstone.club
     path: /
 - alterId: 0
   cipher: auto
-  name: '1,4,6,11,12,13|🇺🇸_US_美国 #17'
+  name: '1,4,6,7,11,12,13|🇺🇸_US_美国 #15'
   network: ws
   port: 80
   server: be1-vmess.sshmax.xyz
@@ -163,49 +133,42 @@ proxies:
   ws-opts:
     path: /vmess
 - alterId: 0
-  cipher: auto
-  name: 1|_US__6
+  cipher: chacha20-poly1305
+  name: 1,13|🇺🇸|US|美国|@wxgqlfx|13
   network: ws
   port: 8080
-  server: www.crispyrainbow.biz
+  server: www.blueberrywindow.online
   skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
-    headers:
-      host: www.crispyrainbow.biz
     path: /
-- alterId: 0
-  cipher: auto
-  name: 1|_US__7
-  network: ws
-  port: 80
-  server: 104.18.15.150
+- name: 1|_US__5
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 44.226.30.52
   skip-cert-verify: true
+  sni: trj.rollingnext.co.uk
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '3,4,7,17|🇺🇸 _US_美国 #11'
+  network: ws
+  port: '8080'
+  server: www.blueberrywindow.online
   tls: false
   type: vmess
-  uuid: 4899b015-5823-486d-bfe6-06c3239260f5
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
     headers:
-      host: er3.889611.com
+      Host: www.blueberrywindow.online
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,17|🇺🇸 _US_美国 #14'
-  network: ws
-  port: '80'
-  server: 94.131.13.110
-  tls: false
-  type: vmess
-  uuid: d3e40d59-b53c-4f4e-8867-bb598be864d2
-  ws-opts:
-    headers:
-      Host: lt1-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 4,15,16|美国|@ripaojiedian
+  name: '3,4,7,15,16,17|🇺🇸 _US_美国 #12'
   network: ws
   port: '8080'
   server: www.crispyrainbow.online
@@ -217,19 +180,6 @@ proxies:
   ws-opts:
     headers:
       Host: www.crispyrainbow.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '4|🇺🇸_US_美国 #3'
-  network: ws
-  port: 8080
-  server: www.blueberrywindow.online
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      Host: www.blueberrywindow.online
     path: /
 - alterId: 0
   cipher: auto
@@ -255,7 +205,7 @@ proxies:
   servername: us04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: b37db948-67b2-40fb-8d05-50b7864bb216
+  uuid: 40b63150-87e9-459b-abcd-b39d4c0d72e4
 - alterId: 0
   cipher: auto
   name: 10|🇺🇸美国05
@@ -265,7 +215,7 @@ proxies:
   servername: us05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: b37db948-67b2-40fb-8d05-50b7864bb216
+  uuid: 40b63150-87e9-459b-abcd-b39d4c0d72e4
 - alterId: 0
   cipher: auto
   name: 10|🇺🇸美国06
@@ -275,7 +225,7 @@ proxies:
   servername: us06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: b37db948-67b2-40fb-8d05-50b7864bb216
+  uuid: 40b63150-87e9-459b-abcd-b39d4c0d72e4
 - alterId: 0
   cipher: auto
   name: 11|美国 CloudFlare节点
@@ -316,6 +266,21 @@ proxies:
   ws-opts:
     headers:
       Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 11,12,15,16|罗马尼亚|@ripaojiedian
+  network: ws
+  port: '80'
+  server: 104.17.25.1
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 4e23bd4f-cc11-4ade-fbc1-fcaf245662bf
+  ws-opts:
+    headers:
+      Host: lmnyvpn.catnipballs.gay
     path: /
 - alterId: 0
   cipher: auto
@@ -463,17 +428,6 @@ proxies:
       Host: adenc35.fixedlfoat.top
     path: /linkws
 - alterId: 0
-  cipher: chacha20-poly1305
-  name: 13|🇺🇸|US|美国|@wxgqlfx|13
-  network: ws
-  port: 8080
-  server: www.blueberrywindow.online
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    path: /
-- alterId: 0
   cipher: auto
   name: 13|🔒 VM-WS-TLS 🇺🇸 US-172.67.196.1...
   network: ws
@@ -511,17 +465,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 81714cef-9bde-4a08-aa50-d6bc0172d78b
-- alterId: 0
-  cipher: chacha20-poly1305
-  name: 13|🇺🇸|US|美国|@wxgqlfx|15
-  network: ws
-  port: 8080
-  server: www.crispyrainbow.online
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    path: /
 - alterId: 0
   cipher: auto
   name: 13|美国4|@ripaojiedian
@@ -575,7 +518,7 @@ proxies:
   servername: us04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 947a983d-0bbe-4768-b8d7-b35c4a2f7934
+  uuid: 61a5614a-bc52-4e62-96d9-52b3c5dcdf51
 - alterId: 0
   cipher: auto
   name: 14|【BGP】美国 05 | 1x US
@@ -585,7 +528,7 @@ proxies:
   servername: us05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 947a983d-0bbe-4768-b8d7-b35c4a2f7934
+  uuid: 61a5614a-bc52-4e62-96d9-52b3c5dcdf51
 - alterId: 0
   cipher: auto
   name: 14|【BGP】美国 06 | 1x US
@@ -595,7 +538,7 @@ proxies:
   servername: us06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 947a983d-0bbe-4768-b8d7-b35c4a2f7934
+  uuid: 61a5614a-bc52-4e62-96d9-52b3c5dcdf51
 - alterId: 0
   cipher: auto
   name: 15,16|美国2|@ripaojiedian
