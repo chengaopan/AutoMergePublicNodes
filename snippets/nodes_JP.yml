@@ -8,7 +8,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a516af57-a1d2-4cf4-b6b9-a3e0c076bdd7
+  uuid: 9a56da2f-dc19-4673-b913-3f82d98cad6b
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本05
@@ -18,7 +18,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a516af57-a1d2-4cf4-b6b9-a3e0c076bdd7
+  uuid: 9a56da2f-dc19-4673-b913-3f82d98cad6b
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本06
@@ -28,7 +28,34 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a516af57-a1d2-4cf4-b6b9-a3e0c076bdd7
+  uuid: 9a56da2f-dc19-4673-b913-3f82d98cad6b
+- alterId: 0
+  cipher: auto
+  name: 13|🇯🇵日本6丨电报群@bp520
+  network: ws
+  port: '80'
+  server: 162.159.200.6
+  tls: false
+  type: vmess
+  uuid: 2bc07c42-4420-4b94-b029-f5f83a20602a
+  ws-opts:
+    headers:
+      Host: jp3.visaapp.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|⚡️@DeamNet_🔻 🇯🇵Japan 3
+  network: ws
+  port: 12345
+  server: 152.69.197.74
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b8a6bf58-485a-4046-b386-b3661bf65eff
+  ws-opts:
+    headers:
+      Host: ''
+    path: /bb
 - alterId: 64
   cipher: auto
   name: 13|⚡️@DeamNet 🇯🇵Japan
@@ -41,6 +68,16 @@ proxies:
   uuid: 94c5ef37-4d82-49f9-c624-f01259374a17
 - alterId: 0
   cipher: auto
+  name: 13|⚡️@DeamNet_🔻 🇯🇵Japan
+  network: tcp
+  port: 20081
+  server: 138.2.44.211
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973
+- alterId: 0
+  cipher: auto
   name: 14|【BGP】日本 04  | 1x JP
   network: tcp
   port: '31116'
@@ -48,7 +85,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 22955be1-66db-41ff-9c76-a114e5ccba62
+  uuid: e3136749-28b8-4e57-95c4-d142c047f54d
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 05  | 1x JP
@@ -58,7 +95,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 22955be1-66db-41ff-9c76-a114e5ccba62
+  uuid: e3136749-28b8-4e57-95c4-d142c047f54d
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 06  | 1x JP
@@ -68,20 +105,40 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 22955be1-66db-41ff-9c76-a114e5ccba62
-- cipher: chacha20-ietf
-  name: 15,16|5pel5pysfEByaXBhb2ppZWRpYW4
-  obfs: plain
-  obfs-param: ''
-  password: MAYING
-  port: '1332'
-  protocol: auth_aes128_md5
-  protocol-param: Mjc5ODQ6bUZWODRl
-  server: ijmazhr5972b.nodelist.club
-  type: ssr
+  uuid: e3136749-28b8-4e57-95c4-d142c047f54d
+- cipher: aes-128-gcm
+  name: 15|🇯🇵 日本KT|@ripaojiedian
+  password: g12sQi#ss#&1
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: ''
+    mode: websocket
+    mux: true
+    path: ''
+    skip-cert-verify: true
+    tls: false
+  port: 10016
+  server: 61.224.76.138
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 15|🇯🇵 日本3|@ripaojiedian
+  password: 100222a9-95bf-48f1-8e85-73336bf5fabc
+  port: 26668
+  server: service.ouluyun9803.com
+  type: ss
 - cipher: aes-256-cfb
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 3.112.197.98
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 16|日本1|@ripaojiedian
+  network: tcp
+  port: '43713'
+  server: 103.20.198.51
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d3a1ace-4288-4442-98f2-50ff8795797a
