@@ -8,7 +8,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f9abfe26-67f6-4672-977c-d09cb594f32b
+  uuid: 118dfceb-3b79-41fe-a6be-715d365785ee
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本05
@@ -18,7 +18,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f9abfe26-67f6-4672-977c-d09cb594f32b
+  uuid: 118dfceb-3b79-41fe-a6be-715d365785ee
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本06
@@ -28,7 +28,17 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f9abfe26-67f6-4672-977c-d09cb594f32b
+  uuid: 118dfceb-3b79-41fe-a6be-715d365785ee
+- alterId: 0
+  cipher: auto
+  name: '13,16|日本1|@ripaojiedian #1'
+  network: tcp
+  port: '43713'
+  server: 103.20.198.51
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5d3a1ace-4288-4442-98f2-50ff8795797a
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-WS-NA 🇯🇵 JP-183.181.36.19...
@@ -45,27 +55,21 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|日本 01 （0.1倍流量消耗)
+  client-fingerprint: chrome
+  name: '13,15,16|日本3|@ripaojiedian #1'
   network: ws
-  port: '2082'
-  server: cf-cdn.981545.xyz
+  port: '80'
+  server: cfcdn3.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 1f7c4a0b-3fd0-4b19-bbc6-d09fc89a4c10
+  uuid: 657140e4-fb53-4404-80b7-fcbac652671f
   ws-opts:
     headers:
-      Host: jp-cdn.981545.xyz
-    path: /index?ed=2048
-- alterId: 0
-  cipher: auto
-  name: '13,16|日本1|@ripaojiedian #1'
-  network: tcp
-  port: '43713'
-  server: 103.20.198.51
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5d3a1ace-4288-4442-98f2-50ff8795797a
+      Host: agzbjszujp4.yofnhkfc.xyz
+    path: /video/ibCT6z55
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 04  | 1x JP
@@ -129,23 +133,6 @@ proxies:
     headers:
       Host: jp04.xpoti.online
     path: /
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 15,16|日本3|@ripaojiedian
-  network: ws
-  port: '80'
-  server: cfcdn3.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 657140e4-fb53-4404-80b7-fcbac652671f
-  ws-opts:
-    headers:
-      Host: agzbjszujp4.yofnhkfc.xyz
-    path: /video/ibCT6z55
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇯🇵 日本特殊|@ripaojiedian
