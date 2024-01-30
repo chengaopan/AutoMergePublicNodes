@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,11,12,13,17|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #4'
+  name: '0,3,4,6,11,12,13,17|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #5'
   network: ws
   port: '8080'
   server: www.darkroom.lol
@@ -15,9 +15,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,7,13|🇨🇾_CY_塞浦路斯->🇹🇷_TR_土耳其 #1'
+  name: '0,3,4,7,13,17|🇨🇾 _CY_塞浦路斯->🇹🇷_TR_土耳其 #2'
   network: ws
-  port: 80
+  port: '80'
   server: 195.14.146.81
   tls: false
   type: vmess
@@ -41,9 +41,9 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: 0,3,7|🇪🇨_EC_厄瓜多尔->🇹🇷_TR_土耳其
+  name: '0,3,4,7,17|🇹🇷 _EC_厄瓜多尔->🇹🇷_TR_土耳其 #2'
   network: ws
-  port: 80
+  port: '80'
   server: 181.39.11.210
   tls: false
   type: vmess
@@ -54,7 +54,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,17|🇹🇷 _LY_利比亚->🇹🇷_TR_土耳其 #3'
+  name: '0,3,4,6,7,17|🇹🇷 _LY_利比亚->🇹🇷_TR_土耳其 #2'
   network: ws
   port: '80'
   server: 197.215.140.235
@@ -67,7 +67,7 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,13,17|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #5'
+  name: '0,3,4,6,13,17|🇺🇸 _US_美国->🇮🇷_IR_伊朗 #4'
   network: ws
   port: '8080'
   server: www.crispyrainbow.biz
@@ -78,6 +78,34 @@ proxies:
     headers:
       Host: www.crispyrainbow.biz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_IR__1
+  network: ws
+  port: 8080
+  server: www.darkroom.lol
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      host: www.darkroom.lol
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_CY_->_TR_
+  network: ws
+  port: 80
+  server: 195.14.146.81
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f0028153-2a2d-45fe-b44e-a1a6dbd0c65e
+  ws-opts:
+    headers:
+      host: saman8888.servecounterstrike.com
+    path: /@forwardv2ray
 - alterId: 0
   cipher: auto
   name: 1|_BH_->_NL_
@@ -92,9 +120,60 @@ proxies:
     headers:
       host: sahar55.serveirc.com
     path: /@forwardv2ray
+- grpc-opts:
+    grpc-service-name: gajmahan.amnvpn.top
+  name: 1|_US_->_FI_
+  network: grpc
+  password: Mahanvpn
+  port: 2096
+  server: 104.25.14.106
+  skip-cert-verify: false
+  sni: gajmahan.amnvpn.top
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_IR__1
+  name: 1|_EC_->_TR_
+  network: ws
+  port: 80
+  server: 181.39.11.210
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c220f88c-8883-44aa-b66f-f4776a4053d7
+  ws-opts:
+    headers:
+      host: xyz33.servecounterstrike.com
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 1|_LY_->_TR_
+  network: ws
+  port: 80
+  server: 197.215.140.235
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c220f88c-8883-44aa-b66f-f4776a4053d7
+  ws-opts:
+    headers:
+      host: xyz33.servecounterstrike.com
+    path: /@forwardv2ray
+- name: 1|_US_->_RU_
+  network: ws
+  password: gviRoLVUKA5kBX2M0gJSvg
+  port: 2083
+  server: cdn-16.cdn2cdn.com
+  skip-cert-verify: true
+  sni: cdn16.cdn2cdn.com
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_IR__2
   network: ws
   port: 8080
   server: www.crispyrainbow.biz
@@ -108,142 +187,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|_LY_->_TR__1
+  name: 6|🇺🇿_UZ_乌兹别克斯坦->🇹🇷_TR_土耳其
   network: ws
   port: 80
-  server: 197.215.140.234
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f0028153-2a2d-45fe-b44e-a1a6dbd0c65e
-  ws-opts:
-    headers:
-      host: saman8888.servecounterstrike.com
-    path: /@forwardv2ray
-- name: 1|_CN_->_CZ_
-  network: tcp
-  password: 17e82f43-a0c6-4518-9d1f-3ac454429c3d
-  port: 10846
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1|_UZ_->_TR_
-  network: ws
-  port: 80
-  server: 37.110.209.228
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f0028153-2a2d-45fe-b44e-a1a6dbd0c65e
-  ws-opts:
-    headers:
-      host: saman8888.servecounterstrike.com
-    path: /@forwardv2ray
-- name: 1|_CN_->_AT_
-  network: tcp
-  password: 17e82f43-a0c6-4518-9d1f-3ac454429c3d
-  port: 10848
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 1|_CN_->_US__1
-  network: tcp
-  password: 17e82f43-a0c6-4518-9d1f-3ac454429c3d
-  port: 10837
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_IR__2
-  network: ws
-  port: 8080
-  server: www.darkroom.lol
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
-  ws-opts:
-    headers:
-      host: www.darkroom.lol
-    path: /
-- name: 1|_CN_->_US__2
-  network: tcp
-  password: 17e82f43-a0c6-4518-9d1f-3ac454429c3d
-  port: 10850
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1|_IL_->_NL_
-  network: ws
-  port: 80
-  server: 5.188.94.5
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 75916879-adcf-45b3-98d8-54a2412470b5
-  ws-opts:
-    headers:
-      host: sahar55.serveirc.com
-    path: /@forwardv2ray
-- name: 1|_CN_->_US__3
-  network: tcp
-  password: 17e82f43-a0c6-4518-9d1f-3ac454429c3d
-  port: 10838
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1|_LY_->_TR__2
-  network: ws
-  port: 80
-  server: 197.215.140.235
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c220f88c-8883-44aa-b66f-f4776a4053d7
-  ws-opts:
-    headers:
-      host: xyz33.servecounterstrike.com
-    path: /@forwardv2ray
-- name: 1|_CN_->_UA_
-  network: tcp
-  password: 17e82f43-a0c6-4518-9d1f-3ac454429c3d
-  port: 10845
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 1|_CN_->_US__4
-  network: tcp
-  password: 17e82f43-a0c6-4518-9d1f-3ac454429c3d
-  port: 10847
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 4,6,17|🇹🇷 _UZ_乌兹别克斯坦->🇹🇷_TR_土耳其
-  network: ws
-  port: '80'
   server: 37.110.209.228
   tls: false
   type: vmess
@@ -254,9 +200,9 @@ proxies:
     path: /@forwardv2ray
 - alterId: 0
   cipher: auto
-  name: 4,6,13,17|🇮🇱 _IL_以色列->🇳🇱_NL_荷兰
+  name: '6,13|🇮🇱_IL_以色列->🇳🇱_NL_荷兰 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 5.188.94.5
   tls: false
   type: vmess
