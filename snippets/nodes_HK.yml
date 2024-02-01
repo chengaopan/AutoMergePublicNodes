@@ -12,7 +12,7 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 443
-  server: 1.65.223.223
+  server: 8.210.196.224
   tfo: false
   type: ss
 - cipher: aes-128-gcm
@@ -31,23 +31,14 @@ proxies:
   server: 47.243.196.229
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 15,16|香港|@ripaojiedian
-  network: ws
-  port: '8002'
-  server: 185.214.103.249
-  servername: ''
-  skip-cert-verify: false
+  name: 15|🇭🇰 香港|@ripaojiedian
+  password: f665c5d0-77c0-4196-bc8d-f0450e9c665b
+  port: 20001
+  server: service.ouluyun9803.com
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 1405f400-4d72-3cd2-88fc-5bfb9dd9120d
-  ws-opts:
-    headers:
-      Host: data-hk-1.cn-db.top
-    path: /db00
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -61,3 +52,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 6f052e34-456e-47f1-84a4-d0aa3b9e8b39
+- alterId: 0
+  cipher: auto
+  name: 16|香港3|@ripaojiedian
+  network: tcp
+  port: '10241'
+  server: 38.147.191.185
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e820d6f7-57ef-4575-99da-bcd7d318c742
