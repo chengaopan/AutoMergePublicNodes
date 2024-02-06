@@ -1,7 +1,20 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 12,13|[宇航员] 香港 80免流 01
+  name: 11,12,13|[宇航员] 香港 80免流 04
+  network: ws
+  port: '80'
+  server: hke9016a-9c15-ce43.xn--jsrz0o258a.online
+  tls: false
+  type: vmess
+  uuid: aaf1e0a7-5616-4e67-bb4b-c706b8a32b01
+  ws-opts:
+    headers:
+      Host: bilibili.com
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 13|[宇航员] 香港 80免流 03
   network: ws
   port: '80'
   server: hkb12a8e-36fc-a36f-5a2.xn--jsrz0o258a.online
@@ -14,17 +27,18 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 13|[宇航员] 香港 80免流 04
+  name: 13|HK2-Vm
   network: ws
-  port: '80'
-  server: hke9016a-9c15-ce43.xn--jsrz0o258a.online
-  tls: false
+  port: 443
+  server: chrome.cloudflare-dns.com
+  servername: ''
+  tls: true
   type: vmess
-  uuid: aaf1e0a7-5616-4e67-bb4b-c706b8a32b01
+  uuid: 7f14e42a-f453-4c39-a762-019ee493237d
   ws-opts:
     headers:
-      Host: bilibili.com
-    path: /?ed=2048
+      Host: a4.bbbbbbbb.tk
+    path: /argox-vm?ed=2048
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-WS-NA 🇭🇰 HK-23.99.120.52:...
@@ -74,13 +88,58 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 15|🇮🇳 印度|@ripaojiedian
-  password: 6b55d668206e4a91a63d437d22d3936d
-  port: 38664
-  server: 103.65.140.83
+  name: 15,16|香港4|@ripaojiedian
+  network: ws
+  port: '80'
+  server: 154.12.87.218
+  servername: ''
   skip-cert-verify: false
-  sni: www.gpt123.one
   tfo: false
   tls: false
   type: vmess
-  uuid: 6f052e34-456e-47f1-84a4-d0aa3b9e8b39
+  uuid: eeee6cb6-7023-433a-8f6c-66293f018113
+  ws-opts:
+    headers:
+      Host: www.microsoft.com
+    path: /zh-cn
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港|@ripaojiedian
+  password: d6105bbd-be0d-45b2-82ad-31fd1071c1d2
+  port: 21001
+  server: service.ouluyun9803.com
+  tfo: false
+  type: ss
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港B
+  password: abff9d83-a05f-4473-8fa7-7d2714ca099a
+  port: 54137
+  server: 112.28.208.18
+  skip-cert-verify: false
+  sni: 421421.xyz
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 16|香港A
+  network: tcp
+  port: '54002'
+  server: 183.237.20.149
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 16|香港B
+  network: tcp
+  port: '54137'
+  server: 112.28.208.18
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
