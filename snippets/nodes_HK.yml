@@ -7,25 +7,25 @@ proxies:
   server: hkb12a8e-36fc-a36f-5a2.xn--jsrz0o258a.online
   tls: false
   type: vmess
-  uuid: 1cb8d9f0-639c-4a8d-83c1-d5361179d18f
+  uuid: aaf1e0a7-5616-4e67-bb4b-c706b8a32b01
   ws-opts:
     headers:
       Host: bilibili.com
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 13|HK2-Vm
+  name: 13|🔒 VM-WS-NA 🇭🇰 HK-182.16.1.194:...
   network: ws
-  port: 443
-  server: chrome.cloudflare-dns.com
+  port: 80
+  server: 182.16.1.194
   servername: ''
-  tls: true
+  tls: false
   type: vmess
-  uuid: 7f14e42a-f453-4c39-a762-019ee493237d
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
   ws-opts:
     headers:
-      Host: a4.bbbbbbbb.tk
-    path: /argox-vm?ed=2048
+      Host: ''
+    path: /opt/video/images
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港KT|@ripaojiedian
@@ -58,23 +58,27 @@ proxies:
   server: 47.243.196.229
   tfo: false
   type: ss
-- alterId: 0
+- alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 15,16|香港4|@ripaojiedian
-  network: ws
-  port: '80'
-  server: 154.12.87.218
-  servername: ''
+  name: 15|🇭🇰 香港B
+  password: e097291a574b4e348596e6f6d76b8a7d
+  port: 55902
+  server: 36.141.40.58
   skip-cert-verify: false
+  sni: www.gpt123.one
   tfo: false
   tls: false
   type: vmess
-  uuid: eeee6cb6-7023-433a-8f6c-66293f018113
-  ws-opts:
-    headers:
-      Host: www.microsoft.com
-    path: /zh-cn
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港2|@ripaojiedian
+  password: 5160550c-3029-4300-bfd1-d7e056049694
+  port: 29126
+  server: c.skrspc.org
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇭🇰 香港|@ripaojiedian
@@ -86,32 +90,26 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 15|🇭🇰 香港B
-  password: abff9d83-a05f-4473-8fa7-7d2714ca099a
-  port: 54137
-  server: 112.28.208.18
+  name: 15,16|香港A
+  network: ws
+  port: '443'
+  server: 118.107.245.20
+  servername: www.50918290.xyz
   skip-cert-verify: false
-  sni: 421421.xyz
   tfo: false
-  tls: false
+  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  name: 16|香港A
-  network: tcp
-  port: '54002'
-  server: 183.237.20.149
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.50918290.xyz
+    path: /path/340323081726
 - alterId: 64
   cipher: auto
   name: 16|香港B
   network: tcp
-  port: '54137'
-  server: 112.28.208.18
+  port: '55902'
+  server: 36.141.40.58
   servername: ''
   tls: false
   type: vmess
