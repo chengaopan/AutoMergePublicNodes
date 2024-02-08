@@ -8,60 +8,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_DE__1
-  network: ws
-  port: 80
-  server: www.greendam.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      host: my1.tooters.ir
-    path: /
-- grpc-opts:
-    grpc-service-name: 443trojan
-  name: 1|_US_->_RU__1
-  network: grpc
-  password: qj1Dz1CJmFQRhWr1SP80aA
-  port: 443
-  server: 172.67.204.84
-  skip-cert-verify: true
-  sni: cdn-21.gsmxreality.com
-  tls: true
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_RU__2
-  network: ws
-  port: 80
-  server: fastly.alipay.ovh
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 97d5d17f-1a55-4074-8207-192873e362ed
-  ws-opts:
-    headers:
-      host: beeline.ru
-    path: /aries?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_DE__2
-  network: ws
-  port: 80
-  server: 104.20.231.30
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      host: my1.tooters.ir
-    path: /
 - grpc-opts:
     grpc-service-name: server-53651.prod.hosts.ooklaserver.net
   name: 1|_US_->_TR_
@@ -74,37 +20,21 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_BR_
-  network: ws
-  port: 80
-  server: s16.956256.xyz
+- grpc-opts:
+    grpc-service-name: 443trojan
+  name: 1|_US_->_RU_
+  network: grpc
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  port: 443
+  server: 172.67.204.84
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8ddfa270-aab5-45f0-b964-a729b957c70e
-  ws-opts:
-    headers:
-      host: caonimashabiwanyi5.daxiongda.top
-    path: /
+  sni: cdn-21.gsmxreality.com
+  tls: true
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_DE__3
-  network: ws
-  port: 80
-  server: 104.22.51.162
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      host: my1.tooters.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '4,6|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦 #1'
+  name: 6|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦
   network: ws
   port: 80
   server: fastly.alipay.ovh
@@ -117,11 +47,10 @@ proxies:
     path: /aries?ed=2048
 - alterId: 0
   cipher: auto
-  name: 4,6,13|巴西 005
+  name: 6|🇺🇸_US_美国->🇧🇷_BR_巴西
   network: ws
   port: 80
   server: s16.956256.xyz
-  servername: ''
   tls: false
   type: vmess
   uuid: 8ddfa270-aab5-45f0-b964-a729b957c70e
@@ -131,7 +60,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '7,13|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
+  name: '7|🇺🇸_US_美国->🇧🇷_BR_巴西 #1'
   network: ws
   port: 80
   server: s4.956256.xyz
