@@ -1,42 +1,127 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0,1,4|🇨🇳_CN_中国->🇮🇳_IN_印度
+  name: 0|🇮🇳 _CN_中国->🇮🇳_IN_印度
   network: tcp
-  port: 30128
+  port: '30128'
   server: 183.232.170.22
-  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 9f41898b-e80d-418d-9ea8-5c51a914722a
-- name: 1|_CN_->_CZ_
-  network: tcp
-  password: 4623e7ff-47b4-41d6-8f5a-33c8e6ac3fd5
-  port: 10846
-  server: xibaozi.19890604.day
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
-  udp: true
-- name: 1|_US_->_DE_
-  network: ws
-  password: 8c4c1021-3352-4c76-b4b6-26c38a137f92
-  port: 443
-  server: 104.17.175.159
-  skip-cert-verify: true
-  sni: jnl1.jsjc.sbs
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: jnl1.jsjc.sbs
-    path: /jsjc/nl1
 - alterId: 0
   cipher: auto
-  name: '7,13|🇺🇸_US_美国->🇧🇷_BR_巴西 #1'
+  name: 1|_US_->_DE__1
   network: ws
   port: 80
-  server: s4.956256.xyz
+  server: www.greendam.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      host: my1.tooters.ir
+    path: /
+- grpc-opts:
+    grpc-service-name: 443trojan
+  name: 1|_US_->_RU__1
+  network: grpc
+  password: qj1Dz1CJmFQRhWr1SP80aA
+  port: 443
+  server: 172.67.204.84
+  skip-cert-verify: true
+  sni: cdn-21.gsmxreality.com
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_RU__2
+  network: ws
+  port: 80
+  server: fastly.alipay.ovh
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 97d5d17f-1a55-4074-8207-192873e362ed
+  ws-opts:
+    headers:
+      host: beeline.ru
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_DE__2
+  network: ws
+  port: 80
+  server: 104.20.231.30
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      host: my1.tooters.ir
+    path: /
+- grpc-opts:
+    grpc-service-name: server-53651.prod.hosts.ooklaserver.net
+  name: 1|_US_->_TR_
+  network: grpc
+  password: YS7mIZvKNt
+  port: 2053
+  server: 172.67.175.243
+  skip-cert-verify: false
+  sni: panell.followprovider.ir
+  tls: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_BR_
+  network: ws
+  port: 80
+  server: s16.956256.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8ddfa270-aab5-45f0-b964-a729b957c70e
+  ws-opts:
+    headers:
+      host: caonimashabiwanyi5.daxiongda.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_DE__3
+  network: ws
+  port: 80
+  server: 104.22.51.162
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      host: my1.tooters.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '4,6|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦 #1'
+  network: ws
+  port: 80
+  server: fastly.alipay.ovh
+  tls: false
+  type: vmess
+  uuid: 97d5d17f-1a55-4074-8207-192873e362ed
+  ws-opts:
+    headers:
+      Host: beeline.ru
+    path: /aries?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 4,6,13|巴西 005
+  network: ws
+  port: 80
+  server: s16.956256.xyz
+  servername: ''
   tls: false
   type: vmess
   uuid: 8ddfa270-aab5-45f0-b964-a729b957c70e
@@ -46,14 +131,14 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '7,13|🇺🇸_US_美国->🇨🇱_CL_智利 #1'
+  name: '7,13|🇺🇸_US_美国->🇧🇷_BR_巴西 #3'
   network: ws
   port: 80
-  server: s11.956256.xyz
+  server: s4.956256.xyz
   tls: false
   type: vmess
   uuid: 8ddfa270-aab5-45f0-b964-a729b957c70e
   ws-opts:
     headers:
-      Host: caonimashabiwanyi21.daxiongda.top
+      Host: caonimashabiwanyi5.daxiongda.top
     path: /
