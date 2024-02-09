@@ -1,4 +1,18 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-WS-NA 🇭🇰 HK-23.99.120.52:...
+  network: ws
+  port: '10510'
+  server: 23.99.120.52
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 619d8b66-469f-4dce-fc71-b74f05810212
+  ws-opts:
+    headers:
+      Host: www.alipay.com
+    path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港KT|@ripaojiedian
@@ -31,6 +45,39 @@ proxies:
   server: 47.243.196.229
   tfo: false
   type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港1|@ripaojiedian
+  password: f5f2012b-a124-4236-a741-1fa295659fca
+  port: 38521
+  server: nangua.lwjyj.com
+  tfo: false
+  type: ss
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 15,16|香港2|@ripaojiedian
+  network: ws
+  port: '443'
+  server: 27.124.2.43
+  servername: www.28717411.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.28717411.xyz
+    path: /path/340323081726
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港3|@ripaojiedian
+  password: 0fba9c66-0a74-4abb-a084-145a18bcc11f
+  port: 36033
+  server: hk01.huajia.xyz
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇭🇰 香港|@ripaojiedian
@@ -39,43 +86,3 @@ proxies:
   server: service.ouluyun9803.com
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港B
-  password: 7b1567f128cc42a3b2070a76b8f44e1f
-  port: 44602
-  server: 183.237.20.146
-  skip-cert-verify: false
-  sni: www.gpt123.one
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
-  name: 15,16|香港A
-  network: ws
-  port: '443'
-  server: 202.79.169.44
-  servername: www.55174688.xyz
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 195ec551-6217-4a30-a188-f21e7281d159
-  ws-opts:
-    headers:
-      Host: www.55174688.xyz
-    path: /path/340323081726
-- alterId: 64
-  cipher: auto
-  name: 16|香港B
-  network: tcp
-  port: '44602'
-  server: 183.237.20.146
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
