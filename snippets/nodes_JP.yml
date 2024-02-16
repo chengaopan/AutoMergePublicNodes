@@ -8,7 +8,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9396bde6-4f31-4c86-994b-dbf174f35053
+  uuid: c0e7ae95-9b6a-4c9d-af2a-aa5de40a5811
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本05
@@ -18,7 +18,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9396bde6-4f31-4c86-994b-dbf174f35053
+  uuid: c0e7ae95-9b6a-4c9d-af2a-aa5de40a5811
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本06
@@ -28,35 +28,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9396bde6-4f31-4c86-994b-dbf174f35053
-- alterId: 0
-  cipher: auto
-  name: 11|日本东京 Oracle Cloud
-  network: ws
-  port: '80'
-  server: 141.147.178.135
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f8cc73c7-a72f-4f85-aa53-975277f3292c
-  ws-opts:
-    headers:
-      Host: kr03.36routes.online
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 11|日本东京 Oracle云计算数据中心
-  network: ws
-  port: '80'
-  server: 158.101.146.160
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac2deae9-e7de-4056-be59-eaeea6deeb24
-  ws-opts:
-    headers:
-      Host: kr01.travisdependable.online
-    path: /
+  uuid: c0e7ae95-9b6a-4c9d-af2a-aa5de40a5811
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
@@ -68,7 +40,35 @@ proxies:
   uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
 - alterId: 0
   cipher: auto
-  name: '13|日本 #1'
+  name: 13|日本 004
+  network: ws
+  port: 80
+  server: jp04.36routes.online
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f8cc73c7-a72f-4f85-aa53-975277f3292c
+  ws-opts:
+    headers:
+      Host: jp04.36routes.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|Relay_🇯🇵 JP-🇯🇵JP_660
+  network: ws
+  port: 80
+  server: jp01.36routes.online
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f8cc73c7-a72f-4f85-aa53-975277f3292c
+  ws-opts:
+    headers:
+      Host: jp01.36routes.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|日本 #3'
   network: ws
   port: '80'
   server: 155.248.176.28
@@ -82,14 +82,46 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇯🇵 JP-167.179.111....
-  network: tcp
-  port: '14935'
-  server: 167.179.111.237
+  name: 13|【电报：@ccbaohe|免费机场节点 🇯🇵 日本 - 大阪...
+  network: ws
+  port: 80
+  server: jp02.36routes.online
   servername: ''
   tls: false
   type: vmess
-  uuid: e961894f-8e90-472f-98d3-09402e4be453
+  uuid: f8cc73c7-a72f-4f85-aa53-975277f3292c
+  ws-opts:
+    headers:
+      Host: jp02.36routes.online
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '13|日本 #5'
+  network: ws
+  port: '80'
+  server: 155.248.186.182
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: my1.tooters.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|Relay_🇯🇵 JP-🇯🇵JP_664
+  network: ws
+  port: 80
+  server: jp01.hajimihajimihajimi.online
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f9d04a5f-9cda-4184-bb5d-f69f1909eff9
+  ws-opts:
+    headers:
+      Host: jp01.hajimihajimihajimi.online
+    path: /
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 04  | 1x JP
@@ -136,28 +168,19 @@ proxies:
   server: service.ouluyun9803.com
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 15,16|日本4|@ripaojiedian
-  network: ws
-  port: '443'
-  server: 104.233.161.235
-  servername: www.18049067.xyz
-  skip-cert-verify: false
+  name: 15|🇯🇵 日本3|@ripaojiedian
+  password: 5c7fdc82-f68c-4f4d-aeea-d693c86d3b5e
+  port: 21700
+  server: zf.quanstring.top
   tfo: false
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.18049067.xyz
-    path: /path/340323081726
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.78.87.188
+  server: 3.0.180.111
   tfo: false
   type: ss
