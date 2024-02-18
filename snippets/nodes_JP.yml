@@ -8,7 +8,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 4382bc90-c0c0-43ca-9472-28945c04b31b
+  uuid: d72ebaf3-de41-4d9b-9ef1-7fb1dba8491d
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本05
@@ -18,7 +18,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 4382bc90-c0c0-43ca-9472-28945c04b31b
+  uuid: d72ebaf3-de41-4d9b-9ef1-7fb1dba8491d
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本06
@@ -28,26 +28,25 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 4382bc90-c0c0-43ca-9472-28945c04b31b
-- alterId: 0
+  uuid: d72ebaf3-de41-4d9b-9ef1-7fb1dba8491d
+- alterId: 1
   cipher: auto
-  name: 11|日本东京 Oracle Cloud
+  name: 13|🇯🇵 [V2]日本Ntt2 Premier/NF
   network: ws
-  port: '80'
-  server: 141.147.181.148
-  servername: ''
+  port: 80
+  server: ntt3.ddddns.xyz
   tls: false
   type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  uuid: 21bb35ea-4e67-38c1-8d01-67fb2d64aa12
   ws-opts:
     headers:
-      Host: my1.tooters.ir
-    path: /
+      Host: ntt3.cdn.yihoney.com
+    path: /download
 - alterId: 0
   cipher: auto
-  name: '11|日本东京 Oracle Cloud #1'
+  name: 13|日本 023
   network: ws
-  port: '80'
+  port: 80
   server: 138.2.6.15
   servername: ''
   tls: false
@@ -57,19 +56,6 @@ proxies:
     headers:
       Host: my1.tooters.ir
     path: /
-- alterId: 1
-  cipher: auto
-  name: 13|🇯🇵 [V2]日本IIJ-2 Premier
-  network: ws
-  port: 8443
-  server: iij.ddddns.xyz
-  tls: false
-  type: vmess
-  uuid: 21bb35ea-4e67-38c1-8d01-67fb2d64aa12
-  ws-opts:
-    headers:
-      Host: ablenet.cdn.e-v.vip
-    path: /download
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 04  | 1x JP
@@ -79,7 +65,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 080e5c99-76c1-4972-b750-5fb6331c4911
+  uuid: 867b8f6e-907e-4f71-9355-3a94eb98b3a9
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 05  | 1x JP
@@ -89,7 +75,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 080e5c99-76c1-4972-b750-5fb6331c4911
+  uuid: 867b8f6e-907e-4f71-9355-3a94eb98b3a9
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 06  | 1x JP
@@ -99,7 +85,15 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 080e5c99-76c1-4972-b750-5fb6331c4911
+  uuid: 867b8f6e-907e-4f71-9355-3a94eb98b3a9
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 15|🇯🇵 日本1|@ripaojiedian
+  password: shadowsocks
+  port: 443
+  server: 154.47.20.240
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇯🇵 日本|@ripaojiedian
@@ -138,6 +132,6 @@ proxies:
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.169.247.207
+  server: 13.231.224.133
   tfo: false
   type: ss
