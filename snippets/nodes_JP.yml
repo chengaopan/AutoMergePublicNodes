@@ -8,7 +8,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 787318b9-4db8-4aef-9108-edbf603e5215
+  uuid: 72e8035b-58a3-497e-82ce-908639eff5a1
 - alterId: 0
   cipher: auto
   name: 13|🇯🇵日本05
@@ -18,7 +18,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 787318b9-4db8-4aef-9108-edbf603e5215
+  uuid: 72e8035b-58a3-497e-82ce-908639eff5a1
 - alterId: 0
   cipher: auto
   name: 13|🇯🇵日本06
@@ -28,14 +28,13 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 787318b9-4db8-4aef-9108-edbf603e5215
+  uuid: 72e8035b-58a3-497e-82ce-908639eff5a1
 - alterId: 0
   cipher: auto
   name: 14|日本 东京Fastly节点
   network: ws
-  port: 80
+  port: '80'
   server: fastly.alipay.ovh
-  servername: ''
   tls: false
   type: vmess
   uuid: 041f0d5b-c647-4a8d-8e4e-fa7f3526a490
@@ -71,6 +70,16 @@ proxies:
     path: /mls.html?ed=2048
 - alterId: 0
   cipher: auto
+  name: 21|🔒 VM-TCP-NA 🇯🇵 JP-167.179.111....
+  network: tcp
+  port: '14935'
+  server: 167.179.111.237
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
+- alterId: 0
+  cipher: auto
   name: 22|【BGP】日本 04  | 1x JP
   network: tcp
   port: '31116'
@@ -78,7 +87,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b8166754-18a1-43a2-91a6-b4f294521b9d
+  uuid: cc074e72-2247-433a-8474-4a32d98895a4
 - alterId: 0
   cipher: auto
   name: 22|【BGP】日本 05  | 1x JP
@@ -88,7 +97,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b8166754-18a1-43a2-91a6-b4f294521b9d
+  uuid: cc074e72-2247-433a-8474-4a32d98895a4
 - alterId: 0
   cipher: auto
   name: 22|【BGP】日本 06  | 1x JP
@@ -98,7 +107,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b8166754-18a1-43a2-91a6-b4f294521b9d
+  uuid: cc074e72-2247-433a-8474-4a32d98895a4
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 23|🇯🇵 日本|@ripaojiedian
@@ -107,12 +116,29 @@ proxies:
   server: service.ouluyun9803.com
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 23,24|日本2|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: cfcdn3.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: de6969ab-ec16-4263-8c11-9187e8ca0782
+  ws-opts:
+    headers:
+      Host: kvjqqknzjp6.yofnhkfc.xyz
+    path: /video/Zo98PYfE
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 23|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.36.61.58
+  server: 54.255.224.197
   tfo: false
   type: ss
 - alterId: 0
@@ -124,7 +150,7 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 503da37b-4fda-38a0-9f8d-8a39e975d941
+  uuid: 1845ec2b-43a8-3954-bb53-091a750a3675
 - alterId: 0
   cipher: auto
   name: 25|🇯🇵日本 | 102 | 流媒体优化 | 1x
@@ -134,7 +160,7 @@ proxies:
   servername: jp02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 503da37b-4fda-38a0-9f8d-8a39e975d941
+  uuid: 1845ec2b-43a8-3954-bb53-091a750a3675
 - alterId: 0
   cipher: auto
   name: 25|🇯🇵日本 | 103 | 负载优化 | 1x
@@ -144,7 +170,7 @@ proxies:
   servername: jp03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 503da37b-4fda-38a0-9f8d-8a39e975d941
+  uuid: 1845ec2b-43a8-3954-bb53-091a750a3675
 - alterId: 0
   cipher: auto
   name: 25|🇯🇵日本[国外直连]
@@ -154,4 +180,4 @@ proxies:
   servername: jp01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 503da37b-4fda-38a0-9f8d-8a39e975d941
+  uuid: 1845ec2b-43a8-3954-bb53-091a750a3675
