@@ -1,19 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 7|🇫🇷_FR_法国
-  network: ws
-  port: 8080
-  server: 173.245.49.249
-  tls: false
-  type: vmess
-  uuid: d26363ff-8810-4591-8b77-d2f45e2b9f41
-  ws-opts:
-    headers:
-      Host: bibliographic-sword-sequence-advertisers.trycloudflare.com
-    path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
-- alterId: 0
-  cipher: auto
   name: 15|法国 001
   network: ws
   port: 443
@@ -84,11 +71,13 @@ proxies:
     path: d26363ff-8810-4591-8b77-d2f45e2b9f41-vm
 - alterId: 0
   cipher: auto
-  name: 15|法国 006
+  name: '15,21|法国 006 #1'
   network: ws
   port: 8080
   server: 173.245.49.169
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 41eeccfd-18e6-40b3-933d-c7000120ec2c
   ws-opts:
@@ -137,4 +126,10 @@ proxies:
   password: TEzjfAYq2IjtuoS
   port: 6697
   server: 54.36.174.181
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 17|SS-法国:兰-locked-ChatGPT-TikTok-...
+  password: G!yBwPWH3Vao
+  port: 800
+  server: 51.178.87.37
   type: ss
