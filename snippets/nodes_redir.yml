@@ -14,7 +14,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0,7|🇨🇦_CA_加拿大->🇺🇸_US_美国
+  name: '0,3,4,7,17|🇨🇦_CA_加拿大->🇺🇸_US_美国 #10'
   network: ws
   port: 8080
   server: 23.227.39.45
@@ -40,7 +40,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,7|🇨🇦_CA_加拿大->🇺🇸_US_美国 #2'
+  name: '0,3,4,7,17|🇨🇦_CA_加拿大->🇺🇸_US_美国 #11'
   network: ws
   port: 8080
   server: 23.227.38.11
@@ -66,7 +66,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,7|🇨🇦_CA_加拿大->🇺🇸_US_美国 #1'
+  name: '0,3,4,7,17|🇨🇦_CA_加拿大->🇺🇸_US_美国 #9'
   network: ws
   port: 8080
   server: 23.227.39.23
@@ -79,7 +79,7 @@ proxies:
     path: e380bde6-f120-4b80-bdae-ea68b1b64504-vm
 - alterId: 0
   cipher: auto
-  name: 0,7|🇺🇸_US_美国->🇨🇦_CA_加拿大
+  name: '0,3,4,7,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
   network: ws
   port: 8080
   server: yh1.freeh1.xyz
@@ -103,7 +103,35 @@ proxies:
     headers:
       Host: s1c.v2.v001sss.xyz
     path: /
-- name: 1|_CA_->_US_
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_FR__1
+  network: ws
+  port: 2082
+  server: 172.67.130.140
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_CA_->_US__1
+  network: ws
+  port: 8080
+  server: 23.227.39.45
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 52899235-7faa-4f6f-b463-972cd7cfce04
+  ws-opts:
+    headers:
+      host: widescreen-instruction-breakdown-postage.trycloudflare.com
+    path: 52899235-7faa-4f6f-b463-972cd7cfce04-vm
+- name: 1|_CA_->_US__2
   network: ws
   password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
   port: 443
@@ -114,34 +142,6 @@ proxies:
   udp: true
   ws-opts:
     path: /argox-tr
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_DE_
-  network: ws
-  port: 80
-  server: 104.21.69.44
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      host: a.prapt4.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_FR__1
-  network: ws
-  port: 2082
-  server: s1c.v2.v001sss.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: 1|_AE_->_GB_
@@ -158,10 +158,66 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 1|_CA_->_US__3
+  network: ws
+  port: 8080
+  server: 23.227.38.11
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e380bde6-f120-4b80-bdae-ea68b1b64504
+  ws-opts:
+    headers:
+      host: configured-creek-relating-theater.trycloudflare.com
+    path: e380bde6-f120-4b80-bdae-ea68b1b64504-vm
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_DE_
+  network: ws
+  port: 80
+  server: 104.21.69.44
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      host: a.prapt4.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_CA_->_US__4
+  network: ws
+  port: 8080
+  server: 23.227.39.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e380bde6-f120-4b80-bdae-ea68b1b64504
+  ws-opts:
+    headers:
+      host: configured-creek-relating-theater.trycloudflare.com
+    path: e380bde6-f120-4b80-bdae-ea68b1b64504-vm
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_CA_
+  network: ws
+  port: 8080
+  server: yh1.freeh1.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5818310a-92ee-40cd-8303-0dc1396aadda
+  ws-opts:
+    headers:
+      host: bibliographic-sword-sequence-advertisers.trycloudflare.com
+    path: 5818310a-92ee-40cd-8303-0dc1396aadda-vm
+- alterId: 0
+  cipher: auto
   name: 1|_US_->_FR__2
   network: ws
   port: 2082
-  server: 172.67.130.140
+  server: s1c.v2.v001sss.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -172,7 +228,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '7|🇺🇸_US_美国->🇨🇦_CA_加拿大 #1'
+  name: '7|🇺🇸_US_美国->🇨🇦_CA_加拿大 #3'
   network: ws
   port: 8080
   server: 104.16.149.244
