@@ -1,7 +1,7 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
+  name: '0,3,4,6,7,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #12'
   network: ws
   port: 8080
   server: yh1.freeh1.xyz
@@ -14,7 +14,7 @@ proxies:
     path: fbacc445-fe1c-4122-a2dd-c28c733ea043-vm
 - alterId: 0
   cipher: auto
-  name: '0,7,13|🇺🇸_US_美国->🇨🇦_CA_加拿大 #9'
+  name: '0,4,7,13|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
   network: ws
   port: 8080
   server: yh2.freeh1.xyz
@@ -27,7 +27,7 @@ proxies:
     path: bdce8656-2802-4470-8946-ef3cf5244aa6-vm
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
+  name: '0,3,4,6,7,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #11'
   network: ws
   port: 8080
   server: fbi.gov
@@ -40,7 +40,7 @@ proxies:
     path: 693da022-8e1f-4dab-b3ac-556321989f17-vm
 - alterId: 0
   cipher: auto
-  name: 0,7|🇨🇦_CA_加拿大->🇺🇸_US_美国
+  name: '0,4,7|🇨🇦_CA_加拿大->🇺🇸_US_美国 #2'
   network: ws
   port: 8080
   server: 23.227.38.23
@@ -93,7 +93,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,7,13|🇨🇦_CA_加拿大->🇺🇸_US_美国 #2'
+  name: '0,4,7,13|🇨🇦_CA_加拿大->🇺🇸_US_美国 #4'
   network: ws
   port: 8080
   server: 23.227.39.24
@@ -119,7 +119,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,7|🇺🇸_US_美国->🇩🇪_DE_德国 #7'
+  name: '0,4,7|🇺🇸_US_美国->🇩🇪_DE_德国 #7'
   network: ws
   port: 8080
   server: 172.67.169.158
@@ -129,101 +129,6 @@ proxies:
   ws-opts:
     headers:
       Host: fr-01.cloudlion.me
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1|_ES_->_HK_
-  network: ws
-  port: 34601
-  server: 185.214.103.156
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 75a68200-4d76-3eb6-b510-39b8e63b7823
-  ws-opts:
-    headers:
-      host: cache-hk-2.cn-db.top
-    path: /db00
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_FR__1
-  network: ws
-  port: 2082
-  server: 172.67.130.140
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1|_AE_->_GB_
-  network: ws
-  port: 8880
-  server: 94.140.0.110
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
-  ws-opts:
-    headers:
-      host: food.zhaal.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_DE__1
-  network: ws
-  port: 80
-  server: 104.21.69.44
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      host: a.prapt4.ir
-    path: /
-- name: 1|_CA_->_US_
-  network: ws
-  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
-  port: 443
-  server: 23.227.38.11
-  skip-cert-verify: true
-  sni: syndication-statutes-wanted-logo.trycloudflare.com
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /argox-tr
-- alterId: 0
-  cipher: chacha20-poly1305
-  name: 1|_US_->_IR_
-  network: ws
-  port: 80
-  server: you2.fastiran.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 9c9d54e5-b213-4e5d-a6fe-4cf40b2b2baf
-  ws-opts:
-    headers:
-      host: y2.fastiran.info
-    path: /R5ymmhAFAg5fXQOaPOZVq
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_FR__2
-  network: ws
-  port: 2082
-  server: s1c.v2.v001sss.xyz
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      host: s1c.v2.v001sss.xyz
     path: /
 - alterId: 0
   cipher: auto
@@ -241,21 +146,32 @@ proxies:
     path: fbacc445-fe1c-4122-a2dd-c28c733ea043-vm
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_DE__2
+  name: 1|_US_->_CA__2
   network: ws
   port: 8080
-  server: de-01.cloudlion.me
+  server: yh2.freeh1.xyz
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
+  uuid: bdce8656-2802-4470-8946-ef3cf5244aa6
   ws-opts:
     headers:
-      host: de-01.cloudlion.me
-    path: /
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: bdce8656-2802-4470-8946-ef3cf5244aa6-vm
+- name: 1|_CA_->_US__1
+  network: ws
+  password: b17fa17d-13a0-4e8a-a398-8e549ea8b208
+  port: 443
+  server: 23.227.38.11
+  skip-cert-verify: true
+  sni: syndication-statutes-wanted-logo.trycloudflare.com
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /argox-tr
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_CA__2
+  name: 1|_US_->_CA__3
   network: ws
   port: 8080
   server: fbi.gov
@@ -268,8 +184,106 @@ proxies:
       host: nest-emily-healing-h.trycloudflare.com
     path: 693da022-8e1f-4dab-b3ac-556321989f17-vm
 - alterId: 0
+  cipher: auto
+  name: 1|_CA_->_US__2
+  network: ws
+  port: 8080
+  server: 23.227.38.23
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 80b48bc6-1faa-41f5-91f8-0bce015a8bea
+  ws-opts:
+    headers:
+      host: uh-lawyers-instruments-kernel.trycloudflare.com
+    path: 80b48bc6-1faa-41f5-91f8-0bce015a8bea-vm
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_DE__1
+  network: ws
+  port: 80
+  server: 104.21.69.44
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      host: a.prapt4.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_AE_->_GB_
+  network: ws
+  port: 8880
+  server: 94.140.0.110
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      host: food.zhaal.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_FR__1
+  network: ws
+  port: 2082
+  server: 172.67.130.140
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_CA_->_US__3
+  network: ws
+  port: 8080
+  server: 23.227.39.24
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e62899a7-438c-40ef-96d6-259cb26d6fdd
+  ws-opts:
+    headers:
+      host: per-essex-patterns-bowling.trycloudflare.com
+    path: e62899a7-438c-40ef-96d6-259cb26d6fdd-vm
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_FR__2
+  network: ws
+  port: 2082
+  server: s1c.v2.v001sss.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_DE__2
+  network: ws
+  port: 8080
+  server: 172.67.169.158
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
+  ws-opts:
+    headers:
+      host: fr-01.cloudlion.me
+    path: /
+- alterId: 0
   cipher: chacha20-poly1305
-  name: '3,4,6,17|🇺🇸_US_美国->🇮🇷_IR_伊朗 #3'
+  name: '3,6,17|🇺🇸_US_美国->🇮🇷_IR_伊朗 #2'
   network: ws
   port: 80
   server: you2.fastiran.info
@@ -282,7 +296,7 @@ proxies:
     path: /R5ymmhAFAg5fXQOaPOZVq
 - alterId: 0
   cipher: auto
-  name: '3,4,6,17|🇪🇸_ES_西班牙->🇭🇰_HK_香港 #3'
+  name: '3,6,17|🇪🇸_ES_西班牙->🇭🇰_HK_香港 #2'
   network: ws
   port: 34601
   server: 185.214.103.156
@@ -295,7 +309,7 @@ proxies:
     path: /db00
 - alterId: 0
   cipher: auto
-  name: '3,4,6,17|🇺🇸_US_美国->🇩🇪_DE_德国 #9'
+  name: '3,6,17|🇺🇸_US_美国->🇩🇪_DE_德国 #9'
   network: ws
   port: 8080
   server: de-01.cloudlion.me
