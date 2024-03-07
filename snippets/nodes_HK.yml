@@ -41,27 +41,31 @@ proxies:
   server: 42.2.115.231
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   name: 15|🇹🇼 台湾|@ripaojiedian
   password: f7def183-ec24-4b77-86ee-7b8a2ba8e351
   port: 13989
   server: c11.twtc.dynu.net
   skip-cert-verify: false
   sni: c11.twtc.dynu.net
+  type: trojan
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 15,16|香港2|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: onea.flha.ru
+  servername: ''
+  skip-cert-verify: false
   tfo: false
   tls: false
-  type: trojan
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港2|@ripaojiedian
-  password: 41f96983-1ab9-4634-a916-98ef1b557cb4
-  port: 39210
-  server: lsgy.lanxingyun.cn
-  tfo: false
-  type: ss
+  type: vmess
+  uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港3|@ripaojiedian
@@ -77,18 +81,8 @@ proxies:
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇭🇰 香港4|@ripaojiedian
-  password: 48jteov83q2
-  port: 56005
-  server: ef30833c.t1v0e4l6w3-fb-hk05.6pzfwf.com
+  password: bbaa6c10-0800-4e27-871b-c63b1253d359
+  port: 44552
+  server: hk03.jjjjjj.icu
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 16|香港|@ripaojiedian
-  network: tcp
-  port: '44602'
-  server: 183.237.20.150
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
