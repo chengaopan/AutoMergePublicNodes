@@ -2,7 +2,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: '0,3,4,6,11,15,16,17|🇺🇸_US_美国 #19'
+  name: '0,3,4,6,15,16,17|🇺🇸_US_美国 #19'
   network: ws
   port: 8080
   server: 172.67.143.192
@@ -44,7 +44,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,17|🇺🇸_US_美国 #17'
+  name: '0,3,4,6,11,17|🇺🇸_US_美国 #17'
   network: ws
   port: 8080
   server: www.velvetmountain.shop
@@ -147,7 +147,7 @@ proxies:
   servername: us04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 445bee08-2ff5-4d28-9463-16d962524ca6
+  uuid: fa7e0db7-295e-4451-9a73-a8239316cb4e
 - alterId: 0
   cipher: auto
   name: 10|🇺🇸美国05
@@ -157,7 +157,7 @@ proxies:
   servername: us05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 445bee08-2ff5-4d28-9463-16d962524ca6
+  uuid: fa7e0db7-295e-4451-9a73-a8239316cb4e
 - alterId: 0
   cipher: auto
   name: 10|🇺🇸美国06
@@ -167,37 +167,81 @@ proxies:
   servername: us06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 445bee08-2ff5-4d28-9463-16d962524ca6
+  uuid: fa7e0db7-295e-4451-9a73-a8239316cb4e
 - alterId: 0
   cipher: auto
-  name: 11|美国 Fastly全球Anycast节点
+  name: 11,13|长期更新节点@mftizi
   network: ws
-  port: '80'
-  server: 151.101.3.10
+  port: '2052'
+  server: cfcdn1.sanfencdn9.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 041f0d5b-c647-4a8d-8e4e-fa7f3526a490
+  uuid: 5bfd0956-dfa6-4c63-a8a8-adbf6f9e8366
   ws-opts:
     headers:
-      Host: mihoyo.gov.kp
-    path: /aries?ed=2048
+      Host: tw1bQiWSE4x.fzbqfrse.xyz
+    path: /video/GQ2qE5Us9g
 - alterId: 0
   cipher: auto
-  name: '11|美国 CloudFlare节点 #1'
+  name: 11,12|github.com/freefq - 美国Fastly全球...
   network: ws
-  port: 2082
-  server: s1c.v2.v001sss.xyz
-  tls: false
+  port: 443
+  server: gov.uk
+  tls: true
   type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
   ws-opts:
     headers:
-      Host: s1c.v2.v001sss.xyz
+      Host: zheshiscp.com
+    path: /77848824
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,15,16|香港2|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: onea.flha.ru
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
     path: /
 - alterId: 0
   cipher: auto
-  name: '11|美国 CloudFlare节点 #2'
+  name: '11|美国 CloudFlare节点 #3'
+  network: ws
+  port: '8080'
+  server: 162.159.136.253
+  tls: false
+  type: vmess
+  uuid: ade73e62-7554-40a8-9314-195a372bae28
+  ws-opts:
+    headers:
+      Host: xentain.kmoljklj.top
+    path: /7bFcoRZS?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '11,12|github.com/freefq - 美国CloudFla... #1'
+  network: ws
+  port: 8880
+  server: server31.beheshtbaneh.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
+  ws-opts:
+    headers:
+      Host: server31.beheshtbaneh.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '11|美国 CloudFlare节点 #5'
   network: ws
   port: 2052
   server: 172.67.214.33
@@ -208,20 +252,6 @@ proxies:
   ws-opts:
     headers:
       Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11,12|github.com/freefq - 美国CloudFla... #3'
-  network: ws
-  port: 8880
-  server: server32.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
-  ws-opts:
-    headers:
-      Host: server32.beheshtbaneh.com
     path: /
 - alterId: 0
   cipher: auto
@@ -240,20 +270,20 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,15,16|美国2|@ripaojiedian
+  name: 11,15,16|新加坡3|@ripaojiedian
   network: ws
-  port: '80'
-  server: 104.21.69.44
+  port: '2052'
+  server: cfcdn2.sanfencdn9.com
   servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  uuid: 5bfd0956-dfa6-4c63-a8a8-adbf6f9e8366
   ws-opts:
     headers:
-      Host: a.prapt4.ir
-    path: /
+      Host: 7nAi74jJsg1.yofnhkfc.xyz
+    path: /video/c9efxRCi
 - alterId: 0
   cipher: auto
   name: 11,12|github.com/freefq - 美国CloudFla...
@@ -266,20 +296,6 @@ proxies:
   ws-opts:
     headers:
       Host: www.darkroom.lol
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '11,12|github.com/freefq - 美国CloudFla... #1'
-  network: ws
-  port: 8880
-  server: server31.beheshtbaneh.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4154143c-bbba-47a4-9f79-c2ed087cbcc9
-  ws-opts:
-    headers:
-      Host: server31.beheshtbaneh.com
     path: /
 - alterId: 0
   cipher: auto
@@ -297,17 +313,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 11,12|github.com/freefq - 美国Fastly全球...
+  name: '11,12|github.com/freefq - 美国CloudFla... #3'
   network: ws
-  port: 443
-  server: gov.uk
-  tls: true
+  port: 8880
+  server: server32.beheshtbaneh.com
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  uuid: 044ba8ed-7285-472a-bc14-fb91dc6be4c9
   ws-opts:
     headers:
-      Host: zheshiscp.com
-    path: /77848824
+      Host: server32.beheshtbaneh.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 13|US_youtube@资源分享师_61
@@ -527,7 +544,7 @@ proxies:
   servername: us04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 9e094e6c-a424-4270-b280-32a0d70f8f92
+  uuid: ba9f92f1-72ca-47ce-a1a3-095670f7010f
 - alterId: 0
   cipher: auto
   name: 14|【BGP】美国 05 | 1x US
@@ -537,7 +554,7 @@ proxies:
   servername: us05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 9e094e6c-a424-4270-b280-32a0d70f8f92
+  uuid: ba9f92f1-72ca-47ce-a1a3-095670f7010f
 - alterId: 0
   cipher: auto
   name: 14|【BGP】美国 06 | 1x US
@@ -547,4 +564,21 @@ proxies:
   servername: us06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 9e094e6c-a424-4270-b280-32a0d70f8f92
+  uuid: ba9f92f1-72ca-47ce-a1a3-095670f7010f
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 15,16|美国2|@ripaojiedian
+  network: ws
+  port: '80'
+  server: 104.21.69.44
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /
