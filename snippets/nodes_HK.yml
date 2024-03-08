@@ -1,14 +1,11 @@
 proxies:
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 13,15|🇭🇰 香港2|@ripaojiedian
+  name: 13|香港 001
   network: ws
   port: 4431
   server: 152.32.190.239
   servername: cfhk.393930.xyz
-  skip-cert-verify: false
-  tfo: false
   tls: true
   type: vmess
   uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
@@ -48,14 +45,23 @@ proxies:
   server: 42.2.115.231
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 15|🇭🇰 香港|@ripaojiedian
-  password: da0d870c-6545-4866-8591-3cdebf00f546
-  port: 443
-  server: sst.onlineweb.work
+- alterId: 0
+  cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 15,16|香港|@ripaojiedian
+  network: ws
+  port: '48316'
+  server: wtt1.hkg.hypernat.com
+  servername: ''
   skip-cert-verify: false
-  sni: sst.onlineweb.work
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: a44863f7-e332-4b0f-99e5-148564712c24
+  ws-opts:
+    headers:
+      Host: wtt1.hkg.hypernat.com
+    path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港3|@ripaojiedian
@@ -74,13 +80,5 @@ proxies:
   password: 949f7542-7240-43ba-a3cc-dcf7c7b2e6b7
   port: 44552
   server: hk03.jjjjjj.icu
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港5|@ripaojiedian
-  password: d1d6ea15-0223-4a39-9091-7fbf3fd462f9
-  port: 12372
-  server: 4cc3.e2s.buzz
   tfo: false
   type: ss
