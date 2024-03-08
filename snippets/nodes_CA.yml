@@ -1,19 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: '0,3,4,6,7,26|🇨🇦_CA_加拿大 #4'
-  network: ws
-  port: 8080
-  server: 23.227.38.22
-  tls: false
-  type: vmess
-  uuid: e9d23b60-6e44-45a2-b24f-c8521c04c310
-  ws-opts:
-    headers:
-      Host: per-essex-patterns-bowling.trycloudflare.com
-    path: e9d23b60-6e44-45a2-b24f-c8521c04c310-vm
-- alterId: 0
-  cipher: auto
   name: 1|_CA_
   network: ws
   port: 8080
@@ -28,6 +15,19 @@ proxies:
     path: e9d23b60-6e44-45a2-b24f-c8521c04c310-vm
 - alterId: 0
   cipher: auto
+  name: '4,6,26|🇨🇦_CA_加拿大 #2'
+  network: ws
+  port: 8080
+  server: 23.227.38.22
+  tls: false
+  type: vmess
+  uuid: e9d23b60-6e44-45a2-b24f-c8521c04c310
+  ws-opts:
+    headers:
+      Host: per-essex-patterns-bowling.trycloudflare.com
+    path: e9d23b60-6e44-45a2-b24f-c8521c04c310-vm
+- alterId: 0
+  cipher: auto
   name: 13|🇨🇦加拿大04
   network: tcp
   port: '36701'
@@ -35,14 +35,15 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 232c9bef-ed5d-41da-b174-40864a26a343
+  uuid: a0ca5ca1-7647-42b9-b045-13ecb2159102
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 001
+  name: 15,21|🇨🇦 加拿大 001
   network: ws
-  port: 2082
+  port: '2082'
   server: 104.18.202.250
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
@@ -63,17 +64,29 @@ proxies:
     path: /jsjc/nl1
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 004
+  name: 15|加拿大 004
   network: ws
-  port: '8080'
+  port: 8080
   server: www.ywnouvbale.biz
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
   ws-opts:
     headers:
       Host: www.ywnouvbale.biz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 006
+  network: ws
+  port: 8080
+  server: 104.21.54.252
+  skip-cert-verify: true
+  type: vmess
+  uuid: 22826b44-5c1a-4b4b-dbaa-83a2e8bd95f0
+  ws-opts:
+    headers:
+      Host: www.velvetmountain.shop
     path: /
 - alterId: 0
   cipher: auto
@@ -90,6 +103,21 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
+  name: 15,24|香港2|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: onea.flha.ru
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
   name: 15|加拿大 010
   network: ws
   port: 2052
@@ -103,10 +131,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 011
+  name: '15,21|加拿大 011 #1'
   network: ws
   port: 443
   server: 104.20.39.186
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -224,7 +253,7 @@ proxies:
     path: /path/153428133302
 - alterId: 0
   cipher: auto
-  name: 15,21|🏧3@oneclickvpnkeys
+  name: '15,21|@Hope_Net-join-us-on-Telegram #1'
   network: ws
   port: '443'
   server: 104.24.0.11
@@ -280,6 +309,20 @@ proxies:
     path: /sakura/
 - alterId: 0
   cipher: auto
+  name: 21|🔒 VM-WS-NA 🇨🇦 CA-23.26.239.147...
+  network: ws
+  port: '46768'
+  server: 23.26.239.147
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1362cc37-0917-4e40-dce4-c689609d9e82
+  ws-opts:
+    headers:
+      Host: 23.26.239.147
+    path: /
+- alterId: 0
+  cipher: auto
   name: 22|【BGP】加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -287,7 +330,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 883e6584-272e-464c-b8ce-0bd7988bbff2
+  uuid: 09f86d07-6a64-4cf4-8b35-0342cd817079
 - alterId: 0
   cipher: auto
   name: 25|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -297,4 +340,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 4c54a684-30fd-35a0-8747-48402641ab4e
+  uuid: 7a1203bf-0c4c-303b-9a72-5e9e2f994c73
