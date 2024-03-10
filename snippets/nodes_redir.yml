@@ -1,9 +1,9 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸 _US_美国->🇩🇪_DE_德国
+  name: '0,3,4,17|🇺🇸_US_美国->🇩🇪_DE_德国 #5'
   network: ws
-  port: '8080'
+  port: 8080
   server: 172.67.169.158
   tls: false
   type: vmess
@@ -27,9 +27,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸 _US_美国->🇫🇷_FR_法国
+  name: '0,3,4,7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
   network: ws
-  port: '2082'
+  port: 2082
   server: 172.67.130.140
   tls: false
   type: vmess
@@ -40,9 +40,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '0,11|美国 CloudFlare节点 #11'
+  name: '0,3,4,7,11,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #3'
   network: ws
-  port: '8080'
+  port: 8080
   server: yh2.freeh1.xyz
   servername: ''
   tls: false
@@ -54,9 +54,9 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '0|🇺🇸 _US_美国->🇩🇪_DE_德国 #1'
+  name: '0,3,4,7,17|🇺🇸_US_美国->🇩🇪_DE_德国 #6'
   network: ws
-  port: '8080'
+  port: 8080
   server: de-01.cloudlion.me
   tls: false
   type: vmess
@@ -64,6 +64,20 @@ proxies:
   ws-opts:
     headers:
       Host: de-01.cloudlion.me
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_DE__1
+  network: ws
+  port: 8080
+  server: 172.67.169.158
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
+  ws-opts:
+    headers:
+      host: fr-01.cloudlion.me
     path: /
 - alterId: 0
   cipher: auto
@@ -81,18 +95,32 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_IN__1
+  name: 1|_US_->_FR_
   network: ws
-  port: 8080
-  server: www.visa.co.jp
+  port: 2082
+  server: 172.67.130.140
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: e184e964-518c-4ddf-ab05-f0a2ecff2f42
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
-      host: ydmmamd1.mac2win.top
+      host: s1c.v2.v001sss.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_CA_
+  network: ws
+  port: 8080
+  server: yh2.freeh1.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96
+  ws-opts:
+    headers:
+      host: pcs-referenced-camera-concerns.trycloudflare.com
+    path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - grpc-opts:
     grpc-service-name: lK1wclmJRbMxj4FxIzvwxUDoX
   name: 1|_US_->_RU_
@@ -100,7 +128,7 @@ proxies:
   password: 7b06d62b-25ed-45ed-ac0d-bc28a4779ef9
   port: 2096
   server: 172.67.132.6
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: channel.v2bamdad.tech
   tls: true
   type: trojan
@@ -118,62 +146,21 @@ proxies:
     path: /argox-tr
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_IT_
+  name: 1|_US_->_DE__2
   network: ws
-  port: 2052
-  server: frcc.digicert.pp.ua
+  port: 8080
+  server: de-01.cloudlion.me
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 5cc3a871-6eeb-4b87-b4e4-4f2611eb5441
+  uuid: 70666776-4e9f-4350-b3f0-afaff6a70db0
   ws-opts:
     headers:
-      host: asdfas.qkhbyf.tech
-    path: /apopsdsssaop
-- alterId: 0
-  cipher: auto
-  name: 1|_US_->_IN__2
-  network: ws
-  port: 80
-  server: www.visa.com.hk
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e184e964-518c-4ddf-ab05-f0a2ecff2f42
-  ws-opts:
-    headers:
-      host: ydmmamd2.mac2win.top
+      host: de-01.cloudlion.me
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_AE_
-  network: ws
-  port: 2052
-  server: asdad.cxzntq.tech
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 5cc3a871-6eeb-4b87-b4e4-4f2611eb5441
-  ws-opts:
-    headers:
-      host: dibanqd.cxzntq.tech
-    path: /apopop
-- alterId: 0
-  cipher: auto
-  name: '3,4,6,7,17|🇺🇸_US_美国->🇮🇹_IT_意大利 #4'
-  network: ws
-  port: 2052
-  server: frcc.digicert.pp.ua
-  tls: false
-  type: vmess
-  uuid: 5cc3a871-6eeb-4b87-b4e4-4f2611eb5441
-  ws-opts:
-    headers:
-      Host: asdfas.qkhbyf.tech
-    path: /apopsdsssaop
-- alterId: 0
-  cipher: auto
-  name: '3,4,6,7,17|🇺🇸_US_美国->🇮🇳_IN_印度 #8'
+  name: 6|🇺🇸_US_美国->🇮🇳_IN_印度
   network: ws
   port: 8080
   server: www.visa.co.jp
@@ -186,20 +173,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3,4,6,17|🇺🇸_US_美国->🇦🇪_AE_阿联酋 #3'
+  name: 6|🇺🇸_US_美国->🇮🇹_IT_意大利
   network: ws
   port: 2052
-  server: asdad.cxzntq.tech
+  server: frcc.digicert.pp.ua
   tls: false
   type: vmess
   uuid: 5cc3a871-6eeb-4b87-b4e4-4f2611eb5441
   ws-opts:
     headers:
-      Host: dibanqd.cxzntq.tech
-    path: /apopop
+      Host: asdfas.qkhbyf.tech
+    path: /apopsdsssaop
 - alterId: 0
   cipher: auto
-  name: '3,4,6,7,17|🇺🇸_US_美国->🇮🇳_IN_印度 #9'
+  name: '6|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
   network: ws
   port: 80
   server: www.visa.com.hk
@@ -210,3 +197,16 @@ proxies:
     headers:
       Host: ydmmamd2.mac2win.top
     path: /
+- alterId: 0
+  cipher: auto
+  name: 6|🇺🇸_US_美国->🇦🇪_AE_阿联酋
+  network: ws
+  port: 2052
+  server: asdad.cxzntq.tech
+  tls: false
+  type: vmess
+  uuid: 5cc3a871-6eeb-4b87-b4e4-4f2611eb5441
+  ws-opts:
+    headers:
+      Host: dibanqd.cxzntq.tech
+    path: /apopop
