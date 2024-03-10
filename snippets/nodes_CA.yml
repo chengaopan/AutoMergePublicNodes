@@ -8,7 +8,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: a180ffc9-6146-4f26-8cb3-4df925bf063f
+  uuid: f7c7dc2a-bbc6-491f-aff3-e1e90f694342
 - alterId: 0
   cipher: auto
   name: 15|加拿大 001
@@ -62,10 +62,23 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 009 #1'
+  name: 15|加拿大 009
   network: ws
   port: 2052
   server: onea.flha.ru
+  skip-cert-verify: true
+  type: vmess
+  uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
+  ws-opts:
+    headers:
+      Host: onea.flha.ru
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 15,21|♿41@oneclickvpnkeys
+  network: ws
+  port: '2052'
+  server: 172.67.214.33
   servername: ''
   skip-cert-verify: true
   tls: false
@@ -77,24 +90,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 010
-  network: ws
-  port: 2052
-  server: 172.67.214.33
-  skip-cert-verify: true
-  type: vmess
-  uuid: 89d8ef31-ade9-4aca-8fbc-1edbba6cda16
-  ws-opts:
-    headers:
-      Host: onea.flha.ru
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '15,21|加拿大 011 #1'
+  name: 15|加拿大 011
   network: ws
   port: 443
   server: 104.20.39.186
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -146,9 +145,9 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: '15,21|美国 CloudFlare节点 #55'
+  name: '15,21|加拿大 015 #1'
   network: ws
-  port: '2052'
+  port: 2052
   server: 104.21.23.231
   servername: ''
   skip-cert-verify: true
@@ -243,11 +242,10 @@ proxies:
     path: f8c92b3b
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 022 #1'
+  name: 15|加拿大 022
   network: ws
   port: 443
   server: 104.21.25.94
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -426,11 +424,10 @@ proxies:
     path: /video/u4eCZTxW
 - alterId: 0
   cipher: auto
-  name: 15,21|@Hope_Net-join-us-on-Telegram
+  name: 15|加拿大 036
   network: ws
-  port: '2087'
+  port: 2087
   server: rw.b4a-devs.org
-  servername: rw.b4a-devs.org
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -441,11 +438,10 @@ proxies:
     path: /fws
 - alterId: 0
   cipher: auto
-  name: 15,21|美国【TG：@ccbaohe】定时更新节点订阅 10
+  name: 15,21|🇨🇦 加拿大 037
   network: ws
-  port: 2052
+  port: '2052'
   server: 162.159.11.32
-  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -456,11 +452,10 @@ proxies:
     path: /video/6VBhAkCtV4/
 - alterId: 0
   cipher: auto
-  name: 15,21|🔒 VM-WS-TLS 🇺🇸 US-172.67.171.1...
+  name: 15|加拿大 038
   network: ws
-  port: '2087'
+  port: 2087
   server: 172.67.171.175
-  servername: rw.b4a-devs.org
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -471,9 +466,9 @@ proxies:
     path: /fws
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 039
+  name: 15,21|🇨🇦 加拿大 039
   network: ws
-  port: 2096
+  port: '2096'
   server: zula.ir
   skip-cert-verify: true
   tls: true
@@ -483,6 +478,34 @@ proxies:
     headers:
       Host: nl1-vmess.sshmax.xyz
     path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '21|Channel id: @ShadowProxy66 🇨🇦'
+  network: ws
+  port: '443'
+  server: 104.21.33.32
+  servername: nelly.homes
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: nelly.homes
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '21|Channel id: @ShadowProxy66 🇨🇦 #1'
+  network: ws
+  port: '443'
+  server: 104.21.75.246
+  servername: cf.tonyluk.link
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: cf.tonyluk.link
+    path: /ophelia.mom:443/linkvws
 - alterId: 0
   cipher: auto
   name: 21|🔒 VM-WS-NA 🇨🇦 CA-23.26.239.147...
@@ -499,32 +522,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 21|加拿大【TG：@ccbaohe】定时更新节点订阅
-  network: ws
-  port: '8080'
-  server: 23.227.38.22
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
-  ws-opts:
-    headers:
-      Host: per-essex-patterns-bowling.trycloudflare.com
-    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
-- alterId: 0
-  cipher: auto
-  name: '21|Channel id: @ShadowProxy66 🇨🇦'
+  name: '21|Channel id: @ShadowProxy66 🇨🇦 #2'
   network: ws
   port: '443'
-  server: 104.21.75.246
-  servername: cf.tonyluk.link
+  server: 104.21.58.68
+  servername: maggiy.shop
   tls: true
   type: vmess
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: cf.tonyluk.link
-    path: /ophelia.mom:443/linkvws
+      Host: maggiy.shop
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 22|【BGP】加拿大 02 | 1x CA
@@ -534,7 +543,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 0b463766-3f9c-46e5-b83e-b37e70fe9819
+  uuid: 7360d1ff-648c-4394-9fa5-65a6df5995ea
 - alterId: 0
   cipher: auto
   name: 25|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -544,4 +553,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: cb0cfcc3-efaf-3232-996f-de223703c6a6
+  uuid: b22e392d-0013-321c-b258-da0de4bc0a64
