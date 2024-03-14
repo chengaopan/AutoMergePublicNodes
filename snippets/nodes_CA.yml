@@ -8,7 +8,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '0,1,3,4,6,7,15,26|🇨🇦_CA_加拿大 #4'
+  name: '0,1,3,4,6,7,15,26|🇨🇦_CA_加拿大 #5'
   network: http
   port: 3389
   server: 134.122.41.160
@@ -19,6 +19,19 @@ proxies:
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
 - alterId: 0
   cipher: auto
+  name: '3|🇨🇦_CA_加拿大 #1'
+  network: ws
+  port: 8080
+  server: 23.227.39.24
+  tls: false
+  type: vmess
+  uuid: 9258153a-dc97-4e39-9037-009abfc4fed0
+  ws-opts:
+    headers:
+      Host: per-essex-patterns-bowling.trycloudflare.com
+    path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
+- alterId: 0
+  cipher: auto
   name: 13|🇨🇦加拿大04
   network: tcp
   port: '36701'
@@ -26,7 +39,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: e593bf4c-b7da-4427-9078-92b8ed1098a0
+  uuid: f5647973-82a2-482e-804e-0c959f7a05c6
 - alterId: 0
   cipher: auto
   name: 15|加拿大 001
@@ -133,10 +146,25 @@ proxies:
     path: /masvod/public/2023/08/25/20230825_18a2b496fcf_r1_1200k.mp4
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 015
+  name: '15,21|加拿大 014 #1'
+  network: ws
+  port: 443
+  server: zula.ir
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 36ae64b0-2fe1-4915-a50e-9108fcf6d84c
+  ws-opts:
+    headers:
+      Host: be3-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: '15,21|加拿大 015 #1'
   network: ws
   port: 2087
   server: 104.21.7.162
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -147,11 +175,10 @@ proxies:
     path: /fws
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 016 #1'
+  name: 15|加拿大 016
   network: ws
   port: 2083
   server: 104.21.10.205
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -162,11 +189,13 @@ proxies:
     path: /twos
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 017
+  name: '15,21|加拿大 017 #1'
   network: ws
   port: 2086
   server: 172.67.229.38
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 58fe1542-5290-40ad-815a-77707a81afe5
   ws-opts:
@@ -175,11 +204,10 @@ proxies:
     path: /IOebhLMhl1CTbFHbL95myfRX2
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 018 #1'
+  name: 15|加拿大 018
   network: ws
   port: 443
   server: 104.21.21.35
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -189,45 +217,6 @@ proxies:
     headers:
       Host: hu2.xv2ray.net
     path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 15|加拿大 020
-  network: ws
-  port: 80
-  server: 2.namesilo123.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4d68da82-e8d0-4eaa-aec9-0df4a23e1a04
-  ws-opts:
-    headers:
-      Host: freezhang.sanfen002.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 15|加拿大 021
-  network: ws
-  port: 8880
-  server: 27.namesilo123.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4d68da82-e8d0-4eaa-aec9-0df4a23e1a04
-  ws-opts:
-    headers:
-      Host: freezhang.sanfen002.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 15|加拿大 022
-  network: ws
-  port: 2082
-  server: 15.namesilo123.top
-  skip-cert-verify: true
-  type: vmess
-  uuid: 4d68da82-e8d0-4eaa-aec9-0df4a23e1a04
-  ws-opts:
-    headers:
-      Host: freezhang.sanfen002.top
-    path: /?ed=2048
 - alterId: 0
   cipher: auto
   name: 15|加拿大 023
@@ -256,24 +245,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 025
+  name: '15,21|加拿大 025 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.221.207
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 026
-  network: ws
-  port: '80'
-  server: 104.21.221.252
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -298,10 +274,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 028
+  name: '15,21|加拿大 028 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.221.235
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -312,7 +289,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 029
+  name: '15,21|美国 CloudFlare节点 #54'
   network: ws
   port: '80'
   server: 104.21.221.247
@@ -326,11 +303,13 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 030
+  name: '15,21|加拿大 030 #1'
   network: ws
   port: 80
   server: 104.21.221.244
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -339,10 +318,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 031
+  name: '15,21|加拿大 031 #1'
   network: ws
   port: 2087
   server: backend.app-browser.org
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -353,10 +333,11 @@ proxies:
     path: /fws
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 032
+  name: '15,21|加拿大 032 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.221.200
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -367,38 +348,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 033
+  name: '15,21|加拿大 035 #1'
   network: ws
-  port: '80'
-  server: 104.21.221.16
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 034
-  network: ws
-  port: '80'
-  server: 104.21.221.7
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 035
-  network: ws
-  port: '80'
+  port: 80
   server: 104.21.221.133
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -409,12 +363,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 036
+  name: 15|加拿大 036
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.221.189
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -423,23 +376,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 037
+  name: '15,21|加拿大 037 #1'
   network: ws
   port: 80
   server: 104.21.221.219
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 038
-  network: ws
-  port: '80'
-  server: 104.21.221.169
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -450,12 +391,26 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 039
+  name: '15,21|加拿大 038 #1'
   network: ws
-  port: '80'
+  port: 80
+  server: 104.21.221.169
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 039
+  network: ws
+  port: 80
   server: 104.21.221.137
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -464,9 +419,9 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 040
+  name: 15,21|🇨🇦 加拿大 040
   network: ws
-  port: 2087
+  port: '2087'
   server: 172.67.136.244
   skip-cert-verify: true
   tls: true
@@ -478,12 +433,11 @@ proxies:
     path: /fws
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 041
+  name: 15|加拿大 041
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.221.95
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -492,25 +446,13 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 042
-  network: ws
-  port: '80'
-  server: 104.21.221.135
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 15|加拿大 043
+  name: '15,21|加拿大 043 #1'
   network: ws
   port: 80
   server: 104.21.221.197
+  servername: ''
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -519,10 +461,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 044
+  name: '15,21|加拿大 044 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.221.185
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -561,29 +504,13 @@ proxies:
     path: /path/153428133302
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 047
+  name: 15|加拿大 048
   network: ws
-  port: 2082
-  server: 172.67.177.106
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4d68da82-e8d0-4eaa-aec9-0df4a23e1a04
-  ws-opts:
-    headers:
-      Host: freezhang.sanfen002.top
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 15,21|加拿大 01 高速（0.1倍流量消耗）
-  network: ws
-  port: '2052'
+  port: 2052
   server: cdncdncdncdn.784654.xyz
   skip-cert-verify: true
-  tls: false
   type: vmess
-  uuid: 3ae2c704-c1ae-40e9-9877-5cab983816d9
+  uuid: 7e2360be-da12-469a-b403-c0a376b2965e
   ws-opts:
     headers:
       Host: ca-cfcdn.aikunapp.com
@@ -630,10 +557,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '15,21|🇺🇸 美国 CloudFlare节点 #5'
+  name: '15,21|加拿大 052 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.221.203
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -657,17 +585,60 @@ proxies:
     path: /video/GQ2qE5Us9g
 - alterId: 0
   cipher: auto
-  name: 21|🇨🇦 加拿大 053
+  name: '21|Channel id: @ShadowProxy66 🇨🇦'
   network: ws
   port: '443'
-  server: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
+  server: 104.26.8.202
+  servername: vip2323.cfd
   tls: true
   type: vmess
-  uuid: 5f726fe3-d82e-4da5-a711-8af0cbb2b682
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
   ws-opts:
     headers:
-      Host: 1a2d514b-37cf-499f-8d08-d017a92ab5bb.asoul-ava.top
-    path: /azumase.ren
+      Host: vip2323.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '21|Channel id: @ShadowProxy66 🇨🇦 #1'
+  network: ws
+  port: '443'
+  server: 172.67.71.160
+  servername: obdii.cfd
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: '21|Channel id: @ShadowProxy66 🇨🇦 #2'
+  network: ws
+  port: '443'
+  server: 172.67.68.246
+  servername: vip2323.cfd
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: vip2323.cfd
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '21|Channel id: @ShadowProxy66 🇨🇦 #3'
+  network: ws
+  port: '443'
+  server: 104.21.15.212
+  servername: glweidf.sbs
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /linkws
 - alterId: 0
   cipher: auto
   name: 22|【BGP】加拿大 02 | 1x CA
@@ -677,7 +648,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: eece8f6e-ce94-4b30-8033-72374d765a6a
+  uuid: 0e18759e-9d12-47da-95b6-fe1628bc1043
 - alterId: 0
   cipher: auto
   name: 25|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -687,4 +658,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 8243a9ff-fe3c-3f2b-92ee-ece69a15a5a0
+  uuid: 9bdc8f71-bd27-3522-b700-fefcbbaef9c5
