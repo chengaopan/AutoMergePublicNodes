@@ -8,7 +8,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c885e689-7402-48b4-8f59-df2b7a7ad72f
+  uuid: 20884f91-7761-4495-946c-0b685441221f
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本05
@@ -18,7 +18,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c885e689-7402-48b4-8f59-df2b7a7ad72f
+  uuid: 20884f91-7761-4495-946c-0b685441221f
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本06
@@ -28,43 +28,17 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: c885e689-7402-48b4-8f59-df2b7a7ad72f
+  uuid: 20884f91-7761-4495-946c-0b685441221f
 - alterId: 0
   cipher: auto
-  name: 13|🇯🇵日本高速接入点-04
-  network: ws
-  port: '80'
-  server: cfcdn3.sanfencdn9.com
-  tls: false
-  type: vmess
-  uuid: cd0a88d8-989b-4500-adb1-94889d6862c2
-  ws-opts:
-    headers:
-      Host: agzbjszujp4.yofnhkfc.xyz
-    path: /video/ibCT6z55
-- alterId: 0
-  cipher: auto
-  name: 13|%F0%9F%87%AF%F0%9F%87%B5%20Jap...
-  network: ws
-  port: '443'
-  server: jp-full.privateip.net
-  tls: true
-  type: vmess
-  uuid: 4ecba9e5-8b95-45c5-841e-72be05566d57
-  ws-opts:
-    headers:
-      Host: ''
-    path: /RACEVPN
-- alterId: 64
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇯🇵 JP-138.2.44.211...
+  name: 13|🔒 VM-TCP-NA 🇯🇵 JP-167.179.111....
   network: tcp
-  port: '20081'
-  server: 138.2.44.211
+  port: '14935'
+  server: 167.179.111.237
   servername: ''
   tls: false
   type: vmess
-  uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 04  | 1x JP
@@ -74,7 +48,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 55bdc8eb-2e60-47d4-95ed-1bf2c43108b8
+  uuid: 5f8fa9a3-4fab-4814-bc29-8711b8347976
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 05  | 1x JP
@@ -84,7 +58,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 55bdc8eb-2e60-47d4-95ed-1bf2c43108b8
+  uuid: 5f8fa9a3-4fab-4814-bc29-8711b8347976
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 06  | 1x JP
@@ -94,7 +68,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 55bdc8eb-2e60-47d4-95ed-1bf2c43108b8
+  uuid: 5f8fa9a3-4fab-4814-bc29-8711b8347976
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇯🇵 日本|@ripaojiedian
@@ -120,20 +94,23 @@ proxies:
     headers:
       Host: data-jp-v1.usabooks.com.cn
     path: /debian
-- cipher: chacha20-ietf-poly1305
+- cipher: chacha20-ietf
   client-fingerprint: chrome
   name: 15|🇯🇵 日本3|@ripaojiedian
-  password: 6f932057-ffd9-4426-8ca7-f0654babf84f
-  port: 50004
-  server: ddns.olucloud.subapi.cc
-  tfo: false
-  type: ss
+  obfs: tls1.2_ticket_auth
+  obfs-param: b91a022997.microsoft.com
+  password: Fhbe0z
+  port: 11424
+  protocol: auth_aes128_sha1
+  protocol-param: 22997:JeHHT2
+  server: vip3.niuniupremium.xyz
+  type: ssr
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇯🇵 日本4|@ripaojiedian
-  password: 6f932057-ffd9-4426-8ca7-f0654babf84f
-  port: 20007
-  server: ddns.olucloud.subapi.cc
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20014
+  server: jp2.mhw7e2.online
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -141,6 +118,6 @@ proxies:
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.142.56.221
+  server: 43.206.237.42
   tfo: false
   type: ss

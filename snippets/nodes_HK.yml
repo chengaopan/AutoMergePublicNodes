@@ -1,14 +1,4 @@
 proxies:
-- alterId: 2
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇭🇰 HK-62.216.92.70...
-  network: tcp
-  port: '1001'
-  server: 62.216.92.70
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 0927b72f-8f1c-38f7-8a86-cb977dba6b83
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港KT|@ripaojiedian
@@ -44,52 +34,61 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 15|🇮🇳 印度|@ripaojiedian
-  password: eb076ad6-9ba8-41b1-804e-66cf27fa6091
-  port: 3389
-  server: 139.59.24.215
+  name: 15,16|香港|@ripaojiedian
+  network: ws
+  port: '21033'
+  server: hk.lianjianode.cc
+  servername: ''
   skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
   tfo: false
   tls: false
   type: vmess
-  uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- cipher: chacha20-ietf
+  uuid: 5f4548f9-e342-460c-8eb4-0ca81d24d41c
+  ws-opts:
+    headers:
+      Host: hk1.luodi.xyz
+    path: /hongkong
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 15|🇭🇰 香港2|@ripaojiedian
-  obfs: tls1.2_ticket_auth
-  obfs-param: b91a022997.microsoft.com
-  password: Fhbe0z
-  port: 11802
-  protocol: auth_aes128_sha1
-  protocol-param: 22997:JeHHT2
-  server: vip.basicnode.host
-  type: ssr
+  name: 15,16|香港2|@ripaojiedian
+  network: ws
+  port: '443'
+  server: hkcft01.xqc.best
+  servername: drplky41bs67j.cloudfront.net
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: d52ac80d-4bf9-4505-b67a-e0b781b3b2bb
+  ws-opts:
+    headers:
+      Host: drplky41bs67j.cloudfront.net
+    path: /stream
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港3|@ripaojiedian
+  password: 6f932057-ffd9-4426-8ca7-f0654babf84f
+  port: 20001
+  server: ddns.olucloud.subapi.cc
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇭🇰 香港4|@ripaojiedian
-  password: 66f9f4e5-a88d-40b2-a1ae-6b750b71a8bb
-  port: 43217
-  server: hk05.jjjjjj.icu
+  password: 70747514-fb14-4f31-8390-e1f0453eff6d
+  port: 20001
+  server: hk1.mhw7e2.online
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 16|香港|@ripaojiedian
-  network: tcp
-  port: '44827'
-  server: hkjcdn03.dorabbb.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 40c58958-2432-4f60-9b5d-746f9cded85f
-- alterId: 64
-  cipher: auto
-  name: 16|香港3|@ripaojiedian
-  network: tcp
-  port: '54882'
-  server: 120.238.122.199
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港5|@ripaojiedian
+  obfs: tls1.2_ticket_auth
+  obfs-param: b91a022997.microsoft.com
+  password: Fhbe0z
+  port: 11421
+  protocol: auth_aes128_sha1
+  protocol-param: 22997:JeHHT2
+  server: vip3.niuniupremium.xyz
+  type: ssr
