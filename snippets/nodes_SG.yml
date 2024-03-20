@@ -31,6 +31,19 @@ proxies:
   uuid: 484e2e0f-acea-4505-850c-dffc8c8d4bcf
 - alterId: 0
   cipher: auto
+  name: 21|%F0%9F%87%B8%F0%9F%87%AC%20Sin...
+  network: ws
+  port: '443'
+  server: sg2-full.privateip.net
+  tls: true
+  type: vmess
+  uuid: 39e3412a-ba27-4bb2-b7a4-a247403dfb57
+  ws-opts:
+    headers:
+      Host: ''
+    path: /RACEVPN
+- alterId: 0
+  cipher: auto
   name: 22|【BGP】新加坡 04 | 1x SG
   network: tcp
   port: '31201'
@@ -67,17 +80,6 @@ proxies:
   server: ddns.olucloud.subapi.cc
   tfo: false
   type: ss
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 23|🇸🇬 新加坡1|@ripaojiedian
-  obfs: tls1.2_ticket_auth
-  obfs-param: 5db9910182.microsoft.com
-  password: Fhbe0z
-  port: 11806
-  protocol: auth_aes128_sha1
-  protocol-param: 10182:Ed7u0G
-  server: vip.basicnode.host
-  type: ssr
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 23|🇸🇬 新加坡2|@ripaojiedian
@@ -86,12 +88,23 @@ proxies:
   server: ddns.olucloud.subapi.cc
   tfo: false
   type: ss
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 23|🇸🇬 新加坡3|@ripaojiedian
+  obfs: tls1.2_ticket_auth
+  obfs-param: 5db9910182.microsoft.com
+  password: Fhbe0z
+  port: 11807
+  protocol: auth_aes128_sha1
+  protocol-param: 10182:Ed7u0G
+  server: vip.basicnode.host
+  type: ssr
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 23|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.12.160.73
+  server: 54.169.114.152
   tfo: false
   type: ss
 - alterId: 0
@@ -103,7 +116,7 @@ proxies:
   servername: sg01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f15cfe32-19d4-3403-a3d0-04ab26e685f8
+  uuid: 85329190-3aeb-37f8-87e5-c8cd75bb2168
 - alterId: 0
   cipher: auto
   name: 25|🇸🇬新加坡 | 102 | 流媒体优化 | 1x
@@ -113,7 +126,7 @@ proxies:
   servername: sg02.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f15cfe32-19d4-3403-a3d0-04ab26e685f8
+  uuid: 85329190-3aeb-37f8-87e5-c8cd75bb2168
 - alterId: 0
   cipher: auto
   name: 25|🇸🇬新加坡 | 103 | 负载优化 | 1x
@@ -123,7 +136,7 @@ proxies:
   servername: sg03.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f15cfe32-19d4-3403-a3d0-04ab26e685f8
+  uuid: 85329190-3aeb-37f8-87e5-c8cd75bb2168
 - alterId: 0
   cipher: auto
   name: 25|🇸🇬新加坡[国外直连]
@@ -133,4 +146,4 @@ proxies:
   servername: sg01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f15cfe32-19d4-3403-a3d0-04ab26e685f8
+  uuid: 85329190-3aeb-37f8-87e5-c8cd75bb2168
