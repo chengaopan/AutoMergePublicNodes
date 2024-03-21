@@ -45,6 +45,17 @@ proxies:
   server: 8.218.196.35
   tfo: false
   type: ss
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港|@ripaojiedian
+  obfs: tls1.2_ticket_auth
+  obfs-param: 5db9910182.microsoft.com
+  password: Fhbe0z
+  port: 11810
+  protocol: auth_aes128_sha1
+  protocol-param: 10182:Ed7u0G
+  server: vip.basicnode.host
+  type: ssr
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -56,32 +67,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 9c050a86-d612-48f1-ec32-e573df08a1b7
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港3|@ripaojiedian
-  obfs: tls1.2_ticket_auth
-  obfs-param: 5db9910182.microsoft.com
-  password: Fhbe0z
-  port: 11420
-  protocol: auth_aes128_sha1
-  protocol-param: 10182:Ed7u0G
-  server: vip3.niuniupremium.xyz
-  type: ssr
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港4|@ripaojiedian
-  password: 70747514-fb14-4f31-8390-e1f0453eff6d
-  port: 20001
-  server: hk1.mhw7e2.online
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 15,16|香港5|@ripaojiedian
+  name: 15,16|香港2|@ripaojiedian
   network: ws
-  port: '26925'
-  server: 38.207.164.31
+  port: '2053'
+  server: 47.242.155.183
   servername: cfhk.393930.xyz
   skip-cert-verify: false
   tfo: false
@@ -92,33 +84,38 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 16|香港|@ripaojiedian
-  network: tcp
-  port: '41492'
-  server: 120.232.242.126
-  servername: ''
-  tls: false
+  client-fingerprint: chrome
+  name: 15,16|香港3|@ripaojiedian
+  network: ws
+  port: '10000'
+  server: 38.207.174.231
+  servername: cfhk.393930.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 5840ab2d-ab59-4eb0-9dea-122d0fbbd2d9
+  ws-opts:
+    headers:
+      Host: cfhk.393930.xyz
+    path: /
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港4|@ripaojiedian
+  password: 66e030b0-e51c-11ee-b858-086e190000d9
+  port: 20001
+  server: hk1.mhw7e2.online
+  tfo: false
+  type: ss
 - alterId: 64
   cipher: auto
   name: 16|香港1|@ripaojiedian
   network: tcp
-  port: '54402'
-  server: 120.233.43.20
+  port: '35972'
+  server: 183.233.187.215
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 16|香港2|@ripaojiedian
-  network: tcp
-  port: '44805'
-  server: hkjcdn03.dorabbb.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1528295e-c497-43ac-a08d-c040662b9344
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
