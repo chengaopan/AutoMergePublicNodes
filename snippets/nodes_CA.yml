@@ -75,7 +75,7 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: '6|🇨🇦_CA_加拿大 #1'
+  name: '6,14|美国 CloudFlare公司CDN节点(shopify) #1'
   network: ws
   port: 8080
   server: 23.227.39.24
@@ -101,10 +101,11 @@ proxies:
     path: /1IKYjV0r/
 - alterId: 0
   cipher: auto
-  name: '6,7|🇨🇦_CA_加拿大->🇺🇸_US_美国 #1'
+  name: '6,7,14|美国 CloudFlare公司CDN节点(shopify) #2'
   network: ws
-  port: 8080
+  port: '8080'
   server: 23.227.38.23
+  servername: ''
   tls: false
   type: vmess
   uuid: 34c0bb5e-c120-432d-9c58-bd7d82c7397b
@@ -121,14 +122,15 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: cb1f4a41-8d9a-4f85-a6c8-12f178a3a051
+  uuid: 2ec10a0d-481b-4942-a6f3-25052b4938ee
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 002
+  name: 15,21|🇨🇦 加拿大 002
   network: ws
-  port: 80
+  port: '80'
   server: 104.16.67.38
   skip-cert-verify: true
+  tls: false
   type: vmess
   uuid: f8c92b3b-5447-44a5-9e54-23cdc269cb93
   ws-opts:
@@ -192,11 +194,23 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 009 #1'
+  name: 15|加拿大 009
   network: ws
   port: 80
   server: 104.21.224.61
-  servername: ''
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 15,21|4Mohsen-9335
+  network: ws
+  port: '80'
+  server: 104.21.224.136
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -207,26 +221,36 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 013 #1'
+  name: 15|加拿大 011
   network: ws
   port: 80
-  server: 104.21.224.46
-  servername: ''
+  server: 104.21.231.58
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
       Host: a.prapt1.ir
-    path: /
+    path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|4Kian-9468
+  name: 15|加拿大 012
+  network: ws
+  port: 80
+  server: 104.21.224.156
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 15,21|🇨🇦 加拿大 014
   network: ws
   port: '443'
   server: 104.21.16.62
-  servername: irene.lat
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -235,6 +259,19 @@ proxies:
     headers:
       Host: irene.lat
     path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 015
+  network: ws
+  port: 80
+  server: 104.21.225.25
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /
 - alterId: 0
   cipher: auto
   name: 15|加拿大 016
@@ -262,11 +299,10 @@ proxies:
     Host: 104.18.202.232
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 018 #1'
+  name: 15|加拿大 018
   network: ws
   port: 80
   server: 104.21.224.245
-  servername: ''
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -276,26 +312,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 019
+  name: 15|加拿大 021
   network: ws
-  port: '80'
-  server: 104.21.224.206
+  port: 80
+  server: 104.21.224.240
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 020
-  network: ws
-  port: '80'
-  server: 104.21.224.144
-  skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -304,13 +325,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 022 #1'
+  name: 15|加拿大 022
   network: ws
   port: 80
   server: 104.21.224.124
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -319,12 +338,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 023
+  name: 15|加拿大 023
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.224.230
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -333,12 +351,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 024
+  name: 15|加拿大 024
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.224.37
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -347,19 +364,30 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 025 #1'
+  name: 15|加拿大 025
   network: ws
   port: 80
   server: 104.21.224.80
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
       Host: a.prapt1.ir
     path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 026
+  network: ws
+  port: 80
+  server: 104.21.224.44
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
   name: 15|加拿大 027
@@ -375,12 +403,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 029
+  name: 15|加拿大 029
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.226.30
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -389,12 +416,24 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 031
+  name: 15|加拿大 030
   network: ws
-  port: '80'
+  port: 80
+  server: 104.21.224.164
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 031
+  network: ws
+  port: 80
   server: 104.21.231.59
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -403,12 +442,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 032
+  name: 15|加拿大 032
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.221.240
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -417,12 +455,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 033
+  name: 15|加拿大 033
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.224.105
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -444,13 +481,24 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 036 #1'
+  name: 15|加拿大 035
+  network: ws
+  port: 80
+  server: 104.21.239.98
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 036
   network: ws
   port: 80
   server: 104.21.224.113
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -474,13 +522,11 @@ proxies:
     path: /github
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 038 #1'
+  name: 15|加拿大 038
   network: ws
   port: 80
   server: 104.21.233.66
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -489,12 +535,37 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 039
+  name: 15|加拿大 039
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.238.90
   skip-cert-verify: true
-  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 040
+  network: ws
+  port: 80
+  server: 104.21.226.33
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 041
+  network: ws
+  port: 80
+  server: 104.21.224.161
+  skip-cert-verify: true
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -677,42 +748,11 @@ proxies:
     path: /Jnv8ViZOUVgijjOh0p5uGjHnXIiY
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 055
-  network: ws
-  port: '80'
-  server: 104.21.224.134
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '15,21|加拿大 056 #1'
-  network: ws
-  port: 80
-  server: 104.21.231.57
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '15,21|美国 CloudFlare节点 #53'
+  name: 15|加拿大 057
   network: ws
   port: 80
   server: 104.21.224.157
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -721,12 +761,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 058
+  name: 15|加拿大 058
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.239.99
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -735,12 +774,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 059
+  name: 15|加拿大 059
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.237.85
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -749,13 +787,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|美国 CloudFlare节点 #76'
+  name: 15|加拿大 061
   network: ws
   port: 80
   server: 104.21.237.68
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -790,13 +826,11 @@ proxies:
     path: '/?ed=2048&Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 065 #1'
+  name: 15|加拿大 065
   network: ws
   port: 80
   server: 104.21.224.128
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -805,26 +839,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 066
+  name: 15|加拿大 067
   network: ws
-  port: '80'
-  server: 104.21.227.37
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 067
-  network: ws
-  port: '80'
+  port: 80
   server: 104.21.227.36
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -833,12 +852,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 068
+  name: 15|加拿大 068
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.228.23
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -847,32 +865,17 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 069
+  name: 15|加拿大 069
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.227.16
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
       Host: a.prapt1.ir
     path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 070
-  network: ws
-  port: '80'
-  server: 104.21.231.35
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
 - alterId: 0
   cipher: auto
   name: 15|加拿大 071
@@ -901,42 +904,11 @@ proxies:
     path: '/?ed=2048&Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 074 #1'
+  name: 15|加拿大 076
   network: ws
   port: 80
-  server: 104.21.234.52
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '15,21|美国 CloudFlare节点 #56'
-  network: ws
-  port: 80
-  server: 104.21.235.59
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 076
-  network: ws
-  port: '80'
   server: 104.21.230.32
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -945,25 +917,36 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 077
-  network: ws
-  port: '80'
-  server: 104.21.229.46
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '15,21|美国 CloudFlare节点 #84'
+  name: 15|加拿大 079
   network: ws
   port: 80
-  server: 104.21.224.174
-  servername: ''
+  server: 104.21.239.97
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: '/?ed=2048&Telegram🇨🇳 '
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 080
+  network: ws
+  port: 80
+  server: 104.21.238.70
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 15,21|🇨🇦 加拿大 081
+  network: ws
+  port: '80'
+  server: 104.21.224.81
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -974,12 +957,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 082
+  name: 15|加拿大 082
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.228.43
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1001,12 +983,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|美国 CloudFlare节点 #73'
+  name: 15|加拿大 084
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.225.8
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1015,13 +996,24 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 086 #1'
+  name: 15|加拿大 085
   network: ws
   port: 80
-  server: 104.21.224.104
-  servername: ''
+  server: 104.21.230.30
   skip-cert-verify: true
-  tls: false
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt4.ir
+    path: /?ed=2048&Telegram🇨🇳
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 087
+  network: ws
+  port: 80
+  server: 104.21.239.96
+  skip-cert-verify: true
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1030,12 +1022,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 088
+  name: 15|加拿大 088
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.231.37
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1044,12 +1035,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 089
+  name: 15|加拿大 089
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.232.41
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1071,12 +1061,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|美国 CloudFlare节点 #64'
+  name: 15|加拿大 092
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.237.87
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1085,12 +1074,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 093
+  name: 15|加拿大 093
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.231.56
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1099,13 +1087,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 094 #1'
+  name: 15|加拿大 094
   network: ws
   port: 80
   server: 104.21.234.74
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1127,13 +1113,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '15,21|美国 CloudFlare节点 #66'
+  name: 15|加拿大 096
   network: ws
   port: 80
   server: 104.21.228.42
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1142,12 +1126,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 098
+  name: 15|加拿大 098
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.224.56
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1156,12 +1139,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 099
+  name: 15|加拿大 099
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.234.51
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1170,12 +1152,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '15,21|美国 CloudFlare节点 #67'
+  name: 15|加拿大 100
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.230.31
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1184,12 +1165,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 101
+  name: 15|加拿大 101
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.226.12
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1211,55 +1191,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 103 #1'
+  name: 15|加拿大 106
   network: ws
   port: 80
-  server: 104.21.226.13
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 104
-  network: ws
-  port: '80'
-  server: 104.21.236.81
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 105
-  network: ws
-  port: '80'
-  server: 104.21.224.152
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '15,21|美国 CloudFlare节点 #82'
-  network: ws
-  port: '80'
   server: 104.21.232.63
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1268,13 +1204,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 107 #1'
+  name: 15|加拿大 107
   network: ws
   port: 80
   server: 104.21.236.62
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1283,13 +1217,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|美国 CloudFlare节点 #54'
+  name: 15|加拿大 108
   network: ws
   port: 80
   server: 104.21.239.77
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1298,13 +1230,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 109 #1'
+  name: 15|加拿大 109
   network: ws
   port: 80
   server: 104.21.234.50
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1328,32 +1258,17 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 111
+  name: 15|加拿大 111
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.227.19
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
       Host: a.prapt1.ir
     path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 112
-  network: ws
-  port: '80'
-  server: 104.21.228.40
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /
 - alterId: 0
   cipher: auto
   name: 15|加拿大 113
@@ -1396,12 +1311,11 @@ proxies:
     path: /path/153428133302
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 116
+  name: 15|加拿大 116
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.228.44
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1410,12 +1324,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 117
+  name: 15|加拿大 117
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.230.53
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1424,12 +1337,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 118
+  name: 15|加拿大 118
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.232.40
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1438,12 +1350,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 119
+  name: 15|加拿大 119
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.228.22
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1452,13 +1363,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 120 #1'
+  name: 15|加拿大 120
   network: ws
   port: 80
   server: 104.21.238.73
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1480,12 +1389,11 @@ proxies:
     path: '/?ed=2048&Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 122
+  name: 15|加拿大 122
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.233.67
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1494,76 +1402,16 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|美国 CloudFlare节点 #59'
-  network: ws
-  port: 80
-  server: 104.21.239.95
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 124
-  network: ws
-  port: '80'
-  server: 104.21.233.45
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 125
-  network: ws
-  port: '80'
-  server: 104.21.231.55
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '15,21|加拿大 126 #1'
+  name: 15|加拿大 126
   network: ws
   port: 80
   server: 104.21.227.35
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
       Host: a.prapt4.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '15,21|加拿大 127 #1'
-  network: ws
-  port: 80
-  server: 104.21.230.34
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
@@ -1825,9 +1673,9 @@ proxies:
     path: linkvws
 - alterId: 1
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 148
+  name: 15|加拿大 148
   network: ws
-  port: '443'
+  port: 443
   server: hms02opi.fxiaomi.sbs
   skip-cert-verify: true
   tls: true
@@ -1837,6 +1685,34 @@ proxies:
     headers:
       Host: hms02.fxiaomi.sbs
     path: /link
+- alterId: 0
+  cipher: auto
+  name: 15,21|美国【TG：@ccbaohe】定时更新节点订阅
+  network: ws
+  port: '443'
+  server: hms04.xmivideo.cfd
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
+  ws-opts:
+    headers:
+      Host: xmivideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 150
+  network: ws
+  port: 80
+  server: 104.21.232.64
+  skip-cert-verify: true
+  type: vmess
+  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
+  ws-opts:
+    headers:
+      Host: a.prapt1.ir
+    path: /?ed=2048&Telegram🇨🇳
 - alterId: 1
   cipher: auto
   name: 15|加拿大 151
@@ -1944,13 +1820,11 @@ proxies:
     path: /public
 - alterId: 0
   cipher: auto
-  name: 15,21|4Kian-9699
+  name: 15|加拿大 159
   network: ws
   port: 80
   server: 104.21.228.41
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1959,12 +1833,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 160
+  name: 15|加拿大 160
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.227.15
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -1973,11 +1846,10 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 161 #1'
+  name: 15|加拿大 161
   network: ws
   port: 443
   server: 172.67.170.13
-  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -1988,28 +1860,11 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 162 #1'
-  network: ws
-  port: 80
-  server: 104.21.224.24
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '15,21|加拿大 163 #1'
+  name: 15|加拿大 163
   network: ws
   port: 80
   server: 104.21.231.38
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -2018,12 +1873,11 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 164
+  name: 15|加拿大 164
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.232.60
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -2032,13 +1886,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 165 #1'
+  name: 15|加拿大 165
   network: ws
   port: 80
   server: 104.21.236.60
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -2078,42 +1930,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|4Kian-9591
-  network: ws
-  port: 80
-  server: 104.21.224.180
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 15,21|🇨🇦 加拿大 169
-  network: ws
-  port: '80'
-  server: 104.21.227.17
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '15,21|加拿大 170 #1'
+  name: 15|加拿大 170
   network: ws
   port: 80
   server: 104.21.239.76
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -2135,43 +1956,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 172 #1'
-  network: ws
-  port: 80
-  server: 104.21.235.56
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '15,21|加拿大 173 #1'
-  network: ws
-  port: 80
-  server: 104.21.239.79
-  servername: ''
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: '15,21|加拿大 174 #1'
+  name: 15|加拿大 174
   network: ws
   port: 80
   server: 104.21.238.92
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -2180,12 +1969,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 175
+  name: 15|加拿大 175
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.224.23
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -2219,20 +2007,6 @@ proxies:
     Host: 172.67.10.53
 - alterId: 0
   cipher: auto
-  name: 15,21|🇨🇦 加拿大 178
-  network: ws
-  port: '80'
-  server: 104.21.224.249
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
   name: 15|加拿大 179
   network: ws
   port: 2082
@@ -2247,12 +2021,11 @@ proxies:
     path: /video/CuTy87zAzV/
 - alterId: 0
   cipher: auto
-  name: 15,21|🇺🇸 美国 CloudFlare节点
+  name: 15|加拿大 180
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.232.43
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -2261,13 +2034,11 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15,21|4Kian-9658
+  name: 15|加拿大 181
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.225.38
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -2276,7 +2047,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 15,21|4Kian-9479
+  name: 15,21|4Mohsen-9223
   network: ws
   port: '2096'
   server: 104.21.10.205
@@ -2291,11 +2062,11 @@ proxies:
     path: /thws
 - alterId: 0
   cipher: auto
-  name: '15,21|%F0%9F%87%BA%F0%9F%87%B8%20Uni... #1'
+  name: '15,21|加拿大 183 #1'
   network: ws
-  port: '2083'
+  port: 2083
   server: http.cdn-tgju.org
-  servername: http.cdn-tgju.org
+  servername: ''
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -2306,13 +2077,11 @@ proxies:
     path: /twos
 - alterId: 0
   cipher: auto
-  name: '15,21|美国 CloudFlare节点 #75'
+  name: 15|加拿大 184
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.235.75
-  servername: ''
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -2321,12 +2090,11 @@ proxies:
     path: '/?ed=2048&Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
-  name: '15,21|🇺🇸 美国 CloudFlare节点 #7'
+  name: 15|加拿大 185
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.235.58
   skip-cert-verify: true
-  tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
@@ -2600,76 +2368,48 @@ proxies:
     path: /vmess
 - alterId: 0
   cipher: auto
-  name: '21|Channel id: @ShadowProxy66 🇨🇦'
+  name: 15,21|4Mohsen-9081
   network: ws
-  port: '443'
-  server: meroiy.icu
-  servername: meroiy.icu
-  tls: true
+  port: '2086'
+  server: 104.18.31.129
+  servername: ''
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  uuid: ba4e86e7-d4f7-4c4e-aa8f-a91b8cd9de8a
   ws-opts:
     headers:
-      Host: meroiy.icu
-    path: /linkvws
+      Host: us77SmSk86j.fzbqfrse.xyz
+    path: /video/Z7qdcrAGRw
 - alterId: 0
   cipher: auto
-  name: 21|🇨🇦 加拿大 063
+  name: 15|加拿大 206
   network: ws
-  port: '80'
-  server: 104.21.238.72
-  tls: false
+  port: 80
+  server: 172.67.170.75
+  skip-cert-verify: true
+  type: vmess
+  uuid: 2a8a10fb-9ca3-367e-a234-cf09f841be4f
+  ws-opts:
+    headers:
+      Host: us4e-20240111.v2freevpn.com
+    path: /v149-dskds65
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 207
+  network: ws
+  port: 80
+  server: 104.21.233.46
+  skip-cert-verify: true
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      Host: a.prapt4.ir
+      Host: a.prapt1.ir
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 21|%F0%9F%87%A8%F0%9F%87%A6%20Can...
-  network: ws
-  port: '443'
-  server: kittiy.sbs
-  servername: kittiy.sbs
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: kittiy.sbs
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '21|Channel id: @ShadowProxy66 🇨🇦 #1'
-  network: ws
-  port: '443'
-  server: 172.67.173.199
-  servername: jader.fun
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: jader.fun
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 21|🇨🇦CA | vmess | @customv2ray | ...
-  network: ws
-  port: '80'
-  server: 104.21.225.27
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt4.ir
-    path: /?ed=2048&Telegram🇨🇳 @WangCai_8
-- alterId: 0
-  cipher: auto
-  name: '21|Channel id: @ShadowProxy66 🇨🇦 #2'
+  name: '21|Channel id: @ShadowProxy66 🇨🇦'
   network: ws
   port: '443'
   server: inna.cfd
@@ -2683,6 +2423,62 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
+  name: 21|%F0%9F%87%A8%F0%9F%87%A6%20Can...
+  network: ws
+  port: '443'
+  server: nelly.homes
+  servername: nelly.homes
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: nelly.homes
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '21|Channel id: @ShadowProxy66 🇨🇦 #1'
+  network: ws
+  port: '443'
+  server: meroiy.icu
+  servername: meroiy.icu
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: meroiy.icu
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: '21|%F0%9F%87%A8%F0%9F%87%A6%20Can... #1'
+  network: ws
+  port: '443'
+  server: kittiy.sbs
+  servername: kittiy.sbs
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: kittiy.sbs
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 21|🇨🇦CA | vmess | @DeamNet_Proxy ...
+  network: ws
+  port: '443'
+  server: 104.21.51.208
+  servername: nina.bond
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: nina.bond
+    path: /linkvws
+- alterId: 0
+  cipher: auto
   name: 22|【BGP】加拿大 02 | 1x CA
   network: tcp
   port: '31701'
@@ -2690,7 +2486,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 21a5e5f4-c75a-4ff5-ac92-efb9f1bab0c5
+  uuid: 8c77b3a6-2d57-4b58-8ee9-90e62fd2666f
 - alterId: 0
   cipher: auto
   name: 25|🇨🇦加拿大 | 101 | 负载优化 | 1x
