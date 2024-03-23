@@ -8,7 +8,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7bc64e45-0420-44af-96fd-4b51220981ea
+  uuid: dcf40d78-f62e-4096-9a7a-a0e4438ad6d2
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本05
@@ -18,7 +18,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7bc64e45-0420-44af-96fd-4b51220981ea
+  uuid: dcf40d78-f62e-4096-9a7a-a0e4438ad6d2
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本06
@@ -28,7 +28,7 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7bc64e45-0420-44af-96fd-4b51220981ea
+  uuid: dcf40d78-f62e-4096-9a7a-a0e4438ad6d2
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-TCP-NA 🇯🇵 JP-167.179.111....
@@ -39,16 +39,6 @@ proxies:
   tls: false
   type: vmess
   uuid: e961894f-8e90-472f-98d3-09402e4be453
-- alterId: 64
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇯🇵 JP-138.2.44.211...
-  network: tcp
-  port: '20081'
-  server: 138.2.44.211
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 593b8525-0c48-4b0f-d9af-2d73a9148973
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 04  | 1x JP
@@ -58,7 +48,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 0295ecc5-801c-413e-b59e-a9e2517ae0eb
+  uuid: a9dd3d99-2a7a-4264-9b0f-29e818089860
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 05  | 1x JP
@@ -68,7 +58,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 0295ecc5-801c-413e-b59e-a9e2517ae0eb
+  uuid: a9dd3d99-2a7a-4264-9b0f-29e818089860
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 06  | 1x JP
@@ -78,31 +68,54 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 0295ecc5-801c-413e-b59e-a9e2517ae0eb
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 15|🇯🇵 日本3|@ripaojiedian
-  obfs: tls1.2_ticket_auth
-  obfs-param: ac3669890.microsoft.com
-  password: Fhbe0z
-  port: 11424
-  protocol: auth_aes128_sha1
-  protocol-param: 9890:cqtnFi
-  server: 183.240.220.87
-  type: ssr
+  uuid: a9dd3d99-2a7a-4264-9b0f-29e818089860
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 15|🇯🇵 日本4|@ripaojiedian
-  password: 66e030b0-e51c-11ee-b858-086e190000d9
-  port: 20013
-  server: jp1.mhw7e2.online
+  name: 15|🇯🇵 日本|@ripaojiedian
+  password: 55a021e6-30f6-46c5-8297-a2b74d0b3031
+  port: 50004
+  server: ddns.olucloud.subapi.cc
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 15,16|日本2|@ripaojiedian
+  network: ws
+  port: '20301'
+  server: data-jp-v1.usabooks.com.cn
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-jp-v1.usabooks.com.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 15,16|日本3|@ripaojiedian
+  network: ws
+  port: '80'
+  server: cfcdn3.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: a564b1ec-2d51-418a-ba01-e9ab22736afc
+  ws-opts:
+    headers:
+      Host: oA5FSz9Tjp1.yofnhkfc.xyz
+    path: /video/P7EExoE2
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.34.200.94
+  server: 3.36.96.75
   tfo: false
   type: ss
