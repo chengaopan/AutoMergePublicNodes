@@ -101,7 +101,7 @@ proxies:
     path: /1IKYjV0r/
 - alterId: 0
   cipher: auto
-  name: '6,7|🇨🇦_CA_加拿大->🇺🇸_US_美国 #1'
+  name: '6,7,21|🇨🇦_CA_加拿大->🇺🇸_US_美国 #2'
   network: ws
   port: 8080
   server: 23.227.38.23
@@ -264,13 +264,14 @@ proxies:
   udp: false
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 012
+  name: 15,21|🇦🇺澳大利亚 01
   network: ws
-  port: 2086
+  port: '2086'
   server: au01.appleid.bf
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+  uuid: cdccacb4-8335-4824-8d60-005a755f798a
   ws-opts:
     headers:
       Host: au01.appleid.bf
@@ -368,13 +369,13 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 020
+  name: 15,21|🇺🇸美国 02
   network: ws
   port: '2086'
   server: us01.appleid.bf
   tls: false
   type: vmess
-  uuid: a9e6d731-478b-4413-a17a-31e171de7505
+  uuid: cdccacb4-8335-4824-8d60-005a755f798a
   ws-opts:
     headers:
       Host: us01.appleid.bf
@@ -408,13 +409,14 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 023
+  name: 15,21|🇺🇸美国 01
   network: ws
-  port: 2086
+  port: '2086'
   server: cf.iepl.live
   skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 3960f128-1163-40a3-8dd7-7c91176e14a5
+  uuid: cdccacb4-8335-4824-8d60-005a755f798a
   ws-opts:
     headers:
       Host: us01.appleid.bf
@@ -435,11 +437,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 025 #1'
+  name: 15,21|🇨🇦 加拿大 025
   network: ws
-  port: 2086
+  port: '2086'
   server: admin.arzonhost.ir
-  servername: ''
   tls: false
   type: vmess
   uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
@@ -1079,17 +1080,35 @@ proxies:
     path: ua1.v2rayserv.com/vmess
 - alterId: 0
   cipher: auto
-  name: 21|🔒 VM-TCP-NA 🇨🇦 CA-198.57.27.21...
-  network: tcp
-  port: '22324'
-  server: 198.57.27.212
+  name: '21|Channel id: @ShadowProxy66 🇨🇦'
+  network: ws
+  port: '2086'
+  server: 104.21.90.218
   servername: ''
   tls: false
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7
+  ws-opts:
+    headers:
+      Host: index.zhaal.ir
+    path: /
 - alterId: 0
   cipher: auto
-  name: '21|Channel id: @ShadowProxy66 🇨🇦'
+  name: 21|公益2-加拿大-负载均衡
+  network: ws
+  port: '443'
+  server: gy2.us123.icu
+  servername: jnd1.us123.icu
+  tls: true
+  type: vmess
+  uuid: 6de7d79d-f473-48b8-808b-0f98d1a5ba95
+  ws-opts:
+    headers:
+      Host: jnd1.us123.icu
+    path: /mmm
+- alterId: 0
+  cipher: auto
+  name: '21|Channel id: @ShadowProxy66 🇨🇦 #1'
   network: ws
   port: '443'
   server: inna.cfd
@@ -1101,20 +1120,6 @@ proxies:
     headers:
       Host: inna.cfd
     path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: '21|Channel id: @ShadowProxy66 🇨🇦 #1'
-  network: ws
-  port: '443'
-  server: linde06.indiavideo.sbs
-  servername: linde06.indiavideo.sbs
-  tls: true
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      Host: linde06.indiavideo.sbs
-    path: /linkws
 - alterId: 0
   cipher: auto
   name: '21|Channel id: @ShadowProxy66 🇨🇦 #2'
@@ -1131,32 +1136,42 @@ proxies:
     path: /liu
 - alterId: 0
   cipher: auto
-  name: 21|加拿大 183
+  name: 21|公益1-加拿大-负载均衡
   network: ws
-  port: 2083
-  server: http.cdn-tgju.org
-  servername: ''
+  port: '443'
+  server: gy1.us123.icu
+  servername: jnd1.us123.icu
   tls: true
   type: vmess
-  uuid: 7453a796-159d-43a9-ddc9-20cead7886a8
+  uuid: 6de7d79d-f473-48b8-808b-0f98d1a5ba95
   ws-opts:
     headers:
-      Host: http.cdn-tgju.org
-    path: /twos
+      Host: jnd1.us123.icu
+    path: /mmm
 - alterId: 0
   cipher: auto
   name: '21|Channel id: @ShadowProxy66 🇨🇦 #3'
   network: ws
-  port: '2086'
-  server: 104.21.90.218
+  port: '443'
+  server: linde06.indiavideo.sbs
+  servername: linde06.indiavideo.sbs
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 21|🔒 VM-TCP-NA 🇨🇦 CA-198.57.27.21...
+  network: tcp
+  port: '22324'
+  server: 198.57.27.212
   servername: ''
   tls: false
   type: vmess
-  uuid: e690ff9e-1676-4be3-d136-dcae586cb1e7
-  ws-opts:
-    headers:
-      Host: index.zhaal.ir
-    path: /
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
   name: 22|【BGP】加拿大 02 | 1x CA
@@ -1166,7 +1181,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 113aa593-7d74-4ee0-9889-de204c31faef
+  uuid: 3848512c-7bbc-4d61-a607-8622ec359898
 - alterId: 0
   cipher: auto
   name: 25|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -1176,4 +1191,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: 7b511802-81f3-3bcd-8060-a355e63493cb
+  uuid: 408f7a65-054e-3f7a-850a-e26ef16a9552
