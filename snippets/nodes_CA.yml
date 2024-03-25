@@ -50,7 +50,7 @@ proxies:
     method: GET
     path:
     - /
-  name: '1,3,6,7,15,26|🇨🇦_CA_加拿大 #7'
+  name: '1,3,6,7,15,26|🇨🇦_CA_加拿大 #8'
   network: http
   port: 3389
   server: 134.122.41.160
@@ -75,7 +75,7 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: '6|🇨🇦_CA_加拿大 #1'
+  name: 6,14|美国 CloudFlare公司CDN节点(shopify)
   network: ws
   port: 8080
   server: 23.227.39.24
@@ -88,7 +88,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: '6|🇨🇦_CA_加拿大 #3'
+  name: '6,21|🇨🇦_CA_加拿大 #7'
   network: ws
   port: 8080
   server: 108.181.23.161
@@ -101,7 +101,7 @@ proxies:
     path: /1IKYjV0r/
 - alterId: 0
   cipher: auto
-  name: '6,7|🇨🇦_CA_加拿大->🇺🇸_US_美国 #1'
+  name: '6,7,14|美国 CloudFlare公司CDN节点(shopify) #2'
   network: ws
   port: 8080
   server: 23.227.38.23
@@ -121,21 +121,7 @@ proxies:
   servername: ca04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: f49c77bb-e8f8-4868-af35-b4e3ca4efec9
-- alterId: 0
-  cipher: auto
-  name: 14,21|Sh
-  network: ws
-  port: 22751
-  server: 108.181.200.220
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 09fb03a6-5e49-4a59-e268-dbd1720f5eb1
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
+  uuid: e80010fa-01b7-4f9d-a00b-b7ea2b2c7f8a
 - alterId: 0
   cipher: auto
   name: 15|加拿大 002
@@ -265,24 +251,11 @@ proxies:
   udp: false
 - alterId: 0
   cipher: auto
-  name: 15,21|🇦🇺澳大利亚 01
-  network: ws
-  port: '2086'
-  server: au01.appleid.bf
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cdccacb4-8335-4824-8d60-005a755f798a
-  ws-opts:
-    headers:
-      Host: au01.appleid.bf
-    path: /ws?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 15|加拿大 013
+  name: '15,21|加拿大 013 #1'
   network: ws
   port: 80
   server: 104.21.236.82
+  servername: ''
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -292,9 +265,9 @@ proxies:
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 014
+  name: '15,21|加拿大 014 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.224.52
   servername: ''
   tls: false
@@ -306,10 +279,11 @@ proxies:
     path: '/?ed=2048&amp;Telegram🇨🇳 '
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 015
+  name: '15,21|加拿大 015 #1'
   network: ws
   port: 80
   server: 104.21.224.1
+  servername: ''
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
@@ -383,7 +357,7 @@ proxies:
     path: /ws?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 021
+  name: '15,21|加拿大 021 #1'
   network: ws
   port: 80
   server: 104.21.230.54
@@ -437,11 +411,10 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '15,21|加拿大 025 #1'
+  name: 15|加拿大 025
   network: ws
-  port: 2086
+  port: '2086'
   server: admin.arzonhost.ir
-  servername: ''
   tls: false
   type: vmess
   uuid: 7d93e992-48cf-42d4-84f8-75768e815a4c
@@ -1132,19 +1105,6 @@ proxies:
   udp: false
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 076
-  network: ws
-  port: 80
-  server: 104.21.233.49
-  skip-cert-verify: true
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
   name: 15|加拿大 077
   network: ws
@@ -1178,38 +1138,6 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 15|加拿大 079
-  network: ws
-  port: 80
-  server: russia.com
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: bd8c41a8-7598-4c28-9965-522545e14892
-  ws-opts:
-    headers:
-      Host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 15|加拿大 080
-  network: ws
-  port: 80
-  server: www.who.int
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: bd8c41a8-7598-4c28-9965-522545e14892
-  ws-opts:
-    headers:
-      Host: ssrsub.v03.ssrsub.com
-    path: /api/v3/download.getFile
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
   name: 15|加拿大 081
   network: ws
   port: 2053
@@ -1225,7 +1153,7 @@ proxies:
     path: /m07.tk4433.com
 - alterId: 0
   cipher: auto
-  name: 15,21|US_speednode_0071
+  name: '15,21|加拿大 082 #1'
   network: ws
   port: 80
   server: 104.21.237.32
@@ -1241,7 +1169,7 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15,21|US_speednode_0072
+  name: '15,21|加拿大 083 #1'
   network: ws
   port: 80
   server: 104.21.237.111
@@ -1257,10 +1185,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 084
+  name: '15,21|加拿大 084 #1'
   network: ws
   port: 80
   server: 104.21.237.191
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -1272,10 +1201,11 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 085
+  name: '15,21|加拿大 085 #1'
   network: ws
   port: 80
   server: 104.21.237.201
+  servername: ''
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -1287,30 +1217,17 @@ proxies:
     path: /?ed=2048
 - alterId: 0
   cipher: auto
-  name: 15|加拿大 086
+  name: '15,21|加拿大 086 #1'
   network: ws
-  port: '80'
+  port: 80
   server: 104.21.224.186
-  tls: false
-  type: vmess
-  uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
-  ws-opts:
-    headers:
-      Host: a.prapt1.ir
-    path: /?ed=2048&Telegram🇨🇳
-- alterId: 0
-  cipher: auto
-  name: 15|加拿大 087
-  network: ws
-  port: '80'
-  server: 104.21.225.6
   servername: ''
   tls: false
   type: vmess
   uuid: 7022982f-da4c-48c9-c660-b2315abdcf7e
   ws-opts:
     headers:
-      Host: a.prapt4.ir
+      Host: a.prapt1.ir
     path: /?ed=2048&Telegram🇨🇳
 - alterId: 0
   cipher: auto
@@ -1329,18 +1246,184 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '21|Channel id: @ShadowProxy66 🇨🇦'
+  name: 15|加拿大 089
   network: ws
-  port: '2096'
-  server: 104.21.69.44
-  servername: eu4.nlist.eu.org
-  tls: true
+  port: 80
+  server: 104.21.236.54
+  skip-cert-verify: true
+  tls: false
   type: vmess
-  uuid: 98b879fc-ed38-4537-f02f-e88e4892d48c
+  uuid: 1973e770-e615-11ee-b238-205c6d5f5d78
   ws-opts:
     headers:
-      Host: eu4.nlist.eu.org
-    path: /liu
+      host: VKJi7.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 090
+  network: ws
+  port: 80
+  server: 104.21.235.229
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: m4p9q.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 091
+  network: ws
+  port: 80
+  server: 104.21.238.130
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: PVR7r.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 092
+  network: ws
+  port: 80
+  server: 104.21.238.2
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: PVR7r.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 093
+  network: ws
+  port: 80
+  server: 104.21.235.6
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: m4p9q.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 094
+  network: ws
+  port: 80
+  server: 104.21.238.159
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: PVR7r.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 095
+  network: ws
+  port: 80
+  server: 104.21.238.151
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c6b76370-e614-11ee-b531-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: PVR7r.cnbete.life
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: '15,21|美国 CloudFlare节点 #65'
+  network: ws
+  port: 80
+  server: 104.21.237.136
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+  ws-opts:
+    headers:
+      Host: hDIgP.cnbete.life
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 15|加拿大 097
+  network: tcp
+  password: ce8b8b30ebba45f2a38dd608b85e8628
+  port: 443
+  server: 104.16.159.9
+  skip-cert-verify: false
+  sni: bangladeshipatri.com
+  type: trojan
+  udp: false
+- client-fingerprint: chrome
+  name: 15|加拿大 098
+  network: tcp
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 104.16.192.1
+  skip-cert-verify: true
+  sni: sherasheba.com
+  type: trojan
+  udp: false
+- alterId: 0
+  cipher: auto
+  name: 15|加拿大 099
+  network: ws
+  port: 80
+  server: 104.21.235.140
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f4c98b50-e614-11ee-b430-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: m4p9q.cnbete.life
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 15|加拿大 100
+  network: tcp
+  password: 52701795-3c3b-46b4-b7cf-c5978b3a4cf2
+  port: 443
+  server: 104.21.47.176
+  skip-cert-verify: false
+  sni: hdfyc1.achaemenidempireofpersia.uk
+  type: trojan
+  udp: false
+- alterId: '0'
+  cipher: auto
+  name: 15|加拿大 101
+  network: ws
+  port: '80'
+  server: 104.21.237.120
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d31c39e0-e614-11ee-b333-205c6d5f5d78
+  ws-opts:
+    headers:
+      host: hDIgP.cnbete.life
+    path: /?ed=2048
+- client-fingerprint: chrome
+  name: 15|加拿大 102
+  network: tcp
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  port: 443
+  server: 104.16.192.157
+  skip-cert-verify: true
+  sni: jobscareerfortoday.com
+  type: trojan
+  udp: false
 - alterId: 0
   cipher: auto
   name: 22|【BGP】加拿大 02 | 1x CA
@@ -1350,7 +1433,7 @@ proxies:
   servername: ca04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: b33440c2-9791-4656-ab50-62bac3b912dd
+  uuid: 1395488f-3216-49c3-9721-68daca99785d
 - alterId: 0
   cipher: auto
   name: 25|🇨🇦加拿大 | 101 | 负载优化 | 1x
@@ -1360,4 +1443,4 @@ proxies:
   servername: ca01.tomoony.xyz
   tls: true
   type: vmess
-  uuid: f02fe515-2ba6-317c-8c3e-425a81a9ffa0
+  uuid: 7ba854a7-011a-3b71-bfab-20628cfd38d7
