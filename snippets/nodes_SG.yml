@@ -8,7 +8,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7876dac2-e550-44bd-a97c-2b9331fc1c03
+  uuid: 895da1f3-a274-4c73-9343-21c45338a25c
 - alterId: 0
   cipher: auto
   name: 10|🇸🇬新加坡05
@@ -18,7 +18,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7876dac2-e550-44bd-a97c-2b9331fc1c03
+  uuid: 895da1f3-a274-4c73-9343-21c45338a25c
 - alterId: 0
   cipher: auto
   name: 10|🇸🇬新加坡06
@@ -28,21 +28,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 7876dac2-e550-44bd-a97c-2b9331fc1c03
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-WS-NA 🇸🇬 SG-128.199.193.1...
-  network: ws
-  port: '52419'
-  server: 128.199.193.14
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 250014f0-1f89-43a5-bbe0-127ab48b66a0
-  ws-opts:
-    headers:
-      Host: whatsapp.net
-    path: /
+  uuid: 895da1f3-a274-4c73-9343-21c45338a25c
 - alterId: 0
   cipher: auto
   name: 14|【BGP】新加坡 04 | 1x SG
@@ -52,7 +38,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: da1c1c42-74a5-4020-a7ed-bb784505f715
+  uuid: ffeb2627-cc91-421a-b244-4739a7ff2ba4
 - alterId: 0
   cipher: auto
   name: 14|【BGP】新加坡 05 | 1x SG
@@ -62,7 +48,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: da1c1c42-74a5-4020-a7ed-bb784505f715
+  uuid: ffeb2627-cc91-421a-b244-4739a7ff2ba4
 - alterId: 0
   cipher: auto
   name: 14|【BGP】新加坡 06 | 1x SG
@@ -72,7 +58,7 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: da1c1c42-74a5-4020-a7ed-bb784505f715
+  uuid: ffeb2627-cc91-421a-b244-4739a7ff2ba4
 - cipher: chacha20-ietf
   client-fingerprint: chrome
   name: 15|🇸🇬 新加坡|@ripaojiedian
@@ -92,19 +78,28 @@ proxies:
   server: ddns.olucloud.subapi.cc
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- alterId: 64
+  cipher: auto
   client-fingerprint: chrome
-  name: 15|🇸🇬 新加坡3|@ripaojiedian
-  password: 55a021e6-30f6-46c5-8297-a2b74d0b3031
-  port: 20109
-  server: ddns.olucloud.subapi.cc
+  name: 15,16|新加坡3|@ripaojiedian
+  network: ws
+  port: '443'
+  server: 134.122.184.84
+  servername: www.31402191.xyz
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.31402191.xyz
+    path: /path/311227222808
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.196.181.101
+  server: 54.245.36.10
   tfo: false
   type: ss
