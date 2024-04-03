@@ -1,4 +1,18 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-WS-NA 🇭🇰 HK-47.76.35.246:...
+  network: ws
+  port: '24101'
+  server: 47.76.35.246
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2fbf5c4d-4748-4064-d02e-af9e5c6be060
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港KT|@ripaojiedian
@@ -12,7 +26,7 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 443
-  server: 1.65.218.52
+  server: 1.65.218.192
   tfo: false
   type: ss
 - cipher: aes-128-gcm
@@ -28,26 +42,9 @@ proxies:
     skip-cert-verify: true
     tls: false
   port: 443
-  server: 8.210.33.152
+  server: 8.218.82.85
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 15,16|美国4|@ripaojiedian
-  network: ws
-  port: '46038'
-  server: mf838f.micloud.buzz
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 4a7929d8-f59e-4f37-9708-22027f210a07
-  ws-opts:
-    headers:
-      Host: mf838f.micloud.buzz
-    path: /zh-cn
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇸🇬 新加坡2|@ripaojiedian
@@ -56,52 +53,46 @@ proxies:
   server: 121.43.117.216
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港2|@ripaojiedian
-  password: d3339e8c-9425-4466-90ac-a8d7a3043b9b
-  port: 24767
-  server: hk.1.thap.xyz
+  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
+  port: 10061
+  server: v3-js-hk.as9929.uk
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 15,16|香港3|@ripaojiedian
-  network: ws
-  port: '443'
-  server: 144.48.32.10
-  servername: www.32011779.xyz
-  skip-cert-verify: false
+  name: 15|🇭🇰 香港3|@ripaojiedian
+  password: 9c709e3d-f733-4b08-853d-2c81c4f393b5
+  port: 42107
+  server: db.quanstring.top
   tfo: false
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.32011779.xyz
-    path: /path/303417111801
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 15|🇹🇼 台湾|@ripaojiedian
-  password: 3bedceff-1956-4f2c-a9c1-45c74568a560
-  port: 13761
-  server: ty11t.twty.dynu.net
+  name: 15|🇭🇰 香港4|@ripaojiedian
+  network: ws
+  port: 2095
+  server: fcdn.flha.ru
   skip-cert-verify: false
-  sni: ty11t.twty.dynu.net
   tfo: false
   tls: false
-  type: trojan
-  uuid: 22212159-1be2-4c81-afbb-6203b6a51739
+  type: vmess
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      Host: fcdn.flha.ru
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 15,16|香港5|@ripaojiedian
   network: ws
   port: '8080'
-  server: 194.99.79.178
-  servername: hk-11.trollfunny.net
+  server: 185.244.208.61
+  servername: hk-17.trollfunny.net
   skip-cert-verify: false
   tfo: false
   tls: true
@@ -111,13 +102,34 @@ proxies:
     headers:
       Host: ''
     path: /
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 15,16|香港6|@ripaojiedian
+  network: ws
+  port: '443'
+  server: 107.148.4.60
+  servername: www.50250108.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.50250108.xyz
+    path: /path/311227222808
 - alterId: 0
   cipher: auto
   name: 16|香港4|@ripaojiedian
-  network: tcp
-  port: '35996'
-  server: 786huix-ee.dc-zix4ssc1-hk03.my777999.top
+  network: ws
+  port: '2095'
+  server: fcdn.flha.ru
   servername: ''
   tls: false
   type: vmess
-  uuid: 22212159-1be2-4c81-afbb-6203b6a51739
+  uuid: 7a737f41-b792-4260-94ff-3d864da67b80
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
