@@ -1,20 +1,6 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13|香港 001
-  network: ws
-  port: 8080
-  server: 194.99.79.178
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
-  ws-opts:
-    headers:
-      Host: 194.99.79.178
-    path: /
-- alterId: 0
-  cipher: auto
   name: 13|🔒 VM-WS-TLS 🇭🇰 HK-43.154.96.33...
   network: ws
   port: '443'
@@ -26,6 +12,20 @@ proxies:
   ws-opts:
     headers:
       Host: cfhk.393930.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|香港 001
+  network: ws
+  port: 8080
+  server: 194.99.79.178
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+  ws-opts:
+    headers:
+      Host: 194.99.79.178
     path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
@@ -59,25 +59,34 @@ proxies:
   server: 61.224.79.46
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港|@ripaojiedian
-  password: Rad35baG
-  port: 10001
-  server: 121.43.117.216
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 15|🇸🇬 新加坡2|@ripaojiedian
-  port: 37996
-  server: 9898.fz-6-0-kcet8y0fd-so04.my777999.top
+  name: 15,16|香港|@ripaojiedian
+  network: ws
+  port: '10163'
+  server: zf.lalayun.cyou
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 22212159-1be2-4c81-afbb-6203b6a51739
+  uuid: b1553abe-6f1f-3288-bfc2-908b2f9fc4fc
+  ws-opts:
+    headers:
+      Host: hk.lalayunssl.xyz
+    path: /v2ray
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港7|@ripaojiedian
+  port: 35601
+  server: 120.238.122.243
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -95,34 +104,16 @@ proxies:
     headers:
       Host: ''
     path: /
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港6|@ripaojiedian
-  password: e41b8b00-d940-4006-80ff-bc7865b3b5e0
-  port: 10061
-  server: v3-js-hk.as9929.uk
-  tfo: false
-  type: ss
-- alterId: 64
+- alterId: 0
   cipher: auto
   name: 16|香港2|@ripaojiedian
   network: tcp
-  port: '54100'
-  server: 183.236.51.59
+  port: '80'
+  server: UNLIMITED.HUY.0.SRL
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 16|香港3|@ripaojiedian
-  network: tcp
-  port: '44827'
-  server: hkscdn02.dorabbb.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 86933ebf-fe3a-4c67-8eb6-25c82bf07e85
+  uuid: f0d23e27-d3cf-4476-b75b-87552f9eee1a
 - alterId: 64
   cipher: auto
   name: 16|香港7|@ripaojiedian
