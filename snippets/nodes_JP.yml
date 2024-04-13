@@ -86,7 +86,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: afe6e4a4-0f1f-45ed-aaeb-4e0acf6d51b3
+  uuid: d9c149df-5f39-45cd-b024-7406de274522
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 05  | 1x JP
@@ -96,7 +96,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: afe6e4a4-0f1f-45ed-aaeb-4e0acf6d51b3
+  uuid: d9c149df-5f39-45cd-b024-7406de274522
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 06  | 1x JP
@@ -106,15 +106,24 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: afe6e4a4-0f1f-45ed-aaeb-4e0acf6d51b3
-- cipher: chacha20-ietf-poly1305
+  uuid: d9c149df-5f39-45cd-b024-7406de274522
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 15|🇯🇵 日本1|@ripaojiedian
-  password: 4feb33c2-cb06-4371-a572-243d47b789d9
-  port: 50005
-  server: ddns.olucloud.subapi.cc
+  name: 15,16|日本3|@ripaojiedian
+  network: ws
+  port: '80'
+  server: cfcdn3.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: e7bd848c-c1c9-40a4-b1d9-eba048a340c5
+  ws-opts:
+    headers:
+      Host: oA5FSz9Tjp1.yofnhkfc.xyz
+    path: /video/P7EExoE2
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇯🇵 日本特殊|@ripaojiedian
@@ -127,9 +136,9 @@ proxies:
   cipher: auto
   name: 16|日本|@ripaojiedian
   network: tcp
-  port: '13820'
-  server: c76s4.portablesubmarines.com
+  port: '30038'
+  server: 183.240.179.207
   servername: ''
   tls: false
   type: vmess
-  uuid: f094f632-5113-4f1c-8398-25077be216b0
+  uuid: e456d54e-fb49-42c2-ace7-0dd141fee5a6
