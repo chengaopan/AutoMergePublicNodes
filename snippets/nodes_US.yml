@@ -214,7 +214,7 @@ proxies:
   servername: us04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 48691008-4e59-4e5f-949b-49919b4aefa6
+  uuid: f5fef466-76a8-41df-b5a5-fa1003fb0e3a
 - alterId: 0
   cipher: auto
   name: 10|🇺🇸美国05
@@ -224,7 +224,7 @@ proxies:
   servername: us05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 48691008-4e59-4e5f-949b-49919b4aefa6
+  uuid: f5fef466-76a8-41df-b5a5-fa1003fb0e3a
 - alterId: 0
   cipher: auto
   name: 10|🇺🇸美国06
@@ -234,14 +234,13 @@ proxies:
   servername: us06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 48691008-4e59-4e5f-949b-49919b4aefa6
+  uuid: f5fef466-76a8-41df-b5a5-fa1003fb0e3a
 - alterId: 0
   cipher: auto
-  name: 11,13|节点日期：04-12
+  name: 11|美国 CloudFlare节点
   network: ws
-  port: '80'
+  port: 80
   server: 172.64.104.182
-  servername: ''
   tls: false
   type: vmess
   uuid: f0f067fe-8e6d-4d95-816b-601038fd5876
@@ -360,6 +359,40 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-140.82.2.34:...
+  network: tcp
+  port: '23670'
+  server: 140.82.2.34
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 423f6443-f1e9-4e84-d895-a14badc59e88
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-WS-NA 🇺🇸 US-129.146.126.1...
+  network: ws
+  port: 46666
+  server: 129.146.126.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f0f067fe-8e6d-4d95-816b-601038fd5876
+  ws-opts:
+    headers:
+      Host: us-phoenix-oracle-3e4543.ip1.shop
+    path: /rongseven?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-104.207.133....
+  network: tcp
+  port: '39729'
+  server: 104.207.133.131
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 70d5375a-d4c2-4cdd-fd69-4f75572e0bcc
+- alterId: 0
+  cipher: auto
   name: 13|🔒 VM-WS-TLS 🇺🇸 US-172.67.222.1...
   network: ws
   port: 443
@@ -374,29 +407,23 @@ proxies:
     path: /linkvws
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-45.76.18.197...
-  network: tcp
-  port: '20703'
-  server: 45.76.18.197
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ae710bf3-229a-4f31-d990-971b831c8985
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-135.148.62.1...
-  network: tcp
-  port: '59988'
-  server: 135.148.62.165
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cfd7a05c-82cf-436d-abce-8b2245b76472
-- alterId: 0
-  cipher: auto
-  name: 13|美国 012
+  name: 13|🔒 VM-WS-NA 🇺🇸 US-155.138.242.2...
   network: ws
-  port: 2096
+  port: 54316
+  server: 155.138.242.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 67797c6a-e898-49bd-8f61-5fb1523ce0bd
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-WS-TLS 🇺🇸 US-172.67.204.8...
+  network: ws
+  port: '2096'
   server: 172.67.204.84
   servername: fragment2.karop.homes
   tls: true
@@ -408,165 +435,14 @@ proxies:
     path: /VPNHOMES
 - alterId: 0
   cipher: auto
-  name: 13|🇺🇸 美国 CloudFlare节点
-  network: ws
-  port: '2052'
-  server: 104.17.36.193
-  tls: false
-  type: vmess
-  uuid: e7bd848c-c1c9-40a4-b1d9-eba048a340c5
-  ws-opts:
-    headers:
-      Host: wtywwcrzjp5.yofnhkfc.xyz
-    path: /video/9TfVEyku
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-2.58.87.221:...
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-162.251.62.1...
   network: tcp
-  port: '46628'
-  server: 2.58.87.221
+  port: '22324'
+  server: 162.251.62.115
   servername: ''
   tls: false
   type: vmess
-  uuid: f6ba9e5a-711c-496f-be60-ac5464dec2b8
-- alterId: 64
-  cipher: auto
-  name: 13|美国 014
-  network: ws
-  port: 38001
-  server: 38.174.190.82
-  servername: www.31033708.xyz
-  tls: true
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: ''
-    path: /path/153428133302
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-64.176.216.1...
-  network: tcp
-  port: '36159'
-  server: 64.176.216.199
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4826d728-48f9-43d1-aa1f-27b6850cd8a1
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-140.82.2.34:...
-  network: tcp
-  port: '23670'
-  server: 140.82.2.34
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 423f6443-f1e9-4e84-d895-a14badc59e88
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-WS-NA 🇺🇸 US-23.94.104.164...
-  network: ws
-  port: 60222
-  server: 23.94.104.164
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 84134d90-e4fe-4a86-c8d6-4d7bedb3c333
-  ws-opts:
-    headers:
-      Host: 23.94.104.164
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 13|美国 002
-  network: ws
-  port: 443
-  server: 23.154.136.2
-  servername: 23.154.136.2
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-WS-NA 🇺🇸 US-64.23.190.208...
-  network: ws
-  port: 59703
-  server: 64.23.190.208
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6748ac8e-91a2-46d6-ec84-e629ae21edea
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '13|🔒 VM-WS-NA 🇺🇸 US-23.94.104.164... #1'
-  network: ws
-  port: 1194
-  server: 23.94.104.164
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7d309a75-5d7b-409b-f3f6-6f7a45d3f3ec
-  ws-opts:
-    headers:
-      Host: 23.94.104.164
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-205.234.233....
-  network: tcp
-  port: '445'
-  server: 205.234.233.68
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ff982b62-2d2e-4ebe-befc-6e3d5177857c
-- alterId: 0
-  cipher: auto
-  name: 13|美国 005
-  network: ws
-  port: 443
-  server: 173.245.58.11
-  servername: worker-late28ygwuhw.motonob768.workers.dev
-  tls: true
-  type: vmess
-  uuid: 93ea486a-bada-42a4-ac38-d088b320fa1e
-  ws-opts:
-    headers:
-      Host: worker-late28ygwuhw.motonob768.workers.dev
-    path: /xmivideo.cfd/linkws
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-WS-TLS 🇺🇸 US-172.67.150.1...
-  network: ws
-  port: '2053'
-  server: 172.67.150.173
-  servername: u03.tk3322.com
-  tls: true
-  type: vmess
-  uuid: 003f7e2a-04ef-4e21-841b-17823cb95894
-  ws-opts:
-    headers:
-      Host: u03.tk3322.com
-    path: /u03
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-149.28.226.2...
-  network: tcp
-  port: 37985
-  server: 149.28.226.202
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a36d5f0e-f529-4c83-9279-f4c4ce557031
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-WS-NA 🇺🇸 US-136.175.177.4...
@@ -583,31 +459,24 @@ proxies:
     path: /fsdafa
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 13,15,16|日本2|@ripaojiedian
-  network: ws
-  port: '2052'
-  server: cfcdn3.sanfencdn9.com
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-135.148.62.1...
+  network: tcp
+  port: '59988'
+  server: 135.148.62.165
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
-  uuid: e7bd848c-c1c9-40a4-b1d9-eba048a340c5
-  ws-opts:
-    headers:
-      Host: wtywwcrzjp5.yofnhkfc.xyz
-    path: /video/9TfVEyku
+  uuid: cfd7a05c-82cf-436d-abce-8b2245b76472
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-162.251.62.1...
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-129.146.46.1...
   network: tcp
-  port: '22324'
-  server: 162.251.62.115
+  port: '52408'
+  server: 129.146.46.181
   servername: ''
   tls: false
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+  uuid: a797ff7b-8161-40a6-d577-1b2c213b3885
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-TCP-NA 🇺🇸 US-103.79.79.57...
@@ -620,8 +489,145 @@ proxies:
   uuid: 2803a716-2a00-4f83-d915-51c28c79bf12
 - alterId: 0
   cipher: auto
+  name: 13|🔒 VM-WS-NA 🇺🇸 US-23.94.104.164...
+  network: ws
+  port: 1194
+  server: 23.94.104.164
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7d309a75-5d7b-409b-f3f6-6f7a45d3f3ec
+  ws-opts:
+    headers:
+      Host: 23.94.104.164
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-149.28.228.2...
+  network: tcp
+  port: 22195
+  server: 149.28.228.215
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f865bc43-b129-443e-d00a-7d303b25c4a2
+- alterId: 0
+  cipher: auto
+  name: '13|🔒 VM-WS-NA 🇺🇸 US-23.94.104.164... #1'
+  network: ws
+  port: 60222
+  server: 23.94.104.164
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 84134d90-e4fe-4a86-c8d6-4d7bedb3c333
+  ws-opts:
+    headers:
+      Host: 23.94.104.164
+    path: /vmess
+- alterId: 64
+  cipher: auto
+  name: 13|美国 014
+  network: ws
+  port: 38001
+  server: 38.174.190.82
+  servername: www.31033708.xyz
+  tls: true
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/153428133302
+- alterId: 0
+  cipher: auto
+  name: 13|美国 009
+  network: tcp
+  port: 10512
+  server: 205.234.232.191
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 58781eee-baba-6666-baba-2ca0ada6568b
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-205.234.233....
+  network: tcp
+  port: '445'
+  server: 205.234.233.68
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ff982b62-2d2e-4ebe-befc-6e3d5177857c
+- alterId: 0
+  cipher: auto
+  name: 13|美国1
+  network: ws
+  port: '2086'
+  server: us.wumaojichang.com
+  tls: false
+  type: vmess
+  uuid: 9abab37a-c9b8-4b51-ac7c-26187cb9c59f
+  ws-opts:
+    headers:
+      Host: us.wumaojichang.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|美国 002
+  network: ws
+  port: 443
+  server: 23.154.136.2
+  servername: 23.154.136.2
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 14|【BGP】美国 04 | 1x US
+  network: tcp
+  port: '31501'
+  server: free.2apzhfa.xyz
+  servername: us04.lovemc.xyz
+  tls: true
+  type: vmess
+  uuid: acae3c79-6828-4502-9ff0-fd5684d38dc5
+- alterId: 0
+  cipher: auto
+  name: 14|【BGP】美国 05 | 1x US
+  network: tcp
+  port: '31506'
+  server: free.2apzhfa.xyz
+  servername: us05.lovemc.xyz
+  tls: true
+  type: vmess
+  uuid: acae3c79-6828-4502-9ff0-fd5684d38dc5
+- alterId: 0
+  cipher: auto
+  name: 14|【BGP】美国 06 | 1x US
+  network: tcp
+  port: '31511'
+  server: free.2apzhfa.xyz
+  servername: us06.lovemc.xyz
+  tls: true
+  type: vmess
+  uuid: acae3c79-6828-4502-9ff0-fd5684d38dc5
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 13,15,16|美国4|@ripaojiedian
+  name: 15|🇺🇸 美国3|@ripaojiedian
+  password: 4feb33c2-cb06-4371-a572-243d47b789d9
+  port: 26670
+  server: ddns.olucloud.subapi.cc
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 15,16|美国4|@ripaojiedian
   network: ws
   port: '2095'
   server: fcdn.flha.ru
@@ -635,54 +641,6 @@ proxies:
     headers:
       Host: fcdn.flha.ru
     path: /
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-207.148.10.2...
-  network: tcp
-  port: '47918'
-  server: 207.148.10.248
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 232aeb1e-7d67-4a91-9379-4da1f4917691
-- alterId: 0
-  cipher: auto
-  name: 14|【BGP】美国 04 | 1x US
-  network: tcp
-  port: '31501'
-  server: free.2apzhfa.xyz
-  servername: us04.lovemc.xyz
-  tls: true
-  type: vmess
-  uuid: b2337db0-3765-4afc-98fe-6ef43b683db0
-- alterId: 0
-  cipher: auto
-  name: 14|【BGP】美国 05 | 1x US
-  network: tcp
-  port: '31506'
-  server: free.2apzhfa.xyz
-  servername: us05.lovemc.xyz
-  tls: true
-  type: vmess
-  uuid: b2337db0-3765-4afc-98fe-6ef43b683db0
-- alterId: 0
-  cipher: auto
-  name: 14|【BGP】美国 06 | 1x US
-  network: tcp
-  port: '31511'
-  server: free.2apzhfa.xyz
-  servername: us06.lovemc.xyz
-  tls: true
-  type: vmess
-  uuid: b2337db0-3765-4afc-98fe-6ef43b683db0
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇺🇸 美国3|@ripaojiedian
-  password: 4feb33c2-cb06-4371-a572-243d47b789d9
-  port: 26670
-  server: ddns.olucloud.subapi.cc
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 16|美国5|@ripaojiedian
