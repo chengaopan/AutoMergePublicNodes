@@ -1,4 +1,32 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 13|Hong Kong_Hong Kong_vmess_1014...
+  network: ws
+  port: 26639
+  server: 91.149.236.44
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
+  ws-opts:
+    headers:
+      Host: ''
+    path: /cctv13/hd.m3u8/
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-WS-NA 🇭🇰 HK-47.242.22.171...
+  network: ws
+  port: 28681
+  server: 47.242.22.171
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港KT|@ripaojiedian
@@ -18,45 +46,41 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 15|🇺🇸 美国2|@ripaojiedian
-  port: 30063
-  server: 183.232.170.21
+  name: 15|🇺🇸 美国7|@ripaojiedian
+  password: 36acffd6bb2fd049%2540525113083387973
+  port: 12578
+  server: 38.145.220.68
   skip-cert-verify: false
+  sni: node.bmrzqy.xyz
   tfo: false
   tls: false
-  type: vmess
+  type: trojan
   uuid: e456d54e-fb49-42c2-ace7-0dd141fee5a6
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: 15,16|香港4|@ripaojiedian
-  network: ws
-  port: '28681'
-  server: 47.242.22.171
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
-  ws-opts:
-    headers:
-      Host: ''
-    path: /
-- cipher: aes-256-cfb
+  name: 15|🇭🇰 香港4|@ripaojiedian
+  obfs: tls1.2_ticket_auth
+  obfs-param: 6f41b24.microsoft.com
+  password: Fhbe0z
+  port: 11421
+  protocol: auth_aes128_sha1
+  protocol-param: 24:SpYUtPeJYhRk4FWC
+  server: 120.232.240.1
+  type: ssr
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇭🇰 香港5|@ripaojiedian
-  password: SBM7R883jBmnqe6C
-  port: 9053
-  server: 103.172.116.79
+  password: 3bbdad44-9575-4044-8717-98ede6309161
+  port: 24105
+  server: gz.quanstring.top
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 15|🇭🇰 香港7|@ripaojiedian
-  password: 4feb33c2-cb06-4371-a572-243d47b789d9
-  port: 20001
-  server: ddns.olucloud.subapi.cc
+  name: 15|🇭🇰 香港6|@ripaojiedian
+  password: 0qHaOWVm6FnY
+  port: 3360
+  server: 34.92.186.236
   tfo: false
   type: ss
 - alterId: 64
@@ -65,6 +89,16 @@ proxies:
   network: tcp
   port: '54437'
   server: 183.236.51.59
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 16|香港2|@ripaojiedian
+  network: tcp
+  port: '41242'
+  server: 183.237.20.158
   servername: ''
   tls: false
   type: vmess
@@ -79,3 +113,13 @@ proxies:
   tls: false
   type: vmess
   uuid: e456d54e-fb49-42c2-ace7-0dd141fee5a6
+- alterId: 0
+  cipher: auto
+  name: 16|香港7|@ripaojiedian
+  network: tcp
+  port: '35996'
+  server: 786huix-ee.dc-zix4ssc1-hk03.my777999.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f9d88b9b-baf4-48cd-b98f-c28912b96ce5
