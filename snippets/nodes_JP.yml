@@ -8,7 +8,7 @@ proxies:
   servername: jp04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9c420671-593a-4933-b3df-78f6010c63cb
+  uuid: 3639d420-ee85-48f4-979f-2fdf04dacf5a
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本05
@@ -18,7 +18,7 @@ proxies:
   servername: jp05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9c420671-593a-4933-b3df-78f6010c63cb
+  uuid: 3639d420-ee85-48f4-979f-2fdf04dacf5a
 - alterId: 0
   cipher: auto
   name: 10|🇯🇵日本06
@@ -28,14 +28,13 @@ proxies:
   servername: jp06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: 9c420671-593a-4933-b3df-78f6010c63cb
+  uuid: 3639d420-ee85-48f4-979f-2fdf04dacf5a
 - alterId: 0
   cipher: auto
-  name: 11,13|@aries_init 波兰入口1
+  name: 11|日本 东京Fastly节点
   network: ws
   port: 80
   server: fastly.alipay.ovh
-  servername: ''
   tls: false
   type: vmess
   uuid: d39a347a-00c9-4f91-9255-7f536c07c5a8
@@ -43,28 +42,6 @@ proxies:
     headers:
       Host: nmsl.kp
     path: /aries?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 13|ZA_分享日记
-  network: ws
-  port: 55600
-  server: 129.151.164.152
-  tls: false
-  type: vmess
-  uuid: e30f8588-2555-48b8-c354-c8e63f57232d
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13|SE_分享日记
-  network: ws
-  port: 80
-  server: 65.20.113.203
-  tls: false
-  type: vmess
-  uuid: 251780c1-1501-43b3-be2a-d144a20d479a
-  ws-opts:
-    path: /Nbs2DSTSkFW6MrrFQHeSDQ7
 - alterId: 0
   cipher: auto
   name: 13|DE_分享日记_8
@@ -78,24 +55,13 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 13|DE_分享日记_13
-  network: ws
-  port: 8880
-  server: 217.160.45.31
-  tls: false
-  type: vmess
-  uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13|JP_分享日记_11
+  name: 13|AU_分享日记_6
   network: ws
   port: 443
-  server: jp-full.privateip.net
+  server: au-full.privateip.net
   tls: true
   type: vmess
-  uuid: 7421c12c-47c4-41cb-8abe-23d0d98eb141
+  uuid: e7032fbd-34ca-46b2-9c07-238bc837d25d
   ws-opts:
     path: /RACEVPN
 - alterId: 0
@@ -113,25 +79,74 @@ proxies:
     path: /039fc4e4
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇯🇵 JP-167.179.111....
-  network: tcp
-  port: '14935'
-  server: 167.179.111.237
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e961894f-8e90-472f-98d3-09402e4be453
-- alterId: 0
-  cipher: auto
-  name: 13|KR_分享日记_4
+  name: 13|DE_分享日记_13
   network: ws
-  port: 443
-  server: 152.67.218.38
+  port: 8880
+  server: 217.160.45.31
   tls: false
   type: vmess
-  uuid: b5e9480a-b7aa-40a4-f9a7-5299b5e363b4
+  uuid: 4e186678-fcca-4325-e4bc-b2916bdf6708
   ws-opts:
     path: /
+- alterId: 0
+  cipher: auto
+  name: 13|DE_分享日记_22
+  network: ws
+  port: 80
+  server: de3-vmess.sshmax.xyz
+  tls: false
+  type: vmess
+  uuid: d8d635a3-3807-4886-a6dc-81d44ce9b6aa
+  ws-opts:
+    headers:
+      Host: de3-vmess.sshmax.xyz
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 13|JP_分享日记_13
+  network: tcp
+  port: 1069
+  server: 152.69.197.60
+  tls: false
+  type: vmess
+  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
+- alterId: 0
+  cipher: auto
+  name: 13|IN_分享日记
+  network: ws
+  port: 8880
+  server: 103.113.68.233
+  tls: false
+  type: vmess
+  uuid: fddb3781-7e15-4731-a933-94db110b4bbc
+  ws-opts:
+    headers:
+      Host: 103.113.68.233
+    path: /vmess
+- alterId: 0
+  cipher: auto
+  name: 13|JP_分享日记_7
+  network: ws
+  port: 2052
+  server: 47.91.19.249
+  tls: false
+  type: vmess
+  uuid: 039fc4e4-92b0-489c-a7c3-d02d40eaa551
+  ws-opts:
+    headers:
+      Host: jpyouyou.mac2winer.cfd
+    path: /039fc4e4
+- alterId: 0
+  cipher: auto
+  name: 13|DE_分享日记_21
+  network: ws
+  port: 443
+  server: de2-full.privateip.net
+  tls: true
+  type: vmess
+  uuid: 532ce22b-91e2-4a05-9805-765b5dff2345
+  ws-opts:
+    path: /RACEVPN
 - alterId: 2
   cipher: auto
   name: '13|Channel id: @ShadowProxy66 🇯🇵'
@@ -155,39 +170,7 @@ proxies:
     path: /bb
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇯🇵 JP-152.69.197.6...
-  network: tcp
-  port: '1069'
-  server: 152.69.197.60
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ac8e26fe-8150-4b60-ae64-82fc77eba2cf
-- alterId: 0
-  cipher: auto
-  name: 13|DE_分享日记_1
-  network: ws
-  port: 443
-  server: de2-full.privateip.net
-  tls: true
-  type: vmess
-  uuid: 532ce22b-91e2-4a05-9805-765b5dff2345
-  ws-opts:
-    path: /RACEVPN
-- alterId: 0
-  cipher: auto
-  name: 13|AU_分享日记_5
-  network: ws
-  port: 443
-  server: au-full.privateip.net
-  tls: true
-  type: vmess
-  uuid: e7032fbd-34ca-46b2-9c07-238bc837d25d
-  ws-opts:
-    path: /RACEVPN
-- alterId: 0
-  cipher: auto
-  name: 13|NL_分享日记_26
+  name: 13|NL_分享日记_28
   network: ws
   port: 443
   server: nl2-full.privateip.net
@@ -198,17 +181,49 @@ proxies:
     path: /RACEVPN
 - alterId: 0
   cipher: auto
-  name: 13|JP_分享日记_9
+  name: 13|GB_分享日记_18
   network: ws
-  port: 2052
-  server: 47.74.34.38
+  port: 443
+  server: uk-full.privateip.net
+  tls: true
+  type: vmess
+  uuid: 2f024052-9128-4d8e-944c-124ae738c0d7
+  ws-opts:
+    path: /RACEVPN
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-TCP-NA 🇯🇵 JP-167.179.111....
+  network: tcp
+  port: '14935'
+  server: 167.179.111.237
+  servername: ''
   tls: false
   type: vmess
-  uuid: 039fc4e4-92b0-489c-a7c3-d02d40eaa551
+  uuid: e961894f-8e90-472f-98d3-09402e4be453
+- alterId: 0
+  cipher: auto
+  name: 13|DE_分享日记_18
+  network: ws
+  port: 80
+  server: 92.223.124.36
+  tls: false
+  type: vmess
+  uuid: 0688b7c7-72e9-442e-95a0-d3b950028c39
   ws-opts:
     headers:
-      Host: jpyouyou.mac2winer.cfd
-    path: /039fc4e4
+      Host: mehdi600.3utilities.com
+    path: /@forwardv2ray
+- alterId: 0
+  cipher: auto
+  name: 13|JP_分享日记_11
+  network: ws
+  port: 443
+  server: jp-full.privateip.net
+  tls: true
+  type: vmess
+  uuid: 7421c12c-47c4-41cb-8abe-23d0d98eb141
+  ws-opts:
+    path: /RACEVPN
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 04  | 1x JP
@@ -218,7 +233,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 7c3957aa-f69b-4e68-80cf-a6d0fcef611a
+  uuid: bae4931a-1e05-407a-9838-feaf6a88a427
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 05  | 1x JP
@@ -228,7 +243,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 7c3957aa-f69b-4e68-80cf-a6d0fcef611a
+  uuid: bae4931a-1e05-407a-9838-feaf6a88a427
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 06  | 1x JP
@@ -238,7 +253,7 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 7c3957aa-f69b-4e68-80cf-a6d0fcef611a
+  uuid: bae4931a-1e05-407a-9838-feaf6a88a427
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
