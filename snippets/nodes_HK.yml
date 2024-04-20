@@ -1,6 +1,34 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 11|香港 阿里云
+  network: ws
+  port: '443'
+  server: n1710825489.aaigefm.cn
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 0dd3ac59-78e9-43d5-bd3f-53f2863cffd7
+  ws-opts:
+    headers:
+      Host: n1710825489.aaigefm.cn
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-WS-NA 🇭🇰 HK-91.149.236.44...
+  network: ws
+  port: 26639
+  server: 91.149.236.44
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2cd01fcd-79f3-4ec4-8536-7802c6fcba08
+  ws-opts:
+    headers:
+      Host: ''
+    path: /cctv13/hd.m3u8/
+- alterId: 0
+  cipher: auto
   name: 13|香港【TG：@ccbaohe】定时更新节点订阅 14
   network: ws
   port: 2053
@@ -13,6 +41,19 @@ proxies:
     headers:
       Host: cfhk.393930.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-WS-NA 🇭🇰 HK-182.16.1.194:...
+  network: ws
+  port: '80'
+  server: 182.16.1.194
+  tls: false
+  type: vmess
+  uuid: 00a1da14-d55f-5f75-e346-79b985e1a723
+  ws-opts:
+    headers:
+      Host: 182.16.1.194
+    path: /opt/video/images
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港KT|@ripaojiedian
@@ -29,38 +70,43 @@ proxies:
   server: 172.67.198.153
   tfo: false
   type: ss
-- alterId: 0
+- alterId: 1
   cipher: auto
   client-fingerprint: chrome
-  name: 15|🇺🇸 美国7|@ripaojiedian
-  password: 36acffd6bb2fd049%2540525113083387973
-  port: 12578
-  server: 38.145.220.68
+  name: 15|🇨🇭 瑞士|@ripaojiedian
+  password: 25d1b91e-72f2-4e33-a9f7-3dd129723792
+  port: 443
+  server: sulishi1test.a1t.top
   skip-cert-verify: false
-  sni: node.bmrzqy.xyz
+  sni: 144-22-163-118.nhost.00cdn.com
   tfo: false
   tls: false
   type: trojan
-  uuid: 9d9d01a5-1e0c-432e-818a-d26cd04314b5
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港2|@ripaojiedian
-  password: passwd
-  plugin: obfs
-  plugin-opts:
-    host: 21858-jiuzhou722.download.microsoft.com
-    mode: http
-  port: 8101
-  server: cn01.mynode.me
-  tfo: false
-  type: ss
+  uuid: 504501ec-cd5a-35bf-9ebb-98651170fca2
 - alterId: 0
   cipher: auto
-  name: 16|香港3|@ripaojiedian
+  client-fingerprint: chrome
+  name: 15,16|香港2|@ripaojiedian
+  network: ws
+  port: '80'
+  server: ss.sulink.one
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c2e1d8d9-f32c-4b51-a4d3-f285ef9e1d34
+  ws-opts:
+    headers:
+      Host: hk08.susulian.sbs
+    path: /sulink
+- alterId: 64
+  cipher: auto
+  name: 16|香港|@ripaojiedian
   network: tcp
-  port: '21551'
-  server: xctransfer1st.cokecloud.top
+  port: '54437'
+  server: 183.236.51.59
   servername: ''
   tls: false
   type: vmess
-  uuid: 9d9d01a5-1e0c-432e-818a-d26cd04314b5
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
