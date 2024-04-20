@@ -1,14 +1,20 @@
 proxies:
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 11|广东省 移动
-  network: tcp
-  port: '41242'
-  server: 183.237.20.158
-  servername: ''
+  client-fingerprint: chrome
+  name: 11,15|🇺🇸 美国|@ripaojiedian
+  network: ws
+  port: 46036
+  server: mmus36.micloud.buzz
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 92e7a057-88aa-4101-9cbd-18b8c90a2b1b
+  ws-opts:
+    headers:
+      Host: mmus36.micloud.buzz
+    path: /zh-cn
 - alterId: 0
   cipher: auto
   name: 11,12|github.com/freefq - 广东省移动 7
@@ -22,21 +28,4 @@ proxies:
   ws-opts:
     headers:
       Host: data-us-v1.shwjfkw.cn
-    path: /debian
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 11,15,16|香港7|@ripaojiedian
-  network: ws
-  port: '20206'
-  server: data-hk-v1.usabooks.com.cn
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
-  ws-opts:
-    headers:
-      Host: data-hk-v1.usabooks.com.cn
     path: /debian
