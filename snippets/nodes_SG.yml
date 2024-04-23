@@ -8,7 +8,7 @@ proxies:
   servername: sg04.abpilot.xyz
   tls: true
   type: vmess
-  uuid: ceeb9877-913b-40e9-a3d6-1a5e35505f09
+  uuid: 886cc178-95fe-49a0-ac3c-701f99c243f4
 - alterId: 0
   cipher: auto
   name: 10|🇸🇬新加坡05
@@ -18,7 +18,7 @@ proxies:
   servername: sg05.abpilot.xyz
   tls: true
   type: vmess
-  uuid: ceeb9877-913b-40e9-a3d6-1a5e35505f09
+  uuid: 886cc178-95fe-49a0-ac3c-701f99c243f4
 - alterId: 0
   cipher: auto
   name: 10|🇸🇬新加坡06
@@ -28,7 +28,7 @@ proxies:
   servername: sg06.abpilot.xyz
   tls: true
   type: vmess
-  uuid: ceeb9877-913b-40e9-a3d6-1a5e35505f09
+  uuid: 886cc178-95fe-49a0-ac3c-701f99c243f4
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-WS-NA 🇸🇬 SG-68.183.180.24...
@@ -45,14 +45,17 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇸🇬 SG-152.42.218.5...
-  network: tcp
+  name: 13|🇸🇬 新加坡 - 2
+  network: ws
   port: '80'
-  server: 152.42.218.53
-  servername: ''
+  server: sg02.malcolmgraham.online
   tls: false
   type: vmess
-  uuid: 48a16dc9-40e7-4270-925e-b7fcef9bc4c6
+  uuid: c61eae8f-0c7e-41a6-b70f-69172382cc67
+  ws-opts:
+    headers:
+      Host: sg02.malcolmgraham.online
+    path: /
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-WS-NONE 🇸🇬 SG-146.190.86....
@@ -66,6 +69,19 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  name: 13|🇸🇬 新加坡 - 1
+  network: ws
+  port: '80'
+  server: sg01.malcolmgraham.online
+  tls: false
+  type: vmess
+  uuid: c61eae8f-0c7e-41a6-b70f-69172382cc67
+  ws-opts:
+    headers:
+      Host: sg01.malcolmgraham.online
+    path: /
+- alterId: 0
+  cipher: auto
   name: 14|【BGP】新加坡 04 | 1x SG
   network: tcp
   port: '31201'
@@ -73,7 +89,7 @@ proxies:
   servername: sg04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: dc2aa9ac-7dab-4fb0-90c3-177266c5e7fe
+  uuid: 269794e4-082c-4bdc-9a1d-8c3c7ae44d8c
 - alterId: 0
   cipher: auto
   name: 14|【BGP】新加坡 05 | 1x SG
@@ -83,7 +99,7 @@ proxies:
   servername: sg05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: dc2aa9ac-7dab-4fb0-90c3-177266c5e7fe
+  uuid: 269794e4-082c-4bdc-9a1d-8c3c7ae44d8c
 - alterId: 0
   cipher: auto
   name: 14|【BGP】新加坡 06 | 1x SG
@@ -93,7 +109,7 @@ proxies:
   servername: sg06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: dc2aa9ac-7dab-4fb0-90c3-177266c5e7fe
+  uuid: 269794e4-082c-4bdc-9a1d-8c3c7ae44d8c
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇸🇬 狮城特殊|@ripaojiedian
