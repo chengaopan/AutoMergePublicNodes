@@ -181,7 +181,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: 7,13|US_分享日记_72
+  name: 7,13|US_分享日记_57
   network: ws
   port: 443
   server: hms082.gwdef.sbs
@@ -221,7 +221,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '11,13|美国 CloudFlare节点 #11'
+  name: '11|美国 CloudFlare节点 #1'
   network: ws
   port: '8880'
   server: 104.21.69.44
@@ -235,7 +235,7 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: '11,13|美国 CloudFlare节点 #12'
+  name: '11,13|美国 CloudFlare节点 #11'
   network: ws
   port: '8080'
   server: 172.67.172.67
@@ -414,24 +414,97 @@ proxies:
     path: /77848824
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-207.148.31.1...
-  network: tcp
-  port: '30587'
-  server: 207.148.31.167
-  servername: ''
-  tls: false
+  name: 13|🇺🇸[CDN]美国|谢里登
+  network: ws
+  port: '8443'
+  server: us-0.899994.xyz
+  servername: us-0.899994.xyz
+  tls: true
   type: vmess
-  uuid: 55219214-9f2d-4914-fbaf-b1b444c85b0e
+  uuid: 538444e7-453e-4e5d-a5eb-749c5dbbeeb2
+  ws-opts:
+    headers:
+      Host: us-0.899994.xyz
+    path: /us-0?ed=2048
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-149.28.228.2...
+  name: '13|美国 CloudFlare节点 #12'
+  network: ws
+  port: 8880
+  server: cdn.vds-server.ir
+  tls: false
+  type: vmess
+  uuid: 0d1bf26a-ce97-4707-a270-7f4d2ae37334
+  ws-opts:
+    headers:
+      Host: cdn.vds-server.ir
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-140.82.2.34:...
   network: tcp
-  port: '22195'
-  server: 149.28.228.215
+  port: '23670'
+  server: 140.82.2.34
   servername: ''
   tls: false
   type: vmess
-  uuid: f865bc43-b129-443e-d00a-7d303b25c4a2
+  uuid: 423f6443-f1e9-4e84-d895-a14badc59e88
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-162.251.62.1...
+  network: tcp
+  port: '22324'
+  server: 162.251.62.115
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-129.146.46.1...
+  network: tcp
+  port: '52408'
+  server: 129.146.46.181
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a797ff7b-8161-40a6-d577-1b2c213b3885
+- alterId: 0
+  cipher: auto
+  name: '13|🇺🇸_US_美国 #23'
+  network: ws
+  port: 2052
+  server: cfcdn1.sanfencdn9.com
+  tls: false
+  type: vmess
+  uuid: 07a902d1-7c2d-47de-f2c5-c2236fc7cd46
+  ws-opts:
+    headers:
+      Host: usxm.inekokkk.top
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-172.105.150....
+  network: ''
+  port: 28953
+  server: 172.105.150.181
+  tls: false
+  type: vmess
+  uuid: d1f31766-564a-47ab-88cc-0721145b78b8
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-WS-NA 🇺🇸 US-155.138.242.2...
+  network: ws
+  port: 54316
+  server: 155.138.242.207
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 67797c6a-e898-49bd-8f61-5fb1523ce0bd
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 13|🇺🇸[直连]美国|洛杉矶|0.8X
@@ -447,14 +520,18 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-64.176.219.1...
-  network: tcp
-  port: '48895'
-  server: 64.176.219.193
-  servername: ''
-  tls: false
+  name: 13|🔒 VM-WS-TLS 🇺🇸 US-172.67.204.8...
+  network: ws
+  port: '443'
+  server: 172.67.204.84
+  servername: martina.quest
+  tls: true
   type: vmess
-  uuid: 1dd70a5f-fbbb-4e58-9d29-a40415853c80
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: martina.quest
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-WS-NA 🇺🇸 US-172.67.170.10...
@@ -469,6 +546,34 @@ proxies:
     headers:
       Host: yaghoob55freenodes.repaco69437403.workers.dev
     path: /glweidf.sbs/linkws
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-WS-TLS 🇺🇸 US-172.67.170.1...
+  network: ws
+  port: '443'
+  server: 172.67.170.103
+  servername: glweidf.sbs
+  tls: true
+  type: vmess
+  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
+  ws-opts:
+    headers:
+      Host: glweidf.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 13|🇺🇸 北美地区
+  network: ws
+  port: 443
+  server: 23.154.136.2
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
 - alterId: 0
   cipher: auto
   name: 13|🇺🇸[CDN]美国|凤凰城
@@ -494,62 +599,14 @@ proxies:
   uuid: 59c95ca3-babe-466a-9a5b-4761e575caf8
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-WS-TLS 🇺🇸 US-172.67.170.1...
-  network: ws
-  port: '443'
-  server: 172.67.170.103
-  servername: glweidf.sbs
-  tls: true
-  type: vmess
-  uuid: 76221bfb-e92f-4e80-81c5-6fe48f50ac0b
-  ws-opts:
-    headers:
-      Host: glweidf.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-162.251.62.1...
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-207.148.31.1...
   network: tcp
-  port: '22324'
-  server: 162.251.62.115
+  port: '30587'
+  server: 207.148.31.167
   servername: ''
   tls: false
   type: vmess
-  uuid: 04621bae-ab36-11ec-b909-0242ac120002
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-WS-NA 🇺🇸 US-172.67.204.84...
-  network: ws
-  port: '80'
-  server: 172.67.204.84
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 753d0d83-3f5b-4821-860e-082f0b3db609
-  ws-opts:
-    headers:
-      Host: no1-vmess.sshmax.xyz
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: '13|🔒 VM-TCP-NA 🇺🇸 US-64.176.219.1... #1'
-  network: tcp
-  port: '50706'
-  server: 64.176.219.18
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a98f5505-8bb1-4d92-e435-21906d9ab89a
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-129.146.247....
-  network: tcp
-  port: '42598'
-  server: 129.146.247.135
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1773b226-0bdb-43c5-87d8-270d26211dda
+  uuid: 55219214-9f2d-4914-fbaf-b1b444c85b0e
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-TCP-NA 🇺🇸 US-149.28.226.2...
@@ -562,65 +619,14 @@ proxies:
   uuid: a36d5f0e-f529-4c83-9279-f4c4ce557031
 - alterId: 0
   cipher: auto
-  name: 13|美国【TG：@ccbaohe】定时更新节点订阅 50
-  network: ws
-  port: '2052'
-  server: cdncdncdncdn.784654.xyz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 826507c2-65ec-42fe-add4-419c571017bd
-  ws-opts:
-    headers:
-      Host: ca-cfcdn.aikunapp.com
-    path: /index?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 13|美国 002
-  network: ws
-  port: 443
-  server: 23.154.136.2
-  servername: 23.154.136.2
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
-  name: 13|🇺🇸[CDN]美国|谢里登
-  network: ws
-  port: '8443'
-  server: us-0.899994.xyz
-  servername: us-0.899994.xyz
-  tls: true
-  type: vmess
-  uuid: 538444e7-453e-4e5d-a5eb-749c5dbbeeb2
-  ws-opts:
-    headers:
-      Host: us-0.899994.xyz
-    path: /us-0?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-144.202.59.2...
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-174.136.205....
   network: tcp
-  port: '57061'
-  server: 144.202.59.26
+  port: '39027'
+  server: 174.136.205.46
   servername: ''
   tls: false
   type: vmess
-  uuid: e90a1709-fd94-44d3-f809-8849837cc2d3
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-45.77.218.99...
-  network: ''
-  port: 12810
-  server: 45.77.218.99
-  tls: false
-  type: vmess
-  uuid: 469daa04-235a-47be-fdf8-41a9a72f8be2
+  uuid: 26419143-8a06-43ab-d58c-bea7b7da8203
 - alterId: 0
   cipher: auto
   name: 13|🇺🇸[直连]美国|纽约|0.1X
@@ -636,51 +642,18 @@ proxies:
     path: ''
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-140.82.2.34:...
-  network: tcp
-  port: '23670'
-  server: 140.82.2.34
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 423f6443-f1e9-4e84-d895-a14badc59e88
-- alterId: 0
-  cipher: auto
-  name: 13|美国 Fastly全球Anycast节点
+  name: 13|🔒 VM-WS-NA 🇺🇸 US-205.234.200.1...
   network: ws
-  port: '80'
-  server: 151.101.67.10
+  port: '33164'
+  server: 205.234.200.104
   servername: ''
   tls: false
   type: vmess
-  uuid: d39a347a-00c9-4f91-9255-7f536c07c5a8
+  uuid: 31e8f7b4-ba3e-440a-9f56-8241569c017a
   ws-opts:
     headers:
-      Host: nmsl.kp
-    path: /aries?ed=2560
-- alterId: 0
-  cipher: auto
-  name: '13|🇺🇸_US_美国 #23'
-  network: ws
-  port: 2052
-  server: cfcdn1.sanfencdn9.com
-  tls: false
-  type: vmess
-  uuid: 07a902d1-7c2d-47de-f2c5-c2236fc7cd46
-  ws-opts:
-    headers:
-      Host: usxm.inekokkk.top
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-174.136.205....
-  network: tcp
-  port: '39027'
-  server: 174.136.205.46
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 26419143-8a06-43ab-d58c-bea7b7da8203
+      Host: ''
+    path: /sd23dss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
