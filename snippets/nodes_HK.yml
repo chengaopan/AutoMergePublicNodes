@@ -1,14 +1,18 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇭🇰 HK-218.102.135....
-  network: tcp
-  port: '20000'
-  server: 218.102.135.177
+  name: 13|🔒 VM-WS-NA 🇭🇰 HK-47.242.22.171...
+  network: ws
+  port: 28681
+  server: 47.242.22.171
   servername: ''
   tls: false
   type: vmess
-  uuid: 324aa1c5-7504-4893-82b4-1365596331e2
+  uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-WS-TLS 🇭🇰 HK-152.32.190.2...
@@ -22,20 +26,6 @@ proxies:
   ws-opts:
     headers:
       Host: cfhk.393930.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-WS-NA 🇭🇰 HK-47.242.22.171...
-  network: ws
-  port: 28681
-  server: 47.242.22.171
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3b1072ce-d096-46c2-a3e7-08b4f58538f5
-  ws-opts:
-    headers:
-      Host: ''
     path: /
 - cipher: aes-128-gcm
   client-fingerprint: chrome
