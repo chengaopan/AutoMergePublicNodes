@@ -29,27 +29,35 @@ proxies:
   server: 8.210.229.184
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港|@ripaojiedian
-  password: bMxhj5PHRyXZbwvM
-  port: 43430
-  server: gd1-hk.fwcloud.cc
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 15|🇮🇳 印度|@ripaojiedian
-  password: MyYoZhfX
-  port: 44001
-  server: 183.240.255.91
+  name: 15,16|香港|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: hk.wish.ml
+  servername: ''
   skip-cert-verify: false
-  sni: 421421.xyz
   tfo: false
   tls: false
   type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
+  uuid: 4168440c-41a1-4671-a5b2-8abfe318e1bb
+  ws-opts:
+    headers:
+      Host: hk2.wish.ml
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 15|🇺🇸 美国5|@ripaojiedian
+  password: MyYoZhfX
+  port: 20344
+  server: 36.151.195.46
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: trojan
+  uuid: 6399ac7d-8265-436d-b348-299df4b735a5
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -84,32 +92,12 @@ proxies:
     headers:
       Host: dcef278233434a15c3587ef998dd119d.mobgslb.tbcache.com
     path: /
-- alterId: 64
-  cipher: auto
-  name: 16|香港2|@ripaojiedian
-  network: tcp
-  port: '40259'
-  server: 120.238.122.243
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 16|香港6|@ripaojiedian
   network: tcp
   port: '15601'
   server: 183.240.179.195
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
-- alterId: 0
-  cipher: auto
-  name: 16|香港8|@ripaojiedian
-  network: tcp
-  port: '15603'
-  server: 183.232.199.61
   servername: ''
   tls: false
   type: vmess
