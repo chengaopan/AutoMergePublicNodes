@@ -98,7 +98,7 @@ proxies:
   servername: jp04.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 4bbbe77a-536a-48f9-b5bc-fb0eff497e55
+  uuid: 2021b2ee-5e47-4688-ad26-adf46a48d776
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 05  | 1x JP
@@ -108,7 +108,7 @@ proxies:
   servername: jp05.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 4bbbe77a-536a-48f9-b5bc-fb0eff497e55
+  uuid: 2021b2ee-5e47-4688-ad26-adf46a48d776
 - alterId: 0
   cipher: auto
   name: 14|【BGP】日本 06  | 1x JP
@@ -118,15 +118,24 @@ proxies:
   servername: jp06.lovemc.xyz
   tls: true
   type: vmess
-  uuid: 4bbbe77a-536a-48f9-b5bc-fb0eff497e55
-- cipher: chacha20-ietf-poly1305
+  uuid: 2021b2ee-5e47-4688-ad26-adf46a48d776
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 15|🇯🇵 日本3|@ripaojiedian
-  password: 1ebd556c-b630-3d2f-9f5f-e97ef248198c
-  port: 61002
-  server: 4.forlive.live
+  name: 15,16|日本3|@ripaojiedian
+  network: ws
+  port: '2086'
+  server: vip1.hpyjc.top
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 32c24a94-eb17-4081-aa57-48df2bc58342
+  ws-opts:
+    headers:
+      Host: jp1.hpyjc.top
+    path: /?ed=2048
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇯🇵 日本4|@ripaojiedian
@@ -140,7 +149,7 @@ proxies:
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.182.6.181
+  server: 18.139.225.183
   tfo: false
   type: ss
 - alterId: 0
