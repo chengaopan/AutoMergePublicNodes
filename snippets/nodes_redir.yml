@@ -1,10 +1,10 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_IN__1
+  name: 1|_US_->_IN_
   network: ws
   port: 2052
-  server: hk.wish.ml
+  server: 172.67.164.78
   skip-cert-verify: true
   tls: false
   type: vmess
@@ -15,17 +15,49 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1,3|🇨🇳_CN_中国->🇺🇸_US_美国
-  network: tcp
-  port: 30013
-  server: 183.240.179.207
+  name: 1|_US_->_FR__1
+  network: ws
+  port: 2082
+  server: 172.67.130.140
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_FR_
+  name: 1|_CN_->_US__1
+  network: ws
+  port: 20401
+  server: data-us-v1.shwjfkw.cn
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      host: data-us-v1.shwjfkw.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: 1|_SG_->_FR_
+  network: ws
+  port: 2082
+  server: 8.222.174.108
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_FR__2
   network: ws
   port: 2082
   server: s1c.v2.v001sss.xyz
@@ -39,19 +71,15 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_IN__2
-  network: ws
-  port: 2052
-  server: 172.67.164.78
+  name: '1,3|🇨🇳_CN_中国->🇺🇸_US_美国 #1'
+  network: tcp
+  port: 30013
+  server: 183.240.179.207
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
-  ws-opts:
-    headers:
-      host: in3.wish.ml
-    path: /
-- name: 1|_CN_->_US__2
+  uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
+- name: 1|_CN_->_US__3
   network: tcp
   password: TNDSJfNv
   port: 20344
@@ -61,24 +89,38 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_UA_
+  name: 1|_US_->_FR__3
   network: ws
-  port: 80
-  server: 172.67.166.192
+  port: 2082
+  server: 104.21.8.157
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: cd1db809-2de0-409c-aef5-861e95eff53e
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
-      host: ua1-vmess.sshmax.xyz
+      host: s1c.v2.v001sss.xyz
     path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_CA_
+  network: ws
+  port: 2052
+  server: cdncdncdncdn.784654.xyz
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4b5867b5-a9c4-4afa-8d73-2c4330745f3e
+  ws-opts:
+    headers:
+      host: ca-cfcdn.aikunapp.com
+    path: /index?ed=20
 - alterId: 0
   cipher: auto
   name: 3|🇺🇸_US_美国->🇮🇳_IN_印度
   network: ws
   port: 2052
-  server: hk.wish.ml
+  server: 172.67.164.78
   tls: false
   type: vmess
   uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
@@ -88,7 +130,47 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 3|🇺🇸_US_美国->🇫🇷_FR_法国
+  name: '3,7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
+  network: ws
+  port: 2082
+  server: 172.67.130.140
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 3,12|github.com/freefq - 广东省移动 7
+  network: ws
+  port: '20401'
+  server: data-us-v1.shwjfkw.cn
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b1478e24-4916-3abe-8f17-15931012ecbe
+  ws-opts:
+    headers:
+      Host: data-us-v1.shwjfkw.cn
+    path: /debian
+- alterId: 0
+  cipher: auto
+  name: 3|🇸🇬_SG_新加坡->🇫🇷_FR_法国
+  network: ws
+  port: 2082
+  server: 8.222.174.108
+  tls: false
+  type: vmess
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  ws-opts:
+    headers:
+      Host: s1c.v2.v001sss.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3|🇺🇸_US_美国->🇫🇷_FR_法国 #1'
   network: ws
   port: 2082
   server: s1c.v2.v001sss.xyz
@@ -101,30 +183,30 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '3|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
+  name: '3,7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #6'
   network: ws
-  port: 2052
-  server: 172.67.164.78
+  port: 2082
+  server: 104.21.8.157
   tls: false
   type: vmess
-  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
   ws-opts:
     headers:
-      Host: in3.wish.ml
+      Host: s1c.v2.v001sss.xyz
     path: /
 - alterId: 0
   cipher: auto
-  name: 3|🇺🇸_US_美国->🇺🇦_UA_乌克兰
+  name: 3|🇺🇸_US_美国->🇨🇦_CA_加拿大
   network: ws
-  port: 80
-  server: 172.67.166.192
+  port: 2052
+  server: cdncdncdncdn.784654.xyz
   tls: false
   type: vmess
-  uuid: cd1db809-2de0-409c-aef5-861e95eff53e
+  uuid: 4b5867b5-a9c4-4afa-8d73-2c4330745f3e
   ws-opts:
     headers:
-      Host: ua1-vmess.sshmax.xyz
-    path: /
+      Host: ca-cfcdn.aikunapp.com
+    path: /index?ed=20
 - alterId: 0
   cipher: auto
   name: '6,17|🇺🇸_US_美国 #31'
@@ -140,7 +222,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
+  name: '6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #6'
   network: ws
   port: 8080
   server: 162.159.137.249
@@ -190,32 +272,6 @@ proxies:
     headers:
       Host: pcs-referenced-camera-concerns.trycloudflare.com
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
-- alterId: 0
-  cipher: auto
-  name: '7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
-  network: ws
-  port: 2082
-  server: 104.21.8.157
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
-  network: ws
-  port: 2082
-  server: 172.67.130.140
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts:
-    headers:
-      Host: s1c.v2.v001sss.xyz
-    path: /
 - alterId: 0
   cipher: auto
   name: 13|🇺🇸_US_美国->🇷🇺_RU_俄罗斯联邦

@@ -1,32 +1,26 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  name: 1|_US__1
-  network: ws
-  port: 80
-  server: upload.ir
+- name: 1|_US__1
+  network: tcp
+  password: 27876_t7d7f4e3f
+  port: 443
+  server: 23.142.200.175
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 085f6281-5c4c-4a34-8b44-d65bc2e2b069
-  ws-opts:
-    headers:
-      host: is3-vmess.sshmax.xyz
-    path: /
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 1|_US__2
   network: ws
-  port: 2095
-  server: russia.com
+  port: 2082
+  server: cfcdn1.sanfencdn9.com
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 64a57b5f-45e0-40c3-8316-97d0ff53fd96
+  uuid: 1ed3f9fd-7adb-4971-b8c0-3d4916290982
   ws-opts:
     headers:
-      host: sssub.v2.001.ssrsub.com
-    path: /api/v3/download.getFile
+      host: us4Bb5oSgJA.fzbqfrse.xyz
+    path: /video/CuTy87zAzV/
 - alterId: 0
   cipher: auto
   name: 1|_US__3
@@ -55,21 +49,36 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1|_US__5
+  name: 1,3,13|11,13|美国 002
   network: ws
-  port: 80
-  server: 172.67.204.84
+  port: 443
+  server: 23.154.136.2
+  servername: ''
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+  ws-opts:
+    headers:
+      Host: ''
+    path: /linkvws
+- alterId: 0
+  cipher: auto
+  name: 1|_US__6
+  network: ws
+  port: 2095
+  server: russia.com
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 753d0d83-3f5b-4821-860e-082f0b3db609
+  uuid: 64a57b5f-45e0-40c3-8316-97d0ff53fd96
   ws-opts:
     headers:
-      host: no1-vmess.sshmax.xyz
-    path: /
+      host: sssub.v2.001.ssrsub.com
+    path: /api/v3/download.getFile
 - grpc-opts:
     grpc-service-name: 443trojan
-  name: 1|_US__6
+  name: 1|_US__7
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
@@ -81,33 +90,24 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 3|🇺🇸_US_美国
+  client-fingerprint: chrome
+  name: 3,15,16|美国2|@ripaojiedian
   network: ws
-  port: 80
-  server: upload.ir
+  port: '2082'
+  server: cfcdn1.sanfencdn9.com
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 085f6281-5c4c-4a34-8b44-d65bc2e2b069
+  uuid: 1ed3f9fd-7adb-4971-b8c0-3d4916290982
   ws-opts:
     headers:
-      Host: is3-vmess.sshmax.xyz
-    path: /
+      Host: us4Bb5oSgJA.fzbqfrse.xyz
+    path: /video/CuTy87zAzV/
 - alterId: 0
   cipher: auto
   name: '3|🇺🇸_US_美国 #1'
-  network: ws
-  port: 2095
-  server: russia.com
-  tls: false
-  type: vmess
-  uuid: 64a57b5f-45e0-40c3-8316-97d0ff53fd96
-  ws-opts:
-    headers:
-      Host: sssub.v2.001.ssrsub.com
-    path: /api/v3/download.getFile
-- alterId: 0
-  cipher: auto
-  name: '3|🇺🇸_US_美国 #2'
   network: ws
   port: 8880
   server: russia.com
@@ -122,15 +122,15 @@ proxies:
   cipher: auto
   name: '3|🇺🇸_US_美国 #3'
   network: ws
-  port: 80
-  server: 172.67.204.84
+  port: 2095
+  server: russia.com
   tls: false
   type: vmess
-  uuid: 753d0d83-3f5b-4821-860e-082f0b3db609
+  uuid: 64a57b5f-45e0-40c3-8316-97d0ff53fd96
   ws-opts:
     headers:
-      Host: no1-vmess.sshmax.xyz
-    path: /
+      Host: sssub.v2.001.ssrsub.com
+    path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
   name: '6,7|🇺🇸_US_美国 #17'
@@ -887,20 +887,6 @@ proxies:
     path: /glweidf.sbs/linkws
 - alterId: 0
   cipher: auto
-  name: 13|11,13|美国 002
-  network: ws
-  port: 443
-  server: 23.154.136.2
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: ''
-    path: /linkvws
-- alterId: 0
-  cipher: auto
   name: 13|🇺🇸 美国 CloudFlare节点 6
   network: ws
   port: 2052
@@ -1188,23 +1174,6 @@ proxies:
   server: 212.102.47.198
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 15,16|美国2|@ripaojiedian
-  network: ws
-  port: '2082'
-  server: cfcdn1.sanfencdn9.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 1ed3f9fd-7adb-4971-b8c0-3d4916290982
-  ws-opts:
-    headers:
-      Host: us4Bb5oSgJA.fzbqfrse.xyz
-    path: /video/CuTy87zAzV/
 - alterId: 0
   cipher: auto
   name: '17|🇺🇸_US_美国 #34'
