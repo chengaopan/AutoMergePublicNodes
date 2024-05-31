@@ -1,7 +1,33 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_IN_
+  name: 1,3|🇨🇳_CN_中国->🇺🇸_US_美国
+  network: tcp
+  port: 30013
+  server: 183.240.179.207
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5bd5899a-4b78-4d75-8570-4d21b43422c4
+- name: 1|_CN_->_US__2
+  network: tcp
+  password: TNDSJfNv
+  port: 4787
+  server: 36.151.195.48
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 1|_CN_->_US__3
+  network: tcp
+  password: TNDSJfNv
+  port: 4603
+  server: 36.151.195.48
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_IN__1
   network: ws
   port: 2052
   server: 172.67.164.78
@@ -13,22 +39,20 @@ proxies:
     headers:
       host: in3.wish.ml
     path: /
-- name: 1|_CN_->_US__1
-  network: tcp
-  password: TNDSJfNv
-  port: 4787
-  server: 36.151.195.48
+- alterId: 0
+  cipher: auto
+  name: 1|_US_->_IN__2
+  network: ws
+  port: 2052
+  server: 104.17.156.224
   skip-cert-verify: true
-  type: trojan
-  udp: true
-- name: 1|_CN_->_US__2
-  network: tcp
-  password: TNDSJfNv
-  port: 4603
-  server: 36.151.195.48
-  skip-cert-verify: true
-  type: trojan
-  udp: true
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      host: in4.wish.ml
+    path: /
 - alterId: 0
   cipher: auto
   name: 3|🇺🇸_US_美国->🇮🇳_IN_印度
@@ -44,7 +68,20 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,17|🇺🇸_US_美国 #29'
+  name: '3|🇺🇸_US_美国->🇮🇳_IN_印度 #1'
+  network: ws
+  port: 2052
+  server: 104.17.156.224
+  tls: false
+  type: vmess
+  uuid: c286daa2-59de-455c-8de8-ec032b6ce2e8
+  ws-opts:
+    headers:
+      Host: in4.wish.ml
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '6,17|🇺🇸_US_美国 #31'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -83,7 +120,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,7,17|🇺🇸_US_美国 #28'
+  name: '6,7,17|🇺🇸_US_美国 #30'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -96,7 +133,7 @@ proxies:
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - alterId: 0
   cipher: auto
-  name: '6,7|🇺🇸_US_美国 #17'
+  name: '6,7|🇺🇸_US_美国 #19'
   network: ws
   port: 8080
   server: 162.159.5.6
