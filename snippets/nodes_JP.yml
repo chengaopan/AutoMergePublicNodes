@@ -1,9 +1,19 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-WS-NA 🇯🇵 JP-152.69.197.74...
+  name: 13|%F0%9F%87%AF%F0%9F%87%B5%20Jap...
+  network: tcp
+  port: '2083'
+  server: jp-v2ray.ipracevpn.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 3a0c6a81-236b-4e73-ac22-a580549edbf9
+- alterId: 0
+  cipher: auto
+  name: '13|%F0%9F%87%AF%F0%9F%87%B5%20Jap... #1'
   network: ws
-  port: '12345'
+  port: 12345
   server: 152.69.197.74
   servername: ''
   tls: false
@@ -15,24 +25,24 @@ proxies:
     path: /bb
 - alterId: 0
   cipher: auto
-  name: 13|%F0%9F%87%AF%F0%9F%87%B5%20Jap...
-  network: tcp
-  port: '2083'
-  server: jp-v2ray.ipracevpn.com
-  servername: ''
-  tls: true
+  name: 13|🇯🇵日本-1
+  network: ws
+  port: '2086'
+  server: hsj108k.mm-cc.top
+  tls: false
   type: vmess
-  uuid: 3a0c6a81-236b-4e73-ac22-a580549edbf9
+  uuid: 912e72b1-91c9-42b1-b16f-c4a823171388
+  ws-opts:
+    headers:
+      Host: akjp1um.mmaccc.top
+    path: /?ed=2048
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 13,15,16|日本4|@ripaojiedian
+  name: '13|%F0%9F%87%AF%F0%9F%87%B5%20Jap... #2'
   network: ws
-  port: '80'
+  port: 80
   server: jp5g.forlive.live
   servername: ''
-  skip-cert-verify: false
-  tfo: false
   tls: false
   type: vmess
   uuid: e9394d66-d3cd-4e66-89dd-cda991bde821
@@ -40,24 +50,39 @@ proxies:
     headers:
       Host: tms.dingtalk.com
     path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 15,16|日本2|@ripaojiedian
+  network: ws
+  port: '49232'
+  server: 167.88.184.129
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 1a331b20-4822-4c5f-b1ec-206a86d51b7c
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 15|🇯🇵 日本R|@ripaojiedian
+  password: hGkQ6915tD
+  port: 15084
+  server: 59.56.77.178
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.182.65.163
+  server: 43.202.43.179
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  name: 16|日本3|@ripaojiedian
-  network: tcp
-  port: '61002'
-  server: 183.232.170.47
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: aaaaaaaa-aaaa-aaaa-aaaa-daaaaaaaaaad
 - alterId: 0
   cipher: auto
   name: 16|日本5|@ripaojiedian
