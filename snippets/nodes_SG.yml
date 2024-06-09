@@ -2,6 +2,19 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 13|%F0%9F%87%B8%F0%9F%87%AC%20Sin...
+  network: ws
+  port: '443'
+  server: sg2-full.privateip.net
+  tls: true
+  type: vmess
+  uuid: 7d2d2794-ccdd-4333-9e15-8643b93b2a9b
+  ws-opts:
+    headers:
+      Host: ''
+    path: /RACEVPN
+- alterId: 0
+  cipher: auto
+  name: '13|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #1'
   network: tcp
   port: '2083'
   server: sg2-v2ray.ipracevpn.com
@@ -9,14 +22,33 @@ proxies:
   tls: true
   type: vmess
   uuid: 610f3cbf-d441-46c2-9a84-572936fc1009
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 15|🇸🇬 新加坡2|@ripaojiedian
-  password: 81cbccba-87e1-4322-bb8f-8c26e4e86811
-  port: 34645
-  server: 20240501.a1t.top
-  tfo: false
-  type: ss
+- alterId: 0
+  cipher: auto
+  name: '13|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #2'
+  network: ws
+  port: '99'
+  server: 128.199.161.230
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: befd085a-91f7-4608-bc45-f40c1ac2f4b7
+  ws-opts:
+    headers:
+      Host: ''
+    path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: '13|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #3'
+  network: ws
+  port: '443'
+  server: sg-full.privateip.net
+  tls: true
+  type: vmess
+  uuid: fa3c063e-a5eb-416b-882b-852d40a3ee09
+  ws-opts:
+    headers:
+      Host: ''
+    path: /RACEVPN
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇸🇬 狮城特殊|@ripaojiedian
