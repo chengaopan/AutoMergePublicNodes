@@ -1,28 +1,41 @@
 proxies:
 - grpc-opts:
-    grpc-service-name: grpc
+    grpc-service-name: 443trojan
   name: 1|_US__1
   network: grpc
-  password: f85e2ad7-3e26-4589-b478-b0b15b9b5907
-  port: 2087
-  server: 104.21.20.148
-  skip-cert-verify: true
-  sni: us1.trojanvpn.de
-  tls: true
-  type: trojan
-  udp: true
-- grpc-opts:
-    grpc-service-name: 2pxF1YL0obWgOVYsTfLJX3ihXJUp
-  name: 1|_US__2
-  network: grpc
-  password: f91f38bb-72d5-4f3e-8311-1788986293f5
+  password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
-  server: 104.21.43.13
+  server: 104.16.1.10
   skip-cert-verify: true
-  sni: iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpn_iran_mehr_vpnc.iran-mehr14.ir
+  sni: cdn-21.gsmxreality.com
   tls: true
   type: trojan
   udp: true
+- name: 1|_US__2
+  network: ws
+  password: 3080amimVq
+  port: 2053
+  server: 172.67.175.243
+  skip-cert-verify: true
+  sni: frankfoortvip.followprovider.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|_US__3
+  network: ws
+  port: 8080
+  server: russia.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4b05abf5-c68d-4ffc-915f-add2f3786dca
+  ws-opts:
+    headers:
+      host: sssub.v2.001.ssrsub.com
+    path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
   name: '1,13|🇺🇸_US_美国 #24'
@@ -33,46 +46,24 @@ proxies:
   tls: true
   type: vmess
   uuid: b32504f9-c51c-4aa0-b1ff-1316ce82033b
-- alterId: 0
-  cipher: auto
-  name: 1|_US__4
-  network: ws
-  port: 8080
-  server: 104.26.9.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: ef8c954e-014f-4b36-8273-9b5086afab34
-  ws-opts:
-    headers:
-      host: dual-nothing-prep-exit.trycloudflare.com
-    path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
-- alterId: 0
-  cipher: auto
+- cipher: aes-128-cfb
   name: 1|_US__5
-  network: ws
-  port: 8880
-  server: 104.19.21.24
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 028c8131-9e3e-4836-94ac-ea7f24d4d05a
-  ws-opts:
-    headers:
-      host: funk-england-indirect-gospel.trycloudflare.com
-    path: 028c8131-9e3e-4836-94ac-ea7f24d4d05a-vm
-- grpc-opts:
-    grpc-service-name: 443trojan
-  name: 1|_US__6
-  network: grpc
-  password: qj1Dz1CJmFQRhWr1SP80aA
+  password: shadowsocks
   port: 443
-  server: 104.16.1.10
-  skip-cert-verify: true
-  sni: cdn-21.gsmxreality.com
-  tls: true
-  type: trojan
-  udp: true
+  server: 184.170.241.194
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 1|_US__6
+  password: zGLrOR92Jh0mhaqrpZBcKU
+  port: 80
+  server: 172.232.37.114
+  type: ss
+- cipher: aes-256-cfb
+  name: 1|_US__7
+  password: amazonskr05
+  port: 443
+  server: 54.218.48.199
+  type: ss
 - alterId: 0
   cipher: auto
   name: '6,7|🇺🇸_US_美国 #13'
@@ -795,14 +786,6 @@ proxies:
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 38.121.43.248
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 15|🇺🇸 美国R|@ripaojiedian
-  password: hGkQ6915tD
-  port: 16058
-  server: 59.56.77.178
   tfo: false
   type: ss
 - alterId: 0
