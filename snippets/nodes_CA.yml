@@ -1,10 +1,19 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 1|_CA_
-  password: qkotZ0f94vUH38YhrXGkUd
-  port: 443
-  server: ca.yangon.club
+- cipher: aes-256-gcm
+  name: 1|_CA__1
+  password: Y6R9pAtvxxzmGC
+  port: 3389
+  server: 23.162.200.28
   type: ss
+- name: 1|_CA__2
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 15.157.53.76
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 6|🇨🇦_CA_加拿大

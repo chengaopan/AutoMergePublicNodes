@@ -11,16 +11,19 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- name: 1|_US__2
+- alterId: 0
+  cipher: auto
+  name: 1|_US__2
   network: ws
-  password: 3080amimVq
-  port: 2053
-  server: 172.67.175.243
+  port: 80
+  server: www.speedtest.net
   skip-cert-verify: true
-  sni: frankfoortvip.followprovider.ir
-  type: trojan
-  udp: true
+  tls: false
+  type: vmess
+  uuid: 1e99893d-8046-4825-9d28-f6de91147337
   ws-opts:
+    headers:
+      host: De2.vmess.site.
     path: /
 - alterId: 0
   cipher: auto
@@ -37,36 +40,86 @@ proxies:
       host: sssub.v2.001.ssrsub.com
     path: /api/v3/download.getFile
 - alterId: 0
-  cipher: auto
-  name: 1,13|🇺🇸 _US_美国
-  network: tcp
-  port: '2083'
-  server: kz-v2ray.ipracevpn.com
+  cipher: chacha20-poly1305
+  name: 1|_US__4
+  network: ws
+  port: 80
+  server: us.eaxeg.be
   skip-cert-verify: true
-  tls: true
+  tls: false
   type: vmess
-  uuid: b32504f9-c51c-4aa0-b1ff-1316ce82033b
-- cipher: aes-128-cfb
-  name: 1|_US__5
-  password: shadowsocks
-  port: 443
-  server: 184.170.241.194
-  type: ss
+  uuid: bded6b7a-efe3-4164-badd-0d9cfab6a072
+  ws-opts:
+    headers:
+      host: us.eaxeg.be
+    path: /XC3c53DiSQ9N70H4Y2aW
+- name: 1|_US__5
+  network: tcp
+  password: telegram-id-directvpn
+  port: 22222
+  server: 18.189.35.133
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|_US__6
-  password: zGLrOR92Jh0mhaqrpZBcKU
-  port: 80
-  server: 172.232.37.114
-  type: ss
-- cipher: aes-256-cfb
-  name: 1|_US__7
-  password: amazonskr05
+  password: lWaGPVFjmnag
   port: 443
-  server: 54.218.48.199
+  server: 205.134.180.139
   type: ss
+- name: 1|_US__7
+  network: tcp
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 51.44.29.109
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '6,7|🇺🇸_US_美国 #13'
+  name: 3,11,13|🟡5@oneclickvpnkeys
+  network: ws
+  port: '80'
+  server: www.speedtest.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1e99893d-8046-4825-9d28-f6de91147337
+  ws-opts:
+    headers:
+      Host: De2.vmess.site.
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '3|🇺🇸_US_美国 #1'
+  network: ws
+  port: 8080
+  server: russia.com
+  tls: false
+  type: vmess
+  uuid: 4b05abf5-c68d-4ffc-915f-add2f3786dca
+  ws-opts:
+    headers:
+      Host: sssub.v2.001.ssrsub.com
+    path: /api/v3/download.getFile
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: '3|🇺🇸_US_美国 #2'
+  network: ws
+  port: 80
+  server: us.eaxeg.be
+  tls: false
+  type: vmess
+  uuid: bded6b7a-efe3-4164-badd-0d9cfab6a072
+  ws-opts:
+    headers:
+      Host: us.eaxeg.be
+    path: /XC3c53DiSQ9N70H4Y2aW
+- alterId: 0
+  cipher: auto
+  name: '6,7|🇺🇸_US_美国 #16'
   network: ws
   port: 2052
   server: 172.67.152.170
@@ -79,7 +132,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,17|🇺🇸_US_美国 #27'
+  name: '6,17|🇺🇸_US_美国 #30'
   network: ws
   port: 2095
   server: russia.com
@@ -92,7 +145,7 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '6|🇺🇸_US_美国 #2'
+  name: '6|🇺🇸_US_美国 #5'
   network: ws
   port: 443
   server: cold-dawn-9246.fly.dev
@@ -103,7 +156,7 @@ proxies:
     path: /ea4909ef-7ca6-4b46-bf2e-6c07896ef338-vm
 - alterId: 0
   cipher: auto
-  name: '6,7|🇺🇸_US_美国 #18'
+  name: '6,7|🇺🇸_US_美国 #21'
   network: ws
   port: 2052
   server: 104.21.82.39
@@ -116,7 +169,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,7|🇺🇸_US_美国 #19'
+  name: '6,7|🇺🇸_US_美国 #22'
   network: ws
   port: 2052
   server: mahilu.site
@@ -129,7 +182,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,7,17|🇺🇸_US_美国 #23'
+  name: '6,7,17|🇺🇸_US_美国 #26'
   network: ws
   port: 8080
   server: fbi.gov
@@ -142,7 +195,7 @@ proxies:
     path: ef8c954e-014f-4b36-8273-9b5086afab34-vm
 - alterId: 0
   cipher: auto
-  name: '6|🇺🇸_US_美国 #6'
+  name: '6|🇺🇸_US_美国 #9'
   network: ws
   port: 2086
   server: cfcdn1.sanfencdn9.com
@@ -155,7 +208,7 @@ proxies:
     path: /video/Z7qdcrAGRw
 - alterId: 0
   cipher: auto
-  name: '6,7|🇺🇸_US_美国 #16'
+  name: '6,7|🇺🇸_US_美国 #19'
   network: ws
   port: 8080
   server: 162.159.134.23
@@ -168,7 +221,7 @@ proxies:
     path: 9b196b50-37f2-4f4b-b175-06273adc6207-vm
 - alterId: 0
   cipher: auto
-  name: '6,17|🇺🇸_US_美国 #26'
+  name: '6,17|🇺🇸_US_美国 #29'
   network: ws
   port: 8080
   server: 162.159.130.208
@@ -181,7 +234,7 @@ proxies:
     path: 55021a7c-bd6c-418e-be95-ceac8ba27b45-vm
 - alterId: 0
   cipher: auto
-  name: '6,7|🇺🇸_US_美国 #20'
+  name: '6,7|🇺🇸_US_美国 #23'
   network: ws
   port: 8880
   server: russia.com
@@ -194,7 +247,7 @@ proxies:
     path: /api/v3/download.getFile
 - alterId: 0
   cipher: auto
-  name: '6|🇺🇸_US_美国 #10'
+  name: '6|🇺🇸_US_美国 #13'
   network: ws
   port: 8080
   server: yh2.freeh1.xyz
@@ -207,7 +260,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '7|🇺🇸_US_美国 #11'
+  name: '7|🇺🇸_US_美国 #14'
   network: ws
   port: 80
   server: 172.67.116.48
@@ -220,7 +273,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '7|🇺🇸_US_美国 #14'
+  name: '7|🇺🇸_US_美国 #17'
   network: ws
   port: 8080
   server: yh1.dtku41.xyz
@@ -233,7 +286,7 @@ proxies:
     path: 34c0bb5e-c120-432d-9c58-bd7d82c7397b-vm
 - alterId: 0
   cipher: auto
-  name: '7|🇺🇸_US_美国 #17'
+  name: '7|🇺🇸_US_美国 #20'
   network: ws
   port: 8080
   server: yh2.dtku41.xyz
@@ -246,7 +299,7 @@ proxies:
     path: 9258153a-dc97-4e39-9037-009abfc4fed0-vm
 - alterId: 0
   cipher: auto
-  name: '7|🇺🇸_US_美国 #21'
+  name: '7|🇺🇸_US_美国 #24'
   network: ws
   port: 443
   server: hms082.gwdef.sbs
@@ -259,7 +312,7 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: '7|🇺🇸_US_美国 #22'
+  name: '7|🇺🇸_US_美国 #25'
   network: ws
   port: 80
   server: 104.21.234.52
@@ -350,20 +403,6 @@ proxies:
   ws-opts:
     headers:
       Host: server26.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 11,13|🟡5@oneclickvpnkeys
-  network: ws
-  port: '80'
-  server: www.speedtest.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1e99893d-8046-4825-9d28-f6de91147337
-  ws-opts:
-    headers:
-      Host: De2.vmess.site.
     path: /
 - alterId: 0
   cipher: auto
@@ -682,6 +721,15 @@ proxies:
     path: /path/191019072927
 - alterId: 0
   cipher: auto
+  name: 13|🇺🇸 _US_美国
+  network: tcp
+  port: '2083'
+  server: kz-v2ray.ipracevpn.com
+  tls: true
+  type: vmess
+  uuid: b32504f9-c51c-4aa0-b1ff-1316ce82033b
+- alterId: 0
+  cipher: auto
   name: 13|🔒 VM-TCP-NA 🇺🇸 US-129.146.46.1...
   network: tcp
   port: '52408'
@@ -725,9 +773,17 @@ proxies:
     headers:
       Host: us6gzxQRrE4.fzbqfrse.xyz
     path: /video/bYdJ7Vc2We
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 15|🇺🇸 美国R|@ripaojiedian
+  password: hGkQ6915tD
+  port: 16058
+  server: 59.56.77.178
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: '17|🇺🇸_US_美国 #28'
+  name: '17|🇺🇸_US_美国 #31'
   network: ws
   port: 2095
   server: 104.26.4.57
