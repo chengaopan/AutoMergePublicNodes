@@ -1,6 +1,58 @@
 proxies:
 - alterId: 0
   cipher: auto
+  name: 13|请按使用文档教程/HKB
+  network: ws
+  port: '443'
+  server: cos-cdn-b.alicdn.win
+  servername: aliyun-cos-cdn-hkb.52edu.men
+  tls: true
+  type: vmess
+  uuid: f50d4527-7eb1-454d-a81d-9a6e20b4efd3
+  ws-opts:
+    headers:
+      Host: aliyun-cos-cdn-hkb.52edu.men
+    path: /api/v1/serve
+- alterId: 0
+  cipher: auto
+  name: 13|如果只有几个节点/HKA
+  network: ws
+  port: '443'
+  server: cos-cdn-a.alicdn.win
+  servername: aliyun-cos-cdn-hka.52edu.men
+  tls: true
+  type: vmess
+  uuid: f50d4527-7eb1-454d-a81d-9a6e20b4efd3
+  ws-opts:
+    headers:
+      Host: aliyun-cos-cdn-hka.52edu.men
+    path: /api/v1/serve
+- alterId: 0
+  cipher: auto
+  name: 13|安装最新版客户端/HKC
+  network: ws
+  port: '443'
+  server: cos-cdn-c.alicdn.win
+  servername: aliyun-cos-cdn-hkc.52edu.men
+  tls: true
+  type: vmess
+  uuid: f50d4527-7eb1-454d-a81d-9a6e20b4efd3
+  ws-opts:
+    headers:
+      Host: aliyun-cos-cdn-hkc.52edu.men
+    path: /api/v1/serve
+- alterId: 0
+  cipher: auto
+  name: 13|香港 016
+  network: tcp
+  port: 49879
+  server: 206.237.31.203
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2aa1a094-8320-4567-b833-c0b4934eb7e2
+- alterId: 0
+  cipher: auto
   name: 13|🔒 VM-WS-NA 🇭🇰 HK-47.242.22.171...
   network: ws
   port: '28681'
@@ -13,16 +65,6 @@ proxies:
     headers:
       Host: ''
     path: /
-- alterId: 0
-  cipher: auto
-  name: 13|香港 019
-  network: tcp
-  port: 49879
-  server: 206.237.31.203
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2aa1a094-8320-4567-b833-c0b4934eb7e2
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港KT|@ripaojiedian
