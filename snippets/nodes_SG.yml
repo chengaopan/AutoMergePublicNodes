@@ -1,17 +1,27 @@
 proxies:
 - alterId: 0
   cipher: auto
-  name: 13|%F0%9F%87%B8%F0%9F%87%AC%20Sin...
+  name: 13|🇸🇬 新加坡 003
   network: ws
   port: '443'
-  server: sg2-full.privateip.net
-  tls: true
+  server: sg03.poke-mon.xyz
+  tls: false
   type: vmess
-  uuid: 489ba369-1c84-40d5-8786-e031d31ea173
+  uuid: 03bfcbaa-2cb5-42dc-9d8c-7a70dfffb451
   ws-opts:
     headers:
-      Host: ''
-    path: /RACEVPN
+      Host: sg03.poke-mon.xyz
+    path: /52pokemon?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 13|%F0%9F%87%B8%F0%9F%87%AC%20Sin...
+  network: tcp
+  port: '2083'
+  server: sg2-v2ray.ipracevpn.com
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 2121db3a-f6f9-4963-a41d-6b239f3d88cf
 - alterId: 0
   cipher: auto
   name: '13|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #1'
@@ -28,16 +38,6 @@ proxies:
 - alterId: 0
   cipher: auto
   name: '13|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #2'
-  network: tcp
-  port: '2083'
-  server: sg2-v2ray.ipracevpn.com
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: 2121db3a-f6f9-4963-a41d-6b239f3d88cf
-- alterId: 0
-  cipher: auto
-  name: '13|%F0%9F%87%B8%F0%9F%87%AC%20Sin... #3'
   network: ws
   port: '99'
   server: 128.199.161.230
@@ -49,11 +49,25 @@ proxies:
     headers:
       Host: ''
     path: /v2ray
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-WS-NA 🇸🇬 SG-138.2.90.147:...
+  network: ws
+  port: 23006
+  server: 138.2.90.147
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5eea50d8-a816-48c7-bc35-0fde39e277b5
+  ws-opts:
+    headers:
+      Host: ''
+    path: /free
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.181.172.112
+  server: 52.195.8.183
   tfo: false
   type: ss
