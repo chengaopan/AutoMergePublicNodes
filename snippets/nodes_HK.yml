@@ -1,4 +1,43 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 13|公测|香港 05 1x
+  network: ws
+  port: '2082'
+  server: baobaojichang.bbjc.xyz
+  tls: false
+  type: vmess
+  uuid: 36662862-9cb7-4d67-9561-f05b328155ba
+  ws-opts:
+    headers:
+      Host: xianggang.mojc.xyz
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 13|公测|香港 02 1x
+  network: ws
+  port: '8080'
+  server: baobaojichang.bbjc.xyz
+  tls: false
+  type: vmess
+  uuid: c3572b9c-db66-4656-91b2-853750a422ef
+  ws-opts:
+    headers:
+      Host: xianggang.mojc.xyz
+    path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 13|公测|香港 03 1x
+  network: ws
+  port: '8880'
+  server: baobaojichang.bbjc.xyz
+  tls: false
+  type: vmess
+  uuid: c3572b9c-db66-4656-91b2-853750a422ef
+  ws-opts:
+    headers:
+      Host: xianggang.mojc.xyz
+    path: /?ed=2048
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港KT|@ripaojiedian
@@ -15,15 +54,23 @@ proxies:
   server: 172.67.114.125
   tfo: false
   type: ss
-- cipher: aes-128-gcm
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 15|🇭🇰 香港|@ripaojiedian
-  password: d120b30e-af93-4bf9-b15f-9fdcf38d3126
-  port: 14658
-  server: video.111365.xyz
+  network: ws
+  port: 21949
+  server: sui.forlive.live
+  skip-cert-verify: false
   tfo: false
-  type: ss
-- alterId: 0
+  tls: false
+  type: vmess
+  uuid: 98f068ea-cd44-4a66-9cd4-710fb40ffcce
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 64
   cipher: auto
   client-fingerprint: chrome
   name: 15|🇺🇸 美国5|@ripaojiedian
@@ -31,11 +78,11 @@ proxies:
   port: 50611
   server: 183.232.139.22
   skip-cert-verify: true
-  sni: mention.protocolbuffer.com
+  sni: aixunx168.top
   tfo: false
   tls: false
   type: trojan
-  uuid: db3c11d8-ae65-40ff-a256-babee94056f6
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇭🇰 香港R|@ripaojiedian
