@@ -121,11 +121,10 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '3,13|%F0%9F%87%B0%F0%9F%87%BF%20Kaz... #1'
+  name: 3,13|🇺🇦 乌克兰 V2CROSS.COM
   network: tcp
   port: '2083'
   server: kz-v2ray.ipracevpn.com
-  servername: ''
   tls: true
   type: vmess
   uuid: 4f97bdbc-eaeb-4bf9-ad7f-faad44c6f6bb
@@ -376,9 +375,9 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 11,13|🇨🇦 加拿大 252
+  name: 11|美国 CloudFlare节点
   network: ws
-  port: '80'
+  port: 80
   server: 104.27.106.157
   tls: false
   type: vmess
@@ -390,7 +389,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,13,15,16|日本3|@ripaojiedian
+  name: 11,15,16|日本3|@ripaojiedian
   network: ws
   port: '80'
   server: cfcdn3.sanfencdn9.com
@@ -457,10 +456,11 @@ proxies:
   uuid: 2a3263e2-891c-4446-b474-a8c63acb6e25
 - alterId: 0
   cipher: auto
-  name: '11|美国 CloudFlare节点 #6'
+  name: 11,13|🇺🇸 美国 CloudFlare节点 7
   network: ws
   port: 2086
   server: 104.19.46.233
+  servername: ''
   tls: false
   type: vmess
   uuid: 29eebb60-b27b-4a9d-bba5-947763d9205e
@@ -470,7 +470,7 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 11,13|加拿大 271
+  name: 11,13|[VMess] 🇨🇦 加拿大 271
   network: ws
   port: 2086
   server: 104.19.55.49
@@ -498,7 +498,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,13,15,16|美国2|@ripaojiedian
+  name: 11,15,16|美国2|@ripaojiedian
   network: ws
   port: '2052'
   server: cfcdn1.sanfencdn9.com
@@ -608,37 +608,31 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|US590 6.9MB/s
-  network: tcp
-  port: '31433'
-  server: 205.234.231.35
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 50e82581-bd14-4527-f7d6-e7824cd26f57
-- alterId: 64
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-107.148.192....
-  network: tcp
-  port: '41911'
-  server: 107.148.192.156
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 13|🇺🇸 美国 CloudFlare
+  name: 13|🔒 VM-WS-NA 🇺🇸 US-155.138.242.2...
   network: ws
-  port: '80'
-  server: 162.159.23.25
+  port: 54316
+  server: 155.138.242.207
   tls: false
   type: vmess
-  uuid: fec25e7b-3e30-4702-9b93-62ed3849a9d7
+  uuid: 67797c6a-e898-49bd-8f61-5fb1523ce0bd
   ws-opts:
     headers:
-      Host: 6Sn8mFtTjp3.yofnhkfc.xyz
-    path: /video/X37qXHip
+      Host: 155.138.242.207
+    path: /
+- alterId: 0
+  cipher: chacha20-poly1305
+  name: 13|US202 1016.2KB/s
+  network: ws
+  port: '80'
+  server: us.eaxeg.be
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bded6b7a-efe3-4164-badd-0d9cfab6a072
+  ws-opts:
+    headers:
+      Host: us.eaxeg.be
+    path: /XC3c53DiSQ9N70H4Y2aW
 - alterId: 0
   cipher: auto
   name: 13|美国 082
@@ -655,26 +649,6 @@ proxies:
     path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-129.146.46.1...
-  network: tcp
-  port: '52408'
-  server: 129.146.46.181
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a797ff7b-8161-40a6-d577-1b2c213b3885
-- alterId: 0
-  cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-129.146.247....
-  network: tcp
-  port: '42598'
-  server: 129.146.247.135
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 1773b226-0bdb-43c5-87d8-270d26211dda
-- alterId: 0
-  cipher: auto
   name: 13|🔒 VM-TCP-NA 🇺🇸 US-174.136.205....
   network: tcp
   port: '39027'
@@ -685,7 +659,31 @@ proxies:
   uuid: 26419143-8a06-43ab-d58c-bea7b7da8203
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-38.75.137.27...
+  name: 13|🇺🇸US-64.23.196.139-0947
+  network: ws
+  port: 13337
+  server: 64.23.196.139
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-193.238.153....
+  network: tcp
+  port: '2082'
+  server: 193.238.153.22
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f26beb20-9278-49bc-b72e-7841bc240cf2
+- alterId: 0
+  cipher: auto
+  name: 13|US303 9.9MB/s
   network: tcp
   port: '22324'
   server: 38.75.137.27
@@ -693,43 +691,36 @@ proxies:
   tls: false
   type: vmess
   uuid: 04621bae-ab36-11ec-b909-0242ac120002
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-129.146.247....
+  network: tcp
+  port: '42598'
+  server: 129.146.247.135
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1773b226-0bdb-43c5-87d8-270d26211dda
 - alterId: 64
   cipher: auto
-  name: 13|🇺🇸 美国 024
+  name: 13|US578 N/A/s
   network: tcp
-  port: '41911'
-  server: 107.148.192.157
+  port: '45017'
+  server: 142.0.134.241
+  servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 13|🇺🇸US-192.3.150.233-8620
-  network: ws
-  port: 8443
-  server: 192.3.150.233
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: a6a37e04-5e81-44c9-be53-baa3ff46eb8b
-  ws-opts:
-    headers:
-      Host: ''
-    path: /8cda48b3
-- alterId: 0
-  cipher: auto
-  name: 13|US465 181.3KB/s
-  network: ws
-  port: '80'
-  server: 144.126.145.43
+  name: 13|US628 1.0MB/s
+  network: tcp
+  port: '31433'
+  server: 205.234.231.35
   servername: ''
   tls: false
   type: vmess
-  uuid: bded6b7a-efe3-4164-badd-0d9cfab6a072
-  ws-opts:
-    headers:
-      Host: us.eaxeg.be
-    path: /XC3c53DiSQ9N70H4Y2aW
+  uuid: 50e82581-bd14-4527-f7d6-e7824cd26f57
 - alterId: 0
   cipher: auto
   name: 13|🔒 VM-TCP-NA 🇺🇸 US-50.114.243.6...
@@ -755,79 +746,71 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 13|美国|【付费用户】油管秒开4K/8K|更多地区接入|GPT+...
+  name: 13|🇺🇸 美国 CloudFlare节点
   network: ws
-  port: 2095
-  server: 104.24.17.127
-  servername: ''
+  port: '2086'
+  server: 104.20.17.186
   tls: false
   type: vmess
-  uuid: ac3a3e47-47d5-347c-a7c7-fc692a486a0c
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts:
     headers:
-      Host: 100-100-17-16.db-link01.top
-    path: /dabai.in104.24.17.127
-- alterId: 0
-  cipher: chacha20-poly1305
-  name: 13|US462 5.1MB/s
-  network: ws
-  port: '80'
-  server: us.eaxeg.be
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bded6b7a-efe3-4164-badd-0d9cfab6a072
-  ws-opts:
-    headers:
-      Host: us.eaxeg.be
-    path: /XC3c53DiSQ9N70H4Y2aW
+      Host: ip11.freegradely.xyz
+    path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-WS-NA 🇺🇸 US-155.138.242.2...
+  name: 13|US192 57.4MB/s
   network: ws
-  port: 54316
-  server: 155.138.242.207
-  tls: false
-  type: vmess
-  uuid: 67797c6a-e898-49bd-8f61-5fb1523ce0bd
-  ws-opts:
-    headers:
-      Host: 155.138.242.207
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 13|🇺🇸US-64.23.196.139-0947
-  network: ws
-  port: 13337
-  server: 64.23.196.139
-  servername: ''
+  port: '443'
+  server: zula.ir
+  servername: jahfkjha.cfd
   tls: true
   type: vmess
-  uuid: bdd22841-c4d2-4aa8-acf2-95aa9125f159
+  uuid: 950db6aa-4926-4616-816e-ec0312dcb87b
   ws-opts:
     headers:
-      Host: ''
-    path: /
+      Host: jahfkjha.cfd
+    path: /linkws
 - alterId: 64
   cipher: auto
-  name: 13|US578 N/A/s
+  name: 13|美国 024
   network: tcp
-  port: '45017'
-  server: 142.0.134.241
+  port: 41911
+  server: 107.148.192.157
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 13|US252 73.6MB/s
+  network: tcp
+  port: '41911'
+  server: 107.148.192.156
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-107.148.192....
+  network: tcp
+  port: '41911'
+  server: 107.148.192.148
   servername: ''
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 13|🔒 VM-TCP-NA 🇺🇸 US-193.43.94.15...
+  name: 13|🔒 VM-TCP-NA 🇺🇸 US-129.146.46.1...
   network: tcp
-  port: '19943'
-  server: 193.43.94.156
+  port: '52408'
+  server: 129.146.46.181
   servername: ''
   tls: false
   type: vmess
-  uuid: 1e0c8a91-4bb3-46e4-9793-6f49ee15d10d
+  uuid: a797ff7b-8161-40a6-d577-1b2c213b3885
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
