@@ -1,5 +1,86 @@
 proxies:
-- name: 1|_US_->_RU_
+- alterId: 64
+  cipher: auto
+  name: 1,3|🇨🇳_CN_中国->🇺🇸_US_美国
+  network: tcp
+  port: 34002
+  server: 120.232.153.27
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 1,3|🇺🇸_US_美国->🇨🇦_CA_加拿大
+  network: ws
+  port: 2086
+  server: 104.20.17.186
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '1,3|🇺🇸_US_美国->🇨🇦_CA_加拿大 #1'
+  network: ws
+  port: 2086
+  server: 104.19.57.4
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '1,3|🇺🇸_US_美国->🇨🇦_CA_加拿大 #2'
+  network: ws
+  port: 2086
+  server: 104.19.42.49
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: '1,3|🇺🇸_US_美国->🇨🇦_CA_加拿大 #3'
+  network: ws
+  port: 2086
+  server: 104.18.57.111
+  tls: false
+  type: vmess
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
+  ws-opts: {}
+- alterId: 0
+  cipher: auto
+  name: 1,3|🇺🇸_US_美国->🇨🇳_CN_中国
+  network: ws
+  port: 8080
+  server: 104.19.47.186
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts: {}
+- alterId: 64
+  cipher: auto
+  name: '1,3,11|广东省广州市 移动 #4'
+  network: tcp
+  port: '54965'
+  server: 120.232.153.71
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: '1,3|🇺🇸_US_美国->🇨🇳_CN_中国 #1'
+  network: ws
+  port: 8080
+  server: 104.19.47.182
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
+  ws-opts: {}
+- name: 1|_US_->_FR_
   network: grpc
   password: qj1Dz1CJmFQRhWr1SP80aA
   port: 443
@@ -8,49 +89,62 @@ proxies:
   tls: true
   type: trojan
   udp: true
-- alterId: 0
+- alterId: 64
   cipher: auto
-  name: 1,3|🇨🇳_CN_中国->🇺🇸_US_美国
+  client-fingerprint: chrome
+  name: 1,15|🇺🇸 美国4|@ripaojiedian
+  password: RmdXQRXg
+  port: 45365
+  server: 223.113.54.154
+  skip-cert-verify: true
+  sni: aixunx168.top
+  tfo: false
+  tls: false
+  type: trojan
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 1|_KR_->_US_
   network: ws
-  port: 16928
-  server: 120.232.240.56
+  password: moist
+  port: 27335
+  server: 116.47.10.236
+  sni: trojan.freenods.sbs
+  type: trojan
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: '1,3,11|广东省广州市 移动 #2'
+  network: tcp
+  port: '35972'
+  server: 120.232.153.71
+  servername: ''
+  sni: ''
   tls: false
   type: vmess
-  uuid: 5f6b3c3f-b0a8-33f5-95c6-371f8c6af973
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
+- alterId: 0
+  cipher: auto
+  name: '1,3|🇺🇸_US_美国->🇨🇳_CN_中国 #2'
+  network: ws
+  port: 8080
+  server: 104.19.47.224
+  sni: ''
+  tls: false
+  type: vmess
+  uuid: b551aa22-22af-11ee-b8d8-f23c932eb68d
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 1|_US_->_DE_
+  name: '1,3|🇺🇸_US_美国->🇨🇦_CA_加拿大 #4'
   network: ws
-  port: 443
-  server: hdfy1sub1.achaemenidempireofpersia.uk
-  servername: hdfy1sub1.achaemenidempireofpersia.uk
-  tls: true
-  type: vmess
-  uuid: 6b880b07-e952-4c0b-b4a3-6c9ac4cf9d3f
-- alterId: 0
-  cipher: auto
-  name: 3|🇺🇸_US_美国->🇫🇷_FR_法国
-  network: ws
-  port: 2082
-  server: s1c.v2.v001sss.xyz
+  port: 2086
+  server: 104.19.55.49
   tls: false
   type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
+  uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '3|🇺🇸_US_美国->🇫🇷_FR_法国 #1'
-  network: ws
-  port: 2082
-  server: 172.67.130.140
-  tls: false
-  type: vmess
-  uuid: 112ac36f-3f53-4e26-8371-d25c028e1b9a
-  ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: '6,17|🇺🇸_US_美国 #33'
+  name: '6,17|🇺🇸_US_美国 #27'
   network: ws
   port: 8080
   server: 162.159.1.33
@@ -63,7 +157,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #5'
+  name: '6,17|🇺🇸_US_美国->🇨🇦_CA_加拿大 #10'
   network: ws
   port: 8080
   server: 162.159.137.249
@@ -89,7 +183,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '6,7,17|🇺🇸_US_美国 #32'
+  name: '6,7,17|🇺🇸_US_美国 #26'
   network: ws
   port: 8080
   server: yh3.freeh1.xyz
@@ -102,7 +196,7 @@ proxies:
     path: 82cb93a3-65a9-4dac-a2a7-d997b6c26d6a-vm
 - alterId: 0
   cipher: auto
-  name: '6,7|🇺🇸_US_美国 #23'
+  name: '6,7|🇺🇸_US_美国 #17'
   network: ws
   port: 8080
   server: 162.159.5.6
@@ -115,7 +209,7 @@ proxies:
     path: d9c5ec6a-a8d8-4732-8447-56fbd2f93e96-vm
 - alterId: 0
   cipher: auto
-  name: '7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #5'
+  name: '7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #3'
   network: ws
   port: 2082
   server: 104.21.8.157
@@ -128,7 +222,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: '7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #4'
+  name: '7,17|🇺🇸_US_美国->🇫🇷_FR_法国 #2'
   network: ws
   port: 2082
   server: 172.67.130.140
