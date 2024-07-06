@@ -1,4 +1,17 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 13|HK香港-05-HKT家宽|X5.0
+  network: ws
+  port: '2052'
+  server: ss.moonriver.sbs
+  tls: false
+  type: vmess
+  uuid: ff36ae93-15e5-4d66-8901-9926a31cb3e7
+  ws-opts:
+    headers:
+      Host: hk105.moonriver.cfd
+    path: /ssB
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港KT|@ripaojiedian
@@ -15,27 +28,18 @@ proxies:
   server: 47.243.99.111
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港|@ripaojiedian
-  password: 6743AB87-5912-4E9B-8AED-667F4B0EC14B
-  port: 18021
-  server: hk05-auto-console.suya.ink
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 15|🇺🇸 美国4|@ripaojiedian
+  name: 15|🇺🇸 美国7|@ripaojiedian
   password: GsKYmYOE
-  port: 40081
-  server: 183.232.139.22
-  skip-cert-verify: true
-  sni: cloudflare.node-ssl.cdn-alibaba.com
+  port: 21636
+  server: 207.246.102.64
+  skip-cert-verify: false
   tfo: false
   tls: false
-  type: trojan
-  uuid: 2062a5ca-a34e-47bf-9810-db91185f07fc
+  type: vmess
+  uuid: 53d57cfb-189f-4a9f-b620-a3ca168b7ac1
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇭🇰 香港R|@ripaojiedian
@@ -44,6 +48,16 @@ proxies:
   server: 59.56.77.178
   tfo: false
   type: ss
+- alterId: 64
+  cipher: auto
+  name: 16|香港|@ripaojiedian
+  network: tcp
+  port: '45602'
+  server: 183.240.235.170
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 16|香港2|@ripaojiedian
@@ -64,3 +78,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 16|香港5|@ripaojiedian
+  network: tcp
+  port: '45972'
+  server: 120.232.153.71
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 770ee730-2450-4e3c-a6c6-3932bd32afbd
