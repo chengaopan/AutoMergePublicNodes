@@ -5,17 +5,9 @@ proxies:
   port: 443
   server: 54.179.87.28
   type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 15|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 3.0.19.102
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 16|新加坡|@ripaojiedian
+  name: 11,16|新加坡|@ripaojiedian
   network: tcp
   port: '57614'
   server: 5.34.176.111
@@ -23,3 +15,50 @@ proxies:
   tls: false
   type: vmess
   uuid: 4e55ce40-9f8e-417d-f8ae-aa6af97a7097
+- alterId: 0
+  cipher: auto
+  name: 13|[vmess]新加坡 3
+  network: ws
+  port: '80'
+  server: m2-sg3.m2network.icu
+  tls: false
+  type: vmess
+  uuid: fb3a77ab-3d6f-4497-8a1f-4375503f4550
+  ws-opts:
+    headers:
+      Host: m2-sg3.m2network.icu
+    path: /ws?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 13|[vmess]新加坡 2
+  network: ws
+  port: '80'
+  server: m2-sg2.m2network.icu
+  tls: false
+  type: vmess
+  uuid: fb3a77ab-3d6f-4497-8a1f-4375503f4550
+  ws-opts:
+    headers:
+      Host: m2-sg2.m2network.icu
+    path: /ws?ed=2560
+- client-fingerprint: chrome
+  name: 15|🇸🇬 新加坡3|@ripaojiedian
+  network: ws
+  password: a573aedf-1eb1-49d6-9683-4157b6ea2ca1
+  port: 20230
+  server: sg06.421421.xyz
+  skip-cert-verify: false
+  sni: 421421.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 421421.xyz
+    path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 15|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 18.139.110.249
+  tfo: false
+  type: ss
