@@ -1,9 +1,36 @@
 proxies:
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  name: 13|🔒 VM-WS-NA 🇹🇼 TW-103.159.206.3...
+  network: ws
+  port: '31945'
+  server: 103.159.206.35
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e2e511b0-7def-4e1b-d238-6cb5391b2e3f
+  ws-opts:
+    headers:
+      Host: ''
+    path: /
+- client-fingerprint: chrome
   name: 15|🇹🇼 台湾|@ripaojiedian
-  password: amazonskr05
-  port: 80
-  server: 13.125.132.18
+  network: ws
+  password: moist
+  port: 23555
+  server: 60.249.89.74
+  skip-cert-verify: false
+  sni: trojan.freenods.sbs
+  type: trojan
+  ws-opts:
+    headers:
+      Host: trojan.freenods.sbs
+    path: /?ed=2560
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 15|🇹🇼 台湾2|@ripaojiedian
+  password: 5bc60592-aa74-48c1-baad-15bfa9b939d9
+  port: 12837
+  server: 79ea.ens3.buzz
   tfo: false
   type: ss
