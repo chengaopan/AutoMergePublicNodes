@@ -1,20 +1,48 @@
 proxies:
+- alterId: 64
+  cipher: auto
+  name: 11,16|香港|@ripaojiedian
+  network: tcp
+  port: '40890'
+  server: 183.238.90.3
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,15|🇭🇰 香港|@ripaojiedian
+  name: 11,15,16|香港2|@ripaojiedian
   network: ws
-  port: 46001
-  server: mmhk01.micloud.buzz
+  port: '2052'
+  server: 22.6bnw.top
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
+  uuid: f9b15148-7fd1-41c6-bd7e-b30e04c4699c
   ws-opts:
     headers:
-      Host: mmhk01.micloud.buzz
-    path: /zh-cn
+      Host: hkbn.6bnw.top
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,15,16|香港3|@ripaojiedian
+  network: ws
+  port: '2052'
+  server: 33.6bnw.top
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: f9b15148-7fd1-41c6-bd7e-b30e04c4699c
+  ws-opts:
+    headers:
+      Host: hkbn.6bnw.top
+    path: /?ed=2560
 - alterId: 64
   cipher: auto
   name: 11,16|香港5|@ripaojiedian
@@ -25,36 +53,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 11,16|香港|@ripaojiedian
-  network: ws
-  port: '46001'
-  server: mmhk01.micloud.buzz
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c9bda0e7-4ffa-464f-84a0-41253180d04c
-  ws-opts:
-    headers:
-      Host: ''
-    path: /zh-cn
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港2|@ripaojiedian
-  password: 9bc3d207-3f67-4283-905a-f88e275ac842
-  port: 36993
-  server: 6bhz.6bnw.top
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港3|@ripaojiedian
-  password: 9bc3d207-3f67-4283-905a-f88e275ac842
-  port: 39301
-  server: 6bhz.6bnw.top
-  tfo: false
-  type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -67,11 +65,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港6|@ripaojiedian
-  password: 25e4414e-b6ab-46c0-a9ec-0a51cd9750f4
-  port: 51952
-  server: 402.jjynb.com
-  tfo: false
-  type: ss
