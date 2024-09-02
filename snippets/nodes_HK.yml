@@ -12,10 +12,11 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,15|🇭🇰 香港2|@ripaojiedian
+  name: 11,15,16|香港2|@ripaojiedian
   network: ws
-  port: 40046
-  server: shhkt.cdn-sgp.xyz
+  port: '30068'
+  server: 220.246.57.161
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
@@ -23,7 +24,23 @@ proxies:
   uuid: 1cbb8f04-b0cc-4520-8b17-ed412f457b9f
   ws-opts:
     headers:
-      Host: shhkt.cdn-sgp.xyz
+      Host: ''
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,15|🇭🇰 香港3|@ripaojiedian
+  network: ws
+  port: 5101
+  server: v1.cdn.ddnschiyun.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: a95f159e-df58-452c-8484-f3571174d55a
+  ws-opts:
+    headers:
+      Host: v1.cdn.ddnschiyun.xyz
     path: /
 - alterId: 64
   cipher: auto
@@ -38,47 +55,43 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11,15,16|香港7|@ripaojiedian
+  name: 11,15|🇭🇰 香港7|@ripaojiedian
   network: ws
-  port: '10001'
-  server: 62.72.163.54
-  servername: ''
+  port: 5105
+  server: v1.cdn.ddnschiyun.xyz
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 55429656-9a94-422f-997d-b067695bc89d
+  uuid: a95f159e-df58-452c-8484-f3571174d55a
+  ws-opts:
+    headers:
+      Host: v1.cdn.ddnschiyun.xyz
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 11,16|香港3|@ripaojiedian
+  network: ws
+  port: '5101'
+  server: v1.cdn.ddnschiyun.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a95f159e-df58-452c-8484-f3571174d55a
   ws-opts:
     headers:
       Host: ''
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 11,15,16|香港9|@ripaojiedian
+  name: 11,16|香港7|@ripaojiedian
   network: ws
-  port: '2052'
-  server: 4.6bnw.top
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 5a88940e-e7f8-475b-8157-35863345eccf
-  ws-opts:
-    headers:
-      Host: polohk.6bnw.top
-    path: /cctv?ed=2048
-- alterId: 0
-  cipher: auto
-  name: 11,16|香港2|@ripaojiedian
-  network: ws
-  port: '40046'
-  server: shhkt.cdn-sgp.xyz
+  port: '5105'
+  server: v1.cdn.ddnschiyun.xyz
   servername: ''
   tls: false
   type: vmess
-  uuid: 1cbb8f04-b0cc-4520-8b17-ed412f457b9f
+  uuid: a95f159e-df58-452c-8484-f3571174d55a
   ws-opts:
     headers:
       Host: ''
@@ -86,44 +99,21 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 15|🇭🇰 香港5|@ripaojiedian
-  password: bDDJrvVT
-  port: 54104
-  server: 183.236.51.23
+  name: 15|🇯🇵 JP 07
+  password: 8fc4337b-4636-44a2-a160-9d360436aa57
+  port: 13017
+  server: naiu-jp.05vr9nyqg5.download
   skip-cert-verify: false
+  sni: cloudflare.node-ssl.cdn-alibaba.com
   tfo: false
   tls: false
-  type: vmess
+  type: trojan
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港3|@ripaojiedian
-  password: fbebeaa2-e5e3-40fa-8a29-83e88ffd0fcd
-  port: 58811
-  server: zx.1010520.shop
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇭🇰 香港6|@ripaojiedian
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20001
   server: hk1.mhw7e2.online
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港8|@ripaojiedian
-  password: 5a88940e-e7f8-475b-8157-35863345eccf
-  port: 40012
-  server: hzhz2.sssyun.xyz
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港10|@ripaojiedian
-  password: 99a941d2-2a7b-4dc4-bafc-eb18caffc648
-  port: 50201
-  server: microsoft-680deb75.nbaqz0v1meo0k3d-hk.fcnode.net
   tfo: false
   type: ss
