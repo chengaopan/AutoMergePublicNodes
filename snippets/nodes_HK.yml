@@ -1,36 +1,12 @@
 proxies:
-- alterId: 64
-  cipher: auto
-  name: 11,16|香港|@ripaojiedian
-  network: tcp
-  port: '45020'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 11,16|香港3|@ripaojiedian
-  network: tcp
-  port: '16431'
-  server: relay.gz.flyidc.top
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
-- alterId: 0
-  cipher: auto
+- cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 15|🇸🇬 新加坡|@ripaojiedian
-  password: lNOcIAxy
-  port: 17575
-  server: relay.gz.flyidc.top
-  skip-cert-verify: false
+  name: 15|🇭🇰 香港|@ripaojiedian
+  password: 45c4d39d-9f8d-4188-96bf-dedd1f8fac38
+  port: 11003
+  server: group-south-01.nutbit-node.lat
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 2d9a81f6-e86e-48e6-9646-b3b1325f8d61
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇭🇰 香港2|@ripaojiedian
@@ -39,12 +15,20 @@ proxies:
   server: gdyddx500.xiyunchen.cn
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 15|🇭🇰 香港4|@ripaojiedian
+  password: lNOcIAxy
+  port: 444
+  server: 36.151.195.83
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
+  type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇭🇰 香港5|@ripaojiedian
-  password: 377f2e43-ebe9-497b-bd87-43cf554679e2
-  port: 39008
-  server: office-3ed49ffb70.f9umiigcm1awo6o-hk.qytnode.com
+  password: 0b31e9ee-3e6f-4ecb-bfe4-98412daf24ef
+  port: 39001
+  server: office-0f1df58e3d.f9umiigcm1awo6o-hk.qytnode.com
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -53,13 +37,5 @@ proxies:
   password: 70747514-fb14-4f31-8390-e1f0453eff6d
   port: 20001
   server: hk1.mhw7e2.online
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港7|@ripaojiedian
-  password: 377f2e43-ebe9-497b-bd87-43cf554679e2
-  port: 39013
-  server: office-3ed49ffb70.f9umiigcm1awo6o-hk.qytnode.com
   tfo: false
   type: ss
