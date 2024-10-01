@@ -1,13 +1,17 @@
 proxies:
-- alterId: 1
+- alterId: 0
   cipher: auto
-  name: 11|日本 东京都Amazon数据中心
-  network: tcp
-  port: 21583
-  server: 0i4ui-g03.jp03-7d22-vm0.entry.fr0307a.art
-  tls: true
+  name: 11|日本 东京Fastly节点
+  network: ws
+  port: 80
+  server: www.hkbu.edu.hk
+  tls: false
   type: vmess
-  uuid: b37b7415-1608-3fcd-aa25-d9cc4aae5ded
+  uuid: c0b05000-23dd-4de9-9041-ec130166ff1a
+  ws-opts:
+    headers:
+      Host: nmsl.kp
+    path: /aries?ed=2048
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇯🇵 日本特殊|@ripaojiedian
