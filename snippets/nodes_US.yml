@@ -237,21 +237,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: '11,12|github.com/freefq - 美国CloudFla... #2'
-  network: ws
-  port: 8880
-  server: 104.21.82.183
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
-  ws-opts:
-    headers:
-      Host: server26.beheshtbaneh.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 12|github.com/freefq - 美国CloudFla...
+  name: 11,12|github.com/freefq - 美国CloudFla...
   network: ws
   port: 8080
   server: www.darkroom.lol
@@ -262,6 +248,19 @@ proxies:
     headers:
       Host: www.darkroom.lol
     path: /
+- alterId: 0
+  cipher: auto
+  name: 11,12|github.com/freefq - 美国Fastly全球...
+  network: ws
+  port: 443
+  server: gov.uk
+  tls: true
+  type: vmess
+  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  ws-opts:
+    headers:
+      Host: zheshiscp.com
+    path: /77848824
 - alterId: 0
   cipher: auto
   name: '12|github.com/freefq - 美国CloudFla... #1'
@@ -278,17 +277,18 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 12|github.com/freefq - 美国Fastly全球...
+  name: '12|github.com/freefq - 美国CloudFla... #2'
   network: ws
-  port: 443
-  server: gov.uk
-  tls: true
+  port: 8880
+  server: 104.21.82.183
+  servername: ''
+  tls: false
   type: vmess
-  uuid: 77848824-93b7-4b89-ffd0-e91afff406ce
+  uuid: 5a7021e0-26b4-45d6-b175-fe551601ca97
   ws-opts:
     headers:
-      Host: zheshiscp.com
-    path: /77848824
+      Host: server26.beheshtbaneh.com
+    path: /
 - alterId: 0
   cipher: auto
   name: '12|github.com/freefq - 美国CloudFla... #3'
@@ -303,11 +303,29 @@ proxies:
     headers:
       Host: server32.beheshtbaneh.com
     path: /
-- cipher: aes-128-gcm
+- cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: 15|🇺🇸 美国|@ripaojiedian
-  password: shadowsocks
-  port: 443
-  server: 37.19.198.244
+  name: 15|🇺🇸 美国2|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 137.175.97.159
   tfo: false
   type: ss
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 15|🇺🇸 美国4|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 107.148.95.104
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 16|美国3|@ripaojiedian
+  network: tcp
+  port: '9023'
+  server: select-us.0000000000.download
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac59a7cd-11af-3e35-a098-b785688ec627
