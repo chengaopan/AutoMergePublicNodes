@@ -8,43 +8,65 @@ proxies:
   tls: false
   type: vmess
   uuid: 56d6f1a9-b26a-4f9b-a95a-ff59de60ee51
-- cipher: chacha20-ietf
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 15|🇭🇰 香港|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 154.197.98.64
+  name: 15,16|香港|@ripaojiedian
+  network: ws
+  port: '12959'
+  server: z3.fragranceninja.com
+  servername: z3.fragranceninja.com
+  skip-cert-verify: false
   tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港2|@ripaojiedian
-  password: 0b94687a-2628-4ef1-a677-aab2431e2182
-  port: 11001
-  server: 183.240.255.75
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港3|@ripaojiedian
-  password: 0b94687a-2628-4ef1-a677-aab2431e2182
-  port: 12003
-  server: 183.240.188.43
-  tfo: false
-  type: ss
+  tls: true
+  type: vmess
+  uuid: a32313ad-5e39-4f9a-9cad-512041790050
+  ws-opts:
+    headers:
+      Host: z3.fragranceninja.com
+    path: /
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
   name: 15|🇩🇪 德国2|@ripaojiedian
-  password: '!!str 3690911436885991424'
+  password: 5b4becce-5739-483f-97ec-68b81a855d68
   port: 33288
   server: 183.236.48.166
   skip-cert-verify: false
-  sni: careful-platypus.opossum872.cfd
+  sni: cloudflare.node-ssl.cdn-alibaba.com
   tfo: false
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港4|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 38.147.190.72
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港R|@ripaojiedian
+  obfs: plain
+  obfs-param: 8195986416.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40206
+  protocol: auth_aes128_md5
+  protocol-param: 86416:SlZFuy
+  server: 7438974b54cf5c57.cdn.jiashule.com
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 16|香港3|@ripaojiedian
+  network: tcp
+  port: '45219'
+  server: 103.224.80.27
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ac134134-87e5-42b5-8805-565395a30acc
 - alterId: 0
   cipher: auto
   name: 16|香港5|@ripaojiedian
