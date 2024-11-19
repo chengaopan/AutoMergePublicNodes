@@ -237,14 +237,21 @@ proxies:
   ws-opts: {}
 - alterId: 64
   cipher: auto
-  name: 11,16|美国4|@ripaojiedian
-  network: tcp
-  port: '52112'
-  server: 183.236.51.23
+  client-fingerprint: chrome
+  name: 11,15,16|美国|@ripaojiedian
+  network: ws
+  port: '38007'
+  server: 142.4.108.140
   servername: ''
-  tls: false
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: ''
+    path: /path/081412110418
 - alterId: 0
   cipher: auto
   name: 12|github.com/freefq - 美国CloudFla...
