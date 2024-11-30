@@ -528,6 +528,19 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
+  name: 11|0|--33
+  network: ws
+  port: 2095
+  server: 172.64.99.22
+  tls: false
+  type: vmess
+  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
+  ws-opts:
+    headers:
+      Host: ip12.6016725.xyz
+    path: /github.com/Alvin9999
+- alterId: 0
+  cipher: auto
   name: 11|5|d*********g.com_0
   network: ws
   port: 8443
@@ -582,16 +595,16 @@ proxies:
     headers:
       Host: http1.9290254.xyz
     path: github.com/Alvin9999
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 11,16|香港3|@ripaojiedian
+  name: 11,16|香港4|@ripaojiedian
   network: tcp
-  port: '53002'
-  server: 183.236.51.23
+  port: '18001'
+  server: cc3.douyin.com.gbnodex.com
   servername: ''
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 7362aef8-0201-44a6-8cf2-5e50a3b6873b
 - alterId: 64
   cipher: auto
   name: 11,16|香港5|@ripaojiedian
@@ -602,67 +615,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 11,15,16|台湾|@ripaojiedian
-  network: ws
-  port: '443'
-  server: hk.xn--vpn-rw7eh25o.com
-  servername: hk.xn--vpn-rw7eh25o.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: c9002485-0cfe-4617-86d3-0a9b959247a7
-  ws-opts:
-    headers:
-      Host: hk.xn--vpn-rw7eh25o.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 11,16|日本3|@ripaojiedian
-  network: tcp
-  port: '47118'
-  server: 45.159.51.28
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ea034172-f33d-4f2b-a4a7-c700ca773f7a
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 11,15,16|美国|@ripaojiedian
-  network: ws
-  port: '2095'
-  server: 162.159.45.246
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 18d96190-c10f-448f-a82a-2d36df5c3cde
-  ws-opts:
-    headers:
-      Host: c3.6016725.xyz
-    path: github.com/Alvin9999
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 11,15,16|美国3|@ripaojiedian
-  network: ws
-  port: '2086'
-  server: 162.159.45.219
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: bc65fac2-7dc7-426f-acdd-0779a5035bde
-  ws-opts:
-    headers:
-      Host: p1.613055.xyz
-    path: github.com/Alvin9999
 - alterId: 0
   cipher: auto
   name: '11|16|d*********g.com_2 #1'
@@ -797,7 +749,12 @@ proxies:
     headers:
       Host: server32.beheshtbaneh.com
     path: /
-- alterId: 0
+- name: 15|tg频道:@ripaojiedian
+  port: 4000
+  server: hk9.ftq.ink
+  tls: true
+  type: http
+- alterId: 64
   cipher: auto
   client-fingerprint: chrome
   name: 15|🇺🇸 美国2|@ripaojiedian
@@ -809,59 +766,83 @@ proxies:
   tfo: false
   tls: false
   type: trojan
-  uuid: ea034172-f33d-4f2b-a4a7-c700ca773f7a
-- cipher: chacha20-ietf-poly1305
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: rc4-md5
   client-fingerprint: chrome
-  name: 15|🇭🇰 香港4|@ripaojiedian
-  password: F585FCDB-6351-48D4-82C1-599B5447A589
-  port: 40000
-  server: soonhk.soon.guru
+  name: 15|🇭🇰 香港3|@ripaojiedian
+  obfs: plain
+  obfs-param: cd5ed74592.6602b8463464108506.microsoft.com
+  password: ENZ52K
+  port: 40209
+  protocol: auth_aes128_md5
+  protocol-param: 74592:o4fbeopsgcf
+  server: 95b1cd85a0968ff2.cdn.jiashule.com
+  type: ssr
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 15|🇹🇼 台湾|@ripaojiedian
+  password: db6de241-8d8f-4c04-93f8-97e5ee13b349
+  port: 11011
+  server: group-aipop-81492.nutbit-node.lat
   tfo: false
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 15|🇭🇰 香港6|@ripaojiedian
+  name: 15|🇯🇵 日本2|@ripaojiedian
   obfs: plain
-  obfs-param: e0a3163814.6602b8463464108506.microsoft.com
+  obfs-param: 255e7112598.6602b8463464108506.microsoft.com
   password: ENZ52K
-  port: 40213
+  port: 40201
   protocol: auth_aes128_md5
-  protocol-param: 63814:v10ko160fk
+  protocol-param: 112598:vcy7qi
   server: 95b1cd85a0968ff2.cdn.jiashule.com
   type: ssr
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-128-gcm
   client-fingerprint: chrome
-  name: 15|🇹🇼 台湾2|@ripaojiedian
-  password: F585FCDB-6351-48D4-82C1-599B5447A589
-  port: 40020
-  server: soontw.soon.guru
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇯🇵 日本2|@ripaojiedian
-  password: 8d0f3729-0c01-4a94-9b57-6ec8e352ddb6
-  port: 11001
-  server: 61.172.235.22
+  name: 15|🇯🇵 日本3|@ripaojiedian
+  password: db6de241-8d8f-4c04-93f8-97e5ee13b349
+  port: 11021
+  server: group-aipop-81492.nutbit-node.lat
   tfo: false
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 15|🇸🇬 新加坡|@ripaojiedian
-  obfs: plain
-  obfs-param: 255e7112598.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40251
-  protocol: auth_aes128_md5
-  protocol-param: 112598:vcy7qi
-  server: 95b1cd85a0968ff2.cdn.jiashule.com
-  type: ssr
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 68.183.227.45
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇺🇸 美国|@ripaojiedian
+  password: kDWvXYZoTBcGkC4
+  port: 8882
+  server: 38.75.136.21
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇺🇸 美国3|@ripaojiedian
+  password: TEzjfAYq2IjtuoS
+  port: 6679
+  server: 38.75.136.21
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf
+  client-fingerprint: chrome
+  name: 15|🇺🇸 美国4|@ripaojiedian
+  password: asd123456
+  port: 8388
+  server: 137.175.113.192
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.196.65.55
+  server: 54.251.196.3
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -869,7 +850,7 @@ proxies:
   name: 15|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.231.227.176
+  server: 52.88.193.52
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -877,25 +858,25 @@ proxies:
   name: 15|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.95.5.168
+  server: 47.129.60.132
   tfo: false
   type: ss
 - cipher: rc4-md5
-  name: 16|6aaZ5rivNnxAcmlwYW9qaWVkaWFu
+  name: 16|6aaZ5rivM3xAcmlwYW9qaWVkaWFu
   obfs: plain
-  obfs-param: ZTBhMzE2MzgxNC42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
+  obfs-param: Y2Q1ZWQ3NDU5Mi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
   password: ENZ52K
-  port: '40213'
+  port: '40209'
   protocol: auth_aes128_md5
-  protocol-param: NjM4MTQ6djEwa28xNjBmaw
+  protocol-param: NzQ1OTI6bzRmYmVvcHNnY2Y
   server: 95b1cd85a0968ff2.cdn.jiashule.com
   type: ssr
 - cipher: rc4-md5
-  name: 16|5paw5Yqg5Z2hfEByaXBhb2ppZWRpYW...
+  name: 16|5pel5pysMnxAcmlwYW9qaWVkaWFu
   obfs: plain
   obfs-param: MjU1ZTcxMTI1OTguNjYwMmI4NDYzNDY0MTA4NTA2Lm1pY3Jvc29mdC5jb20
   password: ENZ52K
-  port: '40251'
+  port: '40201'
   protocol: auth_aes128_md5
   protocol-param: MTEyNTk4OnZjeTdxaQ
   server: 95b1cd85a0968ff2.cdn.jiashule.com
