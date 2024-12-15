@@ -1,22 +1,12 @@
 proxies:
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  http-opts:
-    headers:
-      Host:
-      - urydh.ljricbrd.top
-    method: GET
-    path:
-    - /ljyed
-  name: 11,15,16|香港6|@ripaojiedian
-  network: http
-  port: '41001'
+  name: 11,16|香港6|@ripaojiedian
+  network: tcp
+  port: '39041'
   server: hk1.tiljkc.top
-  servername: urydh.ljricbrd.top
-  skip-cert-verify: true
-  tfo: false
-  tls: true
+  servername: ''
+  tls: false
   type: vmess
   uuid: 8995f5b8-6ad5-3c29-836f-ec8baa292ba0
 - alterId: 64
@@ -29,7 +19,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 64
+- alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 15|🇻🇳 越南|@ripaojiedian
@@ -41,13 +31,13 @@ proxies:
   tfo: false
   tls: false
   type: trojan
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
+  uuid: 8995f5b8-6ad5-3c29-836f-ec8baa292ba0
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港3|@ripaojiedian
-  password: 718b6119-17fb-4700-a3ed-32e8417a3daa
-  port: 10002
-  server: hk02.51feitu.com
+  password: ANTGT74MO57KLLLE
+  port: 15011
+  server: 219.135.227.209
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -58,11 +48,16 @@ proxies:
   server: 219.135.227.209
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   name: 15|🇭🇰 香港5|@ripaojiedian
-  password: PW5K9ORIVZQLTTCZ
-  port: 15012
-  server: 219.135.227.209
-  tfo: false
-  type: ss
+  network: ws
+  password: ouo
+  port: 18443
+  server: 18.162.246.4
+  skip-cert-verify: false
+  sni: tr.koiok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koiok.us.kg
+    path: /?ed=2560
