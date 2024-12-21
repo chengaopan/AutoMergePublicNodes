@@ -237,14 +237,19 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 11,16|美国2|@ripaojiedian
-  network: tcp
-  port: '45053'
-  server: xdd.dashuai.cyou
-  servername: ''
-  tls: false
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: /
+  name: 11,15,16|美国|@ripaojiedian
+  network: grpc
+  port: '443'
+  server: America.com
+  servername: us.anycast.us.kg
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vmess
-  uuid: 5f60da64-5a9a-4fe3-925d-4dd45084816e
+  uuid: 33f6d8b0-81f8-4fce-b3df-79dc8fd6d8c5
 - alterId: 0
   cipher: auto
   name: 12|github.com/freefq - 美国CloudFla...
