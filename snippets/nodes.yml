@@ -528,7 +528,7 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 11|0|--40
+  name: 11|0|--43
   network: ws
   port: 443
   server: 151.101.194.133
@@ -582,6 +582,26 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  http-opts:
+    headers:
+      Host:
+      - tw2.sdklkd.org
+    method: GET
+    path:
+    - /game
+  name: 11,15,16|台湾|@ripaojiedian
+  network: http
+  port: '1443'
+  server: tw2.sdklkd.org
+  servername: tw2.sdklkd.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: fa98714c-1d2b-3b60-81e0-f7151110e801
+- alterId: 0
+  cipher: auto
   name: 11,16|日本2|@ripaojiedian
   network: tcp
   port: '38953'
@@ -589,7 +609,7 @@ proxies:
   servername: ''
   tls: false
   type: vmess
-  uuid: 4f357993-53e3-33d8-8ed7-0c58f87f7fa3
+  uuid: fa98714c-1d2b-3b60-81e0-f7151110e801
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -607,6 +627,16 @@ proxies:
     headers:
       Host: amd.al
     path: /?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 11,16|美国|@ripaojiedian
+  network: tcp
+  port: '30895'
+  server: 156.251.189.225
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 5f011b57-a456-45ae-aa2c-f976780e56c3
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -775,15 +805,7 @@ proxies:
   tfo: false
   tls: false
   type: trojan
-  uuid: 4f357993-53e3-33d8-8ed7-0c58f87f7fa3
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港6|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 154.197.26.120
-  tfo: false
-  type: ss
+  uuid: 5f011b57-a456-45ae-aa2c-f976780e56c3
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 15|🇯🇵 日本|@ripaojiedian
@@ -792,12 +814,20 @@ proxies:
   server: 149.22.87.204
   tfo: false
   type: ss
-- cipher: chacha20-ietf
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 15|🇯🇵 日本3|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 107.148.6.121
+  name: 15|🇰🇷 韩国|@ripaojiedian
+  password: qwerREWQ@@
+  port: 2884
+  server: 27.255.82.135
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 15|🇰🇷 韩国2|@ripaojiedian
+  password: qwerREWQ@@
+  port: 24934
+  server: 221.150.109.88
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -805,7 +835,7 @@ proxies:
   name: 15|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.112.236.3
+  server: 18.181.176.227
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -813,7 +843,7 @@ proxies:
   name: 15|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.79.52.119
+  server: 18.139.115.92
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -821,6 +851,6 @@ proxies:
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 57.181.42.233
+  server: 18.181.162.137
   tfo: false
   type: ss
