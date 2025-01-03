@@ -1,17 +1,28 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇯🇵 日本|@ripaojiedian
-  password: f5136746-de79-46d0-b3be-d15d9992fa07
-  port: 18109
-  server: zx1.1010520.xyz
+- name: 15|🇯🇵 日本|@ripaojiedian
+  network: ws
+  password: ouo
+  port: 443
+  server: 18.183.158.211
+  skip-cert-verify: false
+  sni: tr.koxok.us.kg
+  tfo: false
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koxok.us.kg
+    path: /?ed=2560
+- cipher: aes-256-gcm
+  name: 15|🇯🇵 日本2|@ripaojiedian
+  password: WHSVXNV06K183IPW
+  port: 18004
+  server: 156.231.104.14
   tfo: false
   type: ss
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.194.212.235
+  server: 13.250.27.88
   tfo: false
   type: ss
