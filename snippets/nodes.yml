@@ -526,19 +526,6 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: 11|0|--69
-  network: ws
-  port: 443
-  server: hms02opi.fxiaomi.sbs
-  tls: true
-  type: vmess
-  uuid: 6c168fcc-2231-4f3b-8c1e-f6391692df4a
-  ws-opts:
-    headers:
-      Host: hms02.fxiaomi.sbs
-    path: /link
 - alterId: 64
   cipher: auto
   name: 11,16|香港3|@ripaojiedian
@@ -571,14 +558,48 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11|14|美国2|@ripaojiedian
+  client-fingerprint: chrome
+  name: 11,15,16|香港6|@ripaojiedian
+  network: ws
+  port: '80'
+  server: 619d3460-e201-be79-d7f9-b8c85f7ba8e4.castlepeakhospital.moe
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: ef29bee2-2169-450b-804b-598b1e963109
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,15,16|日本2|@ripaojiedian
+  network: ws
+  port: '21001'
+  server: csct.xxxxxx.one
+  servername: jp1.runjustfast.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 437c6b4b-d508-4662-a508-cf3337b836b3
+  ws-opts:
+    headers:
+      Host: jp1.runjustfast.com
+    path: /21a64xdea04c
+- alterId: 64
+  cipher: auto
+  name: 11,16|美国|@ripaojiedian
   network: tcp
-  port: '8001'
-  server: 38.150.7.183
+  port: '52112'
+  server: 183.236.51.23
   servername: ''
   tls: false
   type: vmess
-  uuid: 64f8f872-fc9b-4782-967f-185c79e3c6a8
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -748,23 +769,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 15,16|香港6|@ripaojiedian
-  network: ws
-  port: '80'
-  server: 619d3460-e201-be79-d7f9-b8c85f7ba8e4.castlepeakhospital.moe
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: ef29bee2-2169-450b-804b-598b1e963109
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇹🇼 台湾2|@ripaojiedian
@@ -773,23 +777,6 @@ proxies:
   server: best.cutecloud.link
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 15,16|日本2|@ripaojiedian
-  network: ws
-  port: '21001'
-  server: csct.xxxxxx.one
-  servername: jp1.runjustfast.com
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 437c6b4b-d508-4662-a508-cf3337b836b3
-  ws-opts:
-    headers:
-      Host: jp1.runjustfast.com
-    path: /21a64xdea04c
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇸🇬 新加坡|@ripaojiedian
@@ -830,13 +817,3 @@ proxies:
   server: 54.169.231.25
   tfo: false
   type: ss
-- alterId: 64
-  cipher: auto
-  name: 16|美国|@ripaojiedian
-  network: tcp
-  port: '52112'
-  server: 183.236.51.23
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
