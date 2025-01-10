@@ -526,33 +526,6 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
-- alterId: 0
-  cipher: auto
-  name: 11|0|--35
-  network: ws
-  port: 443
-  server: 163.5.159.231
-  tls: true
-  type: vmess
-  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
-  ws-opts:
-    headers:
-      Host: irvideo.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 11|0|--40
-  network: ws
-  port: 443
-  server: 57.129.25.22
-  servername: wrmelmwxlf.gktevlrqznwqqozy.fabpfs66gizmnojhcvqxwl.kytrcfzqla87gvgvs6c7kjnrubuh.cc
-  tls: true
-  type: vmess
-  uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-  ws-opts:
-    headers:
-      Host: o.metuji.com
-    path: /linkvws
 - alterId: 64
   cipher: auto
   name: 11,16|香港3|@ripaojiedian
@@ -585,14 +558,20 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11,16|台湾2|@ripaojiedian
-  network: tcp
-  port: '47436'
-  server: 103.224.80.116
-  servername: ''
-  tls: false
+  client-fingerprint: chrome
+  name: 11,15|🇯🇵 日本3|@ripaojiedian
+  network: ws
+  port: 443
+  server: tky1.sdwan.day
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vmess
-  uuid: 37069024-80fb-43ef-9ef2-b37a010a48e8
+  uuid: fade2b35-7872-442e-a54e-6ccf9b970476
+  ws-opts:
+    headers:
+      Host: tky1.sdwan.day
+    path: /name
 - alterId: 64
   cipher: auto
   name: 11,16|美国|@ripaojiedian
@@ -603,6 +582,50 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,15|🇺🇸 美国3|@ripaojiedian
+  network: ws
+  port: 4431
+  server: jp4.sdwan.day
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: fade2b35-7872-442e-a54e-6ccf9b970476
+  ws-opts:
+    headers:
+      Host: jp4.sdwan.day
+    path: /stream
+- alterId: 0
+  cipher: auto
+  name: 11,16|日本3|@ripaojiedian
+  network: ws
+  port: '443'
+  server: tky1.sdwan.day
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: fade2b35-7872-442e-a54e-6ccf9b970476
+  ws-opts:
+    headers:
+      Host: ''
+    path: /name
+- alterId: 0
+  cipher: auto
+  name: 11,16|美国3|@ripaojiedian
+  network: ws
+  port: '4431'
+  server: jp4.sdwan.day
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: fade2b35-7872-442e-a54e-6ccf9b970476
+  ws-opts:
+    headers:
+      Host: ''
+    path: /stream
 - alterId: 0
   cipher: auto
   name: 11|16|d*********g.com_2
@@ -755,34 +778,45 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港6|@ripaojiedian
-  password: qwerREWQ@@
-  port: 4231
-  server: 112.213.102.228
+  password: 5TKI8YZMUS7LMA9E
+  port: 15007
+  server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港8|@ripaojiedian
-  password: 6LE2F7E2WQWGJEYG
-  port: 15003
-  server: qh62onjn.slashdevslashnetslashtun.net
+  password: QDMKYVHZQVM77KA8
+  port: 15013
+  server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 15|🇭🇰 香港9|@ripaojiedian
-  password: Y4JZ69NZ4IMSVWMC
-  port: 15011
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
+  name: 15|🇹🇼 台湾2|@ripaojiedian
+  obfs: http_simple
+  obfs-param: download.microsoft.com
+  password: HUAHE
+  port: 1014
+  protocol: auth_aes128_md5
+  protocol-param: 149588:T0Nf4D5TYESB56Zp
+  server: v2-mixing.dnsluote.com
+  type: ssr
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 15|🇯🇵 日本|@ripaojiedian
-  password: U5GAQMMIFQ2FD44A
+  password: V86WNPYR4ORBV2LH
+  port: 18001
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇯🇵 日本2|@ripaojiedian
+  password: PUYELFF4VNSZ7OYX
   port: 18003
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
@@ -795,44 +829,28 @@ proxies:
   server: p199.panda003.net
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇸🇬 新加坡|@ripaojiedian
-  password: W6L2Z5COWF4TGC8S
-  port: 16015
-  server: qh62onjn.slashdevslashnetslashtun.net
+  password: f16d3752-7bae-474e-87dc-f892df2caeaf
+  port: 31620
+  server: ctmm.gscloud.bond
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 15|🇸🇬 新加坡4|@ripaojiedian
-  password: DNYXV60QG2Q7I15T
-  port: 16009
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  password: LBNV7AS85Y44SFN6
+  port: 16008
+  server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 15|🇺🇸 美国2|@ripaojiedian
-  password: IY8P2O7XIQZVL9JE
-  port: 17001
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 15|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.254.26.119
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 15|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 13.250.107.170
+  password: YRCK2D16NISDAPEV
+  port: 17004
+  server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -840,6 +858,32 @@ proxies:
   name: 15|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.0.103.234
+  server: 13.229.216.218
   tfo: false
   type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 15|🇯🇵 日本特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 54.169.58.78
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 15|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.113.29.56
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  name: 16|5Y-w5rm-MnxAcmlwYW9qaWVkaWFu
+  obfs: http_simple
+  obfs-param: ZG93bmxvYWQubWljcm9zb2Z0LmNvbQ
+  password: HUAHE
+  port: '1014'
+  protocol: auth_aes128_md5
+  protocol-param: MTQ5NTg4OlQwTmY0RDVUWUVTQjU2WnA
+  server: v2-mixing.dnsluote.com
+  type: ssr
