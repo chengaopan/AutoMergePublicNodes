@@ -1,4 +1,14 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 11,16|香港3|@ripaojiedian
+  network: tcp
+  port: '45051'
+  server: xdd.dashuai.cyou
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 00f81c36-f346-4ca6-9074-eef73fff794e
 - alterId: 64
   cipher: auto
   name: 11,16|香港4|@ripaojiedian
@@ -11,60 +21,47 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11,16|香港7|@ripaojiedian
-  network: tcp
-  port: '45050'
-  server: haa.dashuai.cyou
-  servername: ''
-  tls: false
+  client-fingerprint: chrome
+  name: 11,15,16|香港5|@ripaojiedian
+  network: ws
+  port: '443'
+  server: hk-bmg.cowvpn.org
+  servername: hk-bmgcf.cowvpn.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vmess
-  uuid: ebb96eed-2827-43ac-b539-4e4d7b0ab99b
+  uuid: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
+  ws-opts:
+    headers:
+      Host: hk-bmgcf.cowvpn.org
+    path: /cctv13/vmess_hk-bmgcf
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 15|🇺🇸 美国|@ripaojiedian
-  password: 243eab52-9ac1-405c-887c-eb112c0985b8
-  port: 443
-  server: sg02.trojanyyds.xyz
-  skip-cert-verify: false
-  sni: sg02.trojanyyds.xyz
+  name: 15|🇺🇸 美国2|@ripaojiedian
+  password: 0bc68743-cff8-4730-9818-9d8192ee335c
+  port: 21142
+  server: 120.232.217.96
+  skip-cert-verify: true
+  sni: cloudflare.node-ssl.cdn-alibaba.com
   tfo: false
   tls: false
   type: trojan
-  uuid: ebb96eed-2827-43ac-b539-4e4d7b0ab99b
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港3|@ripaojiedian
-  password: 11a805f2-41a7-4cd8-8406-0470c3cde0d3
-  port: 6181
-  server: 45.250.184.183
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港5|@ripaojiedian
-  password: NFYDVXE3DMWI2M3W
-  port: 15005
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
+  uuid: 5f011b57-a456-45ae-aa2c-f976780e56c3
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港6|@ripaojiedian
-  password: YPNNBXGRNCAXB9N7
-  port: 15010
-  server: ti3hyra4.slashdevslashnetslashtun.net
+  password: 2N0M0MMOXEJMXKPN
+  port: 15011
+  server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 15|🇭🇰 香港8|@ripaojiedian
-  password: 7243745919d6de49a5db
-  plugin: obfs
-  plugin-opts:
-    host: 215996dd9f1c3db1e54b.microsoft.com
-    mode: http
-  port: 45578
-  server: console.02.aliyun.aq.kunlunaqs.com
+  name: 15|🇭🇰 香港7|@ripaojiedian
+  password: 2MT8DJ2LPPCI5PH8
+  port: 15003
+  server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
