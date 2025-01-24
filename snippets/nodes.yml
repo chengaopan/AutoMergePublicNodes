@@ -528,13 +528,57 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 11|0|--28
+  name: 11|0|--40
   network: http
   port: 2082
   server: 64.225.109.206
   tls: false
   type: vmess
   uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
+- alterId: 0
+  cipher: auto
+  name: 11|0|--41
+  network: ws
+  port: 443
+  server: irvideo.cfd
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 11|0|--43
+  network: ws
+  port: 443
+  server: 163.5.159.231
+  tls: true
+  type: vmess
+  uuid: e537f2f5-2a0c-4f59-92c9-832ca6433bf3
+  ws-opts:
+    headers:
+      Host: irvideo.cfd
+    path: /linkws
+- alterId: 64
+  cipher: auto
+  name: 11|13|🇭🇰 香港2|@ripaojiedian
+  network: tcp
+  port: 48109
+  server: 183.236.51.23
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 11|13|🇭🇰 香港3|@ripaojiedian
+  network: tcp
+  port: 54104
+  server: 183.236.51.23
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   name: 11,16|香港4|@ripaojiedian
@@ -557,14 +601,13 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 11,16|香港7|@ripaojiedian
+  name: 11|13|🇯🇵 日本3|@ripaojiedian
   network: tcp
-  port: '49301'
-  server: yoyo.cmyiphone.top
-  servername: ''
+  port: 63494
+  server: ywtwepcnwlou.xn--fiqs8sjz2bull.com
   tls: false
   type: vmess
-  uuid: 061d42d5-4e6a-4661-be04-80dcfb15b08f
+  uuid: be46b1b6-fe82-4540-8daa-37eca69e77ae
 - alterId: 0
   cipher: auto
   name: 11,16|德国|@ripaojiedian
@@ -575,6 +618,16 @@ proxies:
   tls: false
   type: vmess
   uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
+- alterId: 0
+  cipher: auto
+  name: 11,16|香港7|@ripaojiedian
+  network: tcp
+  port: '49301'
+  server: yoyo.cmyiphone.top
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 061d42d5-4e6a-4661-be04-80dcfb15b08f
 - alterId: 0
   cipher: auto
   name: 11|16|d*********g.com_2
@@ -714,41 +767,38 @@ proxies:
   server: krecs.ftq.ink
   tls: true
   type: http
+- client-fingerprint: chrome
+  name: 15|🇭🇰 香港|@ripaojiedian
+  network: ws
+  password: ouo
+  port: 443
+  server: 103.44.255.81
+  skip-cert-verify: false
+  sni: tr.koxok.us.kg
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tr.koxok.us.kg
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 15|🇩🇪 德国|@ripaojiedian
-  password: 61834c10-4218-4918-b836-9b852b7add70
+  password: '3760559353321758720'
   port: 2082
   server: 64.225.109.206
   skip-cert-verify: false
-  sni: sg.mjt000.com
+  sni: dear-sunbeam.treefrog761.one
   tfo: false
   tls: false
   type: vmess
   uuid: 48264b45-64b8-4e9f-8a88-cef41f20c736
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港3|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 103.149.183.61
-  tfo: false
-  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港5|@ripaojiedian
   password: L1SLK5APNHD6Z7P0
   port: 15013
   server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港8|@ripaojiedian
-  password: F2KVLB8XGXPPA7OX
-  port: 15006
-  server: 219.135.227.210
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -765,14 +815,6 @@ proxies:
   password: 9OAJ48AFCGC9UHFK
   port: 18003
   server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 15|🇰🇷 韩国|@ripaojiedian
-  password: qwerREWQ@@
-  port: 28290
-  server: p220.panda001.net
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -820,7 +862,7 @@ proxies:
   name: 15|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 43.207.4.194
+  server: 47.128.77.107
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -828,7 +870,7 @@ proxies:
   name: 15|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 47.129.158.52
+  server: 47.128.252.179
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -836,6 +878,6 @@ proxies:
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 43.201.249.92
+  server: 52.78.205.26
   tfo: false
   type: ss
