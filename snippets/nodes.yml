@@ -526,16 +526,46 @@ proxies:
   type: vmess
   uuid: e9e3cc13-db48-4cc1-8c24-7626439a5339
   ws-opts: {}
+- alterId: 2
+  cipher: auto
+  name: 11|2|🌀3- |  3.1MB/s
+  network: ws
+  port: 23612
+  server: 12.mamamajd.site
+  tls: false
+  type: vmess
+  uuid: 2030da55-aae5-3695-8e92-fee9f550d8c0
+  ws-opts:
+    headers:
+      Host: 12.mamamajd.site
+    path: /
 - alterId: 0
   cipher: auto
   name: 11,16|香港9|@ripaojiedian
   network: tcp
-  port: '13264'
-  server: 38.147.189.130
+  port: '30559'
+  server: 38.147.189.108
   servername: ''
   tls: false
   type: vmess
-  uuid: 8145db0b-c4d7-4389-be41-99f991a4b43f
+  uuid: 91a7be1d-e997-46be-9b4f-264dce62584a
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,15,16|日本4|@ripaojiedian
+  network: ws
+  port: '80'
+  server: a41da1ab-5ae0-fa3e-eabe-70e680bdf1bf.castlepeakhospital.moe
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
+  ws-opts:
+    headers:
+      Host: tms.dingtalk.com
+    path: /
 - alterId: 0
   cipher: auto
   name: 11,16|美国2|@ripaojiedian
@@ -736,27 +766,16 @@ proxies:
   server: hk02.x.quickcht3.club
   tfo: false
   type: ss
-- cipher: rc4-md5
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港10|@ripaojiedian
-  obfs: plain
-  obfs-param: cd2b692902.6602b8463464108506.microsoft.com
-  password: ENZ52K
-  port: 40208
-  protocol: auth_aes128_md5
-  protocol-param: 92902:pFWGOQ
-  server: 2.hublink.pro
-  type: ssr
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 15|🇹🇼 台湾|@ripaojiedian
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: d6cb3d6.dl.microsoft.lt:47299
+    host: 86e8c33.dl.microsoft.eu:61496
     mode: tls
   port: 2377
-  server: 221.215.48.118
+  server: 125.227.86.44
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -783,6 +802,18 @@ proxies:
   server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+- cipher: aes-128-gcm
+  client-fingerprint: chrome
+  name: 15|🇹🇼 台湾5|@ripaojiedian
+  password: Sj10bnYDe7w6V29E
+  plugin: obfs
+  plugin-opts:
+    host: 1741abe87f.m.ctrip.com
+    mode: http
+  port: 11041
+  server: gzdata1.fc-sigma.xyz
+  tfo: false
+  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 15|🇯🇵 日本|@ripaojiedian
@@ -799,32 +830,16 @@ proxies:
   server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇯🇵 日本3|@ripaojiedian
-  password: 84HMRAWILKB49QUZ
-  port: 18002
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 15|🇯🇵 日本4|@ripaojiedian
+  name: 15|🇯🇵 日本3|@ripaojiedian
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
-    host: 8d21436:87091
+    host: 86e8c33.dl.nintendo.com:61496
     mode: tls
   port: 2377
-  server: 52.199.164.162
-  tfo: false
-  type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 15|🇸🇬 新加坡2|@ripaojiedian
-  password: BFYCOKHTC8HIWWRB
-  port: 16006
-  server: ti3hyra4.slashdevslashnetslashtun.net
+  server: 18.179.197.162
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -833,6 +848,14 @@ proxies:
   password: 0407WKIEIXMTLGC6
   port: 16007
   server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇸🇬 新加坡2|@ripaojiedian
+  password: BFYCOKHTC8HIWWRB
+  port: 16006
+  server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -856,7 +879,7 @@ proxies:
   name: 15|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.229.110.23
+  server: 18.179.9.121
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -864,7 +887,7 @@ proxies:
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.179.221.27
+  server: 54.65.101.11
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -872,16 +895,6 @@ proxies:
   name: 15|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.255.179.37
+  server: 13.250.31.57
   tfo: false
   type: ss
-- cipher: rc4-md5
-  name: 16|6aaZ5rivMTB8QHJpcGFvamllZGlhbg
-  obfs: plain
-  obfs-param: Y2QyYjY5MjkwMi42NjAyYjg0NjM0NjQxMDg1MDYubWljcm9zb2Z0LmNvbQ
-  password: ENZ52K
-  port: '40208'
-  protocol: auth_aes128_md5
-  protocol-param: OTI5MDI6cEZXR09R
-  server: 2.hublink.pro
-  type: ssr
