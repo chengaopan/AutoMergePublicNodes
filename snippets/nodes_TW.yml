@@ -1,15 +1,29 @@
 proxies:
-- cipher: chacha20-ietf
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,15,16|台湾2|@ripaojiedian
+  network: ws
+  port: '12883'
+  server: gtm1.ktmwan.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 9207a3fc-18cc-4af7-ab1c-1c0000e57e37
+  ws-opts:
+    headers:
+      Host: gtm1.ktmwan.net
+    path: /
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 15|🇹🇼 台湾|@ripaojiedian
-  obfs: http_simple
-  obfs-param: b4ff5202018.microsoft.com
-  password: lbNVOz
-  port: 7051
-  protocol: auth_aes128_md5
-  protocol-param: 202018:1FstQvihnBRscXZP
-  server: cname02b-a56xgycr7j4km32e.bestgosht.com
-  type: ssr
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21115
+  server: okanc.node-is.green
+  tfo: false
+  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 15|🇹🇼 台湾3|@ripaojiedian
