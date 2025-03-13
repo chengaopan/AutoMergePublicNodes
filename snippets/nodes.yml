@@ -528,17 +528,6 @@ proxies:
   ws-opts: {}
 - alterId: 0
   cipher: auto
-  name: 11|1|🇷🇺2 |  5.1MB/s
-  network: ws
-  port: 23010
-  server: 185.22.152.236
-  tls: false
-  type: vmess
-  uuid: d08a8088-a2a7-4beb-98e9-0973964b5ffa
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
   name: 12|github.com/freefq - 印度  2
   network: ws
   port: 443
@@ -661,11 +650,14 @@ proxies:
     headers:
       Host: server32.beheshtbaneh.com
     path: /
-- name: 15|tg频道:@ripaojiedian
-  port: 4000
-  server: ftq.ink
-  tls: true
-  type: http
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 15|tg频道:@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 35.77.94.139
+  tfo: false
+  type: ss
 - client-fingerprint: chrome
   name: 15|🇭🇰 香港|@ripaojiedian
   network: ws
@@ -687,14 +679,30 @@ proxies:
   server: hk01.x.quickcht3.club
   tfo: false
   type: ss
-- client-fingerprint: chrome
+- cipher: rc4-md5
+  client-fingerprint: chrome
   name: 15|🇭🇰 香港3|@ripaojiedian
-  password: bba1cfff-9e0b-4cb6-9df4-c741c75e59a8
-  port: 13007
-  server: naiu-hk.05vr9nyqg5.download
-  skip-cert-verify: false
-  sni: cloudflare.node-ssl.cdn-alibaba.com
-  type: trojan
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202502231733428-Ein9IQ2kBA.download.microsoft.com
+    mode: http
+  port: 8712
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 15|🇭🇰 香港4|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202502231733428-Ein9IQ2kBA.download.microsoft.com
+    mode: http
+  port: 8752
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港5|@ripaojiedian
@@ -714,17 +722,9 @@ proxies:
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 15|🇭🇰 香港7|@ripaojiedian
-  password: TCEL1H0XD7TWAKI0
-  port: 15011
-  server: qh62onjn.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇭🇰 香港8|@ripaojiedian
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52612
-  server: hk02.x.quickcht3.club
+  password: 9MCDTT93YYL59MMQ
+  port: 15007
+  server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -737,50 +737,86 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
+  name: 15|🇭🇰 香港8|@ripaojiedian
+  password: S0FY3FQL4FCQGR4S
+  port: 15015
+  server: qh62onjn.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
   name: 15|🇹🇼 台湾2|@ripaojiedian
   password: ECOQAU8O56QGBV28
   port: 21002
   server: qh62onjn.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: rc4-md5
   client-fingerprint: chrome
   name: 15|🇹🇼 台湾3|@ripaojiedian
-  password: QF377GGQ00RATCMK
-  port: 21004
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202502231733428-Ein9IQ2kBA.download.microsoft.com
+    mode: http
+  port: 8746
+  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: rc4-md5
   client-fingerprint: chrome
   name: 15|🇹🇼 台湾4|@ripaojiedian
-  password: F7XGGN9MP0DGPLII
-  port: 21007
-  server: w72tapyb.slashdevslashnetslashtun.net
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202502231733428-Ein9IQ2kBA.download.microsoft.com
+    mode: http
+  port: 8745
+  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: rc4-md5
   client-fingerprint: chrome
   name: 15|🇯🇵 日本|@ripaojiedian
-  password: 4S85LF2Q3QK92171
-  port: 18008
-  server: w72tapyb.slashdevslashnetslashtun.net
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202502231733428-Ein9IQ2kBA.download.microsoft.com
+    mode: http
+  port: 8764
+  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: rc4-md5
   client-fingerprint: chrome
   name: 15|🇯🇵 日本2|@ripaojiedian
-  password: YMB3QL85L7F1KJR7
-  port: 18013
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202502231733428-Ein9IQ2kBA.download.microsoft.com
+    mode: http
+  port: 8761
+  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
+  name: 15|🇯🇵 日本3|@ripaojiedian
+  password: 6Z15O92K5OSTCQUD
+  port: 18008
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
   name: 15|🇸🇬 新加坡|@ripaojiedian
-  password: 0407WKIEIXMTLGC6
-  port: 16007
-  server: qh62onjn.slashdevslashnetslashtun.net
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202502231733428-Ein9IQ2kBA.download.microsoft.com
+    mode: http
+  port: 8722
+  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
 - cipher: aes-256-gcm
@@ -791,12 +827,16 @@ proxies:
   server: ti3hyra4.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: rc4-md5
   client-fingerprint: chrome
   name: 15|🇸🇬 新加坡3|@ripaojiedian
-  password: IHWLYZSSSX4GSKLA
-  port: 16013
-  server: 8tv68qhq.slashdevslashnetslashtun.net
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202502231733428-Ein9IQ2kBA.download.microsoft.com
+    mode: http
+  port: 8724
+  server: cn01.efan8867801.xyz
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
@@ -807,12 +847,52 @@ proxies:
   server: 5.223.55.99
   tfo: false
   type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇸🇬 新加坡5|@ripaojiedian
+  password: NTW5EWF7WURCP8IV
+  port: 16004
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 15|🇺🇸 美国|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202502231733428-Ein9IQ2kBA.download.microsoft.com
+    mode: http
+  port: 8771
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 15|🇺🇸 美国2|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202502231733428-Ein9IQ2kBA.download.microsoft.com
+    mode: http
+  port: 8773
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 15|🇺🇸 美国3|@ripaojiedian
+  password: 9GP4N1O8WHSV99JV
+  port: 17002
+  server: ti3hyra4.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 15|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 18.141.140.120
+  server: 43.203.229.162
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -820,7 +900,7 @@ proxies:
   name: 15|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 13.124.103.7
+  server: 18.181.194.77
   tfo: false
   type: ss
 - cipher: aes-256-cfb
@@ -828,30 +908,6 @@ proxies:
   name: 15|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.78.120.105
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇩🇪 德国|@ripaojiedian
-  password: eath1eicieSh_!MMyb~4HT,}bC@ohpheiRaighier0shohd
-  port: 8388
-  server: 91.107.219.5
-  tfo: false
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 15|🇨🇦 加拿大|@ripaojiedian
-  password: eath1eicieSh_!MMyb~4HT,}bC@ohpheiRaighier0shohd
-  port: 8388
-  server: 95.217.158.231
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 15|🇷🇺 俄罗斯|@ripaojiedian
-  password: eath1eicieSh_!MMyb~4HT,}bC@ohpheiRaighier0shohd
-  port: 8388
-  server: 185.158.155.33
+  server: 52.196.181.68
   tfo: false
   type: ss
