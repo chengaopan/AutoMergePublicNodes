@@ -1,30 +1,36 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷 韩国 01 | 1x KR
-  password: 6010e6e7-e7c1-4a0a-81ce-31b2853da88c
+  password: 91893707-a885-45ed-a108-f05362cd15d2
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷 韩国 02 | 1x KR
-  password: 6010e6e7-e7c1-4a0a-81ce-31b2853da88c
+  password: 91893707-a885-45ed-a108-f05362cd15d2
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
-- auth: a8ae2e27-1326-4ba0-b1f7-276eb37b57ed
-  name: 1|🇰🇷1 |  5.2MB/s
-  password: a8ae2e27-1326-4ba0-b1f7-276eb37b57ed
-  port: 62641
-  server: sub-kr.yangxiansheng.online
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: 1|🇰🇷2 |  4.6MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: b3f2bc5f-3c3f-4a97-8c95-ed4a66a9ac3c
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: b3f2bc5f-3c3f-4a97-8c95-ed4a66a9ac3c
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 2|🇰🇷1 |  4.6MB/s
   network: ws
   port: 443
-  server: 104.16.150.133
+  server: 192.0.54.18
   servername: vv.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -33,11 +39,11 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: vv.dong2025.cfd
+      host: vv.dong2025.cfd
     path: /?ed=2560
 - client-fingerprint: qq
   flow: xtls-rprx-vision
-  name: 1|🇰🇷3 |  5.5MB/s
+  name: 2|🇰🇷2 |  5.5MB/s
   network: tcp
   port: 23333
   reality-opts:
@@ -48,24 +54,10 @@ proxies:
   tls: true
   type: vless
   uuid: 30f85233-d41e-4297-97c1-cfac047a948b
-- name: 1|🇰🇷4 |  5.4MB/s
-  network: ws
-  port: 444
-  server: 45.154.98.210
-  servername: vv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vv.dong2025.cfd
-    path: /?ed=2560
-- name: 1|🇰🇷5 |  3.4MB/s
+- name: 2|🇰🇷3 |  2.2MB/s
   network: ws
   port: 443
-  server: 192.200.160.99
+  server: 212.183.88.162
   servername: vv.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -76,10 +68,18 @@ proxies:
     headers:
       host: vv.dong2025.cfd
     path: /?ed=2560
-- name: 1|🇰🇷6 |  4.5MB/s
+- auth: a8ae2e27-1326-4ba0-b1f7-276eb37b57ed
+  name: 2|🇰🇷4 |  5.4MB/s
+  password: a8ae2e27-1326-4ba0-b1f7-276eb37b57ed
+  port: 62641
+  server: sub-kr.yangxiansheng.online
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 2|🇰🇷5 |  2.4MB/s
   network: ws
   port: 443
-  server: 104.16.159.190
+  server: 104.17.146.152
   servername: vv.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -90,62 +90,6 @@ proxies:
     headers:
       host: vv.dong2025.cfd
     path: /?ed=2560
-- name: 1|🇰🇷7 |  3.3MB/s
-  network: ws
-  port: 443
-  server: 63.141.128.96
-  servername: vv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vv.dong2025.cfd
-    path: /?ed=2560
-- name: 1|🇰🇷8 |  1.4MB/s
-  network: ws
-  port: 7777
-  server: 188.253.19.126
-  servername: vv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vv.dong2025.cfd
-    path: /?ed=2560
-- name: 1|🇰🇷9 |  5.5MB/s
-  network: ws
-  port: 443
-  server: 104.17.161.203
-  servername: vv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vv.dong2025.cfd
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷韩国 01 | 1x KR
-  password: 5a0274a5-8b8c-4d9f-aa49-9f7b8d482f4b
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷韩国 02 | 1x KR
-  password: 5a0274a5-8b8c-4d9f-aa49-9f7b8d482f4b
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇰🇷 韩国|@ripaojiedian
