@@ -1,15 +1,18 @@
 proxies:
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 1|🇫🇷1 |  4.9MB/s
-  password: dongtaiwang.com
-  port: 59967
-  server: 195.154.33.70
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 2|🇫🇷1 |  5.7MB/s
+  port: 44557
+  server: 195.154.200.178
+  servername: apple.com
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+  tls: true
+  type: hysteria
+  up: 1000 Mbps
 - client-fingerprint: randomized
-  name: 1|🇫🇷2 |  4.9MB/s
+  name: 2|🇫🇷2 |  2.0MB/s
   network: ws
   port: 443
   server: ip.sb
@@ -22,10 +25,11 @@ proxies:
       host: 64D78605.Fr-7rB.pageS.dEv
     path: /YBa1BBPnrlsvyMZD/MzUuMTgwLjIyOS4x?ed=2560
 - auth: dongtaiwang.com
-  name: 1|🇫🇷3 |  5.2MB/s
+  client-fingerprint: chrome
+  name: 2|🇫🇷3 |  5.4MB/s
   password: dongtaiwang.com
-  port: 61770
-  server: 51.159.226.1
+  port: 59967
+  server: 195.154.33.70
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
