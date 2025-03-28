@@ -1,21 +1,15 @@
 proxies:
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 0|🇨🇦1 |  5.5MB/s
-  network: ws
-  port: 20033
-  server: 141.195.112.33
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇨🇦加拿大 01 | 1x CA
+  password: 09f9bcd1-5e58-4107-80ca-f584ccbc8a78
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: 7b2730d6-a55a-465f-a502-60c427f2850e
-  ws-opts:
-    path: /
 - auth: f93fdbc9-3789-44b4-8ece-51b9c2780ba8
   client-fingerprint: chrome
   down: 15
-  name: 0|🇨🇦2 |  1.7MB/s
+  name: 1|🇨🇦1 |  1.4MB/s
   obfs: salamander
   obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==
   password: f93fdbc9-3789-44b4-8ece-51b9c2780ba8
@@ -25,16 +19,37 @@ proxies:
   type: hysteria2
   udp: true
   up: 15
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦加拿大 01 | 1x CA
-  password: 7a502be0-d39c-47b7-aee8-a5cab5a11fd2
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
+- name: 1|🇨🇦2 |  5.9MB/s
+  network: ws
+  port: 443
+  server: 104.16.144.119
+  servername: vv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: vv.dong2025.cfd
+    path: /?ed=2560
+- name: 1|🇨🇦3 |  5.9MB/s
+  network: ws
+  port: 443
+  server: 104.16.153.254
+  servername: vv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: vv.dong2025.cfd
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇨🇦 加拿大 01 | 1x CA
-  password: eb906bb7-d10c-42a4-af8b-74cdf4621c81
+  name: 2|🇨🇦 加拿大 01 | 1x CA
+  password: b880bc08-bfcb-4004-8eb5-e90d96d907ee
   port: 36441
   server: free.2weradf.xyz
   type: ss
