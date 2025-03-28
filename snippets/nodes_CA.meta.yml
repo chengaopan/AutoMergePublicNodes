@@ -1,35 +1,28 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: 77282550-04f9-4474-888a-6c64f666fd51
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦加拿大 01 | 1x CA
-  password: 78bb4d4b-8363-45ea-a022-9829b307c3fd
+  name: 0|🇨🇦加拿大 01 | 1x CA
+  password: cdd154f6-9412-43e0-b494-20c514145613
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- auth: f93fdbc9-3789-44b4-8ece-51b9c2780ba8
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  down: 15
-  name: 2|🇨🇦1 |  1.4MB/s
-  obfs: salamander
-  obfs-password: M2UyNTc5OWUwYjkyM2Q2OQ==
-  password: f93fdbc9-3789-44b4-8ece-51b9c2780ba8
-  port: 30031
+  name: 1|🇨🇦1 |  3.0MB/s
+  network: ws
+  port: 20033
   server: 141.195.112.33
-  skip-cert-verify: true
-  type: hysteria2
+  tls: false
+  type: vmess
   udp: true
-  up: 15
-- name: 2|🇨🇦2 |  5.9MB/s
+  uuid: f0a35d62-c256-468c-8cd3-03903fdd51b5
+  ws-opts:
+    path: /
+- name: 1|🇨🇦2 |  1.9MB/s
   network: ws
   port: 443
-  server: 104.16.144.119
+  server: 212.183.88.43
   servername: vv.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -38,12 +31,12 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: vv.dong2025.cfd
+      host: vv.dong2025.cfd
     path: /?ed=2560
-- name: 2|🇨🇦3 |  5.9MB/s
+- name: 1|🇨🇦3 |  1.3MB/s
   network: ws
   port: 443
-  server: 104.16.153.254
+  server: 185.133.35.125
   servername: vv.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -52,5 +45,68 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: vv.dong2025.cfd
+      host: vv.dong2025.cfd
     path: /?ed=2560
+- name: 1|🇨🇦4 |  5.3MB/s
+  network: ws
+  port: 50000
+  server: 221.162.185.151
+  servername: vv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vv.dong2025.cfd
+    path: /?ed=2560
+- name: 1|🇨🇦5 |  1.4MB/s
+  network: ws
+  port: 443
+  server: 162.159.153.119
+  servername: vv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vv.dong2025.cfd
+    path: /?ed=2560
+- name: 1|🇨🇦6 |  5.7MB/s
+  network: ws
+  port: 443
+  server: 192.0.54.18
+  servername: vv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vv.dong2025.cfd
+    path: /?ed=2560
+- name: 1|🇨🇦7 |  5.0MB/s
+  network: ws
+  port: 443
+  server: 162.159.152.193
+  servername: vv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vv.dong2025.cfd
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇨🇦 加拿大 01 | 1x CA
+  password: 292f2568-e277-4993-84df-c5cea6052e31
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true

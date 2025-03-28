@@ -1,57 +1,75 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 77282550-04f9-4474-888a-6c64f666fd51
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 77282550-04f9-4474-888a-6c64f666fd51
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国 03 | 1x US Washington
-  password: 77282550-04f9-4474-888a-6c64f666fd51
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国 01 | 1x US Los Angeles
-  password: 78bb4d4b-8363-45ea-a022-9829b307c3fd
+  name: 0|🇺🇸美国 01 | 1x US Los Angeles
+  password: cdd154f6-9412-43e0-b494-20c514145613
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 78bb4d4b-8363-45ea-a022-9829b307c3fd
+  name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: cdd154f6-9412-43e0-b494-20c514145613
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国 03 | 1x US Washington
-  password: 78bb4d4b-8363-45ea-a022-9829b307c3fd
+  name: 0|🇺🇸美国 03 | 1x US Washington
+  password: cdd154f6-9412-43e0-b494-20c514145613
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|🇺🇸1 |  2.6MB/s
-  password: c8231e5b-dda5-30d6-b14e-d23e5eab6a3d
-  port: 21970
+- name: 1|🇺🇸1 |  4.2MB/s
+  password: 0cc61e6a-6ac3-3b38-a9a5-950fecbe2636
+  port: 25238
   server: gy.58n.net
   skip-cert-verify: true
-  sni: x41.flybar.work
+  sni: z267.hongkongnode.top
   type: trojan
   udp: true
+- name: 1|🇺🇸2 |  1.2MB/s
+  password: 0cc61e6a-6ac3-3b38-a9a5-950fecbe2636
+  port: 16895
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x40.flybar.work
+  type: trojan
+  udp: true
+- auth: caf21c96-35ef-4d5e-97c8-a9d8d4edcc5b
+  client-fingerprint: chrome
+  name: 1|🇺🇸3 |  4.9MB/s
+  password: caf21c96-35ef-4d5e-97c8-a9d8d4edcc5b
+  port: 51228
+  server: sub-us.yangxiansheng.online
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- cipher: aes-128-cfb
+  name: 1|🇺🇸4 |  4.5MB/s
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
+  type: ss
+- client-fingerprint: randomized
+  flow: ''
+  mode: ''
+  name: 1|🇺🇸5 |  1.2MB/s
+  network: ws
+  port: 443
+  server: 104.21.48.1
+  servername: karshenashamrah.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: f6bd2c47-99da-4bca-bf70-7186aa9e7e06
+  ws-opts:
+    headers:
+      Host: karshenashamrah.ir
+    path: /3um9NK8jwisKz35E?ed=/?@jokerrvpnJoinBadeChannel@JOKERRVPN
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 2|🇺🇸2 |  5.2MB/s
+  name: 1|🇺🇸6 |  5.1MB/s
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 194.5.215.59
@@ -59,8 +77,19 @@ proxies:
 - alpn:
   - h3
   auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 1|🇺🇸7 |  6.1MB/s
+  port: 17549
+  server: 208.87.243.151
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 11 Mbps
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
   down: 1000 Mbps
-  name: 2|🇺🇸3 |  5.6MB/s
+  name: 1|🇺🇸8 |  4.8MB/s
   port: 11512
   server: 108.181.24.77
   skip-cert-verify: true
@@ -69,7 +98,7 @@ proxies:
   udp: true
   up: 1000 Mbps
 - client-fingerprint: chrome
-  name: 2|🇺🇸4 |  5.2MB/s
+  name: 1|🇺🇸9 |  5.6MB/s
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
   server: ustx004-cdn-route.couldflare-cdn.com
@@ -78,80 +107,27 @@ proxies:
   tls: true
   type: http
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 2|🇺🇸5 |  2.0MB/s
-  network: ws
-  port: 443
-  server: 172.66.47.25
-  servername: GrOupYOUNeS.PAGes.DEV
-  tls: true
-  type: vless
-  udp: false
-  uuid: e2d6455c-9846-4502-8394-16b8c1c07b68
-  ws-opts:
-    headers:
-      Host: GrOupYOUNeS.PAGes.DEV
-    path: /Telegram@V2ray_Alpha/?ed=2560
-- cipher: aes-128-cfb
-  name: 2|🇺🇸6 |  1.2MB/s
-  password: shadowsocks
-  port: 443
-  server: 184.170.241.194
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 292f2568-e277-4993-84df-c5cea6052e31
+  port: 36211
+  server: free.2weradf.xyz
   type: ss
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 2|🇺🇸7 |  5.1MB/s
-  network: ws
-  port: 8080
-  server: 45.131.4.73
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY?ed=2560
-- auth: caf21c96-35ef-4d5e-97c8-a9d8d4edcc5b
-  client-fingerprint: chrome
-  name: 2|🇺🇸8 |  4.9MB/s
-  password: caf21c96-35ef-4d5e-97c8-a9d8d4edcc5b
-  port: 51228
-  server: sub-us.yangxiansheng.online
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 2|🇺🇸9 |  2.6MB/s
-  network: ws
-  port: 80
-  server: 45.131.4.33
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY?ed=2560
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 2|🇺🇸10 |  6.2MB/s
-  port: 17549
-  server: 208.87.243.151
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 292f2568-e277-4993-84df-c5cea6052e31
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸 美国 03 | 1x US Washington
+  password: 292f2568-e277-4993-84df-c5cea6052e31
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - name: 11|🇺🇸美国 加利福尼亚州 圣克拉拉 DIGITALOCEAN-...
   password: iMqY3uG_5pgEj3hCfyHB-0vB
   port: 443
