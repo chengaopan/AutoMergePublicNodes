@@ -9,6 +9,7 @@ on:
     paths:
       - 'sources.list'
       - 'config.yml'
+      - 'abpwhite.txt'
       - '.github/workflows/**'
       - '**.py'
       - 'snippets/_*'
@@ -18,14 +19,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 迁出代码
-      uses: actions/checkout@v3
+      uses: actions/checkout@v4
+    - name: 设置时区
+      run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: 安装 Python
-      uses: actions/setup-python@v4
+      uses: actions/setup-python@v5
       with:
         python-version: '3.x'
         cache: 'pip'
-    - name: 设置时区
-      run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: 安装依赖
       run: pip install -r requirements.txt
     - name: 执行任务
@@ -47,7 +48,7 @@ jobs:
     - name: 计算要清除缓存的文件
       id: purge_urls
       run: |
-        sleep 3
+        sleep 5
         baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@master"
         urls=""
         for f in `find snippets -name "*.yml" -type f`; do
@@ -58,6 +59,7 @@ jobs:
         done
         echo "urls=${urls%,*}" >> $GITHUB_OUTPUT
     - name: 清除 JsDelivr CDN 缓存
-      uses: egad13/purge-jsdelivr-cache@v1.0.3
+      uses: egad13/purge-jsdelivr-cache@v1
       with:
         url: ${{ steps.purge_urls.outputs.urls }}
+      continue-on-error: true

@@ -13,6 +13,8 @@
 
 mixed-port: 7890
 
+ipv6: true
+
 # 允许局域网的连接
 allow-lan: false
 
@@ -25,6 +27,43 @@ log-level: warning
 # Clash 的 RESTful API
 external-controller: '0.0.0.0:9090'
 
+# geodata-mode: true
+# geox-url:
+#   geoip: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geoip.dat"
+#   geosite: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/geosite.dat"
+#   mmdb: "https://fastly.jsdelivr.net/gh/MetaCubeX/meta-rules-dat@release/country.mmdb"
+#   # asn: "https://github.com/xishang0128/geoip/releases/download/latest/GeoLite2-ASN.mmdb"
+
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    # QUIC:
+    #   ports: [443, 8443]
+  skip-domain:
+    - 'Mijia Cloud'
+    - 'dlg.io.mi.com'
+    - '+.apple.com'
+
+dns:
+  enable: true
+  listen: :1053
+  ipv6: true
+  enhanced-mode: redir-host
+  nameserver:
+    - 223.5.5.5
+    - 114.114.114.114
+  fallback:
+    - 8.8.8.8
+    - 1.1.1.1
+
+global-client-fingerprint: chrome
+tcp-concurrent: true
+unified-delay: true
 
 proxies: []
 
@@ -32,17 +71,10 @@ proxy-groups:
   - name: 🚀 选择代理
     type: select
     proxies:
-      - 🎯 负载均衡
       - ♻ 自动选择
       - 🔰 延迟最低
       - ✅ 手动选择
       - 🗺️ 选择地区
-
-  - name: 🎯 负载均衡
-    type: load-balance
-    url: https://www.google.com/
-    interval: 300
-    proxies: []
 
   - name: ♻ 自动选择
     type: fallback
@@ -67,10 +99,23 @@ proxy-groups:
       - DIRECT
       - 🚀 选择代理
 
+  - name: ❓ 疑似国内
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 选择代理
+      - REJECT
+
   - name: 🐟 漏网之鱼
     type: select
     proxies:
+      - DIRECT
       - 🚀 选择代理
+
+  - name: 🚨 病毒网站
+    type: select
+    proxies:
+      - REJECT
       - DIRECT
 
   - name: ⛔ 广告拦截
@@ -85,50 +130,142 @@ proxy-groups:
     proxies: []
 
 rules:
+  # 应急响应：BootCDN/Staticfile 被投毒！
+  - DOMAIN,cdn.bootcss.com,🚨 病毒网站
+  - DOMAIN,cdn.bootcdn.net,🚨 病毒网站
+  - DOMAIN,cdn.staticfile.net,🚨 病毒网站
+  - DOMAIN,cdn.staticfile.org,🚨 病毒网站
+  - DOMAIN-SUFFIX,polyfill.io,🚨 病毒网站
+  - DOMAIN,search.kiwibrowser.org,🚨 病毒网站
+  - DOMAIN-SUFFIX,kiwibrowser.org,⛔ 广告拦截
+  - DOMAIN-KEYWORD,kiwisearchservices,🚨 病毒网站 # See https://github.com/Tobi823/ffupdater/issues/35
+  # Adblock 补刀 (主程序解析白名单时会把要屏蔽的一起加白了)
+  - DOMAIN,img-c.heytapimage.com,⛔ 广告拦截
+  - DOMAIN,adsbdfs.heytapimage.com,⛔ 广告拦截
+  - DOMAIN,adsfs.heytapimage.com,⛔ 广告拦截
   # 自定义规则
   ## 您可以在此处插入您补充的自定义规则（请注意保持缩进）
+  - DOMAIN-KEYWORD,dongtaiwang,REJECT
+  - DOMAIN-KEYWORD,porn,⛔ 广告拦截
+  - DOMAIN-KEYWORD,js96110,⛔ 广告拦截 # 以权谋私，一边反诈一边推广，恶意封禁正常网站
+  # 江苏反诈 的 IP 规则在最底下，防止 DNS 泄露
+  # - DOMAIN-SUFFIX,gitcode.com,
+  # - DOMAIN-SUFFIX,zhihu.com,⛔ 广告拦截
   - DOMAIN-SUFFIX,signalr.net,DIRECT
-  - DOMAIN-KEYWORD,onedrive,🚀 选择代理
-  - DOMAIN-SUFFIX,live.com,DIRECT
+  - DOMAIN-SUFFIX,onedrive.live.com,🚀 选择代理
   - DOMAIN,global.bing.com,🚀 选择代理
   - DOMAIN-SUFFIX,bing.com,🌐 突破锁区
   - DOMAIN-SUFFIX,bing.net,🌐 突破锁区
   - DOMAIN-KEYWORD,bingapi,🌐 突破锁区
-  # - DOMAIN-KEYWORD,kgithub,DIRECT
+  - DOMAIN-KEYWORD,kgithub,DIRECT
   - DOMAIN-KEYWORD,fastgit,DIRECT
   - DOMAIN-KEYWORD,fgit,DIRECT
   - DOMAIN-KEYWORD,ghproxy,DIRECT
   - DOMAIN-KEYWORD,gh-proxy,DIRECT
-  - DOMAIN-SUFFIX,zzko.cn,DIRECT
-  - DOMAIN-SUFFIX,jsdelivr.us,DIRECT
+  # - DOMAIN-SUFFIX,zzko.cn,DIRECT
+  - DOMAIN-SUFFIX,jsdelivr.us,REJECT # 已经无了
   - DOMAIN-SUFFIX,jsdelivr.net,DIRECT
   # - DOMAIN-SUFFIX,statically.io,🚀 选择代理
   - DOMAIN-KEYWORD,clash,🚀 选择代理
   - DOMAIN-KEYWORD,v2ray,🚀 选择代理
   - DOMAIN-KEYWORD,v2fly,🚀 选择代理
+  - DOMAIN-KEYWORD,vmess,🚀 选择代理
+  - DOMAIN-KEYWORD,vless,🚀 选择代理
+  - DOMAIN-KEYWORD,shadowsocks,🚀 选择代理
+  # - DOMAIN-KEYWORD,trojan,🚀 选择代理
+  - DOMAIN-KEYWORD,hysteria,🚀 选择代理
+  - DOMAIN-KEYWORD,gfw,🚀 选择代理
+  - DOMAIN-KEYWORD,sagernet,🚀 选择代理
   - DOMAIN-SUFFIX,trafficmanager.net,DIRECT
-  - DOMAIN-SUFFIX,star-history.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,star-history.com,🚀 选择代理
   - DOMAIN-SUFFIX,ivonblog.com,🚀 选择代理 # 视情况而定
-  - DOMAIN-SUFFIX,googleapis.cn,🚀 选择代理 # 代理会自动切到国外，详情请见 README
-  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google Play 国外/国内 服务器
-  - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google Play 纯国内 服务器，尚未完成部署
+  - DOMAIN-KEYWORD,telegram,🚀 选择代理
+  - DOMAIN-KEYWORD,discord,🚀 选择代理
+  - DOMAIN-SUFFIX,v1.mk,🚀 选择代理
+  - DOMAIN-SUFFIX,outlook.com,DIRECT
+  
+  # - DOMAIN-SUFFIX,googleapis.cn,DIRECT
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google Play 国外/国内 服务器，多数可直连，连不上 Google Play 会自动更换
+  - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google Play 纯国内 服务器，似乎没啥卵用？
+  - DOMAIN-SUFFIX,gvt1-cn.com,DIRECT
+  - DOMAIN,redirector.gvt1.com,DIRECT # 会解析到你使用的运营商
+  # gvt1.com 不加任何规则，根据 GEOIP 判断是否走代理
+  
   - DOMAIN-SUFFIX,gitlab.io,🚀 选择代理
-  - DOMAIN-KEYWORD,js96110,⛔ 广告拦截 # 以权谋私，一边反诈一边推广，恶意封禁正常网站
-  - DOMAIN-KEYWORD,wiki.arch,DIRECT
-  - DOMAIN-KEYWORD,archlinuxcn,DIRECT
-  - DOMAIN-SUFFIX,996.icu,DIRECT
+  # - DOMAIN-KEYWORD,wiki.arch,❓ 疑似国内
+  # - DOMAIN-KEYWORD,archlinuxcn,DIRECT
   - DOMAIN-SUFFIX,chinadigitaltimes.net,🚀 选择代理
   - DOMAIN-SUFFIX,savefrom.net,🚀 选择代理
   - DOMAIN-SUFFIX,yout.com,🚀 选择代理
-  - DOMAIN-SUFFIX,bulianglin.com,🚀 选择代理
-  - DOMAIN-SUFFIX,buliang0.cf,🚀 选择代理
-  - DOMAIN-SUFFIX,hydro.ac,DIRECT
-  - DOMAIN-SUFFIX,tuna.moe,DIRECT
+  # - DOMAIN-SUFFIX,bulianglin.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,buliang0.cf,🚀 选择代理
+  - DOMAIN-KEYWORD,qbittorrent,🐟 漏网之鱼
+  - DOMAIN-SUFFIX,greatfire.org,🚀 选择代理
+  - DOMAIN,wiki.metacubex.one,🚀 选择代理
+  - DOMAIN,safebrowsing.googleapis.com,DIRECT
+  - DOMAIN,dl.google.com,❓ 疑似国内
+  - DOMAIN-SUFFIX,taptap.io,🚀 选择代理
+  - DOMAIN-SUFFIX,tap.io,🚀 选择代理
+  - DOMAIN-SUFFIX,tapapis.com,🌐 突破锁区
+  - DOMAIN-KEYWORD,tapsdk,🌐 突破锁区
+  - DOMAIN-KEYWORD,taptap,🌐 突破锁区
+  - DOMAIN-SUFFIX,vercel.app,🚀 选择代理
+  - DOMAIN-SUFFIX,netlify.app,🚀 选择代理
+  - DOMAIN-SUFFIX,huggingface.co,🚀 选择代理
+  - DOMAIN-SUFFIX,hf.co,🚀 选择代理
+  - DOMAIN,www.skype.com,🚀 选择代理
+  - DOMAIN-SUFFIX,googletagmanager.com,⛔ 广告拦截
 
 
   # 国内网站（优先，避免 google.cn 走代理）
   - DOMAIN-SUFFIX,cn,DIRECT
-  - DOMAIN-KEYWORD,-cn,DIRECT
+  # - DOMAIN-KEYWORD,-cn,❓ 疑似国内
+
+  
+  # Local Area Network
+  - DOMAIN-KEYWORD,announce,DIRECT
+  - DOMAIN-KEYWORD,torrent,DIRECT
+  - DOMAIN-KEYWORD,tracker,DIRECT
+  - DOMAIN-SUFFIX,smtp,DIRECT
+  - DOMAIN-SUFFIX,local,DIRECT
+  - DOMAIN-SUFFIX,arpa,DIRECT
+  - IP-CIDR,192.168.0.0/16,DIRECT,no-resolve
+  - IP-CIDR,10.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,172.16.0.0/12,DIRECT,no-resolve
+  - IP-CIDR,127.0.0.0/8,DIRECT,no-resolve
+  - IP-CIDR,100.64.0.0/10,DIRECT,no-resolve
+
+  # 抗 DNS 污染
+  # - DOMAIN-KEYWORD,amazon,🚀 选择代理
+  - DOMAIN-KEYWORD,google,🚀 选择代理
+  # - DOMAIN-KEYWORD,gmail,🚀 选择代理
+  # - DOMAIN-KEYWORD,youtube,🚀 选择代理
+  # - DOMAIN-KEYWORD,facebook,🚀 选择代理
+  - DOMAIN-SUFFIX,fb.me,🚀 选择代理
+  # - DOMAIN-SUFFIX,fbcdn.net,🚀 选择代理
+  # - DOMAIN-KEYWORD,twitter,🚀 选择代理
+  # - DOMAIN-KEYWORD,instagram,🚀 选择代理
+  # - DOMAIN-KEYWORD,dropbox,🚀 选择代理
+  - DOMAIN-SUFFIX,twimg.com,🚀 选择代理
+  # - DOMAIN-KEYWORD,blogspot,🚀 选择代理
+  - DOMAIN-SUFFIX,youtu.be,🚀 选择代理
+  # - DOMAIN-KEYWORD,whatsapp,🚀 选择代理
+
+  # Wikimedia
+  - DOMAIN-SUFFIX,wikipedia.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikinews.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikidata.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wiktionary.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikiquote.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikibooks.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikisource.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikiversity.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikivoyage.org,🚀 选择代理
+  - DOMAIN-SUFFIX,mediawiki.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikimedia.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wikimediafoundation.org,🚀 选择代理
+  - DOMAIN-SUFFIX,wmfusercontent.org,🚀 选择代理
+  - DOMAIN,w.wiki,🚀 选择代理
 
   # (GlobalTV)
   # > ABC
@@ -136,10 +273,9 @@ rules:
   - DOMAIN-SUFFIX,go.com,🚀 选择代理
 
   # > AbemaTV
-  - DOMAIN,linear-abematv.akamaized.net,🚀 选择代理
+  # - DOMAIN,linear-abematv.akamaized.net,🚀 选择代理
   - DOMAIN-SUFFIX,abema.io,🚀 选择代理
   - DOMAIN-SUFFIX,abema.tv,🚀 选择代理
-  - DOMAIN-SUFFIX,akamaized.net,🚀 选择代理
   - DOMAIN-SUFFIX,ameba.jp,🚀 选择代理
   - DOMAIN-SUFFIX,hayabusa.io,🚀 选择代理
 
@@ -236,9 +372,9 @@ rules:
   - DOMAIN-SUFFIX,viu.tv,🚀 选择代理
 
   # > Youtube
-  - DOMAIN-KEYWORD,youtube,🚀 选择代理
+  - DOMAIN-KEYWORD,youtube.,🚀 选择代理
   - DOMAIN-SUFFIX,googlevideo.com,🚀 选择代理
-  - DOMAIN-SUFFIX,gvt2.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,gvt2.com,🚀 选择代理
   - DOMAIN-SUFFIX,youtu.be,🚀 选择代理
 
   # (AsianTV)
@@ -272,7 +408,7 @@ rules:
 
   # China Area Network
   # > Microsoft
-  - DOMAIN-SUFFIX,microsoft.com,DIRECT
+  - DOMAIN-SUFFIX,microsoft.com,🌐 突破锁区
   - DOMAIN-SUFFIX,windows.com,DIRECT
   - DOMAIN-SUFFIX,windows.net,DIRECT
   - DOMAIN-SUFFIX,sfx.ms,DIRECT
@@ -368,7 +504,7 @@ rules:
   - DOMAIN-SUFFIX,toutiao.com,DIRECT
   # > Content Delivery Network
   # > Akamai
-  - DOMAIN-SUFFIX,akadns.net,DIRECT
+  # - DOMAIN-SUFFIX,akadns.net,DIRECT
   # - DOMAIN-SUFFIX,akamai.net,DIRECT
   # - DOMAIN-SUFFIX,akamaiedge.net,DIRECT
   # - DOMAIN-SUFFIX,akamaihd.net,DIRECT
@@ -437,11 +573,11 @@ rules:
   - DOMAIN-SUFFIX,appspot.com,🚀 选择代理
   - DOMAIN-SUFFIX,blogger.com,🚀 选择代理
   - DOMAIN-SUFFIX,getoutline.org,🚀 选择代理
-  - DOMAIN-SUFFIX,gvt0.com,🚀 选择代理
-  - DOMAIN-SUFFIX,gvt1.com,🚀 选择代理
-  - DOMAIN-SUFFIX,gvt3.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,gvt0.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,gvt1.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,gvt3.com,🚀 选择代理
   # - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,🚀 选择代理
-  - DOMAIN-KEYWORD,google,🚀 选择代理
+  # - DOMAIN-KEYWORD,google,🚀 选择代理
   - DOMAIN-KEYWORD,blogspot,🚀 选择代理
   # > Facebook
   - DOMAIN-SUFFIX,cdninstagram.com,🚀 选择代理
@@ -468,6 +604,7 @@ rules:
   - DOMAIN-SUFFIX,twimg.com,🚀 选择代理
   - DOMAIN-SUFFIX,twitpic.com,🚀 选择代理
   - DOMAIN-SUFFIX,vine.co,🚀 选择代理
+  - DOMAIN-SUFFIX,x.com,🚀 选择代理
   - DOMAIN-KEYWORD,twitter,🚀 选择代理
   # > Telegram
   - DOMAIN-SUFFIX,t.me,🚀 选择代理
@@ -481,12 +618,15 @@ rules:
   - DOMAIN-SUFFIX,line-scdn.net,🚀 选择代理
   - DOMAIN-SUFFIX,naver.jp,🚀 选择代理
   # > Other
-  - DOMAIN-SUFFIX,4shared.com,🚀 选择代理
-  - DOMAIN-SUFFIX,881903.com,🚀 选择代理
+  - DOMAIN-SUFFIX,github.com,🚀 选择代理
+  - DOMAIN-SUFFIX,githubusercontent.com,🚀 选择代理
+  - DOMAIN-SUFFIX,github.blog,🚀 选择代理
+  - DOMAIN-SUFFIX,githubassets.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,github.io,🐟 漏网之鱼
+
+  - DOMAIN-KEYWORD,pinterest,🚀 选择代理
+  - DOMAIN-KEYWORD,wikileaks,🚀 选择代理
   - DOMAIN-SUFFIX,abc.net.au,🚀 选择代理
-  - DOMAIN-SUFFIX,abebooks.com,🚀 选择代理
-  - DOMAIN-SUFFIX,amazon.co.jp,🚀 选择代理
-  - DOMAIN-SUFFIX,apigee.com,🚀 选择代理
   - DOMAIN-SUFFIX,apk-dl.com,🚀 选择代理
   - DOMAIN-SUFFIX,apkmirror.com,🚀 选择代理
   - DOMAIN-SUFFIX,apkmonk.com,🚀 选择代理
@@ -593,8 +733,6 @@ rules:
   - DOMAIN-SUFFIX,joinmastodon.org,🚀 选择代理
   - DOMAIN-SUFFIX,kakao.com,🚀 选择代理
   - DOMAIN-SUFFIX,lihkg.com,🚀 选择代理
-  - DOMAIN-SUFFIX,live.com,🚀 选择代理
-  - DOMAIN-SUFFIX,mail.ru,🚀 选择代理
   - DOMAIN-SUFFIX,matters.news,🚀 选择代理
   - DOMAIN-SUFFIX,medium.com,🚀 选择代理
   - DOMAIN-SUFFIX,mega.nz,🚀 选择代理
@@ -617,7 +755,7 @@ rules:
   - DOMAIN-SUFFIX,pcloud.com,🚀 选择代理
   - DOMAIN-SUFFIX,pinimg.com,🚀 选择代理
   - DOMAIN-SUFFIX,pixiv.net,🚀 选择代理
-  - DOMAIN-SUFFIX,pornhub.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,pornhub.com,⛔ 广告拦截
   - DOMAIN-SUFFIX,pureapk.com,🚀 选择代理
   - DOMAIN-SUFFIX,quora.com,🚀 选择代理
   - DOMAIN-SUFFIX,quoracdn.net,🚀 选择代理
@@ -657,16 +795,13 @@ rules:
   - DOMAIN-SUFFIX,vimeo.com,🚀 选择代理
   - DOMAIN-SUFFIX,voxer.com,🚀 选择代理
   - DOMAIN-SUFFIX,vzw.com,🚀 选择代理
-  - DOMAIN-SUFFIX,w3schools.com,🚀 选择代理
   - DOMAIN-SUFFIX,wattpad.com,🚀 选择代理
   - DOMAIN-SUFFIX,whoer.net,🚀 选择代理
   - DOMAIN-SUFFIX,wikimapia.org,🚀 选择代理
-  - DOMAIN-SUFFIX,wikipedia.org,🚀 选择代理
   - DOMAIN-SUFFIX,wire.com,🚀 选择代理
   - DOMAIN-SUFFIX,worldcat.org,🚀 选择代理
   - DOMAIN-SUFFIX,wsj.com,🚀 选择代理
   - DOMAIN-SUFFIX,wsj.net,🚀 选择代理
-  - DOMAIN-SUFFIX,xboxlive.com,🚀 选择代理
   - DOMAIN-SUFFIX,xvideos.com,🚀 选择代理
   - DOMAIN-SUFFIX,yahoo.com,🚀 选择代理
   - DOMAIN-SUFFIX,yesasia.com,🚀 选择代理
@@ -678,11 +813,6 @@ rules:
   - DOMAIN-SUFFIX,zeronet.io,🚀 选择代理
   - DOMAIN,cdn-images.mailchimp.com,🚀 选择代理
   - DOMAIN,id.heroku.com,🚀 选择代理
-  - DOMAIN-KEYWORD,github,🚀 选择代理
-  - DOMAIN-KEYWORD,jav,🚀 选择代理
-  - DOMAIN-KEYWORD,pinterest,🚀 选择代理
-  # - DOMAIN-KEYWORD,porn,🚀 选择代理
-  - DOMAIN-KEYWORD,wikileaks,🚀 选择代理
 
   # (Region-Restricted Access Denied)
   - DOMAIN-SUFFIX,apartmentratings.com,🌐 突破锁区
@@ -738,13 +868,13 @@ rules:
   # > Apple URL Shortener
   - DOMAIN-SUFFIX,appsto.re,🚀 选择代理
   # > TestFlight
-  - DOMAIN,beta.itunes.apple.com,🚀 选择代理
+  # - DOMAIN,beta.itunes.apple.com,🚀 选择代理
   # > iBooks Store download
-  - DOMAIN,books.itunes.apple.com,🚀 选择代理
+  # - DOMAIN,books.itunes.apple.com,🚀 选择代理
   # > iTunes Store Moveis Trailers
-  - DOMAIN,hls.itunes.apple.com,🚀 选择代理
+  # - DOMAIN,hls.itunes.apple.com,🚀 选择代理
   # App Store Preview
-  - DOMAIN,itunes.apple.com,🚀 选择代理
+  # - DOMAIN,itunes.apple.com,🚀 选择代理
   # > Spotlight
   - DOMAIN,api-glb-sea.smoot.apple.com,🚀 选择代理
   # > Dictionary
@@ -772,7 +902,7 @@ rules:
   - DOMAIN-SUFFIX,gmodules.com,🚀 选择代理
   - DOMAIN-SUFFIX,godoc.org,🚀 选择代理
   - DOMAIN-SUFFIX,golang.org,🚀 选择代理
-  - DOMAIN-SUFFIX,gstatic.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,gstatic.com,🚀 选择代理
   - DOMAIN-SUFFIX,gv.com,🚀 选择代理
   - DOMAIN-SUFFIX,gwtproject.org,🚀 选择代理
   - DOMAIN-SUFFIX,itasoftware.com,🚀 选择代理
@@ -803,7 +933,7 @@ rules:
   - DOMAIN-SUFFIX,4bluestones.biz,🚀 选择代理
   - DOMAIN-SUFFIX,9bis.net,🚀 选择代理
   - DOMAIN-SUFFIX,allconnected.co,🚀 选择代理
-  - DOMAIN-SUFFIX,amazonaws.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,amazonaws.com,🚀 选择代理
   - DOMAIN-SUFFIX,aol.com,🚀 选择代理
   - DOMAIN-SUFFIX,bcc.com.tw,🚀 选择代理
   - DOMAIN-SUFFIX,bit.ly,🚀 选择代理
@@ -856,55 +986,30 @@ rules:
   - DOMAIN-KEYWORD,dlercloud,🚀 选择代理
   - DOMAIN-SUFFIX,dler.cloud,🚀 选择代理
 
-  # Local Area Network
-  - DOMAIN-KEYWORD,announce,DIRECT
-  - DOMAIN-KEYWORD,torrent,DIRECT
-  - DOMAIN-KEYWORD,tracker,DIRECT
-  - DOMAIN-SUFFIX,smtp,DIRECT
-  - DOMAIN-SUFFIX,local,DIRECT
-  - IP-CIDR,192.168.0.0/16,DIRECT
-  - IP-CIDR,10.0.0.0/8,DIRECT
-  - IP-CIDR,172.16.0.0/12,DIRECT
-  - IP-CIDR,127.0.0.0/8,DIRECT
-  - IP-CIDR,100.64.0.0/10,DIRECT
-
-  # > IQIYI
-  - IP-CIDR,101.227.0.0/16,DIRECT
-  - IP-CIDR,101.224.0.0/13,DIRECT
-  - IP-CIDR,119.176.0.0/12,DIRECT
-
-  # > Youku
-  - IP-CIDR,106.11.0.0/16,DIRECT
-
-  # > Telegram
-  - IP-CIDR,67.198.55.0/24,🚀 选择代理
-  - IP-CIDR,91.108.4.0/22,🚀 选择代理
-  - IP-CIDR,91.108.8.0/22,🚀 选择代理
-  - IP-CIDR,91.108.12.0/22,🚀 选择代理
 
   # Apple
   - DOMAIN,safebrowsing.urlsec.qq.com,DIRECT # 如果您并不信任此服务提供商或防止其下载消耗过多带宽资源，可以进入 Safari 设置，关闭 Fraudulent Website Warning 功能，并使用 REJECT 策略。
   - DOMAIN,safebrowsing.googleapis.com,DIRECT # 如果您并不信任此服务提供商或防止其下载消耗过多带宽资源，可以进入 Safari 设置，关闭 Fraudulent Website Warning 功能，并使用 REJECT 策略。
-  - DOMAIN,developer.apple.com,🚀 选择代理
-  - DOMAIN-SUFFIX,digicert.com,🚀 选择代理
-  - DOMAIN,ocsp.verisign.net,🚀 选择代理
-  - DOMAIN-SUFFIX,apps.apple.com,🚀 选择代理
-  - DOMAIN,testflight.apple.com,🚀 选择代理
-  - DOMAIN,sandbox.itunes.apple.com,🚀 选择代理
-  - DOMAIN,itunes.apple.com,🚀 选择代理
-  - DOMAIN-SUFFIX,blobstore.apple.com,🚀 选择代理
-  - DOMAIN,cvws.icloud-content.com,🚀 选择代理
-  - DOMAIN-SUFFIX,music.apple.com,DIRECT
-  - DOMAIN-SUFFIX,mzstatic.com,DIRECT
-  - DOMAIN-SUFFIX,itunes.apple.com,DIRECT
-  - DOMAIN-SUFFIX,icloud.com,DIRECT
-  - DOMAIN-SUFFIX,icloud-content.com,DIRECT
-  - DOMAIN-SUFFIX,me.com,DIRECT
+  - DOMAIN,developer.apple.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,digicert.com,🚀 选择代理
+  # - DOMAIN,ocsp.verisign.net,🚀 选择代理
+  - DOMAIN-SUFFIX,apps.apple.com,🌐 突破锁区
+  - DOMAIN,testflight.apple.com,🌐 突破锁区
+  - DOMAIN,sandbox.itunes.apple.com,🌐 突破锁区
+  - DOMAIN,itunes.apple.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,blobstore.apple.com,🌐 突破锁区
+  - DOMAIN,cvws.icloud-content.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,music.apple.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,mzstatic.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,itunes.apple.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,icloud.com,🌐 突破锁区
+  - DOMAIN-SUFFIX,icloud-content.com,🌐 突破锁区
+  # - DOMAIN-SUFFIX,me.com,DIRECT
   - DOMAIN-SUFFIX,mzstatic.com,DIRECT
   - DOMAIN-SUFFIX,akadns.net,DIRECT
   - DOMAIN-SUFFIX,aaplimg.com,DIRECT
   - DOMAIN-SUFFIX,cdn-apple.com,DIRECT
-  - DOMAIN-SUFFIX,apple.com,DIRECT
+  - DOMAIN-SUFFIX,apple.com,🌐 突破锁区
   - DOMAIN-SUFFIX,apple-cloudkit.com,DIRECT
   # - DOMAIN,e.crashlytics.com,⛔ 广告拦截 //注释此选项有助于大多数App开发者分析崩溃信息；如果您拒绝一切崩溃数据统计、搜集，请取消 # 注释。
 
@@ -1036,295 +1141,90 @@ rules:
   - DOMAIN-SUFFIX,zimuzu.tv,DIRECT
   - DOMAIN-SUFFIX,zoho.com,DIRECT
 
-  # 抗 DNS 污染
-  - DOMAIN-KEYWORD,amazon,🚀 选择代理
-  - DOMAIN-KEYWORD,google,🚀 选择代理
-  - DOMAIN-KEYWORD,gmail,🚀 选择代理
-  - DOMAIN-KEYWORD,youtube,🚀 选择代理
-  - DOMAIN-KEYWORD,facebook,🚀 选择代理
-  - DOMAIN-SUFFIX,fb.me,🚀 选择代理
-  - DOMAIN-SUFFIX,fbcdn.net,🚀 选择代理
-  - DOMAIN-KEYWORD,twitter,🚀 选择代理
-  - DOMAIN-KEYWORD,instagram,🚀 选择代理
-  - DOMAIN-KEYWORD,dropbox,🚀 选择代理
-  - DOMAIN-SUFFIX,twimg.com,🚀 选择代理
-  - DOMAIN-KEYWORD,blogspot,🚀 选择代理
-  - DOMAIN-SUFFIX,youtu.be,🚀 选择代理
-  - DOMAIN-KEYWORD,whatsapp,🚀 选择代理
   # 国外网站
-  - DOMAIN-SUFFIX,9to5mac.com,🚀 选择代理
-  # - DOMAIN-SUFFIX,abpchina.org,🚀 选择代理
-  - DOMAIN-SUFFIX,adblockplus.org,🚀 选择代理
-  - DOMAIN-SUFFIX,adobe.com,🚀 选择代理
-  - DOMAIN-SUFFIX,akamaized.net,🚀 选择代理
-  - DOMAIN-SUFFIX,alfredapp.com,🚀 选择代理
-  - DOMAIN-SUFFIX,amplitude.com,🚀 选择代理
-  - DOMAIN-SUFFIX,ampproject.org,🚀 选择代理
+  # - DOMAIN-SUFFIX,adobe.com,🚀 选择代理
   - DOMAIN-SUFFIX,android.com,🚀 选择代理
-  - DOMAIN-SUFFIX,angularjs.org,🚀 选择代理
-  - DOMAIN-SUFFIX,aolcdn.com,🚀 选择代理
+  - DOMAIN-SUFFIX,aolcdn.com,🚀 选择代理 # Yahoo
   - DOMAIN-SUFFIX,apkpure.com,🚀 选择代理
   - DOMAIN-SUFFIX,appledaily.com,🚀 选择代理
-  - DOMAIN-SUFFIX,appshopper.com,🚀 选择代理
   - DOMAIN-SUFFIX,appspot.com,🚀 选择代理
-  - DOMAIN-SUFFIX,arcgis.com,🚀 选择代理
   - DOMAIN-SUFFIX,archive.org,🚀 选择代理
-  - DOMAIN-SUFFIX,armorgames.com,🚀 选择代理
-  - DOMAIN-SUFFIX,aspnetcdn.com,🚀 选择代理
-  - DOMAIN-SUFFIX,att.com,🚀 选择代理
+  - DOMAIN-SUFFIX,archive.is,🚀 选择代理
   - DOMAIN-SUFFIX,awsstatic.com,🚀 选择代理
-  - DOMAIN-SUFFIX,azureedge.net,🚀 选择代理
-  - DOMAIN-SUFFIX,azurewebsites.net,🚀 选择代理
-  # - DOMAIN-SUFFIX,bing.com,🚀 选择代理
-  - DOMAIN-SUFFIX,bintray.com,🚀 选择代理
   - DOMAIN-SUFFIX,bit.com,🚀 选择代理
   - DOMAIN-SUFFIX,bit.ly,🚀 选择代理
-  - DOMAIN-SUFFIX,bitbucket.org,🚀 选择代理
-  - DOMAIN-SUFFIX,bjango.com,🚀 选择代理
-  - DOMAIN-SUFFIX,bkrtx.com,🚀 选择代理
   - DOMAIN-SUFFIX,blog.com,🚀 选择代理
   - DOMAIN-SUFFIX,blogcdn.com,🚀 选择代理
   - DOMAIN-SUFFIX,blogger.com,🚀 选择代理
-  - DOMAIN-SUFFIX,blogsmithmedia.com,🚀 选择代理
   - DOMAIN-SUFFIX,blogspot.com,🚀 选择代理
   - DOMAIN-SUFFIX,blogspot.hk,🚀 选择代理
-  - DOMAIN-SUFFIX,bloomberg.com,🚀 选择代理
-  - DOMAIN-SUFFIX,box.com,🚀 选择代理
-  - DOMAIN-SUFFIX,box.net,🚀 选择代理
   - DOMAIN-SUFFIX,cachefly.net,🚀 选择代理
   - DOMAIN-SUFFIX,chromium.org,🚀 选择代理
-  - DOMAIN-SUFFIX,cl.ly,🚀 选择代理
-  - DOMAIN-SUFFIX,cloudflare.com,🚀 选择代理
-  - DOMAIN-SUFFIX,cloudfront.net,🚀 选择代理
-  - DOMAIN-SUFFIX,cloudmagic.com,🚀 选择代理
-  - DOMAIN-SUFFIX,cmail19.com,🚀 选择代理
-  - DOMAIN-SUFFIX,cnet.com,🚀 选择代理
-  - DOMAIN-SUFFIX,cocoapods.org,🚀 选择代理
-  - DOMAIN-SUFFIX,comodoca.com,🚀 选择代理
-  - DOMAIN-SUFFIX,crashlytics.com,🚀 选择代理
-  - DOMAIN-SUFFIX,culturedcode.com,🚀 选择代理
-  - DOMAIN-SUFFIX,d.pr,🚀 选择代理
-  - DOMAIN-SUFFIX,danilo.to,🚀 选择代理
-  - DOMAIN-SUFFIX,dayone.me,🚀 选择代理
-  - DOMAIN-SUFFIX,db.tt,🚀 选择代理
-  - DOMAIN-SUFFIX,deskconnect.com,🚀 选择代理
-  - DOMAIN-SUFFIX,disq.us,🚀 选择代理
+  # - DOMAIN-SUFFIX,cloudflare.com,🚀 选择代理
+  # - DOMAIN-SUFFIX,cloudfront.net,🚀 选择代理
+  # - DOMAIN-SUFFIX,disq.us,🚀 选择代理
   - DOMAIN-SUFFIX,disqus.com,🚀 选择代理
   - DOMAIN-SUFFIX,disquscdn.com,🚀 选择代理
-  - DOMAIN-SUFFIX,dnsimple.com,🚀 选择代理
   - DOMAIN-SUFFIX,docker.com,🚀 选择代理
-  - DOMAIN-SUFFIX,dribbble.com,🚀 选择代理
-  - DOMAIN-SUFFIX,droplr.com,🚀 选择代理
   - DOMAIN-SUFFIX,duckduckgo.com,🚀 选择代理
-  - DOMAIN-SUFFIX,dueapp.com,🚀 选择代理
-  - DOMAIN-SUFFIX,dytt8.net,🚀 选择代理
-  - DOMAIN-SUFFIX,edgecastcdn.net,🚀 选择代理
-  - DOMAIN-SUFFIX,edgekey.net,🚀 选择代理
-  - DOMAIN-SUFFIX,edgesuite.net,🚀 选择代理
-  - DOMAIN-SUFFIX,engadget.com,🚀 选择代理
-  - DOMAIN-SUFFIX,entrust.net,🚀 选择代理
-  - DOMAIN-SUFFIX,eurekavpt.com,🚀 选择代理
-  - DOMAIN-SUFFIX,evernote.com,🚀 选择代理
-  - DOMAIN-SUFFIX,fabric.io,🚀 选择代理
-  - DOMAIN-SUFFIX,fast.com,🚀 选择代理
-  - DOMAIN-SUFFIX,fastly.net,🚀 选择代理
-  - DOMAIN-SUFFIX,fc2.com,🚀 选择代理
-  - DOMAIN-SUFFIX,feedburner.com,🚀 选择代理
-  - DOMAIN-SUFFIX,feedly.com,🚀 选择代理
-  - DOMAIN-SUFFIX,feedsportal.com,🚀 选择代理
-  - DOMAIN-SUFFIX,fiftythree.com,🚀 选择代理
-  - DOMAIN-SUFFIX,firebaseio.com,🚀 选择代理
-  - DOMAIN-SUFFIX,flexibits.com,🚀 选择代理
   - DOMAIN-SUFFIX,flickr.com,🚀 选择代理
-  - DOMAIN-SUFFIX,flipboard.com,🚀 选择代理
   - DOMAIN-SUFFIX,g.co,🚀 选择代理
-  - DOMAIN-SUFFIX,gabia.net,🚀 选择代理
-  - DOMAIN-SUFFIX,geni.us,🚀 选择代理
-  - DOMAIN-SUFFIX,gfx.ms,🚀 选择代理
-  - DOMAIN-SUFFIX,ggpht.com,🚀 选择代理
-  - DOMAIN-SUFFIX,ghostnoteapp.com,🚀 选择代理
   - DOMAIN-SUFFIX,git.io,🚀 选择代理
-  - DOMAIN-KEYWORD,github,🚀 选择代理
-  - DOMAIN-SUFFIX,globalsign.com,🚀 选择代理
-  - DOMAIN-SUFFIX,gmodules.com,🚀 选择代理
+  - DOMAIN-SUFFIX,github.com,🚀 选择代理
   - DOMAIN-SUFFIX,godaddy.com,🚀 选择代理
   - DOMAIN-SUFFIX,golang.org,🚀 选择代理
-  - DOMAIN-SUFFIX,gongm.in,🚀 选择代理
   - DOMAIN-SUFFIX,goo.gl,🚀 选择代理
-  - DOMAIN-SUFFIX,goodreaders.com,🚀 选择代理
-  - DOMAIN-SUFFIX,goodreads.com,🚀 选择代理
   - DOMAIN-SUFFIX,gravatar.com,🚀 选择代理
-  - DOMAIN-SUFFIX,gstatic.com,🚀 选择代理
-  - DOMAIN-SUFFIX,gvt0.com,🚀 选择代理
-  - DOMAIN-SUFFIX,hockeyapp.net,🚀 选择代理
-  - DOMAIN-SUFFIX,hotmail.com,🚀 选择代理
-  - DOMAIN-SUFFIX,icons8.com,🚀 选择代理
-  - DOMAIN-SUFFIX,ifixit.com,🚀 选择代理
-  - DOMAIN-SUFFIX,ift.tt,🚀 选择代理
-  - DOMAIN-SUFFIX,ifttt.com,🚀 选择代理
-  - DOMAIN-SUFFIX,iherb.com,🚀 选择代理
-  - DOMAIN-SUFFIX,imageshack.us,🚀 选择代理
-  - DOMAIN-SUFFIX,img.ly,🚀 选择代理
   - DOMAIN-SUFFIX,imgur.com,🚀 选择代理
-  - DOMAIN-SUFFIX,imore.com,🚀 选择代理
-  - DOMAIN-SUFFIX,instapaper.com,🚀 选择代理
-  - DOMAIN-SUFFIX,ipn.li,🚀 选择代理
-  - DOMAIN-SUFFIX,is.gd,🚀 选择代理
-  - DOMAIN-SUFFIX,issuu.com,🚀 选择代理
-  - DOMAIN-SUFFIX,itgonglun.com,🚀 选择代理
-  - DOMAIN-SUFFIX,itun.es,🚀 选择代理
-  - DOMAIN-SUFFIX,ixquick.com,🚀 选择代理
-  - DOMAIN-SUFFIX,j.mp,🚀 选择代理
-  - DOMAIN-SUFFIX,js.revsci.net,🚀 选择代理
-  - DOMAIN-SUFFIX,jshint.com,🚀 选择代理
-  - DOMAIN-SUFFIX,jtvnw.net,🚀 选择代理
-  - DOMAIN-SUFFIX,justgetflux.com,🚀 选择代理
-  - DOMAIN-SUFFIX,kat.cr,🚀 选择代理
-  - DOMAIN-SUFFIX,klip.me,🚀 选择代理
-  - DOMAIN-SUFFIX,libsyn.com,🚀 选择代理
-  - DOMAIN-SUFFIX,linode.com,🚀 选择代理
-  - DOMAIN-SUFFIX,lithium.com,🚀 选择代理
-  - DOMAIN-SUFFIX,littlehj.com,🚀 选择代理
-  # - DOMAIN-SUFFIX,live.com,🚀 选择代理
-  - DOMAIN-SUFFIX,live.net,🚀 选择代理
-  - DOMAIN-SUFFIX,livefilestore.com,🚀 选择代理
-  - DOMAIN-SUFFIX,llnwd.net,🚀 选择代理
-  - DOMAIN-SUFFIX,macid.co,🚀 选择代理
-  - DOMAIN-SUFFIX,macromedia.com,🚀 选择代理
-  - DOMAIN-SUFFIX,macrumors.com,🚀 选择代理
-  - DOMAIN-SUFFIX,mashable.com,🚀 选择代理
-  - DOMAIN-SUFFIX,mathjax.org,🚀 选择代理
   - DOMAIN-SUFFIX,medium.com,🚀 选择代理
   - DOMAIN-SUFFIX,mega.co.nz,🚀 选择代理
   - DOMAIN-SUFFIX,mega.nz,🚀 选择代理
   - DOMAIN-SUFFIX,megaupload.com,🚀 选择代理
   - DOMAIN-SUFFIX,microsofttranslator.com,🌐 突破锁区
-  - DOMAIN-SUFFIX,mindnode.com,🚀 选择代理
-  - DOMAIN-SUFFIX,mobile01.com,🚀 选择代理
-  - DOMAIN-SUFFIX,modmyi.com,🚀 选择代理
-  # - DOMAIN-SUFFIX,msedge.net,🚀 选择代理
-  - DOMAIN-SUFFIX,myfontastic.com,🚀 选择代理
-  - DOMAIN-SUFFIX,name.com,🚀 选择代理
-  - DOMAIN-SUFFIX,nextmedia.com,🚀 选择代理
   - DOMAIN-SUFFIX,nsstatic.net,🚀 选择代理
   - DOMAIN-SUFFIX,nssurge.com,🚀 选择代理
   - DOMAIN-SUFFIX,nyt.com,🚀 选择代理
   - DOMAIN-SUFFIX,nytimes.com,🚀 选择代理
-  - DOMAIN-SUFFIX,omnigroup.com,🚀 选择代理
   - DOMAIN-SUFFIX,onedrive.com,🚀 选择代理
-  - DOMAIN-SUFFIX,onenote.com,🚀 选择代理
-  - DOMAIN-SUFFIX,ooyala.com,🚀 选择代理
   - DOMAIN-SUFFIX,openvpn.net,🚀 选择代理
-  - DOMAIN-SUFFIX,openwrt.org,🚀 选择代理
-  - DOMAIN-SUFFIX,orkut.com,🚀 选择代理
-  - DOMAIN-SUFFIX,osxdaily.com,🚀 选择代理
-  - DOMAIN-SUFFIX,outlook.com,🚀 选择代理
-  - DOMAIN-SUFFIX,ow.ly,🚀 选择代理
-  - DOMAIN-SUFFIX,paddleapi.com,🚀 选择代理
-  - DOMAIN-SUFFIX,parallels.com,🚀 选择代理
-  - DOMAIN-SUFFIX,parse.com,🚀 选择代理
-  - DOMAIN-SUFFIX,pdfexpert.com,🚀 选择代理
-  - DOMAIN-SUFFIX,periscope.tv,🚀 选择代理
-  - DOMAIN-SUFFIX,pinboard.in,🚀 选择代理
+  - DOMAIN-SUFFIX,parallels.com,🌐 突破锁区
   - DOMAIN-SUFFIX,pinterest.com,🚀 选择代理
-  - DOMAIN-SUFFIX,pixelmator.com,🚀 选择代理
   - DOMAIN-SUFFIX,pixiv.net,🚀 选择代理
-  - DOMAIN-SUFFIX,playpcesor.com,🚀 选择代理
-  - DOMAIN-SUFFIX,playstation.com,🚀 选择代理
-  - DOMAIN-SUFFIX,playstation.com.hk,🚀 选择代理
-  - DOMAIN-SUFFIX,playstation.net,🚀 选择代理
-  - DOMAIN-SUFFIX,playstationnetwork.com,🚀 选择代理
-  - DOMAIN-SUFFIX,pushwoosh.com,🚀 选择代理
-  - DOMAIN-SUFFIX,rime.im,🚀 选择代理
-  - DOMAIN-SUFFIX,servebom.com,🚀 选择代理
-  - DOMAIN-SUFFIX,sfx.ms,🚀 选择代理
   - DOMAIN-SUFFIX,shadowsocks.org,🚀 选择代理
-  - DOMAIN-SUFFIX,sharethis.com,🚀 选择代理
-  - DOMAIN-SUFFIX,shazam.com,🚀 选择代理
-  - DOMAIN-SUFFIX,skype.com,🚀 选择代理
-  - DOMAIN-SUFFIX,smartdns🚀 选择代理.com,🚀 选择代理
-  - DOMAIN-SUFFIX,smartmailcloud.com,🚀 选择代理
-  - DOMAIN-SUFFIX,sndcdn.com,🚀 选择代理
-  - DOMAIN-SUFFIX,sony.com,🚀 选择代理
+  - DOMAIN-SUFFIX,smartdnsproxy.com,🚀 选择代理
   - DOMAIN-SUFFIX,soundcloud.com,🚀 选择代理
-  - DOMAIN-SUFFIX,sourceforge.net,🚀 选择代理
   - DOMAIN-SUFFIX,spotify.com,🚀 选择代理
-  - DOMAIN-SUFFIX,squarespace.com,🚀 选择代理
   - DOMAIN-SUFFIX,sstatic.net,🚀 选择代理
-  - DOMAIN-SUFFIX,st.luluku.pw,🚀 选择代理
-  - DOMAIN-SUFFIX,stackoverflow.com,🚀 选择代理
   - DOMAIN-SUFFIX,startpage.com,🚀 选择代理
   - DOMAIN-SUFFIX,staticflickr.com,🚀 选择代理
   - DOMAIN-SUFFIX,steamcommunity.com,🚀 选择代理
   - DOMAIN-SUFFIX,symauth.com,🚀 选择代理
-  - DOMAIN-SUFFIX,symcb.com,🚀 选择代理
-  - DOMAIN-SUFFIX,symcd.com,🚀 选择代理
-  - DOMAIN-SUFFIX,tapbots.com,🚀 选择代理
-  - DOMAIN-SUFFIX,tapbots.net,🚀 选择代理
-  - DOMAIN-SUFFIX,tdesktop.com,🚀 选择代理
-  - DOMAIN-SUFFIX,techcrunch.com,🚀 选择代理
-  - DOMAIN-SUFFIX,techsmith.com,🚀 选择代理
-  - DOMAIN-SUFFIX,thepiratebay.org,🚀 选择代理
-  - DOMAIN-SUFFIX,theverge.com,🚀 选择代理
   - DOMAIN-SUFFIX,time.com,🚀 选择代理
-  - DOMAIN-SUFFIX,timeinc.net,🚀 选择代理
-  - DOMAIN-SUFFIX,tiny.cc,🚀 选择代理
-  - DOMAIN-SUFFIX,tinypic.com,🚀 选择代理
   - DOMAIN-SUFFIX,tmblr.co,🚀 选择代理
-  - DOMAIN-SUFFIX,todoist.com,🚀 选择代理
-  - DOMAIN-SUFFIX,trello.com,🚀 选择代理
-  - DOMAIN-SUFFIX,trustasiassl.com,🚀 选择代理
   - DOMAIN-SUFFIX,tumblr.co,🚀 选择代理
   - DOMAIN-SUFFIX,tumblr.com,🚀 选择代理
-  - DOMAIN-SUFFIX,tweetdeck.com,🚀 选择代理
-  - DOMAIN-SUFFIX,tweetmarker.net,🚀 选择代理
   - DOMAIN-SUFFIX,twitch.tv,🚀 选择代理
   - DOMAIN-SUFFIX,txmblr.com,🚀 选择代理
-  - DOMAIN-SUFFIX,typekit.net,🚀 选择代理
-  - DOMAIN-SUFFIX,ubertags.com,🚀 选择代理
-  - DOMAIN-SUFFIX,ublock.org,🚀 选择代理
-  - DOMAIN-SUFFIX,ubnt.com,🚀 选择代理
-  - DOMAIN-SUFFIX,ulyssesapp.com,🚀 选择代理
-  - DOMAIN-SUFFIX,urchin.com,🚀 选择代理
-  - DOMAIN-SUFFIX,usertrust.com,🚀 选择代理
-  - DOMAIN-SUFFIX,v.gd,🚀 选择代理
   - DOMAIN-SUFFIX,v2ex.com,🚀 选择代理
   - DOMAIN-SUFFIX,vimeo.com,🚀 选择代理
   - DOMAIN-SUFFIX,vimeocdn.com,🚀 选择代理
-  - DOMAIN-SUFFIX,vine.co,🚀 选择代理
   - DOMAIN-SUFFIX,vivaldi.com,🚀 选择代理
   - DOMAIN-SUFFIX,vox-cdn.com,🚀 选择代理
-  - DOMAIN-SUFFIX,vsco.co,🚀 选择代理
-  - DOMAIN-SUFFIX,vultr.com,🚀 选择代理
   - DOMAIN-SUFFIX,w.org,🚀 选择代理
-  - DOMAIN-SUFFIX,w3schools.com,🚀 选择代理
-  - DOMAIN-SUFFIX,webtype.com,🚀 选择代理
   - DOMAIN-SUFFIX,wikiwand.com,🚀 选择代理
   - DOMAIN-SUFFIX,wikileaks.org,🚀 选择代理
-  - DOMAIN-SUFFIX,wikimedia.org,🚀 选择代理
-  - DOMAIN-SUFFIX,wikipedia.com,🚀 选择代理
-  - DOMAIN-SUFFIX,wikipedia.org,🚀 选择代理
-  # - DOMAIN-SUFFIX,windows.com,🚀 选择代理
-  # - DOMAIN-SUFFIX,windows.net,🚀 选择代理
   - DOMAIN-SUFFIX,wire.com,🚀 选择代理
   - DOMAIN-SUFFIX,wordpress.com,🚀 选择代理
-  - DOMAIN-SUFFIX,workflowy.com,🚀 选择代理
   - DOMAIN-SUFFIX,wp.com,🚀 选择代理
   - DOMAIN-SUFFIX,wsj.com,🚀 选择代理
   - DOMAIN-SUFFIX,wsj.net,🚀 选择代理
-  - DOMAIN-SUFFIX,xda-developers.com,🚀 选择代理
-  - DOMAIN-SUFFIX,xeeno.com,🚀 选择代理
-  - DOMAIN-SUFFIX,xiti.com,🚀 选择代理
   - DOMAIN-SUFFIX,yahoo.com,🚀 选择代理
   - DOMAIN-SUFFIX,yimg.com,🚀 选择代理
-  - DOMAIN-SUFFIX,ying.com,🚀 选择代理
-  - DOMAIN-SUFFIX,yoyo.org,🚀 选择代理
   - DOMAIN-SUFFIX,ytimg.com,🚀 选择代理
 
   # Telegram
   - DOMAIN-SUFFIX,telegra.ph,🚀 选择代理
   - DOMAIN-SUFFIX,telegram.org,🚀 选择代理
-
   - IP-CIDR,91.108.4.0/22,🚀 选择代理,no-resolve
   - IP-CIDR,91.108.8.0/22,🚀 选择代理,no-resolve
   - IP-CIDR,91.108.12.0/22,🚀 选择代理,no-resolve
@@ -1334,19 +1234,769 @@ rules:
   - IP-CIDR,149.154.164.0/22,🚀 选择代理,no-resolve
   - IP-CIDR,149.154.168.0/22,🚀 选择代理,no-resolve
   - IP-CIDR,149.154.172.0/22,🚀 选择代理,no-resolve
+  - IP-CIDR,67.198.55.0/24,🚀 选择代理
 
-  # LAN
-  - DOMAIN,injections.adguard.org,DIRECT
-  - DOMAIN,local.adguard.org,DIRECT
-  - DOMAIN,mitm.it,DIRECT
-  - DOMAIN-SUFFIX,local,DIRECT
-  - IP-CIDR,127.0.0.0/8,DIRECT
-  - IP-CIDR,172.16.0.0/12,DIRECT
+  # > IQIYI
+  - IP-CIDR,101.227.0.0/16,DIRECT
+  - IP-CIDR,101.224.0.0/13,DIRECT
+  - IP-CIDR,119.176.0.0/12,DIRECT
+
+  # > Youku
+  - IP-CIDR,106.11.0.0/16,DIRECT
+
+  # Local Area Network
   - IP-CIDR,192.168.0.0/16,DIRECT
   - IP-CIDR,10.0.0.0/8,DIRECT
-  - IP-CIDR,17.0.0.0/8,DIRECT
+  - IP-CIDR,172.16.0.0/12,DIRECT
+  - IP-CIDR,127.0.0.0/8,DIRECT
   - IP-CIDR,100.64.0.0/10,DIRECT
 
+  # 江苏反诈
+  - IP-CIDR,61.160.148.90/32,🚀 选择代理
+  - IP-CIDR,221.228.32.13/32,🚀 选择代理
+
+  # See https://zh.wikiversity.org/wiki/防火长城域名服务器缓存污染IP列表
+  - IP-CIDR,103.200.30.143/32,🚀 选择代理
+  - IP-CIDR,103.200.30.245/32,🚀 选择代理
+  - IP-CIDR,103.200.31.172/32,🚀 选择代理
+  - IP-CIDR,103.214.168.106/32,🚀 选择代理
+  - IP-CIDR,103.223.122.178/32,🚀 选择代理
+  - IP-CIDR,103.226.246.99/32,🚀 选择代理
+  - IP-CIDR,103.228.130.27/32,🚀 选择代理
+  - IP-CIDR,103.228.130.61/32,🚀 选择代理
+  - IP-CIDR,103.230.123.190/32,🚀 选择代理
+  - IP-CIDR,103.240.180.117/32,🚀 选择代理
+  - IP-CIDR,103.240.182.55/32,🚀 选择代理
+  - IP-CIDR,103.246.246.144/32,🚀 选择代理
+  - IP-CIDR,103.252.114.101/32,🚀 选择代理
+  - IP-CIDR,103.252.114.11/32,🚀 选择代理
+  - IP-CIDR,103.252.114.61/32,🚀 选择代理
+  - IP-CIDR,103.252.115.153/32,🚀 选择代理
+  - IP-CIDR,103.252.115.157/32,🚀 选择代理
+  - IP-CIDR,103.252.115.165/32,🚀 选择代理
+  - IP-CIDR,103.252.115.169/32,🚀 选择代理
+  - IP-CIDR,103.252.115.221/32,🚀 选择代理
+  - IP-CIDR,103.252.115.49/32,🚀 选择代理
+  - IP-CIDR,103.252.115.53/32,🚀 选择代理
+  - IP-CIDR,103.252.115.59/32,🚀 选择代理
+  - IP-CIDR,103.39.76.66/32,🚀 选择代理
+  - IP-CIDR,103.42.176.244/32,🚀 选择代理
+  - IP-CIDR,103.56.16.112/32,🚀 选择代理
+  - IP-CIDR,103.73.161.52/32,🚀 选择代理
+  - IP-CIDR,103.97.176.73/32,🚀 选择代理
+  - IP-CIDR,103.97.3.19/32,🚀 选择代理
+  - IP-CIDR,104.16.251.55/32,🚀 选择代理
+  - IP-CIDR,104.16.252.55/32,🚀 选择代理
+  - IP-CIDR,104.23.124.189/32,🚀 选择代理
+  - IP-CIDR,104.23.125.189/32,🚀 选择代理
+  - IP-CIDR,104.244.42.1/32,🚀 选择代理
+  - IP-CIDR,104.244.42.193/32,🚀 选择代理
+  - IP-CIDR,104.244.43.104/32,🚀 选择代理
+  - IP-CIDR,104.244.43.128/32,🚀 选择代理
+  - IP-CIDR,104.244.43.136/32,🚀 选择代理
+  - IP-CIDR,104.244.43.167/32,🚀 选择代理
+  - IP-CIDR,104.244.43.182/32,🚀 选择代理
+  - IP-CIDR,104.244.43.208/32,🚀 选择代理
+  - IP-CIDR,104.244.43.228/32,🚀 选择代理
+  - IP-CIDR,104.244.43.229/32,🚀 选择代理
+  - IP-CIDR,104.244.43.231/32,🚀 选择代理
+  - IP-CIDR,104.244.43.234/32,🚀 选择代理
+  - IP-CIDR,104.244.43.248/32,🚀 选择代理
+  - IP-CIDR,104.244.43.35/32,🚀 选择代理
+  - IP-CIDR,104.244.43.52/32,🚀 选择代理
+  - IP-CIDR,104.244.43.57/32,🚀 选择代理
+  - IP-CIDR,104.244.43.6/32,🚀 选择代理
+  - IP-CIDR,104.244.43.99/32,🚀 选择代理
+  - IP-CIDR,104.244.45.246/32,🚀 选择代理
+  - IP-CIDR,104.244.46.165/32,🚀 选择代理
+  - IP-CIDR,104.244.46.17/32,🚀 选择代理
+  - IP-CIDR,104.244.46.172/32,🚀 选择代理
+  - IP-CIDR,104.244.46.185/32,🚀 选择代理
+  - IP-CIDR,104.244.46.186/32,🚀 选择代理
+  - IP-CIDR,104.244.46.208/32,🚀 选择代理
+  - IP-CIDR,104.244.46.21/32,🚀 选择代理
+  - IP-CIDR,104.244.46.211/32,🚀 选择代理
+  - IP-CIDR,104.244.46.244/32,🚀 选择代理
+  - IP-CIDR,104.244.46.246/32,🚀 选择代理
+  - IP-CIDR,104.244.46.5/32,🚀 选择代理
+  - IP-CIDR,104.244.46.52/32,🚀 选择代理
+  - IP-CIDR,104.244.46.57/32,🚀 选择代理
+  - IP-CIDR,104.244.46.63/32,🚀 选择代理
+  - IP-CIDR,104.244.46.71/32,🚀 选择代理
+  - IP-CIDR,104.244.46.85/32,🚀 选择代理
+  - IP-CIDR,104.244.46.9/32,🚀 选择代理
+  - IP-CIDR,104.244.46.93/32,🚀 选择代理
+  - IP-CIDR,104.31.142.88/32,🚀 选择代理
+  - IP-CIDR,104.31.143.88/32,🚀 选择代理
+  - IP-CIDR,107.181.166.244/32,🚀 选择代理
+  - IP-CIDR,108.160.161.20/32,🚀 选择代理
+  - IP-CIDR,108.160.161.83/32,🚀 选择代理
+  - IP-CIDR,108.160.162.102/32,🚀 选择代理
+  - IP-CIDR,108.160.162.104/32,🚀 选择代理
+  - IP-CIDR,108.160.162.109/32,🚀 选择代理
+  - IP-CIDR,108.160.162.115/32,🚀 选择代理
+  - IP-CIDR,108.160.162.31/32,🚀 选择代理
+  - IP-CIDR,108.160.162.76/32,🚀 选择代理
+  - IP-CIDR,108.160.162.98/32,🚀 选择代理
+  - IP-CIDR,108.160.163.102/32,🚀 选择代理
+  - IP-CIDR,108.160.163.106/32,🚀 选择代理
+  - IP-CIDR,108.160.163.108/32,🚀 选择代理
+  - IP-CIDR,108.160.163.112/32,🚀 选择代理
+  - IP-CIDR,108.160.163.116/32,🚀 选择代理
+  - IP-CIDR,108.160.163.117/32,🚀 选择代理
+  - IP-CIDR,108.160.165.11/32,🚀 选择代理
+  - IP-CIDR,108.160.165.139/32,🚀 选择代理
+  - IP-CIDR,108.160.165.141/32,🚀 选择代理
+  - IP-CIDR,108.160.165.147/32,🚀 选择代理
+  - IP-CIDR,108.160.165.173/32,🚀 选择代理
+  - IP-CIDR,108.160.165.189/32,🚀 选择代理
+  - IP-CIDR,108.160.165.211/32,🚀 选择代理
+  - IP-CIDR,108.160.165.212/32,🚀 选择代理
+  - IP-CIDR,108.160.165.48/32,🚀 选择代理
+  - IP-CIDR,108.160.165.53/32,🚀 选择代理
+  - IP-CIDR,108.160.165.55/32,🚀 选择代理
+  - IP-CIDR,108.160.165.62/32,🚀 选择代理
+  - IP-CIDR,108.160.165.8/32,🚀 选择代理
+  - IP-CIDR,108.160.165.9/32,🚀 选择代理
+  - IP-CIDR,108.160.166.137/32,🚀 选择代理
+  - IP-CIDR,108.160.166.142/32,🚀 选择代理
+  - IP-CIDR,108.160.166.148/32,🚀 选择代理
+  - IP-CIDR,108.160.166.253/32,🚀 选择代理
+  - IP-CIDR,108.160.166.42/32,🚀 选择代理
+  - IP-CIDR,108.160.166.49/32,🚀 选择代理
+  - IP-CIDR,108.160.166.57/32,🚀 选择代理
+  - IP-CIDR,108.160.166.61/32,🚀 选择代理
+  - IP-CIDR,108.160.166.62/32,🚀 选择代理
+  - IP-CIDR,108.160.166.9/32,🚀 选择代理
+  - IP-CIDR,108.160.167.147/32,🚀 选择代理
+  - IP-CIDR,108.160.167.148/32,🚀 选择代理
+  - IP-CIDR,108.160.167.156/32,🚀 选择代理
+  - IP-CIDR,108.160.167.158/32,🚀 选择代理
+  - IP-CIDR,108.160.167.159/32,🚀 选择代理
+  - IP-CIDR,108.160.167.165/32,🚀 选择代理
+  - IP-CIDR,108.160.167.167/32,🚀 选择代理
+  - IP-CIDR,108.160.167.174/32,🚀 选择代理
+  - IP-CIDR,108.160.167.30/32,🚀 选择代理
+  - IP-CIDR,108.160.169.171/32,🚀 选择代理
+  - IP-CIDR,108.160.169.174/32,🚀 选择代理
+  - IP-CIDR,108.160.169.175/32,🚀 选择代理
+  - IP-CIDR,108.160.169.178/32,🚀 选择代理
+  - IP-CIDR,108.160.169.179/32,🚀 选择代理
+  - IP-CIDR,108.160.169.181/32,🚀 选择代理
+  - IP-CIDR,108.160.169.185/32,🚀 选择代理
+  - IP-CIDR,108.160.169.186/32,🚀 选择代理
+  - IP-CIDR,108.160.169.37/32,🚀 选择代理
+  - IP-CIDR,108.160.169.46/32,🚀 选择代理
+  - IP-CIDR,108.160.169.54/32,🚀 选择代理
+  - IP-CIDR,108.160.169.55/32,🚀 选择代理
+  - IP-CIDR,108.160.170.26/32,🚀 选择代理
+  - IP-CIDR,108.160.170.33/32,🚀 选择代理
+  - IP-CIDR,108.160.170.39/32,🚀 选择代理
+  - IP-CIDR,108.160.170.41/32,🚀 选择代理
+  - IP-CIDR,108.160.170.43/32,🚀 选择代理
+  - IP-CIDR,108.160.170.44/32,🚀 选择代理
+  - IP-CIDR,108.160.170.45/32,🚀 选择代理
+  - IP-CIDR,108.160.170.51/32,🚀 选择代理
+  - IP-CIDR,108.160.170.52/32,🚀 选择代理
+  - IP-CIDR,108.160.172.1/32,🚀 选择代理
+  - IP-CIDR,108.160.172.200/32,🚀 选择代理
+  - IP-CIDR,108.160.172.204/32,🚀 选择代理
+  - IP-CIDR,108.160.172.208/32,🚀 选择代理
+  - IP-CIDR,108.160.172.232/32,🚀 选择代理
+  - IP-CIDR,108.160.173.207/32,🚀 选择代理
+  - IP-CIDR,11.45.1.4/32,🚀 选择代理
+  - IP-CIDR,111.243.214.169/32,🚀 选择代理
+  - IP-CIDR,114.43.24.59/32,🚀 选择代理
+  - IP-CIDR,115.126.100.160/32,🚀 选择代理
+  - IP-CIDR,116.89.243.8/32,🚀 选择代理
+  - IP-CIDR,118.107.180.216/32,🚀 选择代理
+  - IP-CIDR,118.184.26.113/32,🚀 选择代理
+  - IP-CIDR,118.184.78.78/32,🚀 选择代理
+  - IP-CIDR,118.193.202.219/32,🚀 选择代理
+  - IP-CIDR,118.193.240.37/32,🚀 选择代理
+  - IP-CIDR,118.193.240.41/32,🚀 选择代理
+  - IP-CIDR,119.28.87.227/32,🚀 选择代理
+  - IP-CIDR,122.10.85.4/32,🚀 选择代理
+  - IP-CIDR,122.248.226.57/32,🚀 选择代理
+  - IP-CIDR,124.11.210.175/32,🚀 选择代理
+  - IP-CIDR,128.121.146.101/32,🚀 选择代理
+  - IP-CIDR,128.121.146.109/32,🚀 选择代理
+  - IP-CIDR,128.121.146.228/32,🚀 选择代理
+  - IP-CIDR,128.121.146.235/32,🚀 选择代理
+  - IP-CIDR,128.121.243.106/32,🚀 选择代理
+  - IP-CIDR,128.121.243.107/32,🚀 选择代理
+  - IP-CIDR,128.121.243.228/32,🚀 选择代理
+  - IP-CIDR,128.121.243.235/32,🚀 选择代理
+  - IP-CIDR,128.121.243.75/32,🚀 选择代理
+  - IP-CIDR,128.121.243.76/32,🚀 选择代理
+  - IP-CIDR,128.121.243.77/32,🚀 选择代理
+  - IP-CIDR,128.242.240.117/32,🚀 选择代理
+  - IP-CIDR,128.242.240.125/32,🚀 选择代理
+  - IP-CIDR,128.242.240.149/32,🚀 选择代理
+  - IP-CIDR,128.242.240.155/32,🚀 选择代理
+  - IP-CIDR,128.242.240.157/32,🚀 选择代理
+  - IP-CIDR,128.242.240.180/32,🚀 选择代理
+  - IP-CIDR,128.242.240.189/32,🚀 选择代理
+  - IP-CIDR,128.242.240.20/32,🚀 选择代理
+  - IP-CIDR,128.242.240.212/32,🚀 选择代理
+  - IP-CIDR,128.242.240.218/32,🚀 选择代理
+  - IP-CIDR,128.242.240.221/32,🚀 选择代理
+  - IP-CIDR,128.242.240.244/32,🚀 选择代理
+  - IP-CIDR,128.242.240.253/32,🚀 选择代理
+  - IP-CIDR,128.242.240.29/32,🚀 选择代理
+  - IP-CIDR,128.242.240.59/32,🚀 选择代理
+  - IP-CIDR,128.242.240.61/32,🚀 选择代理
+  - IP-CIDR,128.242.240.85/32,🚀 选择代理
+  - IP-CIDR,128.242.240.91/32,🚀 选择代理
+  - IP-CIDR,128.242.240.93/32,🚀 选择代理
+  - IP-CIDR,128.242.245.125/32,🚀 选择代理
+  - IP-CIDR,128.242.245.157/32,🚀 选择代理
+  - IP-CIDR,128.242.245.180/32,🚀 选择代理
+  - IP-CIDR,128.242.245.189/32,🚀 选择代理
+  - IP-CIDR,128.242.245.212/32,🚀 选择代理
+  - IP-CIDR,128.242.245.221/32,🚀 选择代理
+  - IP-CIDR,128.242.245.244/32,🚀 选择代理
+  - IP-CIDR,128.242.245.253/32,🚀 选择代理
+  - IP-CIDR,128.242.245.29/32,🚀 选择代理
+  - IP-CIDR,128.242.245.43/32,🚀 选择代理
+  - IP-CIDR,128.242.245.93/32,🚀 选择代理
+  - IP-CIDR,128.242.250.148/32,🚀 选择代理
+  - IP-CIDR,128.242.250.155/32,🚀 选择代理
+  - IP-CIDR,128.242.250.157/32,🚀 选择代理
+  - IP-CIDR,130.211.15.150/32,🚀 选择代理
+  - IP-CIDR,147.75.95.72/32,🚀 选择代理
+  - IP-CIDR,148.163.48.215/32,🚀 选择代理
+  - IP-CIDR,150.107.3.176/32,🚀 选择代理
+  - IP-CIDR,151.101.77.164/32,🚀 选择代理
+  - IP-CIDR,154.83.14.134/32,🚀 选择代理
+  - IP-CIDR,154.83.15.20/32,🚀 选择代理
+  - IP-CIDR,154.83.15.45/32,🚀 选择代理
+  - IP-CIDR,154.85.102.30/32,🚀 选择代理
+  - IP-CIDR,154.85.102.32/32,🚀 选择代理
+  - IP-CIDR,154.92.16.97/32,🚀 选择代理
+  - IP-CIDR,156.233.67.243/32,🚀 选择代理
+  - IP-CIDR,157.240.0.18/32,🚀 选择代理
+  - IP-CIDR,157.240.0.35/32,🚀 选择代理
+  - IP-CIDR,157.240.1.33/32,🚀 选择代理
+  - IP-CIDR,157.240.1.50/32,🚀 选择代理
+  - IP-CIDR,157.240.1.9/32,🚀 选择代理
+  - IP-CIDR,157.240.10.32/32,🚀 选择代理
+  - IP-CIDR,157.240.10.36/32,🚀 选择代理
+  - IP-CIDR,157.240.10.41/32,🚀 选择代理
+  - IP-CIDR,157.240.11.18/32,🚀 选择代理
+  - IP-CIDR,157.240.11.40/32,🚀 选择代理
+  - IP-CIDR,157.240.12.35/32,🚀 选择代理
+  - IP-CIDR,157.240.12.36/32,🚀 选择代理
+  - IP-CIDR,157.240.12.5/32,🚀 选择代理
+  - IP-CIDR,157.240.12.50/32,🚀 选择代理
+  - IP-CIDR,157.240.13.8/32,🚀 选择代理
+  - IP-CIDR,157.240.15.8/32,🚀 选择代理
+  - IP-CIDR,157.240.16.50/32,🚀 选择代理
+  - IP-CIDR,157.240.17.14/32,🚀 选择代理
+  - IP-CIDR,157.240.17.35/32,🚀 选择代理
+  - IP-CIDR,157.240.17.36/32,🚀 选择代理
+  - IP-CIDR,157.240.17.41/32,🚀 选择代理
+  - IP-CIDR,157.240.17.50/32,🚀 选择代理
+  - IP-CIDR,157.240.18.18/32,🚀 选择代理
+  - IP-CIDR,157.240.2.14/32,🚀 选择代理
+  - IP-CIDR,157.240.2.36/32,🚀 选择代理
+  - IP-CIDR,157.240.2.50/32,🚀 选择代理
+  - IP-CIDR,157.240.20.18/32,🚀 选择代理
+  - IP-CIDR,157.240.20.8/32,🚀 选择代理
+  - IP-CIDR,157.240.21.9/32,🚀 选择代理
+  - IP-CIDR,157.240.3.20/32,🚀 选择代理
+  - IP-CIDR,157.240.3.50/32,🚀 选择代理
+  - IP-CIDR,157.240.3.8/32,🚀 选择代理
+  - IP-CIDR,157.240.6.18/32,🚀 选择代理
+  - IP-CIDR,157.240.6.35/32,🚀 选择代理
+  - IP-CIDR,157.240.7.34/32,🚀 选择代理
+  - IP-CIDR,157.240.7.5/32,🚀 选择代理
+  - IP-CIDR,157.240.7.8/32,🚀 选择代理
+  - IP-CIDR,157.240.8.36/32,🚀 选择代理
+  - IP-CIDR,157.240.8.41/32,🚀 选择代理
+  - IP-CIDR,157.240.8.50/32,🚀 选择代理
+  - IP-CIDR,157.240.9.18/32,🚀 选择代理
+  - IP-CIDR,157.240.9.36/32,🚀 选择代理
+  - IP-CIDR,159.106.121.75/32,🚀 选择代理
+  - IP-CIDR,159.138.20.20/32,🚀 选择代理
+  - IP-CIDR,159.65.107.38/32,🚀 选择代理
+  - IP-CIDR,162.125.1.8/32,🚀 选择代理
+  - IP-CIDR,162.125.17.131/32,🚀 选择代理
+  - IP-CIDR,162.125.18.129/32,🚀 选择代理
+  - IP-CIDR,162.125.18.133/32,🚀 选择代理
+  - IP-CIDR,162.125.2.3/32,🚀 选择代理
+  - IP-CIDR,162.125.2.5/32,🚀 选择代理
+  - IP-CIDR,162.125.2.6/32,🚀 选择代理
+  - IP-CIDR,162.125.32.10/32,🚀 选择代理
+  - IP-CIDR,162.125.32.12/32,🚀 选择代理
+  - IP-CIDR,162.125.32.13/32,🚀 选择代理
+  - IP-CIDR,162.125.32.15/32,🚀 选择代理
+  - IP-CIDR,162.125.32.2/32,🚀 选择代理
+  - IP-CIDR,162.125.32.5/32,🚀 选择代理
+  - IP-CIDR,162.125.32.6/32,🚀 选择代理
+  - IP-CIDR,162.125.32.9/32,🚀 选择代理
+  - IP-CIDR,162.125.34.133/32,🚀 选择代理
+  - IP-CIDR,162.125.6.1/32,🚀 选择代理
+  - IP-CIDR,162.125.7.1/32,🚀 选择代理
+  - IP-CIDR,162.125.8.1/32,🚀 选择代理
+  - IP-CIDR,162.125.80.3/32,🚀 选择代理
+  - IP-CIDR,162.125.80.5/32,🚀 选择代理
+  - IP-CIDR,162.125.80.6/32,🚀 选择代理
+  - IP-CIDR,162.125.82.7/32,🚀 选择代理
+  - IP-CIDR,162.125.83.1/32,🚀 选择代理
+  - IP-CIDR,162.220.12.226/32,🚀 选择代理
+  - IP-CIDR,168.143.162.42/32,🚀 选择代理
+  - IP-CIDR,168.143.162.58/32,🚀 选择代理
+  - IP-CIDR,168.143.171.154/32,🚀 选择代理
+  - IP-CIDR,168.143.171.186/32,🚀 选择代理
+  - IP-CIDR,168.143.171.189/32,🚀 选择代理
+  - IP-CIDR,168.143.171.93/32,🚀 选择代理
+  - IP-CIDR,173.208.182.68/32,🚀 选择代理
+  - IP-CIDR,173.231.12.107/32,🚀 选择代理
+  - IP-CIDR,173.234.53.168/32,🚀 选择代理
+  - IP-CIDR,173.236.182.137/32,🚀 选择代理
+  - IP-CIDR,173.236.212.42/32,🚀 选择代理
+  - IP-CIDR,173.244.209.150/32,🚀 选择代理
+  - IP-CIDR,173.244.217.42/32,🚀 选择代理
+  - IP-CIDR,173.252.100.21/32,🚀 选择代理
+  - IP-CIDR,173.252.100.32/32,🚀 选择代理
+  - IP-CIDR,173.252.102.16/32,🚀 选择代理
+  - IP-CIDR,173.252.102.241/32,🚀 选择代理
+  - IP-CIDR,173.252.103.64/32,🚀 选择代理
+  - IP-CIDR,173.252.105.21/32,🚀 选择代理
+  - IP-CIDR,173.252.108.21/32,🚀 选择代理
+  - IP-CIDR,173.252.108.3/32,🚀 选择代理
+  - IP-CIDR,173.252.110.21/32,🚀 选择代理
+  - IP-CIDR,173.252.248.244/32,🚀 选择代理
+  - IP-CIDR,173.252.73.48/32,🚀 选择代理
+  - IP-CIDR,173.252.88.133/32,🚀 选择代理
+  - IP-CIDR,173.252.88.67/32,🚀 选择代理
+  - IP-CIDR,173.255.209.47/32,🚀 选择代理
+  - IP-CIDR,173.255.213.90/32,🚀 选择代理
+  - IP-CIDR,174.36.196.242/32,🚀 选择代理
+  - IP-CIDR,174.36.228.136/32,🚀 选择代理
+  - IP-CIDR,174.37.154.236/32,🚀 选择代理
+  - IP-CIDR,174.37.175.229/32,🚀 选择代理
+  - IP-CIDR,174.37.243.85/32,🚀 选择代理
+  - IP-CIDR,174.37.54.20/32,🚀 选择代理
+  - IP-CIDR,179.60.193.16/32,🚀 选择代理
+  - IP-CIDR,179.60.193.9/32,🚀 选择代理
+  - IP-CIDR,182.50.139.56/32,🚀 选择代理
+  - IP-CIDR,184.173.136.86/32,🚀 选择代理
+  - IP-CIDR,184.72.1.148/32,🚀 选择代理
+  - IP-CIDR,185.45.6.103/32,🚀 选择代理
+  - IP-CIDR,185.45.6.57/32,🚀 选择代理
+  - IP-CIDR,185.45.7.165/32,🚀 选择代理
+  - IP-CIDR,185.45.7.185/32,🚀 选择代理
+  - IP-CIDR,185.45.7.189/32,🚀 选择代理
+  - IP-CIDR,185.45.7.97/32,🚀 选择代理
+  - IP-CIDR,185.60.216.11/32,🚀 选择代理
+  - IP-CIDR,185.60.216.169/32,🚀 选择代理
+  - IP-CIDR,185.60.216.36/32,🚀 选择代理
+  - IP-CIDR,185.60.216.50/32,🚀 选择代理
+  - IP-CIDR,185.60.218.50/32,🚀 选择代理
+  - IP-CIDR,185.60.219.36/32,🚀 选择代理
+  - IP-CIDR,185.60.219.41/32,🚀 选择代理
+  - IP-CIDR,192.133.77.133/32,🚀 选择代理
+  - IP-CIDR,192.133.77.145/32,🚀 选择代理
+  - IP-CIDR,192.133.77.189/32,🚀 选择代理
+  - IP-CIDR,192.133.77.191/32,🚀 选择代理
+  - IP-CIDR,192.133.77.197/32,🚀 选择代理
+  - IP-CIDR,192.133.77.59/32,🚀 选择代理
+  - IP-CIDR,198.27.124.186/32,🚀 选择代理
+  - IP-CIDR,198.44.185.131/32,🚀 选择代理
+  - IP-CIDR,199.16.156.103/32,🚀 选择代理
+  - IP-CIDR,199.16.156.11/32,🚀 选择代理
+  - IP-CIDR,199.16.156.38/32,🚀 选择代理
+  - IP-CIDR,199.16.156.39/32,🚀 选择代理
+  - IP-CIDR,199.16.156.40/32,🚀 选择代理
+  - IP-CIDR,199.16.156.7/32,🚀 选择代理
+  - IP-CIDR,199.16.156.71/32,🚀 选择代理
+  - IP-CIDR,199.16.156.75/32,🚀 选择代理
+  - IP-CIDR,199.16.158.104/32,🚀 选择代理
+  - IP-CIDR,199.16.158.12/32,🚀 选择代理
+  - IP-CIDR,199.16.158.182/32,🚀 选择代理
+  - IP-CIDR,199.16.158.190/32,🚀 选择代理
+  - IP-CIDR,199.16.158.8/32,🚀 选择代理
+  - IP-CIDR,199.16.158.9/32,🚀 选择代理
+  - IP-CIDR,199.193.116.105/32,🚀 选择代理
+  - IP-CIDR,199.59.148.102/32,🚀 选择代理
+  - IP-CIDR,199.59.148.106/32,🚀 选择代理
+  - IP-CIDR,199.59.148.147/32,🚀 选择代理
+  - IP-CIDR,199.59.148.15/32,🚀 选择代理
+  - IP-CIDR,199.59.148.20/32,🚀 选择代理
+  - IP-CIDR,199.59.148.201/32,🚀 选择代理
+  - IP-CIDR,199.59.148.202/32,🚀 选择代理
+  - IP-CIDR,199.59.148.206/32,🚀 选择代理
+  - IP-CIDR,199.59.148.209/32,🚀 选择代理
+  - IP-CIDR,199.59.148.222/32,🚀 选择代理
+  - IP-CIDR,199.59.148.229/32,🚀 选择代理
+  - IP-CIDR,199.59.148.246/32,🚀 选择代理
+  - IP-CIDR,199.59.148.247/32,🚀 选择代理
+  - IP-CIDR,199.59.148.6/32,🚀 选择代理
+  - IP-CIDR,199.59.148.7/32,🚀 选择代理
+  - IP-CIDR,199.59.148.8/32,🚀 选择代理
+  - IP-CIDR,199.59.148.89/32,🚀 选择代理
+  - IP-CIDR,199.59.148.9/32,🚀 选择代理
+  - IP-CIDR,199.59.148.96/32,🚀 选择代理
+  - IP-CIDR,199.59.148.97/32,🚀 选择代理
+  - IP-CIDR,199.59.149.136/32,🚀 选择代理
+  - IP-CIDR,199.59.149.201/32,🚀 选择代理
+  - IP-CIDR,199.59.149.202/32,🚀 选择代理
+  - IP-CIDR,199.59.149.203/32,🚀 选择代理
+  - IP-CIDR,199.59.149.204/32,🚀 选择代理
+  - IP-CIDR,199.59.149.205/32,🚀 选择代理
+  - IP-CIDR,199.59.149.206/32,🚀 选择代理
+  - IP-CIDR,199.59.149.207/32,🚀 选择代理
+  - IP-CIDR,199.59.149.208/32,🚀 选择代理
+  - IP-CIDR,199.59.149.210/32,🚀 选择代理
+  - IP-CIDR,199.59.149.230/32,🚀 选择代理
+  - IP-CIDR,199.59.149.231/32,🚀 选择代理
+  - IP-CIDR,199.59.149.232/32,🚀 选择代理
+  - IP-CIDR,199.59.149.234/32,🚀 选择代理
+  - IP-CIDR,199.59.149.235/32,🚀 选择代理
+  - IP-CIDR,199.59.149.236/32,🚀 选择代理
+  - IP-CIDR,199.59.149.237/32,🚀 选择代理
+  - IP-CIDR,199.59.149.238/32,🚀 选择代理
+  - IP-CIDR,199.59.149.239/32,🚀 选择代理
+  - IP-CIDR,199.59.149.244/32,🚀 选择代理
+  - IP-CIDR,199.59.150.11/32,🚀 选择代理
+  - IP-CIDR,199.59.150.12/32,🚀 选择代理
+  - IP-CIDR,199.59.150.13/32,🚀 选择代理
+  - IP-CIDR,199.59.150.39/32,🚀 选择代理
+  - IP-CIDR,199.59.150.40/32,🚀 选择代理
+  - IP-CIDR,199.59.150.43/32,🚀 选择代理
+  - IP-CIDR,199.59.150.44/32,🚀 选择代理
+  - IP-CIDR,199.59.150.45/32,🚀 选择代理
+  - IP-CIDR,199.59.150.49/32,🚀 选择代理
+  - IP-CIDR,199.96.58.105/32,🚀 选择代理
+  - IP-CIDR,199.96.58.15/32,🚀 选择代理
+  - IP-CIDR,199.96.58.157/32,🚀 选择代理
+  - IP-CIDR,199.96.58.177/32,🚀 选择代理
+  - IP-CIDR,199.96.58.85/32,🚀 选择代理
+  - IP-CIDR,199.96.59.19/32,🚀 选择代理
+  - IP-CIDR,199.96.59.61/32,🚀 选择代理
+  - IP-CIDR,199.96.59.95/32,🚀 选择代理
+  - IP-CIDR,199.96.61.1/32,🚀 选择代理
+  - IP-CIDR,199.96.62.17/32,🚀 选择代理
+  - IP-CIDR,199.96.62.21/32,🚀 选择代理
+  - IP-CIDR,199.96.62.41/32,🚀 选择代理
+  - IP-CIDR,199.96.62.75/32,🚀 选择代理
+  - IP-CIDR,199.96.63.163/32,🚀 选择代理
+  - IP-CIDR,199.96.63.177/32,🚀 选择代理
+  - IP-CIDR,199.96.63.53/32,🚀 选择代理
+  - IP-CIDR,199.96.63.75/32,🚀 选择代理
+  - IP-CIDR,202.160.128.14/32,🚀 选择代理
+  - IP-CIDR,202.160.128.16/32,🚀 选择代理
+  - IP-CIDR,202.160.128.195/32,🚀 选择代理
+  - IP-CIDR,202.160.128.203/32,🚀 选择代理
+  - IP-CIDR,202.160.128.205/32,🚀 选择代理
+  - IP-CIDR,202.160.128.210/32,🚀 选择代理
+  - IP-CIDR,202.160.128.238/32,🚀 选择代理
+  - IP-CIDR,202.160.128.40/32,🚀 选择代理
+  - IP-CIDR,202.160.128.96/32,🚀 选择代理
+  - IP-CIDR,202.160.129.164/32,🚀 选择代理
+  - IP-CIDR,202.160.129.36/32,🚀 选择代理
+  - IP-CIDR,202.160.129.37/32,🚀 选择代理
+  - IP-CIDR,202.160.129.6/32,🚀 选择代理
+  - IP-CIDR,202.160.130.117/32,🚀 选择代理
+  - IP-CIDR,202.160.130.118/32,🚀 选择代理
+  - IP-CIDR,202.160.130.145/32,🚀 选择代理
+  - IP-CIDR,202.160.130.52/32,🚀 选择代理
+  - IP-CIDR,202.160.130.66/32,🚀 选择代理
+  - IP-CIDR,202.160.130.7/32,🚀 选择代理
+  - IP-CIDR,202.182.98.125/32,🚀 选择代理
+  - IP-CIDR,202.53.137.209/32,🚀 选择代理
+  - IP-CIDR,203.111.254.117/32,🚀 选择代理
+  - IP-CIDR,204.79.197.217/32,🚀 选择代理
+  - IP-CIDR,205.186.152.122/32,🚀 选择代理
+  - IP-CIDR,208.101.21.43/32,🚀 选择代理
+  - IP-CIDR,208.101.60.87/32,🚀 选择代理
+  - IP-CIDR,208.31.254.33/32,🚀 选择代理
+  - IP-CIDR,208.43.170.231/32,🚀 选择代理
+  - IP-CIDR,208.43.237.140/32,🚀 选择代理
+  - IP-CIDR,208.77.47.172/32,🚀 选择代理
+  - IP-CIDR,209.95.56.60/32,🚀 选择代理
+  - IP-CIDR,210.209.84.142/32,🚀 选择代理
+  - IP-CIDR,210.56.51.192/32,🚀 选择代理
+  - IP-CIDR,210.56.51.193/32,🚀 选择代理
+  - IP-CIDR,211.104.160.39/32,🚀 选择代理
+  - IP-CIDR,23.101.24.70/32,🚀 选择代理
+  - IP-CIDR,23.225.141.210/32,🚀 选择代理
+  - IP-CIDR,23.234.30.58/32,🚀 选择代理
+  - IP-CIDR,243.185.187.39/32,🚀 选择代理
+  - IP-CIDR,31.13.106.4/32,🚀 选择代理
+  - IP-CIDR,31.13.112.4/32,🚀 选择代理
+  - IP-CIDR,31.13.112.9/32,🚀 选择代理
+  - IP-CIDR,31.13.64.1/32,🚀 选择代理
+  - IP-CIDR,31.13.64.33/32,🚀 选择代理
+  - IP-CIDR,31.13.64.49/32,🚀 选择代理
+  - IP-CIDR,31.13.64.7/32,🚀 选择代理
+  - IP-CIDR,31.13.65.1/32,🚀 选择代理
+  - IP-CIDR,31.13.65.17/32,🚀 选择代理
+  - IP-CIDR,31.13.65.18/32,🚀 选择代理
+  - IP-CIDR,31.13.66.1/32,🚀 选择代理
+  - IP-CIDR,31.13.66.23/32,🚀 选择代理
+  - IP-CIDR,31.13.66.6/32,🚀 选择代理
+  - IP-CIDR,31.13.67.19/32,🚀 选择代理
+  - IP-CIDR,31.13.67.20/32,🚀 选择代理
+  - IP-CIDR,31.13.67.33/32,🚀 选择代理
+  - IP-CIDR,31.13.67.41/32,🚀 选择代理
+  - IP-CIDR,31.13.68.1/32,🚀 选择代理
+  - IP-CIDR,31.13.68.169/32,🚀 选择代理
+  - IP-CIDR,31.13.68.22/32,🚀 选择代理
+  - IP-CIDR,31.13.69.129/32,🚀 选择代理
+  - IP-CIDR,31.13.69.160/32,🚀 选择代理
+  - IP-CIDR,31.13.69.169/32,🚀 选择代理
+  - IP-CIDR,31.13.69.245/32,🚀 选择代理
+  - IP-CIDR,31.13.69.33/32,🚀 选择代理
+  - IP-CIDR,31.13.69.86/32,🚀 选择代理
+  - IP-CIDR,31.13.70.1/32,🚀 选择代理
+  - IP-CIDR,31.13.70.13/32,🚀 选择代理
+  - IP-CIDR,31.13.70.20/32,🚀 选择代理
+  - IP-CIDR,31.13.70.33/32,🚀 选择代理
+  - IP-CIDR,31.13.70.9/32,🚀 选择代理
+  - IP-CIDR,31.13.71.19/32,🚀 选择代理
+  - IP-CIDR,31.13.71.23/32,🚀 选择代理
+  - IP-CIDR,31.13.71.7/32,🚀 选择代理
+  - IP-CIDR,31.13.72.1/32,🚀 选择代理
+  - IP-CIDR,31.13.72.17/32,🚀 选择代理
+  - IP-CIDR,31.13.72.23/32,🚀 选择代理
+  - IP-CIDR,31.13.72.34/32,🚀 选择代理
+  - IP-CIDR,31.13.73.1/32,🚀 选择代理
+  - IP-CIDR,31.13.73.169/32,🚀 选择代理
+  - IP-CIDR,31.13.73.17/32,🚀 选择代理
+  - IP-CIDR,31.13.73.23/32,🚀 选择代理
+  - IP-CIDR,31.13.73.9/32,🚀 选择代理
+  - IP-CIDR,31.13.74.1/32,🚀 选择代理
+  - IP-CIDR,31.13.74.17/32,🚀 选择代理
+  - IP-CIDR,31.13.75.12/32,🚀 选择代理
+  - IP-CIDR,31.13.75.17/32,🚀 选择代理
+  - IP-CIDR,31.13.75.18/32,🚀 选择代理
+  - IP-CIDR,31.13.75.5/32,🚀 选择代理
+  - IP-CIDR,31.13.76.16/32,🚀 选择代理
+  - IP-CIDR,31.13.76.65/32,🚀 选择代理
+  - IP-CIDR,31.13.76.8/32,🚀 选择代理
+  - IP-CIDR,31.13.76.99/32,🚀 选择代理
+  - IP-CIDR,31.13.77.33/32,🚀 选择代理
+  - IP-CIDR,31.13.77.55/32,🚀 选择代理
+  - IP-CIDR,31.13.78.65/32,🚀 选择代理
+  - IP-CIDR,31.13.78.66/32,🚀 选择代理
+  - IP-CIDR,31.13.79.1/32,🚀 选择代理
+  - IP-CIDR,31.13.79.17/32,🚀 选择代理
+  - IP-CIDR,31.13.80.1/32,🚀 选择代理
+  - IP-CIDR,31.13.80.12/32,🚀 选择代理
+  - IP-CIDR,31.13.80.169/32,🚀 选择代理
+  - IP-CIDR,31.13.80.17/32,🚀 选择代理
+  - IP-CIDR,31.13.80.37/32,🚀 选择代理
+  - IP-CIDR,31.13.80.54/32,🚀 选择代理
+  - IP-CIDR,31.13.81.1/32,🚀 选择代理
+  - IP-CIDR,31.13.81.13/32,🚀 选择代理
+  - IP-CIDR,31.13.81.17/32,🚀 选择代理
+  - IP-CIDR,31.13.81.4/32,🚀 选择代理
+  - IP-CIDR,31.13.82.1/32,🚀 选择代理
+  - IP-CIDR,31.13.82.169/32,🚀 选择代理
+  - IP-CIDR,31.13.82.17/32,🚀 选择代理
+  - IP-CIDR,31.13.82.23/32,🚀 选择代理
+  - IP-CIDR,31.13.82.33/32,🚀 选择代理
+  - IP-CIDR,31.13.82.52/32,🚀 选择代理
+  - IP-CIDR,31.13.83.1/32,🚀 选择代理
+  - IP-CIDR,31.13.83.16/32,🚀 选择代理
+  - IP-CIDR,31.13.83.2/32,🚀 选择代理
+  - IP-CIDR,31.13.83.34/32,🚀 选择代理
+  - IP-CIDR,31.13.83.4/32,🚀 选择代理
+  - IP-CIDR,31.13.83.8/32,🚀 选择代理
+  - IP-CIDR,31.13.84.1/32,🚀 选择代理
+  - IP-CIDR,31.13.84.16/32,🚀 选择代理
+  - IP-CIDR,31.13.84.2/32,🚀 选择代理
+  - IP-CIDR,31.13.84.34/32,🚀 选择代理
+  - IP-CIDR,31.13.84.8/32,🚀 选择代理
+  - IP-CIDR,31.13.85.16/32,🚀 选择代理
+  - IP-CIDR,31.13.85.169/32,🚀 选择代理
+  - IP-CIDR,31.13.85.2/32,🚀 选择代理
+  - IP-CIDR,31.13.85.34/32,🚀 选择代理
+  - IP-CIDR,31.13.85.4/32,🚀 选择代理
+  - IP-CIDR,31.13.85.53/32,🚀 选择代理
+  - IP-CIDR,31.13.85.8/32,🚀 选择代理
+  - IP-CIDR,31.13.86.1/32,🚀 选择代理
+  - IP-CIDR,31.13.86.16/32,🚀 选择代理
+  - IP-CIDR,31.13.86.21/32,🚀 选择代理
+  - IP-CIDR,31.13.86.8/32,🚀 选择代理
+  - IP-CIDR,31.13.87.19/32,🚀 选择代理
+  - IP-CIDR,31.13.87.33/32,🚀 选择代理
+  - IP-CIDR,31.13.87.34/32,🚀 选择代理
+  - IP-CIDR,31.13.87.9/32,🚀 选择代理
+  - IP-CIDR,31.13.88.169/32,🚀 选择代理
+  - IP-CIDR,31.13.88.26/32,🚀 选择代理
+  - IP-CIDR,31.13.90.19/32,🚀 选择代理
+  - IP-CIDR,31.13.90.33/32,🚀 选择代理
+  - IP-CIDR,31.13.91.33/32,🚀 选择代理
+  - IP-CIDR,31.13.91.6/32,🚀 选择代理
+  - IP-CIDR,31.13.92.35/32,🚀 选择代理
+  - IP-CIDR,31.13.92.5/32,🚀 选择代理
+  - IP-CIDR,31.13.93.19/32,🚀 选择代理
+  - IP-CIDR,31.13.93.26/32,🚀 选择代理
+  - IP-CIDR,31.13.94.10/32,🚀 选择代理
+  - IP-CIDR,31.13.94.23/32,🚀 选择代理
+  - IP-CIDR,31.13.94.36/32,🚀 选择代理
+  - IP-CIDR,31.13.94.37/32,🚀 选择代理
+  - IP-CIDR,31.13.94.41/32,🚀 选择代理
+  - IP-CIDR,31.13.94.49/32,🚀 选择代理
+  - IP-CIDR,31.13.94.7/32,🚀 选择代理
+  - IP-CIDR,31.13.95.169/32,🚀 选择代理
+  - IP-CIDR,31.13.95.17/32,🚀 选择代理
+  - IP-CIDR,31.13.95.18/32,🚀 选择代理
+  - IP-CIDR,31.13.95.33/32,🚀 选择代理
+  - IP-CIDR,31.13.95.34/32,🚀 选择代理
+  - IP-CIDR,31.13.95.35/32,🚀 选择代理
+  - IP-CIDR,31.13.95.37/32,🚀 选择代理
+  - IP-CIDR,31.13.95.38/32,🚀 选择代理
+  - IP-CIDR,31.13.95.48/32,🚀 选择代理
+  - IP-CIDR,31.13.96.192/32,🚀 选择代理
+  - IP-CIDR,31.13.96.193/32,🚀 选择代理
+  - IP-CIDR,31.13.96.194/32,🚀 选择代理
+  - IP-CIDR,31.13.96.195/32,🚀 选择代理
+  - IP-CIDR,31.13.96.208/32,🚀 选择代理
+  - IP-CIDR,31.13.97.245/32,🚀 选择代理
+  - IP-CIDR,31.13.97.248/32,🚀 选择代理
+  - IP-CIDR,38.121.72.166/32,🚀 选择代理
+  - IP-CIDR,39.109.122.128/32,🚀 选择代理
+  - IP-CIDR,4.78.139.50/32,🚀 选择代理
+  - IP-CIDR,4.78.139.54/32,🚀 选择代理
+  - IP-CIDR,43.226.16.8/32,🚀 选择代理
+  - IP-CIDR,45.114.11.238/32,🚀 选择代理
+  - IP-CIDR,45.114.11.25/32,🚀 选择代理
+  - IP-CIDR,45.77.186.255/32,🚀 选择代理
+  - IP-CIDR,46.82.174.68/32,🚀 选择代理
+  - IP-CIDR,46.82.174.69/32,🚀 选择代理
+  - IP-CIDR,47.88.58.234/32,🚀 选择代理
+  - IP-CIDR,50.117.117.42/32,🚀 选择代理
+  - IP-CIDR,50.23.209.199/32,🚀 选择代理
+  - IP-CIDR,50.87.93.246/32,🚀 选择代理
+  - IP-CIDR,52.175.9.80/32,🚀 选择代理
+  - IP-CIDR,52.58.1.161/32,🚀 选择代理
+  - IP-CIDR,54.234.18.200/32,🚀 选择代理
+  - IP-CIDR,54.245.22.188/32,🚀 选择代理
+  - IP-CIDR,54.89.135.129/32,🚀 选择代理
+  - IP-CIDR,59.188.250.54/32,🚀 选择代理
+  - IP-CIDR,59.24.3.173/32,🚀 选择代理
+  - IP-CIDR,59.24.3.174/32,🚀 选择代理
+  - IP-CIDR,64.13.192.74/32,🚀 选择代理
+  - IP-CIDR,64.13.192.76/32,🚀 选择代理
+  - IP-CIDR,64.13.232.149/32,🚀 选择代理
+  - IP-CIDR,65.49.26.97/32,🚀 选择代理
+  - IP-CIDR,65.49.26.98/32,🚀 选择代理
+  - IP-CIDR,65.49.26.99/32,🚀 选择代理
+  - IP-CIDR,65.49.68.152/32,🚀 选择代理
+  - IP-CIDR,66.220.146.94/32,🚀 选择代理
+  - IP-CIDR,66.220.147.11/32,🚀 选择代理
+  - IP-CIDR,66.220.147.47/32,🚀 选择代理
+  - IP-CIDR,66.220.148.145/32,🚀 选择代理
+  - IP-CIDR,66.220.149.18/32,🚀 选择代理
+  - IP-CIDR,66.220.149.32/32,🚀 选择代理
+  - IP-CIDR,66.220.149.99/32,🚀 选择代理
+  - IP-CIDR,66.220.151.20/32,🚀 选择代理
+  - IP-CIDR,66.220.152.17/32,🚀 选择代理
+  - IP-CIDR,66.220.155.12/32,🚀 选择代理
+  - IP-CIDR,66.220.155.14/32,🚀 选择代理
+  - IP-CIDR,66.220.158.32/32,🚀 选择代理
+  - IP-CIDR,67.15.100.252/32,🚀 选择代理
+  - IP-CIDR,67.15.129.210/32,🚀 选择代理
+  - IP-CIDR,67.228.102.32/32,🚀 选择代理
+  - IP-CIDR,67.228.235.91/32,🚀 选择代理
+  - IP-CIDR,67.228.235.93/32,🚀 选择代理
+  - IP-CIDR,67.230.169.182/32,🚀 选择代理
+  - IP-CIDR,69.162.134.178/32,🚀 选择代理
+  - IP-CIDR,69.171.224.12/32,🚀 选择代理
+  - IP-CIDR,69.171.224.36/32,🚀 选择代理
+  - IP-CIDR,69.171.224.40/32,🚀 选择代理
+  - IP-CIDR,69.171.225.13/32,🚀 选择代理
+  - IP-CIDR,69.171.227.37/32,🚀 选择代理
+  - IP-CIDR,69.171.228.20/32,🚀 选择代理
+  - IP-CIDR,69.171.228.74/32,🚀 选择代理
+  - IP-CIDR,69.171.229.11/32,🚀 选择代理
+  - IP-CIDR,69.171.229.28/32,🚀 选择代理
+  - IP-CIDR,69.171.229.73/32,🚀 选择代理
+  - IP-CIDR,69.171.230.18/32,🚀 选择代理
+  - IP-CIDR,69.171.232.21/32,🚀 选择代理
+  - IP-CIDR,69.171.233.24/32,🚀 选择代理
+  - IP-CIDR,69.171.233.33/32,🚀 选择代理
+  - IP-CIDR,69.171.233.37/32,🚀 选择代理
+  - IP-CIDR,69.171.234.18/32,🚀 选择代理
+  - IP-CIDR,69.171.234.29/32,🚀 选择代理
+  - IP-CIDR,69.171.234.48/32,🚀 选择代理
+  - IP-CIDR,69.171.235.101/32,🚀 选择代理
+  - IP-CIDR,69.171.235.16/32,🚀 选择代理
+  - IP-CIDR,69.171.235.64/32,🚀 选择代理
+  - IP-CIDR,69.171.237.16/32,🚀 选择代理
+  - IP-CIDR,69.171.237.26/32,🚀 选择代理
+  - IP-CIDR,69.171.239.11/32,🚀 选择代理
+  - IP-CIDR,69.171.242.11/32,🚀 选择代理
+  - IP-CIDR,69.171.244.11/32,🚀 选择代理
+  - IP-CIDR,69.171.244.12/32,🚀 选择代理
+  - IP-CIDR,69.171.244.15/32,🚀 选择代理
+  - IP-CIDR,69.171.245.49/32,🚀 选择代理
+  - IP-CIDR,69.171.245.84/32,🚀 选择代理
+  - IP-CIDR,69.171.246.9/32,🚀 选择代理
+  - IP-CIDR,69.171.247.20/32,🚀 选择代理
+  - IP-CIDR,69.171.247.32/32,🚀 选择代理
+  - IP-CIDR,69.171.247.71/32,🚀 选择代理
+  - IP-CIDR,69.171.248.112/32,🚀 选择代理
+  - IP-CIDR,69.171.248.128/32,🚀 选择代理
+  - IP-CIDR,69.171.248.65/32,🚀 选择代理
+  - IP-CIDR,69.197.153.180/32,🚀 选择代理
+  - IP-CIDR,69.30.25.21/32,🚀 选择代理
+  - IP-CIDR,69.50.221.20/32,🚀 选择代理
+  - IP-CIDR,69.63.176.143/32,🚀 选择代理
+  - IP-CIDR,69.63.176.15/32,🚀 选择代理
+  - IP-CIDR,69.63.176.59/32,🚀 选择代理
+  - IP-CIDR,69.63.178.13/32,🚀 选择代理
+  - IP-CIDR,69.63.180.173/32,🚀 选择代理
+  - IP-CIDR,69.63.181.11/32,🚀 选择代理
+  - IP-CIDR,69.63.181.12/32,🚀 选择代理
+  - IP-CIDR,69.63.184.14/32,🚀 选择代理
+  - IP-CIDR,69.63.184.142/32,🚀 选择代理
+  - IP-CIDR,69.63.184.30/32,🚀 选择代理
+  - IP-CIDR,69.63.186.30/32,🚀 选择代理
+  - IP-CIDR,69.63.186.31/32,🚀 选择代理
+  - IP-CIDR,69.63.187.12/32,🚀 选择代理
+  - IP-CIDR,69.63.189.16/32,🚀 选择代理
+  - IP-CIDR,69.63.190.26/32,🚀 选择代理
+  - IP-CIDR,74.86.118.24/32,🚀 选择代理
+  - IP-CIDR,74.86.12.172/32,🚀 选择代理
+  - IP-CIDR,74.86.12.173/32,🚀 选择代理
+  - IP-CIDR,74.86.142.55/32,🚀 选择代理
+  - IP-CIDR,74.86.151.162/32,🚀 选择代理
+  - IP-CIDR,74.86.151.167/32,🚀 选择代理
+  - IP-CIDR,74.86.17.48/32,🚀 选择代理
+  - IP-CIDR,74.86.226.234/32,🚀 选择代理
+  - IP-CIDR,74.86.228.110/32,🚀 选择代理
+  - IP-CIDR,74.86.3.208/32,🚀 选择代理
+  - IP-CIDR,75.126.115.192/32,🚀 选择代理
+  - IP-CIDR,75.126.124.162/32,🚀 选择代理
+  - IP-CIDR,75.126.135.131/32,🚀 选择代理
+  - IP-CIDR,75.126.150.210/32,🚀 选择代理
+  - IP-CIDR,75.126.164.178/32,🚀 选择代理
+  - IP-CIDR,75.126.2.43/32,🚀 选择代理
+  - IP-CIDR,75.126.215.88/32,🚀 选择代理
+  - IP-CIDR,75.126.33.156/32,🚀 选择代理
+  - IP-CIDR,78.16.49.15/32,🚀 选择代理
+  - IP-CIDR,8.7.198.45/32,🚀 选择代理
+  - IP-CIDR,8.7.198.46/32,🚀 选择代理
+  - IP-CIDR,80.87.199.46/32,🚀 选择代理
+  - IP-CIDR,88.191.249.182/32,🚀 选择代理
+  - IP-CIDR,88.191.249.183/32,🚀 选择代理
+  - IP-CIDR,88.191.253.157/32,🚀 选择代理
+  - IP-CIDR,93.179.102.140/32,🚀 选择代理
+  - IP-CIDR,93.46.8.89/32,🚀 选择代理
+  - IP-CIDR,93.46.8.90/32,🚀 选择代理
+  - IP-CIDR,96.44.137.28/32,🚀 选择代理
+  - IP-CIDR,98.159.108.57/32,🚀 选择代理
+  - IP-CIDR,98.159.108.58/32,🚀 选择代理
+  - IP-CIDR,98.159.108.61/32,🚀 选择代理
+  - IP-CIDR,98.159.108.71/32,🚀 选择代理
+
   # 最终规则
-  - GEOIP,CN,DIRECT
+  - GEOIP,CN,❓ 疑似国内
+  # - DOMAIN-SUFFIX,gvt1.com,🐟 漏网之鱼
   - MATCH,🐟 漏网之鱼

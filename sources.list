@@ -1,33 +1,59 @@
+# ============================================================
+# 配置文件的语法：
+# 行首的 '#' 表示此行为注释。
+# 行首的 '!' 表示这行订阅在国内下载不了。
+# 行首的 '+' 表示这行订阅的 URL 带有动态内容，其中：
+#     +date 表示 URL 中含有需动态填入的日期。
+# 行首的 '*' 表示这是一个订阅列表，即这个文件中的每一行又是一个订阅
+# 行末可以在 '#' 后添加参数，格式为常规 URL 格式，如 '#max=100&ignore=vmess,ss'
+#     其中 max=N 表示如果订阅提供的订阅多于 N 个则忽略订阅，
+#     ignore=A,B,C 表示忽略其中协议为 A,B 或 C 的节点。
+# 一行 'EOF' 表示配置文件结束，忽略下方所有内容。
+# ============================================================
+
+
 # 全网更新节点
-https://raw.githubusercontent.com/freefq/free/master/v2
-# https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/free
+# https://raw.githubusercontent.com/freefq/free/master/v2
 # https://raw.githubusercontent.com/learnhard-cn/free_proxy_ss/main/clash/clash.provider.yaml
 # https://raw.githubusercontent.com/anaer/Sub/main/clash.yaml
-https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2
+# https://raw.githubusercontent.com/aiboboxx/v2rayfree/main/v2
 # https://raw.githubusercontent.com/Rokate/Proxy-Sub/main/clash/clash_v2ray.yml
 # https://raw.githubusercontent.com/Rokate/Proxy-Sub/main/clash/clash_trojan.yml
 # https://raw.githubusercontent.com/lflflf999/0516/main/BX-JD # 关闭，循环引用
 # https://raw.githubusercontent.com/Mr8AHAL/v2ray/main/SERVER.txt
-https://raw.githubusercontent.com/mksshare/mksshare.github.io/main/README.md
-# https://raw.githubusercontent.com/tolinkshare/freenode/main/README.md
-https://raw.githubusercontent.com/mianfeifq/share/main/README.md
+
 https://raw.githubusercontent.com/ripaojiedian/freenode/main/sub
 https://raw.githubusercontent.com/ripaojiedian/freenode/main/clash
-https://raw.githubusercontent.com/abshare/abshare.github.io/main/README.md
+https://raw.githubusercontent.com/Huibq/TrojanLinks/master/links/vmess#ignore=vmess
+https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml#ignore=vmess,ss,ssr
+
+# 小水管
+*https://raw.githubusercontent.com/mksshare/mksshare.github.io/main/README.md
+*https://raw.githubusercontent.com/abshare/abshare.github.io/main/README.md
+
+# Alvin9999
+https://raw.githubusercontent.com/Alvin9999/pac2/master/clash.meta2/config.yaml#max=100
+https://raw.githubusercontent.com/Alvin9999/pac2/master/clash.meta2/1/config.yaml#max=100
+https://raw.githubusercontent.com/Alvin9999/pac2/master/clash.meta2/13/config.yaml#max=100
+https://raw.githubusercontent.com/Alvin9999/pac2/master/clash.meta2/15/config.yaml#max=100
+https://raw.githubusercontent.com/Alvin9999/pac2/master/clash.meta2/2/config.yaml#max=100
+# https://raw.githubusercontent.com/Alvin9999/pac2/master/clash.meta2/3/config.yaml#max=100
+
+# Same, TG Channels
+https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/hy2
+https://raw.githubusercontent.com/Surfboardv2ray/TGParse/main/python/hysteria2
+https://raw.githubusercontent.com/qjlxg/hy2/main/splitted/hy2
 
 
 # 不更新
-# https://raw.githubusercontent.com/Alvin9999/pac2/master/clash/config.yaml
-# https://raw.githubusercontent.com/AzadNetCH/Clash/main/V2Ray.txt
+# https://raw.githubusercontent.com/AzadNetCH/Clash/main/AzadNet_META_IRAN-Direct.yml
 # https://raw.githubusercontent.com/Jsnzkpg/Jsnzkpg/Jsnzkpg/Jsnzkpg
 # https://raw.githubusercontent.com/moneyfly1/sublist/main/clash.yml
 # https://raw.githubusercontent.com/Pawdroid/Free-servers/main/sub
-# https://raw.githubusercontent.com/Rokate/Proxy-Sub/main/clash/clash_ssr.yml
 # https://raw.githubusercontent.com/mfuu/v2ray/master/v2ray
 # https://raw.githubusercontent.com/mfuu/v2ray/master/clash.yaml
 # https://raw.githubusercontent.com/Lewis-1217/FreeNodes/main/bpjzx1
 # https://raw.githubusercontent.com/Lewis-1217/FreeNodes/main/bpjzx2
-# https://raw.githubusercontent.com/renyige1314/CLASH/main/CLASH
 # https://raw.githubusercontent.com/cxr9912/cxr2022/main/free.yaml
 # https://raw.githubusercontent.com/cxr9912/cxr2022/main/vmess.yaml
 # https://raw.githubusercontent.com/cxr9912/cxr2022/main/ss.yaml
@@ -35,35 +61,33 @@ https://raw.githubusercontent.com/abshare/abshare.github.io/main/README.md
 # https://raw.githubusercontent.com/Junely/clash/main/clash_near.txt
 # https://raw.githubusercontent.com/Junely/clash/main/template3.yaml
 # https://raw.githubusercontent.com/imohammadkhalili/V2RAY/main/Mkhalili
-# https://raw.githubusercontent.com/zhangkaiitugithub/passcro/main/speednodes.yaml
 # https://raw.githubusercontent.com/mlabalabala/v2ray-node/main/nodefree4clash.txt
 # https://raw.githubusercontent.com/w1770946466/Auto_proxy/main/Long_term_subscription_num
 # https://raw.githubusercontent.com/hkaa0/permalink/main/proxy/V2ray
 # https://raw.githubusercontent.com/hkaa0/permalink/main/proxy/clash
 
-# 太多了，暂时关闭。
+# 这里包含了全网的所有节点
 # https://raw.githubusercontent.com/mheidari98/.proxy/main/all
 
-# !https://freefq.neocities.org/free.txt
-# !https://freefq.neocities.org/free.xml
 # +date https://nodefree.org/dy/%Y/%m/%Y%m%d.txt
-+date https://nodefree.org/dy/%Y/%m/%Y%m%d.yaml
-+date https://clashnode.com/wp-content/uploads/%Y/%m/%Y%m%d.txt
-# +date https://clashnode.com/wp-content/uploads/%Y/%m/%Y%m%d.yaml
-!+date https://v2rayshare.com/wp-content/uploads/%Y/%m/%Y%m%d.txt
+# +date https://nodefree.org/dy/%Y/%m/%Y%m%d.yaml
+# !+date https://v2rayshare.com/wp-content/uploads/%Y/%m/%Y%m%d.txt
 # !+date https://v2rayshare.com/wp-content/uploads/%Y/%m/%Y%m%d.yaml
-!+date https://oneclash.cc/wp-content/uploads/%Y/%m/%Y%m%d.txt
-# !+date https://oneclash.cc/wp-content/uploads/%Y/%m/%Y%m%d.yaml
-!+date https://wefound.cc/freenode/%Y/%m/%Y%m%d.txt
-# !+date https://wefound.cc/freenode/%Y/%m/%Y%m%d.yaml
+# !+date https://node.oneclash.cc/%Y/%m/%Y%m%d.txt
+# !+date https://node.oneclash.cc/%Y/%m/%Y%m%d.yaml
 # !https://sub.nicevpn.top/long
 # !https://sub.nicevpn.top/Clash.yaml
 # https://sub.sharecentre.online/sub
-https://prop.cf/?name=paimon&client=base64
-https://prop.cf/?name=paimon&client=clash
+# https://prop.cf/?name=paimon&client=base64
+# https://prop.cf/?name=paimon&client=clash
 # !https://clash.221207.xyz/pubclashyaml
 # !https://free.jingfu.cf/clash/proxies
 
+# Copied from https://github.com/ClodQiu/Clash.Base64/blob/Grey/Node.Address
+# https://vpnyyds.link/free
+# !https://jc.openxai.link/
+!https://gitlab.com/colloq168/nodefiltrate/-/raw/main/filtrate?ref_type=heads
+
+
 # Airports
 # *https://raw.githubusercontent.com/RenaLio/Mux2sub/main/urllist # 挂了，谁叫你不控制抓取时长
-# *https://raw.githubusercontent.com/rxsweet/proxies/main/sub/sources/sublist_mining.txt

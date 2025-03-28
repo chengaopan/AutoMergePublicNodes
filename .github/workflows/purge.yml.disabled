@@ -1,0 +1,33 @@
+name: Purge JsDelivr Cache
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 表达式生成 https://crontab.guru/
+    - cron: '0 1/1 * * *'
+  push:
+    paths:
+      - 'list*'
+      - 'snippets/*'
+      - '!snippets/_*'
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+    - name: 计算要清除缓存的文件
+      id: purge_urls
+      run: |
+        baseUrl="https://cdn.jsdelivr.net/gh/${{ github.repository }}@master"
+        urls=""
+        for f in `find snippets -name "*.yml" -type f`; do
+          urls+="${baseUrl}/${f},"
+        done
+        for f in `find . -name "list*" -type f -maxdepth 1`; do
+          urls+="${baseUrl}/${f},"
+        done
+        echo "urls=${urls%,*}" >> $GITHUB_OUTPUT
+    - name: 清除 JsDelivr CDN 缓存
+      uses: egad13/purge-jsdelivr-cache@v1
+      with:
+        url: ${{ steps.purge_urls.outputs.urls }}
