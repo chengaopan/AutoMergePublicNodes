@@ -1,18 +1,42 @@
 proxies:
 - auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 2|🇫🇷1 |  3.6MB/s
-  password: dongtaiwang.com
-  port: 59967
-  server: 195.154.33.70
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- auth: dongtaiwang.com
-  name: 2|🇫🇷2 |  5.6MB/s
+  name: 1|🇫🇷1 |  5.5MB/s
   password: dongtaiwang.com
   port: 61770
   server: 51.159.226.1
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 1|🇫🇷2 |  5.2MB/s
+  password: dongtaiwang.com
+  port: 59967
+  server: 195.154.33.70
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇫🇷3 |  1.7MB/s
+  network: tcp
+  port: 40072
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 1|🇫🇷4 |  5.3MB/s
+  port: 44557
+  server: 195.154.200.178
+  servername: apple.com
+  skip-cert-verify: true
+  tls: true
+  type: hysteria
+  up: 1000 Mbps
