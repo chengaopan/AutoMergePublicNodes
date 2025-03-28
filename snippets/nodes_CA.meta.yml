@@ -1,27 +1,29 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 202c5c6f-305e-4ed2-a3b6-0aba6a0ef0bd
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: d7a25543-5c17-447c-9dff-13e3e00bb3f4
+  name: 0|🇨🇦 加拿大 01 | 1x CA
+  password: 9870a2f8-6160-4553-b0a6-0bb751fb6918
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇨🇦1 |  5.8MB/s
-  network: tcp
-  port: 16011
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.amazon.com
+- name: 1|🇨🇦1 |  5.3MB/s
+  network: ws
+  port: 50000
+  server: 221.162.185.151
+  servername: vv.dong2025.cfd
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vv.dong2025.cfd
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇨🇦加拿大 01 | 1x CA
+  password: a55b06cb-cc77-456b-ab3a-a41540b68808
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
