@@ -1,29 +1,57 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 00b4105a-ccf8-48e8-9fed-51168ec12b70
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 00b4105a-ccf8-48e8-9fed-51168ec12b70
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧1 |  5.0MB/s
+  name: 1|🇬🇧1 |  3.5MB/s
   network: tcp
-  port: 65053
+  port: 35311
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧2 |  1.9MB/s
+  name: 1|🇬🇧2 |  5.5MB/s
   network: tcp
-  port: 32055
+  port: 49699
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
+  server: shenzhou05.mysynology.net
   servername: www.amazon.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 9|Hysteria 🇬🇧 @v2meowcf
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰 香港 01 | 1x HK
+  password: 15608e4b-e6e8-4ad8-9189-a293cea44aeb
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 15608e4b-e6e8-4ad8-9189-a293cea44aeb
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -31,24 +59,28 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 12|GB_speednode_0009
-  network: ws
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 14|GB_speednode_0090
   port: 443
-  server: 31.22.116.38
-  servername: usd.kobtty.me
+  server: 143.47.237.215
+  servername: dj-download-gb.xn--4gq62f52gopi49k.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 7671069f-ce73-4977-be03-414e79f1d7cd
+  uuid: fc192221-b239-45a6-9988-d234df699f0d
+- name: 14|GB_speednode_0091
+  network: ws
+  port: 443
+  server: 217.163.76.102
+  servername: in.youlingkais.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: usd.kobtty.me
-    path: /bing
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇬🇧 英国住宅IP 01 | 1x UK
-  password: b8ad259c-e7d1-4dc0-95d6-2f7997693725
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+      Host: in.youlingkais.filegear-sg.me
+    path: /?ed=2560
