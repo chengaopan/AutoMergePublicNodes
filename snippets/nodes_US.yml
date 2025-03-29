@@ -1,50 +1,58 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国 01 | 1x US Los Angeles
-  password: b2ddcfd0-5e47-432d-a548-cf0c1921541b
+  password: f7dbac96-1805-46fa-a0db-9032537ce177
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: b2ddcfd0-5e47-432d-a548-cf0c1921541b
+  password: f7dbac96-1805-46fa-a0db-9032537ce177
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国 03 | 1x US Washington
-  password: b2ddcfd0-5e47-432d-a548-cf0c1921541b
+  password: f7dbac96-1805-46fa-a0db-9032537ce177
   port: 36215
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
+- alterId: 2
   cipher: auto
-  name: 1|🇺🇸11 |  5.8MB/s
+  name: 1|🇺🇸2 |  1.4MB/s
   network: ws
-  port: 21016
-  server: 134.195.211.116
+  port: 22641
+  server: tk.hzlt.tkddns.xyz
+  servername: tk.hzlt.tkddns.xyz
   skip-cert-verify: true
   tfo: false
-  tls: false
+  tls: true
   type: vmess
   udp: true
-  uuid: f17c76c1-2c3b-4791-b2a7-15435b81ed3a
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
   ws-opts:
+    headers:
+      Host: zxjp-a.tkong.cc
     path: /
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 1|🇺🇸12 |  5.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 35.94.124.230
-  type: ss
-  udp: true
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸4 |  1.9MB/s
+  network: ws
+  port: 22642
+  server: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-headers:
+    Host: zxjp-b.tkong.cc
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸13 |  5.1MB/s
+  name: 1|🇺🇸5 |  5.5MB/s
   network: ws
   port: 2096
   raw:
@@ -72,57 +80,125 @@ proxies:
     headers:
       Host: 1743256978.speed.adl.cccp.freefly.pp.ua
     path: /
-- alterId: 0
+- alterId: 2
   cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 1|🇺🇸15 |  5.2MB/s
+  name: 1|🇺🇸9 |  4.7MB/s
   network: ws
-  port: 21014
-  server: 134.195.211.116
-  servername: 134.195.211.116
+  port: 22642
+  server: tk.hzlt.tkddns.xyz
+  servername: tk.hzlt.tkddns.xyz
   skip-cert-verify: true
+  tls: true
   type: vmess
-  uuid: f17c76c1-2c3b-4791-b2a7-15435b81ed3a
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
   ws-opts:
+    headers:
+      Host: zxjp-b.tkong.cc
     path: /
+- cipher: aes-256-cfb
+  ip-version: dual
+  name: 1|🇺🇸10 |  5.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 35.94.124.230
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸16 |  3.1MB/s
-  network: tcp
-  port: 40105
-  server: 120.232.153.63
-  skip-cert-verify: true
-  tls: false
+  name: 1|🇺🇸11 |  3.8MB/s
+  network: ws
+  port: 8443
+  server: 92.53.188.185
+  skip-cert-verify: false
+  tls: true
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.232.153.63
-  ws-path: /
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      Host: lax1.ibgfw.top
+    path: /xrenvws
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸15 |  1.5MB/s
+  network: ws
+  port: 8443
+  server: 185.238.228.41
+  servername: lax1.ibgfw.top
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 191babc5-2aaf-4fe5-a563-f14244aefb4e
+  ws-opts:
+    headers:
+      Host: lax1.ibgfw.top
+    path: /xrenvws
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 1|🇺🇸17 |  3.7MB/s
+  network: ws
+  port: 22643
+  server: tk.hzlt.tkddns.xyz
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
+    path: /
 - cipher: aes-256-cfb
-  name: 1|🇺🇸19 |  5.4MB/s
+  name: 1|🇺🇸26 |  1.9MB/s
   password: amazonskr05
   port: 443
   server: 54.69.142.224
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  ip-version: dual
-  name: 1|🇺🇸25 |  3.8MB/s
-  password: amazonskr05
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸28 |  1.1MB/s
+  network: ws
   port: 443
-  server: 54.244.97.108
-  tls: false
-  type: ss
+  server: 104.18.149.75
+  servername: us.insbot.filegear-sg.me
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: de94cc0a-0592-4969-b1fc-97ea8f0ea0b3
+  ws-opts:
+    headers:
+      Host: us.insbot.filegear-sg.me
+    path: /aa
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸26 |  1.6MB/s
-  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
-  port: 12356
-  server: hk.bazhuayujiasu.cc
+  name: 2|🇺🇸美国 01 | 1x US Los Angeles
+  password: 99a5f9d6-d0b5-4c44-9a11-ac0a4e85bb9b
+  port: 31211
+  server: free.2apzhfa.xyz
   type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 99a5f9d6-d0b5-4c44-9a11-ac0a4e85bb9b
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸美国 03 | 1x US Washington
+  password: 99a5f9d6-d0b5-4c44-9a11-ac0a4e85bb9b
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国|@ripaojiedian
+  name: 12|🇺🇸 美国|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -134,7 +210,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国2|@ripaojiedian
+  name: 12|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -147,7 +223,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 11,12|美国3|@ripaojiedian
+  name: 12,13|美国3|@ripaojiedian
   network: ws
   port: '420'
   server: 0e1f11d2-stw740-sy3miy-3kis.fmt2-us.sghuawei.com
@@ -162,7 +238,7 @@ proxies:
       Host: 0e1f11d2-stw740-sy3miy-3kis.fmt2-us.sghuawei.com
     path: /
 - client-fingerprint: chrome
-  name: 11|🇺🇸 美国4|@ripaojiedian
+  name: 12|🇺🇸 美国4|@ripaojiedian
   password: '!!str 74260702287384200'
   port: 443
   server: settled-mite.shiner427.skin
@@ -172,7 +248,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 11,12|美国5|@ripaojiedian
+  name: 12,13|美国5|@ripaojiedian
   network: ws
   port: '420'
   server: 494a196c-stucg0-t16qfc-3ge3.fmt2-us.sghuawei.com
@@ -186,30 +262,9 @@ proxies:
     headers:
       Host: 494a196c-stucg0-t16qfc-3ge3.fmt2-us.sghuawei.com
     path: /
-- name: 12|美国4|@ripaojiedian
+- name: 13|美国4|@ripaojiedian
   network: tcp
   password: '!!str 74260702287384200'
   port: 443
   server: settled-mite.shiner427.skin
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国 01 | 1x US Los Angeles
-  password: 344db0d9-e89f-4eab-a8c5-c83b24fc2833
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 344db0d9-e89f-4eab-a8c5-c83b24fc2833
-  port: 31213
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国 03 | 1x US Washington
-  password: 344db0d9-e89f-4eab-a8c5-c83b24fc2833
-  port: 31215
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true

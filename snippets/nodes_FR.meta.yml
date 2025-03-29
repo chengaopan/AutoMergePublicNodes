@@ -1,39 +1,34 @@
 proxies:
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 1000 Mbps
-  name: 1|🇫🇷1 |  5.7MB/s
-  port: 44557
-  server: 195.154.200.178
-  servername: apple.com
-  skip-cert-verify: true
-  tls: true
-  type: hysteria
-  up: 1000 Mbps
-- auth: 82febca6-8856-41fe-84df-c8bda0b72c7b
-  name: 1|🇫🇷2 |  4.3MB/s
-  password: 82febca6-8856-41fe-84df-c8bda0b72c7b
-  port: 2005
-  server: tw3.akebi.cc
-  skip-cert-verify: false
-  sni: fr01.akebi.cc
-  type: hysteria2
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇫🇷3 |  3.6MB/s
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇫🇷1 |  4.8MB/s
   network: tcp
-  port: 36105
-  server: b.vahidvpn.com.tr
-  servername: ''
+  port: 40072
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
   tls: true
   type: vless
-  udp: false
-  uuid: 24c1e26a-af2e-4e11-9a8e-52d12e7f5e69
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: 1|🇫🇷2 |  1.1MB/s
+  network: ws
+  port: 443
+  server: 172.67.170.11
+  servername: linde06.indiavideo.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
 - auth: dongtaiwang.com
   client-fingerprint: chrome
-  name: '1,9|@meli_proxyy #1'
+  name: '1,10|@meli_proxyy #1'
   password: dongtaiwang.com
   port: 59967
   server: 195.154.33.70
@@ -41,7 +36,24 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 13|FR_speednode_0015
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 1|🇫🇷4 |  3.6MB/s
+  password: dongtaiwang.com
+  port: 61770
+  server: 51.159.226.1
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- auth: 82febca6-8856-41fe-84df-c8bda0b72c7b
+  name: 1|🇫🇷5 |  3.4MB/s
+  password: 82febca6-8856-41fe-84df-c8bda0b72c7b
+  port: 2005
+  server: tw3.akebi.cc
+  skip-cert-verify: false
+  sni: fr01.akebi.cc
+  type: hysteria2
+- name: 14|FR_speednode_0015
   network: ws
   packet-encoding: xudp
   port: 443
