@@ -1,71 +1,47 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 01 | 1x HK
-  password: f7dbac96-1805-46fa-a0db-9032537ce177
+  password: 9ee8857f-544b-4bd5-b0da-8f0c271ffdfd
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: f7dbac96-1805-46fa-a0db-9032537ce177
+  password: 9ee8857f-544b-4bd5-b0da-8f0c271ffdfd
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: 032dd58f-6717-40b0-94d3-93c01dd3b7fd
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: 032dd58f-6717-40b0-94d3-93c01dd3b7fd
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧1 |  4.6MB/s
+  name: 2|🇬🇧1 |  5.7MB/s
   network: tcp
-  port: 35311
+  port: 32055
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
+  server: csuzhou01.1cooldns.com
+  servername: www.amazon.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 1|🇬🇧2 |  1.0MB/s
-  network: ws
-  port: 443
-  raw:
-    add: 188.114.97.7
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: linde06.indiavideo.sbs
-    id: edbb1059-1633-4271-b66e-ed4fba47a1bf
-    net: ws
-    path: /linkws
-    port: '443'
-    ps: 🔥Join+Telegram:@FarahVPN🟣
-    scy: auto
-    sni: linde06.indiavideo.sbs
-    tls: tls
-    type: ''
-    v: '2'
-  server: 188.114.97.7
-  servername: linde06.indiavideo.sbs
-  tls: true
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      Host: linde06.indiavideo.sbs
-    path: /linkws
-- auth: 597dc9ce-5ce8-4ff5-833b-76cd4e5789e1
-  name: 1|🇬🇧3 |  4.6MB/s
-  password: 597dc9ce-5ce8-4ff5-833b-76cd4e5789e1
-  port: 8443
-  server: yg1.gywanglug.xyz
-  skip-cert-verify: false
-  sni: yg1.gywanglug.xyz
-  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0009
+  name: 2,14|CN_speednode_0009
   network: tcp
   port: 14659
   reality-opts:
@@ -79,10 +55,25 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
-  name: 1|🇬🇧5 |  5.2MB/s
+  name: 2|🇬🇧3 |  5.1MB/s
   network: ws
   port: 443
-  server: 188.114.96.2
+  server: 188.114.99.134
+  servername: linde06.indiavideo.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 2|🇬🇧4 |  3.1MB/s
+  network: ws
+  port: 443
+  server: 104.21.51.208
   servername: linde06.indiavideo.sbs
   tls: true
   type: vmess
@@ -91,37 +82,36 @@ proxies:
     headers:
       Host: linde06.indiavideo.sbs
     path: /linkws
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧6 |  5.2MB/s
-  network: tcp
-  port: 32055
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
+- alterId: 0
+  cipher: auto
+  name: 2|🇬🇧5 |  1.8MB/s
+  network: ws
+  port: 443
+  raw:
+    add: 188.114.97.3
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: linde06.indiavideo.sbs
+    id: edbb1059-1633-4271-b66e-ed4fba47a1bf
+    net: ws
+    path: /linkws
+    port: 443
+    ps: 🏁 ZZ_476
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: 188.114.97.3
+  servername: ''
   tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧7 |  5.3MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧英国家宽 01 | 1x UK
-  password: 99a5f9d6-d0b5-4c44-9a11-ac0a4e85bb9b
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443

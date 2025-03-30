@@ -1,74 +1,73 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 02 | 1x HK
-  password: f7dbac96-1805-46fa-a0db-9032537ce177
+  password: 9ee8857f-544b-4bd5-b0da-8f0c271ffdfd
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: f7dbac96-1805-46fa-a0db-9032537ce177
+  password: 9ee8857f-544b-4bd5-b0da-8f0c271ffdfd
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 1|🇭🇰3 |  1.2MB/s
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52612
-  server: hk02.x.quickcht3.club
-  skip-cert-verify: true
-  sni: hk02.x.quickcht3.club
-  tls: true
-  type: ss
-- client-fingerprint: chrome
-  name: 1,12,13|香港3|@ripaojiedian
-  network: tcp
-  password: VMhGp5wEIyCDf90T
-  port: 42303
-  server: csuzhou01.1cooldns.com
-  skip-cert-verify: false
-  sni: hk06.run.place
-  type: trojan
-- cipher: chacha20-ietf
-  name: 1|🇭🇰12 |  1.1MB/s
-  password: asd123456
-  port: 8388
-  server: 103.149.183.61
-  type: ss
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 1|🇭🇰19 |  1.0MB/s
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52612
-  server: 111.29.57.125
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港 02 | 1x HK
-  password: 99a5f9d6-d0b5-4c44-9a11-ac0a4e85bb9b
+  name: 1|🇭🇰香港 02 | 1x HK
+  password: 032dd58f-6717-40b0-94d3-93c01dd3b7fd
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港家宽 03 | 1x HK
-  password: 99a5f9d6-d0b5-4c44-9a11-ac0a4e85bb9b
+  name: 1|🇭🇰香港家宽 03 | 1x HK
+  password: 032dd58f-6717-40b0-94d3-93c01dd3b7fd
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰10 |  4.4MB/s
+  network: ws
+  port: 443
+  raw:
+    add: www.visa.com.tw
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: hk.insbot.filegear-sg.me
+    id: 47eab0de-97f9-49be-f2f3-2e4eb17268e6
+    net: ws
+    path: /aa
+    port: 443
+    ps: CloudFlare
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: www.visa.com.tw
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: 47eab0de-97f9-49be-f2f3-2e4eb17268e6
+  ws-opts:
+    headers:
+      Host: hk.insbot.filegear-sg.me
+    path: /aa
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
-  password: UMG49G7UX0FPLALB
-  port: 15016
-  server: w72tapyb.slashdevslashnetslashtun.net
+  port: 10295
+  server: 103.30.78.24
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 9a948e66-2cad-4064-9585-6c37840c62dc
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇭🇰 香港2|@ripaojiedian
@@ -77,14 +76,41 @@ proxies:
   server: 183.232.229.164
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 12,13|香港3|@ripaojiedian
+  network: tcp
+  password: VMhGp5wEIyCDf90T
+  port: 42303
+  server: csuzhou01.1cooldns.com
+  skip-cert-verify: false
+  sni: hk06.run.place
+  type: trojan
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 12|🇭🇰 香港4|@ripaojiedian
-  password: UVKL67AXW56ZCNT3
+  password: FGB2HBMFJ7XAQ87Z
   port: 15004
   server: w72tapyb.slashdevslashnetslashtun.net
   tfo: false
   type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 12|🇭🇰 香港5|@ripaojiedian
+  password: RRSWPFKGCL902OP8
+  port: 15016
+  server: w72tapyb.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 13|香港|@ripaojiedian
+  network: tcp
+  port: '10295'
+  server: 103.30.78.24
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 9a948e66-2cad-4064-9585-6c37840c62dc
 - alterId: 0
   cipher: auto
   name: 13|香港A|@ripaojiedian
