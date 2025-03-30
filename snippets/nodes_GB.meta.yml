@@ -1,51 +1,38 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: 38004b60-36fb-47f5-a876-25d00439e2e3
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 5df5b566-be3f-44ff-b0b3-186974b8208a
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 5df5b566-be3f-44ff-b0b3-186974b8208a
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: 4e0971d1-392a-4774-81d4-63fe15b07ef0
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 38004b60-36fb-47f5-a876-25d00439e2e3
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: 4e0971d1-392a-4774-81d4-63fe15b07ef0
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧1 |  4.1MB/s
-  network: tcp
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 2
-  cipher: auto
-  name: 1|🇬🇧2 |  5.1MB/s
-  network: ws
-  port: 23613
-  server: 13.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: d3ed5687-5d1f-31c2-9150-ad7d7e9d7029
-  ws-opts:
-    headers:
-      Host: 13.mamamajd.site
-    path: /
 - alterId: '0'
   cipher: auto
-  name: 1|🇬🇧3 |  4.7MB/s
+  name: 2|🇬🇧1 |  2.0MB/s
   network: ws
   port: '443'
-  server: 188.114.97.79
+  server: 188.114.99.134
   tls: true
   type: vmess
   uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
@@ -55,7 +42,7 @@ proxies:
     path: /linkws
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧4 |  5.3MB/s
+  name: 2|🇬🇧2 |  4.3MB/s
   network: tcp
   port: 32055
   reality-opts:
@@ -67,7 +54,22 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: '0'
   cipher: auto
-  name: 1|🇬🇧5 |  3.0MB/s
+  client-fingerprint: chrome
+  name: 2|🇬🇧3 |  5.1MB/s
+  network: ws
+  port: 443
+  server: 188.114.97.79
+  servername: linde06.indiavideo.sbs
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: '0'
+  cipher: auto
+  name: 2|🇬🇧4 |  2.6MB/s
   network: ws
   port: '443'
   server: 188.114.97.7
@@ -78,40 +80,9 @@ proxies:
     headers:
       host: linde06.indiavideo.sbs
     path: /linkws
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇬🇧6 |  4.0MB/s
-  network: ws
-  port: 80
-  server: 45.131.4.233
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: Telegram@WangCai2/?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 1|🇬🇧7 |  4.8MB/s
-  network: ws
-  port: 443
-  server: 172.67.161.77
-  servername: linde06.indiavideo.sbs
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      Host: linde06.indiavideo.sbs
-    path: /linkws
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1,13|CN_speednode_0219
+  name: 2,14|CN_speednode_0219
   network: tcp
   port: 65053
   reality-opts:
@@ -123,64 +94,14 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 1|🇬🇧9 |  5.2MB/s
-  network: ws
-  port: 443
-  server: 188.114.96.5
-  servername: linde06.indiavideo.sbs
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      Host: linde06.indiavideo.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 1|🇬🇧11 |  3.1MB/s
-  network: ws
-  port: 443
-  raw:
-    add: 172.67.196.112
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: linde06.indiavideo.sbs
-    id: edbb1059-1633-4271-b66e-ed4fba47a1bf
-    net: ws
-    path: /linkws
-    port: 443
-    ps: 🇺🇸 US_407
-    scy: ''
-    sni: ''
-    tls: tls
-    type: ''
-    v: '2'
-  server: 172.67.196.112
-  servername: ''
-  tls: true
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      Host: linde06.indiavideo.sbs
-    path: /linkws
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧12 |  4.4MB/s
-  network: tcp
-  port: 35311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 10|Hysteria 🇬🇧 @v2meowcf
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧6 |  2.5MB/s
+  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
+  port: 11006
+  server: 183.232.229.164
+  type: ss
+  udp: true
+- name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -189,7 +110,7 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: 13|GB_speednode_0237
+  name: 14|GB_speednode_0237
   port: 80
   reality-opts:
     public-key: DZzAtolzThTEwEjUnyLN5lzhvzMtKPOAvPA8K8luAhE
