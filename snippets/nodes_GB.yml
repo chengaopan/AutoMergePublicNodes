@@ -1,38 +1,51 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: 9ee8857f-544b-4bd5-b0da-8f0c271ffdfd
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🇬🇧2 |  5.1MB/s
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 9ee8857f-544b-4bd5-b0da-8f0c271ffdfd
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 01 | 1x HK
-  password: 032dd58f-6717-40b0-94d3-93c01dd3b7fd
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 032dd58f-6717-40b0-94d3-93c01dd3b7fd
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+  uuid: d3ed5687-5d1f-31c2-9150-ad7d7e9d7029
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 0|🇬🇧3 |  4.7MB/s
+  network: ws
+  port: '443'
+  server: 188.114.97.79
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      host: linde06.indiavideo.sbs
+    path: /linkws
+- alterId: '0'
+  cipher: auto
+  name: 0|🇬🇧5 |  3.0MB/s
+  network: ws
+  port: '443'
+  server: 188.114.97.7
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      host: linde06.indiavideo.sbs
+    path: /linkws
 - alterId: 0
   cipher: auto
-  name: 2|🇬🇧3 |  5.1MB/s
+  name: 0|🇬🇧7 |  4.8MB/s
   network: ws
   port: 443
-  server: 188.114.99.134
+  server: 172.67.161.77
   servername: linde06.indiavideo.sbs
   skip-cert-verify: false
   tls: true
@@ -44,11 +57,12 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 2|🇬🇧4 |  3.1MB/s
+  name: 0|🇬🇧9 |  5.2MB/s
   network: ws
   port: 443
-  server: 104.21.51.208
+  server: 188.114.96.5
   servername: linde06.indiavideo.sbs
+  skip-cert-verify: false
   tls: true
   type: vmess
   uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
@@ -58,11 +72,11 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 2|🇬🇧5 |  1.8MB/s
+  name: 0|🇬🇧11 |  3.1MB/s
   network: ws
   port: 443
   raw:
-    add: 188.114.97.3
+    add: 172.67.196.112
     aid: '0'
     alpn: ''
     fp: ''
@@ -71,13 +85,13 @@ proxies:
     net: ws
     path: /linkws
     port: 443
-    ps: 🏁 ZZ_476
+    ps: 🇺🇸 US_407
     scy: ''
     sni: ''
     tls: tls
     type: ''
     v: '2'
-  server: 188.114.97.3
+  server: 172.67.196.112
   servername: ''
   tls: true
   type: vmess
@@ -86,3 +100,31 @@ proxies:
     headers:
       Host: linde06.indiavideo.sbs
     path: /linkws
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: 764fe37d-6d73-44fc-affd-dc0eeeb3baa3
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 764fe37d-6d73-44fc-affd-dc0eeeb3baa3
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰香港 01 | 1x HK
+  password: eb5812ae-8009-463b-9f15-bf16a3f593e5
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧英国家宽 01 | 1x UK
+  password: eb5812ae-8009-463b-9f15-bf16a3f593e5
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true

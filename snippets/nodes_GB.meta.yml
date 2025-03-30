@@ -1,47 +1,7 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: 9ee8857f-544b-4bd5-b0da-8f0c271ffdfd
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 9ee8857f-544b-4bd5-b0da-8f0c271ffdfd
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 01 | 1x HK
-  password: 032dd58f-6717-40b0-94d3-93c01dd3b7fd
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 032dd58f-6717-40b0-94d3-93c01dd3b7fd
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧1 |  5.7MB/s
-  network: tcp
-  port: 32055
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0009
+  name: 0,14|CN_speednode_0008
   network: tcp
   port: 14659
   reality-opts:
@@ -53,12 +13,108 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 2
+  cipher: auto
+  name: 0|🇬🇧2 |  5.1MB/s
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d3ed5687-5d1f-31c2-9150-ad7d7e9d7029
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 0|🇬🇧3 |  4.7MB/s
+  network: ws
+  port: '443'
+  server: 188.114.97.79
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      host: linde06.indiavideo.sbs
+    path: /linkws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧4 |  5.3MB/s
+  network: tcp
+  port: 32055
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: '0'
+  cipher: auto
+  name: 0|🇬🇧5 |  3.0MB/s
+  network: ws
+  port: '443'
+  server: 188.114.97.7
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      host: linde06.indiavideo.sbs
+    path: /linkws
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇬🇧6 |  4.0MB/s
+  network: ws
+  port: 80
+  server: 45.131.4.233
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: Telegram@WangCai2/?ed=2560
 - alterId: 0
   cipher: auto
-  name: 2|🇬🇧3 |  5.1MB/s
+  name: 0|🇬🇧7 |  4.8MB/s
   network: ws
   port: 443
-  server: 188.114.99.134
+  server: 172.67.161.77
+  servername: linde06.indiavideo.sbs
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
+  ws-opts:
+    headers:
+      Host: linde06.indiavideo.sbs
+    path: /linkws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧8 |  4.0MB/s
+  network: tcp
+  port: 65053
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: 0|🇬🇧9 |  5.2MB/s
+  network: ws
+  port: 443
+  server: 188.114.96.5
   servername: linde06.indiavideo.sbs
   skip-cert-verify: false
   tls: true
@@ -70,25 +126,11 @@ proxies:
     path: /linkws
 - alterId: 0
   cipher: auto
-  name: 2|🇬🇧4 |  3.1MB/s
-  network: ws
-  port: 443
-  server: 104.21.51.208
-  servername: linde06.indiavideo.sbs
-  tls: true
-  type: vmess
-  uuid: edbb1059-1633-4271-b66e-ed4fba47a1bf
-  ws-opts:
-    headers:
-      Host: linde06.indiavideo.sbs
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 2|🇬🇧5 |  1.8MB/s
+  name: 0|🇬🇧11 |  3.1MB/s
   network: ws
   port: 443
   raw:
-    add: 188.114.97.3
+    add: 172.67.196.112
     aid: '0'
     alpn: ''
     fp: ''
@@ -97,13 +139,13 @@ proxies:
     net: ws
     path: /linkws
     port: 443
-    ps: 🏁 ZZ_476
+    ps: 🇺🇸 US_407
     scy: ''
     sni: ''
     tls: tls
     type: ''
     v: '2'
-  server: 188.114.97.3
+  server: 172.67.196.112
   servername: ''
   tls: true
   type: vmess
@@ -112,6 +154,46 @@ proxies:
     headers:
       Host: linde06.indiavideo.sbs
     path: /linkws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧12 |  4.4MB/s
+  network: tcp
+  port: 35311
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: 764fe37d-6d73-44fc-affd-dc0eeeb3baa3
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 764fe37d-6d73-44fc-affd-dc0eeeb3baa3
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰香港 01 | 1x HK
+  password: eb5812ae-8009-463b-9f15-bf16a3f593e5
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧英国家宽 01 | 1x UK
+  password: eb5812ae-8009-463b-9f15-bf16a3f593e5
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
@@ -121,7 +203,7 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: 14|GB_speednode_0016
+  name: 14|GB_speednode_0012
   port: 80
   reality-opts:
     public-key: DZzAtolzThTEwEjUnyLN5lzhvzMtKPOAvPA8K8luAhE
@@ -133,17 +215,3 @@ proxies:
   type: vless
   udp: true
   uuid: 98d8274c-3159-7718-4042-19544c9d2ff6
-- name: 14|GB_speednode_0017
-  network: ws
-  port: 443
-  server: 217.163.76.102
-  servername: in.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: in.youlingkais.filegear-sg.me
-    path: /?ed=2560
