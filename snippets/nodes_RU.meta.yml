@@ -1,25 +1,26 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇷🇺俄罗斯 01 | 1x RU
-  password: 3de0e7a4-c220-48a2-8b9c-300e8cd4b75e
+  password: 6c898d68-1be3-45f4-b8ec-32588da74f28
   port: 31511
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 1000 Mbps
-  name: 1|🇷🇺1 |  6.0MB/s
-  port: 10469
-  server: 46.17.41.174
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 1|🇷🇺1 |  1.7MB/s
+  network: ws
+  port: 23036
+  server: 195.133.5.127
+  tls: false
+  type: vmess
   udp: true
-  up: 100 Mbps
+  uuid: d38c21f5-139a-48c8-b1c3-f97d8864c02d
+  ws-opts:
+    path: /
 - fast-open: true
-  name: 1|🇷🇺2 |  5.2MB/s
+  name: 1|🇷🇺2 |  3.0MB/s
   password: dongtaiwang.com
   port: 4395
   server: 46.17.41.217
@@ -27,32 +28,13 @@ proxies:
   sni: www.bing.com
   type: hysteria2
 - fast-open: true
-  name: 1|🇷🇺3 |  5.4MB/s
+  name: 1|🇷🇺3 |  4.8MB/s
   password: dongtaiwang.com
   port: 35751
   server: 46.29.163.171
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: 1,13|HK_speednode_0036
-  password: 6557bf4a-852b-4a69-ad35-d53293386a13
-  port: 443
-  server: ru.mjt000.com
-  skip-cert-verify: false
-  sni: ru.mjt000.com
-  type: trojan
-  udp: true
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 1000 Mbps
-  name: 1|🇷🇺5 |  6.0MB/s
-  port: 10803
-  server: 185.22.155.71
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 1000 Mbps
 - auth: dongtaiwang.com
   name: '1,9|@meli_proxyy #1'
   password: dongtaiwang.com
@@ -62,9 +44,44 @@ proxies:
   sni: apple.com
   tls: false
   type: hysteria2
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 1|🇷🇺5 |  4.7MB/s
+  port: 10803
+  server: 185.22.155.71
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 1000 Mbps
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 1|🇷🇺6 |  6.1MB/s
+  port: 10469
+  server: 46.17.41.174
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 100 Mbps
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇷🇺7 |  5.3MB/s
+  network: tcp
+  port: 20216
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
   name: 14|🇷🇺 俄罗斯 01 | 1x RU
-  password: 8cff8b4c-bfce-4aa9-af16-213789996a81
+  password: 56921ecf-8859-4141-93ef-88caff75b95b
   port: 36511
   server: free.2weradf.xyz
   type: ss
