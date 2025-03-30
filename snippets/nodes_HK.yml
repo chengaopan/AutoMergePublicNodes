@@ -1,32 +1,104 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: ab8f6c45-79fd-4c60-b8ac-a1aa9869fc33
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: ab8f6c45-79fd-4c60-b8ac-a1aa9869fc33
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 02 | 1x HK
-  password: 43dc28c6-56df-4395-93b7-7e84841c2c8f
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: ac41c4bc-88bf-4c5c-9b26-7dd8b2f851e9
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: 43dc28c6-56df-4395-93b7-7e84841c2c8f
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: ac41c4bc-88bf-4c5c-9b26-7dd8b2f851e9
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: 599464aa-36b0-4a31-93fc-3f40838f8609
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 599464aa-36b0-4a31-93fc-3f40838f8609
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- allowInsecure: '1'
+  name: 2|🇭🇰1 |  4.4MB/s
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20110
+  server: 111.62.241.211
+  skip-cert-verify: true
+  sni: 10.2gyh5ybsic.xyz
+  tls: true
+  type: trojan
+- allowInsecure: '1'
+  name: 2|🇭🇰11 |  4.9MB/s
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20012
+  server: 183.240.228.139
+  skip-cert-verify: true
+  sni: 2.elk3b3nwfy.xyz
+  tls: true
+  type: trojan
+- name: 2|🇭🇰12 |  1.2MB/s
+  network: ws
+  password: a38c9e28-9960-4e31-9f18-ed2495a756aa
+  port: 40021
+  server: vt-bana2-cn-11.ghpgwqswodgzv.com
+  sni: vt-bana2-cn-11.ghpgwqswodgzv.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vt-bana2-cn-11.ghpgwqswodgzv.com
+    path: /dl_media
+- allowInsecure: '1'
+  name: 2|🇭🇰13 |  5.8MB/s
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20104
+  server: 111.62.241.211
+  skip-cert-verify: true
+  sni: 4.2gyh5ybsic.xyz
+  tls: true
+  type: trojan
+- allowInsecure: '1'
+  name: 2|🇭🇰14 |  6.0MB/s
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20020
+  server: 183.240.228.139
+  skip-cert-verify: true
+  sni: 10.elk3b3nwfy.xyz
+  tls: true
+  type: trojan
+- allowInsecure: '1'
+  name: 2|🇭🇰16 |  5.7MB/s
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20103
+  server: 111.62.241.211
+  skip-cert-verify: true
+  sni: 3.2gyh5ybsic.xyz
+  tls: true
+  type: trojan
+- allowInsecure: '1'
+  name: 2|🇭🇰18 |  2.9MB/s
+  network: tcp
+  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
+  port: 20107
+  server: 111.62.241.211
+  skip-cert-verify: true
+  sni: 7.2gyh5ybsic.xyz
+  tls: true
+  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -91,11 +163,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 3949be3c-f862-4081-afca-9979bd189648
-- name: 14|HK_speednode_0036
-  password: 6557bf4a-852b-4a69-ad35-d53293386a13
-  port: 443
-  server: ru.mjt000.com
-  skip-cert-verify: false
-  sni: ru.mjt000.com
-  type: trojan
-  udp: true

@@ -1,89 +1,49 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: ab8f6c45-79fd-4c60-b8ac-a1aa9869fc33
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: ab8f6c45-79fd-4c60-b8ac-a1aa9869fc33
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 03 | 1x SG
-  password: ab8f6c45-79fd-4c60-b8ac-a1aa9869fc33
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 01 | 1x SG
-  password: 43dc28c6-56df-4395-93b7-7e84841c2c8f
+  name: 0|🇸🇬新加坡 01 | 1x SG
+  password: ac41c4bc-88bf-4c5c-9b26-7dd8b2f851e9
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 02 | 1x SG
-  password: 43dc28c6-56df-4395-93b7-7e84841c2c8f
+  name: 0|🇸🇬新加坡 02 | 1x SG
+  password: ac41c4bc-88bf-4c5c-9b26-7dd8b2f851e9
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 03 | 1x SG
-  password: 43dc28c6-56df-4395-93b7-7e84841c2c8f
+  name: 0|🇸🇬新加坡 03 | 1x SG
+  password: ac41c4bc-88bf-4c5c-9b26-7dd8b2f851e9
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2,14|US_speednode_0060
-  network: ws
-  port: 80
-  server: support.zoom.us
-  servername: free.pranithsandaruwan.shop
-  skip-cert-verify: true
-  tls: false
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 01 | 1x SG
+  password: 599464aa-36b0-4a31-93fc-3f40838f8609
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: d9074e14-c4e4-4e58-8fff-3727e83af868
-  ws-opts:
-    headers:
-      Host: free.pranithsandaruwan.shop
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2|🇸🇬2 |  4.2MB/s
-  network: ws
-  port: 25245
-  server: sg1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-headers:
-    Host: sg1.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 2|🇸🇬3 |  6.0MB/s
-  network: ws
-  port: 25243
-  server: sg1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-headers:
-    Host: sg1.awslcn.info
-  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 02 | 1x SG
+  password: 599464aa-36b0-4a31-93fc-3f40838f8609
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 03 | 1x SG
+  password: 599464aa-36b0-4a31-93fc-3f40838f8609
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇸🇬4 |  6.2MB/s
+  name: 2|🇸🇬1 |  6.3MB/s
   network: tcp
   port: 56127
   reality-opts:
@@ -93,6 +53,39 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 2|🇸🇬2 |  6.3MB/s
+  obfs: tls1.2_ticket_auth
+  obfs-param: sg2-cdn-route.couldflare-cdn.com
+  password: uiACqrIr
+  port: 56138
+  protocol: origin
+  protocol-param: ''
+  server: cm2.xcone.xyz
+  type: ssr
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0012
+  network: tcp
+  port: 44003
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: aes-256-cfb
+  country: 🇸🇬SG
+  delay: 1565
+  name: 2|🇸🇬4 |  2.4MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.0.50.161
+  type: ss
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
