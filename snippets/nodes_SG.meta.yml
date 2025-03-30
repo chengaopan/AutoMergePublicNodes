@@ -1,61 +1,61 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 72a2a6f9-ff22-4817-b414-e7dc6af0405b
+  password: 12bc860e-45a0-420e-8b81-9815c7187e2c
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 72a2a6f9-ff22-4817-b414-e7dc6af0405b
+  password: 12bc860e-45a0-420e-8b81-9815c7187e2c
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 72a2a6f9-ff22-4817-b414-e7dc6af0405b
+  password: 12bc860e-45a0-420e-8b81-9815c7187e2c
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇸🇬 新加坡 01 | 1x SG
-  password: 5f4e2eb5-3851-484a-879f-984d145033f0
+  password: b3db4898-d5d0-4cd0-a741-6af3357ac93b
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇸🇬 新加坡 02 | 1x SG
-  password: 5f4e2eb5-3851-484a-879f-984d145033f0
+  password: b3db4898-d5d0-4cd0-a741-6af3357ac93b
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇸🇬 新加坡 03 | 1x SG
-  password: 5f4e2eb5-3851-484a-879f-984d145033f0
+  password: b3db4898-d5d0-4cd0-a741-6af3357ac93b
   port: 36175
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 2|🇸🇬1 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 47.128.245.70
-  type: ss
-- cipher: aes-256-cfb
-  name: 2|🇸🇬2 |  1.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.213.69.248
-  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇸🇬3 |  1.5MB/s
+  name: 2|🇸🇬1 |  5.8MB/s
+  network: tcp
+  port: 10778
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: test123.zlqhdns.top
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇸🇬2 |  6.0MB/s
   network: tcp
   port: 56127
   reality-opts:
@@ -79,19 +79,39 @@ proxies:
     headers:
       Host: free.pranithsandaruwan.shop
     path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇸🇬4 |  6.3MB/s
+  network: ws
+  port: 25243
+  server: sg1.awslcn.info
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-headers:
+    Host: sg1.awslcn.info
+  ws-path: /
 - cipher: aes-256-cfb
-  name: 2|🇸🇬5 |  1.0MB/s
+  name: 2|🇸🇬5 |  4.7MB/s
   password: amazonskr05
   port: 443
-  server: 18.140.70.168
+  server: 47.128.245.70
   type: ss
-- name: 2|🇸🇬6 |  6.3MB/s
-  password: myszy28811
-  port: 28811
-  server: pipi.myddns.me
-  type: socks5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0012
+  network: tcp
+  port: 44003
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
-  username: myszy
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
