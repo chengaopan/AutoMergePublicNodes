@@ -1,36 +1,8 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: 081f1f8c-7daa-452e-adb5-f012483856bd
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 081f1f8c-7daa-452e-adb5-f012483856bd
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 01 | 1x HK
-  password: ed75fc42-ef80-4ef3-a9d4-82359e0932f1
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: ed75fc42-ef80-4ef3-a9d4-82359e0932f1
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇬🇧1 |  5.8MB/s
+  name: 0|🇬🇧1 |  5.8MB/s
   network: ws
   port: 80
   server: 45.131.4.128
@@ -46,7 +18,7 @@ proxies:
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇬🇧2 |  5.4MB/s
+  name: 0|🇬🇧2 |  5.4MB/s
   network: ws
   port: 80
   server: 45.131.4.33
@@ -61,7 +33,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧3 |  5.1MB/s
+  name: 0|🇬🇧3 |  5.1MB/s
   network: tcp
   port: 49699
   reality-opts:
@@ -73,7 +45,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0032
+  name: 0,13|CN_speednode_0032
   network: tcp
   port: 14659
   reality-opts:
@@ -85,7 +57,14 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 11|Hysteria 🇬🇧 @v2meowcf
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 54d990a1-634e-4292-98af-2ecbc362db2c
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 10|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -94,7 +73,7 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: 14|GB_speednode_0034
+  name: 13|GB_speednode_0034
   port: 80
   reality-opts:
     public-key: DZzAtolzThTEwEjUnyLN5lzhvzMtKPOAvPA8K8luAhE
@@ -106,3 +85,17 @@ proxies:
   type: vless
   udp: true
   uuid: 98d8274c-3159-7718-4042-19544c9d2ff6
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇭🇰香港 01 | 1x HK
+  password: bc2e5cd4-329d-40bd-b0c8-85fd9ef7a1ba
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇬🇧英国家宽 01 | 1x UK
+  password: bc2e5cd4-329d-40bd-b0c8-85fd9ef7a1ba
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
