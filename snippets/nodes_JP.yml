@@ -1,21 +1,73 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵 日本 01 | 1x JP
-  password: 54cc4bb6-c0ef-41c8-8498-3b6f8c0b2b89
+  name: 0|🇯🇵日本 01 | 1x JP
+  password: 1cb91c89-473c-4ea5-80e3-276dedfe673b
+  port: 31111
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵日本 02 | 1x JP
+  password: 1cb91c89-473c-4ea5-80e3-276dedfe673b
+  port: 31113
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵日本 03 | 1x JP
+  password: 1cb91c89-473c-4ea5-80e3-276dedfe673b
+  port: 31115
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 1|🇯🇵6 |  3.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.179.8.12
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 1|🇯🇵8 |  4.9MB/s
+  network: tcp
+  port: 3684
+  server: 28e38e7c-su2dc0-sv85jh-dcdv.d.volczijie.com
+  tls: false
+  type: vmess
+  uuid: 1659deda-0625-11f0-8002-f23c93141fad
+- alterId: 0
+  cipher: auto
+  name: 1|🇯🇵9 |  3.7MB/s
+  network: tcp
+  port: 4151
+  server: 82ba1c75-su2dc0-sv85jh-dcdv.c.volczijie.com
+  tls: false
+  type: vmess
+  uuid: 1659deda-0625-11f0-8002-f23c93141fad
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇯🇵10 |  6.1MB/s
+  password: BFD35F45-24F6-4C80-BED0-81A6FB018DC6
+  port: 31100
+  server: free-relay.themars.top
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇯🇵 日本 01 | 1x JP
+  password: bbdcc86c-9516-43b6-84d0-6e43b1c2786d
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵 日本 02 | 1x JP
-  password: 54cc4bb6-c0ef-41c8-8498-3b6f8c0b2b89
+  name: 2|🇯🇵 日本 02 | 1x JP
+  password: bbdcc86c-9516-43b6-84d0-6e43b1c2786d
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵 日本 03 | 1x JP
-  password: 54cc4bb6-c0ef-41c8-8498-3b6f8c0b2b89
+  name: 2|🇯🇵 日本 03 | 1x JP
+  password: bbdcc86c-9516-43b6-84d0-6e43b1c2786d
   port: 36115
   server: free.2weradf.xyz
   type: ss
@@ -23,7 +75,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 1,11|🇯🇵 日本|@ripaojiedian
+  name: 12|🇯🇵 日本|@ripaojiedian
   port: 29206
   server: gzhmbkqt.xn--fiqs8sjz2bull.com
   skip-cert-verify: false
@@ -32,64 +84,8 @@ proxies:
   type: vmess
   uuid: fb6d6c7b-79ae-4ea5-aea1-b50cc0267552
 - cipher: aes-256-cfb
-  name: 1|🇯🇵10 |  5.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.199.64.156
-  type: ss
-- alterId: 0
-  cipher: auto
-  name: 1|🇯🇵11 |  3.9MB/s
-  network: ws
-  port: 25279
-  server: cu.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-headers:
-    Host: cu.awslcn.info
-  ws-path: /
-- cipher: aes-256-cfb
-  name: 1|🇯🇵12 |  1.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.195.209.247
-  type: ss
-- alterId: 0
-  cipher: auto
   client-fingerprint: chrome
-  name: 1|🇯🇵14 |  4.5MB/s
-  network: ws
-  port: 3774
-  server: v9.emovpn.buzz
-  tls: false
-  type: vmess
-  uuid: 6db95bbc-c7a1-4b3f-9346-df71f4d95350
-  ws-opts:
-    headers:
-      Host: v9.emovpn.buzz
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1,12|日本|@ripaojiedian
-  network: tcp
-  port: '29206'
-  server: gzhmbkqt.xn--fiqs8sjz2bull.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: fb6d6c7b-79ae-4ea5-aea1-b50cc0267552
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵17 |  6.1MB/s
-  password: BFD35F45-24F6-4C80-BED0-81A6FB018DC6
-  port: 31100
-  server: free-relay.themars.top
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 11|🇯🇵 日本特殊|@ripaojiedian
+  name: 12|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 57.181.29.160
@@ -97,7 +93,17 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 12|日本A|@ripaojiedian
+  name: 13|日本|@ripaojiedian
+  network: tcp
+  port: '29206'
+  server: gzhmbkqt.xn--fiqs8sjz2bull.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: fb6d6c7b-79ae-4ea5-aea1-b50cc0267552
+- alterId: 0
+  cipher: auto
+  name: 13|日本A|@ripaojiedian
   network: kcp
   port: '58490'
   server: 8.209.203.88
@@ -105,24 +111,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 551087e5-9a03-4634-9e7f-714133eb3ccb
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇯🇵日本 01 | 1x JP
-  password: 8a731e90-dd2e-4cd1-967a-5ca8a6927be6
-  port: 31111
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇯🇵日本 02 | 1x JP
-  password: 8a731e90-dd2e-4cd1-967a-5ca8a6927be6
-  port: 31113
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇯🇵日本 03 | 1x JP
-  password: 8a731e90-dd2e-4cd1-967a-5ca8a6927be6
-  port: 31115
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
