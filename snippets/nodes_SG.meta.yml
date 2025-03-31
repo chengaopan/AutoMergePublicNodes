@@ -1,55 +1,76 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 01 | 1x SG
+  name: 0|🇸🇬 新加坡 01 | 1x SG
+  password: ff71b2a5-1248-4c94-844c-1416384cf529
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬 新加坡 02 | 1x SG
+  password: ff71b2a5-1248-4c94-844c-1416384cf529
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬 新加坡 03 | 1x SG
+  password: ff71b2a5-1248-4c94-844c-1416384cf529
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 01 | 1x SG
   password: cefcd8fb-c8ac-4cc6-957c-4390b2c758e1
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 02 | 1x SG
+  name: 1|🇸🇬新加坡 02 | 1x SG
   password: cefcd8fb-c8ac-4cc6-957c-4390b2c758e1
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 03 | 1x SG
+  name: 1|🇸🇬新加坡 03 | 1x SG
   password: cefcd8fb-c8ac-4cc6-957c-4390b2c758e1
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 1,14|US_speednode_0050
-  network: ws
-  port: 80
-  server: 170.114.46.6
-  servername: free.pranithsandaruwan.shop
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d9074e14-c4e4-4e58-8fff-3727e83af868
-  ws-opts:
-    headers:
-      Host: free.pranithsandaruwan.shop
-    path: /
 - client-fingerprint: chrome
-  delay: 1335
   flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0005
+  name: 2|🇸🇬1 |  2.0MB/s
   network: tcp
-  port: 56127
+  port: 10778
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.yahoo.com
-  skip-cert-verify: false
+  server: test123.zlqhdns.top
+  servername: www.nvidia.com
   tls: true
   type: vless
-  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 1|🇸🇬3 |  2.1MB/s
+- cipher: aes-256-cfb
+  name: 2|🇸🇬2 |  3.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.179.52.175
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 2|🇸🇬3 |  6.0MB/s
+  obfs: tls1.2_ticket_auth
+  obfs-param: sg2-cdn-route.couldflare-cdn.com
+  password: uiACqrIr
+  port: 56138
+  protocol: origin
+  protocol-param: ''
+  server: cm2.xcone.xyz
+  type: ssr
+- name: 2|🇸🇬4 |  3.6MB/s
   network: ws
   port: 80
   server: support.zoom.us
@@ -64,32 +85,48 @@ proxies:
       Host: free.pranithsandaruwan.shop
     path: /
 - cipher: aes-256-cfb
-  name: 1|🇸🇬4 |  4.9MB/s
+  country: 🇺🇸 US
+  delay: 944
+  name: 2|🇸🇬5 |  6.0MB/s
   password: amazonskr05
   port: 443
-  server: 54.179.52.175
+  server: 13.213.69.248
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬 新加坡 01 | 1x SG
-  password: 18df94f3-f69f-4ae4-ac2d-e1329f22ace2
-  port: 36171
-  server: free.2weradf.xyz
+- cipher: aes-256-cfb
+  name: 2|🇸🇬6 |  5.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.254.9.107
   type: ss
+- client-fingerprint: chrome
+  delay: 1335
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0005
+  network: tcp
+  port: 56127
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬 新加坡 02 | 1x SG
-  password: 18df94f3-f69f-4ae4-ac2d-e1329f22ace2
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 2,14|US_speednode_0050
+  network: ws
+  port: 80
+  server: 170.114.46.6
+  servername: free.pranithsandaruwan.shop
+  skip-cert-verify: false
+  tls: false
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬 新加坡 03 | 1x SG
-  password: 18df94f3-f69f-4ae4-ac2d-e1329f22ace2
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+  uuid: d9074e14-c4e4-4e58-8fff-3727e83af868
+  ws-opts:
+    headers:
+      Host: free.pranithsandaruwan.shop
+    path: /
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
