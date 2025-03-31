@@ -1,39 +1,63 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 01 | 1x KR
-  password: b0270859-b99f-4596-922a-a150a9a024e0
-  port: 36311
-  server: free.2weradf.xyz
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇰🇷1 |  1.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 43.202.67.225
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 02 | 1x KR
-  password: b0270859-b99f-4596-922a-a150a9a024e0
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 1|🇰🇷1 |  2.9MB/s
+  name: 0|🇰🇷2 |  5.5MB/s
   network: ws
-  port: '443'
+  port: 443
   server: kr3.ttcc.tech
+  servername: kr3.ttcc.tech
+  skip-cert-verify: true
   tls: true
   type: vmess
   uuid: b2d10673-24cc-4f96-b1f3-da8b17589077
   ws-opts:
     headers:
-      host: kr3.ttcc.tech
+      Host: kr3.ttcc.tech
     path: /
-- alterId: 0
-  cipher: auto
-  name: 1|🇰🇷2 |  2.2MB/s
-  port: 34009
-  server: v3-hanguo-zx.netcar.live
-  tls: false
-  type: vmess
-  uuid: b4a59b54-4a1d-4afc-bd1b-2e3151047c9f
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇰🇷3 |  5.5MB/s
+  network: ws
+  port: 443
+  server: kyree.ns.cloudflare.com
+  servername: nv.dong2025.cfd
+  tls: true
+  type: vless
+  udp: false
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: nv.dong2025.cfd
+    path: /?ed=2560security=tls
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 0|🇰🇷4 |  3.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 43.203.249.105
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 01 | 1x KR
+  password: e7c3ebf2-dc53-42ef-a511-7d080fd4eb91
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 02 | 1x KR
+  password: e7c3ebf2-dc53-42ef-a511-7d080fd4eb91
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 11|🇰🇷 韩国特殊|@ripaojiedian
@@ -42,3 +66,17 @@ proxies:
   server: 3.0.50.161
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇰🇷韩国 01 | 1x KR
+  password: b9963d3f-2fc2-40f9-b0ca-42de2ee92ad3
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇰🇷韩国 02 | 1x KR
+  password: b9963d3f-2fc2-40f9-b0ca-42de2ee92ad3
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
