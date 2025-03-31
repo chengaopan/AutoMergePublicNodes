@@ -1,36 +1,22 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷韩国 01 | 1x KR
-  password: 1c11ed68-d0d0-477d-b63a-3a377c07264f
+  password: 4a0ef59c-d800-41cf-a8ea-b88d5aec4272
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷韩国 02 | 1x KR
-  password: 1c11ed68-d0d0-477d-b63a-3a377c07264f
+  password: 4a0ef59c-d800-41cf-a8ea-b88d5aec4272
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 01 | 1x KR
-  password: 3a55140c-4f18-4417-871e-12c6fabf2657
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 02 | 1x KR
-  password: 3a55140c-4f18-4417-871e-12c6fabf2657
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 2|🇰🇷1 |  6.0MB/s
+- name: 1|🇰🇷1 |  3.4MB/s
   network: ws
   port: 443
-  server: 104.17.220.104
+  server: kyree.ns.cloudflare.com
   servername: nv.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -41,7 +27,96 @@ proxies:
     headers:
       Host: nv.dong2025.cfd
     path: /?ed=2560
-- name: 2|🇰🇷2 |  4.5MB/s
+- alterId: '0'
+  cipher: auto
+  name: 1|🇰🇷2 |  2.9MB/s
+  network: ws
+  port: '443'
+  server: kr.ttcc.tech
+  tls: true
+  type: vmess
+  uuid: 41cfbd9d-d2da-4300-a142-b49068f7ad3d
+  ws-opts:
+    headers:
+      host: kr.ttcc.tech
+    path: /41cfbd9d-d2da-4300-a142-b49068f7ad3d
+- name: 1|🇰🇷3 |  5.7MB/s
+  network: ws
+  port: 8443
+  server: 162.159.129.67
+  servername: nv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: nv.dong2025.cfd
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷4 |  1.2MB/s
+  password: ee19fceb-cedc-4832-b460-fccf24fdc8be
+  port: 11004
+  server: 61.172.235.22
+  type: ss
+  udp: true
+- allowInsecure: ''
+  name: 1|🇰🇷5 |  5.5MB/s
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 172.67.70.92
+  skip-cert-verify: false
+  sni: zamim340.ggff.net
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
+- name: 1|🇰🇷6 |  1.4MB/s
+  network: ws
+  port: 443
+  server: 172.67.181.209
+  servername: nv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: nv.dong2025.cfd
+    path: /?ed=2560
+- alterId: '0'
+  cipher: auto
+  name: 1|🇰🇷7 |  5.9MB/s
+  network: ws
+  port: '443'
+  server: kr3.ttcc.tech
+  tls: true
+  type: vmess
+  uuid: b2d10673-24cc-4f96-b1f3-da8b17589077
+  ws-opts:
+    headers:
+      host: kr3.ttcc.tech
+    path: /
+- name: 1|🇰🇷8 |  5.4MB/s
+  network: ws
+  port: 443
+  server: 104.16.159.190
+  servername: nv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: nv.dong2025.cfd
+    path: /?ed=2560
+- name: 1|🇰🇷9 |  3.4MB/s
   network: ws
   port: 443
   server: 104.17.142.12
@@ -55,95 +130,39 @@ proxies:
     headers:
       Host: nv.dong2025.cfd
     path: /?ed=2560
-- name: 2|🇰🇷3 |  5.5MB/s
-  network: ws
-  port: 2053
-  server: 129.146.53.213
-  servername: nv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nv.dong2025.cfd
-    path: /?ed=2560
-- name: 2|🇰🇷4 |  1.0MB/s
+- alterId: '0'
+  cipher: auto
+  name: 1|🇰🇷10 |  5.6MB/s
   network: ws
   port: 443
-  server: trevor.ns.cloudflare.com
-  servername: nv.dong2025.cfd
-  skip-cert-verify: true
+  server: kr3.ttcc.tech
+  servername: kr3.ttcc.tech
   tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  type: vmess
+  uuid: b2d10673-24cc-4f96-b1f3-da8b17589077
   ws-opts:
     headers:
-      Host: nv.dong2025.cfd
-    path: /?ed=2560
-- name: 2|🇰🇷5 |  3.3MB/s
-  network: ws
-  port: 443
-  server: www.wto.org
-  servername: nv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nv.dong2025.cfd
-    path: /?ed=2560
-- name: 2|🇰🇷6 |  4.6MB/s
-  network: ws
-  port: 443
-  server: 170.39.66.154
-  servername: nv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nv.dong2025.cfd
-    path: /?ed=2560
-- name: 2|🇰🇷7 |  4.3MB/s
-  network: ws
-  port: 443
-  server: 152.67.125.161
-  servername: nv.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nv.dong2025.cfd
-    path: /?ed=2560
-- delay: 1276
-  name: 2|🇰🇷8 |  5.3MB/s
-  network: ws
-  port: 2052
-  server: www.speedtest.net
-  servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-  tls: false
-  type: vless
-  udp: true
-  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
-  ws-opts:
-    headers:
-      Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
-    path: /?ed=1080
+      Host: kr3.ttcc.tech
+    path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 12|🇰🇷 韩国特殊|@ripaojiedian
+  name: 11|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 3.0.50.161
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇰🇷 韩国 01 | 1x KR
+  password: 00fc7920-a716-476e-9453-b816ca6b903d
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇰🇷 韩国 02 | 1x KR
+  password: 00fc7920-a716-476e-9453-b816ca6b903d
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
