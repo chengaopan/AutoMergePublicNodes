@@ -1,70 +1,93 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 01 | 1x TW
-  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
+  name: 0|🇹🇼 台湾 01 | 1x TW
+  password: e2a3bbaa-1b7f-405e-93ad-035de503906a
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼 台湾 02 | 1x TW
+  password: e2a3bbaa-1b7f-405e-93ad-035de503906a
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼 台湾 03 | 1x TW
+  password: e2a3bbaa-1b7f-405e-93ad-035de503906a
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼台湾 01 | 1x TW
+  password: 6e1adced-2561-45c8-a007-fcd7c49dc60e
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 02 | 1x TW
-  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
+  name: 1|🇹🇼台湾 02 | 1x TW
+  password: 6e1adced-2561-45c8-a007-fcd7c49dc60e
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 03 | 1x TW
-  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
+  name: 1|🇹🇼台湾 03 | 1x TW
+  password: 6e1adced-2561-45c8-a007-fcd7c49dc60e
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 1|🇹🇼1 |  1.7MB/s
-  network: ws
-  port: 23619
-  server: 19.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0036
+  network: tcp
+  port: 12477
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-  uuid: 0a14d5c0-f566-314c-9e22-7db5655c35de
-  ws-opts:
-    headers:
-      Host: 19.mamamajd.site
-    path: /
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - auth: 82febca6-8856-41fe-84df-c8bda0b72c7b
   client-fingerprint: chrome
-  name: 1|🇹🇼2 |  2.2MB/s
+  name: 2|🇹🇼2 |  2.4MB/s
   password: 82febca6-8856-41fe-84df-c8bda0b72c7b
   port: 30001
   server: tw.akebi.cc
   skip-cert-verify: false
   sni: tw.akebi.cc
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇹🇼 台湾 01 | 1x TW
-  password: 024f5ea3-a0fa-4cfa-9f94-29d9efeb3cc4
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
+- client-fingerprint: chrome
+  name: 2|🇹🇼3 |  2.4MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0024
+  network: tcp
+  port: 47531
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: gateway.icloud.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇹🇼 台湾 02 | 1x TW
-  password: 024f5ea3-a0fa-4cfa-9f94-29d9efeb3cc4
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇹🇼 台湾 03 | 1x TW
-  password: 024f5ea3-a0fa-4cfa-9f94-29d9efeb3cc4
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇹🇼 台湾|@ripaojiedian
@@ -73,17 +96,3 @@ proxies:
   server: bgp-xdd.blue-bgp.xyz
   tfo: false
   type: ss
-- name: 14|TW_speednode_0095
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: vv.vs2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      Host: vv.vs2025.cfd
-    path: /?ed=2560

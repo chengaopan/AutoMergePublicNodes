@@ -1,41 +1,48 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
+  name: 0|🇺🇸 美国 01 | 1x US Los Angeles
+  password: e2a3bbaa-1b7f-405e-93ad-035de503906a
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: e2a3bbaa-1b7f-405e-93ad-035de503906a
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸 美国 03 | 1x US Washington
+  password: e2a3bbaa-1b7f-405e-93ad-035de503906a
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国 01 | 1x US Los Angeles
+  password: 6e1adced-2561-45c8-a007-fcd7c49dc60e
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
+  name: 1|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 6e1adced-2561-45c8-a007-fcd7c49dc60e
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国 03 | 1x US Washington
-  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
+  name: 1|🇺🇸美国 03 | 1x US Washington
+  password: 6e1adced-2561-45c8-a007-fcd7c49dc60e
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 1|🇺🇸1 |  1.4MB/s
-  password: 13c3cf97-5a4a-434f-880a-aecbd70c15bc
-  port: 20098
-  server: 111.62.241.211
-  skip-cert-verify: true
-  sni: 18.p5zqtpj2n7.xyz
-  type: trojan
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 1|🇺🇸3 |  5.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.88.180.184
-  type: ss
 - allowInsecure: ''
-  name: 1|🇺🇸7 |  1.4MB/s
+  name: 2|🇺🇸18 |  3.7MB/s
   network: ws
   password: d67cfeaf-b277-44ac-ab99-9dd02a7c5299
   port: 443
@@ -50,65 +57,17 @@ proxies:
     path: /lWljHWvIMOj85lz42MdhsCLV
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 1|🇺🇸10 |  5.4MB/s
-  password: amazonskr05
-  port: 443
-  server: 34.208.31.71
-  type: ss
-- cipher: aes-256-cfb
-  name: 1|🇺🇸11 |  5.7MB/s
-  password: amazonskr05
-  port: 443
-  server: 34.220.99.226
-  type: ss
-- cipher: aes-256-cfb
-  name: 1|🇺🇸12 |  5.8MB/s
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 34.209.118.169
-  type: ssr
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 1|🇺🇸15 |  2.8MB/s
+  name: 2|🇺🇸21 |  5.7MB/s
   password: amazonskr05
   port: 443
   server: 54.245.10.2
   type: ss
-- name: 1|🇺🇸26 |  2.7MB/s
-  network: ws
-  password: bpb-trojan
+- cipher: aes-256-cfb
+  name: 2|🇺🇸24 |  2.6MB/s
+  password: amazonskr05
   port: 443
-  server: japan.com
-  skip-cert-verify: false
-  sni: zamim340.ggff.net
-  type: trojan
-  ws-opts:
-    headers:
-      Host: zamim340.ggff.net
-    path: /tr?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 024f5ea3-a0fa-4cfa-9f94-29d9efeb3cc4
-  port: 36211
-  server: free.2weradf.xyz
+  server: 34.220.225.248
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 024f5ea3-a0fa-4cfa-9f94-29d9efeb3cc4
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 03 | 1x US Washington
-  password: 024f5ea3-a0fa-4cfa-9f94-29d9efeb3cc4
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -126,27 +85,3 @@ proxies:
     headers:
       Host: v49.emovpn.buzz
     path: /
-- name: 14|US_speednode_0098
-  password: 6db95bbc-c7a1-4b3f-9346-df71f4d95350
-  port: 1627
-  server: t16.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- name: 14|US_speednode_0100
-  password: 6db95bbc-c7a1-4b3f-9346-df71f4d95350
-  port: 12502
-  server: t11.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- name: 14|US_speednode_0101
-  password: 6db95bbc-c7a1-4b3f-9346-df71f4d95350
-  port: 1378
-  server: t10.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true

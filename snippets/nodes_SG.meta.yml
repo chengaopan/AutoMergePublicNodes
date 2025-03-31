@@ -1,79 +1,88 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
+  name: 0|🇸🇬 新加坡 01 | 1x SG
+  password: e2a3bbaa-1b7f-405e-93ad-035de503906a
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬 新加坡 02 | 1x SG
+  password: e2a3bbaa-1b7f-405e-93ad-035de503906a
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬 新加坡 03 | 1x SG
+  password: e2a3bbaa-1b7f-405e-93ad-035de503906a
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 01 | 1x SG
+  password: 6e1adced-2561-45c8-a007-fcd7c49dc60e
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
+  name: 1|🇸🇬新加坡 02 | 1x SG
+  password: 6e1adced-2561-45c8-a007-fcd7c49dc60e
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 9105d68c-356a-4abf-bb77-0b93ae9ada0b
+  name: 1|🇸🇬新加坡 03 | 1x SG
+  password: 6e1adced-2561-45c8-a007-fcd7c49dc60e
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇸🇬1 |  8.6MB/s
+  name: 2,14|CN_speednode_0057
   network: tcp
-  port: 29877
+  port: 44003
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
+  server: csuzhou01.1cooldns.com
   servername: www.nvidia.com
+  skip-cert-verify: true
   tls: true
   type: vless
+  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 1|🇸🇬2 |  6.1MB/s
+  name: 2|🇸🇬2 |  6.0MB/s
   password: amazonskr05
   port: 443
-  server: 13.213.69.248
+  server: 54.179.52.175
   type: ss
 - alterId: 0
   cipher: auto
-  name: 1|🇸🇬3 |  5.4MB/s
-  network: tcp
-  port: 3683
-  server: 1896594d-su2dc0-sv85jh-dcdv.b.fosant.com
+  name: 2|🇸🇬3 |  5.8MB/s
+  network: ws
+  port: 25243
+  server: sg1.awslcn.info
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 1659deda-0625-11f0-8002-f23c93141fad
-- alterId: 0
-  cipher: auto
-  name: 1|🇸🇬4 |  1.9MB/s
-  network: tcp
-  port: 4135
-  server: 28e38e7c-su2dc0-sv85jh-dcdv.d.volczijie.com
-  tls: false
-  type: vmess
-  uuid: 1659deda-0625-11f0-8002-f23c93141fad
-- alterId: 0
-  cipher: auto
-  name: 1|🇸🇬5 |  5.9MB/s
-  network: tcp
-  port: 3683
-  server: b953fc54-su2dc0-sv9ymy-dezg.b.fosant.com
-  tls: false
-  type: vmess
-  uuid: 952f0a9a-097d-11f0-aa52-f23c93136cb3
-- name: 1|🇸🇬6 |  3.8MB/s
+  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
+  ws-opts:
+    headers:
+      Host: sg1.awslcn.info
+    path: /
+- name: 2|🇸🇬4 |  4.9MB/s
   password: myszy28811
   port: 28811
   server: pipi.myddns.me
   type: socks5
   udp: true
   username: myszy
-- name: 1,14|US_speednode_0103
+- name: 2|🇸🇬5 |  2.8MB/s
   network: ws
   port: 80
   server: support.zoom.us
@@ -87,27 +96,20 @@ proxies:
     headers:
       Host: free.pranithsandaruwan.shop
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬 新加坡 01 | 1x SG
-  password: 024f5ea3-a0fa-4cfa-9f94-29d9efeb3cc4
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0017
+  network: tcp
+  port: 56127
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬 新加坡 02 | 1x SG
-  password: 024f5ea3-a0fa-4cfa-9f94-29d9efeb3cc4
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬 新加坡 03 | 1x SG
-  password: 024f5ea3-a0fa-4cfa-9f94-29d9efeb3cc4
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
@@ -132,27 +134,3 @@ proxies:
   server: 18.181.194.77
   tfo: false
   type: ss
-- name: 14|SG_speednode_0091
-  password: 6db95bbc-c7a1-4b3f-9346-df71f4d95350
-  port: 1292
-  server: t8.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- name: 14|SG_speednode_0093
-  password: 6db95bbc-c7a1-4b3f-9346-df71f4d95350
-  port: 1759
-  server: t13.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
-- name: 14|SG_speednode_0094
-  password: 6db95bbc-c7a1-4b3f-9346-df71f4d95350
-  port: 2339
-  server: t9.emovpn.buzz
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
-  udp: true
