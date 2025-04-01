@@ -1,28 +1,47 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: 667c481e-a63a-42ae-951d-5293fbe47477
-  port: 36141
-  server: free.2weradf.xyz
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 90d4a380-f3fc-4e14-abc7-10263e6a69af
+  port: 31141
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 667c481e-a63a-42ae-951d-5293fbe47477
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 696ce0f0-584d-41db-93dc-8ccd9ec13a7a
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 90d4a380-f3fc-4e14-abc7-10263e6a69af
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧1 |  5.1MB/s
+  password: Qx22XZwNt4SCcnWNkypEAj
+  port: 44316
+  server: 81.19.137.66
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧1 |  4.9MB/s
+  name: 1|🇬🇧2 |  5.7MB/s
+  network: tcp
+  port: 65053
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: aes-256-cfb
+  name: 1|🇬🇧3 |  1.6MB/s
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 62.100.205.48
+  type: ssr
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇬🇧4 |  2.2MB/s
   network: tcp
   port: 49699
   reality-opts:
@@ -37,7 +56,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 2,14|US_speednode_0058
+  name: 1,14|US_speednode_0058
   network: ws
   port: 2096
   server: 104.16.142.237
@@ -53,42 +72,30 @@ proxies:
     path: /Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧3 |  5.2MB/s
+  name: 1|🇬🇧6 |  3.5MB/s
   network: tcp
-  port: 65053
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧4 |  2.6MB/s
-  network: tcp
-  port: 32055
+  port: 14659
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
+  servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 2|🇬🇧5 |  5.1MB/s
-  network: ws
-  port: 25240
-  server: cm.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰 香港 01 | 1x HK
+  password: a055ebc0-985e-44ed-b0d0-b5a5e1d8116a
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-headers:
-    Host: cm.awslcn.info
-  ws-path: /
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
+  password: a055ebc0-985e-44ed-b0d0-b5a5e1d8116a
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443

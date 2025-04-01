@@ -1,8 +1,16 @@
 proxies:
+- auth: dongtaiwang.com
+  name: 1|🇫🇷1 |  3.8MB/s
+  password: dongtaiwang.com
+  port: 61770
+  server: 51.159.226.1
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇫🇷1 |  4.1MB/s
+  name: 1|🇫🇷2 |  4.2MB/s
   network: ws
   port: 80
   server: 94.247.142.1
@@ -15,31 +23,37 @@ proxies:
     headers:
       Host: APPinfo.EiNETWORK.NEWS
     path: Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇫🇷2 |  5.4MB/s
-  network: tcp
-  port: 40072
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.yahoo.com
-  tls: true
+- name: 1,14|US_speednode_0053
+  network: ws
+  port: 8080
+  server: 104.26.14.85
+  servername: JP.8HVL7WyiPt.zuLaIR.oRg.
+  skip-cert-verify: false
+  tls: false
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: true
+  uuid: 8a70d36b-dfb9-40cf-802e-70a82bc80ae2
+  ws-opts:
+    headers:
+      Host: JP.8HVL7WyiPt.zuLaIR.oRg.
+    path: /?ed=2048
 - auth: dongtaiwang.com
-  name: 2|🇫🇷3 |  5.5MB/s
+  name: 1|🇫🇷4 |  5.5MB/s
   password: dongtaiwang.com
   port: 59967
   server: 195.154.33.70
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- auth: dongtaiwang.com
-  name: 2|🇫🇷4 |  5.3MB/s
-  password: dongtaiwang.com
-  port: 61770
-  server: 51.159.226.1
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 1|🇫🇷5 |  5.1MB/s
+  port: 44557
+  server: 195.154.200.178
+  servername: apple.com
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+  tls: true
+  type: hysteria
+  up: 1000 Mbps
