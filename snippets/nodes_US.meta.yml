@@ -1,45 +1,16 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国 01 | 1x US Los Angeles
-  password: d4fd297b-e211-4fca-9839-ba3bf1b03aa8
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: d4fd297b-e211-4fca-9839-ba3bf1b03aa8
-  port: 31213
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国 03 | 1x US Washington
-  password: d4fd297b-e211-4fca-9839-ba3bf1b03aa8
-  port: 31215
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- auth: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
-  name: 2|🇺🇸1 |  4.9MB/s
-  password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
-  port: 47262
-  server: 164.152.19.229
+- auth: 838e602b
+  client-fingerprint: chrome
+  name: 0|🇺🇸1 |  4.9MB/s
+  password: 838e602b
+  port: 66
+  server: cc.w1997.eu.org
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- country: 🇺🇸US
-  delay: 1205
-  name: 2|🇺🇸2 |  2.7MB/s
-  password: ypDt8RkT7J
-  port: 43118
-  server: 89.187.181.172
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇺🇸3 |  2.2MB/s
+  name: 0|🇺🇸2 |  5.5MB/s
   network: tcp
   port: 27932
   reality-opts:
@@ -49,10 +20,65 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2,14|NL_speednode_0038
+- cipher: aes-256-cfb
+  name: 0|🇺🇸3 |  5.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.202.0.97
+  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇺🇸4 |  5.1MB/s
+  network: tcp
+  port: 40430
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  mode: ''
+  name: 0|🇺🇸5 |  1.4MB/s
+  network: ws
+  port: 443
+  server: 172.67.163.14
+  servername: 3n.2031.pp.ua
+  tls: true
+  type: vless
+  udp: false
+  uuid: 2fec7227-9abe-46f2-af18-78302b836c45
+  ws-opts:
+    headers:
+      Host: 3n.2031.pp.ua
+    path: /qF5dXhCllosLcFpqdDoAgkondVWl
+- auth: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
+  name: 0|🇺🇸6 |  4.3MB/s
+  password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
+  port: 47262
+  server: 164.152.19.229
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 0|🇺🇸7 |  4.7MB/s
+  network: ws
+  port: 8080
+  server: 45.131.4.33
+  servername: gozargah.validbv7996.ir
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY
+- delay: 1023
+  name: 0,13|NL_speednode_0026
   network: ws
   port: 80
-  server: 45.131.4.210
+  server: 45.131.4.131
   servername: gozargah.validbv7996.ir
   skip-cert-verify: false
   tls: false
@@ -62,91 +88,46 @@ proxies:
   ws-opts:
     headers:
       Host: gozargah.validbv7996.ir
-    path: /
-- client-fingerprint: ''
-  flow: -udp443
-  mode: ''
-  name: 2|🇺🇸5 |  3.6MB/s
-  network: ''
-  port: 443
-  server: 15.204.191.23
-  servername: 147135010072.sec21org.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: c4fa89d4-fcb9-48ba-adbc-665181cc817f
-- client-fingerprint: chrome
-  delay: 1216
-  flow: xtls-rprx-vision
-  name: 2,14|US_speednode_0043
-  network: tcp
-  port: 2087
-  reality-opts:
-    public-key: LukOig0eMe6VNy9rdyFt7ozZpS3r_1lsyIMun4qgJEo
-    short-id: d27cd3b5
-  server: 192.9.130.194
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: bf86d7a4-30fe-44fd-bb12-15ce3924ad40
-- cipher: aes-256-cfb
-  name: 2|🇺🇸7 |  4.4MB/s
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 34.208.31.71
-  type: ssr
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  mode: ''
-  name: 2|🇺🇸8 |  1.9MB/s
-  network: tcp
-  port: 58227
-  reality-opts:
-    public-key: u-v8oCqpg8KtfrQlsLQLxLet3XEXc2eQUk3KlD1mywg
-    short-id: 5ef9986f
-  server: 35.212.201.133
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 4ab93d97-c088-4ea3-89ad-f816f514a2cb
-- client-fingerprint: ios
-  flow: xtls-rprx-vision
-  mode: ''
-  name: 2|🇺🇸9 |  5.7MB/s
-  network: tcp
-  port: 21512
-  reality-opts:
-    public-key: K-rJkQX4Aix-0zxXbhxaZx2YcZmftmsMwybwpdGcpBU
-    short-id: ''
-  server: 35.93.218.232
-  servername: s0.awsstatic.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: fb8092db-cafa-439c-8599-9d8bb82fe6c6
-- cipher: aes-256-cfb
-  name: 2|🇺🇸10 |  5.5MB/s
-  password: amazonskr05
-  port: 443
-  server: 34.217.15.41
-  type: ss
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 2|🇺🇸11 |  6.0MB/s
-  port: 17549
-  server: 208.87.243.151
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+- auth: 5CBqBh6MeDq6GajcilBiDg==
+  name: 0|🇺🇸9 |  2.5MB/s
+  password: 5CBqBh6MeDq6GajcilBiDg==
+  port: 61001
+  server: 192-227-152-86.nip.io
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
-- name: 2,14|NL_speednode_0029
+  sni: 192-227-152-86.nip.io
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇺🇸10 |  1.7MB/s
+  network: tcp
+  port: 57926
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: aes-256-cfb
+  name: 0|🇺🇸11 |  5.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.37.220.218
+  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇺🇸12 |  5.4MB/s
+  network: tcp
+  port: 30206
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0,13|NL_speednode_0029
   network: ws
   port: 80
   server: 45.131.4.214
@@ -160,36 +141,43 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
     path: /Telegram🇨🇳@WangCai2/?ed=2560
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 2|🇺🇸13 |  1.9MB/s
-  network: ws
-  port: 80
-  server: 45.131.4.187
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: ''
-- cipher: aes-256-cfb
-  delay: 975
-  name: 2|🇺🇸14 |  3.0MB/s
-  obfs: plain
-  obfs-param: ''
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  protocol-param: ''
-  server: 34.220.99.226
-  type: ssr
+- alterId: '0'
+  cipher: auto
+  name: 0|🇺🇸14 |  1.3MB/s
+  network: tcp
+  port: 35001
+  server: 120.198.71.216
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇺🇸15 |  5.5MB/s
+  name: 0|🇺🇸15 |  1.1MB/s
+  network: tcp
+  port: 30274
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gy01.hunheiydd.xyz
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- allowInsecure: ''
+  name: 0|🇺🇸16 |  2.5MB/s
+  network: ws
+  password: d67cfeaf-b277-44ac-ab99-9dd02a7c5299
+  port: 443
+  server: 104.21.49.59
+  skip-cert-verify: false
+  sni: Fgh9JkR5.890617.xYz
+  tls: true
+  type: trojan
+  ws-opts:
+    headers:
+      Host: fgh9jkr5.890617.xyz
+    path: /lWljHWvIMOj85lz42MdhsCLV
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇺🇸17 |  2.2MB/s
   network: tcp
   port: 64654
   reality-opts:
@@ -199,16 +187,10 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-cfb
-  name: 2|🇺🇸16 |  2.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 52.37.220.218
-  type: ss
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇺🇸17 |  3.6MB/s
+  name: 0|🇺🇸18 |  4.4MB/s
   network: tcp
   port: 443
   server: 135.148.177.196
@@ -217,18 +199,92 @@ proxies:
   type: vless
   udp: false
   uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
-- alterId: '0'
-  cipher: auto
-  name: 2|🇺🇸18 |  1.9MB/s
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇺🇸19 |  1.4MB/s
+  network: ws
+  port: 8080
+  server: 45.131.4.33
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 0|🇺🇸20 |  5.0MB/s
+  network: ws
+  port: 443
+  server: 173.245.58.100
+  servername: cr7.medicaldream.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: ccff34b1-44fd-478d-bc0e-5111cb11f5be
+  ws-opts:
+    headers:
+      Host: cr7.medicaldream.ir
+    path: /@JOKERRVPNJoin_Bade_Channel@JOKERRVPN?ed=2550
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇺🇸21 |  1.7MB/s
   network: tcp
-  port: 35001
-  server: 120.198.71.216
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 2|🇺🇸19 |  3.7MB/s
+  port: 29023
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 0|🇺🇸22 |  5.8MB/s
+  port: 11512
+  server: 108.181.24.77
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 1000 Mbps
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇺🇸23 |  3.0MB/s
+  network: tcp
+  port: 38311
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇺🇸24 |  2.8MB/s
+  network: tcp
+  port: 46372
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 0,13|NL_speednode_0027
   network: ws
   port: 80
-  server: 45.131.4.126
+  server: 45.131.4.33
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
   tls: false
   type: vless
   udp: true
@@ -236,8 +292,64 @@ proxies:
   ws-opts:
     headers:
       Host: gozargah.validbv7996.ir
-    path: Telegram🇨🇳@WangCai2/?ed
-- name: 2,14|NL_speednode_0031
+    path: /
+- client-fingerprint: chrome
+  delay: 1216
+  flow: xtls-rprx-vision
+  name: 0,13|US_speednode_0043
+  network: tcp
+  port: 2087
+  reality-opts:
+    public-key: LukOig0eMe6VNy9rdyFt7ozZpS3r_1lsyIMun4qgJEo
+    short-id: d27cd3b5
+  server: 192.9.130.194
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: bf86d7a4-30fe-44fd-bb12-15ce3924ad40
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸27 |  1.1MB/s
+  port: 34013
+  server: v2-us2-zx.netcar.live
+  tls: false
+  type: vmess
+  uuid: 9a037058-73a1-4fc3-973f-c73b1f612d81
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇺🇸28 |  5.7MB/s
+  network: ws
+  port: 80
+  server: 45.131.4.131
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: Telegram🇨🇳@WangCai2/?ed=2560
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇺🇸29 |  1.2MB/s
+  network: ws
+  port: 80
+  server: 45.131.4.214
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2
+- name: 0,13|NL_speednode_0031
   network: ws
   port: 80
   server: 45.131.4.33
@@ -251,112 +363,10 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
     path: /@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY----@ELiV2RAY
-- auth: 5CBqBh6MeDq6GajcilBiDg==
-  name: 2|🇺🇸21 |  3.4MB/s
-  password: 5CBqBh6MeDq6GajcilBiDg==
-  port: 61001
-  server: 192-227-152-86.nip.io
-  skip-cert-verify: true
-  sni: 192-227-152-86.nip.io
-  type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇺🇸22 |  1.8MB/s
-  network: tcp
-  port: 38302
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇺🇸23 |  1.5MB/s
-  network: tcp
-  port: 38311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇺🇸24 |  3.6MB/s
-  network: tcp
-  port: 29023
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 2|🇺🇸25 |  2.0MB/s
-  network: tcp
-  port: 443
-  server: 135.148.14.7
-  servername: 147135001178.sec22org.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
-- name: 2,14|NL_speednode_0040
+- name: 0,13|NL_speednode_0032
   network: ws
   port: 80
-  server: 45.131.4.188
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 2|🇺🇸27 |  1.1MB/s
-  network: ws
-  port: 2095
-  server: 104.18.21.94
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: fuckingcloudflare.2-5e8.workers.dev
-    path: /?ed=2560
-- client-fingerprint: chrome
-  mode: ''
-  name: 2|🇺🇸28 |  5.7MB/s
-  network: ws
-  port: 443
-  server: 172.67.163.14
-  servername: 3n.2031.pp.ua
-  tls: true
-  type: vless
-  udp: false
-  uuid: 2fec7227-9abe-46f2-af18-78302b836c45
-  ws-opts:
-    headers:
-      Host: 3n.2031.pp.ua
-    path: /qF5dXhCllosLcFpqdDoAgkondVWl
-- delay: 1631
-  name: 2,14|NL_speednode_0030
-  network: ws
-  port: 80
-  server: 45.131.5.206
+  server: 45.131.5.182
   servername: gozargah.validbv7996.ir
   skip-cert-verify: false
   tls: false
@@ -367,72 +377,93 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
     path: /Telegram🇨🇳@WangCai2
-- name: 2|🇺🇸30 |  3.6MB/s
-  network: ws
-  port: 443
-  server: 23.227.38.0
-  servername: us1_pq_user_vip_api.xn--ghqu5fm27b67w.com
-  tls: true
-  type: vless
-  uuid: b2b7f2fd-58af-46c3-aa31-b00a32e3c781
-  ws-opts:
-    headers:
-      Host: us1_pq_user_vip_api.xn--ghqu5fm27b67w.com
-    path: /pq/us1
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 2,12|🇯🇵 日本特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 44.247.247.209
-  tfo: false
-  type: ss
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 2|🇺🇸32 |  4.7MB/s
-  network: tcp
-  port: 443
-  server: 147135004002.sec20org.com
-  servername: ''
-  tls: true
-  type: vless
-  udp: false
-  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 2|🇺🇸33 |  4.2MB/s
-  network: tcp
-  port: 443
-  server: 135.148.74.147
-  servername: 147135004002.sec20org.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 54694a33-a8dc-47dd-bc38-acd3971e0055
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 0|🇺🇸32 |  6.1MB/s
+  port: 17549
+  server: 208.87.243.151
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 11 Mbps
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇺🇸34 |  4.7MB/s
+  name: 0|🇺🇸33 |  3.9MB/s
   network: tcp
-  port: 30206
+  port: 19620
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: addons.mozilla.org
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- auth: 838e602b
-  client-fingerprint: chrome
-  name: 2|🇺🇸35 |  4.0MB/s
-  password: 838e602b
-  port: 66
-  server: cc.w1997.eu.org
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: 11|🇺🇸美国 加利福尼亚州 圣克拉拉 DIGITALOCEAN-...
+- name: 0,13|NL_speednode_0037
+  network: ws
+  port: 80
+  server: 45.131.5.151
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇺🇸35 |  1.5MB/s
+  network: tcp
+  port: 38302
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 0|🇺🇸36 |  5.0MB/s
+  network: ws
+  port: 80
+  server: 172.64.152.226
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram@JOKERRVPNJoin_Bade_Channel@JOKERRVPN/?ed=2550
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 578ad305-026f-4297-a5cc-68d08df4370c
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 578ad305-026f-4297-a5cc-68d08df4370c
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 03 | 1x US Washington
+  password: 578ad305-026f-4297-a5cc-68d08df4370c
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 10|🇺🇸美国 加利福尼亚州 圣克拉拉 DIGITALOCEAN-...
   password: iMqY3uG_5pgEj3hCfyHB-0vB
   port: 443
   server: 143.198.235.49
@@ -441,7 +472,7 @@ proxies:
   type: hysteria2
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 12|🇺🇸 美国|@ripaojiedian
+  name: 11|🇺🇸 美国|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -453,7 +484,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 12|🇺🇸 美国2|@ripaojiedian
+  name: 11|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -463,7 +494,7 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- name: 14|US_speednode_0045
+- name: 13|US_speednode_0045
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
   server: ustx004-cdn-route.couldflare-cdn.com
@@ -472,7 +503,7 @@ proxies:
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
 - client-fingerprint: randomized
-  name: 14|US_speednode_0046
+  name: 13|US_speednode_0046
   network: ws
   port: 443
   server: pages.dev
@@ -486,7 +517,25 @@ proxies:
     headers:
       Host: 25700.lanpinguo.cloud-ip.biz
     path: /?ed=2560
-- name: 14|US_speednode_0051
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: 13|US_speednode_0047
+  network: ws
+  port: 443
+  server: 172.66.44.162
+  servername: bESTIVpN.paGeS.DEV
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3e235d06-f9c9-450c-9a07-a8dc933326f0
+  ws-opts:
+    headers:
+      Host: bestivpn.pages.dev
+    path: /VTRW8C7XmWQUCZd5?ed=2560
+- name: 13|US_speednode_0051
   password: ypDt8RkT7J
   port: 43118
   server: 89.187.181.172
@@ -498,7 +547,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: randomized
-  name: 14|US_speednode_0052
+  name: 13|US_speednode_0052
   network: ws
   port: 443
   server: 104.17.15.166
@@ -512,7 +561,7 @@ proxies:
     headers:
       Host: zyzzzoao.putata.eu.org
     path: /tbSRLeOuwtLBToSL?ed=2560
-- name: 14|US_speednode_0055
+- name: 13|US_speednode_0055
   network: ws
   port: 80
   server: Abrha.net
@@ -530,7 +579,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: randomized
-  name: 14|US_speednode_0057
+  name: 13|US_speednode_0057
   network: ws
   port: 443
   server: 172.66.44.118
@@ -544,3 +593,43 @@ proxies:
     headers:
       Host: configmr.pages.dev
     path: /VrChX4o5oasIm4In?ed=2560
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 13|US_speednode_0058
+  network: ws
+  port: 2096
+  server: 104.16.142.237
+  servername: Free.moqaab.ir
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 09ae3454-cf42-44e6-a81e-de00e5457af9
+  ws-opts:
+    headers:
+      Host: Free.moqaab.ir
+    path: /Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸美国 01 | 1x US Los Angeles
+  password: 184acc52-5b59-43f8-8a66-acee2df363fa
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 184acc52-5b59-43f8-8a66-acee2df363fa
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸美国 03 | 1x US Washington
+  password: 184acc52-5b59-43f8-8a66-acee2df363fa
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
