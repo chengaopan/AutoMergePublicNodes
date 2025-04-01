@@ -1,73 +1,46 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 56de3a19-04bb-4387-a3fd-b7dcd329b005
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 56de3a19-04bb-4387-a3fd-b7dcd329b005
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 56de3a19-04bb-4387-a3fd-b7dcd329b005
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 01 | 1x SG
-  password: 621335fb-b7a5-4d73-8682-a76692344ef3
+  name: 0|🇸🇬 新加坡 01 | 1x SG
+  password: d93c5a8f-8c5c-4933-a049-767a910bf94a
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 02 | 1x SG
-  password: 621335fb-b7a5-4d73-8682-a76692344ef3
+  name: 0|🇸🇬 新加坡 02 | 1x SG
+  password: d93c5a8f-8c5c-4933-a049-767a910bf94a
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 03 | 1x SG
-  password: 621335fb-b7a5-4d73-8682-a76692344ef3
+  name: 0|🇸🇬 新加坡 03 | 1x SG
+  password: d93c5a8f-8c5c-4933-a049-767a910bf94a
   port: 36175
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 2|🇸🇬1 |  4.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.141.139.23
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 01 | 1x SG
+  password: 7c1947d2-fb99-4d25-a985-03a4643071a0
+  port: 31171
+  server: free.2apzhfa.xyz
   type: ss
-- client-fingerprint: chrome
-  delay: 1335
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0007
-  network: tcp
-  port: 56127
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-gcm
-  name: 2|🇸🇬3 |  6.2MB/s
-  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
-  port: 21114
-  server: okanc.node-is.green
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 02 | 1x SG
+  password: 7c1947d2-fb99-4d25-a985-03a4643071a0
+  port: 31173
+  server: free.2apzhfa.xyz
   type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 03 | 1x SG
+  password: 7c1947d2-fb99-4d25-a985-03a4643071a0
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - name: 2,14|US_speednode_0056
   network: ws
   port: 80
@@ -82,10 +55,16 @@ proxies:
     headers:
       Host: free.pranithsandaruwan.shop
     path: /
+- cipher: aes-256-cfb
+  name: 2|🇸🇬2 |  1.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.169.188.214
+  type: ss
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇸🇬5 |  5.4MB/s
+  name: 2|🇸🇬3 |  5.7MB/s
   network: ws
   port: 80
   server: 170.114.45.6
@@ -98,50 +77,91 @@ proxies:
     headers:
       Host: free.server.pranithsandaruwan.shop
     path: /
-- name: 2,14|US_speednode_0050
-  network: ws
-  port: 80
-  server: 170.114.46.6
-  servername: free.pranithsandaruwan.shop
-  skip-cert-verify: false
+- alterId: 0
+  cipher: auto
+  name: 2|🇸🇬4 |  4.1MB/s
+  port: 3683
+  server: a5944a92-su7b40-tclkqs-deip.b.fosant.com
   tls: false
-  type: vless
-  udp: true
-  uuid: d9074e14-c4e4-4e58-8fff-3727e83af868
-  ws-opts:
-    headers:
-      Host: free.pranithsandaruwan.shop
-    path: /
-- name: 2|🇸🇬7 |  5.0MB/s
-  network: ws
-  port: 80
-  server: 170.114.45.6
-  servername: free.pranithsandaruwan.shop
-  skip-cert-verify: false
+  type: vmess
+  uuid: 7a2512b4-09ee-11f0-8d46-f23c9313b177
+- alterId: 0
+  cipher: auto
+  name: 2|🇸🇬5 |  6.3MB/s
+  port: 3683
+  server: 1387ebdd-su7b40-su6828-eme.b.fosant.com
   tls: false
-  type: vless
-  udp: true
-  uuid: d9074e14-c4e4-4e58-8fff-3727e83af868
-  ws-opts:
-    headers:
-      Host: free.pranithsandaruwan.shop
-    path: /
+  type: vmess
+  uuid: 16d93f14-af0e-11ee-8ebe-f23c93136cb3
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 2|🇸🇬8 |  1.8MB/s
-  obfs: tls1.2_ticket_auth
-  obfs-param: sg2-cdn-route.couldflare-cdn.com
-  password: uiACqrIr
-  port: 56138
-  protocol: origin
-  protocol-param: ''
-  server: cm2.xcone.xyz
-  type: ssr
-- cipher: aes-256-cfb
-  name: 2|🇸🇬9 |  1.6MB/s
+  name: 2|🇸🇬6 |  1.3MB/s
   password: amazonskr05
   port: 443
-  server: 54.179.52.175
+  server: 13.229.73.58
+  type: ss
+- name: 2|🇸🇬7 |  3.9MB/s
+  password: myszy28811
+  port: 28811
+  server: pipi.myddns.me
+  type: socks5
+  udp: true
+  username: myszy
+- alterId: 0
+  cipher: auto
+  name: 2|🇸🇬8 |  6.2MB/s
+  port: 3683
+  server: 098e0774-su7xc0-tcm6ys-deip.b.fosant.com
+  tls: false
+  type: vmess
+  uuid: 7a2512b4-09ee-11f0-8d46-f23c9313b177
+- alterId: 0
+  cipher: auto
+  name: 2|🇸🇬9 |  6.2MB/s
+  port: 3683
+  server: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
+  tls: false
+  type: vmess
+  uuid: f39baabc-ef78-11ef-b714-f23c93136cb3
+- alterId: 0
+  cipher: auto
+  name: 2|🇸🇬10 |  6.3MB/s
+  port: 3683
+  server: 4f4f231e-su7xc0-su1oku-2gok.b.fosant.com
+  tls: false
+  type: vmess
+  uuid: 17cdeb6c-f046-11ee-bdac-f23c93141fad
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0009
+  network: tcp
+  port: 44003
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: 2|🇸🇬12 |  1.1MB/s
+  network: tcp
+  port: 53102
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 183.236.51.38
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 2|🇸🇬13 |  1.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.141.139.23
   type: ss
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH

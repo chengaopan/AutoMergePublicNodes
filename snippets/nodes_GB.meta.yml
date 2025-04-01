@@ -1,29 +1,53 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: 56de3a19-04bb-4387-a3fd-b7dcd329b005
+  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
+  password: d93c5a8f-8c5c-4933-a049-767a910bf94a
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: 7c1947d2-fb99-4d25-a985-03a4643071a0
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 56de3a19-04bb-4387-a3fd-b7dcd329b005
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: 7c1947d2-fb99-4d25-a985-03a4643071a0
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 621335fb-b7a5-4d73-8682-a76692344ef3
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧1 |  4.7MB/s
+  network: tcp
+  port: 14659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧2 |  5.1MB/s
+  network: tcp
+  port: 65053
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇬🇧1 |  2.1MB/s
+  name: 2|🇬🇧3 |  2.5MB/s
   network: ws
   port: 80
   server: 45.131.4.248
@@ -38,104 +62,7 @@ proxies:
     path: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧2 |  4.9MB/s
-  network: tcp
-  port: 65053
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧3 |  1.0MB/s
-  password: Qx22XZwNt4SCcnWNkypEAj
-  port: 44316
-  server: 81.19.137.66
-  type: ss
-- alterId: '0'
-  cipher: auto
-  name: 2|🇬🇧4 |  4.7MB/s
-  network: ws
-  port: '25240'
-  server: cm.awslcn.info
-  type: vmess
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-opts:
-    headers:
-      host: cm.awslcn.info
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 2|🇬🇧5 |  4.9MB/s
-  network: ws
-  port: 25240
-  server: cm1.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-headers:
-    Host: cm1.awslcn.info
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 2|🇬🇧6 |  5.1MB/s
-  network: ws
-  port: 25240
-  server: cm.awslcn.info
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: b784f479-32c2-4fa9-a6f9-0e8d3f8cb4ae
-  ws-headers:
-    Host: cm.awslcn.info
-  ws-path: /
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 2|🇬🇧7 |  5.9MB/s
-  network: ws
-  port: 2096
-  server: 104.16.143.237
-  servername: Free.moqaab.ir
-  tls: true
-  type: vless
-  udp: false
-  uuid: 09ae3454-cf42-44e6-a81e-de00e5457af9
-  ws-opts:
-    headers:
-      Host: Free.moqaab.ir
-    path: Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram-EiV2Ray-Telegram
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧8 |  4.4MB/s
-  network: tcp
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧9 |  2.8MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧10 |  4.7MB/s
+  name: 2|🇬🇧4 |  1.3MB/s
   network: tcp
   port: 32055
   reality-opts:
@@ -147,7 +74,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧11 |  4.3MB/s
+  name: 2|🇬🇧5 |  5.1MB/s
   network: tcp
   port: 35311
   reality-opts:
