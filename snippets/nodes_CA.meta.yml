@@ -1,34 +1,35 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: 71c75d65-b1b0-49ad-884e-41e306a9246e
+  name: 0|🇨🇦 加拿大 01 | 1x CA
+  password: 9d4d45d5-a0a4-4b86-92f7-fd1d830127b6
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 2|🇨🇦1 |  4.7MB/s
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 37407
-  server: 155.248.219.197
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: 2|🇨🇦2 |  1.4MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦加拿大 01 | 1x CA
+  password: 73af43cc-5b13-4f27-83bb-e03455f2ba46
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇨🇦1 |  1.1MB/s
   network: ws
   port: 443
-  server: www.whatismyip.com
+  server: 172.67.95.24
   servername: ml.ylkszy.eu.org
-  skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
+  udp: false
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: ml.ylkszy.eu.org
-    path: /?ed=2560
-- name: 2|🇨🇦3 |  3.9MB/s
+      Host: ml.ylkszy.eu.org
+    path: /?ed=2560security=tls
+- name: 2|🇨🇦2 |  1.4MB/s
   network: ws
   port: 443
   server: 104.17.161.203
@@ -42,24 +43,10 @@ proxies:
     headers:
       host: ml.ylkszy.eu.org
     path: /?ed=2560
-- name: 2|🇨🇦4 |  1.6MB/s
+- name: 2|🇨🇦3 |  4.3MB/s
   network: ws
   port: 443
-  server: 104.16.154.41
-  servername: mn.youlingkais.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: mn.youlingkais.filegear-sg.me
-    path: /?ed=2560
-- name: 2|🇨🇦5 |  1.1MB/s
-  network: ws
-  port: 443
-  server: 135.84.76.115
+  server: 63.141.128.58
   servername: ml.ylkszy.eu.org
   skip-cert-verify: true
   tls: true
@@ -70,3 +57,19 @@ proxies:
     headers:
       host: ml.ylkszy.eu.org
     path: /?ed=2560
+- auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: 2|🇨🇦4 |  5.2MB/s
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 37407
+  server: 155.248.219.197
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  name: 2|🇨🇦5 |  4.1MB/s
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 132.145.105.88
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2

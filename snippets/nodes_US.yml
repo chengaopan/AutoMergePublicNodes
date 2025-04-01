@@ -1,72 +1,86 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 71c75d65-b1b0-49ad-884e-41e306a9246e
+  name: 0|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 9d4d45d5-a0a4-4b86-92f7-fd1d830127b6
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 71c75d65-b1b0-49ad-884e-41e306a9246e
+  name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 9d4d45d5-a0a4-4b86-92f7-fd1d830127b6
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸 美国 03 | 1x US Washington
-  password: 71c75d65-b1b0-49ad-884e-41e306a9246e
+  name: 0|🇺🇸 美国 03 | 1x US Washington
+  password: 9d4d45d5-a0a4-4b86-92f7-fd1d830127b6
   port: 36215
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 2|🇺🇸1 |  1.6MB/s
-  password: 68e6e853-d2d5-3126-950f-841d14dcf75c
-  port: 25238
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z267.hongkongnode.top
-  tfo: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国 01 | 1x US Los Angeles
+  password: 73af43cc-5b13-4f27-83bb-e03455f2ba46
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-- name: 2|🇺🇸2 |  5.4MB/s
-  password: 68e6e853-d2d5-3126-950f-841d14dcf75c
-  port: 20288
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z288.hongkongnode.top
-  tfo: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 73af43cc-5b13-4f27-83bb-e03455f2ba46
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 2|🇺🇸8 |  2.1MB/s
-  network: ws
-  port: 23615
-  server: 15.mamamajd.site
-  skip-cert-verify: true
-  tfo: true
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国 03 | 1x US Washington
+  password: 73af43cc-5b13-4f27-83bb-e03455f2ba46
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: da339ed4-5245-3d02-b0bc-1e0b2cf98aa1
-  ws-opts:
-    headers:
-      Host: 15.mamamajd.site
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 2|🇺🇸19 |  1.6MB/s
-  network: tcp
-  port: '35001'
-  server: 120.198.71.216
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: aes-256-cfb
-  name: 2|🇺🇸24 |  4.5MB/s
+  name: 2|🇺🇸3 |  3.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.202.0.97
+  type: ss
+- cipher: aes-256-cfb
+  name: 2|🇺🇸7 |  4.6MB/s
+  obfs: plain
+  password: amazonskr05
+  port: 443
+  protocol: origin
+  server: 54.187.221.114
+  type: ssr
+- cipher: aes-256-cfb
+  name: 2|🇺🇸8 |  5.1MB/s
   password: amazonskr05
   port: 443
   server: 34.217.15.41
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 2|🇺🇸9 |  5.8MB/s
+  network: ws
+  port: 7218
+  server: 2322b7f0-su5gg0-sx6tfn-1fwzw.sja.plebai.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 97e5f0fc-e173-11ed-8e13-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 2322b7f0-su5gg0-sx6tfn-1fwzw.sja.plebai.net
+    path: /
+- cipher: aes-256-cfb
+  name: 2|🇺🇸23 |  3.8MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.37.220.218
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
