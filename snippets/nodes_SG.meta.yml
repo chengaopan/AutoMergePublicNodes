@@ -1,47 +1,93 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: 1665029a-f3c9-4b1a-a7ac-85a23d584d9c
+  password: 39e93e9a-ce96-4a46-8140-f7550fe6f026
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: 1665029a-f3c9-4b1a-a7ac-85a23d584d9c
+  password: 39e93e9a-ce96-4a46-8140-f7550fe6f026
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬 新加坡 03 | 1x SG
-  password: 1665029a-f3c9-4b1a-a7ac-85a23d584d9c
+  password: 39e93e9a-ce96-4a46-8140-f7550fe6f026
   port: 36175
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 01 | 1x SG
+  password: e36b37e3-3ec4-4b78-a4bd-2ff0fd61d5ff
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 02 | 1x SG
+  password: e36b37e3-3ec4-4b78-a4bd-2ff0fd61d5ff
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 03 | 1x SG
+  password: e36b37e3-3ec4-4b78-a4bd-2ff0fd61d5ff
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 2|🇸🇬1 |  2.5MB/s
+  obfs: tls1.2_ticket_auth
+  obfs-param: sg2-cdn-route.couldflare-cdn.com
+  password: uiACqrIr
+  port: 56138
+  protocol: origin
+  protocol-param: ''
+  server: cm2.xcone.xyz
+  type: ssr
+  udp: true
+- cipher: aes-256-cfb
+  name: 2|🇸🇬2 |  1.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.169.134.156
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 2|🇸🇬3 |  1.5MB/s
+  port: 3683
+  server: 0dc08664-su7b40-sv0q0f-9w5b.b.fosant.com
+  tls: false
+  type: vmess
+  uuid: 47adbddb-3307-11ef-8002-f23c93136cb3
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇸🇬1 |  1.4MB/s
+  name: 2|🇸🇬4 |  6.2MB/s
   network: tcp
-  port: 29877
+  port: 10778
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
+  server: test123.zlqhdns.top
   servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: aes-256-cfb
-  name: 1|🇸🇬2 |  1.8MB/s
+  name: 2|🇸🇬5 |  1.0MB/s
   password: amazonskr05
   port: 443
-  server: 54.179.52.175
+  server: 47.128.245.70
   type: ss
 - client-fingerprint: chrome
   delay: 1335
   flow: xtls-rprx-vision
-  name: 1|🇸🇬3 |  1.0MB/s
+  name: 2|🇸🇬6 |  4.9MB/s
   network: tcp
   port: 56127
   reality-opts:
@@ -52,76 +98,40 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 1,14|US_speednode_0097
-  network: ws
-  port: 80
-  server: 170.114.46.6
-  servername: free.pranithsandaruwan.shop
-  skip-cert-verify: false
-  tls: false
-  type: vless
+- name: 2,14|CN_speednode_0034
+  password: myszy28811
+  port: 28811
+  server: pipi.myddns.me
+  type: socks5
   udp: true
-  uuid: d9074e14-c4e4-4e58-8fff-3727e83af868
-  ws-opts:
-    headers:
-      Host: free.pranithsandaruwan.shop
-    path: /
-- name: 1,14|US_speednode_0096
-  network: ws
-  port: 80
-  server: support.zoom.us
-  servername: free.pranithsandaruwan.shop
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d9074e14-c4e4-4e58-8fff-3727e83af868
-  ws-opts:
-    headers:
-      Host: free.pranithsandaruwan.shop
-    path: /
+  username: myszy
 - alterId: 0
   cipher: auto
-  name: 1|🇸🇬6 |  1.2MB/s
-  network: tcp
-  port: 3683
-  server: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: f39baabc-ef78-11ef-b714-f23c93136cb3
-  ws-headers:
-    Host: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 1|🇸🇬7 |  3.5MB/s
+  name: 2|🇸🇬8 |  4.4MB/s
   port: 36007
   server: v2-sg2-zf.netcar.live
   tls: false
   type: vmess
   uuid: b1f8ac28-98f4-4e75-93c1-37f0d959e78b
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 01 | 1x SG
-  password: 9cf5847f-312e-4297-9f01-735ae02fd2e2
-  port: 31171
-  server: free.2apzhfa.xyz
+- alterId: 0
+  cipher: auto
+  name: 2|🇸🇬9 |  5.6MB/s
+  network: tcp
+  port: 3683
+  server: 1387ebdd-su7b40-su6828-eme.b.fosant.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 16d93f14-af0e-11ee-8ebe-f23c93136cb3
+  ws-headers:
+    Host: 1387ebdd-su7b40-su6828-eme.b.fosant.com
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 2|🇸🇬10 |  4.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 47.129.38.96
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 02 | 1x SG
-  password: 9cf5847f-312e-4297-9f01-735ae02fd2e2
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 03 | 1x SG
-  password: 9cf5847f-312e-4297-9f01-735ae02fd2e2
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 12|🇸🇬 新加坡|@ripaojiedian
