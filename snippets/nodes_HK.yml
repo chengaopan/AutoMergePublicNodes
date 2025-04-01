@@ -1,30 +1,70 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 02 | 1x HK
-  password: 89e65b42-d1e4-4fd6-a10a-ed3fa435728a
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: 89e65b42-d1e4-4fd6-a10a-ed3fa435728a
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 02 | 1x HK
-  password: 38dab439-cba1-499e-bf00-fc1652470e1d
+  name: 0|🇭🇰 香港 02 | 1x HK
+  password: e5de6cc2-6d6e-43b5-9eec-4da28d4a6864
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 38dab439-cba1-499e-bf00-fc1652470e1d
+  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
+  password: e5de6cc2-6d6e-43b5-9eec-4da28d4a6864
   port: 36145
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 1|🇭🇰3 |  6.3MB/s
+  password: 68e6e853-d2d5-3126-950f-841d14dcf75c
+  port: 20307
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z307.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- name: 1|🇭🇰4 |  4.1MB/s
+  password: 68e6e853-d2d5-3126-950f-841d14dcf75c
+  port: 20294
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z294.hongkongnode.top
+  tfo: true
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1,13|香港3|@ripaojiedian
+  network: tcp
+  port: '10032'
+  server: v2-hk1-zx.netcar.live
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: bfd93c5c-abc7-416a-a205-372d3db979a4
+  ws-headers:
+    Host: v2-hk1-zx.netcar.live
+  ws-path: /
+- cipher: aes-128-gcm
+  name: 1|🇭🇰10 |  5.2MB/s
+  password: 492e27b0-d18f-4851-bed4-6c6afe1307d7
+  port: 39270
+  server: fs.yd.3.8.cdnlinkms001.xyz
+  tfo: false
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰香港 02 | 1x HK
+  password: a1a1b040-b282-44e5-8cd7-5429e6341939
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰香港家宽 03 | 1x HK
+  password: a1a1b040-b282-44e5-8cd7-5429e6341939
+  port: 31145
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
@@ -123,16 +163,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 952f0a9a-097d-11f0-aa52-f23c93136cb3
-- alterId: 0
-  cipher: auto
-  name: 13|香港3|@ripaojiedian
-  network: tcp
-  port: '10032'
-  server: v2-hk1-zx.netcar.live
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bfd93c5c-abc7-416a-a205-372d3db979a4
 - alterId: 0
   cipher: auto
   name: 13|香港5|@ripaojiedian
