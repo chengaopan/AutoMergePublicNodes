@@ -1,21 +1,35 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: 76fa90cb-40db-4648-802d-57103da2071c
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 8450774d-b253-4bd3-95ad-118feda235f7
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 8450774d-b253-4bd3-95ad-118feda235f7
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: cc197ca0-61ab-44b4-a6c8-0861fe4d8bb0
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 76fa90cb-40db-4648-802d-57103da2071c
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: cc197ca0-61ab-44b4-a6c8-0861fe4d8bb0
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧1 |  3.5MB/s
+  name: 2|🇬🇧1 |  5.0MB/s
   network: tcp
   port: 35311
   reality-opts:
@@ -25,19 +39,10 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- country: 🇬🇧GB
-  delay: 2409
-  name: 1|🇬🇧2 |  3.3MB/s
-  password: 7634a410-0a7d-11f0-acfd-1239d0255272
-  port: 443
-  server: uk1.test3.net
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 1|🇬🇧3 |  5.0MB/s
+  name: 2|🇬🇧2 |  4.8MB/s
   network: ws
   port: 2096
   server: www.speedtest.net
@@ -50,30 +55,10 @@ proxies:
     headers:
       Host: FuIjBvQa.rIcKtMoUsE.InFo
     path: /
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 1,13|US_speednode_0078
-  network: ws
-  port: 8443
-  server: 188.114.96.3
-  servername: GOzaRGAh.vALidBv7996.Ir
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram@V2ray_Alpha/?ed=2560
-- name: 1,13|NL_speednode_0066
+- name: 2|🇬🇧3 |  5.0MB/s
   network: ws
   port: 80
-  server: 45.131.4.248
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: true
+  server: 45.131.4.113
   tls: false
   type: vless
   udp: true
@@ -81,22 +66,10 @@ proxies:
   ws-opts:
     headers:
       Host: gozargah.validbv7996.ir
-    path: /
+    path: Telegram🇨🇳@WangCai2/?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧6 |  2.0MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1,13|CN_speednode_0031
+  name: 2,14|CN_speednode_0031
   network: tcp
   port: 65053
   reality-opts:
@@ -110,7 +83,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧8 |  2.2MB/s
+  name: 2|🇬🇧5 |  3.5MB/s
   network: tcp
   port: 32055
   reality-opts:
@@ -120,7 +93,7 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 10|Hysteria 🇬🇧 @v2meowcf
+- name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -128,17 +101,3 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰香港 01 | 1x HK
-  password: ed6d94d8-2937-4379-8f53-0aa62d84b8fa
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇬🇧英国家宽 01 | 1x UK
-  password: ed6d94d8-2937-4379-8f53-0aa62d84b8fa
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
