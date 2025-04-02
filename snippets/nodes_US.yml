@@ -1,29 +1,21 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: 6186eed9-4340-4f53-8a05-3c7dfe64f696
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 6186eed9-4340-4f53-8a05-3c7dfe64f696
-  port: 31213
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国 03 | 1x US Washington
-  password: 6186eed9-4340-4f53-8a05-3c7dfe64f696
-  port: 31215
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 0|🇺🇸24 |  3.3MB/s
+  network: tcp
+  port: '34013'
+  server: v2-us2-zx.netcar.live
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9a037058-73a1-4fc3-973f-c73b1f612d81
+  ws-headers:
+    Host: v2-us2-zx.netcar.live
+  ws-path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 1,12,13|美国3|@ripaojiedian
+  name: 0,11,12|美国3|@ripaojiedian
   network: ws
   port: '2053'
   server: usa.visa.com
@@ -37,67 +29,16 @@ proxies:
     headers:
       Host: hax.hy.cloudns.ch
     path: d79261b1-b706-49f6-b39d-af2a0b8ebac5-vm
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸14 |  1.1MB/s
-  network: ws
-  port: 80
-  raw:
-    add: 172.67.204.22
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: us7-08.890602.xyz
-    id: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
-    net: ws
-    path: /bua2hMcbA8wMzbGFtV
-    port: '80'
-    ps: 🔥Join+Telegram:@FarahVPN🟣
-    scy: auto
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 172.67.204.22
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4d04b30c-ef7b-4a07-8f9e-f581ec171f8a
-  ws-opts:
-    headers:
-      Host: us7-08.890602.xyz
-    path: /bua2hMcbA8wMzbGFtV
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 1|🇺🇸34 |  2.1MB/s
+  name: 0|🇺🇸31 |  1.8MB/s
   password: amazonskr05
   port: 443
-  server: 34.216.142.212
+  server: 34.222.2.112
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 693d263e-d09e-4176-9e78-42a770bbfa87
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 693d263e-d09e-4176-9e78-42a770bbfa87
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 03 | 1x US Washington
-  password: 693d263e-d09e-4176-9e78-42a770bbfa87
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 12|🇺🇸 美国|@ripaojiedian
+  name: 11|🇺🇸 美国|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -109,7 +50,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 12|🇺🇸 美国2|@ripaojiedian
+  name: 11|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -119,11 +60,32 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- name: 14|US_speednode_0095
+- name: 13|US_speednode_0095
   password: oIwjHDXpKePvYIg8
   port: 443
   server: 43.162.127.44
   skip-cert-verify: false
   sni: myvps.cfd
   type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸美国 01 | 1x US Los Angeles
+  password: be273db1-4eb6-434e-b1d0-a00c65a7726f
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: be273db1-4eb6-434e-b1d0-a00c65a7726f
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸美国 03 | 1x US Washington
+  password: be273db1-4eb6-434e-b1d0-a00c65a7726f
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
