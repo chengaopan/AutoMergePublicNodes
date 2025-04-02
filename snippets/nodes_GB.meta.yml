@@ -1,39 +1,84 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: e2974491-6975-4f3f-8991-7b0fb561a5be
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 1e4455c4-d05f-4c33-a6fb-6b3bb888640c
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: ae5b3329-56bf-4eaa-97af-321cf20075b4
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: e2974491-6975-4f3f-8991-7b0fb561a5be
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: ae5b3329-56bf-4eaa-97af-321cf20075b4
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 01 | 1x HK
-  password: 62212cc0-9dfd-467c-84c1-7b7baf645322
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 62212cc0-9dfd-467c-84c1-7b7baf645322
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧1 |  3.5MB/s
+  network: tcp
+  port: 35311
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- country: 🇬🇧GB
+  delay: 2409
+  name: 2|🇬🇧2 |  3.3MB/s
+  password: 7634a410-0a7d-11f0-acfd-1239d0255272
+  port: 443
+  server: uk1.test3.net
+  skip-cert-verify: true
+  type: trojan
   udp: true
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2,14|US_speednode_0077
+  name: 2|🇬🇧3 |  5.0MB/s
+  network: ws
+  port: 2096
+  server: www.speedtest.net
+  servername: FuIjBvQa.rIcKtMoUsE.InFo
+  tls: true
+  type: vless
+  udp: false
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: FuIjBvQa.rIcKtMoUsE.InFo
+    path: /
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2,14|US_speednode_0078
+  network: ws
+  port: 8443
+  server: 188.114.96.3
+  servername: GOzaRGAh.vALidBv7996.Ir
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram@V2ray_Alpha/?ed=2560
+- name: 2,14|NL_speednode_0066
   network: ws
   port: 80
-  server: 172.64.152.226
+  server: 45.131.4.248
   servername: gozargah.validbv7996.ir
   skip-cert-verify: true
   tls: false
@@ -43,33 +88,19 @@ proxies:
   ws-opts:
     headers:
       Host: gozargah.validbv7996.ir
-    path: /Telegram@sinavm/?ed=2550
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧2 |  2.6MB/s
+  name: 2|🇬🇧6 |  2.0MB/s
   network: tcp
-  port: 14659
+  port: 49699
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2,14|NL_speednode_0064
-  network: ws
-  port: 80
-  server: 45.131.4.33
-  servername: gozargah.validbv7996.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 2,14|CN_speednode_0031
@@ -86,7 +117,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧6 |  4.5MB/s
+  name: 2|🇬🇧8 |  2.2MB/s
   network: tcp
   port: 32055
   reality-opts:
