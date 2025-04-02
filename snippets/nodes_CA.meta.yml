@@ -1,38 +1,51 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 842242d3-3143-46c1-839f-5e786ecf5add
+  password: 4e60a137-93f6-4a1a-bd94-f5b4e317f2cf
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: b2e83163-7091-4146-97c6-7b3d8eb418a0
+  password: d51dcba1-3535-4bac-b39c-5bd01a5ff172
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
 - auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 2|🇨🇦1 |  5.1MB/s
+  name: 2|🇨🇦1 |  4.9MB/s
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 37407
   server: 155.248.219.197
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇨🇦2 |  4.4MB/s
-  network: tcp
-  port: 16011
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.amazon.com
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇨🇦2 |  5.7MB/s
+  network: ws
+  port: 8443
+  server: 104.21.3.219
+  servername: ovhwuxian.pai50288.uk
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: false
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  ws-opts:
+    headers:
+      Host: ovhwuxian.pai50288.uk
+    path: /57ba2ab1
+- auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  client-fingerprint: chrome
+  name: 2|🇨🇦3 |  4.9MB/s
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 132.145.105.88
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 2,14|CA_speednode_0001
@@ -48,36 +61,3 @@ proxies:
   type: vless
   udp: true
   uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 2|🇨🇦4 |  6.0MB/s
-  network: ws
-  port: 8443
-  server: 172.67.153.156
-  servername: ovhwuxian.pai50288.uk
-  tls: true
-  type: vless
-  udp: false
-  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
-  ws-opts:
-    headers:
-      Host: ovhwuxian.pai50288.uk
-    path: /57ba2ab1
-- alterId: 0
-  cipher: auto
-  name: 2|🇨🇦5 |  4.5MB/s
-  port: 34018
-  server: v2-jnd.netcar.live
-  tls: false
-  type: vmess
-  uuid: 9a2012c8-6477-4386-b156-7133b4c42a26
-- auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  client-fingerprint: chrome
-  name: 2|🇨🇦6 |  3.8MB/s
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 132.145.105.88
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
