@@ -1,15 +1,19 @@
 proxies:
-- auth: dongtaiwang.com
-  name: 2|🇫🇷1 |  5.4MB/s
-  password: dongtaiwang.com
-  port: 61770
-  server: 51.159.226.1
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 2|🇫🇷1 |  5.9MB/s
+  port: 44557
+  server: 195.154.200.178
+  servername: apple.com
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+  tls: true
+  type: hysteria
+  up: 1000 Mbps
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇫🇷2 |  5.4MB/s
+  name: 2|🇫🇷2 |  2.9MB/s
   network: tcp
   port: 40072
   reality-opts:
@@ -19,52 +23,42 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 2|🇫🇷3 |  3.4MB/s
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 2|🇫🇷3 |  5.2MB/s
   network: ws
-  port: 47382
-  server: 185.33.26.127
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 88888888-8888-8888-8888-888888888888
+  port: 2082
+  server: 45.142.120.190
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  udp: true
+  uuid: 3f638f34-8dba-4186-bc43-2716a7ddd4be
   ws-opts:
-    path: /v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret-v2ret?ed=2560
+    headers:
+      host: yellow-paper-029c.yvonna.workers.dev
+    path: /az05.beyondy.cfd/link#
 - auth: dongtaiwang.com
-  name: 2|🇫🇷4 |  2.1MB/s
+  name: 2|🇫🇷4 |  5.4MB/s
+  password: dongtaiwang.com
+  port: 61770
+  server: 51.159.226.1
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- auth: dongtaiwang.com
+  name: 2|🇫🇷5 |  5.1MB/s
   password: dongtaiwang.com
   port: 59967
   server: 195.154.33.70
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- auth: 82febca6-8856-41fe-84df-c8bda0b72c7b
-  name: 2|🇫🇷5 |  2.4MB/s
-  password: 82febca6-8856-41fe-84df-c8bda0b72c7b
-  port: 2005
-  server: tw3.akebi.cc
-  skip-cert-verify: false
-  sni: fr01.akebi.cc
-  type: hysteria2
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 1000 Mbps
-  name: 2|🇫🇷6 |  5.7MB/s
-  port: 44557
-  server: 195.154.200.178
-  servername: apple.com
-  skip-cert-verify: true
-  tls: true
-  type: hysteria
-  up: 1000 Mbps
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇫🇷7 |  5.4MB/s
+  name: 2|🇫🇷6 |  5.7MB/s
   network: ws
   port: 8080
   server: 172.67.73.163
