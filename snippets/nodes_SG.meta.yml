@@ -1,40 +1,5 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: f484381d-4253-400d-b553-cc8caad68393
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: f484381d-4253-400d-b553-cc8caad68393
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 03 | 1x SG
-  password: f484381d-4253-400d-b553-cc8caad68393
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1,13|CN_speednode_0008
-  network: tcp
-  port: 56127
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 1,13|SG_speednode_0063
+- name: 0,13|SG_speednode_0063
   port: 59079
   server: 13.212.192.240
   skip-cert-verify: false
@@ -42,62 +7,41 @@ proxies:
   type: vless
   udp: true
   uuid: 694cc775-111f-41e5-8278-87fc2af28f5f
+- name: 0,13|SG_speednode_0068
+  network: ws
+  port: 8443
+  server: 111.119.235.98
+  servername: sgp.cayuo.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a89981b0-8096-4bbc-8d24-da2330650c4b
+  ws-opts:
+    headers:
+      Host: sgp.cayuo.me
+    path: /bing
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇸🇬3 |  5.3MB/s
+  network: tcp
+  port: 44003
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: '0'
   cipher: auto
-  name: 1|🇸🇬3 |  1.1MB/s
+  name: 0|🇸🇬4 |  1.1MB/s
   network: tcp
   port: '3683'
-  server: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
+  server: 1387ebdd-su7b40-su6828-eme.b.fosant.com
   type: vmess
-  uuid: f39baabc-ef78-11ef-b714-f23c93136cb3
-- name: 1,13|SG_speednode_0065
-  port: 21918
-  server: 47.129.119.183
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: e8c06684-7fb7-4448-dcd7-468ef40a36f3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇸🇬5 |  4.9MB/s
-  network: tcp
-  port: 10778
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: test123.zlqhdns.top
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇸🇬6 |  3.6MB/s
-  network: tcp
-  port: 29877
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 1|🇸🇬7 |  1.1MB/s
-  port: 3683
-  server: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
-  tls: false
-  type: vmess
-  uuid: f39baabc-ef78-11ef-b714-f23c93136cb3
-- cipher: aes-256-cfb
-  name: 1|🇸🇬8 |  1.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.212.77.19
-  type: ss
-  udp: true
-- name: 1,13|US_speednode_0080
+  uuid: 16d93f14-af0e-11ee-8ebe-f23c93136cb3
+- name: 0,13|US_speednode_0080
   network: ws
   port: 80
   server: support.zoom.us
@@ -113,12 +57,39 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|🇸🇬10 |  1.2MB/s
+  name: 0|🇸🇬6 |  1.5MB/s
   port: 3683
   server: 1387ebdd-su7b40-su6828-eme.b.fosant.com
   tls: false
   type: vmess
   uuid: 16d93f14-af0e-11ee-8ebe-f23c93136cb3
+- cipher: aes-256-cfb
+  name: 0|🇸🇬7 |  5.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 46.137.227.253
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 01 | 1x SG
+  password: 78437d4e-5101-4ea7-8af6-2aed1d36e326
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 02 | 1x SG
+  password: 78437d4e-5101-4ea7-8af6-2aed1d36e326
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 03 | 1x SG
+  password: 78437d4e-5101-4ea7-8af6-2aed1d36e326
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - name: 10|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
@@ -175,6 +146,14 @@ proxies:
   type: vless
   udp: true
   uuid: ec131ead-e121-4468-934f-34e0c10175e9
+- name: 13|SG_speednode_0065
+  port: 21918
+  server: 47.129.119.183
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: e8c06684-7fb7-4448-dcd7-468ef40a36f3
 - name: 13|SG_speednode_0066
   port: 27465
   server: 13.212.99.165
@@ -191,28 +170,6 @@ proxies:
   type: vless
   udp: true
   uuid: 6f142f84-82ed-4dac-b2c2-0ee9945f4663
-- name: 13|SG_speednode_0068
-  network: ws
-  port: 8443
-  server: 111.119.235.98
-  servername: sgp.cayuo.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a89981b0-8096-4bbc-8d24-da2330650c4b
-  ws-opts:
-    headers:
-      Host: sgp.cayuo.me
-    path: /bing
-- name: 13|SG_speednode_0069
-  port: 24163
-  server: 13.229.219.116
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: d07c7e91-fdf7-4836-b8e0-46a83351b117
 - name: 13|SG_speednode_0071
   network: ws
   port: 443
@@ -229,21 +186,21 @@ proxies:
     path: /bing
 - cipher: chacha20-ietf-poly1305
   name: 14|🇸🇬新加坡 01 | 1x SG
-  password: 4660db21-13a2-4e50-862c-3c133ebe21c6
+  password: 6eb5a7a4-223e-48d2-ac7b-d2938b3fea0a
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 14|🇸🇬新加坡 02 | 1x SG
-  password: 4660db21-13a2-4e50-862c-3c133ebe21c6
+  password: 6eb5a7a4-223e-48d2-ac7b-d2938b3fea0a
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 14|🇸🇬新加坡 03 | 1x SG
-  password: 4660db21-13a2-4e50-862c-3c133ebe21c6
+  password: 6eb5a7a4-223e-48d2-ac7b-d2938b3fea0a
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
