@@ -1,29 +1,56 @@
 proxies:
-- name: 0,13|SG_speednode_0063
-  port: 59079
-  server: 13.212.192.240
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬 新加坡 01 | 1x SG
+  password: 62c663a4-c4cb-43c5-9adc-a99db7dad013
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬 新加坡 02 | 1x SG
+  password: 62c663a4-c4cb-43c5-9adc-a99db7dad013
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬 新加坡 03 | 1x SG
+  password: 62c663a4-c4cb-43c5-9adc-a99db7dad013
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 1,14|SG_speednode_0064
+  port: 10808
+  server: 13.229.89.254
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: 694cc775-111f-41e5-8278-87fc2af28f5f
-- name: 0,13|SG_speednode_0068
-  network: ws
-  port: 8443
-  server: 111.119.235.98
-  servername: sgp.cayuo.me
-  skip-cert-verify: true
+  uuid: ec131ead-e121-4468-934f-34e0c10175e9
+- cipher: aes-256-cfb
+  name: 1|🇸🇬2 |  3.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.250.61.152
+  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1,14|CN_speednode_0008
+  network: tcp
+  port: 56127
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: a89981b0-8096-4bbc-8d24-da2330650c4b
-  ws-opts:
-    headers:
-      Host: sgp.cayuo.me
-    path: /bing
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇸🇬3 |  5.3MB/s
+  name: 1|🇸🇬4 |  5.5MB/s
   network: tcp
   port: 44003
   reality-opts:
@@ -33,15 +60,27 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: '0'
-  cipher: auto
-  name: 0|🇸🇬4 |  1.1MB/s
-  network: tcp
-  port: '3683'
-  server: 1387ebdd-su7b40-su6828-eme.b.fosant.com
-  type: vmess
-  uuid: 16d93f14-af0e-11ee-8ebe-f23c93136cb3
-- name: 0,13|US_speednode_0080
+- name: 1|🇸🇬5 |  6.0MB/s
+  network: ws
+  port: 443
+  server: kyree.ns.cloudflare.com
+  servername: cv.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: cv.dong2025.cfd
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 1|🇸🇬6 |  1.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.179.52.175
+  type: ss
+- name: 1,14|US_speednode_0080
   network: ws
   port: 80
   server: support.zoom.us
@@ -55,42 +94,40 @@ proxies:
     headers:
       Host: free.pranithsandaruwan.shop
     path: /
-- alterId: 0
-  cipher: auto
-  name: 0|🇸🇬6 |  1.5MB/s
-  port: 3683
-  server: 1387ebdd-su7b40-su6828-eme.b.fosant.com
-  tls: false
-  type: vmess
-  uuid: 16d93f14-af0e-11ee-8ebe-f23c93136cb3
-- cipher: aes-256-cfb
-  name: 0|🇸🇬7 |  5.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 46.137.227.253
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇸🇬8 |  2.7MB/s
+  network: tcp
+  port: 10778
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: test123.zlqhdns.top
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 01 | 1x SG
-  password: 7e637643-abd8-4133-9bb0-1cf2ba47849c
+  name: 2|🇸🇬新加坡 01 | 1x SG
+  password: c9c4a56a-9199-4767-b2d0-3adc2be62511
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 02 | 1x SG
-  password: 7e637643-abd8-4133-9bb0-1cf2ba47849c
+  name: 2|🇸🇬新加坡 02 | 1x SG
+  password: c9c4a56a-9199-4767-b2d0-3adc2be62511
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 03 | 1x SG
-  password: 7e637643-abd8-4133-9bb0-1cf2ba47849c
+  name: 2|🇸🇬新加坡 03 | 1x SG
+  password: c9c4a56a-9199-4767-b2d0-3adc2be62511
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 10|Hysteria 🇸🇬 @v2meowcf
+- name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
   server: 146.19.100.138
@@ -98,7 +135,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 10|新加坡
+- name: 11|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
   server: sg3.eyucdn.xyz
@@ -106,7 +143,7 @@ proxies:
   sni: sg3.eyucdn.xyz
   tls: false
   type: hysteria2
-- name: '10|Hysteria 🇸🇬 @v2meowcf #1'
+- name: '11|Hysteria 🇸🇬 @v2meowcf #1'
   password: wSu8KVl38ul4t9a2eA5foAVaS9MR5U
   port: 443
   server: 103.195.189.54
@@ -116,7 +153,7 @@ proxies:
   type: hysteria2
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 11|🇸🇬 新加坡|@ripaojiedian
+  name: 12|🇸🇬 新加坡|@ripaojiedian
   password: bc2c6c43-ead0-422d-ae03-a211523a34e9
   port: 52134
   server: rk1.nynode0.cc
@@ -124,7 +161,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 11|🇸🇬 新加坡2|@ripaojiedian
+  name: 12|🇸🇬 新加坡2|@ripaojiedian
   password: sgg7vReHnfEtUtAsWFPeeFOSJ6Q3d9owYfCQSwQMPnk=
   port: 28187
   server: 45.80.181.77
@@ -132,21 +169,21 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 11|🇸🇬 狮城特殊|@ripaojiedian
+  name: 12|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 47.128.80.62
   tfo: false
   type: ss
-- name: 13|SG_speednode_0064
-  port: 10808
-  server: 13.229.89.254
+- name: 14|SG_speednode_0063
+  port: 59079
+  server: 13.212.192.240
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: ec131ead-e121-4468-934f-34e0c10175e9
-- name: 13|SG_speednode_0065
+  uuid: 694cc775-111f-41e5-8278-87fc2af28f5f
+- name: 14|SG_speednode_0065
   port: 21918
   server: 47.129.119.183
   skip-cert-verify: false
@@ -154,7 +191,7 @@ proxies:
   type: vless
   udp: true
   uuid: e8c06684-7fb7-4448-dcd7-468ef40a36f3
-- name: 13|SG_speednode_0066
+- name: 14|SG_speednode_0066
   port: 27465
   server: 13.212.99.165
   skip-cert-verify: false
@@ -162,7 +199,7 @@ proxies:
   type: vless
   udp: true
   uuid: 195cd2c0-bcdb-493d-8ef6-bd92bf30a71b
-- name: 13|SG_speednode_0067
+- name: 14|SG_speednode_0067
   port: 38235
   server: 47.129.9.168
   skip-cert-verify: false
@@ -170,7 +207,37 @@ proxies:
   type: vless
   udp: true
   uuid: 6f142f84-82ed-4dac-b2c2-0ee9945f4663
-- name: 13|SG_speednode_0071
+- name: 14|SG_speednode_0068
+  network: ws
+  port: 8443
+  server: 111.119.235.98
+  servername: sgp.cayuo.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a89981b0-8096-4bbc-8d24-da2330650c4b
+  ws-opts:
+    headers:
+      Host: sgp.cayuo.me
+    path: /bing
+- name: 14|SG_speednode_0069
+  port: 24163
+  server: 13.229.219.116
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d07c7e91-fdf7-4836-b8e0-46a83351b117
+- name: 14|SG_speednode_0070
+  port: 42368
+  server: 18.143.146.237
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 265d4b86-9172-4cc4-8875-accb0844c46f
+- name: 14|SG_speednode_0071
   network: ws
   port: 443
   server: 40.65.164.247
@@ -184,24 +251,3 @@ proxies:
     headers:
       Host: sgp.bashabo.me
     path: /bing
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇸🇬 新加坡 01 | 1x SG
-  password: 9cbe67f2-5ab7-47c9-accb-6e94146fef9b
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇸🇬 新加坡 02 | 1x SG
-  password: 9cbe67f2-5ab7-47c9-accb-6e94146fef9b
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇸🇬 新加坡 03 | 1x SG
-  password: 9cbe67f2-5ab7-47c9-accb-6e94146fef9b
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
