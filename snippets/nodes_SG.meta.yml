@@ -1,86 +1,52 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 97f50414-f346-40e2-bf4a-c8898af70d0b
+  password: 8620e4be-af1c-4a36-8e19-62d40c0a4c42
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 97f50414-f346-40e2-bf4a-c8898af70d0b
+  password: 8620e4be-af1c-4a36-8e19-62d40c0a4c42
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 97f50414-f346-40e2-bf4a-c8898af70d0b
+  password: 8620e4be-af1c-4a36-8e19-62d40c0a4c42
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇸🇬 新加坡 01 | 1x SG
-  password: 12c0e52a-7253-4876-add1-a12f7cd18ae9
+  password: 759dec69-9405-4c5d-a198-6274833aa659
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇸🇬 新加坡 02 | 1x SG
-  password: 12c0e52a-7253-4876-add1-a12f7cd18ae9
+  password: 759dec69-9405-4c5d-a198-6274833aa659
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇸🇬 新加坡 03 | 1x SG
-  password: 12c0e52a-7253-4876-add1-a12f7cd18ae9
+  password: 759dec69-9405-4c5d-a198-6274833aa659
   port: 36175
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 2|🇸🇬1 |  4.2MB/s
+  name: 2|🇸🇬1 |  6.0MB/s
   password: amazonskr05
   port: 443
-  server: 54.179.52.175
+  server: 47.129.51.201
   type: ss
-- cipher: aes-256-cfb
-  name: 2|🇸🇬2 |  5.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.0.50.161
-  type: ss
-- name: 2|🇸🇬3 |  4.3MB/s
-  password: 4657d049-1039-3c48-a194-a520909fe268
-  port: 17806
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x65.flybar.work
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: 2|🇸🇬4 |  2.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 46.137.227.253
-  type: ss
-- name: 2,14|SG_speednode_0061
-  network: ws
-  port: 8443
-  server: 111.119.235.98
-  servername: sgp.cayuo.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: a89981b0-8096-4bbc-8d24-da2330650c4b
-  ws-opts:
-    headers:
-      Host: sgp.cayuo.me
-    path: /bing
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 2,14|CN_speednode_0014
@@ -96,24 +62,35 @@ proxies:
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: aes-256-cfb
-  name: 2|🇸🇬7 |  5.7MB/s
+  name: 2|🇸🇬3 |  5.8MB/s
+  password: amazonskr05
+  port: 443
+  server: 52.76.47.112
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 2|🇸🇬11 |  6.2MB/s
+  network: tcp
+  port: 3683
+  server: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: f39baabc-ef78-11ef-b714-f23c93136cb3
+  ws-headers:
+    Host: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 2|🇸🇬5 |  6.1MB/s
   password: amazonskr05
   port: 443
   server: 54.169.64.13
   type: ss
-- alterId: '0'
-  cipher: auto
-  name: 2|🇸🇬8 |  5.0MB/s
-  network: tcp
-  port: '3683'
-  server: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
-  type: vmess
-  uuid: f39baabc-ef78-11ef-b714-f23c93136cb3
 - cipher: aes-256-cfb
-  name: 2|🇸🇬9 |  6.0MB/s
+  name: 2|🇸🇬6 |  6.0MB/s
   password: amazonskr05
   port: 443
-  server: 47.129.51.201
+  server: 3.0.50.161
   type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -129,50 +106,36 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-cfb
-  name: 2|🇸🇬11 |  2.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.254.9.107
-  type: ss
-- cipher: aes-256-cfb
-  name: 2|🇸🇬12 |  4.5MB/s
-  password: amazonskr05
-  port: 443
-  server: 54.169.188.214
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 2|🇸🇬13 |  2.7MB/s
+- name: 2,14|SG_speednode_0061
   network: ws
-  port: 23617
-  server: 17.mamamajd.site
+  port: 8443
+  server: 111.119.235.98
+  servername: sgp.cayuo.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a89981b0-8096-4bbc-8d24-da2330650c4b
+  ws-opts:
+    headers:
+      Host: sgp.cayuo.me
+    path: /bing
+- alterId: 0
+  cipher: auto
+  name: 2|🇸🇬10 |  3.9MB/s
+  network: tcp
+  port: 3683
+  server: 1387ebdd-su7b40-su6828-eme.b.fosant.com
   skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
-  uuid: 299fd587-63c1-36b7-813e-a3361680b99e
-  ws-opts:
-    headers:
-      Host: 17.mamamajd.site
-    path: /
-- cipher: aes-256-cfb
-  country: 🇺🇸US
-  delay: 1414
-  name: 2|🇸🇬14 |  6.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 47.129.202.70
-  type: ss
-- cipher: aes-256-cfb
-  name: 2|🇸🇬15 |  5.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.140.70.168
-  type: ss
+  uuid: 16d93f14-af0e-11ee-8ebe-f23c93136cb3
+  ws-headers:
+    Host: 1387ebdd-su7b40-su6828-eme.b.fosant.com
+  ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇸🇬16 |  5.3MB/s
+  name: 2|🇸🇬12 |  5.3MB/s
   network: tcp
   port: 10778
   reality-opts:
@@ -182,33 +145,6 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: '0'
-  cipher: auto
-  name: 2|🇸🇬19 |  6.3MB/s
-  network: tcp
-  port: '3683'
-  server: 1387ebdd-su7b40-su6828-eme.b.fosant.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 16d93f14-af0e-11ee-8ebe-f23c93136cb3
-  ws-headers:
-    Host: 1387ebdd-su7b40-su6828-eme.b.fosant.com
-  ws-path: /
-- name: 2,14|US_speednode_0079
-  network: ws
-  port: 80
-  server: 170.114.45.6
-  servername: free.pranithsandaruwan.shop
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: d9074e14-c4e4-4e58-8fff-3727e83af868
-  ws-opts:
-    headers:
-      Host: free.pranithsandaruwan.shop
-    path: /
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
