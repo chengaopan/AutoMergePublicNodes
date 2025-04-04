@@ -1,46 +1,41 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 01 | 1x HK
-  password: 8620e4be-af1c-4a36-8e19-62d40c0a4c42
+  password: 0048ab9a-9bb9-441e-80ab-3e13bccbe0bf
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 8620e4be-af1c-4a36-8e19-62d40c0a4c42
+  password: 0048ab9a-9bb9-441e-80ab-3e13bccbe0bf
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 01 | 1x HK
-  password: 759dec69-9405-4c5d-a198-6274833aa659
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 759dec69-9405-4c5d-a198-6274833aa659
+  password: 53ef751a-7a5a-4823-9c60-d2e8d1bb43d8
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0035
-  network: tcp
-  port: 32055
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
-  skip-cert-verify: true
+- client-fingerprint: randomized
+  flow: ''
+  mode: ''
+  name: 2|🇬🇧1 |  5.4MB/s
+  network: ws
+  port: 443
+  server: 172.66.46.247
+  servername: MiSTliNK-CL9.pAgEs.Dev
   tls: true
   type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: false
+  uuid: 321cc007-bb85-41c9-b686-1f45cf5174e0
+  ws-opts:
+    headers:
+      Host: mistlink-cl9.pages.dev
+    path: /ERlnnsHzyLczPW3c?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 2,14|CN_speednode_0029
@@ -57,25 +52,13 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧3 |  5.2MB/s
+  name: 2|🇬🇧3 |  2.4MB/s
   network: tcp
-  port: 14659
+  port: 49699
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧4 |  5.8MB/s
-  network: tcp
-  port: 35311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
@@ -87,3 +70,34 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 12|🇬🇧 英国|@ripaojiedian
+  password: QIXWUPZT9O5EUEWK
+  port: 19014
+  server: 206.245.211.24
+  tfo: false
+  type: ss
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 12|🇬🇧 英国2|@ripaojiedian
+  password: 5U3COGGRJPO2DQNF
+  port: 19001
+  server: 206.245.211.11
+  tfo: false
+  type: ss
+- name: 14|GB_speednode_0050
+  password: '!!str 74260700211203800'
+  port: 443
+  server: powerful-grackle.shiner427.skin
+  skip-cert-verify: false
+  sni: powerful-grackle.shiner427.skin
+  type: trojan
+  udp: true
+- name: 14|GB_speednode_0051
+  password: '!!str 74260700211203800'
+  port: 443
+  server: powerful-grackle.shiner427.skin
+  skip-cert-verify: false
+  type: trojan
+  udp: true
