@@ -1,34 +1,81 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 4e5c75db-2b9f-4f42-9d8f-ed48674e618c
+  password: dc3a793b-468c-4b65-8785-6eb4d61bed5d
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 4e5c75db-2b9f-4f42-9d8f-ed48674e618c
+  password: dc3a793b-468c-4b65-8785-6eb4d61bed5d
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国 03 | 1x US Washington
-  password: 4e5c75db-2b9f-4f42-9d8f-ed48674e618c
+  password: dc3a793b-468c-4b65-8785-6eb4d61bed5d
   port: 36215
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国 01 | 1x US Los Angeles
+  password: 4cec3877-bcec-4396-a241-0512a98a8c21
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 4cec3877-bcec-4396-a241-0512a98a8c21
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国 03 | 1x US Washington
+  password: 4cec3877-bcec-4396-a241-0512a98a8c21
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 2|🇺🇸2 |  5.6MB/s
+  network: ws
+  port: 422
+  server: ced6ed07-submo0-sy5h80-37m3.fmt-us.sghuawei.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3804b1c6-0600-11ee-94af-f23c93141fad
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
 - cipher: aes-256-cfb
-  name: 1|🇺🇸2 |  2.8MB/s
+  name: 2|🇺🇸3 |  4.3MB/s
   password: amazonskr05
   port: 443
-  server: 34.217.15.41
+  server: 35.87.29.54
   type: ss
 - alterId: 2
   cipher: auto
-  name: 1|🇺🇸19 |  5.6MB/s
+  name: 2|🇺🇸5 |  2.4MB/s
+  network: ws
+  port: 422
+  server: dd7f3b11-submo0-sy5h80-37m3.fmt2-us.sghuawei.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 3804b1c6-0600-11ee-94af-f23c93141fad
+  ws-headers:
+    Host: webrtcpunch.video.qq.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 2|🇺🇸18 |  5.7MB/s
   network: ws
   port: 422
   server: 12955d58-submo0-su9w3p-4mce.fmt-us.sghuawei.com
@@ -39,89 +86,55 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸20 |  5.8MB/s
-  network: ws
-  port: 422
-  server: ca21ce07-submo0-su9xu5-1phl.fmt2-us.sghuawei.com
-  tls: false
-  type: vmess
-  uuid: 0aed82ca-fd08-11ef-8cf9-f23c93136cb3
-  ws-opts:
-    headers:
-      Host: webrtcpunch.video.qq.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸24 |  2.2MB/s
-  network: ws
-  port: 422
-  server: c5c81482-submo0-su9xu5-1phl.fmt-us.sghuawei.com
-  tls: false
-  type: vmess
-  uuid: 0aed82ca-fd08-11ef-8cf9-f23c93136cb3
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: '2'
-  cipher: auto
-  name: 1|🇺🇸25 |  5.1MB/s
-  network: ws
-  port: '30807'
-  server: v7.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v7.heduian.link
-    path: /oooo
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸27 |  4.3MB/s
-  network: ws
-  port: 422
-  server: c7bd4bf3-submo0-sv7oxj-9zm8.fmt2-us.sghuawei.com
-  tls: false
-  type: vmess
-  uuid: 583509cc-8c38-11ef-9bc6-f23c93136cb3
-  ws-opts:
-    headers:
-      Host: webrtcpunch.video.qq.com
-    path: /
-- allowInsecure: ''
-  name: 1|🇺🇸32 |  5.3MB/s
-  network: tcp
-  password: telegram-id-directvpn
-  port: 22222
-  server: 35.169.150.100
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
 - cipher: aes-256-cfb
-  name: 1|🇺🇸33 |  4.8MB/s
+  name: 2|🇺🇸27 |  4.3MB/s
   password: amazonskr05
   port: 443
-  server: 35.94.124.230
+  server: 54.218.67.209
   type: ss
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 1|🇺🇸38 |  5.7MB/s
-  network: ws
-  port: 422
-  server: 5509f5ae-submo0-svbnjs-c618.fmt-us.sghuawei.com
+  name: 2|🇺🇸28 |  2.2MB/s
+  network: tcp
+  port: 32977
+  server: 120.232.153.41
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 1e0f519c-da50-11ef-baa9-f23c93141fad
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.41
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸29 |  5.5MB/s
+  network: ws
+  port: 5210
+  server: 7f93c487-sub0g0-sv11pd-1g8k0.losa.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d4018e28-e328-11ed-98a7-f23c913c8d2b
+  ws-headers:
+    Host: 7f93c487-sub0g0-sv11pd-1g8k0.losa.plebai.net
+  ws-path: /
+- allowInsecure: ''
+  name: 2|🇺🇸31 |  5.7MB/s
+  network: ws
+  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
+  port: 443
+  server: 104.21.96.1
+  skip-cert-verify: false
+  sni: 1g.890699.xyZ
+  tls: true
+  type: trojan
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+      Host: 1g.890699.xyz
+    path: /lXENb74xF4ylXngZ
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国|@ripaojiedian
+  name: 12|🇺🇸 美国|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -133,7 +146,7 @@ proxies:
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国2|@ripaojiedian
+  name: 12|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -143,24 +156,3 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国 01 | 1x US Los Angeles
-  password: 8d0bbe14-7268-4e30-9dea-d083e6789d46
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 8d0bbe14-7268-4e30-9dea-d083e6789d46
-  port: 31213
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国 03 | 1x US Washington
-  password: 8d0bbe14-7268-4e30-9dea-d083e6789d46
-  port: 31215
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
