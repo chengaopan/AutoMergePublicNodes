@@ -1,48 +1,41 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇨🇦 加拿大 01 | 1x CA
+  password: 4e36d6c6-0b88-488e-b26c-196203d7570d
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦加拿大 01 | 1x CA
+  password: 348fd445-3449-4e66-b495-8c9f964dc617
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  name: 0|🇨🇦1 |  4.4MB/s
+  name: 2|🇨🇦1 |  2.8MB/s
   password: 2429bee3-e0c1-47dd-b420-75e6512b184b
   port: 30300
   server: 132.145.105.88
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: 0|🇨🇦2 |  5.9MB/s
-  network: ws
-  port: 443
-  server: 8.222.157.20
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nl.ylka.dpdns.org
-    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇨🇦3 |  1.1MB/s
+  name: 2|🇨🇦2 |  1.3MB/s
   network: tcp
   port: 16011
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
+  server: gy01.hunheiydd.xyz
   servername: www.amazon.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: 88e3dcac-cedb-4e24-b13b-49334e442f76
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 13|CA_speednode_0001
+  name: 14|CA_speednode_0001
   port: 42557
   reality-opts:
     public-key: 9pG_yCinyMylCDQVtADAZELH1vlb5PGz_MZw8dmYZxY
@@ -54,10 +47,3 @@ proxies:
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇨🇦加拿大 01 | 1x CA
-  password: 2d1fa2ab-b720-4982-bbb6-fafb65cc2c05
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
