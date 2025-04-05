@@ -1,52 +1,22 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇩🇪 德国 01 | 1x DE
-  password: c540d85a-01b8-4a0d-a4d7-86794fbe70a0
+  password: 605a9df8-2d5f-4a98-9ef7-2d03c586f7b7
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 1|🇩🇪1 |  3.8MB/s
-  network: ws
-  port: 23616
-  server: 16.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪德国 01 | 1x DE
+  password: a3e7e9d4-71b1-4ba9-bb31-fec0da09b19d
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: 8a083bdc-3c6c-3fd6-9738-c75b3445e075
-  ws-opts:
-    headers:
-      Host: 16.mamamajd.site
-    path: /
-- auth: 18463200c271aa6d
-  name: 1|🇩🇪2 |  2.6MB/s
-  obfs: salamander
-  obfs-password: 6c80ade6
-  password: 18463200c271aa6d
-  port: 443
-  server: 45.63.116.113
-  skip-cert-verify: true
-  sni: vkvd127.mycdn.me
-  type: hysteria2
-- name: 1|🇩🇪3 |  5.6MB/s
-  network: ws
-  port: 8080
-  server: 45.131.4.73
-  tls: false
-  type: vless
-  udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /
 - client-fingerprint: safari
   flow: xtls-rprx-vision
   mode: ''
-  name: 1|🇩🇪4 |  4.9MB/s
+  name: 2|🇩🇪1 |  1.6MB/s
   network: ''
   port: 443
   server: 204.10.194.78
@@ -55,9 +25,24 @@ proxies:
   type: vless
   udp: false
   uuid: d21a2d0c-6872-457f-93f2-069d5167a8fc
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 2|🇩🇪2 |  5.5MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: YYvLeafd75AcMSA_X_zbD2Pviwe5FLvvXVmPZ3s87kU
+    short-id: a9c9f2
+  server: 80.240.31.187
+  servername: zula.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: 9e003436-1354-4510-8dd6-5834dc1e7829
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇩🇪5 |  1.6MB/s
+  name: 2|🇩🇪3 |  5.2MB/s
   network: tcp
   port: 58031
   reality-opts:
@@ -67,87 +52,12 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: randomized
-  flow: ''
-  mode: ''
-  name: 1|🇩🇪6 |  5.9MB/s
-  network: ws
-  port: 443
-  server: bestttivpn.pages.dev
-  servername: BEStttIvpN.PAgeS.Dev
-  tls: true
-  type: vless
-  udp: false
-  uuid: 446a2b30-b893-4ef6-89c1-55666b6ba7a0
-  ws-opts:
-    headers:
-      Host: bestttivpn.pages.dev
-    path: /op4It75rObKKRHcw?ed=2560
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇩🇪7 |  5.9MB/s
-  network: ws
-  port: 80
-  server: 45.131.5.27
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳@WangCai2
-- name: 1|🇩🇪8 |  4.8MB/s
-  network: ws
-  port: 80
-  server: 45.131.5.145
-  servername: gozargah.validbv7996.ir
-  tls: false
-  type: vless
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳 @MxlShare@WangCai2
-- name: 1|🇩🇪9 |  2.6MB/s
-  network: ws
-  port: 80
-  server: 45.131.5.164
-  tls: false
-  type: vless
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 1|🇩🇪10 |  3.4MB/s
-  network: tcp
-  port: 2089
-  reality-opts:
-    public-key: bvEBes1y2n6327dEgJyZTR6Xz_EuyfLdkEX7DxWGFFg
-    short-id: e3c5c005cae07eb8
-  server: 23.88.62.209
-  servername: refersion.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 7a24dbf2-455a-480e-ae03-f99d436d43c6
-  ws-opts:
-    headers:
-      Host: 'JOKERRVPNTelegram :'
-    path: ''
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇩🇪德国 01 | 1x DE
-  password: 91b9ec03-f16a-4ff0-abc0-4b3e12463aeb
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+- name: 2|🇩🇪4 |  3.2MB/s
+  password: 3c5783e9-884b-40cf-a992-bf6f6bbea149
+  port: 43583
+  server: aafrtpfxr.del01i9zjfegelp.5xfsur8v62.gosdk.xyz
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - name: 10|(@VmessProtocol)ای ی  ت ای  🇩🇪
   password: b099dc75-799b-4c23-b241-48a797259359
   port: 443
