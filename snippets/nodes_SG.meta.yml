@@ -1,79 +1,43 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 8440a364-2236-4772-9215-06a5a271548f
+  password: 1bbb6576-1015-4b45-a333-d84ba0c86c1e
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 8440a364-2236-4772-9215-06a5a271548f
+  password: 1bbb6576-1015-4b45-a333-d84ba0c86c1e
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 8440a364-2236-4772-9215-06a5a271548f
+  password: 1bbb6576-1015-4b45-a333-d84ba0c86c1e
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 01 | 1x SG
-  password: aa0de65e-de3e-472e-9c4d-6f7142518d2c
-  port: 36171
-  server: free.2weradf.xyz
+- cipher: aes-256-cfb
+  country: 🇺🇸US
+  delay: 2869
+  name: 1|🇸🇬1 |  1.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 47.129.230.32
   type: ss
+- name: 1|🇸🇬2 |  1.8MB/s
+  password: myszy28811
+  port: 28811
+  server: pipi.myddns.me
+  type: socks5
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 02 | 1x SG
-  password: aa0de65e-de3e-472e-9c4d-6f7142518d2c
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 03 | 1x SG
-  password: aa0de65e-de3e-472e-9c4d-6f7142518d2c
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 2|🇸🇬1 |  6.0MB/s
-  password: c0b9ef46-bd16-489b-a40e-ca1494196fa8
-  port: 45637
-  server: gy.tangu.win
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: 2|🇸🇬2 |  5.5MB/s
-  port: 3681
-  server: e569ecc3-submo0-sudpdj-d5nv.c.volczijie.com
-  tls: false
-  type: vmess
-  uuid: a93ae9ba-091d-11f0-8d46-f23c9313b177
+  username: myszy
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0010
-  network: tcp
-  port: 44003
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0013
+  name: 1,13|CN_speednode_0013
   network: tcp
   port: 56127
   reality-opts:
@@ -86,16 +50,23 @@ proxies:
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: aes-256-cfb
-  name: 2|🇸🇬5 |  4.0MB/s
+  name: 1|🇸🇬4 |  6.1MB/s
   password: amazonskr05
   port: 443
-  server: 13.250.55.223
+  server: 3.0.50.161
+  tfo: false
   type: ss
-- alterId: '0'
+- cipher: aes-256-cfb
+  name: 1|🇸🇬5 |  3.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.179.52.175
+  type: ss
+- alterId: 0
   cipher: auto
-  name: 2|🇸🇬8 |  2.0MB/s
+  name: 1|🇸🇬6 |  2.7MB/s
   network: tcp
-  port: '3683'
+  port: 3683
   server: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
   skip-cert-verify: true
   tls: false
@@ -104,39 +75,21 @@ proxies:
   ws-headers:
     Host: b268cf3c-su7xc0-swx10p-cw9v.b.fosant.com
   ws-path: /
-- name: 2,14|US_speednode_0035
-  network: ws
-  port: 80
-  server: 170.114.45.6
-  servername: free.pranithsandaruwan.shop
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: d9074e14-c4e4-4e58-8fff-3727e83af868
-  ws-opts:
-    headers:
-      Host: free.pranithsandaruwan.shop
-    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇸🇬9 |  6.4MB/s
+  name: 1,13|CN_speednode_0010
   network: tcp
-  port: 10778
+  port: 44003
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: test123.zlqhdns.top
+  server: csuzhou01.1cooldns.com
   servername: www.nvidia.com
+  skip-cert-verify: true
   tls: true
   type: vless
+  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-cfb
-  name: 2|🇸🇬10 |  6.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.250.61.152
-  type: ss
-- name: 11|Hysteria 🇸🇬 @v2meowcf
+- name: 10|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
   server: 146.19.100.138
@@ -144,7 +97,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 11|新加坡
+- name: 10|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
   server: sg3.eyucdn.xyz
@@ -152,7 +105,7 @@ proxies:
   sni: sg3.eyucdn.xyz
   tls: false
   type: hysteria2
-- name: '11|Hysteria 🇸🇬 @v2meowcf #1'
+- name: '10|Hysteria 🇸🇬 @v2meowcf #1'
   password: wSu8KVl38ul4t9a2eA5foAVaS9MR5U
   port: 443
   server: 103.195.189.54
@@ -160,19 +113,53 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 12|🇸🇬 新加坡2|@ripaojiedian
-  password: sgg7vReHnfEtUtAsWFPeeFOSJ6Q3d9owYfCQSwQMPnk=
-  port: 28187
-  server: 45.80.181.77
+  name: 11|🇸🇬 新加坡|@ripaojiedian
+  port: 4135
+  server: 7ea30b67-submo0-t23v18-6wpo.d.volczijie.com
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: aada003a-bc20-11ee-8ebe-f23c93136cb3
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 12|🇸🇬 狮城特殊|@ripaojiedian
+  name: 11|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 52.76.47.112
+  server: 13.250.61.152
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 12|新加坡|@ripaojiedian
+  network: tcp
+  port: '4135'
+  server: 7ea30b67-submo0-t23v18-6wpo.d.volczijie.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aada003a-bc20-11ee-8ebe-f23c93136cb3
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇸🇬 新加坡 01 | 1x SG
+  password: a0f5cc68-1f78-41b7-b375-f8190ed0c266
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇸🇬 新加坡 02 | 1x SG
+  password: a0f5cc68-1f78-41b7-b375-f8190ed0c266
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇸🇬 新加坡 03 | 1x SG
+  password: a0f5cc68-1f78-41b7-b375-f8190ed0c266
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true

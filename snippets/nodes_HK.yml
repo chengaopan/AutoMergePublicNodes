@@ -1,99 +1,33 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 02 | 1x HK
-  password: 8440a364-2236-4772-9215-06a5a271548f
+  password: 1bbb6576-1015-4b45-a333-d84ba0c86c1e
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: 8440a364-2236-4772-9215-06a5a271548f
+  password: 1bbb6576-1015-4b45-a333-d84ba0c86c1e
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 02 | 1x HK
-  password: aa0de65e-de3e-472e-9c4d-6f7142518d2c
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
-  password: aa0de65e-de3e-472e-9c4d-6f7142518d2c
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alterId: 2
-  cipher: auto
-  name: 2|🇭🇰2 |  3.0MB/s
-  network: ws
-  port: 80
-  server: 55338e5a-sub0g0-ta5nd4-e06r.hk.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 861726bb-c61a-b0e0-99fa-5ddfdcf21902
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 2|🇭🇰4 |  2.9MB/s
-  network: ws
-  port: 80
-  server: ddd1601b-sub0g0-tax87j-fxtw.hgc1.tcpbbr.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c5437726-aa85-3ab0-f5ed-a62156a904f9
-  ws-headers:
-    Host: broadcastlv.chat.bilibili.com
-  ws-path: /
-- alterId: 0
-  cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰8 |  1.0MB/s
-  password: 2be0c954-4291-45ea-b47d-ca713180550b
-  port: 52612
-  server: hk02.x.quickcht3.club
-  skip-cert-verify: true
-  tls: true
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 2|🇭🇰15 |  3.5MB/s
+  client-fingerprint: chrome
+  name: 11|🇭🇰 香港|@ripaojiedian
   port: 4136
-  server: b3597e57-submo0-suc86w-7yd9.d.volczijie.com
+  server: 7ea30b67-submo0-t23v18-6wpo.d.volczijie.com
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: 7f84fa90-9f44-11ef-ae1e-f23c93141fad
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 12|🇭🇰 香港|@ripaojiedian
-  password: 2EJ0PUVXQ58KR0VG
-  port: 15012
-  server: 156.245.190.21
-  tfo: false
-  type: ss
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 12|🇭🇰 香港2|@ripaojiedian
-  password: Sj10bnYDe7w6V29E
-  plugin: obfs
-  plugin-opts:
-    host: 5f981bce46.m.ctrip.com
-    mode: http
-  port: 10001
-  server: south.inmysecretlife.xyz
-  tfo: false
-  type: ss
+  uuid: aada003a-bc20-11ee-8ebe-f23c93136cb3
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港5|@ripaojiedian
+  name: 11|🇭🇰 香港2|@ripaojiedian
   port: 41002
   server: 120.232.153.40
   skip-cert-verify: false
@@ -103,7 +37,17 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 13|香港5|@ripaojiedian
+  name: 12|香港|@ripaojiedian
+  network: tcp
+  port: '4136'
+  server: 7ea30b67-submo0-t23v18-6wpo.d.volczijie.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: aada003a-bc20-11ee-8ebe-f23c93136cb3
+- alterId: 0
+  cipher: auto
+  name: 12|香港2|@ripaojiedian
   network: tcp
   port: '41002'
   server: 120.232.153.40
@@ -111,3 +55,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇭🇰 香港 02 | 1x HK
+  password: a0f5cc68-1f78-41b7-b375-f8190ed0c266
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇭🇰 香港住宅IP 03 | 1x HK
+  password: a0f5cc68-1f78-41b7-b375-f8190ed0c266
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
