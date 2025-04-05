@@ -1,43 +1,36 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: 17701ea0-9fd8-4639-b005-490c21da838d
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: ab5a1425-d596-4394-bcae-dc885f7f1ed8
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: ab5a1425-d596-4394-bcae-dc885f7f1ed8
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: 9e518e72-040f-4cd7-91b5-121ffbaa5ce1
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 17701ea0-9fd8-4639-b005-490c21da838d
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 9e518e72-040f-4cd7-91b5-121ffbaa5ce1
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 1|🇬🇧1 |  1.5MB/s
-  network: tcp
-  port: 22069
-  server: 109.107.159.69
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 361427b1-5cf9-4ae6-bd1b-5dbf99a21b61
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧2 |  3.3MB/s
-  network: tcp
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   mode: ''
-  name: 1|🇬🇧3 |  5.1MB/s
+  name: 2|🇬🇧1 |  3.1MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -56,25 +49,40 @@ proxies:
         : @JOKERRVPN -JOKERRVPN : @JOKERRVPN -JOKERRVPN : @JOKERRVPN -JOKERRVPN :
         @JOKERRVPN -JOKERRVPN : @JOKERRVPN'
     path: ''
-- name: 1|🇬🇧4 |  5.3MB/s
-  network: ws
-  port: 80
-  server: 45.131.4.116
-  tls: false
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0023
+  network: tcp
+  port: 65053
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.amazon.com
+  skip-cert-verify: true
+  tls: true
   type: vless
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳 @MxlShare@WangCai2
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧3 |  3.9MB/s
+  network: tcp
+  port: 49699
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 1|🇬🇧5 |  5.8MB/s
+  name: 2|🇬🇧4 |  5.3MB/s
   network: ws
   port: 80
-  server: 45.131.5.147
-  servername: gozargah.validbv7996.ir
+  server: 45.131.5.182
+  servername: ''
   tls: false
   type: vless
   udp: false
@@ -82,24 +90,20 @@ proxies:
   ws-opts:
     headers:
       Host: gozargah.validbv7996.ir
-    path: /Telegram🇨🇳@WangCai2/?ed=2560
-- client-fingerprint: random
-  flow: ''
-  mode: ''
-  name: 1|🇬🇧6 |  1.5MB/s
-  network: ws
-  port: 443
-  server: 104.18.8.74
-  servername: en.kljasdfiaosdf92-asdjlkfhasdf-asdfa.li
+    path: /Telegram🇨🇳@WangCai2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧5 |  4.5MB/s
+  network: tcp
+  port: 32055
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.amazon.com
   tls: true
   type: vless
-  udp: false
-  uuid: ffbdab9b-f330-4588-a712-39f6f2052dd7
-  ws-opts:
-    headers:
-      Host: en.kljasdfiaosdf92-asdjlkfhasdf-asdfa.li
-    path: /admin
-- name: 10|Hysteria 🇬🇧 @v2meowcf
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -107,17 +111,3 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰香港 01 | 1x HK
-  password: 2f3cf3a2-4223-4b6a-9032-e46ab2c664ae
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇬🇧英国家宽 01 | 1x UK
-  password: 2f3cf3a2-4223-4b6a-9032-e46ab2c664ae
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
