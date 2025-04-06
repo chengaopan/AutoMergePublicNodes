@@ -1,15 +1,36 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: 25788c04-a98c-4ff8-9fe1-a70cb6582d25
+  password: d0831493-72ae-4b9a-bd29-744dccad85ca
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 1|🇨🇦1 |  1.2MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦加拿大 01 | 1x CA
+  password: cfaa59e6-43b7-4915-a82a-82f0b1685846
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 2|🇨🇦1 |  1.3MB/s
   network: ws
-  port: 443
-  server: 217.163.76.97
+  port: 30012
+  server: 211.218.223.130
+  servername: cb.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: cb.dong2025.cfd
+    path: /?ed=2560
+- name: 2|🇨🇦2 |  5.2MB/s
+  network: ws
+  port: 10443
+  server: 220.73.75.74
   servername: cb.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -21,31 +42,33 @@ proxies:
       host: cb.dong2025.cfd
     path: /?ed=2560
 - auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 1|🇨🇦2 |  1.6MB/s
+  name: 2|🇨🇦3 |  1.4MB/s
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
   server: 192.18.145.7
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: 1|🇨🇦3 |  1.2MB/s
-  network: ws
-  port: 443
-  server: 160.79.105.99
-  servername: cb.dong2025.cfd
+- auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  name: 2|🇨🇦4 |  3.9MB/s
+  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
+  port: 30300
+  server: 132.145.105.88
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cb.dong2025.cfd
-    path: /?ed=2560
-- name: 1|🇨🇦4 |  5.0MB/s
+  sni: www.bing.com
+  type: hysteria2
+- auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  name: 2|🇨🇦5 |  1.0MB/s
+  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
+  port: 54530
+  server: 40.233.64.188
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 2|🇨🇦6 |  5.8MB/s
   network: ws
   port: 443
-  server: uriah.ns.cloudflare.com
+  server: 135.84.76.115
   servername: cb.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -58,7 +81,7 @@ proxies:
     path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 13|CA_speednode_0001
+  name: 14|CA_speednode_0001
   port: 42557
   reality-opts:
     public-key: 9pG_yCinyMylCDQVtADAZELH1vlb5PGz_MZw8dmYZxY
@@ -70,10 +93,3 @@ proxies:
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇨🇦加拿大 01 | 1x CA
-  password: 26d5b43c-6245-49f2-95d1-ea4c5e67eddd
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true

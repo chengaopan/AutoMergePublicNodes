@@ -1,22 +1,48 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 01 | 1x HK
-  password: 25788c04-a98c-4ff8-9fe1-a70cb6582d25
+  password: d0831493-72ae-4b9a-bd29-744dccad85ca
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 25788c04-a98c-4ff8-9fe1-a70cb6582d25
+  password: d0831493-72ae-4b9a-bd29-744dccad85ca
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: cfaa59e6-43b7-4915-a82a-82f0b1685846
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: cfaa59e6-43b7-4915-a82a-82f0b1685846
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧1 |  4.4MB/s
+  network: tcp
+  port: 32055
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   mode: ''
-  name: 1|🇬🇧1 |  2.5MB/s
+  name: 2|🇬🇧2 |  1.6MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -35,57 +61,20 @@ proxies:
         : @JOKERRVPN -JOKERRVPN : @JOKERRVPN -JOKERRVPN : @JOKERRVPN -JOKERRVPN :
         @JOKERRVPN -JOKERRVPN : @JOKERRVPN'
     path: ''
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧2 |  5.2MB/s
-  network: tcp
-  port: 35311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1,13|CN_speednode_0023
-  network: tcp
-  port: 65053
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
-  skip-cert-verify: true
-  tls: true
+- name: 2|🇬🇧3 |  5.2MB/s
+  network: ws
+  port: 80
+  server: 45.131.4.131
+  servername: gozargah.validbv7996.ir
+  tls: false
   type: vless
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧4 |  5.0MB/s
-  network: tcp
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧5 |  3.3MB/s
-  network: tcp
-  port: 32055
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 10|Hysteria 🇬🇧 @v2meowcf
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /Telegram🇨🇳@WangCai2/?ed=2560
+- name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -95,7 +84,7 @@ proxies:
   type: hysteria2
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 11|🇬🇧 英国|@ripaojiedian
+  name: 12|🇬🇧 英国|@ripaojiedian
   password: 65ZLPN9MI8OTH07C
   port: 19005
   server: 206.245.211.15
@@ -103,23 +92,9 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 11|🇬🇧 英国2|@ripaojiedian
+  name: 12|🇬🇧 英国2|@ripaojiedian
   password: HW9RL3ZGBLLSO16R
   port: 19002
   server: 206.245.211.12
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰香港 01 | 1x HK
-  password: 26d5b43c-6245-49f2-95d1-ea4c5e67eddd
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇬🇧英国家宽 01 | 1x UK
-  password: 26d5b43c-6245-49f2-95d1-ea4c5e67eddd
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
