@@ -1,22 +1,34 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 1909e701-257a-4234-8766-37086284e637
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: 50d1f9b5-52e2-4ffd-a3fb-1fe7cbdf39f4
+  name: 0|🇨🇦 加拿大 01 | 1x CA
+  password: c709e062-037a-489d-884b-e2488e820546
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 2|🇨🇦1 |  1.3MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦加拿大 01 | 1x CA
+  password: 484a69eb-4f5f-4290-bd94-6fe4989843a0
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇨🇦1 |  1.5MB/s
+  network: tcp
+  port: 16011
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gy01.hunheiydd.xyz
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 2|🇨🇦2 |  4.4MB/s
   network: ws
-  port: 30012
-  server: 211.218.223.130
+  port: 39271
+  server: 221.153.42.212
   servername: cb.dong2025.cfd
   skip-cert-verify: true
   tls: true
@@ -25,50 +37,26 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: cb.dong2025.cfd
+      Host: cb.dong2025.cfd
     path: /?ed=2560
-- name: 2|🇨🇦2 |  5.2MB/s
-  network: ws
-  port: 10443
-  server: 220.73.75.74
-  servername: cb.dong2025.cfd
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: cb.dong2025.cfd
-    path: /?ed=2560
-- auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 2|🇨🇦3 |  1.4MB/s
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 192.18.145.7
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- auth: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  name: 2|🇨🇦4 |  3.9MB/s
-  password: 2429bee3-e0c1-47dd-b420-75e6512b184b
-  port: 30300
-  server: 132.145.105.88
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: 2|🇨🇦5 |  1.0MB/s
-  password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  port: 54530
-  server: 40.233.64.188
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- name: 2|🇨🇦6 |  5.8MB/s
+- name: 2|🇨🇦3 |  5.9MB/s
   network: ws
   port: 443
-  server: 135.84.76.115
+  server: 63.141.128.96
+  servername: cb.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: cb.dong2025.cfd
+    path: /?ed=2560
+- name: 2|🇨🇦4 |  2.5MB/s
+  network: ws
+  port: 443
+  server: 192.200.160.99
   servername: cb.dong2025.cfd
   skip-cert-verify: true
   tls: true
