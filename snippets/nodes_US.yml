@@ -1,53 +1,96 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 1180ce61-d8ff-48c7-9df0-6c500c887cc9
+  name: 0|🇺🇸美国 01 | 1x US Los Angeles
+  password: 6df394bd-6fb4-4d77-9e8d-7a48d12a12c3
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 6df394bd-6fb4-4d77-9e8d-7a48d12a12c3
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸美国 03 | 1x US Washington
+  password: 6df394bd-6fb4-4d77-9e8d-7a48d12a12c3
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 01 | 1x US Los Angeles
+  password: f0ecfc0f-94dc-4543-a20d-195d8dca11c9
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 1180ce61-d8ff-48c7-9df0-6c500c887cc9
+  name: 1|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: f0ecfc0f-94dc-4543-a20d-195d8dca11c9
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国 03 | 1x US Washington
-  password: 1180ce61-d8ff-48c7-9df0-6c500c887cc9
+  name: 1|🇺🇸 美国 03 | 1x US Washington
+  password: f0ecfc0f-94dc-4543-a20d-195d8dca11c9
   port: 36215
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 1|🇺🇸1 |  5.5MB/s
-  password: a2b5c31d-7c21-3abc-ab77-21c8b60ee6df
-  port: 20305
-  server: gy.58n.net
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸3 |  4.9MB/s
+  network: ws
+  port: 2087
+  server: lon2-dash.930.pp.ua
+  servername: lon2-dash.930.pp.ua
   skip-cert-verify: true
-  sni: z305.hongkongnode.top
-  type: trojan
-  udp: true
-- name: 1|🇺🇸8 |  5.7MB/s
-  password: a2b5c31d-7c21-3abc-ab77-21c8b60ee6df
-  port: 20308
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z308.hongkongnode.top
-  type: trojan
-  udp: true
-- allowInsecure: ''
-  name: 1|🇺🇸10 |  5.7MB/s
-  network: tcp
-  password: ef23ddd0-14c5-39c2-9880-af55ce892363
-  port: 52492
-  server: 142.171.162.85
-  skip-cert-verify: false
-  sni: t28.qifei.app
+  tfo: false
   tls: true
-  type: trojan
+  type: vmess
+  udp: true
+  uuid: bc86f949-7152-4367-92f5-7a11eacf9c9b
+  ws-opts:
+    headers:
+      Host: lon2-sub.930.pp.ua
+    path: /lon2-sub.930.pp.ua
+- alterId: 2
+  cipher: auto
+  name: 2|🇺🇸8 |  5.5MB/s
+  network: ws
+  port: 22643
+  server: 119.188.66.248
+  servername: zxjp-c.tkong.cc
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-c.tkong.cc
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸11 |  2.4MB/s
+  network: ws
+  port: 2096
+  server: lon2-dash.930.pp.ua
+  servername: lon2-dash.930.pp.ua
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: bc86f949-7152-4367-92f5-7a11eacf9c9b
+  ws-opts:
+    headers:
+      Host: lon2-sub.930.pp.ua
+    path: /lon2-sub.930.pp.ua
 - allowInsecure: ''
-  name: 1|🇺🇸21 |  2.2MB/s
+  name: 2|🇺🇸13 |  2.9MB/s
   network: ws
   password: 89c1aea7-4d0d-4013-b663-0f94a3e6bdbd
   port: 443
@@ -62,7 +105,7 @@ proxies:
     path: /T5yZBrY2Qkg2cThJQeJb
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸25 |  5.8MB/s
+  name: 2|🇺🇸29 |  5.4MB/s
   network: tcp
   port: 5228
   server: 65aa431e-sucv40-tcop2n-tl32.cu.plebai.net
@@ -73,27 +116,6 @@ proxies:
   ws-headers:
     Host: 65aa431e-sucv40-tcop2n-tl32.cu.plebai.net
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸美国 01 | 1x US Los Angeles
-  password: 56560022-b32f-4bc0-85e0-2fc6e17bc345
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 56560022-b32f-4bc0-85e0-2fc6e17bc345
-  port: 31213
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸美国 03 | 1x US Washington
-  password: 56560022-b32f-4bc0-85e0-2fc6e17bc345
-  port: 31215
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|🇺🇸 美国|@ripaojiedian

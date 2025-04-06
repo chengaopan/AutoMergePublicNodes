@@ -1,46 +1,70 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: 1180ce61-d8ff-48c7-9df0-6c500c887cc9
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 1180ce61-d8ff-48c7-9df0-6c500c887cc9
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 1|🇭🇰6 |  6.1MB/s
-  password: a2b5c31d-7c21-3abc-ab77-21c8b60ee6df
-  port: 20294
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z294.hongkongnode.top
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf
-  name: 1|🇭🇰11 |  2.3MB/s
-  password: asd123456
-  port: 8388
-  server: 103.149.183.61
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港 02 | 1x HK
-  password: 56560022-b32f-4bc0-85e0-2fc6e17bc345
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: 6df394bd-6fb4-4d77-9e8d-7a48d12a12c3
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港家宽 03 | 1x HK
-  password: 56560022-b32f-4bc0-85e0-2fc6e17bc345
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: 6df394bd-6fb4-4d77-9e8d-7a48d12a12c3
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: f0ecfc0f-94dc-4543-a20d-195d8dca11c9
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: f0ecfc0f-94dc-4543-a20d-195d8dca11c9
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 2|🇭🇰4 |  1.5MB/s
+  network: ws
+  port: 80
+  raw:
+    add: 7c780c82-sucv40-suruu8-8bem.hk3.p5pv.com
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: ca506e08-ce3d-5e5a-c128-6358caca15e5
+    net: ws
+    path: /
+    port: 80
+    ps: 🇭🇰 HK_154
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 7c780c82-sucv40-suruu8-8bem.hk3.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ca506e08-ce3d-5e5a-c128-6358caca15e5
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰6 |  2.1MB/s
+  port: 4138
+  server: 1e42c0d0-sudhc0-svtnto-ckzn.c.volczijie.com
+  tls: false
+  type: vmess
+  uuid: cbb15894-f6ad-11ef-afd8-f23c9313b177
 - cipher: aes-128-gcm
   client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
