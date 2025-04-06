@@ -1,23 +1,35 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 3987d45e-cc47-4ab1-aef7-1f6c3bdaf294
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: a47644af-e675-403c-ba0e-2a680c1cfb68
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇨🇦1 |  4.3MB/s
+  network: tcp
+  port: 16011
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - auth: 862e90e1-2f26-4506-b8b9-0adf20da05fc
-  name: 2|🇨🇦1 |  1.0MB/s
+  name: 0|🇨🇦2 |  1.1MB/s
   password: 862e90e1-2f26-4506-b8b9-0adf20da05fc
   port: 54530
   server: 40.233.64.188
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇨🇦加拿大 01 | 1x CA
+  password: 6454f09e-5dbd-4006-9573-d28f91ee5eb0
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇨🇦 加拿大 01 | 1x CA
+  password: 77b18910-2d5f-4002-8435-40c9278b893b
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
