@@ -1,77 +1,33 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: ab5a1425-d596-4394-bcae-dc885f7f1ed8
+  password: 7dfdf081-5c9d-43b5-babe-5400d310134c
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: ab5a1425-d596-4394-bcae-dc885f7f1ed8
+  password: 7dfdf081-5c9d-43b5-babe-5400d310134c
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 03 | 1x US Washington
-  password: ab5a1425-d596-4394-bcae-dc885f7f1ed8
+  password: 7dfdf081-5c9d-43b5-babe-5400d310134c
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 9e518e72-040f-4cd7-91b5-121ffbaa5ce1
-  port: 36211
-  server: free.2weradf.xyz
+- cipher: chacha20-ietf
+  name: 1|🇺🇸4 |  1.1MB/s
+  password: asd123456
+  port: 8388
+  server: 137.175.113.193
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 9e518e72-040f-4cd7-91b5-121ffbaa5ce1
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸 美国 03 | 1x US Washington
-  password: 9e518e72-040f-4cd7-91b5-121ffbaa5ce1
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - allowInsecure: ''
-  name: 2|🇺🇸11 |  5.9MB/s
-  network: ws
-  password: 2fec7227-9abe-46f2-af18-78302b836c45
-  port: 443
-  server: 172.67.200.238
-  skip-cert-verify: false
-  sni: 3s.890689.xyz
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 3s.890689.xyz
-    path: /XjTi1NYwi9A2bckpqdDoAgkondVWl
-- alterId: 0
-  cipher: auto
-  name: 2|🇺🇸22 |  1.2MB/s
-  network: ws
-  port: 2087
-  server: 172.67.189.27
-  servername: lon2-sub.930.pp.ua
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: bc86f949-7152-4367-92f5-7a11eacf9c9b
-  ws-opts:
-    headers:
-      Host: lon2-sub.930.pp.ua
-    path: /lon2-sub.930.pp.ua
-- allowInsecure: ''
-  name: 2|🇺🇸29 |  5.7MB/s
+  name: 1|🇺🇸10 |  5.2MB/s
   network: ws
   password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
   port: 443
@@ -85,7 +41,7 @@ proxies:
       Host: 1g.890699.xyz
     path: /lXENb74xF4ylXngZ
 - allowInsecure: ''
-  name: 2|🇺🇸34 |  2.5MB/s
+  name: 1|🇺🇸23 |  5.5MB/s
   network: ws
   password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
   port: 443
@@ -98,19 +54,27 @@ proxies:
     headers:
       Host: us6-02.890603.xyz
     path: /ILLcisbMYUd6MQzxVoMQ
-- cipher: chacha20-ietf
-  name: 2|🇺🇸36 |  1.3MB/s
-  password: asd123456
-  port: 8388
-  server: 137.175.113.193
-  type: ss
+- alpn:
+  - http%2F1.1
+  client-fingerprint: chrome
+  name: 1|🇺🇸37 |  1.7MB/s
+  network: ws
+  password: 0cda5f7e-cc55-4ff2-8ad8-268b9b99dd01
+  port: 443
+  server: 172.67.135.23
+  sni: uS6-16.890601.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: uS6-16.890601.xyz
+    path: /ILLcisbMYUd6MQzxVoMQ
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 12|🇺🇸 美国|@ripaojiedian
+  name: 11|🇺🇸 美国|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202504031266665-b2qPz9YET8.download.microsoft.com
+    host: 202504031266665-2FO2jW0pPK.download.microsoft.com
     mode: http
   port: 8776
   server: cn01.efan8867801.xyz
@@ -118,85 +82,51 @@ proxies:
   type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 12|🇺🇸 美国2|@ripaojiedian
+  name: 11|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202504031266665-b2qPz9YET8.download.microsoft.com
+    host: 202504031266665-2FO2jW0pPK.download.microsoft.com
     mode: http
   port: 8771
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 12|🇺🇸 美国3|@ripaojiedian
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,12|美国3|@ripaojiedian
   network: ws
-  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-  port: 443
-  server: us2a.88888007.xyz
+  port: '30807'
+  server: v7.heduian.link
+  servername: ''
   skip-cert-verify: false
-  sni: us2a.88888007.xyz
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: us2a.88888007.xyz
-    path: /92024db4-eadf-4cd1-b7e5-87d047d353f0
-- client-fingerprint: chrome
-  name: 12|🇺🇸 美国4|@ripaojiedian
-  network: ws
-  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-  port: 443
-  server: us3a.88888007.xyz
-  skip-cert-verify: false
-  sni: us3a.88888007.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: us3a.88888007.xyz
-    path: /92024db4-eadf-4cd1-b7e5-87d047d353f0
-- client-fingerprint: chrome
-  name: 12,13|美国5|@ripaojiedian
-  network: tcp
-  password: 3ffa664f-364a-4937-a314-1d9f02ad8458
-  port: 32001
-  server: lbso.bnnodeservice.com
-  skip-cert-verify: true
-  sni: pull-flv-t11.douyincdn.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 12|🇺🇸 美国6|@ripaojiedian
-  network: ws
-  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-  port: 443
-  server: us4a.88888007.xyz
-  skip-cert-verify: false
-  sni: us4a.88888007.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: us4a.88888007.xyz
-    path: /92024db4-eadf-4cd1-b7e5-87d047d353f0
-- name: 13|美国3|@ripaojiedian
-  network: ws
-  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-  port: 443
-  server: us2a.88888007.xyz
-  type: trojan
-  ws-opts:
-    path: '%2F92024db4-eadf-4cd1-b7e5-87d047d353f0'
-- name: 13|美国4|@ripaojiedian
-  network: ws
-  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-  port: 443
-  server: us3a.88888007.xyz
-  type: trojan
-  ws-opts:
-    path: '%2F92024db4-eadf-4cd1-b7e5-87d047d353f0'
-- name: 13|美国6|@ripaojiedian
-  network: ws
-  password: c97cf46e-1554-36cb-8b36-c3556b883dc4
-  port: 443
-  server: us4a.88888007.xyz
-  type: trojan
-  ws-opts:
-    path: '%2F92024db4-eadf-4cd1-b7e5-87d047d353f0'
+      Host: ocbc.com
+    path: /oooo
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 61476053-4e1f-44fd-be8b-e6049a7feafa
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 61476053-4e1f-44fd-be8b-e6049a7feafa
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸 美国 03 | 1x US Washington
+  password: 61476053-4e1f-44fd-be8b-e6049a7feafa
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
