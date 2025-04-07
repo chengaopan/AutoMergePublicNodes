@@ -1,8 +1,22 @@
 proxies:
-- name: 0|🇨🇦1 |  2.5MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇨🇦加拿大 01 | 1x CA
+  password: a2828d83-9796-48b6-9356-0e4ba6328568
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦 加拿大 01 | 1x CA
+  password: 2e18202f-1333-4596-b271-421ae2f8e1cb
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 2|🇨🇦1 |  5.6MB/s
   network: ws
   port: 443
-  server: steamdb.info
+  server: whatismyipaddress.com
   servername: zx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -13,10 +27,10 @@ proxies:
     headers:
       host: zx.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇨🇦2 |  5.2MB/s
+- name: 2|🇨🇦2 |  5.8MB/s
   network: ws
-  port: 443
-  server: rustam.ns.cloudflare.com
+  port: 8443
+  server: 138.2.235.224
   servername: zx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -25,12 +39,12 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: zx.ylka.dpdns.org
+      Host: zx.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇨🇦3 |  5.8MB/s
+- name: 2|🇨🇦3 |  5.6MB/s
   network: ws
   port: 443
-  server: moura.ns.cloudflare.com
+  server: uriah.ns.cloudflare.com
   servername: zx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -39,23 +53,9 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: zx.ylka.dpdns.org
+      Host: zx.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇨🇦4 |  1.4MB/s
-  network: ws
-  port: 443
-  server: ip.sb
-  servername: zx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇨🇦5 |  5.5MB/s
+- name: 2|🇨🇦4 |  5.5MB/s
   network: ws
   port: 443
   server: comicabc.com
@@ -69,22 +69,10 @@ proxies:
     headers:
       host: zx.ylka.dpdns.org
     path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇨🇦6 |  5.2MB/s
-  network: tcp
-  port: 16011
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0|🇨🇦7 |  2.6MB/s
+- name: 2|🇨🇦5 |  1.2MB/s
   network: ws
   port: 443
-  server: www.wto.org
+  server: ipinfo.in
   servername: zx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -93,47 +81,5 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: zx.ylka.dpdns.org
+      Host: zx.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇨🇦8 |  3.0MB/s
-  network: ws
-  port: 11211
-  server: 121.177.205.241
-  servername: zx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇨🇦9 |  5.5MB/s
-  network: ws
-  port: 443
-  server: www.udemy.com
-  servername: zx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: zx.ylka.dpdns.org
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: 55942fda-ff43-49cc-b8b3-50befb3e13c1
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇨🇦加拿大 01 | 1x CA
-  password: 0404c21b-c3e2-4c16-afb8-a75e6db7ac81
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
