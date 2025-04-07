@@ -1,46 +1,36 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: aa6ff14a-3abc-4073-b38e-c07014e1c669
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: aa6ff14a-3abc-4073-b38e-c07014e1c669
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 01 | 1x HK
-  password: 6b520aee-8648-43dc-b75a-f7e36d6592db
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 48e47241-579d-443d-af5c-82d6df5a63e5
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 6b520aee-8648-43dc-b75a-f7e36d6592db
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 48e47241-579d-443d-af5c-82d6df5a63e5
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|🇬🇧1 |  5.8MB/s
+- alterId: 2
+  cipher: auto
+  name: 1|🇬🇧1 |  4.8MB/s
   network: ws
-  port: 80
-  server: 45.131.4.210
+  port: 23613
+  server: 13.mamamajd.site
+  skip-cert-verify: true
   tls: false
-  type: vless
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  type: vmess
+  udp: true
+  uuid: 479412b4-406c-3292-937e-c5d3f596d21a
   ws-opts:
     headers:
-      Host: gozargah.validbv7996.ir
+      Host: 13.mamamajd.site
     path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧2 |  5.1MB/s
+  name: 1|🇬🇧2 |  1.9MB/s
   network: tcp
   port: 35311
   reality-opts:
@@ -50,50 +40,19 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧3 |  1.5MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇬🇧4 |  1.9MB/s
-  network: ws
-  port: 80
-  server: 45.131.4.126
-  tls: false
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰 香港 01 | 1x HK
+  password: 76a06abc-d6ba-42a3-b2de-7730d69c6a85
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
-  ws-opts:
-    headers:
-      Host: gozargah.validbv7996.ir
-    path: Telegram🇨🇳@WangCai2/?ed
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧5 |  1.4MB/s
-  network: tcp
-  port: 32055
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  name: 2,14|GB_speednode_0008
-  password: b19c4375-d847-4c40-9824-4767c88b5f38
-  port: 10200
-  server: www.ak-hk.top
-  skip-cert-verify: true
-  sni: www.ak-hk.top
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 76a06abc-d6ba-42a3-b2de-7730d69c6a85
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
   udp: true
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
@@ -119,3 +78,11 @@ proxies:
   server: 156.229.162.50
   tfo: false
   type: ss
+- name: 14|GB_speednode_0008
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10200
+  server: www.ak-hk.top
+  skip-cert-verify: true
+  sni: www.ak-hk.top
+  type: trojan
+  udp: true
