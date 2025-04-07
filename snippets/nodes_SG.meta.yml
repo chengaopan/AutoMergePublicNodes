@@ -1,26 +1,47 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 01 | 1x SG
-  password: bf8404f5-b409-4cbc-bcac-3e7aa87d6831
+  name: 0|🇸🇬 新加坡 01 | 1x SG
+  password: aa6ff14a-3abc-4073-b38e-c07014e1c669
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬 新加坡 02 | 1x SG
+  password: aa6ff14a-3abc-4073-b38e-c07014e1c669
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬 新加坡 03 | 1x SG
+  password: aa6ff14a-3abc-4073-b38e-c07014e1c669
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 01 | 1x SG
+  password: 6b520aee-8648-43dc-b75a-f7e36d6592db
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 02 | 1x SG
-  password: bf8404f5-b409-4cbc-bcac-3e7aa87d6831
+  name: 1|🇸🇬新加坡 02 | 1x SG
+  password: 6b520aee-8648-43dc-b75a-f7e36d6592db
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 03 | 1x SG
-  password: bf8404f5-b409-4cbc-bcac-3e7aa87d6831
+  name: 1|🇸🇬新加坡 03 | 1x SG
+  password: 6b520aee-8648-43dc-b75a-f7e36d6592db
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 1|🇸🇬1 |  1.2MB/s
+- name: 2|🇸🇬1 |  1.2MB/s
   network: ws
   port: 443
   server: abdullah.ns.cloudflare.com
@@ -37,7 +58,7 @@ proxies:
 - client-fingerprint: chrome
   flow: none
   mode: ''
-  name: 1|🇸🇬2 |  5.8MB/s
+  name: 2|🇸🇬2 |  5.8MB/s
   network: ws
   port: 2096
   server: 141.193.213.21
@@ -53,7 +74,7 @@ proxies:
 - client-fingerprint: chrome
   flow: none
   mode: ''
-  name: 1|🇸🇬3 |  6.0MB/s
+  name: 2|🇸🇬3 |  6.0MB/s
   network: ws
   port: 2096
   server: 141.193.213.20
@@ -66,27 +87,6 @@ proxies:
     headers:
       Host: premium.vkehi.shop
     path: '%2F'
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬 新加坡 01 | 1x SG
-  password: 7df77a0a-12ee-4e7b-9dea-223dd4c74e79
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬 新加坡 02 | 1x SG
-  password: 7df77a0a-12ee-4e7b-9dea-223dd4c74e79
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬 新加坡 03 | 1x SG
-  password: 7df77a0a-12ee-4e7b-9dea-223dd4c74e79
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
@@ -119,17 +119,3 @@ proxies:
   server: 13.212.241.11
   tfo: false
   type: ss
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 14|SG_speednode_0083
-  port: 443
-  server: 47.129.154.91
-  servername: android.google.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: e752cca9-18aa-4eaf-a6f6-79c375eee55d
