@@ -1,50 +1,83 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 3ce8e207-1314-49d3-871c-3e440592d172
+  password: 27d8bbae-98c3-4dc7-a97d-3775810ab194
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 3ce8e207-1314-49d3-871c-3e440592d172
+  password: 27d8bbae-98c3-4dc7-a97d-3775810ab194
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 3ce8e207-1314-49d3-871c-3e440592d172
+  password: 27d8bbae-98c3-4dc7-a97d-3775810ab194
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 01 | 1x SG
-  password: 70064b87-a48c-4123-b3c6-00c4d0856b61
-  port: 36171
-  server: free.2weradf.xyz
+- client-fingerprint: ''
+  flow: ''
+  grpc-opts:
+    grpc-service-name: 2055vless
+  mode: gun
+  name: 1|🇸🇬1 |  1.4MB/s
+  network: grpc
+  port: 6067
+  server: sg.foxmaster.ir
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: fbb9aca3-4a93-4d6f-a7f5-3e0c353181f8
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇸🇬2 |  6.1MB/s
+  network: tcp
+  port: 29877
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: aes-256-cfb
+  name: 1|🇸🇬3 |  2.9MB/s
+  password: 25612qazwsx
+  port: 25612
+  server: 18.142.181.4
   type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1,14|CN_speednode_0004
+  network: tcp
+  port: 56127
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 02 | 1x SG
-  password: 70064b87-a48c-4123-b3c6-00c4d0856b61
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 03 | 1x SG
-  password: 70064b87-a48c-4123-b3c6-00c4d0856b61
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: 1|🇸🇬5 |  5.5MB/s
+  port: 3681
+  server: 81a06ee9-suh6o0-sui06s-76vp.c.volczijie.com
+  tls: false
+  type: vmess
+  uuid: aad405ea-cdb9-11ee-883a-f23c93136cb3
 - client-fingerprint: chrome
   flow: none
   mode: ''
-  name: 2|🇸🇬1 |  1.9MB/s
+  name: 1|🇸🇬6 |  2.7MB/s
   network: ws
   port: 2096
   server: 141.193.213.21
@@ -57,20 +90,35 @@ proxies:
     headers:
       Host: premium.vkehi.shop
     path: '%2F'
-- cipher: aes-256-cfb
-  name: 2|🇸🇬2 |  5.8MB/s
-  password: 25612qazwsx
-  port: 25612
-  server: 18.142.181.4
-  type: ss
 - auth: 493ed7e0-4657-4ec2-818f-e600c47c14fa
-  name: 2|🇸🇬3 |  4.6MB/s
+  name: 1|🇸🇬7 |  4.5MB/s
   password: 493ed7e0-4657-4ec2-818f-e600c47c14fa
   port: 20000
   server: 168.138.184.187
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇸🇬 新加坡 01 | 1x SG
+  password: 034a58bb-286c-4089-95e0-e4df40dd4548
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇸🇬 新加坡 02 | 1x SG
+  password: 034a58bb-286c-4089-95e0-e4df40dd4548
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇸🇬 新加坡 03 | 1x SG
+  password: 034a58bb-286c-4089-95e0-e4df40dd4548
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
