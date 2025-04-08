@@ -1,35 +1,35 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 01 | 1x HK
-  password: 30657e7c-1b6a-4656-86b8-b71bc4eb91a6
+  password: e49c7012-c49c-44ea-97e0-1cd7d5b57731
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 30657e7c-1b6a-4656-86b8-b71bc4eb91a6
+  password: e49c7012-c49c-44ea-97e0-1cd7d5b57731
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 01 | 1x HK
-  password: 2f9356c9-cf15-45b4-9b61-439cfff3a2fe
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
+- name: 1|🇬🇧1 |  5.7MB/s
+  network: ws
+  port: 80
+  server: 45.131.5.119
+  servername: gozargah.validbv7996.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 2f9356c9-cf15-45b4-9b61-439cfff3a2fe
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧1 |  5.2MB/s
+  name: 1|🇬🇧2 |  5.3MB/s
   network: tcp
   port: 65053
   reality-opts:
@@ -40,23 +40,32 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 2|🇬🇧2 |  1.6MB/s
+  flow: xtls-rprx-vision
+  name: 1|🇬🇧3 |  1.5MB/s
   network: tcp
-  port: 3662
+  port: 49699
   reality-opts:
-    public-key: f8TgqVBYK3tmhip3lJ-r8D0i6fqEF1Zy-zAfEhS-Cl8
-    short-id: 67a1a8bb9ff0ed21
-  server: gb.carefreemob2.com
-  servername: icloud.com
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
   tls: true
   type: vless
-  udp: false
-  uuid: 19306fe8-10be-49b9-bf8e-034ed0978250
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧3 |  2.9MB/s
+  name: 1|🇬🇧4 |  5.4MB/s
+  network: tcp
+  port: 14659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇬🇧5 |  5.2MB/s
   network: tcp
   port: 32055
   reality-opts:
@@ -66,12 +75,13 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-cfb
-  name: 2|🇬🇧4 |  3.9MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧英国家宽 01 | 1x UK
+  password: ee7d2c7d-d841-483b-9faa-973edb016c07
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
+  udp: true
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
