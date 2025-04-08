@@ -1,7 +1,49 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 229c9314-ade4-41ae-bebb-28e60e3b5c75
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 229c9314-ade4-41ae-bebb-28e60e3b5c75
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸 美国 03 | 1x US Washington
+  password: 229c9314-ade4-41ae-bebb-28e60e3b5c75
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国 01 | 1x US Los Angeles
+  password: 4f89dfa8-8fd4-46c0-ba43-a29ee0d92a9b
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 4f89dfa8-8fd4-46c0-ba43-a29ee0d92a9b
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国 03 | 1x US Washington
+  password: 4f89dfa8-8fd4-46c0-ba43-a29ee0d92a9b
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸25 |  5.3MB/s
+  name: 2|🇺🇸8 |  5.9MB/s
   network: ws
   port: 2053
   raw:
@@ -29,27 +71,47 @@ proxies:
     headers:
       Host: 1744007578.speed.zjgza.cccp.freefly.pp.ua
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 01 | 1x US Los Angeles
-  password: a3999a4c-7f06-4521-83ea-1202ea1c37ab
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: a3999a4c-7f06-4521-83ea-1202ea1c37ab
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 03 | 1x US Washington
-  password: a3999a4c-7f06-4521-83ea-1202ea1c37ab
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸13 |  4.4MB/s
+  network: ws
+  port: 8443
+  server: 1744007541.tencentapp.cn
+  servername: 1744007578.speed.adl.cccp.freefly.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  ws-opts:
+    headers:
+      Host: 1744007578.speed.adl.cccp.freefly.pp.ua
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 2|🇺🇸19 |  3.5MB/s
+  network: ws
+  port: '2053'
+  server: 1744007541.tencentapp.cn
+  tls: true
+  type: vmess
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  ws-opts:
+    headers:
+      host: 1744007578.speed.zjgza.cccp.freefly.pp.ua
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸34 |  3.1MB/s
+  network: tcp
+  port: 46597
+  server: 120.232.153.41
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.232.153.41
+  ws-path: /
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|🇺🇸 美国|@ripaojiedian
