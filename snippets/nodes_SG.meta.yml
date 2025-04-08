@@ -1,58 +1,58 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 40905df4-061d-4194-87ac-da191c76c906
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 40905df4-061d-4194-87ac-da191c76c906
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 40905df4-061d-4194-87ac-da191c76c906
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 01 | 1x SG
-  password: bef57ced-ee51-4e26-95be-644a2de2ef65
+  name: 0|🇸🇬 新加坡 01 | 1x SG
+  password: 94a1a694-e038-429c-908e-cfecba2ec74f
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 02 | 1x SG
-  password: bef57ced-ee51-4e26-95be-644a2de2ef65
+  name: 0|🇸🇬 新加坡 02 | 1x SG
+  password: 94a1a694-e038-429c-908e-cfecba2ec74f
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 03 | 1x SG
-  password: bef57ced-ee51-4e26-95be-644a2de2ef65
+  name: 0|🇸🇬 新加坡 03 | 1x SG
+  password: 94a1a694-e038-429c-908e-cfecba2ec74f
   port: 36175
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 01 | 1x SG
+  password: 8a3ab3c8-6a79-4f3e-b22a-03f2f2224570
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 02 | 1x SG
+  password: 8a3ab3c8-6a79-4f3e-b22a-03f2f2224570
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 03 | 1x SG
+  password: 8a3ab3c8-6a79-4f3e-b22a-03f2f2224570
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇸🇬1 |  5.7MB/s
-  port: 4137
-  server: a8065e22-suh6o0-tbivr5-6lkd.c.volczijie.com
+  name: 2|🇸🇬1 |  2.2MB/s
+  port: 4135
+  server: 629b1be0-suh6o0-svqrrs-4cwg.d.volczijie.com
   tls: false
   type: vmess
-  uuid: 9c03319a-2701-11ef-b512-f23c93136cb3
+  uuid: 03c1d503-4803-11ef-8f3d-f23c9313b177
 - client-fingerprint: chrome
   flow: none
   mode: ''
-  name: 2|🇸🇬2 |  3.6MB/s
+  name: 2|🇸🇬2 |  5.9MB/s
   network: ws
   port: 2096
   server: 141.193.213.21
@@ -65,9 +65,31 @@ proxies:
     headers:
       Host: premium.vkehi.shop
     path: '%2F'
+- alterId: 0
+  cipher: auto
+  name: 2|🇸🇬3 |  5.1MB/s
+  port: 4137
+  server: 113437c7-submo0-su9xu5-1phl.c.volczijie.com
+  tls: false
+  type: vmess
+  uuid: 0aed82ca-fd08-11ef-8cf9-f23c93136cb3
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇸🇬3 |  2.9MB/s
+  name: 2,14|CN_speednode_0004
+  network: tcp
+  port: 56127
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇸🇬5 |  6.1MB/s
   network: tcp
   port: 10778
   reality-opts:
@@ -80,7 +102,7 @@ proxies:
 - client-fingerprint: chrome
   flow: none
   mode: ''
-  name: 2|🇸🇬4 |  2.8MB/s
+  name: 2|🇸🇬6 |  5.8MB/s
   network: ws
   port: 2096
   server: 141.193.213.20
@@ -94,11 +116,19 @@ proxies:
       Host: premium.vkehi.shop
     path: '%2F'
 - cipher: aes-256-cfb
-  name: 2|🇸🇬5 |  6.1MB/s
+  name: 2|🇸🇬7 |  1.4MB/s
   password: 25612qazwsx
   port: 25612
   server: 18.142.181.4
   type: ss
+- auth: 493ed7e0-4657-4ec2-818f-e600c47c14fa
+  name: 2|🇸🇬8 |  1.5MB/s
+  password: 493ed7e0-4657-4ec2-818f-e600c47c14fa
+  port: 20000
+  server: 168.138.184.187
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
@@ -123,11 +153,41 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- cipher: aes-256-cfb
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 12|🇸🇬 狮城特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 13.212.241.11
+  name: 12,13|新加坡|@ripaojiedian
+  network: ws
+  port: '16618'
+  server: yes.mojcn.com
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 6400c720-13f6-45b0-81ea-419b89873cd2
+  ws-opts:
+    headers:
+      Host: 66d0c215104536850c337da2227b21cb.mobgslb.tbcache.com
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12|🇸🇬 新加坡2|@ripaojiedian
+  port: 4137
+  server: 41158001-suh6o0-sv6d5y-ddgs.c.volczijie.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: c870fe5a-0729-11f0-8cf9-f23c93136cb3
+- alterId: 0
+  cipher: auto
+  name: 13|新加坡2|@ripaojiedian
+  network: tcp
+  port: '4137'
+  server: 41158001-suh6o0-sv6d5y-ddgs.c.volczijie.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c870fe5a-0729-11f0-8cf9-f23c93136cb3
