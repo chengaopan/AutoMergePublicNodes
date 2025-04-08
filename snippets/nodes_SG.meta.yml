@@ -1,16 +1,8 @@
 proxies:
-- name: 1|🇸🇬1 |  6.1MB/s
-  password: 8c75155e-b73d-3ca6-bd1b-126a7404472f
-  port: 20129
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: x129.flybar.work
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   flow: none
   mode: ''
-  name: 1|🇸🇬2 |  5.7MB/s
+  name: 1|🇸🇬1 |  5.7MB/s
   network: ws
   port: 2096
   server: 141.193.213.21
@@ -23,24 +15,76 @@ proxies:
     headers:
       Host: premium.vkehi.shop
     path: '%2F'
+- flow: none
+  mode: ''
+  name: 1|🇸🇬2 |  5.1MB/s
+  network: ws
+  port: 2096
+  server: 141.193.213.20
+  servername: premium.vkehi.shop
+  tls: true
+  type: vless
+  udp: false
+  uuid: eb50d091-51ed-4f89-bc4e-8b04320585d7
+  ws-opts:
+    headers:
+      Host: premium.vkehi.shop
+    path: '%2F'
 - alterId: 0
   cipher: auto
-  name: 1|🇸🇬3 |  5.9MB/s
-  port: 4135
-  server: ac681bb7-sudhc0-su9u31-b4pt.d.volczijie.com
-  skip-cert-verify: false
+  name: 1|🇸🇬5 |  5.3MB/s
+  network: ws
+  port: 80
+  raw:
+    add: fbf248.de15-5483-d16b.sbs
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: sg02s.de15-5483-d16b.sbs
+    id: 2119a8ea-9015-4a2a-bf12-f5eb0425daf7
+    net: ws
+    path: /
+    port: 80
+    ps: 🇺🇸 US_235
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: fbf248.de15-5483-d16b.sbs
+  servername: sg02s.de15-5483-d16b.sbs
+  skip-cert-verify: true
   tls: false
   type: vmess
-  udp: true
-  uuid: be8cc8f6-0c6a-11f0-a5a3-f23c93141fad
-- auth: 073d062a-3170-4e8c-9123-aaa32155152d
-  name: 1|🇸🇬4 |  2.4MB/s
-  password: 073d062a-3170-4e8c-9123-aaa32155152d
-  port: 29831
-  server: 111.119.207.186
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+  uuid: 2119a8ea-9015-4a2a-bf12-f5eb0425daf7
+  ws-opts:
+    headers:
+      Host: sg02s.de15-5483-d16b.sbs
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇸🇬4 |  1.2MB/s
+  network: tcp
+  port: 10778
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: test123.zlqhdns.top
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇸🇬6 |  3.0MB/s
+  network: tcp
+  port: 56127
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
