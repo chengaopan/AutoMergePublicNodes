@@ -2,7 +2,7 @@ proxies:
 - client-fingerprint: chrome
   flow: none
   mode: ''
-  name: 1|🇸🇬1 |  1.9MB/s
+  name: 1|🇸🇬1 |  4.9MB/s
   network: ws
   port: 2096
   server: 141.193.213.20
@@ -16,9 +16,21 @@ proxies:
       Host: premium.vkehi.shop
     path: '%2F'
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇸🇬2 |  5.5MB/s
+  network: tcp
+  port: 10778
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: test123.zlqhdns.top
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
   flow: none
   mode: ''
-  name: 1|🇸🇬2 |  2.5MB/s
+  name: 1|🇸🇬3 |  5.7MB/s
   network: ws
   port: 2096
   server: 141.193.213.21
@@ -31,9 +43,21 @@ proxies:
     headers:
       Host: premium.vkehi.shop
     path: '%2F'
+- alterId: '0'
+  cipher: auto
+  name: 1|🇸🇬4 |  5.7MB/s
+  network: ws
+  port: '80'
+  server: fbf248.de15-5483-d16b.sbs
+  type: vmess
+  uuid: 2119a8ea-9015-4a2a-bf12-f5eb0425daf7
+  ws-opts:
+    headers:
+      host: sg02s.de15-5483-d16b.sbs
+    path: /
 - alterId: 0
   cipher: auto
-  name: 1|🇸🇬4 |  5.6MB/s
+  name: 1|🇸🇬7 |  1.4MB/s
   network: ws
   port: 80
   server: fbf248.de15-5483-d16b.sbs
@@ -45,6 +69,29 @@ proxies:
   ws-opts:
     headers:
       Host: sg02s.de15-5483-d16b.sbs
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 1|🇸🇬6 |  4.1MB/s
+  port: 3681
+  server: c08ff44b-sukw00-sy8g75-aoeb.c.volczijie.com
+  tls: false
+  type: vmess
+  uuid: d995e5ea-fdad-11ef-8ebc-f23c93141fad
+- name: 1,14|US_speednode_0100
+  network: ws
+  port: 80
+  server: 170.114.46.6
+  servername: free.pranithsandaruwan.shop
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: d9074e14-c4e4-4e58-8fff-3727e83af868
+  ws-opts:
+    headers:
+      Host: free.pranithsandaruwan.shop
     path: /
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
