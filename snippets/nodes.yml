@@ -1,19 +1,67 @@
 proxies:
-- name: 1,14|SC_speednode_0090
-  network: ws
-  password: amclubs
-  port: 2087
-  server: 154.83.2.125
-  skip-cert-verify: true
-  sni: tran.amclubstest.nyc.mn
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 1|🇯🇵3 |  1.9MB/s
+  port: 17233
+  server: 69c584f2-suif40-tee612-2r82.cm5.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
+  uuid: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸8 |  4.7MB/s
+  network: tcp
+  port: 22702
+  server: 185.189.32.179
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 483a1cce-af9b-4416-d7c6-10b9b63be66f
+  ws-headers:
+    Host: 185.189.32.179
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇯🇵5 |  1.1MB/s
+  network: tcp
+  port: 17233
+  server: fa7c2955-suif40-swjyj4-1mish.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 9eeeea88-f37b-11ed-bd3d-f23c9164ca5d
+  ws-headers:
+    Host: fa7c2955-suif40-swjyj4-1mish.cm5.p5pv.com
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇦🇺1 |  1.3MB/s
+  network: ws
+  port: 30835
+  server: v35.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: tran.amclubstest.nyc.mn
-    path: /?ed=2560
+      Host: baidu.com
+    path: /oooo
 - allowInsecure: ''
-  name: 1|🇮🇳1 |  4.8MB/s
+  name: 1|🇩🇪9 |  3.8MB/s
+  network: tcp
+  password: '74260698218909400'
+  port: 443
+  server: 202.78.163.116
+  skip-cert-verify: false
+  sni: patient-crawdad.shiner427.skin
+  tls: true
+  type: trojan
+- allowInsecure: ''
+  name: 1|🇮🇳3 |  1.8MB/s
   network: tcp
   password: '74260698218909400'
   port: 443
@@ -22,61 +70,6 @@ proxies:
   sni: unified-lioness.shiner427.skin
   tls: true
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸9 |  2.4MB/s
-  network: ws
-  port: 443
-  server: us10-09.852224.ggff.net
-  servername: us10-09.852224.ggff.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 576c81b6-4976-4fe3-b1a9-05a9c302e98e
-  ws-opts:
-    headers:
-      Host: us10-09.852224.ggff.net
-    path: /SNwNdunw28lVztopw90eoXel
-- cipher: aes-256-gcm
-  name: 1|🇧🇷1 |  1.3MB/s
-  password: a869ba7e-e46c-46bf-9d0a-2a4ddecc0627
-  port: 7704
-  server: 144.22.229.6
-  type: ss
-- allowInsecure: ''
-  name: 1|🇬🇧5 |  4.6MB/s
-  network: tcp
-  password: '74260698218909400'
-  port: 443
-  server: 109.107.159.124
-  skip-cert-verify: false
-  sni: ample-warthog.shiner427.skin
-  tls: true
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 1,12|🇹🇼 台湾|@ripaojiedian
-  password: d316fca3-e4ca-4774-8230-24a8fb9f99f6
-  port: 10239
-  server: 120.234.255.61
-  tfo: false
-  type: ss
-- name: 1|🌀10- |  1.3MB/s
-  network: ws
-  password: cd0e795a-4f26-4f8c-9981-ed8b7dcb6126
-  port: 443
-  server: 104.21.73.150
-  sni: sDFgHU.931.pP.ua
-  type: trojan
-  ws-opts:
-    headers:
-      Host: sDFgHU.931.pP.ua
-    path: /93fAx7DxPbqU8RhisheV
-- cipher: aes-256-gcm
-  name: 1|🇧🇷2 |  1.2MB/s
-  password: a869ba7e-e46c-46bf-9d0a-2a4ddecc0627
-  port: 7702
-  server: 137.131.151.235
-  type: ss
 - cipher: aes-256-cfb
   name: 12|tg频道:@ripaojiedian
   password: 463qwerty
@@ -173,6 +166,13 @@ proxies:
   password: MeSiyHQ1G3
   port: 31396
   server: 27.106.101.214
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 12|🇹🇼 台湾|@ripaojiedian
+  password: d316fca3-e4ca-4774-8230-24a8fb9f99f6
+  port: 10239
+  server: 120.234.255.61
   tfo: false
   type: ss
 - cipher: rc4-md5
@@ -341,6 +341,19 @@ proxies:
   sni: electric-mallard.shiner427.skin
   type: trojan
   udp: true
+- name: 14|SC_speednode_0090
+  network: ws
+  password: amclubs
+  port: 2087
+  server: 154.83.2.125
+  skip-cert-verify: true
+  sni: tran.amclubstest.nyc.mn
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tran.amclubstest.nyc.mn
+    path: /?ed=2560
 - name: 14|SC_speednode_0091
   network: ws
   password: amclubs
