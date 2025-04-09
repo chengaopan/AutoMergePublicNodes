@@ -6,18 +6,25 @@ proxies:
   type: socks5
   udp: true
   username: myszy
-- auth: 5467fe26-87fd-459c-95b8-2e8da008b71d
-  name: 1|🇸🇬2 |  2.6MB/s
-  password: 5467fe26-87fd-459c-95b8-2e8da008b71d
-  port: 35000
-  server: 140.245.36.207
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: hysteria2
-  udp: true
+- client-fingerprint: chrome
+  flow: none
+  mode: ''
+  name: 1|🇸🇬2 |  6.0MB/s
+  network: ws
+  port: 2096
+  server: 141.193.213.21
+  servername: premium.vkehi.shop
+  tls: true
+  type: vless
+  udp: false
+  uuid: eb50d091-51ed-4f89-bc4e-8b04320585d7
+  ws-opts:
+    headers:
+      Host: premium.vkehi.shop
+    path: '%2F'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇸🇬3 |  5.8MB/s
+  name: 1|🇸🇬3 |  3.5MB/s
   network: tcp
   port: 10778
   reality-opts:
@@ -27,17 +34,9 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 1,12|🇸🇬 狮城特殊|@ripaojiedian
-  password: 1203poiuy
-  port: 1203
-  server: 54.251.134.94
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 1|🇸🇬5 |  5.4MB/s
+  name: 1|🇸🇬4 |  1.7MB/s
   network: ws
   port: 80
   server: fbf248.de15-5483-d16b.sbs
@@ -49,38 +48,6 @@ proxies:
     headers:
       Host: sg02s.de15-5483-d16b.sbs
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0023
-  network: tcp
-  port: 56127
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.yahoo.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- auth: 073d062a-3170-4e8c-9123-aaa32155152d
-  name: 1|🇸🇬7 |  1.7MB/s
-  password: 073d062a-3170-4e8c-9123-aaa32155152d
-  port: 29831
-  server: 111.119.207.186
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- auth: abbdd5f5-8200-46f3-8b4f-573d7bc99a57
-  name: 1|🇸🇬8 |  1.4MB/s
-  obfs: salamander
-  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
-  password: abbdd5f5-8200-46f3-8b4f-573d7bc99a57
-  port: 20000
-  server: sg.ansuyun.xyz
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
@@ -111,6 +78,14 @@ proxies:
   password: 538acd1c-3e9a-4d42-91fb-41ee3bb8c286
   port: 45636
   server: iepl.ytxfx.xyz
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 12|🇸🇬 狮城特殊|@ripaojiedian
+  password: 1203poiuy
+  port: 1203
+  server: 54.251.134.94
   tfo: false
   type: ss
 - name: 14|SG_speednode_0093
