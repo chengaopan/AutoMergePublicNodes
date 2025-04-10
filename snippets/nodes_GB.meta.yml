@@ -1,14 +1,21 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧1 |  1.3MB/s
-  password: 474b0248-8ffa-4e49-a415-49d907171fc6
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 0204b052-8ab9-4b2d-92e2-a58bd27b4c6d
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 0204b052-8ab9-4b2d-92e2-a58bd27b4c6d
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0,14|CN_speednode_0054
+  name: 1,13|CN_speednode_0025
   network: tcp
   port: 65053
   reality-opts:
@@ -21,10 +28,31 @@ proxies:
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
-  name: 0|🇬🇧3 |  1.3MB/s
+  flow: xtls-rprx-vision
+  name: 1,13|CN_speednode_0033
+  network: tcp
+  port: 14659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- allowInsecure: '1'
+  name: 1|🇬🇧3 |  4.5MB/s
+  network: original
+  password: b19c4375-d847-4c40-9824-4767c88b5f38
+  port: 10200
+  server: 84.8.159.155
+  skip-cert-verify: true
+  type: trojan
+- name: 1|🇬🇧4 |  5.5MB/s
   network: ws
   port: 80
-  server: 45.131.4.33
+  server: 45.131.4.188
   tls: false
   type: vless
   uuid: c5293efa-28f8-4a0f-8f34-541078970cee
@@ -32,55 +60,23 @@ proxies:
     headers:
       Host: gozargah.validbv7996.ir
     path: /
-- allowInsecure: ''
-  name: 0|🇬🇧4 |  1.5MB/s
-  network: original
-  password: b19c4375-d847-4c40-9824-4767c88b5f38
-  port: 10200
-  server: www.ak-hk.top
-  skip-cert-verify: false
-  type: trojan
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧5 |  1.2MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
+  flow: ''
+  mode: ''
+  name: 1|🇬🇧5 |  6.0MB/s
+  network: ws
+  port: 8443
+  server: 104.17.148.22
+  servername: MdLoXlYg.rIcKtMoUsE.InFo
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 01 | 1x HK
-  password: 45e097c3-1387-4662-9515-1b6ebf9eb687
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 45e097c3-1387-4662-9515-1b6ebf9eb687
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰 香港 01 | 1x HK
-  password: f5030a0c-b190-47ec-887f-6c0ed84fc929
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
-  password: f5030a0c-b190-47ec-887f-6c0ed84fc929
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 11|Hysteria 🇬🇧 @v2meowcf
+  udp: false
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: MdLoXlYg.rIcKtMoUsE.InFo
+    path: /
+- name: 10|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -90,13 +86,13 @@ proxies:
   type: hysteria2
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 12|🇬🇧 英国|@ripaojiedian
+  name: 11|🇬🇧 英国|@ripaojiedian
   password: 751U3T5PPAVWVMR2
   port: 19002
   server: 206.245.211.12
   tfo: false
   type: ss
-- name: 14|GB_speednode_0081
+- name: 13|GB_speednode_0041
   network: ws
   port: 8880
   server: 31.22.116.154
@@ -110,11 +106,17 @@ proxies:
     headers:
       Host: redfree8.pooriashop.ir
     path: /---TM-@AZARBAYJAB1-------TM-@AZARBAYJAB1---------TM-@AZARBAYJAB1---join?ed=2560
-- name: 14|GB_speednode_0082
-  password: '!!str 74260698218909400'
-  port: 443
-  server: happy-bluebird.shiner427.skin
-  skip-cert-verify: true
-  sni: happy-bluebird.shiner427.skin
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇭🇰香港 01 | 1x HK
+  password: b91ae43b-f851-4ecc-b891-3957a897cf65
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇬🇧英国家宽 01 | 1x UK
+  password: b91ae43b-f851-4ecc-b891-3957a897cf65
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
