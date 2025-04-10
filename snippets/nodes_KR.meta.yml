@@ -1,36 +1,22 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 01 | 1x KR
-  password: e821e780-875c-4feb-bc88-7b3fef35da70
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 02 | 1x KR
-  password: e821e780-875c-4feb-bc88-7b3fef35da70
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 01 | 1x KR
-  password: 95b10ca0-d2c4-4113-8364-5f2a4f3d7a41
+  name: 0|🇰🇷韩国 01 | 1x KR
+  password: 02e6dd3a-e4e6-456c-9579-4454e9b83a67
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 02 | 1x KR
-  password: 95b10ca0-d2c4-4113-8364-5f2a4f3d7a41
+  name: 0|🇰🇷韩国 02 | 1x KR
+  password: 02e6dd3a-e4e6-456c-9579-4454e9b83a67
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|🇰🇷1 |  2.3MB/s
+- name: 1|🇰🇷1 |  5.8MB/s
   network: ws
   port: 443
-  server: benedict.ns.cloudflare.com
+  server: 160.79.105.66
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -41,10 +27,10 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|🇰🇷2 |  2.2MB/s
+- name: 1|🇰🇷2 |  1.3MB/s
   network: ws
   port: 443
-  server: ashton.ns.cloudflare.com
+  server: 160.79.105.142
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -55,7 +41,21 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|🇰🇷3 |  4.4MB/s
+- name: 1|🇰🇷3 |  1.0MB/s
+  network: ws
+  port: 443
+  server: www.wto.org
+  servername: nx.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nx.ylka.dpdns.org
+    path: /?ed=2560
+- name: 1|🇰🇷4 |  5.0MB/s
   network: ws
   port: 443
   server: 185.133.35.67
@@ -69,108 +69,35 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|🇰🇷4 |  2.4MB/s
+- name: 1|🇰🇷5 |  2.2MB/s
+  network: ws
+  port: 80
+  server: 45.131.4.187
+  tls: false
+  type: vless
+  uuid: c5293efa-28f8-4a0f-8f34-541078970cee
+  ws-opts:
+    headers:
+      Host: gozargah.validbv7996.ir
+    path: /
+- name: 1|🇰🇷6 |  5.4MB/s
+  network: ws
+  port: 30012
+  server: 211.218.223.130
+  servername: nx.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: nx.ylka.dpdns.org
+    path: /?ed=2560
+- name: 1|🇰🇷7 |  4.7MB/s
   network: ws
   port: 443
-  server: 192.0.63.29
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|🇰🇷5 |  1.6MB/s
-  network: ws
-  port: 443
-  server: ipinfo.in
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|🇰🇷6 |  1.0MB/s
-  network: ws
-  port: 443
-  server: 168.138.165.174
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|🇰🇷7 |  2.4MB/s
-  network: ws
-  port: 443
-  server: 160.79.104.233
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|🇰🇷8 |  5.0MB/s
-  network: ws
-  port: 443
-  server: 185.133.35.26
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|🇰🇷9 |  3.4MB/s
-  network: ws
-  port: 60000
-  server: 192.9.248.209
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|🇰🇷10 |  3.7MB/s
-  network: ws
-  port: 443
-  server: 160.123.255.18
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|🇰🇷11 |  5.6MB/s
-  network: ws
-  port: 50001
-  server: 119.205.6.124
+  server: 152.70.57.182
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -184,7 +111,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 12,13|韩国|@ripaojiedian
+  name: 11,12|韩国|@ripaojiedian
   network: ws
   port: '30828'
   server: v28.heduian.link
@@ -200,9 +127,23 @@ proxies:
     path: /oooo
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 12|🇰🇷 韩国特殊|@ripaojiedian
+  name: 11|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 3.39.252.80
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇰🇷 韩国 01 | 1x KR
+  password: 0ed33f45-b5ad-4ce0-9fb3-38312a30f602
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇰🇷 韩国 02 | 1x KR
+  password: 0ed33f45-b5ad-4ce0-9fb3-38312a30f602
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
