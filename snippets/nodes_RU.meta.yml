@@ -1,11 +1,35 @@
 proxies:
-- name: 1|🇷🇺1 |  5.8MB/s
+- country: 🇷🇺RU
+  delay: 2197
+  name: 1|🇷🇺1 |  4.8MB/s
   password: dongtaiwang.com
-  port: 4395
-  server: 46.17.41.217
+  port: 12904
+  server: 46.17.41.5
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
+  udp: true
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 1|🇷🇺2 |  4.3MB/s
+  port: 10803
+  server: 185.22.155.71
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 1000 Mbps
+- country: 🇷🇺RU
+  delay: 1013
+  name: 1|🇷🇺3 |  3.3MB/s
+  password: dongtaiwang.com
+  port: 35751
+  server: 46.29.163.171
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 1,14|CN_speednode_0052
@@ -20,46 +44,15 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- country: 🇷🇺RU
-  delay: 2197
-  name: 1|🇷🇺3 |  1.2MB/s
-  password: dongtaiwang.com
-  port: 12904
-  server: 46.17.41.5
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-  udp: true
 - alpn:
   - h3
   auth_str: dongtaiwang.com
   down: 1000 Mbps
-  name: 1|🇷🇺4 |  1.0MB/s
+  name: 1|🇷🇺5 |  4.6MB/s
   port: 10469
   server: 46.17.41.174
   skip-cert-verify: true
   sni: apple.com
   type: hysteria
   udp: true
-  up: 1000 Mbps
-- country: 🇷🇺RU
-  delay: 1013
-  name: 1|🇷🇺5 |  5.1MB/s
-  password: dongtaiwang.com
-  port: 35751
-  server: 46.29.163.171
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 1000 Mbps
-  name: 1|🇷🇺6 |  5.9MB/s
-  port: 10803
-  server: 185.22.155.71
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
   up: 1000 Mbps
