@@ -1,85 +1,46 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 01 | 1x KR
-  password: d7446e3d-c6ab-44a0-bb85-bd43f13888a3
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 02 | 1x KR
-  password: d7446e3d-c6ab-44a0-bb85-bd43f13888a3
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 01 | 1x KR
-  password: 8f9ed1d5-438f-4c46-b272-c7997f9b40bc
+  name: 0|🇰🇷 韩国 01 | 1x KR
+  password: aee56083-e553-4caa-a399-de1dfd2383f1
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 02 | 1x KR
-  password: 8f9ed1d5-438f-4c46-b272-c7997f9b40bc
+  name: 0|🇰🇷 韩国 02 | 1x KR
+  password: aee56083-e553-4caa-a399-de1dfd2383f1
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 2|🇰🇷1 |  5.5MB/s
-  network: ws
-  port: 443
-  server: time.is
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 2,12|🇰🇷 韩国2|@ripaojiedian
-  password: '!!str 1234'
-  port: 1234
-  server: 43.203.237.206
-  tfo: false
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: 2ae38722-bedd-4027-9259-f939a13c1d98
+  port: 31311
+  server: free.2apzhfa.xyz
   type: ss
-- name: 2|🇰🇷3 |  1.4MB/s
-  network: ws
-  port: 443
-  server: ipinfo.in
-  servername: nx.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nx.ylka.dpdns.org
-    path: /?ed=2560
-- client-fingerprint: randomized
-  flow: ''
-  mode: ''
-  name: 2|🇰🇷4 |  1.3MB/s
-  network: ws
-  port: 443
-  server: 172.66.45.9
-  servername: MiSTliNK-CL9.pAgEs.Dev
-  tls: true
-  type: vless
-  udp: false
-  uuid: 321cc007-bb85-41c9-b686-1f45cf5174e0
-  ws-opts:
-    headers:
-      Host: mistlink-cl9.pages.dev
-    path: /ERlnnsHzyLczPW3c?ed=2560
-- name: 2|🇰🇷5 |  3.8MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: 2ae38722-bedd-4027-9259-f939a13c1d98
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 2|🇰🇷1 |  3.1MB/s
+  network: tcp
+  port: 17232
+  server: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8d888b92-eec8-11ef-bca1-f23c91cfbbc9
+  ws-headers:
+    Host: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
+  ws-path: /
+- name: 2|🇰🇷2 |  5.7MB/s
   network: ws
   port: 50000
   server: 59.2.75.64
@@ -93,10 +54,10 @@ proxies:
     headers:
       host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|🇰🇷6 |  1.1MB/s
+- name: 2|🇰🇷3 |  1.1MB/s
   network: ws
   port: 443
-  server: sullivan.ns.cloudflare.com
+  server: 160.123.255.18
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -105,33 +66,57 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: nx.ylka.dpdns.org
+      Host: nx.ylka.dpdns.org
     path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 2|🇰🇷7 |  5.4MB/s
-  network: tcp
-  port: 17232
-  server: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
+- name: 2|🇰🇷4 |  2.1MB/s
+  network: ws
+  port: 443
+  server: 198.62.62.4
+  servername: nx.ylka.dpdns.org
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8d888b92-eec8-11ef-bca1-f23c91cfbbc9
-  ws-headers:
-    Host: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
-  ws-path: /
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: nx.ylka.dpdns.org
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 2,12|🇰🇷 韩国2|@ripaojiedian
+  password: '!!str 1234'
+  port: 1234
+  server: 43.203.237.206
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 2|🇰🇷8 |  1.8MB/s
+  name: 2|🇰🇷6 |  2.3MB/s
   port: 17232
   server: 693debd4-sum4g0-svlqnl-2c08.cm5.p5pv.com
   tls: false
   type: vmess
   uuid: c76abed4-f2d2-e4de-50ce-a545ff74ecd0
-- name: 2|🇰🇷9 |  2.4MB/s
+- client-fingerprint: chrome
+  delay: 2905
+  name: 2|🇰🇷7 |  1.1MB/s
   network: ws
-  port: 443
-  server: 45.67.215.143
+  port: 2052
+  server: 104.26.12.101
+  servername: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: dfc1a9ab-6241-4b73-92f7-b299fc6b7751
+  ws-opts:
+    headers:
+      Host: Yak-Khanda-kUn-eY-gUL.biNG.com.xn--cR8HaaaAaAAAaAaaAaAaAAaAAaaaAAAAAaAaaAaaaAaaaaAAaaAAAaaaaAa.xN--Cr8hAaAaaAaaAAAAAAaaaAAAaAAaaAaAaAAAAAA.TREPAspeEdTEsT.NEtrag.cOm.PX.Com.sh017.IR.XN--Cr8hAaaAaaAaaAaaaAAAaaaAaaAaaaAaAAAaaaA.yek.dDnS-ip.nEt
+    path: /?ed=1080/telegram
+- name: 2,14|KR_speednode_0061
+  network: ws
+  port: 10099
+  server: 146.56.136.39
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -140,12 +125,12 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: nx.ylka.dpdns.org
+      Host: nx.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|🇰🇷10 |  3.4MB/s
+- name: 2|🇰🇷9 |  1.3MB/s
   network: ws
-  port: 443
-  server: 192.9.139.160
+  port: 60000
+  server: 192.9.248.209
   servername: nx.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -154,7 +139,7 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: nx.ylka.dpdns.org
+      Host: nx.ylka.dpdns.org
     path: /?ed=2560
 - alterId: 2
   cipher: auto
@@ -210,3 +195,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- name: 14|KR_speednode_0060
+  network: ws
+  port: 12527
+  server: 221.144.200.91
+  servername: edccy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560

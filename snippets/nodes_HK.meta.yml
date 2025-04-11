@@ -1,35 +1,74 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 02 | 1x HK
-  password: d7446e3d-c6ab-44a0-bb85-bd43f13888a3
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: d7446e3d-c6ab-44a0-bb85-bd43f13888a3
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 02 | 1x HK
-  password: 8f9ed1d5-438f-4c46-b272-c7997f9b40bc
+  name: 0|🇭🇰 香港 02 | 1x HK
+  password: aee56083-e553-4caa-a399-de1dfd2383f1
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 8f9ed1d5-438f-4c46-b272-c7997f9b40bc
+  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
+  password: aee56083-e553-4caa-a399-de1dfd2383f1
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 02 | 1x HK
+  password: 2ae38722-bedd-4027-9259-f939a13c1d98
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港家宽 03 | 1x HK
+  password: 2ae38722-bedd-4027-9259-f939a13c1d98
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 2|🇭🇰1 |  5.8MB/s
+  port: 15228
+  server: c195c7ba-sum4g0-swnfyy-18y1l.cm.plebai.net
+  tls: false
+  type: vmess
+  uuid: 96c5f18c-9390-11eb-86a4-f23c913c8d2b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇭🇰1 |  6.2MB/s
+  name: 2,14|CN_speednode_0007
+  network: tcp
+  port: 27631
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 2
+  cipher: auto
+  name: 2|🇭🇰3 |  2.3MB/s
+  network: ws
+  port: 80
+  server: 51494e84-sum4g0-tb7kjs-1dlno.hk3.p5pv.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 964bff94-e53a-11ef-8e84-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇭🇰4 |  1.5MB/s
   network: tcp
   port: 24318
   reality-opts:
@@ -39,84 +78,16 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 2|🇭🇰2 |  1.8MB/s
-  network: ws
-  port: 443
-  server: 20.189.104.97
-  servername: dee33.azurewebsites.net
-  tls: true
-  type: vless
-  udp: false
-  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-  ws-opts:
-    headers:
-      Host: dee33.azurewebsites.net
-    path: /
-- name: 2|🇭🇰3 |  4.5MB/s
+- name: 2|🇭🇰5 |  3.6MB/s
   password: myszy28811
   port: 28811
   server: pipi.myddns.me
   type: socks5
   udp: true
   username: myszy
-- name: 2,14|HK_speednode_0042
-  network: ws
-  port: 443
-  server: 162.247.5.96
-  servername: hk.qhahd.shop
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 63083c6c-0aab-4956-88fe-c19edd25f1d7
-  ws-opts:
-    headers:
-      Host: hk.qhahd.shop
-    path: /bing
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇭🇰5 |  2.8MB/s
-  network: tcp
-  port: 23657
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0009
-  network: tcp
-  port: 31800
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇭🇰7 |  4.8MB/s
-  network: tcp
-  port: 45883
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gy01.hunheiydd.xyz
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇭🇰8 |  5.3MB/s
+  name: 2|🇭🇰6 |  6.2MB/s
   network: tcp
   port: 41279
   reality-opts:
@@ -125,6 +96,34 @@ proxies:
   servername: www.nvidia.com
   tls: true
   type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0048
+  network: tcp
+  port: 12597
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0014
+  network: tcp
+  port: 33782
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 11|香港🇭🇰 HY2
   password: e20abb22a245edb0
@@ -202,31 +201,17 @@ proxies:
   server: 103.149.182.191
   tfo: false
   type: ss
-- name: 14|HK_speednode_0043
+- name: 14|HK_speednode_0057
   network: ws
-  port: 443
-  server: 162.247.5.91
-  servername: tw.qhahd.shop
+  port: 80
+  server: 8.210.92.24
+  servername: edccr.aimercc.filegear-sg.me
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 9f53d9dc-8e5d-4a96-d940-fb542631e1e4
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: tw.qhahd.shop
-    path: /bing
-- name: 14|HK_speednode_0044
-  network: ws
-  port: 443
-  server: 8.212.76.10
-  servername: hk.mehun.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b41f3d0c-3e2f-4f57-9995-c6bdf2b3204d
-  ws-opts:
-    headers:
-      Host: hk.mehun.me
-    path: /bing
+      Host: edccr.aimercc.filegear-sg.me
+    path: /?ed=2560
