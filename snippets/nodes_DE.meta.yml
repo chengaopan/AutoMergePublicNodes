@@ -1,11 +1,29 @@
 proxies:
-- cipher: rc4-md5
-  name: 0|🇩🇪1 |  1.6MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇩🇪德国 01 | 1x DE
+  password: 399da0dd-e6ce-4666-b9d4-da9bfc32afbb
+  port: 31471
+  server: free.2apzhfa.xyz
   type: ss
-- name: 0|🇩🇪2 |  4.5MB/s
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪 德国 01 | 1x DE
+  password: d228aa6f-efdb-468c-8f2d-ed6cd649568f
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- auth: 18463200c271aa6d
+  name: 2|🇩🇪1 |  2.9MB/s
+  obfs: salamander
+  obfs-password: 6c80ade6
+  password: 18463200c271aa6d
+  port: 443
+  server: rplcehysttya6.airlineshoma.com
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: hysteria2
+- name: 2|🇩🇪2 |  5.5MB/s
   network: ws
   port: 2053
   server: 199.34.228.65
@@ -19,22 +37,8 @@ proxies:
     headers:
       Host: all22.kikforwindows.com
     path: /containers/de
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0,14|CN_speednode_0038
-  network: tcp
-  port: 58031
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - auth: 18463200c271aa6d
-  name: 0|🇩🇪4 |  2.2MB/s
+  name: 2|🇩🇪3 |  4.3MB/s
   obfs: salamander
   obfs-password: 6c80ade6
   password: 18463200c271aa6d
@@ -43,32 +47,21 @@ proxies:
   skip-cert-verify: true
   sni: vkvd127.mycdn.me
   type: hysteria2
-- flow: ''
+- cipher: rc4-md5
+  name: 2|🇩🇪4 |  2.4MB/s
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- client-fingerprint: ''
+  flow: ''
   mode: ''
-  name: 0|🇩🇪5 |  5.9MB/s
-  network: ws
-  port: 443
-  server: cdn.packageclub.net
-  servername: cdn.packageclub.net
-  tls: true
+  name: 2|🇩🇪5 |  1.6MB/s
+  network: tcp
+  port: 1133
+  server: 185.204.168.191
+  servername: ''
+  tls: false
   type: vless
   udp: false
-  uuid: be88b352-bc2e-45bf-abeb-cc117cf6f884
-  ws-opts:
-    headers:
-      Host: cdn.packageclub.net
-    path: /ws-connect/download/update/check/version/2.1.9/patch/force
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇩🇪德国 01 | 1x DE
-  password: 15d9a9b6-f039-4b4a-b281-4547f3d1ef57
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇩🇪 德国 01 | 1x DE
-  password: 2b88496b-c3f1-4304-9dd2-03585c260abe
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+  uuid: 875dac5e-4700-4cce-b1f9-40b891b3a927
