@@ -1,51 +1,62 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: 0b9736f5-0f02-46d8-a915-698270a25d70
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 0b9736f5-0f02-46d8-a915-698270a25d70
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 02 | 1x HK
-  password: fad5b8b6-ebcf-40d9-aeee-a67a7b49bff4
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: af7d9034-4d4a-4c81-948b-f052581050c4
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: fad5b8b6-ebcf-40d9-aeee-a67a7b49bff4
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: af7d9034-4d4a-4c81-948b-f052581050c4
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
+  name: 1|🇭🇰1 |  1.3MB/s
+  network: ws
+  password: a38c9e28-9960-4e31-9f18-ed2495a756aa
+  port: 40021
+  server: vt-bana2-cn-11.ghpgwqswodgzv.com
+  sni: vt-bana2-cn-11.ghpgwqswodgzv.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: vt-bana2-cn-11.ghpgwqswodgzv.com
+    path: /dl_media
+- name: 1|🇭🇰2 |  3.5MB/s
+  password: 47a61c4e-87ac-31ea-b4d6-1feec63eeae4
+  port: 20279
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z279.hongkongnode.top
+  type: trojan
+  udp: true
+- name: 1|🇭🇰3 |  4.7MB/s
+  password: 47a61c4e-87ac-31ea-b4d6-1feec63eeae4
+  port: 43337
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: z102.hongkongnode.top
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇭🇰1 |  6.2MB/s
+  name: 1,13|CN_speednode_0024
   network: tcp
-  port: 24318
+  port: 54220
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: test123.zlqhdns.top
+  server: zhee01.dynu.net
   servername: www.nvidia.com
+  skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf
-  name: 2|🇭🇰2 |  1.2MB/s
-  password: asd123456
-  port: 8388
-  server: 103.149.182.61
-  type: ss
-- name: 11|香港🇭🇰 HY2
+- name: 10|香港🇭🇰 HY2
   password: e20abb22a245edb0
   port: 8443
   server: fast.yxmm.xyz
@@ -55,7 +66,7 @@ proxies:
   type: hysteria2
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港|@ripaojiedian
+  name: 11|🇭🇰 香港|@ripaojiedian
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
   server: hk02.x.quickcht3.club
@@ -63,7 +74,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港2|@ripaojiedian
+  name: 11|🇭🇰 香港2|@ripaojiedian
   password: 1601e3c29c8db1a88942cf0cad731bf3
   port: 3306
   server: 129.226.58.228
@@ -71,7 +82,7 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港3|@ripaojiedian
+  name: 11|🇭🇰 香港3|@ripaojiedian
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
   server: 111.29.57.125
@@ -80,7 +91,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 12,13|香港4|@ripaojiedian
+  name: 11,12|香港4|@ripaojiedian
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -96,7 +107,7 @@ proxies:
     path: /oooo
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港5|@ripaojiedian
+  name: 11|🇭🇰 香港5|@ripaojiedian
   obfs: plain
   obfs-param: cd2b692902.6602b8463464108506.microsoft.com
   password: ENZ52K
@@ -107,7 +118,7 @@ proxies:
   type: ssr
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港6|@ripaojiedian
+  name: 11|🇭🇰 香港6|@ripaojiedian
   password: cdc48a7a-b618-45af-a831-5afbd686b02f
   port: 12202
   server: gg21.hangfengjiasu.com
@@ -115,13 +126,13 @@ proxies:
   type: ss
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港7|@ripaojiedian
+  name: 11|🇭🇰 香港7|@ripaojiedian
   password: asd123456
   port: 8388
   server: 103.149.182.191
   tfo: false
   type: ss
-- name: 14|HK_speednode_0057
+- name: 13|HK_speednode_0057
   network: ws
   port: 80
   server: 8.210.92.24
@@ -135,3 +146,17 @@ proxies:
     headers:
       Host: edccr.aimercc.filegear-sg.me
     path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇭🇰 香港 02 | 1x HK
+  password: 518725e3-a2bc-4f56-a3b8-15f23a8629a9
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 518725e3-a2bc-4f56-a3b8-15f23a8629a9
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
