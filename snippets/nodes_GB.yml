@@ -1,29 +1,63 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: 0a032a58-03ab-4986-85be-0f4154cf8830
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 0a032a58-03ab-4986-85be-0f4154cf8830
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰 香港 01 | 1x HK
-  password: d43beca6-04df-4ef4-a004-8f3a09c2c162
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 0043a2ab-27ff-4ef3-98bb-bbdebec3b1d8
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇬🇧 英国住宅IP 01 | 1x UK
-  password: d43beca6-04df-4ef4-a004-8f3a09c2c162
+  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 0043a2ab-27ff-4ef3-98bb-bbdebec3b1d8
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: e36153ce-b8c9-48c2-afbf-265d14041dbe
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 2|🇬🇧1 |  5.2MB/s
+  network: ws
+  port: 454
+  raw:
+    add: 6e6ad8b6-suolc0-sw1f6a-dl15.ldn.west.yxlmgs.com
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 30d32d82-12cf-11f0-97b9-f23c9313b177
+    net: ws
+    path: ''
+    port: 454
+    ps: _125
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 6e6ad8b6-suolc0-sw1f6a-dl15.ldn.west.yxlmgs.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 30d32d82-12cf-11f0-97b9-f23c9313b177
+  ws-opts:
+    path: ''
+- alterId: 0
+  cipher: auto
+  name: 2|🇬🇧5 |  5.4MB/s
+  network: tcp
+  port: 33940
+  server: 37.221.125.159
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+  ws-headers:
+    Host: 37.221.125.159
+  ws-path: /

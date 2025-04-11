@@ -1,14 +1,21 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇩🇪德国 01 | 1x DE
-  password: 0a032a58-03ab-4986-85be-0f4154cf8830
+  name: 0|🇩🇪 德国 01 | 1x DE
+  password: 0043a2ab-27ff-4ef3-98bb-bbdebec3b1d8
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪德国 01 | 1x DE
+  password: e36153ce-b8c9-48c2-afbf-265d14041dbe
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1|🇩🇪1 |  3.3MB/s
+  name: 2|🇩🇪1 |  5.0MB/s
   network: ws
   port: 32683
   raw:
@@ -36,40 +43,29 @@ proxies:
     headers:
       Host: digitalcloud.pro.jiahe.buzz
     path: /jh002
-- alterId: 2
+- alterId: 0
   cipher: auto
-  name: 1|🇩🇪3 |  3.6MB/s
-  network: ws
-  port: 23618
-  server: 18.mamamajd.site
-  skip-cert-verify: true
+  name: 2|🇩🇪2 |  3.7MB/s
+  network: tcp
+  port: 33157
+  raw:
+    add: 116.203.14.117
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: JOin+Telegram.@JOKERRVPN
+    id: d61ef6c6-b70a-4f05-8df6-14b37ec8720a
+    net: tcp
+    path: ''
+    port: '33157'
+    ps: 🔥Join+Telegram:@FarahVPN🟣
+    scy: auto
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 116.203.14.117
+  servername: ''
   tls: false
   type: vmess
-  udp: true
-  uuid: 1f9d6c4f-876f-3a5a-9ecd-1d6bf29cc085
-  ws-opts:
-    headers:
-      Host: 18.mamamajd.site
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇩🇪4 |  4.6MB/s
-  network: ws
-  port: 23616
-  server: 16.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 1f9d6c4f-876f-3a5a-9ecd-1d6bf29cc085
-  ws-opts:
-    headers:
-      Host: 16.mamamajd.site
-    path: /
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇩🇪 德国 01 | 1x DE
-  password: d43beca6-04df-4ef4-a004-8f3a09c2c162
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+  uuid: d61ef6c6-b70a-4f05-8df6-14b37ec8720a
