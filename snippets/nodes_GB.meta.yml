@@ -1,32 +1,76 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 60c75fd4-ed77-418f-b353-a50fa6448809
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 0b155f88-9400-452c-aca5-2a813775857d
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 0b155f88-9400-452c-aca5-2a813775857d
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: b99b323c-4154-4c1c-b226-f88e8f931a5c
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: b99b323c-4154-4c1c-b226-f88e8f931a5c
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0039
+  name: 2,14|CN_speednode_0032
   network: tcp
-  port: 32055
+  port: 65053
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
+  server: beiyong.dynuddns.net
   servername: www.amazon.com
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
-  password: b813c638-6c96-46ec-b58c-1e67aa7ce828
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
+- client-fingerprint: random
+  flow: ''
+  mode: ''
+  name: 2|🇬🇧2 |  3.2MB/s
+  network: ws
+  port: 443
+  server: 104.18.8.74
+  servername: en.kljasdfiaosdf92-asdjlkfhasdf-asdfa.li
+  tls: true
+  type: vless
+  udp: false
+  uuid: b995dc2f-045d-49e4-a02b-07cf968c64f5
+  ws-opts:
+    headers:
+      Host: en.kljasdfiaosdf92-asdjlkfhasdf-asdfa.li
+    path: /admin
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0034
+  network: tcp
+  port: 14659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443

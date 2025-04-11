@@ -1,36 +1,20 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇩🇪德国 01 | 1x DE
-  password: 60c75fd4-ed77-418f-b353-a50fa6448809
+  name: 0|🇩🇪 德国 01 | 1x DE
+  password: 0b155f88-9400-452c-aca5-2a813775857d
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪德国 01 | 1x DE
+  password: b99b323c-4154-4c1c-b226-f88e8f931a5c
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- auth: dee29869-ae36-4504-89f5-8f06b7dc7a6a
-  name: 1|🇩🇪1 |  3.7MB/s
-  password: dee29869-ae36-4504-89f5-8f06b7dc7a6a
-  port: 1443
-  server: 94.159.107.136
-  skip-cert-verify: false
-  sni: de2.587458.xyz
-  type: hysteria2
-- flow: ''
-  mode: ''
-  name: 1|🇩🇪2 |  5.9MB/s
-  network: ws
-  port: 443
-  server: 172.67.189.227
-  servername: cdn.packageclub.net
-  tls: true
-  type: vless
-  udp: false
-  uuid: be88b352-bc2e-45bf-abeb-cc117cf6f884
-  ws-opts:
-    headers:
-      Host: cdn.packageclub.net
-    path: /ws-connect/download/update/check/version/2.1.9/patch/force
 - auth: 18463200c271aa6d
-  name: 1|🇩🇪3 |  4.6MB/s
+  name: 2|🇩🇪1 |  3.8MB/s
   obfs: salamander
   obfs-password: 6c80ade6
   password: 18463200c271aa6d
@@ -39,9 +23,52 @@ proxies:
   skip-cert-verify: true
   sni: vkvd127.mycdn.me
   type: hysteria2
+- name: 2|🇩🇪2 |  5.6MB/s
+  network: ws
+  port: 2053
+  server: 199.34.228.65
+  servername: all22.kikforwindows.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 78905d87-0266-4825-868d-3069e88d1201
+  ws-opts:
+    headers:
+      Host: all22.kikforwindows.com
+    path: /containers/de
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0038
+  mode: ''
+  name: 2|🇩🇪3 |  5.2MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: __6BhtO3Rhjw4wnAmzklhquVvIngjhfnB8dhDVtj0Vs
+    short-id: 275f34
+  server: 95.217.212.142
+  servername: www.cloudflare.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: ae942900-cae6-425e-94b0-21f086e6d7b1
+- name: 2|🇩🇪4 |  5.8MB/s
+  network: ws
+  port: 2053
+  server: 199.34.228.183
+  servername: all22.kikforwindows.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 78905d87-0266-4825-868d-3069e88d1201
+  ws-opts:
+    headers:
+      Host: all22.kikforwindows.com
+    path: /containers/de
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0038
   network: tcp
   port: 58031
   reality-opts:
@@ -56,23 +83,7 @@ proxies:
 - client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 1|🇩🇪5 |  5.5MB/s
-  network: ws
-  port: 2053
-  server: 172.67.204.84
-  servername: all22.kikforwindows.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 78905d87-0266-4825-868d-3069e88d1201
-  ws-opts:
-    headers:
-      Host: all22.kikforwindows.com
-    path: /containers/de
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 1|🇩🇪6 |  3.8MB/s
+  name: 2|🇩🇪6 |  3.1MB/s
   network: ws
   port: 443
   server: 104.21.10.34
@@ -85,67 +96,3 @@ proxies:
     headers:
       Host: cdn.packageclub.net
     path: /ws-connect/download/update/check/version/2.1.9/patch/force
-- flow: ''
-  mode: ''
-  name: 1|🇩🇪7 |  5.9MB/s
-  network: ws
-  port: 443
-  server: cdn.packageclub.net
-  servername: cdn.packageclub.net
-  tls: true
-  type: vless
-  udp: false
-  uuid: be88b352-bc2e-45bf-abeb-cc117cf6f884
-  ws-opts:
-    headers:
-      Host: cdn.packageclub.net
-    path: /ws-connect/download/update/check/version/2.1.9/patch/force
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 1|🇩🇪8 |  4.8MB/s
-  network: ws
-  port: 2053
-  server: 172.67.159.56
-  servername: fk2-1.890617.xyz
-  tls: true
-  type: vmess
-  uuid: feddc326-da70-4fab-95a9-8f98be6da633
-  ws-opts:
-    headers:
-      Host: fk2-1.890617.xyz
-    path: /fk2-1
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  mode: ''
-  name: 1|🇩🇪9 |  5.3MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: __6BhtO3Rhjw4wnAmzklhquVvIngjhfnB8dhDVtj0Vs
-    short-id: 275f34
-  server: 95.217.212.142
-  servername: www.cloudflare.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: ae942900-cae6-425e-94b0-21f086e6d7b1
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇩🇪10 |  5.3MB/s
-  network: tcp
-  port: 50921
-  server: 188.245.43.225
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: dcc59828-342a-4e90-9b13-4dc7fe9c04b8
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇩🇪 德国 01 | 1x DE
-  password: b813c638-6c96-46ec-b58c-1e67aa7ce828
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
