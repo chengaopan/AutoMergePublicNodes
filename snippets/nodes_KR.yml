@@ -1,30 +1,59 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 01 | 1x KR
-  password: 786dc395-0683-4cbb-8cbb-c8b5be180e99
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 02 | 1x KR
-  password: 786dc395-0683-4cbb-8cbb-c8b5be180e99
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 01 | 1x KR
-  password: e4c47306-0613-4f2d-a7fb-ce83d963d579
+  name: 0|🇰🇷 韩国 01 | 1x KR
+  password: 44f9116f-4aff-418a-8d80-23b85a2b50e8
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 02 | 1x KR
-  password: e4c47306-0613-4f2d-a7fb-ce83d963d579
+  name: 0|🇰🇷 韩国 02 | 1x KR
+  password: 44f9116f-4aff-418a-8d80-23b85a2b50e8
   port: 36313
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 1,12|🇰🇷 韩国2|@ripaojiedian
+  password: '!!str 1234'
+  port: 1234
+  server: 43.203.237.206
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 1|🇰🇷7 |  5.4MB/s
+  network: tcp
+  port: 17232
+  server: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8d888b92-eec8-11ef-bca1-f23c91cfbbc9
+  ws-headers:
+    Host: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇰🇷8 |  1.8MB/s
+  port: 17232
+  server: 693debd4-sum4g0-svlqnl-2c08.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: c76abed4-f2d2-e4de-50ce-a545ff74ecd0
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇰🇷韩国 01 | 1x KR
+  password: 2a83806b-49a5-4105-91ff-26f6ac75a31a
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇰🇷韩国 02 | 1x KR
+  password: 2a83806b-49a5-4105-91ff-26f6ac75a31a
+  port: 31313
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 2
@@ -46,9 +75,38 @@ proxies:
     path: /oooo
 - cipher: aes-256-cfb
   client-fingerprint: chrome
+  name: 12|🇰🇷 韩国3|@ripaojiedian
+  password: 1601e3c29c8db1a88942cf0cad731bf3
+  port: 3306
+  server: 43.131.255.175
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12|🇰🇷 韩国4|@ripaojiedian
+  port: 45245
+  server: ye.fxlcn.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
   name: 12|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 3.39.252.80
+  server: 13.124.253.164
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 13|韩国4|@ripaojiedian
+  network: tcp
+  port: '45245'
+  server: ye.fxlcn.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
