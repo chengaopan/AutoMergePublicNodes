@@ -1,84 +1,63 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: 4410cde4-498b-4bf0-ab0b-6ca7482ec51b
+  name: 0|🇸🇬新加坡 01 | 1x SG
+  password: 73972fcd-db40-46a1-981e-4dfbcae2fafb
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬新加坡 02 | 1x SG
+  password: 73972fcd-db40-46a1-981e-4dfbcae2fafb
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬新加坡 03 | 1x SG
+  password: 73972fcd-db40-46a1-981e-4dfbcae2fafb
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 01 | 1x SG
+  password: 078ddba6-77bb-447e-a1e4-031c7631498c
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: 4410cde4-498b-4bf0-ab0b-6ca7482ec51b
+  name: 1|🇸🇬 新加坡 02 | 1x SG
+  password: 078ddba6-77bb-447e-a1e4-031c7631498c
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 03 | 1x SG
-  password: 4410cde4-498b-4bf0-ab0b-6ca7482ec51b
+  name: 1|🇸🇬 新加坡 03 | 1x SG
+  password: 078ddba6-77bb-447e-a1e4-031c7631498c
   port: 36175
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: '0'
-  cipher: auto
-  name: 1|🇸🇬2 |  5.3MB/s
-  network: tcp
-  port: '50266'
-  server: 103.106.229.54
-  type: vmess
-  uuid: 5edf584e-1351-436b-99b2-1033ba593d02
-- flow: ''
-  mode: ''
-  name: 1|🇸🇬3 |  1.5MB/s
-  network: ws
-  port: 2096
-  server: 141.193.213.20
-  servername: premium.vkehi.shop
-  tls: true
-  type: vless
-  udp: false
-  uuid: eb50d091-51ed-4f89-bc4e-8b04320585d7
-  ws-opts:
-    headers:
-      Host: premium.vkehi.shop
-    path: /
 - alterId: 0
   cipher: auto
-  name: 1|🇸🇬4 |  5.5MB/s
-  network: ws
-  port: 2053
-  server: cloudflare.182682.xyz
+  name: 2|🇸🇬6 |  2.8MB/s
+  network: tcp
+  port: 50266
+  server: 103.106.229.54
   skip-cert-verify: true
-  tfo: false
-  tls: true
+  tls: false
   type: vmess
-  udp: true
-  uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
-  ws-opts:
-    headers:
-      Host: sg1.pavo.eu.org
-    path: /sg1vmess
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇸🇬5 |  4.5MB/s
-  network: ws
-  port: 443
-  server: 168.138.165.174
-  servername: sgp.cayuo.me
-  tls: true
-  type: vless
-  udp: false
-  uuid: a89981b0-8096-4bbc-8d24-da2330650c4b
-  ws-opts:
-    headers:
-      Host: sgp.cayuo.me
-    path: /bing
+  uuid: 5edf584e-1351-436b-99b2-1033ba593d02
+  ws-headers:
+    Host: 103.106.229.54
+  ws-path: /
 - client-fingerprint: chrome
   flow: none
   mode: ''
-  name: 1|🇸🇬6 |  5.5MB/s
+  name: 2|🇸🇬2 |  5.6MB/s
   network: ws
   port: 2096
   server: 141.193.213.21
@@ -91,9 +70,40 @@ proxies:
     headers:
       Host: premium.vkehi.shop
     path: '%2F'
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇸🇬3 |  5.9MB/s
+  network: ws
+  port: 8080
+  server: 170.114.46.6
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: db33e70b-3769-474a-8d44-193159b64756
+  ws-opts:
+    headers:
+      Host: free.pranithsandaruwan.cfd
+    path: /
+- flow: ''
+  mode: ''
+  name: 2|🇸🇬4 |  4.1MB/s
+  network: ws
+  port: 2096
+  server: 141.193.213.20
+  servername: premium.vkehi.shop
+  tls: true
+  type: vless
+  udp: false
+  uuid: eb50d091-51ed-4f89-bc4e-8b04320585d7
+  ws-opts:
+    headers:
+      Host: premium.vkehi.shop
+    path: /
 - auth: 00a41b90-d694-406b-9b4b-392fe2c52cf1
   client-fingerprint: chrome
-  name: 1|🇸🇬7 |  1.0MB/s
+  name: 2|🇸🇬5 |  1.3MB/s
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 00a41b90-d694-406b-9b4b-392fe2c52cf1
@@ -102,27 +112,37 @@ proxies:
   skip-cert-verify: true
   sni: apple.com
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 01 | 1x SG
-  password: 335a01ff-677a-4f74-844d-09af6152a063
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 02 | 1x SG
-  password: 335a01ff-677a-4f74-844d-09af6152a063
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 03 | 1x SG
-  password: 335a01ff-677a-4f74-844d-09af6152a063
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+- client-fingerprint: chrome
+  name: 2|🇸🇬7 |  1.8MB/s
+  password: VMhGp5wEIyCDf90T
+  port: 38340
+  server: gysz0000.dynu.net
+  skip-cert-verify: true
+  sni: hk39.work.gd
+  type: trojan
+- alterId: '0'
+  cipher: auto
+  name: 2|🇸🇬8 |  5.5MB/s
+  network: tcp
+  port: '53802'
+  server: 103.106.229.207
+  type: vmess
+  uuid: 803c04ae-2da6-434b-a692-8fd75e5964d7
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 2|🇸🇬9 |  3.7MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: EgnLbAL1aF1vEq9l6IUknVGQ7HcXcOFb4dDrCtenCT0
+    short-id: 583e068b7426b6c0
+  server: 52.221.238.36
+  servername: www.ebay.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: f0b919c8-4a8e-4511-8196-3458e613d3fc
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
