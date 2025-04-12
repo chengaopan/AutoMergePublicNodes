@@ -1,85 +1,70 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 329fac00-464f-441a-b5f9-a060537a8faa
+  password: ff4a1d74-1303-4ddb-9565-c39005b452de
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 329fac00-464f-441a-b5f9-a060537a8faa
+  password: ff4a1d74-1303-4ddb-9565-c39005b452de
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 329fac00-464f-441a-b5f9-a060537a8faa
+  password: ff4a1d74-1303-4ddb-9565-c39005b452de
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇸🇬 新加坡 01 | 1x SG
-  password: 3fbde549-4e18-4f69-8fe4-821032a3c964
+  password: 4391f4bf-974e-40c3-8b01-ff92e61e8acb
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇸🇬 新加坡 02 | 1x SG
-  password: 3fbde549-4e18-4f69-8fe4-821032a3c964
+  password: 4391f4bf-974e-40c3-8b01-ff92e61e8acb
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇸🇬 新加坡 03 | 1x SG
-  password: 3fbde549-4e18-4f69-8fe4-821032a3c964
+  password: 4391f4bf-974e-40c3-8b01-ff92e61e8acb
   port: 36175
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alterId: '0'
+  cipher: auto
+  name: 2|🇸🇬2 |  5.3MB/s
+  network: tcp
+  port: '50266'
+  server: 103.106.229.54
+  type: vmess
+  uuid: 5edf584e-1351-436b-99b2-1033ba593d02
 - alterId: 0
   cipher: auto
-  name: 2|🇸🇬1 |  1.2MB/s
+  name: 2|🇸🇬4 |  5.5MB/s
   network: ws
   port: 2053
   server: cloudflare.182682.xyz
-  servername: sg1.pavo.eu.org
-  skip-cert-verify: false
+  skip-cert-verify: true
+  tfo: false
   tls: true
   type: vmess
+  udp: true
   uuid: cbd1d425-5379-4c44-82fc-5765d1d34dc9
   ws-opts:
     headers:
       Host: sg1.pavo.eu.org
     path: /sg1vmess
-- alterId: '0'
-  cipher: auto
-  name: 2|🇸🇬2 |  3.8MB/s
-  network: tcp
-  port: 50266
-  server: 103.106.229.54
-  type: vmess
-  uuid: 5edf584e-1351-436b-99b2-1033ba593d02
-- alterId: '0'
-  cipher: auto
-  name: 2|🇸🇬3 |  5.0MB/s
-  network: tcp
-  port: '53802'
-  server: 103.106.229.207
-  type: vmess
-  uuid: 803c04ae-2da6-434b-a692-8fd75e5964d7
-- alterId: 0
-  cipher: auto
-  name: 2|🇸🇬4 |  1.2MB/s
-  port: 17231
-  server: 6f316071-suk9s0-swtza9-1q91p.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: c11ff50c-f582-11ee-94df-f23c9164ca5d
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇸🇬 新加坡|@ripaojiedian
@@ -102,5 +87,13 @@ proxies:
   password: amazonskr05
   port: 443
   server: 52.194.243.103
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 12|🇸🇬 新加坡3|@ripaojiedian
+  password: d192a833-b118-4b46-8e54-12cf5025d4cd
+  port: 33461
+  server: gsyd.aicheetah.lol
   tfo: false
   type: ss
