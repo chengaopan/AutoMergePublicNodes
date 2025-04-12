@@ -1,36 +1,52 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵 日本 01 | 1x JP
-  password: dbfd92bb-ddf7-4317-9791-229ee2213efa
-  port: 36111
-  server: free.2weradf.xyz
+  name: 0|🇯🇵日本 01 | 1x JP
+  password: 11dc7623-2ae3-4bf6-b36e-8cc84e952fc5
+  port: 31111
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵 日本 02 | 1x JP
-  password: dbfd92bb-ddf7-4317-9791-229ee2213efa
-  port: 36113
-  server: free.2weradf.xyz
+  name: 0|🇯🇵日本 02 | 1x JP
+  password: 11dc7623-2ae3-4bf6-b36e-8cc84e952fc5
+  port: 31113
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵 日本 03 | 1x JP
-  password: dbfd92bb-ddf7-4317-9791-229ee2213efa
-  port: 36115
-  server: free.2weradf.xyz
+  name: 0|🇯🇵日本 03 | 1x JP
+  password: 11dc7623-2ae3-4bf6-b36e-8cc84e952fc5
+  port: 31115
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
+- allowInsecure: ''
+  name: 1|🇯🇵1 |  6.0MB/s
+  network: original
+  password: dQUWbcwECl
+  port: 443
+  server: automq3-proxy.automq-sg.com
+  skip-cert-verify: false
+  type: trojan
 - alterId: 0
   cipher: auto
-  name: 2|🇯🇵2 |  5.9MB/s
+  name: 1|🇯🇵3 |  5.8MB/s
   port: 17233
-  server: aa715e82-sunz40-t1tfcf-1o3sh.cm5.p5pv.com
+  server: d7481a66-sunz40-taklwz-12bd.cm5.p5pv.com
   tls: false
   type: vmess
-  uuid: 96b3f2ee-5f66-11ee-804b-f23c9164ca5d
+  uuid: ea76ae7e-ea95-11ef-8b73-f23c91cfbbc9
 - alterId: 0
   cipher: auto
-  name: 2|🇯🇵4 |  6.0MB/s
+  name: 1|🇯🇵5 |  6.0MB/s
+  port: 17233
+  server: 9cb8b51d-sunz40-svabg7-1td06.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: de5486da-f19c-11ef-8eaf-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 1|🇯🇵9 |  6.1MB/s
   network: tcp
   port: 17233
   server: a0a40de3-suk9s0-t7mt0p-1sllg.cm5.p5pv.com
@@ -43,7 +59,54 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 2|🇯🇵5 |  6.2MB/s
+  name: 1|🇯🇵10 |  6.3MB/s
+  network: tcp
+  port: 17233
+  server: 69c584f2-suif40-tee612-2r82.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 03573f46-e944-11eb-a8bf-f23c91cfbbc9
+  ws-headers:
+    Host: 69c584f2-suif40-tee612-2r82.cm5.p5pv.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇯🇵12 |  4.3MB/s
+  network: tcp
+  port: 27750
+  server: 5.253.41.147
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4b1992cc-8e7c-4003-a45f-a28c3e6f6fa8
+  ws-headers:
+    Host: 5.253.41.147
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇯🇵13 |  6.0MB/s
+  network: tcp
+  port: 17233
+  server: f547c7cf-sunz40-t49lki-1ejce.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e534d120-d32f-11ef-bdb9-f23c91cfbbc9
+  ws-headers:
+    Host: f547c7cf-sunz40-t49lki-1ejce.cm5.p5pv.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇯🇵15 |  6.2MB/s
+  port: 17233
+  server: aa715e82-sunz40-t1tfcf-1o3sh.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 96b3f2ee-5f66-11ee-804b-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 1|🇯🇵16 |  2.9MB/s
   network: tcp
   port: 17233
   server: fa7c2955-suif40-swjyj4-1mish.cm5.p5pv.com
@@ -54,18 +117,38 @@ proxies:
   ws-headers:
     Host: fa7c2955-suif40-swjyj4-1mish.cm5.p5pv.com
   ws-path: /
-- cipher: rc4-md5
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇯🇵 日本 01 | 1x JP
+  password: 7558b0b8-5a69-46f2-9b28-c48e5fac113e
+  port: 36111
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇯🇵 日本 02 | 1x JP
+  password: 7558b0b8-5a69-46f2-9b28-c48e5fac113e
+  port: 36113
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇯🇵 日本 03 | 1x JP
+  password: 7558b0b8-5a69-46f2-9b28-c48e5fac113e
+  port: 36115
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
   name: 12|🇯🇵 日本|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
-  plugin-opts:
-    host: 202504031266665-eDq1Iqw40p.download.microsoft.com
-    mode: http
-  port: 8766
-  server: cn01.efan8867801.xyz
+  port: 22253
+  server: hn3x.newbee8.me
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 1824af53-6021-4866-a6f9-1bad166dc2c2
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇯🇵 日本2|@ripaojiedian
@@ -74,32 +157,29 @@ proxies:
   server: 54.199.242.76
   tfo: false
   type: ss
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇯🇵 日本3|@ripaojiedian
-  port: 45402
-  server: 112.65.92.20
-  skip-cert-verify: false
+  password: cdc48a7a-b618-45af-a831-5afbd686b02f
+  port: 12210
+  server: gg21.hangfengjiasu.com
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 12|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.92.121.89
+  server: 54.199.198.40
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: 13|日本3|@ripaojiedian
+  name: 13|日本|@ripaojiedian
   network: tcp
-  port: '45402'
-  server: 112.65.92.20
+  port: '22253'
+  server: hn3x.newbee8.me
   servername: ''
   tls: false
   type: vmess
-  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+  uuid: 1824af53-6021-4866-a6f9-1bad166dc2c2
