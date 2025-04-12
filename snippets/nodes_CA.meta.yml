@@ -1,29 +1,133 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: 76ab985c-65fc-411f-a3e5-e221168520e9
+  password: ef808e95-72bf-4da5-aeba-d38c113be449
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 1|🇨🇦1 |  5.4MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦加拿大 01 | 1x CA
+  password: 559ccfd6-925e-4876-be5d-ffee8afb3400
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 2|🇨🇦1 |  4.6MB/s
   network: ws
-  port: 12897
-  server: gtm1.ktmwan.net
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 1bfc69ad-1855-4dfe-b169-886d7156e0f3
+  port: 8443
+  server: 130.61.51.100
+  servername: vn.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: gtm1.ktmwan.net
-    path: /
+      host: vn.dong2025.cfd
+    path: /?ed=2560
+- name: 2|🇨🇦2 |  2.4MB/s
+  network: ws
+  port: 443
+  server: 63.141.128.96
+  servername: vn.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vn.dong2025.cfd
+    path: /?ed=2560
+- name: 2|🇨🇦3 |  5.8MB/s
+  network: ws
+  port: 443
+  server: iplocation.io
+  servername: vn.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vn.dong2025.cfd
+    path: /?ed=2560
+- name: 2|🇨🇦4 |  2.6MB/s
+  network: ws
+  port: 443
+  server: 217.163.76.97
+  servername: vn.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vn.dong2025.cfd
+    path: /?ed=2560
+- name: 2|🇨🇦5 |  4.4MB/s
+  network: ws
+  port: 443
+  server: time.is
+  servername: vn.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vn.dong2025.cfd
+    path: /?ed=2560
+- name: 2|🇨🇦6 |  1.0MB/s
+  network: ws
+  port: 443
+  server: 212.183.88.132
+  servername: vn.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vn.dong2025.cfd
+    path: /?ed=2560
+- name: 2|🇨🇦7 |  4.2MB/s
+  network: ws
+  port: 443
+  server: 140.238.158.238
+  servername: vn.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vn.dong2025.cfd
+    path: /?ed=2560
+- name: 2|🇨🇦8 |  3.0MB/s
+  network: ws
+  port: 443
+  server: 185.133.35.242
+  servername: vn.dong2025.cfd
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vn.dong2025.cfd
+    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1,14|CA_speednode_0003
-  network: tcp
+  name: 14|CA_speednode_0003
   port: 42557
   reality-opts:
     public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
@@ -35,44 +139,3 @@ proxies:
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
-- auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 1|🇨🇦3 |  1.1MB/s
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 192.18.145.7
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 1|🇨🇦4 |  5.0MB/s
-  network: tcp
-  port: 27699
-  raw:
-    add: 91.194.11.118
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: ''
-    id: c23b127b-af87-43bb-aa1e-ce42374a2b53
-    net: tcp
-    path: ''
-    port: '27699'
-    ps: 🔥Join+Telegram:@FarahVPN🟣
-    scy: auto
-    sni: ''
-    tls: ''
-    type: none
-    v: '2'
-  server: 91.194.11.118
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c23b127b-af87-43bb-aa1e-ce42374a2b53
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇨🇦加拿大 01 | 1x CA
-  password: 89ddbeea-6483-477e-8805-4a0580f224e5
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true

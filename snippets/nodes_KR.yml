@@ -1,45 +1,63 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷 韩国 01 | 1x KR
-  password: 76ab985c-65fc-411f-a3e5-e221168520e9
+  password: ef808e95-72bf-4da5-aeba-d38c113be449
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷 韩国 02 | 1x KR
-  password: 76ab985c-65fc-411f-a3e5-e221168520e9
+  password: ef808e95-72bf-4da5-aeba-d38c113be449
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 1,12|🇰🇷 韩国2|@ripaojiedian
-  network: ws
-  password: ji0612uenfs
-  port: 50000
-  server: 121.167.108.242
-  skip-cert-verify: false
-  sni: ji0612e.nfjunka.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: ji0612e.nfjunka.xyz
-    path: /?ed=2560&proxyip=121.167.108.242:50000
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷韩国 01 | 1x KR
-  password: 89ddbeea-6483-477e-8805-4a0580f224e5
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: 559ccfd6-925e-4876-be5d-ffee8afb3400
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷韩国 02 | 1x KR
-  password: 89ddbeea-6483-477e-8805-4a0580f224e5
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: 559ccfd6-925e-4876-be5d-ffee8afb3400
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 2|🇰🇷4 |  6.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.36.94.132
+  type: ss
+- cipher: aes-256-cfb
+  name: 2|🇰🇷5 |  1.7MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.124.81.166
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 2|🇰🇷6 |  2.1MB/s
+  network: tcp
+  port: 17232
+  server: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8d888b92-eec8-11ef-bca1-f23c91cfbbc9
+  ws-headers:
+    Host: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
+  ws-path: /
+- cipher: aes-256-cfb
+  name: 2|🇰🇷8 |  5.5MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.125.87.74
+  type: ss
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -57,6 +75,19 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
+- client-fingerprint: chrome
+  name: 12|🇰🇷 韩国2|@ripaojiedian
+  network: ws
+  password: ji0612uenfs
+  port: 50000
+  server: 121.167.108.242
+  skip-cert-verify: false
+  sni: ji0612e.nfjunka.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ji0612e.nfjunka.xyz
+    path: /?ed=2560&proxyip=121.167.108.242:50000
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 12|🇰🇷 韩国3|@ripaojiedian
