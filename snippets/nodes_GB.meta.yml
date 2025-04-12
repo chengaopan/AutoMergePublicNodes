@@ -1,33 +1,47 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 01 | 1x HK
-  password: 0c0d859a-2d37-4392-8441-9d2893608043
+  password: 98fd32cd-578c-4eac-a48f-a9b2f211d63f
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 0c0d859a-2d37-4392-8441-9d2893608043
+  password: 98fd32cd-578c-4eac-a48f-a9b2f211d63f
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 01 | 1x HK
-  password: 070bc63d-f12c-4ec7-ba88-e8aba670c293
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1,13|CN_speednode_0039
+  network: tcp
+  port: 32055
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.amazon.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 070bc63d-f12c-4ec7-ba88-e8aba670c293
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1,13|CN_speednode_0034
+  network: tcp
+  port: 14659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
-- name: 11|Hysteria 🇬🇧 @v2meowcf
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 10|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -35,7 +49,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 14|GB_speednode_0056
+- name: 13|GB_speednode_0056
   network: ws
   port: 8880
   server: 31.22.116.154
@@ -49,3 +63,17 @@ proxies:
     headers:
       Host: redfree8.pooriashop.ir
     path: /Telegram@V2ray_Alpha
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇭🇰香港 01 | 1x HK
+  password: e0b11e5a-e10e-428f-a91d-e11a6aaf87a1
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇬🇧英国家宽 01 | 1x UK
+  password: e0b11e5a-e10e-428f-a91d-e11a6aaf87a1
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
