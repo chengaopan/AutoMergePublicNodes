@@ -1,25 +1,47 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: 4d80a150-1857-485f-a119-873dd69520ad
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: f1dde1ab-c0eb-4013-9c43-ee694c69a25c
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
+  password: f1dde1ab-c0eb-4013-9c43-ee694c69a25c
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: 30189f55-5105-41b9-a982-2a08f96f8791
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 4d80a150-1857-485f-a119-873dd69520ad
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: 30189f55-5105-41b9-a982-2a08f96f8791
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 395ebece-3131-4218-b2c4-939734d57ac1
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+- flow: ''
+  mode: ''
+  name: 2|🇬🇧1 |  3.2MB/s
+  network: ws
+  port: 8443
+  server: 104.17.148.22
+  servername: MdLoXlYg.rIcKtMoUsE.InFo
+  tls: true
+  type: vless
+  udp: false
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: MdLoXlYg.rIcKtMoUsE.InFo
+    path: /
 - client-fingerprint: chrome
   delay: 2307
   flow: xtls-rprx-vision
@@ -37,32 +59,27 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  mode: ''
-  name: 2|🇬🇧2 |  3.8MB/s
+  name: 2|🇬🇧3 |  1.4MB/s
   network: tcp
-  port: 1152
-  reality-opts:
-    public-key: EsdPQG7EdQ6yCid_OtlMfCDIRTnmFZ_ujpKbaqOiCT4
-    short-id: 4374d295a4f9dd83
-  server: 57.128.166.88
-  servername: www.stackoverflow.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: dfa25b43-edf2-99e4-c3b0-1aa7c9ccaa96
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0045
-  network: tcp
-  port: 49699
+  port: 47151
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
+  server: shenzhou02.mysynology.net
   servername: www.amazon.com
-  skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧4 |  5.7MB/s
+  network: tcp
+  port: 35311
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
