@@ -1,31 +1,49 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇩🇪德国 01 | 1x DE
-  password: a7ace6a5-a092-4e40-8aa6-7691155721f3
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇩🇪 德国 01 | 1x DE
-  password: 73188e8f-1060-44a2-8f2a-f9406de13a0b
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alterId: '0'
-  cipher: auto
-  name: 2|🇩🇪2 |  1.3MB/s
-  network: ws
-  port: '20050'
-  server: 91.149.233.178
-  type: vmess
-  uuid: 4a205af4-ec8e-4624-b033-71d2e5548814
-  ws-opts:
-    path: /
 - cipher: rc4-md5
-  name: 2|🇩🇪9 |  3.3MB/s
+  name: 0|🇩🇪7 |  2.4MB/s
   password: 14fFPrbezE3HDZzsMOr6
   port: 8080
   server: 193.108.119.230
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 0|🇩🇪15 |  1.2MB/s
+  network: ws
+  port: 20050
+  raw:
+    add: 91.149.233.178
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 2d95dbe2-6053-4d60-a963-a24be8326009
+    net: ws
+    path: /
+    port: '20050'
+    ps: 🇩🇪 --001-1B
+    scy: ''
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 91.149.233.178
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2d95dbe2-6053-4d60-a963-a24be8326009
+  ws-opts:
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪 德国 01 | 1x DE
+  password: 88279d58-934a-45a5-af03-a4d1b2f26e71
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇩🇪德国 01 | 1x DE
+  password: ebed2d19-0774-48c1-930c-ae8f37171b40
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
