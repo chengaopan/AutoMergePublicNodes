@@ -1,8 +1,21 @@
 proxies:
-- name: 0|🇩🇪1 |  5.5MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇩🇪 德国 01 | 1x DE
+  password: 065bf11f-2ef3-466c-a69c-7a63263698e8
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: rc4-md5
+  name: 1|🇩🇪1 |  3.0MB/s
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 193.108.119.230
+  type: ss
+- name: 1|🇩🇪2 |  5.2MB/s
   network: ws
   port: 2053
-  server: 199.34.228.183
+  server: 45.194.53.81
   servername: all22.kikforwindows.com
   skip-cert-verify: true
   tls: true
@@ -16,7 +29,7 @@ proxies:
 - client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 0|🇩🇪2 |  5.8MB/s
+  name: 1|🇩🇪3 |  5.6MB/s
   network: tcp
   port: 56214
   reality-opts:
@@ -28,64 +41,13 @@ proxies:
   type: vless
   udp: false
   uuid: dbfde921-73a9-4475-94c0-f99c6c1cc2b9
-- auth: 18463200c271aa6d
-  name: 0|🇩🇪3 |  3.1MB/s
-  obfs: salamander
-  obfs-password: 6c80ade6
-  password: 18463200c271aa6d
-  port: 443
-  server: rplcehysttya6.airlineshoma.com
-  skip-cert-verify: true
-  sni: vkvd127.mycdn.me
-  type: hysteria2
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 0|🇩🇪4 |  2.7MB/s
-  network: ws
-  port: 2053
-  server: 172.67.204.84
-  servername: all18.kikforwindows.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 99333609-167f-4750-ab63-34cfa27c723a
-  ws-opts:
-    headers:
-      Host: all18.kikforwindows.com
-    path: /containers/de
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 0|🇩🇪5 |  5.6MB/s
-  network: tcp
-  port: 2089
-  reality-opts:
-    public-key: bvEBes1y2n6327dEgJyZTR6Xz_EuyfLdkEX7DxWGFFg
-    short-id: e3c5c005cae07eb8
-  server: 23.88.62.209
-  servername: refersion.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: c95740bb-b3be-44f9-9fa4-260c3fbec6de
-  ws-opts:
-    headers:
-      Host: /JOKERRVPNTELEGRAM----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN
-    path: ''
-- cipher: rc4-md5
-  name: 0|🇩🇪6 |  5.3MB/s
-  password: 14fFPrbezE3HDZzsMOr6
-  port: 8080
-  server: 193.108.119.230
-  type: ss
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇩🇪7 |  5.5MB/s
+  name: 1|🇩🇪4 |  5.0MB/s
   network: ws
   port: 80
-  server: 45.131.210.30
+  server: 45.131.4.91
   servername: redfree8.pooriashop.ir
   tls: false
   type: vless
@@ -95,50 +57,10 @@ proxies:
     headers:
       Host: redfree8.pooriashop.ir
     path: Telegram@WangCai2/?ed
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇩🇪8 |  5.8MB/s
-  network: tcp
-  port: 31904
-  server: 138.199.203.23
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 37e9ed0b-bde6-48ad-b837-9f19a5bbc80f
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇩🇪9 |  3.2MB/s
-  network: tcp
-  port: 23568
-  server: tv2rayrr.set7.site
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 3ac87d23-b3cf-43c0-b274-f1a6633effd5
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇩🇪10 |  5.2MB/s
-  network: tcp
-  port: 53695
-  server: 94.177.225.237
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 5739c92e-4e9c-47eb-8c35-15e35b88b9c3
-  ws-opts:
-    headers:
-      Host: Join_Bade_Channel@JOKERRVPNTELEGRAM----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN
-    path: ''
 - client-fingerprint: chrome
   delay: 2415
   flow: xtls-rprx-vision
-  name: 0,13|CN_speednode_0034
+  name: 1,14|CN_speednode_0034
   network: tcp
   port: 58031
   reality-opts:
@@ -150,17 +72,109 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- auth: 18463200c271aa6d
+  name: 1|🇩🇪6 |  2.6MB/s
+  obfs: salamander
+  obfs-password: 6c80ade6
+  password: 18463200c271aa6d
+  port: 443
+  server: rplcehysttya6.airlineshoma.com
+  skip-cert-verify: true
+  sni: vkvd127.mycdn.me
+  type: hysteria2
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇩🇪7 |  5.6MB/s
+  network: tcp
+  port: 31904
+  server: tv2rayrr.set7.site
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: 37e9ed0b-bde6-48ad-b837-9f19a5bbc80f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 1|🇩🇪8 |  5.4MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: Rcapy_5gvuL9LOr1Bqz-Y84P69L3wUQjG48xpB4fLTA
+    short-id: 1d13151ce1
+  server: direct.pdownloaddigikala.ir
+  servername: direct.pdownloaddigikala.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: eacc24ed-a1c1-4037-9af4-4f6bcd657119
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 1|🇩🇪9 |  5.6MB/s
+  network: ws
+  port: 2053
+  server: 172.67.204.84
+  servername: all22.kikforwindows.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: 78905d87-0266-4825-868d-3069e88d1201
+  ws-opts:
+    headers:
+      Host: all22.kikforwindows.com
+    path: /containers/de
+- name: 1|🇩🇪10 |  1.5MB/s
+  password: I46LpSIM1f
+  port: 1935
+  server: 194.164.57.9
+  skip-cert-verify: true
+  sni: x4ger-ionos.devefun.net
+  type: trojan
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇩🇪11 |  5.4MB/s
+  network: tcp
+  port: 31904
+  server: 138.199.203.23
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: 37e9ed0b-bde6-48ad-b837-9f19a5bbc80f
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 1|🇩🇪12 |  1.9MB/s
+  network: tcp
+  port: 8081
+  reality-opts:
+    public-key: tzwgsCEGbdpNwS3NVwGV7SK0tvJVf4TzTnOUm6fWvGU
+    short-id: bc9fccfc8ebf1dfd
+  server: 188.245.121.148
+  servername: refersion.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: 55e79d77-c2ea-40ec-b10e-8deb79972c37
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇩🇪13 |  5.7MB/s
+  network: tcp
+  port: 23568
+  server: 138.199.203.23
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: 3ac87d23-b3cf-43c0-b274-f1a6633effd5
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇩🇪德国 01 | 1x DE
-  password: c57ec4af-c679-4dc4-b862-65d6510780d7
+  name: 2|🇩🇪德国 01 | 1x DE
+  password: 17ff808a-ad80-4c09-86f1-f2493c467858
   port: 31471
   server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇩🇪 德国 01 | 1x DE
-  password: c29d5828-1e40-40fb-8fa6-c010239c4ab6
-  port: 36471
-  server: free.2weradf.xyz
   type: ss
   udp: true
