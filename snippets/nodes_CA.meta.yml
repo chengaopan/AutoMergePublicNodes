@@ -1,22 +1,15 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 7be3b542-d6d4-4808-a2cd-c98953361605
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: c8946955-23af-496f-b07d-50515943c808
+  name: 0|🇨🇦 加拿大 01 | 1x CA
+  password: 25a9a637-fa8b-409d-b4b1-ebff50afaccb
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 2|🇨🇦1 |  2.7MB/s
+- name: 1|🇨🇦1 |  7.9MB/s
   network: ws
   port: 443
-  server: 160.79.104.55
+  server: 35.201.203.106
   servername: vb.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -27,10 +20,10 @@ proxies:
     headers:
       host: vb.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|🇨🇦2 |  4.1MB/s
+- name: 1|🇨🇦2 |  4.7MB/s
   network: ws
   port: 443
-  server: 45.67.215.167
+  server: 160.79.104.195
   servername: vb.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -43,7 +36,33 @@ proxies:
     path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2,14|CA_speednode_0001
+  name: 1|🇨🇦3 |  4.5MB/s
+  network: tcp
+  port: 16011
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 1|🇨🇦4 |  1.9MB/s
+  network: ws
+  port: 443
+  server: whatismyipaddress.com
+  servername: vb.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vb.ylka.dpdns.org
+    path: /?ed=2560
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1,14|CA_speednode_0001
   network: tcp
   port: 42557
   reality-opts:
@@ -56,22 +75,40 @@ proxies:
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
+- name: 1|🇨🇦6 |  3.4MB/s
+  network: ws
+  port: 443
+  server: kyree.ns.cloudflare.com
+  servername: vb.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vb.ylka.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇨🇦4 |  5.5MB/s
-  network: tcp
-  port: 16011
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.amazon.com
+  flow: ''
+  mode: ''
+  name: 1|🇨🇦7 |  2.2MB/s
+  network: ws
+  port: 8443
+  server: 104.21.3.219
+  servername: ovhwuxian.pai50288.uk
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇨🇦5 |  3.0MB/s
+  udp: false
+  uuid: 57ba2ab1-a283-42eb-82ee-dc3561a805b8
+  ws-opts:
+    headers:
+      Host: ovhwuxian.pai50288.uk
+    path: /57ba2ab1
+- name: 1|🇨🇦8 |  2.6MB/s
   network: ws
-  port: 443
-  server: benedict.ns.cloudflare.com
+  port: 17635
+  server: 104.168.43.27
   servername: vb.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -82,10 +119,10 @@ proxies:
     headers:
       host: vb.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|🇨🇦6 |  1.7MB/s
+- name: 1|🇨🇦9 |  5.8MB/s
   network: ws
   port: 443
-  server: 185.133.35.112
+  server: 129.146.46.164
   servername: vb.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -96,10 +133,10 @@ proxies:
     headers:
       host: vb.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|🇨🇦7 |  2.8MB/s
+- name: 1|🇨🇦10 |  3.9MB/s
   network: ws
   port: 443
-  server: ashton.ns.cloudflare.com
+  server: 45.67.215.143
   servername: vb.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -110,3 +147,24 @@ proxies:
     headers:
       host: vb.ylka.dpdns.org
     path: /?ed=2560
+- name: 1|🇨🇦11 |  4.7MB/s
+  network: ws
+  port: 443
+  server: icook.hk
+  servername: vb.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vb.ylka.dpdns.org
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇨🇦加拿大 01 | 1x CA
+  password: e01dbb49-62b5-4a97-a260-c4c24d6094b6
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
