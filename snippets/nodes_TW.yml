@@ -1,59 +1,94 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 0,11|🇹🇼 台湾3|@ripaojiedian
-  password: d192a833-b118-4b46-8e54-12cf5025d4cd
-  port: 33248
-  server: gsyd.aicheetah.lol
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 01 | 1x TW
-  password: d0bdefcf-299c-4e6b-aafc-e9c422fefdb8
+  name: 0|🇹🇼台湾 01 | 1x TW
+  password: a923cd6f-b2c1-4ea7-b1a2-d008957ead80
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 02 | 1x TW
-  password: d0bdefcf-299c-4e6b-aafc-e9c422fefdb8
+  name: 0|🇹🇼台湾 02 | 1x TW
+  password: a923cd6f-b2c1-4ea7-b1a2-d008957ead80
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 03 | 1x TW
-  password: d0bdefcf-299c-4e6b-aafc-e9c422fefdb8
+  name: 0|🇹🇼台湾 03 | 1x TW
+  password: a923cd6f-b2c1-4ea7-b1a2-d008957ead80
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
+- name: 1|🇹🇼6 |  5.8MB/s
+  network: ws
+  password: Ng35283528
+  port: 443
+  server: 104.16.83.176
+  skip-cert-verify: true
+  sni: c2.validbv3528.eu.org
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: c2.validbv3528.eu.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  country: 🇨🇳CN
+  delay: 2941
+  h2-opts: {}
+  http-opts: {}
+  name: 1|🇹🇼12 |  6.2MB/s
+  network: ws
+  port: 46005
+  server: fadawtawd.zhangwei.li
+  skip-cert-verify: true
+  type: vmess
+  uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534
+  ws-opts:
+    path: /zh-cn
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 11|🇹🇼 台湾2|@ripaojiedian
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 154.223.20.79
+  name: 1,12|🇹🇼 台湾3|@ripaojiedian
+  password: d192a833-b118-4b46-8e54-12cf5025d4cd
+  port: 33248
+  server: gsyd.aicheetah.lol
   tfo: false
   type: ss
+- cipher: aes-128-gcm
+  name: 1|🇹🇼26 |  5.5MB/s
+  password: VMhGp5wEIyCDf90T
+  port: 33368
+  server: shenzhou05.mysynology.net
+  type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇹🇼 台湾 01 | 1x TW
-  password: cb5d85b1-4535-4b84-8347-d40ac85c6f91
+  name: 2|🇹🇼 台湾 01 | 1x TW
+  password: 08e3170a-17dd-4064-a81d-983f61f054ce
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇹🇼 台湾 02 | 1x TW
-  password: cb5d85b1-4535-4b84-8347-d40ac85c6f91
+  name: 2|🇹🇼 台湾 02 | 1x TW
+  password: 08e3170a-17dd-4064-a81d-983f61f054ce
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇹🇼 台湾 03 | 1x TW
-  password: cb5d85b1-4535-4b84-8347-d40ac85c6f91
+  name: 2|🇹🇼 台湾 03 | 1x TW
+  password: 08e3170a-17dd-4064-a81d-983f61f054ce
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 12|🇹🇼 台湾2|@ripaojiedian
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  server: 154.223.20.79
+  tfo: false
+  type: ss
