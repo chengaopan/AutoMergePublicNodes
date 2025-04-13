@@ -1,47 +1,86 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼 台湾 01 | 1x TW
-  password: 4000dff3-05e7-4e51-9dad-75a8487bac6f
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼 台湾 02 | 1x TW
-  password: 4000dff3-05e7-4e51-9dad-75a8487bac6f
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼 台湾 03 | 1x TW
-  password: 4000dff3-05e7-4e51-9dad-75a8487bac6f
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 01 | 1x TW
-  password: 418aceda-d265-4f5f-a528-d6a9fef561d0
+  name: 0|🇹🇼台湾 01 | 1x TW
+  password: 2daf78f5-5161-4f92-9a43-a5d202b4626d
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 02 | 1x TW
-  password: 418aceda-d265-4f5f-a528-d6a9fef561d0
+  name: 0|🇹🇼台湾 02 | 1x TW
+  password: 2daf78f5-5161-4f92-9a43-a5d202b4626d
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 03 | 1x TW
-  password: 418aceda-d265-4f5f-a528-d6a9fef561d0
+  name: 0|🇹🇼台湾 03 | 1x TW
+  password: 2daf78f5-5161-4f92-9a43-a5d202b4626d
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|🇹🇼1 |  1.7MB/s
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇹🇼1 |  1.3MB/s
+  network: ws
+  port: 443
+  server: 108.162.195.127
+  servername: edccy.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: false
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇹🇼2 |  6.1MB/s
+  network: ws
+  port: 25002
+  server: 211.194.201.60
+  servername: edccy.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: false
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇹🇼3 |  5.9MB/s
+  network: ws
+  port: 2083
+  server: 27.50.48.126
+  servername: edccr.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: false
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccr.ambercc.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇹🇼4 |  6.3MB/s
+  network: tcp
+  port: 12477
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 1|🇹🇼5 |  1.3MB/s
   network: ws
   port: 2096
   server: 27.50.49.61
@@ -55,39 +94,13 @@ proxies:
     headers:
       host: edccr.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇹🇼2 |  5.8MB/s
-  network: tcp
-  port: 15823
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇹🇼3 |  4.7MB/s
-  network: ws
-  port: 443
-  server: 103.116.7.235
-  servername: edccy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccy.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇹🇼4 |  1.6MB/s
+  name: 1|🇹🇼6 |  2.6MB/s
   network: ws
-  port: 443
-  server: 108.162.195.127
+  port: 50001
+  server: 14.45.249.246
   servername: edccy.ambercc.filegear-sg.me
   tls: true
   type: vless
@@ -96,272 +109,37 @@ proxies:
   ws-opts:
     headers:
       Host: edccy.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼5 |  3.3MB/s
-  network: ws
-  port: 36622
-  server: 118.40.58.144
-  servername: edccy.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccy.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼6 |  5.8MB/s
-  network: ws
-  password: Ng35283528
-  port: 443
-  server: 104.16.83.176
-  skip-cert-verify: true
-  sni: c2.validbv3528.eu.org
-  tfo: false
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: c2.validbv3528.eu.org
-    path: /?ed=2560
+    path: /?ed=2560flow=-udp443
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0007
+  name: 1,14|CN_speednode_0018
   network: tcp
-  port: 47531
+  port: 13263
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
+  server: zhee01.dynu.net
   servername: gateway.icloud.com
   skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇹🇼8 |  1.7MB/s
-  network: ws
-  port: 2096
-  server: 92.243.74.23
-  servername: edccy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccy.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼9 |  1.0MB/s
-  network: ws
-  port: 443
-  server: thaddeus.ns.cloudflare.com
-  servername: edccy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccy.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- delay: 1364
-  name: 2,14|US_speednode_0073
-  network: ws
-  port: 443
-  server: 108.165.152.207
-  servername: edccy.ambercc.filegear-sg.me
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccy.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 2|🇹🇼11 |  6.8MB/s
-  network: ws
-  port: 12580
-  server: 183.99.193.147
-  servername: edccy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccy.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alterId: 0
+- alterId: 2
   cipher: auto
-  country: 🇨🇳CN
-  delay: 2941
-  h2-opts: {}
-  http-opts: {}
-  name: 2|🇹🇼12 |  6.2MB/s
+  name: 1|🇹🇼8 |  1.3MB/s
   network: ws
-  port: 46005
-  server: fadawtawd.zhangwei.li
+  port: 23619
+  server: 19.mamamajd.site
   skip-cert-verify: true
-  type: vmess
-  uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534
-  ws-opts:
-    path: /zh-cn
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇹🇼13 |  6.1MB/s
-  network: tcp
-  port: 12477
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: randomized
-  flow: ''
-  mode: ''
-  name: 2|🇹🇼14 |  1.3MB/s
-  network: ws
-  port: 2052
-  server: 104.26.13.228
-  servername: ''
   tls: false
-  type: vless
-  udp: false
-  uuid: 282533b1-cbf1-40a6-b399-a1116163fcc5
-  ws-opts:
-    headers:
-      Host: throbbing-haze-ac69.guoronghuang180.workers.dev
-    path: /?ed=2560
-- name: 2|🇹🇼15 |  4.8MB/s
-  network: ws
-  port: 9443
-  server: 154.40.39.206
-  servername: edccy.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  uuid: 0b4c36ab-4385-353a-9305-566f12dcf4a5
   ws-opts:
     headers:
-      Host: edccy.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼16 |  4.2MB/s
-  network: ws
-  port: 443
-  server: 8.220.218.105
-  servername: edccy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccy.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼17 |  3.3MB/s
-  network: ws
-  port: 443
-  server: bestcf.030101.xyz
-  servername: edccy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccy.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼18 |  6.0MB/s
-  network: ws
-  port: 2087
-  server: 167.68.5.248
-  servername: edccy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccy.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼19 |  5.3MB/s
-  network: ws
-  port: 2083
-  server: 27.50.49.251
-  servername: edccy.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccy.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼20 |  6.3MB/s
-  network: ws
-  port: 12567
-  server: 221.145.181.124
-  servername: edccy.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccy.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 2,12|🇹🇼 台湾3|@ripaojiedian
-  password: d192a833-b118-4b46-8e54-12cf5025d4cd
-  port: 33248
-  server: gsyd.aicheetah.lol
-  tfo: false
-  type: ss
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 2|🇹🇼22 |  1.7MB/s
-  network: ws
-  port: 2083
-  server: 27.50.48.126
-  servername: edccr.ambercc.filegear-sg.me
-  tls: true
-  type: vless
-  udp: false
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccr.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 2|🇹🇼23 |  5.3MB/s
-  network: ws
-  port: 443
-  server: 8.220.218.105
-  servername: edccr.ambercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccr.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼24 |  2.6MB/s
+      Host: 19.mamamajd.site
+    path: /
+- name: 1|🇹🇼9 |  4.9MB/s
   network: ws
   port: 12514
   server: 210.123.143.214
@@ -375,11 +153,69 @@ proxies:
     headers:
       host: edccr.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- delay: 954
-  name: 2,14|SG_speednode_0052
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇹🇼10 |  1.1MB/s
   network: ws
-  port: 8443
-  server: 27.50.49.230
+  port: 2087
+  server: 92.243.75.49
+  servername: edccy.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: false
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560flow=-udp443
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇹🇼11 |  1.3MB/s
+  network: ws
+  port: 12527
+  server: 221.144.200.91
+  servername: edccr.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: false
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccr.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 1|🇹🇼12 |  3.9MB/s
+  network: ws
+  password: Aimer
+  port: 443
+  server: 46.254.92.191
+  skip-cert-verify: true
+  sni: epcct.ambercc.filegear-sg.me
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epcct.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇹🇼13 |  1.3MB/s
+  network: tcp
+  port: 37809
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- delay: 1364
+  name: 1,14|US_speednode_0073
+  network: ws
+  port: 443
+  server: 108.165.152.207
   servername: edccy.ambercc.filegear-sg.me
   skip-cert-verify: false
   tls: true
@@ -390,29 +226,230 @@ proxies:
     headers:
       Host: edccy.ambercc.filegear-sg.me
     path: /?ed=2560
-- cipher: aes-128-gcm
-  name: 2|🇹🇼26 |  5.5MB/s
-  password: VMhGp5wEIyCDf90T
-  port: 33368
-  server: shenzhou05.mysynology.net
-  type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇹🇼27 |  1.3MB/s
-  network: tcp
-  port: 16704
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: www.yahoo.com
+- name: 1|🇹🇼15 |  5.5MB/s
+  network: ws
+  port: 443
+  server: thaddeus.ns.cloudflare.com
+  servername: edccy.ambercc.filegear-sg.me
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇹🇼16 |  6.0MB/s
+  network: ws
+  port: 443
+  server: 162.159.44.127
+  servername: edccy.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: false
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 1|🇹🇼17 |  2.7MB/s
+  network: ws
+  port: 36622
+  server: 118.40.58.144
+  servername: edccy.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇹🇼18 |  1.2MB/s
+  network: ws
+  port: 10041
+  server: 175.211.154.200
+  servername: edccr.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: false
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccr.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 1|🇹🇼19 |  1.2MB/s
+  network: ws
+  port: 12580
+  server: 183.99.193.147
+  servername: edccy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 1|🇹🇼20 |  5.8MB/s
+  network: ws
+  port: 12567
+  server: 221.145.181.124
+  servername: edccy.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccy.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇹🇼21 |  5.6MB/s
+  network: ws
+  port: 12514
+  server: 210.123.143.214
+  servername: edccy.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: false
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 1|🇹🇼22 |  5.8MB/s
+  network: ws
+  port: 9443
+  server: 154.40.39.206
+  servername: edccy.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 1|🇹🇼23 |  1.7MB/s
+  network: ws
+  port: 443
+  server: 103.116.7.235
+  servername: edccy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 1|🇹🇼24 |  5.1MB/s
+  network: ws
+  port: 443
+  server: 8.220.218.105
+  servername: edccy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇹🇼25 |  3.7MB/s
+  network: ws
+  port: 10083
+  server: 221.156.61.192
+  servername: edccr.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: false
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccr.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 1,14|KR_speednode_0051
+  network: ws
+  port: 12527
+  server: 221.144.200.91
+  servername: edccy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 1|🇹🇼27 |  1.2MB/s
+  network: ws
+  port: 2087
+  server: 167.68.5.248
+  servername: edccy.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccy.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇹🇼 台湾 01 | 1x TW
+  password: 8312e63f-739b-4757-9aae-efdec57ad8ba
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇹🇼 台湾 02 | 1x TW
+  password: 8312e63f-739b-4757-9aae-efdec57ad8ba
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇹🇼 台湾 03 | 1x TW
+  password: 8312e63f-739b-4757-9aae-efdec57ad8ba
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 12|🇹🇼 台湾2|@ripaojiedian
   password: f8f7aCzcPKbsF8p3
   port: 989
   server: 154.223.20.79
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 12|🇹🇼 台湾3|@ripaojiedian
+  password: d192a833-b118-4b46-8e54-12cf5025d4cd
+  port: 33248
+  server: gsyd.aicheetah.lol
   tfo: false
   type: ss
