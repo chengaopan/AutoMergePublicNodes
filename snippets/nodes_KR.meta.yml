@@ -1,35 +1,48 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 01 | 1x KR
-  password: d56e4ce2-2f50-4d7e-ab24-8750210efb67
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 02 | 1x KR
-  password: d56e4ce2-2f50-4d7e-ab24-8750210efb67
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 01 | 1x KR
-  password: 7c9ce1f0-5532-4a00-896e-6b468e89c948
+  name: 0|🇰🇷韩国 01 | 1x KR
+  password: 0b570c01-8b48-4dd8-9279-8c001d3783e2
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 02 | 1x KR
-  password: 7c9ce1f0-5532-4a00-896e-6b468e89c948
+  name: 0|🇰🇷韩国 02 | 1x KR
+  password: 0b570c01-8b48-4dd8-9279-8c001d3783e2
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 01 | 1x KR
+  password: 5117b131-3eee-4b5b-94cf-575e414dc482
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 02 | 1x KR
+  password: 5117b131-3eee-4b5b-94cf-575e414dc482
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇰🇷1 |  3.1MB/s
+  name: 2|🇰🇷1 |  5.5MB/s
+  network: tcp
+  port: 17232
+  server: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 8d888b92-eec8-11ef-bca1-f23c91cfbbc9
+  ws-headers:
+    Host: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇰🇷2 |  1.5MB/s
   network: tcp
   port: 17232
   server: 693debd4-sum4g0-svlqnl-2c08.cm5.p5pv.com
@@ -42,7 +55,7 @@ proxies:
   ws-path: /
 - country: 🇰🇷KR
   delay: 2987
-  name: 2|🇰🇷2 |  5.2MB/s
+  name: 2|🇰🇷3 |  5.3MB/s
   password: d07ec566-018a-4a80-b3d3-b378fdead52c
   port: 55215
   server: shy23.zqjc.cloud
@@ -50,22 +63,9 @@ proxies:
   sni: shy23.zqjc.cloud
   type: hysteria2
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 2|🇰🇷3 |  5.0MB/s
-  network: tcp
-  port: 17232
-  server: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 8d888b92-eec8-11ef-bca1-f23c91cfbbc9
-  ws-headers:
-    Host: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
-  ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 12|🇰🇷 韩国|@ripaojiedian
+  name: 2,12|🇰🇷 韩国|@ripaojiedian
   password: d192a833-b118-4b46-8e54-12cf5025d4cd
   port: 43450
   server: gdlt.aicheetah.lol
