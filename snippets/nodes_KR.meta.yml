@@ -1,43 +1,33 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 01 | 1x KR
-  password: 7575500b-a38b-49de-8538-634a1dda112f
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 02 | 1x KR
-  password: 7575500b-a38b-49de-8538-634a1dda112f
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 01 | 1x KR
-  password: 7b9442e0-20a8-4960-9b38-7b1abc41b8f6
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 02 | 1x KR
-  password: 7b9442e0-20a8-4960-9b38-7b1abc41b8f6
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- alterId: 0
+- alterId: '0'
   cipher: auto
-  name: 2|🇰🇷1 |  5.0MB/s
-  port: 17232
-  server: a64e572b-sutj40-tei4of-1qxa1.cm5.p5pv.com
+  name: 0|🇰🇷2 |  6.2MB/s
+  network: tcp
+  port: '17232'
+  server: deb006a3-sux8g0-t1dqec-1jal4.cm5.p5pv.com
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
+  uuid: 78ad2258-088d-11f0-8eab-f23c91cfbbc9
+  ws-headers:
+    Host: deb006a3-sux8g0-t1dqec-1jal4.cm5.p5pv.com
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 0|🇰🇷4 |  5.5MB/s
+  network: tcp
+  port: '17232'
+  server: 3119abdf-sux8g0-swy169-1tf4x.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 202c296a-f34a-11ef-80e5-f23c9164ca5d
+  ws-headers:
+    Host: 3119abdf-sux8g0-swy169-1tf4x.cm5.p5pv.com
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 2|🇰🇷2 |  5.3MB/s
+  name: 0|🇰🇷5 |  6.2MB/s
   network: tcp
   port: 17232
   server: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
@@ -48,22 +38,9 @@ proxies:
   ws-headers:
     Host: c92a67a3-sum4g0-t46yf9-e13q.cm5.p5pv.com
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 2|🇰🇷6 |  1.5MB/s
-  network: tcp
-  port: 17232
-  server: 3119abdf-sux8g0-swy169-1tf4x.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 202c296a-f34a-11ef-80e5-f23c9164ca5d
-  ws-headers:
-    Host: 3119abdf-sux8g0-swy169-1tf4x.cm5.p5pv.com
-  ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇰🇷4 |  1.7MB/s
+  name: 0|🇰🇷6 |  4.6MB/s
   network: tcp
   port: 21082
   reality-opts:
@@ -74,17 +51,31 @@ proxies:
   tls: true
   type: vless
   uuid: e7adaa99-8363-3ec4-b849-307c99005405
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 2|🇰🇷5 |  3.0MB/s
-  network: tcp
-  port: '17232'
-  server: deb006a3-sux8g0-t1dqec-1jal4.cm5.p5pv.com
+  name: 0|🇰🇷7 |  5.7MB/s
+  port: 17232
+  server: a64e572b-sutj40-tei4of-1qxa1.cm5.p5pv.com
+  tls: false
   type: vmess
-  uuid: 78ad2258-088d-11f0-8eab-f23c91cfbbc9
+  uuid: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: bdbc6d0e-0f85-46c4-ba3a-2f18a94d35d4
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: bdbc6d0e-0f85-46c4-ba3a-2f18a94d35d4
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 12|🇰🇷 韩国|@ripaojiedian
+  name: 11|🇰🇷 韩国|@ripaojiedian
   password: d192a833-b118-4b46-8e54-12cf5025d4cd
   port: 43450
   server: gdlt.aicheetah.lol
@@ -92,7 +83,7 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 12|🇰🇷 韩国2|@ripaojiedian
+  name: 11|🇰🇷 韩国2|@ripaojiedian
   password: 1601e3c29c8db1a88942cf0cad731bf3
   port: 3306
   server: 43.131.255.175
@@ -100,9 +91,23 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 12|🇰🇷 韩国特殊|@ripaojiedian
+  name: 11|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 18.179.20.184
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇰🇷 韩国 01 | 1x KR
+  password: 7f4551e2-e0b2-48f6-8531-f04f24689286
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇰🇷 韩国 02 | 1x KR
+  password: 7f4551e2-e0b2-48f6-8531-f04f24689286
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
