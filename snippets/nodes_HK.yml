@@ -1,35 +1,68 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: 3f6f7d6a-2b66-44c3-946e-3fa41c4bce0f
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 3f6f7d6a-2b66-44c3-946e-3fa41c4bce0f
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 02 | 1x HK
-  password: 3767bde9-a23e-43fe-a690-248c1597e691
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: 07abd81c-637c-4b0f-b1c8-f4db9f9ba560
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: 3767bde9-a23e-43fe-a690-248c1597e691
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: 07abd81c-637c-4b0f-b1c8-f4db9f9ba560
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: d1375c83-757c-46ca-8e3f-6bfe3e13a197
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: d1375c83-757c-46ca-8e3f-6bfe3e13a197
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇭🇰12 |  4.2MB/s
+  name: 2|🇭🇰3 |  5.9MB/s
+  network: ws
+  port: 443
+  server: hknbyivfffj.site
+  servername: hknbyivfffj.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: hknbyivfffj.site
+    path: /rbqqvws
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰4 |  3.1MB/s
+  port: 15229
+  server: 4c16178d-surog0-t26vr3-1likw.cm.plebai.net
+  tls: false
+  type: vmess
+  uuid: a23c20fc-3e66-11ef-b1d2-f23c91cfbbc9
+- cipher: chacha20-ietf
+  name: 2|🇭🇰10 |  1.5MB/s
+  obfs: http_simple
+  obfs-param: 20581-passw0rd.download.microsoft.com
+  password: passwd
+  port: 8115
+  protocol: origin
+  protocol-param: ''
+  server: cn03.closeai.one
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰18 |  5.8MB/s
   network: ws
   port: 443
   raw:
@@ -49,7 +82,7 @@ proxies:
     type: ''
     v: '2'
   server: 104.21.6.201
-  servername: ''
+  servername: hknbyivfffj.site
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -59,13 +92,41 @@ proxies:
       Host: hknbyivfffj.site
     path: /rbqqvws
 - client-fingerprint: chrome
-  name: 2|🇭🇰14 |  2.0MB/s
+  name: 2|🇭🇰15 |  5.8MB/s
   password: ea2QsO
   port: 22745
   server: 183.240.116.144
   skip-cert-verify: true
   sni: ctldl.windowsupdate.com
   type: trojan
+- cipher: chacha20-ietf
+  name: 2|🇭🇰16 |  8.6MB/s
+  obfs: http_simple
+  obfs-param: 20581-passw0rd.download.microsoft.com
+  password: passwd
+  port: 8109
+  protocol: origin
+  protocol-param: ''
+  server: cn02.closeai.one
+  type: ssr
+- cipher: chacha20-ietf
+  name: 2|🇭🇰17 |  6.0MB/s
+  obfs: http_simple
+  obfs-param: 20581-passw0rd.download.microsoft.com
+  password: passwd
+  port: 8101
+  protocol: origin
+  protocol-param: ''
+  server: cn01.closeai.one
+  type: ssr
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰19 |  1.8MB/s
+  port: 15229
+  server: b2bb1a46-surog0-t2cl3c-14ubl.cm.plebai.net
+  tls: false
+  type: vmess
+  uuid: d0f35ada-c39c-11ef-8a98-f23c91cfbbc9
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
