@@ -1,99 +1,54 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵 日本 01 | 1x JP
-  password: 415fe052-81a7-4005-813d-34a305a043a9
+  password: 97f68f64-f148-4137-a272-0defe38a5f54
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵 日本 02 | 1x JP
-  password: 415fe052-81a7-4005-813d-34a305a043a9
+  password: 97f68f64-f148-4137-a272-0defe38a5f54
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵 日本 03 | 1x JP
-  password: 415fe052-81a7-4005-813d-34a305a043a9
+  password: 97f68f64-f148-4137-a272-0defe38a5f54
   port: 36115
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵日本 01 | 1x JP
-  password: 66dd7b91-6123-46c9-af60-d279437fd0b3
-  port: 31111
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵日本 02 | 1x JP
-  password: 66dd7b91-6123-46c9-af60-d279437fd0b3
-  port: 31113
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵日本 03 | 1x JP
-  password: 66dd7b91-6123-46c9-af60-d279437fd0b3
-  port: 31115
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: 2|🇯🇵3 |  3.9MB/s
-  password: 821b0ce0-b565-3b7c-917c-9a58a6de6358
-  port: 20300
+- name: 1|🇯🇵3 |  4.9MB/s
+  password: 9e7dee4d-876a-3254-81ec-0d91582cacef
+  port: 20141
   server: gy.58n.net
   skip-cert-verify: true
-  sni: z300.hongkongnode.top
+  sni: z141.hongkongnode.top
   type: trojan
   udp: true
-- name: 2|🇯🇵5 |  6.1MB/s
-  password: 821b0ce0-b565-3b7c-917c-9a58a6de6358
-  port: 20076
-  server: gy.58n.net
+- name: 1|🇯🇵5 |  5.2MB/s
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 162.159.153.2
   skip-cert-verify: true
-  sni: x76.flybar.work
+  sni: zamim340.ggff.net
+  tfo: false
   type: trojan
   udp: true
-- cipher: chacha20-ietf
-  name: 2|🇯🇵6 |  6.1MB/s
-  obfs: http_simple
-  obfs-param: 20581-passw0rd.download.microsoft.com
-  password: passwd
-  port: 8409
-  protocol: origin
-  protocol-param: ''
-  server: cn13.closeai.one
-  type: ssr
-- cipher: chacha20-ietf
-  name: 2|🇯🇵7 |  5.6MB/s
-  obfs: http_simple
-  obfs-param: 20581-passw0rd.download.microsoft.com
-  password: passwd
-  port: 8413
-  protocol: origin
-  protocol-param: ''
-  server: cn14.closeai.one
-  type: ssr
-- cipher: chacha20-ietf
-  name: 2|🇯🇵10 |  7.5MB/s
-  obfs: http_simple
-  obfs-param: 20581-passw0rd.download.microsoft.com
-  password: passwd
-  port: 8407
-  protocol: origin
-  protocol-param: ''
-  server: cn12.closeai.one
-  type: ssr
+  ws-opts:
+    headers:
+      Host: zamim340.ggff.net
+    path: /tr?ed=2560
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202504140137024-Zlzv0ZMcwk.download.microsoft.com
+    host: 202504140137024-VdwANYqU5v.download.microsoft.com
     mode: http
   port: 8765
   server: cn01.efan8867801.xyz

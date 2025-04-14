@@ -1,56 +1,39 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼 台湾 01 | 1x TW
-  password: 415fe052-81a7-4005-813d-34a305a043a9
+  password: 97f68f64-f148-4137-a272-0defe38a5f54
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼 台湾 02 | 1x TW
-  password: 415fe052-81a7-4005-813d-34a305a043a9
+  password: 97f68f64-f148-4137-a272-0defe38a5f54
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼 台湾 03 | 1x TW
-  password: 415fe052-81a7-4005-813d-34a305a043a9
+  password: 97f68f64-f148-4137-a272-0defe38a5f54
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 01 | 1x TW
-  password: 66dd7b91-6123-46c9-af60-d279437fd0b3
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
+- name: 1|🇹🇼3 |  5.1MB/s
+  network: ws
+  password: Ng35283528
+  port: 443
+  server: 104.16.83.176
+  skip-cert-verify: true
+  sni: c2.validbv3528.eu.org
+  tfo: false
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 02 | 1x TW
-  password: 66dd7b91-6123-46c9-af60-d279437fd0b3
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 03 | 1x TW
-  password: 66dd7b91-6123-46c9-af60-d279437fd0b3
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf
-  name: 2|🇹🇼3 |  6.0MB/s
-  obfs: http_simple
-  obfs-param: 20581-passw0rd.download.microsoft.com
-  password: passwd
-  port: 8301
-  protocol: origin
-  protocol-param: ''
-  server: cn10.closeai.one
-  type: ssr
+  ws-opts:
+    headers:
+      Host: c2.validbv3528.eu.org
+    path: /?ed=2560
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 12|🇹🇼 台湾2|@ripaojiedian
