@@ -1,28 +1,28 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 01 | 1x JP
-  password: 8076af46-cce6-4aea-9976-0a1467b67f20
+  password: 60c08fb9-2d32-4ab6-9e61-1a2c72ccaa92
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 02 | 1x JP
-  password: 8076af46-cce6-4aea-9976-0a1467b67f20
+  password: 60c08fb9-2d32-4ab6-9e61-1a2c72ccaa92
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 03 | 1x JP
-  password: 8076af46-cce6-4aea-9976-0a1467b67f20
+  password: 60c08fb9-2d32-4ab6-9e61-1a2c72ccaa92
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇯🇵1 |  4.7MB/s
+  name: 1|🇯🇵1 |  1.4MB/s
   network: tcp
   port: 48121
   reality-opts:
@@ -32,15 +32,73 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 1|🇯🇵2 |  6.0MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: jp104-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: jp104-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- client-fingerprint: random
+  name: 1|🇯🇵3 |  5.7MB/s
+  network: ws
+  port: 443
+  server: 104.16.209.110
+  servername: masaleini.mahsaamini.dpdns.org
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10d9df89-9a20-4110-9711-bca119490ee9
+  ws-opts:
+    headers:
+      Host: masaleini.mahsaamini.dpdns.org
+- alterId: 0
+  cipher: auto
+  name: 1|🇯🇵4 |  3.1MB/s
+  port: 17233
+  server: 464fd463-sutj40-svphz8-1nhwh.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 3a3ef54c-eb42-11ed-9bf0-f23c91369f2d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇯🇵2 |  2.3MB/s
+  name: 1,14|CN_speednode_0016
   network: tcp
-  port: 35659
+  port: 25768
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: gateway.icloud.com
+  server: bsuqian01.dynu.net
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇯🇵6 |  5.1MB/s
+  network: tcp
+  port: 11839
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇯🇵7 |  1.2MB/s
+  network: tcp
+  port: 17278
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.yahoo.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
@@ -60,68 +118,33 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0008
+  name: 1|🇯🇵9 |  1.2MB/s
   network: tcp
-  port: 31735
+  port: 14548
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇯🇵5 |  5.0MB/s
-  network: tcp
-  port: 10635
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
+  server: csuzhou01.1cooldns.com
   servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇯🇵6 |  6.1MB/s
-  network: tcp
-  port: 11839
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 1|🇯🇵7 |  6.1MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - cipher: chacha20-ietf-poly1305
   name: 2|🇯🇵 日本 01 | 1x JP
-  password: 941296bc-b3ef-4af7-b47f-92cbb0bfa3c0
+  password: 976f22f7-bab0-4fbf-bd6f-7d91ea300a32
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 2|🇯🇵 日本 02 | 1x JP
-  password: 941296bc-b3ef-4af7-b47f-92cbb0bfa3c0
+  password: 976f22f7-bab0-4fbf-bd6f-7d91ea300a32
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 2|🇯🇵 日本 03 | 1x JP
-  password: 941296bc-b3ef-4af7-b47f-92cbb0bfa3c0
+  password: 976f22f7-bab0-4fbf-bd6f-7d91ea300a32
   port: 36115
   server: free.2weradf.xyz
   type: ss

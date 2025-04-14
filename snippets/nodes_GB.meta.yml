@@ -1,18 +1,24 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 01 | 1x HK
-  password: 8076af46-cce6-4aea-9976-0a1467b67f20
+  password: 60c08fb9-2d32-4ab6-9e61-1a2c72ccaa92
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 8076af46-cce6-4aea-9976-0a1467b67f20
+  password: 60c08fb9-2d32-4ab6-9e61-1a2c72ccaa92
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧1 |  1.3MB/s
+  password: y6fgyC28hscmdwqXj2v0Fm
+  port: 37618
+  server: 62.60.152.158
+  type: ss
 - client-fingerprint: chrome
   delay: 2307
   flow: xtls-rprx-vision
@@ -30,7 +36,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧2 |  1.4MB/s
+  name: 1|🇬🇧3 |  5.1MB/s
   network: tcp
   port: 35311
   reality-opts:
@@ -54,16 +60,33 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: ''
+  grpc-opts:
+    grpc-service-name: 2086vless
+  mode: ''
+  name: 1|🇬🇧5 |  4.3MB/s
+  network: grpc
+  port: 2060
+  reality-opts:
+    public-key: jW_vraWBLfMcIkPp89pEPSbFQn2VM4qtPO4FAoC2chE
+    short-id: 629cc26960e47e39
+  server: 165.22.116.82
+  servername: refersion.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: 701a7842-79a2-4a48-882b-c563daad99c1
 - cipher: chacha20-ietf-poly1305
   name: 2|🇭🇰 香港 01 | 1x HK
-  password: 941296bc-b3ef-4af7-b47f-92cbb0bfa3c0
+  password: 976f22f7-bab0-4fbf-bd6f-7d91ea300a32
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 2|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 941296bc-b3ef-4af7-b47f-92cbb0bfa3c0
+  password: 976f22f7-bab0-4fbf-bd6f-7d91ea300a32
   port: 36271
   server: free.2weradf.xyz
   type: ss
