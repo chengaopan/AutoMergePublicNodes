@@ -1,10 +1,24 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇩🇪 德国 01 | 1x DE
+  password: 5c025f75-ab83-4046-8dc2-e240d34b5641
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪德国 01 | 1x DE
+  password: 4b729c8f-6767-4a7c-8a52-0a05944b4fbb
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: ''
   grpc-opts:
     grpc-service-name: V2RayMizban----V2RayMizban----V2RayMizban----V2RayMizban----V2RayMizban----V2RayMizban----V2RayMizban
   mode: ''
-  name: 1|🇩🇪1 |  4.0MB/s
+  name: 2|🇩🇪1 |  4.0MB/s
   network: grpc
   port: 8443
   server: 91.107.181.10
@@ -16,7 +30,7 @@ proxies:
 - client-fingerprint: randomized
   flow: ''
   mode: ''
-  name: 1|🇩🇪2 |  5.0MB/s
+  name: 2|🇩🇪2 |  5.0MB/s
   network: ws
   port: 8880
   server: 104.17.147.22
@@ -32,7 +46,7 @@ proxies:
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 1|🇩🇪3 |  2.6MB/s
+  name: 2|🇩🇪3 |  2.6MB/s
   network: ws
   port: 2095
   server: ns.cloudflare.com
@@ -48,7 +62,7 @@ proxies:
 - client-fingerprint: chrome
   delay: 2415
   flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0033
+  name: 2,14|CN_speednode_0033
   network: tcp
   port: 58031
   reality-opts:
@@ -63,7 +77,7 @@ proxies:
 - client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 1|🇩🇪5 |  4.2MB/s
+  name: 2|🇩🇪5 |  4.2MB/s
   network: tcp
   port: 3037
   reality-opts:
@@ -78,7 +92,7 @@ proxies:
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 1|🇩🇪6 |  1.6MB/s
+  name: 2|🇩🇪6 |  1.6MB/s
   network: ws
   port: 80
   server: 45.131.4.161
@@ -91,10 +105,3 @@ proxies:
     headers:
       Host: redfree8.pooriashop.ir
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇩🇪德国 01 | 1x DE
-  password: aa54e64c-c457-467e-a4d6-fdaa888b1249
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
