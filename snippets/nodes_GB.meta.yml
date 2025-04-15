@@ -1,52 +1,60 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 01 | 1x HK
-  password: 5c025f75-ab83-4046-8dc2-e240d34b5641
+  password: 0e4e9083-b57c-48c5-8bea-0b254196f7fb
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 5c025f75-ab83-4046-8dc2-e240d34b5641
+  password: 0e4e9083-b57c-48c5-8bea-0b254196f7fb
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰香港 01 | 1x HK
-  password: 4b729c8f-6767-4a7c-8a52-0a05944b4fbb
+  password: fd9d9b82-a13c-4d5d-b19c-d8d3af469956
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 4b729c8f-6767-4a7c-8a52-0a05944b4fbb
+  password: fd9d9b82-a13c-4d5d-b19c-d8d3af469956
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0034
+  name: 2|🇬🇧1 |  4.9MB/s
   network: tcp
-  port: 32055
+  port: 35311
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: randomized
+  name: 2|🇬🇧2 |  2.9MB/s
+  network: ws
+  port: 443
+  server: 104.21.48.1
+  servername: s1-c3r.pages.dev
   skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧2 |  1.7MB/s
-  password: 9onFEWpRgKmtMnxtXGIWD0
-  port: 64864
-  server: 77.110.102.235
-  type: ss
+  uuid: e5c2e234-333e-48b4-8199-2793a64527bc
+  ws-opts:
+    headers:
+      Host: s1-c3r.pages.dev
+    path: /8SdV1hw44t3rzxh0?ed=2560
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
