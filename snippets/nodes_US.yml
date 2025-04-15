@@ -1,28 +1,70 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸 美国 01 | 1x US Los Angeles
+  password: fe6cfe64-e91f-4759-9858-70371cbba8ac
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: fe6cfe64-e91f-4759-9858-70371cbba8ac
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸 美国 03 | 1x US Washington
+  password: fe6cfe64-e91f-4759-9858-70371cbba8ac
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国 01 | 1x US Los Angeles
+  password: 2fca6bbf-5922-48a7-b071-a4f8f684a052
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 2fca6bbf-5922-48a7-b071-a4f8f684a052
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国 03 | 1x US Washington
+  password: 2fca6bbf-5922-48a7-b071-a4f8f684a052
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 2|🇺🇸30 |  3.0MB/s
+  network: tcp
+  port: '5228'
+  server: 716545eb-sux8g0-t5oe1a-1ejod.cu.plebai.net
+  type: vmess
+  uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸3 |  2.0MB/s
+  name: 2|🇺🇸7 |  1.5MB/s
   network: tcp
-  port: 37805
-  server: 120.232.153.63
+  port: 5228
+  server: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
   ws-headers:
-    Host: 120.232.153.63
+    Host: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸7 |  5.3MB/s
-  port: 5229
-  server: 2c2227e1-sutj40-t907cr-1c1mr.cu.plebai.net
-  tls: false
-  type: vmess
-  uuid: a12640d0-e2ad-11ef-8f5b-f23c913c8d2b
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸8 |  3.0MB/s
+  name: 2|🇺🇸9 |  2.4MB/s
   network: tcp
   port: 5228
   raw:
@@ -46,17 +88,9 @@ proxies:
   tls: false
   type: vmess
   uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
-- alterId: '0'
-  cipher: auto
-  name: 1|🇺🇸29 |  4.8MB/s
-  network: tcp
-  port: '5228'
-  server: 716545eb-sux8g0-t5oe1a-1ejod.cu.plebai.net
-  type: vmess
-  uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸15 |  3.6MB/s
+  name: 2|🇺🇸10 |  1.9MB/s
   port: 5229
   server: f5f98477-sutj40-tdcdb7-1k27l.cu.plebai.net
   tls: false
@@ -64,48 +98,7 @@ proxies:
   uuid: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸17 |  5.1MB/s
-  network: tcp
-  port: 5228
-  server: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-  ws-headers:
-    Host: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸24 |  2.1MB/s
-  network: ws
-  port: 20011
-  raw:
-    add: 45.147.201.231
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: ''
-    id: e4319e6e-ef82-45cf-a1f3-e4db006306fc
-    net: ws
-    path: /
-    port: '20011'
-    ps: 🇺🇸 --001-1A
-    scy: ''
-    sni: ''
-    tls: ''
-    type: none
-    v: '2'
-  server: 45.147.201.231
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e4319e6e-ef82-45cf-a1f3-e4db006306fc
-  ws-opts:
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸31 |  4.0MB/s
+  name: 2|🇺🇸27 |  3.7MB/s
   network: tcp
   port: 5229
   server: 74f77c00-sutj40-t5qufl-8n27.cu.plebai.net
@@ -116,10 +109,35 @@ proxies:
   ws-headers:
     Host: 74f77c00-sutj40-t5qufl-8n27.cu.plebai.net
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸28 |  2.8MB/s
+  network: tcp
+  port: 5229
+  server: 2e93912d-sutj40-sutgau-1r62f.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 154b0bf8-f9a7-11ee-a218-f23c91cfbbc9
+  ws-headers:
+    Host: 2e93912d-sutj40-sutgau-1r62f.cu.plebai.net
+  ws-path: /
+- name: 2|🇺🇸29 |  3.1MB/s
+  network: ws
+  password: a8fce442-ae9a-4cc1-a0cc-20308ff0a0db
+  port: 443
+  server: 104.21.64.1
+  skip-cert-verify: false
+  sni: 1kM.HUaNgSHang.pP.UA
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 1kM.HUaNgSHang.pP.UA
+    path: '%2FlXENb74xF4ylXngZ'
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 11,12|美国|@ripaojiedian
+  name: 12,13|美国|@ripaojiedian
   network: ws
   port: '30808'
   server: v8.heduian.link
@@ -136,7 +154,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国2|@ripaojiedian
+  name: 12|🇺🇸 美国2|@ripaojiedian
   port: 23903
   server: usz1.fgmcx.top
   skip-cert-verify: false
@@ -147,7 +165,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 11,12|美国3|@ripaojiedian
+  name: 12,13|美国3|@ripaojiedian
   network: ws
   port: '30807'
   server: v7.heduian.link
@@ -163,7 +181,7 @@ proxies:
     path: /oooo
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国4|@ripaojiedian
+  name: 12|🇺🇸 美国4|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -175,7 +193,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 12|美国2|@ripaojiedian
+  name: 13|美国2|@ripaojiedian
   network: tcp
   port: '23903'
   server: usz1.fgmcx.top
@@ -183,24 +201,3 @@ proxies:
   tls: false
   type: vmess
   uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国 01 | 1x US Los Angeles
-  password: 56303b34-746a-4ac6-8ebe-f32022936576
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 56303b34-746a-4ac6-8ebe-f32022936576
-  port: 31213
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国 03 | 1x US Washington
-  password: 56303b34-746a-4ac6-8ebe-f32022936576
-  port: 31215
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
