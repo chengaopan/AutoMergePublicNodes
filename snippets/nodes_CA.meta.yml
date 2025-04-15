@@ -1,28 +1,7 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 4a518087-b16b-4c71-b25c-003a17f725ae
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: 1|🇨🇦1 |  2.9MB/s
-  network: ws
-  port: 443
-  server: craig.ns.cloudflare.com
-  servername: vb.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vb.ylks0033.dpdns.org
-    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇨🇦2 |  5.0MB/s
+  name: 0|🇨🇦1 |  5.1MB/s
   network: tcp
   port: 16011
   reality-opts:
@@ -33,10 +12,17 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇨🇦 加拿大 01 | 1x CA
-  password: 93bd20cc-fb2a-4701-89b7-5834e6b963da
+  name: 1|🇨🇦 加拿大 01 | 1x CA
+  password: 46eca09b-7bb1-4df3-90c6-003c0aaadb21
   port: 36441
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇨🇦加拿大 01 | 1x CA
+  password: f9f02215-0fb7-4270-95d8-08994f99a51b
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
