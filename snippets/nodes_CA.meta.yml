@@ -1,32 +1,72 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: 96b89e52-ecd6-49bb-9c7f-2b78c56a3870
+  password: 0ace78a2-38d1-40ea-9745-15f2a6a34986
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- allowInsecure: ''
-  name: 1|🇨🇦1 |  1.4MB/s
-  network: ws
-  password: '!!str 123456'
-  port: 8443
-  server: 192.65.217.53
-  skip-cert-verify: false
-  sni: top-azx.pages.dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: top-azx.pages.dev
-    path: /Az1.vpn.33.TOP/?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇨🇦加拿大 01 | 1x CA
-  password: 92b6bc9d-8005-4d4d-b149-8b708a81ee70
+  name: 1|🇨🇦加拿大 01 | 1x CA
+  password: 89339d4c-dd27-4f13-b536-90813fc9e169
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- name: 2|🇨🇦1 |  1.7MB/s
+  network: ws
+  port: 443
+  server: craig.ns.cloudflare.com
+  servername: vc.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: vc.ylka.dpdns.org
+    path: /?ed=2560
+- name: 2|🇨🇦2 |  5.9MB/s
+  network: ws
+  port: 443
+  server: huxley.ns.cloudflare.com
+  servername: vc.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: vc.ylka.dpdns.org
+    path: /?ed=2560
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇨🇦3 |  5.7MB/s
+  network: tcp
+  port: 16011
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 2|🇨🇦4 |  1.5MB/s
+  network: ws
+  port: 443
+  server: rustam.ns.cloudflare.com
+  servername: vc.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: vc.ylka.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 14|CA_speednode_0001

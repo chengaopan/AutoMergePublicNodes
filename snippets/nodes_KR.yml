@@ -1,23 +1,37 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷 韩国 01 | 1x KR
-  password: 96b89e52-ecd6-49bb-9c7f-2b78c56a3870
+  password: 0ace78a2-38d1-40ea-9745-15f2a6a34986
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷 韩国 02 | 1x KR
-  password: 96b89e52-ecd6-49bb-9c7f-2b78c56a3870
+  password: 0ace78a2-38d1-40ea-9745-15f2a6a34986
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: 89339d4c-dd27-4f13-b536-90813fc9e169
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: 89339d4c-dd27-4f13-b536-90813fc9e169
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 1|🇰🇷5 |  2.4MB/s
+  name: 2|🇰🇷5 |  3.4MB/s
   network: tcp
-  port: '17232'
+  port: 17232
   server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
   servername: ''
   skip-cert-verify: true
@@ -27,40 +41,6 @@ proxies:
   ws-headers:
     Host: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
   ws-path: /
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 1,12|🇰🇷 韩国特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 3.34.192.249
-  tfo: false
-  type: ss
-- name: 1|🇰🇷6 |  1.0MB/s
-  network: ws
-  password: amclubs
-  port: 2053
-  server: 162.159.129.11
-  skip-cert-verify: false
-  sni: tran.amclubs.rr.nu
-  type: trojan
-  ws-opts:
-    headers:
-      Host: tran.amclubs.rr.nu
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷韩国 01 | 1x KR
-  password: 92b6bc9d-8005-4d4d-b149-8b708a81ee70
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷韩国 02 | 1x KR
-  password: 92b6bc9d-8005-4d4d-b149-8b708a81ee70
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -72,6 +52,14 @@ proxies:
   tls: false
   type: vmess
   uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 12|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.34.192.249
+  tfo: false
+  type: ss
 - name: 13|韩国|@ripaojiedian
   network: ws
   password: ji0612uenfs
