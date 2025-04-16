@@ -1,45 +1,35 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 01 | 1x KR
-  password: 4899ae04-e5c9-4a81-a61a-b14dad79b88b
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 02 | 1x KR
-  password: 4899ae04-e5c9-4a81-a61a-b14dad79b88b
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 01 | 1x KR
-  password: 750c2752-fd8e-4e62-9a5d-e4ffb318b03f
+  name: 0|🇰🇷 韩国 01 | 1x KR
+  password: 15e6a4ed-3c41-4844-abe9-96a97b32c68e
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 02 | 1x KR
-  password: 750c2752-fd8e-4e62-9a5d-e4ffb318b03f
+  name: 0|🇰🇷 韩国 02 | 1x KR
+  password: 15e6a4ed-3c41-4844-abe9-96a97b32c68e
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
-- allowInsecure: ''
-  name: 2|🇰🇷2 |  5.6MB/s
-  network: tcp
-  password: 20bc0771-1fde-45ee-8052-3c26249c43dc
-  port: 52803
-  server: 250407.jichang.my
-  skip-cert-verify: false
-  sni: seoul3.678789.xyz
-  tls: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: 3a737413-a57f-4083-bdff-16c498794f6c
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: 3a737413-a57f-4083-bdff-16c498794f6c
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 2,13|韩国|@ripaojiedian
+  name: 2|🇰🇷5 |  2.4MB/s
   network: tcp
   port: '17232'
   server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
@@ -51,6 +41,26 @@ proxies:
   ws-headers:
     Host: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
   ws-path: /
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 2,12|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 3.34.192.249
+  tfo: false
+  type: ss
+- name: 2|🇰🇷6 |  1.0MB/s
+  network: ws
+  password: amclubs
+  port: 2053
+  server: 162.159.129.11
+  skip-cert-verify: false
+  sni: tran.amclubs.rr.nu
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tran.amclubs.rr.nu
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -62,11 +72,15 @@ proxies:
   tls: false
   type: vmess
   uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 12|🇰🇷 韩国特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 54.249.151.205
-  tfo: false
-  type: ss
+- name: 13|韩国|@ripaojiedian
+  network: ws
+  password: ji0612uenfs
+  port: 50004
+  server: 110.9.4.54
+  skip-cert-verify: true
+  sni: ji0612e.nfjunka.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: ji0612e.nfjunka.xyz
+    path: '%2F%3Fed%3D2560%26proxyip%3D110.9.4.54%3A50004'
