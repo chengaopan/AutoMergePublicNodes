@@ -1,38 +1,67 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: b67c51d9-25e4-4ccb-95ef-c55ecce85c66
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: b67c51d9-25e4-4ccb-95ef-c55ecce85c66
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 01 | 1x HK
-  password: 4e17c562-6711-4f1a-93a6-cb5ce3624062
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 84f25098-d0f1-4add-911b-bef9e8c62ff0
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 4e17c562-6711-4f1a-93a6-cb5ce3624062
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 84f25098-d0f1-4add-911b-bef9e8c62ff0
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- flow: ''
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: b55429d0-5351-4201-82ce-15db8f8c7c57
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: b55429d0-5351-4201-82ce-15db8f8c7c57
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧1 |  5.8MB/s
+  network: tcp
+  port: 35311
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: ''
   mode: ''
-  name: 2|🇬🇧1 |  1.6MB/s
+  name: 2|🇬🇧2 |  1.7MB/s
   network: ws
   port: 443
-  server: 104.16.189.41
+  server: 108.162.196.159
+  servername: cr7777.rayan.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
+  ws-opts:
+    headers:
+      Host: cr7777.rayan.dpdns.org
+    path: /Telegram@V2ray_Alpha/?ed=2560
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 2|🇬🇧3 |  2.6MB/s
+  network: ws
+  port: 443
+  server: g2.com
   servername: cr7.traneh.dpdns.org
   tls: true
   type: vless
@@ -41,63 +70,36 @@ proxies:
   ws-opts:
     headers:
       Host: cr7.traneh.dpdns.org
-    path: sinavm-sinavm/?ed=2560
+    path: sinavm-sinavm/?ed=2560flow=-udp443
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0039
+  name: 2,14|CN_speednode_0031
   network: tcp
-  port: 49699
+  port: 32055
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
+  server: csuzhou01.1cooldns.com
   servername: www.amazon.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: '2'
-  cipher: auto
-  name: 2|🇬🇧3 |  1.1MB/s
-  network: ws
-  port: '30836'
-  server: v36.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: baidu.com
-    path: /oooo
 - client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 2|🇬🇧4 |  2.7MB/s
+  delay: 1679
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0025
   network: tcp
-  port: 50156
+  port: 65053
   reality-opts:
-    public-key: mXoYA71X3faWTOW2FF0-oCrvLcfP1VHo9T44awgiKBk
-    short-id: f8d21b62b1
-  server: 54.37.7.94
-  servername: snapp.ir
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.amazon.com
+  skip-cert-verify: true
   tls: true
   type: vless
-  udp: false
-  uuid: bc1e59fd-08c4-4662-89a8-21bc5554ecec
-- flow: ''
-  mode: ''
-  name: 2|🇬🇧5 |  5.5MB/s
-  network: ws
-  port: 443
-  server: 104.16.186.41
-  servername: cr7.traneh.dpdns.org
-  tls: true
-  type: vless
-  udp: false
-  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
-  ws-opts:
-    headers:
-      Host: cr7.traneh.dpdns.org
-    path: sinavm-sinavm/?ed=2560
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
