@@ -1,16 +1,23 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇷🇺 俄罗斯 01 | 1x RU
-  password: acf23009-3e6e-46c0-8d38-10280ff9c9e5
+  password: bd3fa24c-c73e-4e9e-b4f1-d2f279137200
   port: 36511
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇷🇺俄罗斯 01 | 1x RU
+  password: 066edee1-5d7e-40ea-ab7b-49723b622769
+  port: 31511
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alpn:
   - h3
   auth_str: dongtaiwang.com
   down: 1000 Mbps
-  name: 1|🇷🇺1 |  1.6MB/s
+  name: 2|🇷🇺1 |  1.6MB/s
   port: 10803
   server: 185.22.155.71
   skip-cert-verify: true
@@ -18,7 +25,7 @@ proxies:
   type: hysteria
   up: 1000 Mbps
 - fast-open: true
-  name: 1|🇷🇺2 |  3.7MB/s
+  name: 2|🇷🇺2 |  3.7MB/s
   password: dongtaiwang.com
   port: 32555
   server: 46.29.163.171
@@ -26,17 +33,10 @@ proxies:
   sni: apple.com
   type: hysteria2
 - fast-open: true
-  name: 1|🇷🇺3 |  3.6MB/s
+  name: 2|🇷🇺3 |  3.6MB/s
   password: dongtaiwang.com
   port: 64816
   server: 46.17.41.217
   skip-cert-verify: true
   sni: apple.com
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇷🇺俄罗斯 01 | 1x RU
-  password: 8ffd3f35-a720-4b01-b634-ae3812acb40f
-  port: 31511
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
