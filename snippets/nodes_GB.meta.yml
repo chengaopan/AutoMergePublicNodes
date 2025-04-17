@@ -1,35 +1,79 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 01 | 1x HK
-  password: a75f1fd0-f802-4bfa-b891-22b6723819e3
+  password: 30bf35cd-0a34-435c-beb1-ae127775c613
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: a75f1fd0-f802-4bfa-b891-22b6723819e3
+  password: 30bf35cd-0a34-435c-beb1-ae127775c613
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 01 | 1x HK
-  password: c55872e1-8e0a-46ec-aa95-2a2dae213f0f
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: c55872e1-8e0a-46ec-aa95-2a2dae213f0f
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧1 |  4.9MB/s
+  name: 1,13|CN_speednode_0029
+  network: tcp
+  port: 32055
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.amazon.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 1|🇬🇧2 |  2.2MB/s
+  network: ws
+  port: 443
+  server: 104.16.188.41
+  servername: cr7.traneh.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
+  ws-opts:
+    headers:
+      Host: cr7.traneh.dpdns.org
+    path: sinavm-sinavm/?ed=2560
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 1|🇬🇧3 |  4.9MB/s
+  network: ws
+  port: 443
+  server: 172.66.44.118
+  servername: ConFIgmr.PaGeS.dEV
+  tls: true
+  type: vless
+  udp: false
+  uuid: 63005378-e32e-4e23-bc6e-84812f147a6f
+  ws-opts:
+    headers:
+      Host: configmr.pages.dev
+    path: /VrChX4o5oasIm4In?ed=2560
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇬🇧4 |  1.0MB/s
+  network: tcp
+  port: 47151
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇬🇧5 |  3.8MB/s
   network: tcp
   port: 35311
   reality-opts:
@@ -39,23 +83,22 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: ''
-  flow: ''
+- flow: ''
   mode: ''
-  name: 2|🇬🇧2 |  5.0MB/s
+  name: 1|🇬🇧6 |  3.8MB/s
   network: ws
   port: 443
-  server: 104.19.77.118
-  servername: cr777.rayan.dpdns.org
+  server: 104.16.189.41
+  servername: cr7.traneh.dpdns.org
   tls: true
   type: vless
   udp: false
-  uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
+  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
   ws-opts:
     headers:
-      Host: cr777.rayan.dpdns.org
-    path: sinavm-sinavm/?ed=2560flow=-udp443
-- name: 11|Hysteria 🇬🇧 @v2meowcf
+      Host: cr7.traneh.dpdns.org
+    path: sinavm-sinavm/?ed=2560
+- name: 10|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -63,3 +106,17 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇭🇰 香港 01 | 1x HK
+  password: 2de68614-354b-49bc-b72b-8d256903ff86
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 2de68614-354b-49bc-b72b-8d256903ff86
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
