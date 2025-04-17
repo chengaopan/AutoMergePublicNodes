@@ -1,35 +1,49 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇷🇺俄罗斯 01 | 1x RU
-  password: 20fa76a0-3f70-4eab-8e5b-711a77751d3b
+  password: 970378f2-2526-44ac-978f-a325e7752891
   port: 31511
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇷🇺 俄罗斯 01 | 1x RU
-  password: c4e20a7d-c71e-4a9f-a4b1-114f31411bc8
-  port: 36511
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  fast-open: true
-  name: 2|🇷🇺1 |  1.7MB/s
-  password: dongtaiwang.com
-  port: 64816
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
 - fast-open: true
-  name: 2|🇷🇺2 |  1.4MB/s
+  name: 1|🇷🇺1 |  4.7MB/s
   password: dongtaiwang.com
   port: 32555
   server: 46.29.163.171
   skip-cert-verify: true
   sni: apple.com
   type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇷🇺2 |  5.0MB/s
+  network: tcp
+  port: 20216
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 1|🇷🇺3 |  4.3MB/s
+  port: 10803
+  server: 185.22.155.71
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 1000 Mbps
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇷🇺 俄罗斯 01 | 1x RU
+  password: cacf0705-d55f-436d-b3e7-9c02bb3eaab0
+  port: 36511
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - name: 14|RU_speednode_0046
   network: ws
   port: 443
