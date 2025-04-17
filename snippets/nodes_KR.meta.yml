@@ -1,8 +1,50 @@
 proxies:
+- alterId: 0
+  cipher: auto
+  name: 1|🇰🇷1 |  1.2MB/s
+  network: tcp
+  port: 17232
+  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
+  ws-headers:
+    Host: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  ws-path: /
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 0|🇰🇷1 |  5.4MB/s
+  name: 1|🇰🇷2 |  4.2MB/s
+  network: ws
+  port: 8443
+  server: 103.160.204.40
+  servername: vlee.amclubs.nyc.mn
+  tls: true
+  type: vless
+  udp: false
+  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  ws-opts:
+    headers:
+      Host: vlee.amclubs.nyc.mn
+    path: /?ed=2560
+- name: 1|🇰🇷3 |  2.2MB/s
+  network: ws
+  password: amclubs
+  port: 8443
+  server: 154.83.2.61
+  skip-cert-verify: true
+  sni: tran.amclubstest.nyc.mn
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: tran.amclubstest.nyc.mn
+    path: /?ed=2560
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇰🇷4 |  5.2MB/s
   network: ws
   port: 2083
   server: 104.26.4.157
@@ -15,117 +57,25 @@ proxies:
     headers:
       Host: 23-lsjfjwiposkfls.hc2021.cfd
     path: /flow=-udp443
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇰🇷2 |  2.8MB/s
-  network: ws
-  port: 2087
-  server: 103.160.204.36
-  servername: vlee.amclubs.nyc.mn
-  tls: true
-  type: vless
-  udp: false
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vlee.amclubs.nyc.mn
-    path: /?ed=2560
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇰🇷3 |  3.1MB/s
-  network: ws
-  port: 443
-  server: 103.160.204.1
-  servername: vlee.amclubs.nyc.mn
-  tls: true
-  type: vless
-  udp: false
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
-  ws-opts:
-    headers:
-      Host: vlee.amclubs.nyc.mn
-    path: ''
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 0|🇰🇷4 |  1.6MB/s
-  network: ws
-  port: 443
-  server: 160.79.105.77
-  servername: vc.ylka.dpdns.org
-  tls: true
-  type: vless
-  udp: false
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vc.ylka.dpdns.org
-    path: ''
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 0|🇰🇷5 |  5.5MB/s
-  network: ws
-  port: 2083
-  server: 172.67.75.52
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  tls: true
-  type: vless
-  udp: false
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /flow=-udp443flow=-udp443
-- name: 0|🇰🇷6 |  1.6MB/s
-  network: ws
-  password: amclubs
-  port: 2096
-  server: 156.238.19.69
-  skip-cert-verify: true
-  sni: tran.amclubstest.nyc.mn
-  tfo: false
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tran.amclubstest.nyc.mn
-    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 01 | 1x KR
-  password: f07b40cd-9f3c-4943-8b5c-31728aeeeb76
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 02 | 1x KR
-  password: f07b40cd-9f3c-4943-8b5c-31728aeeeb76
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 11|🇰🇷 韩国特殊|@ripaojiedian
-  password: amazonskr05
-  port: 443
-  server: 18.182.9.120
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇰🇷 韩国 01 | 1x KR
-  password: 5437bdf1-ac8c-445e-b8c2-2a20044ebc85
+  name: 2|🇰🇷 韩国 01 | 1x KR
+  password: f21600b6-8bb9-4a11-9ed2-86b97289249d
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇰🇷 韩国 02 | 1x KR
-  password: 5437bdf1-ac8c-445e-b8c2-2a20044ebc85
+  name: 2|🇰🇷 韩国 02 | 1x KR
+  password: f21600b6-8bb9-4a11-9ed2-86b97289249d
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 12|🇰🇷 韩国特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 18.182.9.120
+  tfo: false
+  type: ss
