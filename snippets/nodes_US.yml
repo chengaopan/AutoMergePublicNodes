@@ -1,20 +1,28 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸美国 01 | 1x US Los Angeles
+  password: 21f0ff3d-e573-4dc7-a1a9-baa06ff74291
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 21f0ff3d-e573-4dc7-a1a9-baa06ff74291
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸美国 03 | 1x US Washington
+  password: 21f0ff3d-e573-4dc7-a1a9-baa06ff74291
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸20 |  2.8MB/s
-  network: tcp
-  port: 5228
-  server: 76328141-sv2sg0-t98e4q-1m2as.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: e44b79fa-ec06-11ee-aecd-f23c9164ca5d
-  ws-headers:
-    Host: 76328141-sv2sg0-t98e4q-1m2as.cu.plebai.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 0|🇺🇸40 |  3.4MB/s
+  name: 1|🇺🇸32 |  2.5MB/s
   network: tcp
   port: 5228
   server: 157.148.96.92
@@ -25,48 +33,71 @@ proxies:
   ws-headers:
     Host: 157.148.96.92
   ws-path: /
-- alterId: '0'
-  cipher: auto
-  name: 0|🇺🇸8 |  3.5MB/s
-  network: tcp
-  port: '5229'
-  server: 2e93912d-sutj40-sutgau-1r62f.cu.plebai.net
-  type: vmess
-  uuid: 154b0bf8-f9a7-11ee-a218-f23c91cfbbc9
+- cipher: chacha20-ietf
+  name: 1|🇺🇸2 |  2.9MB/s
+  password: asd123456
+  port: 8388
+  server: 137.175.113.193
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸13 |  1.0MB/s
+  name: 1|🇺🇸3 |  5.4MB/s
   port: 5228
-  server: 7daa6f3a-sux8g0-tavf3m-18imv.cu.plebai.net
+  server: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
   tls: false
   type: vmess
-  uuid: 9a846cd4-7a86-11ed-a8bf-f23c91cfbbc9
-- alterId: '0'
+  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
+- alterId: 0
   cipher: auto
-  name: 0|🇺🇸42 |  3.9MB/s
-  network: tcp
-  port: '5228'
-  server: cd04809b-sux8g0-t3f7qr-141tv.cu.plebai.net
-  skip-cert-verify: true
+  name: 1|🇺🇸4 |  5.4MB/s
+  port: 5228
+  server: b115e896-sux8g0-t0w6o1-1lk9i.cu.plebai.net
   tls: false
   type: vmess
-  uuid: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-  ws-headers:
-    Host: cd04809b-sux8g0-t3f7qr-141tv.cu.plebai.net
-  ws-path: /
+  uuid: a60e3782-223e-11ee-b973-f23c913c8d2b
 - alterId: '0'
   cipher: auto
-  name: 0|🇺🇸15 |  2.6MB/s
+  name: 1|🇺🇸7 |  4.3MB/s
   network: tcp
   port: '5229'
-  server: 2c2227e1-sutj40-t907cr-1c1mr.cu.plebai.net
+  server: 0ecc8d37-sux8g0-swbudg-1mzwj.cu.plebai.net
   type: vmess
-  uuid: a12640d0-e2ad-11ef-8f5b-f23c913c8d2b
+  uuid: a203d80e-10fe-11ef-88a6-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸9 |  5.9MB/s
+  network: ws
+  port: 443
+  server: d3fgkhtpi57foq.cloudfront.net
+  servername: d3fgkhtpi57foq.cloudfront.net
+  tls: true
+  type: vmess
+  uuid: 2d6a51f1-6c41-4443-87fc-a2d32130942b
+  ws-opts:
+    headers:
+      Host: d3fgkhtpi57foq.cloudfront.net
+    path: /c02
 - alterId: '0'
   cipher: auto
-  name: 0|🇺🇸37 |  3.7MB/s
+  name: 1|🇺🇸15 |  5.9MB/s
   network: tcp
   port: '5228'
+  server: 76328141-sv2sg0-t98e4q-1m2as.cu.plebai.net
+  type: vmess
+  uuid: e44b79fa-ec06-11ee-aecd-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸16 |  1.1MB/s
+  port: 5229
+  server: 0ecc8d37-sux8g0-swbudg-1mzwj.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: a203d80e-10fe-11ef-88a6-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸42 |  3.3MB/s
+  network: tcp
+  port: 5228
   server: 3b6ec92e-sux8g0-swffb5-1s6xm.cu.plebai.net
   skip-cert-verify: true
   tls: false
@@ -77,31 +108,15 @@ proxies:
   ws-path: /
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸24 |  3.5MB/s
-  port: 5229
-  server: 2c2227e1-sutj40-t907cr-1c1mr.cu.plebai.net
+  name: 1|🇺🇸24 |  5.5MB/s
+  port: 5228
+  server: 7daa6f3a-sux8g0-tavf3m-18imv.cu.plebai.net
   tls: false
   type: vmess
-  uuid: a12640d0-e2ad-11ef-8f5b-f23c913c8d2b
+  uuid: 9a846cd4-7a86-11ed-a8bf-f23c91cfbbc9
 - alterId: 0
   cipher: auto
-  name: 0|🇺🇸26 |  4.8MB/s
-  port: 5229
-  server: 2e93912d-sutj40-sutgau-1r62f.cu.plebai.net
-  tls: false
-  type: vmess
-  uuid: 154b0bf8-f9a7-11ee-a218-f23c91cfbbc9
-- alterId: '0'
-  cipher: auto
-  name: 0|🇺🇸27 |  5.2MB/s
-  network: tcp
-  port: '5228'
-  server: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
-  type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-- alterId: 0
-  cipher: auto
-  name: 0|🇺🇸30 |  2.8MB/s
+  name: 1|🇺🇸25 |  5.6MB/s
   network: tcp
   port: 5228
   server: 8d3d7f83-suk9s0-sv6oiy-1p1b.cu.plebai.net
@@ -112,10 +127,55 @@ proxies:
   ws-headers:
     Host: 8d3d7f83-suk9s0-sv6oiy-1p1b.cu.plebai.net
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸30 |  5.3MB/s
+  port: 5229
+  server: 8f34e685-suz340-svvaj9-fa3p.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: 905fcd78-866c-81e1-3cb8-1beb59d661ab
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸35 |  1.9MB/s
+  port: 5229
+  server: 2e93912d-sutj40-sutgau-1r62f.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: 154b0bf8-f9a7-11ee-a218-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸37 |  5.3MB/s
+  network: tcp
+  port: 5228
+  server: 716545eb-sux8g0-t5oe1a-1ejod.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
+  ws-headers:
+    Host: 716545eb-sux8g0-t5oe1a-1ejod.cu.plebai.net
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 1|🇺🇸38 |  2.5MB/s
+  network: tcp
+  port: '5229'
+  server: f5f98477-sutj40-tdcdb7-1k27l.cu.plebai.net
+  type: vmess
+  uuid: ba4b1f2e-c985-11ed-9c0c-f23c913c8d2b
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸43 |  5.5MB/s
+  port: 5228
+  server: fea38a5e-sum4g0-sv6oiy-1p1b.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 10,11|美国|@ripaojiedian
+  name: 11,12|美国|@ripaojiedian
   network: ws
   port: '30808'
   server: v8.heduian.link
@@ -132,7 +192,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 10|🇺🇸 美国2|@ripaojiedian
+  name: 11|🇺🇸 美国2|@ripaojiedian
   port: 23903
   server: usz1.fgmcx.top
   skip-cert-verify: false
@@ -143,7 +203,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 10,11|美国3|@ripaojiedian
+  name: 11,12|美国3|@ripaojiedian
   network: ws
   port: '30807'
   server: v7.heduian.link
@@ -159,7 +219,7 @@ proxies:
     path: /oooo
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 10|🇺🇸 美国4|@ripaojiedian
+  name: 11|🇺🇸 美国4|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -171,7 +231,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 11|美国2|@ripaojiedian
+  name: 12|美国2|@ripaojiedian
   network: tcp
   port: '23903'
   server: usz1.fgmcx.top
@@ -180,44 +240,23 @@ proxies:
   type: vmess
   uuid: be443689-bc64-49ff-85a5-8eecaa2235d3
 - cipher: chacha20-ietf-poly1305
-  name: 13|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 046567a0-a985-4868-889e-69798fa5701b
+  name: 14|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 96c94f2d-490d-4b93-9ba9-2e5df37745d1
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 13|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 046567a0-a985-4868-889e-69798fa5701b
+  name: 14|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 96c94f2d-490d-4b93-9ba9-2e5df37745d1
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 13|🇺🇸 美国 03 | 1x US Washington
-  password: 046567a0-a985-4868-889e-69798fa5701b
+  name: 14|🇺🇸 美国 03 | 1x US Washington
+  password: 96c94f2d-490d-4b93-9ba9-2e5df37745d1
   port: 36215
   server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国 01 | 1x US Los Angeles
-  password: eb5de4a9-271e-4896-bf1a-0aa9e6ce7b7b
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: eb5de4a9-271e-4896-bf1a-0aa9e6ce7b7b
-  port: 31213
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国 03 | 1x US Washington
-  password: eb5de4a9-271e-4896-bf1a-0aa9e6ce7b7b
-  port: 31215
-  server: free.2apzhfa.xyz
   type: ss
   udp: true
