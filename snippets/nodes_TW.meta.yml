@@ -1,81 +1,69 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼 台湾 01 | 1x TW
-  password: 26f767de-5461-430e-8d55-1cb6b604e75d
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼 台湾 02 | 1x TW
-  password: 26f767de-5461-430e-8d55-1cb6b604e75d
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼 台湾 03 | 1x TW
-  password: 26f767de-5461-430e-8d55-1cb6b604e75d
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 01 | 1x TW
-  password: 532417ba-d43e-47a8-8b9e-878abb9f380d
+  name: 0|🇹🇼台湾 01 | 1x TW
+  password: 368166ae-e186-49cf-bddb-7d6d7805f799
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 02 | 1x TW
-  password: 532417ba-d43e-47a8-8b9e-878abb9f380d
+  name: 0|🇹🇼台湾 02 | 1x TW
+  password: 368166ae-e186-49cf-bddb-7d6d7805f799
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 03 | 1x TW
-  password: 532417ba-d43e-47a8-8b9e-878abb9f380d
+  name: 0|🇹🇼台湾 03 | 1x TW
+  password: 368166ae-e186-49cf-bddb-7d6d7805f799
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇹🇼1 |  5.6MB/s
+  name: 1,13|CN_speednode_0015
   network: tcp
-  port: 12477
+  port: 13263
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 2
+  cipher: auto
+  name: 1|🇹🇼2 |  2.3MB/s
+  network: ws
+  port: 23619
+  server: 19.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d0d003b8-ad44-37a7-82bf-ad911a23b4df
+  ws-opts:
+    headers:
+      Host: 19.mamamajd.site
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇹🇼3 |  6.1MB/s
+  network: tcp
+  port: 15823
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇹🇼2 |  1.5MB/s
-  network: tcp
-  port: 37809
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
   servername: www.yahoo.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 2,12|🇹🇼 台湾|@ripaojiedian
-  password: OP8PXXDOW0GFSBO2
-  port: 21005
-  server: 150.116.11.9
-  tfo: false
-  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0006
+  name: 1,13|CN_speednode_0006
   network: tcp
   port: 47531
   reality-opts:
@@ -89,20 +77,28 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇹🇼5 |  6.1MB/s
+  name: 1|🇹🇼5 |  5.9MB/s
   network: tcp
-  port: 15823
+  port: 15700
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.yahoo.com
+  server: zhee01.dynu.net
+  servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 11|🇹🇼 台湾|@ripaojiedian
+  password: OP8PXXDOW0GFSBO2
+  port: 21005
+  server: 150.116.11.9
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 12|🇹🇼 台湾2|@ripaojiedian
+  name: 11|🇹🇼 台湾2|@ripaojiedian
   network: ws
   port: 46005
   server: fadawtawd.zhangwei.li
@@ -117,7 +113,7 @@ proxies:
     path: /zh-cn
 - alterId: 0
   cipher: auto
-  name: 13|台湾2|@ripaojiedian
+  name: 12|台湾2|@ripaojiedian
   network: ws
   port: '46005'
   server: fadawtawd.zhangwei.li
@@ -129,3 +125,24 @@ proxies:
     headers:
       Host: ''
     path: /zh-cn
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇹🇼 台湾 01 | 1x TW
+  password: 20163715-ecc2-4564-8d30-18d5f077296b
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇹🇼 台湾 02 | 1x TW
+  password: 20163715-ecc2-4564-8d30-18d5f077296b
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇹🇼 台湾 03 | 1x TW
+  password: 20163715-ecc2-4564-8d30-18d5f077296b
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
