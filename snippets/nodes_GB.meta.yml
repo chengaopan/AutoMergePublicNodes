@@ -1,53 +1,32 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 01 | 1x HK
-  password: 34c3ff85-bfec-45b2-bf27-3f1ea42ed17e
+  password: b11c8253-aac7-4926-be31-101ac9050528
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 34c3ff85-bfec-45b2-bf27-3f1ea42ed17e
+  password: b11c8253-aac7-4926-be31-101ac9050528
   port: 36271
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: fc24a368-ba1a-4db5-bca8-aec9432db18e
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 1|🇬🇧1 |  5.0MB/s
-  network: ws
-  port: 443
-  server: 205.233.181.174
-  servername: digitalscientificresearchgroup.ir
-  tls: true
-  type: vless
-  udp: false
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /Telegram@V2ray_Alpha
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧2 |  3.6MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇬🇧3 |  1.0MB/s
+  name: 2|🇬🇧1 |  5.0MB/s
   network: ws
   port: 80
-  server: 45.131.5.233
+  server: 45.131.4.202
   servername: digitalscientificresearchgroup.ir
   tls: false
   type: vless
@@ -58,11 +37,42 @@ proxies:
       Host: digitalscientificresearchgroup.ir
     path: Telegram🇨🇳@WangCai2/?ed=2560
 - client-fingerprint: chrome
+  delay: 2687
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0030
+  network: tcp
+  port: 14659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 2|🇬🇧3 |  1.5MB/s
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: ZqFsGsMr.cAfUnEaR.InFo
+  tls: true
+  type: vless
+  udp: false
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: ZqFsGsMr.cAfUnEaR.InFo
+    path: /
+- client-fingerprint: chrome
   flow: ''
   grpc-opts:
     grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
   mode: gun
-  name: 1|🇬🇧4 |  1.9MB/s
+  name: 2|🇬🇧4 |  4.6MB/s
   network: grpc
   port: 1210
   reality-opts:
@@ -76,7 +86,7 @@ proxies:
   uuid: fe6d8c4c-ab68-4997-8664-23ec5897e291
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0032
+  name: 2,14|CN_speednode_0032
   network: tcp
   port: 32055
   reality-opts:
@@ -88,20 +98,6 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港 01 | 1x HK
-  password: 2f72fe67-f025-4637-9b0a-bc463c93ec61
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧英国家宽 01 | 1x UK
-  password: 2f72fe67-f025-4637-9b0a-bc463c93ec61
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
