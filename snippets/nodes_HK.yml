@@ -1,34 +1,35 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 02 | 1x HK
-  password: 060bb4bd-4ab7-474e-8b64-a76dda49f5c9
+  password: 9e43e0eb-5b99-433e-a43a-f6251cf3efe6
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 060bb4bd-4ab7-474e-8b64-a76dda49f5c9
+  password: 9e43e0eb-5b99-433e-a43a-f6251cf3efe6
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 02 | 1x HK
+  password: 3a3cbd5e-6e51-4a69-8198-850ae5a02d9b
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港家宽 03 | 1x HK
+  password: 3a3cbd5e-6e51-4a69-8198-850ae5a02d9b
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 1|🇭🇰9 |  3.2MB/s
-  network: tcp
-  port: 15229
-  server: 81137562-sutj40-suyhjm-1hhyy.cm.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
-  ws-headers:
-    Host: 81137562-sutj40-suyhjm-1hhyy.cm.plebai.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 1|🇭🇰10 |  1.1MB/s
+  name: 2|🇭🇰1 |  4.1MB/s
   network: tcp
   port: 15229
   server: 614ea2b0-sux8g0-td95qh-1isea.cm.plebai.net
@@ -39,20 +40,36 @@ proxies:
   ws-headers:
     Host: 614ea2b0-sux8g0-td95qh-1isea.cm.plebai.net
   ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港 02 | 1x HK
-  password: 12034a06-63a1-48c8-9cf4-200025a9f686
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港家宽 03 | 1x HK
-  password: 12034a06-63a1-48c8-9cf4-200025a9f686
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 2,12,13|香港4|@ripaojiedian
+  network: ws
+  port: '80'
+  server: f1bbc8a1-sux8g0-swvpe2-1tetp.hgc1.tcpbbr.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 56d4be76-f24d-11ef-9b69-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰5 |  1.7MB/s
+  network: tcp
+  port: 15229
+  server: 81137562-sutj40-suyhjm-1hhyy.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+  ws-headers:
+    Host: 81137562-sutj40-suyhjm-1hhyy.cm.plebai.net
+  ws-path: /
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
@@ -77,23 +94,6 @@ proxies:
   server: 111.29.57.125
   tfo: false
   type: ss
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 12,13|香港4|@ripaojiedian
-  network: ws
-  port: '30809'
-  server: v9.heduian.link
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -105,23 +105,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
+- alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 12,13|香港6|@ripaojiedian
-  network: ws
-  port: '16892'
-  server: xb-vm-hk.718181.xyz
-  servername: ''
+  name: 12|🇭🇰 香港6|@ripaojiedian
+  port: 43674
+  server: 120.234.102.229
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 2426b3d5-f377-44ca-a1d2-c527ef52c67f
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -139,6 +133,16 @@ proxies:
   network: tcp
   port: '41291'
   server: 183.236.51.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 13|香港6|@ripaojiedian
+  network: tcp
+  port: '43674'
+  server: 120.234.102.229
   servername: ''
   tls: false
   type: vmess
