@@ -1,49 +1,47 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 01 | 1x HK
-  password: 6f696625-5925-49d2-b708-9104e1c9598c
+  password: 411d1670-216e-42de-99b8-64dfb5298883
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 6f696625-5925-49d2-b708-9104e1c9598c
+  password: 411d1670-216e-42de-99b8-64dfb5298883
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰 香港 01 | 1x HK
-  password: 70fa7e32-1b26-4679-af26-ac571d106499
+  password: c6cdb1a3-f5b2-4806-a6ae-6a53e7c54d62
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 70fa7e32-1b26-4679-af26-ac571d106499
+  password: c6cdb1a3-f5b2-4806-a6ae-6a53e7c54d62
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- client-fingerprint: ''
-  flow: ''
-  grpc-opts:
-    grpc-service-name: DarkTeam_VPN
-  mode: gun
-  name: 2|🇬🇧1 |  5.0MB/s
-  network: grpc
-  port: 13039
-  server: uk.darkteam.vipt-t.info
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 9db9cb88-d722-459d-8241-fd1d6d8f9688
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧2 |  3.1MB/s
+  name: 2|🇬🇧1 |  4.4MB/s
+  network: tcp
+  port: 35311
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧2 |  5.2MB/s
   network: tcp
   port: 49699
   reality-opts:
@@ -64,20 +62,6 @@ proxies:
   server: beiyong.dynuddns.net
   servername: www.amazon.com
   skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0032
-  network: tcp
-  port: 32055
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
-  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
