@@ -1,32 +1,113 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 01 | 1x HK
-  password: e990e3f5-4e8e-4e3c-8025-5832cfddb707
+  password: e217c267-cda7-43fc-a2dc-3200c33bfb11
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: e990e3f5-4e8e-4e3c-8025-5832cfddb707
+  password: e217c267-cda7-43fc-a2dc-3200c33bfb11
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: 9612128d-251e-4f90-869f-3ed86ce3fc81
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 9612128d-251e-4f90-869f-3ed86ce3fc81
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0032
-  network: tcp
-  port: 32055
+  flow: ''
+  grpc-opts:
+    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
+  mode: gun
+  name: 2|🇬🇧1 |  5.3MB/s
+  network: grpc
+  port: 1210
   reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
-  skip-cert-verify: false
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    short-id: 7fe29733
+  server: ns8.esfahansiman.com
+  servername: ubuntu.com
   tls: true
   type: vless
-  udp: true
+  udp: false
+  uuid: fe6d8c4c-ab68-4997-8664-23ec5897e291
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧2 |  1.2MB/s
+  network: tcp
+  port: 35311
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: 2|🇬🇧3 |  5.2MB/s
+  network: tcp
+  port: 33940
+  raw:
+    add: 37.221.125.159
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ''
+    id: 353e0787-71bc-442d-9c9d-902f90359eb5
+    net: tcp
+    path: ''
+    port: '33940'
+    ps: 🔥Join+Telegram:@FarahVPN🟣
+    scy: auto
+    sni: ''
+    tls: ''
+    type: none
+    v: '2'
+  server: 37.221.125.159
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 353e0787-71bc-442d-9c9d-902f90359eb5
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧4 |  5.3MB/s
+  network: tcp
+  port: 49699
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: ''
+  flow: ''
+  grpc-opts:
+    grpc-service-name: DarkTeam_VPN
+  mode: gun
+  name: 2|🇬🇧5 |  5.1MB/s
+  network: grpc
+  port: 13039
+  server: uk.darkteam.vipt-t.info
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: 9db9cb88-d722-459d-8241-fd1d6d8f9688
 - client-fingerprint: chrome
   delay: 1679
   flow: xtls-rprx-vision
@@ -41,76 +122,6 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧3 |  5.0MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: ''
-  grpc-opts:
-    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
-  mode: gun
-  name: 2|🇬🇧4 |  4.8MB/s
-  network: grpc
-  port: 1210
-  reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: 7fe29733
-  server: ns8.esfahansiman.com
-  servername: ubuntu.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: fe6d8c4c-ab68-4997-8664-23ec5897e291
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 2|🇬🇧5 |  1.7MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: mXoYA71X3faWTOW2FF0-oCrvLcfP1VHo9T44awgiKBk
-    short-id: f8d21b62b1
-  server: 54.37.7.94
-  servername: snapp.ir
-  tls: true
-  type: vless
-  udp: false
-  uuid: c2406195-08e8-495a-aee7-8a524e768f07
-- client-fingerprint: ''
-  flow: ''
-  grpc-opts:
-    grpc-service-name: DarkTeam_VPN
-  mode: gun
-  name: 2|🇬🇧6 |  5.2MB/s
-  network: grpc
-  port: 13039
-  server: uk.darkteam.vipt-t.info
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 9db9cb88-d722-459d-8241-fd1d6d8f9688
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧7 |  5.2MB/s
-  network: tcp
-  port: 35311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
