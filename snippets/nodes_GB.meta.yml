@@ -1,22 +1,93 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 77a2395e-08de-448d-8b1d-dc14bf91d103
-  port: 31271
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: aec7f881-3399-4896-980d-2b183e4d36c6
+  port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: b15aeb0f-2065-4f15-a873-430cf588d6dc
-  port: 36271
-  server: free.2weradf.xyz
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: aec7f881-3399-4896-980d-2b183e4d36c6
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
+- client-fingerprint: ''
+  flow: ''
+  grpc-opts:
+    grpc-service-name: DarkTeam_VPN
+  mode: ''
+  name: 1|🇬🇧1 |  5.0MB/s
+  network: grpc
+  port: 13039
+  server: 198.244.193.109
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: 9db9cb88-d722-459d-8241-fd1d6d8f9688
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇬🇧2 |  4.9MB/s
+  network: tcp
+  port: 49699
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1,13|CN_speednode_0032
+  network: tcp
+  port: 32055
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.amazon.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 1|🇬🇧4 |  3.9MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: mXoYA71X3faWTOW2FF0-oCrvLcfP1VHo9T44awgiKBk
+    short-id: f8d21b62b1
+  server: 54.37.7.94
+  servername: snapp.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: c2406195-08e8-495a-aee7-8a524e768f07
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 1|🇬🇧5 |  1.7MB/s
+  network: ws
+  port: 443
+  server: 172.66.44.118
+  servername: ConFIgmr.PaGeS.dEV
+  tls: true
+  type: vless
+  udp: false
+  uuid: 63005378-e32e-4e23-bc6e-84812f147a6f
+  ws-opts:
+    headers:
+      Host: configmr.pages.dev
+    path: /VrChX4o5oasIm4In?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   mode: ''
-  name: 2|🇬🇧1 |  2.3MB/s
+  name: 1|🇬🇧6 |  1.7MB/s
   network: raw
   port: 1615
   reality-opts:
@@ -33,7 +104,7 @@ proxies:
   grpc-opts:
     grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
   mode: gun
-  name: 2|🇬🇧2 |  3.9MB/s
+  name: 1|🇬🇧7 |  5.6MB/s
   network: grpc
   port: 1210
   reality-opts:
@@ -45,46 +116,7 @@ proxies:
   type: vless
   udp: false
   uuid: fe6d8c4c-ab68-4997-8664-23ec5897e291
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧3 |  4.0MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧4 |  5.2MB/s
-  network: tcp
-  port: 35311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  delay: 1679
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0028
-  network: tcp
-  port: 65053
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 11|Hysteria 🇬🇧 @v2meowcf
+- name: 10|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -94,7 +126,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 14|GB_speednode_0034
+  name: 13|GB_speednode_0034
   port: 8989
   reality-opts:
     public-key: TfbgQiZ2DOhCTDVLjx5Gwc5WHFSlQ_LXhyzKUEGR6mc
@@ -105,3 +137,17 @@ proxies:
   type: vless
   udp: true
   uuid: 409ef7ff-6449-4b9a-9db9-775927a1a925
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇭🇰 香港 01 | 1x HK
+  password: 7e475803-7c49-4e86-a051-cad6ab25eee5
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 7e475803-7c49-4e86-a051-cad6ab25eee5
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
