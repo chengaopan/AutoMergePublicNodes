@@ -1,14 +1,22 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 37223818-be02-402c-9c85-f11f3eccd683
-  port: 31441
-  server: free.2apzhfa.xyz
+  name: 0|🇨🇦 加拿大 01 | 1x CA
+  password: 5f857670-62da-4b9f-9f52-44bb476b2a49
+  port: 36441
+  server: free.2weradf.xyz
   type: ss
   udp: true
+- auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: 1|🇨🇦1 |  1.1MB/s
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 132.145.108.102
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇨🇦1 |  2.4MB/s
+  name: 1|🇨🇦2 |  2.1MB/s
   network: tcp
   port: 16011
   reality-opts:
@@ -18,18 +26,24 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 1|🇨🇦2 |  1.3MB/s
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 132.145.108.102
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+- alterId: 2
+  cipher: auto
+  name: 1|🇨🇦3 |  5.4MB/s
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: v25.heduian.link
+    path: /oooo
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇨🇦 加拿大 01 | 1x CA
-  password: 144f98fe-b66e-4bbc-9237-51e9525a2913
-  port: 36441
-  server: free.2weradf.xyz
+  name: 14|🇨🇦加拿大 01 | 1x CA
+  password: 523b8f5e-9820-410b-820a-ae282ea746d6
+  port: 31441
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
