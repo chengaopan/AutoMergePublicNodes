@@ -1,32 +1,69 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇩🇪德国 01 | 1x DE
-  password: 81261fd0-927b-463a-9755-346a77fb381d
+  password: 2772d488-1a29-4c32-b6ec-cab338a34c9a
   port: 31471
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪 德国 01 | 1x DE
+  password: cc10b503-ec85-42dc-b10a-1449f41ecaf3
+  port: 36471
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 1|🇩🇪1 |  5.9MB/s
+  name: 2|🇩🇪1 |  5.1MB/s
   network: tcp
-  port: 3033
+  port: 44
   reality-opts:
-    public-key: 9GYwmAKTskGpQ7sKrds-aa14vW-6yYzs-yE8Y7HBcTQ
-    short-id: ''
-  server: 91.107.254.145
+    public-key: R43U2y9vbOzBleKGsApbGCufsiRTTeVIKA7LRpGMrVA
+    short-id: f289871208
+  server: 5.75.215.22
   servername: refersion.com
   tls: true
   type: vless
   udp: false
-  uuid: c9915df4-48e4-4084-810b-438b8548c615
+  uuid: 6a2206ac-208b-49f5-95e0-6f3656f9072a
+- client-fingerprint: chrome
+  delay: 1744
+  flow: xtls-rprx-vision
+  name: 2|🇩🇪2 |  1.8MB/s
+  network: tcp
+  port: 58031
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: ios
+  flow: ''
+  mode: ''
+  name: 2|🇩🇪3 |  5.9MB/s
+  network: ws
+  port: 443
+  server: 104.18.22.235
+  servername: nl1.yfjc.sbs
+  tls: true
+  type: vless
+  udp: false
+  uuid: cfc83feb-3bce-468c-b157-e1cdb9786283
+  ws-opts:
+    headers:
+      Host: nl1.yfjc.sbs
+    path: /yfjc/knl1
 - client-fingerprint: chrome
   flow: ''
   grpc-opts:
     grpc-service-name: '@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy'
   mode: ''
-  name: 1|🇩🇪2 |  5.8MB/s
+  name: 2|🇩🇪4 |  1.2MB/s
   network: grpc
   port: 443
   reality-opts:
@@ -41,7 +78,7 @@ proxies:
 - client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 1|🇩🇪3 |  6.3MB/s
+  name: 2|🇩🇪5 |  1.1MB/s
   network: tcp
   port: 44
   reality-opts:
@@ -57,78 +94,68 @@ proxies:
     headers:
       Host: Join_Bade_Channel@JOKERRVPNTELEGRAM----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN
     path: ''
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 1|🇩🇪4 |  5.8MB/s
-  network: tcp
-  port: 2010
-  reality-opts:
-    public-key: I-8Bbc2mVVLerJteUDBgmZOIn6LUWV-_cQ0nwr75axM
-    short-id: e7e2ae6c52556455
-  server: germany.unknownserver.top
-  servername: stackoverflow.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 81769a76-2640-49f2-8dd2-9d5f6ae55e03
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 1|🇩🇪5 |  5.8MB/s
-  network: tcp
-  port: 2010
-  reality-opts:
-    public-key: I-8Bbc2mVVLerJteUDBgmZOIn6LUWV-_cQ0nwr75axM
-    short-id: e7e2ae6c52556455
-  server: 167.235.246.4
-  servername: stackoverflow.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 81769a76-2640-49f2-8dd2-9d5f6ae55e03
-- client-fingerprint: chrome
-  delay: 1744
-  flow: xtls-rprx-vision
-  name: 1|🇩🇪6 |  5.3MB/s
-  network: tcp
-  port: 58031
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 1|🇩🇪7 |  5.2MB/s
-  port: 33157
-  server: 88.198.175.207
-  skip-cert-verify: true
-  tfo: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 26cf5624-fff0-4a66-9848-d2a0725297b2
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 1|🇩🇪8 |  5.8MB/s
+  name: 2|🇩🇪6 |  5.5MB/s
   network: ws
-  port: 80
-  server: 104.17.147.22
+  port: 2082
+  server: 104.17.148.22
   servername: ''
   tls: false
   type: vless
   udp: false
-  uuid: d13d85cd-a9aa-45e3-aee2-5f2979447f72
+  uuid: 08dd3277-6d36-4ada-ba7e-7443dd933390
   ws-opts:
     headers:
-      Host: Www.speedtest.net.developsp.ir.
-    path: /@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy----@Shh_Proxy?ed=2048
-- name: 9|🇩🇪 @VPNHubMaRKeT ⚡️  @VpnHubMa...
+      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+    path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
+- alterId: 2
+  cipher: auto
+  name: 2|🇩🇪7 |  5.2MB/s
+  network: ws
+  port: 23616
+  server: 16.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 03ed39b1-e55d-39f4-a5e0-d5d2e49dfe3b
+  ws-opts:
+    headers:
+      Host: 16.mamamajd.site
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 2|🇩🇪8 |  5.8MB/s
+  network: tcp
+  port: 51688
+  reality-opts:
+    public-key: KZ8OnDaJyDfaF9iwzXYuFdo796yoIy6fIh5JmdJ5fAs
+    short-id: 12ea6200
+  server: 93.177.65.104
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: c5f665de-e820-44d0-abf4-d23aa2d6f977
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 2|🇩🇪9 |  5.7MB/s
+  network: tcp
+  port: 3033
+  reality-opts:
+    public-key: 9GYwmAKTskGpQ7sKrds-aa14vW-6yYzs-yE8Y7HBcTQ
+    short-id: ''
+  server: 91.107.254.145
+  servername: refersion.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: c9915df4-48e4-4084-810b-438b8548c615
+- name: 10|🇩🇪 @VPNHubMaRKeT ⚡️  @VpnHubMa...
   obfs: salamander
   obfs-password: tel:@VPNHubMaRKeT
   password: VPNHubMaRKeT
@@ -137,10 +164,3 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇩🇪 德国 01 | 1x DE
-  password: a2fd9f66-d52a-4fc3-b09c-f1dc5090b86a
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true

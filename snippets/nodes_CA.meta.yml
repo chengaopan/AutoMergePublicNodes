@@ -1,15 +1,36 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 81261fd0-927b-463a-9755-346a77fb381d
+  password: 2772d488-1a29-4c32-b6ec-cab338a34c9a
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 1|🇨🇦1 |  1.2MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦 加拿大 01 | 1x CA
+  password: cc10b503-ec85-42dc-b10a-1449f41ecaf3
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 2|🇨🇦1 |  5.5MB/s
   network: ws
-  port: 10912
-  server: 116.47.10.236
+  port: 30825
+  server: v25.heduian.link
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- name: 2|🇨🇦2 |  3.3MB/s
+  network: ws
+  port: 443
+  server: 45.67.215.114
   servername: bn.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -18,24 +39,5 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: bn.ylks0033.dpdns.org
+      Host: bn.ylks0033.dpdns.org
     path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇨🇦2 |  4.4MB/s
-  network: tcp
-  port: 16011
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇨🇦 加拿大 01 | 1x CA
-  password: a2fd9f66-d52a-4fc3-b09c-f1dc5090b86a
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
