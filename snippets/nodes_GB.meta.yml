@@ -1,47 +1,52 @@
 proxies:
-- client-fingerprint: chrome
-  delay: 1679
-  flow: xtls-rprx-vision
-  name: 0,12|CN_speednode_0028
-  network: tcp
-  port: 65053
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 04861083-c710-4f48-bc8c-784c77f1cda9
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 04861083-c710-4f48-bc8c-784c77f1cda9
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: 6bed508d-72b3-477a-b389-0f0d8ddf3889
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 6bed508d-72b3-477a-b389-0f0d8ddf3889
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧2 |  5.0MB/s
-  network: tcp
-  port: 35311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
+  flow: ''
+  mode: ''
+  name: 2|🇬🇧1 |  3.3MB/s
+  network: ws
+  port: 443
+  server: 172.66.47.92
+  servername: Work-YUU00.pageS.dEv
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧3 |  1.3MB/s
-  network: tcp
-  port: 47151
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: false
+  uuid: 49d4b99d-7d99-416a-9778-2c75d79100bb
+  ws-opts:
+    headers:
+      Host: work-yuu00.pages.dev
+    path: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   mode: ''
-  name: 0|🇬🇧4 |  5.1MB/s
+  name: 2|🇬🇧2 |  5.2MB/s
   network: raw
   port: 1615
   reality-opts:
@@ -55,7 +60,19 @@ proxies:
   uuid: 68665e7f-31c1-49f4-9347-3e18c18e024b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0,12|CN_speednode_0032
+  name: 2|🇬🇧3 |  3.4MB/s
+  network: tcp
+  port: 49699
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0032
   network: tcp
   port: 32055
   reality-opts:
@@ -69,17 +86,47 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧6 |  1.6MB/s
+  name: 2|🇬🇧5 |  5.2MB/s
   network: tcp
-  port: 49699
+  port: 35311
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 9|Hysteria 🇬🇧 @v2meowcf
+- client-fingerprint: chrome
+  delay: 1679
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0028
+  network: tcp
+  port: 65053
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.amazon.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  delay: 2687
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0030
+  network: tcp
+  port: 14659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -89,7 +136,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 12|GB_speednode_0034
+  name: 14|GB_speednode_0034
   port: 8989
   reality-opts:
     public-key: TfbgQiZ2DOhCTDVLjx5Gwc5WHFSlQ_LXhyzKUEGR6mc
@@ -100,31 +147,3 @@ proxies:
   type: vless
   udp: true
   uuid: 409ef7ff-6449-4b9a-9db9-775927a1a925
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇭🇰香港 01 | 1x HK
-  password: 2565ffea-2484-4f99-be7a-904fd2a85cbb
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇬🇧英国家宽 01 | 1x UK
-  password: 2565ffea-2484-4f99-be7a-904fd2a85cbb
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰 香港 01 | 1x HK
-  password: d839a28f-55f6-4333-b2ea-b3a64a3924ce
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇬🇧 英国住宅IP 01 | 1x UK
-  password: d839a28f-55f6-4333-b2ea-b3a64a3924ce
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
