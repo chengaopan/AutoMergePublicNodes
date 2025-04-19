@@ -1,67 +1,107 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: 9dede70f-1125-4e54-be8a-2971fbfbc5be
+  password: 3ec17707-7e08-40cc-970e-0d0b893f1587
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 9dede70f-1125-4e54-be8a-2971fbfbc5be
+  password: 3ec17707-7e08-40cc-970e-0d0b893f1587
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 03 | 1x US Washington
-  password: 9dede70f-1125-4e54-be8a-2971fbfbc5be
+  password: 3ec17707-7e08-40cc-970e-0d0b893f1587
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 580c5402-f17b-410c-89b3-dbe993f3dcc6
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 580c5402-f17b-410c-89b3-dbe993f3dcc6
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 03 | 1x US Washington
+  password: 580c5402-f17b-410c-89b3-dbe993f3dcc6
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  delay: 1530
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0055
+  network: tcp
+  port: 57926
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸1 |  5.3MB/s
-  port: 5229
-  server: 2c2227e1-sutj40-t907cr-1c1mr.cu.plebai.net
+  name: 2|🇺🇸10 |  5.8MB/s
+  network: tcp
+  port: 5228
+  server: 7bd0fd61-suz340-tau0mq-1i41w.cu.plebai.net
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: a12640d0-e2ad-11ef-8f5b-f23c913c8d2b
-- auth: 5CBqBh6MeDq6GajcilBiDg==
-  name: 1|🇺🇸2 |  5.2MB/s
-  password: 5CBqBh6MeDq6GajcilBiDg==
-  port: 61001
-  server: 192-227-152-86.nip.io
-  skip-cert-verify: true
-  sni: 192-227-152-86.nip.io
-  type: hysteria2
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 1|🇺🇸3 |  6.0MB/s
-  port: 17549
-  server: 208.87.243.151
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
+  uuid: d13637bd-0e24-11ed-9d0b-f23c91cfbbc9
+  ws-headers:
+    Host: 7bd0fd61-suz340-tau0mq-1i41w.cu.plebai.net
+  ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇺🇸4 |  3.4MB/s
+  name: 2,14|CN_speednode_0054
   network: tcp
   port: 64654
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: zhee01.dynu.net
   servername: gateway.icloud.com
+  skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- auth: 40639730-e027-11ea-87ad-f23c913c8d2b
+  name: 2|🇺🇸4 |  1.4MB/s
+  password: 40639730-e027-11ea-87ad-f23c913c8d2b
+  port: 8443
+  server: fe021254-suk9s0-sve5if-z93q.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: fe021254-suk9s0-sve5if-z93q.hy2.gotochinatown.net
+  type: hysteria2
+- auth: 3a3ef54c-eb42-11ed-9bf0-f23c91369f2d
+  name: 2|🇺🇸5 |  4.2MB/s
+  password: 3a3ef54c-eb42-11ed-9bf0-f23c91369f2d
+  port: 8443
+  server: 7d777048-sutj40-svphz8-1nhwh.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: 7d777048-sutj40-svphz8-1nhwh.hy2.gotochinatown.net
+  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸5 |  5.7MB/s
+  name: 2|🇺🇸6 |  4.6MB/s
   network: tcp
   port: 5228
   server: 157.148.96.92
@@ -74,43 +114,145 @@ proxies:
   ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇺🇸6 |  6.1MB/s
+  name: 2|🇺🇸7 |  5.6MB/s
+  network: tcp
+  port: 65428
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- auth: 80aa5178-f936-11ed-8ce6-f23c91369f2d
+  name: 2|🇺🇸8 |  3.7MB/s
+  password: 80aa5178-f936-11ed-8ce6-f23c91369f2d
+  port: 8443
+  server: c26d0357-supts0-tfvcxz-1nq4g.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: c26d0357-supts0-tfvcxz-1nq4g.hy2.gotochinatown.net
+  type: hysteria2
+- auth: 3c461e2c-9d13-11ef-8563-f23c913c8d2b
+  name: 2|🇺🇸9 |  2.6MB/s
+  password: 3c461e2c-9d13-11ef-8563-f23c913c8d2b
+  port: 8443
+  server: 4e4babe3-suk9s0-t234dm-eso8.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: 4e4babe3-suk9s0-t234dm-eso8.hy2.gotochinatown.net
+  type: hysteria2
+- auth: 203d1d64-3313-11ed-bb74-f23c9164ca5d
+  name: 2|🇺🇸11 |  3.0MB/s
+  password: 203d1d64-3313-11ed-bb74-f23c9164ca5d
+  port: 8443
+  server: 0e1462f1-sum4g0-t8ro7t-1ey07.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: 0e1462f1-sum4g0-t8ro7t-1ey07.hy2.gotochinatown.net
+  type: hysteria2
+- auth: b3370cdc-c26e-11ef-bd97-f23c9164ca5d
+  name: 2|🇺🇸12 |  1.9MB/s
+  password: b3370cdc-c26e-11ef-bd97-f23c9164ca5d
+  port: 8443
+  server: c157a1f7-suz340-sw0aec-1t3oz.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: c157a1f7-suz340-sw0aec-1t3oz.hy2.gotochinatown.net
+  type: hysteria2
+- auth: e6aa39b6-f0b5-11ef-bca1-f23c91cfbbc9
+  name: 2|🇺🇸13 |  3.0MB/s
+  password: e6aa39b6-f0b5-11ef-bca1-f23c91cfbbc9
+  port: 8443
+  server: debeadd2-supts0-t1rksu-1ssud.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: debeadd2-supts0-t1rksu-1ssud.hy2.gotochinatown.net
+  type: hysteria2
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇺🇸14 |  5.2MB/s
+  network: ws
+  port: 2052
+  server: 185.146.173.16
+  servername: digitalscientificresearchgroup.ir
+  tls: false
+  type: vless
+  udp: false
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      Host: digitalscientificresearchgroup.ir
+    path: /TM-@AZARBAYJAB1/?ed=2560
+- auth: cf4a1644-5847-11ef-bc74-f23c91cfbbc9
+  name: 2|🇺🇸15 |  1.3MB/s
+  password: cf4a1644-5847-11ef-bc74-f23c91cfbbc9
+  port: 8443
+  server: c6d7d2f2-suz340-t5tz5s-1onbp.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: c6d7d2f2-suz340-t5tz5s-1onbp.hy2.gotochinatown.net
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸16 |  5.8MB/s
+  port: 5228
+  server: 3b6ec92e-sux8g0-swffb5-1s6xm.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: 2b634c80-fd7e-11ef-9f25-f23c9164ca5d
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇺🇸17 |  5.5MB/s
+  network: ws
+  port: 80
+  server: 141.193.213.0
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: psycho.suex12.ir
+    path: Telegram@JOKERRVPNJoin_Bade_Channel@JOKERRVPN /?ed=2560
+- auth: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
+  name: 2|🇺🇸18 |  1.0MB/s
+  password: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
+  port: 8443
+  server: cdb71208-suk9s0-sv6oiy-1p1b.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: cdb71208-suk9s0-sv6oiy-1p1b.hy2.gotochinatown.net
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇺🇸19 |  3.6MB/s
   network: tcp
   port: 29023
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
+  server: gysz0000.dynu.net
   servername: www.amazon.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- auth: c11ff50c-f582-11ee-94df-f23c9164ca5d
-  name: 1|🇺🇸7 |  3.1MB/s
-  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+- auth: 7af3db60-b2d9-11ef-88ab-f23c913c8d2b
+  delay: 2266
+  name: 2|🇺🇸20 |  1.2MB/s
+  password: 7af3db60-b2d9-11ef-88ab-f23c913c8d2b
   port: 8443
-  server: 74f0ee85-suk9s0-swtza9-1q91p.hy2.gotochinatown.net
+  server: b9a88fb8-suk9s0-t7qex7-1supq.hy2.gotochinatown.net
   skip-cert-verify: false
-  sni: 74f0ee85-suk9s0-swtza9-1q91p.hy2.gotochinatown.net
+  sni: b9a88fb8-suk9s0-t7qex7-1supq.hy2.gotochinatown.net
   type: hysteria2
-- allowInsecure: '1'
-  name: 1|🇺🇸8 |  4.3MB/s
-  network: original
-  password: 2342895f-ca91-49de-a409-2be44e77d05b
-  port: 27301
-  server: 45.146.232.173
-  skip-cert-verify: true
-  type: trojan
-- auth: a6a3c7fc-0de8-11ef-ba67-f23c91cfbbc9
-  name: 1|🇺🇸9 |  1.0MB/s
-  password: a6a3c7fc-0de8-11ef-ba67-f23c91cfbbc9
+  udp: true
+- auth: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
+  name: 2|🇺🇸21 |  1.1MB/s
+  password: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
   port: 8443
-  server: ea9b4647-supts0-sxw44d-1re2s.hy2.gotochinatown.net
+  server: 444a49aa-surog0-sxm4ot-zn8y.hy2.gotochinatown.net
   skip-cert-verify: false
-  sni: ea9b4647-supts0-sxw44d-1re2s.hy2.gotochinatown.net
+  sni: 444a49aa-surog0-sxm4ot-zn8y.hy2.gotochinatown.net
   type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸10 |  5.3MB/s
+  name: 2|🇺🇸22 |  5.7MB/s
   network: tcp
   port: 5229
   server: 74f77c00-sutj40-t5qufl-8n27.cu.plebai.net
@@ -121,165 +263,31 @@ proxies:
   ws-headers:
     Host: 74f77c00-sutj40-t5qufl-8n27.cu.plebai.net
   ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸11 |  2.1MB/s
-  network: ws
-  port: 12089
-  raw:
-    add: 92f8af01-sv2sg0-t21ryz-1rk0u.se.plebai.net
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: ae403676-1f72-11ef-98df-f23c91cfbbc9
-    net: ws
-    path: /
-    port: 12089
-    ps: wowrack
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 92f8af01-sv2sg0-t21ryz-1rk0u.se.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: ae403676-1f72-11ef-98df-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸12 |  3.1MB/s
-  network: ws
-  port: 12089
-  raw:
-    add: 0696c07d-sv2sg0-tegcd3-1ne75.se.plebai.net
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: c24da08e-e384-11ed-b0dd-f23c91cfbbc9
-    net: ws
-    path: /
-    port: 12089
-    ps: wowrack
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 0696c07d-sv2sg0-tegcd3-1ne75.se.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: c24da08e-e384-11ed-b0dd-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 1000 Mbps
-  name: 1|🇺🇸13 |  5.6MB/s
-  port: 11512
-  server: 108.181.24.77
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 1000 Mbps
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇺🇸14 |  3.7MB/s
-  network: tcp
-  port: 29023
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- auth: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
-  name: 1|🇺🇸15 |  1.0MB/s
-  password: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
+- auth: bf140bc0-3f68-11ee-953a-f23c9164ca5d
+  name: 2|🇺🇸23 |  1.9MB/s
+  password: bf140bc0-3f68-11ee-953a-f23c9164ca5d
   port: 8443
-  server: cdb71208-suk9s0-sv6oiy-1p1b.hy2.gotochinatown.net
+  server: 468ce536-supts0-svp9t7-1oijm.hy2.gotochinatown.net
   skip-cert-verify: false
-  sni: cdb71208-suk9s0-sv6oiy-1p1b.hy2.gotochinatown.net
+  sni: 468ce536-supts0-svp9t7-1oijm.hy2.gotochinatown.net
   type: hysteria2
-- alterId: 0
+- alterId: 2
   cipher: auto
-  ip-version: dual
-  name: 1|🇺🇸16 |  5.0MB/s
-  network: tcp
-  port: 5228
-  server: cd04809b-sux8g0-t3f7qr-141tv.cu.plebai.net
-  tls: false
-  type: vmess
-  uuid: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸17 |  5.3MB/s
-  network: tcp
-  port: 5228
-  server: 2042c623-suz340-sw30na-2vfx.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 7d74be30-1102-11ec-a0fc-f23c913c8d2b
-  ws-headers:
-    Host: 2042c623-suz340-sw30na-2vfx.cu.plebai.net
-  ws-path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇺🇸18 |  6.4MB/s
-  network: tcp
-  port: 10635
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇺🇸19 |  2.4MB/s
+  name: 2|🇺🇸24 |  2.1MB/s
   network: ws
-  port: 80
-  server: 45.131.209.184
-  servername: digitalscientificresearchgroup.ir
-  tls: false
-  type: vless
-  udp: false
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  port: 30829
+  server: v29.heduian.link
+  skip-cert-verify: true
+  sni: ''
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /Telegram@V2ray_Alpha
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸20 |  5.4MB/s
-  network: tcp
-  port: 5229
-  server: 8f34e685-suz340-svvaj9-fa3p.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 905fcd78-866c-81e1-3cb8-1beb59d661ab
-  ws-headers:
-    Host: 8f34e685-suz340-svvaj9-fa3p.cu.plebai.net
-  ws-path: /
+      host: ocbc.com
+    path: /oooo
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇺🇸21 |  2.2MB/s
+  name: 2|🇺🇸25 |  5.2MB/s
   network: tcp
   port: 50452
   reality-opts:
@@ -289,792 +297,50 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- auth: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
-  name: 1|🇺🇸22 |  2.9MB/s
-  password: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
-  port: 8443
-  server: 444a49aa-surog0-sxm4ot-zn8y.hy2.gotochinatown.net
-  skip-cert-verify: false
-  sni: 444a49aa-surog0-sxm4ot-zn8y.hy2.gotochinatown.net
-  type: hysteria2
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇺🇸23 |  3.5MB/s
-  network: ws
-  port: 8880
-  server: 185.135.9.83
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /TM-@AZARBAYJAB1/?ed=2560
-- client-fingerprint: chrome
-  delay: 1530
-  flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0027
-  network: tcp
-  port: 57926
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: gateway.icloud.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸25 |  1.4MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: f9065ee6-sva740-t9c951-1t1s5.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 4cee4858-bb77-11ef-a46e-f23c913c8d2b
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: f9065ee6-sva740-t9c951-1t1s5.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 4cee4858-bb77-11ef-a46e-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸26 |  2.0MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: 3d88c887-sva740-t7hmka-1plv4.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 28213b50-7ed5-11ee-add6-f23c91369f2d
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 3d88c887-sva740-t7hmka-1plv4.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 28213b50-7ed5-11ee-add6-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸27 |  2.3MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: 292b86fc-sv2sg0-sv2vdm-1qudz.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: a63b0d44-e290-11ee-91f6-f23c91cfbbc9
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 292b86fc-sv2sg0-sv2vdm-1qudz.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: a63b0d44-e290-11ee-91f6-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸28 |  1.5MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: 2667451c-sv2sg0-tb36ag-1jfq7.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: baa46fd6-63c1-11ed-8ea9-f23c913c8d2b
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 2667451c-sv2sg0-tb36ag-1jfq7.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: baa46fd6-63c1-11ed-8ea9-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸29 |  1.8MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: ca012141-sv2sg0-t2hy87-gmmc.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: e8a553fe-62bc-11ef-89a3-f23c913c8d2b
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: ca012141-sv2sg0-t2hy87-gmmc.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e8a553fe-62bc-11ef-89a3-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸30 |  5.2MB/s
-  port: 5228
-  server: 3b6ec92e-sux8g0-swffb5-1s6xm.cu.plebai.net
+  name: 2|🇺🇸26 |  5.7MB/s
+  port: 5229
+  server: 2c2227e1-sutj40-t907cr-1c1mr.cu.plebai.net
   tls: false
   type: vmess
-  uuid: 2b634c80-fd7e-11ef-9f25-f23c9164ca5d
+  uuid: a12640d0-e2ad-11ef-8f5b-f23c913c8d2b
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 2|🇺🇸27 |  4.8MB/s
+  port: 17549
+  server: 208.87.243.151
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 11 Mbps
+- alterId: '0'
+  cipher: auto
+  name: 2|🇺🇸28 |  3.6MB/s
+  network: tcp
+  port: '5229'
+  server: 8f34e685-suz340-svvaj9-fa3p.cu.plebai.net
+  type: vmess
+  uuid: 905fcd78-866c-81e1-3cb8-1beb59d661ab
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇺🇸31 |  5.3MB/s
+  name: 2,14|CN_speednode_0059
   network: tcp
   port: 40430
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: shenzhou02.mysynology.net
   servername: www.yahoo.com
+  skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇺🇸32 |  2.0MB/s
-  network: tcp
-  port: 50200
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸33 |  5.7MB/s
-  network: tcp
-  port: 5228
-  server: b115e896-sux8g0-t0w6o1-1lk9i.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: a60e3782-223e-11ee-b973-f23c913c8d2b
-  ws-headers:
-    Host: b115e896-sux8g0-t0w6o1-1lk9i.cu.plebai.net
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸34 |  2.1MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: a16899e7-sv2sg0-td1l1t-1s824.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: a16899e7-sv2sg0-td1l1t-1s824.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇺🇸35 |  5.9MB/s
-  network: tcp
-  port: 65428
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸36 |  2.5MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: f682342c-sva740-sxxbmq-1szgv.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: f682342c-sva740-sxxbmq-1szgv.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸37 |  1.8MB/s
-  network: ws
-  port: 12089
-  raw:
-    add: be27d542-sv2sg0-tdbt1l-1gabf.se.plebai.net
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: df84b552-97a9-11ec-bb74-f23c9164ca5d
-    net: ws
-    path: /
-    port: 12089
-    ps: wowrack
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: be27d542-sv2sg0-tdbt1l-1gabf.se.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: df84b552-97a9-11ec-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸38 |  3.3MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: c0323421-sva740-t9uin7-19ord.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: c0323421-sva740-t9uin7-19ord.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸39 |  5.9MB/s
-  network: tcp
-  port: 5228
-  server: 7bd0fd61-suz340-tau0mq-1i41w.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: d13637bd-0e24-11ed-9d0b-f23c91cfbbc9
-  ws-headers:
-    Host: 7bd0fd61-suz340-tau0mq-1i41w.cu.plebai.net
-  ws-path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸40 |  1.3MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: 34efdd64-sv2sg0-t9hghw-1sdoq.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 7c077572-6da9-11ef-b786-f23c91cfbbc9
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 34efdd64-sv2sg0-t9hghw-1sdoq.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7c077572-6da9-11ef-b786-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸41 |  1.7MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: 38d11a6e-sv2sg0-t4v3jz-1k8ga.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: f860f2da-5035-11ed-bb74-f23c9164ca5d
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 38d11a6e-sv2sg0-t4v3jz-1k8ga.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸42 |  1.3MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: 5e4475ac-sv2sg0-swos8d-1te2a.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 574db4bc-ef5e-11ef-bd1a-f23c913c8d2b
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 5e4475ac-sv2sg0-swos8d-1te2a.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 574db4bc-ef5e-11ef-bd1a-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸43 |  1.5MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: 45a37457-sv2sg0-t9i7o2-1lt20.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: bf4ec108-f2b7-11ef-b654-f23c91cfbbc9
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 45a37457-sv2sg0-t9i7o2-1lt20.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bf4ec108-f2b7-11ef-b654-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸44 |  2.1MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: 8cb1a77d-sv2sg0-sy8f4e-ukt4.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 6589f6d0-e192-11ec-bd7c-f23c913c8d2b
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 8cb1a77d-sv2sg0-sy8f4e-ukt4.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 6589f6d0-e192-11ec-bd7c-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸45 |  1.6MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: 282b42f5-sv2sg0-tdbt1l-1gabf.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: df84b552-97a9-11ec-bb74-f23c9164ca5d
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 282b42f5-sv2sg0-tdbt1l-1gabf.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: df84b552-97a9-11ec-bb74-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇺🇸46 |  2.9MB/s
-  network: tcp
-  port: 30206
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: addons.mozilla.org
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸47 |  2.1MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: 77b2398c-sv2sg0-t2hqlr-1s3mx.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: b58095f0-52dc-11ef-bc74-f23c91cfbbc9
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 77b2398c-sv2sg0-t2hqlr-1s3mx.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: b58095f0-52dc-11ef-bc74-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇺🇸48 |  6.5MB/s
-  network: ws
-  port: 8880
-  server: 185.146.173.167
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /TM-@AZARBAYJAB1/?ed=2560
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇺🇸49 |  5.4MB/s
-  network: ws
-  port: 8880
-  server: 104.21.96.1
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /TM-@AZARBAYJAB1/?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸50 |  2.9MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: 71263ac3-sv2sg0-sxi4nd-1o6fm.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: e03df6fc-97e8-11ee-be7f-f23c9164ca5d
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 71263ac3-sv2sg0-sxi4nd-1o6fm.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: e03df6fc-97e8-11ee-be7f-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸51 |  1.7MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: 4480c5ee-sv2sg0-sw4w3a-1pbfz.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 3f03b164-86a9-11ee-ba78-f23c91cfbbc9
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 4480c5ee-sv2sg0-sw4w3a-1pbfz.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 3f03b164-86a9-11ee-ba78-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸52 |  1.6MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: d4541598-sva740-svo46i-1tmhw.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 46459926-0fbd-11f0-b0c8-f23c913c8d2b
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: d4541598-sva740-svo46i-1tmhw.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 46459926-0fbd-11f0-b0c8-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸53 |  2.0MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: c2d6789b-sv2sg0-t5qfe2-1khwf.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: c2d6789b-sv2sg0-t5qfe2-1khwf.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸54 |  1.8MB/s
-  network: ws
-  port: 1281
-  raw:
-    add: 5014efd6-sv2sg0-t517yc-1shzj.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 63aab438-79ae-11ef-b3f6-f23c913c8d2b
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 5014efd6-sv2sg0-t517yc-1shzj.sv.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 63aab438-79ae-11ef-b3f6-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇺🇸55 |  3.4MB/s
+  name: 2|🇺🇸30 |  5.8MB/s
   network: tcp
   port: 22054
   reality-opts:
@@ -1084,108 +350,185 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸56 |  1.7MB/s
-  network: ws
-  port: 12089
-  raw:
-    add: adfee7c3-sva740-sxxbmq-1szgv.se.plebai.net
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
-    net: ws
-    path: /
-    port: 12089
-    ps: wowrack
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: adfee7c3-sva740-sxxbmq-1szgv.se.plebai.net
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
 - alterId: 2
   cipher: auto
-  name: 1|🇺🇸57 |  1.7MB/s
+  client-fingerprint: chrome
+  name: 2|🇺🇸31 |  1.8MB/s
   network: ws
-  port: 1281
-  raw:
-    add: d9917cc3-sv2sg0-tct1rd-1o0ch.sv.plebai.net
-    aid: '2'
-    alpn: ''
-    fp: ''
-    host: broadcastlv.chat.bilibili.com
-    id: d49e545e-0daf-11ee-a91f-f23c913c8d2b
-    net: ws
-    path: /
-    port: 1281
-    ps: PetaExpress
-    scy: ''
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: d9917cc3-sv2sg0-tct1rd-1o0ch.sv.plebai.net
-  servername: ''
+  port: 30808
+  server: v8.heduian.link
+  skip-cert-verify: false
+  tfo: false
   tls: false
   type: vmess
-  uuid: d49e545e-0daf-11ee-a91f-f23c913c8d2b
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: '0'
-  cipher: auto
-  name: 1|🇺🇸58 |  5.6MB/s
+      Host: baidu.com
+    path: /oooo
+- auth: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  name: 2|🇺🇸32 |  1.7MB/s
+  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  port: 8443
+  server: 74f0ee85-suk9s0-swtza9-1q91p.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: 74f0ee85-suk9s0-swtza9-1q91p.hy2.gotochinatown.net
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇺🇸33 |  4.1MB/s
   network: tcp
-  port: '37805'
-  server: 120.232.153.63
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  port: 33718
+  reality-opts:
+    public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
+  server: 31.59.111.49
+  servername: icloud.cdn-apple.com
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e657e5fb-c417-4d3f-d84e-a3a8f010f9fa
+- allowInsecure: ''
+  name: 2,14|US_speednode_0109
+  network: ws
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
+  port: 443
+  server: 104.21.23.115
+  skip-cert-verify: true
+  sni: 1cc.852224.ggff.net
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 1cc.852224.ggff.net
+    path: /OYzPAeaZdXUq2d6J3gc4aj
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0056
+  network: tcp
+  port: 50200
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: www.amazon.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- auth: 088a0bbe-4f9f-11ea-a15d-f23c913c8d2b
+  name: 2|🇺🇸36 |  1.8MB/s
+  password: 088a0bbe-4f9f-11ea-a15d-f23c913c8d2b
+  port: 8443
+  server: b6ea3219-supts0-swbd0b-716s.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: b6ea3219-supts0-swbd0b-716s.hy2.gotochinatown.net
+  type: hysteria2
+- auth: 203d1d64-3313-11ed-bb74-f23c9164ca5d
+  delay: 1934
+  name: 2|🇺🇸37 |  2.6MB/s
+  password: 203d1d64-3313-11ed-bb74-f23c9164ca5d
+  port: 8443
+  server: d7b8355e-suk9s0-t8ro7t-1ey07.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: d7b8355e-suk9s0-t8ro7t-1ey07.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- client-fingerprint: chrome
+  name: 2,14|US_speednode_0116
+  network: ws
+  port: 443
+  server: 104.18.20.20
+  servername: us3.globals-download.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: af8e7760-4993-4393-9db7-e84f05a06d21
+  ws-opts:
+    headers:
+      Host: us3.globals-download.com
+    path: /pq/us3
+- allowInsecure: ''
+  name: 2,14|US_speednode_0110
+  network: ws
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
+  port: 443
+  server: 172.67.210.210
+  skip-cert-verify: true
+  sni: 1cc.852224.ggff.net
+  tls: true
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 1cc.852224.ggff.net
+    path: /OYzPAeaZdXUq2d6J3gc4aj
+- auth: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  name: 2|🇺🇸40 |  1.1MB/s
+  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  port: 8443
+  server: 50b8214a-suz340-sx19e8-gacy.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: 50b8214a-suz340-sx19e8-gacy.hy2.gotochinatown.net
+  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸59 |  5.6MB/s
+  ip-version: dual
+  name: 2|🇺🇸41 |  5.7MB/s
   network: tcp
   port: 5228
-  server: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
-  skip-cert-verify: true
+  server: cd04809b-sux8g0-t3f7qr-141tv.cu.plebai.net
   tls: false
   type: vmess
-  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
-  ws-headers:
-    Host: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 7e5c91ef-e3e1-4963-bf3d-eca2e8e74494
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
+  uuid: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
+- auth: ae403676-1f72-11ef-98df-f23c91cfbbc9
+  name: 2|🇺🇸42 |  1.8MB/s
+  password: ae403676-1f72-11ef-98df-f23c91cfbbc9
+  port: 8443
+  server: 996b0aed-suz340-t21ryz-1rk0u.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: 996b0aed-suz340-t21ryz-1rk0u.hy2.gotochinatown.net
+  type: hysteria2
+- auth: 8de795d2-a06f-11ed-8edf-f23c913c8d2b
+  name: 2|🇺🇸43 |  2.9MB/s
+  password: 8de795d2-a06f-11ed-8edf-f23c913c8d2b
+  port: 8443
+  server: bec3dd81-suk9s0-sxv16d-1k09w.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: bec3dd81-suk9s0-sxv16d-1k09w.hy2.gotochinatown.net
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸44 |  5.7MB/s
+  network: tcp
+  port: 5229
+  server: 0ecc8d37-sux8g0-swbudg-1mzwj.cu.plebai.net
+  type: vmess
+  uuid: a203d80e-10fe-11ef-88a6-f23c9164ca5d
+- auth: d0f35ada-c39c-11ef-8a98-f23c91cfbbc9
+  name: 2|🇺🇸45 |  2.1MB/s
+  password: d0f35ada-c39c-11ef-8a98-f23c91cfbbc9
+  port: 8443
+  server: 6ce8fc7b-surog0-t2cl3c-14ubl.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: 6ce8fc7b-surog0-t2cl3c-14ubl.hy2.gotochinatown.net
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0053
+  network: tcp
+  port: 30206
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: addons.mozilla.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 7e5c91ef-e3e1-4963-bf3d-eca2e8e74494
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 03 | 1x US Washington
-  password: 7e5c91ef-e3e1-4963-bf3d-eca2e8e74494
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -1248,348 +591,152 @@ proxies:
   tls: false
   type: vmess
   uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 14|US_speednode_0048
-  port: 56702
-  reality-opts:
-    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
-    short-id: 792147b8
-  server: jp4.interld123456789.com
-  servername: addons.mozilla.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c6763909-34f1-4b80-9522-f70d930e90e6
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 14|US_speednode_0049
-  port: 56702
-  reality-opts:
-    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
-    short-id: 792147b8
-  server: us1do.interld123456789.com
-  servername: addons.mozilla.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c6763909-34f1-4b80-9522-f70d930e90e6
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 14|US_speednode_0050
-  port: 56702
-  reality-opts:
-    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
-    short-id: 792147b8
-  server: sg2.interld123456789.com
-  servername: addons.mozilla.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c6763909-34f1-4b80-9522-f70d930e90e6
-- name: 14|US_speednode_0051
+- name: 14|US_speednode_0102
   network: ws
-  port: 443
-  server: 135.84.76.110
-  servername: vb.bgm2024.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      Host: vb.bgm2024.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0052
-  network: ws
-  port: 80
-  server: karim.digikala.ir.iqcoder.ir
-  servername: 00.org
+  port: 2095
+  server: 162.159.20.34
+  servername: 5-55sfjslf.ifenxiang.cfd
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: c0b38bf3-41f2-470a-8eb9-ab6ccc503bf5
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
   ws-opts:
     headers:
-      Host: 00.org
-    path: /telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens?ed=2048
-- name: 14|US_speednode_0053
-  network: ws
-  port: 443
-  server: 108.162.196.159
-  servername: cr7777.rayan.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1688039e-a45f-499e-b9f4-c098c87d3b32
-  ws-opts:
-    headers:
-      Host: cr7777.rayan.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0054
-  network: ws
-  port: 443
-  server: 63.141.128.102
-  servername: vb.bgm2024.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      Host: vb.bgm2024.dpdns.org
-    path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 14|US_speednode_0055
-  port: 29664
-  reality-opts:
-    public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
-  server: 156.229.163.209
-  servername: www.icloud.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b2d79249-2307-4b51-8d76-f12a5ed6e20d
-- name: 14|US_speednode_0056
-  network: ws
-  port: 443
-  server: 104.16.187.41
-  servername: cr7.traneh.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
-  ws-opts:
-    headers:
-      Host: cr7.traneh.dpdns.org
-    path: /sinavm-sinavm/?ed=2560
-- client-fingerprint: chrome
-  name: 14|US_speednode_0057
-  network: ws
-  port: 443
-  server: g2.com
-  servername: cr7.medicalhistory.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: d6a1143b-cdf0-41f8-a646-bd8f11663786
-  ws-opts:
-    headers:
-      Host: cr7.medicalhistory.ir
-    path: /vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl?ed=2560
-- name: 14|US_speednode_0058
-  network: ws
-  port: 443
-  server: 104.16.188.41
-  servername: cr7.traneh.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
-  ws-opts:
-    headers:
-      Host: cr7.traneh.dpdns.org
-    path: /sinavm-sinavm/?ed=2560
-- name: 14|US_speednode_0059
-  network: ws
-  port: 443
-  server: 152.70.119.70
-  servername: cr777.medicaldream.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ccff34b1-44fd-478d-bc0e-5111cb11f5be
-  ws-opts:
-    headers:
-      Host: cr777.medicaldream.ir
-    path: /?ed=2560
-- name: 14|US_speednode_0060
+      Host: 5-55sfjslf.ifenxiang.cfd
+    path: /Telegram:TM@AZAFBAYJB1TM@Azarbayjab1
+- name: 14|US_speednode_0103
   network: ws
   port: 80
-  server: compare99.com
-  servername: snappfood.com
+  server: 104.21.56.44
+  servername: REEdfREe8MahSaNg2.rEDOrG.IR
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: REEdfREe8MahSaNg2.rEDOrG.IR
+    path: /Join_Bade_Channel@JOKERRVPNTELEGRAM----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPN----@JOKERRVPNflow
+- name: 14|US_speednode_0104
+  network: ws
+  port: 443
+  server: 63.141.128.92
+  servername: bn.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: bn.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 14|US_speednode_0105
+  network: ws
+  port: 80
+  server: 151.101.2.228
+  servername: v2riran.com
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: 523b1406-36a4-4770-a0ad-9866c6eefe80
+  uuid: 5db0cbbd-e015-4005-b1b3-82f2081e9384
   ws-opts:
     headers:
-      Host: snappfood.com
-    path: /Join--HAJIMAMADVPN?ed=80
-- name: 14|US_speednode_0061
+      Host: v2riran.com
+    path: /telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN?ed=2056
+- name: 14|US_speednode_0106
+  network: ws
+  port: 80
+  server: hajlab.ucdavis.edu
+  servername: joinxvproxybedeeeeee.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d2f28868-4493-45f1-9925-57416019aa11
+  ws-opts:
+    headers:
+      Host: joinxvproxybedeeeeee.ir
+    path: /@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048
+- name: 14|US_speednode_0107
   network: ws
   port: 443
-  server: 198.62.62.4
-  servername: vlee.amclubs.nyc.mn
-  skip-cert-verify: false
+  server: 38.207.190.246
+  servername: usb.cayuo.me
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  uuid: 0bec912d-d0b9-42e1-ae34-9236a453ff93
   ws-opts:
     headers:
-      Host: vlee.amclubs.nyc.mn
+      Host: usb.cayuo.me
+    path: /bing
+- name: 14|US_speednode_0108
+  network: ws
+  port: 443
+  server: 160.79.105.134
+  servername: bn.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: bn.ylks0033.dpdns.org
     path: /?ed=2560
-- name: 14|US_speednode_0062
+- name: 14|US_speednode_0111
+  network: ws
+  port: 8080
+  server: 104.19.54.50
+  servername: www.speedtest.net.www.zula.ir.cloudflare.com.developsp.ir.svgspeedtest.net.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 2a8e8c50-2e48-4806-8464-6cc718073ae7
+  ws-opts:
+    headers:
+      Host: www.speedtest.net.www.zula.ir.cloudflare.com.developsp.ir.svgspeedtest.net.
+    path: /@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy----@XvProxy?ed=2048
+- name: 14|US_speednode_0112
   network: ws
   port: 443
-  server: 104.16.190.41
-  servername: cr7.traneh.dpdns.org
-  skip-cert-verify: false
+  server: 23.106.155.110
+  servername: usa.cayuo.me
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
+  uuid: 788f5357-228e-44ed-b5bc-f7f07701de9b
   ws-opts:
     headers:
-      Host: cr7.traneh.dpdns.org
-    path: /sinavm-sinavm/?ed=2560
-- name: 14|US_speednode_0063
+      Host: usa.cayuo.me
+    path: /bing
+- name: 14|US_speednode_0113
   network: ws
-  port: 443
-  server: 47.254.17.234
-  servername: cr777.medicaldream.ir
+  port: 8080
+  server: tgju.org
+  servername: 4j.QBAo1g5z6k.ZulaIR.org.
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: ccff34b1-44fd-478d-bc0e-5111cb11f5be
+  uuid: 56652249-2e67-4429-b86c-3df8b838ad85
   ws-opts:
     headers:
-      Host: cr777.medicaldream.ir
-    path: /?ed=2560
-- name: 14|US_speednode_0064
-  network: ws
-  port: 443
-  server: 63.141.128.209
-  servername: vb.bgm2024.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 55520747-311e-4015-83ce-be46e2060ce3
-  ws-opts:
-    headers:
-      Host: vb.bgm2024.dpdns.org
-    path: /ss.vs2024.us.kg
-- name: 14|US_speednode_0065
-  network: ws
-  port: 443
-  server: 104.16.186.41
-  servername: cr7.traneh.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
-  ws-opts:
-    headers:
-      Host: cr7.traneh.dpdns.org
-    path: /sinavm-sinavm/?ed=2560
-- name: 14|US_speednode_0066
-  network: ws
-  port: 443
-  server: 199.34.228.171
-  servername: digitalscientificresearchgroup.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /
-- name: 14|US_speednode_0067
-  network: ws
-  port: 443
-  server: 209.208.227.239
-  servername: digitalscientificresearchgroup.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /Telegram@V2ray_Alpha
-- name: 14|US_speednode_0068
-  network: ws
-  port: 443
-  server: 199.34.228.67
-  servername: digitalscientificresearchgroup.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /
-- name: 14|US_speednode_0069
-  network: ws
-  port: 443
-  server: 129.80.177.42
-  servername: cr777.medicaldream.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ccff34b1-44fd-478d-bc0e-5111cb11f5be
-  ws-opts:
-    headers:
-      Host: cr777.medicaldream.ir
-    path: /?ed=2560
-- name: 14|US_speednode_0070
-  network: ws
-  port: 443
-  server: 205.233.181.174
-  servername: digitalscientificresearchgroup.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /
-- name: 14|US_speednode_0071
-  network: ws
-  port: 443
-  server: 209.208.227.229
-  servername: digitalscientificresearchgroup.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /
+      Host: 4j.QBAo1g5z6k.ZulaIR.org.
+    path: /?ed=2048
 - client-fingerprint: chrome
-  name: 14|US_speednode_0072
+  name: 14|US_speednode_0114
   network: ws
   port: 443
   server: 104.18.20.20
-  servername: us3.globals-download.com
+  servername: us5.globals-download.com
   skip-cert-verify: false
   tls: true
   type: vless
@@ -1597,147 +744,121 @@ proxies:
   uuid: af8e7760-4993-4393-9db7-e84f05a06d21
   ws-opts:
     headers:
-      Host: us3.globals-download.com
-    path: /pq/us3
-- name: 14|US_speednode_0073
-  network: ws
-  port: 443
-  server: 199.34.228.162
-  servername: digitalscientificresearchgroup.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /
-- name: 14|US_speednode_0074
-  network: ws
-  port: 443
-  server: 199.34.228.182
-  servername: digitalscientificresearchgroup.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /Telegram@V2ray_Alpha
+      Host: us5.globals-download.com
+    path: /pq/us5
 - client-fingerprint: chrome
-  name: 14|US_speednode_0075
+  name: 14|US_speednode_0115
   network: ws
   port: 443
-  server: 199.34.228.67
-  servername: digitalscientificresearchgroup.ir
+  server: 104.18.20.20
+  servername: us2.globals-download.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  uuid: af8e7760-4993-4393-9db7-e84f05a06d21
   ws-opts:
     headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /Telegram@V2ray_Alpha
-- name: 14|US_speednode_0076
-  network: ws
-  port: 443
-  server: 208.86.168.45
-  servername: digitalscientificresearchgroup.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /Telegram@V2ray_Alpha
-- name: 14|US_speednode_0077
-  network: ws
-  port: 443
-  server: 104.16.186.41
-  servername: cr7.traneh.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
-  ws-opts:
-    headers:
-      Host: cr7.traneh.dpdns.org
-    path: /
-- name: 14|US_speednode_0078
-  network: ws
-  port: 443
-  server: 129.80.237.223
-  servername: cr777.medicaldream.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ccff34b1-44fd-478d-bc0e-5111cb11f5be
-  ws-opts:
-    headers:
-      Host: cr777.medicaldream.ir
-    path: /?ed=2560
-- name: 14|US_speednode_0079
-  network: ws
-  port: 443
-  server: 104.16.190.41
-  servername: cr7.traneh.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 102e5f34-1913-4dd3-a1f2-f831d891a490
-  ws-opts:
-    headers:
-      Host: cr7.traneh.dpdns.org
-    path: /
-- name: 14|US_speednode_0080
-  network: ws
-  port: 443
-  server: 158.101.23.175
-  servername: cr777.medicaldream.ir
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ccff34b1-44fd-478d-bc0e-5111cb11f5be
-  ws-opts:
-    headers:
-      Host: cr777.medicaldream.ir
-    path: /?ed=2560
-- name: 14|US_speednode_0081
-  network: ws
-  port: 2083
-  server: 104.26.5.157
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /
+      Host: us2.globals-download.com
+    path: /pq/us2
 - client-fingerprint: chrome
-  name: 14|US_speednode_0082
+  name: 14|US_speednode_0117
   network: ws
   port: 443
-  server: 104.16.186.41
-  servername: cr7.medicalhistory.ir
+  server: 104.18.20.20
+  servername: us7.globals-download.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: d6a1143b-cdf0-41f8-a646-bd8f11663786
+  uuid: af8e7760-4993-4393-9db7-e84f05a06d21
   ws-opts:
     headers:
-      Host: cr7.medicalhistory.ir
+      Host: us7.globals-download.com
+    path: /pq/us7
+- client-fingerprint: chrome
+  name: 14|US_speednode_0118
+  network: ws
+  port: 443
+  server: 104.18.20.20
+  servername: us4.globals-download.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: af8e7760-4993-4393-9db7-e84f05a06d21
+  ws-opts:
+    headers:
+      Host: us4.globals-download.com
+    path: /pq/us4
+- client-fingerprint: chrome
+  name: 14|US_speednode_0119
+  network: ws
+  port: 443
+  server: 104.18.20.20
+  servername: us6.globals-download.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: af8e7760-4993-4393-9db7-e84f05a06d21
+  ws-opts:
+    headers:
+      Host: us6.globals-download.com
+    path: /pq/us6
+- name: 14|US_speednode_0121
+  network: ws
+  port: 2096
+  server: 104.19.222.79
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s32.sabzmaghz.ir
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e88187f8-62a3-4de1-a8f6-3b704ebd1865
+  ws-opts:
+    headers:
+      Host: wwwspeedtestnetwhiteberinsistomd6625996s32.sabzmaghz.ir
+    path: /
+- name: 14|US_speednode_0122
+  network: ws
+  port: 2096
+  server: whatismyipaddress.com
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s32.sabzmaghz.ir
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e88187f8-62a3-4de1-a8f6-3b704ebd1865
+  ws-opts:
+    headers:
+      Host: wwwspeedtestnetwhiteberinsistomd6625996s32.sabzmaghz.ir
+    path: /
+- name: 14|US_speednode_0123
+  network: ws
+  port: 2096
+  server: whatismyipaddress.com
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s30.sabzmaghz.ir
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e88187f8-62a3-4de1-a8f6-3b704ebd1865
+  ws-opts:
+    headers:
+      Host: wwwspeedtestnetwhiteberinsistomd6625996s30.sabzmaghz.ir
+    path: /
+- name: 14|US_speednode_0124
+  network: ws
+  port: 2096
+  server: whatismyipaddress.com
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s26.sabzmaghz.ir
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: e88187f8-62a3-4de1-a8f6-3b704ebd1865
+  ws-opts:
+    headers:
+      Host: wwwspeedtestnetwhiteberinsistomd6625996s26.sabzmaghz.ir
     path: /

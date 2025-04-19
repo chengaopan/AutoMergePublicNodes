@@ -1,21 +1,49 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷韩国 01 | 1x KR
-  password: 9dede70f-1125-4e54-be8a-2971fbfbc5be
+  password: 3ec17707-7e08-40cc-970e-0d0b893f1587
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷韩国 02 | 1x KR
-  password: 9dede70f-1125-4e54-be8a-2971fbfbc5be
+  password: 3ec17707-7e08-40cc-970e-0d0b893f1587
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 01 | 1x KR
+  password: 580c5402-f17b-410c-89b3-dbe993f3dcc6
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 02 | 1x KR
+  password: 580c5402-f17b-410c-89b3-dbe993f3dcc6
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 2|🇰🇷1 |  1.4MB/s
+  network: ws
+  port: 443
+  server: 192.0.63.211
+  servername: bn.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bn.ylks0033.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇰🇷1 |  1.2MB/s
+  name: 2|🇰🇷2 |  3.4MB/s
   network: tcp
   port: 21082
   reality-opts:
@@ -26,20 +54,37 @@ proxies:
   tls: true
   type: vless
   uuid: e7adaa99-8363-3ec4-b849-307c99005405
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷 韩国 01 | 1x KR
-  password: 7e5c91ef-e3e1-4963-bf3d-eca2e8e74494
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2,14|DE_speednode_0070
+  network: ws
+  port: 8880
+  server: 185.135.9.83
+  servername: digitalscientificresearchgroup.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷 韩国 02 | 1x KR
-  password: 7e5c91ef-e3e1-4963-bf3d-eca2e8e74494
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      Host: digitalscientificresearchgroup.ir
+    path: /TM-@AZARBAYJAB1/?ed=2560
+- name: 2|🇰🇷4 |  4.7MB/s
+  network: ws
+  port: 8443
+  server: 158.180.230.4
+  servername: bn.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: bn.ylks0033.dpdns.org
+    path: /?ed=2560
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
