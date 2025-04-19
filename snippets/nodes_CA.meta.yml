@@ -1,21 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦加拿大 01 | 1x CA
-  password: bdc660a8-874c-48c3-95a9-d954e172b839
+  password: 1330cc6f-93ce-459e-ac73-18ba64641887
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: 263ea614-8a3e-4c73-a871-da4a9287dd9b
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇨🇦1 |  5.1MB/s
+  name: 1|🇨🇦1 |  5.1MB/s
   network: tcp
   port: 16011
   reality-opts:
@@ -28,7 +21,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 2|🇨🇦2 |  5.3MB/s
+  name: 1|🇨🇦2 |  5.3MB/s
   network: ws
   port: 30825
   server: v25.heduian.link
@@ -40,10 +33,17 @@ proxies:
       Host: baidu.com
     path: /oooo
 - auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 2|🇨🇦3 |  2.7MB/s
+  name: 1|🇨🇦3 |  2.7MB/s
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
   server: 132.145.108.102
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇨🇦 加拿大 01 | 1x CA
+  password: 7862a585-e6f0-42e7-8a18-6f16a240b9fd
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
