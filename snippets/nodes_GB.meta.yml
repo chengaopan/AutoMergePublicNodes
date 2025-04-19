@@ -1,47 +1,64 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 01 | 1x HK
-  password: 99e3db22-dbe5-4955-862e-e4d9078410be
+  password: 1f5c351c-3b90-4f0b-a1ca-ccecb736bf4d
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 99e3db22-dbe5-4955-862e-e4d9078410be
+  password: 1f5c351c-3b90-4f0b-a1ca-ccecb736bf4d
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- client-fingerprint: ''
-  flow: ''
-  grpc-opts:
-    grpc-service-name: DarkTeam_VPN
-  mode: gun
-  name: 1|🇬🇧1 |  3.6MB/s
-  network: grpc
-  port: 13039
-  server: uk.darkteam.vipt-t.info
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 5efbe592-3027-417d-8807-47fcddb40549
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧2 |  4.2MB/s
+  name: 1|🇬🇧1 |  5.5MB/s
   network: tcp
-  port: 49699
+  port: 35311
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
+  delay: 1679
   flow: xtls-rprx-vision
-  name: 1,13|CN_speednode_0032
+  name: 1,14|CN_speednode_0028
+  network: tcp
+  port: 65053
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.amazon.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇬🇧3 |  2.9MB/s
+  network: ws
+  port: 2096
+  server: whatismyipaddress.com
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s33.sabzmaghz.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: e88187f8-62a3-4de1-a8f6-3b704ebd1865
+  ws-opts:
+    headers:
+      Host: wwwspeedtestnetwhiteberinsistomd6625996s33.sabzmaghz.ir
+    path: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1,14|CN_speednode_0032
   network: tcp
   port: 32055
   reality-opts:
@@ -53,35 +70,21 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇬🇧4 |  2.3MB/s
-  network: ws
-  port: 80
-  server: 45.131.4.4
-  servername: digitalscientificresearchgroup.ir
-  tls: false
-  type: vless
-  udp: false
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: Telegram🇨🇳@WangCai2/?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧5 |  1.1MB/s
-  network: tcp
-  port: 47151
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 10|Hysteria 🇬🇧 @v2meowcf
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰香港 01 | 1x HK
+  password: a11690f7-72d6-49e7-a374-ff6b842ce922
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧英国家宽 01 | 1x UK
+  password: a11690f7-72d6-49e7-a374-ff6b842ce922
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -91,7 +94,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 13|GB_speednode_0034
+  name: 14|GB_speednode_0034
   port: 8989
   reality-opts:
     public-key: TfbgQiZ2DOhCTDVLjx5Gwc5WHFSlQ_LXhyzKUEGR6mc
@@ -102,17 +105,3 @@ proxies:
   type: vless
   udp: true
   uuid: 409ef7ff-6449-4b9a-9db9-775927a1a925
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰香港 01 | 1x HK
-  password: 013c6c6e-e8e6-4112-b40e-720b5ccf73ea
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇬🇧英国家宽 01 | 1x UK
-  password: 013c6c6e-e8e6-4112-b40e-720b5ccf73ea
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true

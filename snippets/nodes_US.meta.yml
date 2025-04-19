@@ -1,43 +1,116 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 99e3db22-dbe5-4955-862e-e4d9078410be
+  password: 1f5c351c-3b90-4f0b-a1ca-ccecb736bf4d
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 99e3db22-dbe5-4955-862e-e4d9078410be
+  password: 1f5c351c-3b90-4f0b-a1ca-ccecb736bf4d
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国 03 | 1x US Washington
-  password: 99e3db22-dbe5-4955-862e-e4d9078410be
+  password: 1f5c351c-3b90-4f0b-a1ca-ccecb736bf4d
   port: 36215
   server: free.2weradf.xyz
   type: ss
   udp: true
-- flow: ''
-  mode: ''
-  name: 1|🇺🇸1 |  5.9MB/s
-  network: ws
-  port: 443
-  server: 104.18.20.20
-  servername: us5.globals-download.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 1e5599e3-325c-49fa-a6c7-675e314a0d99
-  ws-opts:
-    headers:
-      Host: us5.globals-download.com
-    path: /pq/us5
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸2 |  4.6MB/s
+  name: 1|🇺🇸1 |  5.3MB/s
+  port: 5229
+  server: 2c2227e1-sutj40-t907cr-1c1mr.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: a12640d0-e2ad-11ef-8f5b-f23c913c8d2b
+- auth: 5CBqBh6MeDq6GajcilBiDg==
+  name: 1|🇺🇸2 |  5.2MB/s
+  password: 5CBqBh6MeDq6GajcilBiDg==
+  port: 61001
+  server: 192-227-152-86.nip.io
+  skip-cert-verify: true
+  sni: 192-227-152-86.nip.io
+  type: hysteria2
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 55 Mbps
+  name: 1|🇺🇸3 |  6.0MB/s
+  port: 17549
+  server: 208.87.243.151
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 11 Mbps
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇺🇸4 |  3.4MB/s
+  network: tcp
+  port: 64654
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸5 |  5.7MB/s
+  network: tcp
+  port: 5228
+  server: 157.148.96.92
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
+  ws-headers:
+    Host: 157.148.96.92
+  ws-path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇺🇸6 |  6.1MB/s
+  network: tcp
+  port: 29023
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- auth: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  name: 1|🇺🇸7 |  3.1MB/s
+  password: c11ff50c-f582-11ee-94df-f23c9164ca5d
+  port: 8443
+  server: 74f0ee85-suk9s0-swtza9-1q91p.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: 74f0ee85-suk9s0-swtza9-1q91p.hy2.gotochinatown.net
+  type: hysteria2
+- allowInsecure: '1'
+  name: 1|🇺🇸8 |  4.3MB/s
+  network: original
+  password: 2342895f-ca91-49de-a409-2be44e77d05b
+  port: 27301
+  server: 45.146.232.173
+  skip-cert-verify: true
+  type: trojan
+- auth: a6a3c7fc-0de8-11ef-ba67-f23c91cfbbc9
+  name: 1|🇺🇸9 |  1.0MB/s
+  password: a6a3c7fc-0de8-11ef-ba67-f23c91cfbbc9
+  port: 8443
+  server: ea9b4647-supts0-sxw44d-1re2s.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: ea9b4647-supts0-sxw44d-1re2s.hy2.gotochinatown.net
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸10 |  5.3MB/s
   network: tcp
   port: 5229
   server: 74f77c00-sutj40-t5qufl-8n27.cu.plebai.net
@@ -48,10 +121,779 @@ proxies:
   ws-headers:
     Host: 74f77c00-sutj40-t5qufl-8n27.cu.plebai.net
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸11 |  2.1MB/s
+  network: ws
+  port: 12089
+  raw:
+    add: 92f8af01-sv2sg0-t21ryz-1rk0u.se.plebai.net
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: ae403676-1f72-11ef-98df-f23c91cfbbc9
+    net: ws
+    path: /
+    port: 12089
+    ps: wowrack
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 92f8af01-sv2sg0-t21ryz-1rk0u.se.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: ae403676-1f72-11ef-98df-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸12 |  3.1MB/s
+  network: ws
+  port: 12089
+  raw:
+    add: 0696c07d-sv2sg0-tegcd3-1ne75.se.plebai.net
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: c24da08e-e384-11ed-b0dd-f23c91cfbbc9
+    net: ws
+    path: /
+    port: 12089
+    ps: wowrack
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 0696c07d-sv2sg0-tegcd3-1ne75.se.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: c24da08e-e384-11ed-b0dd-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 1|🇺🇸13 |  5.6MB/s
+  port: 11512
+  server: 108.181.24.77
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 1000 Mbps
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇺🇸14 |  3.7MB/s
+  network: tcp
+  port: 29023
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- auth: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
+  name: 1|🇺🇸15 |  1.0MB/s
+  password: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
+  port: 8443
+  server: cdb71208-suk9s0-sv6oiy-1p1b.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: cdb71208-suk9s0-sv6oiy-1p1b.hy2.gotochinatown.net
+  type: hysteria2
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 1|🇺🇸16 |  5.0MB/s
+  network: tcp
+  port: 5228
+  server: cd04809b-sux8g0-t3f7qr-141tv.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: bd77bfe8-e0f3-11ec-bd7c-f23c913c8d2b
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸17 |  5.3MB/s
+  network: tcp
+  port: 5228
+  server: 2042c623-suz340-sw30na-2vfx.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 7d74be30-1102-11ec-a0fc-f23c913c8d2b
+  ws-headers:
+    Host: 2042c623-suz340-sw30na-2vfx.cu.plebai.net
+  ws-path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇺🇸18 |  6.4MB/s
+  network: tcp
+  port: 10635
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 1|🇺🇸3 |  5.2MB/s
+  name: 1|🇺🇸19 |  2.4MB/s
+  network: ws
+  port: 80
+  server: 45.131.209.184
+  servername: digitalscientificresearchgroup.ir
+  tls: false
+  type: vless
+  udp: false
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      Host: digitalscientificresearchgroup.ir
+    path: /Telegram@V2ray_Alpha
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸20 |  5.4MB/s
+  network: tcp
+  port: 5229
+  server: 8f34e685-suz340-svvaj9-fa3p.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 905fcd78-866c-81e1-3cb8-1beb59d661ab
+  ws-headers:
+    Host: 8f34e685-suz340-svvaj9-fa3p.cu.plebai.net
+  ws-path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇺🇸21 |  2.2MB/s
+  network: tcp
+  port: 50452
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- auth: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
+  name: 1|🇺🇸22 |  2.9MB/s
+  password: 44e76f8c-7362-11ec-bb74-f23c9164ca5d
+  port: 8443
+  server: 444a49aa-surog0-sxm4ot-zn8y.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: 444a49aa-surog0-sxm4ot-zn8y.hy2.gotochinatown.net
+  type: hysteria2
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇺🇸23 |  3.5MB/s
+  network: ws
+  port: 8880
+  server: 185.135.9.83
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      Host: digitalscientificresearchgroup.ir
+    path: /TM-@AZARBAYJAB1/?ed=2560
+- client-fingerprint: chrome
+  delay: 1530
+  flow: xtls-rprx-vision
+  name: 1,14|CN_speednode_0027
+  network: tcp
+  port: 57926
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸25 |  1.4MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: f9065ee6-sva740-t9c951-1t1s5.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 4cee4858-bb77-11ef-a46e-f23c913c8d2b
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: f9065ee6-sva740-t9c951-1t1s5.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 4cee4858-bb77-11ef-a46e-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸26 |  2.0MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: 3d88c887-sva740-t7hmka-1plv4.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 28213b50-7ed5-11ee-add6-f23c91369f2d
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 3d88c887-sva740-t7hmka-1plv4.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 28213b50-7ed5-11ee-add6-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸27 |  2.3MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: 292b86fc-sv2sg0-sv2vdm-1qudz.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: a63b0d44-e290-11ee-91f6-f23c91cfbbc9
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 292b86fc-sv2sg0-sv2vdm-1qudz.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: a63b0d44-e290-11ee-91f6-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸28 |  1.5MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: 2667451c-sv2sg0-tb36ag-1jfq7.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: baa46fd6-63c1-11ed-8ea9-f23c913c8d2b
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 2667451c-sv2sg0-tb36ag-1jfq7.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: baa46fd6-63c1-11ed-8ea9-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸29 |  1.8MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: ca012141-sv2sg0-t2hy87-gmmc.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: e8a553fe-62bc-11ef-89a3-f23c913c8d2b
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: ca012141-sv2sg0-t2hy87-gmmc.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: e8a553fe-62bc-11ef-89a3-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸30 |  5.2MB/s
+  port: 5228
+  server: 3b6ec92e-sux8g0-swffb5-1s6xm.cu.plebai.net
+  tls: false
+  type: vmess
+  uuid: 2b634c80-fd7e-11ef-9f25-f23c9164ca5d
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇺🇸31 |  5.3MB/s
+  network: tcp
+  port: 40430
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇺🇸32 |  2.0MB/s
+  network: tcp
+  port: 50200
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸33 |  5.7MB/s
+  network: tcp
+  port: 5228
+  server: b115e896-sux8g0-t0w6o1-1lk9i.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: a60e3782-223e-11ee-b973-f23c913c8d2b
+  ws-headers:
+    Host: b115e896-sux8g0-t0w6o1-1lk9i.cu.plebai.net
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸34 |  2.1MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: a16899e7-sv2sg0-td1l1t-1s824.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: a16899e7-sv2sg0-td1l1t-1s824.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6d4abac0-86e6-11ef-83cc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇺🇸35 |  5.9MB/s
+  network: tcp
+  port: 65428
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸36 |  2.5MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: f682342c-sva740-sxxbmq-1szgv.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: f682342c-sva740-sxxbmq-1szgv.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸37 |  1.8MB/s
+  network: ws
+  port: 12089
+  raw:
+    add: be27d542-sv2sg0-tdbt1l-1gabf.se.plebai.net
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: df84b552-97a9-11ec-bb74-f23c9164ca5d
+    net: ws
+    path: /
+    port: 12089
+    ps: wowrack
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: be27d542-sv2sg0-tdbt1l-1gabf.se.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: df84b552-97a9-11ec-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸38 |  3.3MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: c0323421-sva740-t9uin7-19ord.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: c0323421-sva740-t9uin7-19ord.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: dcdb1278-4b7d-11ed-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸39 |  5.9MB/s
+  network: tcp
+  port: 5228
+  server: 7bd0fd61-suz340-tau0mq-1i41w.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: d13637bd-0e24-11ed-9d0b-f23c91cfbbc9
+  ws-headers:
+    Host: 7bd0fd61-suz340-tau0mq-1i41w.cu.plebai.net
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸40 |  1.3MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: 34efdd64-sv2sg0-t9hghw-1sdoq.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 7c077572-6da9-11ef-b786-f23c91cfbbc9
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 34efdd64-sv2sg0-t9hghw-1sdoq.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 7c077572-6da9-11ef-b786-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸41 |  1.7MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: 38d11a6e-sv2sg0-t4v3jz-1k8ga.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: f860f2da-5035-11ed-bb74-f23c9164ca5d
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 38d11a6e-sv2sg0-t4v3jz-1k8ga.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: f860f2da-5035-11ed-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸42 |  1.3MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: 5e4475ac-sv2sg0-swos8d-1te2a.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 574db4bc-ef5e-11ef-bd1a-f23c913c8d2b
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 5e4475ac-sv2sg0-swos8d-1te2a.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 574db4bc-ef5e-11ef-bd1a-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸43 |  1.5MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: 45a37457-sv2sg0-t9i7o2-1lt20.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: bf4ec108-f2b7-11ef-b654-f23c91cfbbc9
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 45a37457-sv2sg0-t9i7o2-1lt20.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: bf4ec108-f2b7-11ef-b654-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸44 |  2.1MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: 8cb1a77d-sv2sg0-sy8f4e-ukt4.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 6589f6d0-e192-11ec-bd7c-f23c913c8d2b
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 8cb1a77d-sv2sg0-sy8f4e-ukt4.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 6589f6d0-e192-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸45 |  1.6MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: 282b42f5-sv2sg0-tdbt1l-1gabf.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: df84b552-97a9-11ec-bb74-f23c9164ca5d
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 282b42f5-sv2sg0-tdbt1l-1gabf.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: df84b552-97a9-11ec-bb74-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇺🇸46 |  2.9MB/s
+  network: tcp
+  port: 30206
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸47 |  2.1MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: 77b2398c-sv2sg0-t2hqlr-1s3mx.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: b58095f0-52dc-11ef-bc74-f23c91cfbbc9
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 77b2398c-sv2sg0-t2hqlr-1s3mx.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b58095f0-52dc-11ef-bc74-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇺🇸48 |  6.5MB/s
   network: ws
   port: 8880
   server: 185.146.173.167
@@ -64,54 +906,175 @@ proxies:
     headers:
       Host: digitalscientificresearchgroup.ir
     path: /TM-@AZARBAYJAB1/?ed=2560
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 1000 Mbps
-  name: 1|🇺🇸4 |  5.9MB/s
-  port: 11512
-  server: 108.181.24.77
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 1000 Mbps
-- allowInsecure: '1'
-  name: 1|🇺🇸5 |  2.6MB/s
-  network: original
-  password: 2342895f-ca91-49de-a409-2be44e77d05b
-  port: 27301
-  server: 45.146.232.173
-  skip-cert-verify: true
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇺🇸6 |  5.1MB/s
-  network: tcp
-  port: 50452
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
-  tls: true
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇺🇸49 |  5.4MB/s
+  network: ws
+  port: 8880
+  server: 104.21.96.1
+  servername: ''
+  tls: false
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: 0
+  udp: false
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      Host: digitalscientificresearchgroup.ir
+    path: /TM-@AZARBAYJAB1/?ed=2560
+- alterId: 2
   cipher: auto
-  name: 1|🇺🇸7 |  2.8MB/s
-  network: tcp
-  port: 5228
-  server: 716545eb-sux8g0-t5oe1a-1ejod.cu.plebai.net
-  skip-cert-verify: true
+  name: 1|🇺🇸50 |  2.9MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: 71263ac3-sv2sg0-sxi4nd-1o6fm.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: e03df6fc-97e8-11ee-be7f-f23c9164ca5d
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 71263ac3-sv2sg0-sxi4nd-1o6fm.sv.plebai.net
+  servername: ''
   tls: false
   type: vmess
-  uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
-  ws-headers:
-    Host: 716545eb-sux8g0-t5oe1a-1ejod.cu.plebai.net
-  ws-path: /
+  uuid: e03df6fc-97e8-11ee-be7f-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸51 |  1.7MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: 4480c5ee-sv2sg0-sw4w3a-1pbfz.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 3f03b164-86a9-11ee-ba78-f23c91cfbbc9
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 4480c5ee-sv2sg0-sw4w3a-1pbfz.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 3f03b164-86a9-11ee-ba78-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸52 |  1.6MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: d4541598-sva740-svo46i-1tmhw.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 46459926-0fbd-11f0-b0c8-f23c913c8d2b
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: d4541598-sva740-svo46i-1tmhw.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 46459926-0fbd-11f0-b0c8-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸53 |  2.0MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: c2d6789b-sv2sg0-t5qfe2-1khwf.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: c2d6789b-sv2sg0-t5qfe2-1khwf.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 92bd8c68-6434-11ee-b644-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸54 |  1.8MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: 5014efd6-sv2sg0-t517yc-1shzj.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 63aab438-79ae-11ef-b3f6-f23c913c8d2b
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 5014efd6-sv2sg0-t517yc-1shzj.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 63aab438-79ae-11ef-b3f6-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇺🇸8 |  2.8MB/s
+  name: 1|🇺🇸55 |  3.4MB/s
   network: tcp
   port: 22054
   reality-opts:
@@ -121,155 +1084,112 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  name: 1,13|US_speednode_0072
-  network: ws
-  port: 443
-  server: 104.18.20.20
-  servername: us3.globals-download.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: af8e7760-4993-4393-9db7-e84f05a06d21
-  ws-opts:
-    headers:
-      Host: us3.globals-download.com
-    path: /pq/us3
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇺🇸10 |  2.9MB/s
-  network: tcp
-  port: 29023
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸11 |  5.5MB/s
-  port: 5228
-  server: fea38a5e-sum4g0-sv6oiy-1p1b.cu.plebai.net
-  tls: false
-  type: vmess
-  uuid: 279b8588-616b-11ed-a8bf-f23c91cfbbc9
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1,13|CN_speednode_0029
-  network: tcp
-  port: 38302
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.amazon.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 1|🇺🇸13 |  5.7MB/s
+  name: 1|🇺🇸56 |  1.7MB/s
   network: ws
-  port: 443
-  server: 104.18.20.69
-  servername: us2s.pqvip.top
-  tls: true
-  type: vless
-  udp: false
-  uuid: 1e5599e3-325c-49fa-a6c7-675e314a0d99
-  ws-opts:
-    headers:
-      Host: us2s.pqvip.top
-    path: /pq/us2
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇺🇸14 |  4.8MB/s
-  network: ws
-  port: 80
-  server: 45.131.5.253
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: Telegram🇨🇳@WangCai2/?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇺🇸15 |  2.6MB/s
-  network: tcp
-  port: 65428
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇺🇸16 |  4.0MB/s
-  network: ws
-  port: 80
-  server: 45.131.4.25
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
+  port: 12089
+  raw:
+    add: adfee7c3-sva740-sxxbmq-1szgv.se.plebai.net
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
+    net: ws
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇺🇸17 |  1.6MB/s
+    port: 12089
+    ps: wowrack
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: adfee7c3-sva740-sxxbmq-1szgv.se.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 448aff24-b2e6-11ef-97e0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸57 |  1.7MB/s
+  network: ws
+  port: 1281
+  raw:
+    add: d9917cc3-sv2sg0-tct1rd-1o0ch.sv.plebai.net
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: d49e545e-0daf-11ee-a91f-f23c913c8d2b
+    net: ws
+    path: /
+    port: 1281
+    ps: PetaExpress
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: d9917cc3-sv2sg0-tct1rd-1o0ch.sv.plebai.net
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: d49e545e-0daf-11ee-a91f-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 1|🇺🇸58 |  5.6MB/s
   network: tcp
-  port: 64654
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  port: '37805'
+  server: 120.232.153.63
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸18 |  3.5MB/s
+  name: 1|🇺🇸59 |  5.6MB/s
   network: tcp
   port: 5228
-  server: 157.148.96.92
+  server: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 6ada1622-e018-11ec-bb74-f23c9164ca5d
+  uuid: a6ddfc37-05eb-11ed-af40-f23c91cfbbc9
   ws-headers:
-    Host: 157.148.96.92
+    Host: ba91e0a1-sutj40-t1k53r-1jm8i.cu.plebai.net
   ws-path: /
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 1|🇺🇸19 |  6.1MB/s
-  port: 17549
-  server: 208.87.243.151
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸美国 01 | 1x US Los Angeles
+  password: a11690f7-72d6-49e7-a374-ff6b842ce922
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: a11690f7-72d6-49e7-a374-ff6b842ce922
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸美国 03 | 1x US Washington
+  password: a11690f7-72d6-49e7-a374-ff6b842ce922
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国2|@ripaojiedian
+  name: 12|🇺🇸 美国2|@ripaojiedian
   port: 44015
   server: 120.198.71.219
   skip-cert-verify: false
@@ -279,7 +1199,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国2|@ripaojiedian 2
+  name: 12|🇺🇸 美国2|@ripaojiedian 2
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -291,7 +1211,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国3|@ripaojiedian
+  name: 12|🇺🇸 美国3|@ripaojiedian
   password: pKEW8JPByTVTLtM
   port: 443
   server: 38.107.226.14
@@ -300,7 +1220,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国4|@ripaojiedian
+  name: 12|🇺🇸 美国4|@ripaojiedian
   port: 14100
   server: 144.255.36.254
   skip-cert-verify: false
@@ -310,7 +1230,7 @@ proxies:
   uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
 - alterId: 0
   cipher: auto
-  name: 12|美国2|@ripaojiedian
+  name: 13|美国2|@ripaojiedian
   network: tcp
   port: '44015'
   server: 120.198.71.219
@@ -320,7 +1240,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 12|美国4|@ripaojiedian
+  name: 13|美国4|@ripaojiedian
   network: tcp
   port: '14100'
   server: 144.255.36.254
@@ -330,7 +1250,7 @@ proxies:
   uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 13|US_speednode_0048
+  name: 14|US_speednode_0048
   port: 56702
   reality-opts:
     public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
@@ -344,7 +1264,7 @@ proxies:
   uuid: c6763909-34f1-4b80-9522-f70d930e90e6
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 13|US_speednode_0049
+  name: 14|US_speednode_0049
   port: 56702
   reality-opts:
     public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
@@ -358,7 +1278,7 @@ proxies:
   uuid: c6763909-34f1-4b80-9522-f70d930e90e6
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 13|US_speednode_0050
+  name: 14|US_speednode_0050
   port: 56702
   reality-opts:
     public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
@@ -370,7 +1290,7 @@ proxies:
   type: vless
   udp: true
   uuid: c6763909-34f1-4b80-9522-f70d930e90e6
-- name: 13|US_speednode_0051
+- name: 14|US_speednode_0051
   network: ws
   port: 443
   server: 135.84.76.110
@@ -384,7 +1304,7 @@ proxies:
     headers:
       Host: vb.bgm2024.dpdns.org
     path: /?ed=2560
-- name: 13|US_speednode_0052
+- name: 14|US_speednode_0052
   network: ws
   port: 80
   server: karim.digikala.ir.iqcoder.ir
@@ -398,7 +1318,7 @@ proxies:
     headers:
       Host: 00.org
     path: /telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens,telegram-misens?ed=2048
-- name: 13|US_speednode_0053
+- name: 14|US_speednode_0053
   network: ws
   port: 443
   server: 108.162.196.159
@@ -412,7 +1332,7 @@ proxies:
     headers:
       Host: cr7777.rayan.dpdns.org
     path: /?ed=2560
-- name: 13|US_speednode_0054
+- name: 14|US_speednode_0054
   network: ws
   port: 443
   server: 63.141.128.102
@@ -428,7 +1348,7 @@ proxies:
     path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 13|US_speednode_0055
+  name: 14|US_speednode_0055
   port: 29664
   reality-opts:
     public-key: UtL7E0Gmxj3X5JdcPAutpTRKo7K2hugkR0vwk2XroUM
@@ -439,7 +1359,7 @@ proxies:
   type: vless
   udp: true
   uuid: b2d79249-2307-4b51-8d76-f12a5ed6e20d
-- name: 13|US_speednode_0056
+- name: 14|US_speednode_0056
   network: ws
   port: 443
   server: 104.16.187.41
@@ -454,7 +1374,7 @@ proxies:
       Host: cr7.traneh.dpdns.org
     path: /sinavm-sinavm/?ed=2560
 - client-fingerprint: chrome
-  name: 13|US_speednode_0057
+  name: 14|US_speednode_0057
   network: ws
   port: 443
   server: g2.com
@@ -468,7 +1388,7 @@ proxies:
     headers:
       Host: cr7.medicalhistory.ir
     path: /vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl?ed=2560
-- name: 13|US_speednode_0058
+- name: 14|US_speednode_0058
   network: ws
   port: 443
   server: 104.16.188.41
@@ -482,7 +1402,7 @@ proxies:
     headers:
       Host: cr7.traneh.dpdns.org
     path: /sinavm-sinavm/?ed=2560
-- name: 13|US_speednode_0059
+- name: 14|US_speednode_0059
   network: ws
   port: 443
   server: 152.70.119.70
@@ -496,7 +1416,7 @@ proxies:
     headers:
       Host: cr777.medicaldream.ir
     path: /?ed=2560
-- name: 13|US_speednode_0060
+- name: 14|US_speednode_0060
   network: ws
   port: 80
   server: compare99.com
@@ -510,7 +1430,7 @@ proxies:
     headers:
       Host: snappfood.com
     path: /Join--HAJIMAMADVPN?ed=80
-- name: 13|US_speednode_0061
+- name: 14|US_speednode_0061
   network: ws
   port: 443
   server: 198.62.62.4
@@ -524,7 +1444,7 @@ proxies:
     headers:
       Host: vlee.amclubs.nyc.mn
     path: /?ed=2560
-- name: 13|US_speednode_0062
+- name: 14|US_speednode_0062
   network: ws
   port: 443
   server: 104.16.190.41
@@ -538,7 +1458,7 @@ proxies:
     headers:
       Host: cr7.traneh.dpdns.org
     path: /sinavm-sinavm/?ed=2560
-- name: 13|US_speednode_0063
+- name: 14|US_speednode_0063
   network: ws
   port: 443
   server: 47.254.17.234
@@ -552,7 +1472,7 @@ proxies:
     headers:
       Host: cr777.medicaldream.ir
     path: /?ed=2560
-- name: 13|US_speednode_0064
+- name: 14|US_speednode_0064
   network: ws
   port: 443
   server: 63.141.128.209
@@ -566,7 +1486,7 @@ proxies:
     headers:
       Host: vb.bgm2024.dpdns.org
     path: /ss.vs2024.us.kg
-- name: 13|US_speednode_0065
+- name: 14|US_speednode_0065
   network: ws
   port: 443
   server: 104.16.186.41
@@ -580,7 +1500,7 @@ proxies:
     headers:
       Host: cr7.traneh.dpdns.org
     path: /sinavm-sinavm/?ed=2560
-- name: 13|US_speednode_0066
+- name: 14|US_speednode_0066
   network: ws
   port: 443
   server: 199.34.228.171
@@ -594,7 +1514,7 @@ proxies:
     headers:
       Host: digitalscientificresearchgroup.ir
     path: /
-- name: 13|US_speednode_0067
+- name: 14|US_speednode_0067
   network: ws
   port: 443
   server: 209.208.227.239
@@ -608,7 +1528,7 @@ proxies:
     headers:
       Host: digitalscientificresearchgroup.ir
     path: /Telegram@V2ray_Alpha
-- name: 13|US_speednode_0068
+- name: 14|US_speednode_0068
   network: ws
   port: 443
   server: 199.34.228.67
@@ -622,7 +1542,7 @@ proxies:
     headers:
       Host: digitalscientificresearchgroup.ir
     path: /
-- name: 13|US_speednode_0069
+- name: 14|US_speednode_0069
   network: ws
   port: 443
   server: 129.80.177.42
@@ -636,7 +1556,7 @@ proxies:
     headers:
       Host: cr777.medicaldream.ir
     path: /?ed=2560
-- name: 13|US_speednode_0070
+- name: 14|US_speednode_0070
   network: ws
   port: 443
   server: 205.233.181.174
@@ -650,7 +1570,7 @@ proxies:
     headers:
       Host: digitalscientificresearchgroup.ir
     path: /
-- name: 13|US_speednode_0071
+- name: 14|US_speednode_0071
   network: ws
   port: 443
   server: 209.208.227.229
@@ -664,7 +1584,22 @@ proxies:
     headers:
       Host: digitalscientificresearchgroup.ir
     path: /
-- name: 13|US_speednode_0073
+- client-fingerprint: chrome
+  name: 14|US_speednode_0072
+  network: ws
+  port: 443
+  server: 104.18.20.20
+  servername: us3.globals-download.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: af8e7760-4993-4393-9db7-e84f05a06d21
+  ws-opts:
+    headers:
+      Host: us3.globals-download.com
+    path: /pq/us3
+- name: 14|US_speednode_0073
   network: ws
   port: 443
   server: 199.34.228.162
@@ -678,7 +1613,7 @@ proxies:
     headers:
       Host: digitalscientificresearchgroup.ir
     path: /
-- name: 13|US_speednode_0074
+- name: 14|US_speednode_0074
   network: ws
   port: 443
   server: 199.34.228.182
@@ -693,7 +1628,7 @@ proxies:
       Host: digitalscientificresearchgroup.ir
     path: /Telegram@V2ray_Alpha
 - client-fingerprint: chrome
-  name: 13|US_speednode_0075
+  name: 14|US_speednode_0075
   network: ws
   port: 443
   server: 199.34.228.67
@@ -707,7 +1642,7 @@ proxies:
     headers:
       Host: digitalscientificresearchgroup.ir
     path: /Telegram@V2ray_Alpha
-- name: 13|US_speednode_0076
+- name: 14|US_speednode_0076
   network: ws
   port: 443
   server: 208.86.168.45
@@ -721,7 +1656,7 @@ proxies:
     headers:
       Host: digitalscientificresearchgroup.ir
     path: /Telegram@V2ray_Alpha
-- name: 13|US_speednode_0077
+- name: 14|US_speednode_0077
   network: ws
   port: 443
   server: 104.16.186.41
@@ -735,7 +1670,7 @@ proxies:
     headers:
       Host: cr7.traneh.dpdns.org
     path: /
-- name: 13|US_speednode_0078
+- name: 14|US_speednode_0078
   network: ws
   port: 443
   server: 129.80.237.223
@@ -749,7 +1684,7 @@ proxies:
     headers:
       Host: cr777.medicaldream.ir
     path: /?ed=2560
-- name: 13|US_speednode_0079
+- name: 14|US_speednode_0079
   network: ws
   port: 443
   server: 104.16.190.41
@@ -763,7 +1698,7 @@ proxies:
     headers:
       Host: cr7.traneh.dpdns.org
     path: /
-- name: 13|US_speednode_0080
+- name: 14|US_speednode_0080
   network: ws
   port: 443
   server: 158.101.23.175
@@ -777,7 +1712,7 @@ proxies:
     headers:
       Host: cr777.medicaldream.ir
     path: /?ed=2560
-- name: 13|US_speednode_0081
+- name: 14|US_speednode_0081
   network: ws
   port: 2083
   server: 104.26.5.157
@@ -792,7 +1727,7 @@ proxies:
       Host: 23-lsjfjwiposkfls.hc2021.cfd
     path: /
 - client-fingerprint: chrome
-  name: 13|US_speednode_0082
+  name: 14|US_speednode_0082
   network: ws
   port: 443
   server: 104.16.186.41
@@ -806,24 +1741,3 @@ proxies:
     headers:
       Host: cr7.medicalhistory.ir
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国 01 | 1x US Los Angeles
-  password: 013c6c6e-e8e6-4112-b40e-720b5ccf73ea
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 013c6c6e-e8e6-4112-b40e-720b5ccf73ea
-  port: 31213
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸美国 03 | 1x US Washington
-  password: 013c6c6e-e8e6-4112-b40e-720b5ccf73ea
-  port: 31215
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
