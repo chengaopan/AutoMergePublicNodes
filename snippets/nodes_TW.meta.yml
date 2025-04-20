@@ -1,40 +1,37 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇹🇼1 |  6.1MB/s
-  network: tcp
-  port: 15823
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-128-gcm
-  client-fingerprint: chrome
-  name: 1|🇹🇼2 |  1.2MB/s
-  password: VMhGp5wEIyCDf90T
-  port: 33368
-  server: shenzhou05.mysynology.net
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼 台湾 01 | 1x TW
+  password: bd01d991-3fe6-44bc-92a2-d7aa0c5cd123
+  port: 36241
+  server: free.2weradf.xyz
   type: ss
-- name: 1,13|HK_speednode_0074
-  network: ws
-  port: 443
-  server: 162.247.5.91
-  servername: tw.qhahd.shop
-  skip-cert-verify: false
-  tls: true
-  type: vless
   udp: true
-  uuid: 94fadaf3-ccd8-4734-b372-8772c9bfd147
-  ws-opts:
-    headers:
-      Host: tw.qhahd.shop
-    path: /bing
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼 台湾 02 | 1x TW
+  password: bd01d991-3fe6-44bc-92a2-d7aa0c5cd123
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼 台湾 03 | 1x TW
+  password: bd01d991-3fe6-44bc-92a2-d7aa0c5cd123
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 1|🇹🇼1 |  2.2MB/s
+  password: 64f346fb-617e-49df-a9dc-b962a1c0d136
+  port: 27202
+  server: sla.cn.964e995b760.gogodns.xin
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  tfo: false
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1,13|CN_speednode_0013
+  name: 1,14|CN_speednode_0013
   network: tcp
   port: 47531
   reality-opts:
@@ -46,23 +43,71 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1,14|CN_speednode_0026
+  network: tcp
+  port: 13263
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: gateway.icloud.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇹🇼4 |  3.0MB/s
+  network: tcp
+  port: 15700
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  name: 1|🇹🇼5 |  1.8MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇹🇼6 |  2.0MB/s
+  network: tcp
+  port: 12477
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇹🇼台湾 01 | 1x TW
-  password: 5a7a7105-c0c5-4c1a-b895-73ba78c0d913
+  name: 2|🇹🇼台湾 01 | 1x TW
+  password: 031bd066-e450-4c53-8931-b2c41f6ed6d3
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇹🇼台湾 02 | 1x TW
-  password: 5a7a7105-c0c5-4c1a-b895-73ba78c0d913
+  name: 2|🇹🇼台湾 02 | 1x TW
+  password: 031bd066-e450-4c53-8931-b2c41f6ed6d3
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇹🇼台湾 03 | 1x TW
-  password: 5a7a7105-c0c5-4c1a-b895-73ba78c0d913
+  name: 2|🇹🇼台湾 03 | 1x TW
+  password: 031bd066-e450-4c53-8931-b2c41f6ed6d3
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
