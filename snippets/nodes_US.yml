@@ -1,28 +1,41 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: 39df171d-2ce7-42f7-b2ac-9bc0d1c17733
-  port: 31211
-  server: free.2apzhfa.xyz
+  name: 0|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 6203da01-aa3a-44c0-8764-acc15c497ce7
+  port: 36211
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 39df171d-2ce7-42f7-b2ac-9bc0d1c17733
-  port: 31213
-  server: free.2apzhfa.xyz
+  name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 6203da01-aa3a-44c0-8764-acc15c497ce7
+  port: 36213
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国 03 | 1x US Washington
-  password: 39df171d-2ce7-42f7-b2ac-9bc0d1c17733
-  port: 31215
-  server: free.2apzhfa.xyz
+  name: 0|🇺🇸 美国 03 | 1x US Washington
+  password: 6203da01-aa3a-44c0-8764-acc15c497ce7
+  port: 36215
+  server: free.2weradf.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸3 |  1.1MB/s
+  network: tcp
+  port: 50082
+  server: 120.198.71.216
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.198.71.216
+  ws-path: /
 - alterId: 64
   cipher: auto
-  name: 1,12|香港6|@ripaojiedian
+  name: 1,13|香港6|@ripaojiedian
   network: tcp
   port: '43674'
   server: 120.234.102.229
@@ -34,36 +47,10 @@ proxies:
   ws-headers:
     Host: 120.234.102.229
   ws-path: /
-- alterId: '2'
-  cipher: auto
-  name: 1|🇺🇸13 |  3.5MB/s
-  network: ws
-  port: '30829'
-  server: v29.heduian.link
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: v29.heduian.link
-    path: /oooo
-- cipher: chacha20-ietf
-  name: 1|🇺🇸15 |  2.2MB/s
-  password: asd123456
-  port: 8388
-  server: 137.175.113.215
-  type: ss
-- alterId: '0'
-  cipher: auto
-  name: 1|🇺🇸22 |  1.4MB/s
-  network: tcp
-  port: '50082'
-  server: 120.198.71.216
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国|@ripaojiedian
+  name: 1,12|🇺🇸 美国|@ripaojiedian
   port: 44015
   server: 120.198.71.219
   skip-cert-verify: false
@@ -71,9 +58,36 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf
+  name: 1|🇺🇸22 |  3.5MB/s
+  password: asd123456
+  port: 8388
+  server: 137.175.113.215
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸美国 01 | 1x US Los Angeles
+  password: 48cd9f9c-efd8-472b-a0df-49bf6156e791
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 48cd9f9c-efd8-472b-a0df-49bf6156e791
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸美国 03 | 1x US Washington
+  password: 48cd9f9c-efd8-472b-a0df-49bf6156e791
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国2|@ripaojiedian
+  name: 12|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -85,7 +99,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国3|@ripaojiedian
+  name: 12|🇺🇸 美国3|@ripaojiedian
   password: pKEW8JPByTVTLtM
   port: 443
   server: 38.107.226.14
@@ -94,7 +108,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国4|@ripaojiedian
+  name: 12|🇺🇸 美国4|@ripaojiedian
   port: 5229
   server: 8705693f-sv8cg0-t35mzx-1pp0x.cu.plebai.net
   skip-cert-verify: false
@@ -104,7 +118,7 @@ proxies:
   uuid: 7734370a-8480-11ee-ab76-f23c91cfbbc9
 - alterId: 0
   cipher: auto
-  name: 12|美国|@ripaojiedian
+  name: 13|美国|@ripaojiedian
   network: tcp
   port: '44015'
   server: 120.198.71.219
@@ -114,7 +128,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 12|美国4|@ripaojiedian
+  name: 13|美国4|@ripaojiedian
   network: tcp
   port: '5229'
   server: 8705693f-sv8cg0-t35mzx-1pp0x.cu.plebai.net
@@ -122,24 +136,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 7734370a-8480-11ee-ab76-f23c91cfbbc9
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 35724206-d5a6-4a90-9f62-f6da0fc4945e
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 35724206-d5a6-4a90-9f62-f6da0fc4945e
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸 美国 03 | 1x US Washington
-  password: 35724206-d5a6-4a90-9f62-f6da0fc4945e
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
