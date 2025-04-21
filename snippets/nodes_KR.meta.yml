@@ -1,36 +1,36 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 01 | 1x KR
-  password: 6135d609-2ef4-4ca7-8c40-edf3a1463a40
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 02 | 1x KR
-  password: 6135d609-2ef4-4ca7-8c40-edf3a1463a40
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 01 | 1x KR
-  password: 00999027-672d-4efc-be18-9482d6c70a48
+  name: 0|🇰🇷 韩国 01 | 1x KR
+  password: a9cb8b7f-3fbd-4aa3-9b12-232de024b925
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 02 | 1x KR
-  password: 00999027-672d-4efc-be18-9482d6c70a48
+  name: 0|🇰🇷 韩国 02 | 1x KR
+  password: a9cb8b7f-3fbd-4aa3-9b12-232de024b925
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 2|🇰🇷1 |  5.8MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: 3fd55cdb-7ee0-46af-b8ff-28c6be3e269a
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: 3fd55cdb-7ee0-46af-b8ff-28c6be3e269a
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 2|🇰🇷1 |  5.1MB/s
   network: ws
   port: 443
-  server: 185.133.35.67
+  server: 160.79.105.155
   servername: vv.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -41,10 +41,10 @@ proxies:
     headers:
       host: vv.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|🇰🇷2 |  4.6MB/s
+- name: 2|🇰🇷2 |  1.4MB/s
   network: ws
   port: 443
-  server: dnschecker.org
+  server: 192.0.63.29
   servername: vv.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -55,53 +55,54 @@ proxies:
     headers:
       host: vv.ylka.dpdns.org
     path: /?ed=2560
-- delay: 1527
-  name: 2,14|NL_speednode_0036
+- name: 2|🇰🇷3 |  5.6MB/s
+  network: ws
+  port: 443
+  server: huxley.ns.cloudflare.com
+  servername: vv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vv.ylka.dpdns.org
+    path: /?ed=2560
+- name: 2|🇰🇷4 |  5.5MB/s
+  network: ws
+  port: 443
+  server: 185.133.35.60
+  servername: vv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: vv.ylka.dpdns.org
+    path: /?ed=2560
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇰🇷5 |  4.4MB/s
   network: ws
   port: 80
   server: 45.131.4.194
-  servername: digitalscientificresearchgroup.ir
-  skip-cert-verify: false
+  servername: ''
   tls: false
   type: vless
-  udp: true
+  udp: false
   uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
   ws-opts:
     headers:
       Host: digitalscientificresearchgroup.ir
-    path: /Lizard VPN🦎
-- name: 2|🇰🇷4 |  1.2MB/s
-  network: ws
-  port: 443
-  server: 45.67.215.167
-  servername: vv.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vv.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|🇰🇷5 |  5.7MB/s
+    path: /Telegram🇨🇳@Selinc
+- name: 2|🇰🇷6 |  1.1MB/s
   network: ws
   port: 443
   server: sullivan.ns.cloudflare.com
-  servername: vv.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: vv.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|🇰🇷6 |  4.9MB/s
-  network: ws
-  port: 443
-  server: 160.79.105.155
   servername: vv.ylka.dpdns.org
   skip-cert-verify: true
   tls: true

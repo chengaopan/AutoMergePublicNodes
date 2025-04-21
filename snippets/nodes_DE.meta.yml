@@ -1,21 +1,21 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇩🇪德国 01 | 1x DE
-  password: 6135d609-2ef4-4ca7-8c40-edf3a1463a40
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇩🇪 德国 01 | 1x DE
-  password: 00999027-672d-4efc-be18-9482d6c70a48
+  name: 0|🇩🇪 德国 01 | 1x DE
+  password: a9cb8b7f-3fbd-4aa3-9b12-232de024b925
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪德国 01 | 1x DE
+  password: 3fd55cdb-7ee0-46af-b8ff-28c6be3e269a
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇩🇪1 |  5.2MB/s
+  name: 2|🇩🇪1 |  1.2MB/s
   network: tcp
   port: 58031
   reality-opts:
@@ -25,10 +25,25 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- delay: 1527
+  name: 2,14|NL_speednode_0036
+  network: ws
+  port: 80
+  server: 45.131.4.194
+  servername: digitalscientificresearchgroup.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      Host: digitalscientificresearchgroup.ir
+    path: /Lizard VPN🦎
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇩🇪2 |  5.4MB/s
+  name: 2|🇩🇪3 |  5.8MB/s
   network: ws
   port: 80
   server: 199.232.5.140
