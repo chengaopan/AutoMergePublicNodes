@@ -1,74 +1,21 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: b4638788-13d7-473b-a04b-5c3345435828
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: b4638788-13d7-473b-a04b-5c3345435828
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 02 | 1x HK
-  password: f48e9277-331b-412f-b82a-32c6fd330b10
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: 9eadaa6c-d08e-4203-beed-71ae1a5cc0dd
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: f48e9277-331b-412f-b82a-32c6fd330b10
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: 9eadaa6c-d08e-4203-beed-71ae1a5cc0dd
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇭🇰1 |  1.0MB/s
-  network: tcp
-  port: 15229
-  server: ce36ce73-sva740-sveyey-44k4.cm.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: c5eb2c2c-bc1d-11ed-a8bf-f23c91cfbbc9
-  ws-headers:
-    Host: ce36ce73-sva740-sveyey-44k4.cm.plebai.net
-  ws-path: /
-- alterId: 0
-  cipher: auto
-  name: 2|🇭🇰2 |  3.3MB/s
-  network: tcp
-  port: 19901
-  raw:
-    add: xg.dashuai.cyou
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: xg.dashuai.cyou
-    id: d1cdc4a2-1afd-43f4-b7b6-384567e1e88b
-    net: tcp
-    path: /
-    port: '19901'
-    ps: 🇭🇰 -1B
-    scy: ''
-    sni: ''
-    tls: ''
-    type: none
-    v: '2'
-  server: xg.dashuai.cyou
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: d1cdc4a2-1afd-43f4-b7b6-384567e1e88b
-- alterId: 0
-  cipher: auto
-  name: 2|🇭🇰4 |  1.6MB/s
+  name: 1|🇭🇰1 |  3.0MB/s
   network: ws
   port: 23020
   raw:
@@ -94,24 +41,9 @@ proxies:
   uuid: f3911078-380a-4213-9023-f1073de67197
   ws-opts:
     path: /
-- alterId: 2
-  cipher: auto
-  name: 2|🇭🇰7 |  1.8MB/s
-  network: ws
-  port: 80
-  server: 62e7e091-sv4n40-svak69-1f9n2.hk3.p5pv.com
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 0770871c-2e28-11ec-9ee8-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: 62e7e091-sv4n40-svak69-1f9n2.hk3.p5pv.com
-    path: /
 - alterId: 0
   cipher: auto
-  name: 2|🇭🇰8 |  3.1MB/s
+  name: 1|🇭🇰3 |  3.6MB/s
   port: 15229
   server: 19c5d8c7-sva740-t4cl3u-1mpen.cm.plebai.net
   skip-cert-verify: true
@@ -120,23 +52,282 @@ proxies:
   type: vmess
   udp: true
   uuid: da1c411e-479f-11ee-9749-f23c9164ca5d
+- alterId: 2
+  cipher: auto
+  name: 1|🇭🇰5 |  1.8MB/s
+  network: ws
+  port: 80
+  raw:
+    add: 7a2912ee-sv0xs0-sypj6z-1rk9y.hk3.p5pv.com
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 88f6e3c4-1d01-11ef-812c-f23c91cfbbc9
+    net: ws
+    path: /
+    port: 80
+    ps: 🇭🇰 HK_312
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 7a2912ee-sv0xs0-sypj6z-1rk9y.hk3.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 88f6e3c4-1d01-11ef-812c-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇭🇰7 |  1.4MB/s
+  network: ws
+  port: 80
+  server: c666a934-sv2sg0-tdit14-1r4qf.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 3e980c5e-e49d-11ef-864b-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: c666a934-sv2sg0-tdit14-1r4qf.hk3.p5pv.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇭🇰8 |  1.6MB/s
+  network: tcp
+  port: 15229
+  server: ce36ce73-sva740-sveyey-44k4.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c5eb2c2c-bc1d-11ed-a8bf-f23c91cfbbc9
+  ws-headers:
+    Host: ce36ce73-sva740-sveyey-44k4.cm.plebai.net
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇭🇰11 |  1.4MB/s
+  network: ws
+  port: 80
+  raw:
+    add: 97ec248c-sv2sg0-t1l34b-s6zq.hk3.p5pv.com
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: b989d57a-ccc3-11ee-b3a0-f23c9164ca5d
+    net: ws
+    path: /
+    port: 80
+    ps: 🇭🇰 HK_307
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 97ec248c-sv2sg0-t1l34b-s6zq.hk3.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b989d57a-ccc3-11ee-b3a0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇭🇰12 |  1.4MB/s
+  network: tcp
+  port: 15229
+  server: 3e7c7177-sv8cg0-sveyey-44k4.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: c5eb2c2c-bc1d-11ed-a8bf-f23c91cfbbc9
+  ws-headers:
+    Host: 3e7c7177-sv8cg0-sveyey-44k4.cm.plebai.net
+  ws-path: /
 - cipher: rc4-md5
   delay: 70
-  name: 2|🇭🇰9 |  5.9MB/s
+  name: 1|🇭🇰13 |  6.3MB/s
   password: 5czcr84s0ab
   port: 7780
   server: 118.184.136.48
   type: ss
+- alterId: 2
+  cipher: auto
+  name: 1|🇭🇰14 |  1.6MB/s
+  network: ws
+  port: 80
+  raw:
+    add: ab920dde-sv2sg0-sv8lir-1su7j.hk3.p5pv.com
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 0e4ec84a-a324-11ef-81b0-f23c9164ca5d
+    net: ws
+    path: /
+    port: 80
+    ps: 🇭🇰 HK_265
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: ab920dde-sv2sg0-sv8lir-1su7j.hk3.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 0e4ec84a-a324-11ef-81b0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇭🇰15 |  1.3MB/s
+  port: 15229
+  server: 81137562-sutj40-suyhjm-1hhyy.cm.plebai.net
+  tls: false
+  type: vmess
+  uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+- alterId: 2
+  cipher: auto
+  name: 1|🇭🇰16 |  2.0MB/s
+  network: ws
+  port: 80
+  server: eb1539c9-sv0xs0-ta5i1s-1j61y.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: f13f964e-f06c-11ec-a858-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: eb1539c9-sv0xs0-ta5i1s-1j61y.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇭🇰17 |  2.9MB/s
+  network: ws
+  port: 80
+  server: ee67d72b-sv2sg0-t76x2i-wj6v.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 847c03b2-0a9d-11eb-a8bf-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: ee67d72b-sv2sg0-t76x2i-wj6v.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇭🇰18 |  2.0MB/s
+  network: ws
+  port: 80
+  raw:
+    add: 6895c4a0-sv0xs0-sz3ckv-19esv.hk3.p5pv.com
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 86735fe4-967a-11eb-86a4-f23c913c8d2b
+    net: ws
+    path: /
+    port: 80
+    ps: 🇭🇰 HK_331
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: 6895c4a0-sv0xs0-sz3ckv-19esv.hk3.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 86735fe4-967a-11eb-86a4-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇭🇰19 |  1.1MB/s
+  network: ws
+  port: 80
+  server: c6702e28-sv2sg0-tc61cs-1tja8.hk3.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: c6702e28-sv2sg0-tc61cs-1tja8.hk3.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇭🇰20 |  1.6MB/s
+  network: ws
+  port: 80
+  raw:
+    add: fb577d9a-sv0xs0-t6lmal-1f1f.hk3.p5pv.com
+    aid: '2'
+    alpn: ''
+    fp: ''
+    host: broadcastlv.chat.bilibili.com
+    id: 99b6c418-d4f5-ab83-cf93-4d7b38fed6f6
+    net: ws
+    path: /
+    port: 80
+    ps: 🇭🇰 HK_189
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: fb577d9a-sv0xs0-t6lmal-1f1f.hk3.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 99b6c418-d4f5-ab83-cf93-4d7b38fed6f6
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇭🇰21 |  3.5MB/s
+  port: 15229
+  server: 789602b4-sux8g0-t8b7ls-qtx6.cm.plebai.net
+  tls: false
+  type: vmess
+  uuid: b35f5984-a0b4-11ea-82ef-f23c9164ca5d
+- cipher: rc4-md5
+  delay: 74
+  name: 1|🇭🇰22 |  2.9MB/s
+  password: 5czcr84s0ab
+  port: 7780
+  server: 118.184.136.53
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港|@ripaojiedian
+  name: 11|🇭🇰 香港|@ripaojiedian
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
   server: hk02.x.quickcht3.club
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 12,13|香港2|@ripaojiedian
+  name: 11,12|香港2|@ripaojiedian
   network: tcp
   password: 0a26a19e-4d87-4b2e-9b5b-a3f2b3d81fcf
   port: 27102
@@ -146,14 +337,14 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港3|@ripaojiedian
+  name: 11|🇭🇰 香港3|@ripaojiedian
   password: 2be0c954-4291-45ea-b47d-ca713180550b
   port: 52612
   server: 111.29.57.125
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 12,13|香港4|@ripaojiedian
+  name: 11,12|香港4|@ripaojiedian
   network: tcp
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
@@ -164,7 +355,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港5|@ripaojiedian
+  name: 11|🇭🇰 香港5|@ripaojiedian
   port: 41291
   server: 183.236.51.38
   skip-cert-verify: false
@@ -175,7 +366,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港6|@ripaojiedian
+  name: 11|🇭🇰 香港6|@ripaojiedian
   port: 43674
   server: 120.234.102.229
   skip-cert-verify: false
@@ -186,7 +377,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港7|@ripaojiedian
+  name: 11|🇭🇰 香港7|@ripaojiedian
   port: 36609
   server: 120.232.153.40
   skip-cert-verify: false
@@ -197,7 +388,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 12|🇭🇰 香港8|@ripaojiedian
+  name: 11|🇭🇰 香港8|@ripaojiedian
   port: 42375
   server: 120.198.71.214
   skip-cert-verify: false
@@ -206,7 +397,7 @@ proxies:
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: 12,13|香港9|@ripaojiedian
+  name: 11,12|香港9|@ripaojiedian
   network: tcp
   password: 8da4c3ad-463c-4546-a841-3355024f8656
   port: 27103
@@ -216,7 +407,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 13|香港5|@ripaojiedian
+  name: 12|香港5|@ripaojiedian
   network: tcp
   port: '41291'
   server: 183.236.51.38
@@ -226,7 +417,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 13|香港6|@ripaojiedian
+  name: 12|香港6|@ripaojiedian
   network: tcp
   port: '43674'
   server: 120.234.102.229
@@ -236,7 +427,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 13|香港7|@ripaojiedian
+  name: 12|香港7|@ripaojiedian
   network: tcp
   port: '36609'
   server: 120.232.153.40
@@ -246,7 +437,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 13|香港8|@ripaojiedian
+  name: 12|香港8|@ripaojiedian
   network: tcp
   port: '42375'
   server: 120.198.71.214
@@ -254,3 +445,17 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇭🇰 香港 02 | 1x HK
+  password: 29d861e1-654b-4ce4-a56d-b0a3fafb68f6
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 29d861e1-654b-4ce4-a56d-b0a3fafb68f6
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true

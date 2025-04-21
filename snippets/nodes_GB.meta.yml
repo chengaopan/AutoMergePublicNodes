@@ -1,45 +1,50 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: b4638788-13d7-473b-a04b-5c3345435828
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: b4638788-13d7-473b-a04b-5c3345435828
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 01 | 1x HK
-  password: f48e9277-331b-412f-b82a-32c6fd330b10
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 9eadaa6c-d08e-4203-beed-71ae1a5cc0dd
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: f48e9277-331b-412f-b82a-32c6fd330b10
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 9eadaa6c-d08e-4203-beed-71ae1a5cc0dd
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
+  delay: 1739
   flow: xtls-rprx-vision
-  name: 2|🇬🇧1 |  1.4MB/s
+  name: 1,13|CN_speednode_0026
   network: tcp
-  port: 47151
+  port: 35311
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: shenzhou02.mysynology.net
-  servername: www.amazon.com
+  servername: www.yahoo.com
+  skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇬🇧2 |  5.4MB/s
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇬🇧2 |  5.6MB/s
+  network: ws
+  port: 2096
+  server: whatismyipaddress.com
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s33.sabzmaghz.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: e88187f8-62a3-4de1-a8f6-3b704ebd1865
+  ws-opts:
+    headers:
+      Host: wwwspeedtestnetwhiteberinsistomd6625996s33.sabzmaghz.ir
+    path: ''
+- name: 1|🇬🇧3 |  1.5MB/s
   network: ws
   port: 2096
   server: whatismyipaddress.com
@@ -54,24 +59,45 @@ proxies:
       host: wwwspeedtestnetwhiteberinsistomd6625996s26.sabzmaghz.ir
     path: /
 - client-fingerprint: chrome
-  delay: 1670
   flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0023
+  name: 1|🇬🇧4 |  3.9MB/s
   network: tcp
-  port: 65053
+  port: 14659
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
-  skip-cert-verify: true
+  server: csuzhou01.1cooldns.com
+  servername: www.nvidia.com
   tls: true
   type: vless
-  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇬🇧5 |  5.1MB/s
+  network: tcp
+  port: 32055
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇬🇧6 |  4.4MB/s
+  network: tcp
+  port: 49699
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇬🇧4 |  5.9MB/s
+  name: 1|🇬🇧7 |  1.6MB/s
   network: ws
   port: 2096
   server: whatismyipaddress.com
@@ -84,7 +110,7 @@ proxies:
     headers:
       Host: wwwspeedtestnetwhiteberinsistomd6625996s28.sabzmaghz.ir
     path: ''
-- name: 11|Hysteria 🇬🇧 @v2meowcf
+- name: 10|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -92,3 +118,10 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 29d861e1-654b-4ce4-a56d-b0a3fafb68f6
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
