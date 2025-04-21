@@ -1,52 +1,61 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼 台湾 01 | 1x TW
-  password: 03081e3e-b5d6-4f22-92b1-3fff8750b842
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼 台湾 02 | 1x TW
-  password: 03081e3e-b5d6-4f22-92b1-3fff8750b842
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼 台湾 03 | 1x TW
-  password: 03081e3e-b5d6-4f22-92b1-3fff8750b842
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: aes-128-gcm
-  name: 1|🇹🇼2 |  2.7MB/s
-  password: VMhGp5wEIyCDf90T
-  port: 33368
-  server: shenzhou05.mysynology.net
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇹🇼台湾 01 | 1x TW
-  password: bb0ff4be-e93e-4579-8729-74de069096e7
+  name: 0|🇹🇼台湾 01 | 1x TW
+  password: a16f949d-f7f5-495b-8f31-3c7d51caf079
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇹🇼台湾 02 | 1x TW
-  password: bb0ff4be-e93e-4579-8729-74de069096e7
+  name: 0|🇹🇼台湾 02 | 1x TW
+  password: a16f949d-f7f5-495b-8f31-3c7d51caf079
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇹🇼台湾 03 | 1x TW
-  password: bb0ff4be-e93e-4579-8729-74de069096e7
+  name: 0|🇹🇼台湾 03 | 1x TW
+  password: a16f949d-f7f5-495b-8f31-3c7d51caf079
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 01 | 1x TW
+  password: 0ecd1c7c-7aae-4561-9958-3a5fd18b6783
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 02 | 1x TW
+  password: 0ecd1c7c-7aae-4561-9958-3a5fd18b6783
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 03 | 1x TW
+  password: 0ecd1c7c-7aae-4561-9958-3a5fd18b6783
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 2|🇹🇼1 |  4.1MB/s
+  network: ws
+  port: 23619
+  server: 19.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 26bc8681-0318-3097-bc64-64ab051eb81a
+  ws-opts:
+    headers:
+      Host: 19.mamamajd.site
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
