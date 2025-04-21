@@ -1,70 +1,44 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 2121043a-f2df-4be5-8c96-d8bfef4aea8a
+  password: c02c16b9-dbd4-4f52-adb4-ec7d0706050b
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 2121043a-f2df-4be5-8c96-d8bfef4aea8a
+  password: c02c16b9-dbd4-4f52-adb4-ec7d0706050b
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 2121043a-f2df-4be5-8c96-d8bfef4aea8a
+  password: c02c16b9-dbd4-4f52-adb4-ec7d0706050b
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 01 | 1x SG
-  password: c622cf91-1481-460c-a97a-ddc67f976dbc
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 02 | 1x SG
-  password: c622cf91-1481-460c-a97a-ddc67f976dbc
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 03 | 1x SG
-  password: c622cf91-1481-460c-a97a-ddc67f976dbc
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
+- name: 1|🇸🇬1 |  1.2MB/s
+  password: ae1eadae-43e8-3a6a-b671-bee4229f106e
+  port: 20299
+  server: gy.58n.net
+  skip-cert-verify: true
+  sni: x299.flybar.work
+  type: trojan
   udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇸🇬1 |  6.3MB/s
+  name: 1|🇸🇬2 |  6.3MB/s
   port: 17231
   server: 5c460570-sux8g0-tbfsbm-nde6.cm5.p5pv.com
   tls: false
   type: vmess
   uuid: b19e8df4-fba9-11ea-9777-f23c9164ca5d
-- alterId: 0
-  cipher: auto
-  name: 2|🇸🇬2 |  3.5MB/s
-  network: tcp
-  port: 17231
-  server: d0012c0c-sux8g0-sycaxv-14au8.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 44811728-ebd8-11ec-adf5-f23c91cfbbc9
-  ws-headers:
-    Host: d0012c0c-sux8g0-sycaxv-14au8.cm5.p5pv.com
-  ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇸🇬3 |  6.1MB/s
+  name: 1|🇸🇬3 |  1.7MB/s
   network: tcp
   port: 56127
   reality-opts:
@@ -74,6 +48,41 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1,14|CN_speednode_0012
+  network: tcp
+  port: 29877
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇸🇬 新加坡 01 | 1x SG
+  password: 845d636e-55d4-4a0a-ba74-d3496d487849
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇸🇬 新加坡 02 | 1x SG
+  password: 845d636e-55d4-4a0a-ba74-d3496d487849
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇸🇬 新加坡 03 | 1x SG
+  password: 845d636e-55d4-4a0a-ba74-d3496d487849
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
