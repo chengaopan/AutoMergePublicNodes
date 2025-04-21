@@ -1,56 +1,94 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 21f82b93-596d-4a3d-b3ba-4d47e125cd1b
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 21f82b93-596d-4a3d-b3ba-4d47e125cd1b
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国 03 | 1x US Washington
-  password: 21f82b93-596d-4a3d-b3ba-4d47e125cd1b
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国 01 | 1x US Los Angeles
-  password: 8273d5f3-a26a-4c9d-adbe-a49a48795e29
+  name: 0|🇺🇸美国 01 | 1x US Los Angeles
+  password: 46801799-9f4c-4056-a76e-4870296afa3e
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 8273d5f3-a26a-4c9d-adbe-a49a48795e29
+  name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 46801799-9f4c-4056-a76e-4870296afa3e
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国 03 | 1x US Washington
-  password: 8273d5f3-a26a-4c9d-adbe-a49a48795e29
+  name: 0|🇺🇸美国 03 | 1x US Washington
+  password: 46801799-9f4c-4056-a76e-4870296afa3e
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: '0'
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 661716c3-7647-4e99-8c1e-83b8c94dc518
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 661716c3-7647-4e99-8c1e-83b8c94dc518
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 03 | 1x US Washington
+  password: 661716c3-7647-4e99-8c1e-83b8c94dc518
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-cfb
+  name: 2|🇺🇸1 |  5.4MB/s
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
+  type: ss
+- name: 2|🇺🇸8 |  5.8MB/s
+  password: 038f067a-213a-4c7d-89d7-e8fdeebcfe71
+  port: 27301
+  server: sla.cn.964e995b760.gogodns.xin
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alterId: 0
   cipher: auto
-  name: 2|🇺🇸13 |  4.3MB/s
+  name: 2|🇺🇸18 |  2.6MB/s
   network: ws
-  port: 23451
-  server: 129.146.249.217
+  port: 8443
+  raw:
+    add: skk.moe
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: digitaloceanus.lzj520hxw.dpdns.org
+    id: ba516af9-329e-4c5c-8ff6-dc59f563269e
+    net: ws
+    path: ba516af9-329e-4c5c-8ff6-dc59f563269e-vm
+    port: 8443
+    ps: CloudFlare
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: skk.moe
+  servername: ''
+  tls: true
   type: vmess
-  uuid: a833f373-7c6a-495d-8791-22a342454c45
+  uuid: ba516af9-329e-4c5c-8ff6-dc59f563269e
   ws-opts:
-    path: /
+    headers:
+      Host: digitaloceanus.lzj520hxw.dpdns.org
+    path: ba516af9-329e-4c5c-8ff6-dc59f563269e-vm
+- name: 2|🇺🇸15 |  5.8MB/s
+  password: fc1148e1-d0a8-4e8f-88ea-fefbeb7ed38d
+  port: 34014
+  server: sla.cn.964e995b760.gogodns.xin
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome

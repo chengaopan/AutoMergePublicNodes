@@ -1,52 +1,58 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 21f82b93-596d-4a3d-b3ba-4d47e125cd1b
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 21f82b93-596d-4a3d-b3ba-4d47e125cd1b
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸 美国 03 | 1x US Washington
-  password: 21f82b93-596d-4a3d-b3ba-4d47e125cd1b
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国 01 | 1x US Los Angeles
-  password: 8273d5f3-a26a-4c9d-adbe-a49a48795e29
+  name: 0|🇺🇸美国 01 | 1x US Los Angeles
+  password: 46801799-9f4c-4056-a76e-4870296afa3e
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 8273d5f3-a26a-4c9d-adbe-a49a48795e29
+  name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 46801799-9f4c-4056-a76e-4870296afa3e
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国 03 | 1x US Washington
-  password: 8273d5f3-a26a-4c9d-adbe-a49a48795e29
+  name: 0|🇺🇸美国 03 | 1x US Washington
+  password: 46801799-9f4c-4056-a76e-4870296afa3e
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 661716c3-7647-4e99-8c1e-83b8c94dc518
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 661716c3-7647-4e99-8c1e-83b8c94dc518
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 03 | 1x US Washington
+  password: 661716c3-7647-4e99-8c1e-83b8c94dc518
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: aes-128-cfb
+  name: 2|🇺🇸1 |  5.4MB/s
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
+  type: ss
 - client-fingerprint: chrome
-  name: 2,14|US_speednode_0046
+  name: 2,14|US_speednode_0048
   network: ws
   port: 443
   server: 104.18.20.20
-  servername: us4.globals-download.com
+  servername: us3.globals-download.com
   skip-cert-verify: false
   tls: true
   type: vless
@@ -54,49 +60,16 @@ proxies:
   uuid: af8e7760-4993-4393-9db7-e84f05a06d21
   ws-opts:
     headers:
-      Host: us4.globals-download.com
-    path: /pq/us4
-- client-fingerprint: chrome
-  name: 2,14|US_speednode_0049
-  network: ws
-  port: 443
-  server: 104.18.20.20
-  servername: us2.globals-download.com
+      Host: us3.globals-download.com
+    path: /pq/us3
+- auth: 0b092b52-0d9e-11ee-92a0-f23c91cfbbc9
+  name: 2|🇺🇸3 |  4.6MB/s
+  password: 0b092b52-0d9e-11ee-92a0-f23c91cfbbc9
+  port: 8443
+  server: 0fe0f303-supts0-ubpxvf-1fq8c.hy2.gotochinatown.net
   skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: af8e7760-4993-4393-9db7-e84f05a06d21
-  ws-opts:
-    headers:
-      Host: us2.globals-download.com
-    path: /pq/us2
-- client-fingerprint: chrome
-  name: 2,14|US_speednode_0047
-  network: ws
-  port: 443
-  server: 104.18.20.20
-  servername: us7.globals-download.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: af8e7760-4993-4393-9db7-e84f05a06d21
-  ws-opts:
-    headers:
-      Host: us7.globals-download.com
-    path: /pq/us7
-- flow: ''
-  mode: ''
-  name: 2|🇺🇸4 |  2.5MB/s
-  network: tcp
-  port: 443
-  server: 135.148.174.211
-  servername: 147135011033.sec21org.com
-  tls: true
-  type: vless
-  udp: false
-  uuid: 0a44145f-59dc-4e5b-a233-677b97f5114c
+  sni: 0fe0f303-supts0-ubpxvf-1fq8c.hy2.gotochinatown.net
+  type: hysteria2
 - client-fingerprint: chrome
   name: 2,14|US_speednode_0045
   network: ws
@@ -112,17 +85,6 @@ proxies:
     headers:
       Host: us5.globals-download.com
     path: /pq/us5
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 55 Mbps
-  name: 2|🇺🇸6 |  4.5MB/s
-  port: 17549
-  server: 208.87.243.151
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 11 Mbps
 - client-fingerprint: chrome
   delay: 1187
   name: 2,14|US_speednode_0050
@@ -142,21 +104,34 @@ proxies:
 - alpn:
   - h3
   auth_str: dongtaiwang.com
-  down: 1000 Mbps
-  name: 2|🇺🇸8 |  5.7MB/s
-  port: 11512
-  server: 108.181.24.77
+  down: 55 Mbps
+  name: 2|🇺🇸6 |  6.0MB/s
+  port: 17549
+  server: 208.87.243.151
   skip-cert-verify: true
-  sni: apple.com
+  sni: www.bing.com
   type: hysteria
-  udp: true
-  up: 1000 Mbps
+  up: 11 Mbps
+- auth: 5CBqBh6MeDq6GajcilBiDg==
+  name: 2|🇺🇸7 |  4.6MB/s
+  password: 5CBqBh6MeDq6GajcilBiDg==
+  port: 61001
+  server: 192-227-152-86.nip.io
+  skip-cert-verify: true
+  sni: 192-227-152-86.nip.io
+  type: hysteria2
+- name: 2|🇺🇸8 |  5.8MB/s
+  password: 038f067a-213a-4c7d-89d7-e8fdeebcfe71
+  port: 27301
+  server: sla.cn.964e995b760.gogodns.xin
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - client-fingerprint: chrome
-  name: 2,14|US_speednode_0048
+  name: 2,14|US_speednode_0047
   network: ws
   port: 443
   server: 104.18.20.20
-  servername: us3.globals-download.com
+  servername: us7.globals-download.com
   skip-cert-verify: false
   tls: true
   type: vless
@@ -164,54 +139,102 @@ proxies:
   uuid: af8e7760-4993-4393-9db7-e84f05a06d21
   ws-opts:
     headers:
-      Host: us3.globals-download.com
-    path: /pq/us3
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 2|🇺🇸10 |  2.9MB/s
-  network: ws
-  port: 2052
-  server: 185.146.173.16
-  servername: digitalscientificresearchgroup.ir
-  tls: false
-  type: vless
-  udp: false
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: ''
-- name: '2,10,11|Channel id: @ShadowProxy66🇺🇸'
-  password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
-  port: 47262
-  server: 64.181.204.186
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: '2,11|Channel id: @ShadowProxy66🇺🇸 #1'
-  password: dongtaiwang.com
-  port: 65232
-  server: 108.181.5.130
-  skip-cert-verify: true
-  sni: apple.com
-  tls: false
-  type: hysteria2
-- alterId: '0'
-  cipher: auto
-  name: 2|🇺🇸13 |  4.3MB/s
-  network: ws
-  port: 23451
-  server: 129.146.249.217
-  type: vmess
-  uuid: a833f373-7c6a-495d-8791-22a342454c45
-  ws-opts:
-    path: /
+      Host: us7.globals-download.com
+    path: /pq/us7
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   mode: ''
-  name: 2|🇺🇸14 |  5.4MB/s
+  name: 2|🇺🇸10 |  4.3MB/s
+  network: tcp
+  port: 33718
+  reality-opts:
+    public-key: g1f1wLjim5gOVGnI5LGUV0dL4iFXPoiepOPZfSxJe14
+    short-id: ''
+  server: 31.59.111.49
+  servername: icloud.cdn-apple.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: e657e5fb-c417-4d3f-d84e-a3a8f010f9fa
+- client-fingerprint: chrome
+  name: 2,14|US_speednode_0049
+  network: ws
+  port: 443
+  server: 104.18.20.20
+  servername: us2.globals-download.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: af8e7760-4993-4393-9db7-e84f05a06d21
+  ws-opts:
+    headers:
+      Host: us2.globals-download.com
+    path: /pq/us2
+- client-fingerprint: randomized
+  flow: ''
+  mode: ''
+  name: 2|🇺🇸12 |  4.1MB/s
+  network: ws
+  port: 443
+  server: 172.67.204.84
+  servername: ipsychO.SUEx12.Ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: ipsycho.suex12.ir
+    path: /re5IzbZ9IZZMddtw?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸18 |  2.6MB/s
+  network: ws
+  port: 8443
+  raw:
+    add: skk.moe
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: digitaloceanus.lzj520hxw.dpdns.org
+    id: ba516af9-329e-4c5c-8ff6-dc59f563269e
+    net: ws
+    path: ba516af9-329e-4c5c-8ff6-dc59f563269e-vm
+    port: 8443
+    ps: CloudFlare
+    scy: ''
+    sni: ''
+    tls: tls
+    type: ''
+    v: '2'
+  server: skk.moe
+  servername: ''
+  tls: true
+  type: vmess
+  uuid: ba516af9-329e-4c5c-8ff6-dc59f563269e
+  ws-opts:
+    headers:
+      Host: digitaloceanus.lzj520hxw.dpdns.org
+    path: ba516af9-329e-4c5c-8ff6-dc59f563269e-vm
+- name: 2|🇺🇸14 |  1.1MB/s
+  network: tcp
+  port: 443
+  server: 135.148.152.97
+  servername: 147135001195.sec22org.com
+  tls: true
+  type: vless
+  uuid: ea286109-d20f-415e-849e-4af20ab04b65
+- name: 2|🇺🇸15 |  5.8MB/s
+  password: fc1148e1-d0a8-4e8f-88ea-fefbeb7ed38d
+  port: 34014
+  server: sla.cn.964e995b760.gogodns.xin
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  mode: ''
+  name: 2|🇺🇸17 |  3.5MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -224,17 +247,40 @@ proxies:
   udp: false
   uuid: fefba36d-5142-42f1-b14d-db5249511d93
 - client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 2|🇺🇸15 |  1.3MB/s
-  network: tcp
+  name: 2,14|US_speednode_0046
+  network: ws
   port: 443
-  server: 15.204.151.43
-  servername: 147135001195.sec22org.com
+  server: 104.18.20.20
+  servername: us4.globals-download.com
+  skip-cert-verify: false
   tls: true
   type: vless
-  udp: false
-  uuid: ea286109-d20f-415e-849e-4af20ab04b65
+  udp: true
+  uuid: af8e7760-4993-4393-9db7-e84f05a06d21
+  ws-opts:
+    headers:
+      Host: us4.globals-download.com
+    path: /pq/us4
+- name: 2|🇺🇸20 |  5.1MB/s
+  network: ws
+  port: 443
+  server: 5.10.244.44
+  servername: usargo.lzj520hxw.dpdns.org
+  tls: true
+  type: vless
+  uuid: 00a9a559-8bb0-425e-bc97-c9885a575455
+  ws-opts:
+    headers:
+      Host: usargo.lzj520hxw.dpdns.org
+    path: /lzjjjjjjjjjjjjjjjjjjjjjjj666-vl?ed=2048
+- name: '9,11|Channel id: @ShadowProxy66🇺🇸 #2'
+  password: dongtaiwang.com
+  port: 65232
+  server: 108.181.5.130
+  skip-cert-verify: true
+  sni: apple.com
+  tls: false
+  type: hysteria2
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -311,6 +357,20 @@ proxies:
     headers:
       Host: v2riran.com
     path: /telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN,telegram-@V2RIRAN?ed=2056
+- name: 14|US_speednode_0044
+  network: ws
+  port: 8080
+  server: tgju.org
+  servername: 4j.QBAo1g5z6k.ZulaIR.org.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 56652249-2e67-4429-b86c-3df8b838ad85
+  ws-opts:
+    headers:
+      Host: 4j.QBAo1g5z6k.ZulaIR.org.
+    path: /?ed=2048
 - name: 14|US_speednode_0051
   network: ws
   port: 8080
