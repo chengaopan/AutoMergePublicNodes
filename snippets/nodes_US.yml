@@ -1,38 +1,57 @@
 proxies:
-- name: 1|🇺🇸1 |  5.7MB/s
-  password: f6f0c004-26a0-3ea0-a824-2addb0455c31
-  port: 20305
-  server: gy.58n.net
-  skip-cert-verify: true
-  sni: z305.hongkongnode.top
-  tfo: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸美国 01 | 1x US Los Angeles
+  password: d0caf51e-1859-4154-a533-13b072a26769
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: d0caf51e-1859-4154-a533-13b072a26769
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇺🇸美国 03 | 1x US Washington
+  password: d0caf51e-1859-4154-a533-13b072a26769
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 8e0a1de0-a20b-42a1-a01a-7c888aaeaf6d
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 8e0a1de0-a20b-42a1-a01a-7c888aaeaf6d
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 03 | 1x US Washington
+  password: 8e0a1de0-a20b-42a1-a01a-7c888aaeaf6d
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 1,11|🇺🇸 美国3|@ripaojiedian
+  name: 2,12|🇺🇸 美国3|@ripaojiedian
   password: '!!str 1234'
   port: 1234
   server: 97.107.140.236
   tfo: false
   type: ss
-- allowInsecure: ''
-  name: 1|🇺🇸9 |  1.0MB/s
-  network: ws
-  password: auto
-  port: 443
-  server: 172.66.46.254
-  skip-cert-verify: false
-  sni: dcf741e8.epeius-2gy.pages.dev
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: dcf741e8.epeius-2gy.pages.dev
-    path: /?ed=2560
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸27 |  5.2MB/s
+  name: 2|🇺🇸10 |  1.7MB/s
   network: ws
   port: 80
   server: www.wn03.cc
@@ -48,8 +67,48 @@ proxies:
     path: /rongseven?ed=2048
 - alterId: 0
   cipher: auto
+  name: 2|🇺🇸15 |  5.3MB/s
+  network: tcp
+  port: 5228
+  server: 000611b6-sva740-t4ib2y-1kdw3.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: e39687a8-3350-11ed-8110-f23c91cfbbc9
+  ws-headers:
+    Host: 000611b6-sva740-t4ib2y-1kdw3.cu.plebai.net
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 2|🇺🇸21 |  5.5MB/s
+  network: ws
+  port: '2053'
+  server: 141.101.121.127
+  tls: true
+  type: vmess
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  ws-opts:
+    headers:
+      host: 1744007578.speed.mamha.cccp.freefly.pp.ua
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 2|🇺🇸26 |  5.3MB/s
+  network: ws
+  port: 2053
+  server: 141.101.121.127
+  servername: 1744007578.speed.mamha.cccp.freefly.pp.ua
+  tls: true
+  type: vmess
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  ws-opts:
+    headers:
+      Host: 1744007578.speed.mamha.cccp.freefly.pp.ua
+    path: /
+- alterId: 0
+  cipher: auto
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国|@ripaojiedian
+  name: 12|🇺🇸 美国|@ripaojiedian
   port: 44015
   server: 120.198.71.219
   skip-cert-verify: false
@@ -59,7 +118,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国2|@ripaojiedian
+  name: 12|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -72,7 +131,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇺🇸 美国4|@ripaojiedian
+  name: 12|🇺🇸 美国4|@ripaojiedian
   port: 45251
   server: 112.65.92.20
   skip-cert-verify: false
@@ -82,7 +141,7 @@ proxies:
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
-  name: 12|美国|@ripaojiedian
+  name: 13|美国|@ripaojiedian
   network: tcp
   port: '44015'
   server: 120.198.71.219
@@ -92,7 +151,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 12|美国4|@ripaojiedian
+  name: 13|美国4|@ripaojiedian
   network: tcp
   port: '45251'
   server: 112.65.92.20
@@ -100,24 +159,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 469e0b31-30c3-4dab-800d-711232634ce1
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 0ae04e42-e264-456e-8ce2-36b328a2b579
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 0ae04e42-e264-456e-8ce2-36b328a2b579
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇺🇸 美国 03 | 1x US Washington
-  password: 0ae04e42-e264-456e-8ce2-36b328a2b579
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
