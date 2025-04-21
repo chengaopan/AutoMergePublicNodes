@@ -1,28 +1,28 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼 台湾 01 | 1x TW
-  password: 6203da01-aa3a-44c0-8764-acc15c497ce7
+  password: 03081e3e-b5d6-4f22-92b1-3fff8750b842
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼 台湾 02 | 1x TW
-  password: 6203da01-aa3a-44c0-8764-acc15c497ce7
+  password: 03081e3e-b5d6-4f22-92b1-3fff8750b842
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼 台湾 03 | 1x TW
-  password: 6203da01-aa3a-44c0-8764-acc15c497ce7
+  password: 03081e3e-b5d6-4f22-92b1-3fff8750b842
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇹🇼1 |  1.6MB/s
+  name: 1|🇹🇼1 |  1.3MB/s
   network: tcp
   port: 34313
   reality-opts:
@@ -32,6 +32,12 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: aes-128-gcm
+  name: 1|🇹🇼2 |  2.7MB/s
+  password: VMhGp5wEIyCDf90T
+  port: 33368
+  server: shenzhou05.mysynology.net
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 1,14|CN_speednode_0007
@@ -62,45 +68,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0008
-  network: tcp
-  port: 37809
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇹🇼5 |  4.4MB/s
-  network: tcp
-  port: 15823
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇹🇼6 |  6.2MB/s
-  network: tcp
-  port: 15700
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇹🇼7 |  5.1MB/s
+  name: 1|🇹🇼5 |  6.2MB/s
   network: tcp
   port: 12477
   reality-opts:
@@ -110,34 +78,92 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- allowInsecure: ''
-  name: 1|🇹🇼8 |  4.2MB/s
-  network: tcp
-  password: c3f13957-9155-4a0d-b5db-e318dff63b1f
-  port: 27201
-  server: 45.146.232.173
+- name: 1,14|HK_speednode_0030
+  network: ws
+  port: 443
+  server: 162.247.5.91
+  servername: tw.qhahd.shop
   skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
   tls: true
-  type: trojan
+  type: vless
+  udp: true
+  uuid: 94fadaf3-ccd8-4734-b372-8772c9bfd147
+  ws-opts:
+    headers:
+      Host: tw.qhahd.shop
+    path: /bing
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇹🇼7 |  5.0MB/s
+  network: tcp
+  port: 15823
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
   name: 2|🇹🇼台湾 01 | 1x TW
-  password: 48cd9f9c-efd8-472b-a0df-49bf6156e791
+  password: bb0ff4be-e93e-4579-8729-74de069096e7
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 2|🇹🇼台湾 02 | 1x TW
-  password: 48cd9f9c-efd8-472b-a0df-49bf6156e791
+  password: bb0ff4be-e93e-4579-8729-74de069096e7
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 2|🇹🇼台湾 03 | 1x TW
-  password: 48cd9f9c-efd8-472b-a0df-49bf6156e791
+  password: bb0ff4be-e93e-4579-8729-74de069096e7
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12|🇹🇼 台湾|@ripaojiedian
+  port: 10546
+  server: xwogpb.cjjvmm.xyz
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: daa4d73e-aca3-3ef7-a9dd-3a2487fcb38d
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12|🇹🇼 台湾2|@ripaojiedian
+  port: 45285
+  server: 36.150.232.128
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
+- alterId: 0
+  cipher: auto
+  name: 13|台湾|@ripaojiedian
+  network: tcp
+  port: '10546'
+  server: xwogpb.cjjvmm.xyz
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: daa4d73e-aca3-3ef7-a9dd-3a2487fcb38d
+- alterId: 0
+  cipher: auto
+  name: 13|台湾2|@ripaojiedian
+  network: tcp
+  port: '45285'
+  server: 36.150.232.128
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1

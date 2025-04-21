@@ -1,56 +1,85 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 6203da01-aa3a-44c0-8764-acc15c497ce7
+  password: 03081e3e-b5d6-4f22-92b1-3fff8750b842
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 6203da01-aa3a-44c0-8764-acc15c497ce7
+  password: 03081e3e-b5d6-4f22-92b1-3fff8750b842
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国 03 | 1x US Washington
-  password: 6203da01-aa3a-44c0-8764-acc15c497ce7
+  password: 03081e3e-b5d6-4f22-92b1-3fff8750b842
   port: 36215
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf
+  name: 1|🇺🇸12 |  2.2MB/s
+  password: asd123456
+  port: 8388
+  server: 137.175.113.215
+  type: ss
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸3 |  1.1MB/s
-  network: tcp
-  port: 50082
-  server: 120.198.71.216
+  name: 1|🇺🇸14 |  2.5MB/s
+  network: ws
+  port: 23077
+  server: 45.147.201.231
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: f90b800d-2b37-424e-afc8-4ecb2a64b64f
   ws-headers:
-    Host: 120.198.71.216
+    Host: 45.147.201.231
   ws-path: /
-- alterId: 64
+- alterId: 0
   cipher: auto
-  name: 1,13|香港6|@ripaojiedian
-  network: tcp
-  port: '43674'
-  server: 120.234.102.229
-  servername: ''
+  name: 1|🇺🇸43 |  5.8MB/s
+  network: ws
+  port: 80
+  server: www.wn03.cc
   skip-cert-verify: true
+  tfo: true
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-headers:
-    Host: 120.234.102.229
-  ws-path: /
+  udp: true
+  uuid: 2f38f848-a899-4c87-9807-207a41615e3c
+  ws-opts:
+    headers:
+      Host: us.freeyyds.dpdns.org
+    path: /rongseven?ed=2048
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸美国 01 | 1x US Los Angeles
+  password: bb0ff4be-e93e-4579-8729-74de069096e7
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: bb0ff4be-e93e-4579-8729-74de069096e7
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇺🇸美国 03 | 1x US Washington
+  password: bb0ff4be-e93e-4579-8729-74de069096e7
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 1,12|🇺🇸 美国|@ripaojiedian
+  name: 12|🇺🇸 美国|@ripaojiedian
   port: 44015
   server: 120.198.71.219
   skip-cert-verify: false
@@ -58,33 +87,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf
-  name: 1|🇺🇸22 |  3.5MB/s
-  password: asd123456
-  port: 8388
-  server: 137.175.113.215
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸美国 01 | 1x US Los Angeles
-  password: 48cd9f9c-efd8-472b-a0df-49bf6156e791
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 48cd9f9c-efd8-472b-a0df-49bf6156e791
-  port: 31213
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸美国 03 | 1x US Washington
-  password: 48cd9f9c-efd8-472b-a0df-49bf6156e791
-  port: 31215
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|🇺🇸 美国2|@ripaojiedian
@@ -97,25 +99,25 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇺🇸 美国3|@ripaojiedian
-  password: pKEW8JPByTVTLtM
-  port: 443
-  server: 38.107.226.14
+  password: '!!str 1234'
+  port: 1234
+  server: 97.107.140.236
   tfo: false
   type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
   name: 12|🇺🇸 美国4|@ripaojiedian
-  port: 5229
-  server: 8705693f-sv8cg0-t35mzx-1pp0x.cu.plebai.net
+  port: 45251
+  server: 112.65.92.20
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 7734370a-8480-11ee-ab76-f23c91cfbbc9
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
 - alterId: 0
   cipher: auto
   name: 13|美国|@ripaojiedian
@@ -130,9 +132,9 @@ proxies:
   cipher: auto
   name: 13|美国4|@ripaojiedian
   network: tcp
-  port: '5229'
-  server: 8705693f-sv8cg0-t35mzx-1pp0x.cu.plebai.net
+  port: '45251'
+  server: 112.65.92.20
   servername: ''
   tls: false
   type: vmess
-  uuid: 7734370a-8480-11ee-ab76-f23c91cfbbc9
+  uuid: 469e0b31-30c3-4dab-800d-711232634ce1
