@@ -1,29 +1,39 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: d07b2639-8c2b-46e7-863a-4d65ffcca39a
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: d07b2639-8c2b-46e7-863a-4d65ffcca39a
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 513eb49c-161c-4cb4-9aa2-874b58a094f6
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 8c8496a9-c9e7-4004-9034-716c249ca388
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇬🇧1 |  5.2MB/s
+  network: tcp
+  port: 14659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇬🇧2 |  5.3MB/s
+  network: tcp
+  port: 49699
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
   delay: 1670
   flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0023
+  name: 1,14|CN_speednode_0023
   network: tcp
   port: 65053
   reality-opts:
@@ -35,7 +45,7 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇬🇧2 |  4.3MB/s
+- name: 1|🇬🇧4 |  4.4MB/s
   password: '!!str 3828095943467868160'
   port: 443
   server: grateful-mako.dolphin109.quest
@@ -44,7 +54,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧3 |  5.7MB/s
+  name: 1|🇬🇧5 |  5.4MB/s
   network: tcp
   port: 32055
   reality-opts:
@@ -55,14 +65,31 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
+  delay: 1739
   flow: xtls-rprx-vision
-  name: 2|🇬🇧4 |  2.0MB/s
+  name: 1,14|CN_speednode_0026
   network: tcp
-  port: 14659
+  port: 35311
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.nvidia.com
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰 香港 01 | 1x HK
+  password: bda983c4-b5d6-41be-bb2e-400db1b034c8
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
+  password: bda983c4-b5d6-41be-bb2e-400db1b034c8
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true

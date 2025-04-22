@@ -1,51 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: d07b2639-8c2b-46e7-863a-4d65ffcca39a
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦加拿大 01 | 1x CA
-  password: 513eb49c-161c-4cb4-9aa2-874b58a094f6
+  name: 0|🇨🇦加拿大 01 | 1x CA
+  password: 8c8496a9-c9e7-4004-9034-716c249ca388
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 2|🇨🇦1 |  5.1MB/s
-  network: ws
-  port: 30825
-  raw:
-    add: v25.heduian.link
-    aid: 2
-    alpn: ''
-    fp: ''
-    host: baidu.com
-    id: cbb3f877-d1fb-344c-87a9-d153bffd5484
-    net: ws
-    path: /oooo
-    port: 30825
-    ps: 0|🇨🇦2 |  5.5MB/s
-    scy: auto
-    sni: ''
-    tls: ''
-    type: none
-    v: '2'
-  server: v25.heduian.link
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: baidu.com
-    path: /oooo
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇨🇦2 |  4.0MB/s
+  name: 1|🇨🇦1 |  5.6MB/s
   network: tcp
   port: 16011
   reality-opts:
@@ -55,16 +18,34 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇨🇦3 |  2.5MB/s
+- name: 1|🇨🇦2 |  3.1MB/s
   password: 21e5860b-79e9-461c-8d13-6a2e3ced75b1
   port: 34016
   server: sla.cn.964e995b760.gogodns.xin
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
+- insecure: '1'
+  mport: ''
+  name: 1|🇨🇦3 |  1.5MB/s
+  obfs: ''
+  obfs-password: ''
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  ports: ''
+  server: 132.145.108.102
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇨🇦 加拿大 01 | 1x CA
+  password: bda983c4-b5d6-41be-bb2e-400db1b034c8
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2,14|CA_speednode_0001
-  network: tcp
+  name: 14|CA_speednode_0001
   port: 42557
   reality-opts:
     public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
