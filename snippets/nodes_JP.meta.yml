@@ -1,39 +1,72 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵日本 01 | 1x JP
-  password: 2d09e1e0-40c1-45e2-95e0-b40c2cac08e3
+  name: 0|🇯🇵日本 01 | 1x JP
+  password: e6c73d9b-2c14-491d-9295-ea5e7dffa7bb
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵日本 02 | 1x JP
-  password: 2d09e1e0-40c1-45e2-95e0-b40c2cac08e3
+  name: 0|🇯🇵日本 02 | 1x JP
+  password: e6c73d9b-2c14-491d-9295-ea5e7dffa7bb
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵日本 03 | 1x JP
-  password: 2d09e1e0-40c1-45e2-95e0-b40c2cac08e3
+  name: 0|🇯🇵日本 03 | 1x JP
+  password: e6c73d9b-2c14-491d-9295-ea5e7dffa7bb
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|🇯🇵1 |  5.5MB/s
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: workable-puma.dolphin109.quest
-  skip-cert-verify: true
-  sni: workable-puma.dolphin109.quest
-  type: trojan
+- alterId: '0'
+  cipher: auto
+  name: 1|🇯🇵1 |  6.2MB/s
+  network: tcp
+  port: '17233'
+  server: 9e6c9676-sv6hs0-sv7acf-1qw0q.cm5.p5pv.com
+  type: vmess
+  uuid: d4fe3d0c-9043-11ef-8dc4-f23c91cfbbc9
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇯🇵2 |  4.0MB/s
+  name: 1|🇯🇵2 |  4.3MB/s
+  network: ws
+  port: 11413
+  server: 121.158.194.32
+  servername: photosair.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      Host: photosair.ir
+    path: /bingflow=-udp443flow=-udp443
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇯🇵3 |  1.1MB/s
+  network: ws
+  port: 30045
+  server: 49.166.202.100
+  servername: photosair.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      Host: photosair.ir
+    path: ''
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇯🇵4 |  4.1MB/s
   network: ws
   port: 50000
-  server: 106.244.68.249
+  server: 221.158.170.74
   servername: photosair.ir
   tls: true
   type: vless
@@ -43,31 +76,54 @@ proxies:
     headers:
       Host: photosair.ir
     path: /bingflow=-udp443
-- name: 2|🇯🇵3 |  5.8MB/s
+- name: 1|🇯🇵5 |  2.4MB/s
+  password: 8e4ee829-afc3-400d-bc27-f696d6d7319a
+  port: 22271
+  server: sla.cn.964e995b760.gogodns.xin
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 1,13|日本5|@ripaojiedian
+  network: tcp
+  port: '17233'
+  server: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
+  servername: ''
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
+  ws-headers:
+    Host: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
+  ws-path: /
+- name: 1|🇯🇵7 |  5.2MB/s
   password: '!!str 3828095943467868160'
   port: 443
   server: active-lamb.dolphin109.quest
   skip-cert-verify: true
   sni: active-lamb.dolphin109.quest
   type: trojan
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 2|🇯🇵4 |  3.7MB/s
-  network: ws
-  port: 50000
-  server: 27.100.229.147
-  servername: photosair.ir
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇯🇵8 |  5.0MB/s
+  network: tcp
+  port: 13989
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: gateway.icloud.com
   tls: true
   type: vless
-  udp: false
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: photosair.ir
-    path: /bing
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 1|🇯🇵9 |  4.0MB/s
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: workable-puma.dolphin109.quest
+  skip-cert-verify: true
+  sni: workable-puma.dolphin109.quest
+  type: trojan
 - client-fingerprint: chrome
-  name: 2,14|JP_speednode_0033
+  name: 1,14|JP_speednode_0033
   password: exaxgqkKkd0TAMrCxeonWg==
   port: 443
   server: jp104-cdn-route.couldflare-cdn.com
@@ -77,27 +133,43 @@ proxies:
   type: http
   udp: true
   username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 2|🇯🇵6 |  1.6MB/s
-  password: 8e4ee829-afc3-400d-bc27-f696d6d7319a
-  port: 22271
-  server: sla.cn.964e995b760.gogodns.xin
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- delay: 863
-  name: 2,14|NL_speednode_0039
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 1|🇯🇵11 |  3.4MB/s
   network: ws
   port: 80
-  server: 45.131.5.233
+  server: 45.131.211.175
   servername: digitalscientificresearchgroup.ir
-  skip-cert-verify: false
   tls: false
   type: vless
-  udp: true
+  udp: false
   uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
   ws-opts:
     headers:
       Host: digitalscientificresearchgroup.ir
-    path: /Telegram🇨🇳@WangCai2
+    path: Telegram🇨🇳@WangCai2/?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇯🇵 日本 01 | 1x JP
+  password: 46e5f475-1917-495a-87a4-50e3fd569a02
+  port: 36111
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇯🇵 日本 02 | 1x JP
+  password: 46e5f475-1917-495a-87a4-50e3fd569a02
+  port: 36113
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇯🇵 日本 03 | 1x JP
+  password: 46e5f475-1917-495a-87a4-50e3fd569a02
+  port: 36115
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - name: '11|Channel id: @ShadowProxy66🇯🇵'
   password: 50a88b3f
   port: 2308
@@ -175,16 +247,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 13|日本5|@ripaojiedian
-  network: tcp
-  port: '17233'
-  server: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
 - alterId: 0
   cipher: auto
   name: 13|日本6|@ripaojiedian
