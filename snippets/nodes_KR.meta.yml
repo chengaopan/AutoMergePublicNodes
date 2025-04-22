@@ -1,14 +1,28 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 01 | 1x KR
-  password: 585a1134-023f-44bc-979e-31c3eca12503
+  name: 0|🇰🇷 韩国 01 | 1x KR
+  password: 4d92f8be-4695-4d6b-bd93-d8eb772ede7f
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇰🇷 韩国 02 | 1x KR
+  password: 4d92f8be-4695-4d6b-bd93-d8eb772ede7f
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: e1272aca-d0e0-4e4d-8a11-ce3cd0c239dd
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 02 | 1x KR
-  password: 585a1134-023f-44bc-979e-31c3eca12503
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: e1272aca-d0e0-4e4d-8a11-ce3cd0c239dd
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
@@ -16,10 +30,26 @@ proxies:
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 1|🇰🇷1 |  1.8MB/s
+  name: 2|🇰🇷1 |  5.8MB/s
   network: ws
-  port: 2095
-  server: 168.100.6.173
+  port: 443
+  server: 64.176.42.6
+  servername: photosair.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      Host: photosair.ir
+    path: /bing
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇰🇷2 |  1.1MB/s
+  network: ws
+  port: 2082
+  server: 173.245.59.109
   servername: ''
   tls: false
   type: vless
@@ -32,10 +62,26 @@ proxies:
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 1|🇰🇷2 |  3.3MB/s
+  name: 2|🇰🇷3 |  1.1MB/s
   network: ws
-  port: 30052
-  server: 118.46.29.202
+  port: 31316
+  server: 14.39.172.147
+  servername: photosair.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
+  ws-opts:
+    headers:
+      Host: photosair.ir
+    path: /bing
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇰🇷4 |  1.9MB/s
+  network: ws
+  port: 50000
+  server: 106.244.68.249
   servername: photosair.ir
   tls: true
   type: vless
@@ -45,38 +91,10 @@ proxies:
     headers:
       Host: photosair.ir
     path: /bingflow=-udp443
-- name: 1|🇰🇷3 |  1.8MB/s
+- name: 2|🇰🇷5 |  1.0MB/s
   network: ws
   port: 443
-  server: 160.79.105.233
-  servername: nn.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nn.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 1|🇰🇷4 |  2.4MB/s
-  network: ws
-  port: 443
-  server: 160.123.255.78
-  servername: nn.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: nn.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 1|🇰🇷5 |  3.8MB/s
-  network: ws
-  port: 443
-  server: 160.79.104.12
+  server: 63.141.128.193
   servername: nn.ylks0033.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -89,55 +107,9 @@ proxies:
     path: /?ed=2560
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 1,12|🇰🇷 韩国特殊|@ripaojiedian
+  name: 12|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 43.203.202.53
   tfo: false
   type: ss
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇰🇷7 |  2.6MB/s
-  network: ws
-  port: 2086
-  server: 162.159.138.232
-  servername: ''
-  tls: false
-  type: vless
-  udp: false
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: digitalscientificresearchgroup.ir
-    path: /TM@Azarbayjab1?ed=2560
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1|🇰🇷8 |  1.0MB/s
-  network: ws
-  port: 50000
-  server: 116.47.199.34
-  servername: photosair.ir
-  tls: true
-  type: vless
-  udp: false
-  uuid: 4088e698-69fd-4d15-98bc-f1fe4c071642
-  ws-opts:
-    headers:
-      Host: photosair.ir
-    path: /bing
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷 韩国 01 | 1x KR
-  password: 8b3b5c32-485e-4844-94c7-547531309a5f
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷 韩国 02 | 1x KR
-  password: 8b3b5c32-485e-4844-94c7-547531309a5f
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
