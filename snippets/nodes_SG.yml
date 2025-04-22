@@ -1,62 +1,51 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: 5c4c56c5-8597-4ce3-92f8-9e7ea40c6bce
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: 5c4c56c5-8597-4ce3-92f8-9e7ea40c6bce
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 03 | 1x SG
-  password: 5c4c56c5-8597-4ce3-92f8-9e7ea40c6bce
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 01 | 1x SG
-  password: 6ca229a8-dd9f-4cda-8b5e-f4a1a5fe6e33
+  name: 0|🇸🇬新加坡 01 | 1x SG
+  password: f438d0ae-33f1-43fc-bb14-5e7152ddf9ba
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 02 | 1x SG
-  password: 6ca229a8-dd9f-4cda-8b5e-f4a1a5fe6e33
+  name: 0|🇸🇬新加坡 02 | 1x SG
+  password: f438d0ae-33f1-43fc-bb14-5e7152ddf9ba
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 03 | 1x SG
-  password: 6ca229a8-dd9f-4cda-8b5e-f4a1a5fe6e33
+  name: 0|🇸🇬新加坡 03 | 1x SG
+  password: f438d0ae-33f1-43fc-bb14-5e7152ddf9ba
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇸🇬4 |  6.3MB/s
-  network: tcp
+  name: 1|🇸🇬5 |  5.8MB/s
   port: 17231
-  server: 5c460570-sux8g0-tbfsbm-nde6.cm5.p5pv.com
-  skip-cert-verify: true
+  server: d0012c0c-sux8g0-sycaxv-14au8.cm5.p5pv.com
   tls: false
   type: vmess
-  uuid: b19e8df4-fba9-11ea-9777-f23c9164ca5d
-  ws-headers:
-    Host: 5c460570-sux8g0-tbfsbm-nde6.cm5.p5pv.com
-  ws-path: /
+  uuid: 44811728-ebd8-11ec-adf5-f23c91cfbbc9
 - alterId: 0
   cipher: auto
-  name: 2,13|新加坡|@ripaojiedian
+  client-fingerprint: chrome
+  name: 1|🇸🇬6 |  5.3MB/s
+  network: ws
+  port: 443
+  server: www.racknerd.com
+  servername: grants-andrews-lp-helpful.trycloudflare.com
+  tls: true
+  type: vmess
+  uuid: 78956f2a-5650-4ac1-b5e5-c86491768443
+  ws-opts:
+    headers:
+      Host: grants-andrews-lp-helpful.trycloudflare.com
+    path: /vmess-argo?ed=2048
+- alterId: 0
+  cipher: auto
+  name: 1,13|新加坡|@ripaojiedian
   network: tcp
   port: '17231'
   server: fb6241fd-svc1s0-svjq5n-1r78y.cm5.p5pv.com
@@ -64,10 +53,31 @@ proxies:
   tls: false
   type: vmess
   uuid: 1c618e62-fc90-11ee-944b-f23c91cfbbc9
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇸🇬 新加坡 01 | 1x SG
+  password: e0b65a74-89fb-4cb1-b0a6-9cda6d0cf275
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇸🇬 新加坡 02 | 1x SG
+  password: e0b65a74-89fb-4cb1-b0a6-9cda6d0cf275
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇸🇬 新加坡 03 | 1x SG
+  password: e0b65a74-89fb-4cb1-b0a6-9cda6d0cf275
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 2,12|🇸🇬 新加坡|@ripaojiedian
+  name: 12|🇸🇬 新加坡|@ripaojiedian
   port: 17231
   server: fb6241fd-svc1s0-svjq5n-1r78y.cm5.p5pv.com
   skip-cert-verify: false
@@ -75,14 +85,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 1c618e62-fc90-11ee-944b-f23c91cfbbc9
-- alterId: 0
-  cipher: auto
-  name: 2|🇸🇬10 |  1.5MB/s
-  port: 17231
-  server: d0012c0c-sux8g0-sycaxv-14au8.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 44811728-ebd8-11ec-adf5-f23c91cfbbc9
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
