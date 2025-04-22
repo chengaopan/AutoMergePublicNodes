@@ -1,23 +1,45 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: af77adec-0ef0-4a5d-81b9-89341f63593e
+  password: 754f7012-d3ba-414e-8b86-34b73cadd379
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦加拿大 01 | 1x CA
+  password: 6d706909-ff18-4817-bd44-6a2419893702
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 1|🇨🇦1 |  1.1MB/s
+  name: 2|🇨🇦1 |  2.6MB/s
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
   server: 132.145.108.102
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇨🇦2 |  4.4MB/s
+  network: ws
+  port: 2096
+  server: 104.19.223.79
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s28.sabzmaghz.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: e88187f8-62a3-4de1-a8f6-3b704ebd1865
+  ws-opts:
+    headers:
+      Host: wwwspeedtestnetwhiteberinsistomd6625996s28.sabzmaghz.ir
+    path: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1,14|CA_speednode_0001
-  network: tcp
+  name: 14|CA_speednode_0001
   port: 42557
   reality-opts:
     public-key: LiHpb4jWrgHBSpi1mjKH3I8m2ahpVNexeNDh-sMW3Xo
@@ -29,10 +51,3 @@ proxies:
   type: vless
   udp: true
   uuid: 2429bee3-e0c1-47dd-b420-75e6512b184b
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇨🇦加拿大 01 | 1x CA
-  password: e6d8af91-fdfd-4eef-9aa1-88a132b3348f
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true

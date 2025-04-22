@@ -1,41 +1,50 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: af77adec-0ef0-4a5d-81b9-89341f63593e
+  password: 754f7012-d3ba-414e-8b86-34b73cadd379
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: af77adec-0ef0-4a5d-81b9-89341f63593e
+  password: 754f7012-d3ba-414e-8b86-34b73cadd379
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬 新加坡 03 | 1x SG
-  password: af77adec-0ef0-4a5d-81b9-89341f63593e
+  password: 754f7012-d3ba-414e-8b86-34b73cadd379
   port: 36175
   server: free.2weradf.xyz
   type: ss
   udp: true
-- auth: c3a6081c-c47d-4872-8281-bf1c38e6d2f8
-  client-fingerprint: chrome
-  down: 500
-  name: 1|🇸🇬1 |  5.1MB/s
-  password: c3a6081c-c47d-4872-8281-bf1c38e6d2f8
-  port: 1086
-  server: sg1.yunxing.lat
-  skip-cert-verify: true
-  sni: sg1.yunxing.lat
-  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 01 | 1x SG
+  password: 6d706909-ff18-4817-bd44-6a2419893702
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  up: 2500
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 02 | 1x SG
+  password: 6d706909-ff18-4817-bd44-6a2419893702
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 03 | 1x SG
+  password: 6d706909-ff18-4817-bd44-6a2419893702
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 1|🇸🇬2 |  5.8MB/s
+  name: 2|🇸🇬1 |  3.6MB/s
   network: ws
   port: 80
   server: 170.114.46.6
@@ -50,7 +59,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|🇸🇬3 |  6.1MB/s
+  name: 2|🇸🇬2 |  6.2MB/s
   port: 17231
   server: d0012c0c-sux8g0-sycaxv-14au8.cm5.p5pv.com
   tls: false
@@ -59,23 +68,7 @@ proxies:
 - client-fingerprint: chrome
   flow: none
   mode: ''
-  name: 1|🇸🇬4 |  2.7MB/s
-  network: ws
-  port: 8443
-  server: 141.193.213.20
-  servername: premium.vkehi.shop
-  tls: true
-  type: vless
-  udp: false
-  uuid: c50f6c7f-d18e-47e8-8be0-9d12af7b8809
-  ws-opts:
-    headers:
-      Host: premium.vkehi.shop
-    path: '%2F'
-- client-fingerprint: chrome
-  flow: none
-  mode: ''
-  name: 1|🇸🇬5 |  5.7MB/s
+  name: 2|🇸🇬3 |  5.4MB/s
   network: ws
   port: 8443
   server: 141.193.213.21
@@ -88,59 +81,37 @@ proxies:
     headers:
       Host: premium.vkehi.shop
     path: '%2F'
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇸🇬4 |  1.1MB/s
+  network: tcp
+  port: 10649
+  reality-opts:
+    public-key: N3OhMYHjw0MGH7X93-6lec9iOMQHRUr-Uz-cGzQ32jQ
+  server: 92.112.22.115
+  servername: www.iij.ad.jp
+  tls: true
+  type: vless
+  uuid: 78956f2a-5650-4ac1-b5e5-c86491768443
 - alterId: 0
   cipher: auto
-  name: 1|🇸🇬6 |  5.7MB/s
+  name: 2|🇸🇬5 |  5.1MB/s
   port: 17231
   server: 5c460570-sux8g0-tbfsbm-nde6.cm5.p5pv.com
   tls: false
   type: vmess
   uuid: b19e8df4-fba9-11ea-9777-f23c9164ca5d
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 01 | 1x SG
-  password: e6d8af91-fdfd-4eef-9aa1-88a132b3348f
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 02 | 1x SG
-  password: e6d8af91-fdfd-4eef-9aa1-88a132b3348f
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 03 | 1x SG
-  password: e6d8af91-fdfd-4eef-9aa1-88a132b3348f
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: 11|Hysteria 🇸🇬 @v2meowcf
-  password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
-  port: 443
-  server: 146.19.100.138
-  skip-cert-verify: true
-  sni: www.bing.com
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12|🇸🇬 新加坡|@ripaojiedian
+  port: 17231
+  server: fb6241fd-svc1s0-svjq5n-1r78y.cm5.p5pv.com
+  skip-cert-verify: false
+  tfo: false
   tls: false
-  type: hysteria2
-- name: 11|新加坡
-  password: a914681a-8dda-4c98-8468-c313f5539b14
-  port: 2056
-  server: sg3.eyucdn.xyz
-  skip-cert-verify: true
-  sni: sg3.eyucdn.xyz
-  tls: false
-  type: hysteria2
-- name: '11|Hysteria 🇸🇬 @v2meowcf #1'
-  password: wSu8KVl38ul4t9a2eA5foAVaS9MR5U
-  port: 443
-  server: 103.195.189.54
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
+  type: vmess
+  uuid: 1c618e62-fc90-11ee-944b-f23c91cfbbc9
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -160,6 +131,16 @@ proxies:
   server: 13.230.173.71
   tfo: false
   type: ss
+- alterId: 0
+  cipher: auto
+  name: 13|新加坡|@ripaojiedian
+  network: tcp
+  port: '17231'
+  server: fb6241fd-svc1s0-svjq5n-1r78y.cm5.p5pv.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1c618e62-fc90-11ee-944b-f23c91cfbbc9
 - alterId: 0
   cipher: auto
   name: 13|新加坡2|@ripaojiedian
