@@ -1,34 +1,42 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇫🇷1 |  5.3MB/s
-  network: tcp
-  port: 40072
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- allowInsecure: '1'
+  name: 2|🇫🇷1 |  1.3MB/s
+  network: original
+  password: fe966b1a-3db5-442b-b64d-06650137f489
+  port: 43498
+  server: 45.146.232.171
+  skip-cert-verify: true
+  type: trojan
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇫🇷2 |  4.4MB/s
-  network: tcp
-  port: 25800
-  server: 188.212.97.71
+  name: 2|🇫🇷2 |  5.0MB/s
+  network: ws
+  port: 8080
+  server: 104.26.14.85
   servername: ''
   tls: false
   type: vless
   udp: false
-  uuid: 664c8871-e903-4d1a-bd15-f1c5218abf02
+  uuid: 0eb83f3e-7b95-427a-8952-abedfca1869f
+  ws-opts:
+    headers:
+      Host: QW.VU6d72nt9y.zULaiR.orG.
+    path: /?ed=2048
 - client-fingerprint: chrome
-  name: 2,14|CN_speednode_0020
-  password: fe966b1a-3db5-442b-b64d-06650137f489
-  port: 43498
-  server: sla.cn.964e995b760.gogodns.xin
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
+  flow: ''
+  grpc-opts:
+    grpc-service-name: 7594vless
+  mode: gun
+  name: 2|🇫🇷3 |  2.1MB/s
+  network: grpc
+  port: 7594
+  reality-opts:
+    public-key: AZSptdvlWvvmKWEDTY56UsIcnTP8nGCafvPEQOozrxw
+    short-id: 765e8e700426816c
+  server: francemeli.mehrdadsadaf.com
+  servername: dash.cloudflare.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: 2a219df1-a04b-4424-bfd2-cb37aeb10b2c

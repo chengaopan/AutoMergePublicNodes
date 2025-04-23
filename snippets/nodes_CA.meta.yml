@@ -1,30 +1,36 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: 524787e7-dea0-493d-9866-7f87d680dbf3
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦加拿大 01 | 1x CA
-  password: 95b388c5-b649-4f68-a23b-8d62ae06e7fd
+  name: 0|🇨🇦加拿大 01 | 1x CA
+  password: d5d8b9b1-9f46-413d-8fdb-63b0a65365d9
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦 加拿大 01 | 1x CA
+  password: 7a583702-cc8b-4b2e-a4a4-abe10f22186d
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   client-fingerprint: chrome
-  name: 2|🇨🇦1 |  2.0MB/s
+  name: 2|🇨🇦1 |  2.6MB/s
   password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
   port: 45979
   server: 132.145.108.102
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- name: 2|🇨🇦2 |  1.7MB/s
-  password: 21e5860b-79e9-461c-8d13-6a2e3ced75b1
-  port: 34016
-  server: sla.cn.964e995b760.gogodns.xin
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇨🇦2 |  1.4MB/s
+  network: tcp
+  port: 16011
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
