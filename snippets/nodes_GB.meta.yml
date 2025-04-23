@@ -1,5 +1,19 @@
 proxies:
-- name: 0|🇬🇧1 |  1.4MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 36b8018d-bdc1-473f-9160-695bd9178ccf
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 36b8018d-bdc1-473f-9160-695bd9178ccf
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 1|🇬🇧1 |  1.4MB/s
   password: 8f645249-52e1-46c7-8452-eb7bc557eba4
   port: 44397
   server: sla.cn.964e995b760.gogodns.xin
@@ -7,7 +21,7 @@ proxies:
   type: trojan
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧2 |  5.5MB/s
+  name: 1|🇬🇧2 |  5.5MB/s
   network: tcp
   port: 14659
   reality-opts:
@@ -18,7 +32,7 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: aes-256-cfb
-  name: 0|🇬🇧3 |  3.2MB/s
+  name: 1|🇬🇧3 |  3.2MB/s
   obfs: plain
   password: f8f7aCzcPKbsF8p3
   port: 989
@@ -27,7 +41,7 @@ proxies:
   type: ssr
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧4 |  2.4MB/s
+  name: 1|🇬🇧4 |  2.4MB/s
   network: tcp
   port: 14659
   reality-opts:
@@ -39,7 +53,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧5 |  5.7MB/s
+  name: 1|🇬🇧5 |  5.7MB/s
   network: tcp
   port: 65053
   reality-opts:
@@ -51,7 +65,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧6 |  1.6MB/s
+  name: 1|🇬🇧6 |  1.6MB/s
   network: tcp
   port: 32055
   reality-opts:
@@ -62,13 +76,20 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: 6e74da1c-0ec8-4db3-ab25-11f815e9477d
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 2|🇭🇰 香港 01 | 1x HK
+  password: 81cf3117-e545-4c1b-a582-01503a4f56a9
+  port: 36141
+  server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 10|Hysteria 🇬🇧 @v2meowcf
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 81cf3117-e545-4c1b-a582-01503a4f56a9
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -76,7 +97,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 13|GB_speednode_0058
+- name: 14|GB_speednode_0058
   password: '!!str 3828095943467868160'
   port: 443
   server: sharp-bear.dolphin109.quest
@@ -84,7 +105,7 @@ proxies:
   sni: sharp-bear.dolphin109.quest
   type: trojan
   udp: true
-- name: 13|GB_speednode_0059
+- name: 14|GB_speednode_0059
   password: '!!str 3828095943467868160'
   port: 443
   server: 202.78.163.141
@@ -92,7 +113,7 @@ proxies:
   sni: sharp-bear.dolphin109.quest
   type: trojan
   udp: true
-- name: 13|GB_speednode_0060
+- name: 14|GB_speednode_0060
   password: '!!str 3828095943467868160'
   port: 443
   server: handy-sparrow.dolphin109.quest
@@ -100,7 +121,7 @@ proxies:
   sni: handy-sparrow.dolphin109.quest
   type: trojan
   udp: true
-- name: 13|GB_speednode_0061
+- name: 14|GB_speednode_0061
   password: '!!str 3828095943467868160'
   port: 443
   server: mutual-gannet.dolphin109.quest
@@ -108,25 +129,11 @@ proxies:
   sni: mutual-gannet.dolphin109.quest
   type: trojan
   udp: true
-- name: 13|GB_speednode_0062
+- name: 14|GB_speednode_0062
   password: '!!str 3828095943467868160'
   port: 443
   server: 85.234.83.28
   skip-cert-verify: true
   sni: workable-puma.dolphin109.quest
   type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰 香港 01 | 1x HK
-  password: 163a87fe-8bee-4072-9e10-a603742a6bbe
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 163a87fe-8bee-4072-9e10-a603742a6bbe
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
   udp: true
