@@ -1,27 +1,56 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷韩国 01 | 1x KR
-  password: 70d22649-d07b-4df9-94e2-ba2baec467cd
+  password: 8ce4aa03-f3a7-48cb-a54d-bf065683836d
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷韩国 02 | 1x KR
-  password: 70d22649-d07b-4df9-94e2-ba2baec467cd
+  password: 8ce4aa03-f3a7-48cb-a54d-bf065683836d
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- client-fingerprint: ''
-  flow: ''
-  mode: ''
-  name: 1,13|ZA_speednode_0100
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 01 | 1x KR
+  password: b99f870b-8c55-4e8b-a90b-0f362c655817
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 02 | 1x KR
+  password: b99f870b-8c55-4e8b-a90b-0f362c655817
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 2|🇰🇷1 |  1.5MB/s
+  port: 17232
+  server: 33e096fb-sva740-sxnljm-1jr1u.cm5.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
+- alterId: 0
+  cipher: auto
+  name: 2|🇰🇷2 |  1.5MB/s
+  port: 17232
+  server: cd5a3a1e-sv8cg0-tcw58g-1p0be.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+- name: 2,14|ZA_speednode_0101
   network: ws
   port: 443
-  server: 160.123.255.247
+  server: 160.123.255.38
   servername: nn.ylks0033.dpdns.org
-  skip-cert-verify: false
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
@@ -30,16 +59,8 @@ proxies:
     headers:
       Host: nn.ylks0033.dpdns.org
     path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 1|🇰🇷2 |  1.2MB/s
-  port: 17232
-  server: cd5a3a1e-sv8cg0-tcw58g-1p0be.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
 - client-fingerprint: chrome
-  name: 11,12|韩国|@ripaojiedian
+  name: 12,13|韩国|@ripaojiedian
   network: tcp
   password: 8e603038-3713-4c74-9b9c-43ad4cc15650
   port: 46668
@@ -50,7 +71,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇰🇷 韩国2|@ripaojiedian
+  name: 12|🇰🇷 韩国2|@ripaojiedian
   port: 17232
   server: afc8577f-svc1s0-tc67m2-1tjc4.cm5.p5pv.com
   skip-cert-verify: false
@@ -60,7 +81,7 @@ proxies:
   uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 11|🇰🇷 韩国特殊|@ripaojiedian
+  name: 12|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 18.142.242.5
@@ -68,7 +89,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: 12|韩国2|@ripaojiedian
+  name: 13|韩国2|@ripaojiedian
   network: tcp
   port: '17232'
   server: afc8577f-svc1s0-tc67m2-1tjc4.cm5.p5pv.com
@@ -76,7 +97,7 @@ proxies:
   tls: false
   type: vmess
   uuid: fac704ae-0304-11f0-a2ef-f23c91cfbbc9
-- name: 13|KR_speednode_0066
+- name: 14|KR_speednode_0066
   network: ws
   port: 10397
   server: 59.23.155.196
@@ -90,7 +111,7 @@ proxies:
     headers:
       Host: edcca.ambercc.filegear-sg.me
     path: /?ed=2560
-- name: 13|KR_speednode_0067
+- name: 14|KR_speednode_0067
   network: ws
   port: 30025
   server: 221.144.200.91
@@ -104,17 +125,3 @@ proxies:
     headers:
       Host: edcca.ambercc.filegear-sg.me
     path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇰🇷 韩国 01 | 1x KR
-  password: 9f65fc47-1ec1-4950-a728-9ba901bf6bed
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇰🇷 韩国 02 | 1x KR
-  password: 9f65fc47-1ec1-4950-a728-9ba901bf6bed
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
