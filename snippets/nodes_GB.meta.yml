@@ -1,40 +1,44 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 01 | 1x HK
-  password: 44add47f-c526-4350-a441-55fe89b021ff
+  password: e78ee294-9b68-41b5-b84c-ee8bdf0bfddd
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 44add47f-c526-4350-a441-55fe89b021ff
+  password: e78ee294-9b68-41b5-b84c-ee8bdf0bfddd
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: 90661012-199a-497d-b94a-52c726795a1d
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 1de620c7-7247-4d4b-a3a8-1f7095514182
+  password: 90661012-199a-497d-b94a-52c726795a1d
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 2
-  cipher: auto
-  name: 2|🇬🇧1 |  5.2MB/s
-  network: ws
-  port: 23605
-  server: 5.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4fcd5cfc-fad0-3db2-8c56-fe121890bb39
-  ws-opts:
-    headers:
-      Host: 5.mamamajd.site
-    path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧1 |  5.3MB/s
+  network: tcp
+  port: 32055
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 2,14|RO_speednode_0076
   password: '!!str 3828095943467868160'
   port: 443
@@ -44,20 +48,20 @@ proxies:
   type: trojan
   udp: true
 - client-fingerprint: chrome
-  delay: 1670
+  delay: 1739
   flow: xtls-rprx-vision
-  name: 2|🇬🇧3 |  1.7MB/s
+  name: 2|🇬🇧3 |  5.2MB/s
   network: tcp
-  port: 65053
+  port: 35311
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
   tls: true
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇬🇧4 |  4.2MB/s
+- name: 2|🇬🇧4 |  4.5MB/s
   network: ws
   password: 2faaf996-d2b0-440d-8258-81f2b05dd0e4
   port: 443
@@ -69,47 +73,6 @@ proxies:
     headers:
       Host: architects-optimize-rest-dow.trycloudflare.com
     path: /trojan-argo?ed=2560
-- alterId: 2
-  cipher: auto
-  name: 2|🇬🇧5 |  1.3MB/s
-  network: ws
-  port: 23613
-  server: 13.mamamajd.site
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 4fcd5cfc-fad0-3db2-8c56-fe121890bb39
-  ws-opts:
-    headers:
-      Host: 13.mamamajd.site
-    path: /
-- client-fingerprint: chrome
-  delay: 1739
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧6 |  3.9MB/s
-  network: tcp
-  port: 35311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧7 |  5.4MB/s
-  network: tcp
-  port: 32055
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443

@@ -1,66 +1,74 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼台湾 01 | 1x TW
-  password: 44add47f-c526-4350-a441-55fe89b021ff
+  password: e78ee294-9b68-41b5-b84c-ee8bdf0bfddd
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼台湾 02 | 1x TW
-  password: 44add47f-c526-4350-a441-55fe89b021ff
+  password: e78ee294-9b68-41b5-b84c-ee8bdf0bfddd
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼台湾 03 | 1x TW
-  password: 44add47f-c526-4350-a441-55fe89b021ff
+  password: e78ee294-9b68-41b5-b84c-ee8bdf0bfddd
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇹🇼 台湾 01 | 1x TW
-  password: 1de620c7-7247-4d4b-a3a8-1f7095514182
+  password: 90661012-199a-497d-b94a-52c726795a1d
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇹🇼 台湾 02 | 1x TW
-  password: 1de620c7-7247-4d4b-a3a8-1f7095514182
+  password: 90661012-199a-497d-b94a-52c726795a1d
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇹🇼 台湾 03 | 1x TW
-  password: 1de620c7-7247-4d4b-a3a8-1f7095514182
+  password: 90661012-199a-497d-b94a-52c726795a1d
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0007
-  network: tcp
-  port: 15700
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: vip.jddns0202.top
-  servername: www.nvidia.com
-  skip-cert-verify: false
+- name: 2|🇹🇼1 |  3.4MB/s
+  network: ws
+  port: 443
+  server: pranab.ns.cloudflare.com
+  servername: edcca.ambercc.filegear-sg.me
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-128-gcm
-  name: 2|🇹🇼2 |  1.8MB/s
-  password: VMhGp5wEIyCDf90T
-  port: 33368
-  server: shenzhou05.mysynology.net
-  type: ss
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 2|🇹🇼2 |  6.0MB/s
+  network: ws
+  port: 443
+  server: bestcf.030101.xyz
+  servername: edcca.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 2,14|CN_speednode_0015
@@ -75,6 +83,132 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 2|🇹🇼4 |  1.3MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: twmoon1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 2|🇹🇼5 |  5.9MB/s
+  network: ws
+  port: 443
+  server: kip.ns.cloudflare.com
+  servername: edcca.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 2|🇹🇼6 |  1.7MB/s
+  network: ws
+  port: 2096
+  server: 167.68.4.10
+  servername: edcca.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇹🇼7 |  1.5MB/s
+  network: ws
+  port: 443
+  server: 104.16.43.217
+  servername: edcca.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: false
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edcca.ambercc.filegear-sg.me
+    path: ''
+- delay: 723
+  name: 2,14|KR_speednode_0067
+  network: ws
+  port: 30025
+  server: 221.144.200.91
+  servername: edcca.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇹🇼9 |  4.2MB/s
+  network: ws
+  port: 443
+  server: 104.18.72.49
+  servername: edcca.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: false
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edcca.ambercc.filegear-sg.me
+    path: ''
+- name: 2|🇹🇼10 |  1.4MB/s
+  network: ws
+  port: 443
+  server: thaddeus.ns.cloudflare.com
+  servername: edcca.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 2|🇹🇼11 |  2.2MB/s
+  network: ws
+  port: 443
+  server: theo.ns.cloudflare.com
+  servername: edcca.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 2|🇹🇼12 |  1.2MB/s
+  network: ws
+  port: 443
+  server: ignacio.ns.cloudflare.com
+  servername: edcca.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 2,14|CN_speednode_0014
@@ -89,17 +223,17 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0016
-  network: tcp
-  port: 47531
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: gateway.icloud.com
-  skip-cert-verify: false
+- name: 2|🇹🇼14 |  3.3MB/s
+  network: ws
+  port: 443
+  server: duke.ns.cloudflare.com
+  servername: edcca.ambercc.filegear-sg.me
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      host: edcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
