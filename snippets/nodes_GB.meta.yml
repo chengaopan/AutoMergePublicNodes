@@ -1,7 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 70d22649-d07b-4df9-94e2-ba2baec467cd
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 8c8496a9-c9e7-4004-9034-716c249ca388
+  password: 70d22649-d07b-4df9-94e2-ba2baec467cd
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
@@ -13,82 +20,83 @@ proxies:
   port: 14659
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧2 |  5.3MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  delay: 1670
-  flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0023
-  network: tcp
-  port: 65053
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 1|🇬🇧4 |  4.4MB/s
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: grateful-mako.dolphin109.quest
-  skip-cert-verify: true
-  sni: grateful-mako.dolphin109.quest
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧5 |  5.4MB/s
-  network: tcp
-  port: 32055
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
+  servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   delay: 1739
   flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0026
+  name: 1|🇬🇧2 |  5.3MB/s
   network: tcp
   port: 35311
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: shenzhou02.mysynology.net
   servername: www.yahoo.com
-  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 1|🇬🇧3 |  2.6MB/s
+  network: ws
+  password: 2faaf996-d2b0-440d-8258-81f2b05dd0e4
+  port: 443
+  server: ip.sb
+  skip-cert-verify: true
+  sni: architects-optimize-rest-dow.trycloudflare.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: architects-optimize-rest-dow.trycloudflare.com
+    path: /trojan-argo?ed=2560
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇬🇧4 |  1.6MB/s
+  network: tcp
+  port: 47151
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 10|Hysteria 🇬🇧 @v2meowcf
+  password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
+  port: 443
+  server: 178.236.237.84
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: 13|GB_speednode_0059
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: 202.78.163.141
+  skip-cert-verify: true
+  sni: sharp-bear.dolphin109.quest
+  type: trojan
+  udp: true
+- name: 13|GB_speednode_0062
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: 85.234.83.28
+  skip-cert-verify: true
+  sni: workable-puma.dolphin109.quest
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰 香港 01 | 1x HK
-  password: bda983c4-b5d6-41be-bb2e-400db1b034c8
+  name: 14|🇭🇰 香港 01 | 1x HK
+  password: 9f65fc47-1ec1-4950-a728-9ba901bf6bed
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
-  password: bda983c4-b5d6-41be-bb2e-400db1b034c8
+  name: 14|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 9f65fc47-1ec1-4950-a728-9ba901bf6bed
   port: 36271
   server: free.2weradf.xyz
   type: ss

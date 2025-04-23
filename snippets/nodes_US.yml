@@ -1,49 +1,82 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: 8c8496a9-c9e7-4004-9034-716c249ca388
+  password: 70d22649-d07b-4df9-94e2-ba2baec467cd
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 8c8496a9-c9e7-4004-9034-716c249ca388
+  password: 70d22649-d07b-4df9-94e2-ba2baec467cd
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 03 | 1x US Washington
-  password: 8c8496a9-c9e7-4004-9034-716c249ca388
+  password: 70d22649-d07b-4df9-94e2-ba2baec467cd
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- allowInsecure: ''
-  name: 1|🇺🇸3 |  5.7MB/s
-  network: ws
-  password: 5453ae26-250d-4e79-b4ec-016baf806865
+- cipher: aes-256-cfb
+  name: 1|🇺🇸6 |  5.6MB/s
+  obfs: plain
+  password: amazonskr05
   port: 443
-  server: 172.67.212.82
-  skip-cert-verify: false
-  sni: D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA
-  tls: true
-  type: trojan
-  ws-opts:
-    headers:
-      Host: d05f4aa7-92b1-a659-e3b9-695dd2870b3c.131.pp.ua
-    path: /OYzPAeaZdXUq2d6J3gc4aj
-- name: 1|🇺🇸11 |  5.3MB/s
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: magical-lizard.dolphin109.quest
-  skip-cert-verify: true
-  sni: magical-lizard.dolphin109.quest
-  type: trojan
+  protocol: origin
+  server: 50.112.62.208
+  type: ssr
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸15 |  4.8MB/s
+  name: 1|🇺🇸11 |  3.4MB/s
+  network: ws
+  port: 2086
+  raw:
+    add: csgo.com
+    aid: '0'
+    alpn: ''
+    fp: ''
+    host: ustoucjjnid18sj6us.lovebaipiao.com
+    id: 19e3cd78-16ca-4158-98b1-0e3d3669fea4
+    net: ws
+    path: /
+    port: 2086
+    ps: V2CROSS.COM
+    scy: ''
+    sni: ''
+    tls: ''
+    type: ''
+    v: '2'
+  server: csgo.com
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 19e3cd78-16ca-4158-98b1-0e3d3669fea4
+  ws-opts:
+    headers:
+      Host: ustoucjjnid18sj6us.lovebaipiao.com
+    path: /
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 1|🇺🇸14 |  4.8MB/s
+  network: ws
+  port: 2086
+  server: 141.193.213.167
+  servername: ustoucjjnid18sj6us.lovebaipiao.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 19e3cd78-16ca-4158-98b1-0e3d3669fea4
+  ws-opts:
+    headers:
+      HOST: ustoucjjnid18sj6us.lovebaipiao.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸25 |  2.0MB/s
   network: ws
   port: 80
   raw:
@@ -71,39 +104,108 @@ proxies:
     headers:
       Host: 10xcbnm.he2022.filegear-sg.me
     path: /mRHRtQZulPWRIwOavJd
-- name: 1|🇺🇸27 |  4.4MB/s
+- name: 1|🇺🇸26 |  4.9MB/s
   password: '!!str 3828095943467868160'
   port: 443
-  server: 162.216.231.86
+  server: magical-lizard.dolphin109.quest
+  skip-cert-verify: true
+  sni: magical-lizard.dolphin109.quest
+  type: trojan
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 1|🇺🇸29 |  5.6MB/s
+  network: ws
+  port: 2086
+  server: 170.114.45.53
+  servername: ustoucjjnid18sj6us.lovebaipiao.com
+  skip-cert-verify: true
+  type: vmess
+  uuid: 19e3cd78-16ca-4158-98b1-0e3d3669fea4
+  ws-opts:
+    headers:
+      HOST: ustoucjjnid18sj6us.lovebaipiao.com
+    path: /
+- alterId: '0'
+  cipher: auto
+  name: 1|🇺🇸31 |  5.2MB/s
+  network: ws
+  port: '54309'
+  server: nl.ipv4.v2rayflash.top
+  type: vmess
+  uuid: 065211cb-053f-4ada-98f5-5c1cc006fa12
+  ws-opts:
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸33 |  4.7MB/s
+  network: ws
+  port: 443
+  raw:
+    add: 3sdfgvcxxx.938.pp.ua
+    aid: 0
+    alpn: ''
+    fp: ''
+    host: 3sdfgvcxxx.938.pp.ua
+    id: 0212fab5-e93c-4904-b7a8-187fd535f354
+    net: ws
+    path: /P879mtCoHQqaWO67qEaMINZ1
+    port: 443
+    ps: 1|🇺🇸14 |  5.0MB/s
+    scy: auto
+    sni: 3sdfgvcxxx.938.pp.ua
+    tls: tls
+    type: none
+    v: '2'
+  server: 3sdfgvcxxx.938.pp.ua
+  servername: 3sdfgvcxxx.938.pp.ua
+  tls: true
+  type: vmess
+  uuid: 0212fab5-e93c-4904-b7a8-187fd535f354
+  ws-opts:
+    headers:
+      Host: 3sdfgvcxxx.938.pp.ua
+    path: /P879mtCoHQqaWO67qEaMINZ1
+- alterId: '2'
+  cipher: auto
+  name: 1|🇺🇸34 |  5.3MB/s
+  network: ws
+  port: '30808'
+  server: v8.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
+- name: 1|🇺🇸38 |  5.3MB/s
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: main-hound.dolphin109.quest
   skip-cert-verify: true
   sni: main-hound.dolphin109.quest
   type: trojan
 - cipher: chacha20-ietf
-  delay: 1693
-  name: 1|🇺🇸28 |  5.6MB/s
+  name: 1|🇺🇸41 |  2.5MB/s
   password: asd123456
   port: 8388
-  server: 137.175.113.193
+  server: 103.36.91.32
   type: ss
-- name: 1|🇺🇸33 |  5.8MB/s
-  network: ws
-  password: f82fb954-06a1-4f0b-9180-17e07585b61f
+- name: 1|🇺🇸47 |  2.5MB/s
+  password: '!!str 3828095943467868160'
   port: 443
-  server: 104.21.23.162
-  skip-cert-verify: false
-  sni: 6tghjk.131.pp.ua
+  server: main-moose.dolphin109.quest
+  skip-cert-verify: true
+  sni: main-moose.dolphin109.quest
   type: trojan
-  ws-opts:
-    headers:
-      Host: 6tghjk.131.pp.ua
-    path: '%2FYu29UN3Yz8hcnI3SlZor0'
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸35 |  4.0MB/s
+  name: 1|🇺🇸48 |  5.7MB/s
   network: ws
   port: 2086
   raw:
-    add: 170.114.45.51
+    add: 170.114.45.53
     aid: '0'
     alpn: ''
     fp: ''
@@ -118,7 +220,7 @@ proxies:
     tls: ''
     type: ''
     v: '2'
-  server: 170.114.45.51
+  server: 170.114.45.53
   servername: ''
   tls: false
   type: vmess
@@ -127,60 +229,39 @@ proxies:
     headers:
       Host: ustoucjjnid18sj6us.lovebaipiao.com
     path: /
-- cipher: aes-256-cfb
-  name: 1|🇺🇸36 |  2.0MB/s
-  obfs: plain
-  password: amazonskr05
-  port: 443
-  protocol: origin
-  server: 50.112.62.208
-  type: ssr
-- name: 1|🇺🇸40 |  3.2MB/s
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: classic-kangaroo.dolphin109.quest
+- alterId: 0
+  cipher: auto
+  h2-opts: {}
+  http-opts: {}
+  name: 1|🇺🇸49 |  5.5MB/s
+  network: ws
+  port: 2086
+  server: 170.114.45.52
+  servername: ustoucjjnid18sj6us.lovebaipiao.com
   skip-cert-verify: true
-  sni: classic-kangaroo.dolphin109.quest
-  type: trojan
-- name: 1|🇺🇸42 |  4.4MB/s
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: equipped-satyr.dolphin109.quest
+  type: vmess
+  uuid: 19e3cd78-16ca-4158-98b1-0e3d3669fea4
+  ws-opts:
+    headers:
+      HOST: ustoucjjnid18sj6us.lovebaipiao.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸58 |  4.5MB/s
+  network: ws
+  port: 54309
+  server: 31.58.51.127
   skip-cert-verify: true
-  sni: equipped-satyr.dolphin109.quest
-  type: trojan
-- name: 1|🇺🇸46 |  2.0MB/s
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: humble-snail.dolphin109.quest
-  skip-cert-verify: true
-  sni: humble-snail.dolphin109.quest
-  type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 01 | 1x US Los Angeles
-  password: bda983c4-b5d6-41be-bb2e-400db1b034c8
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: bda983c4-b5d6-41be-bb2e-400db1b034c8
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 03 | 1x US Washington
-  password: bda983c4-b5d6-41be-bb2e-400db1b034c8
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+  tls: false
+  type: vmess
+  uuid: 065211cb-053f-4ada-98f5-5c1cc006fa12
+  ws-headers:
+    Host: nl.ipv4.v2rayflash.top
+  ws-path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 12|🇺🇸 美国|@ripaojiedian
+  name: 11|🇺🇸 美国|@ripaojiedian
   port: 44015
   server: 120.198.71.219
   skip-cert-verify: false
@@ -190,11 +271,11 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 12|🇺🇸 美国2|@ripaojiedian
+  name: 11|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202504212352625-mSKdydjLdf.download.microsoft.com
+    host: 202504221857755-wjQtxZzCYu.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -203,7 +284,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 12,13|美国3|@ripaojiedian
+  name: 11,12|美国3|@ripaojiedian
   network: ws
   port: '30807'
   server: v7.heduian.link
@@ -219,7 +300,7 @@ proxies:
     path: /oooo
 - alterId: 0
   cipher: auto
-  name: 13|美国|@ripaojiedian
+  name: 12|美国|@ripaojiedian
   network: tcp
   port: '44015'
   server: 120.198.71.219
@@ -227,3 +308,40 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 13|US_speednode_0094
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: trusty-mayfly.dolphin109.quest
+  skip-cert-verify: true
+  sni: trusty-mayfly.dolphin109.quest
+  type: trojan
+  udp: true
+- name: 13|US_speednode_0096
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: equipped-satyr.dolphin109.quest
+  skip-cert-verify: true
+  sni: equipped-satyr.dolphin109.quest
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 9f65fc47-1ec1-4950-a728-9ba901bf6bed
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 9f65fc47-1ec1-4950-a728-9ba901bf6bed
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸 美国 03 | 1x US Washington
+  password: 9f65fc47-1ec1-4950-a728-9ba901bf6bed
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
