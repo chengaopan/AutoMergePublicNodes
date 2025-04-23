@@ -1,47 +1,26 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 10ddb012-3d5f-40f7-89c4-d68e650ec078
+  password: 54a92ba3-a2f8-4207-b098-fc533a230256
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 10ddb012-3d5f-40f7-89c4-d68e650ec078
+  password: 54a92ba3-a2f8-4207-b098-fc533a230256
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 10ddb012-3d5f-40f7-89c4-d68e650ec078
+  password: 54a92ba3-a2f8-4207-b098-fc533a230256
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 01 | 1x SG
-  password: 612a84bd-ba9f-4405-a351-d7763c5ac3db
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 02 | 1x SG
-  password: 612a84bd-ba9f-4405-a351-d7763c5ac3db
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 03 | 1x SG
-  password: 612a84bd-ba9f-4405-a351-d7763c5ac3db
-  port: 36175
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 2|🇸🇬1 |  1.4MB/s
+- name: 1|🇸🇬1 |  1.5MB/s
   password: '!!str 3828095943467868160'
   port: 443
   server: 103.106.229.111
@@ -50,36 +29,23 @@ proxies:
   tfo: false
   type: trojan
   udp: true
-- name: 2|🇸🇬2 |  1.4MB/s
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: poetic-coral.dolphin109.quest
-  skip-cert-verify: true
-  sni: poetic-coral.dolphin109.quest
-  type: trojan
-- name: 2|🇸🇬3 |  1.8MB/s
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: 103.106.229.240
-  skip-cert-verify: true
-  sni: stable-labrador.dolphin109.quest
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 2|🇸🇬4 |  1.2MB/s
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 1|🇸🇬2 |  6.2MB/s
   network: tcp
-  port: 17231
-  server: fb6241fd-svc1s0-svjq5n-1r78y.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 1c618e62-fc90-11ee-944b-f23c91cfbbc9
-  ws-headers:
-    Host: fb6241fd-svc1s0-svjq5n-1r78y.cm5.p5pv.com
-  ws-path: /
+  port: 56702
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: jp1.interld123456789.com
+  servername: addons.mozilla.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: c46c351c-d15c-4ac9-9fbc-05b9b84214cc
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0019
+  name: 1,13|CN_speednode_0019
   network: tcp
   port: 29877
   reality-opts:
@@ -91,19 +57,13 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇸🇬6 |  5.8MB/s
-  network: tcp
-  port: 10778
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: test123.zlqhdns.top
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 11|Hysteria 🇸🇬 @v2meowcf
+- cipher: aes-256-gcm
+  name: 1|🇸🇬4 |  4.9MB/s
+  password: 9acfc574-acc3-4c2b-ab3b-491d43a6eb83
+  port: 21114
+  server: okanc.node-is.green
+  type: ss
+- name: 10|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
   server: 146.19.100.138
@@ -111,7 +71,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 11|新加坡
+- name: 10|新加坡
   password: a914681a-8dda-4c98-8468-c313f5539b14
   port: 2056
   server: sg3.eyucdn.xyz
@@ -119,7 +79,7 @@ proxies:
   sni: sg3.eyucdn.xyz
   tls: false
   type: hysteria2
-- name: '11|Hysteria 🇸🇬 @v2meowcf #1'
+- name: '10|Hysteria 🇸🇬 @v2meowcf #1'
   password: wSu8KVl38ul4t9a2eA5foAVaS9MR5U
   port: 443
   server: 103.195.189.54
@@ -129,13 +89,13 @@ proxies:
   type: hysteria2
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 12|🇸🇬 狮城特殊|@ripaojiedian
+  name: 11|🇸🇬 狮城特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 43.207.191.66
   tfo: false
   type: ss
-- name: 14|SG_speednode_0077
+- name: 13|SG_speednode_0077
   password: '!!str 3828095943467868160'
   port: 443
   server: stable-labrador.dolphin109.quest
@@ -143,7 +103,7 @@ proxies:
   sni: stable-labrador.dolphin109.quest
   type: trojan
   udp: true
-- name: 14|SG_speednode_0078
+- name: 13|SG_speednode_0078
   password: f7a08c90-1f80-11f0-8f88-1239d0255272
   port: 443
   server: 103.253.24.212
@@ -151,11 +111,32 @@ proxies:
   sni: telewebion.com
   type: trojan
   udp: true
-- name: 14|SG_speednode_0079
+- name: 13|SG_speednode_0079
   password: f7a08c90-1f80-11f0-8f88-1239d0255272
   port: 443
   server: sg1.6n6.net
   skip-cert-verify: true
   sni: telewebion.com
   type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇸🇬 新加坡 01 | 1x SG
+  password: 83cf450a-5b0d-4609-8eea-61923e2d9f7f
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇸🇬 新加坡 02 | 1x SG
+  password: 83cf450a-5b0d-4609-8eea-61923e2d9f7f
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇸🇬 新加坡 03 | 1x SG
+  password: 83cf450a-5b0d-4609-8eea-61923e2d9f7f
+  port: 36175
+  server: free.2weradf.xyz
+  type: ss
   udp: true
