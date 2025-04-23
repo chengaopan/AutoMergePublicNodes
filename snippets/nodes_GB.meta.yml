@@ -1,53 +1,35 @@
 proxies:
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧1 |  1.1MB/s
-  network: tcp
-  port: 47151
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧2 |  3.7MB/s
-  network: tcp
-  port: 32055
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  delay: 1670
-  flow: xtls-rprx-vision
-  name: 0|🇬🇧3 |  2.2MB/s
-  network: tcp
-  port: 65053
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 2aab6ef5-b27b-4109-b174-5f6fc40b4624
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0,12|RO_speednode_0076
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: grateful-mako.dolphin109.quest
-  skip-cert-verify: true
-  sni: grateful-mako.dolphin109.quest
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 2aab6ef5-b27b-4109-b174-5f6fc40b4624
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: b5237eff-b372-4d06-86ad-b379c5782200
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: b5237eff-b372-4d06-86ad-b379c5782200
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 0|🇬🇧5 |  2.6MB/s
+  name: 2|🇬🇧1 |  4.7MB/s
   network: tcp
   port: 49699
   reality-opts:
@@ -57,7 +39,15 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 0|🇬🇧6 |  5.8MB/s
+- name: 2,14|RO_speednode_0076
+  password: '!!str 3828095943467868160'
+  port: 443
+  server: grateful-mako.dolphin109.quest
+  skip-cert-verify: true
+  sni: grateful-mako.dolphin109.quest
+  type: trojan
+  udp: true
+- name: 2|🇬🇧3 |  5.9MB/s
   network: ws
   password: 2faaf996-d2b0-440d-8258-81f2b05dd0e4
   port: 443
@@ -72,7 +62,7 @@ proxies:
 - client-fingerprint: chrome
   delay: 1739
   flow: xtls-rprx-vision
-  name: 0|🇬🇧7 |  5.4MB/s
+  name: 2|🇬🇧4 |  5.8MB/s
   network: tcp
   port: 35311
   reality-opts:
@@ -83,7 +73,21 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 9|Hysteria 🇬🇧 @v2meowcf
+- client-fingerprint: chrome
+  delay: 1670
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧5 |  1.3MB/s
+  network: tcp
+  port: 65053
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -91,41 +95,19 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 12|GB_speednode_0059
+- name: 14|GB_speednode_0058
   password: '!!str 3828095943467868160'
   port: 443
-  server: 202.78.163.141
+  server: sharp-bear.dolphin109.quest
   skip-cert-verify: true
   sni: sharp-bear.dolphin109.quest
   type: trojan
   udp: true
-- name: 12|GB_speednode_0061
-  password: '!!str 3828095943467868160'
-  port: 443
-  server: mutual-gannet.dolphin109.quest
-  skip-cert-verify: true
-  sni: mutual-gannet.dolphin109.quest
-  type: trojan
-  udp: true
-- name: 12|GB_speednode_0062
+- name: 14|GB_speednode_0062
   password: '!!str 3828095943467868160'
   port: 443
   server: 85.234.83.28
   skip-cert-verify: true
   sni: workable-puma.dolphin109.quest
   type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰香港 01 | 1x HK
-  password: a0a0c540-1fa8-4c40-a921-b63f621017d7
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇬🇧英国家宽 01 | 1x UK
-  password: a0a0c540-1fa8-4c40-a921-b63f621017d7
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
   udp: true
