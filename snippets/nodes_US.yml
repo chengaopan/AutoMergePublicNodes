@@ -1,31 +1,10 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: d4647491-02e5-425f-928a-b914adb5ffa8
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: d4647491-02e5-425f-928a-b914adb5ffa8
-  port: 31213
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国 03 | 1x US Washington
-  password: d4647491-02e5-425f-928a-b914adb5ffa8
-  port: 31215
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸2 |  1.9MB/s
+  name: 0|🇺🇸5 |  4.9MB/s
   network: ws
   port: 8443
-  server: 199.34.228.161
+  server: 199.34.228.174
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -34,9 +13,22 @@ proxies:
     headers:
       Host: mass2.890602.xyz
     path: /
+- alterId: 2
+  cipher: auto
+  name: 0|🇺🇸10 |  2.1MB/s
+  network: ws
+  port: 30829
+  server: v29.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸17 |  5.0MB/s
+  name: 0|🇺🇸11 |  4.9MB/s
   network: ws
   port: 443
   server: 2e21cedc-fa8b-4020-8ce0-390e7287d276.890603.pp.ua
@@ -49,34 +41,22 @@ proxies:
     headers:
       Host: 2E21CEDc-fA8B-4020-8Ce0-390e7287D276.890603.Pp.uA
     path: /h7Rcu0y30lhjdVjJ3gc4aj
-- name: 1|🇺🇸20 |  2.6MB/s
-  network: ws
-  password: 5453ae26-250d-4e79-b4ec-016baf806865
-  port: 443
-  server: 104.21.69.41
-  sni: 1SdfghJk.890602.xyz
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 1SdfghJk.890602.xyz
-    path: /OYzPAeaZdXUq2d6J3gc4aj
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸25 |  2.5MB/s
+  name: 0|🇺🇸12 |  5.6MB/s
   network: ws
-  port: 443
-  server: 9uyiopsdfh.iran.pp.ua
-  servername: 9uyiopsdfh.iran.pp.ua
+  port: 8443
+  server: 199.34.228.161
   skip-cert-verify: false
   tls: true
   type: vmess
-  uuid: 906ba92f-ef96-4133-8eee-f33202a5a721
+  uuid: 3a1c628b-806d-461b-c28d-44b3bdff5220
   ws-opts:
     headers:
-      Host: 9uyiopsdfh.iran.pp.ua
-    path: /DAxJddOdTd5pVam9w
+      Host: mass2.890602.xyz
+    path: /
 - ip-version: dual
-  name: 1|🇺🇸26 |  1.6MB/s
+  name: 0|🇺🇸18 |  2.4MB/s
   network: ws
   password: 5453ae26-250d-4e79-b4ec-016baf806865
   port: 443
@@ -89,16 +69,35 @@ proxies:
     headers:
       host: 1sdfghjk.890602.xyz
     path: /OYzPAeaZdXUq2d6J3gc4aj
-- name: 1|🇺🇸33 |  5.9MB/s
-  password: abf931d0-5be1-440c-802f-a66bcb850139
-  port: 34014
-  server: sla.cn.964e995b760.gogodns.xin
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸35 |  5.6MB/s
+  name: 0|🇺🇸26 |  5.7MB/s
+  network: ws
+  port: 443
+  server: 7fa54343-7c0a-45c9.2031.pp.ua
+  servername: 7fa54343-7c0a-45c9.2031.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 15b24b56-d667-4fa8-b548-f3dc942fb461
+  ws-opts:
+    headers:
+      Host: 7fa54343-7c0a-45c9.2031.pp.ua
+    path: /usYhm60UxQ8YJFJxz
+- name: 0|🇺🇸27 |  2.5MB/s
+  network: ws
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
+  port: 443
+  server: 104.21.69.41
+  sni: 1SdfghJk.890602.xyz
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 1SdfghJk.890602.xyz
+    path: /OYzPAeaZdXUq2d6J3gc4aj
+- alterId: 0
+  cipher: auto
+  name: 0|🇺🇸30 |  1.7MB/s
   network: ws
   port: 443
   server: 3sdfgvcxxx.938.pp.ua
@@ -110,30 +109,27 @@ proxies:
     headers:
       Host: 3sdfgvcxxx.938.pp.ua
     path: /P879mtCoHQqaWO67qEaMINZ1
-- alterId: 2
-  cipher: auto
-  h2-opts: {}
-  http-opts: {}
-  name: 1|🇺🇸39 |  2.1MB/s
-  network: ws
-  port: 22641
-  server: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国 01 | 1x US Los Angeles
+  password: 6e74da1c-0ec8-4db3-ab25-11f815e9477d
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-a.tkong.cc
-    path: /
-- client-fingerprint: chrome
-  name: 1|🇺🇸46 |  1.2MB/s
-  password: 9672247e-c003-4464-8bd9-4f16b0e7d032
-  port: 33505
-  server: sla.cn.964e995b760.gogodns.xin
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 6e74da1c-0ec8-4db3-ab25-11f815e9477d
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国 03 | 1x US Washington
+  password: 6e74da1c-0ec8-4db3-ab25-11f815e9477d
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -202,21 +198,21 @@ proxies:
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 14|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 357ce67c-0b36-453a-b63e-ea2b5ac75265
+  password: 163a87fe-8bee-4072-9e10-a603742a6bbe
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 14|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 357ce67c-0b36-453a-b63e-ea2b5ac75265
+  password: 163a87fe-8bee-4072-9e10-a603742a6bbe
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 14|🇺🇸 美国 03 | 1x US Washington
-  password: 357ce67c-0b36-453a-b63e-ea2b5ac75265
+  password: 163a87fe-8bee-4072-9e10-a603742a6bbe
   port: 36215
   server: free.2weradf.xyz
   type: ss
