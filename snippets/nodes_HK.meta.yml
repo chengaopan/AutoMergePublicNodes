@@ -1,35 +1,84 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: cc67f119-6c1c-4e77-831e-9c7031b1ee43
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: cc67f119-6c1c-4e77-831e-9c7031b1ee43
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 02 | 1x HK
-  password: 550ac2f9-f1a2-455c-bdc3-1351f7dbf2a9
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: 28a27173-b654-4c7a-bfb7-c4aeaffb3201
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: 550ac2f9-f1a2-455c-bdc3-1351f7dbf2a9
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: 28a27173-b654-4c7a-bfb7-c4aeaffb3201
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: 637d28fa-a5ce-4c0f-aa8e-23efcbf2e874
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 637d28fa-a5ce-4c0f-aa8e-23efcbf2e874
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 2|🇭🇰1 |  3.7MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: hkre1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: hkre1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇭🇰1 |  4.5MB/s
+  name: 2|🇭🇰2 |  6.1MB/s
+  network: tcp
+  port: 33782
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0002
+  network: tcp
+  port: 45883
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenyang001.dynu.net
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0001
+  network: tcp
+  port: 27631
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇭🇰5 |  4.1MB/s
   network: tcp
   port: 12597
   reality-opts:
@@ -39,37 +88,30 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  delay: 1911
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0006
-  network: tcp
-  port: 31800
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 2|🇭🇰8 |  3.0MB/s
+  name: 2|🇭🇰6 |  2.4MB/s
   network: tcp
-  port: '15229'
-  server: fc4de86a-sv8cg0-sv995i-xz4l.cm.plebai.net
+  port: 15229
+  server: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 8c3ef4c2-980d-11ef-add7-f23c913c8d2b
+  uuid: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
   ws-headers:
-    Host: fc4de86a-sv8cg0-sv995i-xz4l.cm.plebai.net
+    Host: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
   ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 2|🇭🇰7 |  3.9MB/s
+  network: tcp
+  port: '15229'
+  server: fc4de86a-sv8cg0-sv995i-xz4l.cm.plebai.net
+  type: vmess
+  uuid: 8c3ef4c2-980d-11ef-add7-f23c913c8d2b
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇭🇰4 |  1.2MB/s
+  name: 2|🇭🇰8 |  2.1MB/s
   network: tcp
   port: 35853
   reality-opts:
@@ -81,43 +123,31 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇭🇰5 |  2.0MB/s
+  name: 2|🇭🇰9 |  2.1MB/s
   network: tcp
   port: 23657
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
+  server: shenzhou05.mysynology.net
   servername: www.nvidia.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇭🇰6 |  6.1MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: hkre1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: hkre1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 2|🇭🇰7 |  1.2MB/s
-  port: 15229
-  server: 723cdaa4-sv8cg0-tcw58g-1p0be.cm.plebai.net
-  tls: false
-  type: vmess
-  uuid: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
 - client-fingerprint: chrome
-  name: 2,12,13|香港9|@ripaojiedian
+  delay: 1918
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0004
   network: tcp
-  password: 6efc45ce-f96b-401e-8220-633d37ba92ba
-  port: 27103
-  server: 183.240.116.252
+  port: 46716
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.nvidia.com
   skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 11|香港🇭🇰 HY2
   password: e20abb22a245edb0
   port: 8443
@@ -209,6 +239,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- client-fingerprint: chrome
+  name: 12,13|香港9|@ripaojiedian
+  network: tcp
+  password: 6efc45ce-f96b-401e-8220-633d37ba92ba
+  port: 27103
+  server: 183.240.116.252
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - name: 13|香港|@ripaojiedian
   network: ws
   password: a38c9e28-9960-4e31-9f18-ed2495a756aa
