@@ -1,27 +1,71 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 0a72c32b-80d0-4323-87a0-e451d11c80ee
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: eaf69656-f71a-4552-b213-ded4e8c9e046
+  name: 0|🇨🇦 加拿大 01 | 1x CA
+  password: 36cf9c0b-9ea9-4c8e-b408-8d4ecd2fd737
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇨🇦1 |  1.3MB/s
-  network: tcp
-  port: 16011
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.amazon.com
+- name: 1|🇨🇦1 |  1.4MB/s
+  network: ws
+  port: 443
+  server: 160.79.105.72
+  servername: sv.ylka.dpdns.org
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: sv.ylka.dpdns.org
+    path: /?ed=2560
+- name: 1|🇨🇦2 |  1.6MB/s
+  network: ws
+  port: 443
+  server: otto.ns.cloudflare.com
+  servername: sv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: sv.ylka.dpdns.org
+    path: /?ed=2560
+- name: 1|🇨🇦3 |  1.3MB/s
+  network: ws
+  port: 443
+  server: 192.0.54.25
+  servername: sv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: sv.ylka.dpdns.org
+    path: /?ed=2560
+- name: 1|🇨🇦4 |  1.1MB/s
+  network: ws
+  port: 443
+  server: icook.hk
+  servername: sv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: sv.ylka.dpdns.org
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇨🇦加拿大 01 | 1x CA
+  password: 5be4852d-f6d9-4009-805d-999e31153c12
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
