@@ -1,44 +1,44 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: 28a27173-b654-4c7a-bfb7-c4aeaffb3201
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 28a27173-b654-4c7a-bfb7-c4aeaffb3201
-  port: 31213
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国 03 | 1x US Washington
-  password: 28a27173-b654-4c7a-bfb7-c4aeaffb3201
-  port: 31215
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 637d28fa-a5ce-4c0f-aa8e-23efcbf2e874
+  name: 0|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 9e21f727-8a52-4ff6-830d-18ae202febc9
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 637d28fa-a5ce-4c0f-aa8e-23efcbf2e874
+  name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 9e21f727-8a52-4ff6-830d-18ae202febc9
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸 美国 03 | 1x US Washington
-  password: 637d28fa-a5ce-4c0f-aa8e-23efcbf2e874
+  name: 0|🇺🇸 美国 03 | 1x US Washington
+  password: 9e21f727-8a52-4ff6-830d-18ae202febc9
   port: 36215
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国 01 | 1x US Los Angeles
+  password: b4a05f73-86c6-4b20-b89b-5c4d03d47685
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: b4a05f73-86c6-4b20-b89b-5c4d03d47685
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸美国 03 | 1x US Washington
+  password: b4a05f73-86c6-4b20-b89b-5c4d03d47685
+  port: 31215
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: ''
@@ -71,15 +71,17 @@ proxies:
   up: 1000 Mbps
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇺🇸3 |  5.4MB/s
+  name: 2,14|CN_speednode_0032
   network: tcp
   port: 38302
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: vip.jddns0202.top
   servername: www.amazon.com
+  skip-cert-verify: true
   tls: true
   type: vless
+  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: '0'
   cipher: auto
@@ -143,14 +145,13 @@ proxies:
 - client-fingerprint: chrome
   delay: 1518
   flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0034
+  name: 2|🇺🇸9 |  3.7MB/s
   network: tcp
   port: 64654
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: zhee01.dynu.net
   servername: gateway.icloud.com
-  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -381,7 +382,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 14|US_speednode_0052
+- name: 14|US_speednode_0070
+  network: ws
+  port: 443
+  server: 192.200.160.119
+  servername: sv.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: sv.ylka.dpdns.org
+    path: /?ed=2560
+- name: 14|US_speednode_0071
   password: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
   port: 443
   server: c795e23c-sva740-sxnljm-1jr1u.los.gotochinatown.net
@@ -389,17 +404,17 @@ proxies:
   type: http
   udp: true
   username: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 14|US_speednode_0053
-  port: 11590
-  reality-opts:
-    public-key: 0NxhLNLvgD0NHroc2qx1CsXllFTOARjCMjwPPvU-yBs
-    short-id: ba37
-  server: 185.122.166.216
-  servername: yahoo.com
-  skip-cert-verify: false
-  tls: true
+- name: 14|US_speednode_0072
+  network: ws
+  port: 2052
+  server: 14.102.228.75
+  servername: sPeedtest2.sbs.us.vless.sitespeedtest.net
+  skip-cert-verify: true
+  tls: false
   type: vless
   udp: true
-  uuid: d0324125-032e-4f17-b48d-26ae0b6bf081
+  uuid: 6b5080c3-c19d-5401-aa83-c557ccfec5ff
+  ws-opts:
+    headers:
+      Host: sPeedtest2.sbs.us.vless.sitespeedtest.net
+    path: /vless#@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL
