@@ -1,21 +1,66 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: ac451383-11d8-4647-8433-c34983051e85
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: deab0633-e256-40d5-b89a-743e5f328c36
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: deab0633-e256-40d5-b89a-743e5f328c36
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: f2215ae0-2932-4569-9e67-789c94b5e463
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: ac451383-11d8-4647-8433-c34983051e85
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: f2215ae0-2932-4569-9e67-789c94b5e463
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
+- auth: 643f2ce3-2757-470d-b18d-a54d7a7fa679
+  name: 2|🇬🇧1 |  1.3MB/s
+  password: 643f2ce3-2757-470d-b18d-a54d7a7fa679
+  port: 443
+  server: uk-001.xiaoxiaobujidao.xyz
+  skip-cert-verify: true
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧1 |  1.4MB/s
+  name: 2|🇬🇧2 |  5.3MB/s
+  network: tcp
+  port: 49699
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: vip.jddns0202.top
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧3 |  5.7MB/s
+  network: tcp
+  port: 32055
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧4 |  5.5MB/s
   network: tcp
   port: 14659
   reality-opts:
@@ -27,41 +72,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧2 |  3.0MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧3 |  4.1MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: vip.jddns0202.top
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- allowInsecure: ''
-  name: 1|🇬🇧4 |  1.4MB/s
-  network: tcp
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.133.17.93
-  skip-cert-verify: false
-  sni: trojan.burgerip.co.uk
-  tls: true
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧5 |  5.3MB/s
+  name: 2|🇬🇧5 |  4.6MB/s
   network: tcp
   port: 35311
   reality-opts:
@@ -71,13 +82,6 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧英国家宽 01 | 1x UK
-  password: 97673cd2-4d61-4ff0-bc2e-a8bfd06341c1
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443

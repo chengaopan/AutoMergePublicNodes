@@ -1,21 +1,92 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: ac451383-11d8-4647-8433-c34983051e85
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: deab0633-e256-40d5-b89a-743e5f328c36
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: deab0633-e256-40d5-b89a-743e5f328c36
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: f2215ae0-2932-4569-9e67-789c94b5e463
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: ac451383-11d8-4647-8433-c34983051e85
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: f2215ae0-2932-4569-9e67-789c94b5e463
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 2|🇭🇰1 |  4.1MB/s
+  network: ws
+  port: 8082
+  server: 440d9ac3-svc1s0-swy6li-tni2.hkt.plebai.net
+  tls: false
+  type: vmess
+  uuid: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+      (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+  ws-path: /
 - alterId: 0
   cipher: auto
-  name: 1|🇭🇰2 |  4.4MB/s
+  name: 2|🇭🇰4 |  3.6MB/s
+  port: 15229
+  server: 789602b4-sux8g0-t8b7ls-qtx6.cm.plebai.net
+  tls: false
+  type: vmess
+  uuid: b35f5984-a0b4-11ea-82ef-f23c9164ca5d
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰5 |  2.1MB/s
+  port: 15229
+  server: 81137562-sutj40-suyhjm-1hhyy.cm.plebai.net
+  tls: false
+  type: vmess
+  uuid: c594c7ec-8b10-11ef-a2b8-f23c9164ca5d
+- alterId: 2
+  cipher: auto
+  name: 2|🇭🇰6 |  2.6MB/s
+  network: ws
+  port: 8080
+  server: 3edafc9c-svc1s0-t1bnjq-1krtb.hk3.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+    User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36
+      (KHTML, like Gecko) Chrome/129.0.0.0 Safari/537.36
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰9 |  4.5MB/s
+  network: tcp
+  port: 15229
+  server: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
+  ws-headers:
+    Host: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰11 |  1.8MB/s
   network: tcp
   port: 15229
   server: fc4de86a-sv8cg0-sv995i-xz4l.cm.plebai.net
@@ -27,32 +98,24 @@ proxies:
     Host: fc4de86a-sv8cg0-sv995i-xz4l.cm.plebai.net
   ws-path: /
 - alterId: 0
-  cipher: auto
-  name: 1|🇭🇰3 |  2.0MB/s
-  network: tcp
-  port: 15229
-  server: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
+  name: 2|🇭🇰12 |  6.2MB/s
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 121.14.61.174
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
-  ws-headers:
-    Host: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
-  ws-path: /
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港 02 | 1x HK
-  password: 97673cd2-4d61-4ff0-bc2e-a8bfd06341c1
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
+  sni: hk-13-568.flztjc.net
+  tls: true
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港家宽 03 | 1x HK
-  password: 97673cd2-4d61-4ff0-bc2e-a8bfd06341c1
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+- client-fingerprint: chrome
+  name: 2,12,13|香港4|@ripaojiedian
+  network: tcp
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
+  skip-cert-verify: false
+  sni: hk-13-568.flztjc.net
+  type: trojan
 - client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
   network: ws
@@ -82,15 +145,6 @@ proxies:
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 12,13|香港4|@ripaojiedian
-  network: tcp
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: dozo01.flztjc.top
-  skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
-  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
