@@ -1,65 +1,62 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: 00c5d834-6dac-48a8-bffa-19495636eb94
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 00c5d834-6dac-48a8-bffa-19495636eb94
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 02 | 1x HK
-  password: b571303b-d1ed-458b-aa5d-f43514da3995
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: 91494495-fd28-4452-9236-2d7be118229e
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: b571303b-d1ed-458b-aa5d-f43514da3995
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: 91494495-fd28-4452-9236-2d7be118229e
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: '0'
   cipher: auto
-  name: 2|🇭🇰2 |  2.6MB/s
+  name: 1|🇭🇰8 |  3.0MB/s
   network: tcp
   port: '15229'
   server: fc4de86a-sv8cg0-sv995i-xz4l.cm.plebai.net
-  type: vmess
-  uuid: 8c3ef4c2-980d-11ef-add7-f23c913c8d2b
-- alterId: '0'
-  cipher: auto
-  name: 2|🇭🇰3 |  1.1MB/s
-  network: tcp
-  port: '15229'
-  server: f00627fb-sva740-sv995i-xz4l.cm.plebai.net
-  type: vmess
-  uuid: 8c3ef4c2-980d-11ef-add7-f23c913c8d2b
-- client-fingerprint: chrome
-  name: 2,12,13,14|CN_speednode_0028
-  network: tcp
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: dozo01.flztjc.top
-  skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
-  type: trojan
-  udp: true
-- name: 2,14|CN_speednode_0030
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 121.14.61.174
   skip-cert-verify: true
-  sni: hk-13-568.flztjc.net
+  tls: false
+  type: vmess
+  uuid: 8c3ef4c2-980d-11ef-add7-f23c913c8d2b
+  ws-headers:
+    Host: fc4de86a-sv8cg0-sv995i-xz4l.cm.plebai.net
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 1|🇭🇰7 |  1.2MB/s
+  port: 15229
+  server: 723cdaa4-sv8cg0-tcw58g-1p0be.cm.plebai.net
+  tls: false
+  type: vmess
+  uuid: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+- client-fingerprint: chrome
+  name: 1,12,13|香港9|@ripaojiedian
+  network: tcp
+  password: 6efc45ce-f96b-401e-8220-633d37ba92ba
+  port: 27103
+  server: 183.240.116.252
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰 香港 02 | 1x HK
+  password: 34fc9c35-7436-4b73-a859-3566fdc73f62
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 34fc9c35-7436-4b73-a859-3566fdc73f62
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
   udp: true
 - client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
@@ -90,6 +87,16 @@ proxies:
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 12,13,14|CN_speednode_0028
+  network: tcp
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
+  skip-cert-verify: false
+  sni: hk-13-568.flztjc.net
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -134,15 +141,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- client-fingerprint: chrome
-  name: 12,13|香港9|@ripaojiedian
-  network: tcp
-  password: 6efc45ce-f96b-401e-8220-633d37ba92ba
-  port: 27103
-  server: 183.240.116.252
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
 - name: 13|香港|@ripaojiedian
   network: ws
   password: a38c9e28-9960-4e31-9f18-ed2495a756aa
