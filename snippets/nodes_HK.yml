@@ -1,34 +1,50 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 02 | 1x HK
-  password: 783714a7-c48d-40af-8938-bcec7718024a
+  password: 37c3a949-8993-4d75-9fa6-f82b9b5ea9ca
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: 783714a7-c48d-40af-8938-bcec7718024a
+  password: 37c3a949-8993-4d75-9fa6-f82b9b5ea9ca
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 1|🇭🇰1 |  1.3MB/s
-  password: VMhGp5wEIyCDf90T
-  port: 42303
-  server: csuzhou01.1cooldns.com
-  sni: hk06.run.place
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: e2ecc310-d55f-45bc-9061-8d8b48aa69b9
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: e2ecc310-d55f-45bc-9061-8d8b48aa69b9
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 1|🇭🇰2 |  1.6MB/s
+  name: 2|🇭🇰1 |  1.9MB/s
   port: 15229
-  server: 723cdaa4-sv8cg0-tcw58g-1p0be.cm.plebai.net
+  server: 2130c4e3-surog0-szxfsm-v3c2.cm.plebai.net
   tls: false
   type: vmess
-  uuid: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
+  uuid: 5f091cbe-fb34-11ea-9777-f23c9164ca5d
+- name: 2,14|CN_speednode_0030
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 121.14.61.174
+  skip-cert-verify: true
+  sni: hk-13-568.flztjc.net
+  type: trojan
+  udp: true
 - client-fingerprint: chrome
-  name: 1,12,13,14|CN_speednode_0046
+  name: 2,12,13,14|CN_speednode_0028
   network: tcp
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
@@ -39,38 +55,17 @@ proxies:
   udp: true
 - alterId: 0
   cipher: auto
-  name: 1|🇭🇰8 |  4.4MB/s
+  name: 2|🇭🇰12 |  2.1MB/s
   network: tcp
   port: 15229
-  raw:
-    add: f00627fb-sva740-sv995i-xz4l.cm.plebai.net
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: f00627fb-sva740-sv995i-xz4l.cm.plebai.net
-    id: 8c3ef4c2-980d-11ef-add7-f23c913c8d2b
-    net: tcp
-    path: /
-    port: '15229'
-    ps: null
-    scy: ''
-    sni: ''
-    tls: ''
-    type: none
-    v: '2'
-  server: f00627fb-sva740-sv995i-xz4l.cm.plebai.net
-  servername: ''
+  server: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
+  skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: 8c3ef4c2-980d-11ef-add7-f23c913c8d2b
-- alterId: 0
-  cipher: auto
-  name: 1|🇭🇰9 |  6.4MB/s
-  port: 15229
-  server: 789602b4-sux8g0-t8b7ls-qtx6.cm.plebai.net
-  tls: false
-  type: vmess
-  uuid: b35f5984-a0b4-11ea-82ef-f23c9164ca5d
+  uuid: 4b9ca118-7fab-11eb-bd3a-f23c9164ca5d
+  ws-headers:
+    Host: 10fd33f4-sv4n40-tcq5zn-19qpt.cm.plebai.net
+  ws-path: /
 - client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
   network: ws
@@ -84,15 +79,6 @@ proxies:
     headers:
       Host: vt-bana2-cn-11.ghpgwqswodgzv.com
     path: /dl_media
-- client-fingerprint: chrome
-  name: 12,13|香港2|@ripaojiedian
-  network: tcp
-  password: 6eea9cf6-ba81-4a78-90d9-19e13f53b98c
-  port: 27103
-  server: 183.240.116.252
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇭🇰 香港3|@ripaojiedian
@@ -105,7 +91,7 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 50101
+  port: 53925
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
@@ -153,14 +139,15 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 12|🇭🇰 香港9|@ripaojiedian
-  password: 05d0bad8-6f0c-44b9-ac62-2f672ef55cbe
-  port: 11111
-  server: two.taki.wtf
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: 12,13|香港9|@ripaojiedian
+  network: tcp
+  password: 6efc45ce-f96b-401e-8220-633d37ba92ba
+  port: 27103
+  server: 183.240.116.252
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - name: 13|香港|@ripaojiedian
   network: ws
   password: a38c9e28-9960-4e31-9f18-ed2495a756aa
@@ -222,11 +209,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 888ce5e9-6e3a-4b5c-bcb7-ce1125c02d79
-- name: 14|HK_speednode_0063
-  password: 4d73fa95-c2ab-4be8-8938-dcb160a033e4
-  port: 10465
-  server: 45.146.232.173
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true

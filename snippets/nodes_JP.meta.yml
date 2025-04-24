@@ -1,97 +1,62 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 01 | 1x JP
-  password: 783714a7-c48d-40af-8938-bcec7718024a
+  password: 37c3a949-8993-4d75-9fa6-f82b9b5ea9ca
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 02 | 1x JP
-  password: 783714a7-c48d-40af-8938-bcec7718024a
+  password: 37c3a949-8993-4d75-9fa6-f82b9b5ea9ca
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 03 | 1x JP
-  password: 783714a7-c48d-40af-8938-bcec7718024a
+  password: 37c3a949-8993-4d75-9fa6-f82b9b5ea9ca
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇯🇵 日本 01 | 1x JP
+  password: e2ecc310-d55f-45bc-9061-8d8b48aa69b9
+  port: 36111
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇯🇵 日本 02 | 1x JP
+  password: e2ecc310-d55f-45bc-9061-8d8b48aa69b9
+  port: 36113
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇯🇵 日本 03 | 1x JP
+  password: e2ecc310-d55f-45bc-9061-8d8b48aa69b9
+  port: 36115
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 1|🇯🇵1 |  6.0MB/s
-  port: 4151
-  server: 3e5f4230-submo0-su9w3p-4mce.c.volczijie.com
-  tls: false
-  type: vmess
-  uuid: 06c625ea-5902-11ee-9e87-f23c9313b177
-- alterId: 0
-  cipher: auto
-  name: 1|🇯🇵2 |  6.1MB/s
+  name: 2|🇯🇵1 |  6.2MB/s
   network: tcp
   port: 17233
-  server: 9e6c9676-sv6hs0-sv7acf-1qw0q.cm5.p5pv.com
+  server: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
   skip-cert-verify: true
   tls: false
   type: vmess
-  uuid: d4fe3d0c-9043-11ef-8dc4-f23c91cfbbc9
+  uuid: 5acc7a7c-d7ea-11eb-8673-f23c9164ca5d
   ws-headers:
-    Host: 9e6c9676-sv6hs0-sv7acf-1qw0q.cm5.p5pv.com
+    Host: 8582ab4a-svc1s0-szegoe-12hj8.cm5.p5pv.com
   ws-path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇯🇵3 |  5.8MB/s
-  network: tcp
-  port: 35659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇯🇵4 |  1.4MB/s
-  network: tcp
-  port: 14548
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: vip.jddns0202.top
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 1,14|JP_speednode_0065
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jp104-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: jp104-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  udp: true
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0013
-  network: tcp
-  port: 13989
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: cos90-new2.dynu.net
-  servername: gateway.icloud.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1,14|CN_speednode_0025
+  name: 2,14|CN_speednode_0040
   network: tcp
   port: 25768
   reality-opts:
@@ -103,14 +68,80 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 2,12|🇸🇬 狮城特殊|@ripaojiedian
+  password: amazonskr05
+  port: 443
+  server: 43.207.139.84
+  tfo: false
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇯🇵8 |  6.1MB/s
+  name: 2|🇯🇵4 |  1.5MB/s
+  network: tcp
+  port: 17278
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 2,14|JP_speednode_0045
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: jp104-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: jp104-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇯🇵6 |  5.9MB/s
   network: tcp
   port: 48121
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
   server: beiyong.dynuddns.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇯🇵7 |  7.8MB/s
+  network: tcp
+  port: 16497
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇯🇵8 |  4.5MB/s
+  network: tcp
+  port: 35659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou05.mysynology.net
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇯🇵9 |  3.2MB/s
+  network: tcp
+  port: 14548
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: vip.jddns0202.top
   servername: www.nvidia.com
   tls: true
   type: vless
@@ -129,7 +160,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202504221857755-wjQtxZzCYu.download.microsoft.com
+    host: 202504231516596-2ovXmdP1DN.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -147,7 +178,7 @@ proxies:
     path: /plxbuqyt
     skip-cert-verify: false
     tls: true
-  port: 55958
+  port: 32747
   server: jp06v1.xmsj.red
   tfo: false
   type: ss
@@ -184,7 +215,7 @@ proxies:
   name: 12|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 35.85.52.8
+  server: 52.194.185.159
   tfo: false
   type: ss
 - alterId: 64
