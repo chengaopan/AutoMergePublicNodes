@@ -1,48 +1,53 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼 台湾 01 | 1x TW
-  password: 8ff5af06-d45b-4f16-8395-c15674464f7b
+  password: acb9648c-4b2a-4f15-8304-a8c3bfc1dcc2
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼 台湾 02 | 1x TW
-  password: 8ff5af06-d45b-4f16-8395-c15674464f7b
+  password: acb9648c-4b2a-4f15-8304-a8c3bfc1dcc2
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼 台湾 03 | 1x TW
-  password: 8ff5af06-d45b-4f16-8395-c15674464f7b
+  password: acb9648c-4b2a-4f15-8304-a8c3bfc1dcc2
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 01 | 1x TW
-  password: db20dae0-8f06-4c36-a02b-e08cf1f34561
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇹🇼1 |  2.0MB/s
+  network: tcp
+  port: 13263
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1,14|CN_speednode_0010
+  network: tcp
+  port: 47531
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: bsuqian01.dynu.net
+  servername: gateway.icloud.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 02 | 1x TW
-  password: db20dae0-8f06-4c36-a02b-e08cf1f34561
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 03 | 1x TW
-  password: db20dae0-8f06-4c36-a02b-e08cf1f34561
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - allowInsecure: ''
-  name: 2|🇹🇼1 |  5.9MB/s
+  name: 1|🇹🇼3 |  4.8MB/s
   network: ws
   password: Aimer
   port: 8443
@@ -56,60 +61,18 @@ proxies:
       Host: epcca.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇹🇼2 |  3.9MB/s
-  network: tcp
-  port: 24050
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: www.yahoo.com
+  name: 1|🇹🇼4 |  1.8MB/s
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 1443
+  server: twmoon1-cdn-route.couldflare-cdn.com
+  skip-cert-verify: false
+  sni: twmoon1-cdn-route.couldflare-cdn.com
   tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  type: http
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇹🇼3 |  3.0MB/s
-  network: tcp
-  port: 15842
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇹🇼4 |  4.5MB/s
-  network: ws
-  port: 443
-  server: 203.9.150.104
-  servername: edccs.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccs.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼5 |  4.8MB/s
-  network: ws
-  port: 2087
-  server: 209.94.90.87
-  servername: edccs.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccs.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0013
+  name: 1,14|CN_speednode_0013
   network: tcp
   port: 12477
   reality-opts:
@@ -121,52 +84,41 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-cfb
-  name: 2|🇹🇼7 |  1.2MB/s
-  password: qwerREWQ@@
-  port: 64759
-  server: 185.189.160.98
+- name: 1|🇹🇼6 |  4.7MB/s
+  network: ws
+  port: 12350
+  server: 112.184.56.73
+  servername: edccs.aimercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccs.aimercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇹🇼台湾 01 | 1x TW
+  password: 99906b76-b0ba-48e7-8bba-c42ce40bf991
+  port: 31241
+  server: free.2apzhfa.xyz
   type: ss
-- name: 2|🇹🇼8 |  3.8MB/s
-  network: ws
-  port: 45888
-  server: 141.11.86.94
-  servername: edccs.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccs.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼9 |  4.4MB/s
-  network: ws
-  port: 8443
-  server: 92.243.74.239
-  servername: edccs.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇹🇼台湾 02 | 1x TW
+  password: 99906b76-b0ba-48e7-8bba-c42ce40bf991
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      host: edccs.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇹🇼10 |  6.3MB/s
-  network: tcp
-  port: 13263
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: zhee01.dynu.net
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇹🇼台湾 03 | 1x TW
+  password: 99906b76-b0ba-48e7-8bba-c42ce40bf991
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   name: 12,13|台湾|@ripaojiedian
   network: tcp
