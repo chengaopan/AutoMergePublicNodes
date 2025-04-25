@@ -1,37 +1,35 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 01 | 1x KR
-  password: c2eaac66-6e7c-4e6a-9091-12c17e06ad1e
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 02 | 1x KR
-  password: c2eaac66-6e7c-4e6a-9091-12c17e06ad1e
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 01 | 1x KR
-  password: 6e0e2fee-0225-4e54-92f4-d4d2846b7d82
+  name: 0|🇰🇷 韩国 01 | 1x KR
+  password: 5ada8e85-8cf5-40ca-aa13-9990840dd47c
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 02 | 1x KR
-  password: 6e0e2fee-0225-4e54-92f4-d4d2846b7d82
+  name: 0|🇰🇷 韩国 02 | 1x KR
+  password: 5ada8e85-8cf5-40ca-aa13-9990840dd47c
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: 0
+- cipher: aes-256-cfb
+  name: 1|🇰🇷1 |  5.8MB/s
+  password: qwerREWQ@@
+  port: 58487
+  server: 221.150.109.90
+  type: ss
+- cipher: aes-256-cfb
+  name: 1|🇰🇷2 |  6.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.180.245.153
+  type: ss
+- alterId: '0'
   cipher: auto
-  name: 2|🇰🇷1 |  3.1MB/s
+  name: 1|🇰🇷11 |  2.0MB/s
   network: tcp
-  port: 17232
+  port: '17232'
   server: 33e096fb-sva740-sxnljm-1jr1u.cm5.p5pv.com
   skip-cert-verify: true
   tls: false
@@ -40,21 +38,50 @@ proxies:
   ws-headers:
     Host: 33e096fb-sva740-sxnljm-1jr1u.cm5.p5pv.com
   ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 1|🇰🇷4 |  4.9MB/s
+  network: tcp
+  port: 17232
+  server: 9c9e3181-svc1s0-t28b6o-ef48.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: 1|🇰🇷5 |  5.7MB/s
+  port: 17232
+  server: cd5a3a1e-sv8cg0-tcw58g-1p0be.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
 - cipher: aes-256-cfb
-  name: 2|🇰🇷2 |  1.3MB/s
+  client-fingerprint: chrome
+  name: 1|🇰🇷6 |  2.2MB/s
   password: qwerREWQ@@
-  port: 58487
-  server: 221.150.109.90
+  port: 1641
+  server: p239.panda004.net
+  tfo: true
   type: ss
+  udp: true
 - cipher: aes-256-cfb
-  name: 2|🇰🇷3 |  2.1MB/s
+  client-fingerprint: chrome
+  name: 1|🇰🇷7 |  4.7MB/s
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  tfo: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 1|🇰🇷9 |  5.1MB/s
   password: amazonskr05
   port: 443
-  server: 15.165.74.90
+  server: 3.38.99.70
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 2|🇰🇷4 |  1.1MB/s
+  name: 1|🇰🇷10 |  5.6MB/s
   password: qwerREWQ@@
   port: 15098
   server: p222.panda001.net
@@ -62,41 +89,56 @@ proxies:
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 2|🇰🇷8 |  3.4MB/s
+  name: 1|🇰🇷12 |  4.4MB/s
   password: qwerREWQ@@
   port: 8772
   server: 222.112.15.141
   type: ss
 - cipher: aes-256-cfb
-  name: 2|🇰🇷9 |  1.2MB/s
+  client-fingerprint: chrome
+  name: 1|🇰🇷13 |  5.0MB/s
   password: qwerREWQ@@
-  port: 8772
-  server: p235.panda004.net
+  port: 59347
+  server: p238.panda004.net
   tfo: true
   type: ss
   udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇰🇷10 |  1.8MB/s
-  port: 17232
-  server: cd5a3a1e-sv8cg0-tcw58g-1p0be.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 55cce5a4-56b7-11ee-af82-f23c9164ca5d
-- client-fingerprint: chrome
-  name: 12,13|韩国|@ripaojiedian
-  network: tcp
-  password: 74fa3b6c-e333-49f4-ab15-9549fc53cf42
-  port: 46668
-  server: sla.cn.964e995b760.gogodns.xin
+  client-fingerprint: chrome
+  name: 11,12|韩国|@ripaojiedian
+  network: ws
+  port: '443'
+  server: cg1c15.waimaoglobaldirect.cc
+  servername: cg1c15.waimaoglobaldirect.cc
   skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 07d85fd8-fc9a-4484-9bcf-a72921c87e82
+  ws-opts:
+    headers:
+      Host: cg1c15.waimaoglobaldirect.cc
+    path: /api/v1/graphql
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 12|🇰🇷 韩国特殊|@ripaojiedian
+  name: 11|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 54.180.243.85
+  server: 13.231.81.63
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇰🇷韩国 01 | 1x KR
+  password: 273a40f7-073d-4c0a-ae17-7fb165b8dafc
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇰🇷韩国 02 | 1x KR
+  password: 273a40f7-073d-4c0a-ae17-7fb165b8dafc
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true

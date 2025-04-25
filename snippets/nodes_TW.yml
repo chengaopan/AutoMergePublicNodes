@@ -1,53 +1,39 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 01 | 1x TW
-  password: c2eaac66-6e7c-4e6a-9091-12c17e06ad1e
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 02 | 1x TW
-  password: c2eaac66-6e7c-4e6a-9091-12c17e06ad1e
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 03 | 1x TW
-  password: c2eaac66-6e7c-4e6a-9091-12c17e06ad1e
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼 台湾 01 | 1x TW
-  password: 6e0e2fee-0225-4e54-92f4-d4d2846b7d82
+  name: 0|🇹🇼 台湾 01 | 1x TW
+  password: 5ada8e85-8cf5-40ca-aa13-9990840dd47c
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼 台湾 02 | 1x TW
-  password: 6e0e2fee-0225-4e54-92f4-d4d2846b7d82
+  name: 0|🇹🇼 台湾 02 | 1x TW
+  password: 5ada8e85-8cf5-40ca-aa13-9990840dd47c
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼 台湾 03 | 1x TW
-  password: 6e0e2fee-0225-4e54-92f4-d4d2846b7d82
+  name: 0|🇹🇼 台湾 03 | 1x TW
+  password: 5ada8e85-8cf5-40ca-aa13-9990840dd47c
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 2|🇹🇼2 |  1.1MB/s
-  password: qwerREWQ@@
-  port: 64759
-  server: 185.189.160.98
-  type: ss
-- name: 2|🇹🇼7 |  1.3MB/s
+- name: 1|🇹🇼7 |  3.3MB/s
+  network: ws
+  password: Aimer
+  port: 443
+  server: damien.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 1|🇹🇼12 |  1.5MB/s
   network: ws
   password: Aimer
   port: 2083
@@ -60,3 +46,33 @@ proxies:
     headers:
       host: epcca.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: chrome
+  name: 11,12|台湾|@ripaojiedian
+  network: tcp
+  password: ff832dd3-18a9-441f-bae0-24e8b98dc96b
+  port: 27201
+  server: sla.cn.964e995b760.gogodns.xin
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇹🇼台湾 01 | 1x TW
+  password: 273a40f7-073d-4c0a-ae17-7fb165b8dafc
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇹🇼台湾 02 | 1x TW
+  password: 273a40f7-073d-4c0a-ae17-7fb165b8dafc
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇹🇼台湾 03 | 1x TW
+  password: 273a40f7-073d-4c0a-ae17-7fb165b8dafc
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
