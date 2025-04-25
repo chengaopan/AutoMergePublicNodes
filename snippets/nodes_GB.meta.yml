@@ -1,40 +1,22 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 1442c6e9-3c62-4048-99a5-c2889cce81c9
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
+- alterId: 2
+  cipher: auto
+  name: 0|🇬🇧1 |  4.8MB/s
+  network: ws
+  port: 23613
+  server: 13.mamamajd.site
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 01 | 1x HK
-  password: 0e138c6a-3d9a-4463-95ab-3f709dc7bab6
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 0e138c6a-3d9a-4463-95ab-3f709dc7bab6
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+  uuid: da80ce7a-5657-3901-944c-ab566995723b
+  ws-opts:
+    headers:
+      Host: 13.mamamajd.site
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧1 |  1.7MB/s
-  network: tcp
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧2 |  5.4MB/s
+  name: 0|🇬🇧2 |  4.8MB/s
   network: tcp
   port: 35311
   reality-opts:
@@ -45,46 +27,24 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧3 |  1.8MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
+  flow: ''
+  mode: ''
+  name: 0|🇬🇧3 |  2.3MB/s
+  network: ws
+  port: 2096
+  server: whatismyipaddress.com
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s29.elitemizban.ir
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0048
-  network: tcp
-  port: 65053
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧5 |  1.6MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: vip.jddns0202.top
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: false
+  uuid: 3bbd3c03-789f-4de6-a89a-61e2eb4f514d
+  ws-opts:
+    headers:
+      Host: wwwspeedtestnetwhiteberinsistomd6625996s29.elitemizban.ir
+    path: ''
 - flow: ''
   mode: ''
-  name: 2|🇬🇧6 |  5.2MB/s
+  name: 0|🇬🇧4 |  5.6MB/s
   network: ws
   port: 2096
   server: whatismyipaddress.com
@@ -97,7 +57,19 @@ proxies:
     headers:
       Host: wwwspeedtestnetwhiteberinsistomd6625996s30.elitemizban.ir
     path: ''
-- name: 11|Hysteria 🇬🇧 @v2meowcf
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧5 |  3.9MB/s
+  network: tcp
+  port: 49699
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: vip.jddns0202.top
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 9|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -107,7 +79,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 14|GB_speednode_0058
+  name: 12|GB_speednode_0058
   port: 55799
   reality-opts:
     public-key: LBvEFKpH7REwityPTJqYPhEJ7MaIqcuIRL01VPzcpAs
@@ -119,3 +91,31 @@ proxies:
   type: vless
   udp: true
   uuid: 43589def-fa09-47e3-b44e-7f6e069f470d
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇭🇰 香港 01 | 1x HK
+  password: 7b6bcd90-a1c3-45ba-bc9a-ec07ba4b5b5d
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 13|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 7b6bcd90-a1c3-45ba-bc9a-ec07ba4b5b5d
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇭🇰香港 01 | 1x HK
+  password: ebedb270-257a-4d5d-8984-6642c83c12ca
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇬🇧英国家宽 01 | 1x UK
+  password: ebedb270-257a-4d5d-8984-6642c83c12ca
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
