@@ -1,21 +1,37 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: ea9c2379-0257-4dda-9f40-561ac5a50b82
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: ea9c2379-0257-4dda-9f40-561ac5a50b82
+  password: 5b2421eb-a286-45c8-8c49-4a651e4c3b9e
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: cf9887b8-7a98-4cf5-986f-ab0b323028fa
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 2|🇬🇧1 |  5.8MB/s
+  network: ws
+  port: 2096
+  server: whatismyipaddress.com
+  servername: wwwspeedtestnetwhiteberinsistomd6625996s26.elitemizban.ir
+  tls: true
+  type: vless
+  udp: false
+  uuid: 3bbd3c03-789f-4de6-a89a-61e2eb4f514d
+  ws-opts:
+    headers:
+      Host: wwwspeedtestnetwhiteberinsistomd6625996s26.elitemizban.ir
+    path: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧1 |  1.4MB/s
+  name: 2|🇬🇧2 |  2.7MB/s
   network: tcp
   port: 35311
   reality-opts:
@@ -27,23 +43,19 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧2 |  1.2MB/s
+  name: 2,14|CN_speednode_0048
   network: tcp
-  port: 49699
+  port: 65053
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: vip.jddns0202.top
+  server: beiyong.dynuddns.net
   servername: www.amazon.com
+  skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-cfb
-  name: 1|🇬🇧3 |  2.3MB/s
-  password: f8f7aCzcPKbsF8p3
-  port: 989
-  server: 62.100.205.48
-  type: ss
-- name: 10|Hysteria 🇬🇧 @v2meowcf
+- name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -53,7 +65,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 13|GB_speednode_0058
+  name: 14|GB_speednode_0058
   port: 55799
   reality-opts:
     public-key: LBvEFKpH7REwityPTJqYPhEJ7MaIqcuIRL01VPzcpAs
@@ -65,10 +77,3 @@ proxies:
   type: vless
   udp: true
   uuid: 43589def-fa09-47e3-b44e-7f6e069f470d
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 9a5cbbe6-1e31-42f1-8683-ed787fefb4be
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
