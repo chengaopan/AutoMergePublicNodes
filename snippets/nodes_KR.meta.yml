@@ -1,34 +1,21 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 0|🇰🇷1 |  5.8MB/s
-  password: qwerREWQ@@
-  port: 8772
-  server: 222.112.15.141
-  type: ss
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 0|🇰🇷2 |  4.9MB/s
-  password: qwerREWQ@@
-  port: 8772
-  server: p235.panda004.net
-  tfo: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇰🇷韩国 01 | 1x KR
+  password: d7fae962-3473-4793-9039-dac75d05e7dd
+  port: 31311
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 0|🇰🇷3 |  5.8MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.34.133.66
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇰🇷韩国 02 | 1x KR
+  password: d7fae962-3473-4793-9039-dac75d05e7dd
+  port: 31313
+  server: free.2apzhfa.xyz
   type: ss
-- cipher: aes-256-cfb
-  name: 0|🇰🇷4 |  5.3MB/s
-  password: qwerREWQ@@
-  port: 58487
-  server: 221.150.109.90
-  type: ss
+  udp: true
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 0|🇰🇷5 |  4.1MB/s
+  name: 1|🇰🇷1 |  5.6MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -39,86 +26,58 @@ proxies:
   tls: true
   type: vless
   uuid: b543c066-2189-4aa4-8afb-445ac8ee28d4
-- client-fingerprint: randomized
-  flow: ''
-  mode: ''
-  name: 0|🇰🇷6 |  2.5MB/s
-  network: ws
-  port: 443
-  server: 104.17.15.166
-  servername: zYzzzOAo.pUtATa.eu.oRG
-  tls: true
-  type: vless
-  udp: false
-  uuid: 103104c5-a3f5-4c48-8d8f-a72a56959799
-  ws-opts:
-    headers:
-      Host: zyzzzoao.putata.eu.org
-    path: /tbSRLeOuwtLBToSL?ed=2560
-- auth: b543c066-2189-4aa4-8afb-445ac8ee28d4
-  name: 0|🇰🇷7 |  4.4MB/s
-  password: b543c066-2189-4aa4-8afb-445ac8ee28d4
-  port: 35000
-  server: 146.56.164.36
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇰🇷8 |  2.5MB/s
+  name: 1|🇰🇷2 |  5.7MB/s
   password: qwerREWQ@@
-  port: 16417
-  server: p220.panda001.net
+  port: 15098
+  server: p222.panda001.net
   tfo: true
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 0|🇰🇷9 |  6.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 15.165.74.90
-  type: ss
-- client-fingerprint: randomized
-  flow: ''
-  mode: ''
-  name: 0|🇰🇷10 |  2.7MB/s
-  network: ws
-  port: 443
-  server: 104.17.11.155
-  servername: ZYZzZoAO.PuTATa.EU.org
+- alterId: 0
+  cipher: auto
+  name: 1|🇰🇷3 |  1.6MB/s
+  network: tcp
+  port: 17232
+  server: 9c9e3181-svc1s0-t28b6o-ef48.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+  ws-headers:
+    Host: 9c9e3181-svc1s0-t28b6o-ef48.cm5.p5pv.com
+  ws-path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇰🇷4 |  1.1MB/s
+  network: tcp
+  port: 21082
+  reality-opts:
+    public-key: tf7ZDGaue4C43MM0ECIfjOS-0kk7XMSqfnaSY4Er5Fc
+    short-id: 758719a6080f2767
+  server: tw-ty-line1-2-2.sudatech.store
+  servername: learn.microsoft.com
   tls: true
   type: vless
-  udp: false
-  uuid: 103104c5-a3f5-4c48-8d8f-a72a56959799
-  ws-opts:
-    headers:
-      Host: zyzzzoao.putata.eu.org
-    path: /eR9eo6sq6TUid1Fe?ed=2560
+  uuid: e7adaa99-8363-3ec4-b849-307c99005405
+- cipher: aes-256-cfb
+  name: 1|🇰🇷5 |  6.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.125.214.134
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 0|🇰🇷11 |  1.1MB/s
+  name: 1|🇰🇷6 |  5.8MB/s
   password: qwerREWQ@@
   port: 11389
   server: p231.panda004.net
   tfo: true
   type: ss
   udp: true
-- name: 0|🇰🇷12 |  5.4MB/s
-  network: ws
-  port: 443
-  server: 172.66.44.68
-  servername: 37c60f8d.ALBAnGURaKUqi.paGEs.dEv
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 87ced8c4-b4d4-4c7b-ba67-11b78833a1b6
-  ws-opts:
-    headers:
-      host: 37c60f8d.ALBAnGURaKUqi.paGEs.dEv
-    path: /telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420,telegram-@expressvpn_420?ed=2560
 - auth: b543c066-2189-4aa4-8afb-445ac8ee28d4
-  name: 0|🇰🇷13 |  2.4MB/s
+  name: 1|🇰🇷7 |  3.3MB/s
   password: b543c066-2189-4aa4-8afb-445ac8ee28d4
   port: 35000
   server: 193.122.98.107
@@ -126,57 +85,63 @@ proxies:
   sni: api.push.apple.com
   type: hysteria2
 - cipher: aes-256-cfb
-  name: 0|🇰🇷14 |  1.4MB/s
-  password: qwerREWQ@@
-  port: 4857
-  server: p227.panda004.net
+  name: 1|🇰🇷8 |  6.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.36.59.64
   type: ss
-- auth: b543c066-2189-4aa4-8afb-445ac8ee28d4
-  name: 0|🇰🇷15 |  4.8MB/s
-  password: b543c066-2189-4aa4-8afb-445ac8ee28d4
-  port: 35000
-  server: 193.123.246.244
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
 - cipher: aes-256-cfb
-  name: 0|🇰🇷16 |  4.5MB/s
+  name: 1|🇰🇷9 |  4.1MB/s
+  password: qwerREWQ@@
+  port: 58487
+  server: 221.150.109.90
+  type: ss
+- client-fingerprint: randomized
+  flow: ''
+  mode: ''
+  name: 1|🇰🇷10 |  2.0MB/s
+  network: ws
+  port: 443
+  server: 104.17.252.217
+  servername: ZYzzZoAO.putata.eU.Org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 103104c5-a3f5-4c48-8d8f-a72a56959799
+  ws-opts:
+    headers:
+      Host: zyzzzoao.putata.eu.org
+    path: ''
+- cipher: aes-256-cfb
+  name: 1|🇰🇷11 |  6.2MB/s
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 01 | 1x KR
-  password: 94a27c90-48e0-4f94-bd4f-161f99346f23
-  port: 36311
-  server: free.2weradf.xyz
+- cipher: aes-256-cfb
+  name: 1|🇰🇷12 |  2.1MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.38.99.70
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 02 | 1x KR
-  password: 94a27c90-48e0-4f94-bd4f-161f99346f23
-  port: 36313
-  server: free.2weradf.xyz
+- cipher: aes-256-cfb
+  name: 1|🇰🇷13 |  1.8MB/s
+  password: qwerREWQ@@
+  port: 11389
+  server: 221.150.109.89
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷韩国 01 | 1x KR
-  password: 099d947a-e54a-41ce-b12c-b8f0d58fa184
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷韩国 02 | 1x KR
-  password: 099d947a-e54a-41ce-b12c-b8f0d58fa184
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+- auth: b543c066-2189-4aa4-8afb-445ac8ee28d4
+  name: 1|🇰🇷14 |  5.0MB/s
+  password: b543c066-2189-4aa4-8afb-445ac8ee28d4
+  port: 35000
+  server: 146.56.164.36
+  skip-cert-verify: true
+  sni: api.push.apple.com
+  type: hysteria2
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 12,13|韩国|@ripaojiedian
+  name: 11,12|韩国|@ripaojiedian
   network: ws
   port: '443'
   server: cg1c15.waimaoglobaldirect.cc
@@ -192,9 +157,23 @@ proxies:
     path: /api/v1/graphql
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 12|🇰🇷 韩国特殊|@ripaojiedian
+  name: 11|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 13.231.81.63
   tfo: false
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇰🇷 韩国 01 | 1x KR
+  password: 784c5f10-fae6-415a-8623-4ea55299f408
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇰🇷 韩国 02 | 1x KR
+  password: 784c5f10-fae6-415a-8623-4ea55299f408
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
