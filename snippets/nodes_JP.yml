@@ -1,74 +1,75 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵日本 01 | 1x JP
-  password: 0254a7bd-39dc-4d98-bd6c-6ba373008610
+  name: 0|🇯🇵 日本 01 | 1x JP
+  password: bcc81aa7-0c6b-4cc4-9caa-00d0f62f4b65
+  port: 36111
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵 日本 02 | 1x JP
+  password: bcc81aa7-0c6b-4cc4-9caa-00d0f62f4b65
+  port: 36113
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵 日本 03 | 1x JP
+  password: bcc81aa7-0c6b-4cc4-9caa-00d0f62f4b65
+  port: 36115
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇯🇵日本 01 | 1x JP
+  password: f019609e-7b20-421c-87fa-27205f2bf15c
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵日本 02 | 1x JP
-  password: 0254a7bd-39dc-4d98-bd6c-6ba373008610
+  name: 1|🇯🇵日本 02 | 1x JP
+  password: f019609e-7b20-421c-87fa-27205f2bf15c
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇯🇵日本 03 | 1x JP
-  password: 0254a7bd-39dc-4d98-bd6c-6ba373008610
+  name: 1|🇯🇵日本 03 | 1x JP
+  password: f019609e-7b20-421c-87fa-27205f2bf15c
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 1|🇯🇵2 |  4.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 43.206.225.84
-  type: ss
-- alterId: '0'
-  cipher: auto
-  name: 1|🇯🇵8 |  6.1MB/s
-  network: ws
-  port: '35243'
-  server: jp3.vip2.g2.moonbase.life
-  tls: true
-  type: vmess
-  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
-  ws-opts:
-    headers:
-      host: web.xcjs.info
-    path: /home
-- cipher: aes-256-gcm
-  name: 1|🇯🇵9 |  1.5MB/s
-  password: amazonskr05
-  port: 80
-  server: 54.248.14.159
-  type: ss
-- cipher: aes-256-cfb
-  name: 1|🇯🇵10 |  2.6MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.231.109.160
-  type: ss
-- cipher: aes-256-gcm
-  name: 1|🇯🇵13 |  5.3MB/s
-  password: amazonskr05
-  port: 80
-  server: 43.207.73.82
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 1|🇯🇵15 |  2.0MB/s
+  name: 2|🇯🇵1 |  6.2MB/s
   network: tcp
   port: 17233
-  server: a37e50db-svc1s0-t1bnjq-1krtb.cm5.p5pv.com
+  server: 666c5d9b-svfr40-t1bnjq-1krtb.cm5.p5pv.com
+  skip-cert-verify: true
   tls: false
   type: vmess
   uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: 666c5d9b-svfr40-t1bnjq-1krtb.cm5.p5pv.com
+  ws-path: /
 - alterId: '0'
   cipher: auto
-  name: 1|🇯🇵17 |  3.2MB/s
+  name: 2|🇯🇵21 |  3.8MB/s
+  network: tcp
+  port: '17233'
+  server: bf20b8b1-svhls0-svtxnz-1rgxu.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: ea93064c-176c-11f0-885d-f23c91cfbbc9
+  ws-headers:
+    Host: bf20b8b1-svhls0-svtxnz-1rgxu.cm5.p5pv.com
+  ws-path: /
+- alterId: '0'
+  cipher: auto
+  name: 2|🇯🇵7 |  6.1MB/s
   network: ws
   port: '35244'
   server: jp4.vip2.g2.moonbase.life
@@ -79,27 +80,58 @@ proxies:
     headers:
       host: web.xcjs.info
     path: /home
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵 日本 01 | 1x JP
-  password: 58ea2ba1-a0c8-44a0-9c2a-f7b046e9910f
-  port: 36111
-  server: free.2weradf.xyz
+- cipher: aes-256-gcm
+  name: 2|🇯🇵9 |  6.0MB/s
+  password: amazonskr05
+  port: 80
+  server: 43.207.73.82
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵 日本 02 | 1x JP
-  password: 58ea2ba1-a0c8-44a0-9c2a-f7b046e9910f
-  port: 36113
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵 日本 03 | 1x JP
-  password: 58ea2ba1-a0c8-44a0-9c2a-f7b046e9910f
-  port: 36115
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 2|🇯🇵10 |  6.2MB/s
+  network: tcp
+  port: 17233
+  server: 3c984d30-svdwg0-t1bnjq-1krtb.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: 3c984d30-svdwg0-t1bnjq-1krtb.cm5.p5pv.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇯🇵11 |  1.1MB/s
+  network: tcp
+  port: 32980
+  server: 120.198.71.214
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-headers:
+    Host: 120.198.71.214
+  ws-path: /
+- name: 2|🇯🇵16 |  1.2MB/s
+  password: b38fba31-1304-4c3f-aa2e-c67639239b7a
+  port: 27002
+  server: 183.2.150.64
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+- alterId: '0'
+  cipher: auto
+  name: 2|🇯🇵17 |  6.1MB/s
+  network: ws
+  port: '35243'
+  server: jp3.vip2.g2.moonbase.life
+  tls: true
+  type: vmess
+  uuid: 46a539d2-d3ba-4a6e-aedb-b727d2fc60f8
+  ws-opts:
+    headers:
+      host: web.xcjs.info
+    path: /home
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|🇯🇵 日本|@ripaojiedian
