@@ -1,51 +1,90 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼台湾 01 | 1x TW
-  password: da8d60ca-a746-406e-90d4-c9ceaea38d88
+  password: 2a9b0084-cf2e-4fbc-965a-1d6b8341472c
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼台湾 02 | 1x TW
-  password: da8d60ca-a746-406e-90d4-c9ceaea38d88
+  password: 2a9b0084-cf2e-4fbc-965a-1d6b8341472c
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼台湾 03 | 1x TW
-  password: da8d60ca-a746-406e-90d4-c9ceaea38d88
+  password: 2a9b0084-cf2e-4fbc-965a-1d6b8341472c
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇹🇼 台湾 01 | 1x TW
-  password: 2def0995-6a4f-4ac4-8738-467c63ee1f16
+  password: 30f6bb03-0b20-4750-87a2-0d1527b57352
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇹🇼 台湾 02 | 1x TW
-  password: 2def0995-6a4f-4ac4-8738-467c63ee1f16
+  password: 30f6bb03-0b20-4750-87a2-0d1527b57352
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇹🇼 台湾 03 | 1x TW
-  password: 2def0995-6a4f-4ac4-8738-467c63ee1f16
+  password: 30f6bb03-0b20-4750-87a2-0d1527b57352
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 2|🇹🇼1 |  4.2MB/s
+- client-fingerprint: chrome
+  delay: 1638
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0007
+  network: tcp
+  port: 47531
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: beiyong.dynuddns.net
+  servername: gateway.icloud.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇹🇼2 |  2.0MB/s
+  network: tcp
+  port: 34313
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇹🇼3 |  5.3MB/s
+  network: tcp
+  port: 13263
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: zhee01.dynu.net
+  servername: gateway.icloud.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 2|🇹🇼4 |  3.4MB/s
   network: ws
   password: Aimer
-  port: 443
-  server: 103.116.7.235
+  port: 2083
+  server: 188.164.159.91
   skip-cert-verify: true
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
@@ -54,11 +93,25 @@ proxies:
     headers:
       host: epcca.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼2 |  5.4MB/s
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2,14|CN_speednode_0013
+  network: tcp
+  port: 12477
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 2|🇹🇼6 |  5.7MB/s
   network: ws
   password: Aimer
-  port: 3306
-  server: 107.172.180.73
+  port: 443
+  server: 103.116.7.235
   skip-cert-verify: true
   sni: epcca.ambercc.filegear-sg.me
   type: trojan
@@ -81,109 +134,9 @@ proxies:
   type: vless
   udp: true
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇹🇼4 |  1.3MB/s
-  network: ws
-  password: Aimer
-  port: 2087
-  server: 27.50.49.74
-  skip-cert-verify: true
-  sni: epcca.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      host: epcca.ambercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 2|🇹🇼5 |  1.2MB/s
-  network: ws
-  port: 2083
-  server: 104.18.2.26
-  servername: ex.sue.x10.mx
-  tls: true
-  type: vless
-  udp: false
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-    path: /?ed=2560flow=-udp443
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0013
-  network: tcp
-  port: 12477
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇹🇼7 |  5.2MB/s
-  network: ws
-  port: 2087
-  server: 209.94.90.87
-  servername: edccs.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccs.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0010
-  network: tcp
-  port: 47531
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: gateway.icloud.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  delay: 1638
-  flow: xtls-rprx-vision
-  name: 2,14|CN_speednode_0007
-  network: tcp
-  port: 47531
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: gateway.icloud.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇹🇼10 |  2.9MB/s
-  network: ws
-  port: 45888
-  server: 141.11.86.94
-  servername: edccs.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccs.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇹🇼11 |  1.6MB/s
+  name: 2|🇹🇼8 |  3.6MB/s
   network: tcp
   port: 15823
   reality-opts:
@@ -193,45 +146,18 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇹🇼12 |  1.6MB/s
-  network: tcp
-  port: 34313
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: gateway.icloud.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇹🇼13 |  2.3MB/s
+- name: 2|🇹🇼9 |  1.3MB/s
   network: ws
-  port: 8443
-  server: 92.243.74.239
-  servername: edccs.aimercc.filegear-sg.me
+  password: Aimer
+  port: 2053
+  server: 147.45.79.236
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
   ws-opts:
     headers:
-      Host: edccs.aimercc.filegear-sg.me
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼14 |  5.6MB/s
-  network: ws
-  port: 443
-  server: damien.ns.cloudflare.com
-  servername: edccs.aimercc.filegear-sg.me
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccs.aimercc.filegear-sg.me
+      host: epcca.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
 - client-fingerprint: chrome
   name: 12,13|台湾|@ripaojiedian

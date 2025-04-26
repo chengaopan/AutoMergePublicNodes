@@ -1,93 +1,53 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷韩国 01 | 1x KR
-  password: da8d60ca-a746-406e-90d4-c9ceaea38d88
+  password: 2a9b0084-cf2e-4fbc-965a-1d6b8341472c
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷韩国 02 | 1x KR
-  password: da8d60ca-a746-406e-90d4-c9ceaea38d88
+  password: 2a9b0084-cf2e-4fbc-965a-1d6b8341472c
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇰🇷 韩国 01 | 1x KR
-  password: 2def0995-6a4f-4ac4-8738-467c63ee1f16
+  password: 30f6bb03-0b20-4750-87a2-0d1527b57352
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇰🇷 韩国 02 | 1x KR
-  password: 2def0995-6a4f-4ac4-8738-467c63ee1f16
+  password: 30f6bb03-0b20-4750-87a2-0d1527b57352
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 2|🇰🇷1 |  1.3MB/s
-  network: ws
-  port: 443
-  server: 63.141.128.193
-  servername: cn.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: cn.ylks0033.dpdns.org
-    path: /?ed=2560
-- cipher: aes-256-cfb
-  name: 2|🇰🇷2 |  2.0MB/s
-  password: qwerREWQ@@
-  port: 11389
-  server: 221.150.109.89
-  type: ss
-- cipher: aes-256-cfb
+- cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 2|🇰🇷3 |  5.1MB/s
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
+  name: 2|🇰🇷1 |  6.0MB/s
+  password: L9OhTpFW
+  port: 30327
+  server: 3.35.68.33
   tfo: true
   type: ss
   udp: true
-- alterId: '0'
-  cipher: auto
-  name: 2|🇰🇷6 |  1.3MB/s
-  network: tcp
-  port: '17232'
-  server: 9c9e3181-svc1s0-t28b6o-ef48.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-  ws-headers:
-    Host: 9c9e3181-svc1s0-t28b6o-ef48.cm5.p5pv.com
-  ws-path: /
-- alterId: 0
-  cipher: auto
+- auth: b543c066-2189-4aa4-8afb-445ac8ee28d4
   client-fingerprint: chrome
-  name: 2|🇰🇷5 |  5.2MB/s
-  network: tcp
-  port: 17232
-  server: 0356c0b3-svdwg0-t28b6o-ef48.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-- cipher: aes-256-cfb
-  name: 2|🇰🇷7 |  1.1MB/s
-  password: qwerREWQ@@
-  port: 11389
-  server: p231.panda004.net
-  type: ss
+  name: 2|🇰🇷2 |  4.6MB/s
+  password: b543c066-2189-4aa4-8afb-445ac8ee28d4
+  port: 35000
+  server: 193.122.98.107
+  skip-cert-verify: true
+  sni: api.push.apple.com
+  type: hysteria2
 - client-fingerprint: edge
   flow: xtls-rprx-vision
-  name: 2|🇰🇷8 |  1.6MB/s
+  name: 2|🇰🇷3 |  2.0MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -98,50 +58,48 @@ proxies:
   tls: true
   type: vless
   uuid: b543c066-2189-4aa4-8afb-445ac8ee28d4
-- client-fingerprint: ios
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇰🇷9 |  2.6MB/s
+  name: 2|🇰🇷4 |  2.8MB/s
   network: tcp
-  port: 443
+  port: 21082
   reality-opts:
-    public-key: azYFzTtT4e2UwpmBzZICle8qJOLjN8kc5bq8i8aVSj0
-    short-id: c289c65d
-  server: 193.122.114.15
-  servername: buylite.music.apple.com
+    public-key: tf7ZDGaue4C43MM0ECIfjOS-0kk7XMSqfnaSY4Er5Fc
+    short-id: 758719a6080f2767
+  server: tw-ty-line1-2-2.sudatech.store
+  servername: learn.microsoft.com
   tls: true
   type: vless
-  uuid: b543c066-2189-4aa4-8afb-445ac8ee28d4
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 2,12|🇰🇷 韩国|@ripaojiedian
-  password: 796EA43C-1A63-8C50-3745-FD3946149E4F
-  port: 21154
-  server: 510613.frederica.xyz
-  tfo: false
-  type: ss
+  uuid: e7adaa99-8363-3ec4-b849-307c99005405
 - auth: b543c066-2189-4aa4-8afb-445ac8ee28d4
-  client-fingerprint: chrome
-  name: 2|🇰🇷11 |  5.0MB/s
-  password: b543c066-2189-4aa4-8afb-445ac8ee28d4
-  port: 35000
-  server: 193.122.98.107
-  skip-cert-verify: true
-  sni: api.push.apple.com
-  type: hysteria2
-- auth: b543c066-2189-4aa4-8afb-445ac8ee28d4
-  name: 2|🇰🇷12 |  3.8MB/s
+  name: 2|🇰🇷5 |  4.6MB/s
   password: b543c066-2189-4aa4-8afb-445ac8ee28d4
   port: 35000
   server: 193.123.246.244
   skip-cert-verify: true
   sni: api.push.apple.com
   type: hysteria2
+- auth: b543c066-2189-4aa4-8afb-445ac8ee28d4
+  client-fingerprint: chrome
+  name: 2|🇰🇷6 |  2.7MB/s
+  password: b543c066-2189-4aa4-8afb-445ac8ee28d4
+  port: 35000
+  server: 146.56.164.36
+  skip-cert-verify: true
+  sni: api.push.apple.com
+  type: hysteria2
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 2|🇰🇷7 |  6.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 3.38.103.4
+  type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 2|🇰🇷13 |  1.2MB/s
-  password: L9OhTpFW
-  port: 30327
-  server: 3.35.68.33
-  tfo: true
+  name: 12|🇰🇷 韩国|@ripaojiedian
+  password: 796EA43C-1A63-8C50-3745-FD3946149E4F
+  port: 21154
+  server: 510613.frederica.xyz
+  tfo: false
   type: ss
-  udp: true
