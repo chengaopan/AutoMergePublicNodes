@@ -1,47 +1,75 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 02 | 1x HK
-  password: 593b5c66-e4f7-46f8-a249-ac1f62dc1315
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: 593b5c66-e4f7-46f8-a249-ac1f62dc1315
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 02 | 1x HK
-  password: ed4fe634-2236-4173-b536-d0b0ad087eb0
+  name: 0|🇭🇰 香港 02 | 1x HK
+  password: 376e57c2-1565-4b72-8928-377148a61ef0
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
-  password: ed4fe634-2236-4173-b536-d0b0ad087eb0
+  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 376e57c2-1565-4b72-8928-377148a61ef0
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 02 | 1x HK
+  password: c9815cc2-d4d0-42b6-b8b6-01c8e66e1278
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港家宽 03 | 1x HK
+  password: c9815cc2-d4d0-42b6-b8b6-01c8e66e1278
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  name: 2|🇭🇰2 |  1.1MB/s
+  network: ws
+  port: 80
+  server: e9ba756a-svdwg0-swd5ff-f1v1.hk.p5pv.com
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 9cccea7a-b6ab-11eb-a0fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - alterId: '0'
   cipher: auto
-  name: 2|🇭🇰4 |  3.8MB/s
+  name: 2|🇭🇰6 |  3.5MB/s
   network: tcp
   port: 40066
   server: kefu.neter2.top
   type: vmess
   uuid: 2b5597ec-d990-4aaf-b4f9-c19308873901
-- name: 2|🇭🇰2 |  5.8MB/s
-  password: 292f149a-33cb-4ecd-b432-5447764ea339
-  port: 27103
-  server: sla.cn.964e995b760.gogodns.xin
-  skip-cert-verify: false
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+- cipher: aes-256-gcm
+  name: 2|🇭🇰5 |  2.2MB/s
+  password: ffc75281-6c9a-4cd7-8af6-aaa12eb7496f
+  port: 30018
+  server: 114.132.40.118
+  type: ss
+- alterId: 2
+  cipher: auto
+  name: 2|🇭🇰8 |  1.6MB/s
+  network: ws
+  port: 80
+  server: 2df30408-sv2sg0-sv3jcr-1itli.hk.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 4088a148-dbec-11ec-bd7c-f23c913c8d2b
+  ws-headers:
+    Host: broadcastlv.chat.bilibili.com
+  ws-path: /
 - client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
   network: ws

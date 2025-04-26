@@ -1,22 +1,69 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇩🇪德国 01 | 1x DE
-  password: 593b5c66-e4f7-46f8-a249-ac1f62dc1315
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇩🇪 德国 01 | 1x DE
-  password: ed4fe634-2236-4173-b536-d0b0ad087eb0
+  name: 0|🇩🇪 德国 01 | 1x DE
+  password: 376e57c2-1565-4b72-8928-377148a61ef0
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪德国 01 | 1x DE
+  password: c9815cc2-d4d0-42b6-b8b6-01c8e66e1278
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- client-fingerprint: random
+  flow: ''
+  grpc-opts:
+    grpc-service-name: Tok
+  mode: ''
+  name: 2|🇩🇪1 |  5.8MB/s
+  network: grpc
+  port: 22000
+  reality-opts:
+    public-key: WcjPU1iR-woM10JNMkMmv-c1Dl37z6PRsqmciMAitlg
+    short-id: cb45d5eb4577c376
+  server: 188.245.186.187
+  servername: refersion.com
+  tls: true
+  type: vless
+  udp: false
+  uuid: 6e23c30c-a248-4dbe-9239-8412f8a8834b
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 2|🇩🇪2 |  2.4MB/s
+  network: ws
+  port: 2096
+  server: www.speedtest.net
+  servername: RmLeQgB10q.AaAzZzAaA-8129.cOm
+  tls: true
+  type: vless
+  udp: false
+  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
+  ws-opts:
+    headers:
+      Host: RmLeQgB10q.AaAzZzAaA-8129.cOm
+    path: /
 - client-fingerprint: ''
   flow: ''
   mode: ''
-  name: 2|🇩🇪1 |  5.7MB/s
+  name: 2|🇩🇪3 |  4.6MB/s
+  network: ws
+  port: 19111
+  server: 49.13.215.155
+  servername: ''
+  tls: false
+  type: vless
+  udp: false
+  uuid: 9f8bf7f0-60c1-48f1-e8e9-9841a20868fe
+  ws-opts:
+    path: /@proprojec
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇩🇪4 |  1.0MB/s
   network: ws
   port: 2096
   server: www.speedtest.net
@@ -29,18 +76,31 @@ proxies:
     headers:
       Host: D6rVkPfEgS.aAaZzZaAa-8129.CoM
     path: /
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  mode: ''
-  name: 2|🇩🇪2 |  4.0MB/s
+- name: 2|🇩🇪5 |  5.7MB/s
   network: tcp
-  port: 443
-  server: 204.10.194.78
-  servername: yfnl1.xn--4gq62f52gppi29k.com
+  port: 21147
+  server: 91.107.129.64
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 3b69eb18-e8a4-488a-92a8-a2efc9758751
+- client-fingerprint: ''
+  flow: ''
+  mode: ''
+  name: 2|🇩🇪6 |  5.8MB/s
+  network: ws
+  port: 8443
+  server: www.speedtest.net
+  servername: Qq31UsKhFg.AaAzZzAaA-8129.cOm
   tls: true
   type: vless
   udp: false
-  uuid: e31f0562-6a2a-46fa-8c59-131a265e8faf
+  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
+  ws-opts:
+    headers:
+      Host: Qq31UsKhFg.AaAzZzAaA-8129.cOm
+    path: /
 - name: 10|🇩🇪 @VPNHubMaRKeT ⚡️  @VpnHubMa...
   obfs: salamander
   obfs-password: tel:@VPNHubMaRKeT
