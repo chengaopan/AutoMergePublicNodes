@@ -1,7 +1,141 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼台湾 01 | 1x TW
+  password: 971c3e58-d673-4ed0-a515-451f6506a519
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼台湾 02 | 1x TW
+  password: 971c3e58-d673-4ed0-a515-451f6506a519
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼台湾 03 | 1x TW
+  password: 971c3e58-d673-4ed0-a515-451f6506a519
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 01 | 1x TW
+  password: 104d955f-7638-4845-b330-1d3445115882
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 02 | 1x TW
+  password: 104d955f-7638-4845-b330-1d3445115882
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 03 | 1x TW
+  password: 104d955f-7638-4845-b330-1d3445115882
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 2|🇹🇼1 |  2.4MB/s
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 108.165.152.239
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 2|🇹🇼2 |  4.3MB/s
+  network: ws
+  password: Aimer
+  port: 443
+  server: ignacio.ns.cloudflare.com
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇹🇼1 |  6.0MB/s
+  name: 2|🇹🇼3 |  1.5MB/s
+  network: tcp
+  port: 41572
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: vip.jddns0202.top
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 2|🇹🇼4 |  5.8MB/s
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 188.164.159.91
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇹🇼5 |  6.1MB/s
+  network: tcp
+  port: 15823
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 2|🇹🇼6 |  1.2MB/s
+  network: ws
+  port: 2083
+  server: 104.18.2.26
+  servername: ex.sue.x10.mx
+  tls: true
+  type: vless
+  udp: false
+  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
+  ws-opts:
+    headers:
+      Host: ex.sue.x10.mx
+    path: /?ed=2560flow=-udp443flow=-udp443
+- name: 2|🇹🇼7 |  1.2MB/s
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 188.164.159.74
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇹🇼8 |  1.8MB/s
   network: tcp
   port: 13263
   reality-opts:
@@ -13,76 +147,25 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1,13|CN_speednode_0010
+  name: 2|🇹🇼9 |  5.5MB/s
   network: tcp
-  port: 47531
+  port: 15700
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: bsuqian01.dynu.net
-  servername: gateway.icloud.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1,13|CN_speednode_0013
-  network: tcp
-  port: 12477
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
+  server: vip.jddns0202.top
   servername: www.nvidia.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1,13|CN_speednode_0018
-  network: tcp
-  port: 15823
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: test123.zlqhdns.top
-  servername: www.yahoo.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 1|🇹🇼5 |  2.1MB/s
-  network: ws
-  port: 2083
-  server: www.visaeurope.ch
-  servername: ex.sue.x10.mx
-  tls: true
-  type: vless
-  udp: false
-  uuid: d60fc3c5-9f07-4cdb-b81f-70af27936bdc
-  ws-opts:
-    headers:
-      Host: ex.sue.x10.mx
-    path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇹🇼6 |  3.4MB/s
-  network: tcp
-  port: 15823
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.yahoo.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 2|🇹🇼10 |  4.0MB/s
+  password: 46f6c5b2-8415-4828-9dc2-4b5096d6bc3b
+  port: 27201
+  server: sla.cn.964e995b760.gogodns.xin
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - client-fingerprint: chrome
-  name: 11,12|台湾|@ripaojiedian
+  name: 12,13|台湾|@ripaojiedian
   network: tcp
   password: 6a21647d-824a-41d3-82f9-12f52ea0ddbd
   port: 27202
@@ -90,24 +173,3 @@ proxies:
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇹🇼台湾 01 | 1x TW
-  password: 23aa920e-e336-4355-97a6-947e018ccd71
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇹🇼台湾 02 | 1x TW
-  password: 23aa920e-e336-4355-97a6-947e018ccd71
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇹🇼台湾 03 | 1x TW
-  password: 23aa920e-e336-4355-97a6-947e018ccd71
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true

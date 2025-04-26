@@ -1,22 +1,28 @@
 proxies:
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 1|🇬🇧1 |  2.0MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: P0BqE64A26ZHmz8_agVmz9ybugHauMcWRfNSD1HAex0
-    short-id: b6a810
-  server: 89.208.97.26
-  servername: tgju.org
-  tls: true
-  type: vless
-  udp: false
-  uuid: 2bd7ee4d-b1c8-4ea8-ab79-f7ca74cfceca
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 971c3e58-d673-4ed0-a515-451f6506a519
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 971c3e58-d673-4ed0-a515-451f6506a519
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 104d955f-7638-4845-b330-1d3445115882
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧2 |  3.1MB/s
+  name: 2|🇬🇧1 |  5.0MB/s
   network: tcp
   port: 35311
   reality-opts:
@@ -26,9 +32,18 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 2|🇬🇧2 |  5.4MB/s
+  password: idd8ND5E
+  port: 31321
+  server: 13.41.208.251
+  tfo: true
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧3 |  5.5MB/s
+  name: 2|🇬🇧3 |  5.6MB/s
   network: tcp
   port: 32055
   reality-opts:
@@ -38,54 +53,7 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1,13|CN_speednode_0048
-  network: tcp
-  port: 65053
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧5 |  4.5MB/s
-  network: tcp
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 1|🇬🇧6 |  1.5MB/s
-  password: RJmLkze1
-  port: 5075
-  server: 109.107.159.202
-  tfo: true
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧7 |  1.6MB/s
-  network: tcp
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 10|Hysteria 🇬🇧 @v2meowcf
+- name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -95,7 +63,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 13|GB_speednode_0058
+  name: 14|GB_speednode_0058
   port: 55799
   reality-opts:
     public-key: LBvEFKpH7REwityPTJqYPhEJ7MaIqcuIRL01VPzcpAs
@@ -107,17 +75,3 @@ proxies:
   type: vless
   udp: true
   uuid: 43589def-fa09-47e3-b44e-7f6e069f470d
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰香港 01 | 1x HK
-  password: 23aa920e-e336-4355-97a6-947e018ccd71
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇬🇧英国家宽 01 | 1x UK
-  password: 23aa920e-e336-4355-97a6-947e018ccd71
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
