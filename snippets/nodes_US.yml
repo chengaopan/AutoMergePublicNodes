@@ -1,47 +1,52 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: 420779a4-4462-4869-b1c2-172d034bea6d
-  port: 31211
-  server: free.2apzhfa.xyz
+  name: 0|🇺🇸 美国 01 | 1x US Los Angeles
+  password: f10bd29f-1770-4a3e-9206-3756bc1d0e3c
+  port: 36211
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 420779a4-4462-4869-b1c2-172d034bea6d
-  port: 31213
-  server: free.2apzhfa.xyz
+  name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: f10bd29f-1770-4a3e-9206-3756bc1d0e3c
+  port: 36213
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇺🇸美国 03 | 1x US Washington
-  password: 420779a4-4462-4869-b1c2-172d034bea6d
-  port: 31215
-  server: free.2apzhfa.xyz
+  name: 0|🇺🇸 美国 03 | 1x US Washington
+  password: f10bd29f-1770-4a3e-9206-3756bc1d0e3c
+  port: 36215
+  server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 1|🇺🇸17 |  5.6MB/s
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 1,12|🇯🇵 日本特殊|@ripaojiedian
   password: amazonskr05
-  port: 80
-  server: 54.218.9.15
+  port: 443
+  server: 35.87.4.112
+  tfo: false
   type: ss
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸54 |  5.8MB/s
-  network: tcp
-  port: 5228
-  server: 87b134e3-svc1s0-t28b6o-ef48.cu.plebai.net
+  name: 1|🇺🇸8 |  6.0MB/s
+  network: ws
+  port: 443
+  server: u7.huvicloud.com
   skip-cert-verify: true
-  tls: false
+  tfo: false
+  tls: true
   type: vmess
-  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-  ws-headers:
-    Host: 87b134e3-svc1s0-t28b6o-ef48.cu.plebai.net
-  ws-path: /
+  udp: true
+  uuid: 7216ba26-d2bc-48f7-8b44-3b91c30cb6ab
+  ws-opts:
+    headers:
+      Host: u7.huvicloud.com
+    path: /7216ba26-d2bc-48f7-8b44-3b91c30cb6ab
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸25 |  5.4MB/s
+  name: 1|🇺🇸12 |  5.1MB/s
   network: ws
   port: 443
   raw:
@@ -69,56 +74,47 @@ proxies:
     headers:
       Host: u2.huvicloud.com
     path: /c6ec090c-db51-4ad7-9cd4-9c827e52ea40
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 1|🇺🇸15 |  3.3MB/s
+  network: ws
+  port: 443
+  server: xcf029.facai2024.com
+  servername: xcf029.facai2024.com
+  tls: true
+  type: vmess
+  uuid: 9ce4526a-c500-4c66-99b0-048e4b6b5663
+  ws-opts:
+    headers:
+      Host: xcf029.facai2024.com
+    path: /9ce4526a
 - alterId: 2
   cipher: auto
-  name: 1|🇺🇸31 |  1.0MB/s
+  client-fingerprint: chrome
+  h2-opts: {}
+  http-opts: {}
+  name: 1|🇺🇸18 |  2.8MB/s
   network: ws
-  port: 22643
+  port: 22642
   server: tk.hzlt.tkddns.xyz
+  servername: tk.hzlt.tkddns.xyz
   skip-cert-verify: true
   tls: true
   type: vmess
+  udp: true
   uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-headers:
-    Host: zxjp-c.tkong.cc
-  ws-path: /
-- name: 1|🇺🇸34 |  5.4MB/s
-  network: ws
-  password: 5453ae26-250d-4e79-b4ec-016baf806865
-  port: 443
-  server: 104.21.69.41
-  sni: 1SdfghJk.890602.xyz
-  type: trojan
   ws-opts:
     headers:
-      Host: 1SdfghJk.890602.xyz
-    path: /OYzPAeaZdXUq2d6J3gc4aj
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸36 |  5.1MB/s
-  network: tcp
-  port: 5229
-  server: e890417c-svc1s0-t1bnjq-1krtb.cu.plebai.net
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  ws-headers:
-    Host: e890417c-svc1s0-t1bnjq-1krtb.cu.plebai.net
-  ws-path: /
-- cipher: aes-256-gcm
-  name: 1|🇺🇸45 |  5.7MB/s
-  password: amazongreatvpn
-  port: 443
-  server: 34.219.82.5
-  type: ss
+      Host: zxjp-b.tkong.cc
+    path: /
 - alterId: 0
   cipher: auto
   country: 🇺🇸US
   delay: 2590
   h2-opts: {}
   http-opts: {}
-  name: 1|🇺🇸46 |  5.8MB/s
+  name: 1|🇺🇸20 |  5.7MB/s
   network: ws
   port: 443
   server: u7.huvicloud.com
@@ -131,41 +127,122 @@ proxies:
     headers:
       HOST: u7.huvicloud.com
     path: /7216ba26-d2bc-48f7-8b44-3b91c30cb6ab
-- cipher: aes-256-gcm
-  delay: 517
-  name: 1|🇺🇸48 |  2.9MB/s
-  password: amazongreatvpn
-  port: 443
-  server: 44.204.173.8
-  type: ss
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸24 |  4.8MB/s
+  network: ws
+  port: 22641
+  server: tk.hzlt.tkddns.xyz
+  servername: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-a.tkong.cc
+    path: /
 - alterId: 0
   cipher: auto
-  name: 1|🇺🇸57 |  5.9MB/s
+  name: 1|🇺🇸27 |  4.2MB/s
+  network: ws
+  port: 443
+  server: new3.huvicloud.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a10476b9-1c07-4de3-9d84-c51d24be599f
+  ws-opts:
+    headers:
+      Host: new3.huvicloud.com
+    path: /a10476b9-1c07-4de3-9d84-c51d24be599f
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸28 |  5.2MB/s
   network: tcp
   port: 5228
   server: 89936472-svdwg0-t28b6o-ef48.cu.plebai.net
   tls: false
   type: vmess
   uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸29 |  4.4MB/s
+  network: tcp
+  port: 5229
+  server: e890417c-svc1s0-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  ws-headers:
+    Host: e890417c-svc1s0-t1bnjq-1krtb.cu.plebai.net
+  ws-path: /
+- alterId: 2
+  cipher: auto
+  name: 1|🇺🇸36 |  1.2MB/s
+  network: ws
+  port: 22641
+  server: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-headers:
+    Host: zxjp-a.tkong.cc
+  ws-path: /
+- name: 1|🇺🇸41 |  4.4MB/s
+  password: 539889fa-ef3a-47d4-ab93-465495923495
+  port: 27301
+  server: sla.cn.964e995b760.gogodns.xin
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸46 |  3.7MB/s
+  network: ws
+  port: 443
+  server: u8.huvicloud.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 6796611b-260e-4d63-9016-20c27b12e420
+  ws-opts:
+    headers:
+      Host: u8.huvicloud.com
+    path: /6796611b-260e-4d63-9016-20c27b12e420
+- client-fingerprint: chrome
+  name: 1|🇺🇸50 |  5.3MB/s
+  password: 72N7EE1m6s
+  port: 23702
+  server: 198.46.158.215
+  skip-cert-verify: true
+  type: trojan
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 1586d73e-55ac-4326-9ca2-33ccb1969c35
-  port: 36211
-  server: free.2weradf.xyz
+  name: 2|🇺🇸美国 01 | 1x US Los Angeles
+  password: 75c73981-8bfc-4824-b335-01b9e23a4e16
+  port: 31211
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 1586d73e-55ac-4326-9ca2-33ccb1969c35
-  port: 36213
-  server: free.2weradf.xyz
+  name: 2|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 75c73981-8bfc-4824-b335-01b9e23a4e16
+  port: 31213
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 03 | 1x US Washington
-  password: 1586d73e-55ac-4326-9ca2-33ccb1969c35
-  port: 36215
-  server: free.2weradf.xyz
+  name: 2|🇺🇸美国 03 | 1x US Washington
+  password: 75c73981-8bfc-4824-b335-01b9e23a4e16
+  port: 31215
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 0
