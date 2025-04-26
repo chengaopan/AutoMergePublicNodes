@@ -1,24 +1,38 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 16947b33-1cd6-4257-b58c-9fa9570b0f6c
+  password: 420779a4-4462-4869-b1c2-172d034bea6d
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- country: 🇨🇦CA
-  delay: 2256
-  name: 1|🇨🇦1 |  2.3MB/s
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 132.145.108.102
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇨🇦1 |  4.9MB/s
+  network: tcp
+  port: 16011
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: '2'
+  cipher: auto
+  name: 1|🇨🇦2 |  5.0MB/s
+  network: ws
+  port: '30825'
+  server: v25.heduian.link
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      host: baidu.com
+    path: /oooo
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇨🇦 加拿大 01 | 1x CA
-  password: 8df55c33-09f2-4f4b-931b-d3633b46de97
+  name: 2|🇨🇦 加拿大 01 | 1x CA
+  password: 1586d73e-55ac-4326-9ca2-33ccb1969c35
   port: 36441
   server: free.2weradf.xyz
   type: ss
