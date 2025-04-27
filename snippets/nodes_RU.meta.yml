@@ -1,16 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇷🇺 俄罗斯 01 | 1x RU
-  password: 506884dd-a6cd-4d65-a5f3-1ac9d74c8b94
-  port: 36511
-  server: free.2weradf.xyz
+  name: 0|🇷🇺俄罗斯 01 | 1x RU
+  password: 4f492d33-7ff7-4b3a-802d-cbe4148e551d
+  port: 31511
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇷🇺俄罗斯 01 | 1x RU
-  password: 070ec57f-e5c4-489e-b583-cf5f4ab5e404
-  port: 31511
-  server: free.2apzhfa.xyz
+  name: 1|🇷🇺 俄罗斯 01 | 1x RU
+  password: 3d3a79f5-ddc2-45db-bcc1-d5cc3c49a447
+  port: 36511
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alpn:
@@ -25,7 +25,39 @@ proxies:
   type: hysteria
   udp: true
   up: 1000 Mbps
-- name: 2|🇷🇺2 |  3.3MB/s
+- name: 2|🇷🇺2 |  4.8MB/s
+  password: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+  port: 443
+  server: 6b600dbc-svfr40-t28b6o-ef48.ru.gotochinatown.net
+  tls: true
+  type: http
+  username: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+- name: 2|🇷🇺3 |  1.1MB/s
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 443
+  server: 299db35c-svhls0-t1bnjq-1krtb.ru.gotochinatown.net
+  tls: true
+  type: http
+  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 2|🇷🇺4 |  1.5MB/s
+  port: 10803
+  server: 185.22.155.71
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 1000 Mbps
+- name: 2|🇷🇺5 |  5.4MB/s
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 443
+  server: ba6285d8-svfr40-swy6li-tni2.ru.gotochinatown.net
+  tls: true
+  type: http
+  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+- name: 2|🇷🇺6 |  5.1MB/s
   network: ws
   port: 2096
   server: 172.67.211.140
@@ -39,39 +71,21 @@ proxies:
     headers:
       Host: void.crehistory.org
     path: /
-- name: 2|🇷🇺3 |  3.6MB/s
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 443
-  server: af5dc240-svhls0-swy6li-tni2.ru.gotochinatown.net
-  tls: true
-  type: http
-  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇷🇺4 |  3.2MB/s
-  network: tcp
-  port: 20216
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 14|RU_speednode_0048
+  network: ws
+  port: 2096
+  server: 45.8.211.26
+  servername: UoIrHqRs.cAfUnEaR.InFo
+  skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇷🇺5 |  5.8MB/s
-  password: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-  port: 443
-  server: 6b600dbc-svfr40-t28b6o-ef48.ru.gotochinatown.net
-  tls: true
-  type: http
-  username: cb15123a-084c-11f0-8eab-f23c91cfbbc9
-- auth: dongtaiwang.com
-  delay: 993
-  name: 2|🇷🇺6 |  5.5MB/s
-  password: dongtaiwang.com
-  port: 10011
-  server: hy2.694463.xyz
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
   udp: true
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: UoIrHqRs.cAfUnEaR.InFo
+    path: /
