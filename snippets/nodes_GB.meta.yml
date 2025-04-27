@@ -1,47 +1,44 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: f02f3ea9-8d23-465d-98d1-ef9c97ad0de4
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: f02f3ea9-8d23-465d-98d1-ef9c97ad0de4
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 01 | 1x HK
-  password: d21febc5-eb20-4408-94ef-455156db0e67
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 6b09c11f-643b-4c3e-9241-d73fd607937f
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: d21febc5-eb20-4408-94ef-455156db0e67
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 6b09c11f-643b-4c3e-9241-d73fd607937f
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: ceed5e5a-ecea-4389-b441-bad6c0eca730
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧1 |  1.3MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
+  flow: ''
+  mode: ''
+  name: 2|🇬🇧1 |  1.9MB/s
+  network: ws
+  port: 2096
+  server: 45.131.4.98
+  servername: UoIrHqRs.cAfUnEaR.InFo
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: false
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: UoIrHqRs.cAfUnEaR.InFo
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧2 |  5.5MB/s
+  name: 2|🇬🇧2 |  5.6MB/s
   network: tcp
   port: 32055
   reality-opts:
@@ -59,17 +56,3 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 14|GB_speednode_0058
-  port: 55799
-  reality-opts:
-    public-key: LBvEFKpH7REwityPTJqYPhEJ7MaIqcuIRL01VPzcpAs
-    short-id: a82b
-  server: 194.147.35.138
-  servername: iranhost.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 43589def-fa09-47e3-b44e-7f6e069f470d
