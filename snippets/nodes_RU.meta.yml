@@ -1,23 +1,9 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇷🇺俄罗斯 01 | 1x RU
-  password: 000e38ab-ad0a-4b00-9e13-f8726df122fe
-  port: 31511
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇷🇺 俄罗斯 01 | 1x RU
-  password: acfe7278-afa0-4392-9ae3-d6784dce4387
-  port: 36511
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - alpn:
   - h3
   auth_str: dongtaiwang.com
   down: 1000 Mbps
-  name: 2|🇷🇺1 |  5.9MB/s
+  name: 0|🇷🇺1 |  5.9MB/s
   port: 10469
   server: 46.17.41.174
   skip-cert-verify: true
@@ -25,7 +11,7 @@ proxies:
   type: hysteria
   udp: true
   up: 1000 Mbps
-- name: 2|🇷🇺2 |  3.3MB/s
+- name: 0|🇷🇺2 |  3.3MB/s
   network: ws
   port: 2096
   server: 172.67.211.140
@@ -39,7 +25,7 @@ proxies:
     headers:
       Host: void.crehistory.org
     path: /
-- name: 2|🇷🇺3 |  3.6MB/s
+- name: 0|🇷🇺3 |  3.6MB/s
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 443
   server: af5dc240-svhls0-swy6li-tni2.ru.gotochinatown.net
@@ -48,7 +34,7 @@ proxies:
   username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇷🇺4 |  3.2MB/s
+  name: 0|🇷🇺4 |  3.2MB/s
   network: tcp
   port: 20216
   reality-opts:
@@ -58,7 +44,7 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇷🇺5 |  5.8MB/s
+- name: 0|🇷🇺5 |  5.8MB/s
   password: cb15123a-084c-11f0-8eab-f23c91cfbbc9
   port: 443
   server: 6b600dbc-svfr40-t28b6o-ef48.ru.gotochinatown.net
@@ -67,11 +53,25 @@ proxies:
   username: cb15123a-084c-11f0-8eab-f23c91cfbbc9
 - auth: dongtaiwang.com
   delay: 993
-  name: 2|🇷🇺6 |  5.5MB/s
+  name: 0|🇷🇺6 |  5.5MB/s
   password: dongtaiwang.com
   port: 10011
   server: hy2.694463.xyz
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇷🇺 俄罗斯 01 | 1x RU
+  password: 55c08674-a9ff-4379-956d-21cb281bb882
+  port: 36511
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇷🇺俄罗斯 01 | 1x RU
+  password: 1ef39bfa-a7fc-4aef-a80c-fe67d98d9318
+  port: 31511
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
