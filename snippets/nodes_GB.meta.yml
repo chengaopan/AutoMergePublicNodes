@@ -1,21 +1,54 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: c26f105c-023e-4cb7-8594-8236fb70e4af
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 88c4cc13-f614-4ef1-8f23-907982b54525
+  port: 36141
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 32defc51-459f-40b8-b7d8-1031aa1f5894
+  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 88c4cc13-f614-4ef1-8f23-907982b54525
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: 859a9d5c-b5eb-4c50-a8b7-5a538c98fb3f
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: 859a9d5c-b5eb-4c50-a8b7-5a538c98fb3f
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: ''
+  mode: ''
+  name: 2|🇬🇧1 |  4.1MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: MU_w-1GJgJnJOTH6V8RTct92ar9doPeHcJm58FGAqhM
+    short-id: ea
+  server: V2RayMizban.iranigamepars.ir
+  servername: tgju.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 99b419b9-de5f-4cea-a08a-beef402432be
+  ws-opts:
+    headers:
+      Host: tgju.org
+    path: ''
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧1 |  5.1MB/s
+  name: 2|🇬🇧2 |  5.2MB/s
   network: tcp
   port: 49699
   reality-opts:
@@ -25,24 +58,9 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- flow: ''
-  mode: ''
-  name: 2|🇬🇧2 |  5.3MB/s
-  network: ws
-  port: 443
-  server: 45.131.6.160
-  servername: CxNiMjJz.cAfUnEaR.InFo
-  tls: true
-  type: vless
-  udp: false
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: CxNiMjJz.cAfUnEaR.InFo
-    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧3 |  5.3MB/s
+  name: 2|🇬🇧3 |  4.9MB/s
   network: tcp
   port: 14659
   reality-opts:
@@ -54,20 +72,20 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇬🇧4 |  5.8MB/s
+  name: 2|🇬🇧4 |  2.7MB/s
   network: tcp
-  port: 35311
+  port: 32055
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
+  server: csuzhou01.1cooldns.com
+  servername: www.amazon.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 2|🇬🇧5 |  4.7MB/s
+  name: 2|🇬🇧5 |  5.1MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -84,54 +102,36 @@ proxies:
       Host: tgju.org
     path: ''
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧6 |  2.3MB/s
-  network: tcp
-  port: 50123
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: 84.32.41.200
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧7 |  2.8MB/s
-  network: tcp
-  port: 32055
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 2|🇬🇧8 |  1.8MB/s
-  network: tcp
+  name: 2|🇬🇧6 |  3.2MB/s
+  network: ws
   port: 443
-  reality-opts:
-    public-key: MU_w-1GJgJnJOTH6V8RTct92ar9doPeHcJm58FGAqhM
-    short-id: ea
-  server: V2RayMizban.iranigamepars.ir
-  servername: tgju.org
+  server: 188.42.88.45
+  servername: CxNiMjJz.cAfUnEaR.InFo
   tls: true
   type: vless
   udp: false
-  uuid: 99b419b9-de5f-4cea-a08a-beef402432be
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
   ws-opts:
     headers:
-      Host: tgju.org
+      Host: CxNiMjJz.cAfUnEaR.InFo
     path: ''
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧9 |  3.2MB/s
-  password: oeqXtdpWKzvtyQtyUCdYz5
+- flow: ''
+  mode: ''
+  name: 2|🇬🇧7 |  5.9MB/s
+  network: ws
   port: 443
-  server: 78.129.140.11
-  type: ss
+  server: 45.131.6.160
+  servername: CxNiMjJz.cAfUnEaR.InFo
+  tls: true
+  type: vless
+  udp: false
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: CxNiMjJz.cAfUnEaR.InFo
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: 2,14|CN_speednode_0026
@@ -145,18 +145,6 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧11 |  3.4MB/s
-  network: tcp
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
