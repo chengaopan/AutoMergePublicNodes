@@ -1,72 +1,132 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷 韩国 01 | 1x KR
-  password: 80e0136c-000a-4470-b172-fae1a00b45fe
+  password: 3445b5a7-bd2b-4c02-9a5f-a8451b6cb03c
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷 韩国 02 | 1x KR
-  password: 80e0136c-000a-4470-b172-fae1a00b45fe
+  password: 3445b5a7-bd2b-4c02-9a5f-a8451b6cb03c
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 1|🇰🇷1 |  1.7MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: 633a50d8-f0c0-4798-a4b5-df9d471804a3
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: 633a50d8-f0c0-4798-a4b5-df9d471804a3
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 2|🇰🇷1 |  3.0MB/s
   network: ws
   port: 443
-  server: 160.79.104.108
-  servername: cx.ylks0033.dpdns.org
-  skip-cert-verify: true
+  server: cg1c16.waimaoglobaldirect.cc
+  servername: cg1c16.waimaoglobaldirect.cc
   tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  type: vmess
+  uuid: a1173fcf-a670-4151-88f7-57f6aa7d623d
   ws-opts:
     headers:
-      Host: cx.ylks0033.dpdns.org
-    path: /?ed=2560
+      Host: cg1c16.waimaoglobaldirect.cc
+    path: /api/v1/graphql
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 2|🇰🇷2 |  5.1MB/s
+  password: gJg1TyUQ
+  port: 30976
+  server: 13.125.168.176
+  tfo: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 2|🇰🇷3 |  4.8MB/s
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  name: 2|🇰🇷4 |  2.9MB/s
+  password: qwerREWQ@@
+  port: 15098
+  server: p222.panda001.net
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 2|🇰🇷5 |  4.2MB/s
+  network: tcp
+  port: 17232
+  server: 20986f4b-svfr40-t28b6o-ef48.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+  ws-headers:
+    Host: 20986f4b-svfr40-t28b6o-ef48.cm5.p5pv.com
+  ws-path: /
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 1|🇰🇷2 |  5.4MB/s
+  name: 2|🇰🇷6 |  5.7MB/s
   password: qwerREWQ@@
   port: 49043
   server: p240.panda004.net
   tfo: true
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 1|🇰🇷3 |  5.6MB/s
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
-  type: ss
-- cipher: aes-256-cfb
-  name: 1|🇰🇷4 |  4.6MB/s
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  type: ss
-- name: 1,13|US_speednode_0052
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  servername: redfree8mahsang6.redfree8.ir
+- alterId: 0
+  cipher: auto
+  name: 2|🇰🇷7 |  1.7MB/s
+  network: tcp
+  port: 17232
+  server: 0356c0b3-svdwg0-t28b6o-ef48.cm5.p5pv.com
   skip-cert-verify: true
   tls: false
+  type: vmess
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+  ws-headers:
+    Host: 0356c0b3-svdwg0-t28b6o-ef48.cm5.p5pv.com
+  ws-path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 2|🇰🇷8 |  5.1MB/s
+  network: tcp
+  port: 17232
+  server: 9c9e3181-svc1s0-t28b6o-ef48.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇰🇷9 |  5.7MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
+    short-id: 7a2b
+  server: 3.39.243.244
+  servername: zula.ir
+  skip-cert-verify: false
+  tfo: false
+  tls: true
   type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redfree8mahsang6.redfree8.ir
-    path: /vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl-vpnowl?ed=2560
+  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇰🇷 韩国|@ripaojiedian
+  name: 12|🇰🇷 韩国|@ripaojiedian
   port: 11213
   server: 13.wogg1.top
   skip-cert-verify: false
@@ -76,7 +136,7 @@ proxies:
   uuid: 48af369b-07f9-30f3-9210-354bd85eea27
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 11|🇰🇷 韩国特殊|@ripaojiedian
+  name: 12|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 35.94.146.58
@@ -84,7 +144,7 @@ proxies:
   type: ss
 - alterId: 2
   cipher: auto
-  name: 12|韩国|@ripaojiedian
+  name: 13|韩国|@ripaojiedian
   network: tcp
   port: '11213'
   server: 13.wogg1.top
@@ -92,17 +152,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 48af369b-07f9-30f3-9210-354bd85eea27
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇰🇷韩国 01 | 1x KR
-  password: b098dfe7-1185-4c71-a277-b463238d2655
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇰🇷韩国 02 | 1x KR
-  password: b098dfe7-1185-4c71-a277-b463238d2655
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true

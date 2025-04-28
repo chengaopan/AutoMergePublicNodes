@@ -1,21 +1,37 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 01 | 1x HK
-  password: 80e0136c-000a-4470-b172-fae1a00b45fe
+  password: 3445b5a7-bd2b-4c02-9a5f-a8451b6cb03c
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 80e0136c-000a-4470-b172-fae1a00b45fe
+  password: 3445b5a7-bd2b-4c02-9a5f-a8451b6cb03c
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: 633a50d8-f0c0-4798-a4b5-df9d471804a3
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- auth: nfsn666
+  client-fingerprint: chrome
+  name: 2|🇬🇧1 |  1.3MB/s
+  password: nfsn666
+  port: 8888
+  server: ld.nfsn666.gq
+  skip-cert-verify: true
+  sni: ld.nfsn666.gq
+  type: hysteria2
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧1 |  5.8MB/s
+  name: 2|🇬🇧2 |  1.1MB/s
   network: tcp
   port: 32055
   reality-opts:
@@ -26,24 +42,12 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧2 |  2.2MB/s
-  network: tcp
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: gysz0000.dynu.net
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 1|🇬🇧3 |  4.5MB/s
+  name: 2|🇬🇧3 |  5.6MB/s
   network: ws
   port: 443
-  server: 45.8.211.230
+  server: 47.79.92.16
   servername: CxNiMjJz.cAfUnEaR.InFo
   tls: true
   type: vless
@@ -55,38 +59,7 @@ proxies:
     path: /
 - flow: ''
   mode: ''
-  name: 1|🇬🇧4 |  5.3MB/s
-  network: ws
-  port: 443
-  server: 45.131.6.160
-  servername: CxNiMjJz.cAfUnEaR.InFo
-  tls: true
-  type: vless
-  udp: false
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: CxNiMjJz.cAfUnEaR.InFo
-    path: /
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 1|🇬🇧5 |  5.5MB/s
-  network: ws
-  port: 443
-  server: 45.142.120.97
-  servername: CxNiMjJz.cAfUnEaR.InFo
-  tls: true
-  type: vless
-  udp: false
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: CxNiMjJz.cAfUnEaR.InFo
-    path: /
-- flow: ''
-  mode: ''
-  name: 1|🇬🇧6 |  4.0MB/s
+  name: 2|🇬🇧4 |  5.3MB/s
   network: ws
   port: 443
   server: 188.42.88.45
@@ -100,20 +73,32 @@ proxies:
       Host: CxNiMjJz.cAfUnEaR.InFo
     path: ''
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧7 |  3.9MB/s
+  flow: ''
+  mode: ''
+  name: 2|🇬🇧5 |  1.7MB/s
   network: tcp
-  port: 14659
+  port: 443
   reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
+    public-key: MU_w-1GJgJnJOTH6V8RTct92ar9doPeHcJm58FGAqhM
+    short-id: ea
+  server: v2raymizban.iranigamepars.ir
+  servername: tgju.org
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: false
+  uuid: 71075f29-256c-430e-93c7-42f432bc8abe
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 2|🇬🇧6 |  5.4MB/s
+  password: Y09Etfs6
+  port: 6110
+  server: 51.24.5.76
+  tfo: true
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧8 |  5.0MB/s
+  name: 2|🇬🇧7 |  4.4MB/s
   network: tcp
   port: 35311
   reality-opts:
@@ -123,23 +108,7 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: ''
-  mode: ''
-  name: 1|🇬🇧9 |  1.2MB/s
-  network: ws
-  port: 443
-  server: 104.17.148.22
-  servername: CxNiMjJz.cAfUnEaR.InFo
-  tls: true
-  type: vless
-  udp: false
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: CxNiMjJz.cAfUnEaR.InFo
-    path: /
-- name: 10|Hysteria 🇬🇧 @v2meowcf
+- name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
   server: 178.236.237.84
@@ -147,17 +116,3 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰香港 01 | 1x HK
-  password: b098dfe7-1185-4c71-a277-b463238d2655
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇬🇧英国家宽 01 | 1x UK
-  password: b098dfe7-1185-4c71-a277-b463238d2655
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
