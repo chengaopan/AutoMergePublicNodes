@@ -1,39 +1,48 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷 韩国 01 | 1x KR
-  password: 35614cef-5b4b-4ca8-a247-489d1f4d8c37
+  password: 5ae0a937-d581-4e08-90be-9279cdc35aab
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷 韩国 02 | 1x KR
-  password: 35614cef-5b4b-4ca8-a247-489d1f4d8c37
+  password: 5ae0a937-d581-4e08-90be-9279cdc35aab
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 1|🇰🇷1 |  2.7MB/s
-  password: qwerREWQ@@
-  port: 30454
-  server: p229.panda004.net
-  tfo: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: ff1265da-e5f4-468e-b3ac-cbb614bbeb8b
+  port: 31311
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 1|🇰🇷2 |  1.2MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: ff1265da-e5f4-468e-b3ac-cbb614bbeb8b
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇰🇷1 |  1.7MB/s
   network: tcp
-  port: 17232
-  server: 79c77016-svhls0-t28b6o-ef48.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+  port: 21082
+  reality-opts:
+    public-key: tf7ZDGaue4C43MM0ECIfjOS-0kk7XMSqfnaSY4Er5Fc
+    short-id: 758719a6080f2767
+  server: tw-ty-line1-2-2.sudatech.store
+  servername: learn.microsoft.com
+  tls: true
+  type: vless
+  uuid: e7adaa99-8363-3ec4-b849-307c99005405
 - alterId: 0
   cipher: auto
-  name: 1|🇰🇷3 |  2.0MB/s
+  name: 2|🇰🇷2 |  5.6MB/s
   network: tcp
   port: 17232
   server: 0356c0b3-svdwg0-t28b6o-ef48.cm5.p5pv.com
@@ -44,9 +53,34 @@ proxies:
   ws-headers:
     Host: 0356c0b3-svdwg0-t28b6o-ef48.cm5.p5pv.com
   ws-path: /
+- cipher: aes-256-cfb
+  delay: 772
+  name: 2|🇰🇷3 |  5.9MB/s
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 2|🇰🇷4 |  6.2MB/s
+  password: qwerREWQ@@
+  port: 63648
+  server: p228.panda004.net
+  tfo: true
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 1|🇰🇷4 |  1.8MB/s
+  name: 2|🇰🇷5 |  6.3MB/s
+  network: tcp
+  port: 17232
+  server: 9c9e3181-svc1s0-t28b6o-ef48.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: 2|🇰🇷6 |  2.2MB/s
   network: tcp
   port: 17232
   server: 20986f4b-svfr40-t28b6o-ef48.cm5.p5pv.com
@@ -58,62 +92,61 @@ proxies:
     Host: 20986f4b-svfr40-t28b6o-ef48.cm5.p5pv.com
   ws-path: /
 - cipher: aes-256-cfb
-  name: 1|🇰🇷5 |  5.6MB/s
+  delay: 1665
+  name: 2|🇰🇷7 |  3.2MB/s
+  password: qwerREWQ@@
+  port: 4857
+  server: p227.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  name: 2|🇰🇷8 |  5.1MB/s
   password: qwerREWQ@@
   port: 11389
   server: p231.panda004.net
   type: ss
 - cipher: aes-256-cfb
-  name: 1|🇰🇷6 |  5.9MB/s
+  client-fingerprint: chrome
+  name: 2|🇰🇷9 |  6.0MB/s
+  password: qwerREWQ@@
+  port: 30454
+  server: p229.panda004.net
+  tfo: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 2|🇰🇷10 |  3.6MB/s
   password: qwerREWQ@@
   port: 15098
   server: p222.panda001.net
   type: ss
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 1|🇰🇷7 |  5.8MB/s
+  name: 2|🇰🇷11 |  3.1MB/s
   password: qwerREWQ@@
-  port: 63648
-  server: p228.panda004.net
-  tfo: true
+  port: 11389
+  server: 221.150.109.89
   type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 1|🇰🇷8 |  5.8MB/s
-  network: ws
-  port: 443
-  server: cg1c16.waimaoglobaldirect.cc
-  servername: cg1c16.waimaoglobaldirect.cc
-  tls: true
+  name: 2|🇰🇷12 |  5.5MB/s
+  network: tcp
+  port: 17232
+  server: 79c77016-svhls0-t28b6o-ef48.cm5.p5pv.com
+  tls: false
   type: vmess
-  uuid: a1173fcf-a670-4151-88f7-57f6aa7d623d
-  ws-opts:
-    headers:
-      Host: cg1c16.waimaoglobaldirect.cc
-    path: /api/v1/graphql
-- cipher: aes-256-cfb
-  delay: 1665
-  name: 1|🇰🇷9 |  6.1MB/s
-  password: qwerREWQ@@
-  port: 4857
-  server: p227.panda004.net
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷韩国 01 | 1x KR
-  password: 91cd748c-95e9-4357-94a0-fb9296e126b2
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷韩国 02 | 1x KR
-  password: 91cd748c-95e9-4357-94a0-fb9296e126b2
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+- alterId: 0
+  cipher: auto
+  name: 2|🇰🇷13 |  5.5MB/s
+  network: tcp
+  port: 17232
+  server: 3c409c82-svjgg0-t28b6o-ef48.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: cb15123a-084c-11f0-8eab-f23c91cfbbc9
+  ws-headers:
+    Host: 3c409c82-svjgg0-t28b6o-ef48.cm5.p5pv.com
+  ws-path: /
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
