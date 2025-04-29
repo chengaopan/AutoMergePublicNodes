@@ -1,59 +1,48 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 02 | 1x HK
-  password: 486402ff-c4db-4c0a-a42e-4b5df4359c6c
+  password: d7a3213c-7877-4bbb-b53b-60894c2dd314
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 486402ff-c4db-4c0a-a42e-4b5df4359c6c
+  password: d7a3213c-7877-4bbb-b53b-60894c2dd314
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰香港 02 | 1x HK
-  password: 8ce322d6-f627-42e6-a0e0-249da991379f
+  password: e93f2ab2-544d-48d4-a695-5fbe749d5344
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: 8ce322d6-f627-42e6-a0e0-249da991379f
+  password: e93f2ab2-544d-48d4-a695-5fbe749d5344
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 2|🇭🇰3 |  5.6MB/s
-  network: tcp
-  port: 30251
-  raw:
-    add: 35.220.230.251
-    aid: '0'
-    alpn: ''
-    fp: ''
-    host: ''
-    id: 86c9c119-c46d-45a9-82a6-75a886e5e795
-    net: tcp
-    path: ''
-    port: '30251'
-    ps: 🔥Join+Telegram:@FarahVPN🟣
-    scy: auto
-    sni: ''
-    tls: ''
-    type: ''
-    v: '2'
-  server: 35.220.230.251
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 86c9c119-c46d-45a9-82a6-75a886e5e795
-- name: 2|🇭🇰4 |  6.2MB/s
+- cipher: aes-256-gcm
+  name: 2|🇭🇰2 |  2.3MB/s
+  password: ffc75281-6c9a-4cd7-8af6-aaa12eb7496f
+  port: 30018
+  server: 114.132.40.118
+  type: ss
+- ip-version: dual
+  name: 2|🇭🇰11 |  4.6MB/s
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 121.14.61.174
+  skip-cert-verify: true
+  sni: hk-13-568.flztjc.net
+  tls: true
+  type: trojan
+- name: 2|🇭🇰15 |  5.9MB/s
   network: tcp
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
@@ -62,21 +51,15 @@ proxies:
   sni: hk-13-568.flztjc.net
   type: trojan
   udp: true
-- ip-version: dual
-  name: 2|🇭🇰12 |  6.3MB/s
+- client-fingerprint: chrome
+  name: 2,12,13|香港4|@ripaojiedian
+  network: tcp
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
-  server: 121.14.61.174
-  skip-cert-verify: true
+  server: dozo01.flztjc.top
+  skip-cert-verify: false
   sni: hk-13-568.flztjc.net
-  tls: true
   type: trojan
-- cipher: aes-256-gcm
-  name: 2|🇭🇰15 |  6.3MB/s
-  password: 887306f3-af8c-472e-b6e0-e7dcf970a4f0
-  port: 34713
-  server: jsyd.piaomiaoxu.net
-  type: ss
 - client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
   network: ws
@@ -114,15 +97,6 @@ proxies:
   server: 175.178.13.108
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 12,13|香港4|@ripaojiedian
-  network: tcp
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: dozo01.flztjc.top
-  skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
-  type: trojan
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
