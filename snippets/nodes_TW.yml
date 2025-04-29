@@ -1,5 +1,47 @@
 proxies:
-- name: 0|🇹🇼1 |  4.9MB/s
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼台湾 01 | 1x TW
+  password: ac261ac2-005d-4c45-b975-e1de1821dc95
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼台湾 02 | 1x TW
+  password: ac261ac2-005d-4c45-b975-e1de1821dc95
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼台湾 03 | 1x TW
+  password: ac261ac2-005d-4c45-b975-e1de1821dc95
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 01 | 1x TW
+  password: bc748d49-6b5a-4ff4-9d37-c88d797ad947
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 02 | 1x TW
+  password: bc748d49-6b5a-4ff4-9d37-c88d797ad947
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 03 | 1x TW
+  password: bc748d49-6b5a-4ff4-9d37-c88d797ad947
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 2|🇹🇼1 |  2.2MB/s
   network: ws
   password: Aimer
   port: 443
@@ -12,7 +54,46 @@ proxies:
     headers:
       host: epcca.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 0|🇹🇼3 |  1.4MB/s
+- name: 2|🇹🇼2 |  1.3MB/s
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 154.197.64.98
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 2,14|US_speednode_0035
+  network: ws
+  password: Aimer
+  port: 8443
+  server: 104.129.167.255
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560
+- name: 2|🇹🇼5 |  3.5MB/s
+  network: ws
+  password: Aimer
+  port: 2083
+  server: 213.241.198.56
+  skip-cert-verify: true
+  sni: epcca.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: epcca.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 2|🇹🇼6 |  1.3MB/s
   network: ws
   password: Aimer
   port: 443
@@ -25,67 +106,31 @@ proxies:
     headers:
       host: epcca.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 0|🇹🇼5 |  2.1MB/s
+- name: 2|🇹🇼7 |  5.2MB/s
   network: ws
   password: Aimer
-  port: 8443
-  server: 192.200.160.19
+  port: 2083
+  server: 130.250.137.63
   skip-cert-verify: true
   sni: epcca.ambercc.filegear-sg.me
+  tfo: false
   type: trojan
   udp: true
   ws-opts:
     headers:
-      host: epcca.ambercc.filegear-sg.me
+      Host: epcca.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼 台湾 01 | 1x TW
-  password: e5b64b05-d8c0-4588-b5a5-5c70f78b4a53
-  port: 36241
-  server: free.2weradf.xyz
+- cipher: aes-128-gcm
+  name: 2|🇹🇼8 |  1.2MB/s
+  password: VMhGp5wEIyCDf90T
+  port: 64050
+  server: csuzhou01.1cooldns.com
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼 台湾 02 | 1x TW
-  password: e5b64b05-d8c0-4588-b5a5-5c70f78b4a53
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼 台湾 03 | 1x TW
-  password: e5b64b05-d8c0-4588-b5a5-5c70f78b4a53
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - client-fingerprint: chrome
-  name: 11,12|台湾|@ripaojiedian
-  network: tcp
+  name: 12|🇹🇼 台湾|@ripaojiedian
   password: 8e189046-034d-47b6-9448-7edde2689568
   port: 27201
   server: 183.2.150.98
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇹🇼台湾 01 | 1x TW
-  password: f11e9fd9-df43-4058-8e59-4a47154166df
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇹🇼台湾 02 | 1x TW
-  password: f11e9fd9-df43-4058-8e59-4a47154166df
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇹🇼台湾 03 | 1x TW
-  password: f11e9fd9-df43-4058-8e59-4a47154166df
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
