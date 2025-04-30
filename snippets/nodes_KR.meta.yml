@@ -1,54 +1,75 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷韩国 01 | 1x KR
-  password: 627a38b9-66b7-495b-96ff-df0dbd25cd88
+  password: f13e6726-ae30-4db6-be0f-40b937f66611
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇰🇷韩国 02 | 1x KR
-  password: 627a38b9-66b7-495b-96ff-df0dbd25cd88
+  password: f13e6726-ae30-4db6-be0f-40b937f66611
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 01 | 1x KR
-  password: 5266a6a3-5720-43f0-bbf3-f6270b779a71
-  port: 36311
-  server: free.2weradf.xyz
+- cipher: aes-256-cfb
+  name: 1|🇰🇷1 |  4.6MB/s
+  password: qwerREWQ@@
+  port: 63648
+  server: p228.panda004.net
   type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 02 | 1x KR
-  password: 5266a6a3-5720-43f0-bbf3-f6270b779a71
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 2|🇰🇷1 |  1.1MB/s
-  password: 6f1d5be0-4ed9-4706-99e2-36a2b658ae1b
-  port: 21017
-  server: 125.94.40.162
+- name: 1|🇰🇷2 |  1.2MB/s
+  network: ws
+  port: 443
+  server: 192.0.54.25
+  servername: hj.ylka.dpdns.org
   skip-cert-verify: true
-  sni: k16.tudou211.com
-  type: trojan
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇰🇷2 |  1.9MB/s
-  network: tcp
-  port: 21082
-  reality-opts:
-    public-key: tf7ZDGaue4C43MM0ECIfjOS-0kk7XMSqfnaSY4Er5Fc
-    short-id: 758719a6080f2767
-  server: tw-ty-line1-2-2.sudatech.store
-  servername: learn.microsoft.com
   tls: true
   type: vless
-  uuid: e7adaa99-8363-3ec4-b849-307c99005405
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: hj.ylka.dpdns.org
+    path: /?ed=2560
+- delay: 921
+  name: 1|🇰🇷3 |  6.4MB/s
+  password: c94c5bad-2456-479b-9b58-c332f150319f
+  port: 36049
+  server: zz1.jckumao.cc
+  skip-cert-verify: true
+  sni: zz1.jckumao.cc
+  type: trojan
+  udp: true
 - client-fingerprint: random
-  name: 2,14|US_speednode_0093
+  delay: 1198
+  name: 1,14|US_speednode_0097
+  network: ws
+  port: 443
+  server: 103.21.244.89
+  servername: hi.univermap.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 371726b5-2ecc-4c99-bc7f-205c93be0ded
+  ws-opts:
+    headers:
+      Host: hi.univermap.site
+    path: /?ed=2560
+- auth: 6e9acb2f-c6c1-43a1-a702-bc4b1132df24
+  delay: 530
+  name: 1|🇰🇷5 |  3.6MB/s
+  password: 6e9acb2f-c6c1-43a1-a702-bc4b1132df24
+  port: 20000
+  server: 158.179.164.122
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- client-fingerprint: random
+  name: 1,14|US_speednode_0093
   network: ws
   port: 2096
   server: 172.64.39.173
@@ -62,12 +83,53 @@ proxies:
     headers:
       Host: hi.univermap.site
     path: /?ed=2560
+- name: 1|🇰🇷7 |  2.8MB/s
+  network: ws
+  port: 443
+  server: abdullah.ns.cloudflare.com
+  servername: hj.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: hj.ylka.dpdns.org
+    path: /?ed=2560
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇰🇷8 |  1.2MB/s
+  network: tcp
+  port: 13483
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: aes-256-cfb
-  name: 2|🇰🇷4 |  5.2MB/s
-  password: qwerREWQ@@
-  port: 4857
-  server: p227.panda004.net
+  delay: 881
+  name: 1|🇰🇷9 |  5.0MB/s
+  password: amazonskr05
+  port: 443
+  server: 13.124.130.158
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇰🇷 韩国 01 | 1x KR
+  password: 74a774b8-b222-487b-b518-750c8bc433f1
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇰🇷 韩国 02 | 1x KR
+  password: 74a774b8-b222-487b-b518-750c8bc433f1
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 12|🇰🇷 韩国特殊|@ripaojiedian

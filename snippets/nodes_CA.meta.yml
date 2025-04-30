@@ -1,21 +1,28 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 627a38b9-66b7-495b-96ff-df0dbd25cd88
+  password: f13e6726-ae30-4db6-be0f-40b937f66611
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: 5266a6a3-5720-43f0-bbf3-f6270b779a71
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
+- name: 1|🇨🇦1 |  5.2MB/s
+  network: ws
+  port: 443
+  server: www.udemy.com
+  servername: hj.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
   udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: hj.ylka.dpdns.org
+    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇨🇦1 |  4.6MB/s
+  name: 1|🇨🇦2 |  4.7MB/s
   network: tcp
   port: 16011
   reality-opts:
@@ -25,3 +32,38 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- name: 1|🇨🇦3 |  1.0MB/s
+  network: ws
+  port: 443
+  server: 45.67.215.209
+  servername: hj.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: hj.ylka.dpdns.org
+    path: /?ed=2560
+- name: 1|🇨🇦4 |  1.1MB/s
+  network: ws
+  port: 443
+  server: whatismyipaddress.com
+  servername: hj.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: hj.ylka.dpdns.org
+    path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇨🇦 加拿大 01 | 1x CA
+  password: 74a774b8-b222-487b-b518-750c8bc433f1
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
