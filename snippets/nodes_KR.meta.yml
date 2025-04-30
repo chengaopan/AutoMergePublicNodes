@@ -1,45 +1,73 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 01 | 1x KR
-  password: cb7a3b5d-8cbd-47dc-9df8-90a28037f855
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 02 | 1x KR
-  password: cb7a3b5d-8cbd-47dc-9df8-90a28037f855
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 01 | 1x KR
-  password: f7086cdf-d193-4172-9bd1-9d11d058e944
+  name: 0|🇰🇷韩国 01 | 1x KR
+  password: 3e733364-d104-478b-b184-7d2932c1a388
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 02 | 1x KR
-  password: f7086cdf-d193-4172-9bd1-9d11d058e944
+  name: 0|🇰🇷韩国 02 | 1x KR
+  password: 3e733364-d104-478b-b184-7d2932c1a388
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 2|🇰🇷1 |  5.4MB/s
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 01 | 1x KR
+  password: 23c1b79d-ef3c-417b-97c6-3eac4ff202de
+  port: 36311
+  server: free.2weradf.xyz
   type: ss
-- name: 2|🇰🇷2 |  5.0MB/s
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 02 | 1x KR
+  password: 23c1b79d-ef3c-417b-97c6-3eac4ff202de
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 2|🇰🇷1 |  1.1MB/s
   password: 6f1d5be0-4ed9-4706-99e2-36a2b658ae1b
   port: 21017
   server: 125.94.40.162
   skip-cert-verify: true
   sni: k16.tudou211.com
   type: trojan
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇰🇷2 |  1.9MB/s
+  network: tcp
+  port: 21082
+  reality-opts:
+    public-key: tf7ZDGaue4C43MM0ECIfjOS-0kk7XMSqfnaSY4Er5Fc
+    short-id: 758719a6080f2767
+  server: tw-ty-line1-2-2.sudatech.store
+  servername: learn.microsoft.com
+  tls: true
+  type: vless
+  uuid: e7adaa99-8363-3ec4-b849-307c99005405
+- client-fingerprint: random
+  name: 2,14|US_speednode_0093
+  network: ws
+  port: 2096
+  server: 172.64.39.173
+  servername: hi.univermap.site
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 371726b5-2ecc-4c99-bc7f-205c93be0ded
+  ws-opts:
+    headers:
+      Host: hi.univermap.site
+    path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 2|🇰🇷4 |  5.2MB/s
+  password: qwerREWQ@@
+  port: 4857
+  server: p227.panda004.net
+  type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 12|🇰🇷 韩国特殊|@ripaojiedian

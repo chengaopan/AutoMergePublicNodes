@@ -1,35 +1,64 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: cb7a3b5d-8cbd-47dc-9df8-90a28037f855
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: cb7a3b5d-8cbd-47dc-9df8-90a28037f855
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 01 | 1x HK
-  password: f7086cdf-d193-4172-9bd1-9d11d058e944
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 3e733364-d104-478b-b184-7d2932c1a388
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: f7086cdf-d193-4172-9bd1-9d11d058e944
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 3e733364-d104-478b-b184-7d2932c1a388
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 23c1b79d-ef3c-417b-97c6-3eac4ff202de
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧1 |  5.4MB/s
+  network: tcp
+  port: 35311
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧2 |  1.1MB/s
+  network: tcp
+  port: 32055
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: csuzhou01.1cooldns.com
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧3 |  5.4MB/s
+  network: tcp
+  port: 14659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - flow: ''
   mode: ''
-  name: 2|🇬🇧1 |  4.3MB/s
+  name: 2|🇬🇧4 |  1.8MB/s
   network: ws
   port: 443
   server: 188.42.88.45
@@ -44,22 +73,7 @@ proxies:
     path: /
 - flow: ''
   mode: ''
-  name: 2|🇬🇧2 |  4.5MB/s
-  network: ws
-  port: 443
-  server: 45.142.120.97
-  servername: CxNiMjJz.cAfUnEaR.InFo
-  tls: true
-  type: vless
-  udp: false
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: CxNiMjJz.cAfUnEaR.InFo
-    path: /
-- flow: ''
-  mode: ''
-  name: 2|🇬🇧3 |  4.4MB/s
+  name: 2|🇬🇧5 |  2.2MB/s
   network: ws
   port: 443
   server: 45.8.211.230
@@ -72,24 +86,12 @@ proxies:
     headers:
       Host: CxNiMjJz.cAfUnEaR.InFo
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇬🇧4 |  3.1MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: vip.jddns0202.top
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - flow: ''
   mode: ''
-  name: 2|🇬🇧5 |  2.2MB/s
+  name: 2|🇬🇧6 |  1.2MB/s
   network: ws
   port: 443
-  server: 45.131.6.160
+  server: 45.142.120.97
   servername: CxNiMjJz.cAfUnEaR.InFo
   tls: true
   type: vless
