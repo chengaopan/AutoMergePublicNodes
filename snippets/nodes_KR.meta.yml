@@ -1,28 +1,69 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 01 | 1x KR
-  password: cd6cdbce-2a8f-443b-b516-d0ca3cd714bd
+  name: 0|🇰🇷韩国 01 | 1x KR
+  password: fb81f3d9-5adc-49ac-bde8-f2dd8a42fa0c
+  port: 31311
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇰🇷韩国 02 | 1x KR
+  password: fb81f3d9-5adc-49ac-bde8-f2dd8a42fa0c
+  port: 31313
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 01 | 1x KR
+  password: 01c9218f-86c0-4aea-be98-4abea73ca0a7
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 02 | 1x KR
-  password: cd6cdbce-2a8f-443b-b516-d0ca3cd714bd
+  name: 1|🇰🇷 韩国 02 | 1x KR
+  password: 01c9218f-86c0-4aea-be98-4abea73ca0a7
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇰🇷1 |  5.8MB/s
+  network: tcp
+  port: 13483
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: random
+  delay: 1830
+  flow: xtls-rprx-vision
+  name: 2|🇰🇷2 |  1.2MB/s
+  network: tcp
+  port: 21082
+  reality-opts:
+    public-key: tf7ZDGaue4C43MM0ECIfjOS-0kk7XMSqfnaSY4Er5Fc
+    short-id: 758719a6080f2767
+  server: tw-ty-line1-2-2.sudatech.store
+  servername: learn.microsoft.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e7adaa99-8363-3ec4-b849-307c99005405
 - cipher: aes-256-cfb
-  name: 1|🇰🇷1 |  4.6MB/s
+  name: 2|🇰🇷3 |  5.7MB/s
   password: qwerREWQ@@
-  port: 63648
-  server: p228.panda004.net
+  port: 11389
+  server: 221.150.109.89
   type: ss
-- name: 1|🇰🇷2 |  1.2MB/s
+- name: 2|🇰🇷4 |  1.0MB/s
   network: ws
   port: 443
-  server: 192.0.54.25
+  server: www.udemy.com
   servername: hj.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -33,18 +74,24 @@ proxies:
     headers:
       host: hj.ylka.dpdns.org
     path: /?ed=2560
-- delay: 921
-  name: 1|🇰🇷3 |  6.4MB/s
-  password: c94c5bad-2456-479b-9b58-c332f150319f
-  port: 36049
-  server: zz1.jckumao.cc
-  skip-cert-verify: true
-  sni: zz1.jckumao.cc
-  type: trojan
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 2|🇰🇷5 |  1.4MB/s
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  tfo: true
+  type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 2|🇰🇷6 |  2.3MB/s
+  password: qwerREWQ@@
+  port: 63648
+  server: 125.141.26.15
+  type: ss
 - client-fingerprint: random
   delay: 1198
-  name: 1,13|US_speednode_0097
+  name: 2,14|US_speednode_0097
   network: ws
   port: 443
   server: 103.21.244.89
@@ -58,35 +105,19 @@ proxies:
     headers:
       Host: hi.univermap.site
     path: /?ed=2560
-- auth: 6e9acb2f-c6c1-43a1-a702-bc4b1132df24
-  delay: 530
-  name: 1|🇰🇷5 |  3.6MB/s
-  password: 6e9acb2f-c6c1-43a1-a702-bc4b1132df24
-  port: 20000
-  server: 158.179.164.122
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 2|🇰🇷8 |  4.1MB/s
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  tfo: true
+  type: ss
   udp: true
-- client-fingerprint: random
-  name: 1,13|US_speednode_0093
+- name: 2|🇰🇷9 |  2.4MB/s
   network: ws
-  port: 2096
-  server: 172.64.39.173
-  servername: hi.univermap.site
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 371726b5-2ecc-4c99-bc7f-205c93be0ded
-  ws-opts:
-    headers:
-      Host: hi.univermap.site
-    path: /?ed=2560
-- name: 1|🇰🇷7 |  2.8MB/s
-  network: ws
-  port: 443
-  server: abdullah.ns.cloudflare.com
+  port: 60000
+  server: 192.9.248.209
   servername: hj.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -97,35 +128,43 @@ proxies:
     headers:
       host: hj.ylka.dpdns.org
     path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇰🇷8 |  1.2MB/s
-  network: tcp
-  port: 13483
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: auto
+  delay: 1952
+  name: 2|🇰🇷10 |  2.1MB/s
+  port: 17232
+  server: 80ec9abb-svsps0-t6fl0c-1r7od.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
+- auth: 6e9acb2f-c6c1-43a1-a702-bc4b1132df24
+  delay: 530
+  name: 2|🇰🇷11 |  4.2MB/s
+  password: 6e9acb2f-c6c1-43a1-a702-bc4b1132df24
+  port: 20000
+  server: 158.179.164.122
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
 - cipher: aes-256-cfb
-  delay: 881
-  name: 1|🇰🇷9 |  5.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 13.124.130.158
+  name: 2|🇰🇷12 |  2.3MB/s
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 11|🇰🇷 韩国特殊|@ripaojiedian
+  name: 12|🇰🇷 韩国特殊|@ripaojiedian
   password: amazonskr05
   port: 443
   server: 13.113.222.121
   tfo: false
   type: ss
 - client-fingerprint: random
-  name: 13|KR_speednode_0034
+  name: 14|KR_speednode_0034
   network: ws
   port: 58474
   server: 152.70.232.251
@@ -139,17 +178,3 @@ proxies:
     headers:
       Host: chou3.pages.dev
     path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇰🇷韩国 01 | 1x KR
-  password: 7f360d47-7a9f-4ff6-a970-344f49956e6d
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇰🇷韩国 02 | 1x KR
-  password: 7f360d47-7a9f-4ff6-a970-344f49956e6d
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
