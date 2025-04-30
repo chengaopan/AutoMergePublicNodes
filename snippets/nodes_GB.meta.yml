@@ -1,33 +1,7 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: 41afc5a2-e32b-47ad-9166-9d681b1c00f5
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 41afc5a2-e32b-47ad-9166-9d681b1c00f5
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧1 |  5.9MB/s
-  network: tcp
-  port: 35311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - flow: ''
   mode: ''
-  name: 1|🇬🇧2 |  5.7MB/s
+  name: 0|🇬🇧1 |  3.4MB/s
   network: ws
   port: 443
   server: 188.42.88.45
@@ -40,9 +14,21 @@ proxies:
     headers:
       Host: CxNiMjJz.cAfUnEaR.InFo
     path: /
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 0|🇬🇧2 |  3.5MB/s
+  network: tcp
+  port: 14659
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - flow: ''
   mode: ''
-  name: 1|🇬🇧3 |  5.8MB/s
+  name: 0|🇬🇧3 |  5.6MB/s
   network: ws
   port: 443
   server: 45.142.120.97
@@ -55,21 +41,39 @@ proxies:
     headers:
       Host: CxNiMjJz.cAfUnEaR.InFo
     path: /
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧4 |  4.3MB/s
-  network: tcp
-  port: 14659
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
+- flow: ''
+  mode: ''
+  name: 0|🇬🇧4 |  1.9MB/s
+  network: ws
+  port: 443
+  server: 45.8.211.230
+  servername: CxNiMjJz.cAfUnEaR.InFo
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: false
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: CxNiMjJz.cAfUnEaR.InFo
+    path: /
+- flow: ''
+  mode: ''
+  name: 0|🇬🇧5 |  1.2MB/s
+  network: ws
+  port: 443
+  server: 45.131.6.160
+  servername: CxNiMjJz.cAfUnEaR.InFo
+  tls: true
+  type: vless
+  udp: false
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: CxNiMjJz.cAfUnEaR.InFo
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧5 |  5.1MB/s
+  name: 0|🇬🇧6 |  5.4MB/s
   network: tcp
   port: 49699
   reality-opts:
@@ -79,6 +83,20 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: d8ff37b4-6256-46b7-96a6-7ab7d9a7ab2c
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: d8ff37b4-6256-46b7-96a6-7ab7d9a7ab2c
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - name: 10|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
@@ -88,16 +106,9 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰香港 01 | 1x HK
-  password: 61bf0ec9-7906-457f-a5db-b6261d6f8825
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇬🇧英国家宽 01 | 1x UK
-  password: 61bf0ec9-7906-457f-a5db-b6261d6f8825
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 14|🇬🇧 英国住宅IP 01 | 1x UK
+  password: bc2dbf15-194c-4c5e-8d09-93762ec53239
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
