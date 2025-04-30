@@ -1,35 +1,7 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: 3a0b1f75-823a-4942-9fbb-5e3ec15a7ae4
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦加拿大 01 | 1x CA
-  password: ff96802c-a090-48c0-8e65-3ff2774a0592
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: 2|🇨🇦1 |  5.2MB/s
-  network: ws
-  port: 443
-  server: 69.84.182.141
-  servername: hj.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: hj.ylka.dpdns.org
-    path: /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇨🇦2 |  1.3MB/s
+  name: 1|🇨🇦1 |  4.5MB/s
   network: tcp
   port: 16011
   reality-opts:
@@ -39,3 +11,18 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: 1|🇨🇦2 |  2.1MB/s
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 132.145.108.102
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇨🇦加拿大 01 | 1x CA
+  password: 67c5c6d1-64ff-491d-95cc-cde44997a317
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
