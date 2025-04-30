@@ -1,49 +1,77 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼 台湾 01 | 1x TW
-  password: e4774a0c-29f9-4c98-bcd9-1c5de83b2f84
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼 台湾 02 | 1x TW
-  password: e4774a0c-29f9-4c98-bcd9-1c5de83b2f84
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼 台湾 03 | 1x TW
-  password: e4774a0c-29f9-4c98-bcd9-1c5de83b2f84
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 01 | 1x TW
-  password: 2f86324c-fe4e-4f3c-8826-f119625d5257
+  name: 0|🇹🇼台湾 01 | 1x TW
+  password: ad22eceb-fd84-4aa3-990d-7154f7cf5c04
   port: 31241
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 02 | 1x TW
-  password: 2f86324c-fe4e-4f3c-8826-f119625d5257
+  name: 0|🇹🇼台湾 02 | 1x TW
+  password: ad22eceb-fd84-4aa3-990d-7154f7cf5c04
   port: 31243
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 03 | 1x TW
-  password: 2f86324c-fe4e-4f3c-8826-f119625d5257
+  name: 0|🇹🇼台湾 03 | 1x TW
+  password: ad22eceb-fd84-4aa3-990d-7154f7cf5c04
   port: 31245
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 01 | 1x TW
+  password: d56544ed-adff-42e4-b5c4-504b949508c3
+  port: 36241
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 02 | 1x TW
+  password: d56544ed-adff-42e4-b5c4-504b949508c3
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 03 | 1x TW
+  password: d56544ed-adff-42e4-b5c4-504b949508c3
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- client-fingerprint: random
+  delay: 757
+  name: 2|🇹🇼1 |  4.9MB/s
+  network: ws
+  port: 44333
+  server: 54.255.22.244
+  servername: 111.workerscf.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6dfdd5a6-4e19-461c-84d3-81cbbdee179b
+  ws-opts:
+    headers:
+      Host: 111.workerscf.dpdns.org
+    path: /?ed=2560
+- client-fingerprint: chrome
+  delay: 2717
+  flow: xtls-rprx-vision
+  name: 2|🇹🇼2 |  2.8MB/s
+  network: tcp
+  port: 41572
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: vip.jddns0202.top
+  servername: www.nvidia.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇹🇼1 |  6.6MB/s
+  name: 2|🇹🇼3 |  3.1MB/s
   network: tcp
   port: 24050
   reality-opts:
@@ -53,9 +81,18 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- alterId: 0
+  cipher: aes-128-gcm
+  name: 2|🇹🇼4 |  6.5MB/s
+  password: VMhGp5wEIyCDf90T
+  port: 33368
+  server: shenzhou05.mysynology.net
+  skip-cert-verify: true
+  tls: true
+  type: ss
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇹🇼2 |  5.8MB/s
+  name: 2|🇹🇼5 |  4.5MB/s
   network: tcp
   port: 15842
   reality-opts:
@@ -66,15 +103,15 @@ proxies:
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - client-fingerprint: chrome
-  delay: 2717
+  delay: 1045
   flow: xtls-rprx-vision
-  name: 2|🇹🇼3 |  4.2MB/s
+  name: 2|🇹🇼6 |  5.4MB/s
   network: tcp
-  port: 41572
+  port: 37809
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: vip.jddns0202.top
-  servername: www.nvidia.com
+  server: shenzhou05.mysynology.net
+  servername: www.yahoo.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45

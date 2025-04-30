@@ -1,35 +1,35 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 01 | 1x KR
-  password: e4774a0c-29f9-4c98-bcd9-1c5de83b2f84
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 02 | 1x KR
-  password: e4774a0c-29f9-4c98-bcd9-1c5de83b2f84
-  port: 36313
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 01 | 1x KR
-  password: 2f86324c-fe4e-4f3c-8826-f119625d5257
+  name: 0|🇰🇷韩国 01 | 1x KR
+  password: ad22eceb-fd84-4aa3-990d-7154f7cf5c04
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 02 | 1x KR
-  password: 2f86324c-fe4e-4f3c-8826-f119625d5257
+  name: 0|🇰🇷韩国 02 | 1x KR
+  password: ad22eceb-fd84-4aa3-990d-7154f7cf5c04
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 01 | 1x KR
+  password: d56544ed-adff-42e4-b5c4-504b949508c3
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 02 | 1x KR
+  password: d56544ed-adff-42e4-b5c4-504b949508c3
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇰🇷1 |  5.8MB/s
+  name: 2|🇰🇷1 |  1.8MB/s
   network: tcp
   port: 13483
   reality-opts:
@@ -39,31 +39,27 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: random
-  delay: 1830
-  flow: xtls-rprx-vision
-  name: 2|🇰🇷2 |  1.2MB/s
-  network: tcp
-  port: 21082
-  reality-opts:
-    public-key: tf7ZDGaue4C43MM0ECIfjOS-0kk7XMSqfnaSY4Er5Fc
-    short-id: 758719a6080f2767
-  server: tw-ty-line1-2-2.sudatech.store
-  servername: learn.microsoft.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: e7adaa99-8363-3ec4-b849-307c99005405
 - cipher: aes-256-cfb
-  name: 2|🇰🇷3 |  5.7MB/s
+  name: 2|🇰🇷2 |  5.1MB/s
   password: qwerREWQ@@
-  port: 11389
-  server: 221.150.109.89
+  port: 63648
+  server: p228.panda004.net
   type: ss
-- name: 2|🇰🇷4 |  1.0MB/s
+- alterId: 0
+  cipher: auto
+  delay: 1952
+  name: 2|🇰🇷3 |  2.0MB/s
+  port: 17232
+  server: 80ec9abb-svsps0-t6fl0c-1r7od.cm5.p5pv.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
+- name: 2|🇰🇷4 |  1.6MB/s
   network: ws
   port: 443
-  server: www.udemy.com
+  server: www.pcmag.com
   servername: hj.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -74,21 +70,16 @@ proxies:
     headers:
       host: hj.ylka.dpdns.org
     path: /?ed=2560
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 2|🇰🇷5 |  1.4MB/s
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  tfo: true
-  type: ss
+- auth: 6e9acb2f-c6c1-43a1-a702-bc4b1132df24
+  delay: 530
+  name: 2|🇰🇷5 |  1.5MB/s
+  password: 6e9acb2f-c6c1-43a1-a702-bc4b1132df24
+  port: 20000
+  server: 158.179.164.122
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
   udp: true
-- cipher: aes-256-cfb
-  name: 2|🇰🇷6 |  2.3MB/s
-  password: qwerREWQ@@
-  port: 63648
-  server: 125.141.26.15
-  type: ss
 - client-fingerprint: random
   delay: 1198
   name: 2,14|US_speednode_0097
@@ -107,54 +98,31 @@ proxies:
     path: /?ed=2560
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 2|🇰🇷8 |  4.1MB/s
+  name: 2|🇰🇷7 |  1.2MB/s
+  password: qwerREWQ@@
+  port: 4652
+  server: p141.panda001.net
+  tfo: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 2|🇰🇷8 |  5.2MB/s
   password: qwerREWQ@@
   port: 11389
   server: p231.panda004.net
   tfo: true
   type: ss
   udp: true
-- name: 2|🇰🇷9 |  2.4MB/s
-  network: ws
-  port: 60000
-  server: 192.9.248.209
-  servername: hj.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: hj.ylka.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  delay: 1952
-  name: 2|🇰🇷10 |  2.1MB/s
-  port: 17232
-  server: 80ec9abb-svsps0-t6fl0c-1r7od.cm5.p5pv.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 6d56436c-150d-11f0-b0c8-f23c913c8d2b
-- auth: 6e9acb2f-c6c1-43a1-a702-bc4b1132df24
-  delay: 530
-  name: 2|🇰🇷11 |  4.2MB/s
-  password: 6e9acb2f-c6c1-43a1-a702-bc4b1132df24
-  port: 20000
-  server: 158.179.164.122
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
 - cipher: aes-256-cfb
-  name: 2|🇰🇷12 |  2.3MB/s
+  client-fingerprint: chrome
+  name: 2|🇰🇷9 |  5.8MB/s
   password: qwerREWQ@@
   port: 4857
-  server: 125.141.26.12
+  server: p227.panda004.net
+  tfo: true
   type: ss
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 12|🇰🇷 韩国特殊|@ripaojiedian
