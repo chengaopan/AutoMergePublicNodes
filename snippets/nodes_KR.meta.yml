@@ -1,59 +1,80 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 01 | 1x KR
-  password: 734b9718-ce24-43ee-a9a2-849d976e80cf
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 02 | 1x KR
-  password: 734b9718-ce24-43ee-a9a2-849d976e80cf
-  port: 31313
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 01 | 1x KR
-  password: a236ef67-d16d-44a7-92d8-0ed416b0520b
+  name: 0|🇰🇷 韩国 01 | 1x KR
+  password: 39b27464-cab4-458a-a30b-baa26ee1d491
   port: 36311
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 02 | 1x KR
-  password: a236ef67-d16d-44a7-92d8-0ed416b0520b
+  name: 0|🇰🇷 韩国 02 | 1x KR
+  password: 39b27464-cab4-458a-a30b-baa26ee1d491
   port: 36313
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 2|🇰🇷1 |  2.6MB/s
-  password: qwerREWQ@@
-  port: 15098
-  server: p222.panda001.net
-  tfo: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: 15c9be02-fa51-42c3-9151-98a42e349100
+  port: 31311
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: 2|🇰🇷2 |  3.5MB/s
-  password: qwerREWQ@@
-  port: 15098
-  server: 125.141.31.72
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: 15c9be02-fa51-42c3-9151-98a42e349100
+  port: 31313
+  server: free.2apzhfa.xyz
   type: ss
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇰🇷3 |  1.5MB/s
-  network: tcp
-  port: 13483
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: agaungzhou01.bumbleshrimp.com
-  servername: www.nvidia.com
+  udp: true
+- name: 2|🇰🇷1 |  1.4MB/s
+  network: ws
+  port: 443
+  server: 160.79.105.106
+  servername: cz.ylks0033.dpdns.org
+  skip-cert-verify: true
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: cz.ylks0033.dpdns.org
+    path: /?ed=2560
+- name: 2|🇰🇷2 |  4.4MB/s
+  network: ws
+  port: 443
+  server: 192.0.63.200
+  servername: cz.ylks0033.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: cz.ylks0033.dpdns.org
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  ip-version: dual
+  name: 2|🇰🇷3 |  1.4MB/s
+  network: tcp
+  port: 17232
+  server: 33e096fb-sva740-sxnljm-1jr1u.cm5.p5pv.com
+  tls: false
+  type: vmess
+  uuid: 2c01eae6-0b6a-11ee-a058-f23c91369f2d
+- alterId: 0
+  cipher: auto
+  name: 2|🇰🇷4 |  2.0MB/s
+  port: 17232
+  server: b79d3418-sux8g0-swe4j1-1rfon.cm5.p5pv.com
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: aed1cc24-351d-11ef-ba52-f23c9164ca5d
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 12|🇰🇷 韩国特殊|@ripaojiedian
