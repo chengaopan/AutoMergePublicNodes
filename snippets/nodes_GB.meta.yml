@@ -1,57 +1,62 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: b9a7b7af-2588-432a-b89e-4d3aeab6928b
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 3eb54cf8-a05e-4cc5-9c60-dc9c32438c8a
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 3eb54cf8-a05e-4cc5-9c60-dc9c32438c8a
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: e246ff18-470c-49b9-865d-d689df66fd9f
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: b9a7b7af-2588-432a-b89e-4d3aeab6928b
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: e246ff18-470c-49b9-865d-d689df66fd9f
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧1 |  4.9MB/s
-  network: tcp
-  port: 65053
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: beiyong.dynuddns.net
-  servername: www.amazon.com
+  mode: ''
+  name: 2|🇬🇧1 |  5.1MB/s
+  network: ws
+  port: 443
+  server: 188.42.88.45
+  servername: CxNiMjJz.cAfUnEaR.InFo
   tls: true
   type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+  udp: false
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: CxNiMjJz.cAfUnEaR.InFo
+    path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧2 |  5.4MB/s
+  name: 2|🇬🇧2 |  5.8MB/s
   network: tcp
-  port: 49699
+  port: 35311
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: vip.jddns0202.top
-  servername: www.amazon.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧3 |  2.5MB/s
-  network: tcp
-  port: 49699
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou05.mysynology.net
-  servername: www.amazon.com
+  server: shenzhou02.mysynology.net
+  servername: www.yahoo.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - flow: ''
   mode: ''
-  name: 1|🇬🇧4 |  1.9MB/s
+  name: 2|🇬🇧3 |  5.6MB/s
   network: ws
   port: 443
   server: 45.8.211.230
@@ -66,22 +71,34 @@ proxies:
     path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧5 |  4.9MB/s
+  name: 2|🇬🇧4 |  1.1MB/s
   network: tcp
-  port: 32055
+  port: 50123
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
+  server: 84.32.41.200
   servername: www.amazon.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- flow: ''
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇬🇧5 |  1.9MB/s
+  network: tcp
+  port: 49699
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: vip.jddns0202.top
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
+- client-fingerprint: chrome
   mode: ''
-  name: 1|🇬🇧6 |  5.6MB/s
+  name: 2|🇬🇧6 |  4.6MB/s
   network: ws
   port: 443
-  server: 45.131.6.160
+  server: 45.142.120.97
   servername: CxNiMjJz.cAfUnEaR.InFo
   tls: true
   type: vless
@@ -93,42 +110,16 @@ proxies:
     path: /
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1|🇬🇧7 |  5.3MB/s
+  name: 2|🇬🇧7 |  5.2MB/s
   network: tcp
-  port: 14659
+  port: 49699
   reality-opts:
     public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: csuzhou01.1cooldns.com
-  servername: www.nvidia.com
+  server: shenzhou05.mysynology.net
+  servername: www.amazon.com
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 1|🇬🇧8 |  1.2MB/s
-  network: tcp
-  port: 35311
-  reality-opts:
-    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
-  server: shenzhou02.mysynology.net
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港 01 | 1x HK
-  password: eaff9743-9753-4aa5-ad8d-6df85ddb8b95
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧英国家宽 01 | 1x UK
-  password: eaff9743-9753-4aa5-ad8d-6df85ddb8b95
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443

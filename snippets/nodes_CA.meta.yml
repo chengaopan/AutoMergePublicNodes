@@ -1,15 +1,42 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: b9a7b7af-2588-432a-b89e-4d3aeab6928b
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇨🇦加拿大 01 | 1x CA
-  password: eaff9743-9753-4aa5-ad8d-6df85ddb8b95
+  name: 0|🇨🇦加拿大 01 | 1x CA
+  password: 3eb54cf8-a05e-4cc5-9c60-dc9c32438c8a
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦 加拿大 01 | 1x CA
+  password: e246ff18-470c-49b9-865d-d689df66fd9f
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 2|🇨🇦1 |  1.9MB/s
+  network: ws
+  port: 30825
+  server: v25.heduian.link
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
+- client-fingerprint: chrome
+  delay: 1148
+  flow: xtls-rprx-vision
+  name: 2|🇨🇦2 |  5.5MB/s
+  network: tcp
+  port: 16011
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: gysz0000.dynu.net
+  servername: www.amazon.com
+  tls: true
+  type: vless
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
