@@ -1,75 +1,59 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 01 | 1x KR
-  password: 78895340-8022-43c3-853e-9013863e03cb
+  name: 0|🇰🇷 韩国 01 | 1x KR
+  password: f1136f28-7215-4f37-bd18-a5465a5faa05
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇰🇷 韩国 02 | 1x KR
+  password: f1136f28-7215-4f37-bd18-a5465a5faa05
+  port: 36313
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: eb29b5fa-5e45-406b-9628-e134afaa77ca
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 02 | 1x KR
-  password: 78895340-8022-43c3-853e-9013863e03cb
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: eb29b5fa-5e45-406b-9628-e134afaa77ca
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 1|🇰🇷1 |  5.8MB/s
+  client-fingerprint: chrome
+  name: 2|🇰🇷1 |  2.6MB/s
+  password: qwerREWQ@@
+  port: 15098
+  server: p222.panda001.net
+  tfo: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 2|🇰🇷2 |  3.5MB/s
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
   type: ss
-- name: 1|🇰🇷2 |  1.1MB/s
-  network: ws
-  port: 443
-  server: 192.0.63.200
-  servername: cz.ylks0033.dpdns.org
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇰🇷3 |  1.5MB/s
+  network: tcp
+  port: 13483
+  reality-opts:
+    public-key: qhTzYYIgBzDLNYR79oxftqdo1kzL-1_hGJKfqrOliCY
+  server: agaungzhou01.bumbleshrimp.com
+  servername: www.nvidia.com
   tls: true
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: cz.ylks0033.dpdns.org
-    path: /?ed=2560
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 1|🇰🇷3 |  1.8MB/s
-  port: 17232
-  server: 5a384b86-svhls0-t7h9gl-1q15s.cm5.p5pv.com
-  tls: false
-  type: vmess
-  uuid: 11303a62-9a33-11ee-be7f-f23c9164ca5d
-- name: 1|🇰🇷4 |  1.0MB/s
-  network: ws
-  port: 443
-  server: 63.141.128.67
-  servername: cz.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: cz.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 1|🇰🇷5 |  3.6MB/s
-  network: ws
-  port: 443
-  server: 45.67.215.114
-  servername: cz.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: cz.ylks0033.dpdns.org
-    path: /?ed=2560
+  uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 12|🇰🇷 韩国特殊|@ripaojiedian
