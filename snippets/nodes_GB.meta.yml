@@ -1,36 +1,8 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: 1595f73c-41db-41db-b316-c9d7d7ff91cc
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 1595f73c-41db-41db-b316-c9d7d7ff91cc
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 01 | 1x HK
-  password: 6ec57c8e-5ebf-41cd-8b4a-528d80ad04ef
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 6ec57c8e-5ebf-41cd-8b4a-528d80ad04ef
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: ''
   mode: ''
-  name: 2|🇬🇧1 |  3.4MB/s
+  name: 1|🇬🇧1 |  3.4MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -42,6 +14,20 @@ proxies:
   type: vless
   udp: false
   uuid: 4c41dd88-6632-4c7a-8dbb-e276bf78b357
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰香港 01 | 1x HK
+  password: deb5eec1-528c-43cf-ad3f-ac047c8ee53b
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇬🇧英国家宽 01 | 1x UK
+  password: deb5eec1-528c-43cf-ad3f-ac047c8ee53b
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
@@ -52,7 +38,7 @@ proxies:
   type: hysteria2
 - client-fingerprint: ios
   flow: xtls-rprx-vision
-  name: 14|GB_speednode_0021
+  name: 14|GB_speednode_0011
   port: 443
   reality-opts:
     public-key: b5WuWodd3tB9cHWUJuoEFNvgYVOcLuDyjaxHy70umU4
@@ -64,9 +50,18 @@ proxies:
   type: vless
   udp: true
   uuid: 9466263a-4b8e-4647-99b2-d2a363f001cd
+- name: 14|GB_speednode_0012
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 443
+  server: london01.sqx001.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: dmpyoary@mayorlogistic.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 14|GB_speednode_0022
+  name: 14|GB_speednode_0013
   port: 8440
   reality-opts:
     public-key: y6JSkggQ__RA_nmCJpX1_ddSQC6vzDUPaN7KyvjVuic
@@ -77,21 +72,7 @@ proxies:
   type: vless
   udp: true
   uuid: 97dda572-7ff0-4609-8388-c82be57bc6a9
-- name: 14|GB_speednode_0023
-  network: ws
-  port: 81
-  server: 95.164.18.132
-  servername: miku.mikuru.ip-ddns.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
-  ws-opts:
-    headers:
-      Host: miku.mikuru.ip-ddns.com
-    path: /?ed=2560
-- name: 14|GB_speednode_0024
+- name: 14|GB_speednode_0014
   network: ws
   port: 443
   server: 35.178.235.225
@@ -105,12 +86,17 @@ proxies:
     headers:
       Host: uk.rtot.me
     path: /bing
-- name: 14|GB_speednode_0025
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 443
-  server: london01.sqx001.com
+- name: 14|GB_speednode_0015
+  network: ws
+  port: 81
+  server: 95.164.18.132
+  servername: miku.mikuru.ip-ddns.com
   skip-cert-verify: true
   tls: true
-  type: http
+  type: vless
   udp: true
-  username: dmpyoary@mayorlogistic.com
+  uuid: 5543ae5c-c24f-405a-9266-597cbc43c818
+  ws-opts:
+    headers:
+      Host: miku.mikuru.ip-ddns.com
+    path: /?ed=2560
