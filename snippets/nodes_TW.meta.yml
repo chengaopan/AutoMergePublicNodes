@@ -1,49 +1,28 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼 台湾 01 | 1x TW
-  password: 30c68d02-99d6-431c-a9da-469fc33993a3
+  password: 547c7ffb-a572-4f10-9b7a-58287f3f4737
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼 台湾 02 | 1x TW
-  password: 30c68d02-99d6-431c-a9da-469fc33993a3
+  password: 547c7ffb-a572-4f10-9b7a-58287f3f4737
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇹🇼 台湾 03 | 1x TW
-  password: 30c68d02-99d6-431c-a9da-469fc33993a3
+  password: 547c7ffb-a572-4f10-9b7a-58287f3f4737
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 01 | 1x TW
-  password: 5063641a-fafb-4a5c-aa6a-1817d7c08bd8
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 02 | 1x TW
-  password: 5063641a-fafb-4a5c-aa6a-1817d7c08bd8
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼台湾 03 | 1x TW
-  password: 5063641a-fafb-4a5c-aa6a-1817d7c08bd8
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇹🇼1 |  3.6MB/s
+  name: 1|🇹🇼1 |  3.6MB/s
   network: tcp
   port: 13263
   reality-opts:
@@ -55,7 +34,7 @@ proxies:
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
 - alterId: 0
   cipher: auto
-  name: 2,13|台湾2|@ripaojiedian
+  name: 1,13|台湾2|@ripaojiedian
   network: tcp
   port: '3687'
   server: 1cea2198-sukw00-sv3y7m-1glq.a.fosant.com
@@ -70,7 +49,7 @@ proxies:
 - client-fingerprint: chrome
   delay: 2717
   flow: xtls-rprx-vision
-  name: 2|🇹🇼3 |  2.8MB/s
+  name: 1|🇹🇼3 |  2.8MB/s
   network: tcp
   port: 41572
   reality-opts:
@@ -80,7 +59,7 @@ proxies:
   tls: true
   type: vless
   uuid: 459b4a80-bd61-4ecd-a26b-e9c1809d9e45
-- name: 2|🇹🇼4 |  1.8MB/s
+- name: 1|🇹🇼4 |  1.8MB/s
   network: ws
   port: 12383
   server: 211.114.180.156
@@ -94,7 +73,7 @@ proxies:
     headers:
       host: edcch.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 2|🇹🇼5 |  3.5MB/s
+- name: 1|🇹🇼5 |  3.5MB/s
   network: ws
   port: 12226
   server: 119.203.202.120
@@ -108,6 +87,27 @@ proxies:
     headers:
       host: edcch.ambercc.filegear-sg.me
     path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇹🇼台湾 01 | 1x TW
+  password: 8d7056a4-228e-4791-9734-310f74c6965f
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇹🇼台湾 02 | 1x TW
+  password: 8d7056a4-228e-4791-9734-310f74c6965f
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇹🇼台湾 03 | 1x TW
+  password: 8d7056a4-228e-4791-9734-310f74c6965f
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -140,18 +140,3 @@ proxies:
   tls: false
   type: vmess
   uuid: f6866b0b-f946-4a03-8df0-c7e0016b55ad
-- client-fingerprint: random
-  name: 14|TW_speednode_0016
-  network: ws
-  port: 81
-  server: 210.61.97.241
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      Host: 0229.patterdeng.pp.ua
-    path: /?ed=2560
