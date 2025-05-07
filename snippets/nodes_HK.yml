@@ -1,30 +1,30 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: 45648372-6638-4314-a71b-ee933975cff5
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 45648372-6638-4314-a71b-ee933975cff5
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 02 | 1x HK
-  password: ddc2ff23-55a4-44b5-81be-7d9e7c665dce
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: bc192d74-9c85-4e1b-935d-510d718f84db
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: ddc2ff23-55a4-44b5-81be-7d9e7c665dce
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: bc192d74-9c85-4e1b-935d-510d718f84db
   port: 31145
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: 5a367066-424f-4a6e-94d0-838f6c0c985f
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 5a367066-424f-4a6e-94d0-838f6c0c985f
+  port: 36145
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alterId: 0
@@ -146,16 +146,27 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 11497
+  port: 11223
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12|🇭🇰 香港3|@ripaojiedian
+  port: 35921
+  server: 120.198.71.216
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - client-fingerprint: chrome
-  name: 12,13|香港3|@ripaojiedian
+  name: 12,13|香港4|@ripaojiedian
   network: tcp
-  password: 15e528dd-681f-472c-bd1b-c26d23adbddc
-  port: 27102
-  server: 58.254.186.222
+  password: 33fa18c3-93ad-4bb6-9288-2dcf58a04bb3
+  port: 10465
+  server: 183.240.116.235
   skip-cert-verify: false
   sni: q08m.vgraxiw73s.hasyaf.cn
   type: trojan
@@ -190,6 +201,15 @@ proxies:
   skip-cert-verify: false
   sni: hk06.run.place
   type: trojan
+- client-fingerprint: chrome
+  name: 12,13|香港8|@ripaojiedian
+  network: tcp
+  password: c4a7a5e1-b01d-4e5d-bed4-8fc8d5eafe3a
+  port: 27103
+  server: 58.254.186.231
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - name: 13|香港|@ripaojiedian
   network: ws
   password: a38c9e28-9960-4e31-9f18-ed2495a756aa
@@ -201,6 +221,16 @@ proxies:
     headers:
       Host: vt-bana2-cn-11.ghpgwqswodgzv.com
     path: '%2Fdl_media'
+- alterId: 64
+  cipher: auto
+  name: 13|香港3|@ripaojiedian
+  network: tcp
+  port: '35921'
+  server: 120.198.71.216
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 13|香港5|@ripaojiedian
