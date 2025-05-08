@@ -1,53 +1,32 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 01 | 1x JP
-  password: 5225435f-a5ce-4bd0-908d-5a88e18ab677
+  password: eeaff64f-6675-40f5-af1e-465e75c6d94b
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 02 | 1x JP
-  password: 5225435f-a5ce-4bd0-908d-5a88e18ab677
+  password: eeaff64f-6675-40f5-af1e-465e75c6d94b
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 03 | 1x JP
-  password: 5225435f-a5ce-4bd0-908d-5a88e18ab677
+  password: eeaff64f-6675-40f5-af1e-465e75c6d94b
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵 日本 01 | 1x JP
-  password: 97df8b5f-2849-4c88-99e6-aee2e5a886b3
-  port: 36111
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵 日本 02 | 1x JP
-  password: 97df8b5f-2849-4c88-99e6-aee2e5a886b3
-  port: 36113
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵 日本 03 | 1x JP
-  password: 97df8b5f-2849-4c88-99e6-aee2e5a886b3
-  port: 36115
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 12|🇯🇵 日本|@ripaojiedian
+  name: 11|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505061413967-7UVJRqcDLy.download.microsoft.com
+    host: 202505061413967-ARiTaH7btE.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -55,24 +34,24 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 12|🇯🇵 日本2|@ripaojiedian
-  password: ada8f5609e21
+  name: 11|🇯🇵 日本2|@ripaojiedian
+  password: ee003c5fb8d8
   plugin: v2ray-plugin
   plugin-opts:
     host: jp06v1.3ci.xyz
     mode: websocket
     mux: true
-    path: /nloyfvlu
+    path: /ywkyahjulb
     skip-cert-verify: false
     tls: true
-  port: 443
+  port: 41827
   server: 103.140.136.242
   tfo: false
   type: ss
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 12|🇯🇵 日本3|@ripaojiedian
+  name: 11|🇯🇵 日本3|@ripaojiedian
   port: 55002
   server: 183.237.84.53
   skip-cert-verify: false
@@ -80,17 +59,28 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11|🇯🇵 日本4|@ripaojiedian
+  port: 53710
+  server: 47.79.88.113
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 1db838d0-ecd2-4b73-a7f8-5af6b401d833
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 12|🇯🇵 日本特殊|@ripaojiedian
+  name: 11|🇯🇵 日本特殊|@ripaojiedian
   password: awsps0501
   port: 443
-  server: 13.114.102.184
+  server: 3.112.233.244
   tfo: false
   type: ss
 - alterId: 64
   cipher: auto
-  name: 13|日本3|@ripaojiedian
+  name: 12|日本3|@ripaojiedian
   network: tcp
   port: '55002'
   server: 183.237.84.53
@@ -100,7 +90,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 13|日本5|@ripaojiedian
+  name: 12|日本5|@ripaojiedian
   network: kcp
   port: '53893'
   server: 47.74.41.147
@@ -108,31 +98,34 @@ proxies:
   tls: false
   type: vmess
   uuid: 07287360-e12f-4f94-9c7a-54386c100d8a
-- name: 14|JP_speednode_0017
-  network: ws
-  port: 8443
-  server: 154.92.9.1
-  servername: txmt.conetcdata.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
+- alterId: 0
+  cipher: auto
+  name: 12|日本4|@ripaojiedian
+  network: tcp
+  port: '53710'
+  server: 47.79.88.113
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 1db838d0-ecd2-4b73-a7f8-5af6b401d833
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇯🇵 日本 01 | 1x JP
+  password: 74651b88-c463-43e3-8bfb-19e4b8821d42
+  port: 36111
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: de537efd-4d7c-4f3c-aea5-19d3f36c7b1b
-  ws-opts:
-    headers:
-      Host: txmt.conetcdata.dpdns.org
-    path: /
-- name: 14|JP_speednode_0018
-  network: ws
-  port: 8443
-  server: 154.92.9.2
-  servername: txmt.conetcdata.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇯🇵 日本 02 | 1x JP
+  password: 74651b88-c463-43e3-8bfb-19e4b8821d42
+  port: 36113
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: de537efd-4d7c-4f3c-aea5-19d3f36c7b1b
-  ws-opts:
-    headers:
-      Host: txmt.conetcdata.dpdns.org
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇯🇵 日本 03 | 1x JP
+  password: 74651b88-c463-43e3-8bfb-19e4b8821d42
+  port: 36115
+  server: free.2weradf.xyz
+  type: ss
+  udp: true

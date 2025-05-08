@@ -1,95 +1,67 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: 5225435f-a5ce-4bd0-908d-5a88e18ab677
+  password: eeaff64f-6675-40f5-af1e-465e75c6d94b
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 5225435f-a5ce-4bd0-908d-5a88e18ab677
+  password: eeaff64f-6675-40f5-af1e-465e75c6d94b
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 03 | 1x US Washington
-  password: 5225435f-a5ce-4bd0-908d-5a88e18ab677
+  password: eeaff64f-6675-40f5-af1e-465e75c6d94b
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 97df8b5f-2849-4c88-99e6-aee2e5a886b3
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 97df8b5f-2849-4c88-99e6-aee2e5a886b3
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 03 | 1x US Washington
-  password: 97df8b5f-2849-4c88-99e6-aee2e5a886b3
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: '11|Channel id: @ShadowProxy66🇺🇸'
-  password: 238c7704-944d-40cd-a1cf-fb775d51ac54
-  port: 21042
-  server: 164.152.33.5
-  skip-cert-verify: true
-  sni: www.bing.com
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 11,12|美国|@ripaojiedian
+  network: ws
+  port: '30832'
+  server: v32.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
   tls: false
-  type: hysteria2
-- name: '11|Channel id: @ShadowProxy66🇺🇸 #1'
-  password: 87f055ba
-  port: 60000
-  server: 141.11.89.172
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: '11|Channel id: @ShadowProxy66🇺🇸 #2'
-  password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
-  port: 47262
-  server: 64.181.207.162
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  name: 12,13|美国|@ripaojiedian
-  network: tcp
-  password: b685610e-f160-4cee-9ee8-b3bd18e644ca
-  port: 33506
-  server: 183.2.150.98
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 12|🇺🇸 美国2|@ripaojiedian
+  name: 11|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505061413967-7UVJRqcDLy.download.microsoft.com
+    host: 202505061413967-ARiTaH7btE.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 11,12|美国3|@ripaojiedian
+  network: tcp
+  password: a8093ea8-f02e-4ffc-8a13-d068a62971bf
+  port: 27301
+  server: 183.2.150.64
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 12,13|美国4|@ripaojiedian
+  name: 11,12|美国4|@ripaojiedian
   network: ws
   port: '22642'
   server: tk.hzlt.tkddns.xyz
@@ -103,49 +75,7 @@ proxies:
     headers:
       Host: zxjp-b.tkong.cc
     path: /
-- name: 14|US_speednode_0025
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  servername: redfree8mahsang6.redfree8.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: redfree8mahsang6.redfree8.ir
-    path: /TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
-- name: 14|US_speednode_0026
-  network: ws
-  port: 80
-  server: 104.18.121.131
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 14|US_speednode_0027
-  network: ws
-  port: 8880
-  server: 135.84.76.75
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
-  ws-opts:
-    headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /?ed=2560
-- name: 14|US_speednode_0029
+- name: 13|US_speednode_0008
   network: ws
   port: 80
   server: 104.18.121.12
@@ -159,21 +89,21 @@ proxies:
     headers:
       Host: 23-lsjfjwiposkfls.hc2021.cfd
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 14|US_speednode_0031
+- name: 13|US_speednode_0010
   network: ws
-  port: 8880
-  server: 135.84.75.75
-  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  port: 80
+  server: www.speedtest.net
+  servername: redfree8mahsang6.redfree8.ir
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: 23-lsjfjwiposkfls.hc2021.cfd
-    path: /?ed=2560
-- name: 14|US_speednode_0032
+      Host: redfree8mahsang6.redfree8.ir
+    path: /TELEGRAM-MARAMBASHI_MARAMBASHI?ed=512
+- name: 13|US_speednode_0011
   network: ws
   port: 80
   server: 104.18.121.106
@@ -187,9 +117,51 @@ proxies:
     headers:
       Host: 23-lsjfjwiposkfls.hc2021.cfd
     path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- name: 13|US_speednode_0013
+  network: ws
+  port: 8880
+  server: 135.84.76.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 13|US_speednode_0014
+  network: ws
+  port: 8880
+  server: 135.84.75.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+- name: 13|US_speednode_0016
+  network: ws
+  port: 80
+  server: 104.18.121.131
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 14|US_speednode_0042
+  name: 13|US_speednode_0024
   port: 7885
   reality-opts:
     public-key: cauu7I7nFMqzwMDdULVRJam0T04U4knX8koK0OG5dC8
@@ -201,50 +173,7 @@ proxies:
   type: vless
   udp: true
   uuid: 82f6a148-5c4a-48f9-931a-e3b26777ffa2
-- client-fingerprint: random
-  name: 14|US_speednode_0056
-  network: ws
-  port: 2096
-  server: 104.16.116.221
-  servername: robook.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a268ce39-7687-4817-aa5f-def4f653fb88
-  ws-opts:
-    headers:
-      Host: robook.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0057
-  network: ws
-  port: 2053
-  server: 104.24.240.115
-  servername: xpvip168.eu.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 39a2588a-2980-4ae6-a32e-63fb3456daef
-  ws-opts:
-    headers:
-      Host: xpvip168.eu.org
-    path: /?ed=2560
-- name: 14|US_speednode_0058
-  network: ws
-  port: 443
-  server: 103.21.244.17
-  servername: what.zhonghuoxing.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: f055d270-0e76-4a41-a53f-871bbb51b003
-  ws-opts:
-    headers:
-      Host: what.zhonghuoxing.top
-    path: /?ed=2560
-- name: 14|US_speednode_0059
+- name: 13|US_speednode_0035
   network: ws
   port: 443
   server: 104.16.95.143
@@ -258,7 +187,7 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /?ed=2560
-- name: 14|US_speednode_0061
+- name: 13|US_speednode_0042
   network: ws
   port: 8443
   server: 104.24.40.146
@@ -272,78 +201,7 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /?ed=2560
-- client-fingerprint: random
-  name: 14|US_speednode_0062
-  network: ws
-  port: 2087
-  server: 104.16.4.142
-  servername: robook.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a268ce39-7687-4817-aa5f-def4f653fb88
-  ws-opts:
-    headers:
-      Host: robook.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0063
-  network: ws
-  port: 2053
-  server: 104.16.12.247
-  servername: txmt.conetcdata.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: de537efd-4d7c-4f3c-aea5-19d3f36c7b1b
-  ws-opts:
-    headers:
-      Host: txmt.conetcdata.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0068
-  network: ws
-  port: 8443
-  server: 162.159.152.81
-  servername: txmt.conetcdata.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: de537efd-4d7c-4f3c-aea5-19d3f36c7b1b
-  ws-opts:
-    headers:
-      Host: txmt.conetcdata.dpdns.org
-    path: /?ed=2560
-- name: 14|US_speednode_0071
-  network: ws
-  port: 8443
-  server: 162.159.152.139
-  servername: www.pjw5.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 812d7dde-5f48-47eb-acc8-9c94c04550c2
-  ws-opts:
-    headers:
-      Host: www.pjw5.top
-    path: /?ed=2560
-- name: 14|US_speednode_0074
-  network: ws
-  port: 80
-  server: 151.101.64.155
-  servername: wwwaparataternos.com
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 62053f65-104c-43e6-d88b-ad99fdfb582e
-  ws-opts:
-    headers:
-      Host: wwwaparataternos.com
-    path: /WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel?ed=2048
-- name: 14|US_speednode_0078
+- name: 13|US_speednode_0047
   network: ws
   port: 443
   server: 104.16.83.224
@@ -357,7 +215,7 @@ proxies:
     headers:
       Host: taoj.eu.org
     path: /?ed=2560
-- name: 14|US_speednode_0082
+- name: 13|US_speednode_0048
   network: ws
   port: 2053
   server: 104.16.190.87
@@ -371,39 +229,24 @@ proxies:
     headers:
       Host: bitget1.asdasd.click
     path: /?ed=2560
-- name: 14|US_speednode_0084
+- name: 13|US_speednode_0052
   network: ws
-  port: 80
-  server: 151.101.64.155
-  servername: Irancellman.net
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: f3cdd808-a562-4c9d-c895-99dcaa9aaaf8
-  ws-opts:
-    headers:
-      Host: Irancellman.net
-    path: /WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel-----WedBaZtel?ed=2048
-- client-fingerprint: random
-  name: 14|US_speednode_0085
-  network: ws
-  port: 443
-  server: 104.24.152.190
-  servername: what.zhonghuoxing.top
+  port: 8443
+  server: 162.159.152.139
+  servername: www.pjw5.top
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: f055d270-0e76-4a41-a53f-871bbb51b003
+  uuid: 812d7dde-5f48-47eb-acc8-9c94c04550c2
   ws-opts:
     headers:
-      Host: what.zhonghuoxing.top
+      Host: www.pjw5.top
     path: /?ed=2560
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: 14|US_speednode_0086
+  name: 13|US_speednode_0057
   network: ws
   port: 443
   server: 188.114.96.4
@@ -417,78 +260,9 @@ proxies:
     headers:
       Host: myphotograpicpicture.ir
     path: /I4OZ4PupsElhvJ7c
-- name: 14|US_speednode_0087
-  network: ws
-  port: 8443
-  server: 199.34.228.47
-  servername: txmt.conetcdata.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: de537efd-4d7c-4f3c-aea5-19d3f36c7b1b
-  ws-opts:
-    headers:
-      Host: txmt.conetcdata.dpdns.org
-    path: /
-- name: 14|US_speednode_0088
-  network: ws
-  port: 8443
-  server: 199.34.228.66
-  servername: txmt.conetcdata.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: de537efd-4d7c-4f3c-aea5-19d3f36c7b1b
-  ws-opts:
-    headers:
-      Host: txmt.conetcdata.dpdns.org
-    path: /
-- name: 14|US_speednode_0089
-  network: ws
-  port: 443
-  server: 104.18.20.69
-  servername: us5s.pqvip.top
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2ee2c33b-cc0f-4ea1-b287-5870f3ee3951
-  ws-opts:
-    headers:
-      Host: us5s.pqvip.top
-    path: /pq/us5
-- name: 14|US_speednode_0090
-  network: ws
-  port: 443
-  server: 160.79.104.113
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      Host: 0229.patterdeng.pp.ua
-    path: /
-- name: 14|US_speednode_0091
-  network: ws
-  password: redfree8
-  port: 443
-  server: 104.17.147.22
-  skip-cert-verify: false
-  sni: ipsychO.SUEx12.Ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ipsychO.SUEx12.Ir
-    path: /trre5IzbZ9IZZMddtw?ed=2560
 - alpn:
   - http/1.1
-  name: 14|US_speednode_0092
+  name: 13|US_speednode_0058
   network: ws
   port: 443
   server: 188.114.96.4
@@ -502,113 +276,21 @@ proxies:
     headers:
       Host: MyphOTOgRApicpIcTUre.iR
     path: /I4OZ4PupsElhvJ7c
-- name: 14|US_speednode_0093
+- name: 13|US_speednode_0059
   network: ws
   port: 443
-  server: 199.34.228.186
-  servername: cf.501508.xyz
+  server: 160.79.104.113
+  servername: 0229.patterdeng.pp.ua
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: a268ce39-7687-4817-aa5f-def4f653fb88
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
   ws-opts:
     headers:
-      Host: cf.501508.xyz
+      Host: 0229.patterdeng.pp.ua
     path: /
-- name: 14|US_speednode_0094
-  network: ws
-  port: 443
-  server: 192.0.54.6
-  servername: cf.501508.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: a268ce39-7687-4817-aa5f-def4f653fb88
-  ws-opts:
-    headers:
-      Host: cf.501508.xyz
-    path: /
-- name: 14|US_speednode_0095
-  network: ws
-  port: 8443
-  server: 162.159.152.81
-  servername: txmt.conetcdata.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: de537efd-4d7c-4f3c-aea5-19d3f36c7b1b
-  ws-opts:
-    headers:
-      Host: txmt.conetcdata.dpdns.org
-    path: /
-- name: 14|US_speednode_0096
-  network: ws
-  port: 443
-  server: 104.18.20.20
-  servername: us5.globals-download.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2ee2c33b-cc0f-4ea1-b287-5870f3ee3951
-  ws-opts:
-    headers:
-      Host: us5.globals-download.com
-    path: /pq/us5
-- name: 14|US_speednode_0097
-  network: ws
-  port: 443
-  server: 104.18.20.20
-  servername: us3.globals-download.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2ee2c33b-cc0f-4ea1-b287-5870f3ee3951
-  ws-opts:
-    headers:
-      Host: us3.globals-download.com
-    path: /pq/us3
-- name: 14|US_speednode_0098
-  network: ws
-  port: 443
-  server: 104.18.20.20
-  servername: us6s.globals-download.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2ee2c33b-cc0f-4ea1-b287-5870f3ee3951
-  ws-opts:
-    headers:
-      Host: us6s.globals-download.com
-    path: /pq/us6
-- name: 14|US_speednode_0099
-  network: ws
-  port: 443
-  server: 104.24.188.214
-  servername: planetzh.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: af713c0c-a79e-464b-b08e-831ce00fe235
-  ws-opts:
-    headers:
-      Host: planetzh.xyz
-    path: /
-- name: 14|US_speednode_0100
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 443
-  server: 0e16aa8a-svukg0-swy6li-tni2.los.gotochinatown.net
-  tls: true
-  type: http
-  udp: true
-  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- name: 14|US_speednode_0101
+- name: 13|US_speednode_0060
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 443
   server: e6c022e2-svwf40-swy6li-tni2.los.gotochinatown.net
@@ -616,15 +298,7 @@ proxies:
   type: http
   udp: true
   username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- name: 14|US_speednode_0102
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 443
-  server: c23319fc-svukg0-t1bnjq-1krtb.sj.gotochinatown.net
-  tls: true
-  type: http
-  udp: true
-  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- name: 14|US_speednode_0103
+- name: 13|US_speednode_0061
   network: ws
   port: 443
   server: 4.255.56.137
@@ -638,3 +312,24 @@ proxies:
     headers:
       Host: usb.carvic.me
     path: /bing
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 74651b88-c463-43e3-8bfb-19e4b8821d42
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 74651b88-c463-43e3-8bfb-19e4b8821d42
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸 美国 03 | 1x US Washington
+  password: 74651b88-c463-43e3-8bfb-19e4b8821d42
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
