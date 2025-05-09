@@ -1,20 +1,34 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 490a697e-7108-4c45-bd35-a1dd8c47d736
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 1449feb4-5457-4b81-a6bd-a865495515e6
+  password: 490a697e-7108-4c45-bd35-a1dd8c47d736
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: e45b7437-aae5-4286-9097-8f23da7115c9
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
   name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 49a8ba09-2f09-4072-9733-25464dcb25fe
+  password: e45b7437-aae5-4286-9097-8f23da7115c9
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
 - auth: nfsn666
-  name: 2|🇬🇧1 |  1.6MB/s|62%|Youtube|Ope...
+  name: 2|🇬🇧1 |  5.0MB/s|62%|Youtube|Ope...
   password: nfsn666
   port: 8888
   server: ld-arm.nfsn666.gq
@@ -23,96 +37,72 @@ proxies:
   type: hysteria2
   udp: true
 - client-fingerprint: chrome
-  mode: ''
-  name: 2|🇬🇧2 |  4.9MB/s|Openai
-  network: ws
-  port: 443
-  server: 188.42.88.45
-  servername: CxNiMjJz.cAfUnEaR.InFo
-  tls: true
-  type: vless
-  udp: false
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: CxNiMjJz.cAfUnEaR.InFo
-    path: /
-- auth: 3e8ee9ac-aa4f-4f85-a843-aba393f4fdb0
-  delay: 1286
-  name: 2|🇬🇧3 |  3.1MB/s|Disney|Openai
-  obfs: salamander
-  obfs-password: LNAnPYDfFyesRAVn
-  password: 3e8ee9ac-aa4f-4f85-a843-aba393f4fdb0
-  port: 25558
-  ports: 21000-26000
-  server: yg1.gy6688.xyz
-  skip-cert-verify: true
-  sni: yg1.gy6688.xyz
-  type: hysteria2
-  udp: true
-- auth: 3e8ee9ac-aa4f-4f85-a843-aba393f4fdb0
-  delay: 810
-  name: 2|🇬🇧4 |  4.0MB/s|Disney|Openai
-  obfs: salamander
-  obfs-password: LNAnPYDfFyesRAVn
-  password: 3e8ee9ac-aa4f-4f85-a843-aba393f4fdb0
-  port: 23106
-  ports: 21000-26000
-  server: yg1.gy6688.xyz
-  skip-cert-verify: true
-  sni: yg1.gy6688.xyz
-  type: hysteria2
-  udp: true
-- name: 2|🇬🇧5 |  5.6MB/s|46%|Openai
-  network: ws
-  port: 443
-  server: 45.8.211.230
-  servername: CxNiMjJz.cAfUnEaR.InFo
-  skip-cert-verify: true
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 2|🇬🇧2 |  3.9MB/s|0%|Openai
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c
+    short-id: 7e39db0c
+  server: V2RayMizban.iranigamepars.ir
+  servername: www.cdn77.com
   tls: true
   type: vless
   udp: true
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: CxNiMjJz.cAfUnEaR.InFo
-    path: /
-- name: 2|🇬🇧6 |  3.7MB/s|46%|Openai
-  network: ws
-  port: 443
-  server: 45.131.6.160
-  servername: CxNiMjJz.cAfUnEaR.InFo
-  skip-cert-verify: true
+  uuid: f807d70f-d5bd-45b7-aa1e-abcd0a79cfe7
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: safari
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 2|🇬🇧3 |  5.4MB/s|64%|Youtube|Ope...
+  network: tcp
+  port: '443'
+  server: 57.128.178.253
+  servername: en.linceedab.com
   tls: true
   type: vless
   udp: true
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: CxNiMjJz.cAfUnEaR.InFo
-    path: /
-- name: 2|🇬🇧7 |  4.6MB/s|46%|Openai
-  network: ws
-  port: 443
-  server: 45.142.120.97
-  servername: CxNiMjJz.cAfUnEaR.InFo
-  skip-cert-verify: true
+  uuid: 9aed32d7-3556-48a4-95f8-e82dcc2e1b54
+  xudp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
+  name: 2|🇬🇧4 |  5.4MB/s|0%|Netflix|Disn...
+  network: grpc
+  port: '2030'
+  reality-opts:
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    short-id: 7fe29733
+  server: ns7.esfahansiman.com
+  servername: refersion.com
   tls: true
   type: vless
   udp: true
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: CxNiMjJz.cAfUnEaR.InFo
-    path: /
-- cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 2|🇬🇧8 |  1.2MB/s|0%|Netflix|Yout...
-  password: 887f01da-5b52-4dff-a80f-efe3380ac35f
-  port: 26480
-  server: chiyu.myfczy169.top
+  uuid: a0141f76-4fb8-40a5-a404-926cf2dff73a
+  xudp: true
+- cipher: aes-256-cfb
+  name: 2|🇬🇧5 |  2.3MB/s|0%|Youtube|Open...
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
+  server: 62.100.205.48
   type: ss
   udp: true
+- auth: ae845cbd-08fb-4346-929a-e28a6f3960a8
+  client-fingerprint: chrome
+  name: 2|🇬🇧6 |  1.9MB/s|67%|Openai
+  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
+  port: 24870
+  server: uk2.shiyuandian.shop
+  skip-cert-verify: true
+  sni: uk2.shiyuandian.shop
+  type: hysteria2
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
