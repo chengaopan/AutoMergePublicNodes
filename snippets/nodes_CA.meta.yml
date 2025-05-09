@@ -1,19 +1,19 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: b0504390-031f-4f89-b20c-15ab03c8b0cc
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦加拿大 01 | 1x CA
-  password: 809cbbec-7d3f-443a-8c96-452b0430cf34
+  name: 0|🇨🇦加拿大 01 | 1x CA
+  password: 7ae566cf-1791-4cd0-8f82-4672dc4fe5ad
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|🇨🇦1 |  5.7MB/s|35%|Youtube|Ope...
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦 加拿大 01 | 1x CA
+  password: ea4f2fd6-6ec2-4245-8f5b-cae546c1a753
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 2|🇨🇦1 |  6.0MB/s|35%|Youtube|Ope...
   network: ws
   port: '2052'
   server: 104.17.148.22
@@ -27,20 +27,39 @@ proxies:
         like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: /vless#@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL,@V2RAY_SPATIAL
   xudp: true
-- client-fingerprint: chrome
-  name: 2|🇨🇦2 |  1.2MB/s|63%|Disney|Open...
+- alterId: '0'
+  cipher: auto
+  name: 2|🇨🇦2 |  4.9MB/s|29%|Openai
   network: ws
-  port: '8443'
-  server: 154.83.2.61
-  servername: vlee.amclubs.rr.nu
+  port: 443
+  server: cloudgetservice.mcloudservice.site
+  skip-cert-verify: false
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: d6b8011a-c725-435a-9fec-bf6d3530392c
+  uuid: 81380a5e-613c-4863-8b3a-5588f32690c3
   ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
     headers:
-      Host: vlee.amclubs.rr.nu
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: ''
+      Host: MaXnEtVipAp-ca1.MaxnetserVicEs.ONliNe
+    max-early-data: 2560
+    path: /linkws
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 2|🇨🇦3 |  5.7MB/s|29%|Openai
+  network: ws
+  port: 443
+  server: cloudgetservice.mcloudservice.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2c329585-67a8-498b-8d38-176dac806bc7
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: MAxnETVipAP-ca2.MaxNetseRVIcES.OnLINE
+    max-early-data: 2560
+    path: /linkws
   xudp: true
