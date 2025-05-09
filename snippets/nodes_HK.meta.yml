@@ -1,72 +1,35 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: 900c8366-93b4-4d9a-8862-7358fbbbdfbd
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 900c8366-93b4-4d9a-8862-7358fbbbdfbd
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 02 | 1x HK
-  password: 2795c61a-8938-428e-852f-3b325586269f
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: 714fb76c-2092-4ea8-aefc-a88fc0e3844c
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: 2795c61a-8938-428e-852f-3b325586269f
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: 714fb76c-2092-4ea8-aefc-a88fc0e3844c
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 2|🇭🇰1 |  1.1MB/s|0%|Disney
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: '8313'
-  server: 183.232.235.2
-  skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: 3730b9db-11c8-4bfe-9f9d-6ccf6d1a5005
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 2,12|🇭🇰 香港4|@ripaojiedian
-  network: ws
-  port: 8080
-  server: 43b5a616-sw04g0-swasv3-luwe.hgc1.tcpbbr.net
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 3730b9db-11c8-4bfe-9f9d-6ccf6d1a5005
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  name: 2|🇭🇰3 |  2.4MB/s|6%|Youtube
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 443
-  server: hk05.sqx001.com
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: dmpyoary@mayorlogistic.com
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇭🇰4 |  2.0MB/s|16%|Netflix|Dis...
+  name: 2|🇭🇰1 |  4.1MB/s|16%|Netflix|You...
   network: tcp
   port: 20550
   reality-opts:
@@ -77,6 +40,81 @@ proxies:
   type: vless
   udp: true
   uuid: 2d317da5-47c5-4db4-933f-16d1094668db
+- alterId: 2
+  cipher: auto
+  name: 2|🇭🇰3 |  2.0MB/s|Youtube
+  network: ws
+  port: 80
+  server: 7b4c7e3d-sv6hs0-sx3ahl-167vg.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 98a7e79a-0400-11ec-a0fc-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 7b4c7e3d-sv6hs0-sx3ahl-167vg.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 2|🇭🇰4 |  4.5MB/s
+  network: ws
+  port: 80
+  server: db663bf2-sv2sg0-sv7gs8-1lkbs.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 5a4c13ae-6673-11ee-a149-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: db663bf2-sv2sg0-sv7gs8-1lkbs.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 2|🇭🇰5 |  6.2MB/s|16%|Youtube
+  network: ws
+  port: 80
+  server: 8cfe64c3-sv0xs0-t3xh55-1mqr5.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 8ffa3bfc-5db3-11ee-8014-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 8cfe64c3-sv0xs0-t3xh55-1mqr5.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 2|🇭🇰6 |  1.7MB/s|16%|Netflix|You...
+  network: ws
+  port: 80
+  server: 983d301d-sv2sg0-t802lu-1p9qc.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 37e9a0f8-8ade-11ee-b03a-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 983d301d-sv2sg0-t802lu-1p9qc.hk.p5pv.com
+    path: /
+- alterId: 2
+  cipher: auto
+  name: 2|🇭🇰7 |  1.6MB/s|16%|Netflix|You...
+  network: ws
+  port: 80
+  server: 4fdb9910-sv0xs0-t2p691-1s4hc.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: aafedc64-9c23-11ef-a79f-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 4fdb9910-sv0xs0-t2p691-1s4hc.hk.p5pv.com
+    path: /
 - client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
   network: ws
@@ -117,6 +155,22 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12|🇭🇰 香港4|@ripaojiedian
+  network: ws
+  port: 8080
+  server: 43b5a616-sw04g0-swasv3-luwe.hgc1.tcpbbr.net
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
