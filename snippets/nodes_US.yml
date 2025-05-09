@@ -1,46 +1,249 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 75c8edca-078a-4868-bb30-ef3fcd76249d
+  password: b0504390-031f-4f89-b20c-15ab03c8b0cc
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 75c8edca-078a-4868-bb30-ef3fcd76249d
+  password: b0504390-031f-4f89-b20c-15ab03c8b0cc
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国 03 | 1x US Washington
-  password: 75c8edca-078a-4868-bb30-ef3fcd76249d
+  password: b0504390-031f-4f89-b20c-15ab03c8b0cc
   port: 36215
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇺🇸美国 01 | 1x US Los Angeles
-  password: 6c8294b3-1a07-4757-81b4-eb7cac6c5d58
+  password: 809cbbec-7d3f-443a-8c96-452b0430cf34
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: 6c8294b3-1a07-4757-81b4-eb7cac6c5d58
+  password: 809cbbec-7d3f-443a-8c96-452b0430cf34
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇺🇸美国 03 | 1x US Washington
-  password: 6c8294b3-1a07-4757-81b4-eb7cac6c5d58
+  password: 809cbbec-7d3f-443a-8c96-452b0430cf34
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- ip-version: dual
+  name: 2|🇺🇸1 |  3.7MB/s|56%|Openai
+  network: ws
+  password: aTArbZ2F0E
+  port: 443
+  server: cloudgetservice.mcloudservice.site
+  sni: uSa-vp-27.bLAzECLOUD.SITE
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /linkvkws
+- ip-version: dual
+  name: 2|🇺🇸2 |  2.5MB/s|56%|Openai
+  network: ws
+  password: aTArbZ2F0E
+  port: 443
+  server: 172.66.168.209
+  sni: uSa-vp-27.bLAzECLOUD.SITE
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: uSa-vp-27.bLAzECLOUD.SITE
+    path: /linkvkws
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸4 |  5.6MB/s|0%|Netflix|Open...
+  network: ws
+  password: 03c93f49-d573-4889-a4bb-187047c5a314
+  port: '443'
+  server: 104.21.71.83
+  skip-cert-verify: false
+  sni: M7Yyu.777162.xYZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/50.0.2661.102 Safari/537.36
+    path: /Rij8gsblmlfrZUch7YcAPgiEbt
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸7 |  4.6MB/s|0%|Openai
+  network: ws
+  password: cad5a49f-14e5-4a05-aae9-c5df8fad394f
+  port: '443'
+  server: 172.67.157.220
+  skip-cert-verify: false
+  sni: c1sWER.777159.XYz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36
+        (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /5txgrUN3oqXENw4Z4
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸9 |  3.8MB/s|0%|Openai
+  network: ws
+  password: cad5a49f-14e5-4a05-aae9-c5df8fad394f
+  port: '443'
+  server: 104.21.14.54
+  skip-cert-verify: false
+  sni: C1Swew.777159.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532G Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.83 Mobile Safari/537.36
+    path: /5txgrUN3oqXENw4Z4
+- alterId: '0'
+  cipher: auto
+  name: 2|🇺🇸14 |  4.2MB/s|56%|Openai|Gem...
+  network: ws
+  port: 443
+  server: cloudgetservice.mcloudservice.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 96e44a22-4f5c-48f9-99d9-f2c1985dd5b9
+  ws-opts:
+    headers:
+      Host: Usa-Vp-192.blazEcloudMAin.SitE
+    path: /linkvkws
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸16 |  5.8MB/s|32%|Youtube|Op...
+  network: ws
+  password: 67db0c34-ae7a-4369-a6b5-554c99d8e5c9
+  port: '443'
+  server: 172.67.150.57
+  skip-cert-verify: false
+  sni: m4DdfG.999358.Xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /NuDL4mLrBwsbnEcmJLxC
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸19 |  3.0MB/s|0%|Netflix|Dis...
+  network: ws
+  password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
+  port: '443'
+  server: 104.21.26.17
+  skip-cert-verify: false
+  sni: m9rrrfgh.459.pp.ua
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/68.0.3440.106 Safari/537.36
+    path: /l6lvY4hFZriQDBimbKYmPIggy
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸26 |  1.2MB/s|32%|Youtube|Op...
+  network: ws
+  password: 67db0c34-ae7a-4369-a6b5-554c99d8e5c9
+  port: '443'
+  server: 104.21.11.194
+  skip-cert-verify: false
+  sni: m4DdfG.999358.Xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/49.0.2623.87 Safari/537.36
+    path: /NuDL4mLrBwsbnEcmJLxC
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸28 |  5.6MB/s|32%|Youtube|Op...
+  network: ws
+  password: 67db0c34-ae7a-4369-a6b5-554c99d8e5c9
+  port: '443'
+  server: 172.67.218.63
+  skip-cert-verify: false
+  sni: M4rrT.999157.XYz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/65.0.3325.181 Safari/537.36
+    path: /NuDL4mLrBwsbnEcmJLxC
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: 2|🇺🇸30 |  1.4MB/s|34%|Disney|Ope...
+  network: ws
+  password: T@_WvT8Ho@LW%w_,
+  port: '2053'
+  server: 172.66.47.42
+  skip-cert-verify: false
+  sni: NOp-55q.pAgEs.dEv
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.79 Safari/537.36
+    path: /trGPZDfetEwuO25SAs?ed=2560
+- alterId: 2
+  cipher: auto
+  name: 2|🇺🇸37 |  2.6MB/s|Openai
+  network: ws
+  port: 22641
+  server: tk.hzlt.tkddns.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-headers:
+    Host: zxjp-a.tkong.cc
+  ws-path: /
+- name: 2|🇺🇸69 |  1.4MB/s|34%|Openai
+  network: ws
+  password: f82fb954-06a1-4f0b-9180-17e07585b61f
+  port: 443
+  server: 104.21.23.162
+  skip-cert-verify: false
+  sni: 6tghjk.131.pp.ua
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 6tghjk.131.pp.ua
+    path: '%2FYu29UN3Yz8hcnI3SlZor0'
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -64,21 +267,20 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505061413967-ARiTaH7btE.download.microsoft.com
+    host: 202505081193439-fXcPpumg6a.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 12,13|美国3|@ripaojiedian
-  network: tcp
-  password: a8093ea8-f02e-4ffc-8a13-d068a62971bf
-  port: 27301
-  server: 183.2.150.64
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 12|🇺🇸 美国3|@ripaojiedian
+  password: cdBIDV42DCwnfIN
+  port: 8119
+  server: 38.114.114.108
+  tfo: false
+  type: ss
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -96,3 +298,22 @@ proxies:
     headers:
       Host: zxjp-b.tkong.cc
     path: /
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12|🇺🇸 美国5|@ripaojiedian
+  port: 46759
+  server: 120.198.71.216
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 13|美国3|@ripaojiedian
+  network: tcp
+  password: a8093ea8-f02e-4ffc-8a13-d068a62971bf
+  port: 27301
+  server: 183.2.150.64
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
