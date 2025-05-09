@@ -1,23 +1,30 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇩🇪 德国 01 | 1x DE
-  password: 4c6a3fd4-42f1-481c-bbdf-ae62b71881ae
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- delay: 2144
-  name: 1|🇩🇪3 |  1.3MB/s|64%|Openai
-  password: RlzoEILU
-  port: 7789
-  server: 36.151.251.61
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇩🇪德国 01 | 1x DE
-  password: e52c96c9-1ac5-468c-bd46-bb8fa782bca2
+  name: 0|🇩🇪德国 01 | 1x DE
+  password: c6177bd0-e5ae-45b3-9c07-8c664835758a
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪 德国 01 | 1x DE
+  password: fd9c9aae-860b-48fe-a829-55426131d4f4
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: 2|🇩🇪1 |  5.9MB/s|24%|Disney|Yout...
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 35.201.203.106
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr?ed=2560
