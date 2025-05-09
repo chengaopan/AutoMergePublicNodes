@@ -1,104 +1,20 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 01 | 1x TW
-  password: 838fa7db-8df7-4da3-b152-9cb01a62f8f3
-  port: 31241
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 02 | 1x TW
-  password: 838fa7db-8df7-4da3-b152-9cb01a62f8f3
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇹🇼台湾 03 | 1x TW
-  password: 838fa7db-8df7-4da3-b152-9cb01a62f8f3
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼 台湾 01 | 1x TW
-  password: 7569bb97-c134-47bb-9f7c-8d86d26f2814
-  port: 36241
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼 台湾 02 | 1x TW
-  password: 7569bb97-c134-47bb-9f7c-8d86d26f2814
-  port: 36243
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇹🇼 台湾 03 | 1x TW
-  password: 7569bb97-c134-47bb-9f7c-8d86d26f2814
-  port: 36245
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alpn:
-  - h3
-  client-fingerprint: randomized
-  name: 2|🇹🇼1 |  1.3MB/s|0%|Disney|Opena...
-  network: ws
-  password: Aimer
-  port: '443'
-  server: 173.245.59.201
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
+- client-fingerprint: chrome
+  name: 0,11,13|CN_speednode_0004
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: a10.taipeicitygovernment.kyiv.ua
+  skip-cert-verify: true
+  sni: 45.32.28.232
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alpn:
-  - h3
-  client-fingerprint: randomized
-  name: 2|🇹🇼2 |  1.4MB/s|Openai
-  network: ws
-  password: Aimer
-  port: '443'
-  server: 209.208.227.79
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- alpn:
-  - h3
-  client-fingerprint: randomized
-  name: 2|🇹🇼3 |  4.0MB/s|Netflix|Disney|...
-  network: ws
-  password: Aimer
-  port: '2096'
-  server: 167.68.4.10
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/40.0.2214.115 Safari/537.36
-    path: /?ed=2560&proxyip=ts.hpc.tw
 - alpn:
   - h3
   client-fingerprint: random
-  name: 2|🇹🇼4 |  2.0MB/s|0%|Disney|Opena...
+  name: 0|🇹🇼2 |  1.0MB/s|0%|Disney|Opena...
   network: ws
   port: '443'
-  server: 108.162.195.82
+  server: 172.64.35.82
   servername: edccj.ambercc.filegear-sg.me
   tls: true
   type: vless
@@ -107,32 +23,129 @@ proxies:
   ws-opts:
     headers:
       Host: edccj.ambercc.filegear-sg.me
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.75 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/43.0.2357.65 Safari/537.36
     path: /?ed=2560&proxyip=ts.hpc.tw
   xudp: true
-- client-fingerprint: chrome
-  name: 2,12,14|CN_speednode_0004
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 0|🇹🇼3 |  5.8MB/s|0%|Netflix|Disn...
+  network: ws
+  port: '2083'
+  server: 154.218.15.250
+  servername: edccj.ambercc.filegear-sg.me
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.106 Safari/537.36
+    path: /?ed=2560&proxyip=ts.hpc.tw
+  xudp: true
+- alpn:
+  - h3
+  client-fingerprint: randomized
+  name: 0|🇹🇼4 |  5.7MB/s|Netflix|Disney|...
+  network: ws
+  password: Aimer
+  port: '443'
+  server: 27.50.49.136
+  skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 0|🇹🇼5 |  1.1MB/s|0%|Netflix|Disn...
+  network: ws
+  port: 80
+  server: 152.32.226.221
+  servername: edccj.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 0|🇹🇼6 |  1.1MB/s|0%|Disney
+  network: ws
+  port: 443
+  server: pranab.ns.cloudflare.com
+  servername: edccj.ambercc.filegear-sg.me
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
+  ws-opts:
+    headers:
+      Host: edccj.ambercc.filegear-sg.me
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- name: 0,13|CN_speednode_0006
   password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
   port: 3462
-  server: a10.taipeicitygovernment.kyiv.ua
-  skip-cert-verify: true
+  server: a02.taipeicitygovernment.chernovtsy.ua
+  skip-cert-verify: false
+  sni: 45.32.28.232
+  type: trojan
+  udp: true
+- name: 0,13|CN_speednode_0007
+  password: 6e1b9a65-884f-3aa9-9469-bf6ec0f08610
+  port: 3462
+  server: a03.taipeicitygovernment.cn.ua
+  skip-cert-verify: false
   sni: 45.32.28.232
   type: trojan
   udp: true
 - cipher: chacha20-ietf-poly1305
-  client-fingerprint: chrome
-  name: 2|🇹🇼6 |  1.5MB/s|25%|Netflix|Dis...
-  password: 937f6b6168b6
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: wt8v1.kvote.cn
-    mode: websocket
-    mux: true
-    path: /oqhygtklyhwi
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: 103.137.62.194
-  tfo: false
+  name: 1|🇹🇼 台湾 01 | 1x TW
+  password: 022944f1-fe21-4d88-ab88-ab4574671965
+  port: 36241
+  server: free.2weradf.xyz
   type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 02 | 1x TW
+  password: 022944f1-fe21-4d88-ab88-ab4574671965
+  port: 36243
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇹🇼 台湾 03 | 1x TW
+  password: 022944f1-fe21-4d88-ab88-ab4574671965
+  port: 36245
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇹🇼台湾 01 | 1x TW
+  password: d6373ed6-9696-48fb-b981-5c9bdc68afc0
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇹🇼台湾 02 | 1x TW
+  password: d6373ed6-9696-48fb-b981-5c9bdc68afc0
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇹🇼台湾 03 | 1x TW
+  password: d6373ed6-9696-48fb-b981-5c9bdc68afc0
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
