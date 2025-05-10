@@ -1,42 +1,42 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: 69757335-fb08-4887-8910-4b99e327c4b1
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: 69757335-fb08-4887-8910-4b99e327c4b1
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 01 | 1x SG
-  password: b32dd92a-2bf8-4c82-83e9-5efc7850c9aa
+  name: 0|🇸🇬新加坡 01 | 1x SG
+  password: af0439f6-fbec-4e34-a0f0-d57a6900c3f7
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 02 | 1x SG
-  password: b32dd92a-2bf8-4c82-83e9-5efc7850c9aa
+  name: 0|🇸🇬新加坡 02 | 1x SG
+  password: af0439f6-fbec-4e34-a0f0-d57a6900c3f7
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 03 | 1x SG
-  password: b32dd92a-2bf8-4c82-83e9-5efc7850c9aa
+  name: 0|🇸🇬新加坡 03 | 1x SG
+  password: af0439f6-fbec-4e34-a0f0-d57a6900c3f7
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 01 | 1x SG
+  password: afd2ed88-3ddd-49b2-bc2b-6a163ba675ad
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 02 | 1x SG
+  password: afd2ed88-3ddd-49b2-bc2b-6a163ba675ad
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 2|🇸🇬1 |  6.1MB/s|54%|Youtube|Ope...
+  name: 2|🇸🇬1 |  1.2MB/s|54%|Youtube|Ope...
   obfs: tls1.2_ticket_auth
   obfs-param: sg2-cdn-route.couldflare-cdn.com
   password: uiACqrIr
@@ -45,22 +45,7 @@ proxies:
   protocol-param: ''
   server: cm2.xcone.xyz
   type: ssr
-- name: 2|🇸🇬2 |  3.3MB/s|Openai
-  network: ws
-  port: '80'
-  server: 141.193.213.21
-  type: vless
-  udp: true
-  uuid: 628a3541-1b2d-43ab-ad4f-82b6406480fe
-  ws-opts:
-    headers:
-      Host: lk.sahanwickramasinghe.shop
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; CAM-L21 Build/HUAWEICAM-L21; wv)
-        AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/62.0.3202.84 Mobile
-        Safari/537.36
-    path: /
-  xudp: true
-- name: 2|🇸🇬3 |  5.3MB/s|Youtube|Openai
+- name: 2|🇸🇬2 |  1.2MB/s|Youtube|Openai
   network: ws
   port: '80'
   server: 141.193.213.20
@@ -74,12 +59,26 @@ proxies:
         Chrome/69.0.3497.100 Safari/537.36
     path: /
   xudp: true
+- name: 2|🇸🇬3 |  2.8MB/s|64%|Netflix|You...
+  network: ws
+  port: '80'
+  server: 213.166.71.40
+  type: vless
+  udp: true
+  uuid: 504fa227-6493-4c4b-983c-4661c96a0e11
+  ws-opts:
+    headers:
+      Host: vv.cscfwoker.fun
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: Telegram🇨🇳 @WangCai2 /?ed=2560
+  xudp: true
 - client-fingerprint: chrome
   flow: none
-  name: 2|🇸🇬4 |  5.8MB/s|Youtube|Openai|...
+  name: 2|🇸🇬4 |  5.1MB/s|Youtube|Openai
   network: ws
   port: '2096'
-  server: 141.193.213.20
+  server: 141.193.213.21
   servername: premium.vkehi.shop
   tls: true
   type: vless
@@ -88,10 +87,44 @@ proxies:
   ws-opts:
     headers:
       Host: premium.vkehi.shop
-      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
-        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/49.0.2623.112 Safari/537.36
     path: '%2F'
   xudp: true
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: random
+  name: 2|🇸🇬5 |  5.5MB/s|Youtube|Openai|...
+  network: ws
+  port: '2096'
+  server: 104.17.70.206
+  servername: xrr.rtxconfigz.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  ws-opts:
+    headers:
+      Host: xrr.rtxconfigz.xyz
+      User-Agent: Mozilla/5.0 (X11; U; Linux x86_64; en-US) AppleWebKit/533.2 (KHTML,
+        like Gecko) Chrome/5.0.342.1 Safari/533.2
+    path: ''
+  xudp: true
+- delay: 1770
+  name: 2|🇸🇬6 |  5.2MB/s|63%|Netflix|Dis...
+  network: ws
+  password: slch2024
+  port: 8443
+  server: myanmar.visa.com
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /?ed=2560
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
