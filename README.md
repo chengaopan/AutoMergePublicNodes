@@ -6,8 +6,8 @@
 🚀 免费节点,🚀免费节点订阅,🚀v2ray免费节点,ssr免费节点订阅,clash免费节点订阅,免费梯子,免费翻墙,免费科学上网,免费ss/v2ray/trojan/clash节点,谷歌商店,翻墙梯子
 
 ## 公告
-本项目fork [NoMoreWalls](https://github.com/peasoft/NoMoreWalls)
-为防止失联，[peasoft](https://github.com/peasoft)建立了镜像：<https://peasoft.github.io/NWalls.html>
+* 本项目fork [NoMoreWalls](https://github.com/peasoft/NoMoreWalls) 请优先为该项目 点亮☆
+* 为防止失联，[peasoft](https://github.com/peasoft)建立了镜像：<https://peasoft.github.io/NWalls.html>
 
 **本项目提供的 Clash 订阅包含我们精心设计的分流规则，Google Play 软件秒下，自动识别被墙域名，只需将 `🐟 漏网之鱼` 维持在 `DIRECT` 即可！**
 
