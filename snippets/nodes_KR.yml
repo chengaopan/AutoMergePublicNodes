@@ -1,28 +1,28 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 01 | 1x KR
-  password: 949b2f55-13d5-4fb3-a048-c43b1a6578f5
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 01 | 1x KR
-  password: 18bf9b55-1847-42bf-8ff9-fdd12e038ca8
+  name: 0|🇰🇷韩国 01 | 1x KR
+  password: 2d5fe189-3135-4f0a-a985-35549871aad1
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷韩国 02 | 1x KR
-  password: 18bf9b55-1847-42bf-8ff9-fdd12e038ca8
+  name: 0|🇰🇷韩国 02 | 1x KR
+  password: 2d5fe189-3135-4f0a-a985-35549871aad1
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷 韩国 01 | 1x KR
+  password: 714c13ec-dfa1-4376-884f-258f6abd6c81
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇰🇷1 |  2.5MB/s|62%|Openai
+  name: 2|🇰🇷1 |  1.7MB/s|62%|Youtube|Ope...
   network: ws
   port: 2096
   server: dv4.789900.xyz
@@ -38,28 +38,70 @@ proxies:
     path: /0c8f3e29-4ec9-4ba6-a6ef-4487873f5d05-vm
   xudp: true
 - cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 2|🇰🇷3 |  1.8MB/s|45%|Netflix|Ope...
-  password: qwerREWQ@@
-  port: 4652
-  server: p141.panda001.net
-  tfo: true
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 2|🇰🇷5 |  5.3MB/s|44%|Netflix|Dis...
+  name: 2|🇰🇷2 |  2.9MB/s|44%|Netflix|Dis...
   password: qwerREWQ@@
   port: '4857'
   server: 125.141.26.12
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 2|🇰🇷4 |  4.8MB/s|63%|Youtube|Ope...
+  network: ws
+  port: 2087
+  server: lv4.789900.xyz
+  servername: lv4.789900.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 7dd16ab1-2a36-4b32-86fd-eb49fb039752
+  ws-opts:
+    headers:
+      Host: lv4.789900.xyz
+    path: /7dd16ab1-2a36-4b32-86fd-eb49fb039752-vm
+  xudp: true
 - cipher: aes-256-cfb
-  name: 2|🇰🇷7 |  5.4MB/s|44%|Netflix|Dis...
+  name: 2|🇰🇷5 |  6.2MB/s|44%|Netflix|Dis...
   password: qwerREWQ@@
   port: '15098'
-  server: 125.141.31.72
+  server: p222.panda001.net
   type: ss
   udp: true
+- cipher: aes-256-cfb
+  name: 2|🇰🇷6 |  2.3MB/s|77%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: '11389'
+  server: 221.150.109.89
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 2|🇰🇷7 |  5.8MB/s|77%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: 11389
+  server: p231.panda004.net
+  type: ss
+- cipher: aes-256-cfb
+  name: 2|🇰🇷8 |  4.0MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: 4857
+  server: p227.panda004.net
+  tfo: true
+  type: ss
+  udp: true
+- delay: 1281
+  name: 2|🇰🇷11 |  5.8MB/s|Disney
+  network: ws
+  password: slch2024
+  port: 443
+  server: usa.visa.com
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇰🇷 韩国|@ripaojiedian
@@ -73,6 +115,6 @@ proxies:
   name: 12|🇰🇷 韩国特殊|@ripaojiedian
   password: awsps0501
   port: 443
-  server: 13.212.202.199
+  server: 52.197.184.25
   tfo: false
   type: ss

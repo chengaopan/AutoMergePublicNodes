@@ -1,34 +1,34 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: 949b2f55-13d5-4fb3-a048-c43b1a6578f5
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 949b2f55-13d5-4fb3-a048-c43b1a6578f5
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 02 | 1x HK
-  password: 18bf9b55-1847-42bf-8ff9-fdd12e038ca8
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: 2d5fe189-3135-4f0a-a985-35549871aad1
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: 18bf9b55-1847-42bf-8ff9-fdd12e038ca8
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: 2d5fe189-3135-4f0a-a985-35549871aad1
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: 714c13ec-dfa1-4376-884f-258f6abd6c81
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 714c13ec-dfa1-4376-884f-258f6abd6c81
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 2|🇭🇰1 |  2.4MB/s|0%|Disney
+  name: 2|🇭🇰1 |  3.3MB/s|0%
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: '8313'
   server: 183.232.235.2
@@ -36,33 +36,58 @@ proxies:
   sni: hk-13-568.flztjc.net
   type: trojan
   udp: true
-- name: 2|🇭🇰2 |  6.2MB/s|6%|Youtube
-  password: b6200af42ccadea353f5b5856dd20d70
-  port: 39001
-  server: 120.233.128.68
+- client-fingerprint: chrome
+  name: 2|🇭🇰2 |  6.4MB/s|Disney
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: '8313'
+  server: dozo01.flztjc.top
   skip-cert-verify: true
-  sni: 120.233.128.68
+  sni: dozo01.flztjc.top
   type: trojan
+  udp: true
+- cipher: aes-256-gcm
+  name: 2|🇭🇰3 |  6.0MB/s|16%|Netflix|Dis...
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: '11501'
+  server: cdn-p1-hk.weibo-dns.com
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 2|🇭🇰3 |  1.1MB/s|6%|Youtube
+  name: 2|🇭🇰4 |  1.9MB/s|12%|Youtube
+  network: ws
+  port: '443'
+  server: 13.75.34.176
+  servername: hkklo.azurewebsites.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+  ws-opts:
+    headers:
+      Host: hkklo.azurewebsites.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.89 Safari/537.36
+    path: ''
+  xudp: true
+- client-fingerprint: chrome
+  name: 2|🇭🇰5 |  2.5MB/s|6%|Youtube
   password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 8443
-  server: hk02.sqx001.com
+  port: 443
+  server: hk05.sqx001.com
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
   username: dmpyoary@mayorlogistic.com
-- client-fingerprint: chrome
-  name: 2|🇭🇰4 |  1.4MB/s|6%|Youtube
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 8443
-  server: hk04.sqx001.com
+- auth: ae845cbd-08fb-4346-929a-e28a6f3960a8
+  name: 2|🇭🇰6 |  2.9MB/s|0%|Netflix|Disn...
+  password: ae845cbd-08fb-4346-929a-e28a6f3960a8
+  port: 24591
+  server: hk1.shiyuandian.shop
   skip-cert-verify: true
-  tls: true
-  type: http
+  sni: hk1.shiyuandian.shop
+  type: hysteria2
   udp: true
-  username: dmpyoary@mayorlogistic.com
 - client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
   network: ws
@@ -88,7 +113,7 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 48565
+  port: 54259
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
@@ -103,22 +128,14 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf
   client-fingerprint: chrome
   name: 12|🇭🇰 香港4|@ripaojiedian
-  network: ws
-  port: 8080
-  server: 43b5a616-sw04g0-swasv3-luwe.hgc1.tcpbbr.net
-  skip-cert-verify: false
+  password: asd123456
+  port: 8388
+  server: 103.149.182.191
   tfo: false
-  tls: false
-  type: vmess
-  uuid: a2b0fd2b-716f-0df8-d4e2-03a1c00e5f1a
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -171,13 +188,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 13|香港4|@ripaojiedian
-  network: tcp
-  password: d64c2ba8-0ae4-4299-8af7-8c5046e3c1c1
-  port: 27102
-  server: 183.240.116.224
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 13|香港5|@ripaojiedian

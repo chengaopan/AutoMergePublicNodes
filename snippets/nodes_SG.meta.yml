@@ -1,42 +1,42 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: 949b2f55-13d5-4fb3-a048-c43b1a6578f5
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: 949b2f55-13d5-4fb3-a048-c43b1a6578f5
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 01 | 1x SG
-  password: 18bf9b55-1847-42bf-8ff9-fdd12e038ca8
+  name: 0|🇸🇬新加坡 01 | 1x SG
+  password: 2d5fe189-3135-4f0a-a985-35549871aad1
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 02 | 1x SG
-  password: 18bf9b55-1847-42bf-8ff9-fdd12e038ca8
+  name: 0|🇸🇬新加坡 02 | 1x SG
+  password: 2d5fe189-3135-4f0a-a985-35549871aad1
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 03 | 1x SG
-  password: 18bf9b55-1847-42bf-8ff9-fdd12e038ca8
+  name: 0|🇸🇬新加坡 03 | 1x SG
+  password: 2d5fe189-3135-4f0a-a985-35549871aad1
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 01 | 1x SG
+  password: 714c13ec-dfa1-4376-884f-258f6abd6c81
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 02 | 1x SG
+  password: 714c13ec-dfa1-4376-884f-258f6abd6c81
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 2|🇸🇬1 |  6.2MB/s|54%|Youtube|Ope...
+  name: 2|🇸🇬1 |  6.1MB/s|54%|Youtube|Ope...
   obfs: tls1.2_ticket_auth
   obfs-param: sg2-cdn-route.couldflare-cdn.com
   password: uiACqrIr
@@ -45,46 +45,7 @@ proxies:
   protocol-param: ''
   server: cm2.xcone.xyz
   type: ssr
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: random
-  name: 2|🇸🇬2 |  2.5MB/s|Youtube|Openai|...
-  network: ws
-  port: '2096'
-  server: 104.17.70.206
-  servername: xrr.rtxconfigz.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
-  ws-opts:
-    headers:
-      Host: xrr.rtxconfigz.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.113 Safari/537.36
-    path: ''
-  xudp: true
-- client-fingerprint: chrome
-  flow: none
-  name: 2|🇸🇬3 |  5.1MB/s|Youtube|Openai|...
-  network: ws
-  port: '2096'
-  server: 141.193.213.21
-  servername: premium.vkehi.shop
-  tls: true
-  type: vless
-  udp: true
-  uuid: 93be59b7-ebce-4aec-8e66-4470e06e58ae
-  ws-opts:
-    headers:
-      Host: premium.vkehi.shop
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.7
-        (KHTML, like Gecko) Chrome/7.0.517.44 Safari/534.7
-    path: '%2F'
-  xudp: true
-- name: 2|🇸🇬4 |  5.7MB/s|Youtube|Openai
+- name: 2|🇸🇬2 |  3.3MB/s|Openai
   network: ws
   port: '80'
   server: 141.193.213.21
@@ -99,7 +60,7 @@ proxies:
         Safari/537.36
     path: /
   xudp: true
-- name: 2|🇸🇬5 |  5.7MB/s|Youtube|Openai
+- name: 2|🇸🇬3 |  5.3MB/s|Youtube|Openai
   network: ws
   port: '80'
   server: 141.193.213.20
@@ -114,15 +75,23 @@ proxies:
     path: /
   xudp: true
 - client-fingerprint: chrome
-  name: 2|🇸🇬6 |  1.9MB/s|57%|Youtube|Ope...
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 8444
-  server: singapore02.sqx001.com
-  skip-cert-verify: true
+  flow: none
+  name: 2|🇸🇬4 |  5.8MB/s|Youtube|Openai|...
+  network: ws
+  port: '2096'
+  server: 141.193.213.20
+  servername: premium.vkehi.shop
   tls: true
-  type: http
+  type: vless
   udp: true
-  username: dmpyoary@mayorlogistic.com
+  uuid: 93be59b7-ebce-4aec-8e66-4470e06e58ae
+  ws-opts:
+    headers:
+      Host: premium.vkehi.shop
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; ANE-LX3 Build/HUAWEIANE-LX3)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: '%2F'
+  xudp: true
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
@@ -169,30 +138,9 @@ proxies:
   name: 12|🇸🇬 狮城特殊|@ripaojiedian
   password: awsps0501
   port: 443
-  server: 52.27.142.2
+  server: 3.35.231.158
   tfo: false
   type: ss
-- name: 13|新加坡2|@ripaojiedian
-  network: tcp
-  password: ce44b416-2d7e-49af-aa40-5a61d45f6fcc
-  port: 27401
-  server: 58.254.186.222
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-- alterId: 0
-  cipher: auto
-  name: 13|新加坡3|@ripaojiedian
-  network: ws
-  port: '35146'
-  server: sg6.vip2.g2.moonbase.life
-  servername: web.xcjs.info
-  tls: true
-  type: vmess
-  uuid: c3136814-a07e-41f6-ad94-8e20458c0d21
-  ws-opts:
-    headers:
-      Host: web.xcjs.info
-    path: /home
 - alpn:
   - h3
   client-fingerprint: random
