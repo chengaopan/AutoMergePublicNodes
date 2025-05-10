@@ -1,22 +1,34 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇩🇪德国 01 | 1x DE
-  password: b1062ce4-97da-4bda-b3a5-41b9485d1c3b
+  name: 0|🇩🇪 德国 01 | 1x DE
+  password: 2f51818c-5d82-4457-bca5-f36c8e48e1cf
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪德国 01 | 1x DE
+  password: 5e066934-6b6b-4880-abc7-df51b1cb8a00
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇩🇪2 |  4.4MB/s|50%|Netflix|You...
-  password: PBrts5Au4GM9ar7bTNyZEu
-  port: '63861'
-  server: 85.208.139.69
-  type: ss
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇩🇪7 |  4.4MB/s|34%|Openai
+  network: tcp
+  password: telegram-id-privatevpns
+  port: '22222'
+  server: 52.29.199.75
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇩🇪 德国 01 | 1x DE
-  password: af05d2e3-37d6-44bc-ab8e-d869cc599d63
-  port: 36471
-  server: free.2weradf.xyz
+- cipher: rc4-md5
+  name: 2|🇩🇪11 |  5.1MB/s|100%|Openai
+  password: 14fFPrbezE3HDZzsMOr6
+  port: '8080'
+  server: 193.108.119.230
   type: ss
   udp: true
