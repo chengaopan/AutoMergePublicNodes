@@ -1,14 +1,21 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: 806001d3-78ba-4cf9-bea8-38538e9bf202
+  password: 73b71a3b-235c-48de-9098-f899e5998ca0
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦加拿大 01 | 1x CA
+  password: 45442f07-4b81-4d20-a773-b10c834be5b4
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: '0'
   cipher: auto
-  name: 1|🇨🇦1 |  5.7MB/s|29%|Youtube|Ope...
+  name: 2|🇨🇦1 |  2.0MB/s|29%|Openai|Gemi...
   network: ws
   port: 2083
   server: cloudgetservice.mcloudservice.site
@@ -22,32 +29,8 @@ proxies:
       Host: CanaDa-138.blAzecAnAdA.SITe
     path: /linkvkws
   xudp: true
-- alpn:
-  - h3
-  down: ''
-  fingerprint: ''
-  name: 1|🇨🇦2 |  1.3MB/s|23%|Netflix|Dis...
-  obfs: ''
-  obfs-password: ''
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: '45979'
-  server: 40.233.80.61
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  up: ''
-- client-fingerprint: chrome
-  name: 1|🇨🇦3 |  2.6MB/s|64%|Netflix|Dis...
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 443
-  server: toronto1.sqx001.com
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: dmpyoary@mayorlogistic.com
 - delay: 1765
-  name: 1|🇨🇦4 |  4.6MB/s|35%|Youtube|Ope...
+  name: 2|🇨🇦2 |  5.0MB/s|35%|Youtube|Ope...
   network: ws
   port: 2052
   server: 104.17.148.22
@@ -61,10 +44,32 @@ proxies:
         Chrome/70.0.3538.110 Safari/537.36
     path: /vless
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇨🇦加拿大 01 | 1x CA
-  password: c33e27b5-f47c-4d6f-910b-149c6ff6f38c
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
+- name: 2|🇨🇦3 |  5.9MB/s|51%|Youtube|Ope...
+  network: ws
+  port: '80'
+  server: tgju.org
+  type: vless
   udp: true
+  uuid: 8bcca322-ac42-4869-a824-90bbfd2de5d3
+  ws-opts:
+    headers:
+      Host: InflUeNTiAL-pROMiSe.OneEat.Co.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/58.0.3029.81 Safari/537.36
+    path: /?ed=2048
+  xudp: true
+- client-fingerprint: chrome
+  delay: 916
+  flow: xtls-rprx-vision
+  name: 2|🇨🇦4 |  1.1MB/s|Netflix|Disney|...
+  network: tcp
+  port: 26113
+  reality-opts:
+    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
+    short-id: 1fbd20fd
+  server: 40.233.80.61
+  servername: www.yahoo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff

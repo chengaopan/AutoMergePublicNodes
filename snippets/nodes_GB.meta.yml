@@ -1,81 +1,51 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 01 | 1x HK
-  password: 806001d3-78ba-4cf9-bea8-38538e9bf202
+  password: 73b71a3b-235c-48de-9098-f899e5998ca0
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 806001d3-78ba-4cf9-bea8-38538e9bf202
+  password: 73b71a3b-235c-48de-9098-f899e5998ca0
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: 45442f07-4b81-4d20-a773-b10c834be5b4
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: 45442f07-4b81-4d20-a773-b10c834be5b4
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 1|🇬🇧1 |  2.5MB/s|33%|Youtube|Ope...
+  name: 2|🇬🇧1 |  4.8MB/s|0%|Openai
   network: tcp
-  port: '2040'
+  port: '443'
   reality-opts:
-    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-    short-id: 27cfa05000c23cc4
-  server: 109.172.94.249
-  servername: fr.ign.com
+    public-key: TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c
+    short-id: 7e39db0c
+  server: 213.21.245.83
+  servername: www.cdn77.com
   tls: true
   type: vless
   udp: true
-  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
-  xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 1|🇬🇧2 |  1.4MB/s|46%|Openai
-  network: ws
-  port: '2096'
-  server: 45.131.208.65
-  servername: UoIrHqRs.cAfUnEaR.InFo
-  tls: true
-  type: vless
-  udp: true
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: UoIrHqRs.cAfUnEaR.InFo
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /
-  xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 1|🇬🇧3 |  1.6MB/s|46%|Openai
-  network: ws
-  port: '2096'
-  server: 45.131.4.98
-  servername: UoIrHqRs.cAfUnEaR.InFo
-  tls: true
-  type: vless
-  udp: true
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: UoIrHqRs.cAfUnEaR.InFo
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/46.0.2490.86 Safari/537.36
-    path: /
+  uuid: 8db8f511-f01f-4ec7-8f88-08765acb0552
   xudp: true
 - client-fingerprint: chrome
-  name: 1|🇬🇧4 |  3.8MB/s|46%
+  name: 2|🇬🇧2 |  2.3MB/s|46%|Openai
   network: ws
   port: '443'
-  server: 45.142.120.97
+  server: 45.131.6.160
   servername: CxNiMjJz.cAfUnEaR.InFo
   tls: true
   type: vless
@@ -84,67 +54,15 @@ proxies:
   ws-opts:
     headers:
       Host: CxNiMjJz.cAfUnEaR.InFo
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/68.0.3440.75 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; A37fw Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
     path: /
   xudp: true
 - client-fingerprint: chrome
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 1|🇬🇧5 |  3.2MB/s|0%|Youtube|Open...
-  network: tcp
-  port: '2040'
-  reality-opts:
-    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
-    short-id: 27cfa05000c23cc4
-  server: 150.241.96.55
-  servername: github.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
-  xudp: true
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
-  name: 1|🇬🇧6 |  4.0MB/s|0%|Netflix|Disn...
-  network: grpc
-  port: '2030'
-  reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: 7fe29733
-  server: 74.220.23.227
-  servername: refersion.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 83ee0d49-d693-41cb-b97f-1f69fa3e89cd
-  xudp: true
-- client-fingerprint: chrome
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 1|🇬🇧7 |  5.1MB/s|0%|Openai
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: TXHciLv9Ctu7k7sdIcadLJIEa1WTCIseYctDMa6NW0c
-    short-id: 7e39db0c
-  server: V2RayMizban.iranigamepars.ir
-  servername: www.cdn77.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8db8f511-f01f-4ec7-8f88-08765acb0552
-  xudp: true
-- client-fingerprint: chrome
-  name: 1|🇬🇧8 |  2.6MB/s|46%|Openai
+  name: 2|🇬🇧3 |  2.0MB/s|46%|Openai
   network: ws
   port: '443'
-  server: 188.42.88.45
+  server: 45.8.211.230
   servername: CxNiMjJz.cAfUnEaR.InFo
   tls: true
   type: vless
@@ -154,16 +72,28 @@ proxies:
     headers:
       Host: CxNiMjJz.cAfUnEaR.InFo
       User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/41.0.2272.104 Safari/537.36
-    path: /
+        Chrome/67.0.3396.99 Safari/537.36
+    path: ''
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧英国家宽 01 | 1x UK
-  password: c33e27b5-f47c-4d6f-910b-149c6ff6f38c
-  port: 31271
-  server: free.2apzhfa.xyz
+- cipher: aes-256-cfb
+  name: 2|🇬🇧4 |  4.9MB/s|0%|Youtube|Open...
+  password: f8f7aCzcPKbsF8p3
+  port: '989'
+  server: 62.100.205.48
   type: ss
   udp: true
+- down: ''
+  fingerprint: ''
+  name: 2|🇬🇧5 |  2.1MB/s|62%|Disney|Yout...
+  obfs: ''
+  obfs-password: ''
+  password: nfsn666
+  port: '8888'
+  server: ld-arm.nfsn666.gq
+  skip-cert-verify: true
+  sni: ld-arm.nfsn666.gq
+  type: hysteria2
+  up: ''
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
