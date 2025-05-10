@@ -1,21 +1,48 @@
 proxies:
-- name: 0|🇯🇵1 |  4.8MB/s|63%|Disney|Open...
-  network: ws
-  port: '80'
-  server: www.speedtest.net
-  servername: ipsychO.SUEx12.Ir
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵日本 01 | 1x JP
+  password: c11b6ebc-5b31-4586-854b-513c8eaabe0f
+  port: 31111
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/64.0.3282.186 Safari/537.36
-    path: /re5IzbZ9IZZMddtw?ed=2560/?TELEGRAM@MARAMBASHI_MARAMBASHI
-  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵日本 02 | 1x JP
+  password: c11b6ebc-5b31-4586-854b-513c8eaabe0f
+  port: 31113
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇯🇵日本 03 | 1x JP
+  password: c11b6ebc-5b31-4586-854b-513c8eaabe0f
+  port: 31115
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇯🇵 日本 01 | 1x JP
+  password: 751edc44-4782-4a4f-90a6-6547aac95be7
+  port: 36111
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇯🇵 日本 02 | 1x JP
+  password: 751edc44-4782-4a4f-90a6-6547aac95be7
+  port: 36113
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇯🇵 日本 03 | 1x JP
+  password: 751edc44-4782-4a4f-90a6-6547aac95be7
+  port: 36115
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - auth: 3ed64477-9d5c-49ca-b536-2dae51c987d2
-  name: 0|🇯🇵2 |  2.0MB/s|0%|Youtube|Gemi...
+  name: 2|🇯🇵1 |  1.2MB/s|0%|Youtube|Gemi...
   obfs: salamander
   obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
   password: 3ed64477-9d5c-49ca-b536-2dae51c987d2
@@ -25,48 +52,64 @@ proxies:
   sni: s0.awsstatic.com
   type: hysteria2
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵 日本 01 | 1x JP
-  password: a02c3fa3-511a-4b36-bb3d-5d8cf61b6100
-  port: 36111
-  server: free.2weradf.xyz
-  type: ss
+- client-fingerprint: chrome
+  name: 2|🇯🇵2 |  4.8MB/s|8%|Disney|Youtu...
+  network: ws
+  port: '11223'
+  server: 218.38.33.77
+  servername: mikuyo.bpd67081tsq.ddns-ip.net
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵 日本 02 | 1x JP
-  password: a02c3fa3-511a-4b36-bb3d-5d8cf61b6100
-  port: 36113
-  server: free.2weradf.xyz
-  type: ss
+  uuid: be21e25f-5919-4e6b-b443-bfa45273de5d
+  ws-opts:
+    headers:
+      Host: mikuyo.bpd67081tsq.ddns-ip.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: fp=chrome
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 2|🇯🇵3 |  6.2MB/s|20%|Disney|Yout...
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: gkeUZppVQzutjGsRcsGMW8OrPHboJ3qRFpIvj8lcUj4
+    short-id: c174618d
+  server: 3.115.82.155
+  servername: tv.apple.com
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇯🇵 日本 03 | 1x JP
-  password: a02c3fa3-511a-4b36-bb3d-5d8cf61b6100
-  port: 36115
-  server: free.2weradf.xyz
-  type: ss
+  uuid: d62993f2-f2b7-410d-b56d-2cef2e971038
+  xudp: true
+- client-fingerprint: chrome
+  name: 2|🇯🇵4 |  1.7MB/s|0%|Netflix|Disn...
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 443
+  server: tky03.sqx001.com
+  skip-cert-verify: true
+  sni: tky03.sqx001.com
+  tls: true
+  type: http
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵日本 01 | 1x JP
-  password: 5809e9fb-2498-4ea5-9c83-0b11fd682e4f
-  port: 31111
-  server: free.2apzhfa.xyz
-  type: ss
+  username: dmpyoary@mayorlogistic.com
+- client-fingerprint: chrome
+  name: 2|🇯🇵5 |  1.6MB/s|0%|Disney|Opena...
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 443
+  server: tky02.sqx001.com
+  skip-cert-verify: true
+  sni: tky02.sqx001.com
+  tls: true
+  type: http
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵日本 02 | 1x JP
-  password: 5809e9fb-2498-4ea5-9c83-0b11fd682e4f
-  port: 31113
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵日本 03 | 1x JP
-  password: 5809e9fb-2498-4ea5-9c83-0b11fd682e4f
-  port: 31115
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+  username: dmpyoary@mayorlogistic.com
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|🇯🇵 日本|@ripaojiedian

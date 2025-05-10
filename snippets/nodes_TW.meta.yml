@@ -1,86 +1,81 @@
 proxies:
-- alpn:
-  - h3
-  client-fingerprint: randomized
-  name: 0|🇹🇼1 |  1.9MB/s|0%|Netflix|Disn...
-  network: ws
-  password: Aimer
-  port: '443'
-  server: 209.208.227.79
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼台湾 01 | 1x TW
+  password: c11b6ebc-5b31-4586-854b-513c8eaabe0f
+  port: 31241
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- name: 0|🇹🇼2 |  5.7MB/s|Disney
-  network: ws
-  port: '2082'
-  server: 195.85.59.95
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼台湾 02 | 1x TW
+  password: c11b6ebc-5b31-4586-854b-513c8eaabe0f
+  port: 31243
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: a3f9d9b6-3ae4-4c47-9dbf-33b0a5c7f1a5
-  ws-opts:
-    headers:
-      Host: 0210.uous1wog.workers.dev
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/534.3
-        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
-    path: /
-  xudp: true
-- name: 0|🇹🇼3 |  4.8MB/s|0%|Netflix|Disn...
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 1443
-  server: twmoon1-cdn-route.couldflare-cdn.com
-  skip-cert-verify: false
-  sni: twmoon1-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇹🇼台湾 03 | 1x TW
+  password: c11b6ebc-5b31-4586-854b-513c8eaabe0f
+  port: 31245
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇹🇼 台湾 01 | 1x TW
-  password: a02c3fa3-511a-4b36-bb3d-5d8cf61b6100
+  password: 751edc44-4782-4a4f-90a6-6547aac95be7
   port: 36241
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇹🇼 台湾 02 | 1x TW
-  password: a02c3fa3-511a-4b36-bb3d-5d8cf61b6100
+  password: 751edc44-4782-4a4f-90a6-6547aac95be7
   port: 36243
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇹🇼 台湾 03 | 1x TW
-  password: a02c3fa3-511a-4b36-bb3d-5d8cf61b6100
+  password: 751edc44-4782-4a4f-90a6-6547aac95be7
   port: 36245
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇹🇼台湾 01 | 1x TW
-  password: 5809e9fb-2498-4ea5-9c83-0b11fd682e4f
-  port: 31241
-  server: free.2apzhfa.xyz
+- alpn:
+  - h3
+  client-fingerprint: randomized
+  name: 2|🇹🇼1 |  5.8MB/s|0%|Netflix
+  network: ws
+  password: Aimer
+  port: '443'
+  server: 27.50.49.136
+  skip-cert-verify: false
+  sni: epccj.ambercc.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- cipher: aes-256-cfb
+  name: 2|🇹🇼2 |  1.2MB/s|0%|Openai
+  password: qwerREWQ@@
+  port: '64759'
+  server: 185.189.160.98
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇹🇼台湾 02 | 1x TW
-  password: 5809e9fb-2498-4ea5-9c83-0b11fd682e4f
-  port: 31243
-  server: free.2apzhfa.xyz
-  type: ss
+- client-fingerprint: chrome
+  name: 2|🇹🇼3 |  1.1MB/s|Youtube|Openai|...
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 443
+  server: tw01.sqx001.com
+  skip-cert-verify: true
+  sni: tw01.sqx001.com
+  tls: true
+  type: http
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇹🇼台湾 03 | 1x TW
-  password: 5809e9fb-2498-4ea5-9c83-0b11fd682e4f
-  port: 31245
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+  username: dmpyoary@mayorlogistic.com
 - client-fingerprint: chrome
   name: 12,13|台湾|@ripaojiedian
   network: tcp
