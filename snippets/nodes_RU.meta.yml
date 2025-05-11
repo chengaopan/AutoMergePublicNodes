@@ -1,21 +1,21 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇷🇺俄罗斯 01 | 1x RU
-  password: 36784873-2d74-42fe-ae3b-fa837b40adfb
+  password: 0814e13e-90f4-4573-83a0-e141b4ecbfce
   port: 31511
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇷🇺 俄罗斯 01 | 1x RU
-  password: e4fdcec5-4662-42c7-a281-1b4a40a6e683
+  password: cb43810a-cf9e-4fe7-838f-3f9cff4e21fb
   port: 36511
   server: free.2weradf.xyz
   type: ss
   udp: true
 - down: ''
   fingerprint: ''
-  name: 2|🇷🇺1 |  2.2MB/s|0%
+  name: 2|🇷🇺1 |  3.7MB/s|0%
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -25,70 +25,147 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   up: ''
-- down: ''
-  fingerprint: ''
-  name: 2|🇷🇺2 |  3.4MB/s|0%
-  obfs: ''
-  obfs-password: ''
-  password: dongtaiwang.com
-  port: '10011'
-  server: 46.29.163.171
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  up: ''
-- down: ''
-  fingerprint: ''
-  name: 2|🇷🇺3 |  1.3MB/s|50%|Youtube
-  obfs: ''
-  obfs-password: ''
-  password: dongtaiwang.com
-  port: '10011'
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  up: ''
-- alterId: 0
-  cipher: auto
-  name: 2|🇷🇺4 |  5.3MB/s|Youtube
-  network: ws
-  port: 20022
-  server: 2fea6447-81c4-2d7d-d592-a4f729209777.7head.icu
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 21c90669-193d-49d3-8e37-f5c1462eb134
-  ws-opts:
-    headers:
-      Host: tms.dingtalk.com
-    path: /
-- cipher: chacha20-ietf-poly1305
-  delay: 1143
-  name: 2|🇷🇺5 |  1.6MB/s|50%|Youtube
-  password: hakmx9nHDGvBmbWQteeIXg
-  port: 1080
-  server: 89.23.113.166
-  type: ss
-  udp: true
 - alpn:
   - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 2|🇷🇺6 |  1.1MB/s|0%|Gemini
-  network: ws
-  port: 443
-  server: 46.29.239.149
-  servername: unixkey.nobatow.site
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 2|🇷🇺2 |  5.1MB/s|50%
+  port: 10803
+  server: 185.22.155.71
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 1000 Mbps
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 2|🇷🇺3 |  5.2MB/s|0%|Youtube
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
+    short-id: 0f917152a871e9c0
+  server: 212.233.94.204
+  servername: maviks.eu
   tls: true
   type: vless
   udp: true
-  uuid: d2947a55-5fa6-4d21-93c6-b558c662ec8d
+  uuid: ce833c9b-e39a-475f-b649-23e7f1ea5236
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 2|🇷🇺4 |  5.1MB/s|0%|Youtube
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
+    short-id: 0f917152a871e9c0
+  server: ru.maviks.eu
+  servername: maviks.eu
+  tls: true
+  type: vless
+  udp: true
+  uuid: 09397c54-d6a1-4416-98dc-1e09a4ebbc75
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 2|🇷🇺5 |  5.1MB/s|0%|Youtube
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
+    short-id: 0f917152a871e9c0
+  server: 212.233.95.52
+  servername: maviks.eu
+  tls: true
+  type: vless
+  udp: true
+  uuid: ce833c9b-e39a-475f-b649-23e7f1ea5236
+  xudp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 2|🇷🇺6 |  4.6MB/s|0%|Youtube
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
+    short-id: 0f917152a871e9c0
+  server: 213.219.215.89
+  servername: maviks.eu
+  tls: true
+  type: vless
+  udp: true
+  uuid: ce833c9b-e39a-475f-b649-23e7f1ea5236
+  xudp: true
+- alpn:
+  - h3
+  delay: 382
+  disable-sni: false
+  name: 2|🇷🇺7 |  5.4MB/s|50%
+  password: f3ba3679-f2f4-465f-92a5-de320b775a88
+  port: 43516
+  reduce-rtt: false
+  request-timeout: 0
+  server: 185.22.155.105
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: tuic
+  udp-relay-mode: native
+  uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
+  version: 5
+- name: 14|RU_speednode_0055
+  network: ws
+  port: 80
+  server: 45.8.211.61
+  servername: ipsycho.suex12.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: unixkey.nobatow.site
-    path: /nobatow
+      Host: ipsycho.suex12.ir
+    path: /re5IzbZ9IZZMddtw?ed=2560
+- client-fingerprint: random
+  name: 14|RU_speednode_0058
+  network: ws
+  port: 443
+  server: 45.67.215.168
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  ws-opts:
+    headers:
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
+- client-fingerprint: chrome
+  name: 14|RU_speednode_0059
+  port: 2040
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  server: 109.172.94.249
+  servername: fr.ign.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
 - name: 14|RU_speednode_0060
   network: ws
   port: 443
