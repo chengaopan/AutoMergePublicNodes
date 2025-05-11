@@ -1,22 +1,71 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 65283d51-d529-49fa-972a-0b5fca5ec82d
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 471163e6-d2da-4c39-9295-fada6c6f4ea5
+  port: 36141
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 9bd37675-fca2-4224-ad4d-da39e01425f6
+  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 471163e6-d2da-4c39-9295-fada6c6f4ea5
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: eeb86c72-d8ff-4d4d-a8ce-606d930b6f35
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: eeb86c72-d8ff-4d4d-a8ce-606d930b6f35
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - cipher: aes-256-gcm
-  name: 2|🇬🇧6 |  5.5MB/s|39%|Netflix|Dis...
+  name: 2|🇬🇧2 |  1.2MB/s|39%|Netflix|Dis...
   password: 423cf642-6528-410c-b542-2aae04113d33
   port: '11516'
   server: cdn-p1-lm.youku-dns.com
   type: ss
   udp: true
+- cipher: aes-256-gcm
+  name: 2|🇬🇧5 |  1.2MB/s|39%|Netflix|Dis...
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: '11514'
+  server: cdn-p1-lm.youku-dns.com
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 2|🇬🇧6 |  5.2MB/s|Youtube|Openai
+  obfs: plain
+  password: f8f7aCzcPKbsF8p3
+  port: 989
+  protocol: origin
+  server: 62.100.205.48
+  type: ssr
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  delay: 2724
+  name: 2|🇬🇧7 |  2.2MB/s|Openai
+  network: ws
+  password: 2joWBLJQ1n9O
+  port: 2053
+  server: tasnim.andishehnegariran.ir
+  skip-cert-verify: false
+  sni: tasnim.andishehnegariran.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /🆔@M3HDIO1

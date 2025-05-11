@@ -1,26 +1,26 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 01 | 1x KR
-  password: 65283d51-d529-49fa-972a-0b5fca5ec82d
+  name: 0|🇰🇷 韩国 01 | 1x KR
+  password: 471163e6-d2da-4c39-9295-fada6c6f4ea5
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: eeb86c72-d8ff-4d4d-a8ce-606d930b6f35
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 02 | 1x KR
-  password: 65283d51-d529-49fa-972a-0b5fca5ec82d
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: eeb86c72-d8ff-4d4d-a8ce-606d930b6f35
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 01 | 1x KR
-  password: 9bd37675-fca2-4224-ad4d-da39e01425f6
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 2|🇰🇷1 |  2.8MB/s|62%|Disney|Open...
+- name: 2|🇰🇷1 |  4.7MB/s|62%|Openai
   network: ws
   port: '80'
   server: 104.17.147.22
@@ -34,9 +34,23 @@ proxies:
         like Gecko) Chrome/70.0.3538.102 Safari/537.36
     path: /re5IzbZ9IZZMddtw?ed=2560
   xudp: true
+- name: 2|🇰🇷2 |  5.7MB/s|62%|Disney|Open...
+  network: ws
+  port: '80'
+  server: 44.31.62.3
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; FIG-LX3 Build/HUAWEIFIG-LX3)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: Telegram🇨🇳 @WangCai2 /?ed=2560
+  xudp: true
 - client-fingerprint: random
   delay: 1431
-  name: 2|🇰🇷2 |  2.9MB/s|62%|Disney|Open...
+  name: 2|🇰🇷3 |  1.5MB/s|62%|Openai|Gemi...
   network: ws
   port: 443
   server: 162.159.152.107
@@ -49,12 +63,18 @@ proxies:
     headers:
       Host: hi.univermap.site
     path: /?ed=2560
+- cipher: aes-256-cfb
+  name: 2|🇰🇷4 |  6.0MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: 4857
+  server: 125.141.26.12
+  type: ss
 - client-fingerprint: random
-  delay: 1008
-  name: 2|🇰🇷3 |  5.2MB/s|62%|Disney|Open...
+  delay: 993
+  name: 2|🇰🇷5 |  3.3MB/s|62%|Disney|Open...
   network: ws
-  port: 2096
-  server: 103.21.244.126
+  port: 2087
+  server: 104.24.13.124
   servername: hi.univermap.site
   tls: true
   type: vless
@@ -65,11 +85,11 @@ proxies:
       Host: hi.univermap.site
     path: /?ed=2560
 - client-fingerprint: random
-  delay: 1770
-  name: 2|🇰🇷4 |  2.4MB/s|62%|Disney|Open...
+  delay: 687
+  name: 2|🇰🇷6 |  1.6MB/s|62%|Disney|Open...
   network: ws
-  port: 2053
-  server: 103.21.244.134
+  port: 8443
+  server: 104.16.168.120
   servername: hi.univermap.site
   tls: true
   type: vless
@@ -80,16 +100,30 @@ proxies:
       Host: hi.univermap.site
     path: /?ed=2560
 - client-fingerprint: random
-  delay: 1270
-  name: 2|🇰🇷5 |  1.4MB/s|62%
+  delay: 1074
+  name: 2|🇰🇷7 |  3.4MB/s|Disney|Openai
   network: ws
-  port: 2053
-  server: 104.16.222.67
+  port: 8443
+  server: 104.16.193.4
   servername: hi.univermap.site
   tls: true
   type: vless
   udp: true
   uuid: d7f943df-d885-4589-93e6-da8b1b2bbde2
+  ws-opts:
+    headers:
+      Host: hi.univermap.site
+    path: /?ed=2560
+- delay: 2184
+  name: 2|🇰🇷8 |  4.8MB/s|Disney|Openai|G...
+  network: ws
+  port: 8443
+  server: 188.114.98.189
+  servername: hi.univermap.site
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 9bbaef0c-7403-44ec-b412-244437e8e74a
   ws-opts:
     headers:
       Host: hi.univermap.site
