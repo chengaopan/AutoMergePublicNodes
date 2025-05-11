@@ -1,33 +1,33 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: 2f51818c-5d82-4457-bca5-f36c8e48e1cf
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 2f51818c-5d82-4457-bca5-f36c8e48e1cf
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 02 | 1x HK
-  password: 5e066934-6b6b-4880-abc7-df51b1cb8a00
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: 8844de22-2594-4005-9c0c-743ab52ba318
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: 5e066934-6b6b-4880-abc7-df51b1cb8a00
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: 8844de22-2594-4005-9c0c-743ab52ba318
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 2|🇭🇰1 |  1.3MB/s|0%
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: a5f2dcf9-7fd4-4482-bb0a-bbe6f163bae7
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: a5f2dcf9-7fd4-4482-bb0a-bbe6f163bae7
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 2|🇭🇰1 |  4.0MB/s|0%|Disney
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
   server: dozo01.flztjc.top
@@ -35,13 +35,43 @@ proxies:
   sni: dozo01.flztjc.top
   type: trojan
   udp: true
-- name: 2|🇭🇰2 |  3.6MB/s|Disney
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 183.232.235.2
-  skip-cert-verify: true
-  type: trojan
+- cipher: aes-256-gcm
+  name: 2|🇭🇰2 |  3.4MB/s|16%|Netflix|Dis...
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: '11501'
+  server: cdn-p1-hk.weibo-dns.com
+  type: ss
   udp: true
+- alterId: 2
+  cipher: auto
+  name: 2|🇭🇰4 |  3.0MB/s|16%|Disney|Yout...
+  network: ws
+  port: 80
+  server: 71735d9f-sv2sg0-t71mow-4cl7.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 7c129766-8656-11ea-8fc9-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: 71735d9f-sv2sg0-t71mow-4cl7.hk.p5pv.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰5 |  2.2MB/s|0%
+  network: ws
+  port: 1081
+  server: hk-cn-01.yumeifang.cn
+  servername: hk-cn-01.yumeifang.cn
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: df9b788f-929a-4349-970a-8cbbe12d6ae8
+  ws-opts:
+    headers:
+      Host: wamxoa.com
+    path: /asdd
 - client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
   network: ws
@@ -67,7 +97,7 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 54259
+  port: 52013
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
@@ -82,14 +112,6 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf
-  client-fingerprint: chrome
-  name: 12|🇭🇰 香港4|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 103.149.182.191
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
