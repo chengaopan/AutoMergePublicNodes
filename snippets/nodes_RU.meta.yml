@@ -1,14 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇷🇺 俄罗斯 01 | 1x RU
-  password: 5d5e5754-49eb-47ab-9400-ffc0577eceac
-  port: 36511
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇷🇺俄罗斯 01 | 1x RU
-  password: a6a30fda-fa11-4cc8-80f4-5227d67463fb
+  name: 0|🇷🇺俄罗斯 01 | 1x RU
+  password: 8370dd53-ec94-4928-aa36-ef38fd70220a
   port: 31511
   server: free.2apzhfa.xyz
   type: ss
@@ -16,7 +9,7 @@ proxies:
 - delay: 713
   down: ''
   fingerprint: ''
-  name: 2|🇷🇺1 |  6.4MB/s|0%
+  name: 1|🇷🇺1 |  5.2MB/s|0%
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -26,71 +19,35 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   up: ''
-- delay: 765
-  fast-open: true
-  name: 2|🇷🇺2 |  1.4MB/s|50%|Youtube
-  password: dongtaiwang.com
-  port: 10011
-  server: hy2.694463.xyz
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- down: ''
-  fingerprint: ''
-  name: 2|🇷🇺3 |  5.0MB/s|50%|Youtube
-  obfs: ''
-  obfs-password: ''
-  password: dongtaiwang.com
-  port: '10011'
-  server: 46.17.41.217
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  up: ''
 - alpn:
   - h3
   auth_str: dongtaiwang.com
   down: 1000 Mbps
-  name: 2|🇷🇺4 |  2.1MB/s|50%
+  name: 1|🇷🇺2 |  2.5MB/s|50%
   port: 10803
   server: 185.22.155.71
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria
   up: 1000 Mbps
-- auth: dongtaiwang.com
-  name: 2|🇷🇺5 |  3.3MB/s|50%|Youtube
-  password: dongtaiwang.com
-  port: 12904
-  server: 46.17.41.5
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria2
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 2|🇷🇺6 |  1.0MB/s|0%|Gemini
-  network: ws
-  port: 443
-  server: 46.29.239.149
-  servername: unixkey.nobatow.site
+- client-fingerprint: chrome
+  name: 1|🇷🇺3 |  4.9MB/s|50%|Netflix|Dis...
+  network: tcp
+  port: '2040'
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  server: 147.45.221.3
+  servername: cdnjs.com
   tls: true
   type: vless
   udp: true
-  uuid: d2947a55-5fa6-4d21-93c6-b558c662ec8d
-  ws-opts:
-    headers:
-      Host: unixkey.nobatow.site
-    path: /nobatow
-- client-fingerprint: chrome
-  name: 2|🇷🇺7 |  2.3MB/s|0%|Youtube
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 443
-  server: stpetersburg.sqx001.com
-  skip-cert-verify: true
-  tls: true
-  type: http
+  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇷🇺 俄罗斯 01 | 1x RU
+  password: a794bf6b-890c-45ba-aed4-6009f23d586a
+  port: 36511
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  username: dmpyoary@mayorlogistic.com

@@ -1,51 +1,57 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: 5d5e5754-49eb-47ab-9400-ffc0577eceac
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: 5d5e5754-49eb-47ab-9400-ffc0577eceac
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 01 | 1x SG
-  password: a6a30fda-fa11-4cc8-80f4-5227d67463fb
+  name: 0|🇸🇬新加坡 01 | 1x SG
+  password: 8370dd53-ec94-4928-aa36-ef38fd70220a
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 02 | 1x SG
-  password: a6a30fda-fa11-4cc8-80f4-5227d67463fb
+  name: 0|🇸🇬新加坡 02 | 1x SG
+  password: 8370dd53-ec94-4928-aa36-ef38fd70220a
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 03 | 1x SG
-  password: a6a30fda-fa11-4cc8-80f4-5227d67463fb
+  name: 0|🇸🇬新加坡 03 | 1x SG
+  password: 8370dd53-ec94-4928-aa36-ef38fd70220a
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: '64'
-  cipher: auto
-  name: 2|🇸🇬2 |  3.2MB/s|0%|Netflix|Disn...
-  network: tcp
-  port: '46121'
-  server: 183.236.51.38
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: 1|🇸🇬2 |  1.4MB/s|34%|Disney|Open...
+  network: ws
+  password: T@_WvT8Ho@LW%w_,
+  port: '2053'
+  server: 172.66.44.214
   skip-cert-verify: false
-  tls: false
-  type: vmess
+  sni: NOp-55q.pAgEs.dEv
+  type: trojan
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  xudp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /trGPZDfetEwuO25SAs?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇸🇬 新加坡 01 | 1x SG
+  password: a794bf6b-890c-45ba-aed4-6009f23d586a
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇸🇬 新加坡 02 | 1x SG
+  password: a794bf6b-890c-45ba-aed4-6009f23d586a
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
