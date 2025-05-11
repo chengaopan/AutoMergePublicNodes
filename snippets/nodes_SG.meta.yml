@@ -1,17 +1,42 @@
 proxies:
-- client-fingerprint: chrome
-  name: 2|🇸🇬1 |  1.1MB/s|57%|Youtube|Ope...
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 8444
-  server: singapore02.sqx001.com
-  skip-cert-verify: true
-  tls: true
-  type: http
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬新加坡 01 | 1x SG
+  password: a66d6d48-1d06-4dd5-ac69-8433a96c46ab
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  username: dmpyoary@mayorlogistic.com
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬新加坡 02 | 1x SG
+  password: a66d6d48-1d06-4dd5-ac69-8433a96c46ab
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬新加坡 03 | 1x SG
+  password: a66d6d48-1d06-4dd5-ac69-8433a96c46ab
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 01 | 1x SG
+  password: 8c08a675-b464-485b-ac27-0dadee9cdf2d
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 02 | 1x SG
+  password: 8c08a675-b464-485b-ac27-0dadee9cdf2d
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: none
-  name: 2|🇸🇬2 |  5.7MB/s|Youtube|Openai
+  name: 2|🇸🇬1 |  1.9MB/s|Openai
   network: ws
   port: '2096'
   server: 141.193.213.21
@@ -27,13 +52,44 @@ proxies:
         like Gecko) Chrome/63.0.3239.132 Safari/537.36
     path: '%2F'
   xudp: true
-- cipher: chacha20-ietf
-  name: 2|🇸🇬3 |  1.3MB/s|Netflix|Youtube...
-  password: asd123456
-  port: '8388'
-  server: 103.36.91.32
-  type: ss
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: random
+  name: 2|🇸🇬2 |  5.7MB/s|Youtube|Openai
+  network: ws
+  port: '2096'
+  server: 104.17.70.206
+  servername: xrr.rtxconfigz.xyz
+  tls: true
+  type: vless
   udp: true
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  ws-opts:
+    headers:
+      Host: xrr.rtxconfigz.xyz
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto C Build/NRD90M.059) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: ''
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 2|🇸🇬3 |  4.9MB/s|23%|Disney|Yout...
+  network: ws
+  port: 43050
+  server: 152.69.220.94
+  servername: a.ziqiu1060.ggff.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 28ca0567-754e-46fc-e774-b19c787975f7
+  ws-opts:
+    headers:
+      Host: a.ziqiu1060.ggff.net
+    path: /dsfsdf
+  xudp: true
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443

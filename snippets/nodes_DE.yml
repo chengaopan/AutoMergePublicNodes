@@ -1,22 +1,33 @@
 proxies:
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: 2|🇩🇪2 |  1.1MB/s|21%|Disney|Open...
-  network: ws
-  password: T@_WvT8Ho@LW%w_,
-  port: '2053'
-  server: 172.66.44.214
-  skip-cert-verify: false
-  sni: NOp-55q.pAgEs.dEv
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇩🇪德国 01 | 1x DE
+  password: a66d6d48-1d06-4dd5-ac69-8433a96c46ab
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪 德国 01 | 1x DE
+  password: 8c08a675-b464-485b-ac27-0dadee9cdf2d
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 2|🇩🇪14 |  1.1MB/s|64%|Openai
+  password: RlzoEILU
+  port: '7789'
+  server: 36.151.251.61
+  skip-cert-verify: true
   type: trojan
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /trGPZDfetEwuO25SAs?ed=2560
+- cipher: rc4-md5
+  name: 2|🇩🇪18 |  4.7MB/s|100%|Openai
+  password: 14fFPrbezE3HDZzsMOr6
+  port: '8080'
+  server: 193.108.119.230
+  type: ss
+  udp: true
 - name: 14|DE_speednode_0029
   password: telegram-id-directvpn
   port: 22223
