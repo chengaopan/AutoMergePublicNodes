@@ -1,34 +1,34 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: 269231b9-50b4-4d4f-91cd-3dcbd28f9ef5
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 269231b9-50b4-4d4f-91cd-3dcbd28f9ef5
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 01 | 1x HK
-  password: 898d3419-291c-42ff-8e1a-d164e8db1ee5
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 8a43e8b0-67ae-4472-9930-6bfc6581e61a
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 898d3419-291c-42ff-8e1a-d164e8db1ee5
+  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 8a43e8b0-67ae-4472-9930-6bfc6581e61a
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: b250a9c2-f34a-43a2-a140-4f8251c3d6c0
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: b250a9c2-f34a-43a2-a140-4f8251c3d6c0
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 2|🇬🇧1 |  5.6MB/s|Openai
+  name: 2|🇬🇧1 |  3.1MB/s|Openai
   network: ws
   port: '443'
   server: 45.142.120.97
@@ -64,7 +64,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 2|🇬🇧3 |  5.6MB/s|46%|Openai
+  name: 2|🇬🇧3 |  4.8MB/s|46%|Openai
   network: ws
   port: '2096'
   server: 45.8.211.26
@@ -84,7 +84,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 2|🇬🇧4 |  5.6MB/s|46%|Openai
+  name: 2|🇬🇧4 |  3.4MB/s|Openai
   network: ws
   port: '2096'
   server: 45.131.4.98
@@ -101,14 +101,96 @@ proxies:
     path: ''
   xudp: true
 - auth: nfsn666
-  name: 2|🇬🇧5 |  3.5MB/s|62%|Youtube|Ope...
+  name: 2,11|Telegram:@config_proxy 💦
   password: nfsn666
   port: 8888
   server: ld-arm.nfsn666.gq
   skip-cert-verify: true
   sni: ld-arm.nfsn666.gq
+  tls: false
   type: hysteria2
   udp: true
+- client-fingerprint: chrome
+  name: 2|🇬🇧6 |  5.7MB/s|46%|Openai
+  network: ws
+  port: '443'
+  server: 45.131.6.160
+  servername: CxNiMjJz.cAfUnEaR.InFo
+  tls: true
+  type: vless
+  udp: true
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: CxNiMjJz.cAfUnEaR.InFo
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/45.0.2454.85 Safari/537.36
+    path: /
+  xudp: true
+- alpn:
+  - h2http/1.1
+  client-fingerprint: chrome
+  name: 2|🇬🇧7 |  4.6MB/s|46%|Openai
+  network: ws
+  port: '443'
+  server: www.speedtest.net
+  servername: SlZcZmPl2.ZuKaRiO.InFo
+  tls: true
+  type: vless
+  udp: true
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: SlZcZmPl2.ZuKaRiO.InFo
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.84 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  name: 2,14|RU_speednode_0059
+  network: tcp
+  port: 2040
+  reality-opts:
+    public-key: iPjWLvXWt7ABJaSRRwzjgLrvlJlwoYQZN8zF-G3D-Qs
+    short-id: 27cfa05000c23cc4
+  server: 109.172.94.249
+  servername: fr.ign.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 10b59513-ef76-4494-a925-305ec45dd3a4
+  xudp: true
+- client-fingerprint: chrome
+  name: 2|🇬🇧9 |  4.9MB/s|46%|Openai
+  network: ws
+  port: '443'
+  server: 45.8.211.230
+  servername: CxNiMjJz.cAfUnEaR.InFo
+  tls: true
+  type: vless
+  udp: true
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: CxNiMjJz.cAfUnEaR.InFo
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.103 Safari/537.36
+    path: /
+  xudp: true
+- delay: 852
+  down: ''
+  fingerprint: ''
+  name: 2|🇬🇧10 |  3.3MB/s|32%|Youtube|Op...
+  obfs: ''
+  obfs-password: ''
+  password: 857612aa-9ca5-46df-b976-8b887fdf8625
+  port: 1443
+  server: 185.85.242.177
+  skip-cert-verify: false
+  sni: gbr1.587458.xyz
+  type: hysteria2
+  up: ''
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443

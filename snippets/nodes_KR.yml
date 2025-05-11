@@ -1,32 +1,51 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 01 | 1x KR
-  password: 269231b9-50b4-4d4f-91cd-3dcbd28f9ef5
+  name: 0|🇰🇷 韩国 01 | 1x KR
+  password: 8a43e8b0-67ae-4472-9930-6bfc6581e61a
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: b250a9c2-f34a-43a2-a140-4f8251c3d6c0
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 02 | 1x KR
-  password: 269231b9-50b4-4d4f-91cd-3dcbd28f9ef5
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: b250a9c2-f34a-43a2-a140-4f8251c3d6c0
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 01 | 1x KR
-  password: 898d3419-291c-42ff-8e1a-d164e8db1ee5
-  port: 36311
-  server: free.2weradf.xyz
+- cipher: aes-256-cfb
+  name: 2|🇰🇷2 |  5.8MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: '15098'
+  server: 125.141.31.72
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: 2|🇰🇷1 |  2.1MB/s|44%|Openai
+  name: 2|🇰🇷4 |  4.9MB/s|44%|Netflix|Dis...
   password: qwerREWQ@@
-  port: '4857'
-  server: p227.panda004.net
+  port: '15098'
+  server: p222.panda001.net
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  name: 2|🇰🇷5 |  5.8MB/s|49%|Youtube|Ope...
+  network: tcp
+  port: 17232
+  server: a64e572b-sutj40-tei4of-1qxa1.cm5.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
+  xudp: true
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇰🇷 韩国|@ripaojiedian
@@ -41,6 +60,14 @@ proxies:
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6666
   server: 3.35.231.68
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 12|🇰🇷 韩国特殊|@ripaojiedian
+  password: awsps0501
+  port: 443
+  server: 35.89.83.1
   tfo: false
   type: ss
 - name: 14|KR_speednode_0045

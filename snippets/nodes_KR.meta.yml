@@ -1,46 +1,89 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 01 | 1x KR
-  password: 269231b9-50b4-4d4f-91cd-3dcbd28f9ef5
+  name: 0|🇰🇷 韩国 01 | 1x KR
+  password: 8a43e8b0-67ae-4472-9930-6bfc6581e61a
+  port: 36311
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇰🇷韩国 01 | 1x KR
+  password: b250a9c2-f34a-43a2-a140-4f8251c3d6c0
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 02 | 1x KR
-  password: 269231b9-50b4-4d4f-91cd-3dcbd28f9ef5
+  name: 1|🇰🇷韩国 02 | 1x KR
+  password: b250a9c2-f34a-43a2-a140-4f8251c3d6c0
   port: 31313
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇰🇷 韩国 01 | 1x KR
-  password: 898d3419-291c-42ff-8e1a-d164e8db1ee5
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 2|🇰🇷1 |  2.1MB/s|44%|Openai
-  password: qwerREWQ@@
-  port: '4857'
-  server: p227.panda004.net
-  type: ss
-  udp: true
-- delay: 2899
-  name: 2|🇰🇷2 |  6.0MB/s|23%|Netflix|Dis...
+- name: 2|🇰🇷1 |  2.1MB/s|62%|Disney|Open...
   network: ws
-  port: 443
-  server: c.c.ccccccccccccccccccccccccccccccccccccccccccc.cc
-  servername: kr.4056860.xyz
-  tfo: false
-  tls: true
+  port: '80'
+  server: 44.31.62.3
   type: vless
-  uuid: d5b92857-e8f2-456e-8d58-8ff2d53ecd0b
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: kr.4056860.xyz
-    path: /kr
+      Host: reedfree8mahsang2.redorg.ir
+      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
+        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
+    path: Telegram🇨🇳 @WangCai2 /?ed=2560
+  xudp: true
+- cipher: aes-256-cfb
+  name: 2|🇰🇷2 |  5.8MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: '15098'
+  server: 125.141.31.72
+  type: ss
+  udp: true
+- name: 2,14|US_speednode_0077
+  network: ws
+  port: 8880
+  server: 135.84.76.75
+  servername: 23-lsjfjwiposkfls.hc2021.cfd
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 59860b15-b2d9-47f9-9b92-81bd1639fcc5
+  ws-opts:
+    headers:
+      Host: 23-lsjfjwiposkfls.hc2021.cfd
+    path: /?ed=2560
+  xudp: true
+- cipher: aes-256-cfb
+  name: 2|🇰🇷4 |  4.9MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: '15098'
+  server: p222.panda001.net
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 2|🇰🇷5 |  5.8MB/s|49%|Youtube|Ope...
+  network: tcp
+  port: 17232
+  server: a64e572b-sutj40-tei4of-1qxa1.cm5.p5pv.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: f609abb4-ed17-11ee-9fa2-f23c9164ca5d
+  xudp: true
+- name: 2,14|KR_speednode_0048
+  password: cacb4d4fa26f4eed25e4d17a6370083c
+  port: 443
+  server: kr01.sqx001.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: dmpyoary@mayorlogistic.com
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇰🇷 韩国|@ripaojiedian
@@ -55,6 +98,14 @@ proxies:
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6666
   server: 3.35.231.68
+  tfo: false
+  type: ss
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 12|🇰🇷 韩国特殊|@ripaojiedian
+  password: awsps0501
+  port: 443
+  server: 35.89.83.1
   tfo: false
   type: ss
 - name: 14|KR_speednode_0045
@@ -97,15 +148,6 @@ proxies:
     headers:
       Host: mikuyo.bpd67081tsq.ddns-ip.net
     path: /
-- name: 14|KR_speednode_0048
-  password: cacb4d4fa26f4eed25e4d17a6370083c
-  port: 443
-  server: kr01.sqx001.com
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: dmpyoary@mayorlogistic.com
 - name: 14|KR_speednode_0049
   network: ws
   port: 50000
