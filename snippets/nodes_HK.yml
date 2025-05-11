@@ -1,77 +1,42 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 02 | 1x HK
-  password: 3a1c0d1d-e0b3-4753-9f7a-1696d1769ac4
+  password: f73cefae-b8a5-432d-9773-be838e92df08
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 3a1c0d1d-e0b3-4753-9f7a-1696d1769ac4
+  password: f73cefae-b8a5-432d-9773-be838e92df08
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰香港 02 | 1x HK
-  password: f099a12f-210d-4bea-8212-f7aebba093a5
+  password: 3c698c9b-161a-4589-b62e-ee061e98950f
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: f099a12f-210d-4bea-8212-f7aebba093a5
+  password: 3c698c9b-161a-4589-b62e-ee061e98950f
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 2|🇭🇰2 |  1.0MB/s|0%|Netflix|Disn...
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: '11532'
-  server: cdn-p1-hk.weibo-dns.com
-  type: ss
-  udp: true
 - alterId: 0
   cipher: auto
-  delay: 2719
-  name: 2|🇭🇰3 |  2.5MB/s|16%|Youtube|Ope...
+  delay: 1140
+  name: 2|🇭🇰2 |  2.7MB/s|Youtube|Openai
   network: ws
   port: 8080
-  server: c6e48a12-sw1z40-swtwwj-1su7j.hgc1.tcpbbr.net
+  server: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
   tls: false
   type: vmess
-  uuid: 0e4ec84a-a324-11ef-81b0-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  delay: 1447
-  name: 2|🇭🇰4 |  1.9MB/s|16%|Youtube|Ope...
-  network: ws
-  port: 8080
-  server: e9a671ea-sw1z40-t4vk19-1nlwy.hgc1.tcpbbr.net
-  tls: false
-  type: vmess
-  uuid: 9247343a-5db0-11ee-9367-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  delay: 1600
-  name: 2|🇭🇰5 |  2.6MB/s|16%|Youtube|Ope...
-  network: ws
-  port: 8080
-  server: 64f6e0b2-sw1z40-t51bp0-1nyy5.hgc1.tcpbbr.net
-  tls: false
-  type: vmess
-  uuid: 8f7cb770-1305-11ee-b107-f23c91cfbbc9
+  uuid: 21a70fd2-c69c-11eb-8673-f23c9164ca5d
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
@@ -79,7 +44,7 @@ proxies:
 - alterId: 0
   cipher: auto
   delay: 1335
-  name: 2|🇭🇰6 |  3.2MB/s|16%|Youtube|Ope...
+  name: 2|🇭🇰3 |  2.1MB/s|Youtube|Openai
   network: ws
   port: 8080
   server: 2d7952be-sw7j40-t6yqh9-1bhda.hgc1.tcpbbr.net
@@ -93,8 +58,22 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
+  delay: 2719
+  name: 2|🇭🇰4 |  1.5MB/s|Youtube|Openai
+  network: ws
+  port: 8080
+  server: c6e48a12-sw1z40-swtwwj-1su7j.hgc1.tcpbbr.net
+  tls: false
+  type: vmess
+  uuid: 0e4ec84a-a324-11ef-81b0-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
   delay: 1320
-  name: 2|🇭🇰7 |  1.2MB/s|16%|Youtube|Ope...
+  name: 2|🇭🇰5 |  4.0MB/s|16%|Youtube|Ope...
   network: ws
   port: 8080
   server: 7b5d670c-sw1z40-swjbhe-8bem.hgc1.tcpbbr.net
@@ -105,33 +84,26 @@ proxies:
     headers:
       Host: broadcastlv.chat.bilibili.com
     path: /
-- alterId: 0
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰8 |  8.8MB/s|Disney|Gemini
+  password: a2a1677c-0799-487e-8827-6cf0d4b5b86a
+  port: 49709
+  server: jg647hf446ghvw.gym0boy.com
+  type: ss
+- alterId: 2
   cipher: auto
-  delay: 1140
-  name: 2|🇭🇰8 |  3.4MB/s|16%|Netflix|Ope...
+  name: 2|🇭🇰10 |  2.6MB/s|Youtube|Openai
   network: ws
-  port: 8080
-  server: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
+  port: 80
+  server: 7b2f8c5e-sv2sg0-tc61cs-1tja8.hk.p5pv.com
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
   tls: false
   type: vmess
-  uuid: 21a70fd2-c69c-11eb-8673-f23c9164ca5d
+  uuid: d2f0bee2-02f1-11f0-8eb0-f23c9164ca5d
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
-- alterId: 0
-  cipher: auto
-  delay: 1377
-  name: 2|🇭🇰9 |  2.4MB/s|16%|Netflix|You...
-  network: ws
-  port: 8080
-  server: 3bbaf7e8-sw1z40-t525pa-ach1.hgc1.tcpbbr.net
-  tls: false
-  type: vmess
-  uuid: b9c9905c-1627-11ec-a0fc-f23c913c8d2b
-  ws-opts:
-    headers:
-      Host: broadcastlv.chat.bilibili.com
+      Host: 7b2f8c5e-sv2sg0-tc61cs-1tja8.hk.p5pv.com
     path: /
 - client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
