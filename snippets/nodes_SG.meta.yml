@@ -1,37 +1,37 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: 9a65346b-25e4-4b78-9254-e9bddd5743d7
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: 9a65346b-25e4-4b78-9254-e9bddd5743d7
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 01 | 1x SG
-  password: a190260e-ccf2-44aa-98d0-9a8c8cf1d50c
+  name: 0|🇸🇬新加坡 01 | 1x SG
+  password: 269231b9-50b4-4d4f-91cd-3dcbd28f9ef5
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 02 | 1x SG
-  password: a190260e-ccf2-44aa-98d0-9a8c8cf1d50c
+  name: 0|🇸🇬新加坡 02 | 1x SG
+  password: 269231b9-50b4-4d4f-91cd-3dcbd28f9ef5
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 03 | 1x SG
-  password: a190260e-ccf2-44aa-98d0-9a8c8cf1d50c
+  name: 0|🇸🇬新加坡 03 | 1x SG
+  password: 269231b9-50b4-4d4f-91cd-3dcbd28f9ef5
   port: 31175
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 01 | 1x SG
+  password: 898d3419-291c-42ff-8e1a-d164e8db1ee5
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 02 | 1x SG
+  password: 898d3419-291c-42ff-8e1a-d164e8db1ee5
+  port: 36173
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -111,33 +111,59 @@ proxies:
   server: 3.112.193.115
   tfo: false
   type: ss
-- alpn:
-  - h3
-  client-fingerprint: random
-  name: 14|SG_speednode_0023
-  network: ws
-  port: 8443
-  server: 27.50.49.242
-  servername: edccj.ambercc.filegear-sg.me
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|SG_speednode_0069
+  port: 443
+  reality-opts:
+    public-key: IPno1w9GUxhRN2JY_yIka2DNlnuJHQeb3_0yOCM4pQg
+    short-id: 3ae54db4833c
+  server: 213.35.108.22
+  servername: buylite.music.apple.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: ee6774c0-9b19-4ff1-8b30-2da4b71977e2
-  ws-opts:
-    headers:
-      Host: edccj.ambercc.filegear-sg.me
-    path: /?ed=2560
-- name: 14|SG_speednode_0024
-  network: ws
-  password: Aimer
-  port: 8443
-  server: 92.243.74.180
+  uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 14|SG_speednode_0070
+  port: 443
+  reality-opts:
+    public-key: kR-_5J2EPiB9nrdgyXjgzfJQnxQodkGeV_jgKOEnlEM
+    short-id: fc814374abba
+  server: 168.138.165.109
+  servername: buylite.music.apple.com
   skip-cert-verify: false
-  sni: tyep.esslh.filegear-sg.me
-  type: trojan
+  tls: true
+  type: vless
   udp: true
-  ws-opts:
-    headers:
-      Host: tyep.esslh.filegear-sg.me
-    path: /
+  uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|SG_speednode_0071
+  port: 443
+  reality-opts:
+    public-key: Wmz2q2twfWYu6FrO5xU1M87LO5KjkyGif0AuPLNMPW0
+    short-id: a86103965ac913f2
+  server: 140.245.58.56
+  servername: tv.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|SG_speednode_0072
+  port: 443
+  reality-opts:
+    public-key: Wmz2q2twfWYu6FrO5xU1M87LO5KjkyGif0AuPLNMPW0
+    short-id: a86103965ac913f2
+  server: 140.245.43.199
+  servername: tv.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1

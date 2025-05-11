@@ -1,30 +1,30 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 01 | 1x HK
-  password: 9a65346b-25e4-4b78-9254-e9bddd5743d7
-  port: 36141
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 9a65346b-25e4-4b78-9254-e9bddd5743d7
-  port: 36271
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 01 | 1x HK
-  password: a190260e-ccf2-44aa-98d0-9a8c8cf1d50c
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 269231b9-50b4-4d4f-91cd-3dcbd28f9ef5
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧英国家宽 01 | 1x UK
-  password: a190260e-ccf2-44aa-98d0-9a8c8cf1d50c
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 269231b9-50b4-4d4f-91cd-3dcbd28f9ef5
   port: 31271
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 01 | 1x HK
+  password: 898d3419-291c-42ff-8e1a-d164e8db1ee5
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 898d3419-291c-42ff-8e1a-d164e8db1ee5
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
@@ -45,11 +45,12 @@ proxies:
     path: /
   xudp: true
 - client-fingerprint: chrome
-  name: 2|🇬🇧2 |  1.7MB/s|46%|Openai
+  name: 2,14|LU_speednode_0051
   network: ws
-  port: '443'
+  port: 443
   server: 188.42.88.45
   servername: CxNiMjJz.cAfUnEaR.InFo
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
@@ -57,8 +58,6 @@ proxies:
   ws-opts:
     headers:
       Host: CxNiMjJz.cAfUnEaR.InFo
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/49.0.2623.112 Safari/537.36
     path: /
   xudp: true
 - alpn:
@@ -118,3 +117,45 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- name: 14|GB_speednode_0036
+  network: ws
+  port: 80
+  server: 194.36.55.181
+  servername: ipsycho.suex12.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: ipsycho.suex12.ir
+    path: /re5IzbZ9IZZMddtw?ed=2560
+- client-fingerprint: ios
+  flow: xtls-rprx-vision
+  name: 14|GB_speednode_0037
+  port: 443
+  reality-opts:
+    public-key: b5WuWodd3tB9cHWUJuoEFNvgYVOcLuDyjaxHy70umU4
+    short-id: '50211843'
+  server: 130.162.163.216
+  servername: buylite.tv.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 17606d29-e77d-4d2c-81ac-81b8bb1311d1
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|GB_speednode_0038
+  port: 8443
+  reality-opts:
+    public-key: ZMtlGCYlW4xf2_g1ruTqLEw1H57ggWXrb6aAbh029lo
+    short-id: 9a89fdfc
+  server: 140.238.89.224
+  servername: www.yahoo.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2a11ee4-7ede-4e7f-a001-a23e9bb44ff2
