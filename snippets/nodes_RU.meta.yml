@@ -1,23 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇷🇺 俄罗斯 01 | 1x RU
-  password: c6546b42-aaa2-443c-a71b-7db9d66e50d8
+  password: e2b202d2-e31a-4cdd-b96f-1c5615dc6bba
   port: 36511
   server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇷🇺俄罗斯 01 | 1x RU
-  password: f381e978-7720-4d53-8d69-3c26ba7dd183
-  port: 31511
-  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alpn:
   - h3
   delay: 382
   disable-sni: false
-  name: 2|🇷🇺1 |  2.5MB/s|50%
+  name: 1|🇷🇺1 |  4.1MB/s|50%
   password: f3ba3679-f2f4-465f-92a5-de320b775a88
   port: 43516
   reduce-rtt: false
@@ -29,19 +22,7 @@ proxies:
   udp-relay-mode: native
   uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
   version: 5
-- down: ''
-  fingerprint: ''
-  name: 2|🇷🇺2 |  3.6MB/s|0%
-  obfs: ''
-  obfs-password: ''
-  password: dongtaiwang.com
-  port: '10011'
-  server: 46.29.163.171
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  up: ''
-- name: 2|🇷🇺3 |  2.3MB/s|0%|Youtube
+- name: 1|🇷🇺2 |  1.2MB/s|0%|Youtube
   password: cacb4d4fa26f4eed25e4d17a6370083c
   port: 443
   server: stpetersburg.sqx001.com
@@ -50,41 +31,75 @@ proxies:
   type: http
   udp: true
   username: dmpyoary@mayorlogistic.com
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: 1000 Mbps
-  name: 2|🇷🇺4 |  1.7MB/s|50%
-  port: 10803
-  server: 185.22.155.71
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria
-  up: 1000 Mbps
 - auth: dongtaiwang.com
-  name: 2|🇷🇺5 |  3.2MB/s|50%|Youtube
+  name: 1|🇷🇺3 |  1.8MB/s|50%|Youtube
   password: dongtaiwang.com
   port: 10011
   server: 46.17.41.217
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- client-fingerprint: random
-  name: 14|RU_speednode_0033
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 1|🇷🇺4 |  1.1MB/s|0%|Gemini
   network: ws
   port: 443
-  server: 45.67.215.168
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: false
+  server: 46.29.239.149
+  servername: unixkey.nobatow.site
   tls: true
   type: vless
   udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  uuid: d2947a55-5fa6-4d21-93c6-b558c662ec8d
   ws-opts:
     headers:
-      Host: 0229.patterdeng.pp.ua
-    path: /?ed=2560
-- name: 14|RU_speednode_0034
+      Host: unixkey.nobatow.site
+    path: /nobatow
+- client-fingerprint: chrome
+  fast-open: true
+  name: 1|🇷🇺5 |  3.4MB/s|0%
+  password: dongtaiwang.com
+  port: 10011
+  server: hy2.694463.xyz
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 1|🇷🇺6 |  1.0MB/s|0%
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: cGzNRbN_zruI3CVTDukB2nOqWWEj7kgkay24f2fdLmQ
+    short-id: 0f917152a871e9c0
+  server: 212.233.95.52
+  servername: maviks.eu
+  tls: true
+  type: vless
+  udp: true
+  uuid: ce833c9b-e39a-475f-b649-23e7f1ea5236
+  xudp: true
+- name: 13|RU_speednode_0031
+  network: ws
+  port: 80
+  server: 45.8.211.61
+  servername: ipsycho.suex12.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: ipsycho.suex12.ir
+    path: /re5IzbZ9IZZMddtw?ed=2560
+- name: 13|RU_speednode_0034
   network: ws
   port: 443
   server: 45.67.215.168
@@ -98,16 +113,10 @@ proxies:
     headers:
       Host: 0229.patterdeng.pp.ua
     path: /
-- name: 14|RU_speednode_0035
-  network: ws
-  password: Aimer
-  port: 2096
-  server: 176.124.223.133
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇷🇺俄罗斯 01 | 1x RU
+  password: 272f03b6-d2fa-4101-8d5f-0663fc4e9743
+  port: 31511
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  ws-opts:
-    headers:
-      Host: epccj.ambercc.filegear-sg.me
-    path: /?ed=2560

@@ -1,79 +1,28 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国 01 | 1x US Los Angeles
-  password: c6546b42-aaa2-443c-a71b-7db9d66e50d8
+  password: e2b202d2-e31a-4cdd-b96f-1c5615dc6bba
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: c6546b42-aaa2-443c-a71b-7db9d66e50d8
+  password: e2b202d2-e31a-4cdd-b96f-1c5615dc6bba
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸 美国 03 | 1x US Washington
-  password: c6546b42-aaa2-443c-a71b-7db9d66e50d8
+  password: e2b202d2-e31a-4cdd-b96f-1c5615dc6bba
   port: 36215
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国 01 | 1x US Los Angeles
-  password: f381e978-7720-4d53-8d69-3c26ba7dd183
-  port: 31211
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: f381e978-7720-4d53-8d69-3c26ba7dd183
-  port: 31213
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇺🇸美国 03 | 1x US Washington
-  password: f381e978-7720-4d53-8d69-3c26ba7dd183
-  port: 31215
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 2|🇺🇸23 |  1.7MB/s|23%|Netflix|Op...
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11512
-  server: cdn-p1-us.youku-dns.com
-  type: ss
-- name: 2|🇺🇸24 |  1.8MB/s|34%|Openai
-  network: ws
-  password: ca48571a-403f-44b9-b2a6-e17c36d7cacc
-  port: 443
-  server: 104.21.64.1
-  sni: 10r.iran1912.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /VEP415T5mby2DulPWRIwOavJd
-- name: 2|🇺🇸30 |  1.1MB/s|0%|Openai
-  network: ws
-  password: 5453ae26-250d-4e79-b4ec-016baf806865
-  port: 443
-  server: 104.21.23.162
-  skip-cert-verify: true
-  sni: D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA
-  tfo: false
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA
-    path: /OYzPAeaZdXUq2d6J3gc4aj
 - alpn:
   - http/1.1
-  name: 2|🇺🇸36 |  1.1MB/s|32%|Openai
+  name: 1|🇺🇸13 |  1.4MB/s|32%|Openai
   network: ws
   password: 1549e70f-dc57-45e3-ac7c-515f0161db72
   port: 443
@@ -87,198 +36,253 @@ proxies:
       User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
         like Gecko) Chrome/60.0.3112.90 Safari/537.36
     path: /TomYJoQX0RSt1mktNrT
-- name: 2|🇺🇸37 |  2.2MB/s|34%|Openai
-  network: ws
-  password: f82fb954-06a1-4f0b-9180-17e07585b61f
-  port: 443
-  server: 104.21.23.162
-  skip-cert-verify: false
-  sni: 6tghjk.131.pp.ua
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 6tghjk.131.pp.ua
-    path: '%2FYu29UN3Yz8hcnI3SlZor0'
-- name: 2|🇺🇸39 |  2.2MB/s|47%|Openai|Gem...
-  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-  port: 15229
-  server: eccd74b4-sw7j40-t1bnjq-1krtb.cu.plebai.net
-  tls: true
-  type: trojan
-- alpn:
-  - http/1.1
-  name: 2|🇺🇸52 |  1.0MB/s|32%|Netflix|Op...
-  network: ws
-  password: a926af96-2cfe-4169-8107-6c5f0d74a938
-  port: '443'
-  server: 104.21.48.1
-  skip-cert-verify: false
-  sni: zsde.7777128.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.94 Safari/537.36
-    path: /5NB3RVAWa3Uo1P5zFPkui
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 2|🇺🇸55 |  3.3MB/s|32%|Openai
-  network: ws
-  password: 3d4ad187-b554-4300-bf71-d26c71962504
-  port: '443'
-  server: 172.67.138.187
-  skip-cert-verify: false
-  sni: FFfgtyy.7282728.XYZ
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/68.0.3440.106 Safari/537.36
-    path: /WaHA3RC540rQ8PWqRcOEICAwmfH7
-- ip-version: dual
-  name: 2|🇺🇸57 |  5.3MB/s|34%|Netflix|Op...
-  network: ws
-  password: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0
-  port: 443
-  server: 104.21.112.1
-  sni: 7bhui.191262.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /wGgR8FyAGgRCKSiyxgvJgLl
-- ip-version: dual
-  name: 2|🇺🇸58 |  4.8MB/s|34%|Netflix|Op...
-  network: ws
-  password: ad4a124c-12fb-4467-9ad0-dc6d9b509ac0
-  port: 443
-  server: 104.21.96.1
-  sni: 7nnn.191262.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    path: /wGgR8FyAGgRCKSiyxgvJgLl
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 2|🇺🇸130 |  3.2MB/s|31%|Openai
-  network: ws
-  port: 22643
-  server: tk.hzlt.tkddns.xyz
-  servername: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-c.tkong.cc
-    path: /
-  xudp: true
 - client-fingerprint: chrome
-  name: 2|🇺🇸60 |  2.1MB/s|Openai|Gemini
+  name: 1|🇺🇸21 |  1.2MB/s|47%|Openai|Gem...
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: '15229'
   server: c6b50ea5-sw5og0-t1bnjq-1krtb.cu.plebai.net
   skip-cert-verify: false
   type: trojan
   udp: true
-- cipher: aes-256-cfb
-  client-fingerprint: chrome
-  name: 2,12|tg频道:@ripaojiedian
-  password: awsps0501
-  port: 443
-  server: 35.92.38.7
-  tfo: false
-  type: ss
-- client-fingerprint: chrome
-  name: 2,12,13|美国3|@ripaojiedian
-  network: tcp
-  password: a5DnyYNIexIzS2Xg3YYlg9Ol0SgEpyCj5ZCSBanD88eOpwOC4aEzDyTjY0nxBDjzSaACSTqSE223C83
-  port: 28332
-  server: 154.17.30.58
-  skip-cert-verify: true
-  sni: phooey.starspace.link
-  type: trojan
 - alterId: 0
   cipher: auto
-  name: 2|🇺🇸63 |  5.9MB/s|34%|Netflix|Di...
+  name: 1|🇺🇸40 |  2.4MB/s|32%|Openai
   network: ws
-  port: 2096
-  server: 141.101.120.253
-  skip-cert-verify: false
-  tls: true
+  port: 80
+  server: FfFgTYY.7282728.XyZ
   type: vmess
-  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  uuid: 3d4ad187-b554-4300-bf71-d26c71962504
   ws-opts:
     headers:
-      Host: 1746882891.speed.adl.cccp.freefly.pp.ua
-    path: /
-- name: 2|🇺🇸64 |  2.4MB/s|34%|Openai
+      host: fffgtyy.7282728.xyz
+    path: /NiNQyrcaIIJ3WqRcOEICAwmfH7
+- alpn:
+  - http/1.1
+  name: 1|🇺🇸41 |  2.2MB/s|34%|Openai
   network: ws
   password: f82fb954-06a1-4f0b-9180-17e07585b61f
   port: 443
-  server: 104.21.64.1
+  server: 104.21.16.1
   skip-cert-verify: false
   sni: 6hj8.191262.xyz
   type: trojan
+  udp: true
   ws-opts:
-    headers:
-      Host: 6hj8.191262.xyz
-    path: '%2FYu29UN3Yz8hcnI3SlZor0'
-- name: 2|🇺🇸65 |  5.9MB/s|34%|Openai
+    path: /Yu29UN3Yz8hcnI3SlZor0
+- name: 1,13|RU_speednode_0035
   network: ws
-  password: 072f4db4-d89d-420d-9d9e-045ed8d5c9cc
-  port: 443
-  server: 104.21.57.88
+  password: Aimer
+  port: 2096
+  server: 176.124.223.133
   skip-cert-verify: false
-  sni: 10tyu.iran.pp.ua
-  type: trojan
-  ws-opts:
-    headers:
-      Host: 10tyu.iran.pp.ua
-    path: /VEP415T5mby2DulPWRIwOavJd
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: 2|🇺🇸83 |  1.0MB/s|62%|Disney|Ope...
-  network: ws
-  password: T@_WvT8Ho@LW%w_,
-  port: '2053'
-  server: 172.66.47.42
-  skip-cert-verify: false
-  sni: NOp-55q.pAgEs.dEv
+  sni: epccj.ambercc.filegear-sg.me
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1610 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
-    path: /trGPZDfetEwuO25SAs?ed=2560
+      Host: epccj.ambercc.filegear-sg.me
+    path: /?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸49 |  4.2MB/s|32%|Openai
+  network: ws
+  port: 80
+  server: 172.67.138.187
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3d4ad187-b554-4300-bf71-d26c71962504
+  ws-opts:
+    headers:
+      Host: fffgtyy.7282728.xyz
+    path: /NiNQyrcaIIJ3WqRcOEICAwmfH7
+- name: 1|🇺🇸50 |  4.5MB/s|32%|Openai
+  network: ws
+  password: 3d4ad187-b554-4300-bf71-d26c71962504
+  port: 443
+  server: 104.21.78.243
+  skip-cert-verify: true
+  sni: FFfgtyy.7282728.XYZ
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: FFfgtyy.7282728.XYZ
+    path: /WaHA3RC540rQ8PWqRcOEICAwmfH7
+- name: 1|🇺🇸51 |  5.3MB/s|0%|Openai
+  network: ws
+  password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
+  port: 443
+  server: 104.21.26.17
+  skip-cert-verify: true
+  sni: m9rrrfgh.459.pp.ua
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: m9rrrfgh.459.pp.ua
+    path: /l6lvY4hFZriQDBimbKYmPIggy
 - alpn:
   - http/1.1
-  name: 2|🇺🇸102 |  2.8MB/s|34%|Openai
+  client-fingerprint: chrome
+  name: 1|🇺🇸52 |  1.2MB/s|32%|Netflix|Op...
+  network: ws
+  password: a926af96-2cfe-4169-8107-6c5f0d74a938
+  port: 443
+  server: 104.21.112.1
+  skip-cert-verify: false
+  sni: zsde.7777128.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /5NB3RVAWa3Uo1P5zFPkui
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 1|🇺🇸65 |  1.9MB/s|34%|Openai
   network: ws
   password: ca48571a-403f-44b9-b2a6-e17c36d7cacc
   port: 443
-  server: 104.21.112.1
+  server: 104.21.16.1
   skip-cert-verify: false
   sni: 10r.iran1912.dpdns.org
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
-        (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
+      Host: 10r.iran1912.dpdns.org
     path: /VEP415T5mby2DulPWRIwOavJd
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 1|🇺🇸70 |  5.5MB/s|67%|Openai
+  network: ws
+  password: 114ad614-fe6c-4422-b0af-be6161190d7a
+  port: 443
+  server: 172.67.211.136
+  skip-cert-verify: false
+  sni: DDrt.191266.Xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/32.0.1700.107 Safari/537.36
+    path: /By7cEmOrNRS58yeduy9AOG
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 1|🇺🇸97 |  3.4MB/s|34%|Netflix|Di...
+  network: ws
+  port: 2096
+  server: 141.101.120.253
+  servername: 1746882891.speed.adl.cccp.freefly.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  ws-opts:
+    headers:
+      Host: 1746882891.speed.adl.cccp.freefly.pp.ua
+    path: /
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 1|🇺🇸124 |  1.3MB/s|0%|Openai
+  network: ws
+  password: fefba36d-5142-42f1-b14d-db5249511d93
+  port: '443'
+  server: 172.67.152.170
+  skip-cert-verify: false
+  sni: 5ttt.191288.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/48.0.2564.109 Safari/537.36
+    path: /BFBuPh4SuxTxCwkqKrjE
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 1|🇺🇸131 |  4.5MB/s|34%|Openai
+  network: ws
+  password: 4be20cf1-6af1-4e87-ae5a-80d6ec30fecd
+  port: '443'
+  server: 104.21.42.250
+  skip-cert-verify: false
+  sni: 8io09.191268.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /tvowuLtlha3zxRV9PS
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 1|🇺🇸132 |  4.9MB/s|32%|Openai
+  network: ws
+  password: c6840587-7ac4-40be-aa4b-ae327eb4fa53
+  port: '443'
+  server: 104.21.61.154
+  skip-cert-verify: false
+  sni: CCCvfGHj.191266.xYZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    path: /ogSVyJu0ksqZjqvVUXlLhk95Ad
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 1|🇺🇸133 |  4.8MB/s|0%|Openai
+  network: ws
+  password: fefba36d-5142-42f1-b14d-db5249511d93
+  port: '443'
+  server: 104.21.82.39
+  skip-cert-verify: false
+  sni: 5ttt.191288.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/68.0.3440.75 Safari/537.36
+    path: /BFBuPh4SuxTxCwkqKrjE
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 1|🇺🇸135 |  3.7MB/s|32%|Openai
+  network: ws
+  password: c6840587-7ac4-40be-aa4b-ae327eb4fa53
+  port: '443'
+  server: 172.67.200.117
+  skip-cert-verify: false
+  sni: ccdfRt6.890634.Xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/40.0.2214.115 Safari/537.36
+    path: /ogSVyJu0ksqZjqvVUXlLhk95Ad
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 12,13|美国|@ripaojiedian
+  name: 11,12|美国|@ripaojiedian
   network: ws
   port: '30832'
   server: v32.heduian.link
@@ -294,7 +298,7 @@ proxies:
     path: /oooo
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 12|🇺🇸 美国2|@ripaojiedian
+  name: 11|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -304,10 +308,19 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 11,12|美国3|@ripaojiedian
+  network: tcp
+  password: a5DnyYNIexIzS2Xg3YYlg9Ol0SgEpyCj5ZCSBanD88eOpwOC4aEzDyTjY0nxBDjzSaACSTqSE223C83
+  port: 28332
+  server: 154.17.30.58
+  skip-cert-verify: true
+  sni: phooey.starspace.link
+  type: trojan
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 12,13|美国4|@ripaojiedian
+  name: 11,12|美国4|@ripaojiedian
   network: ws
   port: '22642'
   server: tk.hzlt.tkddns.xyz
@@ -324,7 +337,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 12|🇺🇸 美国5|@ripaojiedian
+  name: 11|🇺🇸 美国5|@ripaojiedian
   port: 46759
   server: 120.198.71.216
   skip-cert-verify: false
@@ -334,7 +347,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 13|美国5|@ripaojiedian
+  name: 12|美国5|@ripaojiedian
   network: tcp
   port: '46759'
   server: 120.198.71.216
@@ -342,7 +355,7 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 14|US_speednode_0065
+- name: 13|US_speednode_0065
   network: ws
   password: Aimer
   port: 2096
@@ -355,3 +368,24 @@ proxies:
     headers:
       Host: epccj.ambercc.filegear-sg.me
     path: /?ed=2560
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸美国 01 | 1x US Los Angeles
+  password: 272f03b6-d2fa-4101-8d5f-0663fc4e9743
+  port: 31211
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸美国家宽 02 | 1x US Los Angeles
+  password: 272f03b6-d2fa-4101-8d5f-0663fc4e9743
+  port: 31213
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇺🇸美国 03 | 1x US Washington
+  password: 272f03b6-d2fa-4101-8d5f-0663fc4e9743
+  port: 31215
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
