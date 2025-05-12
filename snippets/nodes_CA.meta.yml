@@ -1,19 +1,12 @@
 proxies:
-- name: 0|🇨🇦1 |  3.2MB/s|63%|Disney|Gemi...
-  network: ws
-  port: 443
-  server: 185.133.35.112
-  servername: nl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇨🇦 加拿大 01 | 1x CA
+  password: 74477f40-8bca-4079-a4fe-b79db9e78fc1
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: nl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 0|🇨🇦2 |  3.2MB/s|Openai|Gemini
+- name: 1|🇨🇦1 |  1.3MB/s|63%|Disney
   network: ws
   port: 443
   server: 69.84.182.97
@@ -27,10 +20,10 @@ proxies:
     headers:
       host: nl.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇨🇦3 |  2.8MB/s|63%|Disney|Gemi...
+- name: 1|🇨🇦2 |  3.1MB/s|63%|Disney
   network: ws
   port: 443
-  server: 185.133.35.160
+  server: 185.16.110.113
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -39,12 +32,12 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: nl.ylka.dpdns.org
+      Host: nl.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇨🇦4 |  2.8MB/s|63%|Disney|Open...
+- name: 1|🇨🇦3 |  2.0MB/s|63%|Disney
   network: ws
   port: 443
-  server: 216.24.57.36
+  server: 160.123.255.65
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -53,12 +46,12 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: nl.ylka.dpdns.org
+      Host: nl.ylka.dpdns.org
     path: /?ed=2560
-- name: 0|🇨🇦5 |  5.9MB/s|Openai|Gemini
+- name: 1|🇨🇦4 |  4.0MB/s|Disney|Openai
   network: ws
   port: 443
-  server: 160.123.255.130
+  server: 216.24.57.118
   servername: nl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -67,38 +60,26 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      host: nl.ylka.dpdns.org
+      Host: nl.ylka.dpdns.org
     path: /?ed=2560
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 0|🇨🇦6 |  1.9MB/s|23%|Netflix|Dis...
-  network: tcp
-  port: '26113'
-  reality-opts:
-    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
-    short-id: 1fbd20fd
-  server: 40.233.80.61
-  servername: www.yahoo.com
+- name: 1|🇨🇦5 |  2.6MB/s|63%|Disney|Yout...
+  network: ws
+  port: 2002
+  server: 45.154.98.100
+  servername: nl.ylka.dpdns.org
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  xudp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: nl.ylka.dpdns.org
+    path: /?ed=2560
 - cipher: chacha20-ietf-poly1305
-  name: 13|🇨🇦加拿大 01 | 1x CA
-  password: 9b9d82d1-7f47-43ad-a451-b08afc018aad
+  name: 2|🇨🇦加拿大 01 | 1x CA
+  password: 726ec8fc-1b2a-48cc-95bd-53f31f48f076
   port: 31441
   server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇨🇦 加拿大 01 | 1x CA
-  password: b9e4bdc7-66bc-416d-b9c5-45577e0115ca
-  port: 36441
-  server: free.2weradf.xyz
   type: ss
   udp: true
