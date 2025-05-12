@@ -1,40 +1,33 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: 9017840b-fb78-48e4-b126-76b6c16da189
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- alterId: 0
-  cipher: auto
-  country: 🏁ZZ
-  delay: 2385
-  h2-opts: {}
-  http-opts: {}
-  name: 1|🇨🇦1 |  3.5MB/s|29%|Youtube|Ope...
-  network: ws
-  port: 2083
-  server: 172.66.168.209
-  servername: CanaDa-138.blAzecAnAdA.SITe
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  uuid: 698d9a5b-59dc-4ea6-b404-cd9e967fc54c
-  ws-opts:
-    headers:
-      HOST: CanaDa-138.blAzecAnAdA.SITe
-    path: /linkvkws
-- cipher: aes-256-gcm
-  name: 1|🇨🇦2 |  2.4MB/s|62%|Netflix|Dis...
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11522
-  server: cdn-p1-lm.youku-dns.com
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇨🇦加拿大 01 | 1x CA
-  password: 4c648ff1-065c-4804-82fb-7ad0722f4e3f
+  name: 0|🇨🇦加拿大 01 | 1x CA
+  password: 068ca04f-62f9-4d17-8f0e-4cdc79188f24
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦 加拿大 01 | 1x CA
+  password: 6b279f9f-cf8c-4d78-8cfc-a078f749cbde
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 2|🇨🇦1 |  1.6MB/s|62%|Netflix|You...
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11522
+  server: cdn-p1-lm.youku-dns.com
+  type: ss
+- name: 2|🇨🇦2 |  1.3MB/s|63%|Disney
+  network: ws
+  password: amclubs
+  port: 2083
+  server: 104.16.134.27
+  skip-cert-verify: false
+  sni: tran.amclubs.rr.nu
+  type: trojan
+  ws-opts:
+    headers:
+      Host: tran.amclubs.rr.nu
+    path: /?ed=2560

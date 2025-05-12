@@ -1,34 +1,42 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: 9017840b-fb78-48e4-b126-76b6c16da189
+  name: 0|🇸🇬新加坡 01 | 1x SG
+  password: 068ca04f-62f9-4d17-8f0e-4cdc79188f24
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬新加坡 02 | 1x SG
+  password: 068ca04f-62f9-4d17-8f0e-4cdc79188f24
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬新加坡 03 | 1x SG
+  password: 068ca04f-62f9-4d17-8f0e-4cdc79188f24
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬 新加坡 01 | 1x SG
+  password: 6b279f9f-cf8c-4d78-8cfc-a078f749cbde
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: 9017840b-fb78-48e4-b126-76b6c16da189
+  name: 1|🇸🇬 新加坡 02 | 1x SG
+  password: 6b279f9f-cf8c-4d78-8cfc-a078f749cbde
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: aes-256-gcm
-  name: 1|🇸🇬1 |  4.0MB/s|13%|Netflix|Dis...
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: '11536'
-  server: ieplqz.youku-dns.com
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 1|🇸🇬2 |  4.6MB/s|13%|Netflix|Dis...
-  password: 423cf642-6528-410c-b542-2aae04113d33
-  port: 11535
-  server: ieplqz.youku-dns.com
-  type: ss
 - delay: 1952
   flow: none
-  name: 1|🇸🇬3 |  5.4MB/s|Youtube|Openai|...
+  name: 2|🇸🇬1 |  2.2MB/s|Openai
   network: ws
   port: 8080
   server: support.zoom.us
@@ -43,52 +51,60 @@ proxies:
     path: /
   xudp: true
 - client-fingerprint: chrome
-  name: 1|🇸🇬4 |  5.5MB/s|12%|Youtube|Ope...
-  network: ws
-  port: '443'
-  server: 13.67.9.5
-  servername: shg2.azurewebsites.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
-  ws-opts:
-    headers:
-      Host: shg2.azurewebsites.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/53.0.2785.143 Safari/537.36
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  name: 1|🇸🇬5 |  5.4MB/s|0%|Netflix|Open...
+  name: 2|🇸🇬2 |  3.3MB/s|0%|Netflix|Yout...
   password: 05f1368b-1743-48a3-b2a5-56343e64e7be
   port: '443'
-  server: 18.142.30.208
+  server: sg.lyyyds.club
   skip-cert-verify: false
   sni: sg.lyyyds.club
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 01 | 1x SG
-  password: 4c648ff1-065c-4804-82fb-7ad0722f4e3f
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
+- client-fingerprint: chrome
+  flow: none
+  name: 2|🇸🇬3 |  2.1MB/s|Youtube|Openai|...
+  network: ws
+  port: '2096'
+  server: 141.193.213.20
+  servername: premium.vkehi.shop
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 02 | 1x SG
-  password: 4c648ff1-065c-4804-82fb-7ad0722f4e3f
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
+  uuid: 93be59b7-ebce-4aec-8e66-4470e06e58ae
+  ws-opts:
+    headers:
+      Host: premium.vkehi.shop
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: '%2F'
+  xudp: true
+- delay: 1788
+  name: 2|🇸🇬4 |  3.3MB/s|Youtube|Openai
+  network: ws
+  port: 80
+  server: 170.114.46.6
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 03 | 1x SG
-  password: 4c648ff1-065c-4804-82fb-7ad0722f4e3f
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
+  uuid: 628a3541-1b2d-43ab-ad4f-82b6406480fe
+  ws-opts:
+    headers:
+      Host: lk.sahanwickramasinghe.shop
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/47.0.2526.106 Safari/537.36
+    path: /
+  xudp: true
+- delay: 435
+  name: 2|🇸🇬5 |  5.3MB/s|34%|Disney|Open...
+  network: ws
+  port: 8880
+  server: 156.238.18.111
+  tls: false
+  type: vless
   udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /Telegram🇨🇳 @pgkj666 /?ed=2560
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443

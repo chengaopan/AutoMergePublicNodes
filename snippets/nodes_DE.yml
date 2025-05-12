@@ -1,64 +1,41 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇩🇪 德国 01 | 1x DE
-  password: 9017840b-fb78-48e4-b126-76b6c16da189
+  name: 0|🇩🇪德国 01 | 1x DE
+  password: 068ca04f-62f9-4d17-8f0e-4cdc79188f24
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪 德国 01 | 1x DE
+  password: 6b279f9f-cf8c-4d78-8cfc-a078f749cbde
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-gcm
-  name: 1|🇩🇪11 |  4.8MB/s|39%|Youtube|Op...
+  name: 2|🇩🇪6 |  2.5MB/s|39%|Youtube|Ope...
   password: 423cf642-6528-410c-b542-2aae04113d33
   port: 11518
   server: cdn-p1-lm.youku-dns.com
   type: ss
-- name: 1|🇩🇪18 |  1.3MB/s|34%|Youtube|Op...
-  password: telegram-id-privatevpns
-  port: '22222'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇩🇪21 |  4.9MB/s|34%|Youtube|Op...
+  network: tcp
+  password: telegram-id-directvpn
+  port: '22223'
   server: 18.199.43.148
   skip-cert-verify: false
   sni: trojan.burgerip.co.uk
   type: trojan
   udp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: 1|🇩🇪27 |  4.8MB/s|21%|Disney|Ope...
-  network: ws
-  password: T@_WvT8Ho@LW%w_,
-  port: '2053'
-  server: 172.66.44.214
-  skip-cert-verify: false
-  sni: NOp-55q.pAgEs.dEv
+- delay: 1441
+  name: 2|🇩🇪27 |  1.6MB/s|64%|Youtube|Op...
+  password: RlzoEILU
+  port: 36654
+  server: 36.151.251.61
+  skip-cert-verify: true
   type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /trGPZDfetEwuO25SAs?ed=2560
-- alpn:
-  - h3
-  client-fingerprint: randomized
-  name: 1|🇩🇪29 |  1.4MB/s|0%|Disney
-  network: ws
-  password: Aimer
-  port: '2087'
-  server: 162.120.94.23
-  skip-cert-verify: false
-  sni: epccj.ambercc.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /?ed=2560&proxyip=ts.hpc.tw
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇩🇪德国 01 | 1x DE
-  password: 4c648ff1-065c-4804-82fb-7ad0722f4e3f
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
   udp: true
