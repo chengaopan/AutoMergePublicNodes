@@ -1,56 +1,49 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 4d2b8957-6e92-42f4-9520-666a91fb57c8
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 4d2b8957-6e92-42f4-9520-666a91fb57c8
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 4d2b8957-6e92-42f4-9520-666a91fb57c8
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 01 | 1x SG
-  password: 2b1d4425-1226-47aa-9fde-17680acf2c9f
+  name: 0|🇸🇬 新加坡 01 | 1x SG
+  password: e2dd8342-918a-4bf4-9197-266340561f3a
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 02 | 1x SG
-  password: 2b1d4425-1226-47aa-9fde-17680acf2c9f
+  name: 0|🇸🇬 新加坡 02 | 1x SG
+  password: e2dd8342-918a-4bf4-9197-266340561f3a
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 01 | 1x SG
+  password: c082f0f5-6a06-49c6-b7ac-ad6ba220cb2f
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 02 | 1x SG
+  password: c082f0f5-6a06-49c6-b7ac-ad6ba220cb2f
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 03 | 1x SG
+  password: c082f0f5-6a06-49c6-b7ac-ad6ba220cb2f
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - cipher: chacha20-ietf
-  name: 2|🇸🇬3 |  5.0MB/s|0%|Netflix|Yout...
+  name: 2|🇸🇬1 |  2.0MB/s|0%|Youtube|Open...
   password: asd123456
   port: '8388'
   server: 103.36.91.32
   type: ss
   udp: true
-- name: 2|🇸🇬4 |  2.6MB/s|0%|Youtube|Open...
-  password: 05f1368b-1743-48a3-b2a5-56343e64e7be
-  port: 443
-  server: sg.lyyyds.club
-  skip-cert-verify: false
-  sni: sg.lyyyds.club
-  type: trojan
 - alterId: 64
   cipher: auto
-  name: 2|🇸🇬5 |  1.3MB/s|0%|Netflix|Disn...
+  name: 2|🇸🇬2 |  1.1MB/s|0%|Netflix|Disn...
   port: 43302
   server: 183.236.51.38
   skip-cert-verify: true
@@ -58,6 +51,26 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - sb.zhuanshu.com
+    path:
+    - /
+  name: 2|🇸🇬4 |  1.3MB/s|0%|Disney|Opena...
+  network: http
+  port: '26871'
+  server: 45.136.14.34
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 17709b46-ca45-453a-9139-6125c56a71dc
+  xudp: true
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome

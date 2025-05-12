@@ -1,45 +1,96 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 4d2b8957-6e92-42f4-9520-666a91fb57c8
-  port: 31171
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 4d2b8957-6e92-42f4-9520-666a91fb57c8
-  port: 31173
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 4d2b8957-6e92-42f4-9520-666a91fb57c8
-  port: 31175
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 01 | 1x SG
-  password: 2b1d4425-1226-47aa-9fde-17680acf2c9f
+  name: 0|🇸🇬 新加坡 01 | 1x SG
+  password: e2dd8342-918a-4bf4-9197-266340561f3a
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬 新加坡 02 | 1x SG
-  password: 2b1d4425-1226-47aa-9fde-17680acf2c9f
+  name: 0|🇸🇬 新加坡 02 | 1x SG
+  password: e2dd8342-918a-4bf4-9197-266340561f3a
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 01 | 1x SG
+  password: c082f0f5-6a06-49c6-b7ac-ad6ba220cb2f
+  port: 31171
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 02 | 1x SG
+  password: c082f0f5-6a06-49c6-b7ac-ad6ba220cb2f
+  port: 31173
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 03 | 1x SG
+  password: c082f0f5-6a06-49c6-b7ac-ad6ba220cb2f
+  port: 31175
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf
+  name: 2|🇸🇬1 |  2.0MB/s|0%|Youtube|Open...
+  password: asd123456
+  port: '8388'
+  server: 103.36.91.32
+  type: ss
+  udp: true
+- alterId: 64
+  cipher: auto
+  name: 2|🇸🇬2 |  1.1MB/s|0%|Netflix|Disn...
+  port: 43302
+  server: 183.236.51.38
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 2|🇸🇬3 |  2.2MB/s|Youtube|Openai
+  network: ws
+  port: '80'
+  server: 141.193.213.21
+  type: vless
+  udp: true
+  uuid: 628a3541-1b2d-43ab-ad4f-82b6406480fe
+  ws-opts:
+    headers:
+      Host: lk.sahanwickramasinghe.shop
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.76 Safari/537.36
+    path: /
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - sb.zhuanshu.com
+    path:
+    - /
+  name: 2|🇸🇬4 |  1.3MB/s|0%|Disney|Opena...
+  network: http
+  port: '26871'
+  server: 45.136.14.34
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 17709b46-ca45-453a-9139-6125c56a71dc
+  xudp: true
 - client-fingerprint: chrome
   flow: none
-  name: 2|🇸🇬1 |  5.5MB/s|Youtube|Openai
+  name: 2|🇸🇬5 |  5.8MB/s|Youtube|Openai|...
   network: ws
   port: '2096'
-  server: 141.193.213.20
+  server: 141.193.213.21
   servername: premium.vkehi.shop
   tls: true
   type: vless
@@ -48,48 +99,23 @@ proxies:
   ws-opts:
     headers:
       Host: premium.vkehi.shop
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.101 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/52.0.2743.116 Safari/537.36
     path: '%2F'
   xudp: true
-- name: 2|🇸🇬2 |  5.5MB/s|Youtube|Openai
+- flow: none
+  name: 2|🇸🇬6 |  5.3MB/s|Youtube|Openai|...
   network: ws
-  port: '80'
-  server: 141.193.213.20
+  port: 8080
+  server: support.zoom.us
+  tls: false
   type: vless
   udp: true
-  uuid: 628a3541-1b2d-43ab-ad4f-82b6406480fe
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
   ws-opts:
     headers:
-      Host: lk.sahanwickramasinghe.shop
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/49.0.2623.110 Safari/537.36
+      Host: xrr.rtxconfigz.xyz
     path: /
-  xudp: true
-- cipher: chacha20-ietf
-  name: 2|🇸🇬3 |  5.0MB/s|0%|Netflix|Yout...
-  password: asd123456
-  port: '8388'
-  server: 103.36.91.32
-  type: ss
-  udp: true
-- name: 2|🇸🇬4 |  2.6MB/s|0%|Youtube|Open...
-  password: 05f1368b-1743-48a3-b2a5-56343e64e7be
-  port: 443
-  server: sg.lyyyds.club
-  skip-cert-verify: false
-  sni: sg.lyyyds.club
-  type: trojan
-- alterId: 64
-  cipher: auto
-  name: 2|🇸🇬5 |  1.3MB/s|0%|Netflix|Disn...
-  port: 43302
-  server: 183.236.51.38
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
