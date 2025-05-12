@@ -1,33 +1,47 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港 02 | 1x HK
-  password: 40a531b6-7ab5-4a5a-afd0-a12d7d0b281d
+  name: 0|🇭🇰 香港 02 | 1x HK
+  password: aff80116-79fb-4eae-b3f0-75237f9b7f69
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
+  password: aff80116-79fb-4eae-b3f0-75237f9b7f69
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: 1|🇭🇰1 |  2.0MB/s|16%|Netflix|Dis...
+  network: ws
+  port: 8080
+  server: e9a671ea-sw1z40-t4vk19-1nlwy.hgc1.tcpbbr.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 9247343a-5db0-11ee-9367-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: e9a671ea-sw1z40-t4vk19-1nlwy.hgc1.tcpbbr.net
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰香港 02 | 1x HK
+  password: 4586b660-a58c-4f79-89ce-f92eee3ea867
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: 40a531b6-7ab5-4a5a-afd0-a12d7d0b281d
+  name: 2|🇭🇰香港家宽 03 | 1x HK
+  password: 4586b660-a58c-4f79-89ce-f92eee3ea867
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 2|🇭🇰4 |  1.6MB/s|16%|Netflix|Dis...
-  network: ws
-  port: 8080
-  server: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
-  servername: broadcastlv.chat.bilibili.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: 21a70fd2-c69c-11eb-8673-f23c9164ca5d
-  ws-opts:
-    headers:
-      Host: 338b2185-sw1z40-sw51rj-hkb8.hgc1.tcpbbr.net
-    path: /
 - client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
   network: ws
