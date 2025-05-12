@@ -1,42 +1,42 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 01 | 1x JP
-  password: 0814e13e-90f4-4573-83a0-e141b4ecbfce
+  password: 8f8c9bc9-04f3-46b4-b82c-1429e73dbee9
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 02 | 1x JP
-  password: 0814e13e-90f4-4573-83a0-e141b4ecbfce
+  password: 8f8c9bc9-04f3-46b4-b82c-1429e73dbee9
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵日本 03 | 1x JP
-  password: 0814e13e-90f4-4573-83a0-e141b4ecbfce
+  password: 8f8c9bc9-04f3-46b4-b82c-1429e73dbee9
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇯🇵 日本 01 | 1x JP
-  password: cb43810a-cf9e-4fe7-838f-3f9cff4e21fb
+  password: 2bd4813f-1fdb-4ad7-9c11-b0d1e8a49299
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇯🇵 日本 02 | 1x JP
-  password: cb43810a-cf9e-4fe7-838f-3f9cff4e21fb
+  password: 2bd4813f-1fdb-4ad7-9c11-b0d1e8a49299
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇯🇵 日本 03 | 1x JP
-  password: cb43810a-cf9e-4fe7-838f-3f9cff4e21fb
+  password: 2bd4813f-1fdb-4ad7-9c11-b0d1e8a49299
   port: 36115
   server: free.2weradf.xyz
   type: ss
@@ -46,7 +46,7 @@ proxies:
   delay: 1856
   h2-opts: {}
   http-opts: {}
-  name: 2|🇯🇵2 |  5.0MB/s|10%|Youtube|Ope...
+  name: 2|🇯🇵1 |  5.5MB/s|10%|Youtube|Ope...
   network: tcp
   port: 17233
   server: 2bbb71ac-svdwg0-sw0nbj-1anhm.cm5.p5pv.com
@@ -55,27 +55,37 @@ proxies:
   uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
 - alterId: 0
   cipher: auto
-  name: 2|🇯🇵5 |  5.5MB/s|10%|Disney|Open...
+  name: 2|🇯🇵2 |  3.5MB/s|10%|Disney|Yout...
   network: tcp
   port: 17233
   server: 8faa5046-svc1s0-sw0nbj-1anhm.cm5.p5pv.com
   servername: 8faa5046-svc1s0-sw0nbj-1anhm.cm5.p5pv.com
-  skip-cert-verify: true
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
   uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
-  ws-headers:
-    Host: 8faa5046-svc1s0-sw0nbj-1anhm.cm5.p5pv.com
-  ws-path: /
   xudp: true
+- cipher: aes-256-gcm
+  name: 2|🇯🇵4 |  1.6MB/s|64%|Netflix|Dis...
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: '11506'
+  server: cdn-p1-jp.weibo-dns.com
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 2|🇯🇵5 |  2.2MB/s|64%|Netflix|Dis...
+  password: 423cf642-6528-410c-b542-2aae04113d33
+  port: 11504
+  server: cdn-p1-jp.weibo-dns.com
+  type: ss
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505081193439-Q6Je6CIwva.download.microsoft.com
+    host: 202505081193439-w4OKhrzhsF.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -89,7 +99,7 @@ proxies:
   plugin-opts:
     host: jp06v1.3ci.xyz
     mode: websocket
-    mux: true
+    mux: false
     path: /ymfvpytvkdp
     skip-cert-verify: false
     tls: true
@@ -108,29 +118,21 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   name: 12,13|日本4|@ripaojiedian
-  network: ws
-  port: '8004'
-  server: 59.42.247.189
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 68261662-982a-41b5-94ff-dad406a41c03
-  ws-opts:
-    headers:
-      Host: www.bing.com
-    path: /nmkj
+  network: tcp
+  password: 8e3DxOzEI3YXc3aZRAzRg3lRlcZYS7Kp93juOwOnR8qaxSByD0OyaFep8F0p3864SCyAC
+  port: 443
+  server: 43.207.112.226
+  skip-cert-verify: true
+  sni: terture.meijireform.com
+  type: trojan
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 12|🇯🇵 日本特殊|@ripaojiedian
   password: awsps0501
   port: 443
-  server: 47.129.171.73
+  server: 43.203.199.63
   tfo: false
   type: ss
 - alterId: 64
