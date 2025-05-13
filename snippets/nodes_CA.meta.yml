@@ -1,60 +1,29 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 0df7138b-9aeb-47df-a909-89c43b45f6ca
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: 647c24ef-6629-4fd2-b6af-991dda055f4a
+  name: 0|🇨🇦 加拿大 01 | 1x CA
+  password: 38fd31e7-3887-43de-b347-f062c2cd7135
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 2|🇨🇦1 |  2.0MB/s|62%|Netflix|Dis...
-  network: ws
-  port: 443
-  server: 103.44.255.81
-  servername: vx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦加拿大 01 | 1x CA
+  password: a82c0b69-202a-4044-87d5-8ab02b095a66
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 2|🇨🇦2 |  2.8MB/s|62%|Disney|Yout...
-  network: ws
-  port: 443
-  server: time.is
-  servername: vx.ylks0033.dpdns.org
+- alpn:
+  - h3
+  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: 2|🇨🇦1 |  1.0MB/s|20%|Netflix|Dis...
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 40.233.80.61
   skip-cert-verify: true
-  tls: true
-  type: vless
+  sni: www.bing.com
+  type: hysteria2
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vx.ylks0033.dpdns.org
-    path: /?ed=2560
-- name: 2|🇨🇦3 |  2.9MB/s|Disney|Youtube|...
-  network: ws
-  port: 10099
-  server: 146.56.136.39
-  servername: vx.ylks0033.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: vx.ylks0033.dpdns.org
-    path: /?ed=2560
 - name: 14|CA_speednode_0007
   network: ws
   port: 80

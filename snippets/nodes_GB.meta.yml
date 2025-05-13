@@ -1,36 +1,36 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: 0df7138b-9aeb-47df-a909-89c43b45f6ca
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 0df7138b-9aeb-47df-a909-89c43b45f6ca
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 01 | 1x HK
-  password: 647c24ef-6629-4fd2-b6af-991dda055f4a
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: 38fd31e7-3887-43de-b347-f062c2cd7135
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 647c24ef-6629-4fd2-b6af-991dda055f4a
+  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 38fd31e7-3887-43de-b347-f062c2cd7135
   port: 36271
   server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: a82c0b69-202a-4044-87d5-8ab02b095a66
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: a82c0b69-202a-4044-87d5-8ab02b095a66
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: '@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY'
-  name: 2|🇬🇧1 |  6.0MB/s|33%|Openai
+  name: 2|🇬🇧1 |  3.3MB/s|33%|Openai
   network: grpc
   port: '2083'
   reality-opts:
@@ -42,6 +42,25 @@ proxies:
   type: vless
   udp: true
   uuid: 108d0bd4-ed8a-4186-995f-8f49e3127699
+  xudp: true
+- alpn:
+  - h2http/1.1
+  client-fingerprint: chrome
+  name: 2|🇬🇧2 |  5.5MB/s|44%|Openai
+  network: ws
+  port: '443'
+  server: www.speedtest.net
+  servername: SlZcZmPl2.ZuKaRiO.InFo
+  tls: true
+  type: vless
+  udp: true
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: SlZcZmPl2.ZuKaRiO.InFo
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/51.0.2704.63 Safari/537.36
+    path: /
   xudp: true
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
