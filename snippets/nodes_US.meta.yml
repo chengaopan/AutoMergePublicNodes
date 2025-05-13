@@ -1,39 +1,57 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: ea852714-3f27-41ee-9f03-964cc969679a
+  password: b1dacdad-be15-49b9-8772-4c6760f1072f
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: ea852714-3f27-41ee-9f03-964cc969679a
+  password: b1dacdad-be15-49b9-8772-4c6760f1072f
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 03 | 1x US Washington
-  password: ea852714-3f27-41ee-9f03-964cc969679a
+  password: b1dacdad-be15-49b9-8772-4c6760f1072f
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- down: ''
-  fingerprint: ''
-  name: 1,11|Telegram:@config_proxy 💦
-  obfs: ''
-  obfs-password: ''
-  password: nfsn666
-  port: 8888
-  server: sj-arm.nfsn666.gq
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 060c8d0c-e9dd-4332-8944-100f15136df6
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 060c8d0c-e9dd-4332-8944-100f15136df6
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 03 | 1x US Washington
+  password: 060c8d0c-e9dd-4332-8944-100f15136df6
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- alpn:
+  - h3
+  auth: ad77e45c-0485-4357-9d64-1593aabc2c19
+  name: 2|🇺🇸1 |  5.3MB/s|24%|Netflix|Dis...
+  password: ad77e45c-0485-4357-9d64-1593aabc2c19
+  port: 32321
+  server: 108.214.246.79
   skip-cert-verify: true
-  sni: sj-arm.nfsn666.gq
-  tls: false
   type: hysteria2
-  up: ''
-- name: 1,14|GB_speednode_0020
+  udp: true
+- name: 2,14|GB_speednode_0020
   network: ws
   port: 80
   server: 194.36.55.181
@@ -47,105 +65,14 @@ proxies:
     headers:
       Host: ipsycho.suex12.ir
     path: /re5IzbZ9IZZMddtw?ed=2560
-- name: 1|🇺🇸3 |  3.4MB/s|Openai
+- name: 2|🇺🇸3 |  1.3MB/s|Openai
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 443
   server: 7a3baf51-sw7j40-t1bnjq-1krtb.sv.plebai.net
   tls: true
   type: http
   username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- name: 1|🇺🇸4 |  2.7MB/s|Openai
-  port: 443
-  server: f1fdb272-svqv40-t28b6o-ef48.sj.gotochinatown.net
-  tls: true
-  type: socks5
-- client-fingerprint: chrome
-  name: 1|🇺🇸5 |  1.5MB/s|0%|Openai
-  port: 443
-  server: af3bff92-svlb40-swy6li-tni2.sj.gotochinatown.net
-  sni: af3bff92-svlb40-swy6li-tni2.sj.gotochinatown.net
-  tls: true
-  type: socks5
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 1|🇺🇸6 |  2.0MB/s|29%|Openai
-  network: ws
-  password: 3d4ad187-b554-4300-bf71-d26c71962504
-  port: '443'
-  server: 104.21.78.243
-  skip-cert-verify: false
-  sni: FFfgtyy.7282728.XYZ
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J730GM Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /WaHA3RC540rQ8PWqRcOEICAwmfH7
-- alpn:
-  - h3
-  auth: ad77e45c-0485-4357-9d64-1593aabc2c19
-  name: 1|🇺🇸7 |  4.1MB/s|24%|Netflix|Dis...
-  password: ad77e45c-0485-4357-9d64-1593aabc2c19
-  port: 32321
-  server: 108.214.246.79
-  skip-cert-verify: true
-  type: hysteria2
-  udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 1|🇺🇸8 |  5.8MB/s|0%|Openai
-  network: ws
-  port: '443'
-  server: 104.21.42.250
-  servername: 5c.191268.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: fefba36d-5142-42f1-b14d-db5249511d93
-  ws-opts:
-    headers:
-      Host: 5c.191268.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /dRTvoZIiPpwkqKrjE
-  xudp: true
-- name: 1|🇺🇸9 |  3.5MB/s|Openai
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 443
-  server: fd6eeb0d-sw7j40-swy6li-tni2.sv.plebai.net
-  tls: true
-  type: http
-  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- name: 1|🇺🇸10 |  5.1MB/s|46%|Openai|Gem...
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: ad7dc62e-sw9ds0-swy6li-tni2.cu.plebai.net
-  tls: true
-  type: trojan
-- name: 1|🇺🇸11 |  3.1MB/s|0%|Openai
-  port: 443
-  server: c23319fc-svukg0-t1bnjq-1krtb.sj.gotochinatown.net
-  tls: true
-  type: socks5
-- name: 1|🇺🇸12 |  2.4MB/s|0%|Openai
-  port: 443
-  server: 4453d106-sw9ds0-swy6li-tni2.sj.gotochinatown.net
-  tls: true
-  type: socks5
-- name: 1|🇺🇸13 |  2.5MB/s|0%|Openai
-  port: 443
-  server: fdf0dc27-sw5og0-swy6li-tni2.sv.plebai.net
-  tls: true
-  type: socks5
-- name: 1|🇺🇸14 |  1.2MB/s|0%|Openai
-  port: 443
-  server: 82289c96-svlb40-t1bnjq-1krtb.sj.gotochinatown.net
-  tls: true
-  type: socks5
-- name: 1,14|RU_speednode_0032
+- name: 2,14|RU_speednode_0032
   network: ws
   port: 80
   server: 185.174.138.206
@@ -159,121 +86,18 @@ proxies:
     headers:
       Host: ipsycho.suex12.ir
     path: /re5IzbZ9IZZMddtw?ed=2560
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸16 |  4.5MB/s|29%|Openai
-  network: ws
-  port: 80
-  server: 172.67.170.51
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: ced307a2-af2c-4113-bebc-fb888c702b7d
-  ws-opts:
-    headers:
-      Host: m4frt.999182.xyz
-    path: /PEQ7CoA1VrBwsbnEcmJLxC
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸17 |  4.0MB/s|29%
-  network: ws
-  port: 80
-  server: FfFgTYY.7282728.XyZ
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3d4ad187-b554-4300-bf71-d26c71962504
-  ws-opts:
-    headers:
-      Host: FfFgTYY.7282728.XyZ
-    path: /NiNQyrcaIIJ3WqRcOEICAwmfH7
-  xudp: true
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸18 |  2.8MB/s|29%|Openai
-  network: ws
-  port: 22643
-  server: tk.hzlt.tkddns.xyz
-  servername: zxjp-c.tkong.cc
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-c.tkong.cc
-    path: /
-  xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 1|🇺🇸19 |  1.1MB/s
-  network: ws
-  password: fefba36d-5142-42f1-b14d-db5249511d93
-  port: '443'
-  server: 172.67.152.170
-  skip-cert-verify: false
-  sni: 5ttt.191288.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/46.0.2490.71 Safari/537.36
-    path: /BFBuPh4SuxTxCwkqKrjE
-- name: 1|🇺🇸20 |  3.5MB/s|0%
+- name: 2|🇺🇸5 |  5.1MB/s|0%
   port: 443
-  server: 180a9468-sw5og0-t1bnjq-1krtb.sv.plebai.net
+  server: 82289c96-svlb40-t1bnjq-1krtb.sj.gotochinatown.net
   tls: true
   type: socks5
-- name: 1|🇺🇸21 |  1.3MB/s|0%|Openai
+- name: 2|🇺🇸6 |  2.5MB/s|0%
   port: 443
-  server: 7d400c66-svwf40-t1bnjq-1krtb.sj.gotochinatown.net
+  server: fdf0dc27-sw5og0-swy6li-tni2.sv.plebai.net
   tls: true
   type: socks5
-- name: 1|🇺🇸22 |  3.9MB/s|0%|Openai
-  port: 443
-  server: b10779f4-sw3ts0-t1bnjq-1krtb.sv.plebai.net
-  tls: true
-  type: socks5
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 1,12,13|美国4|@ripaojiedian
-  network: ws
-  port: '22642'
-  server: tk.hzlt.tkddns.xyz
-  servername: zxjp-b.tkong.cc
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-b.tkong.cc
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 1|🇺🇸25 |  5.7MB/s|29%|Openai
-  network: ws
-  port: 22643
-  server: tk.hzlt.tkddns.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-headers:
-    Host: zxjp-c.tkong.cc
-  ws-path: /
 - client-fingerprint: chrome
-  name: 1|🇺🇸26 |  2.6MB/s|0%|Disney|Open...
+  name: 2|🇺🇸7 |  1.6MB/s|0%|Netflix|Open...
   network: ws
   port: '2087'
   server: 104.24.73.254
@@ -289,150 +113,45 @@ proxies:
         like Gecko) Chrome/70.0.3538.110 Safari/537.36
     path: /?ed=2560fp=chromefp=chrome
   xudp: true
-- client-fingerprint: chrome
-  name: 1|🇺🇸27 |  4.1MB/s|0%|Netflix|Dis...
-  network: ws
-  port: '2096'
-  server: 104.16.143.139
-  servername: ghh.wsthh.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4527ff0c-8ac2-452a-95cb-c2d29e5a8421
-  ws-opts:
-    headers:
-      Host: ghh.wsthh.site
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
-    path: ''
-  xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 1|🇺🇸28 |  1.4MB/s|29%|Openai
-  network: ws
-  port: '443'
-  server: 172.67.211.136
-  servername: c3DFgH6.191266.xYz
-  tls: true
-  type: vless
-  udp: true
-  uuid: c6840587-7ac4-40be-aa4b-ae327eb4fa53
-  ws-opts:
-    headers:
-      Host: c3dfgh6.191266.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.94 Safari/537.36
-    path: /VYgbmNxgNCCs06VUXlLhk95Ad
-  xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 1|🇺🇸29 |  3.8MB/s|0%|Openai
-  network: ws
-  password: f0f6e76e-e5fe-4e2c-9faf-34832e021eae
-  port: '443'
-  server: 104.21.63.226
-  skip-cert-verify: false
-  sni: Ty.457.pP.uA
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /mZr1mA5hub7QHHkQBzYO
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 1|🇺🇸30 |  1.6MB/s|32%|Openai
-  network: ws
-  port: '443'
-  server: 172.67.204.177
-  servername: 6yhj7ty.191292.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: f82fb954-06a1-4f0b-9180-17e07585b61f
-  ws-opts:
-    headers:
-      Host: 6yhj7ty.191292.xyz
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/54.0.2840.71 Safari/537.36
-    path: /0HKVAwzpuQtCNTI3SlZor0
-  xudp: true
-- client-fingerprint: chrome
-  name: 1|🇺🇸31 |  1.0MB/s|29%|Youtube|Op...
-  network: ws
-  port: '443'
-  server: 104.21.83.113
-  servername: m11sdfgrw4rty.859886.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
-  ws-opts:
-    headers:
-      Host: m11sdfgrw4rty.859886.xyz
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
-    path: /dKFj3vjbdiwxY9TZlulnnYPb86csp
-  xudp: true
-- client-fingerprint: chrome
-  name: 1|🇺🇸32 |  4.4MB/s|61%|Disney|Gem...
-  network: ws
-  port: '443'
-  server: 162.159.152.205
-  servername: 0229.patterdeng.pp.ua
-  tls: true
-  type: vless
-  udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      Host: 0229.patterdeng.pp.ua
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.101 Safari/537.36
-    path: ''
-  xudp: true
-- alpn:
-  - h2http/1.1
-  client-fingerprint: chrome
-  name: 1|🇺🇸33 |  3.1MB/s|44%|Openai
-  network: ws
-  port: '2087'
-  server: scorpion1.info
-  servername: Tp4245C64m.MoLaNaMaMaLi1.InFo
-  tls: true
-  type: vless
-  udp: true
-  uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
-  ws-opts:
-    headers:
-      Host: Tp4245C64m.MoLaNaMaMaLi1.InFo
-      User-Agent: Mozilla/5.0 (X11; Datanyze; Linux x86_64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/65.0.3325.181 Safari/537.36
-    path: /
-  xudp: true
-- name: 1|🇺🇸34 |  2.2MB/s|Openai
-  port: 443
-  server: becc42e9-sw1z40-swy6li-tni2.sj.gotochinatown.net
-  tls: true
-  type: socks5
-- name: 1|🇺🇸35 |  3.4MB/s|Openai
+- name: 2|🇺🇸8 |  2.5MB/s|0%|Openai
   port: 443
   server: 2be2e542-svc1s0-swy6li-tni2.sj.gotochinatown.net
   tls: true
   type: socks5
-- name: 1|🇺🇸36 |  5.5MB/s|46%|Openai
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  delay: 1432
+  down: '100'
+  name: 2|🇺🇸9 |  1.3MB/s|47%|Openai
+  obfs: ''
+  port: 40528
+  protocol: ''
+  server: 208.87.243.187
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: '100'
+- name: 2|🇺🇸10 |  1.5MB/s|0%|Openai
+  port: 443
+  server: becc42e9-sw1z40-swy6li-tni2.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸11 |  2.3MB/s|46%|Openai
   port: 443
   server: 35806ac4-svc1s0-t1bnjq-1krtb.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸12 |  3.6MB/s|46%|Openai
+  port: 443
+  server: fde84327-svjgg0-t1bnjq-1krtb.los.gotochinatown.net
   tls: true
   type: socks5
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: 1|🇺🇸37 |  1.0MB/s|0%|Netflix|Ope...
+  name: 2|🇺🇸13 |  1.9MB/s|Netflix|Disney...
   network: ws
   port: '443'
   server: 104.21.17.127
@@ -448,101 +167,55 @@ proxies:
         Gecko) Chrome/49.0.2623.112 Safari/537.36
     path: /6pC5ZWNjJLlDlbpi
   xudp: true
-- name: 1|🇺🇸38 |  3.2MB/s|46%|Openai
-  port: 443
-  server: c37a6bf9-sw7j40-swy6li-tni2.los.gotochinatown.net
-  tls: true
-  type: socks5
-- name: 1|🇺🇸39 |  3.0MB/s|0%|Openai
-  port: 443
-  server: e0616d84-svfr40-t28b6o-ef48.sj.gotochinatown.net
-  tls: true
-  type: socks5
-- name: 1|🇺🇸40 |  2.4MB/s|46%|Openai
-  port: 443
-  server: a165488e-svlb40-t28b6o-ef48.los.gotochinatown.net
-  tls: true
-  type: socks5
-- name: 1|🇺🇸41 |  4.0MB/s|46%|Openai
-  port: 443
-  server: 678aeea8-svhls0-swy6li-tni2.los.gotochinatown.net
-  tls: true
-  type: socks5
-- name: 1|🇺🇸42 |  5.5MB/s|Openai
-  port: 443
-  server: fde84327-svjgg0-t1bnjq-1krtb.los.gotochinatown.net
-  tls: true
-  type: socks5
-- name: 1|🇺🇸43 |  3.6MB/s|0%|Openai
-  port: 443
-  server: 041ce782-svlb40-t28b6o-ef48.sj.gotochinatown.net
-  tls: true
-  type: socks5
-- name: 1|🇺🇸44 |  1.3MB/s|46%
+- name: 2|🇺🇸14 |  2.2MB/s|46%|Openai
   port: 443
   server: bd6a6d85-sw5og0-t1bnjq-1krtb.los.gotochinatown.net
   tls: true
   type: socks5
-- name: 1|🇺🇸45 |  4.9MB/s|0%|Openai
+- name: 2|🇺🇸15 |  5.2MB/s|46%|Openai
+  port: 443
+  server: a165488e-svlb40-t28b6o-ef48.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸16 |  5.4MB/s|0%
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 443
   server: 19671ce7-sw7j40-swy6li-tni2.sj.gotochinatown.net
   tls: true
   type: http
   username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-- name: 1|🇺🇸46 |  3.0MB/s|0%|Openai
+- name: 2|🇺🇸17 |  1.8MB/s|Openai
   port: 443
   server: 21da44f3-svqv40-t1bnjq-1krtb.sj.gotochinatown.net
   tls: true
   type: socks5
-- name: 1|🇺🇸47 |  3.4MB/s|46%|Openai
+- name: 2|🇺🇸18 |  2.5MB/s|Openai
   port: 443
   server: e6c022e2-svwf40-swy6li-tni2.los.gotochinatown.net
   tls: true
   type: socks5
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  delay: 1432
-  down: '100'
-  name: 1|🇺🇸48 |  3.6MB/s|47%|Openai
-  obfs: ''
-  port: 40528
-  protocol: ''
-  server: 208.87.243.187
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: '100'
-- name: 1|🇺🇸49 |  2.3MB/s|Openai
+- name: 2|🇺🇸19 |  5.2MB/s|0%|Openai
   port: 443
   server: 0f9ec9a3-svsps0-t1bnjq-1krtb.sj.gotochinatown.net
   tls: true
   type: socks5
-- name: 1|🇺🇸50 |  1.9MB/s|46%|Openai
-  port: 443
-  server: daadef2d-sw1z40-swy6li-tni2.los.gotochinatown.net
-  tls: true
-  type: socks5
-- delay: 1548
-  name: 1|🇺🇸51 |  5.7MB/s|33%|Netflix|Di...
+- name: 2,14|AT_speednode_0001
   network: ws
   port: 443
-  server: 45.202.113.236
-  servername: haxus3.lzj520hxw.dpdns.org
-  skip-cert-verify: true
-  tfo: false
+  server: 212.183.88.46
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 247be9aa-0741-48a1-a69e-61fdaf5290c3
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
   ws-opts:
     headers:
-      Host: haxus3.lzj520hxw.dpdns.org
-    path: /lzjjjjjjjjj66666666666
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
 - alterId: 2
   cipher: auto
-  name: 1|🇺🇸52 |  6.0MB/s|29%|Openai
+  name: 2|🇺🇸21 |  4.3MB/s|29%|Openai
   network: ws
   port: 22641
   server: tk.hzlt.tkddns.xyz
@@ -555,10 +228,122 @@ proxies:
     headers:
       Host: zxjp-a.tkong.cc
     path: /
-- name: 1,14|RU_speednode_0031
+- name: 2|🇺🇸22 |  1.2MB/s|0%|Openai
+  network: ws
+  password: aTArbZ2F0E
+  port: 443
+  server: 172.66.168.209
+  sni: uSa-vp-27.bLAzECLOUD.SITE
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /linkvkws
+- name: 2|🇺🇸23 |  1.2MB/s|32%|Openai
+  network: ws
+  password: 072f4db4-d89d-420d-9d9e-045ed8d5c9cc
+  port: 443
+  server: 104.21.57.88
+  skip-cert-verify: false
+  sni: 10tyu.iran.pp.ua
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: 10tyu.iran.pp.ua
+    path: /VEP415T5mby2DulPWRIwOavJd
+- name: 2|🇺🇸24 |  1.0MB/s|29%|Openai
+  network: ws
+  password: 3d4ad187-b554-4300-bf71-d26c71962504
+  port: 443
+  server: 172.67.138.187
+  sni: FFfgtyy.7282728.XYZ
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /WaHA3RC540rQ8PWqRcOEICAwmfH7
+- alpn:
+  - http/1.1
+  name: 2|🇺🇸25 |  6.2MB/s|0%|Openai
+  network: ws
+  password: fefba36d-5142-42f1-b14d-db5249511d93
+  port: 443
+  server: 104.21.61.154
+  skip-cert-verify: false
+  sni: 5dfg.191266.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /BFBuPh4SuxTxCwkqKrjE
+- name: 2|🇺🇸26 |  5.0MB/s|0%|Netflix|Dis...
+  network: ws
+  password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
+  port: 443
+  server: 104.21.26.17
+  skip-cert-verify: true
+  sni: m9rrrfgh.459.pp.ua
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      host: m9rrrfgh.459.pp.ua
+    path: /l6lvY4hFZriQDBimbKYmPIggy
+- alpn:
+  - http/1.1
+  name: 2|🇺🇸27 |  2.8MB/s|50%|Openai
+  network: ws
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
+  port: 443
+  server: 104.21.23.162
+  skip-cert-verify: false
+  sni: D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /OYzPAeaZdXUq2d6J3gc4aj
+- alpn:
+  - http/1.1
+  name: 2|🇺🇸28 |  5.9MB/s|32%|Openai
+  network: ws
+  password: 4be20cf1-6af1-4e87-ae5a-80d6ec30fecd
+  port: 443
+  server: 172.67.214.21
+  skip-cert-verify: false
+  sni: 8io09.191268.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /tvowuLtlha3zxRV9PS
+- alpn:
+  - http/1.1
+  name: 2|🇺🇸29 |  5.8MB/s|0%|Openai
+  network: ws
+  password: fefba36d-5142-42f1-b14d-db5249511d93
+  port: 443
+  server: 104.21.82.39
+  skip-cert-verify: false
+  sni: 5ttt.191288.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    path: /BFBuPh4SuxTxCwkqKrjE
+- name: 2,14|AT_speednode_0002
+  network: ws
+  port: 443
+  server: 212.183.88.51
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  ws-opts:
+    headers:
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
+- name: 2,14|US_speednode_0060
   network: ws
   port: 80
-  server: 45.8.211.61
+  server: 66.81.247.175
   servername: ipsycho.suex12.ir
   skip-cert-verify: true
   tls: false
@@ -569,60 +354,1150 @@ proxies:
     headers:
       Host: ipsycho.suex12.ir
     path: /re5IzbZ9IZZMddtw?ed=2560
-- name: 1,14|KR_speednode_0026
+- name: 2,14|KR_speednode_0027
   network: ws
-  password: '!!str 0588'
   port: 50000
-  server: 175.203.30.93
+  server: 112.164.234.135
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  ws-opts:
+    headers:
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
+- name: 2,14|US_speednode_0058
+  network: ws
+  port: 80
+  server: 23.134.82.2
+  servername: reedfree8mahsang2.redorg.ir
   skip-cert-verify: true
-  sni: 888.uskm.dpdns.org
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
+- ip-version: dual
+  name: 2|🇺🇸34 |  2.6MB/s|0%|Disney|Open...
+  network: ws
+  password: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
+  port: 443
+  server: 172.67.135.37
+  sni: m9rrrfgh.459.pp.ua
   type: trojan
   udp: true
   ws-opts:
-    headers:
-      Host: 888.uskm.dpdns.org
-    path: /?ed=2560
+    path: /l6lvY4hFZriQDBimbKYmPIggy
 - alpn:
   - http/1.1
   ip-version: dual
-  name: 1|🇺🇸55 |  3.6MB/s|29%|Openai
+  name: 2|🇺🇸35 |  2.2MB/s|29%|Openai
   network: ws
   password: 1549e70f-dc57-45e3-ac7c-515f0161db72
   port: 443
-  server: 104.21.7.147
+  server: 172.67.155.140
   skip-cert-verify: false
   sni: 6667.HUAnGSHanG.dpdNs.orG
   type: trojan
   udp: true
   ws-opts:
     path: /TomYJoQX0RSt1mktNrT
-- name: 1|🇺🇸56 |  3.2MB/s|46%|Openai|Gem...
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+- alterId: '0'
+  cipher: auto
+  name: 2|🇺🇸59 |  3.4MB/s|32%|Netflix|Di...
+  network: ws
+  port: '2096'
+  server: 141.101.120.253
+  servername: 1746882891.speed.adl.cccp.freefly.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  ws-opts:
+    headers:
+      Host: 1746882891.speed.adl.cccp.freefly.pp.ua
+    path: /
+  xudp: true
+- name: 2|🇺🇸37 |  1.9MB/s|46%|Openai|Gem...
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
-  server: 4cd97367-sw7j40-swy6li-tni2.cu.plebai.net
+  server: eccd74b4-sw7j40-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: false
+  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 2|🇺🇸38 |  2.0MB/s|0%|Openai|Gemi...
+  network: ws
+  port: 443
+  server: gs03-1.guoshi1520.com
+  servername: gs03-1.guoshi1520.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 82ff6d30-2920-4ebd-b95c-b016ede1a841
+  ws-opts:
+    headers:
+      Host: gs03-1.guoshi1520.com
+    path: /82ff6d30
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: 2|🇺🇸39 |  1.1MB/s|0%|Netflix|Dis...
+  network: ws
+  port: '443'
+  server: 104.17.210.171
+  servername: vless10-9sc.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: c98a16e4-0dc5-42f0-b3db-30f04525c123
+  ws-opts:
+    headers:
+      Host: vless10-9sc.pages.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: ''
+  xudp: true
+- name: 2|🇺🇸40 |  5.4MB/s|0%|Disney|Open...
+  network: ws
+  port: '8880'
+  server: 104.17.148.22
+  type: vless
+  udp: true
+  uuid: 6ec52bc7-fcd7-4841-ab69-70d6e03a6eda
+  ws-opts:
+    headers:
+      Host: www.speedtest.net.zula.ir.cfw1.afhudvbhgfnet.ddns-ip.nEt.
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸41 |  3.9MB/s|50%|Openai
+  network: ws
+  port: '443'
+  server: 104.21.61.154
+  servername: ddFR.191266.XYZ
+  tls: true
+  type: vless
+  udp: true
+  uuid: 114ad614-fe6c-4422-b0af-be6161190d7a
+  ws-opts:
+    headers:
+      Host: ddfr.191266.xyz
+      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9195 Build/KOT49H)
+        AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile
+        Safari/537.36
+    path: /C1SukvGdr58yeduy9AOG
+  xudp: true
+- client-fingerprint: chrome
+  name: 2|🇺🇸42 |  1.2MB/s|0%|Disney|Open...
+  network: ws
+  port: '443'
+  server: 104.16.108.84
+  servername: shutu.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: a89357b8-a501-46bd-ac6d-c0f37f1fd0f5
+  ws-opts:
+    headers:
+      Host: shutu.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/70.0.3538.102 Safari/537.36
+    path: ''
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸43 |  5.8MB/s|32%|Openai
+  network: ws
+  port: '443'
+  server: 172.67.212.82
+  servername: 6ercvbnm.131.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: f82fb954-06a1-4f0b-9180-17e07585b61f
+  ws-opts:
+    headers:
+      Host: 6ercvbnm.131.pp.ua
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /0HKVAwzpuQtCNTI3SlZor0
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸44 |  3.0MB/s|0%|Netflix|Dis...
+  network: ws
+  port: '443'
+  server: 172.67.135.37
+  servername: m9rrrfgh.459.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
+  ws-opts:
+    headers:
+      Host: m9rrrfgh.459.pp.ua
+      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.102 Safari/537.36
+    path: /vUUL3CyENdTbFYDBimbKYmPIggy
+  xudp: true
+- client-fingerprint: chrome
+  name: 2|🇺🇸45 |  6.0MB/s|0%|Youtube|Ope...
+  network: ws
+  port: '443'
+  server: 104.21.69.41
+  servername: MAs10xyZ.890602.XyZ
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4f3f7db1-f416-473e-8321-b2cec71c04ab
+  ws-opts:
+    headers:
+      Host: mas10xyz.890602.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/45.0.2454.93 Safari/537.36
+    path: /YzFLmzNIEQsAmceLxv94lPbgMw
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸46 |  5.9MB/s|0%|Netflix|Dis...
+  network: ws
+  port: '443'
+  server: 172.67.219.196
+  servername: 4.852224.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9e7caa3b-ca9c-40ba-9ea0-f0c992359239
+  ws-opts:
+    headers:
+      Host: 4.852224.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /VHDGmboDYeMcCs9
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸47 |  5.7MB/s|32%|Openai
+  network: ws
+  password: f82fb954-06a1-4f0b-9180-17e07585b61f
+  port: '443'
+  server: 172.67.212.82
+  skip-cert-verify: false
+  sni: 6tyu.131.pp.ua
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/46.0.2490.86 Safari/537.36
+    path: /Yu29UN3Yz8hcnI3SlZor0
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸48 |  4.0MB/s|0%|Disney|Open...
+  network: ws
+  port: '443'
+  server: 104.21.26.17
+  servername: m9rrrfgh.459.pp.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4f435a3a-dfb8-4c90-b637-8df8c5d44550
+  ws-opts:
+    headers:
+      Host: m9rrrfgh.459.pp.ua
+      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /vUUL3CyENdTbFYDBimbKYmPIggy
+  xudp: true
+- client-fingerprint: chrome
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 2|🇺🇸49 |  5.5MB/s|55%|Openai
+  network: tcp
+  port: '443'
+  server: 15.204.150.39
+  servername: 147135001178.sec22org.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸50 |  5.8MB/s|29%|Openai
+  network: ws
+  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  port: '443'
+  server: 104.21.35.247
+  skip-cert-verify: false
+  sni: ff.HuangSHANg2030.DPDnS.oRg
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Linux; Android 8.0.0; WAS-LX3 Build/HUAWEIWAS-LX3)
+        AppleWebKit/537.36 (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /ptGwaGzcA4KNAXX
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸51 |  5.8MB/s|30%|Openai
+  network: ws
+  port: '443'
+  server: 104.21.38.48
+  servername: 4rRrRRRrRrRRrrTTtTtttTyyYYyYyyyiIIiIIIiooOOOoooooOoo.HUAngdi2031.dPDns.ORG
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0a23af3f-3f9b-4333-ae89-796f7fe2f9ce
+  ws-opts:
+    headers:
+      Host: 4rrrrrrrrrrrrrttttttttyyyyyyyyyiiiiiiiiooooooooooooo.huangdi2031.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.77 Safari/537.36
+    path: /25Rajr8UdFGa29fCwxS
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸52 |  1.0MB/s|29%|Openai
+  network: ws
+  port: '443'
+  server: 172.67.193.228
+  servername: M3vVvbNFFfG.777289.XyZ
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53721970-2138-4263-8c9c-21397e759c06
+  ws-opts:
+    headers:
+      Host: m3vvvbnfffg.777289.xyz
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /Bt93qlsreYHzV5Ii9WW
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸53 |  2.4MB/s|32%|Openai
+  network: ws
+  port: '443'
+  server: 172.67.152.170
+  servername: 8uio0.191288.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4be20cf1-6af1-4e87-ae5a-80d6ec30fecd
+  ws-opts:
+    headers:
+      Host: 8uio0.191288.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.110 Safari/537.36
+    path: /4U4Is3KKzxRV9PS
+  xudp: true
+- client-fingerprint: chrome
+  name: 2|🇺🇸54 |  1.2MB/s|0%|Disney|Open...
+  network: ws
+  port: '2083'
+  server: 104.16.206.78
+  servername: teslakit1.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: c2e177d4-e610-4abd-85cd-1a869d158751
+  ws-opts:
+    headers:
+      Host: teslakit1.pages.dev
+      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; SM-G7102 Build/KOT49H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: ''
+  xudp: true
+- client-fingerprint: chrome
+  name: 2|🇺🇸55 |  5.8MB/s|0%|Youtube|Ope...
+  network: ws
+  port: '443'
+  server: 172.67.204.22
+  servername: MAs10xyZ.890602.XyZ
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4f3f7db1-f416-473e-8321-b2cec71c04ab
+  ws-opts:
+    headers:
+      Host: mas10xyz.890602.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/40.0.2214.115 Safari/537.36
+    path: /YzFLmzNIEQsAmceLxv94lPbgMw
+  xudp: true
+- client-fingerprint: chrome
+  name: 2|🇺🇸56 |  6.0MB/s|0%|Openai
+  network: ws
+  password: aTArbZ2F0E
+  port: '443'
+  server: 172.66.168.213
+  skip-cert-verify: false
+  sni: uSa-vp-27.bLAzECLOUD.SITE
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    path: /linkvkws
+- client-fingerprint: chrome
+  name: 2|🇺🇸57 |  1.2MB/s|0%|Disney|Open...
+  network: ws
+  port: '2083'
+  server: 104.16.213.133
+  servername: myv2ray-4xs.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7f56467b-597a-4549-b3a7-2288c47a1d86
+  ws-opts:
+    headers:
+      Host: myv2ray-4xs.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: ''
+  xudp: true
+- client-fingerprint: chrome
+  name: 2|🇺🇸58 |  5.9MB/s|Netflix|Openai...
+  password: RlzoEILU
+  port: '7815'
+  server: 36.151.251.59
   skip-cert-verify: true
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 8c9bb01c-b33e-464e-88c4-dedddf9bab8d
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 8c9bb01c-b33e-464e-88c4-dedddf9bab8d
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸60 |  4.4MB/s|29%|Openai
+  network: ws
+  port: '443'
+  server: 104.21.83.113
+  servername: m11SdFgRw4rTy.859886.XYZ
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 03 | 1x US Washington
-  password: 8c9bb01c-b33e-464e-88c4-dedddf9bab8d
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
+  uuid: 0a28b420-4f7c-43ad-a29e-80068ce08263
+  ws-opts:
+    headers:
+      Host: m11sdfgrw4rty.859886.xyz
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
+    path: /dKFj3vjbdiwxY9TZlulnnYPb86csp
+  xudp: true
+- client-fingerprint: chrome
+  name: 2|🇺🇸61 |  1.3MB/s|0%|Disney|Open...
+  network: ws
+  port: '2083'
+  server: 104.24.249.125
+  servername: 8.kongcheng666.dpdns.org
+  tls: true
+  type: vless
   udp: true
+  uuid: a9bc52a0-7993-4bd8-9326-0330b1a7f698
+  ws-opts:
+    headers:
+      Host: 8.kongcheng666.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 6.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /?ed=2560fp=randomfp=chrome
+  xudp: true
+- client-fingerprint: chrome
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 2|🇺🇸62 |  5.2MB/s|55%|Openai
+  network: tcp
+  port: '443'
+  server: 15.204.145.23
+  servername: 147135001178.sec22org.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e20ebe01-1815-4c09-8e77-fb2f168263ce
+  xudp: true
+- client-fingerprint: chrome
+  name: 2|🇺🇸63 |  1.5MB/s|30%|Disney|Ope...
+  network: ws
+  port: '443'
+  server: 172.66.45.20
+  servername: M2-1CM.paGes.DeV
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0ef0630e-544c-4ed0-a4de-861f14695f37
+  ws-opts:
+    headers:
+      Host: M2-1CM.paGes.DeV
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/55.0.2883.87 Safari/537.36
+    path: /ognicwivyrkxih6r
+  xudp: true
+- client-fingerprint: chrome
+  name: 2|🇺🇸64 |  4.6MB/s|0%|Disney|Open...
+  network: ws
+  port: '443'
+  server: 104.16.114.221
+  servername: kawaiifreevpn.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 90d7db9b-972b-4073-8738-12cf42124260
+  ws-opts:
+    headers:
+      Host: kawaiifreevpn.pages.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.110 Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- name: 2|🇺🇸65 |  5.5MB/s|0%|Netflix|Ope...
+  network: ws
+  port: '80'
+  server: 45.131.210.157
+  servername: 1224.j9q1xuv8.workers.dev
+  type: vless
+  udp: true
+  uuid: daf24a6d-2f78-4cab-867a-4da0f4c91cff
+  ws-opts:
+    headers:
+      Host: 1224.j9q1xuv8.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/53.0.2785.143 Safari/537.36
+    path: /Telegram
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸66 |  2.1MB/s|50%|Openai
+  network: ws
+  port: '443'
+  server: ddfr.191266.xyz
+  servername: ddFR.191266.XYZ
+  tls: true
+  type: vless
+  udp: true
+  uuid: 114ad614-fe6c-4422-b0af-be6161190d7a
+  ws-opts:
+    headers:
+      Host: ddfr.191266.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.89 Safari/537.36
+    path: /C1SukvGdr58yeduy9AOG
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸67 |  4.5MB/s|29%|Openai
+  network: ws
+  port: '443'
+  server: 172.67.181.193
+  servername: dRT.hUaNgSHAnG2030.DPDnS.Org
+  tls: true
+  type: vless
+  udp: true
+  uuid: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  ws-opts:
+    headers:
+      Host: drt.huangshang2030.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 5.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/46.0.2490.71 Safari/537.36
+    path: /6r23FpdcA4KNAXX
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸68 |  3.4MB/s|50%|Openai
+  network: ws
+  port: '443'
+  server: 172.67.212.82
+  servername: 1WWEeRt.131.pP.uA
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+  ws-opts:
+    headers:
+      Host: 1wweert.131.pp.ua
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/68.0.3440.75 Safari/537.36
+    path: /XcQF058rNJ3gc4aj
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸69 |  5.7MB/s|100%|Openai
+  network: ws
+  port: '443'
+  server: 104.21.35.247
+  servername: 3edcvb.huangshang2030.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53249200-30ff-436f-a032-0bb00605f8f9
+  ws-opts:
+    headers:
+      Host: 3edcvb.huangshang2030.dpdns.org
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/67.0.3396.87 Safari/537.36
+    path: /MgovppNO6WZwOCU5JqXZxjQ5ILc
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸70 |  2.7MB/s|50%|Openai
+  network: ws
+  port: '443'
+  server: 104.21.22.133
+  servername: 1SsdDdfFffHhHJjJJ.20220420.PP.ua
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+  ws-opts:
+    headers:
+      Host: 1ssdddffffhhhjjjj.20220420.pp.ua
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /XcQF058rNJ3gc4aj
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸71 |  5.8MB/s|29%|Openai
+  network: ws
+  port: '443'
+  server: 104.21.11.194
+  servername: m4dfghu.999358.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: ced307a2-af2c-4113-bebc-fb888c702b7d
+  ws-opts:
+    headers:
+      Host: m4dfghu.999358.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/45.0.2454.93 Safari/537.36
+    path: /a2YATZF8eZrBwsbnEcmJLxC
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸72 |  1.0MB/s|0%|Netflix|Dis...
+  network: ws
+  port: '443'
+  server: 172.67.170.147
+  servername: m5rtghj.999854.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4069c35c-54ea-48ee-9ffa-05d9a0302043
+  ws-opts:
+    headers:
+      Host: m5rtghj.999854.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+    path: /GsJV4ORk0e0CScyGqcQZW
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇺🇸73 |  1.9MB/s|Openai
+  network: ws
+  port: '443'
+  server: 172.67.163.14
+  servername: 1QQsSS.2031.PP.UA
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5453ae26-250d-4e79-b4ec-016baf806865
+  ws-opts:
+    headers:
+      Host: 1qqsss.2031.pp.ua
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: /XcQF058rNJ3gc4aj
+  xudp: true
+- name: 2|🇺🇸75 |  4.7MB/s|0%|Disney|Open...
+  network: ws
+  port: '2095'
+  server: 162.159.153.2
+  type: vless
+  udp: true
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: fuckingxijinping.xijinpingbigsb.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/47.0.2526.111 Safari/537.36 MVisionPlayer/1.0.0.0
+    path: /?ed=2560
+  xudp: true
+- down: ''
+  fingerprint: ''
+  name: '2,10|🅼🅴🅷🅳🅸 #1'
+  obfs: ''
+  obfs-password: ''
+  password: dongtaiwang.com
+  port: 57773
+  server: 108.181.5.130
+  skip-cert-verify: true
+  sni: apple.com
+  tls: false
+  type: hysteria2
+  up: ''
+- down: ''
+  fingerprint: ''
+  name: 2|🇺🇸77 |  3.8MB/s|20%|Disney|Ope...
+  obfs: ''
+  obfs-password: ''
+  password: b72ba5d5-2d5e-45b7-93b5-236d343baa7c
+  port: '47262'
+  server: 64.181.207.162
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
+- down: ''
+  fingerprint: ''
+  name: 2|🇺🇸78 |  4.5MB/s|47%|Netflix|Op...
+  obfs: ''
+  obfs-password: ''
+  password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
+  port: '443'
+  server: 208.87.242.215
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
+- alpn:
+  - h3
+  auth_str: dongtaiwang.com
+  down: 1000 Mbps
+  name: 2|🇺🇸79 |  5.3MB/s|47%|Openai
+  port: 17549
+  server: 208.87.243.151
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria
+  up: 1000 Mbps
+- flow: ''
+  mode: ''
+  name: 2|🇺🇸80 |  3.8MB/s|100%|Openai
+  network: ws
+  port: 443
+  server: 172.67.181.193
+  servername: 3edcvb.huangshang2030.dpdns.org
+  tls: true
+  type: vless
+  udp: false
+  uuid: 53249200-30ff-436f-a032-0bb00605f8f9
+  ws-opts:
+    headers:
+      Host: 3edcvb.huangshang2030.dpdns.org
+    path: /MgovppNO6WZwOCU5JqXZxjQ5ILc
+- name: 2|🇺🇸81 |  5.6MB/s|0%|Openai
+  port: 443
+  server: fdbb8d8d-sw3ts0-swy6li-tni2.sv.plebai.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸82 |  4.2MB/s|0%|Openai
+  port: 443
+  server: 1757b2d3-svwf40-swy6li-tni2.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸83 |  5.5MB/s|0%|Openai
+  port: 443
+  server: 894526ae-svjgg0-swy6li-tni2.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸84 |  1.5MB/s|46%|Openai
+  port: 443
+  server: 66024b5e-svsps0-t28b6o-ef48.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸85 |  5.5MB/s|0%|Openai
+  port: 443
+  server: 7a3baf51-sw7j40-t1bnjq-1krtb.sv.plebai.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸86 |  2.2MB/s|46%|Openai
+  port: 443
+  server: 9e43eb01-svwf40-t1bnjq-1krtb.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸87 |  1.3MB/s|0%|Openai
+  port: 443
+  server: 57487dd3-svp0g0-t28b6o-ef48.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸88 |  1.6MB/s|0%|Openai
+  port: 443
+  server: da05e228-sw5og0-t1bnjq-1krtb.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸89 |  1.4MB/s|46%|Openai
+  port: 443
+  server: 55126fe5-svqv40-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸90 |  3.5MB/s|0%|Openai
+  port: 443
+  server: 4a62e2a3-sw5og0-swy6li-tni2.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸91 |  5.0MB/s|0%|Openai
+  port: 443
+  server: c2284d70-svhls0-t28b6o-ef48.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸92 |  5.5MB/s|0%|Openai
+  port: 443
+  server: d24ab7c0-svp0g0-t1bnjq-1krtb.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸93 |  5.5MB/s|46%|Openai
+  port: 443
+  server: c8564247-svp0g0-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸94 |  5.4MB/s|0%|Openai
+  port: 443
+  server: d7157d7f-sw1z40-t1bnjq-1krtb.sv.plebai.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸95 |  4.9MB/s|0%|Openai
+  port: 443
+  server: d34be828-svc1s0-t1bnjq-1krtb.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸96 |  4.0MB/s|0%|Openai
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 443
+  server: ef1fe606-sw9ds0-t1bnjq-1krtb.sj.gotochinatown.net
+  tls: true
+  type: http
+  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- name: 2|🇺🇸97 |  2.2MB/s|0%|Openai
+  port: 443
+  server: 12237308-svn5s0-t28b6o-ef48.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸98 |  5.6MB/s|0%|Openai
+  port: 443
+  server: 20f478f4-sw3ts0-t1bnjq-1krtb.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸99 |  5.5MB/s|46%|Openai
+  port: 443
+  server: f130abb9-svfr40-t28b6o-ef48.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸100 |  2.2MB/s|46%|Openai
+  port: 443
+  server: 5ec02733-svsps0-t1bnjq-1krtb.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸101 |  3.1MB/s|46%|Openai
+  port: 443
+  server: 52a433f1-svsps0-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸102 |  1.5MB/s|0%
+  port: 443
+  server: fd6eeb0d-sw7j40-swy6li-tni2.sv.plebai.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸103 |  2.0MB/s|0%|Openai
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 443
+  server: 347f200e-sw7j40-t1bnjq-1krtb.sj.gotochinatown.net
+  tls: true
+  type: http
+  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- name: 2|🇺🇸104 |  1.6MB/s|0%|Openai
+  port: 443
+  server: 0c755197-svhls0-t1bnjq-1krtb.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸105 |  1.8MB/s|0%|Openai
+  port: 443
+  server: c6d18214-sw04g0-t1bnjq-1krtb.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸106 |  1.6MB/s|46%|Openai
+  port: 443
+  server: 4931f1e1-sw04g0-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸107 |  5.4MB/s|46%|Openai
+  port: 443
+  server: 80fe2901-svc1s0-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸108 |  3.2MB/s|46%|Openai
+  port: 443
+  server: 4c7dc40e-svn5s0-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸109 |  2.6MB/s|46%|Openai
+  port: 443
+  server: dbd2bf6a-svdwg0-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸110 |  5.7MB/s|0%|Openai
+  port: 443
+  server: 6c39e127-svdwg0-t28b6o-ef48.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- auth: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  name: 2|🇺🇸111 |  1.1MB/s|46%
+  password: 20f87b02-0eaa-11eb-8684-f23c913c8d2b
+  port: 8443
+  server: 50b8214a-suz340-sx19e8-gacy.hy2.gotochinatown.net
+  skip-cert-verify: false
+  sni: 50b8214a-suz340-sx19e8-gacy.hy2.gotochinatown.net
+  type: hysteria2
+- name: 2|🇺🇸112 |  3.6MB/s|0%|Openai
+  port: 443
+  server: 3d772104-svdwg0-t1bnjq-1krtb.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸113 |  3.2MB/s|46%|Openai
+  port: 443
+  server: 5f99ea51-sw04g0-t1bnjq-1krtb.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸114 |  2.8MB/s|46%|Openai
+  port: 443
+  server: db402f78-svfr40-t1bnjq-1krtb.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸115 |  2.1MB/s|46%|Openai
+  port: 443
+  server: c25aec5b-sw7j40-t1bnjq-1krtb.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸116 |  1.3MB/s|46%|Openai
+  port: 443
+  server: e320d05b-svdwg0-t1bnjq-1krtb.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸117 |  1.4MB/s|0%|Openai
+  port: 443
+  server: d8f8c1e0-svfr40-t1bnjq-1krtb.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- auth: 19c08ccc-3281-4155-b8fd-c407f7008bbf
+  name: 2|🇺🇸118 |  1.9MB/s|29%|Openai|Ge...
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 19c08ccc-3281-4155-b8fd-c407f7008bbf
+  port: 13301
+  server: baipiaoyun-us-la.baipiaoyun.site
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
+  udp: true
+- name: 2|🇺🇸119 |  1.9MB/s|0%|Openai
+  port: 443
+  server: ca6fc118-svsps0-swy6li-tni2.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- auth: 9ad05870-d8c5-11ef-9f1c-f23c913c8d2b
+  name: 2|🇺🇸120 |  1.4MB/s|46%
+  password: 9ad05870-d8c5-11ef-9f1c-f23c913c8d2b
+  port: 8443
+  server: ce8ae4b9-svn5s0-swbt02-g3b3.hy2.gotochinatown.net
+  sni: ce8ae4b9-svn5s0-swbt02-g3b3.hy2.gotochinatown.net
+  type: hysteria2
+  udp: true
+- name: 2|🇺🇸121 |  3.8MB/s|46%|Openai
+  port: 443
+  server: f2772bb7-sw3ts0-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸122 |  4.4MB/s|46%|Openai
+  port: 443
+  server: 9b7390a1-svy9s0-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸123 |  3.1MB/s|46%|Openai
+  port: 443
+  server: 42279e1c-svp0g0-t28b6o-ef48.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸124 |  1.8MB/s|46%|Openai
+  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+  port: 443
+  server: ddbafdeb-sw9ds0-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: http
+  username: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
+- name: 2|🇺🇸125 |  2.2MB/s|0%|Openai
+  port: 443
+  server: 77b153ed-svqv40-swy6li-tni2.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸126 |  3.1MB/s|0%|Openai
+  port: 443
+  server: 5d6a4c96-svy9s0-swy6li-tni2.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸127 |  1.9MB/s|46%|Openai
+  port: 443
+  server: 0c7fa052-svjgg0-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸128 |  1.4MB/s|46%|Openai
+  port: 443
+  server: 88316701-svhls0-t28b6o-ef48.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸129 |  5.1MB/s|0%|Openai
+  port: 443
+  server: fc95e187-sw04g0-swy6li-tni2.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸130 |  1.8MB/s|0%|Openai
+  port: 443
+  server: 95c5aeb9-sw04g0-swy6li-tni2.sv.plebai.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸131 |  2.7MB/s|0%|Openai
+  port: 443
+  server: 0b366624-svdwg0-swy6li-tni2.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸132 |  2.1MB/s|Openai
+  port: 443
+  server: 7b32e8a2-sw5og0-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸133 |  3.0MB/s|46%|Openai
+  port: 443
+  server: c96dfa8f-svjgg0-t28b6o-ef48.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸134 |  2.4MB/s|46%|Openai
+  port: 443
+  server: 5e26927f-svfr40-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸135 |  4.4MB/s|0%|Openai
+  port: 443
+  server: e3c570fd-svhls0-swy6li-tni2.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸136 |  2.8MB/s|0%|Openai
+  port: 443
+  server: f8f8fe13-sw1z40-swy6li-tni2.sv.plebai.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸137 |  5.3MB/s|0%|Openai
+  port: 443
+  server: 08603d49-svukg0-swy6li-tni2.sj.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸138 |  3.2MB/s|46%|Openai
+  port: 443
+  server: 11ca0a78-svqv40-t28b6o-ef48.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸139 |  5.2MB/s|46%|Openai
+  port: 443
+  server: f1d3cc44-svn5s0-t28b6o-ef48.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸140 |  5.3MB/s|46%|Openai
+  port: 443
+  server: f7c80a8d-svc1s0-t28b6o-ef48.los.gotochinatown.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸141 |  5.2MB/s|46%|Openai
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 443
+  server: c25aec5b-sw7j40-t1bnjq-1krtb.los.gotochinatown.net
+  tls: true
+  type: http
+  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+- name: 2|🇺🇸142 |  3.5MB/s|0%|Openai
+  port: 443
+  server: ed97bb38-sw04g0-t1bnjq-1krtb.sv.plebai.net
+  tls: true
+  type: socks5
+- name: 2|🇺🇸143 |  1.3MB/s|46%|Openai
+  port: 443
+  server: 2a1f5176-svlb40-swy6li-tni2.los.gotochinatown.net
+  tls: true
+  type: socks5
+- delay: 1124
+  down: ''
+  fingerprint: ''
+  name: 2|🇺🇸144 |  2.0MB/s|47%|Disney|Op...
+  obfs: ''
+  obfs-password: ''
+  password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
+  port: 443
+  server: 208.87.242.189
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
+- delay: 820
+  down: ''
+  fingerprint: ''
+  name: 2|🇺🇸145 |  2.2MB/s|47%|Disney|Op...
+  obfs: ''
+  obfs-password: ''
+  password: b8bd42a9-551f-419d-b70d-4aefdd2cb074
+  port: 443
+  server: 208.87.242.79
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  delay: 2487
+  name: 2|🇺🇸146 |  5.0MB/s|Openai
+  network: ws
+  port: 443
+  server: 104.21.83.113
+  servername: S859886xYZXs.859886.xYz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0a23af3f-3f9b-4333-ae89-796f7fe2f9ce
+  ws-opts:
+    headers:
+      Host: s859886xyzxs.859886.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /25Rajr8UdFGa29fCwxS
+  xudp: true
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -652,6 +1527,23 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12,13|美国4|@ripaojiedian
+  network: ws
+  port: '22642'
+  server: tk.hzlt.tkddns.xyz
+  servername: zxjp-b.tkong.cc
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-b.tkong.cc
+    path: /
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
@@ -841,6 +1733,20 @@ proxies:
     headers:
       Host: 23-lsjfjwiposkfls.hc2021.cfd
     path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
+- name: 14|US_speednode_0054
+  network: ws
+  port: 80
+  server: 135.84.65.11
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: reedfree8mahsang2.redorg.ir
+    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
 - name: 14|US_speednode_0056
   network: ws
   port: 80
@@ -855,48 +1761,6 @@ proxies:
     headers:
       Host: 23-lsjfjwiposkfls.hc2021.cfd
     path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- name: 14|US_speednode_0057
-  network: ws
-  port: 80
-  server: 45.159.217.86
-  servername: ipsycho.suex12.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-    path: /re5IzbZ9IZZMddtw?ed=2560
-- name: 14|US_speednode_0058
-  network: ws
-  port: 80
-  server: 23.134.82.2
-  servername: reedfree8mahsang2.redorg.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-    path: /Telegram🇨🇳 @WangCai2 /?ed=2560
-- name: 14|US_speednode_0060
-  network: ws
-  port: 80
-  server: 66.81.247.175
-  servername: ipsycho.suex12.ir
-  skip-cert-verify: true
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-    path: /re5IzbZ9IZZMddtw?ed=2560
 - name: 14|US_speednode_0062
   network: ws
   port: 443

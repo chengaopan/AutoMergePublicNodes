@@ -1,21 +1,35 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港 02 | 1x HK
-  password: ea852714-3f27-41ee-9f03-964cc969679a
+  password: b1dacdad-be15-49b9-8772-4c6760f1072f
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: ea852714-3f27-41ee-9f03-964cc969679a
+  password: b1dacdad-be15-49b9-8772-4c6760f1072f
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: 060c8d0c-e9dd-4332-8944-100f15136df6
+  port: 36143
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 060c8d0c-e9dd-4332-8944-100f15136df6
+  port: 36145
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 1,14|HK_speednode_0022
+  name: 2,14|HK_speednode_0022
   port: 20550
   reality-opts:
     public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
@@ -26,20 +40,59 @@ proxies:
   type: vless
   udp: true
   uuid: 2d317da5-47c5-4db4-933f-16d1094668db
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰 香港 02 | 1x HK
-  password: 8c9bb01c-b33e-464e-88c4-dedddf9bab8d
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
+- name: 2,14|US_speednode_0057
+  network: ws
+  port: 80
+  server: 45.159.217.86
+  servername: ipsycho.suex12.ir
+  skip-cert-verify: true
+  tls: false
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 8c9bb01c-b33e-464e-88c4-dedddf9bab8d
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: ipsycho.suex12.ir
+    path: /re5IzbZ9IZZMddtw?ed=2560
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰3 |  3.7MB/s|16%|Disney|Yout...
+  network: ws
+  port: 8080
+  server: 64f6e0b2-sw1z40-t51bp0-1nyy5.hgc1.tcpbbr.net
+  servername: broadcastlv.chat.bilibili.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: 8f7cb770-1305-11ee-b107-f23c91cfbbc9
+  ws-opts:
+    headers:
+      Host: 64f6e0b2-sw1z40-t51bp0-1nyy5.hgc1.tcpbbr.net
+    path: /
+- client-fingerprint: chrome
+  name: 2|🇭🇰4 |  1.5MB/s|12%|Youtube
+  network: ws
+  port: '443'
+  server: 13.75.34.176
+  servername: hkklo.azurewebsites.net
+  tls: true
+  type: vless
   udp: true
+  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+  ws-opts:
+    headers:
+      Host: hkklo.azurewebsites.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/56.0.2924.87 Safari/537.36
+    path: ''
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰5 |  2.4MB/s|0%|Youtube
+  password: be443689-bc64-49ff-85a5-8eecaa2235d3
+  port: 41049
+  server: hk2.fgmcx.top
+  tfo: false
+  type: ss
 - client-fingerprint: chrome
   name: 12|🇭🇰 香港|@ripaojiedian
   network: ws
