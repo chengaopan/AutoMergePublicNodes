@@ -1,7 +1,16 @@
 proxies:
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 1|🇫🇷1 |  2.8MB/s|15%|Openai
+  password: dongtaiwang.com
+  port: 4489
+  server: 51.158.205.126
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - down: ''
   fingerprint: ''
-  name: 1|🇫🇷1 |  4.8MB/s|15%|Openai
+  name: 1|🇫🇷2 |  1.6MB/s|15%|Openai
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -11,53 +20,40 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   up: ''
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 1|🇫🇷2 |  5.8MB/s|15%|Openai
-  password: dongtaiwang.com
-  port: 4489
-  server: 51.158.205.126
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  delay: 1652
-  down: 55
-  name: 1|🇫🇷3 |  3.9MB/s|0%|Youtube|Open...
-  port: 46938
-  protocol: udp
-  server: 195.154.200.178
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 11
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  delay: 1608
-  down: 100
-  name: 1|🇫🇷4 |  1.8MB/s|15%|Openai
-  port: 14241
-  protocol: udp
-  server: 51.159.226.1
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 100
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 1|🇫🇷5 |  2.9MB/s|Openai
+  name: 1|🇫🇷3 |  4.8MB/s|100%|Openai
   network: ws
   port: 443
   server: 188.114.97.2
-  servername: obdii.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alterId: 0
+  cipher: auto
+  name: 1|🇫🇷4 |  5.5MB/s|100%|Openai
+  network: ws
+  port: 443
+  server: 172.67.71.160
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+- alterId: '0'
+  cipher: auto
+  name: 1|🇫🇷5 |  1.9MB/s|100%|Openai
+  network: ws
+  port: '443'
+  server: 104.26.0.95
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -68,30 +64,25 @@ proxies:
       Host: obdii.cfd
     path: /linkws
   xudp: true
-- alterId: 0
-  cipher: auto
+- alpn:
+  - http/1.1
   client-fingerprint: chrome
-  name: 1|🇫🇷6 |  4.5MB/s|Openai
+  name: 1|🇫🇷6 |  3.1MB/s|30%|Openai
+  network: tcp
+  password: telegram-id-privatevpns
+  port: '22222'
+  server: 15.236.61.44
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alterId: '0'
+  cipher: auto
+  name: 1|🇫🇷7 |  5.1MB/s|100%|Netflix|Op...
   network: ws
   port: 443
   server: 188.114.96.2
-  servername: obdii.cfd
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 1|🇫🇷7 |  5.4MB/s|100%|Openai
-  network: ws
-  port: 443
-  server: 162.159.152.2
-  servername: obdii.cfd
-  skip-cert-verify: true
-  tfo: false
+  skip-cert-verify: false
   tls: true
   type: vmess
   udp: true
@@ -100,23 +91,8 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
-- delay: 2606
-  name: 1|🇫🇷8 |  5.4MB/s|15%|Openai
-  network: ws
-  port: 8080
-  server: tgju.org
-  servername: IO.IhJtq0hklC.ZULAiR.OrG.
-  type: vless
-  udp: true
-  uuid: 690ab90e-3f21-422b-8cb1-bc9845c7af1e
-  ws-opts:
-    headers:
-      Host: IO.IhJtq0hklC.ZULAiR.OrG.
-      User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko)
-        Chrome/v1.0.0 Safari/538.1
-    path: /
   xudp: true
-- name: 14|FR_speednode_0157
+- name: 13|FR_speednode_0157
   network: ws
   port: 80
   server: 46.8.224.211
