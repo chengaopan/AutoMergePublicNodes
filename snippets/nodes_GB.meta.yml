@@ -1,30 +1,51 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 01 | 1x HK
-  password: 841e0479-8348-40a6-97fc-06ce7132ad2f
+  name: 0|🇭🇰 香港 01 | 1x HK
+  password: e581c2d6-8c9c-4d53-a319-2a2baece9042
+  port: 36141
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
+  password: e581c2d6-8c9c-4d53-a319-2a2baece9042
+  port: 36271
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: 788fe05b-e1ef-41c2-9c6e-68224ff0ccac
   port: 31141
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧英国家宽 01 | 1x UK
-  password: 841e0479-8348-40a6-97fc-06ce7132ad2f
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: 788fe05b-e1ef-41c2-9c6e-68224ff0ccac
   port: 31271
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- down: ''
-  fingerprint: ''
-  name: 1|🇬🇧1 |  4.8MB/s|61%|Disney|Yout...
-  obfs: ''
-  obfs-password: ''
-  password: nfsn666
-  port: '8888'
-  server: ld-arm.nfsn666.gq
-  skip-cert-verify: true
-  sni: ld-arm.nfsn666.gq
-  type: hysteria2
-  up: ''
+- alpn:
+  - h2http/1.1
+  client-fingerprint: chrome
+  name: 2|🇬🇧1 |  5.9MB/s|44%|Openai
+  network: ws
+  port: '443'
+  server: www.speedtest.net
+  servername: SlZcZmPl2.ZuKaRiO.InFo
+  tls: true
+  type: vless
+  udp: true
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: SlZcZmPl2.ZuKaRiO.InFo
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.113 Safari/537.36
+    path: /
+  xudp: true
 - name: 14|GB_speednode_0158
   network: ws
   port: 80

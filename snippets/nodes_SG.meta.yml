@@ -1,34 +1,71 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 01 | 1x SG
-  password: 841e0479-8348-40a6-97fc-06ce7132ad2f
+  name: 0|🇸🇬 新加坡 01 | 1x SG
+  password: e581c2d6-8c9c-4d53-a319-2a2baece9042
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬 新加坡 02 | 1x SG
+  password: e581c2d6-8c9c-4d53-a319-2a2baece9042
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 01 | 1x SG
+  password: 788fe05b-e1ef-41c2-9c6e-68224ff0ccac
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 02 | 1x SG
-  password: 841e0479-8348-40a6-97fc-06ce7132ad2f
+  name: 1|🇸🇬新加坡 02 | 1x SG
+  password: 788fe05b-e1ef-41c2-9c6e-68224ff0ccac
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 03 | 1x SG
-  password: 841e0479-8348-40a6-97fc-06ce7132ad2f
+  name: 1|🇸🇬新加坡 03 | 1x SG
+  password: 788fe05b-e1ef-41c2-9c6e-68224ff0ccac
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 1,14|CN_speednode_0074
-  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
-  port: 35000
-  server: gzyd.cg.xxality.cn
-  skip-cert-verify: true
-  sni: cgsg2.hysality.com
-  type: trojan
+  flow: none
+  name: 2|🇸🇬1 |  3.4MB/s|Youtube|Openai
+  network: ws
+  port: '2096'
+  server: 141.193.213.20
+  servername: premium.vkehi.shop
+  tls: true
+  type: vless
   udp: true
+  uuid: 93be59b7-ebce-4aec-8e66-4470e06e58ae
+  ws-opts:
+    headers:
+      Host: premium.vkehi.shop
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/56.0.2924.87 Safari/537.36
+    path: '%2F'
+  xudp: true
+- name: 2|🇸🇬2 |  5.7MB/s|Youtube|Openai
+  network: ws
+  port: '8080'
+  server: 170.114.46.6
+  type: vless
+  udp: true
+  uuid: 291c27a5-34d2-4081-83cc-2196cd208148
+  ws-opts:
+    headers:
+      Host: xrr.rtxconfigz.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.79 Safari/537.36
+    path: ''
+  xudp: true
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
