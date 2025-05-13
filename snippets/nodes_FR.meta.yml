@@ -1,16 +1,7 @@
 proxies:
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 1|🇫🇷1 |  5.6MB/s|15%|Openai
-  password: dongtaiwang.com
-  port: 4489
-  server: 51.158.205.126
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - down: ''
   fingerprint: ''
-  name: 1|🇫🇷2 |  5.8MB/s|15%|Openai
+  name: 0|🇫🇷1 |  5.4MB/s|15%|Openai
   obfs: ''
   obfs-password: ''
   password: dongtaiwang.com
@@ -20,13 +11,22 @@ proxies:
   sni: www.bing.com
   type: hysteria2
   up: ''
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 0|🇫🇷2 |  5.2MB/s|15%|Openai
+  password: dongtaiwang.com
+  port: 4489
+  server: 51.158.205.126
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   delay: 1652
   down: 55
-  name: 1|🇫🇷3 |  1.8MB/s|0%|Openai
+  name: 0|🇫🇷3 |  3.4MB/s|0%|Youtube|Open...
   port: 46938
   protocol: udp
   server: 195.154.200.178
@@ -35,109 +35,13 @@ proxies:
   type: hysteria
   udp: true
   up: 11
-- alterId: 0
-  cipher: auto
-  name: 1|🇫🇷4 |  6.0MB/s|100%|Netflix|Op...
-  network: ws
-  port: 443
-  server: 172.67.71.160
-  servername: obdii.cfd
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: 0
-  cipher: auto
-  name: 1|🇫🇷5 |  2.8MB/s|100%|Openai
-  network: ws
-  port: 443
-  server: 104.21.31.62
-  servername: obdii.cfd
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-- alterId: '0'
-  cipher: auto
-  name: 1|🇫🇷8 |  3.2MB/s|100%|Openai
-  network: ws
-  port: 443
-  server: 172.67.175.56
-  servername: obdii.cfd
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
-  ws-opts:
-    headers:
-      Host: obdii.cfd
-    path: /linkws
-  xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: safari
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 1|🇫🇷7 |  1.7MB/s|50%|Youtube|Ope...
-  network: tcp
-  port: '443'
-  server: 91.134.88.205
-  servername: france.linceed.se
-  tls: true
-  type: vless
-  udp: true
-  uuid: 07eaf930-14df-4508-9ad3-d3aae5e10ab1
-  xudp: true
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
-  name: 1|🇫🇷9 |  1.4MB/s|0%|Youtube|Open...
-  network: grpc
-  port: '2030'
-  reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: 7fe29733
-  server: 141.227.138.11
-  servername: refersion.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 98e5553e-abcc-4c9a-941a-8f0e9741d541
-  xudp: true
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
-  name: 1|🇫🇷10 |  1.0MB/s|0%|Youtube|Ope...
-  network: grpc
-  port: '1210'
-  reality-opts:
-    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
-    short-id: 7fe29733
-  server: 141.227.138.11
-  servername: ubuntu.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 98e5553e-abcc-4c9a-941a-8f0e9741d541
-  xudp: true
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   delay: 1608
   down: 100
-  name: 1|🇫🇷11 |  3.6MB/s|15%|Openai
+  name: 0|🇫🇷4 |  2.1MB/s|15%|Openai
   port: 14241
   protocol: udp
   server: 51.159.226.1
@@ -148,10 +52,12 @@ proxies:
   up: 100
 - alterId: '0'
   cipher: auto
-  name: 1|🇫🇷12 |  4.1MB/s|100%|Netflix|O...
+  client-fingerprint: chrome
+  name: 0|🇫🇷11 |  3.1MB/s|100%|Openai
   network: ws
   port: 443
-  server: 188.114.96.2
+  server: 188.114.97.2
+  servername: obdii.cfd
   skip-cert-verify: false
   tls: true
   type: vmess
@@ -164,10 +70,11 @@ proxies:
   xudp: true
 - alterId: 0
   cipher: auto
-  name: 1|🇫🇷13 |  3.1MB/s|100%
+  client-fingerprint: chrome
+  name: 0|🇫🇷6 |  4.8MB/s|Openai
   network: ws
   port: 443
-  server: 162.159.152.2
+  server: 188.114.96.2
   servername: obdii.cfd
   tls: true
   type: vmess
@@ -176,6 +83,86 @@ proxies:
     headers:
       Host: obdii.cfd
     path: /linkws
+- delay: 1637
+  name: 0|🇫🇷7 |  5.6MB/s|43%|Youtube|Ope...
+  network: ws
+  port: 8080
+  server: tgju.org
+  type: vless
+  udp: true
+  uuid: 51fda508-20aa-419e-b4c3-3a6202411412
+  ws-opts:
+    headers:
+      Host: 18.6na7PY43IT.zuLaiR.Org.
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/53.0.2785.143 Safari/537.36
+    path: /?ed=2048
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 0|🇫🇷13 |  2.0MB/s|100%|Disney|Op...
+  network: ws
+  port: 443
+  server: 132.145.232.171
+  servername: beyonddsz.cfd
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9b456c2a-f2c1-45e1-87a9-b7628b04bb24
+  ws-opts:
+    headers:
+      Host: beyonddsz.cfd
+    path: /linkws
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 0|🇫🇷9 |  5.9MB/s|100%|Openai
+  network: ws
+  port: 443
+  server: 172.67.71.160
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 0|🇫🇷10 |  5.5MB/s|100%|Openai
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+  xudp: true
+- alterId: '0'
+  cipher: auto
+  name: 0|🇫🇷12 |  5.8MB/s|100%|Openai
+  network: ws
+  port: 443
+  server: 162.159.152.2
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 05641cf5-58d2-4ba4-a9f1-b3cda0b1fb1d
+  ws-opts:
+    headers:
+      Host: obdii.cfd
+    path: /linkws
+  xudp: true
 - name: 13|FR_speednode_0157
   network: ws
   port: 80
