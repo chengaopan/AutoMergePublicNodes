@@ -1,34 +1,24 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: 64f2f806-885e-4e02-9c55-c93ae1f7946e
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦加拿大 01 | 1x CA
-  password: a758100e-2472-4c26-adf3-9f964c6c6f93
+  name: 0|🇨🇦加拿大 01 | 1x CA
+  password: b2b606a6-2182-4c72-9835-60286aca51a5
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 2|🇨🇦1 |  2.4MB/s|0%|Openai
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: GbWTeH8a_C8FLKqJ2hyuoY77WsSQIJschXB16usasCg
-    short-id: 7a2b
-  server: 3.98.164.98
-  servername: zula.ir
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 7f93e196-1b2f-4a42-8051-5815554c05db
-- name: 14|CA_speednode_0009
+- alpn:
+  - h3
+  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  client-fingerprint: chrome
+  name: 1|🇨🇦1 |  1.1MB/s|20%|Netflix|Dis...
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 40.233.80.61
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- name: 13|CA_speednode_0009
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -43,7 +33,7 @@ proxies:
     path: /proxyip=140.238.158.238:443&proxyIP=null
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 14|CA_speednode_0010
+  name: 13|CA_speednode_0010
   port: 26113
   reality-opts:
     public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
@@ -55,3 +45,10 @@ proxies:
   type: vless
   udp: true
   uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇨🇦 加拿大 01 | 1x CA
+  password: ca588407-e495-445b-911f-6d11d7182639
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
