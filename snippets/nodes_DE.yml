@@ -1,41 +1,12 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇩🇪 德国 01 | 1x DE
-  password: 71150764-77dc-483c-b23d-ee83a29b2060
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: 1,14|HK_speednode_0036
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇩🇪德国 01 | 1x DE
-  password: 05a1b4f5-b20a-47a5-b36c-ada5ff8fbc6c
+  name: 0|🇩🇪德国 01 | 1x DE
+  password: 04132271-415a-4f1e-b018-348c24fefa70
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 14|DE_speednode_0018
-  password: '!!str 74260665780162200'
-  port: 443
-  server: ultimate-lemming.shiner427.skin
-  skip-cert-verify: false
-  sni: ultimate-lemming.shiner427.skin
-  type: trojan
-  udp: true
-- name: 14|DE_speednode_0019
+- name: 1,14|DE_speednode_0019
   password: '!!str 74260665780162200'
   port: 443
   server: cuddly-finch.shiner427.skin
@@ -43,3 +14,45 @@ proxies:
   sni: cuddly-finch.shiner427.skin
   type: trojan
   udp: true
+- name: 1,14|DE_speednode_0018
+  password: '!!str 74260665780162200'
+  port: 443
+  server: ultimate-lemming.shiner427.skin
+  skip-cert-verify: false
+  sni: ultimate-lemming.shiner427.skin
+  type: trojan
+  udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - parsabr.com
+    path:
+    - /
+  name: 1|🇩🇪7 |  5.0MB/s|Youtube|Openai
+  network: http
+  port: '443'
+  server: 167.172.180.77
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 76f413b9-48a2-43be-933d-df686cb958a9
+  xudp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 1|🇩🇪9 |  5.7MB/s|20%|Youtube|Ope...
+  network: tcp
+  port: '45541'
+  server: 142.132.185.156
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: d79bcd65-10ed-4cc2-b5fa-3680f6092951
+  xudp: true
