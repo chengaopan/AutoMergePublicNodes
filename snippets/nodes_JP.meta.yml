@@ -1,46 +1,62 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵 日本 01 | 1x JP
-  password: 949b5d31-fbf7-40a2-ad86-5d5b04001db7
+  password: 3a57c36e-698b-4e58-aab6-07a7119388c1
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵 日本 02 | 1x JP
-  password: 949b5d31-fbf7-40a2-ad86-5d5b04001db7
+  password: 3a57c36e-698b-4e58-aab6-07a7119388c1
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵 日本 03 | 1x JP
-  password: 949b5d31-fbf7-40a2-ad86-5d5b04001db7
+  password: 3a57c36e-698b-4e58-aab6-07a7119388c1
   port: 36115
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇯🇵日本 01 | 1x JP
-  password: 60e8d56a-183c-40e4-88d5-fa0d86df008e
+  password: 8c47194b-86f3-4ad5-b9d3-fbd9d8a3ad82
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇯🇵日本 02 | 1x JP
-  password: 60e8d56a-183c-40e4-88d5-fa0d86df008e
+  password: 8c47194b-86f3-4ad5-b9d3-fbd9d8a3ad82
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇯🇵日本 03 | 1x JP
-  password: 60e8d56a-183c-40e4-88d5-fa0d86df008e
+  password: 8c47194b-86f3-4ad5-b9d3-fbd9d8a3ad82
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- alterId: 64
+  cipher: auto
+  name: 2|🇯🇵1 |  2.7MB/s|54%|Youtube|Ope...
+  network: ws
+  port: 1443
+  server: sslvpn.51job.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a6a0d901-67e9-460a-90b5-634c5c4f9782
+  ws-opts:
+    headers:
+      Host: centos7
+    path: /634c5c4f9782
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|🇯🇵 日本|@ripaojiedian
@@ -146,3 +162,31 @@ proxies:
   tls: false
   type: vmess
   uuid: e6d8237f-4bbf-4a62-af4f-b0844120e0b4
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 14|JP_speednode_0064
+  port: 56702
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: jp3.interld123456789.com
+  servername: addons.mozilla.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3c8a1f63-8658-4458-b997-17ad1dea1054
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 14|JP_speednode_0065
+  port: 56702
+  reality-opts:
+    public-key: sW8BfHeovVzmbFuAnr9nH8oJaKYze6shKoKMdek5ai8
+    short-id: 792147b8
+  server: jp1.interld123456789.com
+  servername: addons.mozilla.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b1676447-0825-4b60-be37-735c9586735e
