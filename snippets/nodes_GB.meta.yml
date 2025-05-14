@@ -1,20 +1,34 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 01 | 1x HK
-  password: e5d21561-bbac-41f2-b627-ed2dd17d08e6
+  password: de1ebc8b-8a0b-4471-8057-4fb1867c93cd
   port: 36141
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: e5d21561-bbac-41f2-b627-ed2dd17d08e6
+  password: de1ebc8b-8a0b-4471-8057-4fb1867c93cd
   port: 36271
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 01 | 1x HK
+  password: 61ba0314-3da4-4384-b68d-1480f359b580
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇬🇧英国家宽 01 | 1x UK
+  password: 61ba0314-3da4-4384-b68d-1480f359b580
+  port: 31271
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - auth: nfsn666
-  name: 1|🇬🇧1 |  1.4MB/s|61%|Youtube|Ope...
+  name: 2|🇬🇧1 |  1.3MB/s|61%|Youtube|Ope...
   password: nfsn666
   port: 8888
   server: ld-arm.nfsn666.gq
@@ -22,39 +36,38 @@ proxies:
   sni: ld-arm.nfsn666.gq
   type: hysteria2
   udp: true
-- alpn:
-  - h2http/1.1
-  client-fingerprint: chrome
-  name: 1|🇬🇧2 |  5.9MB/s|44%|Openai
-  network: ws
-  port: '443'
-  server: www.speedtest.net
-  servername: SlZcZmPl2.ZuKaRiO.InFo
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: '@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY'
+  name: 2|🇬🇧2 |  3.2MB/s|33%|Openai
+  network: grpc
+  port: '2083'
+  reality-opts:
+    public-key: _Mo8etwPEDo42B4BnrkX3FOaPsOv2thyIlrzg3hhDBk
+    short-id: e09b0ba7d2
+  server: 77.110.100.177
+  servername: speedtest.net
   tls: true
   type: vless
   udp: true
-  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
-  ws-opts:
-    headers:
-      Host: SlZcZmPl2.ZuKaRiO.InFo
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.117 Safari/537.36
-    path: /
+  uuid: 108d0bd4-ed8a-4186-995f-8f49e3127699
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港 01 | 1x HK
-  password: 9b0d76e6-ba7e-4b86-9796-159403c7cda0
-  port: 31141
-  server: free.2apzhfa.xyz
-  type: ss
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
+  name: 2|🇬🇧3 |  4.6MB/s|0%|Netflix|Disn...
+  network: grpc
+  port: '2030'
+  reality-opts:
+    public-key: YWfCdTnr4FAOMYTY2dLrMtQUokyxOGpPhYEEszPj20E
+    short-id: 7fe29733
+  server: 74.220.23.227
+  servername: refersion.com
+  tls: true
+  type: vless
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧英国家宽 01 | 1x UK
-  password: 9b0d76e6-ba7e-4b86-9796-159403c7cda0
-  port: 31271
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+  uuid: 98e5553e-abcc-4c9a-941a-8f0e9741d541
+  xudp: true
 - name: 11|Hysteria 🇬🇧 @v2meowcf
   password: QtgdPIrjSirZNtFJM01JQUPMvEVfih
   port: 443
@@ -67,20 +80,6 @@ proxies:
   network: ws
   port: 80
   server: 94.247.142.7
-  servername: ipsycho.suex12.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- name: 14|GB_speednode_0042
-  network: ws
-  port: 80
-  server: 94.247.142.38
   servername: ipsycho.suex12.ir
   skip-cert-verify: false
   tls: false
@@ -109,48 +108,6 @@ proxies:
   network: ws
   port: 80
   server: 94.247.142.35
-  servername: ipsycho.suex12.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- name: 14|GB_speednode_0045
-  network: ws
-  port: 80
-  server: 94.247.142.107
-  servername: ipsycho.suex12.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- name: 14|GB_speednode_0046
-  network: ws
-  port: 80
-  server: 94.247.142.49
-  servername: ipsycho.suex12.ir
-  skip-cert-verify: false
-  tls: false
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir
-    path: /TelegramU0001F1E8U0001F1F3 @pgkj666 /?ed=2560
-- name: 14|GB_speednode_0047
-  network: ws
-  port: 80
-  server: 94.247.142.87
   servername: ipsycho.suex12.ir
   skip-cert-verify: false
   tls: false
