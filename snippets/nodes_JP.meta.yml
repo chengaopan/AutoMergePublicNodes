@@ -1,71 +1,98 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵 日本 01 | 1x JP
-  password: 408948f6-5ee8-4d83-b610-90b231126361
+  password: 97dd4a88-8fdc-445b-9ad8-b7128e353e44
   port: 36111
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵 日本 02 | 1x JP
-  password: 408948f6-5ee8-4d83-b610-90b231126361
+  password: 97dd4a88-8fdc-445b-9ad8-b7128e353e44
   port: 36113
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇯🇵 日本 03 | 1x JP
-  password: 408948f6-5ee8-4d83-b610-90b231126361
+  password: 97dd4a88-8fdc-445b-9ad8-b7128e353e44
   port: 36115
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alterId: '0'
-  cipher: auto
-  name: 1|🇯🇵2 |  1.1MB/s|11%|Disney|Yout...
-  network: tcp
-  port: '17233'
-  server: 8faa5046-svc1s0-sw0nbj-1anhm.cm5.p5pv.com
-  servername: 8faa5046-svc1s0-sw0nbj-1anhm.cm5.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 1|🇯🇵3 |  3.5MB/s|11%|Disney|Yout...
-  network: tcp
-  port: 17233
-  server: 2bbb71ac-svdwg0-sw0nbj-1anhm.cm5.p5pv.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3f58d3fe-f4ea-11eb-8673-f23c9164ca5d
-  xudp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵日本 01 | 1x JP
-  password: fb73cdbc-5839-4b08-9fc4-c71e7a5091ac
+  name: 1|🇯🇵日本 01 | 1x JP
+  password: 8cc94a33-802c-459f-ac91-d2afe079c739
   port: 31111
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵日本 02 | 1x JP
-  password: fb73cdbc-5839-4b08-9fc4-c71e7a5091ac
+  name: 1|🇯🇵日本 02 | 1x JP
+  password: 8cc94a33-802c-459f-ac91-d2afe079c739
   port: 31113
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇯🇵日本 03 | 1x JP
-  password: fb73cdbc-5839-4b08-9fc4-c71e7a5091ac
+  name: 1|🇯🇵日本 03 | 1x JP
+  password: 8cc94a33-802c-459f-ac91-d2afe079c739
   port: 31115
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- alpn:
+  - h3
+  client-fingerprint: random
+  name: 2|🇯🇵1 |  1.3MB/s|7%|Disney|Youtu...
+  network: ws
+  port: '443'
+  server: 54.169.229.188
+  servername: mot.majusti.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5c87a3a5-d2c4-4cd9-878e-07e307b386d6
+  ws-opts:
+    headers:
+      Host: mot.majusti.dpdns.org
+      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
+    path: /?ed=2560
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 2|🇯🇵2 |  4.4MB/s|11%|Disney|Yout...
+  port: 4151
+  server: 64523f3e-sukw00-svxrt2-63bp.c.volczijie.com
+  tls: false
+  type: vmess
+  uuid: 92b2a3d4-f353-11ef-b714-f23c93136cb3
+- auth: 3ed64477-9d5c-49ca-b536-2dae51c987d2
+  name: 2|🇯🇵3 |  1.3MB/s|0%|Disney|Youtu...
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 3ed64477-9d5c-49ca-b536-2dae51c987d2
+  port: 13301
+  server: baipiaoyun-japan.baipiaoyun.site
+  skip-cert-verify: true
+  sni: s0.awsstatic.com
+  type: hysteria2
+  udp: true
+- delay: 1704
+  name: 2|🇯🇵4 |  1.7MB/s|20%|Netflix|Dis...
+  network: ws
+  port: 443
+  server: fred.ns.cloudflare.com
+  servername: vless04.trevely.us.kg
+  tfo: false
+  tls: true
+  type: vless
+  uuid: 5177172c-125a-47fa-bccd-3778b459a75e
+  ws-opts:
+    headers:
+      Host: vless04.trevely.us.kg
+    path: /?ed=2560
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|🇯🇵 日本|@ripaojiedian
@@ -171,18 +198,3 @@ proxies:
   tls: false
   type: vmess
   uuid: e6d8237f-4bbf-4a62-af4f-b0844120e0b4
-- client-fingerprint: chrome
-  name: 14|JP_speednode_0162
-  network: ws
-  port: 3533
-  server: 64.176.40.224
-  servername: oracle-sg.777999.lol
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: be43bba1-83c7-46fe-a3e4-2873b522b44a
-  ws-opts:
-    headers:
-      Host: oracle-sg.777999.lol
-    path: /?ed=2560

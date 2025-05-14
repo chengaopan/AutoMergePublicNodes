@@ -1,83 +1,90 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: 408948f6-5ee8-4d83-b610-90b231126361
+  password: 97dd4a88-8fdc-445b-9ad8-b7128e353e44
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: 408948f6-5ee8-4d83-b610-90b231126361
+  password: 97dd4a88-8fdc-445b-9ad8-b7128e353e44
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf
-  name: 1|🇸🇬1 |  5.1MB/s|0%|Netflix|Disn...
-  password: asd123456
-  port: 8388
-  server: 103.36.91.32
-  type: ss
-- name: 1|🇸🇬2 |  5.7MB/s|Youtube|Openai
-  network: ws
-  port: '80'
-  server: 141.193.213.21
-  type: vless
-  udp: true
-  uuid: 628a3541-1b2d-43ab-ad4f-82b6406480fe
-  ws-opts:
-    headers:
-      Host: lk.sahanwickramasinghe.shop
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/55.0.2883.87 Safari/537.36
-    path: /
-  xudp: true
-- name: 1|🇸🇬3 |  5.8MB/s|30%|Disney|Open...
-  network: ws
-  port: '80'
-  server: 141.193.213.1
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: ipsycho.suex12.ir.
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; CPH1607 Build/MMB29M; wv) AppleWebKit/537.36
-        (KHTML, like Gecko) Version/4.0 Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: Telegram🇨🇳 @WangCai2 /?ed=2560
-  xudp: true
-- auth: d711d15c-adf6-4d98-991e-93172cc5eff0
-  client-fingerprint: chrome
-  name: 1|🇸🇬4 |  4.8MB/s|Youtube|Openai|...
-  password: d711d15c-adf6-4d98-991e-93172cc5eff0
-  port: 30003
-  server: qyxjp.qy1357.top
-  skip-cert-verify: true
-  sni: qyxjp.qy1357.top
-  type: hysteria2
-  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 01 | 1x SG
-  password: fb73cdbc-5839-4b08-9fc4-c71e7a5091ac
+  name: 1|🇸🇬新加坡 01 | 1x SG
+  password: 8cc94a33-802c-459f-ac91-d2afe079c739
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 02 | 1x SG
-  password: fb73cdbc-5839-4b08-9fc4-c71e7a5091ac
+  name: 1|🇸🇬新加坡 02 | 1x SG
+  password: 8cc94a33-802c-459f-ac91-d2afe079c739
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬新加坡 03 | 1x SG
-  password: fb73cdbc-5839-4b08-9fc4-c71e7a5091ac
+  name: 1|🇸🇬新加坡 03 | 1x SG
+  password: 8cc94a33-802c-459f-ac91-d2afe079c739
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- name: 2|🇸🇬1 |  2.0MB/s|30%|Netflix|Dis...
+  network: ws
+  port: '80'
+  server: 45.131.7.59
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
+  ws-opts:
+    headers:
+      Host: ipsycho.suex12.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/59.0.3071.115 Safari/537.36
+    path: /
+  xudp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇸🇬2 |  5.3MB/s|30%|Netflix|Dis...
+  network: ws
+  port: '443'
+  server: 172.66.47.92
+  servername: Work-YUU00.pageS.dEv
+  tls: true
+  type: vless
+  udp: true
+  uuid: 49d4b99d-7d99-416a-9778-2c75d79100bb
+  ws-opts:
+    headers:
+      Host: work-yuu00.pages.dev
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_10_3) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/41.0.2272.89 Safari/537.36
+    path: ''
+  xudp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 2,12,13|新加坡2|@ripaojiedian
+  network: ws
+  port: '46019'
+  server: 112.29.213.228
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534
+  ws-opts:
+    headers:
+      Host: ''
+    path: /zh-cn
 - name: 11|Hysteria 🇸🇬 @v2meowcf
   password: 4vAy2oj2RhV6TlM8YUCCIWkj1KDfgH
   port: 443
@@ -119,23 +126,6 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 12,13|新加坡2|@ripaojiedian
-  network: ws
-  port: '46019'
-  server: 112.29.213.228
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 4c5a8a75-7d65-40a9-8c3b-a67abae08534
-  ws-opts:
-    headers:
-      Host: ''
-    path: /zh-cn
 - cipher: aes-256-cfb
   client-fingerprint: chrome
   name: 12|🇸🇬 狮城特殊|@ripaojiedian

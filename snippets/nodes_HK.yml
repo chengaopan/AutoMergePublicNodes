@@ -1,46 +1,47 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 02 | 1x HK
-  password: 408948f6-5ee8-4d83-b610-90b231126361
+  password: 97dd4a88-8fdc-445b-9ad8-b7128e353e44
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 408948f6-5ee8-4d83-b610-90b231126361
+  password: 97dd4a88-8fdc-445b-9ad8-b7128e353e44
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 1|🇭🇰3 |  6.1MB/s|0%|Netflix|Disn...
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 183.232.235.2
-  skip-cert-verify: true
-  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 02 | 1x HK
+  password: 8cc94a33-802c-459f-ac91-d2afe079c739
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-- name: 1|🇭🇰4 |  5.8MB/s|0%
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港家宽 03 | 1x HK
+  password: 8cc94a33-802c-459f-ac91-d2afe079c739
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- name: 2|🇭🇰1 |  5.9MB/s|0%|Netflix|Disn...
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
   server: dozo01.flztjc.top
   skip-cert-verify: false
   sni: hk-13-568.flztjc.net
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港 02 | 1x HK
-  password: fb73cdbc-5839-4b08-9fc4-c71e7a5091ac
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港家宽 03 | 1x HK
-  password: fb73cdbc-5839-4b08-9fc4-c71e7a5091ac
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰4 |  5.3MB/s|15%|Netflix|Dis...
+  port: 4138
+  server: 64523f3e-sukw00-svxrt2-63bp.c.volczijie.com
+  tls: false
+  type: vmess
+  uuid: 92b2a3d4-f353-11ef-b714-f23c93136cb3
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
@@ -158,16 +159,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- name: 14|HK_speednode_0160
-  network: ws
-  password: Aimer
-  port: 443
-  server: 219.76.13.177
-  skip-cert-verify: false
-  sni: tyep.esslh.filegear-sg.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: tyep.esslh.filegear-sg.me
-    path: /?ed=2560
