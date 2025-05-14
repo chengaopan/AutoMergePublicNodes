@@ -1,26 +1,54 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦加拿大 01 | 1x CA
-  password: c34943c4-6883-4348-9118-dd10fd45ff68
+  password: 02126b47-5a84-4e21-9826-c9c74b0ad362
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - delay: 2286
-  name: 1|🇨🇦1 |  1.7MB/s|0%|Youtube|Open...
+  name: 1|🇨🇦1 |  3.5MB/s|0%|Youtube|Open...
   password: '!!str 74260665780162200'
   port: 443
   server: allowing-owl.shiner427.skin
   sni: allowing-owl.shiner427.skin
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇨🇦 加拿大 01 | 1x CA
-  password: 411197b9-f7af-4da9-9c68-efbbafd60ac2
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 1|🇨🇦2 |  4.6MB/s|20%|Netflix|Dis...
+  network: tcp
+  port: '26113'
+  reality-opts:
+    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
+    short-id: 1fbd20fd
+  server: 40.233.80.61
+  servername: www.yahoo.com
+  tls: true
+  type: vless
   udp: true
-- name: 14|CA_speednode_0009
+  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  xudp: true
+- client-fingerprint: chrome
+  delay: 1887
+  flow: xtls-rprx-vision
+  name: 1|🇨🇦3 |  5.5MB/s|2%|Netflix|Disn...
+  network: tcp
+  port: 56565
+  reality-opts:
+    public-key: 59iI-5g0yQ3r6ZaoBOQSWOCnMw6_t_q0oS4gXngXhW0
+    short-id: 2e3b0488
+  server: www.vanboss.work
+  servername: www.samsung.com
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  uuid: b1867b10-e968-44d1-9182-a674ef81ecb7
+- name: 13|CA_speednode_0009
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -33,3 +61,10 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=140.238.158.238:443&proxyIP=null
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇨🇦 加拿大 01 | 1x CA
+  password: 51518998-406d-458b-82e2-1256c3444d0b
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
