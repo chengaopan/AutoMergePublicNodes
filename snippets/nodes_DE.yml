@@ -1,51 +1,43 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇩🇪德国 01 | 1x DE
-  password: 98488581-20f0-46c9-87ba-8127f8dd9720
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇩🇪 德国 01 | 1x DE
-  password: 1041978e-3d7c-4898-ad73-a5791db0d4cc
+  name: 0|🇩🇪 德国 01 | 1x DE
+  password: d6fc881b-e52e-48d5-9207-95a91652a949
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
-- alpn:
-  - ''
-  alterId: '0'
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - parsabr.com
-    path:
-    - /
-  name: 2|🇩🇪2 |  5.0MB/s|Youtube|Openai
-  network: http
-  port: '443'
-  server: 167.172.180.77
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪德国 01 | 1x DE
+  password: 2f43bc2e-18da-4933-aaad-44d30fcf0784
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: 76f413b9-48a2-43be-933d-df686cb958a9
-  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 2|🇩🇪7 |  1.5MB/s|30%|Openai
+  network: tcp
+  password: telegram-id-directvpn
+  port: '22223'
+  server: 3.64.181.93
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 2,14|DE_speednode_0019
+  password: '!!str 74260665780162200'
+  port: 443
+  server: cuddly-finch.shiner427.skin
+  skip-cert-verify: false
+  sni: cuddly-finch.shiner427.skin
+  type: trojan
+  udp: true
 - name: 14|DE_speednode_0018
   password: '!!str 74260665780162200'
   port: 443
   server: ultimate-lemming.shiner427.skin
   skip-cert-verify: false
   sni: ultimate-lemming.shiner427.skin
-  type: trojan
-  udp: true
-- name: 14|DE_speednode_0019
-  password: '!!str 74260665780162200'
-  port: 443
-  server: cuddly-finch.shiner427.skin
-  skip-cert-verify: false
-  sni: cuddly-finch.shiner427.skin
   type: trojan
   udp: true
