@@ -1,21 +1,7 @@
 proxies:
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: a39a12bb-24ef-43d3-9aa4-ab61be472568
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: 8dd59f33-ce70-4be0-bfe1-4f8529e9375f
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇨🇦1 |  3.8MB/s|2%|Disney|Youtu...
+  name: 0|🇨🇦1 |  2.4MB/s|2%|Youtube|Open...
   network: tcp
   port: 56565
   reality-opts:
@@ -26,65 +12,14 @@ proxies:
   tls: true
   type: vless
   uuid: b1867b10-e968-44d1-9182-a674ef81ecb7
-- name: 2|🇨🇦2 |  2.5MB/s|62%|Disney
-  network: ws
-  port: 443
-  server: bowen.ns.cloudflare.com
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦加拿大 01 | 1x CA
+  password: 13bd6d10-c71d-4968-a316-3ab85dab2de1
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 2|🇨🇦3 |  1.4MB/s|62%|Disney
-  network: ws
-  port: 443
-  server: 185.16.110.113
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- alpn:
-  - h3
-  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  name: 2|🇨🇦4 |  1.2MB/s|20%|Netflix|Dis...
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: 45979
-  server: 40.233.80.61
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  udp: true
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 2|🇨🇦5 |  3.3MB/s|20%|Netflix|Dis...
-  network: tcp
-  port: '26113'
-  reality-opts:
-    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
-    short-id: 1fbd20fd
-  server: 40.233.80.61
-  servername: www.yahoo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  xudp: true
-- name: 14|CA_speednode_0016
+- name: 13|CA_speednode_0016
   password: '!!str 74260665780162200'
   port: 443
   server: allowing-owl.shiner427.skin
@@ -92,11 +27,18 @@ proxies:
   sni: allowing-owl.shiner427.skin
   type: trojan
   udp: true
-- name: 14|CA_speednode_0017
+- name: 13|CA_speednode_0017
   password: '!!str 74260665780162200'
   port: 443
   server: 52.60.142.77
   skip-cert-verify: true
   sni: allowing-owl.shiner427.skin
   type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇨🇦 加拿大 01 | 1x CA
+  password: 8db0be2c-dd64-4dcb-b391-bf55b2ec0d5b
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
   udp: true
