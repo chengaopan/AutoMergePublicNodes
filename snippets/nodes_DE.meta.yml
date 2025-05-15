@@ -1,40 +1,42 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇩🇪 德国 01 | 1x DE
-  password: 4089630b-c05b-4420-94d1-f33c0a99d07e
+  password: 93861366-0652-4fee-baa0-e6b295af5c38
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇩🇪德国 01 | 1x DE
-  password: 04f142d2-b129-4253-aff7-db58295ef1c7
+  password: b3c305bb-b406-4530-a224-85d2797b287a
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 2|🇩🇪1 |  6.3MB/s|20%|Openai
-  network: tcp
-  port: '7022'
-  reality-opts:
-    public-key: Sm0gGVH8qJHECOVhNaN2j52ayfqYcrZggyQMxiQP2Fo
-    short-id: ''
-  server: 188.245.250.75
-  servername: refersion.com
+  name: 2|🇩🇪1 |  1.3MB/s|25%|Youtube|Ope...
+  network: ws
+  port: 35097
+  server: de.uzilol.cn
+  servername: de.uzilol.cn
+  tls: true
+  type: vless
+  uuid: d9e674f2-b1ab-470d-937c-5e2eb0d74751
+  ws-opts:
+    headers:
+      Host: de.uzilol.cn
+    path: /rangws
+- client-fingerprint: chrome
+  name: 2|🇩🇪2 |  5.7MB/s|44%|Openai
+  network: ws
+  port: 8443
+  server: 205.233.181.186
+  servername: CiR346yL3b.DeRaKhT.iNfO
   tls: true
   type: vless
   udp: true
-  uuid: ce462cc3-9983-45da-b030-728fb7b5684e
-  xudp: true
-- name: 2|🇩🇪2 |  5.4MB/s|30%|Youtube|Ope...
-  password: telegram-id-privatevpns
-  port: 22222
-  server: 18.157.248.200
-  skip-cert-verify: true
-  sni: trojan.burgerip.co.uk
-  type: trojan
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  ws-opts:
+    headers:
+      Host: CiR346yL3b.DeRaKhT.iNfO
+    path: /

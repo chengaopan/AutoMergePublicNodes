@@ -1,85 +1,35 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港 02 | 1x HK
-  password: 4089630b-c05b-4420-94d1-f33c0a99d07e
+  password: 93861366-0652-4fee-baa0-e6b295af5c38
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 4089630b-c05b-4420-94d1-f33c0a99d07e
+  password: 93861366-0652-4fee-baa0-e6b295af5c38
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰香港 02 | 1x HK
-  password: 04f142d2-b129-4253-aff7-db58295ef1c7
+  password: b3c305bb-b406-4530-a224-85d2797b287a
   port: 31143
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 1|🇭🇰香港家宽 03 | 1x HK
-  password: 04f142d2-b129-4253-aff7-db58295ef1c7
+  password: b3c305bb-b406-4530-a224-85d2797b287a
   port: 31145
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 2,12,13|香港7|@ripaojiedian
-  network: tcp
-  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
-  port: 28505
-  server: green.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green.cdntencentmusic.com
-  type: trojan
-- client-fingerprint: chrome
-  name: 2|🇭🇰2 |  2.3MB/s|12%|Netflix|Dis...
-  password: 482194f6-8ca3-4c53-b43e-150f51efda7f
-  port: 27101
-  server: 219.135.197.214
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf
-  delay: 763
-  name: 2|🇭🇰3 |  4.3MB/s|16%|Netflix|Dis...
-  obfs: tls1.2_ticket_auth
-  obfs-param: ''
-  password: sGWdzYDx5J
-  port: 43125
-  protocol: auth_aes128_md5
-  protocol-param: ''
-  server: csilicovolcanoconiosis.godeove.xyz
-  type: ssr
-  udp: true
-- cipher: aes-256-gcm
-  country: 🇨🇳CN
-  delay: 175
-  name: 2|🇭🇰4 |  2.4MB/s|100%|Netflix|Di...
-  password: QZ4L8ZDG75OFMFRU
-  port: 15012
-  server: 183.2.157.135
-  type: ss
-- cipher: aes-256-gcm
-  name: 2|🇭🇰5 |  5.3MB/s|100%|Disney|You...
-  password: V98N1K9OBXGHKC3X
-  port: 15005
-  server: 183.2.157.135
-  type: ss
-- cipher: aes-256-gcm
-  name: 2|🇭🇰6 |  3.8MB/s|100%|Netflix|Di...
-  password: FB83ULXQR5LHF82K
-  port: 15010
-  server: 183.2.157.135
-  type: ss
 - alterId: 0
   cipher: auto
-  name: 2|🇭🇰7 |  4.3MB/s|15%|Netflix|Dis...
+  name: 2|🇭🇰1 |  3.0MB/s|15%|Openai
   network: ws
   port: 8080
   server: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
@@ -90,6 +40,33 @@ proxies:
     headers:
       Host: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
     path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰2 |  1.1MB/s|15%|Disney|Yout...
+  network: ws
+  port: 8080
+  server: e4d173ea-swd340-sykxcb-1nhp7.hgc1.tcpbbr.net
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 5fc9c9aa-ea47-11ed-8397-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- auth: 4ab4694d-72df-4438-b087-66a0892b7904
+  delay: 1543
+  name: 2|🇭🇰3 |  2.0MB/s|25%|Netflix|Dis...
+  obfs: salamander
+  obfs-password: ZDQxZDhjZDk4ZjAwYjIwNA==
+  password: 4ab4694d-72df-4438-b087-66a0892b7904
+  port: 11229
+  server: baipiaoyun-hongkongv1.baipiaoyun.site
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria2
+  udp: true
 - client-fingerprint: chrome
   name: 12,13|香港|@ripaojiedian
   network: tcp
@@ -162,6 +139,15 @@ proxies:
   server: 103.149.183.61
   tfo: false
   type: ss
+- client-fingerprint: chrome
+  name: 12,13|香港7|@ripaojiedian
+  network: tcp
+  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
+  port: 28505
+  server: green.cdntencentmusic.com
+  skip-cert-verify: false
+  sni: green.cdntencentmusic.com
+  type: trojan
 - alterId: 64
   cipher: auto
   name: 13|香港3|@ripaojiedian
