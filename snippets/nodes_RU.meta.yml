@@ -1,9 +1,9 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇷🇺俄罗斯 01 | 1x RU
-  password: 43082eb8-434a-41d7-a6c6-20f2aed98671
-  port: 31511
-  server: free.2apzhfa.xyz
+  name: 0|🇷🇺 俄罗斯 01 | 1x RU
+  password: da4a11e0-9d93-4d14-b9f6-dc12984f332b
+  port: 36511
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - alpn:
@@ -86,15 +86,34 @@ proxies:
   sni: www.bing.com
   type: hysteria
   up: '1000'
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇷🇺 俄罗斯 01 | 1x RU
-  password: 63fbaae5-fb5a-4526-a3ae-5acaa50421a8
-  port: 36511
-  server: free.2weradf.xyz
-  type: ss
+- name: 13|RU_speednode_0175
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.153
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=45.67.215.153:443&proxyIP=null
+- name: 13|RU_speednode_0176
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.153
+  skip-cert-verify: false
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=45.67.215.153:443
 - client-fingerprint: random
-  name: 14|RU_speednode_0144
+  name: 13|RU_speednode_0177
   network: ws
   port: 443
   server: 45.67.215.168
@@ -108,7 +127,7 @@ proxies:
     headers:
       Host: 0229.patterdeng.pp.ua
     path: /?ed=2560
-- name: 14|RU_speednode_0145
+- name: 13|RU_speednode_0178
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -121,3 +140,23 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=45.67.215.234:443
+- name: 13|RU_speednode_0179
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 45.67.215.5
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=45.67.215.5:443&proxyIP=null
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇷🇺俄罗斯 01 | 1x RU
+  password: 096b3999-949a-4de9-a168-a7c6c534b44c
+  port: 31511
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
