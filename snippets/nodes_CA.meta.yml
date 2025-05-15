@@ -1,38 +1,15 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: 997da588-175a-43df-ae71-bb934496bf73
+  password: f9692869-caf2-4f72-9eb0-5af877ffde79
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  name: 1|🇨🇦1 |  2.1MB/s|0%|Youtube|Open...
-  password: '!!str 74260665780162200'
-  port: '443'
-  server: 52.60.142.77
-  skip-cert-verify: false
-  sni: allowing-owl.shiner427.skin
-  type: trojan
-  udp: true
-- alpn:
-  - h3
-  down: ''
-  fingerprint: ''
-  name: 1|🇨🇦2 |  1.4MB/s|20%|Netflix|Dis...
-  obfs: ''
-  obfs-password: ''
-  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
-  port: '45979'
-  server: 40.233.80.61
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
-  up: ''
-- name: 1|🇨🇦3 |  1.5MB/s|Disney|Gemini
+- name: 1|🇨🇦1 |  5.6MB/s|Disney|Openai
   network: ws
   port: 443
-  server: 160.123.255.180
+  server: julio.ns.cloudflare.com
   servername: sl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -43,24 +20,39 @@ proxies:
     headers:
       Host: sl.ylka.dpdns.org
     path: /?ed=2560
-- name: 1|🇨🇦4 |  2.0MB/s|62%|Disney|Gemi...
-  network: ws
-  port: 443
-  server: 212.183.88.249
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 1|🇨🇦2 |  5.6MB/s|2%|Netflix|Disn...
+  network: tcp
+  port: 56565
+  reality-opts:
+    public-key: 59iI-5g0yQ3r6ZaoBOQSWOCnMw6_t_q0oS4gXngXhW0
+    short-id: 2e3b0488
+  server: www.vanboss.work
+  servername: www.samsung.com
   tls: true
   type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      host: sl.ylka.dpdns.org
-    path: /?ed=2560
+  uuid: b1867b10-e968-44d1-9182-a674ef81ecb7
 - cipher: chacha20-ietf-poly1305
   name: 2|🇨🇦加拿大 01 | 1x CA
-  password: acb4a6f9-3279-4de1-901d-d6998864bd03
+  password: 8eb553af-24a6-41b6-861e-6ff457b5059a
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
+  udp: true
+- name: 14|CA_speednode_0016
+  password: '!!str 74260665780162200'
+  port: 443
+  server: allowing-owl.shiner427.skin
+  skip-cert-verify: false
+  sni: allowing-owl.shiner427.skin
+  type: trojan
+  udp: true
+- name: 14|CA_speednode_0017
+  password: '!!str 74260665780162200'
+  port: 443
+  server: 52.60.142.77
+  skip-cert-verify: true
+  sni: allowing-owl.shiner427.skin
+  type: trojan
   udp: true

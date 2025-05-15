@@ -1,35 +1,44 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: 997da588-175a-43df-ae71-bb934496bf73
+  password: f9692869-caf2-4f72-9eb0-5af877ffde79
   port: 36171
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: 997da588-175a-43df-ae71-bb934496bf73
+  password: f9692869-caf2-4f72-9eb0-5af877ffde79
   port: 36173
   server: free.2weradf.xyz
   type: ss
   udp: true
+- name: 1|🇸🇬1 |  1.3MB/s|34%|Disney|Yout...
+  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
+  port: 35000
+  server: gzyd.cg.xxality.cn
+  skip-cert-verify: true
+  sni: cgsg2.hysality.com
+  tfo: false
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 2|🇸🇬新加坡 01 | 1x SG
-  password: acb4a6f9-3279-4de1-901d-d6998864bd03
+  password: 8eb553af-24a6-41b6-861e-6ff457b5059a
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 2|🇸🇬新加坡 02 | 1x SG
-  password: acb4a6f9-3279-4de1-901d-d6998864bd03
+  password: 8eb553af-24a6-41b6-861e-6ff457b5059a
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 2|🇸🇬新加坡 03 | 1x SG
-  password: acb4a6f9-3279-4de1-901d-d6998864bd03
+  password: 8eb553af-24a6-41b6-861e-6ff457b5059a
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
@@ -90,10 +99,16 @@ proxies:
   port: 8123
   server: mortify.koreanbbq.link
   type: trojan
-- name: 14|SG_speednode_0180
-  password: 9de6d20c-d133-4261-8dd2-88684d619f7e
-  port: 43456
-  server: 43.163.126.61
+- name: 14|SG_speednode_0056
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 138.2.107.107
   skip-cert-verify: true
+  sni: icecream.955850.xyz
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=138.2.107.107:443&proxyIP=null
