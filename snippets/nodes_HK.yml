@@ -1,35 +1,35 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 02 | 1x HK
-  password: 91514ca9-508b-4095-a2c0-420091ac3296
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: 91514ca9-508b-4095-a2c0-420091ac3296
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 02 | 1x HK
-  password: bb499cf9-ce43-4625-9504-3bbbde7cbba2
+  name: 0|🇭🇰 香港 02 | 1x HK
+  password: 0c70612e-16b7-481c-896b-593e7675c278
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
-  password: bb499cf9-ce43-4625-9504-3bbbde7cbba2
+  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 0c70612e-16b7-481c-896b-593e7675c278
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港 02 | 1x HK
+  password: dfb34322-c103-4184-80ed-e27f4a98bdee
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰香港家宽 03 | 1x HK
+  password: dfb34322-c103-4184-80ed-e27f4a98bdee
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - alterId: 0
   cipher: auto
-  name: 2|🇭🇰1 |  3.0MB/s|15%|Openai
+  name: 2|🇭🇰1 |  2.7MB/s|Youtube|Openai
   network: ws
   port: 8080
   server: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
@@ -42,7 +42,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|🇭🇰2 |  1.1MB/s|15%|Disney|Yout...
+  name: 2|🇭🇰2 |  1.0MB/s|15%|Openai
   network: ws
   port: 8080
   server: e4d173ea-swd340-sykxcb-1nhp7.hgc1.tcpbbr.net
@@ -54,6 +54,22 @@ proxies:
   ws-opts:
     headers:
       Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰3 |  4.6MB/s|15%|Disney|Yout...
+  network: ws
+  port: 8080
+  server: cc424de4-swd340-swp3f3-1teuc.hgc1.tcpbbr.net
+  skip-cert-verify: true
+  tfo: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a5a81a34-f257-11ef-ba82-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: cc424de4-swd340-swp3f3-1teuc.hgc1.tcpbbr.net
     path: /
 - client-fingerprint: chrome
   name: 12,13|香港|@ripaojiedian
