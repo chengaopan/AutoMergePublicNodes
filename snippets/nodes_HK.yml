@@ -1,42 +1,97 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港 02 | 1x HK
-  password: da4a11e0-9d93-4d14-b9f6-dc12984f332b
+  name: 0|🇭🇰香港 02 | 1x HK
+  password: ff841a6c-4821-4c8b-b13e-4c9c67ef50ff
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇭🇰香港家宽 03 | 1x HK
+  password: ff841a6c-4821-4c8b-b13e-4c9c67ef50ff
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: d05b3d6d-7966-42a1-a6a3-5a7a0a93b189
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
-  password: da4a11e0-9d93-4d14-b9f6-dc12984f332b
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: d05b3d6d-7966-42a1-a6a3-5a7a0a93b189
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
-- name: 1|🇭🇰1 |  2.5MB/s|0%|Netflix
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: dozo01.flztjc.top
+- client-fingerprint: chrome
+  name: 2,12,13|香港7|@ripaojiedian
+  network: tcp
+  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
+  port: 28505
+  server: green.cdntencentmusic.com
   skip-cert-verify: false
-  sni: hk-13-568.flztjc.net
+  sni: green.cdntencentmusic.com
   type: trojan
-- alterId: '0'
+- client-fingerprint: chrome
+  name: 2|🇭🇰2 |  2.3MB/s|12%|Netflix|Dis...
+  password: 482194f6-8ca3-4c53-b43e-150f51efda7f
+  port: 27101
+  server: 219.135.197.214
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- cipher: chacha20-ietf
+  delay: 763
+  name: 2|🇭🇰3 |  4.3MB/s|16%|Netflix|Dis...
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: sGWdzYDx5J
+  port: 43125
+  protocol: auth_aes128_md5
+  protocol-param: ''
+  server: csilicovolcanoconiosis.godeove.xyz
+  type: ssr
+  udp: true
+- cipher: aes-256-gcm
+  country: 🇨🇳CN
+  delay: 175
+  name: 2|🇭🇰4 |  2.4MB/s|100%|Netflix|Di...
+  password: QZ4L8ZDG75OFMFRU
+  port: 15012
+  server: 183.2.157.135
+  type: ss
+- cipher: aes-256-gcm
+  name: 2|🇭🇰5 |  5.3MB/s|100%|Disney|You...
+  password: V98N1K9OBXGHKC3X
+  port: 15005
+  server: 183.2.157.135
+  type: ss
+- cipher: aes-256-gcm
+  name: 2|🇭🇰6 |  3.8MB/s|100%|Netflix|Di...
+  password: FB83ULXQR5LHF82K
+  port: 15010
+  server: 183.2.157.135
+  type: ss
+- alterId: 0
   cipher: auto
-  name: 1|🇭🇰2 |  4.0MB/s|15%|Disney|Yout...
+  name: 2|🇭🇰7 |  4.3MB/s|15%|Netflix|Dis...
   network: ws
   port: 8080
-  server: cc424de4-swd340-swp3f3-1teuc.hgc1.tcpbbr.net
-  skip-cert-verify: false
+  server: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
   tls: false
   type: vmess
-  udp: true
-  uuid: a5a81a34-f257-11ef-ba82-f23c913c8d2b
+  uuid: 94614d84-9986-11ee-be7f-f23c9164ca5d
   ws-opts:
-    headers: {}
+    headers:
+      Host: a1aa5069-swd340-t7fl9b-1q16i.hgc1.tcpbbr.net
     path: /
-  xudp: true
 - client-fingerprint: chrome
-  name: 1,11,12|香港|@ripaojiedian
+  name: 12,13|香港|@ripaojiedian
   network: tcp
   password: ac1ba86a-eafd-4457-b8ec-3551bbc54ca9
   port: 12221
@@ -46,7 +101,7 @@ proxies:
   type: trojan
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 11|🇭🇰 香港2|@ripaojiedian
+  name: 12|🇭🇰 香港2|@ripaojiedian
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -63,7 +118,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇭🇰 香港3|@ripaojiedian
+  name: 12|🇭🇰 香港3|@ripaojiedian
   port: 35921
   server: 120.198.71.216
   skip-cert-verify: false
@@ -74,7 +129,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇭🇰 香港4|@ripaojiedian
+  name: 12|🇭🇰 香港4|@ripaojiedian
   port: 43302
   server: 183.236.51.38
   skip-cert-verify: false
@@ -85,7 +140,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 11,12|香港5|@ripaojiedian
+  name: 12,13|香港5|@ripaojiedian
   network: ws
   port: '22642'
   server: 52.80.232.93
@@ -101,24 +156,15 @@ proxies:
     path: /
 - cipher: chacha20-ietf
   client-fingerprint: chrome
-  name: 11|🇭🇰 香港6|@ripaojiedian
+  name: 12|🇭🇰 香港6|@ripaojiedian
   password: asd123456
   port: 8388
   server: 103.149.183.61
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 11,12|香港7|@ripaojiedian
-  network: tcp
-  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
-  port: 28505
-  server: green.cdntencentmusic.com
-  skip-cert-verify: false
-  sni: green.cdntencentmusic.com
-  type: trojan
 - alterId: 64
   cipher: auto
-  name: 12|香港3|@ripaojiedian
+  name: 13|香港3|@ripaojiedian
   network: tcp
   port: '35921'
   server: 120.198.71.216
@@ -128,7 +174,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 64
   cipher: auto
-  name: 12|香港4|@ripaojiedian
+  name: 13|香港4|@ripaojiedian
   network: tcp
   port: '43302'
   server: 183.236.51.38
@@ -136,17 +182,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰香港 02 | 1x HK
-  password: 096b3999-949a-4de9-a168-a7c6c534b44c
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰香港家宽 03 | 1x HK
-  password: 096b3999-949a-4de9-a168-a7c6c534b44c
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
