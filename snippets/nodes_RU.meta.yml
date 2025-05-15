@@ -1,22 +1,15 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇷🇺 俄罗斯 01 | 1x RU
-  password: 401abd03-3149-4fe7-94ba-b23b3fa8ae5b
+  password: abc387b5-10f1-4cea-829f-f4a13af0146b
   port: 36511
   server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇷🇺俄罗斯 01 | 1x RU
-  password: 008884f4-e782-4bd9-b11f-217efe3e31b1
-  port: 31511
-  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alpn:
   - h3
   disable-sni: false
-  name: 2|🇷🇺1 |  5.5MB/s|50%
+  name: 1|🇷🇺1 |  5.5MB/s|50%
   password: f3ba3679-f2f4-465f-92a5-de320b775a88
   port: 43516
   reduce-rtt: false
@@ -29,7 +22,7 @@ proxies:
   uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
 - auth: dongtaiwang.com
   client-fingerprint: chrome
-  name: 2|🇷🇺2 |  1.6MB/s|0%
+  name: 1|🇷🇺2 |  1.6MB/s|0%
   password: dongtaiwang.com
   port: 10011
   server: 46.29.163.171
@@ -41,7 +34,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 2|🇷🇺3 |  1.0MB/s|Gemini
+  name: 1|🇷🇺3 |  1.0MB/s|Gemini
   network: ws
   port: 443
   server: 46.29.239.149
@@ -54,6 +47,13 @@ proxies:
     headers:
       Host: unixkey.nobatow.site
     path: /nobatow
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇷🇺俄罗斯 01 | 1x RU
+  password: 33398bbf-d3d4-4e28-bea5-89d3b3f96205
+  port: 31511
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - name: 14|RU_speednode_0175
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
