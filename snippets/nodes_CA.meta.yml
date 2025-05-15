@@ -1,21 +1,14 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: cddfbf2a-bd2a-4d25-9db3-30f5c4f266ab
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: 45397e91-0977-4fe6-ac49-4c84e4afeaee
+  name: 0|🇨🇦 加拿大 01 | 1x CA
+  password: a15ba9b4-b39c-423a-970e-9cd5163e1ebc
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2|🇨🇦1 |  1.3MB/s|2%|Netflix|Disn...
+  name: 1|🇨🇦1 |  3.8MB/s|2%|Disney|Youtu...
   network: tcp
   port: 56565
   reality-opts:
@@ -26,10 +19,10 @@ proxies:
   tls: true
   type: vless
   uuid: b1867b10-e968-44d1-9182-a674ef81ecb7
-- name: 2|🇨🇦2 |  5.2MB/s|62%|Disney
+- name: 1|🇨🇦2 |  2.5MB/s|62%|Disney
   network: ws
   port: 443
-  server: braden.ns.cloudflare.com
+  server: bowen.ns.cloudflare.com
   servername: sl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -40,10 +33,10 @@ proxies:
     headers:
       Host: sl.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|🇨🇦3 |  1.2MB/s|Disney
+- name: 1|🇨🇦3 |  1.4MB/s|62%|Disney
   network: ws
   port: 443
-  server: 160.79.105.66
+  server: 185.16.110.113
   servername: sl.ylka.dpdns.org
   skip-cert-verify: true
   tls: true
@@ -52,22 +45,45 @@ proxies:
   uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
   ws-opts:
     headers:
-      Host: sl.ylka.dpdns.org
+      host: sl.ylka.dpdns.org
     path: /?ed=2560
-- name: 2|🇨🇦4 |  5.3MB/s|Disney
-  network: ws
-  port: 443
-  server: 160.123.255.65
-  servername: sl.ylka.dpdns.org
+- alpn:
+  - h3
+  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  name: 1|🇨🇦4 |  1.2MB/s|20%|Netflix|Dis...
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 40.233.80.61
   skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  http-opts:
+    headers: {}
+    path:
+    - /
+  name: 1|🇨🇦5 |  3.3MB/s|20%|Netflix|Dis...
+  network: tcp
+  port: '26113'
+  reality-opts:
+    public-key: GUcD8LK1DFNuVun5yhsqeEego_p3PF2yIdvE2KY2Nng
+    short-id: 1fbd20fd
+  server: 40.233.80.61
+  servername: www.yahoo.com
   tls: true
   type: vless
   udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: sl.ylka.dpdns.org
-    path: /?ed=2560
+  uuid: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇨🇦加拿大 01 | 1x CA
+  password: d629d617-809d-4c29-ac2c-8867dadf5661
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - name: 14|CA_speednode_0016
   password: '!!str 74260665780162200'
   port: 443
