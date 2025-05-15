@@ -1,43 +1,66 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦 加拿大 01 | 1x CA
-  password: abc387b5-10f1-4cea-829f-f4a13af0146b
-  port: 36441
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- name: 1|🇨🇦1 |  5.6MB/s|62%|Disney
-  network: ws
-  port: 443
-  server: icook.tw
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- name: 1|🇨🇦2 |  4.3MB/s|Disney|Youtube|...
-  network: ws
-  port: 443
-  server: iplocation.io
-  servername: sl.ylka.dpdns.org
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
-  ws-opts:
-    headers:
-      Host: sl.ylka.dpdns.org
-    path: /?ed=2560
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇨🇦加拿大 01 | 1x CA
-  password: 33398bbf-d3d4-4e28-bea5-89d3b3f96205
+  name: 0|🇨🇦加拿大 01 | 1x CA
+  password: 1cc4e21e-6ee0-48df-9ac2-62bb97e52cc9
   port: 31441
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇨🇦 加拿大 01 | 1x CA
+  password: 956e40f9-cce4-4f69-baea-d60146d8ed5a
+  port: 36441
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: 2|🇨🇦1 |  2.1MB/s|0%|Youtube|Open...
+  password: '!!str 74260665780162200'
+  port: '443'
+  server: 52.60.142.77
+  skip-cert-verify: false
+  sni: allowing-owl.shiner427.skin
+  type: trojan
+  udp: true
+- alpn:
+  - h3
+  down: ''
+  fingerprint: ''
+  name: 2|🇨🇦2 |  1.4MB/s|20%|Netflix|Dis...
+  obfs: ''
+  obfs-password: ''
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: '45979'
+  server: 40.233.80.61
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  up: ''
+- name: 2|🇨🇦3 |  1.5MB/s|Disney|Gemini
+  network: ws
+  port: 443
+  server: 160.123.255.180
+  servername: sl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      Host: sl.ylka.dpdns.org
+    path: /?ed=2560
+- name: 2|🇨🇦4 |  2.0MB/s|62%|Disney|Gemi...
+  network: ws
+  port: 443
+  server: 212.183.88.249
+  servername: sl.ylka.dpdns.org
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06e4425e-a8cb-4b63-929f-2105604ab0a9
+  ws-opts:
+    headers:
+      host: sl.ylka.dpdns.org
+    path: /?ed=2560
