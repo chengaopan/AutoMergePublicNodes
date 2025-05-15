@@ -1,35 +1,63 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷 韩国 01 | 1x KR
-  password: 49191835-d89b-4e6b-b629-d2184888d25a
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: aes-256-cfb
-  name: 1|🇰🇷1 |  5.1MB/s|75%|Netflix|You...
-  password: qwerREWQ@@
-  port: 11389
-  server: 221.150.109.89
-  type: ss
-- cipher: aes-256-cfb
-  name: 1|🇰🇷2 |  5.8MB/s|44%|Netflix|Dis...
-  password: qwerREWQ@@
-  port: 4857
-  server: 125.141.26.12
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷韩国 01 | 1x KR
-  password: 2e7ba2d0-e27a-40e2-a0ec-51b0de43018c
+  name: 0|🇰🇷韩国 01 | 1x KR
+  password: 36cc0980-cac4-4ea6-8593-88b44c33db9e
   port: 31311
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇰🇷韩国 02 | 1x KR
-  password: 2e7ba2d0-e27a-40e2-a0ec-51b0de43018c
+  name: 0|🇰🇷韩国 02 | 1x KR
+  password: 36cc0980-cac4-4ea6-8593-88b44c33db9e
   port: 31313
   server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 1|🇰🇷1 |  3.3MB/s|Netflix|Youtube...
+  password: qwerREWQ@@
+  port: 11389
+  server: 221.150.109.89
+  type: ss
+- cipher: aes-256-cfb
+  name: 1|🇰🇷2 |  2.1MB/s|Netflix|Youtube...
+  password: qwerREWQ@@
+  port: '11389'
+  server: p231.panda004.net
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 1|🇰🇷3 |  4.9MB/s|44%|Netflix|Dis...
+  password: qwerREWQ@@
+  port: '15098'
+  server: p222.panda001.net
+  type: ss
+  udp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: randomized
+  name: 1|🇰🇷4 |  1.2MB/s|Disney
+  network: ws
+  port: '443'
+  server: 104.18.181.3
+  servername: ZyZZZOAO.PutaTa.EU.oRG
+  tls: true
+  type: vless
+  udp: true
+  uuid: 103104c5-a3f5-4c48-8d8f-a72a56959799
+  ws-opts:
+    headers:
+      Host: zyzzzoao.putata.eu.org
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/49.0.2623.87 Safari/537.36
+    path: /rcSLZKdweUgLgufD?ed=2560
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇰🇷 韩国 01 | 1x KR
+  password: 9d456349-c9bf-453a-97df-4c6639bab638
+  port: 36311
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
@@ -45,7 +73,7 @@ proxies:
   name: 12|🇰🇷 韩国特殊|@ripaojiedian
   password: yijian0503
   port: 443
-  server: 13.250.27.89
+  server: 13.229.110.124
   tfo: false
   type: ss
 - client-fingerprint: random

@@ -1,31 +1,22 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇬🇧 英国住宅IP 01 | 1x UK
-  password: 49191835-d89b-4e6b-b629-d2184888d25a
-  port: 36271
-  server: free.2weradf.xyz
+  name: 0|🇭🇰香港 01 | 1x HK
+  password: 36cc0980-cac4-4ea6-8593-88b44c33db9e
+  port: 31141
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇬🇧英国家宽 01 | 1x UK
+  password: 36cc0980-cac4-4ea6-8593-88b44c33db9e
+  port: 31271
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
   grpc-opts:
-    grpc-service-name: '@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY@VPN_KING_V2RAY'
-  name: 1|🇬🇧1 |  3.7MB/s|33%|Openai
-  network: grpc
-  port: '2083'
-  reality-opts:
-    public-key: _Mo8etwPEDo42B4BnrkX3FOaPsOv2thyIlrzg3hhDBk
-    short-id: e09b0ba7d2
-  server: 77.110.100.177
-  servername: speedtest.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 108d0bd4-ed8a-4186-995f-8f49e3127699
-  xudp: true
-- client-fingerprint: chrome
-  grpc-opts:
     grpc-service-name: CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config
-  name: 1|🇬🇧2 |  5.4MB/s|0%|Netflix|Disn...
+  name: 1|🇬🇧1 |  3.6MB/s|0%|Netflix|Open...
   network: grpc
   port: '2030'
   reality-opts:
@@ -38,18 +29,65 @@ proxies:
   udp: true
   uuid: 98e5553e-abcc-4c9a-941a-8f0e9741d541
   xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: randomized
+  name: 1|🇬🇧2 |  2.1MB/s|0%|Disney|Opena...
+  network: ws
+  port: '2096'
+  server: 104.18.6.190
+  servername: verina.cantarella.dns-dynamic.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: ec7de7e0-3f09-4ef4-8a34-e441917d65fa
+  ws-opts:
+    headers:
+      Host: verina.cantarella.dns-dynamic.net
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-G570M Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /proxyip=robin.yaemiko.ggff.net
+  xudp: true
+- alpn:
+  - h2http/1.1
+  client-fingerprint: chrome
+  name: 1|🇬🇧3 |  6.0MB/s|Openai
+  network: ws
+  port: '443'
+  server: www.speedtest.net
+  servername: BmUcKcNq2.ZuKaRiO.InFo
+  tls: true
+  type: vless
+  udp: true
+  uuid: 838f5273-5d2d-4630-a0f5-9cc8e4aef4d6
+  ws-opts:
+    headers:
+      Host: BmUcKcNq2.ZuKaRiO.InFo
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; BLL-L22 Build/HUAWEIBLL-L22) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+    path: /
+  xudp: true
+- auth: nfsn666
+  name: 1|🇬🇧4 |  4.8MB/s|61%|Disney|Yout...
+  password: nfsn666
+  port: 8888
+  server: ld-arm.nfsn666.gq
+  skip-cert-verify: true
+  sni: ld-arm.nfsn666.gq
+  type: hysteria2
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇭🇰香港 01 | 1x HK
-  password: 2e7ba2d0-e27a-40e2-a0ec-51b0de43018c
-  port: 31141
-  server: free.2apzhfa.xyz
+  name: 2|🇭🇰 香港 01 | 1x HK
+  password: 9d456349-c9bf-453a-97df-4c6639bab638
+  port: 36141
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇬🇧英国家宽 01 | 1x UK
-  password: 2e7ba2d0-e27a-40e2-a0ec-51b0de43018c
-  port: 31271
-  server: free.2apzhfa.xyz
+  name: 2|🇬🇧 英国住宅IP 01 | 1x UK
+  password: 9d456349-c9bf-453a-97df-4c6639bab638
+  port: 36271
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - name: 11|Hysteria 🇬🇧 @v2meowcf
