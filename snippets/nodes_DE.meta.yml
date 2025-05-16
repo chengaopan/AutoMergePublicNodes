@@ -1,22 +1,15 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇩🇪 德国 01 | 1x DE
-  password: d0b48fcd-0c00-47a0-bb11-a84bcb6a911d
+  password: 15dfdb1d-0654-496d-8daa-2742cc387dc7
   port: 36471
   server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇩🇪德国 01 | 1x DE
-  password: 9ec479d0-38e0-409e-a09d-0bef3df6cd31
-  port: 31471
-  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alpn:
   - h3h2
   client-fingerprint: chrome
-  name: 2|🇩🇪1 |  1.9MB/s|Openai
+  name: 1|🇩🇪1 |  1.9MB/s|Openai
   network: ws
   port: '8443'
   server: 104.17.148.22
@@ -32,7 +25,7 @@ proxies:
         Gecko) Chrome/51.0.2704.106 Safari/537.36
     path: /
   xudp: true
-- name: 2|🇩🇪2 |  2.6MB/s|Openai
+- name: 1|🇩🇪2 |  2.6MB/s|Openai
   network: ws
   port: 8443
   server: 205.233.181.186
@@ -48,7 +41,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 2|🇩🇪4 |  2.6MB/s|22%|Youtube
+  name: 1|🇩🇪4 |  2.6MB/s|22%|Youtube
   network: ws
   port: 443
   server: www.visa.com.sg
@@ -64,7 +57,7 @@ proxies:
     path: /vmess-argo?ed=2048
 - grpc-opts:
     grpc-service-name: vless
-  name: 2|🇩🇪5 |  1.8MB/s|22%|Youtube|Ope...
+  name: 1|🇩🇪5 |  1.8MB/s|22%|Youtube|Ope...
   network: grpc
   port: '2025'
   server: 91.107.181.155
@@ -75,7 +68,7 @@ proxies:
 - alpn:
   - h3h2
   client-fingerprint: chrome
-  name: 2|🇩🇪6 |  5.4MB/s|24%|Openai
+  name: 1|🇩🇪6 |  5.4MB/s|24%|Openai
   network: ws
   port: '8443'
   server: www.speedtest.net
@@ -91,3 +84,10 @@ proxies:
         like Gecko) Chrome/52.0.2743.116 Safari/537.36
     path: /
   xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇩🇪德国 01 | 1x DE
+  password: 83fbc0b3-43ad-4ea0-8e09-38ed3210527a
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
