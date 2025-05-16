@@ -1,35 +1,15 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇩🇪 德国 01 | 1x DE
-  password: 7456fc48-cddd-49af-8d06-c737b5982a7b
+  password: d10fee9f-2f20-4c6a-bab7-e680a367dc5e
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇩🇪德国 01 | 1x DE
-  password: b63f3c8c-8c94-49f1-8989-0ad9caa17f93
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- name: 2,14|HK_speednode_0064
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: chessgame
-  name: 2|🇩🇪2 |  2.6MB/s|22%|Youtube|Ope...
+  name: 1|🇩🇪1 |  2.3MB/s|22%|Youtube|Ope...
   network: grpc
   port: '2172'
   reality-opts:
@@ -45,7 +25,7 @@ proxies:
 - alpn:
   - h3h2
   client-fingerprint: chrome
-  name: 2|🇩🇪3 |  6.2MB/s|39%|Openai
+  name: 1|🇩🇪2 |  5.4MB/s|39%|Openai
   network: ws
   port: '8443'
   server: 104.17.148.22
@@ -68,7 +48,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 2,14|DE_speednode_0036
+  name: 1,13|DE_speednode_0036
   network: tcp
   port: 443
   server: 204.10.194.78
@@ -80,63 +60,7 @@ proxies:
   uuid: b8bd42a9-551f-419d-b70d-4aefdd2cb074
   xudp: true
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 2|🇩🇪5 |  1.4MB/s|Openai
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: Rcapy_5gvuL9LOr1Bqz-Y84P69L3wUQjG48xpB4fLTA
-    short-id: 1d13151ce1
-  server: 91.107.219.8
-  servername: direct.pdownloaddigikala.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: eacc24ed-a1c1-4037-9af4-4f6bcd657119
-  xudp: true
-- client-fingerprint: chrome
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 2|🇩🇪6 |  1.3MB/s|22%|Openai
-  network: tcp
-  port: '1615'
-  reality-opts:
-    public-key: hGWQLRX3fXhy649AM9QbmRBlDs4DU-trXDal_F5pCjI
-    short-id: f387eb8185414508
-  server: 167.235.230.165
-  servername: refersion.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b26f5834-a6c7-44c7-84eb-94a68e2ceb8e
-  xudp: true
-- alpn:
-  - h3h2
-  client-fingerprint: chrome
-  name: 2|🇩🇪7 |  5.1MB/s|22%
-  network: ws
-  port: '443'
-  server: www.speedtest.net
-  servername: LmYgYfHo22.vElTrIxS.OrG
-  tls: true
-  type: vless
-  udp: true
-  uuid: 96a1b724-68d2-4f4d-ab25-38ecd83577bc
-  ws-opts:
-    headers:
-      Host: LmYgYfHo22.vElTrIxS.OrG
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  name: 2|🇩🇪8 |  3.1MB/s|44%
+  name: 1|🇩🇪4 |  4.3MB/s|44%|Openai
   network: ws
   port: '8443'
   server: 104.17.147.22
@@ -152,41 +76,7 @@ proxies:
         (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
     path: /#Telegram@V2ray_Alpha
   xudp: true
-- name: 2|🇩🇪9 |  1.4MB/s|43%|Openai
-  network: ws
-  port: '8880'
-  server: 172.67.204.84
-  type: vless
-  udp: true
-  uuid: 81df6b13-2f70-4eee-ab73-48932012c433
-  ws-opts:
-    headers:
-      Host: join.V2RAYFAST7.iran.ir.arvancloud.ir.nett.focusontrade.ir
-      User-Agent: Mozilla/5.0 (Linux; Android 4.4.2; de-de; SAMSUNG GT-I9195 Build/KOT49H)
-        AppleWebKit/537.36 (KHTML, like Gecko) Version/1.5 Chrome/28.0.1500.94 Mobile
-        Safari/537.36
-    path: /?ed=2048
-  xudp: true
-- alpn:
-  - h2http/1.1
-  client-fingerprint: chrome
-  name: 2|🇩🇪10 |  1.3MB/s|22%|Openai
-  network: ws
-  port: '2087'
-  server: scorpion1.info
-  servername: Tp418Gi9H1.mOlAnAmAmAlI1.iNfO
-  tls: true
-  type: vless
-  udp: true
-  uuid: 31a27ed1-2ec6-4ab5-95b6-3e213e59e0a9
-  ws-opts:
-    headers:
-      Host: Tp418Gi9H1.mOlAnAmAmAlI1.iNfO
-      User-Agent: Mozilla/5.0 (Windows NT 6.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/49.0.2623.112 Safari/537.36
-    path: /
-  xudp: true
-- name: 2|🇩🇪11 |  6.5MB/s|44%|Youtube|Op...
+- name: 1|🇩🇪5 |  3.1MB/s|44%|Openai
   network: ws
   port: 8443
   server: 205.233.181.186
@@ -202,15 +92,93 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  client-fingerprint: chrome
-  name: 2|🇩🇪12 |  5.7MB/s|59%|Youtube|Op...
-  port: 52100
-  server: sd.needss.top
-  tls: false
+  name: 1|🇩🇪9 |  5.5MB/s|22%|Youtube|Ope...
+  network: ws
+  port: 443
+  server: www.visa.com.sg
+  servername: radiation-browse-dallas-slight.trycloudflare.com
+  skip-cert-verify: false
+  tls: true
   type: vmess
   udp: true
-  uuid: 61b159b3-860b-460b-a2e2-3c4ad3a42a23
-- name: 14|DE_speednode_0037
+  uuid: 38d1a891-f3f9-ef39-6a95-c106e2a386eb
+  ws-opts:
+    headers:
+      Host: radiation-browse-dallas-slight.trycloudflare.com
+    path: /vmess-argo?ed=2048
+- name: 1|🇩🇪7 |  1.3MB/s|11%|Youtube|Ope...
+  password: 905edb54-b4ce-47ad-ac94-51d58161a59a
+  port: 43583
+  server: 58.254.186.231
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- name: 1|🇩🇪8 |  1.3MB/s|11%|Youtube
+  password: 905edb54-b4ce-47ad-ac94-51d58161a59a
+  port: 43583
+  server: 183.240.116.252
+  skip-cert-verify: true
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
+  udp: true
+- client-fingerprint: chrome
+  name: 1|🇩🇪10 |  1.4MB/s|25%|Netflix|Di...
+  network: ws
+  port: 35097
+  server: de.uzilol.cn
+  servername: de.uzilol.cn
+  tls: true
+  type: vless
+  uuid: d9e674f2-b1ab-470d-937c-5e2eb0d74751
+  ws-opts:
+    headers:
+      Host: de.uzilol.cn
+    path: /rangws
+- alpn:
+  - h3h2
+  client-fingerprint: chrome
+  name: 1|🇩🇪11 |  5.5MB/s|Openai
+  network: ws
+  port: '8443'
+  server: www.speedtest.net
+  servername: KeMn02UcWh.AaAzZzAaA-8129.cOm
+  tls: true
+  type: vless
+  udp: true
+  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
+  ws-opts:
+    headers:
+      Host: KeMn02UcWh.AaAzZzAaA-8129.cOm
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/52.0.2743.116 Safari/537.36
+    path: /
+  xudp: true
+- name: 1|🇩🇪12 |  5.8MB/s|20%|Openai
+  network: ws
+  port: '2082'
+  server: 104.17.148.22
+  type: vless
+  udp: true
+  uuid: e95ebc97-41d6-4a78-850d-1652908fdfca
+  ws-opts:
+    headers:
+      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like
+        Gecko) Chrome/26.0.1410.64 Safari/537.31
+    path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
+  xudp: true
+- grpc-opts:
+    grpc-service-name: vless
+  name: 1|🇩🇪13 |  5.8MB/s|22%|Youtube|Op...
+  network: grpc
+  port: '2025'
+  server: 91.107.181.155
+  type: vless
+  udp: true
+  uuid: 9bf09a16-c5f1-4c9f-889d-25b9889df1b0
+  xudp: true
+- name: 13|DE_speednode_0037
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 8443
@@ -223,3 +191,10 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=130.61.51.100:8443&proxyIP=null
+- cipher: chacha20-ietf-poly1305
+  name: 14|🇩🇪德国 01 | 1x DE
+  password: baf56649-048f-400b-b053-7ab5f610e734
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
