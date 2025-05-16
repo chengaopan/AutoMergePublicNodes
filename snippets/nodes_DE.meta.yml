@@ -1,8 +1,22 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇩🇪德国 01 | 1x DE
+  password: 7cf29444-4532-4341-b06e-c46704c9f1dd
+  port: 31471
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪 德国 01 | 1x DE
+  password: 3d98d473-684c-4d3c-bf52-dc63dc25f379
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alpn:
   - h3h2
   client-fingerprint: chrome
-  name: 0|🇩🇪1 |  3.9MB/s|39%
+  name: 2|🇩🇪1 |  3.9MB/s|39%
   network: ws
   port: '8443'
   server: www.speedtest.net
@@ -18,7 +32,7 @@ proxies:
         like Gecko) Chrome/52.0.2743.116 Safari/537.36
     path: /
   xudp: true
-- name: 0,12|HK_speednode_0060
+- name: 2,14|HK_speednode_0060
   network: ws
   password: bpb-trojan
   port: 443
@@ -34,7 +48,7 @@ proxies:
 - alpn:
   - h2http/1.1
   client-fingerprint: chrome
-  name: 0|🇩🇪3 |  3.3MB/s|22%|Openai
+  name: 2|🇩🇪3 |  3.3MB/s|22%|Openai
   network: ws
   port: '2087'
   server: scorpion1.info
@@ -50,17 +64,3 @@ proxies:
         like Gecko) Chrome/55.0.2883.87 Safari/537.36
     path: /
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 13|🇩🇪德国 01 | 1x DE
-  password: 793719a0-caa7-4ce1-a7a1-2212d1019aef
-  port: 31471
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇩🇪 德国 01 | 1x DE
-  password: e166fef1-533d-4f8d-a7f6-c4524f71c66e
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
