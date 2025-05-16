@@ -1,41 +1,115 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 02 | 1x HK
-  password: d72162d1-9bce-460e-99ed-bc3c92cfbe11
-  port: 31143
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: d72162d1-9bce-460e-99ed-bc3c92cfbe11
-  port: 31145
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港 02 | 1x HK
-  password: 0d2f54aa-bdbc-4f75-b5ab-07e9f06bc231
+  name: 0|🇭🇰 香港 02 | 1x HK
+  password: 85057dd7-bc61-477a-96bd-5f93e470a1db
   port: 36143
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
-  password: 0d2f54aa-bdbc-4f75-b5ab-07e9f06bc231
+  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 85057dd7-bc61-477a-96bd-5f93e470a1db
   port: 36145
   server: free.2weradf.xyz
   type: ss
   udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰1 |  3.7MB/s|12%|Youtube
+  password: d72162d1-9bce-460e-99ed-bc3c92cfbe11
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
-  name: 12,13|香港|@ripaojiedian
+  name: 1,12,13|香港5|@ripaojiedian
   network: tcp
-  password: ac1ba86a-eafd-4457-b8ec-3551bbc54ca9
-  port: 12221
-  server: wb.kaiqsz.com
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: dozo01.flztjc.top
   skip-cert-verify: false
-  sni: mmbiz.redapricotcloud.com
+  sni: hk-13-568.flztjc.net
   type: trojan
+- client-fingerprint: chrome
+  name: 1|🇭🇰3 |  1.4MB/s|6%|Youtube
+  password: 25d55ad283aa400af464c76d713c07ad
+  port: 8443
+  server: hk04.sqx001.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: podbbylf@mayorlogistic.com
+- cipher: chacha20-ietf
+  delay: 763
+  name: 1|🇭🇰4 |  1.9MB/s|16%|Disney
+  obfs: tls1.2_ticket_auth
+  obfs-param: ''
+  password: sGWdzYDx5J
+  port: 43125
+  protocol: auth_aes128_md5
+  protocol-param: ''
+  server: csilicovolcanoconiosis.godeove.xyz
+  type: ssr
+  udp: true
+- client-fingerprint: chrome
+  name: 1|🇭🇰5 |  4.0MB/s|12%|Netflix|You...
+  network: ws
+  port: '443'
+  server: 20.189.104.97
+  servername: dee33.azurewebsites.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+  ws-opts:
+    headers:
+      Host: dee33.azurewebsites.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/67.0.3396.99 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  name: 1|🇭🇰6 |  1.7MB/s|12%|Youtube
+  network: ws
+  port: '443'
+  server: 13.75.34.176
+  servername: hkklo.azurewebsites.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6f995056-7802-4a1d-bff7-61678e626c3f
+  ws-opts:
+    headers:
+      Host: hkklo.azurewebsites.net
+      User-Agent: Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/534.24 (KHTML, like
+        Gecko) Chrome/11.0.696.3 Safari/534.24
+    path: ''
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰香港 02 | 1x HK
+  password: a6e51868-1d7a-4636-b16f-3a1da92f4ac2
+  port: 31143
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇭🇰香港家宽 03 | 1x HK
+  password: a6e51868-1d7a-4636-b16f-3a1da92f4ac2
+  port: 31145
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12|🇭🇰 香港|@ripaojiedian
+  port: 25635
+  server: 103.224.80.89
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: b6d376fb-c49e-49f4-fe0c-065bf7987ff5
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 12|🇭🇰 香港2|@ripaojiedian
@@ -48,7 +122,7 @@ proxies:
     path: /utvbnrzejpmt
     skip-cert-verify: false
     tls: true
-  port: 31785
+  port: 15985
   server: hkkh11v1.xpmc.cc
   tfo: false
   type: ss
@@ -74,40 +148,52 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
-  name: 12,13|香港5|@ripaojiedian
-  network: ws
-  port: '22642'
-  server: 52.80.232.93
-  servername: zxjp-b.tkong.cc
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-b.tkong.cc
-    path: /
-- cipher: chacha20-ietf
+- cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 12|🇭🇰 香港6|@ripaojiedian
-  password: asd123456
-  port: 8388
-  server: 103.149.183.61
+  password: NPOA4WYID2WF8N4E
+  port: 15016
+  server: 8tv68qhq.slashdevslashnetslashtun.net
   tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 12,13|香港7|@ripaojiedian
-  network: tcp
-  password: feac8d6d-8fcf-4ef1-9ad0-18833c9fca11
-  port: 28505
-  server: green.cdntencentmusic.com
+- alterId: 64
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12|🇭🇰 香港7|@ripaojiedian
+  port: 41554
+  server: 183.236.51.38
   skip-cert-verify: false
-  sni: green.cdntencentmusic.com
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12,13|香港8|@ripaojiedian
+  network: ws
+  port: '8080'
+  server: 140d8a8d-swexs0-t5urb7-1i1.hgc1.tcpbbr.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 6bcf5a10-bfe8-11ec-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
+- alterId: 0
+  cipher: auto
+  name: 13|香港|@ripaojiedian
+  network: tcp
+  port: '25635'
+  server: 103.224.80.89
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: b6d376fb-c49e-49f4-fe0c-065bf7987ff5
 - alterId: 64
   cipher: auto
   name: 13|香港3|@ripaojiedian
@@ -123,6 +209,16 @@ proxies:
   name: 13|香港4|@ripaojiedian
   network: tcp
   port: '43302'
+  server: 183.236.51.38
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 64
+  cipher: auto
+  name: 13|香港7|@ripaojiedian
+  network: tcp
+  port: '41554'
   server: 183.236.51.38
   servername: ''
   tls: false
