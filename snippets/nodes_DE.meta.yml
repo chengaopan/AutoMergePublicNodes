@@ -1,31 +1,22 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇩🇪德国 01 | 1x DE
-  password: a307d913-efe4-4044-bb5c-68f86e59c73b
+  password: de5029bf-6c32-4896-a107-b63bf6e35092
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: chessgame
-  name: 1|🇩🇪1 |  2.3MB/s|22%|Youtube|Ope...
-  network: grpc
-  port: '2172'
-  reality-opts:
-    public-key: hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I
-    short-id: ''
-  server: 157.180.41.190
-  servername: www.chess.com
-  tls: true
-  type: vless
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇩🇪 德国 01 | 1x DE
+  password: 19acda3e-2a2f-439b-a1bf-aab677e5ce62
+  port: 36471
+  server: free.2weradf.xyz
+  type: ss
   udp: true
-  uuid: b12624a6-25d0-484d-8725-3eca4544d522
-  xudp: true
 - alpn:
   - h3h2
   client-fingerprint: chrome
-  name: 1|🇩🇪2 |  5.4MB/s|39%|Openai
+  name: 2|🇩🇪1 |  1.9MB/s|Openai
   network: ws
   port: '8443'
   server: 104.17.148.22
@@ -41,42 +32,7 @@ proxies:
         Gecko) Chrome/51.0.2704.106 Safari/537.36
     path: /
   xudp: true
-- client-fingerprint: safari
-  delay: 926
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 1,13|DE_speednode_0036
-  network: tcp
-  port: 443
-  server: 204.10.194.78
-  servername: yfnl1.xn--4gq62f52gppi29k.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-  xudp: true
-- client-fingerprint: chrome
-  name: 1|🇩🇪4 |  4.3MB/s|44%|Openai
-  network: ws
-  port: '8443'
-  server: 104.17.147.22
-  servername: CiR346yL3b.DeRaKhT.iNfO
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
-  ws-opts:
-    headers:
-      Host: CiR346yL3b.DeRaKhT.iNfO
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1713 Build/MRA58K) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
-    path: /#Telegram@V2ray_Alpha
-  xudp: true
-- name: 1|🇩🇪5 |  3.1MB/s|44%|Openai
+- name: 2|🇩🇪2 |  2.6MB/s|Openai
   network: ws
   port: 8443
   server: 205.233.181.186
@@ -92,7 +48,7 @@ proxies:
     path: /
 - alterId: 0
   cipher: auto
-  name: 1|🇩🇪9 |  5.5MB/s|22%|Youtube|Ope...
+  name: 2|🇩🇪4 |  2.6MB/s|22%|Youtube
   network: ws
   port: 443
   server: www.visa.com.sg
@@ -106,39 +62,20 @@ proxies:
     headers:
       Host: radiation-browse-dallas-slight.trycloudflare.com
     path: /vmess-argo?ed=2048
-- name: 1|🇩🇪7 |  1.3MB/s|11%|Youtube|Ope...
-  password: 905edb54-b4ce-47ad-ac94-51d58161a59a
-  port: 43583
-  server: 58.254.186.231
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- name: 1|🇩🇪8 |  1.3MB/s|11%|Youtube
-  password: 905edb54-b4ce-47ad-ac94-51d58161a59a
-  port: 43583
-  server: 183.240.116.252
-  skip-cert-verify: true
-  sni: q08m.vgraxiw73s.hasyaf.cn
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: 1|🇩🇪10 |  1.4MB/s|25%|Netflix|Di...
-  network: ws
-  port: 35097
-  server: de.uzilol.cn
-  servername: de.uzilol.cn
-  tls: true
+- grpc-opts:
+    grpc-service-name: vless
+  name: 2|🇩🇪5 |  1.8MB/s|22%|Youtube|Ope...
+  network: grpc
+  port: '2025'
+  server: 91.107.181.155
   type: vless
-  uuid: d9e674f2-b1ab-470d-937c-5e2eb0d74751
-  ws-opts:
-    headers:
-      Host: de.uzilol.cn
-    path: /rangws
+  udp: true
+  uuid: 9bf09a16-c5f1-4c9f-889d-25b9889df1b0
+  xudp: true
 - alpn:
   - h3h2
   client-fingerprint: chrome
-  name: 1|🇩🇪11 |  5.5MB/s|Openai
+  name: 2|🇩🇪6 |  5.4MB/s|24%|Openai
   network: ws
   port: '8443'
   server: www.speedtest.net
@@ -154,47 +91,3 @@ proxies:
         like Gecko) Chrome/52.0.2743.116 Safari/537.36
     path: /
   xudp: true
-- name: 1|🇩🇪12 |  5.8MB/s|20%|Openai
-  network: ws
-  port: '2082'
-  server: 104.17.148.22
-  type: vless
-  udp: true
-  uuid: e95ebc97-41d6-4a78-850d-1652908fdfca
-  ws-opts:
-    headers:
-      Host: novinsoft.ir.oradoshop.com.persiangsm.ir.digikala.com.abadis.ir.shad.ir.divar.ir.downloadly.com.aparat.com.cafebazar.ir.varzesh3.com.ninisite.com.abadis.ir.bama.ir.p30download.ir.telewebion.bmi.ir.shad.ir.mayket.com.ninisite.top.
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.31 (KHTML, like
-        Gecko) Chrome/26.0.1410.64 Safari/537.31
-    path: /@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn-@spikevpn?ed=2082
-  xudp: true
-- grpc-opts:
-    grpc-service-name: vless
-  name: 1|🇩🇪13 |  5.8MB/s|22%|Youtube|Op...
-  network: grpc
-  port: '2025'
-  server: 91.107.181.155
-  type: vless
-  udp: true
-  uuid: 9bf09a16-c5f1-4c9f-889d-25b9889df1b0
-  xudp: true
-- name: 13|DE_speednode_0037
-  network: ws
-  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
-  port: 8443
-  server: 130.61.51.100
-  skip-cert-verify: true
-  sni: icecream.955850.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: icecream.955850.xyz
-    path: /proxyip=130.61.51.100:8443&proxyIP=null
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇩🇪 德国 01 | 1x DE
-  password: 55a68981-bee5-4d9c-bade-e1462dbe0342
-  port: 36471
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
