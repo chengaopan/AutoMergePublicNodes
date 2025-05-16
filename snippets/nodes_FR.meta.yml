@@ -1,5 +1,14 @@
 proxies:
-- name: 2|🇫🇷1 |  5.5MB/s|15%|Openai
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 1|🇫🇷1 |  2.4MB/s|15%|Openai
+  password: dongtaiwang.com
+  port: 4489
+  server: 51.158.205.126
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+- name: 1|🇫🇷2 |  3.7MB/s|15%|Openai
   password: dongtaiwang.com
   port: 4489
   server: hy2-1.694463.xyz
@@ -7,22 +16,13 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 2|🇫🇷2 |  2.9MB/s|15%|Openai
-  password: dongtaiwang.com
-  port: 4489
-  server: 51.158.205.126
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   delay: 1086
   down: '100'
-  name: 2|🇫🇷3 |  5.0MB/s|25%|Youtube|Ope...
+  name: 1|🇫🇷3 |  4.6MB/s|25%|Youtube|Ope...
   obfs: ''
   port: 15010
   protocol: ''
@@ -31,12 +31,66 @@ proxies:
   sni: apple.com
   type: hysteria
   up: '100'
-- name: 2|🇫🇷4 |  4.8MB/s|30%|Openai
-  password: telegram-id-privatevpns
-  port: 22222
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 1|🇫🇷4 |  2.4MB/s|30%|Youtube|Ope...
+  network: tcp
+  password: telegram-id-directvpn
+  port: '22223'
   server: 35.181.182.220
-  skip-cert-verify: true
+  skip-cert-verify: false
   sni: trojan.burgerip.co.uk
-  tfo: false
   type: trojan
   udp: true
+- client-fingerprint: chrome
+  name: 1|🇫🇷5 |  5.6MB/s|30%|Youtube|Ope...
+  network: ws
+  port: '22224'
+  server: 35.181.182.220
+  servername: trojan.burgerip.co.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+    path: /telegram-channel-vlessconfig
+  xudp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 1|🇫🇷6 |  5.7MB/s|58%|Openai
+  network: ws
+  port: '443'
+  server: 190.93.245.137
+  servername: WWW.pegAh-Esfahan.De.
+  tls: true
+  type: vless
+  udp: true
+  uuid: e66070a9-049f-42ce-9e14-9752141c3be4
+  ws-opts:
+    headers:
+      Host: WWW.pegAh-Esfahan.De.
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; Redmi 4A Build/MMB29M; wv) AppleWebKit/537.36
+        (KHTML, like Gecko) Version/4.0 Chrome/60.0.3112.116 Mobile Safari/537.36
+    path: TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config--CANALTELEGRAM--jet_config--TELEGRAM--jet_config
+  xudp: true
+- name: 13|FR_speednode_0036
+  network: ws
+  port: 443
+  server: 185.16.110.70
+  servername: 0229.patterdeng.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
+  ws-opts:
+    headers:
+      Host: 0229.patterdeng.pp.ua
+    path: /?ed=2560
