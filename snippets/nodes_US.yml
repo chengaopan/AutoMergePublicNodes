@@ -1,111 +1,28 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: c569bd34-c65f-4fd7-ad3c-7bb64933289c
+  password: 3880e3e6-a3fb-4d75-bbec-a48194438b5d
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: c569bd34-c65f-4fd7-ad3c-7bb64933289c
+  password: 3880e3e6-a3fb-4d75-bbec-a48194438b5d
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 03 | 1x US Washington
-  password: c569bd34-c65f-4fd7-ad3c-7bb64933289c
+  password: 3880e3e6-a3fb-4d75-bbec-a48194438b5d
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: 1|🇺🇸13 |  2.8MB/s|14%|Openai
-  network: ws
-  port: 2053
-  server: 104.21.80.1
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  uuid: 996016f7-da89-45f1-b3b4-555bc799ed86
-  ws-opts:
-    headers:
-      Host: rak2d1.777269.xyz
-    path: /
-- name: 1|🇺🇸34 |  2.1MB/s|46%|Openai|Gem...
-  password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
-  port: 15229
-  server: c378385c-swd340-swy6li-tni2.cu.plebai.net
-  tls: true
-  type: trojan
-- client-fingerprint: chrome
-  name: 1|🇺🇸72 |  2.5MB/s|100%|Netflix|O...
-  network: ws
-  password: 53249200-30ff-436f-a032-0bb00605f8f9
-  port: '443'
-  server: 172.67.219.196
-  skip-cert-verify: false
-  sni: 3derty.852224.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1.2; Redmi 4X Build/N2G47H) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/63.0.3239.111 Mobile Safari/537.36
-    path: /YPTDHLX8qjvTU5JqXZxjQ5ILc
-- alterId: '0'
-  cipher: auto
-  name: 1|🇺🇸78 |  2.4MB/s|20%|Disney|Ope...
-  network: ws
-  port: 443
-  server: cloudgetservice.mcloudservice.site
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: ad2bca4d-be9e-4ac2-b2ed-4c81abb4242f
-  ws-opts:
-    early-data-header-name: Sec-WebSocket-Protocol
-    headers:
-      Host: mAxNEtVip-uSA-Vp4.nETKh3.sItE
-    max-early-data: 2560
-    path: /linkws
-  xudp: true
-- alterId: 2
-  cipher: auto
-  ip-version: dual
-  name: 1|🇺🇸81 |  3.0MB/s|25%|Openai|Gem...
-  network: ws
-  port: 30807
-  server: v7.heduian.link
-  skip-cert-verify: true
-  sni: ''
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      host: ocbc.com
-    path: /oooo
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 1|🇺🇸82 |  2.9MB/s|61%|Openai|Gem...
-  network: http
-  port: 55839
-  server: 38.54.25.204
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: b7675d66-cddb-4a69-edd6-c0c83290f72e
 - alterId: 64
   cipher: auto
-  name: 1|🇺🇸105 |  1.5MB/s
+  name: 1|🇺🇸44 |  1.1MB/s|Openai
   network: tcp
   port: 40392
   server: 120.232.153.123
@@ -116,23 +33,107 @@ proxies:
   ws-headers:
     Host: 120.232.153.123
   ws-path: /
+- name: 1|🇺🇸70 |  2.3MB/s|46%|Openai|Gem...
+  password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
+  port: 15229
+  server: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
+  skip-cert-verify: true
+  sni: 4ef54dd8-swd340-t1bnjq-1krtb.cu.plebai.net
+  tfo: false
+  type: trojan
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 1,12|tg频道:@ripaojiedian
+  password: awsps0501
+  port: 443
+  server: 35.90.251.87
+  tfo: false
+  type: ss
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 1|🇺🇸81 |  1.3MB/s|29%|Openai
+  network: ws
+  password: c8eac4b7-95ba-4ce0-920d-c3279eb3b391
+  port: 443
+  server: 172.67.138.187
+  skip-cert-verify: false
+  sni: CdVftY.7282728.xYz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.86 Safari/537.36
+    path: /ptGwaGzcA4KNAXX
+- allowInsecure: ''
+  client-fingerprint: chrome
+  name: 1|🇺🇸88 |  1.1MB/s|100%|Netflix|O...
+  network: ws
+  password: 53249200-30ff-436f-a032-0bb00605f8f9
+  port: 443
+  server: 104.21.24.172
+  skip-cert-verify: false
+  sni: 3derty.852224.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: 3derty.852224.dpdns.org
+    path: /YPTDHLX8qjvTU5JqXZxjQ5ILc
+- client-fingerprint: chrome
+  name: 1|🇺🇸128 |  1.6MB/s|50%|Openai
+  network: ws
+  password: 5453ae26-250d-4e79-b4ec-016baf806865
+  port: 443
+  server: 104.21.23.162
+  skip-cert-verify: true
+  sni: D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA
+  tfo: false
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: D05F4aA7-92B1-a659-E3b9-695Dd2870B3c.131.Pp.UA
+    path: /OYzPAeaZdXUq2d6J3gc4aj
+- cipher: aes-128-cfb
+  name: 1|🇺🇸153 |  3.6MB/s|34%|Openai
+  password: shadowsocks
+  port: 443
+  server: 184.170.241.194
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 1|🇺🇸155 |  5.2MB/s|32%
+  network: ws
+  port: 2096
+  server: 141.101.120.253
+  servername: 1746882891.speed.adl.cccp.freefly.pp.ua
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: 381cb6d1-6ad4-4909-8494-b8d786cf78ce
+  ws-opts:
+    headers:
+      Host: 1746882891.speed.adl.cccp.freefly.pp.ua
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 2|🇺🇸 美国 01 | 1x US Los Angeles
-  password: df926df1-cad6-4523-99ff-8911931b6867
+  password: 101a461d-b127-4ef8-9f36-3337bb55b478
   port: 36211
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 2|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: df926df1-cad6-4523-99ff-8911931b6867
+  password: 101a461d-b127-4ef8-9f36-3337bb55b478
   port: 36213
   server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 2|🇺🇸 美国 03 | 1x US Washington
-  password: df926df1-cad6-4523-99ff-8911931b6867
+  password: 101a461d-b127-4ef8-9f36-3337bb55b478
   port: 36215
   server: free.2weradf.xyz
   type: ss
@@ -183,23 +184,7 @@ proxies:
     headers:
       Host: zxjp-b.tkong.cc
     path: /
-- name: 14|US_speednode_0058
-  password: '!!str 74260665780162200'
-  port: 443
-  server: possible-tiger.shiner427.skin
-  skip-cert-verify: false
-  sni: possible-tiger.shiner427.skin
-  type: trojan
-  udp: true
-- name: 14|US_speednode_0059
-  password: '!!str 74260665780162200'
-  port: 443
-  server: settled-mite.shiner427.skin
-  skip-cert-verify: false
-  sni: settled-mite.shiner427.skin
-  type: trojan
-  udp: true
-- name: 14|US_speednode_0064
+- name: 14|US_speednode_0259
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -212,7 +197,46 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=160.79.105.81:443&proxyIP=null
-- name: 14|US_speednode_0068
+- name: 14|US_speednode_0263
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 192.0.54.194
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=192.0.54.194:443&proxyIP=null
+- name: 14|US_speednode_0266
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 162.159.153.217
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=162.159.153.217:443&proxyIP=null
+- name: 14|US_speednode_0269
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 162.159.152.205
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=162.159.152.205:443&proxyIP=null
+- name: 14|US_speednode_0270
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
@@ -225,11 +249,11 @@ proxies:
     headers:
       Host: icecream.955850.xyz
     path: /proxyip=192.0.54.184:443
-- name: 14|US_speednode_0071
+- name: 14|US_speednode_0272
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 160.79.105.220
+  server: 160.79.105.81
   skip-cert-verify: false
   sni: icecream.955850.xyz
   type: trojan
@@ -237,12 +261,12 @@ proxies:
   ws-opts:
     headers:
       Host: icecream.955850.xyz
-    path: /proxyip=160.79.105.220:443
-- name: 14|US_speednode_0072
+    path: /proxyip=160.79.105.81:443
+- name: 14|US_speednode_0273
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
   port: 443
-  server: 162.159.153.216
+  server: 162.159.153.209
   skip-cert-verify: true
   sni: icecream.955850.xyz
   type: trojan
@@ -250,4 +274,43 @@ proxies:
   ws-opts:
     headers:
       Host: icecream.955850.xyz
-    path: /proxyip=162.159.153.216:443&proxyIP=null
+    path: /proxyip=162.159.153.209:443&proxyIP=null
+- name: 14|US_speednode_0274
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 192.0.54.184
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=192.0.54.184:443&proxyIP=null
+- name: 14|US_speednode_0290
+  network: ws
+  password: '!!str 12345678'
+  port: 443
+  server: 198.62.62.4
+  skip-cert-verify: false
+  sni: 7bdfb97a.ikl.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 7bdfb97a.ikl.pages.dev
+    path: /7bdfb97a.ikl.pages.dev
+- name: 14|US_speednode_0297
+  network: ws
+  password: 4a3ee276-f50f-46f6-ba4d-13571732ab70
+  port: 443
+  server: 172.67.204.120
+  skip-cert-verify: false
+  sni: ddcDe.890603.XYz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ddcDe.890603.XYz
+    path: /COp52Dbu3dvwvDWUxOqxq

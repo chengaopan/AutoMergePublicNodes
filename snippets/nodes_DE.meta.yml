@@ -1,47 +1,28 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇩🇪德国 01 | 1x DE
-  password: c569bd34-c65f-4fd7-ad3c-7bb64933289c
+  password: 3880e3e6-a3fb-4d75-bbec-a48194438b5d
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: chessgame
-  name: 1|🇩🇪1 |  1.1MB/s|22%|Youtube|Ope...
-  network: grpc
-  port: '2172'
-  reality-opts:
-    public-key: hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I
-    short-id: ''
-  server: 49.13.237.7
-  servername: www.chess.com
-  tls: true
-  type: vless
+- name: 1,14|HK_speednode_0192
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: us.madison.eu.org
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
   udp: true
-  uuid: b12624a6-25d0-484d-8725-3eca4544d522
-  xudp: true
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr?ed=2560
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: chessgame
-  name: 1|🇩🇪2 |  2.5MB/s|22%|Youtube|Ope...
-  network: grpc
-  port: '2172'
-  reality-opts:
-    public-key: hLNxB1vjLv1XhgKvh99s9_0f6qHw50Mrf8B109Hd21I
-    short-id: ''
-  server: 188.245.120.39
-  servername: www.chess.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b12624a6-25d0-484d-8725-3eca4544d522
-  xudp: true
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: chessgame
-  name: 1|🇩🇪3 |  1.7MB/s|22%|Openai
+  name: 1|🇩🇪2 |  2.6MB/s|22%|Youtube|Ope...
   network: grpc
   port: '2172'
   reality-opts:
@@ -54,65 +35,10 @@ proxies:
   udp: true
   uuid: b12624a6-25d0-484d-8725-3eca4544d522
   xudp: true
-- client-fingerprint: chrome
-  name: 1|🇩🇪4 |  1.4MB/s|30%|Openai
-  network: ws
-  port: '22224'
-  server: 52.57.57.22
-  servername: trojan.burgerip.co.uk
-  tls: true
-  type: vless
-  udp: true
-  uuid: 05519058-d2ac-4f28-9e4a-2b2a1386749e
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.89 Safari/537.36
-    path: /telegram-channel-vlessconfig
-  xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: 1|🇩🇪5 |  2.2MB/s|20%|Disney
-  network: ws
-  port: '443'
-  server: 172.66.45.9
-  servername: MiSTliNK-CL9.pAgEs.Dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 321cc007-bb85-41c9-b686-1f45cf5174e0
-  ws-opts:
-    headers:
-      Host: mistlink-cl9.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.0; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/51.0.2704.106 Safari/537.36
-    path: /ERlnnsHzyLczPW3c?ed=2560
-  xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: randomized
-  name: 1|🇩🇪6 |  1.5MB/s|22%|Disney|Open...
-  network: ws
-  password: T@_WvT8Ho@LW%w_,
-  port: '2053'
-  server: 172.66.47.42
-  skip-cert-verify: false
-  sni: NOp-55q.pAgEs.dEv
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/69.0.3497.100 Safari/537.36
-    path: /trGPZDfetEwuO25SAs?ed=2560
 - alpn:
   - h3h2
   client-fingerprint: chrome
-  name: 1|🇩🇪7 |  3.6MB/s|39%|Openai
+  name: 1|🇩🇪3 |  6.2MB/s|39%|Openai
   network: ws
   port: '8443'
   server: 104.17.148.22
@@ -128,22 +54,6 @@ proxies:
         Gecko) Chrome/51.0.2704.106 Safari/537.36
     path: /
   xudp: true
-- client-fingerprint: chrome
-  delay: 1496
-  flow: xtls-rprx-vision
-  name: 1|🇩🇪8 |  5.5MB/s|63%|Youtube|Ope...
-  network: tcp
-  port: 444
-  reality-opts:
-    public-key: FOSoac3DIrSrCUcBtQA-BdHMxCtqe2CYCpdvGxKMiUw
-    short-id: 82b9ca5d8d39ba72
-  server: 151.236.15.72
-  servername: opensuse.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: faaaf16e-188e-42f2-bcc1-17feadc84fad
 - client-fingerprint: safari
   delay: 926
   flow: xtls-rprx-vision
@@ -151,34 +61,16 @@ proxies:
     headers: {}
     path:
     - /
-  name: 1|🇩🇪9 |  1.5MB/s|0%|Disney|Opena...
+  name: 1,14|DE_speednode_0163
   network: tcp
   port: 443
   server: 204.10.194.78
   servername: yfnl1.xn--4gq62f52gppi29k.com
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: b8bd42a9-551f-419d-b70d-4aefdd2cb074
-  xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: randomized
-  name: 1|🇩🇪10 |  3.9MB/s|20%|Netflix|Di...
-  network: ws
-  port: '443'
-  server: 188.114.97.3
-  servername: paS-kaLE-AGhA.pageS.deV
-  tls: true
-  type: vless
-  udp: true
-  uuid: f2e486f9-1697-4be6-be59-6c4fb42c7a24
-  ws-opts:
-    headers:
-      Host: pas-kale-agha.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/42.0.2311.90 Safari/537.36
-    path: /Telegram@V2ray_Alpha/?ed=2560
   xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -186,7 +78,7 @@ proxies:
     headers: {}
     path:
     - /
-  name: 1|🇩🇪11 |  2.8MB/s|0%|Openai
+  name: 1|🇩🇪5 |  1.4MB/s|Openai
   network: tcp
   port: '443'
   reality-opts:
@@ -199,47 +91,12 @@ proxies:
   udp: true
   uuid: eacc24ed-a1c1-4037-9af4-4f6bcd657119
   xudp: true
-- alpn:
-  - h3h2
-  client-fingerprint: chrome
-  name: 1|🇩🇪12 |  6.1MB/s|39%|Openai
-  network: ws
-  port: '8443'
-  server: www.speedtest.net
-  servername: Y8wSaBz7Xj.MySpDmMeTi.CoM
-  tls: true
-  type: vless
-  udp: true
-  uuid: 24a4aa9b-b341-4717-9d4a-00d74c2b84e0
-  ws-opts:
-    headers:
-      Host: Y8wSaBz7Xj.MySpDmMeTi.CoM
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/57.0.2987.133 Safari/537.36
-    path: /
-  xudp: true
-- client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: Tok
-  name: 1|🇩🇪13 |  5.5MB/s|20%|Openai
-  network: grpc
-  port: '22000'
-  reality-opts:
-    public-key: WcjPU1iR-woM10JNMkMmv-c1Dl37z6PRsqmciMAitlg
-    short-id: cb45d5eb4577c376
-  server: 195.201.101.121
-  servername: refersion.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8c8873fb-6e68-4359-8d67-092d399612c9
-  xudp: true
 - client-fingerprint: chrome
   http-opts:
     headers: {}
     path:
     - /
-  name: 1|🇩🇪14 |  5.7MB/s|22%|Openai
+  name: 1|🇩🇪6 |  1.3MB/s|22%|Openai
   network: tcp
   port: '1615'
   reality-opts:
@@ -255,7 +112,7 @@ proxies:
 - alpn:
   - h3h2
   client-fingerprint: chrome
-  name: 1|🇩🇪15 |  4.9MB/s|22%|Openai
+  name: 1|🇩🇪7 |  5.1MB/s|22%
   network: ws
   port: '443'
   server: www.speedtest.net
@@ -272,24 +129,7 @@ proxies:
     path: /
   xudp: true
 - client-fingerprint: chrome
-  name: 1|🇩🇪16 |  1.1MB/s|22%|Disney|Ope...
-  network: ws
-  port: '443'
-  server: 172.66.47.25
-  servername: GrOupYOUNeS.PAGes.DEV
-  tls: true
-  type: vless
-  udp: true
-  uuid: e2d6455c-9846-4502-8394-16b8c1c07b68
-  ws-opts:
-    headers:
-      Host: GrOupYOUNeS.PAGes.DEV
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  name: 1|🇩🇪17 |  5.7MB/s|44%|Openai
+  name: 1|🇩🇪8 |  3.1MB/s|44%
   network: ws
   port: '8443'
   server: 104.17.147.22
@@ -305,63 +145,7 @@ proxies:
         (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
     path: /#Telegram@V2ray_Alpha
   xudp: true
-- name: 1|🇩🇪18 |  1.4MB/s|0%|Openai
-  network: ws
-  port: '8880'
-  server: 104.17.148.22
-  type: vless
-  udp: true
-  uuid: 39bd8266-8f33-492e-a44b-1a7c393a8281
-  ws-opts:
-    headers:
-      Host: de-snapp.academigroup.ir.
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_14_1) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/70.0.3538.77 Safari/537.36
-    path: /Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420?ed=2048
-  xudp: true
-- name: 1|🇩🇪19 |  4.5MB/s|64%|Netflix|Yo...
-  network: ws
-  port: '80'
-  server: 104.16.40.244
-  type: vless
-  udp: true
-  uuid: 5cf78a1b-2e4b-4bef-b791-c276a2c8dd6a
-  ws-opts:
-    headers:
-      Host: CDN73524.erfantop.ir
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/49.0.2623.112 Safari/537.36
-    path: /@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20----@VPNTV20?ed=2048
-  xudp: true
-- name: 1|🇩🇪20 |  1.2MB/s|22%|Netflix|Di...
-  network: ws
-  port: '8880'
-  server: 104.22.32.78
-  type: vless
-  udp: true
-  uuid: 1fb1d58c-70a6-4ea3-b807-4deb257ddd94
-  ws-opts:
-    headers:
-      Host: join.vPncustomize.iran.ir.arvancloud.ir.www.speedtest.netty.ip-ddns.com.
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.102 Safari/537.36
-    path: /Channel-ELiV2RAY---ELiV2RAY---ELiV2RAY---ELiV2RAY----Channel-ELiV2RAY----Channel-ELiV2RAY?ed=2048
-  xudp: true
-- name: 1|🇩🇪21 |  1.8MB/s|0%|Openai
-  network: ws
-  port: '8880'
-  server: www.speedtest.net
-  type: vless
-  udp: true
-  uuid: 39bd8266-8f33-492e-a44b-1a7c393a8281
-  ws-opts:
-    headers:
-      Host: de-snapp.academigroup.ir.
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/41.0.2272.101 Safari/537.36
-    path: /Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420--Join--EXPRESSVPN_420?ed=2048
-  xudp: true
-- name: 1|🇩🇪22 |  5.6MB/s|43%|Youtube|Op...
+- name: 1|🇩🇪9 |  1.4MB/s|43%|Openai
   network: ws
   port: '8880'
   server: 172.67.204.84
@@ -377,30 +161,9 @@ proxies:
     path: /?ed=2048
   xudp: true
 - alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 1|🇩🇪23 |  5.4MB/s|43%|Openai
-  network: ws
-  port: '8443'
-  server: 104.21.69.44
-  servername: vip.donghi.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 24be25c6-1340-4154-a9c5-76bede524f53
-  ws-opts:
-    headers:
-      Host: vip.donghi.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/60.0.3112.90 Safari/537.36
-    path: /@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7@V2RAYFAST_7
-  xudp: true
-- alpn:
   - h2http/1.1
   client-fingerprint: chrome
-  name: 1|🇩🇪24 |  5.4MB/s|Openai
+  name: 1|🇩🇪10 |  1.3MB/s|22%|Openai
   network: ws
   port: '2087'
   server: scorpion1.info
@@ -416,10 +179,47 @@ proxies:
         Chrome/49.0.2623.112 Safari/537.36
     path: /
   xudp: true
+- name: 1|🇩🇪11 |  6.5MB/s|44%|Youtube|Op...
+  network: ws
+  port: 8443
+  server: 205.233.181.186
+  servername: CiR346yL3b.DeRaKhT.iNfO
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9e769ce1-34be-4e3f-b0a6-823f30eb8f69
+  ws-opts:
+    headers:
+      Host: CiR346yL3b.DeRaKhT.iNfO
+    path: /
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 1|🇩🇪12 |  5.7MB/s|59%|Youtube|Op...
+  port: 52100
+  server: sd.needss.top
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 61b159b3-860b-460b-a2e2-3c4ad3a42a23
 - cipher: chacha20-ietf-poly1305
   name: 2|🇩🇪 德国 01 | 1x DE
-  password: df926df1-cad6-4523-99ff-8911931b6867
+  password: 101a461d-b127-4ef8-9f36-3337bb55b478
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
+- name: 14|DE_speednode_0164
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 8443
+  server: 130.61.51.100
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=130.61.51.100:8443&proxyIP=null
