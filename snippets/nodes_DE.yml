@@ -1,15 +1,45 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇩🇪德国 01 | 1x DE
-  password: 69f7ab13-1075-4588-b1c4-f32fc42de276
+  password: ad585200-62a5-4da4-adf7-80679743f0ff
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 2|🇩🇪 德国 01 | 1x DE
-  password: cdd03f69-1912-4eaf-908a-9953303bb88e
+  name: 1|🇩🇪 德国 01 | 1x DE
+  password: be4950c4-301c-42b9-b851-a9e97dc3dd00
   port: 36471
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: vmess-grpc
+  name: 2|🇩🇪8 |  3.2MB/s|0%|Youtube|Open...
+  network: grpc
+  port: '443'
+  server: de.vmess.comnpmjs.com
+  servername: de.vmess.comnpmjs.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
+  xudp: true
+- name: 2|🇩🇪16 |  5.0MB/s|20%|Netflix|Di...
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: sg.madison.eu.org
+  skip-cert-verify: true
+  sni: skwygx.top
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: skwygx.top
+    path: /tr?ed=2560
