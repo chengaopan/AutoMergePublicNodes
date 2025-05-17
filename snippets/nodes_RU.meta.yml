@@ -1,14 +1,7 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇷🇺俄罗斯 01 | 1x RU
-  password: f9c6e326-f8ae-4bb2-84eb-cb53b6016df3
-  port: 31511
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇷🇺 俄罗斯 01 | 1x RU
-  password: c718902e-d341-4fe4-9fa8-143514b1b1e0
+  name: 0|🇷🇺 俄罗斯 01 | 1x RU
+  password: 87081ef0-fbe5-464d-9ff9-b45834cbde51
   port: 36511
   server: free.2weradf.xyz
   type: ss
@@ -17,7 +10,7 @@ proxies:
   - h3
   client-fingerprint: chrome
   disable-sni: false
-  name: 2|🇷🇺1 |  1.9MB/s|50%
+  name: 1|🇷🇺1 |  1.8MB/s|50%
   password: f3ba3679-f2f4-465f-92a5-de320b775a88
   port: 43516
   reduce-rtt: false
@@ -29,44 +22,31 @@ proxies:
   udp-relay-mode: native
   uuid: f3ba3679-f2f4-465f-92a5-de320b775a88
   version: 5
-- auth: dongtaiwang.com
-  client-fingerprint: chrome
-  name: 2|🇷🇺2 |  1.7MB/s|0%
+- client-fingerprint: chrome
+  fast-open: true
+  name: 1|🇷🇺2 |  3.9MB/s|0%
   password: dongtaiwang.com
   port: 10011
-  server: 46.29.163.171
+  server: hy2.694463.xyz
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  delay: 1480
-  down: '1000'
-  name: 2|🇷🇺3 |  1.0MB/s|50%
-  obfs: ''
-  port: 10803
-  protocol: ''
-  server: 185.22.155.71
+- auth: dongtaiwang.com
+  client-fingerprint: chrome
+  name: 1|🇷🇺3 |  1.5MB/s|50%
+  password: dongtaiwang.com
+  port: 10011
+  server: 46.17.41.217
   skip-cert-verify: true
   sni: www.bing.com
-  type: hysteria
-  up: '1000'
-- name: 14|RU_speednode_0074
-  network: ws
-  port: 443
-  server: 45.67.215.168
-  servername: 0229.patterdeng.pp.ua
-  skip-cert-verify: false
-  tls: true
-  type: vless
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇷🇺俄罗斯 01 | 1x RU
+  password: 2657067e-7ae2-4ae4-8394-e466e2cf4dd9
+  port: 31511
+  server: free.2apzhfa.xyz
+  type: ss
   udp: true
-  uuid: 794f9f41-92c9-4a78-8ffc-1f82cb48a4e2
-  ws-opts:
-    headers:
-      Host: 0229.patterdeng.pp.ua
-    path: /?ed=2560
 - name: 14|RU_speednode_0075
   network: ws
   password: 6884d714-d3c4-4b49-aa20-767ea92837d6
