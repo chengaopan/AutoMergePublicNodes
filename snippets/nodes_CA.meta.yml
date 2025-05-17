@@ -1,21 +1,33 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇨🇦加拿大 01 | 1x CA
-  password: 34c15bab-cc0c-4b82-ac05-7106f8103c55
-  port: 31441
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇨🇦 加拿大 01 | 1x CA
-  password: 199a905c-4bc1-4e9a-b601-3b4e368adab0
+  name: 0|🇨🇦 加拿大 01 | 1x CA
+  password: bdb97a27-49df-449d-896a-eca23cf9f4ab
   port: 36441
   server: free.2weradf.xyz
   type: ss
   udp: true
+- alpn:
+  - h3
+  auth: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  client-fingerprint: chrome
+  name: 1|🇨🇦1 |  1.9MB/s|20%|Netflix|Dis...
+  password: cfe032e4-1bc3-454f-9d09-301b0aea08ff
+  port: 45979
+  server: 40.233.80.61
+  skip-cert-verify: true
+  sni: www.bing.com
+  type: hysteria2
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇨🇦加拿大 01 | 1x CA
+  password: 7b7ce9e9-7cce-4b1d-9adc-e79f0179ac40
+  port: 31441
+  server: free.2apzhfa.xyz
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 2,14|CA_speednode_0022
+  name: 14|CA_speednode_0022
   port: 56565
   reality-opts:
     public-key: 59iI-5g0yQ3r6ZaoBOQSWOCnMw6_t_q0oS4gXngXhW0
