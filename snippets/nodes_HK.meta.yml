@@ -1,16 +1,16 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 02 | 1x HK
-  password: 67a5c28f-35b4-49ae-9433-e777e215a28d
-  port: 31143
-  server: free.2apzhfa.xyz
+  name: 0|🇭🇰 香港 02 | 1x HK
+  password: 7f13a7d2-7e7b-4997-bf30-556f4ac3c98d
+  port: 36143
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: 67a5c28f-35b4-49ae-9433-e777e215a28d
-  port: 31145
-  server: free.2apzhfa.xyz
+  name: 0|🇭🇰 香港住宅IP 03 | 1x HK
+  password: 7f13a7d2-7e7b-4997-bf30-556f4ac3c98d
+  port: 36145
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - name: 1,13|CN_speednode_0025
@@ -21,12 +21,6 @@ proxies:
   sni: 120.233.128.68
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇭🇰2 |  3.8MB/s|0%|Disney|Gemin...
-  password: a2a1677c-0799-487e-8827-6cf0d4b5b86a
-  port: 49709
-  server: jg647hf446ghvw.gym0boy.com
-  type: ss
 - client-fingerprint: chrome
   name: 1,11,12|香港5|@ripaojiedian
   network: tcp
@@ -36,20 +30,70 @@ proxies:
   skip-cert-verify: false
   sni: hk-13-568.flztjc.net
   type: trojan
-- name: 1|🇭🇰4 |  4.0MB/s|0%|Disney
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 183.232.235.2
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- cipher: chacha20-ietf
-  name: 1|🇭🇰5 |  1.2MB/s|0%|Netflix|Disn...
-  password: asd123456
-  port: '8388'
-  server: 103.149.182.61
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇭🇰3 |  1.9MB/s
+  password: a2a1677c-0799-487e-8827-6cf0d4b5b86a
+  port: 49709
+  server: jg647hf446ghvw.gym0boy.com
   type: ss
-  udp: true
+- client-fingerprint: chrome
+  name: 1|🇭🇰4 |  1.4MB/s|0%|Youtube
+  network: ws
+  password: a38c9e28-9960-4e31-9f18-ed2495a756aa
+  port: 40021
+  server: vt-bana2-cn-11.ghpgwqswodgzv.com
+  skip-cert-verify: false
+  sni: vt-bana2-cn-11.ghpgwqswodgzv.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: vt-bana2-cn-11.ghpgwqswodgzv.com
+    path: /dl_media
+- alterId: 0
+  cipher: auto
+  name: 1|🇭🇰5 |  3.0MB/s|43%|Youtube
+  network: ws
+  port: 443
+  server: 104.21.6.201
+  servername: hknbyivfffj.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: hknbyivfffj.site
+    path: /rbqqvws
+- alterId: 0
+  cipher: auto
+  name: 1|🇭🇰6 |  4.4MB/s|43%|Youtube
+  network: ws
+  port: 443
+  server: 172.67.135.62
+  servername: hknbyivfffj.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: hknbyivfffj.site
+    path: /rbqqvws
+- alterId: 0
+  cipher: auto
+  name: 1|🇭🇰7 |  4.3MB/s|43%|Youtube
+  network: ws
+  port: 443
+  server: hknbyivfffj.site
+  servername: hknbyivfffj.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: hknbyivfffj.site
+    path: /rbqqvws
 - cipher: aes-256-gcm
   client-fingerprint: chrome
   name: 11|🇭🇰 香港|@ripaojiedian
@@ -198,16 +242,16 @@ proxies:
       Host: skwygx.top
     path: /tr
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰 香港 02 | 1x HK
-  password: dcc05e96-a7ae-455c-a6ab-3af0214598ed
-  port: 36143
-  server: free.2weradf.xyz
+  name: 14|🇭🇰香港 02 | 1x HK
+  password: 5dfed5da-8787-4cd9-8935-9d3a3d741d78
+  port: 31143
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰 香港住宅IP 03 | 1x HK
-  password: dcc05e96-a7ae-455c-a6ab-3af0214598ed
-  port: 36145
-  server: free.2weradf.xyz
+  name: 14|🇭🇰香港家宽 03 | 1x HK
+  password: 5dfed5da-8787-4cd9-8935-9d3a3d741d78
+  port: 31145
+  server: free.2apzhfa.xyz
   type: ss
   udp: true
