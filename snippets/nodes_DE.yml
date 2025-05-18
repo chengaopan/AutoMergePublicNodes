@@ -1,14 +1,72 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇩🇪德国 01 | 1x DE
-  password: 1e107274-187b-4190-8c7e-932081b99e6e
+  password: 6e95f0a4-06ea-42cf-b181-a7d160a20eb0
   port: 31471
   server: free.2apzhfa.xyz
   type: ss
   udp: true
+- alterId: 0
+  cipher: auto
+  grpc-opts:
+    grpc-service-name: vmess-grpc
+  name: 1|🇩🇪1 |  3.7MB/s|Openai
+  network: grpc
+  port: 443
+  server: de.vmess.comnpmjs.com
+  servername: de.vmess.comnpmjs.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: ceaaf653-9874-58c6-b100-092c01a1f73d
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 1|🇩🇪4 |  3.1MB/s|30%|Youtube|Ope...
+  network: tcp
+  password: telegram-id-privatevpns
+  port: '22222'
+  server: 3.120.242.252
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 1|🇩🇪25 |  4.8MB/s|43%|Openai
+  network: ws
+  port: '443'
+  server: cloudgetservice.mcloudservice.site
+  servername: MAxNEtViP-gEr-vp1.MaXnETcLOuDSErVice.com
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 8f922e2e-18f3-4bd9-a097-09c2d7c139be
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: MAxNEtViP-gEr-vp1.MaXnETcLOuDSErVice.com
+    max-early-data: 2560
+    path: /linkws
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 1|🇩🇪21 |  3.8MB/s|30%|Youtube|Op...
+  network: tcp
+  password: telegram-id-directvpn
+  port: '22223'
+  server: 35.156.196.176
+  skip-cert-verify: false
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 14|🇩🇪 德国 01 | 1x DE
-  password: 47265c58-99db-4334-99dc-41b9ea89fefa
+  password: f6441a5f-442b-4fe4-96ca-c863ad188d16
   port: 36471
   server: free.2weradf.xyz
   type: ss
