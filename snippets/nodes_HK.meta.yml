@@ -1,20 +1,20 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港 02 | 1x HK
-  password: 6e95f0a4-06ea-42cf-b181-a7d160a20eb0
-  port: 31143
-  server: free.2apzhfa.xyz
+  name: 1|🇭🇰 香港 02 | 1x HK
+  password: eff23bac-b8a9-4e18-8c5c-4235550a2c06
+  port: 36143
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇭🇰香港家宽 03 | 1x HK
-  password: 6e95f0a4-06ea-42cf-b181-a7d160a20eb0
-  port: 31145
-  server: free.2apzhfa.xyz
+  name: 1|🇭🇰 香港住宅IP 03 | 1x HK
+  password: eff23bac-b8a9-4e18-8c5c-4235550a2c06
+  port: 36145
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - client-fingerprint: chrome
-  name: 1,11,12|香港5|@ripaojiedian
+  name: 2,12,13|香港5|@ripaojiedian
   network: tcp
   password: 2c605663-b89a-5734-a9d6-97d4743d72cf
   port: 8313
@@ -22,28 +22,13 @@ proxies:
   skip-cert-verify: false
   sni: hk-13-568.flztjc.net
   type: trojan
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 1,11|🇭🇰 香港|@ripaojiedian
-  password: ENYGONDU94UW1G6X
-  port: 15010
-  server: 8tv68qhq.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
-- name: 1|🇭🇰3 |  4.9MB/s|0%|Disney
-  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
-  port: 8313
-  server: 183.232.235.2
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   http-opts:
     headers: {}
     path:
     - /
-  name: 1|🇭🇰4 |  2.7MB/s|16%|Disney
+  name: 2|🇭🇰2 |  2.5MB/s|16%|Disney
   network: tcp
   port: '13110'
   reality-opts:
@@ -56,62 +41,83 @@ proxies:
   udp: true
   uuid: 856619cc-b73b-452e-879d-843514750ae3
   xudp: true
-- name: 1|🇭🇰5 |  1.2MB/s|0%|Disney|Opena...
-  network: ws
-  port: '80'
-  server: 45.131.208.27
-  type: vless
-  udp: true
-  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
-  ws-opts:
-    headers:
-      Host: reedfree8mahsang2.redorg.ir
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/52.0.2743.116 Safari/537.36
-    path: 'Telegram: @vpnAndroid2/?ed=2560'
-  xudp: true
-- client-fingerprint: chrome
-  name: 1|🇭🇰6 |  5.8MB/s|21%|Netflix|Dis...
-  password: RlzoEILU
-  port: '15624'
-  server: 36.156.102.124
+- name: 2|🇭🇰3 |  2.3MB/s|0%|Disney
+  password: 2c605663-b89a-5734-a9d6-97d4743d72cf
+  port: 8313
+  server: 183.232.235.2
   skip-cert-verify: true
   type: trojan
   udp: true
-- name: 1|🇭🇰7 |  4.5MB/s|0%|Disney|Opena...
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰4 |  3.2MB/s|43%|Youtube
   network: ws
-  port: '80'
-  server: 45.131.6.122
+  port: 443
+  server: 172.67.135.62
+  servername: hknbyivfffj.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: hknbyivfffj.site
+    path: /rbqqvws
+- alterId: 0
+  cipher: auto
+  name: 2|🇭🇰5 |  2.3MB/s|43%|Youtube
+  network: ws
+  port: 443
+  server: 104.21.6.201
+  servername: hknbyivfffj.site
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  ws-opts:
+    headers:
+      Host: hknbyivfffj.site
+    path: /rbqqvws
+- client-fingerprint: chrome
+  name: 2,14|US_speednode_0211
+  network: ws
+  port: 8880
+  server: 167.68.11.20
+  servername: reedfree8mahsang2.redorg.ir
+  skip-cert-verify: false
+  tls: false
   type: vless
   udp: true
   uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
       Host: reedfree8mahsang2.redorg.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/46.0.2490.80 Safari/537.36
-    path: 'Telegram: @vpnAndroid2/?ed=2560'
-  xudp: true
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 1,11,12|香港8|@ripaojiedian
+    path: /?ed=2560
+- name: 2|🇭🇰7 |  5.0MB/s|0%|Disney|Opena...
   network: ws
-  port: '8080'
-  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
+  port: '80'
+  server: 45.131.210.236
+  type: vless
+  udp: true
+  uuid: 53fa8faf-ba4b-4322-9c69-a3e5b1555049
   ws-opts:
     headers:
-      Host: broadcastlv.chat.bilibili.com
-    path: /
+      Host: reedfree8mahsang2.redorg.ir
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
+    path: 'Telegram:'
+  xudp: true
+- cipher: aes-256-gcm
+  client-fingerprint: chrome
+  name: 12|🇭🇰 香港|@ripaojiedian
+  password: ENYGONDU94UW1G6X
+  port: 15010
+  server: 8tv68qhq.slashdevslashnetslashtun.net
+  tfo: false
+  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 11|🇭🇰 香港2|@ripaojiedian
+  name: 12|🇭🇰 香港2|@ripaojiedian
   password: 91a41f4e02dc
   plugin: v2ray-plugin
   plugin-opts:
@@ -128,7 +134,7 @@ proxies:
 - alterId: 64
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇭🇰 香港3|@ripaojiedian
+  name: 12|🇭🇰 香港3|@ripaojiedian
   port: 35921
   server: 120.198.71.216
   skip-cert-verify: false
@@ -139,7 +145,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇭🇰 香港4|@ripaojiedian
+  name: 12|🇭🇰 香港4|@ripaojiedian
   port: 19019
   server: 45.89.233.67
   skip-cert-verify: false
@@ -150,7 +156,7 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 11|🇭🇰 香港6|@ripaojiedian
+  name: 12|🇭🇰 香港6|@ripaojiedian
   port: 45939
   server: 103.30.76.218
   skip-cert-verify: false
@@ -161,7 +167,7 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 11,12|香港7|@ripaojiedian
+  name: 12,13|香港7|@ripaojiedian
   network: ws
   port: '30809'
   server: v9.heduian.link
@@ -175,9 +181,26 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12,13|香港8|@ripaojiedian
+  network: ws
+  port: '8080'
+  server: bc842b49-swexs0-t1rt5e-1s09x.hgc1.tcpbbr.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 62b7824e-47dc-11ef-9f2d-f23c9164ca5d
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - alterId: 64
   cipher: auto
-  name: 12|香港3|@ripaojiedian
+  name: 13|香港3|@ripaojiedian
   network: tcp
   port: '35921'
   server: 120.198.71.216
@@ -187,7 +210,7 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 12|香港4|@ripaojiedian
+  name: 13|香港4|@ripaojiedian
   network: tcp
   port: '19019'
   server: 45.89.233.67
@@ -197,7 +220,7 @@ proxies:
   uuid: 802e1632-9c29-4f2d-821f-96a35daeed3b
 - alterId: 0
   cipher: auto
-  name: 12|香港6|@ripaojiedian
+  name: 13|香港6|@ripaojiedian
   network: tcp
   port: '45939'
   server: 103.30.76.218
@@ -205,56 +228,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 268fe594-cd35-4038-8bc1-1086ada27fe8
-- client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 13|HK_speednode_0059
-  port: 20550
-  reality-opts:
-    public-key: cWs2mTxI3sdZlPYsRh239mJFnxi0Y8RmF-ZEtziFNQ8
-  server: hkt-ty-line-1.sudatech.store
-  servername: www.paypal.com
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2d317da5-47c5-4db4-933f-16d1094668db
-- name: 13|HK_speednode_0060
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: true
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr?ed=2560
-- name: 13|HK_speednode_0061
-  network: ws
-  password: bpb-trojan
-  port: 443
-  server: us.madison.eu.org
-  skip-cert-verify: false
-  sni: skwygx.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: skwygx.top
-    path: /tr
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰 香港 02 | 1x HK
-  password: f6441a5f-442b-4fe4-96ca-c863ad188d16
-  port: 36143
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇭🇰 香港住宅IP 03 | 1x HK
-  password: f6441a5f-442b-4fe4-96ca-c863ad188d16
-  port: 36145
-  server: free.2weradf.xyz
-  type: ss
-  udp: true

@@ -1,41 +1,38 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 01 | 1x KR
-  password: 6e95f0a4-06ea-42cf-b181-a7d160a20eb0
-  port: 31311
-  server: free.2apzhfa.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇰🇷韩国 02 | 1x KR
-  password: 6e95f0a4-06ea-42cf-b181-a7d160a20eb0
-  port: 31313
-  server: free.2apzhfa.xyz
+  name: 1|🇰🇷 韩国 01 | 1x KR
+  password: eff23bac-b8a9-4e18-8c5c-4235550a2c06
+  port: 36311
+  server: free.2weradf.xyz
   type: ss
   udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 1,11|🇰🇷 韩国|@ripaojiedian
+  name: 2|🇰🇷1 |  5.2MB/s|Netflix|Disney|...
+  password: qwerREWQ@@
+  port: 4857
+  server: p227.panda004.net
+  tfo: true
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 2|🇰🇷2 |  5.4MB/s|Netflix|Disney|...
+  password: qwerREWQ@@
+  port: '11389'
+  server: 221.150.109.89
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  client-fingerprint: chrome
+  name: 12|🇰🇷 韩国|@ripaojiedian
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
   tfo: false
   type: ss
-- cipher: aes-256-cfb
-  name: 1|🇰🇷3 |  5.1MB/s|Openai
-  password: qwerREWQ@@
-  port: 11389
-  server: p231.panda004.net
-  type: ss
-- cipher: aes-256-cfb
-  name: 1|🇰🇷4 |  4.5MB/s|44%|Netflix|Dis...
-  password: qwerREWQ@@
-  port: 4857
-  server: 125.141.26.12
-  type: ss
 - cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
-  name: 11|🇰🇷 韩国2|@ripaojiedian
+  name: 12|🇰🇷 韩国2|@ripaojiedian
   password: 1a17b19d-4896-4531-af79-6e91d8ef8228
   port: 6666
   server: 3.34.139.2
@@ -43,16 +40,22 @@ proxies:
   type: ss
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 11|🇰🇷 韩国3|@ripaojiedian
+  name: 12|🇰🇷 韩国3|@ripaojiedian
   password: 1601e3c29c8db1a88942cf0cad731bf3
   port: 3306
   server: 43.131.255.175
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 14|🇰🇷 韩国 01 | 1x KR
-  password: f6441a5f-442b-4fe4-96ca-c863ad188d16
-  port: 36311
-  server: free.2weradf.xyz
-  type: ss
+- name: 14|KR_speednode_0123
+  network: ws
+  password: 6884d714-d3c4-4b49-aa20-767ea92837d6
+  port: 443
+  server: 149.129.8.215
+  skip-cert-verify: true
+  sni: icecream.955850.xyz
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: icecream.955850.xyz
+    path: /proxyip=149.129.8.215:443&proxyIP=null
