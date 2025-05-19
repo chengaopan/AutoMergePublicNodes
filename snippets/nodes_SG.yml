@@ -1,42 +1,28 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 01 | 1x SG
-  password: d4ab5cf6-5ad9-4f5b-b0f4-bd0323d064a9
-  port: 36171
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬 新加坡 02 | 1x SG
-  password: d4ab5cf6-5ad9-4f5b-b0f4-bd0323d064a9
-  port: 36173
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 01 | 1x SG
-  password: 7486bd4d-8cdc-403a-9358-63e1d990cd9b
+  name: 0|🇸🇬新加坡 01 | 1x SG
+  password: 3d14d4b9-d35e-4bde-b6fb-3907dd9ce86a
   port: 31171
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 02 | 1x SG
-  password: 7486bd4d-8cdc-403a-9358-63e1d990cd9b
+  name: 0|🇸🇬新加坡 02 | 1x SG
+  password: 3d14d4b9-d35e-4bde-b6fb-3907dd9ce86a
   port: 31173
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 1|🇸🇬新加坡 03 | 1x SG
-  password: 7486bd4d-8cdc-403a-9358-63e1d990cd9b
+  name: 0|🇸🇬新加坡 03 | 1x SG
+  password: 3d14d4b9-d35e-4bde-b6fb-3907dd9ce86a
   port: 31175
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - alterId: 64
   cipher: auto
-  name: 2|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
+  name: 1|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
   port: 49291
   server: 183.236.51.38
   skip-cert-verify: false
@@ -44,6 +30,20 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇸🇬 新加坡 01 | 1x SG
+  password: ca60b10e-62fe-410d-ab62-903411c46030
+  port: 36171
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 2|🇸🇬 新加坡 02 | 1x SG
+  password: ca60b10e-62fe-410d-ab62-903411c46030
+  port: 36173
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -61,11 +61,21 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 12|🇸🇬 新加坡2|@ripaojiedian
-  password: O363WP68J33COIEX
-  port: 16009
-  server: ti3hyra4.slashdevslashnetslashtun.net
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: 12,13|新加坡2|@ripaojiedian
+  network: tcp
+  password: 09e8b39a-4c09-4df0-a50c-af3bef01567e
+  port: 35000
+  server: gzyd.cg.xxality.cn
+  skip-cert-verify: false
+  sni: cgsg2.hysality.com
+  type: trojan
+- client-fingerprint: chrome
+  name: 12,13|新加坡3|@ripaojiedian
+  network: tcp
+  password: ffea316f-7e81-4f8c-b122-1673abe353ed
+  port: 42881
+  server: 120.232.220.45
+  skip-cert-verify: false
+  sni: q08m.vgraxiw73s.hasyaf.cn
+  type: trojan
