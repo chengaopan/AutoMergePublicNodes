@@ -1,26 +1,47 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 01 | 1x US Los Angeles
-  password: fcb669ea-bcf2-4f94-a9e6-f7fd1f1921b9
+  password: b5af505b-1c7c-4f4e-bf77-3e620ee1cce4
   port: 31211
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国家宽 02 | 1x US Los Angeles
-  password: fcb669ea-bcf2-4f94-a9e6-f7fd1f1921b9
+  password: b5af505b-1c7c-4f4e-bf77-3e620ee1cce4
   port: 31213
   server: free.2apzhfa.xyz
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
   name: 0|🇺🇸美国 03 | 1x US Washington
-  password: fcb669ea-bcf2-4f94-a9e6-f7fd1f1921b9
+  password: b5af505b-1c7c-4f4e-bf77-3e620ee1cce4
   port: 31215
   server: free.2apzhfa.xyz
   type: ss
   udp: true
-- name: 1|🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 01 | 1x US Los Angeles
+  password: 9ee55529-34a5-434c-a3e8-9a85fc913612
+  port: 36211
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
+  password: 9ee55529-34a5-434c-a3e8-9a85fc913612
+  port: 36213
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇺🇸 美国 03 | 1x US Washington
+  password: 9ee55529-34a5-434c-a3e8-9a85fc913612
+  port: 36215
+  server: free.2weradf.xyz
+  type: ss
+  udp: true
+- name: 2|🇺🇸45 |  2.5MB/s|46%|Openai|Gem...
   password: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
   port: 15229
   server: 391907cc-swgsg0-t1bnjq-1krtb.cu.plebai.net
@@ -29,7 +50,7 @@ proxies:
   udp: true
 - alterId: 2
   cipher: auto
-  name: 1|🇺🇸62 |  3.3MB/s|Openai|Gemini
+  name: 2|🇺🇸62 |  3.3MB/s|Openai|Gemini
   network: ws
   port: 30829
   server: v29.heduian.link
@@ -41,14 +62,14 @@ proxies:
     headers:
       Host: ocbc.com
     path: /oooo
-- name: 1|🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
+- name: 2|🇺🇸63 |  2.1MB/s|46%|Openai|Gem...
   password: 5e2f888c-68ef-11ef-96ca-f23c9164ca5d
   port: 15229
   server: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
   skip-cert-verify: false
   sni: 13c2c931-swin40-swy6li-tni2.cu.plebai.net
   type: trojan
-- name: 1|🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
+- name: 2|🇺🇸64 |  1.3MB/s|46%|Openai|Gem...
   password: def14a51-e0d9-11ec-8429-f23c91cfbbc9
   port: 15229
   server: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
@@ -56,34 +77,13 @@ proxies:
   sni: 4560c642-swin40-tjuq6l-wf62.cu.plebai.net
   type: trojan
   udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 01 | 1x US Los Angeles
-  password: 4c26dc87-be7a-49b1-a8f1-c2fa578eefb8
-  port: 36211
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国住宅IP 02 | 1x US Los Angel...
-  password: 4c26dc87-be7a-49b1-a8f1-c2fa578eefb8
-  port: 36213
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇺🇸 美国 03 | 1x US Washington
-  password: 4c26dc87-be7a-49b1-a8f1-c2fa578eefb8
-  port: 36215
-  server: free.2weradf.xyz
-  type: ss
-  udp: true
 - cipher: rc4-md5
   client-fingerprint: chrome
   name: 12|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202505181740997-cBGZl5Y2Ww.download.microsoft.com
+    host: 202505181740997-taeEBdiw05.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -109,23 +109,6 @@ proxies:
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
-  name: 12,13|美国3|@ripaojiedian
-  network: ws
-  port: '22642'
-  server: tk.hzlt.tkddns.xyz
-  servername: zxjp-b.tkong.cc
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vmess
-  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
-  ws-opts:
-    headers:
-      Host: zxjp-b.tkong.cc
-    path: /
-- alterId: 2
-  cipher: auto
-  client-fingerprint: chrome
   name: 12,13|美国5|@ripaojiedian
   network: ws
   port: '22641'
@@ -139,6 +122,23 @@ proxies:
   ws-opts:
     headers:
       Host: zxjp-a.tkong.cc
+    path: /
+- alterId: 2
+  cipher: auto
+  client-fingerprint: chrome
+  name: 12,13|美国3|@ripaojiedian
+  network: ws
+  port: '22642'
+  server: tk.hzlt.tkddns.xyz
+  servername: zxjp-b.tkong.cc
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 98e96c9f-4bb3-39d4-9a2c-fac04257f7c7
+  ws-opts:
+    headers:
+      Host: zxjp-b.tkong.cc
     path: /
 - name: 14|US_speednode_0210
   password: czaOZA3OxRYDl4u0RxT7D62FyNI3aC98ZCDDRnDax6zECS5I35wSqSKTXYAy3Nw3eXYaO
