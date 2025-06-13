@@ -1,28 +1,42 @@
 proxies:
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 101 | 1x SG
-  password: a4032dd0-deb4-4886-b84f-a344994d3d90
+  name: 0|🇸🇬 新加坡 101 | 1x SG
+  password: b929223d-a79f-45f0-b9a4-65ced0e0b603
+  port: 36171
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 0|🇸🇬 新加坡 102 | 1x SG
+  password: b929223d-a79f-45f0-b9a4-65ced0e0b603
+  port: 36173
+  server: freea.glyphara.com
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 1|🇸🇬新加坡 101 | 1x SG
+  password: fe88716c-2ae6-4f0c-b0bb-36b2d7dd01ee
   port: 31171
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 102 | 1x SG
-  password: a4032dd0-deb4-4886-b84f-a344994d3d90
+  name: 1|🇸🇬新加坡 102 | 1x SG
+  password: fe88716c-2ae6-4f0c-b0bb-36b2d7dd01ee
   port: 31173
   server: freem.vidalith.com
   type: ss
   udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 0|🇸🇬新加坡 103 | 1x SG
-  password: a4032dd0-deb4-4886-b84f-a344994d3d90
+  name: 1|🇸🇬新加坡 103 | 1x SG
+  password: fe88716c-2ae6-4f0c-b0bb-36b2d7dd01ee
   port: 31175
   server: freem.vidalith.com
   type: ss
   udp: true
 - alterId: 64
   cipher: auto
-  name: 1|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
+  name: 2|🇸🇬1 |  1.0MB/s|0%|Netflix|Disn...
   port: 49291
   server: 183.236.51.38
   skip-cert-verify: false
@@ -30,20 +44,6 @@ proxies:
   type: vmess
   udp: true
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬 新加坡 101 | 1x SG
-  password: d8d368d3-343a-45e1-81a9-c73e70eac2a0
-  port: 36171
-  server: freea.glyphara.com
-  type: ss
-  udp: true
-- cipher: chacha20-ietf-poly1305
-  name: 2|🇸🇬 新加坡 102 | 1x SG
-  password: d8d368d3-343a-45e1-81a9-c73e70eac2a0
-  port: 36173
-  server: freea.glyphara.com
-  type: ss
-  udp: true
 - alterId: 2
   cipher: auto
   client-fingerprint: chrome
@@ -74,6 +74,17 @@ proxies:
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
+  client-fingerprint: chrome
+  name: 12|🇸🇬 新加坡4|@ripaojiedian
+  port: 56051
+  server: 38.47.176.251
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 2bca3569-0662-47f7-fdf8-421f30e71f44
+- alterId: 0
+  cipher: auto
   name: 13|新加坡2|@ripaojiedian
   network: tcp
   port: '41024'
@@ -82,3 +93,13 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- alterId: 0
+  cipher: auto
+  name: 13|新加坡4|@ripaojiedian
+  network: tcp
+  port: '56051'
+  server: 38.47.176.251
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 2bca3569-0662-47f7-fdf8-421f30e71f44
