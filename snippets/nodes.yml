@@ -120,25 +120,20 @@ proxies:
   name: 12|tg频道:@ripaojiedian
   password: qawszxc123
   port: 443
-  server: 54.251.150.228
+  server: 54.179.251.40
   tfo: false
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 12|🇭🇰 香港2|@ripaojiedian
-  password: 08293b204707
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: hk6v1.pmxiaonan.xyz
-    mode: websocket
-    mux: true
-    path: /sclbvcgkp
-    skip-cert-verify: false
-    tls: true
-  port: 20507
-  server: 156.251.179.238
+- alterId: 0
+  cipher: auto
+  name: 12|🇭🇰 香港6|@ripaojiedian
+  port: 36519
+  server: 183.236.51.38
+  skip-cert-verify: false
   tfo: false
-  type: ss
-- name: 12,13|香港3|@ripaojiedian
+  tls: false
+  type: vmess
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- name: 12,13,14|CN_speednode_0043
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
@@ -146,6 +141,22 @@ proxies:
   skip-cert-verify: true
   sni: 120.233.128.68
   type: trojan
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 12|🇭🇰 香港2|@ripaojiedian
+  password: 1450cecfb93f
+  plugin: v2ray-plugin
+  plugin-opts:
+    host: kh36v1.pmxiaonan.xyz
+    mode: websocket
+    mux: true
+    path: /simieepvt
+    skip-cert-verify: false
+    tls: true
+  port: 15116
+  server: kh36v1.pmxiaonan.xyz
+  tfo: false
+  type: ss
 - name: 12,13|香港4|@ripaojiedian
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
@@ -154,60 +165,47 @@ proxies:
   skip-cert-verify: true
   sni: www.yrtok.com
   type: trojan
-- alterId: 64
-  cipher: auto
-  name: 12|🇸🇬 新加坡3|@ripaojiedian
-  port: 31209
-  server: 120.232.153.40
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
-  name: 12|🇭🇰 香港6|@ripaojiedian
-  port: 20452
-  server: 20.2.80.240
+  name: 12,13|香港5|@ripaojiedian
+  network: ws
+  port: '8443'
+  server: 104.18.42.62
+  servername: hk2.huaweiwuu5.xyz
   skip-cert-verify: false
   tfo: false
-  tls: false
+  tls: true
   type: vmess
-  uuid: 52aba3eb-0a6f-4c2f-29c6-d4b18a1d7c3e
-- alterId: 0
+  uuid: 48469ac3-9fe7-4fb3-9320-6c8b0494c4f7
+  ws-opts:
+    headers:
+      Host: hk2.huaweiwuu5.xyz
+    path: /
+- alterId: 2
   cipher: auto
-  name: 12|🇭🇰 香港7|@ripaojiedian
-  port: 46159
-  server: 120.198.71.216
+  name: 12,13|香港7|@ripaojiedian
+  network: ws
+  port: '30809'
+  server: v9.heduian.link
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: baidu.com
+    path: /oooo
 - cipher: rc4-md5
   name: 12|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202506131022370-Bautep9ydo.download.microsoft.com
+    host: 202506131022370-sV66FLy3Dk.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 12|🇯🇵 日本2|@ripaojiedian
-  password: 264727317ef6
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: kr9v1.3ci.xyz
-    mode: websocket
-    mux: true
-    path: /ylikhqxcjfeb
-    skip-cert-verify: false
-    tls: true
-  port: 30203
-  server: 121.0.97.29
   tfo: false
   type: ss
 - name: 12,13|日本3|@ripaojiedian
@@ -228,33 +226,66 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-- alterId: 0
-  cipher: auto
-  name: 12|🇰🇷 韩国|@ripaojiedian
-  port: 31945
-  server: 203.227.44.74
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 7ccbb147-38b8-4d7c-9201-2ad4ae8b8761
-- cipher: rc4-md5
-  name: 12|🇺🇸 美国2|@ripaojiedian
-  password: efanccyun
-  plugin: obfs
+- cipher: aes-256-gcm
+  name: 12|🇯🇵 日本2|@ripaojiedian
+  password: 8360adcea0b1
+  plugin: v2ray-plugin
   plugin-opts:
-    host: 202506131022370-Bautep9ydo.download.microsoft.com
-    mode: http
-  port: 8774
-  server: cn01.efan8867801.xyz
+    host: kr6v1.dashengjs.net
+    mode: websocket
+    mux: true
+    path: /bylnxldqaquw
+    skip-cert-verify: false
+    tls: true
+  port: 443
+  server: kr6v1.dashengjs.net
   tfo: false
   type: ss
+- name: 12,13|韩国|@ripaojiedian
+  network: tcp
+  password: 2b1ed981-6547-4094-998b-06a3323d6f6c
+  port: 21056
+  server: 120.233.44.201
+  skip-cert-verify: false
+  sni: k14.tudou211.com
+  type: trojan
+- name: 12,13|韩国2|@ripaojiedian
+  network: tcp
+  password: 85f133142f04dbf6547da33895cfabb3
+  port: 39001
+  server: 203.156.253.12
+  skip-cert-verify: true
+  sni: www.yrtok.com
+  type: trojan
+- cipher: chacha20-ietf-poly1305
+  name: 12|🇰🇷 韩国3|@ripaojiedian
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 9898
+  server: 3.36.114.140
+  tfo: false
+  type: ss
+- alterId: 0
+  cipher: auto
+  name: 12,13|新加坡2|@ripaojiedian
+  network: ws
+  port: '8443'
+  server: 172.64.157.100
+  servername: transcripts-guys-singapore-fotos.trycloudflare.com
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vmess
+  uuid: 3da5d27f-08d0-4078-f890-cf950ecb1708
+  ws-opts:
+    headers:
+      Host: transcripts-guys-singapore-fotos.trycloudflare.com
+    path: /
 - alterId: 2
   cipher: auto
   name: 12,13|美国|@ripaojiedian
   network: ws
-  port: '30832'
-  server: v32.heduian.link
+  port: '30828'
+  server: v28.heduian.link
   servername: ''
   skip-cert-verify: false
   tfo: false
@@ -263,8 +294,19 @@ proxies:
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
   ws-opts:
     headers:
-      Host: baidu.com
+      Host: ocbc.com
     path: /oooo
+- cipher: rc4-md5
+  name: 12|🇺🇸 美国2|@ripaojiedian
+  password: efanccyun
+  plugin: obfs
+  plugin-opts:
+    host: 202506131022370-sV66FLy3Dk.download.microsoft.com
+    mode: http
+  port: 8774
+  server: cn01.efan8867801.xyz
+  tfo: false
+  type: ss
 - name: 12|🇺🇸 美国3|@ripaojiedian
   password: d18bcaf4-1323-11ec-a0fc-f23c913c8d2b
   port: 15229
@@ -272,39 +314,12 @@ proxies:
   skip-cert-verify: false
   sni: 35eb0e91-sy0cg0-t7fz1r-8rja.cu.plebai.net
   type: trojan
-- cipher: aes-256-cfb
-  name: 12|🇻🇳 越南|@ripaojiedian
-  password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
-  port: 38388
-  server: 103.186.155.22
-  tfo: false
-  type: ss
-- alterId: 64
-  cipher: auto
-  name: 13|新加坡3|@ripaojiedian
-  network: tcp
-  port: '31209'
-  server: 120.232.153.40
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
 - alterId: 0
   cipher: auto
   name: 13|香港6|@ripaojiedian
   network: tcp
-  port: '20452'
-  server: 20.2.80.240
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 52aba3eb-0a6f-4c2f-29c6-d4b18a1d7c3e
-- alterId: 0
-  cipher: auto
-  name: 13|香港7|@ripaojiedian
-  network: tcp
-  port: '46159'
-  server: 120.198.71.216
+  port: '36519'
+  server: 183.236.51.38
   servername: ''
   tls: false
   type: vmess
@@ -351,16 +366,6 @@ proxies:
   uuid: b798372a-54c8-4597-969e-8b00d2f76c09
 - alterId: 0
   cipher: auto
-  name: 13|韩国|@ripaojiedian
-  network: tcp
-  port: '31945'
-  server: 203.227.44.74
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 7ccbb147-38b8-4d7c-9201-2ad4ae8b8761
-- alterId: 0
-  cipher: auto
   name: 13|新加坡|@ripaojiedian
   network: kcp
   port: '51713'
@@ -375,47 +380,614 @@ proxies:
   port: 15229
   server: 35eb0e91-sy0cg0-t7fz1r-8rja.cu.plebai.net
   type: trojan
-- name: 14|CN_speednode_0026
-  password: FpQhGpIr
-  port: 38632
-  server: 36.151.251.62
-  skip-cert-verify: true
-  sni: 36.151.251.62
+- name: 14|ES_speednode_0091
+  network: ws
+  password: trojan
+  port: 8443
+  server: 109.234.211.66
+  skip-cert-verify: false
+  sni: store.timimi.dpdns.org
   type: trojan
   udp: true
-- name: 14|CN_speednode_0027
-  password: HrTsLJvh
-  port: 38632
-  server: 36.151.251.62
+  ws-opts:
+    headers:
+      Host: store.timimi.dpdns.org
+    path: /?ed=2560
+- name: 14|IN_speednode_0132
+  network: ws
+  password: ttfang
+  port: 443
+  server: 13.233.5.49
   skip-cert-verify: true
-  sni: 36.151.251.62
+  sni: ttfang.fange.me
   type: trojan
   udp: true
-- name: 14|CN_speednode_0028
-  password: HrTsLJvh
-  port: 38632
-  server: 36.151.251.62
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0137
+  network: ws
+  password: ttfang
+  port: 26782
+  server: 183.103.211.16
   skip-cert-verify: true
+  sni: ttfang.fange.me
   type: trojan
   udp: true
-- name: 14|CN_speednode_0029
-  password: FpQhGpIr
-  port: 38632
-  server: 36.151.251.62
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0138
+  network: ws
+  password: ttfang
+  port: 14074
+  server: 211.248.229.186
   skip-cert-verify: true
+  sni: ttfang.fange.me
   type: trojan
   udp: true
-- name: 14|CN_speednode_0030
-  password: HrTsLJvh
-  port: 43196
-  server: 223.111.144.12
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0139
+  network: ws
+  password: ttfang
+  port: 27094
+  server: 119.195.155.85
   skip-cert-verify: true
+  sni: ttfang.fange.me
   type: trojan
   udp: true
-- name: 14|CN_speednode_0031
-  password: FpQhGpIr
-  port: 4448
-  server: 36.151.251.56
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0140
+  network: ws
+  password: ttfang
+  port: 31491
+  server: 220.71.245.141
   skip-cert-verify: true
+  sni: ttfang.fange.me
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0141
+  network: ws
+  password: ttfang
+  port: 34689
+  server: 121.172.5.248
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0142
+  network: ws
+  password: ttfang
+  port: 31164
+  server: 220.72.134.44
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0143
+  network: ws
+  password: ttfang
+  port: 10126
+  server: 121.154.79.130
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0144
+  network: ws
+  password: ttfang
+  port: 24304
+  server: 220.87.243.193
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0145
+  network: ws
+  password: ttfang
+  port: 16913
+  server: 121.172.5.248
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0146
+  network: ws
+  password: ttfang
+  port: 28827
+  server: 118.37.105.12
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0147
+  network: ws
+  password: ttfang
+  port: 28568
+  server: 220.87.243.193
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0148
+  network: ws
+  password: ttfang
+  port: 14491
+  server: 61.83.219.114
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0149
+  network: ws
+  password: ttfang
+  port: 29340
+  server: 220.87.229.22
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0150
+  network: ws
+  password: ttfang
+  port: 37865
+  server: 220.87.229.22
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0151
+  network: ws
+  password: ttfang
+  port: 21789
+  server: 183.100.144.36
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0152
+  network: ws
+  password: ttfang
+  port: 29264
+  server: 221.161.58.134
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0153
+  network: ws
+  password: ttfang
+  port: 26120
+  server: 218.148.212.190
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0154
+  network: ws
+  password: ttfang
+  port: 10482
+  server: 183.100.144.36
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0156
+  network: ws
+  password: ttfang
+  port: 14982
+  server: 59.5.53.119
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|KR_speednode_0157
+  network: ws
+  password: ttfang
+  port: 18548
+  server: 59.5.53.119
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|SG_speednode_0282
+  network: ws
+  password: ttfang
+  port: 5027
+  server: 8.219.77.72
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|SG_speednode_0289
+  network: ws
+  password: ttfang
+  port: 1111
+  server: 138.2.95.61
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|SG_speednode_0291
+  network: ws
+  password: ttfang
+  port: 53076
+  server: 152.69.220.136
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|SG_speednode_0292
+  network: ws
+  password: ttfang
+  port: 443
+  server: 139.180.154.158
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|SG_speednode_0293
+  network: ws
+  password: ttfang
+  port: 443
+  server: 128.199.237.143
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|SG_speednode_0294
+  network: ws
+  password: ttfang
+  port: 443
+  server: 160.22.79.191
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 14|US_speednode_0469
+  network: ws
+  password: 13253e6e-a1f7-4090-801f-a8dc2b083bef
+  port: 443
+  server: 104.21.75.120
+  skip-cert-verify: false
+  sni: inviNcIble.fafa20.ShOp
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: inviNcIble.fafa20.ShOp
+    path: /tr7PXHQRn4VPwGA2zY/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560
+- name: 14|US_speednode_0471
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 172.67.140.61
+  skip-cert-verify: false
+  sni: adbt.ir
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: adbt.ir
+    path: /tr?ed=2560
+- name: 14|US_speednode_0480
+  network: ws
+  password: 13253e6e-a1f7-4090-801f-a8dc2b083bef
+  port: 443
+  server: 172.67.175.148
+  skip-cert-verify: false
+  sni: inviNcIble.fafa20.ShOp
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: inviNcIble.fafa20.ShOp
+    path: /tr7PXHQRn4VPwGA2zY/c2hpcmVuLnlhZW1pa28uZ2dmZi5uZXQ=?ed=2560
+- name: 14|US_speednode_0481
+  network: ws
+  password: 13253e6e-a1f7-4090-801f-a8dc2b083bef
+  port: 2083
+  server: 104.21.95.229
+  skip-cert-verify: false
+  sni: INvincIBLE.fafA20.Shop
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: INvincIBLE.fafA20.Shop
+    path: /trYStgfIRQtOjkkxCQ/MTI5LjE1OS44NC43MQ==?ed=2560
+- name: 14|US_speednode_0513
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 172.67.180.227
+  skip-cert-verify: false
+  sni: mashdt.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mashdt.pages.dev
+    path: /tr?ed=2560
+- name: 14|US_speednode_0522
+  network: ws
+  password: trojan
+  port: 8443
+  server: 104.26.13.31
+  skip-cert-verify: false
+  sni: qianlang.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: qianlang.pages.dev
+    path: /
+- name: 14|US_speednode_0525
+  network: ws
+  password: bpb-trojan
+  port: 443
+  server: 104.21.75.193
+  skip-cert-verify: false
+  sni: mashdt.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: mashdt.pages.dev
+    path: /tr?ed=2560
+- name: 14|US_speednode_0531
+  network: ws
+  password: 13e26f64-2e0c-4461-92cd-d83294cc18f0
+  port: 443
+  server: 172.67.185.107
+  skip-cert-verify: false
+  sni: WwwDe.00890604.XyZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: WwwDe.00890604.XyZ
+    path: /TDUxZUop9k44oPiit2OdWk0KwirdY
+- name: 14|US_speednode_0532
+  network: ws
+  password: 13e26f64-2e0c-4461-92cd-d83294cc18f0
+  port: 443
+  server: 104.21.76.21
+  skip-cert-verify: false
+  sni: WwwDe.00890604.XyZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: WwwDe.00890604.XyZ
+    path: /TDUxZUop9k44oPiit2OdWk0KwirdY
+- name: 14|US_speednode_0533
+  network: ws
+  password: 19a78eeb-d83a-4364-b095-b7dd93436320
+  port: 443
+  server: 104.21.29.205
+  skip-cert-verify: false
+  sni: CVFgTrE4.222560.XyZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: CVFgTrE4.222560.XyZ
+    path: /Hq0I4JMuzO0WLijID
+- name: 14|US_speednode_0540
+  network: ws
+  password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2
+  port: 443
+  server: 172.67.172.71
+  skip-cert-verify: false
+  sni: 666666Y.999165.XYZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 666666Y.999165.XYZ
+    path: /mFvK3LJyIAe8ydvnmRKWDa8
+- name: 14|US_speednode_0542
+  network: ws
+  password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2
+  port: 443
+  server: 104.21.88.37
+  skip-cert-verify: false
+  sni: XXcdVFghYUIOp.999165.xyZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: XXcdVFghYUIOp.999165.xyZ
+    path: /mFvK3LJyIAe8ydvnmRKWDa8
+- name: 14|US_speednode_0544
+  network: ws
+  password: 288124da-0d68-42f4-9f48-70dc4dcc55a6
+  port: 443
+  server: 172.67.175.139
+  skip-cert-verify: false
+  sni: cvFbghYU.859886.XYZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: cvFbghYU.859886.XYZ
+    path: /raChT39pjLFYRA5HdHEIupMZeK
+- name: 14|US_speednode_0547
+  network: ws
+  password: 30602b6d-5d5c-4f56-9b65-9ae2fd9348cb
+  port: 443
+  server: 172.67.209.79
+  skip-cert-verify: false
+  sni: sssxcvfgty.999834.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: sssxcvfgty.999834.xyz
+    path: /MwXI8nfdPkSDsYEGVHqPd73hl
+- name: 14|US_speednode_0548
+  network: ws
+  password: a4291a2a-d62c-4eb9-ac7a-ac7355d1eda2
+  port: 443
+  server: 104.21.24.195
+  skip-cert-verify: false
+  sni: RFgTHYu7.999836.Xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: RFgTHYu7.999836.Xyz
+    path: /mFvK3LJyIAe8ydvnmRKWDa8
+- name: 14|US_speednode_0549
+  network: ws
+  password: 288124da-0d68-42f4-9f48-70dc4dcc55a6
+  port: 443
+  server: 172.67.200.11
+  skip-cert-verify: false
+  sni: rRfGty6.890606.XYz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: rRfGty6.890606.XYz
+    path: /raChT39pjLFYRA5HdHEIupMZeK
+- name: 14|US_speednode_0551
+  network: ws
+  password: 30602b6d-5d5c-4f56-9b65-9ae2fd9348cb
+  port: 443
+  server: 104.21.77.149
+  skip-cert-verify: false
+  sni: sssxcvfgty.999834.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: sssxcvfgty.999834.xyz
+    path: /MwXI8nfdPkSDsYEGVHqPd73hl
+- name: 14|US_speednode_0553
+  network: ws
+  password: 19a78eeb-d83a-4364-b095-b7dd93436320
+  port: 443
+  server: 172.67.149.202
+  skip-cert-verify: false
+  sni: CVFgTrE4.222560.XyZ
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: CVFgTrE4.222560.XyZ
+    path: /Hq0I4JMuzO0WLijID
+- name: 14|US_speednode_0557
+  network: ws
+  password: f108e0e2-5f12-42b6-9e67-1b2f073ffb2b
+  port: 443
+  server: 172.67.219.196
+  skip-cert-verify: false
+  sni: CCcvfgt6.852224.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: CCcvfgt6.852224.dpdns.org
+    path: /CA5bMmr2JMum8sDKRwvFCJq
