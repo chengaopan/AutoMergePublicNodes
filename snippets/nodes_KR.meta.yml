@@ -1,5 +1,5 @@
 proxies:
-- name: 1|🇰🇷1 |  1.3MB/s|61%|Disney|Open...
+- name: 0|🇰🇷1 |  1.3MB/s|61%|Disney|Open...
   network: ws
   port: 8880
   server: 216.116.134.20
@@ -14,13 +14,13 @@ proxies:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - cipher: aes-256-cfb
-  name: 1|🇰🇷2 |  1.5MB/s|44%|Openai
+  name: 0|🇰🇷2 |  1.5MB/s|44%|Openai
   password: qwerREWQ@@
   port: 15098
   server: 125.141.31.72
   type: ss
 - client-fingerprint: chrome
-  name: 1|🇰🇷3 |  1.3MB/s|61%|Disney|Open...
+  name: 0|🇰🇷3 |  1.3MB/s|61%|Disney|Open...
   network: ws
   port: 8880
   server: 212.183.88.20
@@ -32,7 +32,7 @@ proxies:
       Host: reedfree8mahsang2.redorg.ir
     path: /?ed=2560
 - client-fingerprint: chrome
-  name: 11,12|韩国|@ripaojiedian
+  name: 10,11|韩国|@ripaojiedian
   network: tcp
   password: 2b1ed981-6547-4094-998b-06a3323d6f6c
   port: 21056
@@ -41,7 +41,7 @@ proxies:
   sni: k14.tudou211.com
   type: trojan
 - client-fingerprint: chrome
-  name: 11,12,13|CN_speednode_0009
+  name: 10,11|韩国2|@ripaojiedian
   network: tcp
   password: 85f133142f04dbf6547da33895cfabb3
   port: 39001
@@ -49,17 +49,31 @@ proxies:
   skip-cert-verify: true
   sni: www.yrtok.com
   type: trojan
-  udp: true
 - cipher: aes-256-cfb
   client-fingerprint: chrome
-  name: 11|🇰🇷 韩国3|@ripaojiedian
+  name: 10|🇰🇷 韩国3|@ripaojiedian
   password: qwerREWQ@@
   port: 5344
   server: 125.141.26.14
   tfo: false
   type: ss
+- client-fingerprint: random
+  name: 12|KR_speednode_0038
+  network: ws
+  port: 28030
+  server: 120.143.180.126
+  servername: miku.mikuru.ip-ddns.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: ad733722-3852-495c-8fca-68408cb88b41
+  ws-opts:
+    headers:
+      Host: miku.mikuru.ip-ddns.com
+    path: /?ed=2560
 - client-fingerprint: chrome
-  name: 13|KR_speednode_0049
+  name: 12|KR_speednode_0039
   network: ws
   port: 10182
   server: 58.120.196.122
@@ -74,22 +88,7 @@ proxies:
       Host: mot.majusti.dpdns.org
     path: /?ed=2560
 - client-fingerprint: random
-  name: 13|KR_speednode_0050
-  network: ws
-  port: 28030
-  server: 120.143.180.126
-  servername: miku.mikuru.ip-ddns.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ad733722-3852-495c-8fca-68408cb88b41
-  ws-opts:
-    headers:
-      Host: miku.mikuru.ip-ddns.com
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 13|KR_speednode_0051
+  name: 12|KR_speednode_0040
   network: ws
   port: 28030
   server: 120.143.180.126
@@ -104,7 +103,7 @@ proxies:
       Host: mikuyo.bpd67081tsq.ddns-ip.net
     path: /?ed=2560
 - client-fingerprint: random
-  name: 13|KR_speednode_0052
+  name: 12|KR_speednode_0041
   network: ws
   port: 10182
   server: 58.120.196.122
@@ -119,22 +118,7 @@ proxies:
       Host: etc.mesa.ip-ddns.com
     path: /?ed=2560
 - client-fingerprint: random
-  name: 13|KR_speednode_0053
-  network: ws
-  port: 21825
-  server: 59.15.182.92
-  servername: mot.gike.dpdns.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 49e6a7af-97c5-4c33-b749-e59d7b5eaa30
-  ws-opts:
-    headers:
-      Host: mot.gike.dpdns.org
-    path: /?ed=2560
-- client-fingerprint: random
-  name: 13|KR_speednode_0054
+  name: 12|KR_speednode_0042
   network: ws
   port: 21825
   server: 59.15.182.92
@@ -149,7 +133,22 @@ proxies:
       Host: miku.mikuru.ip-ddns.com
     path: /?ed=2560
 - client-fingerprint: random
-  name: 13|KR_speednode_0055
+  name: 12|KR_speednode_0043
+  network: ws
+  port: 21825
+  server: 59.15.182.92
+  servername: mot.gike.dpdns.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 49e6a7af-97c5-4c33-b749-e59d7b5eaa30
+  ws-opts:
+    headers:
+      Host: mot.gike.dpdns.org
+    path: /?ed=2560
+- client-fingerprint: random
+  name: 12|KR_speednode_0044
   network: ws
   port: 28030
   server: 120.143.180.126
@@ -164,35 +163,7 @@ proxies:
       Host: mot.gike.dpdns.org
     path: /?ed=2560
 - client-fingerprint: random
-  name: 13|KR_speednode_0056
-  network: ws
-  port: 16798
-  server: 119.148.112.114
-  servername: etc.mesa.ip-ddns.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: c7d1fef0-8115-4488-9c6e-60bd175c4e33
-  ws-opts:
-    headers:
-      Host: etc.mesa.ip-ddns.com
-    path: /?ed=2560
-- name: 13|KR_speednode_0057
-  network: ws
-  password: ttfang
-  port: 34529
-  server: 112.165.17.199
-  skip-cert-verify: false
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /
-- client-fingerprint: random
-  name: 13|KR_speednode_0058
+  name: 12|KR_speednode_0045
   network: ws
   port: 11333
   server: 125.134.6.129
@@ -206,33 +177,7 @@ proxies:
     headers:
       Host: mihu.sorry.ip-ddns.com
     path: /?ed=2560
-- name: 13|KR_speednode_0059
-  network: ws
-  password: ttfang
-  port: 17682
-  server: 59.26.30.111
-  skip-cert-verify: true
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /
-- name: 13|KR_speednode_0060
-  network: ws
-  password: ttfang
-  port: 36840
-  server: 59.26.30.111
-  skip-cert-verify: false
-  sni: ttfang.fange.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ttfang.fange.me
-    path: /
-- name: 13|KR_speednode_0061
+- name: 12|KR_speednode_0046
   network: ws
   password: ttfang
   port: 13364
@@ -245,3 +190,57 @@ proxies:
     headers:
       Host: ttfang.fange.me
     path: /
+- name: 12|KR_speednode_0047
+  network: ws
+  password: ttfang
+  port: 36840
+  server: 59.26.30.111
+  skip-cert-verify: false
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 12|KR_speednode_0048
+  network: ws
+  password: ttfang
+  port: 34529
+  server: 112.165.17.199
+  skip-cert-verify: false
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- name: 12|KR_speednode_0049
+  network: ws
+  password: ttfang
+  port: 17682
+  server: 59.26.30.111
+  skip-cert-verify: true
+  sni: ttfang.fange.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ttfang.fange.me
+    path: /
+- client-fingerprint: random
+  name: 12|KR_speednode_0050
+  network: ws
+  port: 16798
+  server: 119.148.112.114
+  servername: etc.mesa.ip-ddns.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: c7d1fef0-8115-4488-9c6e-60bd175c4e33
+  ws-opts:
+    headers:
+      Host: etc.mesa.ip-ddns.com
+    path: /?ed=2560
