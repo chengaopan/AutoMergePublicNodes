@@ -12,14 +12,28 @@ proxies:
 - alterId: 0
   cipher: auto
   client-fingerprint: chrome
-  name: 12|🇸🇬 新加坡2|@ripaojiedian
-  port: 50152
-  server: 120.232.153.40
+  name: 12,13|新加坡2|@ripaojiedian
+  network: ws
+  port: '8080'
+  server: 172.64.229.5
+  servername: ''
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 697343bc-9c91-47bb-a277-181ea7586313
+  ws-opts:
+    headers:
+      Host: xjp.yilex.icu
+    path: /
+- cipher: rc4-md5
+  client-fingerprint: chrome
+  name: 12|🇸🇬 新加坡3|@ripaojiedian
+  password: fwjJxq
+  port: 29191
+  server: sgp05.htz.wtf
+  tfo: false
+  type: ss
 - alterId: 0
   cipher: auto
   name: 13|新加坡|@ripaojiedian
@@ -30,13 +44,3 @@ proxies:
   tls: false
   type: vmess
   uuid: 5ddb4459-ce08-462b-b920-efc464f7e94e
-- alterId: 0
-  cipher: auto
-  name: 13|新加坡2|@ripaojiedian
-  network: tcp
-  port: '50152'
-  server: 120.232.153.40
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
