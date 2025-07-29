@@ -1,7 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: 1|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+  name: 2|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -17,11 +17,11 @@ proxies:
     path: /634c5c4f9782
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 11|🇯🇵 日本|@ripaojiedian
+  name: 12|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507022251291-d01YttPsbj.download.microsoft.com
+    host: 202507282137611-JtmNFkb3wi.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -29,7 +29,7 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   client-fingerprint: chrome
-  name: 11|🇯🇵 日本2|@ripaojiedian
+  name: 12|🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
   plugin: v2ray-plugin
   plugin-opts:
@@ -44,7 +44,8 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 11|🇯🇵 日本3|@ripaojiedian
+  name: 12,13|日本3|@ripaojiedian
+  network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
   port: 443
   server: 172.238.14.135
@@ -52,49 +53,41 @@ proxies:
   sni: www.baidu.com
   type: trojan
 - client-fingerprint: chrome
-  name: 11|🇯🇵 日本4|@ripaojiedian
+  name: 12,13|日本4|@ripaojiedian
+  network: tcp
   password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 41225
-  server: 172.234.90.253
+  port: 443
+  server: 172.237.27.220
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  client-fingerprint: chrome
-  name: 11,12|日本5|@ripaojiedian
+- client-fingerprint: chrome
+  name: 12|🇯🇵 日本5|@ripaojiedian
   network: ws
-  port: '8080'
-  server: 47.79.94.25
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: b36d992c-786b-4136-96d6-c37641207d47
+  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: jp006.421421.xyz
+  skip-cert-verify: true
+  sni: www.alibaba.com
+  type: trojan
   ws-opts:
     headers:
-      Host: ''
+      Host: www.alibaba.com
     path: /
-- name: 12|日本3|@ripaojiedian
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 40937
-  server: 36.151.251.7
-  skip-cert-verify: true
-  sni: www.baidu.com
+- name: 13|日本5|@ripaojiedian
+  network: ws
+  password: 2ba7e4d0-f2f9-456e-a43e-f5a724d7e367
+  port: 20230
+  server: jp006.421421.xyz
+  sni: www.alibaba.com
   type: trojan
-- name: 12|日本4|@ripaojiedian
-  network: tcp
-  password: d0d08cddacc3190ea81b1b792e1b5fde
-  port: 41225
-  server: 36.151.251.7
-  skip-cert-verify: true
-  sni: www.baidu.com
-  type: trojan
+  ws-opts:
+    headers:
+      Host: www.alibaba.com
+    path: '%2F'
 - alterId: 0
   cipher: auto
-  name: 12|日本v2|@ripaojiedian
+  name: 13|日本v2|@ripaojiedian
   network: kcp
   port: '37257'
   server: 47.74.57.10
