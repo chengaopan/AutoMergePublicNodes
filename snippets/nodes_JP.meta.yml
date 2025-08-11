@@ -48,19 +48,16 @@ proxies:
   tls: false
   type: hysteria2
 - cipher: rc4-md5
-  client-fingerprint: chrome
   name: 12|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-ABbKq8VLBc.download.microsoft.com
+    host: 202507282137611-tUM6KYmbwV.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
-  tfo: false
   type: ss
 - cipher: aes-256-gcm
-  client-fingerprint: chrome
   name: 12|🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
   plugin: v2ray-plugin
@@ -73,19 +70,16 @@ proxies:
     tls: true
   port: 636
   server: 137.220.191.40
-  tfo: false
   type: ss
-- client-fingerprint: chrome
-  name: 12,13|日本3|@ripaojiedian
+- name: 12,13|日本3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 180
-  server: 36.156.102.125
+  port: 193
+  server: 36.156.102.78
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- client-fingerprint: chrome
-  name: 12,13|日本4|@ripaojiedian
+- name: 12,13|日本4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 461
@@ -93,15 +87,29 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- client-fingerprint: chrome
-  name: 12,13|日本5|@ripaojiedian
+- name: 12,13|日本5|@ripaojiedian
   network: tcp
   password: f60cd513-7b83-4b64-936c-f7e88e95dacd
-  port: 8181
-  server: 120.240.118.186
+  port: 8123
+  server: 120.240.118.142
   skip-cert-verify: true
-  sni: www.microsoft365.com
+  sni: upos-hz-mirrorakam.akamaized.net
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: 12,13|日本6|@ripaojiedian
+  network: ws
+  port: '30806'
+  server: v6.heduian.link
+  servername: ''
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  ws-opts:
+    headers:
+      Host: ocbc.com
+    path: /oooo
 - alterId: 0
   cipher: auto
   name: 13|日本v2|@ripaojiedian
