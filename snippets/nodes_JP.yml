@@ -1,7 +1,7 @@
 proxies:
 - alterId: 64
   cipher: auto
-  name: 0|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
+  name: 2|🇯🇵1 |  1.8MB/s|54%|Youtube|Ope...
   network: ws
   port: 1443
   server: sslvpn.51job.com
@@ -16,16 +16,19 @@ proxies:
       Host: centos7
     path: /634c5c4f9782
 - cipher: rc4-md5
+  client-fingerprint: chrome
   name: 12|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-8jPSOxErXG.download.microsoft.com
+    host: 202507282137611-oza3DJO8nv.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
+  tfo: false
   type: ss
 - cipher: aes-256-gcm
+  client-fingerprint: chrome
   name: 12|🇯🇵 日本2|@ripaojiedian
   password: 823e135ed103
   plugin: v2ray-plugin
@@ -38,16 +41,19 @@ proxies:
     tls: true
   port: 636
   server: 137.220.191.40
+  tfo: false
   type: ss
-- name: 12,13|日本3|@ripaojiedian
+- client-fingerprint: chrome
+  name: 12,13|日本3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 193
+  port: 409
   server: 36.156.102.78
   skip-cert-verify: true
-  sni: www.baidu.com
+  sni: 1-dy.ixigua.com
   type: trojan
-- name: 12,13|日本4|@ripaojiedian
+- client-fingerprint: chrome
+  name: 12,13|日本4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 461
@@ -55,29 +61,9 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 12|🇯🇵 日本5|@ripaojiedian
-  network: ws
-  port: 30806
-  server: v6.heduian.link
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  ws-opts:
-    headers:
-      Host: ocbc.com
-    path: /oooo
-- cipher: chacha20-ietf-poly1305
-  name: 12|🇯🇵 日本6|@ripaojiedian
-  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
-  port: 9898
-  server: 52.199.211.144
-  type: ss
 - alterId: 0
   cipher: auto
-  name: '13|日本v2|@ripaojiedian #1'
+  name: 13|日本v2|@ripaojiedian
   network: kcp
   port: '37257'
   server: 47.74.57.10
