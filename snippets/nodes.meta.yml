@@ -763,7 +763,7 @@ proxies:
   name: 12|tg频道:@ripaojiedian
   password: amazonskr05
   port: 443
-  server: 51.44.179.14
+  server: 3.70.194.142
   tfo: false
   type: ss
 - alterId: 2
@@ -815,13 +815,22 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- cipher: aes-128-gcm
-  name: 12|🇭🇰 香港5|@ripaojiedian
-  password: 01721e43-5389-4f97-b21c-900abb2bda9e
-  port: 12014
-  server: awes35lesl.blhao0o.dpdns.org
+- alterId: 2
+  cipher: auto
+  name: 12,13|香港5|@ripaojiedian
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: adbd0a82-3336-11ed-bd7c-f23c913c8d2b
+  ws-opts:
+    headers:
+      Host: broadcastlv.chat.bilibili.com
+    path: /
 - name: 12,13|香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -835,7 +844,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-pwlP10l6s0.download.microsoft.com
+    host: 202507282137611-vye4FDfLUP.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -872,13 +881,22 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 12|🇯🇵 日本5|@ripaojiedian
-  password: 628726b8-9371-4bdd-aab5-d864a492a492
-  port: 35782
-  server: t1.fttos.xyz
+- alterId: 0
+  cipher: auto
+  name: 12,13|日本5|@ripaojiedian
+  network: ws
+  port: '16617'
+  server: planb.mojcn.com
+  servername: ''
+  skip-cert-verify: false
   tfo: false
-  type: ss
+  tls: false
+  type: vmess
+  uuid: 0c0fdaa9-da2e-42c0-b38e-25d54ec1e6d4
+  ws-opts:
+    headers:
+      Host: b37048544d083a503188d38c53d6e4f2.mobgslb.tbcache.com
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 12|🇰🇷 韩国|@ripaojiedian
   password: feafc2ef-d5fd-4f6d-803b-fad4a5cc1f0e
@@ -902,13 +920,22 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- name: 12,13|新加坡3|@ripaojiedian
-  network: tcp
-  password: be76ac23-8ff8-4afe-a86e-5153f4ce869d
-  port: 25010
-  server: 8.148.194.255
-  skip-cert-verify: true
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 12,13|新加坡3|@ripaojiedian
+  network: ws
+  port: '49102'
+  server: free-relay.themars.top
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 631484bb-c085-4384-8c3a-d93db3d587ef
+  ws-opts:
+    headers:
+      Host: www.cctv.com
+    path: /cctv1.m3u8
 - alterId: 0
   cipher: auto
   name: 12,13|新加坡4|@ripaojiedian
@@ -925,6 +952,13 @@ proxies:
     headers:
       Host: e5406c2f4f42756d4a4089ffcd58947b.mobgslb.tbcache.com
     path: /
+- cipher: chacha20-ietf-poly1305
+  name: 12|🇰🇷 韩国|@ripaojiedian 2
+  password: 1a17b19d-4896-4531-af79-6e91d8ef8228
+  port: 9898
+  server: 54.180.238.255
+  tfo: false
+  type: ss
 - name: 12|🇺🇸 美国|@ripaojiedian
   network: ws
   password: 7248e825-887c-48b9-83bc-c26bc6392bf8
@@ -942,7 +976,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202507282137611-pwlP10l6s0.download.microsoft.com
+    host: 202507282137611-vye4FDfLUP.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
