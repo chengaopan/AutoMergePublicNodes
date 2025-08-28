@@ -37,14 +37,16 @@ proxies:
   server: 103.103.245.158
   tfo: false
   type: ss
-- name: 12,13|香港3|@ripaojiedian
-  network: tcp
-  password: 0042a837-cf5e-4d00-b31a-460677e68b6f
-  port: 12221
-  server: hxkad246454.nkrpjj.cn
-  skip-cert-verify: true
-  sni: nkrpjj.cn
-  type: trojan
+- alterId: 0
+  cipher: auto
+  name: 12|🇭🇰 香港3|@ripaojiedian
+  port: 31552
+  server: 38.147.189.37
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 07048eb8-af77-407f-9426-af79a45d2bb1
 - name: 12,13|香港4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
@@ -53,33 +55,42 @@ proxies:
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- alterId: 2
+  cipher: auto
+  name: 12,13|香港5|@ripaojiedian
+  network: ws
+  port: '80'
+  server: hkt.gotochinatown.net
+  servername: ''
+  skip-cert-verify: false
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
+  ws-opts:
+    headers:
+      Host: hkt.gotochinatown.net
+    path: /
 - name: 12,13|香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 3.112.225.166
+  server: 42.2.237.179
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - cipher: chacha20-ietf-poly1305
   name: 12|🇹🇼 台湾|@ripaojiedian
-  password: 9c148944-7bca-4ed3-96a4-514d874226e8
-  port: 10149
-  server: 36.232.83.98
+  password: 72ba05a3-632e-490b-ad00-158578664c18
+  port: 10032
+  server: 125.230.12.246
   tfo: false
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 12|🇹🇼 台湾2|@ripaojiedian
-  password: b12d7bef-dbe6-4eca-bc40-9a2333dcf918
-  port: 10105
-  server: 125.228.34.244
-  tfo: false
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 12|🇹🇼 台湾3|@ripaojiedian
-  password: ad14ac91-6101-4888-9d17-ca11150d823e
-  port: 10034
-  server: 1.165.98.202
+  password: befbdd4b-0cb5-42f1-9aad-7aae3ba11ed9
+  port: 10121
+  server: 125.229.88.58
   tfo: false
   type: ss
 - cipher: rc4-md5
@@ -87,7 +98,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-fU2HxC1HnE.download.microsoft.com
+    host: 202508150964186-1Vi6U9m87m.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -111,42 +122,35 @@ proxies:
 - name: 12,13|日本3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 40950
-  server: 43.199.63.145
+  port: 3270
+  server: 36.150.215.203
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - name: 12,13|日本4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 13345
-  server: 43.199.63.145
+  port: 40950
+  server: 36.150.215.203
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - name: 12,13|新加坡|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 8116
-  server: 43.199.63.145
+  port: 3043
+  server: 36.150.215.203
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
 - name: 12,13|新加坡2|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 2045
-  server: 43.199.63.145
+  port: 4397
+  server: 36.150.215.203
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: 12|🇸🇬 新加坡3|@ripaojiedian
-  password: GhYEufnq9M9yvgAc1ylvfq
-  port: 18336
-  server: 165.22.61.177
-  tfo: false
-  type: ss
 - alterId: 0
   cipher: auto
   name: 12,13|美国|@ripaojiedian
@@ -168,7 +172,7 @@ proxies:
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-fU2HxC1HnE.download.microsoft.com
+    host: 202508150964186-1Vi6U9m87m.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -178,18 +182,28 @@ proxies:
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 4801
-  server: 43.199.63.145
+  server: 36.150.215.203
   skip-cert-verify: true
   sni: 36.156.102.116
   type: trojan
 - name: 12,13|美国4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 5343
-  server: 43.199.63.145
+  port: 7177
+  server: 36.150.215.203
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 13|香港3|@ripaojiedian
+  network: tcp
+  port: '31552'
+  server: 38.147.189.37
+  servername: ''
+  tls: false
+  type: vmess
+  uuid: 07048eb8-af77-407f-9426-af79a45d2bb1
 - alterId: 0
   cipher: auto
   name: 13|香港v2|@ripaojiedian
