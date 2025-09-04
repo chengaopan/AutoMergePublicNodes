@@ -327,50 +327,34 @@ proxies:
 - alterId: 0
   cipher: auto
   name: 12|🇭🇰 香港3|@ripaojiedian
-  port: 47405
-  server: 38.147.188.96
+  port: 51697
+  server: 38.147.188.160
   skip-cert-verify: false
   tfo: false
   tls: false
   type: vmess
-  uuid: 84513b8e-2aad-4151-956e-09593c5f107c
+  uuid: 22babdc6-5437-4de0-b3a9-67c005a19e11
 - name: 12,13|香港4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 219.77.131.1
+  server: 42.2.17.49
   skip-cert-verify: true
   sni: 23.45.86.28
   type: trojan
-- alterId: 2
-  cipher: auto
-  name: 12,13|香港5|@ripaojiedian
-  network: ws
-  port: '80'
-  server: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-  servername: ''
-  skip-cert-verify: false
-  tfo: false
-  tls: false
-  type: vmess
-  uuid: 93fb69fc-77cf-11ee-85ee-f23c91369f2d
-  ws-opts:
-    headers:
-      Host: 1e426046-t0fds0-t12cnj-1ol97.hk.p5pv.com
-    path: /
 - name: 12,13|香港6|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 443
-  server: 1.65.215.113
+  server: 42.2.197.54
   skip-cert-verify: true
-  sni: fe2.update.microsoft.com
+  sni: 23.45.86.28
   type: trojan
-- cipher: aes-128-gcm
+- cipher: chacha20-ietf-poly1305
   name: 12|🇹🇼 台湾|@ripaojiedian
-  password: 01721e43-5389-4f97-b21c-900abb2bda9e
-  port: 12008
-  server: awes35lesl.blhao0o.dpdns.org
+  password: 61405455-91a2-49d5-b72e-814d304f877d
+  port: 10146
+  server: 36.232.83.103
   tfo: false
   type: ss
 - alterId: 64
@@ -383,12 +367,33 @@ proxies:
   tls: false
   type: vmess
   uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+- cipher: chacha20-ietf-poly1305
+  name: 12|🇹🇼 台湾3|@ripaojiedian
+  password: fb941bcb-a777-47c9-958d-f01178bef303
+  port: 10132
+  server: 36.232.127.240
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 12|🇹🇼 台湾4|@ripaojiedian
+  password: ec9f74bf-0d19-4a1a-99d3-a6fd1fe68b4e
+  port: 10009
+  server: 118.170.203.159
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 12|🇹🇼 台湾5|@ripaojiedian
+  password: 308344fb-a0fe-42fc-bcf7-de7863647248
+  port: 10042
+  server: 36.234.94.41
+  tfo: false
+  type: ss
 - cipher: rc4-md5
   name: 12|🇯🇵 日本|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-5McRC3HiAX.download.microsoft.com
+    host: 202509031722041-UfAvWCjqQ0.download.microsoft.com
     mode: http
   port: 8766
   server: cn01.efan8867801.xyz
@@ -428,7 +433,7 @@ proxies:
 - name: 12,13|新加坡|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 3957
+  port: 1523
   server: xingxing.jiasu123.org
   skip-cert-verify: true
   sni: 23.45.86.28
@@ -457,19 +462,12 @@ proxies:
     headers:
       Host: baidu.com
     path: /oooo
-- cipher: aes-128-gcm
-  name: 12|🇸🇬 新加坡4|@ripaojiedian
-  password: 01721e43-5389-4f97-b21c-900abb2bda9e
-  port: 12020
-  server: awes35lesl.blhao0o.dpdns.org
-  tfo: false
-  type: ss
 - cipher: rc4-md5
   name: 12|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
-    host: 202508150964186-5McRC3HiAX.download.microsoft.com
+    host: 202509031722041-UfAvWCjqQ0.download.microsoft.com
     mode: http
   port: 8774
   server: cn01.efan8867801.xyz
@@ -495,12 +493,12 @@ proxies:
   cipher: auto
   name: 13|香港3|@ripaojiedian
   network: tcp
-  port: '47405'
-  server: 38.147.188.96
+  port: '51697'
+  server: 38.147.188.160
   servername: ''
   tls: false
   type: vmess
-  uuid: 84513b8e-2aad-4151-956e-09593c5f107c
+  uuid: 22babdc6-5437-4de0-b3a9-67c005a19e11
 - alterId: 0
   cipher: auto
   name: 13|香港v2|@ripaojiedian
@@ -544,73 +542,45 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
-- name: 14|HK_speednode_0002
-  password: <password>
-  port: 8443
-  server: 9497cfdb-sx4v40-t1bnjq-1krtb.hkt.cdnhuawei.com
-  tls: true
-  type: http
-  udp: true
-  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- name: 14|HK_speednode_0003
-  password: <password>
-  port: 8443
-  server: dd902adc-sxc9s0-t1bnjq-1krtb.hkt.cdnhuawei.com
-  tls: true
-  type: http
-  udp: true
-  username: 60f6b4c4-9d70-11ed-a4d2-f23c9164ca5d
-- flow: xtls-rprx-vision
-  name: 14|IQ_speednode_0005
+- name: 14|GB_speednode_0004
   port: 443
   reality-opts:
-    public-key: GyivnLvG6JEO7xV9PI12Z0XTLZJGClBHOcpHwSfrsj4
-    short-id: e3015cd4
-  server: 178.17.58.126
-  servername: outlook.office.com
+    public-key: fjPySr9gszKltxP8Smt0iu8ktqezOGptg2YVmWvxlUI
+  server: 194.156.65.28
+  servername: cloudflare.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 6035325d-399a-5148-9126-29cedfd5966a
+  uuid: 21792da3-074f-4d55-8a6b-4d84c5c0f682
 - flow: xtls-rprx-vision
-  name: 14|IQ_speednode_0006
+  name: 14|IL_speednode_0007
   port: 443
   reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-  server: deu246.bypassall.org
-  servername: www.bing.com
+    public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+    short-id: 55e6af1a35e64a98
+  server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
+  servername: i2pd.website
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: b4b8aa1f-77d2-4851-a5a4-f78886f3e997
-- name: 14|NL_speednode_0007
-  port: 34045
-  reality-opts:
-    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
-    short-id: e8ab71d0
-  server: 5.61.50.192
-  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+- name: 14|NL_speednode_0009
+  network: ws
+  port: 80
+  server: 185.18.184.66
+  servername: hello.96xckkzx.workers.dev
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
-- flow: xtls-rprx-vision
-  name: 14|RU_speednode_0008
-  port: 443
-  reality-opts:
-    public-key: mLmBhbVFfNuo2eUgBh6r9-5Koz9mUCn3aSzlR6IejUg
-    short-id: 8453e5fd9af927
-  server: ru-nl01-vlr01.tcp-reset-club.net
-  servername: hls-svod.itunes.apple.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee67c9fd-0dc1-4fca-ad59-4dfac221a9f2
-- name: 14|RU_speednode_0009
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: hello.96xckkzx.workers.dev
+    path: /🔒
+- name: 14|RU_speednode_0010
   network: ws
   password: slch2024
   port: 2096
@@ -623,32 +593,21 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /TelegramU0001F1E8U0001F1F3
-- name: 14|RU_speednode_0010
-  network: ws
-  password: slch2024
-  port: 2096
-  server: 185.221.160.195
-  skip-cert-verify: false
-  sni: ocost-dy.wmlefl.cc
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: ocost-dy.wmlefl.cc
-    path: /Telegram🇨🇳
 - name: 14|US_speednode_0011
   network: ws
-  password: 318cab24-ec99-40a6-a54a-0db9c661a3d0
-  port: 443
-  server: aio.proxybox.dpdns.org
+  packet-encoding: xudp
+  port: 2082
+  server: 159.112.235.174
+  servername: workerr.schodog1.workers.dev
   skip-cert-verify: false
-  sni: aio.proxybox.dpdns.org
-  type: trojan
+  tls: false
+  type: vless
   udp: true
+  uuid: 47e9a0db-50c6-4522-8819-502c55b06dde
   ws-opts:
     headers:
-      Host: aio.proxybox.dpdns.org
-    path: /188.34.160.97-2053
+      Host: workerr.schodog1.workers.dev
+    path: /?ed=2048
 - name: 14|US_speednode_0012
   network: ws
   password: slch2024
@@ -664,36 +623,23 @@ proxies:
     path: /Telegram🇨🇳
 - name: 14|US_speednode_0013
   network: ws
-  port: 80
-  server: 63.141.128.34
-  servername: b.jOin.zEdMoDeOn.oNl.
+  port: 8080
+  server: 69.84.182.184
+  servername: bia-to-unlimiteddev.unlimiteddev-service.ir
   skip-cert-verify: false
   tls: false
   type: vless
   udp: true
-  uuid: 2f2327bd-ff1b-4ce5-bf86-fe0565334138
+  uuid: f6b0723c-bb28-45f2-9b7f-82fab9ef8640
   ws-opts:
     headers:
-      Host: b.jOin.zEdMoDeOn.oNl.
-    path: /Join-ZEDMODEON-ZEDMODEON-ZEDMODEON-bia-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON-ZEDMODEON
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 14|US_speednode_0014
-  port: 443
-  reality-opts:
-    public-key: 0n_NS2q2bvgpgQt0-gNmGNXTH-B0aqaJdE1A40sjsyE
-  server: 64.81.117.172
-  servername: ts2.tc.mm.bing.net
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0cd07402-0edb-4890-808d-cd6f0e2625ee
-- name: 14|US_speednode_0015
+      Host: bia-to-unlimiteddev.unlimiteddev-service.ir
+    path: /@unlimiteddev----@unlimiteddev-----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimiteddev----@unlimitedev----@unlimitedev----@unlimiteddev----@unlimiteddev?ed=2480
+- name: 14|US_speednode_0014
   network: ws
   password: slch2024
   port: 2096
-  server: 185.148.105.195
+  server: 216.24.57.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
@@ -702,11 +648,60 @@ proxies:
     headers:
       Host: ocost-dy.wmlefl.cc
     path: /Telegram🇨🇳
+- name: 14|US_speednode_0015
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 172.233.201.93
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
 - name: 14|US_speednode_0016
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 172.233.201.55
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- name: 14|US_speednode_0017
+  port: 34045
+  reality-opts:
+    public-key: cDaDzPr3PlS3NM8lreHZbdo-Mhqz8vMBzMSkHXhGIUA
+    short-id: e8ab71d0
+  server: 172.233.140.201
+  servername: visit-this-invitation-link-to-join-tg-enkelte-notif.ekt.me
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: d8dd94fd-540e-461d-b5d4-acebef02c22a
+- name: 14|US_speednode_0018
   network: ws
   password: slch2024
   port: 2096
   server: 199.68.156.195
+  skip-cert-verify: false
+  sni: ocost-dy.wmlefl.cc
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: ocost-dy.wmlefl.cc
+    path: /Telegram🇨🇳
+- name: 14|US_speednode_0019
+  network: ws
+  password: slch2024
+  port: 2096
+  server: 185.148.105.195
   skip-cert-verify: false
   sni: ocost-dy.wmlefl.cc
   type: trojan
