@@ -1,7 +1,7 @@
 proxies:
 - cipher: rc4-md5
   client-fingerprint: chrome
-  name: 12|🇺🇸 美国2|@ripaojiedian
+  name: 11|🇺🇸 美国2|@ripaojiedian
   password: efanccyun
   plugin: obfs
   plugin-opts:
@@ -12,7 +12,7 @@ proxies:
   tfo: false
   type: ss
 - client-fingerprint: chrome
-  name: 12,13|美国3|@ripaojiedian
+  name: 11,12|美国3|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3294
@@ -21,7 +21,7 @@ proxies:
   sni: www.nintendogames.net
   type: trojan
 - client-fingerprint: chrome
-  name: 12,13|美国4|@ripaojiedian
+  name: 11,12|美国4|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
   port: 3296
@@ -29,43 +29,94 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- client-fingerprint: firefox
-  name: 14|US_speednode_0028
-  port: 10001
-  reality-opts:
-    public-key: 1ltSdo2K6D9EEwebaDQPCb5ypbURcXyO9HsX4RUbbUo
-    short-id: 1a24af87
-  server: 172.233.153.209
-  servername: yahoo.com
+- name: 13|US_speednode_0027
+  network: ws
+  port: 80
+  server: 104.18.109.147
+  servername: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: e4412006-94f2-4f3c-b568-22a3e31dc264
-- name: 14|US_speednode_0029
-  network: ws
-  password: juzi
-  port: 443
-  server: 154.29.155.249
-  skip-cert-verify: true
-  sni: juzi8186-sr1.pages.dev
-  type: trojan
-  udp: true
+  uuid: c29d39bd-92a4-45db-bb61-56013998617c
   ws-opts:
     headers:
-      Host: juzi8186-sr1.pages.dev
-    path: /?ed=2560
-- client-fingerprint: qq
+      Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
+    path: /Telegram-XV2ry2?ed=2048
+- name: 13|US_speednode_0035
+  network: ws
+  packet-encoding: xudp
+  port: 2082
+  server: 159.112.235.174
+  servername: workerr.schodog1.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 47e9a0db-50c6-4522-8819-502c55b06dde
+  ws-opts:
+    headers:
+      Host: workerr.schodog1.workers.dev
+    path: /?ed=2048
+- http-opts:
+    headers:
+      Host:
+      - varzesh3.ir
+    method: GET
+    path:
+    - /
+  name: 13|US_speednode_0040
+  network: http
+  port: 33801
+  server: m44a.vip784.com
+  servername: varzesh3.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 39c8e0d3-c932-4ff7-b3e3-83002647907b
+- client-fingerprint: safari
   flow: xtls-rprx-vision
-  name: 14|US_speednode_0030
-  port: 34074
+  name: 13|US_speednode_0041
+  port: 443
   reality-opts:
-    public-key: zimSAAs4SyUKAR-MTMaw08PuI7skyi1U5Peb6VGJwjY
-    short-id: 061cca24
-  server: 500770.xyz
-  servername: www.ucla.edu
+    public-key: Xd2u-uX0dhiJrB_ESaDSoQBmT6Jv1tEmqn3inOiYFDg
+    short-id: 207a3de5
+  server: 146.235.193.81
+  servername: iosapps.itunes.apple.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 9d0a75d2-f747-4afa-b43f-d208af9e8f9a
+  uuid: 747c62da-109f-4add-8e67-c66e1af7d255
+- name: 13|US_speednode_0044
+  network: ws
+  port: 8080
+  server: cafearz.com
+  servername: shad.ir.de.test.digicyber.click.
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 5218f249-128d-40bf-d9b9-64004622b502
+  ws-opts:
+    headers:
+      Host: shad.ir.de.test.digicyber.click.
+    path: /olem/ws?ed=1024
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 13|US_speednode_0045
+  network: ws
+  port: 2053
+  server: www.speedtest.net
+  servername: 2020.dnss-mobile.ir
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 20d98fd8-b472-4574-eeae-b1ecc9082eb9
+  ws-opts:
+    headers:
+      Host: 2020.dnss-mobile.ir
+    path: /
