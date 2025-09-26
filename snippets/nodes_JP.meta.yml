@@ -19,22 +19,15 @@ proxies:
   server: cn01.efan8867801.xyz
   tfo: false
   type: ss
-- cipher: aes-256-gcm
-  client-fingerprint: chrome
-  name: 12|🇯🇵 日本2|@ripaojiedian
-  password: 8808e9f11454
-  plugin: v2ray-plugin
-  plugin-opts:
-    host: jp5v1.lingjfjkm002.com
-    mode: websocket
-    mux: false
-    path: /nvcnjrmkggoy
-    skip-cert-verify: false
-    tls: true
-  port: 443
-  server: 137.220.142.139
-  tfo: false
-  type: ss
+- client-fingerprint: chrome
+  name: 12,13|日本2|@ripaojiedian
+  network: tcp
+  password: 253bc477d4e43c209f2d427272968280
+  port: 3160
+  server: 160.16.68.250
+  skip-cert-verify: false
+  sni: www.nintendogames.net
+  type: trojan
 - client-fingerprint: chrome
   name: 12,13|日本3|@ripaojiedian
   network: tcp
@@ -44,15 +37,23 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- client-fingerprint: chrome
+- alterId: 0
+  cipher: auto
+  client-fingerprint: chrome
   name: 12,13|日本4|@ripaojiedian
-  network: tcp
-  password: 253bc477d4e43c209f2d427272968280
-  port: 3160
-  server: 160.16.68.250
+  network: ws
+  port: '41315'
+  server: a.lyazzz.online
+  servername: ''
   skip-cert-verify: false
-  sni: www.nintendogames.net
-  type: trojan
+  tfo: false
+  tls: false
+  type: vmess
+  uuid: bd64d2a3-76a1-407f-af7f-bdcdcb78d21e
+  ws-opts:
+    headers:
+      Host: img14.360buyimg.com
+    path: /obj
 - alterId: 0
   cipher: auto
   name: 13|日本v2|@ripaojiedian
