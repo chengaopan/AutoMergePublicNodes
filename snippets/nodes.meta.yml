@@ -497,28 +497,20 @@ proxies:
   type: vmess
   uuid: bc4e0275-2a83-43be-a5b7-332a61615f1d
 - flow: xtls-rprx-vision
-  name: 14|BG_speednode_0001
-  port: 433
+  name: 14|GR_speednode_0005
+  port: 20223
   reality-opts:
-    public-key: ttai5o9sL51jx8MWuQA2glnVnVRe0pzZmDbHnTzlynA
-    short-id: 1A2B3C4D5E6F7890
-  server: sunstar.astracat.ru
-  servername: cdnjs.com
+    public-key: dRgK6_86Zkd_nFhiUxmrBjAbO_nis9zCEKZpiCl2Z2Q
+    short-id: ec372208
+  server: gr1-2.9966662.xyz
+  servername: www.cloudflare.com
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: ea8a4fac-8b8a-4fa5-a7b4-63575499fffb
-- name: 14|CN_speednode_0003
-  password: 2fd0d127-266d-4d0b-b453-f94659a132fc
-  port: 12000
-  server: 106.75.134.1
-  skip-cert-verify: true
-  sni: aliyun.com
-  type: trojan
-  udp: true
+  uuid: a24c6851-2055-42c1-9c20-2d3bad97334f
 - flow: xtls-rprx-vision
-  name: 14|IL_speednode_0027
+  name: 14|IL_speednode_0011
   port: 443
   reality-opts:
     public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
@@ -530,7 +522,48 @@ proxies:
   type: vless
   udp: true
   uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
-- name: 14|KR_speednode_0030
+- flow: xtls-rprx-vision
+  name: 14|IR_speednode_0013
+  port: 44443
+  reality-opts:
+    public-key: XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ
+  server: hybrid.arvancloud.online
+  servername: www.speedtest.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
+- flow: xtls-rprx-vision
+  name: 14|IR_speednode_0014
+  port: 44443
+  reality-opts:
+    public-key: XHjKkrNBYXOaamOx8IUCrwX0zp5dAQRVErHiQ5bwAEQ
+  server: 193.151.135.21
+  servername: www.speedtest.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 53fff6cc-b4ec-43e8-ade5-e0c42972fc33
+- http-opts:
+    headers:
+      Host:
+      - Telewebion.com
+    method: GET
+    path:
+    - /
+  name: 14|IR_speednode_0015
+  network: http
+  port: 20532
+  server: 94.182.137.12
+  servername: Telewebion.com
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8496c102-4094-4dd3-ad63-7bb7a35cbaee
+- name: 14|KR_speednode_0016
   password: test.+
   port: 30446
   server: testkr3.ssv.vc
@@ -539,15 +572,48 @@ proxies:
   type: http
   udp: true
   username: test
-- flow: xtls-rprx-vision
-  name: 14|US_speednode_0033
-  port: 30227
-  reality-opts:
-    public-key: y0QO-mD8hrDE3rV7C8BX-gQiCANoasGKQlq2ReIVXkI
-  server: 216.133.149.235
-  servername: aws.amazon.com
+- name: 14|US_speednode_0017
+  network: ws
+  port: 443
+  server: 162.159.43.92
+  servername: juzi.634676.xyz
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 9a54bad8-538d-4744-b7bc-640629840490
+  uuid: 0c0537c3-f0fb-40e6-bd59-f5038e1855ed
+  ws-opts:
+    headers:
+      Host: juzi.634676.xyz
+    path: /?ed=2560
+- name: 14|US_speednode_0018
+  network: ws
+  port: 80
+  server: mstr.fastly80.hosting-ip.com
+  servername: gm195.io
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: d46fbe10-7982-4229-b461-4afef5c690fa
+  ws-opts:
+    headers:
+      Host: gm195.io
+    path: /admin
+- alpn:
+  - h2
+  - http/1.1
+  name: 14|US_speednode_0019
+  network: ws
+  port: 2053
+  server: 104.16.53.11
+  servername: frAgeU2.cpI2HIdd.eu.ORG
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 97fc44dd-c88c-4470-8d66-1752089c0183
+  ws-opts:
+    headers:
+      Host: frAgeU2.cpI2HIdd.eu.ORG
+    path: /?ed=2048
