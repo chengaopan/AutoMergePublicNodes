@@ -3,17 +3,42 @@ proxies:
   name: 12,13|美国|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 2381
-  server: 160.16.68.250
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  port: 24673
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
   type: trojan
 - client-fingerprint: chrome
   name: 12,13|美国2|@ripaojiedian
   network: tcp
   password: 253bc477d4e43c209f2d427272968280
-  port: 1572
-  server: 160.16.196.59
-  skip-cert-verify: false
-  sni: www.nintendogames.net
+  port: 2381
+  server: 36.156.102.84
+  skip-cert-verify: true
+  sni: fe2.update.microsoft.com
   type: trojan
+- client-fingerprint: chrome
+  name: 12,14|SG_speednode_0018
+  network: ws
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  skip-cert-verify: false
+  sni: hsdgbuys.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: hsdgbuys.pages.dev
+    path: /
+- name: 13|美国3|@ripaojiedian
+  network: ws
+  password: wb6368
+  port: 2087
+  server: 92.243.75.49
+  sni: hsdgbuys.pages.dev
+  type: trojan
+  ws-opts:
+    headers:
+      Host: hsdgbuys.pages.dev
+    path: '%2F'
