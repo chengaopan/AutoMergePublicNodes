@@ -3,8 +3,8 @@ proxies:
   name: 11,12|新加坡|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 2283
-  server: 160.16.144.208
+  port: 5041
+  server: 153.121.56.122
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
@@ -12,50 +12,52 @@ proxies:
   name: 11,12|新加坡2|@ripaojiedian
   network: tcp
   password: c53647f3153f784b3c695ffbe5fb43c0
-  port: 5041
-  server: 160.16.138.24
+  port: 5321
+  server: 153.121.56.122
   skip-cert-verify: true
   sni: www.baidu.com
   type: trojan
-- alterId: 0
-  cipher: auto
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 11|🇸🇬 新加坡3|@ripaojiedian
-  port: 22286
-  server: 47.245.106.193
-  skip-cert-verify: false
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 4a81070:6193
+    mode: tls
+  port: 2377
+  server: 5.44.249.42
   tfo: false
-  tls: false
-  type: vmess
-  uuid: 8646218f-a600-4b73-8721-aa5d4567819e
-- alterId: 0
-  cipher: auto
+  type: ss
+- cipher: chacha20-ietf-poly1305
   client-fingerprint: chrome
   name: 11|🇸🇬 新加坡4|@ripaojiedian
-  port: 22433
-  server: 47.245.106.193
-  skip-cert-verify: false
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: d4cbbb2:42774
+    mode: tls
+  port: 2377
+  server: 5.44.249.42
   tfo: false
-  tls: false
-  type: vmess
-  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
-- alterId: 0
-  cipher: auto
-  name: 12|新加坡3|@ripaojiedian
-  network: tcp
-  port: '22286'
-  server: 47.245.106.193
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: 8646218f-a600-4b73-8721-aa5d4567819e
-- alterId: 0
-  cipher: auto
-  name: 12|新加坡4|@ripaojiedian
-  network: tcp
-  port: '22433'
-  server: 47.245.106.193
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: bfcb103f-2133-4965-8684-6b4c8ef7a774
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 11|🇸🇬 新加坡5|@ripaojiedian
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: 874b20d:48331
+    mode: tls
+  port: 2377
+  server: 5.44.249.42
+  tfo: false
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  client-fingerprint: chrome
+  name: 11|🇸🇬 新加坡6|@ripaojiedian
+  password: X2UQXuTGxwxE1ZMaTQwtxS
+  port: 60523
+  server: 174.138.29.1
+  tfo: false
+  type: ss
