@@ -630,7 +630,7 @@ proxies:
   server: 58.152.53.3
   skip-cert-verify: true
   type: trojan
-- name: 12,13|台湾|@ripaojiedian
+- name: 12,13,14|CN_speednode_0002
   network: tcp
   password: b00abf05-5768-4ac9-8d20-6b1bd605bcf6
   port: 42765
@@ -638,6 +638,7 @@ proxies:
   skip-cert-verify: true
   sni: v1-dy.ixigua.com
   type: trojan
+  udp: true
 - name: 12,13|日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -700,13 +701,14 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 12,13|美国3|@ripaojiedian
+- name: 12,13,14|CN_speednode_0003
   network: tcp
   password: BxceQaOe
   port: 43567
   server: 36.156.102.74
   skip-cert-verify: true
   type: trojan
+  udp: true
 - cipher: aes-256-cfb
   name: 12|🇻🇳 越南|@ripaojiedian
   password: Xn8jKdmDM00IeO%#$#fJAMtsEAEUOpH/YWYtYqDFnT0SV
@@ -714,29 +716,32 @@ proxies:
   server: 103.186.155.238
   tfo: false
   type: ss
-- flow: xtls-rprx-vision
-  name: 14|CN_speednode_0001
-  port: 53214
-  server: linkgulang.evoay.com
-  servername: www.lamer.com.hk
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6c0472bc-82df-449e-90bd-2f91c6a46402
-- flow: xtls-rprx-vision
-  name: 14|KR_speednode_0002
-  port: 443
+- name: 14|DE_speednode_0004
+  port: 6666
   reality-opts:
-    public-key: yh4yX6_pM_VzpAx-tYb33PCzHYE6vC9w7Ov1FwNUjR8
-  server: 3.36.62.128
-  servername: www.ebay.com
+    public-key: S_2bepGaT7EHeH5DdyEgio421RTgrAvvOOQiaq8zV0g
+    short-id: b525ecd2fc
+  server: 188.68.53.100
+  servername: Tgju.org
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: ead2118c-8b60-4805-b264-bb794c8600d0
-- name: 14|KR_speednode_0003
+  uuid: 0abf9050-c7be-464d-80af-24094c2b97de
+- flow: xtls-rprx-vision
+  name: 14|JP_speednode_0005
+  port: 51623
+  reality-opts:
+    public-key: ln4RiHk9_Ea_EyeI2GpZfzilPyrqKYDBqis09esVECo
+    short-id: 6ba85179e30d4fc2
+  server: softbank88.xzcloudnode.sbs
+  servername: itunes.apple.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8129a335-37d4-4932-8dca-ac4358ce60b7
+- name: 14|KR_speednode_0006
   password: test.+
   port: 30446
   server: testkr3.ssv.vc
@@ -746,51 +751,30 @@ proxies:
   udp: true
   username: test
 - flow: xtls-rprx-vision
-  name: 14|RU_speednode_0004
+  name: 14|LB_speednode_0007
   port: 443
   reality-opts:
-    public-key: s1YS6OaMKypumOxq7u22Pf_FaSjEbRvgLrJf1iTOKWY
-    short-id: bce24697c04e
-  server: usa.savanet.pro
-  servername: yandex.com
+    public-key: -Bdu8i-HU28Xmx87RMou5okYo8TqfbyZ8Ufs9RodUGE
+    short-id: 097de35e52ec5256
+  server: 77.110.127.105
+  servername: st.ozone.ru
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 87eff1bd-d55f-4df2-a5ad-863368a16cb7
-- flow: xtls-rprx-vision
-  name: 14|US_speednode_0006
-  port: 25599
-  reality-opts:
-    public-key: SsbeZ_JdMe3r2IqTESBWRSUMrcm3PdpFzlab5xrKUlU
-  server: 172.238.22.96
-  servername: www.cloudflare.com
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: ff06f97b-09f6-4b8b-8a12-7d2f51b28a75
-- flow: xtls-rprx-vision
-  name: 14|US_speednode_0008
+  uuid: 72239cbc-5a25-411c-b4f5-b9167a10f5e1
+- client-fingerprint: random
+  name: 14|UA_speednode_0008
+  network: ws
   port: 443
-  reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-  server: usa84.freednet.org
-  servername: www.utexas.edu
-  skip-cert-verify: false
+  server: freeyx.cloudflare88.eu.org
+  servername: do-syd1.008883.xyz
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: f2f5905b-e814-4a9f-beae-8b1353f25a06
-- flow: xtls-rprx-vision
-  name: 14|US_speednode_0009
-  port: 443
-  reality-opts:
-    public-key: BhTJ3phnq-Z-10aFKSsj1lzhA8mULR4L6leE4-0WTAs
-  server: usa102.unlockspace.org
-  servername: www.utexas.edu
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5c9f0284-a8da-40f0-9bca-da9a98049fb0
+  uuid: a7a89fed-0fa5-48ea-9cc9-ccf67d0b6cb2
+  ws-opts:
+    headers:
+      Host: do-syd1.008883.xyz
+    path: /announcement?ed=2048
