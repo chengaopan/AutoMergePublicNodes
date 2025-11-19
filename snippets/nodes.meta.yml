@@ -1130,7 +1130,7 @@ proxies:
   skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 12,13|香港4|@ripaojiedian
+- name: 12,13,14|HK_speednode_0012
   network: tcp
   password: BxceQaOe
   port: 443
@@ -1138,6 +1138,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+  udp: true
 - name: 12,13|香港5|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -1243,16 +1244,8 @@ proxies:
   tls: false
   type: vmess
   uuid: 2a49163d-eaff-38d2-bb0e-5048a031f6b6
-- name: 14|CH_speednode_0001
-  password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
-  port: 443
-  server: 194.87.18.124
-  skip-cert-verify: true
-  sni: www.bilibili.com
-  type: trojan
-  udp: true
 - flow: xtls-rprx-vision
-  name: 14|GB_speednode_0005
+  name: 14|GB_speednode_0006
   port: 443
   reality-opts:
     public-key: Mn0DIMKW6zu0_D3E1qKO7xMlIVZvB-rqO_-f7Le2vAs
@@ -1264,15 +1257,41 @@ proxies:
   type: vless
   udp: true
   uuid: bccbecc9-c1d2-45d1-b3fa-771a19b9831c
-- name: 14|IL_speednode_0006
-  password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
+- name: 14|HK_speednode_0013
+  password: BxceQaOe
   port: 443
-  server: 45.144.172.243
+  server: 58.152.26.173
   skip-cert-verify: true
-  sni: www.bilibili.com
+  sni: t.me/ripaojiedian
   type: trojan
   udp: true
-- name: 14|RU_speednode_0012
+- flow: xtls-rprx-vision
+  name: 14|IL_speednode_0014
+  port: 443
+  reality-opts:
+    public-key: YVDo7U4O-AT2fa5H9E7hyYHKgfZd1vB6UdbAf2ggWQE
+    short-id: 55e6af1a35e64a98
+  server: ilta-wzxrxkdhbjpnprhkkpplsjwawhssvollvxzdhqshiqckwdgrdm.orbnet.xyz
+  servername: i2pd.website
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0e8a6896-ad90-4a3b-89a3-77d64aa409e2
+- flow: xtls-rprx-vision
+  name: 14|RU_speednode_0015
+  port: 51224
+  reality-opts:
+    public-key: DvKMFkm82Jkp6Jk_7pXYb0fMXq1MsLMNxDeQfcCSbEA
+    short-id: ab12cd34
+  server: ru-msk.shvurgceo.online
+  servername: download.max.ru
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 14305246-dc93-4b3c-9f6c-d0b29fa7e4fa
+- name: 14|RU_speednode_0016
   network: ws
   port: 1443
   server: 81.161.98.228
@@ -1286,19 +1305,3 @@ proxies:
     headers:
       Host: cdn.filterai.ru
     path: /websocketpl
-- name: 14|US_speednode_0013
-  password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
-  port: 443
-  server: 108.165.255.5
-  skip-cert-verify: true
-  sni: www.bilibili.com
-  type: trojan
-  udp: true
-- name: 14|US_speednode_0014
-  password: 019a8c1f-3d28-74e8-8a8e-40045d7ec77f
-  port: 443
-  server: 96.126.190.132
-  skip-cert-verify: true
-  sni: www.bilibili.com
-  type: trojan
-  udp: true
