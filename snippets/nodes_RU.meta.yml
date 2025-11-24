@@ -1,5 +1,13 @@
 proxies:
-- name: 14|RU_speednode_0042
+- name: 14|RU_speednode_0030
+  password: Qzy7tgpRhu
+  port: 443
+  server: 37.18.14.33
+  skip-cert-verify: true
+  sni: m.vk.com
+  type: trojan
+  udp: true
+- name: 14|RU_speednode_0031
   network: ws
   port: 2053
   server: 80.90.187.190
@@ -13,21 +21,21 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.dpdns.org
     path: /?ed=2560
-- name: 14|RU_speednode_0043
-  network: ws
-  port: 2053
-  server: 194.35.119.49
-  servername: kuangbao.xiejiang.dpdns.org
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 14|RU_speednode_0032
+  port: 443
+  reality-opts:
+    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
+    short-id: 83e9f5b24040c5f7
+  server: at.monkeyisland.xyz
+  servername: at.monkeyisland.xyz
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
-  ws-opts:
-    headers:
-      Host: kuangbao.xiejiang.dpdns.org
-    path: /?ed=2560
-- name: 14|RU_speednode_0044
+  uuid: 6184fcfb-52e0-40bb-a271-bbd097b70a8e
+- name: 14|RU_speednode_0033
   network: ws
   port: 2053
   server: 194.35.119.135
@@ -41,3 +49,35 @@ proxies:
     headers:
       Host: kuangbao.xiejiang.dpdns.org
     path: /?ed=2560
+- name: 14|RU_speednode_0034
+  network: ws
+  port: 2053
+  server: 194.35.119.49
+  servername: kuangbao.xiejiang.dpdns.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5aba5b77-48eb-4ae2-b60d-5bfee7ac169e
+  ws-opts:
+    headers:
+      Host: kuangbao.xiejiang.dpdns.org
+    path: /?ed=2560
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 14|RU_speednode_0035
+  network: ws
+  port: 8443
+  server: zcreat.ethervpn.fun
+  servername: zcreat.ethervpn.fun
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: a47595a8-1add-401a-8189-e6799f8d8628
+  ws-opts:
+    headers:
+      Host: zcreat.ethervpn.fun
+    path: /websocketpl?ed=2047
