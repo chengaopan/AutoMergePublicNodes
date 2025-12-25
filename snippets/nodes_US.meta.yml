@@ -84,7 +84,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 14|US_speednode_0005
+  name: 14|US_speednode_0022
   port: 443
   reality-opts:
     public-key: 51TT1F2DugIjuNuGgaeEoW_BWhEKg3mNyNkjNGd_2RM
@@ -95,16 +95,26 @@ proxies:
   type: vless
   udp: true
   uuid: c42e4667-ca09-4769-b544-89a8da730daf
-- client-fingerprint: chrome
-  name: 14|US_speednode_0006
-  port: 10001
-  reality-opts:
-    public-key: kKX1o7FhJLyDaVE6sqXUcYpUIuFUgij_ueRYc_E4JhM
-    short-id: 1a24af87
-  server: 172.234.130.82
-  servername: yahoo.com
+- name: 14|US_speednode_0023
+  network: ws
+  port: 443
+  server: 144.31.5.179
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 98cb33a8-d6f7-41f0-8796-e4b471d65df8
+- name: 14|US_speednode_0024
+  network: ws
+  port: 2053
+  server: oralb.com
+  servername: stall.saass.ccwu.cc
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 53cd8178-2ee6-43d9-a2a7-881f287fd408
+  uuid: 6949ea89-4825-1b47-3b03-113cede87254
+  ws-opts:
+    headers:
+      Host: stall.saass.ccwu.cc
+    path: /proxyip=sjc.o00o.ooo
