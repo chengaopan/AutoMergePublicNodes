@@ -304,7 +304,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 12,13|香港5|@ripaojiedian
+- name: 12,13,14|HK_speednode_0014
   network: tcp
   password: BxceQaOe
   port: 443
@@ -312,6 +312,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+  udp: true
 - name: 12,13|日本|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -408,21 +409,34 @@ proxies:
   sni: torontorm1.686911.xyz
   type: trojan
   udp: true
-- name: 14|DE_speednode_0003
-  network: ws
-  port: 20531
-  server: 82.115.31.209
-  servername: miku.mikuru.ip-ddns.com
+- flow: xtls-rprx-vision
+  name: 14|DE_speednode_0004
+  port: 443
+  reality-opts:
+    public-key: THd83pRAiz68QKKNCzCdj3hvVq9Wy7NIFeIk1WjRJ1c
+    short-id: 15cdd4ff88310cf0
+  server: 196.240.57.74
+  servername: desrv.fasti.win
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 00000000-0000-4000-8000-000000000000
+  uuid: 7005f499-036f-4570-a2a1-29761cfbbd9e
+- name: 14|DE_speednode_0005
+  network: ws
+  port: 2087
+  server: api.dark-coffe.com
+  servername: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7e58699f-1d5d-4f6b-b181-cb74f0ad9509
   ws-opts:
     headers:
-      Host: miku.mikuru.ip-ddns.com
-    path: /@Marisa_kristi
-- name: 14|GB_speednode_0006
+      Host: 5JxGp6VrFh.SmArTtEcHzAaL.iNfO
+    path: /?ed=2048
+- name: 14|GB_speednode_0008
   network: ws
   port: 2053
   server: 25.129.197.138
@@ -435,20 +449,6 @@ proxies:
   ws-opts:
     headers:
       Host: khamenei.dpdns.org
-    path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
-- name: 14|GB_speednode_0005
-  network: ws
-  port: 2053
-  server: 25.129.197.138
-  servername: KhAmeneI.DPdNs.OrG
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8a07740f-b932-4372-a3a2-ed91f184cd33
-  ws-opts:
-    headers:
-      Host: KhAmeneI.DPdNs.OrG
     path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
 - name: 14|GB_speednode_0007
   network: ws
@@ -463,8 +463,36 @@ proxies:
   ws-opts:
     headers:
       Host: KhAmeneI.DPdNs.OrG
-    path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+    path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119?ed=2560
 - name: 14|GB_speednode_0009
+  network: ws
+  port: 8880
+  server: 25.25.25.0
+  servername: rightel.IRANCEELL.mci.it.www.speedtest.net.zula.ir.focusontrade.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 8e997404-cb62-4fa1-a8c9-c77a32f10153
+  ws-opts:
+    headers:
+      Host: rightel.IRANCEELL.mci.it.www.speedtest.net.zula.ir.focusontrade.ir
+    path: /?ed=8880
+- name: 14|GB_speednode_0010
+  network: ws
+  port: 2053
+  server: 25.129.197.138
+  servername: KhAmeneI.DPdNs.OrG
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8a07740f-b932-4372-a3a2-ed91f184cd33
+  ws-opts:
+    headers:
+      Host: KhAmeneI.DPdNs.OrG
+    path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
+- name: 14|GB_speednode_0011
   network: ws
   port: 2053
   server: 25.129.197.138
@@ -479,7 +507,7 @@ proxies:
       Host: khamenei.dpdns.org
     path: /eyJqdW5rIjoiNDBNWGY3Z0NPd0loZ2YiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByb3h5aXAiLCJwYW5lbElQcyI6W119
 - client-fingerprint: firefox
-  name: 14|GB_speednode_0010
+  name: 14|GB_speednode_0012
   port: 587
   reality-opts:
     public-key: HnPEhCDTcZnDejsAiidoOSx2-h0EvJMILj4bv3X1mBc
@@ -491,19 +519,48 @@ proxies:
   type: vless
   udp: true
   uuid: 65a1e22c-d37e-4b92-b6ca-1d09dcd1d441
-- flow: xtls-rprx-vision
-  name: 14|GR_speednode_0011
-  port: 443
-  reality-opts:
-    public-key: Yu1_Agl1_bJb298G9ukjGuvfksVTUs1X7laYJ3VqwwQ
-    short-id: b5e0cd9ca194c0a5
-  server: 185.234.57.207
-  servername: teamdocs.su
+- name: 14|GB_speednode_0013
+  network: ws
+  port: 2095
+  server: 25.129.199.122
+  servername: ip6-free2.shakhle.ir.
   skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   udp: true
-  uuid: dd92c4f8-be88-4c61-84eb-d261f798071e
+  uuid: 06d4a2dd-b823-4b6a-843e-c159b6858d91
+  ws-opts:
+    headers:
+      Host: ip6-free2.shakhle.ir.
+    path: /
+- name: 14|IR_speednode_0015
+  network: ws
+  port: 80
+  server: oon.visaups.ir
+  servername: oon.visaups.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 087d8602-503b-4091-9f05-44c20792083c
+  ws-opts:
+    headers:
+      Host: oon.visaups.ir
+    path: /
+- name: 14|IR_speednode_0016
+  network: ws
+  port: 80
+  server: 185.143.234.235
+  servername: oon.visaups.ir
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 087d8602-503b-4091-9f05-44c20792083c
+  ws-opts:
+    headers:
+      Host: oon.visaups.ir
+    path: /
 - name: 14|IR_speednode_0017
   network: ws
   port: 80
@@ -518,73 +575,94 @@ proxies:
     headers:
       Host: oon.visaups.ir
     path: /
-- name: 14|IR_speednode_0018
-  network: ws
-  port: 80
-  server: oon.visaups.ir
-  servername: oon.visaups.ir
+- flow: xtls-rprx-vision
+  name: 14|JP_speednode_0018
+  port: 443
+  reality-opts:
+    public-key: KX1PfrASrflF1Ra1TcjujnOAK-4sPiEVDSfAPS1DAl8
+    short-id: e33013f4
+  server: 188.253.16.31
+  servername: yahoo.com
   skip-cert-verify: false
-  tls: false
+  tls: true
   type: vless
   udp: true
-  uuid: 087d8602-503b-4091-9f05-44c20792083c
+  uuid: 43135731-165e-4064-872e-7e9447fbebfb
+- flow: xtls-rprx-vision
+  name: 14|RU_speednode_0019
+  port: 443
+  reality-opts:
+    public-key: rmjxUM7tGXK1tCx9DN6LujbEflBHixsg8oTsVrdTrDM
+    short-id: a28842ab2911096b
+  server: 91.217.10.68
+  servername: kz.fasti.win
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0d93b787-b66b-4696-a036-a0f549764f69
+- name: 14|RU_speednode_0020
+  port: 1080
+  server: 193.233.254.8
+  type: socks5
+  udp: true
+  username: T2dAMTkzLjIzMy4yNTQuODpAMTkzLjIzMy4yNTQuODo%3D
+- name: 14|SG_speednode_0021
+  network: ws
+  port: 443
+  server: 34.143.159.175
+  servername: sni.meibidi.pp.ua
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
   ws-opts:
     headers:
-      Host: oon.visaups.ir
-    path: /
-- flow: xtls-rprx-vision
-  name: 14|NN_speednode_0019
-  port: 26978
-  reality-opts:
-    public-key: n2w4hj7Q7wN6P21LSJJwIPitfYZbwWh5a2seJHH58SE
-    short-id: 28bf
-  server: sakura.bunnywaffle.org
-  servername: tesla.com
+      Host: sni.meibidi.pp.ua
+    path: /?ed=2560
+- name: 14|SG_speednode_0022
+  network: ws
+  port: 443
+  server: 217.142.185.111
+  servername: sni.meibidi.pp.ua
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 9042affd-0ad3-4014-adbc-e52f00891ea2
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: sni.meibidi.pp.ua
+    path: /?ed=2560
 - flow: xtls-rprx-vision
-  name: 14|RU_speednode_0020
+  name: 14|UA_speednode_0023
   port: 443
   reality-opts:
-    public-key: iAI3AU1ymQksBudcPndvOpV-mFWn-ECQKF0K42qb12k
-    short-id: 5e93929f12f446fe
-  server: ru.fasti.win
-  servername: ru.fasti.win
+    public-key: rmjxUM7tGXK1tCx9DN6LujbEflBHixsg8oTsVrdTrDM
+    short-id: a28842ab2911096b
+  server: 91.224.74.91
+  servername: kz.fasti.win
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 7005f499-036f-4570-a2a1-29761cfbbd9e
-- flow: xtls-rprx-vision
-  name: 14|RU_speednode_0021
+  uuid: 0d93b787-b66b-4696-a036-a0f549764f69
+- name: 14|US_speednode_0024
+  network: ws
   port: 443
-  reality-opts:
-    public-key: vnjp7zIK2H3CGdjSis_79KXqS6IG-opmpbETPUD-EC8
-    short-id: 15affa0af66dfc79
-  server: 158.160.53.57
-  servername: api-maps.yandex.ru
+  server: 154.17.10.237
+  servername: sni.meibidi.pp.ua
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 3d29bd40-5f23-4024-aab6-17258cd55a7e
-- flow: xtls-rprx-vision
-  name: 14|RU_speednode_0022
-  port: 7443
-  reality-opts:
-    public-key: J5ITJbg5FQFembAfkogKHHQB6DigsFXQxK7xu-QMWUs
-    short-id: a20d3ed244c76426
-  server: 51.250.16.8
-  servername: ads.x5.ru
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 87d58e85-a4b3-4187-9fb7-6f0a73b21a6b
-- name: 14|US_speednode_0023
+  uuid: 55d9ec38-1b8a-454b-981a-6acfe8f56d8c
+  ws-opts:
+    headers:
+      Host: sni.meibidi.pp.ua
+    path: /?ed=2560
+- name: 14|US_speednode_0025
   port: 443
   reality-opts:
     public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
@@ -596,7 +674,7 @@ proxies:
   type: vless
   udp: true
   uuid: 147ccf68-ca08-4ce9-a507-b0f0d5af119c
-- name: 14|US_speednode_0024
+- name: 14|US_speednode_0026
   port: 443
   reality-opts:
     public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
@@ -607,8 +685,8 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 1b2b763f-12f2-4cab-b63c-17b335ed63c7
-- name: 14|US_speednode_0025
+  uuid: 355a8145-f4a5-4877-a8f3-31137530db3d
+- name: 14|US_speednode_0027
   port: 443
   reality-opts:
     public-key: UT9tFQOdy54SeW_tg-XQN3QkGYoWUpO_88XFXijkrXc
