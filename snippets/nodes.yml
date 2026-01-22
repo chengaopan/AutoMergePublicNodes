@@ -57,20 +57,24 @@ proxies:
   server: 54.238.172.125
   sni: www.nintendogames.net
   type: trojan
-- name: 13|日本3|@ripaojiedian
+- name: 13,14|JP_speednode_0009
   network: tcp
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 1933
   server: 160.16.89.176
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
-- name: 13|新加坡|@ripaojiedian
+  udp: true
+- name: 13,14|JP_speednode_0010
   network: tcp
   password: 869e9086806483ca4744a4cb0f3d6e16
   port: 3076
   server: 160.16.89.176
+  skip-cert-verify: false
   sni: www.nintendogames.net
   type: trojan
+  udp: true
 - name: 13|新加坡2|@ripaojiedian
   network: tcp
   password: 869e9086806483ca4744a4cb0f3d6e16
@@ -109,3 +113,51 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+- name: 14|DE_speednode_0002
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.196.155.223
+  skip-cert-verify: true
+  sni: trojan.burgerip.co.uk
+  type: trojan
+  udp: true
+- name: 14|DE_speednode_0004
+  password: telegram-id-privatevpns
+  port: 22222
+  server: 18.196.155.223
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 14|FR_speednode_0006
+  password: telegram-id-directvpn
+  port: 22223
+  server: 51.44.124.96
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: 14|US_speednode_0037
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: true
+  sni: epge.muarua.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epge.muarua.filegear-sg.me
+    path: /?ed=2560
+- name: 14|US_speednode_0039
+  network: ws
+  password: Aimer
+  port: 2053
+  server: 167.68.4.199
+  skip-cert-verify: false
+  sni: epge.muarua.filegear-sg.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: epge.muarua.filegear-sg.me
+    path: /
