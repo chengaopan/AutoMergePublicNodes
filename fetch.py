@@ -677,7 +677,7 @@ class Source():
                     if 'ignore' in self.cfg:
                         self.cfg['ignore'] = [_ for _ in self.cfg['ignore'].split(',') if _.strip()]
                     self.url = '#'.join(segs[:-1])
-                with session.get(self.url, stream=True) as r:
+                with session.get(self.url, stream=True, timeout=10.0) as r:
                     if r.status_code != 200:
                         if depth > 0 and isinstance(self.url_source, str):
                             exc = f"'{self.url}' 抓取时 {r.status_code}"
@@ -813,7 +813,7 @@ class DomainTree:
 
 def extract(url: str) -> Union[Set[str], int]:
     global session
-    res = session.get(url)
+    res = session.get(url, timeout=10.0)
     if res.status_code != 200: return res.status_code
     urls: Set[str] = set()
     if '#' in url:
