@@ -23,12 +23,47 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 13|US_speednode_0023
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 13|US_speednode_0012
+  network: ws
+  port: 443
+  server: 18.245.54.3
+  servername: d2241b25w3zftf.cloudfront.net
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 97b2cd5b-b98d-494f-8f97-3a06e8c1bbd2
+  ws-opts:
+    headers:
+      Host: d2241b25w3zftf.cloudfront.net
+    path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 13|US_speednode_0013
+  network: ws
+  port: 25557
+  server: 69.63.208.141
+  servername: snippet.gfw.qzz.io
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: snippet.gfw.qzz.io
+    path: /danfeng
+- name: 13|US_speednode_0014
   network: ws
   password: trojan
-  port: 8025
-  server: 54.46.72.234
-  skip-cert-verify: true
+  port: 54321
+  server: 154.12.53.125
+  skip-cert-verify: false
   sni: jflsjlaf.pages.dev
   type: trojan
   udp: true
@@ -36,3 +71,46 @@ proxies:
     headers:
       Host: jflsjlaf.pages.dev
     path: /
+- client-fingerprint: chrome
+  name: 13|US_speednode_0015
+  network: ws
+  port: 443
+  server: 74.120.174.180
+  servername: q40ivxuck.danfeng.qzz.io
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 26524cce-d514-4014-a426-365fb266a14d
+  ws-opts:
+    headers:
+      Host: q40ivxuck.danfeng.qzz.io
+    path: /danfeng
+- name: 13|US_speednode_0021
+  network: ws
+  port: 8443
+  server: 162.159.45.202
+  servername: zoro.jakesolo.eu.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: dcda262b-0d36-4032-edd9-da4fd2d53711
+  ws-opts:
+    headers:
+      Host: zoro.jakesolo.eu.org
+    path: /ws
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 13|US_speednode_0022
+  port: 7443
+  reality-opts:
+    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
+    short-id: d82fb387
+  server: 144.31.122.171
+  servername: chat.deepseek.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 248d1886-8ae0-4079-a281-4d21bdb74ba4
