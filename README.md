@@ -17,7 +17,7 @@
 [BoostNet机场官网地址2](https://boostnet2.com/#/register?code=HUvJbTaF)  
 
 **套餐(所有套餐节点一样):**
-
+**价格可能有所变动,以官方公布为准**
 
 流量 | 价格 
 :-: | :-: 
