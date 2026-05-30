@@ -1,5 +1,5 @@
 proxies:
-- name: 11,12|美国|@ripaojiedian
+- name: 10,11|美国|@ripaojiedian
   network: tcp
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 2663
@@ -7,7 +7,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 11,12|美国2|@ripaojiedian
+- name: 10,11|美国2|@ripaojiedian
   network: tcp
   password: f6d3aa07a52dbcedcb4731029e2fb6ae
   port: 6604
@@ -15,7 +15,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 11,12|美国3|@ripaojiedian
+- name: 10,11|美国3|@ripaojiedian
   network: tcp
   password: BxceQaOe
   port: 17801
@@ -25,7 +25,7 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  name: 11|🇺🇸 美国4|@ripaojiedian
+  name: 10|🇺🇸 美国4|@ripaojiedian
   port: 180
   server: 82.198.246.250
   skip-cert-verify: false
@@ -34,7 +34,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 11|🇺🇸 美国5|@ripaojiedian
+  name: 10|🇺🇸 美国5|@ripaojiedian
   port: 180
   server: 82.198.246.233
   skip-cert-verify: false
@@ -43,7 +43,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 12|美国4|@ripaojiedian
+  name: 11|美国4|@ripaojiedian
   network: tcp
   port: '180'
   server: 82.198.246.250
@@ -53,7 +53,7 @@ proxies:
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
 - alterId: 0
   cipher: auto
-  name: 12|美国5|@ripaojiedian
+  name: 11|美国5|@ripaojiedian
   network: tcp
   port: '180'
   server: 82.198.246.233
@@ -61,102 +61,158 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 13|US_speednode_0042
-  port: 7070
-  server: 20.83.154.79
-  type: socks5
+- client-fingerprint: chrome
+  name: 12|US_speednode_0024
+  port: 443
+  reality-opts:
+    public-key: TRP10HqKUXEQ3O-cfsq93DycfBmbJe9KM36yvSa8Mmw
+  server: 47.80.14.130
+  servername: api.company-target.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
   udp: true
+  uuid: 3e7f67de-648e-4871-b51a-a225214d41ee
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 13|US_speednode_0044
-  port: 54495
+  name: 12|US_speednode_0025
+  port: 443
   reality-opts:
-    public-key: 50IjQtR9zJG_3pXrbQDalYy_D4c7C_A8EEwVx0EfOjM
-    short-id: 5e8c37215982
-  server: 89.117.94.111
-  servername: yahoo.com
+    public-key: 8mv22T5d1KHXlT1EQiQMcgbOZpwkospsUb8WLkuDsAA
+    short-id: 7994d24409820c44
+  server: r1uvt3.sgvless.yydzx.xyz
+  servername: deb.debian.org
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 2042c7c4-f0c8-48ec-926b-65112b064e2c
-- name: 13|US_speednode_0045
-  network: ws
-  password: mitivpn
+  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 12|US_speednode_0026
   port: 443
-  server: 104.18.20.213
+  reality-opts:
+    public-key: 8mv22T5d1KHXlT1EQiQMcgbOZpwkospsUb8WLkuDsAA
+    short-id: 7994d24409820c44
+  server: b2ob8r.sgvless.yydzx.xyz
+  servername: deb.debian.org
   skip-cert-verify: false
-  sni: www.app-cloud.ir
-  type: trojan
+  tls: true
+  type: vless
   udp: true
-  ws-opts:
-    headers:
-      Host: www.app-cloud.ir
-    path: /?ed=2048
-- name: 13|US_speednode_0046
+  uuid: 2219a1b1-9290-4ac5-94fd-6cfc1fb25280
+- client-fingerprint: randomized
+  name: 12|US_speednode_0027
   network: ws
-  password: mitivpn
-  port: 443
-  server: 14.102.228.76
-  skip-cert-verify: true
-  sni: www.app-cloud.ir
-  type: trojan
+  port: 2095
+  server: www.fbi.gov
+  servername: cnmfangbinxing.cnmfangbinxing.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
   udp: true
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
   ws-opts:
     headers:
-      Host: www.app-cloud.ir
-    path: /?ed=2048
+      Host: cnmfangbinxing.cnmfangbinxing.workers.dev
+    path: /
+- client-fingerprint: randomized
+  name: 12|US_speednode_0028
+  network: ws
+  port: 2095
+  server: docs.cloudflare.com
+  servername: cnmfangbinxing.cnmfangbinxing.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing.workers.dev
+    path: /
+- client-fingerprint: randomized
+  name: 12|US_speednode_0029
+  network: ws
+  port: 2095
+  server: www.shopify.com
+  servername: cnmfangbinxing.cnmfangbinxing.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing.workers.dev
+    path: /
+- client-fingerprint: randomized
+  name: 12|US_speednode_0030
+  network: ws
+  port: 2095
+  server: itarmy.com.ua
+  servername: cnmfangbinxing.cnmfangbinxing.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing.workers.dev
+    path: /
+- client-fingerprint: randomized
+  name: 12|US_speednode_0031
+  network: ws
+  port: 2095
+  server: developers.cloudflare.com
+  servername: cnmfangbinxing.cnmfangbinxing.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing.workers.dev
+    path: /
+- client-fingerprint: randomized
+  name: 12|US_speednode_0032
+  network: ws
+  port: 2095
+  server: cdnjs.com
+  servername: cnmfangbinxing.cnmfangbinxing.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 86c50e3a-5b87-49dd-bd20-03c7f2735e40
+  ws-opts:
+    headers:
+      Host: cnmfangbinxing.cnmfangbinxing.workers.dev
+    path: /
+- name: 12|US_speednode_0033
+  port: 443
+  server: 155.117.127.137
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 5a20b5d0-3a98-4792-9559-95f4e24277ec
 - alpn:
-  - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 13|US_speednode_0047
-  port: 8443
-  server: 130.49.219.126
-  servername: at16.fastlanehosting.ru
+  name: 12|US_speednode_0034
+  network: ws
+  port: 443
+  server: 162.159.141.236
+  servername: newspeedbypass.wt4p2ppro.me
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 2ee2b77f-e4cd-4e5d-af22-f9d919eeadd5
-- name: 13|US_speednode_0048
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 14.102.228.76
-  skip-cert-verify: true
-  sni: www.app-cloud.ir
-  type: trojan
-  udp: true
+  uuid: 44a59812-43ff-46ff-8acc-c7fe4dfc4e46
   ws-opts:
     headers:
-      Host: www.app-cloud.ir
+      Host: newspeedbypass.wt4p2ppro.me
     path: /
-- name: 13|US_speednode_0049
-  network: ws
-  password: mitivpn
-  port: 443
-  server: 104.18.20.213
-  skip-cert-verify: false
-  sni: www.app-cloud.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.app-cloud.ir
-    path: /
-- client-fingerprint: firefox
-  name: 13|US_speednode_0050
-  network: ws
-  port: 443
-  server: 13.193.213.165
-  servername: i8dxb.media-cdn-us.chinav.indevs.in
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 26524cce-d514-4014-a426-365fb266a14d
-  ws-opts:
-    headers:
-      Host: i8dxb.media-cdn-us.chinav.indevs.in
-    path: /danfeng-lo9ew8-vfksib-hwrl-84fg5mvl
