@@ -7,7 +7,7 @@ proxies:
   skip-cert-verify: true
   sni: www.nintendogames.net
   type: trojan
-- name: 11,12|美国3|@ripaojiedian
+- name: 11,12,13|US_speednode_0054
   network: tcp
   password: BxceQaOe
   port: 17801
@@ -15,6 +15,7 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
   name: 11|🇺🇸 美国4|@ripaojiedian
@@ -34,23 +35,21 @@ proxies:
   tls: false
   type: vmess
   uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
-- name: 13|US_speednode_0051
-  password: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 13|US_speednode_0049
   port: 443
-  server: cffa61bc-t9zts0-tatrrz-yjq0.jp.oshuawei.com
+  reality-opts:
+    public-key: IqsN_cPeCP6oEXtYQMMWBiUim-r9lxq7YGj_mE3992g
+    short-id: e6d59aff03e5b0
+  server: tw4.miyazono-kaori.com
+  servername: dlcdnets.asus.com
+  skip-cert-verify: false
   tls: true
-  type: http
+  type: vless
   udp: true
-  username: 25b2699a-e18e-11ec-8e69-f23c91cfbbc9
-- name: 13|US_speednode_0052
-  password: 0b869f32-657e-11ee-a90c-f23c9313b177
-  port: 3443
-  server: 9bbaef12-ta0g00-taad0h-24c4.tkydc3.cdnbytescm.com
-  tls: true
-  type: http
-  udp: true
-  username: 0b869f32-657e-11ee-a90c-f23c9313b177
-- name: 13|US_speednode_0053
+  uuid: 4086c00a-67a4-4d96-9c5f-2f177f26cb51
+- name: 13|US_speednode_0050
   password: BxceQaOe
   port: 2520
   server: 95.40.4.37
@@ -61,7 +60,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: firefox
-  name: 13|US_speednode_0054
+  name: 13|US_speednode_0051
   network: ws
   port: 443
   server: kobe.ns.cloudflare.com
@@ -75,3 +74,28 @@ proxies:
     headers:
       Host: 35cdnws.frnstatic.info
     path: /35cdnws
+- name: 13|US_speednode_0052
+  password: BxceQaOe
+  port: 2520
+  server: 95.40.4.37
+  skip-cert-verify: true
+  sni: 95.40.4.37
+  type: trojan
+  udp: true
+- name: 13|US_speednode_0055
+  network: ws
+  port: 443
+  server: 172.67.195.79
+  servername: cdn.veilvpn.fans
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30980fc4-8789-42df-80d1-0c8e5cd26881
+  ws-opts:
+    early-data-header-name: Sec-WebSocket-Protocol
+    headers:
+      Host: cdn.veilvpn.fans
+    path: /vpnhu
+    v2ray-http-upgrade: true
+    v2ray-http-upgrade-fast-open: true
