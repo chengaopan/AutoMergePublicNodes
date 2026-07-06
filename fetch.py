@@ -582,6 +582,8 @@ class Node:
         if 'alpn' in ret and isinstance(ret['alpn'], str):
             # 'alpn' is not a slice
             ret['alpn'] = ret['alpn'].replace(' ','').split(',')
+        if 'fingerprint' in ret:
+            del ret['fingerprint']
         return ret
 
     def supports_meta(self, noMeta=False) -> bool:
@@ -1188,6 +1190,8 @@ def main():
     names_clash_meta = list(names_clash_meta)
     conf_meta = copy.deepcopy(conf)
 
+    conf.pop('global-client-fingerprint', None)
+    conf_meta.pop('global-client-fingerprint', None)
     # Clash
     conf['proxies'] = proxies
     for group in conf['proxy-groups']:
