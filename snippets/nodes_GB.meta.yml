@@ -1,15 +1,38 @@
 proxies:
+- name: 12|GB_speednode_0005
+  port: 2090
+  server: 31.56.204.32
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+- name: 12|GB_speednode_0006
+  network: ws
+  port: 8880
+  server: 80.93.202.40
+  servername: vms.lifetime02.workers.dev
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime02.workers.dev
+    path: /
 - client-fingerprint: firefox
-  name: 12|GB_speednode_0005
+  flow: xtls-rprx-vision
+  name: 12|GB_speednode_0007
   network: tcp
   port: 443
   reality-opts:
-    public-key: 6p0aVCkOgd-xaxqSMANYABL6O4Tdbftnxjiy5qcmISQ
-    short-id: 0b
-  server: 45.155.52.231
-  servername: ru2.skydrgn-online.online
-  skip-cert-verify: true
+    public-key: qgQAQ19q2EhKzfolYMDsvTlmP9EAiCT8kng4uWR4QVg
+    short-id: 0a2d53503fdec721
+  server: de.prime-net.me
+  servername: de.prime-net.me
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 219f9fec-8983-4f6f-af8c-31bd0c6dbf19
+  uuid: 30702f28-0a64-4f96-bd8f-cc601ca87e4d
