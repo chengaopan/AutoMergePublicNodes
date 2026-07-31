@@ -1,16 +1,32 @@
 proxies:
-- client-fingerprint: chrome
+- client-fingerprint: random
   flow: xtls-rprx-vision
-  name: 12|RU_speednode_0155
+  name: 12|RU_speednode_0084
   network: tcp
-  port: 443
+  port: 9893
   reality-opts:
-    public-key: sntQ0HsOXhaye-K7bKrMw1w3cRmjgp0lT5IhP-ngwlU
-    short-id: 998432bc
-  server: 89.169.3.42
-  servername: userapi.com
+    public-key: GVNhQWxHlpnqLnhlOeFpagU1QLVVHBepBQN0YcPjXVg
+  server: 46.253.132.41
+  servername: www.io.ozone.ru
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 884d811f-577b-421e-aabb-608660b0ecfa
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 12|RU_speednode_0085
+  network: ws
+  port: 443
+  server: 77.105.163.46
+  servername: ov186.ochmaybrooooo.online
   skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: 9cddcc01-3dfb-46e0-85d8-e3c6818232cf
+  uuid: 0e192bd1-8f19-4184-9fff-6d67e4f738bd
+  ws-opts:
+    headers:
+      Host: ov186.ochmaybrooooo.online
+    path: /
