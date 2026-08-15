@@ -166,10 +166,10 @@ TG频道：无
 
 ## Star History
 
-<a href="https://star-history.com/#chengaopan/AutoMergePublicNodes">
+<a href="https://star-history.dera.page/#chengaopan/AutoMergePublicNodes">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=chengaopan/AutoMergePublicNodes&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=chengaopan/AutoMergePublicNodes" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=chengaopan/AutoMergePublicNodes" />
+    <source media="(prefers-color-scheme: dark)" srcset="https://star-history.dera.page/svg?repos=chengaopan/AutoMergePublicNodes&theme=dark" />
+    <source media="(prefers-color-scheme: light)" srcset="https://star-history.dera.page/svg?repos=chengaopan/AutoMergePublicNodes" />
+    <img alt="Star History Chart" src="https://star-history.dera.page/svg?repos=chengaopan/AutoMergePublicNodes" />
   </picture>
 </a>
