@@ -166,10 +166,10 @@ TG频道：无
 
 ## Star History
 
-<a href="https://star-history.com/#chengaopan/AutoMergePublicNodes">
-  <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/svg?repos=chengaopan/AutoMergePublicNodes&theme=dark" />
-    <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/svg?repos=chengaopan/AutoMergePublicNodes" />
-    <img alt="Star History Chart" src="https://api.star-history.com/svg?repos=chengaopan/AutoMergePublicNodes" />
-  </picture>
+<a href="https://www.star-history.com/?repos=chengaopan%2FAutoMergePublicNodes&type=date&legend=top-left">
+ <picture>
+   <source media="(prefers-color-scheme: dark)" srcset="https://api.star-history.com/chart?repos=chengaopan/AutoMergePublicNodes&type=date&theme=dark&legend=top-left&sealed_token=Li9iFI3-pxjEQPlzd64Twa3pmFO40yYvTZukmx4RZFh13gJ1Ps_2eQ-FpeFeoZRJB9sMxYcUbfjKwG136bfGvLCJDETT-uONN006wscmp1M-d4vF6FaWRSDIBxpucz_CH2kNHKfQQA1y9BXDLTMSxuOif5nGrGFq2gbCnu3Re4sYRiDYcCDz0GTQ_65U" />
+   <source media="(prefers-color-scheme: light)" srcset="https://api.star-history.com/chart?repos=chengaopan/AutoMergePublicNodes&type=date&legend=top-left&sealed_token=Li9iFI3-pxjEQPlzd64Twa3pmFO40yYvTZukmx4RZFh13gJ1Ps_2eQ-FpeFeoZRJB9sMxYcUbfjKwG136bfGvLCJDETT-uONN006wscmp1M-d4vF6FaWRSDIBxpucz_CH2kNHKfQQA1y9BXDLTMSxuOif5nGrGFq2gbCnu3Re4sYRiDYcCDz0GTQ_65U" />
+   <img alt="Star History Chart" src="https://api.star-history.com/chart?repos=chengaopan/AutoMergePublicNodes&type=date&legend=top-left&sealed_token=Li9iFI3-pxjEQPlzd64Twa3pmFO40yYvTZukmx4RZFh13gJ1Ps_2eQ-FpeFeoZRJB9sMxYcUbfjKwG136bfGvLCJDETT-uONN006wscmp1M-d4vF6FaWRSDIBxpucz_CH2kNHKfQQA1y9BXDLTMSxuOif5nGrGFq2gbCnu3Re4sYRiDYcCDz0GTQ_65U" />
+ </picture>
 </a>
