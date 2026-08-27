@@ -19,11 +19,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: 迁出代码
-      uses: actions/checkout@v4
+      uses: actions/checkout@v6
     - name: 设置时区
       run: sudo timedatectl set-timezone 'Asia/Shanghai'
     - name: 安装 Python
-      uses: actions/setup-python@v5
+      uses: actions/setup-python@v6
       with:
         python-version: '3.x'
         cache: 'pip'
@@ -59,7 +59,10 @@ jobs:
         done
         echo "urls=${urls%,*}" >> $GITHUB_OUTPUT
     - name: 清除 JsDelivr CDN 缓存
-      uses: egad13/purge-jsdelivr-cache@v1
-      with:
-        url: ${{ steps.purge_urls.outputs.urls }}
+      run: |
+        IFS=',' read -ra urls <<< "${{ steps.purge_urls.outputs.urls }}"
+        for url in "${urls[@]}"; do
+          curl -sf --max-time 20 "${url/cdn.jsdelivr.net/purge.jsdelivr.net}" \
+            || echo "清除失败(可忽略): $url"
+        done
       continue-on-error: true
