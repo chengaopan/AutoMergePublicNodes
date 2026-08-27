@@ -1,0 +1,180 @@
+# ========================================
+# 在使用前请先通读一遍配置，有些地方需要修改
+# 本配置仅适用于 mihomo 内核
+# ========================================
+
+# 允许局域网的连接，路由器改为 true
+allow-lan: false
+
+# Clash 的 RESTful API，路由器改为 '0.0.0.0:9090'
+external-controller: '127.0.0.1:9090'
+
+dns:
+  enable: true
+  listen: :1053
+  ipv6: true
+  enhanced-mode: redir-host
+  nameserver:
+    - 223.5.5.5 # AliDNS
+    - 119.29.29.29 # DNSPod
+    - 114.114.114.114
+  fallback:
+    - 8.8.8.8
+    - 1.1.1.1
+  nameserver-policy:
+    # 提高 FCM 直连概率
+    'geosite:googlefcm': 'https://doh.pub/dns-query'
+
+proxy-providers:
+  NoMoreWalls:
+    type: http
+    # 不用本项目的订阅可以把链接换掉
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/nodes.meta.yml"
+    interval: 3600  # 1 小时自动更新一次
+    path: ./proxy_providers/NoMoreWalls.yml
+    health-check:
+      enable: true
+      interval: 600
+      url: https://www.google.com/
+
+proxy-groups:
+  - name: 🚀 选择代理
+    type: select
+    proxies:
+      - ♻ 自动选择
+      - 🔰 延迟最低
+      - ✅ 手动选择
+
+  - name: ♻ 自动选择
+    type: fallback
+    url: https://www.google.com/
+    interval: 300
+    use: [NoMoreWalls]
+
+  - name: 🔰 延迟最低
+    type: url-test
+    url: https://www.google.com/
+    interval: 300
+    tolerance: 20
+    use: [NoMoreWalls]
+
+  - name: ✅ 手动选择
+    type: select
+    use: [NoMoreWalls]
+
+  - name: 🌐 突破锁区
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 选择代理
+
+  - name: ❓ 疑似国内
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 选择代理
+      - REJECT
+
+  - name: 🚨 病毒网站
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+
+  - name: 🐟 漏网之鱼
+    type: select
+    proxies:
+      - DIRECT
+      - 🚀 选择代理
+
+  - name: ⛔ 广告拦截
+    type: select
+    proxies:
+      - REJECT
+      - DIRECT
+      - 🚀 选择代理
+
+rule-providers:
+  adblock:
+    type: http
+    behavior: classical
+    path: ./rule_providers/adblock.yml
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/adblock.yml"
+    interval: 21600 # 6h
+    format: yaml
+  proxy:
+    type: http
+    behavior: classical
+    path: ./rule_providers/proxy.yml
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/proxy.yml"
+    interval: 86400 # 24h
+    format: yaml
+  direct:
+    type: http
+    behavior: classical
+    path: ./rule_providers/direct.yml
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/direct.yml"
+    interval: 86400 # 24h
+    format: yaml
+  region:
+    type: http
+    behavior: classical
+    path: ./rule_providers/region.yml
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/region.yml"
+    interval: 86400 # 24h
+    format: yaml
+  malware:
+    type: http
+    behavior: classical
+    path: ./rule_providers/malware.yml
+    url: "https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/malware.yml"
+    interval: 86400 # 24h
+    format: yaml
+
+rules:
+  # Google 相关规则必须加在最前面
+  - DOMAIN-SUFFIX,googleapis.cn,DIRECT
+  - DOMAIN,dl.google.com,❓ 疑似国内
+  - DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT # Google Play 国外/国内 服务器，可直连，但只有国行机才能选到国内？
+  - DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT # Google Play 纯国内 服务器，似乎没啥卵用？
+  - DOMAIN-SUFFIX,gvt1-cn.com,DIRECT
+  - DOMAIN,redirector.gvt1.com,DIRECT # 会解析到你使用的运营商
+  - DOMAIN,fonts.googleapis.com,DIRECT
+  # FCM 直连，与上方 DNS 配合使用，如果当地无法直连则改为 🚀 选择代理
+  - GEOSITE,googlefcm,❓ 疑似国内
+  # gvt1.com 不加任何规则，根据 GEOIP 判断是否走代理
+
+  - RULE-SET,malware,🚨 病毒网站
+  - RULE-SET,adblock,⛔ 广告拦截
+  - DOMAIN-SUFFIX,cn,DIRECT
+  - DOMAIN-KEYWORD,-cn,DIRECT
+  - RULE-SET,region,🌐 突破锁区
+  - RULE-SET,direct,DIRECT
+  - RULE-SET,proxy,🚀 选择代理
+  - GEOIP,CN,❓ 疑似国内
+  - MATCH,🐟 漏网之鱼
+
+
+# 下面是通用配置
+mixed-port: 7890
+ipv6: true
+mode: rule
+log-level: warning
+global-client-fingerprint: chrome
+tcp-concurrent: true
+unified-delay: true
+
+sniffer:
+  enable: true
+  sniff:
+    HTTP:
+      ports: [80, 8080-8880]
+      override-destination: true
+    TLS:
+      ports: [443, 8443]
+    # QUIC:
+    #   ports: [443, 8443]
+  skip-domain:
+    - 'Mijia Cloud'
+    - 'dlg.io.mi.com'
+    - '+.apple.com'
