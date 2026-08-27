@@ -1,0 +1,66 @@
+name: Sync upstream
+# 自动同步 NoMoreWalls 上游的代码与规则（config.yml），
+# 但保留本仓库自己的更新频率(fetch.yml) 和节点源(sources.list)。
+
+on:
+  schedule:
+    # 每天 03:23(Asia/Shanghai)，避开抓取任务的整点时段
+    - cron: '23 3 * * *'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 设置时区
+        run: sudo timedatectl set-timezone 'Asia/Shanghai'
+      - name: 迁出代码
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 添加上游并抓取
+        run: |
+          git remote add upstream https://github.com/peasoft/NoMoreWalls.git \
+            || git remote set-url upstream https://github.com/peasoft/NoMoreWalls.git
+          # --depth=1：NoMoreWalls 历史极大，只拉最新快照
+          git fetch --depth=1 upstream master
+
+      # 只同步这些文件：代码 + 规则 + 依赖。其余一律不碰。
+      - name: 同步源文件（规则与上游一致）
+        run: |
+          git checkout upstream/master -- \
+            fetch.py dynamic.py fetch_config.yml config.yml abpwhite.txt \
+            requirements.txt snippets/example.yml LICENSE.md
+
+      # 安全校验：确认本地特色文件未被误改，一旦误改立即中止。
+      - name: 校验本地文件未被误改
+        run: |
+          if git diff --quiet -- sources.list \
+             && git diff --quiet -- .github/workflows/fetch.yml; then
+            echo "✅ sources.list 和 fetch.yml 未被改动"
+          else
+            echo "❌ 检测到本地特色文件被误改，中止本次同步！"
+            exit 1
+          fi
+
+      - name: 提交
+        run: |
+          git config user.name "GitHub Actions"
+          git config user.email "actions@github.com"
+          git add fetch.py dynamic.py fetch_config.yml config.yml abpwhite.txt \
+              requirements.txt snippets/example.yml LICENSE.md
+          if git diff --cached --quiet; then
+            echo "无变更，跳过提交"
+          else
+            git commit -m "sync upstream $(date '+%Y-%m-%d %H:%M:%S')"
+          fi
+
+      # 抓取任务也会提交，这里 rebase 到最新再推送，避免竞态冲突
+      - name: 推送
+        run: |
+          git pull --rebase origin master || true
+          git push origin master
