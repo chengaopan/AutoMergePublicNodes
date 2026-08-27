@@ -1,6 +1,6 @@
 name: Sync upstream
-# 自动同步 NoMoreWalls 上游的代码与规则（config.yml），
-# 但保留本仓库自己的更新频率(fetch.yml) 和节点源(sources.list)。
+# 自动同步 NoMoreWalls 上游的代码、规则(config.yml) 与节点源(sources.list)，
+# 只保留本仓库自己的更新频率(fetch.yml)。
 
 on:
   schedule:
@@ -30,18 +30,17 @@ jobs:
           git fetch --depth=1 upstream master
 
       # 只同步这些文件：代码 + 规则 + 依赖。其余一律不碰。
-      - name: 同步源文件（规则与上游一致）
+      - name: 同步源文件（代码、规则、节点源与上游一致）
         run: |
           git checkout upstream/master -- \
             fetch.py dynamic.py fetch_config.yml config.yml abpwhite.txt \
-            requirements.txt snippets/example.yml LICENSE.md
+            requirements.txt snippets/example.yml LICENSE.md sources.list
 
       # 安全校验：确认本地特色文件未被误改，一旦误改立即中止。
       - name: 校验本地文件未被误改
         run: |
-          if git diff --quiet -- sources.list \
-             && git diff --quiet -- .github/workflows/fetch.yml; then
-            echo "✅ sources.list 和 fetch.yml 未被改动"
+          if git diff --quiet -- .github/workflows/fetch.yml; then
+            echo "✅ fetch.yml（本地更新频率）未被改动"
           else
             echo "❌ 检测到本地特色文件被误改，中止本次同步！"
             exit 1
@@ -52,7 +51,7 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add fetch.py dynamic.py fetch_config.yml config.yml abpwhite.txt \
-              requirements.txt snippets/example.yml LICENSE.md
+              requirements.txt snippets/example.yml LICENSE.md sources.list
           if git diff --cached --quiet; then
             echo "无变更，跳过提交"
           else
