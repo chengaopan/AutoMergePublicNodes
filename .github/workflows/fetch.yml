@@ -58,11 +58,17 @@ jobs:
           urls+="${baseUrl}/${f},"
         done
         echo "urls=${urls%,*}" >> $GITHUB_OUTPUT
-    - name: 清除 JsDelivr CDN 缓存
+    - name: 清除 JsDelivr CDN 缓存（批量，一次请求）
       run: |
+        # jsDelivr 批量 purge：POST {"path":[url...]}，一次请求清所有文件，避免逐文件触发限流
+        json='{"path":['
+        sep=''
         IFS=',' read -ra urls <<< "${{ steps.purge_urls.outputs.urls }}"
-        for url in "${urls[@]}"; do
-          curl -sf --max-time 20 "${url/cdn.jsdelivr.net/purge.jsdelivr.net}" \
-            || echo "清除失败(可忽略): $url"
+        for u in "${urls[@]}"; do
+          json+="$sep\"$u\""
+          sep=','
         done
+        json+=']}'
+        curl -sf --max-time 30 -X POST "https://purge.jsdelivr.net/" \
+          -H "Content-Type: application/json" -d "$json" || echo "清除失败(可忽略，jsDelivr 12 小时内会自动刷新)"
       continue-on-error: true
