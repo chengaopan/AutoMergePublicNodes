@@ -1,0 +1,116 @@
+dns:
+  enable: true
+  enhanced-mode: redir-host
+  fallback:
+  - 8.8.8.8
+  - 1.1.1.1
+  ipv6: true
+  listen: :1053
+  nameserver:
+  - 223.5.5.5
+  - 119.29.29.29
+  - 114.114.114.114
+  nameserver-policy:
+    geosite:googlefcm: https://doh.pub/dns-query
+proxy-groups:
+- name: 🚀 选择代理
+  proxies:
+  - ♻ 自动选择
+  - 🔰 延迟最低
+  - ✅ 手动选择
+  type: select
+- include-all: true
+  interval: 300
+  name: ♻ 自动选择
+  type: fallback
+  url: https://www.google.com/
+- include-all: true
+  interval: 300
+  name: 🔰 延迟最低
+  tolerance: 20
+  type: url-test
+  url: https://www.google.com/
+- include-all: true
+  name: ✅ 手动选择
+  type: select
+- name: 🌐 突破锁区
+  proxies:
+  - DIRECT
+  - 🚀 选择代理
+  type: select
+- name: ❓ 疑似国内
+  proxies:
+  - DIRECT
+  - 🚀 选择代理
+  - REJECT
+  type: select
+- name: 🚨 病毒网站
+  proxies:
+  - REJECT
+  - DIRECT
+  type: select
+- name: 🐟 漏网之鱼
+  proxies:
+  - DIRECT
+  - 🚀 选择代理
+  type: select
+- name: ⛔ 广告拦截
+  proxies:
+  - REJECT
+  - DIRECT
+  - 🚀 选择代理
+  type: select
+rule-providers:
+  adblock:
+    behavior: classical
+    format: yaml
+    interval: 21600
+    path: ./rule_providers/adblock.yml
+    type: http
+    url: https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/adblock.yml
+  direct:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./rule_providers/direct.yml
+    type: http
+    url: https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/direct.yml
+  malware:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./rule_providers/malware.yml
+    type: http
+    url: https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/malware.yml
+  proxy:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./rule_providers/proxy.yml
+    type: http
+    url: https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/proxy.yml
+  region:
+    behavior: classical
+    format: yaml
+    interval: 86400
+    path: ./rule_providers/region.yml
+    type: http
+    url: https://ghproxy.net/https://raw.githubusercontent.com/peasoft/NoMoreWalls/master/snippets/region.yml
+rules:
+- DOMAIN-SUFFIX,googleapis.cn,DIRECT
+- DOMAIN,dl.google.com,❓ 疑似国内
+- DOMAIN-SUFFIX,xn--ngstr-lra8j.com,DIRECT
+- DOMAIN-SUFFIX,xn--ngstr-cn-8za9o.com,DIRECT
+- DOMAIN-SUFFIX,gvt1-cn.com,DIRECT
+- DOMAIN,redirector.gvt1.com,DIRECT
+- DOMAIN,fonts.googleapis.com,DIRECT
+- GEOSITE,googlefcm,❓ 疑似国内
+- RULE-SET,malware,🚨 病毒网站
+- RULE-SET,adblock,⛔ 广告拦截
+- DOMAIN-SUFFIX,cn,DIRECT
+- DOMAIN-KEYWORD,-cn,DIRECT
+- RULE-SET,region,🌐 突破锁区
+- RULE-SET,direct,DIRECT
+- RULE-SET,proxy,🚀 选择代理
+- GEOIP,CN,❓ 疑似国内
+- MATCH,🐟 漏网之鱼

@@ -1,5 +1,13 @@
 proxies:
-- name: 8|日本
+- name: 日本
+  password: Foc_Mcxi45rM9v3ve_N92fdrK_10_Ssc5
+  port: 8443
+  server: 185.39.31.117
+  skip-cert-verify: true
+  sni: grape-beer.yyuyy.com
+  tls: false
+  type: hysteria2
+- name: '日本 #1'
   password: ef18d810-719c-4bf1-83c6-615d01f217eb
   port: 443
   server: jp.cryptoofarm.com
@@ -7,23 +15,42 @@ proxies:
   sni: jp.cryptoofarm.com
   tls: false
   type: hysteria2
-- name: 11,12|日本|@ripaojiedian
-  network: tcp
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: dc-udp-🇯🇵 Japan-Tokyo
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: mdq80x0xv9wt7520
+  port: 52046
+  server: giftcard.gateway-stream.com
+  sni: giftcard.gateway-stream.com
+  tls: false
+  type: hysteria2
+- name: 🇯🇵 日本|@ripaojiedian
   password: BxceQaOe
-  port: 49811
-  server: 54.238.251.95
+  port: 9408
+  server: 18.163.11126
   skip-cert-verify: true
   sni: t.me%252Fripaojiedian
   type: trojan
 - cipher: aes-256-gcm
-  name: 11|🇯🇵 日本2|@ripaojiedian
+  name: 日本2|@ripaojiedian
   password: Butterfly123@qwe9527
   port: 40001
   server: 103.236.66.4
   type: ss
 - cipher: aes-256-gcm
-  name: 11|🇯🇵 日本3|@ripaojiedian
+  name: 日本3|@ripaojiedian
   password: Butterfly123@qwe9527
   port: 40002
   server: 103.236.66.4
   type: ss
+- name: 日本|@ripaojiedian
+  network: tcp
+  password: BxceQaOe
+  port: 9408
+  server: 18.163.115.126
+  skip-cert-verify: true
+  sni: t.me%252Fripaojiedian
+  type: trojan

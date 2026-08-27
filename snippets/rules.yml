@@ -1,8 +1,6 @@
-# Update: 2026-08-27 14:01
-allow-lan: false
 dns:
   enable: true
-  enhanced-mode: fake-ip
+  enhanced-mode: redir-host
   fallback:
   - 8.8.8.8
   - 1.1.1.1
@@ -14,172 +12,26 @@ dns:
   - 114.114.114.114
   nameserver-policy:
     geosite:googlefcm: https://doh.pub/dns-query
-external-controller: 127.0.0.1:9090
-global-client-fingerprint: chrome
-ipv6: true
-log-level: warning
-mixed-port: 7890
-mode: rule
-proxies:
-- cipher: aes-256-cfb
-  name: 'tg频道:@ripaojiedian #1'
-  password: amazonskr05
-  port: 443
-  server: 63.180.254.10
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 🇭🇰 香港|@ripaojiedian
-  port: 30807
-  server: v10.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- cipher: aes-256-gcm
-  name: 香港2|@ripaojiedian
-  password: Butterfly123@qwe9527
-  port: 10001
-  server: 103.236.66.4
-  type: ss
-- cipher: aes-256-gcm
-  name: 香港3|@ripaojiedian
-  password: Butterfly123@qwe9527
-  port: 10006
-  server: 112.28.141.77
-  type: ss
-- name: 香港4|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 53001
-  server: 95.40.24.249
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 🇭🇰 香港5|@ripaojiedian
-  password: BxceQaOe
-  port: 1103
-  server: 54.168.189
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 🇯🇵 日本|@ripaojiedian
-  password: BxceQaOe
-  port: 9408
-  server: 18.163.11126
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- cipher: aes-256-gcm
-  name: 日本2|@ripaojiedian
-  password: Butterfly123@qwe9527
-  port: 40001
-  server: 103.236.66.4
-  type: ss
-- cipher: aes-256-gcm
-  name: 日本3|@ripaojiedian
-  password: Butterfly123@qwe9527
-  port: 40002
-  server: 103.236.66.4
-  type: ss
-- name: 新加坡3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 41421
-  server: 54.255.201.71
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
-- cipher: aes-256-gcm
-  name: 美国2|@ripaojiedian
-  password: Butterfly123@qwe9527
-  port: 50003
-  server: 103.236.66.4
-  type: ss
-- cipher: aes-256-gcm
-  name: 美国|@ripaojiedian
-  password: Butterfly123@qwe9527
-  port: 50001
-  server: 103.236.66.4
-  type: ss
-- name: 美国3|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 1431
-  server: 43.198.210.207
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- cipher: aes-256-gcm
-  name: 台湾|@ripaojiedian
-  password: Butterfly123@qwe9527
-  port: 30001
-  server: 36.33.35.105
-  type: ss
-- alterId: 2
-  cipher: auto
-  name: 香港|@ripaojiedian
-  network: tcp
-  port: '30807'
-  server: v10.hdacd.com
-  servername: ''
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 香港5|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 25982
-  server: 52.195.148.119
-  skip-cert-verify: true
-  sni: t.me%2Fripaojiedian
-  type: trojan
-- name: 日本|@ripaojiedian
-  network: tcp
-  password: BxceQaOe
-  port: 9408
-  server: 18.163.115.126
-  skip-cert-verify: true
-  sni: t.me%252Fripaojiedian
-  type: trojan
 proxy-groups:
 - name: 🚀 选择代理
   proxies:
   - ♻ 自动选择
   - 🔰 延迟最低
   - ✅ 手动选择
-  - 🗺️ 选择地区
   type: select
-- interval: 300
+- include-all: true
+  interval: 300
   name: ♻ 自动选择
-  proxies: &id001
-  - 香港4|@ripaojiedian
-  - 美国|@ripaojiedian
-  - 台湾|@ripaojiedian
-  - 日本|@ripaojiedian
-  - 美国3|@ripaojiedian
-  - 日本3|@ripaojiedian
-  - 香港5|@ripaojiedian
-  - 香港|@ripaojiedian
-  - 🇭🇰 香港5|@ripaojiedian
-  - 香港3|@ripaojiedian
-  - 🇭🇰 香港|@ripaojiedian
-  - 新加坡3|@ripaojiedian
-  - 'tg频道:@ripaojiedian #1'
-  - 美国2|@ripaojiedian
-  - 🇯🇵 日本|@ripaojiedian
-  - 香港2|@ripaojiedian
-  - 日本2|@ripaojiedian
   type: fallback
   url: https://www.google.com/
-- interval: 300
+- include-all: true
+  interval: 300
   name: 🔰 延迟最低
-  proxies: *id001
   tolerance: 20
   type: url-test
   url: https://www.google.com/
-- name: ✅ 手动选择
-  proxies: *id001
+- include-all: true
+  name: ✅ 手动选择
   type: select
 - name: 🌐 突破锁区
   proxies:
@@ -192,95 +44,21 @@ proxy-groups:
   - 🚀 选择代理
   - REJECT
   type: select
-- name: 🐟 漏网之鱼
-  proxies:
-  - DIRECT
-  - 🚀 选择代理
-  type: select
 - name: 🚨 病毒网站
   proxies:
   - REJECT
   - DIRECT
+  type: select
+- name: 🐟 漏网之鱼
+  proxies:
+  - DIRECT
+  - 🚀 选择代理
   type: select
 - name: ⛔ 广告拦截
   proxies:
   - REJECT
   - DIRECT
   - 🚀 选择代理
-  type: select
-- name: 🗺️ 选择地区
-  proxies:
-  - 🇯🇵 日本
-  - 🇺🇸 美国
-  - 🇨🇳 台湾
-  - 🇨🇳 中国
-  - 🇭🇰 香港
-  - 🇨🇦 加拿大
-  - 🇫🇷 法国
-  - 🇸🇬 新加坡
-  - 🇬🇧 英国
-  - 🇰🇷 韩国
-  - 🇷🇺 俄罗斯
-  - 🇩🇪 德国
-  type: select
-- name: 🇯🇵 日本
-  proxies:
-  - 🇯🇵 日本|@ripaojiedian
-  - 日本2|@ripaojiedian
-  - 日本3|@ripaojiedian
-  - 日本|@ripaojiedian
-  type: select
-- name: 🇺🇸 美国
-  proxies:
-  - 美国2|@ripaojiedian
-  - 美国|@ripaojiedian
-  - 美国3|@ripaojiedian
-  type: select
-- name: 🇨🇳 台湾
-  proxies:
-  - 台湾|@ripaojiedian
-  type: select
-- name: 🇨🇳 中国
-  proxies:
-  - REJECT
-  type: select
-- name: 🇭🇰 香港
-  proxies:
-  - 🇭🇰 香港|@ripaojiedian
-  - 香港2|@ripaojiedian
-  - 香港3|@ripaojiedian
-  - 香港4|@ripaojiedian
-  - 🇭🇰 香港5|@ripaojiedian
-  - 香港|@ripaojiedian
-  - 香港5|@ripaojiedian
-  type: select
-- name: 🇨🇦 加拿大
-  proxies:
-  - REJECT
-  type: select
-- name: 🇫🇷 法国
-  proxies:
-  - REJECT
-  type: select
-- name: 🇸🇬 新加坡
-  proxies:
-  - 新加坡3|@ripaojiedian
-  type: select
-- name: 🇬🇧 英国
-  proxies:
-  - REJECT
-  type: select
-- name: 🇰🇷 韩国
-  proxies:
-  - REJECT
-  type: select
-- name: 🇷🇺 俄罗斯
-  proxies:
-  - REJECT
-  type: select
-- name: 🇩🇪 德国
-  proxies:
-  - REJECT
   type: select
 rules:
 - IP-CIDR,194.59.220.161/32,⛔ 广告拦截
@@ -8733,21 +8511,3 @@ rules:
 - IP-CIDR,98.159.108.71/32,🚀 选择代理
 - GEOIP,CN,❓ 疑似国内
 - MATCH,🐟 漏网之鱼
-sniffer:
-  enable: true
-  skip-domain:
-  - Mijia Cloud
-  - dlg.io.mi.com
-  - +.apple.com
-  sniff:
-    HTTP:
-      override-destination: true
-      ports:
-      - 80
-      - 8080-8880
-    TLS:
-      ports:
-      - 443
-      - 8443
-tcp-concurrent: true
-unified-delay: true
