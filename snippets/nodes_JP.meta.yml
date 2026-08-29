@@ -64,156 +64,78 @@ proxies:
   type: trojan
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇯🇵JP_1|1.7MB/s
+  name: 🇯🇵JP_1|5.9MB/s
   network: tcp
-  port: 29860
+  port: 35229
   reality-opts:
-    public-key: g7I81MzpM7J6K9WLbZdaMPS9We6GYeeNY3EKRvyiKW4
-    short-id: '!!str c992a34f288be189'
-  server: 3.112.47.207
-  servername: www.intel.com
+    public-key: JKEgmSckzu3wmGo2_wl8Xij0-PsE8QOvrEO6jS8IfFY
+    short-id: '!!str 0056222303'
+  server: 13.231.69.194
+  servername: www.nvidia.com
   tls: true
   type: vless
   udp: true
-  uuid: 7460547d-e83c-4843-b404-9142b22261a7
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵JP_2|3.8MB/s
-  network: tcp
-  port: 14422
-  reality-opts:
-    public-key: WA02heAP6997PPTwF6hbbFXwbYmXRz1bH2ZXWk6ipEw
-    short-id: '!!str 9b0f012413fd'
-  server: 13.113.195.74
-  servername: www.tesla.com
-  tls: true
-  type: vless
+  uuid: caaa44ad-b3d5-4f55-9507-5b57942f6922
+- alterId: 0
+  cipher: auto
+  name: 🇯🇵JP_2|1.4MB/s
+  network: ws
+  port: 16617
+  server: p4.cnb.linuxlh.xin
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-  uuid: 75f0b53b-ff3b-483a-b25e-5269b0229d14
+  uuid: 6ee2a7ba-cd92-427f-ac4f-2f8d284e316c
+  ws-opts:
+    headers:
+      Host: 5b22547ba5cc9b83a7a9534b4a7cf9ea.mobgslb.tbcache.com
+    path: /
+  xudp: true
 - client-fingerprint: chrome
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: update
-  name: 🇯🇵JP_3|5.6MB/s
+  name: 🇯🇵JP_3|5.5MB/s
   network: grpc
-  port: 10036
+  port: 10033
   reality-opts:
     public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
     short-id: '!!str 686c0ef0'
-  server: jp6-r.link-t7.com
+  server: jp3-r.link-t7.com
   servername: s0.awsstatic.com
   tls: true
   type: vless
   udp: true
   uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵JP_4|1.7MB/s
-  network: tcp
-  port: 56449
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+  name: 🇯🇵JP_4|3.4MB/s
+  network: grpc
+  port: 10032
   reality-opts:
-    public-key: anIR48iTD0Inl1z85396AwMvDhcx9y25DdFsVR896DE
-    short-id: '!!str 25a9435577670327'
-  server: 52.194.211.43
-  servername: www.intel.com
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '!!str 686c0ef0'
+  server: jp2-r.link-t7.com
+  servername: s0.awsstatic.com
   tls: true
   type: vless
   udp: true
-  uuid: fe855f99-4eb5-4a80-ad48-354649ff1305
+  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
+- auth: 901113fb-2ddd-4472-84bf-307de471f32f
+  name: 🇯🇵JP_5|2.0MB/s
+  password: 901113fb-2ddd-4472-84bf-307de471f32f
+  port: 443
+  server: jp.katanalink.net
+  skip-cert-verify: true
+  sni: jp.katanalink.net
+  type: hysteria2
 - client-fingerprint: firefox
   encryption: none
   flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇯🇵JP_5|1.0MB/s
-  network: tcp
-  port: 36024
-  reality-opts:
-    public-key: z1IzZjwLcymnYShSSGE6NkK10-S6aIGbe1_qQotmplU
-    short-id: '!!str d1d28c01d2c3c6'
-  server: 3.112.129.179
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7ad407b1-b8f3-4591-ae75-05cf4035e09e
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇯🇵JP_6|2.3MB/s
-  network: tcp
-  port: 33486
-  reality-opts:
-    public-key: 0XefSfdaAV77RBJrVSVBIdRNUHUlaMGmFT5mX_Aw6G8
-    short-id: '!!str 1671781f157ac27e'
-  server: 52.194.245.53
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: eddee2c9-fdf9-4b55-b8ac-3481a680b060
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  http-opts:
-    headers: {}
-    path:
-    - /
-  name: 🇯🇵JP_7|1.1MB/s
-  network: tcp
-  port: 58573
-  reality-opts:
-    public-key: P_qGsMinT163P1KLO6LzedQXEeHimWQ1CrqM4cYkFB8
-    short-id: '!!str 4de17b381e6af2'
-  server: 13.230.140.251
-  servername: www.nvidia.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: ea3fb423-d86c-461a-9610-cbad189253e2
-  xudp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵JP_8|5.1MB/s
-  network: tcp
-  port: '16611'
-  reality-opts:
-    public-key: cDzA5Efsd52LehcCFXh9bS3eCuj7HQZwau-yjPqLPgQ
-    short-id: '!!str 701b0c5c9dee514d'
-  server: 13.114.89.187
-  servername: www.intel.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 059fbe5b-21dc-413f-8f5c-dac39201914c
-  xudp: true
-- client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇯🇵JP_9|5.5MB/s
-  network: tcp
-  port: '59497'
-  reality-opts:
-    public-key: l7ImR_EgkkLJ4BkITf0eHQcOazxENAz4EL8pQ1k5lko
-    short-id: '!!str d1d28c01d2c3c6'
-  server: 54.178.54.169
-  servername: www.amd.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2c178adb-54c2-4eaa-8e30-1322d17922c4
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵JP_10|1.9MB/s
+  name: 🇯🇵JP_6|4.0MB/s
   network: tcp
   port: '15007'
   reality-opts:
@@ -227,18 +149,33 @@ proxies:
   uuid: 399c4c9b-27e1-37f1-9dce-22ccc2727a86
   xudp: true
 - client-fingerprint: firefox
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇯🇵JP_11|2.2MB/s
-  network: raw
-  port: '18732'
+  name: 🇯🇵JP_7|5.3MB/s
+  network: tcp
+  port: '47571'
   reality-opts:
-    public-key: lsp2a_PzZnzFtikI5FMkSYh3kpTewVNgU6A0VSZCJUI
-    short-id: '!!str 7946e1980d32555c'
-  server: 13.112.217.203
+    public-key: OyfEDzOiDM5eMvTacJ4bVhF1V0QZgvz-vP3K456l3W4
+    short-id: '!!str 4c8b46e500b0f3ad'
+  server: 35.78.59.6
   servername: www.amd.com
   tls: true
   type: vless
   udp: true
-  uuid: abdb9efb-a552-4b12-bd95-e56f4820fed8
+  uuid: 88a67610-b7ae-42ba-8af0-29cfa54cef37
   xudp: true
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+  name: 🇯🇵JP_8|5.5MB/s
+  network: grpc
+  port: 10036
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '!!str 686c0ef0'
+  server: jp6-r.link-t7.com
+  servername: s0.awsstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 690FC783-6CE9-4137-8559-40DBA8EDAD31
