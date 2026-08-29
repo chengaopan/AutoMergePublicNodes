@@ -68,33 +68,36 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇺🇸US_1|3.0MB/s
-  network: ws
-  port: '443'
-  server: 69.46.46.11
-  servername: cedar-canyon-d90a-production.up.railway.app
+- client-fingerprint: firefox
+  name: 🇺🇸US_1|2.0MB/s
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 162.35.231.81
+  servername: net.savesafe.run
   tls: true
   type: vless
   udp: true
-  uuid: 060badca-887a-8558-204f-652ede30ead7
-  ws-opts:
-    headers:
-      Host: cedar-canyon-d90a-production.up.railway.app
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/56.0.2924.87 Safari/537.36
-    path: /ws/060badca-887a-8558-204f-652ede30ead7
-  xudp: true
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: net.savesafe.run
+    path: /
+- cipher: aes-256-cfb
+  name: 🇺🇸US_2|3.2MB/s
+  password: 7eadc6dbe2ae
+  port: '65443'
+  server: 121.46.230.233
+  type: ss
+  udp: true
 - alpn:
   - h2
   - http/1.1
   - h3
   client-fingerprint: chrome
   encryption: none
-  name: 🇺🇸US_2|3.1MB/s
+  name: 🇺🇸US_3|1.8MB/s
   network: ws
   port: '443'
   server: inetchnl-production-7933.up.railway.app
@@ -106,63 +109,62 @@ proxies:
   ws-opts:
     headers:
       Host: inetchnl-production-7933.up.railway.app
-      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/55.0.2883.87 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
     path: /ws/f532a6ec-5c73-a79e-7cd4-cfc1659e8ede
   xudp: true
-- name: 🇺🇸US_3|1.4MB/s
-  password: test123
-  port: '1080'
-  server: 185.145.99.41
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸US_4|1.0MB/s
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- name: US_speednode_0140
+  password: None
+  port: 443
+  server: purposebydesig.club
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_6|3.6MB/s
+  port: 443
+  server: fullmanfirm.icu
   skip-cert-verify: true
-  type: socks5
-  username: test123
-- name: US_speednode_0131
+  sni: fullmanfirm.icu
+  tls: true
+  type: http
+- name: 🇺🇸US_7|4.8MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.202
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 🇺🇸US_8|3.4MB/s
   password: 'null'
   port: 9002
-  server: 138.199.35.216
+  server: 138.199.35.213
   skip-cert-verify: true
   tls: true
   type: http
-  udp: true
   username: 'null'
-- name: US_speednode_0143
+- name: 🇺🇸US_9|2.0MB/s
+  password: ''
   port: 9002
-  server: 138.199.35.198
+  server: 138.199.35.212
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇺🇸US_6|3.8MB/s
-  port: 443
-  server: berniesbodybla.fun
-  sni: berniesbodybla.fun
-  tls: true
-  type: http
-- name: 🇺🇸US_7|3.5MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.216
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_8|3.5MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.218
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_9|4.1MB/s
-  port: 9002
-  server: 138.199.35.207
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_10|3.4MB/s
+  username: ''
+- name: 🇺🇸US_10|4.1MB/s
   password: None
   port: 9002
   server: 138.199.35.197
@@ -174,7 +176,7 @@ proxies:
   port: 3126
   server: 107.173.135.36
   type: http
-- name: 🇺🇸US_12|4.6MB/s
+- name: 🇺🇸US_12|1.5MB/s
   password: ''
   port: 9002
   server: 138.199.35.203
@@ -182,7 +184,7 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇺🇸US_13|4.2MB/s
+- name: 🇺🇸US_13|1.4MB/s
   password: ''
   port: 9002
   server: 138.199.35.214
@@ -190,63 +192,47 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇺🇸US_14|4.4MB/s
+- name: 🇺🇸US_14|3.4MB/s
   port: 9002
   server: 138.199.35.206
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇺🇸US_15|4.0MB/s
-  port: 9002
-  server: 138.199.35.195
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_16|4.4MB/s
+- name: 🇺🇸US_15|3.2MB/s
   password: None
   port: 9002
-  server: 138.199.35.209
+  server: 138.199.35.217
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_17|1.1MB/s
-  port: 9002
-  server: 138.199.35.220
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_18|2.1MB/s
-  password: ''
-  port: 9002
-  server: 138.199.35.219
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸US_19|3.6MB/s
+- name: 🇺🇸US_16|3.1MB/s
   port: 443
   server: 149.88.21.129
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸US_20|4.3MB/s
+- name: 🇺🇸US_17|2.3MB/s
   password: None
   port: 5252
   server: 148.100.84.192
   type: http
   username: null
-- name: 🇺🇸US_21|2.6MB/s
+- name: 🇺🇸US_18|3.5MB/s
+  port: 443
+  server: efr-marktplatz.club
+  sni: efr-marktplatz.club
+  tls: true
+  type: http
+- name: 🇺🇸US_19|3.4MB/s
   port: 9002
   server: 138.199.35.208
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇺🇸US_22|3.4MB/s
+- name: 🇺🇸US_20|2.1MB/s
   password: None
   port: 9002
   server: 138.199.35.204
@@ -254,7 +240,7 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_23|4.1MB/s
+- name: 🇺🇸US_21|1.9MB/s
   password: ''
   port: 9002
   server: 138.199.35.201
@@ -264,40 +250,44 @@ proxies:
   udp: true
   username: ''
 - client-fingerprint: firefox
-  encryption: none
-  name: 🇺🇸US_24|3.9MB/s
-  network: tcp
-  port: '10694'
+  name: 🇺🇸US_22|2.7MB/s
+  network: xhttp
+  port: 443
   reality-opts:
-    public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
-    short-id: '!!str a0fbc54d937aaccb'
-  server: usa2.milkabebar.ir
-  servername: amp-api-edge.apps.apple.com
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 162.35.231.73
+  servername: net.savesafe.run
+  skip-cert-verify: false
+  tfo: false
   tls: true
   type: vless
   udp: true
-  uuid: 5509aaf4-b102-4028-a282-7f575f75f05e
-  xudp: true
-- client-fingerprint: firefox
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
   encryption: none
-  name: 🇺🇸US_25|3.7MB/s
-  network: tcp
-  port: '10694'
-  reality-opts:
-    public-key: CHNEnURyZzZ1OQwb5SD2Ze8K9eIY2oggyrV5FOIsU28
-    short-id: '!!str a0fbc54d937aaccb'
-  server: usa2.milkabebar.ir
-  servername: amp-api-edge.apps.apple.com
+  name: 🇺🇸US_23|2.5MB/s
+  network: ws
+  port: '443'
+  server: hamishevaslbashconfing-production-7b50.up.railway.app
   tls: true
   type: vless
   udp: true
-  uuid: b503cf10-779d-4faa-b97c-72d457a94967
+  uuid: c70b74a0-1dc2-3c91-ce42-62153bb5b315
+  ws-opts:
+    headers:
+      Host: ''
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/41.0.2272.101 Safari/537.36
+    path: /ws/c70b74a0-1dc2-3c91-ce42-62153bb5b315
   xudp: true
 - alpn:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: 🇺🇸US_26|2.6MB/s
+  name: 🇺🇸US_24|1.7MB/s
   network: ws
   port: '443'
   server: hamishevaslbashconfing-production-7b50.up.railway.app
@@ -309,131 +299,57 @@ proxies:
   ws-opts:
     headers:
       Host: hamishevaslbashconfing-production-7b50.up.railway.app
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/37.0.2062.120 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/62.0.3202.94 Safari/537.36
     path: /ws/c70b74a0-1dc2-3c91-ce42-62153bb5b315
-  xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇺🇸US_27|1.9MB/s
-  network: ws
-  port: '443'
-  server: hamishevaslbashconfing-production-7b50.up.railway.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: c70b74a0-1dc2-3c91-ce42-62153bb5b315
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/52.0.2743.116 Safari/537.36
-    path: /ws/c70b74a0-1dc2-3c91-ce42-62153bb5b315
-  xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: ios
-  encryption: none
-  name: 🇺🇸US_28|3.0MB/s
-  network: ws
-  port: '443'
-  server: 69.46.46.26
-  servername: willow-voyager-5a0a-production.up.railway.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e
-  ws-opts:
-    headers:
-      Host: willow-voyager-5a0a-production.up.railway.app
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /ws/f78ecba6-f0dd-2a9b-f4ff-8c7cc610138e
-  xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇺🇸US_29|3.9MB/s
-  network: xhttp
-  port: '443'
-  server: x4gpanel-production-393f.up.railway.app
-  servername: x4gpanel-production-393f.up.railway.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: 117f9aa6-7aee-00a3-4638-5903b539cf5d
-  xhttp-opts:
-    host: x4gpanel-production-393f.up.railway.app
-    mode: auto
-    path: /xhttp-siz10/117f9aa6-7aee-00a3-4638-5903b539cf5d
   xudp: true
 - client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸US_30|3.3MB/s
-  network: tcp
-  port: '50303'
+  name: 🇺🇸US_25|2.7MB/s
+  network: xhttp
+  port: '443'
   reality-opts:
-    public-key: XhfHr5VYPbNs6BrrsYc7Wd6-D2nJAO8QrixRuJarFkU
-    short-id: '!!str c7158ef32c1d2a7e'
-  server: usa1.selqora.ir
-  servername: amp-api-edge.apps.apple.com
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 80.76.44.138
+  servername: note.savesafe.run
   tls: true
   type: vless
   udp: true
-  uuid: 4cdedbb5-20f6-4036-9e72-22ce1dfc0d4b
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: net.savesafe.run
+    mode: auto
+    path: /
   xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇺🇸US_31|2.0MB/s
-  network: ws
-  port: '443'
-  server: tsa-production-1d01.up.railway.app
-  servername: tsa-production-1d01.up.railway.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: fcdca787-c747-46fb-9e76-c522411cfb2c
-  ws-opts:
-    headers:
-      Host: tsa-production-1d01.up.railway.app
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/70.0.3538.102 Safari/537.36
-    path: /vl-ws
-  xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇺🇸US_32|3.2MB/s
-  network: ws
-  port: '443'
-  server: tsa-production-1d01.up.railway.app
-  tls: true
-  type: vless
-  udp: true
-  uuid: fcdca787-c747-46fb-9e76-c522411cfb2c
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/41.0.2272.118 Safari/537.36
-    path: /vl-ws
-  xudp: true
-- name: 🇺🇸US_34|1.6MB/s
-  password: ''
+- name: 🇺🇸US_26|3.4MB/s
+  password: 'null'
   port: '9002'
-  server: 138.199.35.197
+  server: 138.199.35.206
   skip-cert-verify: true
   tls: true
   type: http
-  username: ''
+  username: 'null'
+- down: ''
+  fingerprint: ''
+  name: 🇺🇸US_27|3.6MB/s
+  obfs: ''
+  obfs-password: ''
+  password: c3e44804-5149-4bfe-9a33-d5051af3c65e
+  port: '28133'
+  server: 192.227.229.51
+  skip-cert-verify: true
+  sni: www.apple.com
+  type: hysteria2
+  up: ''
+- name: 🇺🇸US_28|4.5MB/s
+  password: 'null'
+  port: '9002'
+  server: 138.199.35.199
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0130
@@ -449,6 +365,15 @@ proxies:
   type: vless
   udp: true
   uuid: 5905d91f-c3bc-4e80-bd66-4b17beb166cb
+- name: US_speednode_0131
+  password: 'null'
+  port: 9002
+  server: 138.199.35.216
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0132
@@ -468,12 +393,6 @@ proxies:
   port: 443
   server: fan.365747.xyz
   skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0134
-  port: 443
-  server: voteshirleysew.club
   tls: true
   type: http
   udp: true
@@ -537,16 +456,31 @@ proxies:
   type: vless
   udp: true
   uuid: 9638a83e-f1f7-4cc8-a602-924965d9534f
-- name: US_speednode_0140
-  password: None
-  port: 443
-  server: purposebydesig.club
-  tls: true
-  type: http
-  udp: true
 - name: US_speednode_0141
   port: 443
   server: 38.28.193.188
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: US_speednode_0142
+  network: tcp
+  port: 39211
+  reality-opts:
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: '!!str bc8e3658db7d1323'
+  server: 155.117.199.13
+  servername: cdnjs.cloudflare.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
+- name: US_speednode_0143
+  port: 9002
+  server: 138.199.35.198
   skip-cert-verify: true
   tls: true
   type: http
