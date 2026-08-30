@@ -99,41 +99,45 @@ proxies:
   sni: de.jey.cc.cd
   tls: false
   type: hysteria2
-- name: 🚘94@oneclickvpnkeys
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_1|3.2MB/s
+  network: tcp
   port: 443
-  server: vpn-de-001.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-de-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 🇩🇪DE_1|2.6MB/s
-  port: 11000
-  server: 116.202.172.187
-  type: http
-- name: 🇩🇪DE_2|2.6MB/s
-  port: 8989
-  server: 185.110.188.4
-  type: http
-- name: 🇩🇪DE_3|3.0MB/s
-  password: None
-  port: 443
-  server: 149.36.50.157
-  skip-cert-verify: true
+  reality-opts:
+    public-key: BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30
+    short-id: '!!str 4da5d1853f04af6d'
+  server: 31.76.71.140
+  servername: rrr.windconnect.pro
   tls: true
+  type: vless
+  udp: true
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
+- name: 🇩🇪DE_2|4.7MB/s
+  port: 9099
+  server: 213.109.162.200
   type: http
-  username: null
-- name: 🇩🇪DE_4|2.6MB/s
-  password: None
-  port: 9443
-  server: 87.249.132.97
-  skip-cert-verify: true
+- name: 🇩🇪DE_3|4.4MB/s
+  port: 80
+  server: 193.37.70.182
+  type: http
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_4|3.1MB/s
+  network: ws
+  port: '443'
+  server: 140.248.186.45
+  servername: ssl.fastly.com
   tls: true
-  type: http
-  username: null
-- name: 🇩🇪DE_5|1.2MB/s
-  password: udp-relay=true
-  port: 11111
-  server: 103.237.102.191
-  type: http
-  username: None
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.139 Safari/537.36
+    path: /
+  xudp: true

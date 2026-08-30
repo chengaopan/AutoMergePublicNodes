@@ -37,27 +37,43 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇬🇧GB_1|3.1MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: ojDrVO838PScByjy1cb1-LLEpEh4LhJKG_jldp8g7xo
-    short-id: '!!str 8beb2706'
-  server: 50.7.92.250
-  servername: app25.jarvestip.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: d3815c21-ef06-43e2-82e1-ca313962b489
-- client-fingerprint: firefox
-  name: 🇬🇧GB_2|4.4MB/s
+  name: 🇬🇧GB_1|4.1MB/s
   network: xhttp
   port: 443
   reality-opts:
     public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
     short-id: '!!str 812609fa663c57fb'
-  server: 82.152.220.101
+  server: 82.152.220.11
+  servername: api-v2.savesafe.run
+  tls: true
+  type: vless
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
+- client-fingerprint: firefox
+  name: 🇬🇧GB_2|2.5MB/s
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.41
+  servername: api-v2.savesafe.run
+  tls: true
+  type: vless
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
+- client-fingerprint: firefox
+  name: 🇬🇧GB_3|3.7MB/s
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.71
   servername: api-v2.savesafe.run
   tls: true
   type: vless
@@ -67,72 +83,7 @@ proxies:
     host: api-v2.savesafe.run
     mode: auto
     path: /
-- client-fingerprint: firefox
-  name: 🇬🇧GB_3|3.3MB/s
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: '!!str 812609fa663c57fb'
-  server: 82.152.220.121
-  servername: api-v2.savesafe.run
-  tls: true
-  type: vless
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  xhttp-opts:
-    host: api-v2.savesafe.run
-    path: /
-- client-fingerprint: firefox
-  name: 🇬🇧GB_4|1.6MB/s
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: '!!str 812609fa663c57fb'
-  server: 82.152.220.151
-  servername: api-v2.savesafe.run
-  tls: true
-  type: vless
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  xhttp-opts:
-    host: api-v2.savesafe.run
-    path: /
-- cipher: aes-256-cfb
-  name: 🇬🇧GB_5|3.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.133.240.229
-  type: ss
-  udp: true
-- name: 🇬🇧GB_6|2.4MB/s
-  password: None
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇬🇧GB_7|3.0MB/s
-  password: None
-  port: 443
-  server: 185.235.0.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇬🇧GB_8|3.1MB/s
-  port: 443
-  server: 37.120.233.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_9|3.1MB/s
-  password: None
-  port: 3118
-  server: 154.61.56.215
-  type: http
-  username: null
-- name: 🇬🇧GB_10|2.8MB/s
+- name: 🇬🇧GB_4|1.4MB/s
   password: None
   port: 443
   server: 185.235.0.2
@@ -140,9 +91,37 @@ proxies:
   tls: true
   type: http
   username: null
+- name: 🇬🇧GB_5|2.3MB/s
+  password: None
+  port: 443
+  server: 185.235.0.66
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 🇬🇧GB_6|4.1MB/s
+  port: 9443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_7|3.7MB/s
+  password: None
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 🇬🇧GB_8|3.0MB/s
+  port: 443
+  server: 37.120.233.50
+  skip-cert-verify: true
+  tls: true
+  type: http
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇬🇧GB_11|1.9MB/s
+  name: 🇬🇧GB_9|3.3MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -156,52 +135,9 @@ proxies:
   type: vless
   uuid: a6de5675-5bfe-4fc2-b9b4-4bf4a24f6474
 - client-fingerprint: firefox
-  name: 🇬🇧GB_12|1.6MB/s
-  network: xhttp
-  port: 443
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: '!!str 812609fa663c57fb'
-  server: 82.152.220.51
-  servername: api-v2.savesafe.run
-  skip-cert-verify: false
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-- client-fingerprint: firefox
-  encryption: none
-  name: 🇬🇧GB_13|2.4MB/s
-  network: xhttp
-  port: '443'
-  reality-opts:
-    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
-    short-id: '!!str 812609fa663c57fb'
-  server: 82.152.220.21
-  servername: api-v2.savesafe.run
-  tls: true
-  type: vless
-  udp: true
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  xhttp-opts:
-    host: api-v2.savesafe.run
-    path: /
-  xudp: true
-- encryption: none
-  name: 🇬🇧GB_14|3.2MB/s
-  network: tcp
-  port: '22223'
-  server: 35.178.112.200
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
   flow: xtls-rprx-vision
-  name: 🇬🇧GB_15|2.1MB/s
-  network: raw
+  name: 🇬🇧GB_10|4.2MB/s
+  network: tcp
   port: '443'
   reality-opts:
     public-key: tPyAWkalFM4yi9lYY0zLDRxQyfSwPDwiexAy9QOjrWI
@@ -211,5 +147,20 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: 6c245314-225b-4999-9051-180b8dba117c
+  uuid: 430924a2-db54-446b-84e1-2d1fca0f16be
+  xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇬🇧GB_11|3.0MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: ojDrVO838PScByjy1cb1-LLEpEh4LhJKG_jldp8g7xo
+    short-id: '!!str 8beb2706'
+  server: app25.jarvestip.ru
+  servername: app25.jarvestip.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: d3815c21-ef06-43e2-82e1-ca313962b489
   xudp: true
