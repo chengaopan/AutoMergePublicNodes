@@ -1,51 +1,4 @@
 proxies:
-- name: 'A - 🇬🇧 GB 01 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 185.193.30.30
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime09.workers.dev
-- name: 'A - 🇬🇧 GB 02 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 45.40.146.50
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime36.workers.dev
-    path: /?ed=2560
-- name: 'A - 🇬🇧 GB 03 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 45.80.110.30
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime51.workers.dev
-- name: 'B - 🇬🇧 GB 04 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 185.159.247.30
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime59.workers.dev
-    path: /
-- name: 'B - 🇬🇧 GB 05 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 77.75.199.30
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime59.workers.dev
 - name: UK
   password: 0bacdaea-099b-462b-b625-d7d44c89aace
   port: 55000
@@ -91,67 +44,232 @@ proxies:
   sni: hopp-legend-se.roxa.org
   tls: false
   type: hysteria2
-- encryption: none
-  name: 🇬🇧GB_1|5.0MB/s
-  network: tcp
-  port: '22222'
-  server: 13.43.176.25
-  type: vless
+- cipher: aes-256-cfb
+  name: 🇬🇧GB_1|1.1MB/s
+  password: amazonskr05
+  port: '443'
+  server: 18.170.37.90
+  type: ss
   udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
-- name: 🇬🇧GB_4|2.0MB/s
-  port: 9443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_5|2.4MB/s
-  password: None
+- name: 🇬🇧GB_2|1.4MB/s
   port: 443
-  server: 185.235.0.2
+  server: 37.120.233.50
   skip-cert-verify: true
   tls: true
   type: http
-  username: null
-- name: 🇬🇧GB_6|2.6MB/s
-  port: 443
-  server: 185.235.0.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_7|1.1MB/s
-  password: None
-  port: 443
-  server: 185.235.0.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇬🇧GB_8|2.4MB/s
-  port: 443
-  server: 193.36.118.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_9|2.8MB/s
-  password: None
-  port: 3118
-  server: 154.61.56.215
-  type: http
-  username: null
 - client-fingerprint: firefox
-  flow: xtls-rprx-vision
-  name: 🇬🇧GB_10|2.3MB/s
-  network: tcp
+  encryption: none
+  name: 🇬🇧GB_3|2.2MB/s
+  network: xhttp
   port: '443'
   reality-opts:
-    public-key: YULPgY4Knu4LVqKcc2uhzTcndqIWWKr74W1dVXcLQ0c
-    short-id: '!!str c37c2ae6f6eb0d71'
-  server: 82.152.223.140
-  servername: public-auth.savesafe.cc
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.101
+  servername: api-v2.savesafe.run
   tls: true
   type: vless
   udp: true
   uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇬🇧GB_4|1.7MB/s
+  network: xhttp
+  port: '443'
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.111
+  servername: api-v2.savesafe.run
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇬🇧GB_5|1.7MB/s
+  network: xhttp
+  port: '443'
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.11
+  servername: api-v2.savesafe.run
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇬🇧GB_6|3.5MB/s
+  network: xhttp
+  port: '443'
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.121
+  servername: api-v2.savesafe.run
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇬🇧GB_7|1.4MB/s
+  network: xhttp
+  port: '443'
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.151
+  servername: api-v2.savesafe.run
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇬🇧GB_8|1.1MB/s
+  network: xhttp
+  port: '443'
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.161
+  servername: api-v2.savesafe.run
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇬🇧GB_9|1.3MB/s
+  network: xhttp
+  port: '443'
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.31
+  servername: api-v2.savesafe.run
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇬🇧GB_10|4.1MB/s
+  network: xhttp
+  port: '443'
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.41
+  servername: api-v2.savesafe.run
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇬🇧GB_11|1.6MB/s
+  network: xhttp
+  port: '443'
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.51
+  servername: api-v2.savesafe.run
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇬🇧GB_12|2.0MB/s
+  network: xhttp
+  port: '443'
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.71
+  servername: api-v2.savesafe.run
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇬🇧GB_13|1.8MB/s
+  network: xhttp
+  port: '443'
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.81
+  servername: api-v2.savesafe.run
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇬🇧GB_14|1.3MB/s
+  network: xhttp
+  port: '443'
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 82.152.220.91
+  servername: api-v2.savesafe.run
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: api-v2.savesafe.run
+    path: /
   xudp: true

@@ -1,37 +1,4 @@
 proxies:
-- name: 'A - 🇫🇷 FR 01 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 45.85.119.30
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime56.workers.dev
-- name: 'A - 🇫🇷 FR 02 TG: @nodpai'
-  network: ws
-  port: 8880
-  server: 66.81.247.40
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime44.workers.dev
-    path: /?ed=2560&https://t.me/youtube@ZYFXS🇨🇳
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 'A - 🇫🇷 FR 03 TG: @nodpai'
-  network: tcp
-  port: 7443
-  reality-opts:
-    public-key: 5QAO98ot2U7TcGs_f6EEaQjCzNOJLNHqPf6smYsdFVI
-  security: reality
-  server: 152.89.253.239
-  servername: ya.ru
-  tls: true
-  type: vless
-  uuid: 54a54ea0-4409-4030-ad9b-44c45849c05a
 - name: 法国
   password: ac7fb60f-0b7a-465d-a002-05160ec04ed6
   port: 443
@@ -48,100 +15,57 @@ proxies:
   sni: dora4.api3-max.ru
   tls: false
   type: hysteria2
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇫🇷FR_8|3.6MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
+    short-id: '!!str 4fa44664f6a566d3'
+  server: germany.superbuba.top
+  servername: germany.superbuba.top
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
+- client-fingerprint: firefox
+  name: 🇫🇷FR_2|1.2MB/s
+  network: xhttp
+  port: 443
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 213.130.137.70
+  servername: panel.freesavesafe.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: panel.freesavesafe.com
+    mode: auto
+    path: /
 - client-fingerprint: chrome
-  name: 🇫🇷FR_1|2.9MB/s
-  network: ws
-  password: humanity
+  encryption: none
+  name: 🇫🇷FR_3|1.5MB/s
+  network: xhttp
   port: '443'
-  server: 45.130.125.160
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
+  reality-opts:
+    public-key: BvR2i3CJEL9QwNAWKqkkHY3rnqJdOFLyKw5DZ9sA2C8
+    short-id: '!!str 812609fa663c57fb'
+  server: 213.130.137.10
+  servername: panel.freesavesafe.com
+  tls: true
+  type: vless
   udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/70.0.3538.102 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_2|3.2MB/s
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.18.152.207
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/45.0.2454.85 Safari/537.36
-    path: /assignment
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇫🇷FR_3|2.7MB/s
-  network: ws
-  password: humanity
-  port: '443'
-  server: join-telegram-channel-tirexnet.trex.kdns.fr
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_4|1.9MB/s
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.18.152.208
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.100 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_5|2.0MB/s
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.16.174.6
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.181 Safari/537.36
-    path: /assignment
-- client-fingerprint: chrome
-  name: 🇫🇷FR_6|2.1MB/s
-  network: ws
-  password: humanity
-  port: '443'
-  server: 104.16.174.143
-  skip-cert-verify: false
-  sni: www.ignitelimit.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US) AppleWebKit/533.4
-        (KHTML, like Gecko) Chrome/5.0.375.99 Safari/533.4
-    path: /assignment
+  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
+  xhttp-opts:
+    host: panel.freesavesafe.com
+    mode: auto
+    path: /
+  xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0137
@@ -157,56 +81,18 @@ proxies:
   type: vless
   udp: true
   uuid: f06c6039-a489-3d78-a676-ed43be6deca3
-- client-fingerprint: firefox
-  encryption: none
+- client-fingerprint: chrome
   flow: xtls-rprx-vision
-  name: 🇫🇷FR_8|3.4MB/s
+  name: US_speednode_0136
   network: tcp
-  packet-encoding: xudp
-  port: 443
+  port: 29893
   reality-opts:
-    public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
-    short-id: '!!str 4fa44664f6a566d3'
-  server: germany.superbuba.top
-  servername: germany.superbuba.top
-  tls: true
-  type: vless
-  uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
-- name: 🇫🇷FR_9|1.1MB/s
-  port: 443
-  server: 103.82.101.44
-  skip-cert-verify: true
-  sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
-  tls: true
-  type: http
-- name: 🇫🇷FR_10|1.4MB/s
-  port: 443
-  server: 103.82.101.43
-  skip-cert-verify: true
-  sni: 76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com
-  tls: true
-  type: http
-- name: 🇫🇷FR_11|1.8MB/s
-  password: None
-  port: 443
-  server: 149.102.245.65
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- client-fingerprint: qq
-  name: 🇫🇷FR_12|1.5MB/s
-  network: ws
-  port: '443'
-  server: ziro.skin
+    public-key: JrWOojSFwFA93YjsiQkDydTItQzNAsXsHU24HuWGWjA
+    short-id: '!!str bc8e3658db7d1323'
+  server: 155.117.199.13
+  servername: cdnjs.cloudflare.com
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
-  uuid: f028a8c0-6763-4558-aee3-2563db9d7825
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-G532M Build/MMB29T) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/55.0.2883.91 Mobile Safari/537.36
-    path: /xxvclws
-  xudp: true
+  uuid: f06c6039-a489-3d78-a676-ed43be6deca3
