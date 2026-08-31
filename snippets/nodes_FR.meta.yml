@@ -32,57 +32,63 @@ proxies:
   type: hysteria2
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇫🇷FR_3|3.7MB/s
+  name: 🇫🇷FR_1|2.2MB/s
   network: tcp
   port: 443
   reality-opts:
     public-key: rCkSHJ7goy7ZvSlau4LfXF-QLloOJMNeMxpeeQtwtVs
     short-id: '!!str 4fa44664f6a566d3'
-  server: germany.superbuba.top
+  server: 45.95.96.225
   servername: germany.superbuba.top
-  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
-- client-fingerprint: chrome
-  name: 🇫🇷FR_2|1.1MB/s
+- alpn:
+  - http/1.1
+  - h2
+  - h3
+  client-fingerprint: chrome
+  name: 🇫🇷FR_2|2.5MB/s
   network: ws
   password: humanity
   port: '443'
-  server: 104.18.152.207
+  server: 198.41.223.96
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
-        Chrome/67.0.3396.99 Safari/537.36
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /assignment
+- client-fingerprint: chrome
+  name: 🇫🇷FR_3|1.5MB/s
+  network: ws
+  password: humanity
+  port: '443'
+  server: 104.18.152.161
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/68.0.3440.75 Safari/537.36
     path: /assignment
 - name: 🇫🇷FR_4|1.5MB/s
-  port: 1443
-  server: 85.208.51.228
-  type: http
-- name: 🇫🇷FR_5|1.2MB/s
   port: 443
   server: 103.82.101.44
   skip-cert-verify: true
   sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
   tls: true
   type: http
-- client-fingerprint: edge
-  flow: xtls-rprx-vision
-  name: 🇫🇷FR_6|1.6MB/s
-  network: tcp
-  port: '16445'
-  reality-opts:
-    public-key: BfWH0Semc11YkTslIO_Igss921A5J3JMmq_i2FaZxDo
-    short-id: '!!str a1b2c3d4'
-  server: 159.194.234.196
-  servername: fr.aeternavpn.space
+- name: 🇫🇷FR_5|1.2MB/s
+  port: 443
+  server: 103.82.101.43
+  skip-cert-verify: true
+  sni: 76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com
   tls: true
-  type: vless
-  udp: true
-  uuid: 1206bad5-dcc9-410e-9595-d9fe9ee54085
-  xudp: true
+  type: http
