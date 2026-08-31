@@ -22,17 +22,21 @@ proxies:
   sni: hopp-transit.1cooldns.com
   tls: false
   type: hysteria2
-- name: 🇫🇷157086 | ⚡️Telegram = t.me/S...
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 51.44.162.6
-  skip-cert-verify: true
-  sni: vpn-fr-001.fastervpn.world
+- alpn:
+  - h3
+  name: 🇫🇷 ConfigV2RayNG
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: 1m1xfvpaa5ek4omq
+  port: 52030
+  server: giftcard.gateway-stream.com
+  skip-cert-verify: false
+  sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
 - client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇫🇷FR_1|1.1MB/s
+  name: 🇩🇪DE_5|1.4MB/s
   network: tcp
   port: 443
   reality-opts:
@@ -40,31 +44,32 @@ proxies:
     short-id: '!!str 4fa44664f6a566d3'
   server: 45.95.96.225
   servername: germany.superbuba.top
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
   uuid: d4cae7df-50a1-428c-bd62-881c8f3bbd90
-- down: null
-  name: 🇫🇷FR_2|3.1MB/s
-  password: github.com/Alvin9999-newpac/fanqiang
-  port: 60111
-  server: 62.210.7.139
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  up: null
-- name: 🇫🇷FR_3|2.0MB/s
-  password: github.com/Alvin9999-newpac/fanqiang
-  port: 51133
-  server: ip4.934618.xyz
-  sni: ip4.934618.xyz
-  type: anytls
-  udp: true
-- name: 🇫🇷FR_4|1.4MB/s
-  password: None
+- name: 🇫🇷FR_2|4.0MB/s
+  port: 1443
+  server: 85.208.51.228
+  type: http
+- name: 🇫🇷FR_3|1.5MB/s
   port: 443
-  server: 149.102.245.65
+  server: 103.82.101.43
   skip-cert-verify: true
+  sni: 76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com
   tls: true
+  type: http
+- name: 🇫🇷FR_4|1.4MB/s
+  port: 443
+  server: fan.132031.xyz
+  skip-cert-verify: true
+  sni: fan.132031.xyz
+  tls: true
+  type: http
+- name: 🇫🇷FR_5|4.7MB/s
+  password: None
+  port: 3169
+  server: 51.38.129.42
   type: http
   username: null

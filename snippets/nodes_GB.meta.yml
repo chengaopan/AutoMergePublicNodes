@@ -7,54 +7,92 @@ proxies:
   sni: hopp-legend-se.roxa.org
   tls: false
   type: hysteria2
-- name: 🇬🇧GB_1|1.5MB/s
-  port: 443
-  server: 185.235.0.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_2|1.3MB/s
-  port: 9443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_3|3.9MB/s
-  password: None
+- alpn:
+  - h3
+  name: 🇬🇧 ConfigV2RayNG
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: 1m1xfvpaa5ek4omq
+  port: 52033
+  server: giftcard.gateway-stream.com
+  skip-cert-verify: false
+  sni: giftcard.gateway-stream.com
+  tls: false
+  type: hysteria2
+- name: 🇬🇧GB_1|2.2MB/s
   port: 443
   server: 37.120.233.18
   skip-cert-verify: true
   tls: true
   type: http
-  username: null
-- name: 🇬🇧GB_4|1.3MB/s
+- name: 🇬🇧GB_2|2.1MB/s
   port: 443
-  server: 212.102.63.31
+  server: 37.120.233.50
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: safari
+- name: 🇬🇧GB_3|2.0MB/s
+  port: 443
+  server: 193.36.118.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_4|3.4MB/s
+  port: 9443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_5|2.5MB/s
+  password: None
+  port: 443
+  server: 185.235.0.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧GB_6|3.2MB/s
+  network: tcp
+  port: 10041
+  reality-opts:
+    public-key: O8Av8GXWVqj7FOxUyStmrTLWv5EtvQ1ZnMOVVLb1V3s
+    short-id: '!!str 1bc2c1ef1c'
+  server: uk01.vletun.qianmoxingyun.com
+  servername: www.apple.com
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: d742752c-4231-4695-801e-f06d77f0f277
+- client-fingerprint: ios
   encryption: none
-  name: 🇬🇧GB_5|1.0MB/s
-  network: xhttp
+  name: 🇬🇧GB_7|3.9MB/s
+  network: tcp
   port: '443'
   reality-opts:
-    public-key: 2P7D_IkxXWre3YziEe2tkF9L_gUbdZE_WCu9_SQq4hE
-    short-id: '!!str 2b5b1ffa8a6a1a68'
-  server: 178.236.254.174
-  servername: ya.ru
+    public-key: ugtm31PMWRlIc6ECuwte3TQ8dvl5ySnrewLZYIAoV1Y
+    short-id: '!!str f8c90594fb7adb6e'
+  server: eg.linuxbase.ir
+  servername: amp-api-edge.apps.apple.com
   tls: true
   type: vless
   udp: true
-  uuid: b5ca5ab3-8cbc-4ac3-89da-9cd360589ecb
-  xhttp-opts:
-    host: ya.ru
-    path: /web/cdn/v2/assets
+  uuid: ffaa4b21-9842-4206-8f4c-20588033c481
   xudp: true
-- name: 🇬🇧GB_6|1.1MB/s
-  password: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-  port: 443
-  server: 5b33bfe4-tdups0-tf8z9r-1pr35.uk.oshuawei.com
-  tls: true
-  type: http
-  username: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
+- alterId: 0
+  cipher: auto
+  name: 🇬🇧GB_8|4.6MB/s
+  network: ws
+  port: 34228
+  server: jp.6807251.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 7aa3a024-e333-4b63-99a2-3db9d3b2054e
+  ws-opts:
+    headers:
+      Host: a.189.cn
+    path: /
+  xudp: true
