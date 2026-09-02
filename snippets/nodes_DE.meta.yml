@@ -171,35 +171,18 @@ proxies:
   sni: germany1.h2corp.local
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪DE_1|2.4MB/s
-  network: ws
-  port: '8443'
-  server: rah.vip1111.ir
-  servername: panel.vip1111.ir
-  tls: true
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - amp-api-edge.apps.apple.com
+    path:
+    - /
+  name: 🇩🇪DE_1|1.1MB/s
+  network: http
+  port: '61169'
+  server: ger22.orangesms.ir
   type: vless
   udp: true
-  uuid: 5b4d8638-708f-4f73-a190-050a0039f714
-  ws-opts:
-    headers:
-      Host: panel.vip1111.ir
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/63.0.3239.132 Safari/537.36
-    path: /ai-articles/465992-kids-feel-ai-own-words-featured/
+  uuid: 44b5f266-2b4f-46ca-83ff-99df77147c30
   xudp: true
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 1000
-  name: 🇩🇪DE_2|1.7MB/s
-  port: 20088
-  protocol: udp
-  server: 5.83.129.153
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 500
