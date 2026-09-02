@@ -1,4 +1,51 @@
 proxies:
+- name: 'A - 🇬🇧 GB 01 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 185.193.30.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime09.workers.dev
+- name: 'A - 🇬🇧 GB 02 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 45.40.146.50
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime36.workers.dev
+    path: /?ed=2560
+- name: 'A - 🇬🇧 GB 03 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 45.80.110.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime51.workers.dev
+- name: 'B - 🇬🇧 GB 04 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 185.159.247.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime59.workers.dev
+    path: /
+- name: 'B - 🇬🇧 GB 05 TG: @nodpai'
+  network: ws
+  port: 8880
+  server: 77.75.199.30
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime59.workers.dev
 - name: 英国
   password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
   port: 8080
@@ -7,15 +54,20 @@ proxies:
   sni: hopp-legend-se.roxa.org
   tls: false
   type: hysteria2
-- name: '英国 #1'
+- down: ''
+  fingerprint: ''
+  name: 🇬🇱GL_1|2.4MB/s
+  obfs: ''
+  obfs-password: ''
   password: h_B9x3942fJ9x_Kpx3914KQ_nZ934HFg_rT
-  port: 8080
+  port: '8080'
   server: 138.124.0.168
   skip-cert-verify: true
   sni: hopp-legend-se.roxa.org
   tls: false
   type: hysteria2
-- name: 🇬🇧GB_1|1.7MB/s
+  up: ''
+- name: 🇬🇧GB_1|2.7MB/s
   password: None
   port: 443
   server: 185.235.0.66
@@ -23,53 +75,26 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇬🇧GB_2|1.5MB/s
-  password: None
-  port: 443
-  server: 185.235.0.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇬🇧GB_3|1.8MB/s
-  password: None
-  port: 443
-  server: 37.120.233.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇬🇧GB_4|2.1MB/s
-  password: None
-  port: 9443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇬🇧GB_8|2.1MB/s
-  password: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-  port: 443
-  server: 5b33bfe4-tdups0-tf8z9r-1pr35.uk.oshuawei.com
-  sni: 5b33bfe4-tdups0-tf8z9r-1pr35.uk.oshuawei.com
-  tls: true
-  type: http
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: 🇬🇧GB_2|3.3MB/s
+  password: tripitropa444
+  port: '2174'
+  server: xn--1ugy405pdua.gayvibe.dpdns.org
+  skip-cert-verify: false
+  type: trojan
   udp: true
-  username: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-- name: 🇬🇧GB_6|1.7MB/s
-  password: None
-  port: 443
-  server: 185.235.0.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- encryption: none
-  name: 🇬🇧GB_7|3.8MB/s
-  network: tcp
-  port: '22223'
-  server: 13.134.70.15
+- encryption: mlkem768x25519plus.native.0rtt.hew1F9CYPLUZiTdwAGVxEDx99Ywva4Q6UgfAVZhw28nC3xjKOUR9qsEO9sKs1vMRH6qFzzhpR_GD8II6mEoozjF-DDtNUcQlgbVy44qmzWW2rENt_NbA1bScfsNwK1kMPsc63wwgx1xxaCg3M-wEp6YKKXVxeKej3UmLzUFzk2MTVHioBUCnHoFnZnAGXiGfW8p8-CIBRkdpBggzFOQAUzuLL3h8-NW1dst86Mgj-bKToMBxxZQbntnLbBhJB9YiIyhWKlqaC4HH8Ic_-zKgAwabJcihXryapvIDwlEXCCfANaY6dOiDm1oG4vC3_Rc1GuWqZXgOjKE9fUKY0Cy08TWUagl0qbDFukMTR7mEN_N-7HN_qFF_UZqTmIjOUDCLxVQj4veEdEBXkZV9XbYNMHS3kqug3bcpIeh7beDH7aOC9XW3UrEKWwC9xpF1uFpvEcwz5pIOrVFBuMAnWAtaElSd7itKjdAzcYCPE9sTI7GDOWWZP7ddffx2umobaCeJSzenihwom3EEasN_zPUR7DeJcfFz8Gt-EsMwUThIXURn3_eOdZnCTsM8U2d_VdNIDhO_FMiZsqIfAFONNhXJSlm1DjfHCPOUtXcMqqFcyiuugRNlQCTL8_idd_Ii62s3enLLjwBZkjehmxEZDcRPiRGF_zdbAxAZUAysOttHsvEKRLq4HLMx78UuGgIrIqJbWFQIybqeXKsuVINp5DW6cYBAALopPNF951ITeClMVsaRLdZ9FBQ4DBFWWiav9EYpYcylgIOpQMJobDqfjIqH4TlBUPSvwrgMhwGsLZNEQ_q21KCxNuyrQDGv0QHDSRiLDjpTiMkvwNFEhZJkq1CD7ESRfLeSmaUCLzE0ssgL6SJmwzADz0gRkWp-lnM2tEHEF6uPlDRvLxpI0jpPj3Qth0qZQzAmucpT-1RGnlBf8YOfTYKPAXMS8CnB82kvAvhd-aUUK-BMwwq0eQq1YtU4kmUIU_zAjpemesvIqrpN4Vs1WUDNuTyWAsKSt6F3E1GSiOYJCYN9ntEdozeoE8FYBEFbg4xJxYVfJDKGQ-CMf9vIB8bMjhkqTiVOO_InesRl3idT9yIjk3dVBbu5jBGjW_QgNZFFbEcqICLPl6u1tCx_VyGbFhYv4iRVU9xXLFa1lsAJo7pC2DZreIuh2Va-YtcEX3qWThU8tdVEBGNCHGxQW6saRrKFEJJfPwAFHeyDyPYgQvAQF8LIUJJHmSA3FSJafcSGeUmQGeywPihEBizORLcSQJktPGGz6bMw8csPLbo2CNcm4FrNG3DOWEGNSMtS1OxTuRKk-JFA_SNnPCDJrWR2h9BycbPCRKkZZ6IN16kVMkxvTxo5XpODfpYMM5GCblB8ivQPdZl048mNO1eGGaybnvB8hFrChGKDROqTLFAe9CyBdZNDvfzIKnfK1XAnm8lo0WxqZrPEUOZvR-HAl0O-5SkBHmBEPFQZwVGIPTZ8_QkDVntKF-OZY5sAAhRiC-ukg6F4FKd8v_c0jNGQTvhUnvKIJqWZ68gGUqy0pwy7TQHwmHRuOmkiWTrU03uAbIBzZkVaUEaUTsWaUIQ
+  name: 🇬🇧GB_3|3.6MB/s
+  network: xhttp
+  port: '10443'
+  server: 31.76.106.36
   type: vless
   udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: f77fdea5-e50f-4766-89b1-d0cd6ada7dae
+  xhttp-opts:
+    host: s3.storage.selcloud.ru
+    mode: stream-up
+    path: /my-bucket
   xudp: true
