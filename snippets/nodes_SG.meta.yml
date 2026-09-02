@@ -7,7 +7,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: 🇸🇬SG_2|2.7MB/s
+- name: '新加坡 #1'
   password: 19f72087-4591-4d72-930b-2697078ec2be
   port: 1933
   server: sg1.xiaoliyu.cyou
@@ -56,6 +56,14 @@ proxies:
   sni: vpn-sg-001.fastervpn.world
   tls: false
   type: hysteria2
+- name: 🇸🇬158852 | ⚡️Telegram = t.me/S...
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  port: 443
+  server: 13.229.54.166
+  skip-cert-verify: true
+  sni: 13.229.54.166
+  tls: false
+  type: hysteria2
 - name: 新加坡3|@ripaojiedian
   network: tcp
   password: BxceQaOe
@@ -65,10 +73,43 @@ proxies:
   sni: t.me%252Fripaojiedian
   type: trojan
 - client-fingerprint: chrome
+  encryption: none
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: update
   name: 🇸🇬SG_1|5.4MB/s
+  network: grpc
+  port: 10039
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '!!str 686c0ef0'
+  server: sg4-r.link-t7.com
+  servername: d1.awsstatic.com
+  tls: true
+  type: vless
+  uuid: F2987FBA-B653-444D-8057-6B6474E448C6
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+  name: 🇸🇬SG_2|3.9MB/s
+  network: grpc
+  packet-encoding: xudp
+  port: 10040
+  reality-opts:
+    public-key: wOu-BMrXvk9KX23JZrlpUlF4SMjDcejm0vNECdhy5xE
+    short-id: '!!str 686c0ef0'
+  server: sg5-r.link-t7.com
+  servername: d1.awsstatic.com
+  tls: true
+  type: vless
+  uuid: C1CE3941-AC6F-4E98-9791-3B33ABBAF64F
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: update
+  name: 🇸🇬SG_3|5.0MB/s
   network: grpc
   port: 10036
   reality-opts:
@@ -79,18 +120,3 @@ proxies:
   tls: true
   type: vless
   uuid: 31904E3E-F57B-41D1-BDB2-CB6D3A496232
-- client-fingerprint: safari
-  flow: xtls-rprx-vision
-  name: 🇸🇬SG_3|1.4MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: ejr6ZVvv6XL1U9tFm2ev72egsXzqMFNPlgbDU4uPH1Q
-    short-id: '!!str 3b32806e4a620eac'
-  server: 163.128.99.5
-  servername: www.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1210355c-323f-4098-b782-96627ca8b495
-  xudp: true
