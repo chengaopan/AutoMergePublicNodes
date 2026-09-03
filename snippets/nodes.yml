@@ -196,11 +196,11 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 🇮🇳IN_1|2.2MB/s
+  name: 🇮🇳IN_1|3.3MB/s
   network: ws
-  port: '16626'
+  port: 16626
   server: planb.mojcn.com.linuxlh.xin
   skip-cert-verify: false
   tls: false
@@ -212,27 +212,62 @@ proxies:
       Host: d052c66d50dcf7c3cfab75ed7f8e8322.mobgslb.tbcache.com
     path: /
   xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇭🇰HK_4|2.1MB/s
-  network: ws
-  port: 16622
-  server: planb.mojcn.com.linuxlh.xin
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+- cipher: chacha20-ietf-poly1305
+  name: 🇳🇱NL_3|2.1MB/s
+  password: 3hSrBrmKmrgNGsD97RSGOS5p+XIFqEVk6Zo4AHbsRhg=
+  port: '29367'
+  server: 85.209.157.209
+  type: ss
   udp: true
-  uuid: 83c25eab-8461-4b6a-b714-f4279535b316
-  ws-opts:
-    headers:
-      Host: a5f19060282ba7516bdd6ce8dd04528b.mobgslb.tbcache.com
-    path: /
-  xudp: true
-- client-fingerprint: chrome
-  name: 🇺🇸US_19|1.6MB/s
-  password: UQfj7bdfjibTjpUHfg72aew51S7fB32g
-  port: '443'
-  server: littoral.appagent.net
+- cipher: aes-256-cfb
+  name: 🇰🇷KR_1|4.7MB/s
+  password: 7eadc6dbe2ae
+  port: '65443'
+  server: 121.46.230.138
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇬🇧GB_1|2.6MB/s
+  password: amazonskr05
+  port: 443
+  server: 35.178.132.176
+  type: ss
+  udp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇩🇪DE_6|3.5MB/s
+  network: ws
+  password: ysbdg3l5iqbvo26u
+  port: '2097'
+  server: 185.204.170.130
   skip-cert-verify: false
   type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/66.0.3359.117 Safari/537.36
+    path: /
+- cipher: aes-256-gcm
+  name: 🇨🇦CA_1|1.9MB/s
+  password: fbcec76953a2d173
+  port: '8011'
+  server: 166.88.130.218
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇨🇦CA_2|3.9MB/s
+  password: amazonskr05
+  port: '443'
+  server: 35.183.81.172
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇮🇪IE_1|3.6MB/s
+  password: amazonskr05
+  port: '443'
+  server: 54.246.193.66
+  type: ss
   udp: true
