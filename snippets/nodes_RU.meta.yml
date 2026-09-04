@@ -19,3 +19,52 @@ proxies:
   sni: ru1.sferavpn.pro
   tls: false
   type: hysteria2
+- client-fingerprint: edge
+  encryption: none
+  name: 🇷🇺RU_1|2.0MB/s
+  network: ws
+  port: '443'
+  server: ru05.abvpn.ru
+  servername: ru05.abvpn.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: a289a3d3-5833-4b28-8809-ae72898a98d0
+  ws-opts:
+    headers:
+      Host: ru05.abvpn.ru
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/53.0.2785.143 Safari/537.36
+    path: /websocket
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇷🇺RU_2|4.1MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
+    short-id: '!!str '
+  server: 193.233.255.45
+  servername: sellflow.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0bc31c7f-1ee2-4dd3-929b-b61ae780eb3c
+  xudp: true
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇷🇺RU_3|1.2MB/s
+  network: tcp
+  port: '443'
+  server: ru-i.monkeyisland.xyz
+  servername: ru-i.monkeyisland.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: cf80b5fc-c445-4373-87e6-f8a22ad10d81
+  xudp: true

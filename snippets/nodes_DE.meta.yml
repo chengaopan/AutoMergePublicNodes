@@ -226,7 +226,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: 🇩🇪DE_1|3.2MB/s
+  name: 🇩🇪DE_1|3.4MB/s
   network: ws
   port: '443'
   server: 199.232.78.160
@@ -238,88 +238,99 @@ proxies:
   ws-opts:
     headers:
       Host: Appxdn.global.ssl.fastly.net
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.139 Safari/537.36
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
     path: /
   xudp: true
-- alpn:
-  - h3
-  auth_str: dongtaiwang.com
-  down: '1000'
-  name: 🇩🇪DE_2|2.3MB/s
-  port: 20088
-  server: 5.83.129.153
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: '500'
-- name: 🇩🇪DE_3|3.1MB/s
-  password: bd54ceae-9b5c-477d-b364-ffd8e5c734a7
-  port: 443
-  server: as-de003.y1static-content-distribution.shop
-  skip-cert-verify: true
-  sni: as-de003.y1static-content-distribution.shop
-  type: anytls
-  udp: true
-- name: 🇩🇪DE_4|3.0MB/s
+- name: 🇩🇪DE_2|1.5MB/s
   password: None
-  port: 443
-  server: 149.36.50.157
+  port: 9443
+  server: 87.249.132.97
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- client-fingerprint: chrome
+- name: 🇩🇪DE_3|3.0MB/s
+  port: 443
+  server: 149.36.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_4|3.8MB/s
+  password: None
+  port: 443
+  server: 138.201.56.241
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 🇩🇪DE_5|1.7MB/s
+  port: 443
+  server: 141.17.83.73
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_6|1.5MB/s
+  network: tcp
+  port: '5005'
+  reality-opts:
+    public-key: -6SjfnZXAYm69euKQ3XNhq0nC7No7YE4qfdc2qx0Xwo
+    short-id: '!!str a1b2c3d4'
+  server: 80.253.249.193
+  servername: special.aeternavpn.space
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a92a9d2-3067-49cd-bfc5-989bbdfc5d52
+  xudp: true
+- client-fingerprint: firefox
   encryption: none
   grpc-opts:
-    grpc-service-name: grpc
-  name: 🇩🇪DE_5|3.1MB/s
+    grpc-service-name: grpc-tunnel
+  name: 🇩🇪DE_7|3.5MB/s
   network: grpc
-  packet-encoding: xudp
-  port: 18443
+  port: '2054'
   reality-opts:
-    public-key: QHkXBS2ENHV0khgY9VBYi8_9bpfqnUYDcfQN4cW5Qg0
-    short-id: '!!str 5c766813929a1fdd'
-  server: gp1.steptofsvo.com
-  servername: gp1.steptofsvo.com
+    public-key: l6_Nvc_H8uxGpNI3j3MxqlRoPBs313ENeVM4K3uP9BQ
+    short-id: '!!str '
+  server: 159.195.244.37
+  servername: www.ibm.com
   tls: true
   type: vless
   udp: true
-  uuid: ab6a5359-0edf-41c3-8dfd-e4b005e80820
+  uuid: 75079a7f-75b5-418b-8a65-f7b2f438cd4a
   xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇩🇪DE_6|3.5MB/s
-  network: ws
-  password: ysbdg3l5iqbvo26u
-  port: '2097'
-  server: 185.204.170.130
-  skip-cert-verify: false
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.117 Safari/537.36
-    path: /
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
+- client-fingerprint: firefox
   encryption: none
-  name: 🇩🇪DE_7|1.4MB/s
-  network: xhttp
-  port: '1819'
-  server: 185.204.170.130
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_8|1.4MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: gS0fK3fGIGrh66gh2H4dMmTDZ_zN01nd_mDSpNedk30
+    short-id: '!!str 17'
+  server: 150.241.64.164
+  servername: de.plombir.me
   tls: true
   type: vless
   udp: true
-  uuid: b8136e5f-8ece-4a06-99af-5a207c749bc4
-  xhttp-opts:
-    mode: auto
-    path: /
-    x-padding-bytes: 100-1000
+  uuid: 9323430f-0c13-4cd0-a84b-639fabcbe018
+  xudp: true
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇩🇪DE_9|1.1MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: BsFRd4pZgH2hK2AmVf6Mv7z2QGmV2LPYbqkT1UqZX30
+    short-id: '!!str 4da5d1853f04af6d'
+  server: rrr.windconnect.pro
+  tls: true
+  type: vless
+  udp: true
+  uuid: af00e0c4-decf-48f2-9013-56abe9c9efcd
   xudp: true
