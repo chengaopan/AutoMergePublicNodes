@@ -1,5 +1,15 @@
 proxies:
 - name: 日本
+  obfs: salamander
+  obfs-password: d0dd99b2b4da604123ce17b6d17072a2
+  password: 07a4fcf5553a80cf300374d325386038
+  port: 443
+  server: 141.147.151.58
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '日本 #1'
   password: 184cdec28da5a09450803c8debcd2cc9
   port: 50160
   server: 138.3.208.26
@@ -7,7 +17,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '日本 #1'
+- name: '日本 #2'
   password: 4d6d97a82ddf959252e2ada36c3c3053
   port: 50160
   server: 138.2.8.249
@@ -15,7 +25,7 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
-- name: '日本 #2'
+- name: '日本 #3'
   password: a9081889-1949-49ba-a2aa-7054515716de
   port: 3488
   server: c2.bestai.beauty
@@ -55,43 +65,26 @@ proxies:
   port: 40002
   server: 103.236.66.4
   type: ss
-- name: 🇯🇵JP_1|2.4MB/s
-  port: 2101
-  server: 103.179.45.197
-  type: http
-- client-fingerprint: chrome
+- cipher: aes-256-cfb
+  name: 🇯🇵JP_1|1.2MB/s
+  password: 7eadc6dbe2ae
+  port: '65443'
+  server: 121.46.230.137
+  type: ss
+  udp: true
+- client-fingerprint: safari
   encryption: none
-  name: 🇯🇵JP_2|3.6MB/s
-  network: ws
-  port: '2096'
-  server: saas.sin.fan
-  servername: cindy.rainfall0705.cc.cd
+  flow: xtls-rprx-vision
+  name: 🇯🇵JP_2|1.1MB/s
+  network: tcp
+  port: '55555'
+  reality-opts:
+    public-key: 1XQ60qYOfBZJpcilNV9Fu7OSpuO5_6-zrNZIYhB_YU4
+    short-id: '!!str af317506'
+  server: uh-jp01.ziyoufly.xyz
+  servername: s0.awsstatic.com
   tls: true
   type: vless
   udp: true
-  uuid: 341832cc-ba98-425b-8225-b3db621a0da3
-  ws-opts:
-    headers:
-      Host: cindy.rainfall0705.cc.cd
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/66.0.3359.117 Safari/537.36
-    path: /
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  name: 🇯🇵JP_3|1.7MB/s
-  network: ws
-  port: '443'
-  server: 134.122.164.41
-  servername: vp10.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  ws-opts:
-    headers:
-      Host: vp10.pages.dev
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/61.0.3163.100 Safari/537.36
-    path: /
+  uuid: 5fce1c98-0192-4d03-a8b4-9ba8a8eef474
   xudp: true
