@@ -41,6 +41,16 @@ proxies:
   sni: de1.apexvpn.space
   tls: false
   type: hysteria2
+- name: 'DE #1'
+  obfs: salamander
+  obfs-password: f832485b7363626ee836f58576aad25f
+  password: f0098427ecce06a25089f5c18f4ac666
+  port: 443
+  server: 92.5.43.121
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - name: '德国 #3'
   password: umnDU7jgFYUjpVjVM2sW9HL0rRYLJNgzVwRu2HzWEhyZKkRx
   port: 443
@@ -53,18 +63,6 @@ proxies:
   password: 4savc5ig1n3549e4
   port: 52023
   server: giftcard.gateway-stream.com
-  sni: giftcard.gateway-stream.com
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  name: -🇩🇪 @VConfing
-  obfs: salamander
-  obfs-password: fuw2k1ddrouwxr3u
-  password: 8f0gvz5eul6omhq4
-  port: 52023
-  server: giftcard.gateway-stream.com
-  skip-cert-verify: false
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
@@ -111,7 +109,7 @@ proxies:
   type: hysteria2
 - alpn:
   - h3
-  name: '-🇩🇪 @VConfing #1'
+  name: -🇩🇪 @VConfing
   obfs: salamander
   obfs-password: fuw2k1ddrouwxr3u
   password: nqlool6l2dnfg45q
@@ -124,7 +122,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: chrome
-  name: '-🇩🇪 @VConfing #2'
+  name: '-🇩🇪 @VConfing #1'
   obfs: salamander
   obfs-password: fuw2k1ddrouwxr3u
   password: s6gt5e4mof43sfg8
@@ -137,7 +135,7 @@ proxies:
 - name: 🇩🇪@AZARBAYJAB1
   obfs: salamander
   obfs-password: fuw2k1ddrouwxr3u
-  password: s6gt5e4mof43sfg8
+  password: vz86jgszv4zszchv
   port: 52021
   server: giftcard.gateway-stream.com
   skip-cert-verify: false
@@ -145,31 +143,54 @@ proxies:
   tls: false
   type: hysteria2
 - alpn:
+  - h3
   - h2
+  - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: 🇩🇪DE_1|2.6MB/s
+  name: 🇩🇪DE_1|2.1MB/s
   network: xhttp
-  port: '443'
-  server: 167.233.219.201
-  servername: fsn1.nordlinkcloud.com
+  port: '2053'
+  server: pro2.hx9.ir
+  servername: mind.esmahdi9.com
   tls: true
   type: vless
   udp: true
-  uuid: 05bfcbaa-cba0-4bce-9103-09fe3f5f0667
+  uuid: 7e89c315-6436-4800-e287-c16d26d407a8
   xhttp-opts:
+    host: mind.esmahdi9.com
     mode: auto
-    path: /api/v3/stream/
+    path: /@v2_line
   xudp: true
-- name: 🇩🇪DE_2|1.8MB/s
+- name: 🇩🇪DE_2|3.6MB/s
   port: 443
-  server: 149.36.50.129
+  server: 138.201.56.241
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇩🇪DE_3|2.3MB/s
+- name: 🇩🇪DE_3|2.7MB/s
+  password: None
+  port: 443
+  server: 149.36.50.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 🇩🇪DE_4|2.7MB/s
   port: 443
   server: 87.249.132.97
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_5|1.8MB/s
+  port: 443
+  server: 141.17.83.73
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_6|1.6MB/s
+  port: 443
+  server: 185.44.107.166
   skip-cert-verify: true
   tls: true
   type: http
