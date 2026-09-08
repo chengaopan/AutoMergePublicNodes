@@ -196,7 +196,7 @@ proxies:
   tls: false
   type: vmess
   uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- name: 🇸🇩SD_1|3.6MB/s
+- name: 🇸🇩SD_1|3.5MB/s
   password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
   port: 10012
   server: z-jp2.1card.cc
@@ -204,10 +204,57 @@ proxies:
   sni: www.cloudflare.com
   type: trojan
   udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇫🇷FR_1|1.4MB/s
+  network: ws
+  password: humanity
+  port: '443'
+  server: 216.24.57.7
+  skip-cert-verify: false
+  sni: www.ignitelimit.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    path: /assignment
 - cipher: aes-256-cfb
-  name: 🇺🇸US_1|1010KB/s
-  password: 7eadc6dbe2ae
-  port: '65443'
-  server: 121.46.230.233
+  name: 🇮🇪IE_1|1.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 54.247.231.139
   type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇬🇧GB_5|5.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 35.177.213.229
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇨🇦CA_1|3.9MB/s
+  password: amazonskr05
+  port: 443
+  server: 15.223.203.202
+  type: ss
+  udp: true
+- name: 🇭🇰HK_1|4.0MB/s
+  network: tcp
+  password: d742752c-4231-4695-801e-f06d77f0f277
+  port: 52224
+  server: hk04.qianmoip.win
+  skip-cert-verify: true
+  sni: taobao.com
+  type: trojan
+- name: 🇦🇫AF_1|3.5MB/s
+  password: ultra@kWZdAzt_IH593eGLRjdxnBZ0
+  port: 10009
+  server: z-jp1.1card.cc
+  skip-cert-verify: true
+  sni: www.cloudflare.com
+  type: trojan
   udp: true
