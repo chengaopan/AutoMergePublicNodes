@@ -15,19 +15,16 @@ proxies:
   sni: mkm.icu
   tls: false
   type: hysteria2
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸US_25|1.5MB/s
+- name: US
   obfs: salamander
   obfs-password: 7a5537b116d923fe572f85f1db7fe501
   password: cbb5cf13f04b22883390f1a073753123
-  port: '443'
+  port: 443
   server: 147.224.12.19
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
   type: hysteria2
-  up: ''
 - name: 🇺🇸139909 | ⚡️Telegram = t.me/S...
   password: qQe1z5kU8kN6SlKnDt9Ru3Qp
   port: 443
@@ -92,35 +89,20 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- name: 🇺🇸US_1|3.0MB/s
-  network: ws
-  port: 80
-  server: 18.239.134.69
-  tls: false
-  type: vless
-  udp: true
-  uuid: de27291c-15a9-4256-9ba7-ad517569877e
-  ws-opts:
-    headers:
-      Host: d2e1v87ko56lyw.cloudfront.net:assets.opensignal.com
-    path: /
-- auth: 5319f194c3164cd0f0dce502e83d60aa
-  name: 🇺🇸US_2|4.3MB/s
-  obfs: salamander
-  obfs-password: 73221641ddc56c49b02bf110ac85afdb
-  password: 5319f194c3164cd0f0dce502e83d60aa
-  port: 443
-  server: 23.95.28.131
+- name: 🇺🇸US_1|3.2MB/s
+  password: 0e880e30-6286-4e7d-8dd0-eae1ecc49836
+  port: 51232
+  server: us.miaolianyunapp.com
   skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+  sni: gtnnhndvssfchjfg05.com
+  type: anytls
+  udp: true
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  encryption: none
-  name: 🇺🇸US_3|2.5MB/s
+  name: 🇺🇸US_2|1.7MB/s
   network: ws
-  port: '443'
+  port: 443
   server: sulgx-panel-production-ff31.up.railway.app
   servername: sulgx-panel-production-ff31.up.railway.app
   tls: true
@@ -130,29 +112,55 @@ proxies:
   ws-opts:
     headers:
       Host: sulgx-panel-production-ff31.up.railway.app
-      User-Agent: Mozilla/5.0 (Linux; Android 7.1; Mi A1 Build/N2G47H) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
     path: /ws/294b2868-ec9a-4587-9181-9c1fe7558f05
-  xudp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸US_4|2.2MB/s
-  password: 7eadc6dbe2ae
-  port: '65443'
-  server: 121.46.230.232
-  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: TunService
+  name: 🇺🇸US_3|2.2MB/s
+  network: grpc
+  port: '8443'
+  reality-opts:
+    public-key: tICt4RT_Rw9KAU8hIf05_fzAMZnfUUyMfE-Ept6zcBY
+    short-id: '!!str '
+  server: 64.49.38.4
+  servername: www.lenovo.com
+  tls: true
+  type: vless
   udp: true
-- down: ''
-  fingerprint: ''
-  name: 🇺🇸US_5|3.8MB/s
-  obfs: ''
-  obfs-password: ''
-  password: 28a91bb2-51fe-48e1-9865-ec8bc9e48890
-  port: '4434'
-  server: 204.152.221.119
+  uuid: f71957f3-29e0-d077-9b51-83da5cf31480
+  xudp: true
+- encryption: none
+  name: 🇺🇸US_4|1.5MB/s
+  network: ws
+  port: '8880'
+  server: 45.40.149.50
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime39.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.102 Safari/537.36
+    path: /
+  xudp: true
+- name: 🇺🇸US_5|2.3MB/s
+  password: test123
+  port: '1080'
+  server: 185.145.99.41
   skip-cert-verify: true
-  sni: www.cloudflare.com
-  type: hysteria2
-  up: ''
+  type: socks5
+  username: test123
+- name: US_speednode_0131
+  password: 'null'
+  port: 9002
+  server: 138.199.35.216
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
 - name: US_speednode_0143
   port: 9002
   server: 138.199.35.198
@@ -160,53 +168,16 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 🇺🇸US_7|1.4MB/s
-  password: None
-  port: 443
-  server: purecambogiasl.live
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_8|4.4MB/s
+- name: 🇺🇸US_8|2.9MB/s
+  password: ''
   port: 9002
-  server: 138.199.35.215
+  server: 138.199.35.200
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇺🇸US_9|2.5MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.204
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_10|4.5MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.202
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_11|3.4MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.208
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_12|4.3MB/s
-  port: 9002
-  server: 138.199.35.220
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_13|3.7MB/s
+  username: ''
+- name: 🇺🇸US_9|4.5MB/s
   password: ''
   port: 9002
   server: 138.199.35.219
@@ -214,44 +185,102 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇺🇸US_14|2.3MB/s
-  port: 9002
-  server: 138.199.35.207
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_15|4.7MB/s
-  port: 9002
-  server: 138.199.35.206
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_16|4.4MB/s
-  port: 9002
-  server: 138.199.35.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_17|3.6MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.205
+- name: 🇺🇸US_10|3.9MB/s
+  password: None
+  port: '9002'
+  server: 138.199.35.217
   skip-cert-verify: true
   tls: true
   type: http
   username: 'null'
-- name: 🇺🇸US_18|4.4MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.211
+- client-fingerprint: chrome
+  name: 🇺🇸US_11|2.6MB/s
+  network: ws
+  port: 34237
+  server: 129.146.134.26
+  servername: cf3.schzyc.cc.cd
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: cf3.schzyc.cc.cd
+    path: /proxyip=ProxyIP.CMLiussss.net
+- name: 🇺🇸US_12|2.9MB/s
+  network: ws
+  port: 8880
+  server: 50.62.198.30
   skip-cert-verify: true
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime39.workers.dev
+    path: /
+- name: 🇺🇸US_13|1.9MB/s
+  network: ws
+  port: 443
+  server: 172.67.184.123
+  servername: 2-M13.35C73E3f-B0AE-4ae0-B41F-62dfD753a988.KdNS.Fr
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 7700ff6d-cefb-4768-a806-ec4f63fe3b38
+  ws-opts:
+    headers:
+      Host: 2-M13.35c73e3F-b0ae-4ae0-B41f-62dFd753A988.kdns.fR
+    path: /ED3ZQPu7lqyeDGD58KabZ
+- client-fingerprint: chrome
+  name: 🇺🇸US_14|1.3MB/s
+  network: ws
+  port: 443
+  server: 104.21.80.194
+  servername: 9-M19.sOUTH-AFRIcA-LINK.CCWu.cC
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: a90c264d-3853-4eef-9a3d-628b2d02d15e
+  ws-opts:
+    headers:
+      Host: 9-m19.South-AfrIcA-liNK.CcWU.CC
+    path: /CjBjB9sn5pCvaSwScc
+- name: 🇺🇸US_15|1.5MB/s
+  password: 'null'
+  port: 443
+  server: purecambogiasl.live
   tls: true
   type: http
   username: 'null'
-- name: 🇺🇸US_19|4.6MB/s
+- name: 🇺🇸US_16|4.5MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.218
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 🇺🇸US_17|3.1MB/s
+  password: None
+  port: 5252
+  server: 148.100.84.192
+  type: http
+  username: null
+- name: 🇺🇸US_18|4.1MB/s
+  password: None
+  port: 443
+  server: purecambogiasl.live
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 🇺🇸US_19|2.2MB/s
   password: 'null'
   port: 9002
   server: 138.199.35.197
@@ -259,77 +288,135 @@ proxies:
   tls: true
   type: http
   username: 'null'
-- name: 🇺🇸US_20|1.2MB/s
-  password: ''
+- name: 🇺🇸US_20|2.1MB/s
+  password: 'null'
   port: 9002
-  server: 138.199.35.196
+  server: 138.199.35.209
   skip-cert-verify: true
   tls: true
   type: http
-  username: ''
-- name: 🇺🇸US_21|4.2MB/s
+  username: 'null'
+- name: 🇺🇸US_21|3.7MB/s
   password: ''
-  port: 9002
-  server: 138.199.35.203
+  port: 443
+  server: mmgr.club
   skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸US_22|4.6MB/s
-  port: 9002
-  server: 138.199.35.216
-  skip-cert-verify: true
+  sni: mmgr.club
   tls: true
   type: http
   udp: true
-- name: 🇺🇸US_23|4.3MB/s
+  username: ''
+- name: 🇺🇸US_22|3.3MB/s
   password: None
-  port: 9002
-  server: 138.199.35.195
+  port: 443
+  server: berniesbodybla.fun
+  skip-cert-verify: false
+  tls: true
+  type: http
+  username: null
+- name: 🇺🇸US_23|1.1MB/s
+  password: None
+  port: 8090
+  server: 209.148.53.153
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_24|3.7MB/s
-  port: 443
-  server: berniesbodybla.fun
-  sni: berniesbodybla.fun
-  tls: true
-  type: http
-- alpn:
-  - http/1.1
-  client-fingerprint: unsafe
+- client-fingerprint: safari
   encryption: none
-  name: 🇺🇸US_26|2.9MB/s
-  network: ws
-  port: '443'
-  server: 151.101.1.242
-  servername: grimness-backlogs.cdn-content.com
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_24|1.7MB/s
+  network: tcp
+  port: '55555'
+  reality-opts:
+    public-key: 1XQ60qYOfBZJpcilNV9Fu7OSpuO5_6-zrNZIYhB_YU4
+    short-id: '!!str af317506'
+  server: uh-us01.ziyoufly.xyz
+  servername: d1.awsstatic.com
   tls: true
   type: vless
   udp: true
-  uuid: 29f6e96c-1ec2-47d3-8437-d1264e259d3a
-  ws-opts:
-    headers:
-      Host: grimness-backlogs.cdn-content.com
-      User-Agent: Mozilla/5.0 (Windows; U; Windows NT 6.1; en-US) AppleWebKit/534.3
-        (KHTML, like Gecko) Chrome/6.0.472.63 Safari/534.3
-    path: /ws
+  uuid: fae482df-d9f1-491f-9f9e-1ee522d4560c
   xudp: true
 - client-fingerprint: chrome
+  name: 🇺🇸US_25|3.3MB/s
+  network: ws
+  port: '2053'
+  server: 142.248.218.34
+  servername: edge.yzkvm.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: bba95b1f-f48c-454b-897b-a6c6bc307df1
+  ws-opts:
+    headers:
+      Host: edge.yzkvm.top
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/57.0.2987.133 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: qq
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇺🇸US_27|4.2MB/s
+  name: 🇺🇸US_26|2.8MB/s
   network: tcp
   port: '443'
   reality-opts:
-    public-key: GmSrU6Wv8pYT96TE080sn1EzQnZ3j0Ea7usrxET7ol8
-    short-id: '!!str 8d008277'
-  server: 104.194.74.14
-  servername: www.apple.com
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: '!!str e1f8a3b6'
+  server: 2.26.147.119
+  servername: www.amd.com
   tls: true
   type: vless
   udp: true
-  uuid: 2f56719f-d1dd-442d-a13c-ddbea23f1ab1
+  uuid: b97e287f-a24e-0021-a103-7e7ecef83139
+  xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_27|2.7MB/s
+  network: tcp
+  port: '443'
+  reality-opts:
+    public-key: b4n1pcO8ST3JkGtj8YymXVrW17LEe2EHec5wY7hMMR4
+    short-id: '!!str 6e3f0a5b'
+  server: fl.musicperec.ru
+  servername: www.amd.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f5a3bf49-07ca-0021-a96b-9606781e3600
+  xudp: true
+- client-fingerprint: firefox
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_28|1.7MB/s
+  network: tcp
+  port: '10004'
+  reality-opts:
+    public-key: YoLRlSFCOiQjky1hQVHuSkiaPER4pro1uDyCTHVSfwY
+    short-id: '!!str df52dd28ff'
+  server: family.bucket.3.kfc-520.com
+  servername: www.intel.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2a88deea-221d-3f06-9846-4067c6f725ee
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇺🇸US_29|2.2MB/s
+  network: ws
+  port: '443'
+  server: 104.21.32.33
+  servername: 9-m9.hat-yai.kdns.fr
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2240d8f8-898f-4988-8c08-ac724aa06ddb
+  ws-opts:
+    headers:
+      Host: 9-m9.hat-yai.kdns.fr
+      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J710F Build/NRD90M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /BzuntJ8qZN0TRKbC8TveMxJ0
   xudp: true
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
@@ -346,15 +433,6 @@ proxies:
   type: vless
   udp: true
   uuid: 5905d91f-c3bc-4e80-bd66-4b17beb166cb
-- name: US_speednode_0131
-  password: 'null'
-  port: 9002
-  server: 138.199.35.216
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0132
