@@ -135,27 +135,39 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 🇩🇪DE_1|3.0MB/s
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_1|3.3MB/s
+  network: xhttp
+  port: '2096'
+  server: 193.227.99.253
+  servername: df.monister.ir
+  tls: true
+  type: vless
+  udp: true
+  uuid: ef04fed2-399b-4533-b423-f92c8cb66234
+  xhttp-opts:
+    host: df.monister.ir
+    mode: auto
+    path: /
+  xudp: true
+- name: 🇩🇪DE_2|2.9MB/s
   port: 443
   server: 149.36.50.1
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇩🇪DE_2|1.1MB/s
-  password: None
-  port: 11111
-  server: 103.237.102.191
-  type: http
-  username: null
-- name: 🇩🇪DE_3|1.8MB/s
-  password: None
+- name: 🇩🇪DE_3|3.3MB/s
   port: 443
-  server: 149.36.50.157
+  server: 87.249.132.97
   skip-cert-verify: true
   tls: true
   type: http
-  username: null
-- name: 🇩🇪DE_4|2.9MB/s
+- name: 🇩🇪DE_4|1.0MB/s
   password: None
   port: 443
   server: 138.201.56.241
@@ -163,50 +175,31 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇩🇪DE_5|2.6MB/s
+- name: 🇩🇪DE_5|2.2MB/s
   password: None
   port: 443
-  server: 141.17.83.78
+  server: 149.36.50.1
   skip-cert-verify: true
   tls: true
   type: http
   username: null
 - alpn:
-  - h3
-  - h2
   - http/1.1
   client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.JgBGQxcFxZdwwvHJgyYQ9Qw8ezpz532ZMa6I4XEadAo
-  name: 🇩🇪DE_6|3.0MB/s
+  encryption: none
+  name: 🇩🇪DE_6|3.1MB/s
   network: ws
   port: '443'
-  server: mobileomrani.speedoraa.ir
-  servername: pas.speedoraa.ir
+  server: 140.248.186.45
+  servername: ssl.fastly.com
   tls: true
   type: vless
   udp: true
-  uuid: 1d9b478e-f82b-430b-bcea-3fe236342e1f
+  uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
-      Host: pas.speedoraa.ir
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
+      Host: Appxdn.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.2; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/70.0.3538.102 Safari/537.36
     path: /
-  xudp: true
-- client-fingerprint: firefox
-  encryption: none
-  grpc-opts:
-    grpc-service-name: UpdateService
-  name: 🇩🇪DE_7|2.0MB/s
-  network: grpc
-  port: '443'
-  reality-opts:
-    public-key: HHZwsut0m8Z4tTCbU0QdnbyfQMQfk8XuEbBO0wFObis
-    short-id: '!!str 7765b2a4cef1033e'
-  server: 46.8.208.29
-  servername: cdn.okko.tv
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5f922903-69b5-4d99-924d-52ca6337741e
   xudp: true
