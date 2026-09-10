@@ -36,25 +36,78 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  flow: xtls-rprx-vision
-  name: 🇬🇧GB_1|1.1MB/s
+  name: 🇬🇧GB_1|1.0MB/s
+  port: 443
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  server: 130.12.102.26
+  servername: localhost
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧GB_2|3.0MB/s
   network: tcp
   port: '443'
   reality-opts:
     public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
     short-id: '!!str '
-  server: 2.26.178.138
-  servername: localhost
+  server: freshjuniper.download
+  servername: freshjuniper.download
   tls: true
   type: vless
   udp: true
   uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
   xudp: true
-- name: 🇬🇧GB_2|1012KB/s
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧GB_3|3.3MB/s
+  port: 443
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+  server: 2.26.178.152
+  servername: localhost
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+- name: 🇬🇧GB_4|2.6MB/s
   password: None
   port: 443
-  server: 37.120.233.34
+  server: 37.120.233.18
   skip-cert-verify: true
   tls: true
   type: http
   username: null
+- client-fingerprint: chrome
+  flow: xtls-rprx-vision
+  name: 🇬🇧GB_8|3.3MB/s
+  network: tcp
+  port: 443
+  reality-opts:
+    public-key: F2VfBr2UmjDTErB_oruvW5aIvzH_xGfM2AW5_w-DF0I
+    short-id: '!!str '
+  server: 2.26.178.172
+  servername: localhost
+  skip-cert-verify: false
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6429d27e-a7d4-4e04-ae57-e88243fbbfe3
+- name: 🇬🇧GB_6|2.7MB/s
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_7|2.8MB/s
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
