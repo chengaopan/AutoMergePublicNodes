@@ -48,56 +48,37 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- encryption: none
-  name: 🇫🇷FR_1|4.7MB/s
-  network: tcp
-  port: '22222'
-  server: 35.181.15.183
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  xudp: true
-- name: 🇫🇷FR_2|1.0MB/s
-  port: 443
-  server: fan.132031.xyz
-  skip-cert-verify: true
-  sni: fan.132031.xyz
-  tls: true
-  type: http
-- name: 🇫🇷FR_3|1.1MB/s
-  port: 443
-  server: 141.94.16.4
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇫🇷FR_4|2.0MB/s
-  port: 443
-  server: 103.82.101.44
-  skip-cert-verify: true
-  sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
-  tls: true
-  type: http
 - client-fingerprint: chrome
-  name: 🇫🇷FR_5|1.3MB/s
+  name: 🇫🇷FR_1|1001KB/s
   network: ws
   password: humanity
   port: '443'
-  server: 104.16.174.46
+  server: 45.130.125.158
   skip-cert-verify: false
   sni: www.ignitelimit.com
   type: trojan
   udp: true
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
+      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_13_6) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Safari/537.36
     path: /assignment
-- encryption: none
-  name: 🇫🇷FR_6|4.1MB/s
-  network: tcp
-  port: '22224'
-  server: 35.181.15.183
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: 🇫🇷FR_2|1.1MB/s
+  network: xhttp
+  port: '443'
+  server: 151.101.109.28
+  servername: accounts.fastly.com
+  tls: true
   type: vless
   udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  uuid: 2a7793b4-a70f-42a3-aecc-1082da7a933d
+  xhttp-opts:
+    host: oh3.global.ssl.fastly.net
+    mode: packet-up
+    path: /
+    sc-min-posts-interval-ms: 30
+    x-padding-bytes: 100-1000
   xudp: true

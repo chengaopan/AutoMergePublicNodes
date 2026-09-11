@@ -11,23 +11,15 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇨🇭CH_3|4.4MB/s
-  network: raw
-  port: '443'
-  reality-opts:
-    public-key: P7S4UPFlQbmiBr4txyy8NZIMTrmO3UdxyH16WBU-YzY
-    short-id: '!!str 19253fae84102271'
-  server: 45.90.59.15
-  servername: www.cloudflare.com
+- name: 🇨🇭CH_2|3.3MB/s
+  password: None
+  port: 9443
+  server: 37.120.213.210
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 3950b45e-740d-4dca-ac95-505ec8534592
-  xudp: true
-- name: 🇨🇭CH_2|1.1MB/s
+  type: http
+  username: null
+- name: 🇨🇭CH_3|2.3MB/s
   password: None
   port: 443
   server: 31.7.62.50
@@ -35,3 +27,20 @@ proxies:
   tls: true
   type: http
   username: null
+- client-fingerprint: edge
+  encryption: none
+  name: 🇨🇭CH_4|3.2MB/s
+  network: xhttp
+  port: '8443'
+  reality-opts:
+    public-key: Gu_QdtOX6E8pZcYvDWgHKA5dxcit7hrpU27sizCEWXg
+    short-id: '!!str e0'
+  server: ch-plr-xh-pilot.tcp-reset-club.net
+  servername: s3.netavex.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4fb82973-a7f1-4fc2-9958-cb21f5162f06
+  xhttp-opts:
+    path: /assets/v2/pkg
+  xudp: true
