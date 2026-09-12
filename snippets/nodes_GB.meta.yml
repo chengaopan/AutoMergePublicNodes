@@ -35,20 +35,27 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- cipher: aes-256-gcm
-  name: 🇬🇧GB_1|3.1MB/s
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 82.110.60.9
-  type: ss
-  udp: true
-- name: 🇬🇧GB_2|3.5MB/s
+- name: 🇬🇧GB_1|2.9MB/s
+  port: 443
+  server: 185.235.0.98
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_2|2.4MB/s
+  port: 443
+  server: 185.235.0.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_3|3.4MB/s
+  password: None
   port: 443
   server: 212.102.63.1
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_3|3.3MB/s
+  username: null
+- name: 🇬🇧GB_4|2.9MB/s
   password: None
   port: 443
   server: 37.120.233.34
@@ -56,31 +63,26 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇬🇧GB_4|2.7MB/s
-  port: 443
-  server: 37.120.233.50
-  skip-cert-verify: true
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧GB_5|3.3MB/s
+  network: tcp
+  port: '2053'
+  reality-opts:
+    public-key: AKUQO-fKsD19FFBxNq5XTFCRXWDZfes4zJjRINY1KUI
+    short-id: '!!str beff3ff061a64cfd'
+  server: 171.22.129.56
+  servername: fi-one.quiet-rogue.site
   tls: true
-  type: http
-- name: 🇬🇧GB_5|1.3MB/s
-  port: 443
-  server: 212.102.63.61
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_6|3.1MB/s
-  password: None
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇬🇧GB_7|2.5MB/s
-  password: ''
+  type: vless
+  udp: true
+  uuid: b2744db0-1c64-4218-a93b-9eba0e5f811f
+  xudp: true
+- cipher: aes-256-cfb
+  name: 🇬🇧GB_6|2.6MB/s
+  password: amazonskr05
   port: '443'
-  server: 185.235.0.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
+  server: 18.130.133.149
+  type: ss
+  udp: true
