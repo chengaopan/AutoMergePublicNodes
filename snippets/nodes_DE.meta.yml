@@ -109,16 +109,6 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 'Tel: @Daily_Configs #1'
-  obfs: salamander
-  obfs-password: b6d1f3888ab1d90dd11aac1dce427b81
-  password: tnnls
-  port: 443
-  server: bwdf2fnt.xn--e1aatfr8bwa.online
-  skip-cert-verify: false
-  sni: bwdf2fnt.xn--e1aatfr8bwa.online
-  tls: false
-  type: hysteria2
 - name: 🇩🇪@AZARBAYJAB1
   obfs: salamander
   obfs-password: fuw2k1ddrouwxr3u
@@ -129,10 +119,32 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_1|3.4MB/s
+  network: ws
+  port: '443'
+  server: 199.232.78.160
+  servername: ssl.fastly.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/65.0.3325.181 Safari/537.36
+    path: /
+  xudp: true
 - client-fingerprint: firefox
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_1|4.1MB/s
-  port: 8443
+  name: 🇩🇪DE_7|1.5MB/s
+  network: tcp
+  port: '8443'
   reality-opts:
     public-key: QMJRGTqZRbpeLpIAdvn6dhftuzrpwbtwmVG2s5IuuU0
     short-id: '!!str 00a02855ba568c29'
@@ -143,15 +155,16 @@ proxies:
   type: vless
   udp: true
   uuid: b2744db0-1c64-4218-a93b-9eba0e5f811f
-- name: 🇩🇪DE_2|2.8MB/s
+  xudp: true
+- name: 🇩🇪DE_3|3.2MB/s
   password: None
-  port: 443
+  port: 9443
   server: 87.249.132.97
   skip-cert-verify: true
   tls: true
   type: http
   username: null
-- name: 🇩🇪DE_3|2.7MB/s
+- name: 🇩🇪DE_4|3.2MB/s
   password: None
   port: 443
   server: 149.36.50.1
@@ -159,44 +172,19 @@ proxies:
   tls: true
   type: http
   username: null
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.xsXknXALZ5oqsTLNfZJdlVSCNIfjoZeYm7hjZd8H-1Q
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_4|2.2MB/s
-  network: tcp
-  port: '2096'
-  reality-opts:
-    public-key: tCPLhfNBs-PxspknfxgZKbTyluFbI4YXCB6aNqIK-WI
-    short-id: '!!str 007260f47a1feb25'
-  server: 159.100.9.207
-  servername: crazimals.com
+- name: 🇩🇪DE_5|3.2MB/s
+  password: None
+  port: 443
+  server: 149.36.50.157
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 072384d2-af7e-4562-9d22-9db4eaeca640
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
+  type: http
+  username: null
+- client-fingerprint: firefox
   flow: xtls-rprx-vision
-  name: 🇩🇪DE_5|3.7MB/s
+  name: 🇩🇪DE_6|4.2MB/s
   network: tcp
-  port: '51185'
-  reality-opts:
-    public-key: VFDbAJQdqzKl7hL6SmUrhHHEORtILSsJHYWF67an1HU
-    short-id: '!!str 55a464180d3b1f7e'
-  server: 204.168.195.30
-  servername: amp-api-edge.apps.apple.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 12af43c3-84b4-4248-878b-b75f35835487
-  xudp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_6|4.0MB/s
-  network: raw
-  port: '8443'
+  port: 8443
   reality-opts:
     public-key: QMJRGTqZRbpeLpIAdvn6dhftuzrpwbtwmVG2s5IuuU0
     short-id: '!!str 00a02855ba568c29'
@@ -206,4 +194,24 @@ proxies:
   type: vless
   udp: true
   uuid: 9f5b9ca7-d0bb-4e50-a3ca-acf5968027fc
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_8|3.2MB/s
+  network: ws
+  port: '443'
+  server: 140.248.186.45
+  servername: ssl.fastly.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /
   xudp: true
