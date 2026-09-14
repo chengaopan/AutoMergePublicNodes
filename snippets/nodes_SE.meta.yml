@@ -9,59 +9,13 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: ios
-  name: 🇸🇪SE_1|1.7MB/s
-  network: xhttp
-  port: 443
-  server: 188.72.103.4
-  servername: shop.tgcenterapp.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: e43829fe-a157-46ff-a416-00cc97f91c64
-  xhttp-opts:
-    host: shop.tgcenterapp.ru
-    mode: packet-up
-    path: /api/cart/sync
-    seq-key: chunk
-    seq-placement: cookie
-    session-key: visitor_id
-    session-placement: path
-    uplink-data-placement: body
-    uplink-http-method: HEAD
-    x-padding-bytes: 100-1000
-    x-padding-header: X-Cache-Status
-    x-padding-key: _ts
-    x-padding-method: tokenish
-    x-padding-obfs-mode: true
-    x-padding-placement: queryInHeader
-- client-fingerprint: chrome
-  encryption: none
-  grpc-opts:
-    grpc-service-name: TunService
-  name: 🇸🇪SE_2|2.4MB/s
-  network: grpc
-  port: '8443'
-  reality-opts:
-    public-key: R8Mogel1wypEIpcUXnGmG1cuzT9POghNhqJcw4-CLx0
-    short-id: '!!str '
-  server: 170.168.99.8
-  servername: cdn.steamstatic.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4350213a-b4e7-262a-0bd7-bd16957cf71a
-  xudp: true
-- name: 🇸🇪SE_3|1.2MB/s
+- name: 🇸🇪SE_1|3.0MB/s
   port: 443
   server: 79.142.77.63
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇸🇪SE_4|2.4MB/s
+- name: 🇸🇪SE_2|4.0MB/s
   password: None
   port: 443
   server: 146.70.242.130
@@ -69,10 +23,18 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇸🇪SE_6|4.1MB/s
+- name: 🇸🇪SE_3|2.6MB/s
   password: None
   port: 443
   server: 146.70.242.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 🇸🇪SE_4|2.9MB/s
+  password: None
+  port: 443
+  server: 149.50.216.65
   skip-cert-verify: true
   tls: true
   type: http
