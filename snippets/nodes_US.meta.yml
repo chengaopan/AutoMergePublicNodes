@@ -24,12 +24,40 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '[ 🇺🇸 ] | @Cfox_SerVer #1'
-  password: dongtaiwang.com
-  port: 44356
-  server: 142.249.37.90
-  skip-cert-verify: false
-  sni: hy2.561891.xyz
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: 🇺🇸7@RK_VPS
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: s6gt5e4mof43sfg8
+  port: 52069
+  server: giftcard.gateway-stream.com
+  sni: giftcard.gateway-stream.com
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: 🇺🇸8@RK_VPS
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: s6gt5e4mof43sfg8
+  port: 52071
+  server: giftcard.gateway-stream.com
+  sni: giftcard.gateway-stream.com
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: 🇺🇸9@RK_VPS
+  obfs: salamander
+  obfs-password: fuw2k1ddrouwxr3u
+  password: s6gt5e4mof43sfg8
+  port: 52088
+  server: giftcard.gateway-stream.com
+  sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
 - cipher: aes-256-gcm
@@ -52,20 +80,33 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- cipher: aes-256-cfb
-  name: 🇺🇸US_1|3.9MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.16.81.205
-  type: ss
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_1|2.5MB/s
+  network: ws
+  port: '443'
+  server: sizsnjss-production.up.railway.app
+  servername: sizsnjss-production.up.railway.app
+  tls: true
+  type: vless
   udp: true
-- name: 🇺🇸US_2|3.0MB/s
+  uuid: 2d70d4f8-eb76-4ec5-9871-caeebd41bfe6
+  ws-opts:
+    headers:
+      Host: sizsnjss-production.up.railway.app
+      User-Agent: Mozilla/5.0 (Linux; Android 5.1.1; SM-J111M Build/LMY47V) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /ws/vless/2d70d4f8-eb76-4ec5-9871-caeebd41bfe6?ed=2048
+  xudp: true
+- name: 🇺🇸US_2|1.1MB/s
   port: 9443
   server: 38.95.111.226
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸US_3|3.9MB/s
+- name: 🇺🇸US_3|1.3MB/s
   password: github.com/Alvin9999-newpac/fanqiang
   port: 19000
   server: anytls2.864106.xyz
@@ -73,15 +114,7 @@ proxies:
   sni: anytls2.864106.xyz
   type: anytls
   udp: true
-- name: 🇺🇸US_4|3.5MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.199
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_5|4.7MB/s
+- name: 🇺🇸US_4|1.4MB/s
   password: None
   port: 9002
   server: 138.199.35.204
@@ -89,106 +122,7 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_6|4.4MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.216
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_7|4.2MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.211
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇸US_8|4.1MB/s
-  password: ''
-  port: 9002
-  server: 138.199.35.212
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
-- name: 🇺🇸US_9|4.5MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.210
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇸US_10|4.4MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.202
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_11|4.3MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_12|4.4MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.220
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- client-fingerprint: chrome
-  ech-opts:
-    enable: true
-    query-server-name: cloudflare-ech.com
-  name: 🇺🇸US_13|3.3MB/s
-  network: ws
-  port: 2083
-  server: 64.227.67.161
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /members/detail/gif?ed=2560
-- name: 🇺🇸US_14|2.0MB/s
-  password: ''
-  port: 9002
-  server: 138.199.35.197
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
-- name: 🇺🇸US_15|4.0MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.205
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇸US_16|4.0MB/s
-  password: ''
-  port: 9002
-  server: 138.199.35.208
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: ''
-- name: 🇺🇸US_17|2.7MB/s
+- name: 🇺🇸US_5|1.6MB/s
   password: ''
   port: 443
   server: 149.88.21.129
@@ -197,59 +131,120 @@ proxies:
   type: http
   udp: true
   username: ''
-- name: 🇺🇸US_18|3.4MB/s
-  password: ''
-  port: 8443
-  server: 104.219.236.83
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: ''
-- name: 🇺🇸US_19|3.0MB/s
+- name: 🇺🇸US_6|1.7MB/s
   port: 443
   server: 149.34.248.65
   skip-cert-verify: true
   sni: 149.34.248.65
   tls: true
   type: http
-- name: 🇺🇸US_20|3.1MB/s
-  password: test123
-  port: 1080
-  server: 104.168.249.36
-  type: socks5
-  username: test123
-- name: 🇺🇸US_21|1.8MB/s
-  password: test123
-  port: 1080
-  server: 185.145.99.41
-  type: socks5
-  udp: true
-  username: test123
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: grpc-tunnel
-  name: 🇺🇸US_22|1.1MB/s
-  network: grpc
-  port: '9880'
-  reality-opts:
-    public-key: bnRIb3Er1i-K6NGGByCO9UbGfOvu43ZoiK7ulPd1SzU
-    short-id: '!!str aabb'
-  server: 176.123.162.100
-  servername: dl.google.com
+- client-fingerprint: chrome
+  ech-opts:
+    enable: true
+    query-server-name: cloudflare-ech.com
+  name: 🇺🇸US_7|1.9MB/s
+  network: ws
+  port: 443
+  server: 104.18.189.153
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
   tls: true
   type: vless
-  udp: true
-  uuid: 5d16ac22-6eea-426f-b778-6f4c2961faef
-  xudp: true
-- name: 🇺🇸US_23|4.5MB/s
-  password: ''
-  port: '9002'
-  server: 138.199.35.209
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /stock/feedback?ed=2560
+- name: 🇺🇸US_8|3.6MB/s
+  password: None
+  port: 443
+  server: berniesbodybla.fun
+  skip-cert-verify: false
+  tls: true
+  type: http
+  username: null
+- name: 🇺🇸US_9|3.3MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.211
   skip-cert-verify: true
   tls: true
   type: http
-  username: ''
+  username: null
+- name: 🇺🇸US_10|3.8MB/s
+  port: 9002
+  server: 138.199.35.207
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_11|4.0MB/s
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  port: 4433
+  server: us2.xiaoliyu.cyou
+  skip-cert-verify: true
+  type: hysteria2
+- client-fingerprint: chrome
+  ech-opts:
+    enable: true
+    query-server-name: cloudflare-ech.com
+  name: 🇺🇸US_12|2.6MB/s
+  network: ws
+  port: 8443
+  server: 103.251.167.112
+  servername: cdn8848.776676.xyz
+  skip-cert-verify: true
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /library/lang?ed=2560
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_13|1.4MB/s
+  network: ws
+  port: '443'
+  server: 208.68.180.91
+  servername: thus-k.netnode.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1864223a-8797-4244-8e72-4d2801d040e1
+  ws-opts:
+    headers:
+      Host: thus-k.netnode.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/50.0.2661.102 Safari/537.36
+    path: /t.me/daily_free_vpn
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_14|1.7MB/s
+  network: ws
+  port: '443'
+  server: 45.147.48.28
+  servername: thus-k.netnode.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 1864223a-8797-4244-8e72-4d2801d040e1
+  ws-opts:
+    headers:
+      Host: thus-k.netnode.cc.cd
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; SM-J500M Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
+    path: /t.me/daily_free_vpn
+  xudp: true
+- name: 🇺🇸US_15|4.0MB/s
+  password: 'null'
+  port: '9002'
+  server: 138.199.35.213
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
 - client-fingerprint: chrome
   flow: xtls-rprx-vision
   name: US_speednode_0130
