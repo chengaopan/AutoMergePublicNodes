@@ -9,36 +9,32 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 🇸🇪SE_1|2.9MB/s
-  password: None
+- client-fingerprint: chrome
+  ech-opts:
+    enable: true
+    query-server-name: cloudflare-ech.com
+  name: 🇸🇪SE_1|3.6MB/s
+  network: ws
   port: 443
-  server: 146.70.242.130
+  server: 161.104.44.138
+  servername: cdn8848.776676.xyz
   skip-cert-verify: true
   tls: true
-  type: http
-  username: null
-- name: 🇸🇪SE_2|3.0MB/s
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /my/m/note?ed=2560
+- name: 🇸🇪SE_2|3.4MB/s
+  password: None
   port: 443
   server: 146.70.242.146
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: random
-  flow: xtls-rprx-vision
-  name: 🇸🇪SE_3|2.1MB/s
-  network: tcp
-  port: 443
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: '!!str 711ad7f475c35e5e'
-  server: cloud.figmafound.org
-  servername: cloud.figmafound.org
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-- name: 🇸🇪SE_4|1.7MB/s
+  username: null
+- name: 🇸🇪SE_3|2.9MB/s
   password: None
   port: 443
   server: 79.142.77.63
@@ -46,19 +42,3 @@ proxies:
   tls: true
   type: http
   username: null
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇸🇪SE_5|2.4MB/s
-  network: tcp
-  port: '443'
-  reality-opts:
-    public-key: H5CXI4RvEWW0TFPvFrnF1iX-05Y57ZYMMngjmkMfv24
-    short-id: '!!str 711ad7f475c35e5e'
-  server: 103.139.51.51
-  servername: cloud.figmafound.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 71b91642-93ed-4923-8cab-877e19bfc2d6
-  xudp: true

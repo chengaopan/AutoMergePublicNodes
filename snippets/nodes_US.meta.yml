@@ -27,12 +27,26 @@ proxies:
   skip-cert-verify: true
   sni: t.me%2Fripaojiedian
   type: trojan
-- cipher: aes-256-cfb
-  name: 🇺🇸US_1|4.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.148.195.154
-  type: ss
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_1|2.9MB/s
+  network: ws
+  port: '443'
+  server: 69.46.46.47
+  servername: ezaccess1-slv-ezaccess1-0f2f.up.railway.app
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: ezaccess1-slv-ezaccess1-0f2f.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/69.0.3497.100 Safari/537.36
+    path: /ws/vless/Default?ed=2048
+  xudp: true
 - name: US_speednode_0131
   password: 'null'
   port: 9002
@@ -46,26 +60,9 @@ proxies:
   ech-opts:
     enable: true
     query-server-name: cloudflare-ech.com
-  name: 🇺🇸US_3|3.3MB/s
+  name: 🇺🇸US_3|4.4MB/s
   network: ws
-  port: 2096
-  server: 104.17.20.103
-  servername: cdn8848.776676.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: cdn8848.776676.xyz
-    path: /section?ed=2560
-- client-fingerprint: chrome
-  ech-opts:
-    enable: true
-    query-server-name: cloudflare-ech.com
-  name: 🇺🇸US_4|3.9MB/s
-  network: ws
-  port: 2096
+  port: 2053
   server: 172.64.79.241
   servername: cdn8848.776676.xyz
   skip-cert-verify: true
@@ -75,8 +72,8 @@ proxies:
   ws-opts:
     headers:
       Host: cdn8848.776676.xyz
-    path: /group/htm?ed=2560
-- name: 🇺🇸US_5|1.9MB/s
+    path: /game/about/test?ed=2560
+- name: 🇺🇸US_4|2.6MB/s
   password: None
   port: 9002
   server: 138.199.35.218
@@ -84,15 +81,24 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_6|4.6MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.204
+- client-fingerprint: chrome
+  ech-opts:
+    enable: true
+    query-server-name: cloudflare-ech.com
+  name: 🇺🇸US_5|4.0MB/s
+  network: ws
+  port: 443
+  server: 172.64.79.57
+  servername: cdn8848.776676.xyz
   skip-cert-verify: true
   tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_7|4.5MB/s
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: cdn8848.776676.xyz
+    path: /dl?ed=2560
+- name: 🇺🇸US_6|3.8MB/s
   password: ''
   port: 9002
   server: 138.199.35.212
@@ -101,7 +107,30 @@ proxies:
   type: http
   udp: true
   username: ''
-- name: 🇺🇸US_8|3.7MB/s
+- name: 🇺🇸US_7|3.8MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.202
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 🇺🇸US_8|3.5MB/s
+  password: 'null'
+  port: 9002
+  server: 138.199.35.206
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇺🇸US_9|5.1MB/s
+  port: 9002
+  server: 138.199.35.210
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_10|4.6MB/s
   password: 'null'
   port: 9002
   server: 138.199.35.196
@@ -109,7 +138,7 @@ proxies:
   tls: true
   type: http
   username: 'null'
-- name: 🇺🇸US_9|4.5MB/s
+- name: 🇺🇸US_11|3.7MB/s
   password: None
   port: 9002
   server: 138.199.35.216
@@ -117,7 +146,15 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_10|1.1MB/s
+- name: 🇺🇸US_12|3.3MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.197
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 🇺🇸US_13|3.4MB/s
   password: None
   port: 9002
   server: 138.199.35.201
@@ -125,7 +162,15 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_11|2.7MB/s
+- name: 🇺🇸US_14|3.1MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.209
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 🇺🇸US_15|4.5MB/s
   password: None
   port: 9002
   server: 138.199.35.208
@@ -133,7 +178,15 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_12|3.5MB/s
+- name: 🇺🇸US_16|4.2MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.205
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
+- name: 🇺🇸US_17|4.5MB/s
   password: ''
   port: 9002
   server: 138.199.35.219
@@ -141,31 +194,21 @@ proxies:
   tls: true
   type: http
   username: ''
-- name: 🇺🇸US_13|4.3MB/s
+- name: 🇺🇸US_18|3.0MB/s
+  port: 9443
+  server: 38.95.111.226
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_19|3.6MB/s
   password: ''
   port: 9002
-  server: 138.199.35.203
+  server: 138.199.35.214
   skip-cert-verify: true
   tls: true
   type: http
   username: ''
-- name: 🇺🇸US_14|4.2MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.220
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_15|4.7MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.213
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: null
-- name: 🇺🇸US_16|3.6MB/s
+- name: 🇺🇸US_20|4.5MB/s
   password: None
   port: 9002
   server: 138.199.35.195
@@ -173,15 +216,22 @@ proxies:
   tls: true
   type: http
   username: null
-- name: 🇺🇸US_17|2.5MB/s
-  password: None
+- name: 🇺🇸US_21|1.0MB/s
+  password: ''
   port: 9002
-  server: 138.199.35.211
+  server: 138.199.35.217
   skip-cert-verify: true
   tls: true
   type: http
-  username: null
-- name: 🇺🇸US_18|1.2MB/s
+  username: ''
+- name: 🇺🇸US_22|1.4MB/s
+  port: 443
+  server: 216.107.139.82
+  skip-cert-verify: true
+  sni: 991cc80f13caf81d3426ddebb2da7f49-92ff472ddc24e5b7.apache-iv.com
+  tls: true
+  type: http
+- name: 🇺🇸US_23|1.7MB/s
   password: None
   port: 443
   server: 149.88.21.129
@@ -191,25 +241,50 @@ proxies:
   username: null
 - client-fingerprint: chrome
   encryption: none
-  flow: xtls-rprx-vision
-  name: 🇺🇸US_19|1.1MB/s
-  network: tcp
-  port: '36171'
-  reality-opts:
-    public-key: IYhfI8lsuJrFV8zzp1XXbh9sPkvBlBNOTtJwBubhxxw
-    short-id: '!!str e4eb3ada03de9e92'
-  server: g2.kxpqus.bestxau.ir
-  servername: play-apps-features.googleusercontent.com
+  name: 🇺🇸US_24|2.8MB/s
+  network: ws
+  port: '443'
+  server: cubigatoro-production.up.railway.app
+  servername: cubigatoro-production.up.railway.app
   tls: true
   type: vless
   udp: true
-  uuid: ccc252f4-7f23-43b4-a8d5-6c0aee8633f0
+  uuid: 96eda25e-7f48-4647-ad8b-6f8b2fbe6e3b
+  ws-opts:
+    headers:
+      Host: cubigatoro-production.up.railway.app
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/54.0.2840.99 Safari/537.36
+    path: /cbgtr-ws-1
   xudp: true
+- client-fingerprint: random
+  flow: xtls-rprx-vision
+  name: 🇺🇸US_25|2.4MB/s
+  network: tcp
+  port: '8443'
+  reality-opts:
+    public-key: 8OtJJ5lKbMik_x628CcrqZczsPtiyyoFdNn7j4aneEs
+    short-id: '!!str 82eda5cc'
+  server: 192.3.20.155
+  servername: www.debian.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9a9a2876-404e-4cb0-8c9e-546f390a3bc0
+  xudp: true
+- name: 🇺🇸US_26|2.9MB/s
+  password: None
+  port: '9002'
+  server: 138.199.35.212
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
 - cipher: aes-256-cfb
-  name: 🇺🇸US_20|3.2MB/s
+  name: 🇺🇸US_27|4.2MB/s
   password: amazonskr05
   port: '443'
-  server: 3.142.197.111
+  server: 3.145.36.155
   type: ss
   udp: true
 - client-fingerprint: chrome
