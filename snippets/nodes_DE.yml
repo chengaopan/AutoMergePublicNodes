@@ -1,15 +1,18 @@
 proxies:
-- cipher: aes-256-cfb
-  name: 🇩🇪DE_3|4.2MB/s
-  password: amazonskr05
-  port: '443'
-  server: 3.120.158.57
-  type: ss
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇩🇪DE_5|2.3MB/s
+  network: ws
+  password: Km/pIG4AGCjCOiGWj5FsWA==
+  port: '25040'
+  server: node8.quaxly.com
+  skip-cert-verify: true
+  sni: /gay-anal
+  type: trojan
   udp: true
-- cipher: aes-256-cfb
-  name: 🇩🇪DE_4|1.6MB/s
-  password: amazonskr05
-  port: '443'
-  server: 63.176.107.205
-  type: ss
-  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.79 Safari/537.36
+    path: /node8.quaxly.com
