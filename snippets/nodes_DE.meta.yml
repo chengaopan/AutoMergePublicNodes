@@ -43,19 +43,24 @@ proxies:
   sni: de.jey.cc.cd
   tls: false
   type: hysteria2
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  name: 🇩🇪DE_1|3.4MB/s
-  network: xhttp
-  port: 2087
-  server: dee338dd.localip.ir
-  servername: denet1.17e1feeuzi.online
-  tls: true
-  type: vless
+- cipher: aes-256-cfb
+  name: 🇩🇪DE_1|1.3MB/s
+  password: amazonskr05
+  port: '443'
+  server: 63.176.107.205
+  type: ss
   udp: true
-  uuid: fd6fb48f-b324-4a82-9dcd-f8bdb1bd5301
-  xhttp-opts:
-    host: denet1.17e1feeuzi.online
-    mode: stream-one
-    path: /meti
+- name: 🇩🇪DE_2|2.6MB/s
+  port: 443
+  server: 149.36.50.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_3|1.3MB/s
+  password: None
+  port: 443
+  server: 149.36.50.157
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: null
