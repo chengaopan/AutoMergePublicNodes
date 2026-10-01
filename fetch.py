@@ -14,6 +14,7 @@ import yaml
 import json
 import base64
 from urllib.parse import quote, unquote, urlparse, ParseResult
+import ipaddress
 import requests
 from requests_file import FileAdapter
 import datetime
@@ -24,7 +25,8 @@ import sys
 import os
 import copy
 from types import FunctionType as function
-from typing import Set, List, Dict, Union, Callable, Any, Optional, Iterable, TypedDict
+from typing import Set, List, Dict, Union, Callable, Any, Optional, Iterable, cast
+from typing_extensions import TypedDict, Self
 
 class TYPE_FETCH_CONFIG(TypedDict):
     stop: bool
@@ -85,10 +87,25 @@ def normpath(url: str):
         return url.replace('/./', '/'+basedir.lstrip('/').replace(os.sep, '/')+'/')
     return url
 
+def isValidHost(host: str):
+    if ('[' in host) ^ (']' in host): return False
+    if '[' in host and ']' in host:
+        if not host.startswith('['): return False
+        if not host.endswith(']'): return False
+        try:
+            ip = ipaddress.ip_address(host[1:-1])
+        except ValueError:
+            return False
+        else:
+            if isinstance(ip, ipaddress.IPv4Address):
+                return False
+    return True
+
 DEFAULT_UUID = '8'*8+'-8888'*3+'-'+'8'*12
 
 CLASH2VMESS = {'name': 'ps', 'server': 'add', 'port': 'port', 'uuid': 'id',
-              'alterId': 'aid', 'cipher': 'scy', 'network': 'net', 'servername': 'sni'}
+              'alterId': 'aid', 'cipher': 'scy', 'network': 'net',
+              'servername': 'sni', 'skip-cert-verify': 'skip-cert-verify'}
 VMESS2CLASH: Dict[str, str] = {}
 for k,v in CLASH2VMESS.items(): VMESS2CLASH[v] = k
 
@@ -103,13 +120,22 @@ CLASH_CIPHER_SS = "aes-128-gcm aes-192-gcm aes-256-gcm aes-128-cfb aes-192-cfb \
         xchacha20 chacha20-ietf-poly1305 xchacha20-ietf-poly1305".split()
 CLASH_SSR_OBFS = "plain http_simple http_post random_head tls1.2_ticket_auth tls1.2_ticket_fastauth".split()
 CLASH_SSR_PROTOCOL = "origin auth_sha1_v4 auth_aes128_md5 auth_aes128_sha1 auth_chain_a auth_chain_b".split()
+META_CIPHER_VMESS = "auto aes-128-gcm chacha20-poly1305 none zero".split()
+META_CIPHER_SS = """aes-128-ctr aes-128-cfb aes-128-gcm aes-128-ccm aes-128-gcm-siv
+        aes-192-ctr aes-192-cfb aes-192-gcm aes-192-ccm aes-256-ctr aes-256-cfb
+        aes-256-gcm aes-256-ccm aes-256-gcm-siv chacha20-ietf chacha20
+        chacha20-ietf-poly1305 chacha8-ietf-poly1305 xchacha20
+        xchacha20-ietf-poly1305 xchacha8-ietf-poly1305 2022-blake3-aes-128-gcm
+        2022-blake3-aes-256-gcm 2022-blake3-chacha20-poly1305 lea-128-gcm
+        lea-192-gcm lea-256-gcm rabbit128-poly1305 aegis-128l aegis-256 aez-384
+        deoxys-ii-256-128 rc4-md5 none""".split()
 
 FAKE_IPS = "8.8.8.8; 8.8.4.4; 4.2.2.2; 4.2.2.1; 114.114.114.114; 127.0.0.1; 0.0.0.0".split('; ')
 FAKE_DOMAINS = ".google.com .github.com".split()
 
 FETCH_TIMEOUT = (6, 5)
 
-BANNED_WORDS = b64decodes('5rOV6L2uIOi9ruWtkCDova4g57uDIOawlCDlip8g5L2/5YqyIOWKsiDliqrlipsg5Yqg5rK5IOWlsyDmnYMg6L+Q5YqoIG9uZ3RhaXdhbg==').split()
+BANNED_WORDS = b64decodes('5rOV6L2uIOi9ruWtkCDova4g57uDIOawlCDlip8g5L2/5YqyIOWKsiDliqrlipsg5Yqg5rK5IOWlsyDmnYMg6L+Q5YqoIOaWsOmXuyDnv7vlopkg6Ieq55SxIG9uZ3RhaXdhbiBBbHZpbjk5OTkgbmV3cGFjIGZhbnFpYW5n').split()
 
 # !!! JUST FOR DEBUGING !!!
 DEBUG_NO_NODES = os.path.exists("local_NO_NODES")
@@ -122,7 +148,7 @@ vmess://ew0KICAidiI6ICIyIiwNCiAgInBzIjogIlx1NUU4Nlx1Nzk1RFx1NEUyRFx1NTZGRFx1NTE3
 """
 
 d = datetime.datetime.now()
-if FETCH_CONFIG['stop'] or ((d.month, d.day) in ((6, 4), (7, 1), (10, 1)) and not (LOCAL or PROXY)):
+if FETCH_CONFIG['stop'] or ((d.month, d.day) in ((6, 4), (7, 1)) and not (LOCAL or PROXY)):
     FETCH_CONFIG.update({
         'stop': True,
         'name_show_type': False,
@@ -144,7 +170,7 @@ class NotANode(Exception): pass
 
 class Node:
     gNames: Set[str] = set()
-    class DATA_TYPE(TypedDict):
+    class DATA_TYPE(TypedDict, extra_items=Any):
         name: str
         type: str
         server: str
@@ -157,12 +183,19 @@ class Node:
         elif isinstance(data, str):
             self.load_url(data)
         else: raise TypeError(f"Got {type(data)}")
+        self.data['type'] = self.type
+        self.fix()
+        self.names: Set[str] = {self.data['name']}
+
+    def fix(self):
         if not self.data['name']:
             self.data['name'] = "未命名"
         if 'password' in self.data:
             self.data['password'] = str(self.data['password'])
-        self.data['type'] = self.type
-        self.names: Set[str] = {self.data['name']}
+        assert 'server' in self.data
+        self.data['port'] = int(self.data['port'])
+        if self.type in ('http', 'socks5'):
+            self.data = {k:v for k,v in self.data.items() if v not in ('', None)}
 
     def __str__(self):
         return self.url
@@ -224,7 +257,7 @@ class Node:
             traceback.print_exc(file=sys.stderr)
             return hash(self.url)
 
-    def __eq__(self, other: Union['Node', Any]):
+    def __eq__(self, other: Union[Self, Any]):
         if isinstance(other, self.__class__):
             return hash(self) == hash(other)
         else:
@@ -240,7 +273,8 @@ class Node:
         else:
             fragment = ''
         scheme0, r = url.split('://', 1)
-        netloc, query = r.split('/?', 1)
+        netloc, query = r.split('?', 1)
+        netloc = netloc.rstrip('/')
         return ParseResult(scheme0 or scheme, netloc, '', '', query, fragment)
 
     @classmethod
@@ -251,7 +285,11 @@ class Node:
             url = '#'.join(segs[:-1])
         else:
             fragment = None
-        res = urlparse(url, scheme, allow_fragments=False)
+        try:
+            res = urlparse(url, scheme, allow_fragments=False)
+        except ValueError:
+            # vless://[XXX]@server:443?#
+            res = cls.urlparse0(url, scheme)
         if res.netloc.endswith(':'):
             # hy2://https://XXX@server:443/?#
             return cls.urlparse0(url, scheme)
@@ -288,21 +326,22 @@ class Node:
                 self.data[VMESS2CLASH[key]] = val
         self.data['tls'] = (v['tls'] == 'tls')
         self.data['alterId'] = int(self.data['alterId'])
+        self.data['port'] = int(self.data['port'])
         if v['net'] == 'ws':
             opts = {}
-            if 'path' in v:
+            if 'path' in v and v['path']:
                 opts['path'] = v['path']
-            if 'host' in v:
+            if 'host' in v and v['host']:
                 opts['headers'] = {'Host': v['host']}
             self.data['ws-opts'] = opts
         elif v['net'] == 'h2':
             opts = {}
-            if 'path' in v:
+            if 'path' in v and v['path']:
                 opts['path'] = v['path']
-            if 'host' in v:
+            if 'host' in v and v['host']:
                 opts['host'] = v['host'].split(',')
             self.data['h2-opts'] = opts
-        elif v['net'] == 'grpc' and 'path' in v:
+        elif v['net'] == 'grpc' and 'path' in v and v['path']:
             self.data['grpc-opts'] = {'grpc-service-name': v['path']}
 
     def _load_ss(self, url: str, dt: str):
@@ -320,14 +359,20 @@ class Node:
             port = int(port)
         except ValueError:
             raise UnsupportedType('ss', 'SP')
-        info = '@'.join(info)
+        info = unquote('@'.join(info))
         if not ':' in info:
-            info = b64decodes_safe(info)
+            try:
+                decoded = b64decodes_safe(info)
+            except:
+                pass
+            else:
+                if decoded.isprintable():
+                    info = decoded
         if ':' in info:
-            cipher, passwd = info.split(':')
+            cipher, passwd = info.split(':', 1)
         else:
-            cipher = info
-            passwd = ''
+            cipher = 'none'
+            passwd = info
         self.data = {'name': unquote(name), 'server': server,
                 'port': port, 'type': 'ss', 'password': passwd, 'cipher': cipher}
 
@@ -365,7 +410,10 @@ class Node:
                 'port': parsed.port, 'type': 'trojan', 'password': unquote(parsed.username)}
         if not parsed.query: return
         for kv in parsed.query.split('&'):
-            k,v = kv.split('=', 1)
+            try:
+                k,v = kv.split('=', 1)
+            except ValueError:
+                continue
             if k in ('allowInsecure', 'insecure'):
                 self.data['skip-cert-verify'] = (v != '0')
             elif k == 'sni': self.data['sni'] = v
@@ -394,9 +442,12 @@ class Node:
                 'port': parsed.port, 'type': 'vless', 'uuid': unquote(parsed.username)}
         self.data['tls'] = False
         if not parsed.query: return
-        for kv in parsed.query.split('&'):
-            k,v = kv.split('=', 1)
-            if k in ('allowInsecure', 'insecure'):
+        for kv in unquote(parsed.query).split('&'):
+            try:
+                k,v = kv.split('=', 1)
+            except ValueError:
+                continue
+            if k in ('allowInsecure', 'insecure', 'skip-cert-verify'):
                 self.data['skip-cert-verify'] = (v != '0')
             elif k == 'sni': self.data['servername'] = v
             elif k == 'alpn':
@@ -428,11 +479,14 @@ class Node:
                 if 'reality-opts' not in self.data:
                     self.data['reality-opts'] = {}
                 self.data['reality-opts']['public-key'] = v
+                self.data['tls'] = True
             elif k == 'sid':
                 if 'reality-opts' not in self.data:
                     self.data['reality-opts'] = {}
                 self.data['reality-opts']['short-id'] = v
-            # TODO: Unused key encryption
+                self.data['tls'] = True
+            elif k == 'encryption':
+                self.data['encryption'] = v
 
     def _load_hysteria2(self, url: str, dt: str):
         parsed = self.urlparse(url)
@@ -498,18 +552,17 @@ class Node:
             'username': parsed.username,
             'password': parsed.password
         }
-        self.data = {k:v for k,v in self.data.items() if v != None}
-        if self.type.startswith('socks'):
-            self.type = self.data['type']
+        self.type = self.data['type']
 
     _load_http = _load__legacy
     _load_https = _load__legacy
     _load_socks5 = _load__legacy
     _load_socks = _load__legacy
 
-    def update(self, node: 'Node'):
+    def update(self, node: Self):
         self.data.update(node.data)
         self.names.union(node.names)
+        self.fix()
 
     @property
     def name(self):
@@ -517,7 +570,8 @@ class Node:
             r = 0
             if name.startswith('@'):
                 r -= 5
-            if any(127462<=ord(c)<=127487 for c in name):
+            if any('\N{REGIONAL INDICATOR SYMBOL LETTER A}' <= c <=
+                '\N{REGIONAL INDICATOR SYMBOL LETTER Z}' for c in name):
                 r += 6
             if '\N{RIGHT-TO-LEFT MARK}' in name:
                 r -= 3
@@ -568,12 +622,13 @@ class Node:
     def isfake(self) -> bool:
         if FETCH_CONFIG['stop']: return False
         try:
-            if 'server' not in self.data: return True
-            if self.data['server'] in FAKE_IPS: return True
-            if int(str(self.data['port'])) < 20: return True
+            server = self.data['server']
+            if not isValidHost(server): return True
+            if server in FAKE_IPS: return True
             for domain in FAKE_DOMAINS:
-                if self.data['server'] == domain.lstrip('.'): return True
-                if self.data['server'].endswith(domain): return True
+                if server == domain.lstrip('.'): return True
+                if server.endswith(domain): return True
+            if self.data['port'] < 20: return True
             # TODO: Fake UUID
             # if self.type == 'vmess' and len(self.data['uuid']) != len(DEFAULT_UUID):
             #     return True
@@ -777,32 +832,44 @@ class Node:
         if self.isfake: return False
         if 'obfs' in self.data and 'obfs-password' not in self.data:
             return False
-        if self.type == 'vmess':
-            supported = CLASH_CIPHER_VMESS
-        elif self.type == 'ss' or self.type == 'ssr':
-            supported = CLASH_CIPHER_SS
-        elif self.type == 'trojan': return True
-        elif not meta: return False
-        else: return True
+        supported_cipher = None
+        if meta:
+            if self.type == 'vmess':
+                supported_cipher = META_CIPHER_VMESS
+            elif self.type == 'ss' or self.type == 'ssr':
+                supported_cipher = META_CIPHER_SS
+            elif self.type == 'trojan': return True
+            elif self.type == 'vless':
+                if 'flow' in self.data and self.data['flow'] != 'xtls-rprx-vision':
+                    return False
+        else:
+            if self.type == 'vmess':
+                supported_cipher = CLASH_CIPHER_VMESS
+            elif self.type == 'ss' or self.type == 'ssr':
+                supported_cipher = CLASH_CIPHER_SS
+            elif self.type == 'trojan': return True
+            else: return False
+        if (supported_cipher and 'cipher' in self.data and self.data['cipher']
+                and self.data['cipher'] not in supported_cipher): return False
+        if self.type == 'ssr':
+            if 'obfs' in self.data and self.data['obfs'] not in CLASH_SSR_OBFS:
+                return False
+            if 'protocol' in self.data and self.data['protocol'] not in CLASH_SSR_PROTOCOL:
+                return False
         # Vmess / SS / SSR
         if 'network' in self.data and self.data['network'] in ('h2','grpc'):
             # A quick fix for #2
             self.data['tls'] = True
-        if 'cipher' not in self.data: return True
-        if not self.data['cipher']: return True
-        if self.data['cipher'] not in supported: return False
-        try:
-            if self.type == 'ssr':
-                if 'obfs' in self.data and self.data['obfs'] not in CLASH_SSR_OBFS:
+        if 'plugin-opts' in self.data and 'mode' in self.data['plugin-opts'] \
+                and not self.data['plugin-opts']['mode']: return False
+        if 'reality-opts' in self.data:
+            self.data['tls'] = True
+            if self.data['reality-opts']:
+                if ('public-key' in self.data['reality-opts'] and 
+                        len(self.data['reality-opts']) != 43):
                     return False
-                if 'protocol' in self.data and self.data['protocol'] not in CLASH_SSR_PROTOCOL:
-                    return False
-            if 'plugin-opts' in self.data and 'mode' in self.data['plugin-opts'] \
-                    and not self.data['plugin-opts']['mode']: return False
-        except Exception:
-            print("无法验证的 Clash 节点！", file=sys.stderr)
-            traceback.print_exc(file=sys.stderr)
-            return False
+            else:
+                return False
         return True
 
     def supports_meta(self) -> bool:
@@ -897,7 +964,7 @@ class Source():
         tp = None
         pending = None
         early_stop = False
-        for chunk in r.iter_content():
+        for chunk in r.iter_content(10240):
             if early_stop: pending = None; break
             chunk: bytes
             if tp == 'sub':
@@ -1015,7 +1082,7 @@ class DomainTree:
 
 def extract(url: str) -> Union[Set[str], int]:
     global session
-    res = session.get(url)
+    res = session.get(normpath(url))
     if res.status_code != 200: return res.status_code
     urls: Set[str] = set()
     mark = '#'+url.split('#', 1)[1] if '#' in url else ''
@@ -1057,7 +1124,8 @@ def merge(source_obj: Source, sourceId=-1):
 
 def raw2fastly(url: str) -> str:
     if not LOCAL: return url
-    if url.startswith("https://raw.githubusercontent.com/"):
+    if url.startswith("https://raw.githubusercontent.com/") or \
+            url.startswith("https://gist.githubusercontent.com/"):
         return "https://ghproxy.net/"+url
     # url: Union[str, List[str]]
     # if url.startswith("https://raw.githubusercontent.com/"):
@@ -1271,7 +1339,6 @@ def main():
 
     print("\n正在写出 V2Ray 订阅...")
     txt = ""
-    unsupports = 0
     for hashp, p in merged.items():
         try:
             if p.supports_ray():
@@ -1279,12 +1346,11 @@ def main():
                     txt += p.url + '\n'
                 except UnsupportedType as e:
                     print(f"不支持的类型：{e}")
-            else: unsupports += 1
         except: traceback.print_exc()
     for p in unknown:
         txt += p+'\n'
-    print(f"共有 {len(merged)-unsupports} 个正常节点，{len(unknown)} 个无法解析的节点，共",
-            len(merged)+len(unknown),f"个。{unsupports} 个节点不被 V2Ray 支持。")
+    print(f"有 {len(merged)} 个正常节点，{len(unknown)} 个无法解析的节点，共",
+            len(merged)+len(unknown), "个。")
 
     with open("list_raw.txt", 'w', encoding="utf-8") as f:
         f.write(txt)
