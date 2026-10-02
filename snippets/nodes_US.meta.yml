@@ -10,7 +10,7 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #1'
+  name: 🇺🇸[www.v2nodes.com] vless-US-1...
   network: grpc
   port: 443
   server: 201.34.159.221
@@ -18,7 +18,7 @@ proxies:
   tls: true
   type: vless
   uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
-- name: '🇺🇸[www.v2nodes.com] vless-US-1... #3'
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #2'
   network: ws
   port: 443
   server: 158.94.173.107
@@ -30,33 +30,20 @@ proxies:
     headers:
       Host: shephe.dpdns.org
     path: /fp=chrome
-- name: '🇺🇸[www.v2nodes.com] vless-US-1... #5'
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #4'
   port: 443
   server: 169.40.42.182
   tls: false
   type: vless
   uuid: d65cc14c-f53f-4fe2-b262-97856601319c
-- name: '🇺🇸[www.v2nodes.com] vless-US-1... #7'
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #5'
   port: 8443
   server: 104.252.19.114
   tls: false
   type: vless
   uuid: 40cba749-bca9-4089-9c02-84a357244ce0
-- client-fingerprint: edge
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #8'
-  network: ws
-  port: 8443
-  server: 85.149.211.28
-  servername: hk.152568.xyz
-  tls: true
-  type: vless
-  uuid: 0250424c-ae75-4b6b-890f-3fe26fae36c3
-  ws-opts:
-    headers:
-      Host: hk.152568.xyz
-    path: /cdn/packages/runtime-core.tar.gz
 - client-fingerprint: random
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #9'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #6'
   network: ws
   port: 59686
   server: 154.17.228.81
@@ -68,7 +55,7 @@ proxies:
     headers:
       Host: 123.714541.xyz
     path: /Ra-vl
-- name: '🇺🇸[www.v2nodes.com] vless-US-1... #12'
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #8'
   network: ws
   port: 8081
   server: 162.35.104.144
@@ -77,6 +64,19 @@ proxies:
   uuid: 54ee5e59-55a3-4599-83ff-0c67b3f411b2
   ws-opts:
     path: /vless-test
+- client-fingerprint: chrome
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #9'
+  network: ws
+  port: 443
+  server: us7-2.998998.best
+  servername: server9.9966338.xyz
+  tls: true
+  type: vless
+  uuid: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
+  ws-opts:
+    headers:
+      Host: server9.9966338.xyz
+    path: /imnotarealherox
 - cipher: aes-128-gcm
   name: 🇺🇸[www.v2nodes.com] ss-US-1584...
   password: 87e9cb62706b5cd08da95b8b423cb673
@@ -173,8 +173,17 @@ proxies:
         like Gecko) Chrome/54.0.2840.99 Safari/537.36
     path: /?ed=2560
   xudp: true
+- auth: 19f72087-4591-4d72-930b-2697078ec2be
+  name: '🇷🇺 俄罗斯 | RUS #2'
+  password: 19f72087-4591-4d72-930b-2697078ec2be
+  port: 18333
+  server: ru1.xiaoliyu.cyou
+  skip-cert-verify: true
+  sni: ru1.xiaoliyu.cyou
+  tls: false
+  type: hysteria2
 - auth: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
-  name: '🇷🇺 俄罗斯 | RUS #1'
+  name: '🇷🇺 俄罗斯 | RUS #3'
   password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
   port: 22443
   server: 91.240.86.70
@@ -182,114 +191,26 @@ proxies:
   sni: 91.240.86.70
   tls: false
   type: hysteria2
-- alpn:
-  - h2
-  client-fingerprint: safari
-  name: '🇷🇺 俄罗斯 | RUS #2'
-  network: xhttp
-  port: 2053
-  server: 78.159.246.179
-  servername: randomquaint.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: c2bbf90c-7f13-47dd-b68d-f0bd38b6b3c8
-  xhttp-opts:
-    host: randomquaint.net
-    mode: auto
-    path: /api/v1/upload
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #2'
-  network: ws
-  port: 443
-  server: minimize-evenness.cdn-content.com
-  servername: minimize-evenness.cdn-content.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 81a12262-81a7-45dc-8157-a6abc0c0cda3
-  ws-opts:
-    headers:
-      Host: minimize-evenness.cdn-content.com
-    path: /ws
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #3'
-  network: ws
-  port: 443
-  server: piracy-android.video-streams.org
-  servername: piracy-android.video-streams.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: ecbc4229-e8d3-4607-8f02-fd592c9a0743
-  ws-opts:
-    headers:
-      Host: piracy-android.video-streams.org
-    path: /ws
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #4'
-  network: ws
-  port: 443
-  server: 151.101.1.242
-  servername: grimness-backlogs.cdn-content.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 57a8ea50-1a8d-4e9f-b6e8-e991a9914a8a
-  ws-opts:
-    headers:
-      Host: grimness-backlogs.cdn-content.com
-    path: /ws
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #5'
-  network: ws
-  port: 443
-  server: grimness-backlogs.cdn-content.com
-  servername: grimness-backlogs.cdn-content.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: c7f0b683-61ea-48c5-93f1-783459ba2124
-  ws-opts:
-    headers:
-      Host: grimness-backlogs.cdn-content.com
-    path: /ws
-- name: 🇺🇸 美国 | USA 6
-  password: github.com/Alvin9999-newpac/fanqiang
-  port: 19000
-  server: anytls2.864106.xyz
+- auth: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  name: '🇷🇺 俄罗斯 | RUS #4'
+  password: 3f63c86c-ac4a-4900-85cf-4fedf93c2ca5
+  port: 24443
+  server: 91.240.86.70
   skip-cert-verify: true
-  sni: anytls2.864106.xyz
-  type: anytls
+  sni: hy.quattro-tech.ru
+  tls: false
+  type: hysteria2
+- cipher: chacha20-ietf-poly1305
+  name: '🇷🇺 俄罗斯 | RUS #5'
+  password: MBiJEJ5VgZXVSj58CEEFZA
+  port: 2055
+  server: 80.87.197.181
+  type: ss
   udp: true
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #6'
-  network: ws
-  port: 443
-  server: 151.101.73.242
-  servername: minimize-evenness.cdn-content.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: a375fa6a-bef7-4f71-92f0-17976e5afaac
-  ws-opts:
-    headers:
-      Host: minimize-evenness.cdn-content.com
-    path: /ws
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #7'
+  name: '🇺🇸 美国 | USA #1'
   network: ws
   port: 443
   server: bounded-crammed.video-streams.org
@@ -297,57 +218,284 @@ proxies:
   tls: true
   type: vless
   udp: true
-  uuid: f80cfcb4-9bd1-4a0d-a50b-28e3eea107d8
+  uuid: b973d146-31db-4ec4-8d62-c034598d4d79
   ws-opts:
     headers:
       Host: bounded-crammed.video-streams.org
     path: /ws
-- client-fingerprint: firefox
-  name: '🇺🇸 美国 | USA #8'
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #2'
+  network: ws
+  port: 443
+  server: v2ray.aizgl.com
+  servername: v2ray.aizgl.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b21fbc7-00c2-4665-9788-02153832f9e5
+  ws-opts:
+    headers:
+      Host: v2ray.aizgl.com
+    path: /xray-ws
+- name: '🇺🇸 美国 | USA #3'
+  network: ws
+  port: 8880
+  server: 92.53.189.40
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime19.workers.dev
+    path: /
+- client-fingerprint: unsafe
+  name: '🇺🇸 美国 | USA #4'
+  network: ws
+  port: 443
+  server: 172.67.73.213
+  servername: aio.eth0.dpdns.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8d42d29a-ed53-4684-a9ff-6b33826149de
+  ws-opts:
+    headers:
+      Host: aio.eth0.dpdns.org
+    path: /aioproxybot/94.23.144.99-2053
+- name: 🇺🇸 美国 | USA 5
+  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
+  port: 32578
+  server: svip.skycon808.com
+  skip-cert-verify: true
+  sni: us58.pulsarcore.site
+  type: anytls
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #5'
+  network: ws
+  port: 443
+  server: bounded-crammed.video-streams.org
+  servername: bounded-crammed.video-streams.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 06183f61-967a-47a0-b09e-2a877d4f0c54
+  ws-opts:
+    headers:
+      Host: bounded-crammed.video-streams.org
+    path: /ws
+- name: '🇺🇸 美国 | USA #6'
+  network: ws
+  port: 8880
+  server: 172.67.179.98
+  tls: false
+  type: vless
+  udp: true
+  uuid: 83744063-3ddc-4ed9-b6e5-d207ce6ed48e
+  ws-opts:
+    headers:
+      Host: still-pine-d15e.368-b2a.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇺🇸 美国 | USA 8
+  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
+  port: 59585
+  server: yazhouany02.downapptwo.cc
+  skip-cert-verify: true
+  sni: us26.pulsarcore.site
+  type: anytls
+  udp: true
+- name: '🇺🇸 美国 | USA #7'
+  network: ws
+  port: 8880
+  server: cf9.466688.xyz
+  tls: false
+  type: vless
+  udp: true
+  uuid: 9c772ed7-2843-4554-9a96-4a88f827de58
+  ws-opts:
+    headers:
+      Host: nameless-tree-08b8.352.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net@https://t.me/QiangLieTuiJian
+- name: 🇺🇸 美国 | USA 10
+  network: ws
+  password: humanity
+  port: 443
+  server: 188.114.96.3
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #9'
   network: ws
   port: 443
   server: 151.101.65.242
+  servername: adheres-scruple.quick-cdn.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: e8bec62c-ba78-45e9-a216-44c1a138b88d
+  ws-opts:
+    headers:
+      Host: adheres-scruple.quick-cdn.net
+    path: /ws
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #10'
+  network: ws
+  port: 443
+  server: minimize-evenness.cdn-content.com
+  servername: minimize-evenness.cdn-content.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9760fa51-423f-4000-9dd8-15eccf811982
+  ws-opts:
+    headers:
+      Host: minimize-evenness.cdn-content.com
+    path: /ws
+- auth: https://xship.2fa.cat
+  name: 🇺🇸 美国 | USA 13
+  password: https://xship.2fa.cat
+  port: 443
+  server: starlink-ft.251313.xyz
+  skip-cert-verify: true
+  sni: xship.top
+  type: hysteria2
+  udp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #11'
+  network: ws
+  port: 443
+  server: grimness-backlogs.cdn-content.com
   servername: grimness-backlogs.cdn-content.com
   tls: true
   type: vless
   udp: true
-  uuid: d1ae5c78-3b70-40e6-899d-9f3650208368
+  uuid: eb199167-16d6-45d0-aadb-314cab5a4e72
   ws-opts:
     headers:
       Host: grimness-backlogs.cdn-content.com
     path: /ws
-- alpn:
-  - http/1.1
-  client-fingerprint: unsafe
-  name: '🇺🇸 美国 | USA #9'
+- client-fingerprint: randomized
+  name: '🇺🇸 美国 | USA #12'
   network: ws
   port: 443
-  server: 151.101.1.242
-  servername: adheres-scruple.quick-cdn.net
+  server: 104.21.67.122
+  servername: novantunnel.tech
   tls: true
   type: vless
   udp: true
-  uuid: d643c485-eb5d-4085-a7f6-1889049384cb
+  uuid: ec5cf915-2203-403c-9710-dbd553857929
   ws-opts:
     headers:
-      Host: adheres-scruple.quick-cdn.net
-    path: /ws
+      Host: novantunnel.tech
+    path: /Novan-AE27
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #10'
+  name: '🇺🇸 美国 | USA #13'
   network: ws
   port: 443
-  server: adheres-scruple.quick-cdn.net
-  servername: adheres-scruple.quick-cdn.net
+  server: 172.64.146.228
+  servername: edfc774f.69lover.site
   tls: true
   type: vless
   udp: true
-  uuid: fadcfc37-376a-42e6-a5cd-cb65988663d3
+  uuid: 91d28760-ecf1-450b-9170-d310111a0e6d
   ws-opts:
     headers:
-      Host: adheres-scruple.quick-cdn.net
+      Host: edfc774f.69lover.site
+    path: /api/v2/63e9687fa53e441c/stream
+- name: '🇺🇸 美国 | USA #14'
+  network: ws
+  port: 8880
+  server: 185.207.196.30
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime11.workers.dev
+    path: /?ed=2560
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: cdn.v1.AssetService
+  name: 🇺🇸 美国 | USA 18
+  network: grpc
+  port: 443
+  server: 201.34.159.213
+  servername: us1.g4m1.biz
+  tls: true
+  type: vless
+  udp: true
+  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  name: '🇺🇸 美国 | USA #16'
+  network: ws
+  port: 443
+  server: 151.101.1.242
+  servername: minimize-evenness.cdn-content.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d072677e-98c2-4ff0-a38f-4853af740ee1
+  ws-opts:
+    headers:
+      Host: minimize-evenness.cdn-content.com
     path: /ws
+- name: '🇺🇸 美国 | USA #17'
+  network: ws
+  port: 8880
+  server: 104.18.34.245
+  tls: false
+  type: vless
+  udp: true
+  uuid: f3d7ebbc-03a1-40f9-a911-ae8628d3927a
+  ws-opts:
+    headers:
+      Host: dawn-waterfall-6052.360-001.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net
+- name: 🇺🇸 美国 | USA 21
+  password: 3fc0f254-54c3-4cf3-896b-5999a2b4c757
+  port: 24099
+  server: test01.y1static-content-distribution.shop
+  skip-cert-verify: true
+  sni: us56.pulsarcore.site
+  type: anytls
+  udp: true
+- name: '🇺🇸 美国 | USA #8'
+  password: humanity
+  port: 443
+  server: 188.114.96.3
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇺🇸 美国 | USA #15'
+  network: grpc
+  port: 443
+  server: 201.34.159.213
+  servername: us1.g4m1.biz
+  tls: true
+  type: vless
+  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
 - name: US_speednode_0131
   password: 'null'
   port: 9002
