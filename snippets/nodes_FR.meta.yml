@@ -1,8 +1,17 @@
 proxies:
+- name: 🇫🇷185531 | ⚡️Telegram = t.me/S...
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 35.181.166.40
+  skip-cert-verify: true
+  sni: vpn-fr-002.fastervpn.world#🪐33@oneclickvpnkeys
+  tls: false
+  type: hysteria2
 - client-fingerprint: chrome
+  encryption: none
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-  name: 🇫🇷[www.v2nodes.com] vless-FR-1...
+  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
   network: grpc
   port: 443
   server: 143.246.208.113
@@ -14,7 +23,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #7'
+  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #8'
   network: ws
   port: 443
   server: 199.232.78.160
@@ -50,11 +59,11 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #1'
   network: ws
   password: humanity
   port: 443
-  server: 185.220.100.168
+  server: 185.225.68.232
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
@@ -109,6 +118,18 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
+  network: ws
+  password: humanity
+  port: 443
+  server: 185.220.100.168
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
 - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
   password: humanity
   port: 443
@@ -140,3 +161,18 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
+- http-opts:
+    headers:
+      Host:
+      - amp-api-edge.apps.apple.com
+    method: GET
+    path:
+    - /
+  name: '🇫🇷 法国 | FRA #1'
+  network: http
+  port: 48310
+  server: pll.parscon.ir
+  tls: false
+  type: vless
+  udp: true
+  uuid: 868ba16e-eda0-47d2-a201-f6a694d06895
