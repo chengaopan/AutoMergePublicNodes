@@ -168,6 +168,12 @@ proxies:
   server: 132.243.175.144
   type: ss
 - cipher: aes-256-gcm
+  name: 🇨🇱[www.v2nodes.com] ss-CL-1564...
+  password: xBStBEVqvGwHPocc
+  port: 8388
+  server: 64.176.2.21
+  type: ss
+- cipher: aes-256-gcm
   name: 🇨🇴[www.v2nodes.com] ss-CO-1539...
   password: PCnnH6SQSnfoS27
   port: 8090
@@ -193,9 +199,15 @@ proxies:
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇭🇰[www.v2nodes.com] ss-HK-1585...
-  password: manm1wouaeic9db3
+  password: pno0e2keji2gsfea
   port: 1080
-  server: 181.215.18.196
+  server: telegram.khp25.com
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇭🇰[www.v2nodes.com] ss-HK-1576...
+  password: m5nsedvdczx6x06e
+  port: 1080
+  server: telegramx.khp25.com
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇮🇩[www.v2nodes.com] ss-ID-1553...
@@ -212,7 +224,7 @@ proxies:
 - cipher: aes-256-gcm
   name: 🇯🇵[www.v2nodes.com] ss-JP-1544...
   password: 3eOFeNssde7PYYMv
-  port: 443
+  port: 80
   server: 84.247.155.196
   type: ss
 - cipher: aes-128-gcm
@@ -225,19 +237,13 @@ proxies:
   name: 🇰🇷[www.v2nodes.com] ss-KR-1580...
   password: ac9c0a7b
   port: 49642
-  server: 211.174.113.172
+  server: ce1fc2d8.krkt.hkssip.com
   type: ss
 - cipher: aes-256-gcm
   name: 🇰🇷[www.v2nodes.com] ss-KR-1185...
-  password: RexnBgU7EV5ADxG
-  port: 7001
+  password: cdBIDV42DCwnfIN
+  port: 8119
   server: 141.164.45.187
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇲🇽[www.v2nodes.com] ss-MX-1564...
-  password: BWyPPTusFKhGgzKh
-  port: 8388
-  server: 64.177.90.30
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇴[www.v2nodes.com] ss-NO-1220...
@@ -258,13 +264,13 @@ proxies:
   server: 185.231.233.91
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: 🇷🇴[www.v2nodes.com] ss-RO-1298...
+  name: '🏳[www.v2nodes.com] ss- #1'
   password: QFWzCw2uX9B9i6qAYeFBIE
   port: 443
   server: 154.46.31.106
   type: ss
 - cipher: chacha20-ietf-poly1305
-  name: '🏳[www.v2nodes.com] ss- #1'
+  name: '🏳[www.v2nodes.com] ss- #2'
   password: VVlAff77CnAU43Aoc5j15Y
   port: 5112
   server: 90.156.203.62
@@ -274,6 +280,24 @@ proxies:
   password: 9epp3o9ng8ej59uv
   port: 14249
   server: 45.128.12.20
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇸🇬[www.v2nodes.com] ss-SG-1559...
+  password: qpSevKaUXYQKvSjp
+  port: 8388
+  server: 139.180.220.175
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇺🇸[www.v2nodes.com] ss-US-1586...
+  password: 6c4993acd1ca7f12f0a18bdcb3c37c6c
+  port: 10272
+  server: 66.23.201.172
+  type: ss
+- cipher: aes-128-gcm
+  name: '🇺🇸[www.v2nodes.com] ss-US-1586... #1'
+  password: 1377d5cfafc9279a904deb3bfa4f3de2
+  port: 14680
+  server: 74.201.177.54
   type: ss
 - cipher: aes-128-gcm
   name: 🇺🇸[www.v2nodes.com] ss-US-1584...
@@ -341,11 +365,13 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #2'
+- alpn:
+  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
+  name: '🇫🇷[www.v2nodes.com] trojan-FR-... #2'
   network: ws
   password: humanity
-  port: 443
-  server: 45.87.41.18
+  port: 8443
+  server: 212.227.144.37
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
@@ -357,7 +383,8 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: www.calmlunch.com
+  server: 45.87.41.18
+  skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
@@ -365,6 +392,17 @@ proxies:
       Host: www.calmlunch.com
     path: /assignment
 - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #4'
+  network: ws
+  password: humanity
+  port: 443
+  server: www.calmlunch.com
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #5'
   network: ws
   password: humanity
   port: 2053
@@ -376,7 +414,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #5'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
   network: ws
   password: humanity
   port: 443
@@ -388,7 +426,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
   network: ws
   password: humanity
   port: 443
@@ -400,19 +438,42 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #8'
   password: humanity
   port: 443
   server: 165.215.250.14
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #8'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #9'
   network: ws
   password: humanity
   port: 443
   server: 104.19.229.21
   skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #10'
+  network: ws
+  password: humanity
+  port: 443
+  server: 165.215.250.14
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #11'
+  network: ws
+  password: humanity
+  port: 443
+  server: 212.183.88.136
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
@@ -443,18 +504,6 @@ proxies:
     headers:
       Host: id1.nathaya.web.id
     path: /trojan
-- name: 🇯🇵[www.v2nodes.com] trojan-JP-...
-  network: ws
-  password: 3c6d1933-b22a-484b-ac8a-63e24f5fba75
-  port: 443
-  server: jp3.998998.best
-  skip-cert-verify: true
-  sni: nat11.outsidemyheart.space
-  type: trojan
-  ws-opts:
-    headers:
-      Host: nat11.outsidemyheart.space
-    path: /w4e5yh0p945y3
 - name: 🇲🇾[www.v2nodes.com] trojan-MY-...
   password: 5931134d1cde66bf83a54acdfebe7ab2
   port: 443
