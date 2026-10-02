@@ -1,8 +1,29 @@
 proxies:
+- name: 🇬🇧185812 | ⚡️Telegram = t.me/S...
+  password: 8b60d570-cbce-4791-b3e8-bcb80dd12ac0
+  port: 19443
+  server: uk-002.xiaoxiaobujidao.xyz
+  sni: uk-002.xiaoxiaobujidao.xyz
+  tls: false
+  type: hysteria2
+- encryption: none
+  name: '🇳🇱[www.v2nodes.com] vless-NL-1... #13'
+  network: ws
+  port: 443
+  server: 199.232.78.159
+  servername: ssl.fastly.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: bfb1ec97-a326-4cf3-adcf-d2a0e2dc49f8
+  ws-opts:
+    headers:
+      Host: pan2e.global.ssl.fastly.net
+    path: /
 - alpn:
   - h3
   client-fingerprint: chrome
-  name: 🇬🇧[www.v2nodes.com] vless-GB-1...
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
   network: ws
   port: 443
   server: cd.dlclive.click
@@ -14,17 +35,14 @@ proxies:
     headers:
       Host: cd-sr1.k8k8110.com
     path: /
-- encryption: none
-  grpc-opts:
-    grpc-service-name: vless
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
-  network: grpc
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
   port: 2083
   server: 66.90.104.42
-  tls: true
+  tls: false
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- encryption: none
+- client-fingerprint: ''
+  encryption: none
   grpc-opts:
     grpc-service-name: vless
   name: '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
@@ -34,30 +52,3 @@ proxies:
   tls: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- client-fingerprint: firefox
-  name: '🇬🇧 英国 | GBR #1'
-  network: ws
-  port: 443
-  server: 146.185.143.174
-  servername: lom.vip100.cfd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 720043a3-d5fb-4a94-883c-13e4b628253c
-  ws-opts:
-    headers:
-      Host: lom.vip100.cfd
-    path: /
-- client-fingerprint: chrome
-  name: '🇬🇧 英国 | GBR #2'
-  network: xhttp
-  port: 443
-  server: 46.33.11.38
-  servername: hub.sickok.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9fd475c4-da7f-4a96-9a8a-e8ff1c62d549
-  xhttp-opts:
-    mode: stream-up
-    path: /media/v1/upload/w5sM5ePwv9
