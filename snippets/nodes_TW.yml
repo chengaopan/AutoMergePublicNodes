@@ -1,13 +1,5 @@
 proxies:
-- name: 台湾|@ripaojiedian
-  network: tcp
-  password: AA885B42-133C-3828-FB69-E45105C06092
-  port: 12142
-  server: 7d0a2gz0-7a0c.aws-agent.net
-  skip-cert-verify: true
-  sni: m.ctrip.com
-  type: trojan
-- name: 🇹🇼 🇨🇳 台湾 | TWN
+- name: 🇹🇼[www.v2nodes.com] trojan-TW-...
   network: ws
   password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
   port: 443
@@ -19,10 +11,30 @@ proxies:
     headers:
       Host: ttww11.bpca2026.top
     path: /images
+- name: 台湾|@ripaojiedian
+  network: tcp
+  password: AA885B42-133C-3828-FB69-E45105C06092
+  port: 12142
+  server: 7d0a2gz0-7a0c.aws-agent.net
+  skip-cert-verify: true
+  sni: m.ctrip.com
+  type: trojan
+- name: 🇹🇼 🇨🇳 台湾 | TWN 2
+  network: ws
+  password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
+  port: 443
+  server: t2w2t2w2.bpca2026.top
+  skip-cert-verify: true
+  sni: t2w2t2w2.bpca2026.top
+  type: trojan
+  ws-opts:
+    headers:
+      Host: t2w2t2w2.bpca2026.top
+    path: /images
 - name: '🇹🇼 🇨🇳 台湾 | TWN #1'
   password: 9efd3f19-c7cb-4fa9-8d66-0598043597dc
   port: 443
-  server: ttww11.bpca2026.top
+  server: t2w2t2w2.bpca2026.top
   skip-cert-verify: true
-  sni: ttww11.bpca2026.top
+  sni: t2w2t2w2.bpca2026.top
   type: trojan

@@ -19,17 +19,21 @@ proxies:
   sni: gift-catalog.aroonia.ir
   tls: false
   type: hysteria2
-- name: 🇩🇪185949 | ⚡️Telegram = t.me/S...
-  obfs: salamander
-  obfs-password: 6ccfcef2e116b03ce9047333
-  password: vN1VQF6w2zHxSokgJcaUyUL52yRMzUB7
-  port: 5443
-  server: fastly.vexogf.ir
+- encryption: none
+  name: 🇩🇪[www.v2nodes.com] vless-DE-1...
+  network: ws
+  port: 8444
+  server: germany.tofreedom.ru
+  servername: germany.tofreedom.ru
   skip-cert-verify: false
-  sni: tun-a-1.bexait.ir
-  tls: false
-  type: hysteria2
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
+  tls: true
+  type: vless
+  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
+  ws-opts:
+    headers:
+      Host: germany.tofreedom.ru
+    path: /c7f5317cd04691bc
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
   network: ws
   port: 80
   server: 139.162.149.105
@@ -40,7 +44,7 @@ proxies:
     path: /
 - client-fingerprint: random
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #5'
   network: ws
   port: 443
   server: 84.38.183.237
@@ -53,7 +57,7 @@ proxies:
 - alpn:
   - http/1.1
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
   network: ws
   port: 8443
   server: www.large-files.info
@@ -66,7 +70,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #13'
   network: ws
   port: 2083
   server: 45.88.12.110
@@ -77,7 +81,7 @@ proxies:
   ws-opts:
     path: /vless-ws
 - client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #13'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #14'
   network: ws
   port: 443
   server: 5.45.111.195
@@ -89,11 +93,22 @@ proxies:
     headers:
       Host: shephe.dpdns.org
     path: /
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪[www.v2nodes.com] ss-DE-1585...
-  password: tGXsbUDisR28c/KS0RDOlgQS1gVT7UJ5Sf0/5QvMwR4=
-  port: 59924
-  server: 130.61.42.148
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: cdn.v1.AssetService
+  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #2'
+  network: grpc
+  port: 443
+  server: 72.4.65.116
+  servername: assets-de2.pleiades.codes
+  tls: true
+  type: vless
+  uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1583...
+  password: iku/Gfrt9YeEUUleXr2Ptf3uvs0hszCR0JHPqGSjs+c=
+  port: 11750
+  server: 31.76.11.83
   type: ss
 - client-fingerprint: chrome
   encryption: none
@@ -113,50 +128,90 @@ proxies:
         like Gecko) Chrome/53.0.2785.143 Safari/537.36
     path: /?ed=2560
   xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: '🇩🇪 德国 | DEU #1'
-  password: 44xgqIHCG64I2kMxXzr4AexLc3TmyXX1oYY5C68s2ck=
-  port: 443
-  server: 5.160.198.244
-  type: ss
+- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
+  name: 🇩🇪 德国 | DEU
+  network: ws
+  port: 80
+  server: Hshsisjshsh.f15.gymyoga.ir
+  tls: false
+  type: vless
   udp: true
-- auth: cf83b611-6cba-4535-adcb-8da06c6a9146
+  uuid: ba9c0361-143e-4ee4-9c5c-22a222988907
+  ws-opts:
+    headers:
+      Host: Hshsisjshsh.f15.gymyoga.ir
+    path: /
+- client-fingerprint: chrome
   name: '🇩🇪 德国 | DEU #2'
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
+  network: ws
+  port: 2053
+  server: 204.168.173.148
+  servername: cf3.schzyc.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: cf3.schzyc.cc.cd
+    path: /proxyip=ProxyIP.CMLiussss.net
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #3'
+  network: ws
   port: 443
-  server: 144.31.212.253
+  server: 149.154.157.213
+  servername: cf3.schzyc.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: cf3.schzyc.cc.cd
+    path: /proxyip=ProxyIP.CMLiussss.net
+- auth: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
+  name: '🇩🇪 德国 | DEU #7'
+  password: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
+  port: 443
+  server: covers.pantera-radio.ru
   skip-cert-verify: true
-  sni: vps155-edge.kermemehori.ru
+  sni: covers.pantera-radio.ru
   tls: false
   type: hysteria2
-- client-fingerprint: random
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: cdn.v1.DeService
-  name: 🇩🇪 德国 | DEU 3
-  network: grpc
+- auth: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
+  name: '🇩🇪 德国 | DEU #9'
+  password: 0a11d3b4-682c-4bfb-afb0-820b8285cb4b
   port: 443
-  server: 159.194.244.172
-  servername: ger.g4m1.biz
-  tls: true
-  type: vless
+  server: mix.pantera-radio.ru
+  skip-cert-verify: true
+  sni: mix.pantera-radio.ru
+  tls: false
+  type: hysteria2
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇩🇪 德国 | DEU #11'
+  network: ws
+  port: 80
+  server: 188.114.96.19
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
-- cipher: chacha20-ietf-poly1305
-  name: '🇩🇪 德国 | DEU #6'
-  password: hORsoC4STBD5wyGrss0VNw
-  port: 8882
-  server: tun2.musichubmel.ir
-  type: ss
-  udp: true
-- client-fingerprint: random
-  grpc-opts:
-    grpc-service-name: ''
-  name: '🇩🇪 德国 | DEU #3'
-  network: grpc
-  port: 443
-  server: 159.194.244.172
-  servername: ger.g4m1.biz
-  tls: true
+  uuid: c5965d47-45d6-45af-b619-3b2a6bf896a2
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.dns-look.space.
+    path: /
+- name: '🇩🇪 德国 | DEU #1'
+  network: ws
+  port: 80
+  server: hshsisjshsh.f15.gymyoga.ir
+  tls: false
   type: vless
-  uuid: e0b9fb0f-1bbd-478b-9580-c2294778338b
+  uuid: ba9c0361-143e-4ee4-9c5c-22a222988907
+  ws-opts:
+    headers:
+      Host: Hshsisjshsh.f15.gymyoga.ir
+    path: /
