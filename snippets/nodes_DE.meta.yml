@@ -30,18 +30,9 @@ proxies:
   ws-opts:
     headers:
       Host: play.google.com
-- encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
-  network: ws
-  port: 33483
-  server: 49.13.231.249
-  tls: false
-  type: vless
-  uuid: 758a691a-45d2-4462-a0e8-991248a6994e
-  ws-opts:
     path: /
 - encryption: none
-  name: '🇳🇱[www.v2nodes.com] vless-NL-1... #15'
+  name: '🇳🇱[www.v2nodes.com] vless-NL-1... #18'
   network: ws
   port: 443
   server: 199.232.78.159
@@ -53,20 +44,7 @@ proxies:
     headers:
       Host: pannn1.global.ssl.fastly.net
     path: /
-- encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
-  network: ws
-  port: 8444
-  server: germany.tofreedom.ru
-  servername: germany.tofreedom.ru
-  tls: true
-  type: vless
-  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
-  ws-opts:
-    headers:
-      Host: germany.tofreedom.ru
-    path: /c7f5317cd04691bc
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
   network: ws
   port: 80
   server: 139.162.149.105
@@ -75,15 +53,9 @@ proxies:
   uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
   ws-opts:
     path: /
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
-  port: 40443
-  server: arcturus.yokkastars.com
-  tls: false
-  type: vless
-  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
 - client-fingerprint: random
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #14'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
   network: ws
   port: 443
   server: 84.38.183.237
@@ -93,19 +65,7 @@ proxies:
   uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
   ws-opts:
     path: /vless
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: ajv
-  name: 🇩🇪[www.v2nodes.com] trojan-DE-...
-  network: grpc
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
-  port: 443
-  server: 31.77.168.33
-  skip-cert-verify: true
-  sni: d3-de2.cloud-cdn.xyz
-  type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+- name: 🇩🇪[www.v2nodes.com] trojan-DE-...
   password: UX82473651
   port: 443
   server: pleased-albacore.rooster465.autos
@@ -130,36 +90,35 @@ proxies:
         like Gecko) Chrome/53.0.2785.143 Safari/537.36
     path: /?ed=2560
   xudp: true
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #1'
-  network: ws
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: ajv
+  name: 🇩🇪 德国 | DEU
+  network: grpc
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
-  server: 8.209.108.3
-  servername: edg-2oo.pages.dev
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: edg-2oo.pages.dev
-    path: /travel/thread/rank?ed=2560
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #3'
-  network: ws
-  port: 8443
-  server: shop.neexbyte.ir
-  tls: true
+  server: 31.77.168.21
+  skip-cert-verify: true
+  sni: d3-de2.cloud-cdn.xyz
+  type: trojan
+  udp: true
+- name: '🇩🇪 德国 | DEU #2'
+  network: tcp
+  port: 45971
+  server: atlasdn.webiraniani.click
+  tls: false
   type: vless
   udp: true
-  uuid: 8bb52771-052e-40b5-ab53-c6e151ad2290
+  uuid: 0c189705-6cd7-4d85-ba48-dbcb02f9ded3
   ws-opts:
     headers:
-      Host: shop.neexbyte.ir
+      Host: atlasdn.webiraniani.click
     path: /
 - alpn:
   - h2
   client-fingerprint: unsafe
-  name: '🇩🇪 德国 | DEU #4'
+  name: '🇩🇪 德国 | DEU #3'
   network: xhttp
   port: 443
   server: s3.bamans.uk
@@ -173,69 +132,19 @@ proxies:
     mode: stream-up
     path: /3a6b3b038ea34622bd1e13ec5798ab03
     x-padding-bytes: 100-1000
-- client-fingerprint: chrome
+- auth: cf83b611-6cba-4535-adcb-8da06c6a9146
   name: '🇩🇪 德国 | DEU #5'
-  network: ws
+  password: cf83b611-6cba-4535-adcb-8da06c6a9146
   port: 443
-  server: 147.45.196.83
-  servername: cf3.schzyc.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  ws-opts:
-    headers:
-      Host: cf3.schzyc.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #7'
-  network: ws
-  port: 2053
-  server: 204.168.173.148
-  servername: cf3.schzyc.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  ws-opts:
-    headers:
-      Host: cf3.schzyc.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net
-- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  name: 🇩🇪 德国 | DEU 8
-  network: ws
-  port: 80
-  server: Hshsvshshshs.G44.gymyoga.ir
+  server: 144.31.212.253
+  skip-cert-verify: true
+  sni: vps155-edge.kermemehori.ru
   tls: false
-  type: vless
-  udp: true
-  uuid: 03a7ce81-061b-4d22-a057-40a12aa48bae
-  ws-opts:
-    headers:
-      Host: Hshsvshshshs.G44.gymyoga.ir
-    path: /
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #9'
-  network: ws
+  type: hysteria2
+- name: '🇩🇪 德国 | DEU #1'
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
-  server: 164.92.239.67
-  servername: cf3.schzyc.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
-  ws-opts:
-    headers:
-      Host: cf3.schzyc.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.net
-- name: '🇩🇪 德国 | DEU #8'
-  network: ws
-  port: 80
-  server: hshsvshshshs.g44.gymyoga.ir
-  tls: false
-  type: vless
-  uuid: 03a7ce81-061b-4d22-a057-40a12aa48bae
-  ws-opts:
-    headers:
-      Host: Hshsvshshshs.G44.gymyoga.ir
-    path: /
+  server: 31.77.168.21
+  skip-cert-verify: true
+  sni: d3-de2.cloud-cdn.xyz
+  type: trojan

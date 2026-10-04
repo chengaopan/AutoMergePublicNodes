@@ -1,6 +1,6 @@
 proxies:
 - encryption: none
-  name: '🇳🇱[www.v2nodes.com] vless-NL-1... #16'
+  name: '🇳🇱[www.v2nodes.com] vless-NL-1... #17'
   network: ws
   port: 443
   server: 199.232.78.159
@@ -34,8 +34,7 @@ proxies:
   name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
   network: grpc
   port: 2083
-  server: 66.90.104.42
-  servername: /TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1)
+  server: 66.90.104.43
   tls: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
@@ -60,34 +59,18 @@ proxies:
   tls: true
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- cipher: aes-128-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
-  password: shadowsocks
+- http-opts:
+    headers:
+      Host:
+      - safebrowsing.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '🇬🇧 英国 | GBR #1'
+  network: http
   port: 443
-  server: 158.173.24.73
-  type: ss
-- name: '🇬🇧 英国 | GBR #1'
-  network: ws
-  port: 2095
-  server: lv1.rovilo.ir
+  server: 165.232.43.172
   tls: false
   type: vless
   udp: true
-  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
-  ws-opts:
-    headers:
-      Host: connectivitycheck.android.com
-    path: /
-- client-fingerprint: chrome
-  name: '🇬🇧 英国 | GBR #2'
-  network: ws
-  port: 443
-  server: 165.232.109.196
-  servername: edg-2oo.pages.dev
-  tls: true
-  type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
-  ws-opts:
-    headers:
-      Host: edg-2oo.pages.dev
-    path: /m?ed=2560
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
