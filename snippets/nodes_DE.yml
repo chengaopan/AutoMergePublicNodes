@@ -1,5 +1,30 @@
 proxies:
-- name: 🇩🇪[www.v2nodes.com] trojan-DE-...
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: ajv
+  name: 🇩🇪DE_4|1.9MB/s
+  network: grpc
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+  port: 443
+  server: 31.77.168.21
+  skip-cert-verify: true
+  sni: d3-de2.cloud-cdn.xyz
+  type: trojan
+  udp: true
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: ajv
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+  network: grpc
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+  port: 443
+  server: 31.77.168.33
+  skip-cert-verify: true
+  sni: d3-de2.cloud-cdn.xyz
+  type: trojan
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
   password: UX82473651
   port: 443
   server: pleased-albacore.rooster465.autos
@@ -10,19 +35,36 @@ proxies:
   - h2
   grpc-opts:
     grpc-service-name: ajv
-  name: 🇩🇪 德国 | DEU
+  name: 🇩🇪 德国 | DEU 6
   network: grpc
   password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
-  server: 31.77.168.21
+  server: 31.77.168.35
   skip-cert-verify: true
   sni: d3-de2.cloud-cdn.xyz
   type: trojan
   udp: true
-- name: '🇩🇪 德国 | DEU #1'
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇩🇪 德国 | DEU #13'
+  network: ws
+  port: 80
+  server: 188.114.96.19
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c5965d47-45d6-45af-b619-3b2a6bf896a2
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.dns-look.space.
+    path: /
+- name: '🇩🇪 德国 | DEU #6'
   password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
-  server: 31.77.168.21
+  server: 31.77.168.35
   skip-cert-verify: true
   sni: d3-de2.cloud-cdn.xyz
   type: trojan

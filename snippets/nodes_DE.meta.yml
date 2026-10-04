@@ -20,7 +20,7 @@ proxies:
   tls: false
   type: hysteria2
 - encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
   network: tcp
   port: 8080
   server: 91.107.151.122
@@ -44,7 +44,20 @@ proxies:
     headers:
       Host: pannn1.global.ssl.fastly.net
     path: /
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
+- encryption: none
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
+  network: ws
+  port: 8444
+  server: germany.tofreedom.ru
+  servername: germany.tofreedom.ru
+  tls: true
+  type: vless
+  uuid: 9cb2520c-148b-4bbc-a149-9d5a43ff0db3
+  ws-opts:
+    headers:
+      Host: germany.tofreedom.ru
+    path: /c7f5317cd04691bc
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
   network: ws
   port: 80
   server: 139.162.149.105
@@ -55,7 +68,7 @@ proxies:
     path: /
 - client-fingerprint: random
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #14'
   network: ws
   port: 443
   server: 84.38.183.237
@@ -65,36 +78,11 @@ proxies:
   uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
   ws-opts:
     path: /vless
-- name: 🇩🇪[www.v2nodes.com] trojan-DE-...
-  password: UX82473651
-  port: 443
-  server: pleased-albacore.rooster465.autos
-  skip-cert-verify: true
-  sni: pleased-albacore.rooster465.autos
-  type: trojan
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪DE_2|1.7MB/s
-  network: ws
-  port: 443
-  server: 104.21.69.30
-  servername: 05agj.gkef.zhs.hh.vavava.kdns.fr
-  tls: true
-  type: vless
-  udp: true
-  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
-  ws-opts:
-    headers:
-      Host: 05agj.gkef.zhs.hh.vavava.kdns.fr
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/53.0.2785.143 Safari/537.36
-    path: /?ed=2560
-  xudp: true
 - alpn:
   - h2
   grpc-opts:
     grpc-service-name: ajv
-  name: 🇩🇪 德国 | DEU
+  name: 🇩🇪DE_4|1.9MB/s
   network: grpc
   password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
@@ -103,37 +91,64 @@ proxies:
   sni: d3-de2.cloud-cdn.xyz
   type: trojan
   udp: true
-- name: '🇩🇪 德国 | DEU #2'
-  network: tcp
-  port: 45971
-  server: atlasdn.webiraniani.click
-  tls: false
-  type: vless
-  udp: true
-  uuid: 0c189705-6cd7-4d85-ba48-dbcb02f9ded3
-  ws-opts:
-    headers:
-      Host: atlasdn.webiraniani.click
-    path: /
 - alpn:
   - h2
-  client-fingerprint: unsafe
-  name: '🇩🇪 德国 | DEU #3'
-  network: xhttp
+  grpc-opts:
+    grpc-service-name: ajv
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+  network: grpc
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
-  server: s3.bamans.uk
-  servername: s3.bamans.uk
+  server: 31.77.168.33
+  skip-cert-verify: true
+  sni: d3-de2.cloud-cdn.xyz
+  type: trojan
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
+  password: UX82473651
+  port: 443
+  server: pleased-albacore.rooster465.autos
+  skip-cert-verify: true
+  sni: pleased-albacore.rooster465.autos
+  type: trojan
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #1'
+  network: ws
+  port: 443
+  server: 172.67.76.40
+  servername: ccc.010304.xyz
   tls: true
   type: vless
   udp: true
-  uuid: 86c0996e-817e-409f-a732-ff9ef94917bd
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+- name: 🇩🇪DE_5|2.8MB/s
+  password: None
+  port: 443
+  server: 149.36.50.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇩🇪DE_6|1.8MB/s
+  network: xhttp
+  port: 443
+  server: 50.7.29.181
+  servername: id-24f9d11d.ferrin.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: 24f9d11d-ceca-4f75-93ca-ad143ca18b28
   xhttp-opts:
-    host: s3.bamans.uk
-    mode: stream-up
-    path: /3a6b3b038ea34622bd1e13ec5798ab03
-    x-padding-bytes: 100-1000
+    host: de.vmagnum.win
+    reuse-settings:
+      max-connections: '1'
+  xudp: true
 - auth: cf83b611-6cba-4535-adcb-8da06c6a9146
-  name: '🇩🇪 德国 | DEU #5'
+  name: '🇩🇪 德国 | DEU #3'
   password: cf83b611-6cba-4535-adcb-8da06c6a9146
   port: 443
   server: 144.31.212.253
@@ -141,10 +156,104 @@ proxies:
   sni: vps155-edge.kermemehori.ru
   tls: false
   type: hysteria2
-- name: '🇩🇪 德国 | DEU #1'
+- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
+  name: 🇩🇪 德国 | DEU 4
+  network: ws
+  port: 80
+  server: Kashgsgsiajsh.apple.gymyoga.ir
+  tls: false
+  type: vless
+  udp: true
+  uuid: a55538b8-801e-4e45-80d6-d8a8eea31e4f
+  ws-opts:
+    headers:
+      Host: Kashgsgsiajsh.apple.gymyoga.ir
+    path: /
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: ajv
+  name: 🇩🇪 德国 | DEU 6
+  network: grpc
   password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
-  server: 31.77.168.21
+  server: 31.77.168.35
+  skip-cert-verify: true
+  sni: d3-de2.cloud-cdn.xyz
+  type: trojan
+  udp: true
+- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
+  name: '🇩🇪 德国 | DEU #7'
+  network: ws
+  port: 80
+  server: hshsvshshshs.g44.gymyoga.ir
+  tls: false
+  type: vless
+  udp: true
+  uuid: 03a7ce81-061b-4d22-a057-40a12aa48bae
+  ws-opts:
+    headers:
+      Host: Hshsvshshshs.G44.gymyoga.ir
+    path: /
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 🇩🇪 德国 | DEU 9
+  port: 54177
+  protocol: udp
+  server: 5.83.129.90
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 500
+- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
+  name: '🇩🇪 德国 | DEU #10'
+  network: ws
+  port: 80
+  server: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
+  servername: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
+  tls: false
+  type: vless
+  udp: true
+  uuid: a55538b8-801e-4e45-80d6-d8a8eea31e4f
+  ws-opts:
+    headers:
+      Host: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
+    path: /
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇩🇪 德国 | DEU #13'
+  network: ws
+  port: 80
+  server: 188.114.96.19
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c5965d47-45d6-45af-b619-3b2a6bf896a2
+  ws-opts:
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.dns-look.space.
+    path: /
+- name: '🇩🇪 德国 | DEU #4'
+  network: ws
+  port: 80
+  server: kashgsgsiajsh.apple.gymyoga.ir
+  tls: false
+  type: vless
+  uuid: a55538b8-801e-4e45-80d6-d8a8eea31e4f
+  ws-opts:
+    headers:
+      Host: Kashgsgsiajsh.apple.gymyoga.ir
+    path: /
+- name: '🇩🇪 德国 | DEU #6'
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+  port: 443
+  server: 31.77.168.35
   skip-cert-verify: true
   sni: d3-de2.cloud-cdn.xyz
   type: trojan

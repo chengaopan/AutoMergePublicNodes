@@ -13,35 +13,16 @@ proxies:
     headers:
       Host: pan2e.global.ssl.fastly.net
     path: /
-- alpn:
-  - h3
-  client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #2'
-  network: ws
-  port: 443
-  server: cd.dlclive.click
-  servername: cd-sr1.k8k8110.com
-  tls: true
-  type: vless
-  uuid: e548f821-b286-4264-a9f9-63eb5c4a38b2
-  ws-opts:
-    headers:
-      Host: cd-sr1.k8k8110.com
-    path: /
-- encryption: none
-  grpc-opts:
-    grpc-service-name: vless
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
-  network: grpc
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
   port: 2083
-  server: 66.90.104.43
-  tls: true
+  server: 66.90.104.42
+  tls: false
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
 - encryption: none
   grpc-opts:
     grpc-service-name: vless
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
   network: grpc
   port: 2083
   server: 66.90.105.211
@@ -51,7 +32,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
   port: 443
   server: 186.190.211.188
   servername: 186.190.211.188
@@ -59,18 +40,51 @@ proxies:
   tls: true
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- http-opts:
-    headers:
-      Host:
-      - safebrowsing.googleapis.com
-    method: GET
-    path:
-    - /
-  name: '🇬🇧 英国 | GBR #1'
-  network: http
+- cipher: aes-128-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
+  password: shadowsocks
   port: 443
-  server: 165.232.43.172
-  tls: false
+  server: 158.173.24.73
+  type: ss
+- name: 🇬🇧GB_1|1.1MB/s
+  password: None
+  port: 443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_2|2.5MB/s
+  password: None
+  port: 9443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_3|2.5MB/s
+  password: None
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_4|1.6MB/s
+  password: None
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: chrome
+  name: '🇬🇧 英国 | GBR #1'
+  network: ws
+  port: 443
+  server: 159.65.51.189
+  servername: ccc.010304.xyz
+  tls: true
   type: vless
   udp: true
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /

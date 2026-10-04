@@ -1,12 +1,14 @@
 proxies:
-- name: '🇹🇼[www.v2nodes.com] vless-TW-1... #5'
+- client-fingerprint: chrome
+  name: '🇹🇼 🇨🇳 台湾 | TWN #2'
   network: ws
   port: 443
-  server: 59.125.69.24
+  server: 59.125.69.23
   servername: ty986gfazs.cainiaohub.xyz
   tls: true
   type: vless
-  uuid: 06e177f7-240d-4687-bd85-235505801a5e
+  udp: true
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
   ws-opts:
     headers:
       Host: ty986gfazs.cainiaohub.xyz
@@ -31,17 +33,48 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- client-fingerprint: chrome
-  name: '🇹🇼 🇨🇳 台湾 | TWN #1'
+- name: 🇹🇼TW_1|1.5MB/s
   network: ws
   port: 443
-  server: 59.125.69.23
-  servername: ty986gfazs.cainiaohub.xyz
+  server: argo6.5671234.xyz
+  servername: argo6.5671234.xyz
+  skip-cert-verify: true
   tls: true
   type: vless
   udp: true
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  uuid: 08aaab35-a42d-4755-a03e-20c18cb1b3e8
   ws-opts:
     headers:
-      Host: ty986gfazs.cainiaohub.xyz
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
+      Host: argo6.5671234.xyz
+    path: /e8e2cecb6188f7fb
+- name: 🇹🇼 🇨🇳 台湾 | TWN
+  password: 9sK2mP8xQ7vL3nZ6
+  port: 443
+  server: ac7548f3ebe045b39a90288ff1e97526.pnuqcnp.cn
+  skip-cert-verify: true
+  sni: ac7548f3ebe045b39a90288ff1e97526.lwdnxf.cn
+  type: anytls
+  udp: true
+- alpn:
+  - h3
+  congestion-controller: bbr
+  disable-sni: false
+  name: 🇹🇼 🇨🇳 台湾 | TWN 3
+  password: D7286728-678E-443B-B76B-B699654C66DD
+  port: 8080
+  reduce-rtt: false
+  request-timeout: 0
+  server: tw1.dexlos.com
+  skip-cert-verify: true
+  sni: tw1.dexlos.com
+  type: tuic
+  udp-relay-mode: native
+  uuid: D7286728-678E-443B-B76B-B699654C66DD
+- name: 🇹🇼 🇨🇳 台湾 | TWN 4
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  port: 1001
+  server: l3hl4mwo.zf-mix.9999231.xyz
+  skip-cert-verify: true
+  sni: tw01.9999231.xyz
+  type: anytls
+  udp: true
