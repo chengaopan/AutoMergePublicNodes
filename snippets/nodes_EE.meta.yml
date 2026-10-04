@@ -1,9 +1,11 @@
 proxies:
-- client-fingerprint: firefox
-  name: '🇪🇪[www.v2nodes.com] vless-EE-1... #5'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇪🇪[www.v2nodes.com] vless-EE-1... #1'
   network: ws
   port: 8443
-  server: 194.26.141.148
+  server: ee10.zazazuza.ru
   servername: fdghyt.com
   tls: true
   type: vless
@@ -41,18 +43,27 @@ proxies:
     headers:
       Host: fdghyt.com
     path: /vpn-wss/fluxor/59011/
+- client-fingerprint: firefox
+  name: '🇪🇪[www.v2nodes.com] vless-EE-1... #5'
+  network: ws
+  port: 8443
+  server: 194.26.141.148
+  servername: fdghyt.com
+  tls: true
+  type: vless
+  uuid: 6c713691-3ca2-4446-ad25-113d1bed6b03
+  ws-opts:
+    headers:
+      Host: fdghyt.com
+    path: /vpn-wss/fluxor/59011/
 - client-fingerprint: chrome
-  encryption: none
   name: '🇪🇪[www.v2nodes.com] vless-EE-1... #6'
-  network: tcp
   port: 8443
   server: 94.183.170.135
   servername: estproxy4.lockdwn.com
   tls: true
   type: vless
   uuid: 06c4e938-2954-478f-a870-ca1b163e30e9
-  ws-opts:
-    path: /
 - name: 🇪🇪[www.v2nodes.com] trojan-EE-...
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
   port: 449
