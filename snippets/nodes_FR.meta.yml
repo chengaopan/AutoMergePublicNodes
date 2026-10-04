@@ -1,11 +1,13 @@
 proxies:
-- grpc-opts:
+- client-fingerprint: chrome
+  grpc-opts:
     grpc-service-name: cdn.v1.AssetService
   name: '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
   network: grpc
   port: 443
   server: 143.246.208.113
   servername: assets-fr4.pleiades.codes
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
@@ -42,11 +44,11 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #1'
   network: ws
   password: humanity
   port: 443
-  server: 185.220.100.168
+  server: 185.225.68.232
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
@@ -115,6 +117,18 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
+  network: ws
+  password: humanity
+  port: 443
+  server: 185.220.100.168
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
 - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #8'
   password: humanity
   port: 443
@@ -157,10 +171,3 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- auth: github.com/Alvin9999-newpac/fanqiang
-  name: 🇫🇷 法国 | FRA
-  password: github.com/Alvin9999-newpac/fanqiang
-  port: 60111
-  server: 62.210.7.139
-  skip-cert-verify: true
-  type: hysteria2

@@ -16,7 +16,7 @@ proxies:
 - alpn:
   - h3
   client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #2'
   network: ws
   port: 443
   server: cd.dlclive.click
@@ -28,19 +28,21 @@ proxies:
     headers:
       Host: cd-sr1.k8k8110.com
     path: /
-- grpc-opts:
+- encryption: none
+  grpc-opts:
     grpc-service-name: vless
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
   network: grpc
   port: 2083
   server: 66.90.104.42
-  servername: /telegram_tm(@azarbayjab1),telegram_tm(@azarbayjab1),telegram_tm(@azarbayjab1),telegram_tm(@azarbayjab1),telegram_tm(@azarbayjab1),telegram_tm(@azarbayjab1),telegram_tm(@azarbayjab1
+  servername: /TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1),TELEGRAM_TM(@AZARBAYJAB1)
   tls: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- grpc-opts:
+- encryption: none
+  grpc-opts:
     grpc-service-name: vless
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
   network: grpc
   port: 2083
   server: 66.90.105.211
@@ -50,7 +52,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
   port: 443
   server: 186.190.211.188
   servername: 186.190.211.188
@@ -64,3 +66,28 @@ proxies:
   port: 443
   server: 158.173.24.73
   type: ss
+- name: '🇬🇧 英国 | GBR #1'
+  network: ws
+  port: 2095
+  server: lv1.rovilo.ir
+  tls: false
+  type: vless
+  udp: true
+  uuid: 452f869f-7720-47c3-a175-b6673e31d3e8
+  ws-opts:
+    headers:
+      Host: connectivitycheck.android.com
+    path: /
+- client-fingerprint: chrome
+  name: '🇬🇧 英国 | GBR #2'
+  network: ws
+  port: 443
+  server: 165.232.109.196
+  servername: edg-2oo.pages.dev
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: edg-2oo.pages.dev
+    path: /m?ed=2560

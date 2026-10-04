@@ -20,7 +20,18 @@ proxies:
   tls: false
   type: hysteria2
 - encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
+  network: tcp
+  port: 8080
+  server: 91.107.151.122
+  tls: false
+  type: vless
+  uuid: 39098241-9c6e-4fe7-abbd-7f6f6ed4512c
+  ws-opts:
+    headers:
+      Host: play.google.com
+- encryption: none
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
   network: ws
   port: 33483
   server: 49.13.231.249
@@ -30,7 +41,7 @@ proxies:
   ws-opts:
     path: /
 - encryption: none
-  name: '🇳🇱[www.v2nodes.com] vless-NL-1... #17'
+  name: '🇳🇱[www.v2nodes.com] vless-NL-1... #15'
   network: ws
   port: 443
   server: 199.232.78.159
@@ -43,7 +54,7 @@ proxies:
       Host: pannn1.global.ssl.fastly.net
     path: /
 - encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
   network: ws
   port: 8444
   server: germany.tofreedom.ru
@@ -55,7 +66,7 @@ proxies:
     headers:
       Host: germany.tofreedom.ru
     path: /c7f5317cd04691bc
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
   network: ws
   port: 80
   server: 139.162.149.105
@@ -64,7 +75,7 @@ proxies:
   uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
   ws-opts:
     path: /
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
   port: 40443
   server: arcturus.yokkastars.com
   tls: false
@@ -72,7 +83,7 @@ proxies:
   uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
 - client-fingerprint: random
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #14'
   network: ws
   port: 443
   server: 84.38.183.237
@@ -86,7 +97,7 @@ proxies:
   - h2
   grpc-opts:
     grpc-service-name: ajv
-  name: 🇩🇪 德国 | DEU
+  name: 🇩🇪[www.v2nodes.com] trojan-DE-...
   network: grpc
   password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
@@ -94,7 +105,6 @@ proxies:
   skip-cert-verify: true
   sni: d3-de2.cloud-cdn.xyz
   type: trojan
-  udp: true
 - name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
   password: UX82473651
   port: 443
@@ -120,69 +130,112 @@ proxies:
         like Gecko) Chrome/53.0.2785.143 Safari/537.36
     path: /?ed=2560
   xudp: true
-- cipher: 2022-blake3-aes-256-gcm
-  name: '🇩🇪 德国 | DEU #3'
-  password: vlXuQVNmjV3GyAmyCy8hn8e0TVIsLad+Deu4vFKhVGQ=:LbWEdFyjKcvZcv9agyGttSn0HNap+ecf50/UrlGMBCQ=
-  port: 49548
-  server: gr-test.xelfona.ir
-  type: ss
-  udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #6'
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #1'
   network: ws
   port: 443
-  server: speedtest.org
-  servername: server4.birchvalleyway.top
+  server: 8.209.108.3
+  servername: edg-2oo.pages.dev
+  tls: true
+  type: vless
+  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  ws-opts:
+    headers:
+      Host: edg-2oo.pages.dev
+    path: /travel/thread/rank?ed=2560
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #3'
+  network: ws
+  port: 8443
+  server: shop.neexbyte.ir
   tls: true
   type: vless
   udp: true
-  uuid: f8175a3d-ad69-44c8-a2aa-87d4d06994eb
+  uuid: 8bb52771-052e-40b5-ab53-c6e151ad2290
   ws-opts:
     headers:
-      Host: server4.birchvalleyway.top
-    path: /rally
-- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
+      Host: shop.neexbyte.ir
+    path: /
+- alpn:
+  - h2
+  client-fingerprint: unsafe
+  name: '🇩🇪 德国 | DEU #4'
+  network: xhttp
+  port: 443
+  server: s3.bamans.uk
+  servername: s3.bamans.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: 86c0996e-817e-409f-a732-ff9ef94917bd
+  xhttp-opts:
+    host: s3.bamans.uk
+    mode: stream-up
+    path: /3a6b3b038ea34622bd1e13ec5798ab03
+    x-padding-bytes: 100-1000
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #5'
+  network: ws
+  port: 443
+  server: 147.45.196.83
+  servername: cf3.schzyc.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: cf3.schzyc.cc.cd
+    path: /proxyip=ProxyIP.CMLiussss.net
+- client-fingerprint: chrome
   name: '🇩🇪 德国 | DEU #7'
   network: ws
+  port: 2053
+  server: 204.168.173.148
+  servername: cf3.schzyc.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: cf3.schzyc.cc.cd
+    path: /proxyip=ProxyIP.CMLiussss.net
+- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
+  name: 🇩🇪 德国 | DEU 8
+  network: ws
   port: 80
-  server: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
-  servername: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
+  server: Hshsvshshshs.G44.gymyoga.ir
   tls: false
   type: vless
   udp: true
-  uuid: a55538b8-801e-4e45-80d6-d8a8eea31e4f
+  uuid: 03a7ce81-061b-4d22-a057-40a12aa48bae
   ws-opts:
     headers:
-      Host: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
+      Host: Hshsvshshshs.G44.gymyoga.ir
     path: /
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 1000
-  name: 🇩🇪 德国 | DEU 10
-  port: 54177
-  protocol: udp
-  server: 5.83.129.90
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 500
-- auth: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  name: '🇩🇪 德国 | DEU #10'
-  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
-  port: 4433
-  server: de1.xiaoliyu.cyou
-  skip-cert-verify: true
-  sni: de1.xiaoliyu.cyou
-  tls: false
-  type: hysteria2
-- name: '🇩🇪 德国 | DEU #1'
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #9'
+  network: ws
   port: 443
-  server: 31.77.168.33
-  skip-cert-verify: true
-  sni: d3-de2.cloud-cdn.xyz
-  type: trojan
+  server: 164.92.239.67
+  servername: cf3.schzyc.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: cf3.schzyc.cc.cd
+    path: /proxyip=ProxyIP.CMLiussss.net
+- name: '🇩🇪 德国 | DEU #8'
+  network: ws
+  port: 80
+  server: hshsvshshshs.g44.gymyoga.ir
+  tls: false
+  type: vless
+  uuid: 03a7ce81-061b-4d22-a057-40a12aa48bae
+  ws-opts:
+    headers:
+      Host: Hshsvshshshs.G44.gymyoga.ir
+    path: /
