@@ -1,24 +1,30 @@
 proxies:
 - cipher: aes-128-gcm
+  name: 🇺🇸[www.v2nodes.com] ss-US-1588...
+  password: 89d3a0375a279f6e743fea76e72952a8
+  port: 16995
+  server: 66.23.204.210
+  type: ss
+- cipher: aes-128-gcm
   name: 🇺🇸[www.v2nodes.com] ss-US-1587...
   password: 0b6091bbea4d8d0ab0e327902dcd3244
   port: 16444
   server: 103.214.109.197
   type: ss
-- name: 🇺🇸[www.v2nodes.com] trojan-US-...
-  password: UX82473651
+- alpn:
+  - http/1.1
+  name: 🇺🇸[www.v2nodes.com] trojan-US-...
+  network: ws
+  password: mitivpn
   port: 443
-  server: guided-ferret.rooster465.autos
-  skip-cert-verify: true
-  sni: guided-ferret.rooster465.autos
+  server: 167.82.76.27
+  skip-cert-verify: false
+  sni: ssl.fastly.com
   type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
-  password: UX82473651
-  port: 443
-  server: happy-gibbon.rooster465.autos
-  skip-cert-verify: true
-  sni: happy-gibbon.rooster465.autos
-  type: trojan
+  ws-opts:
+    headers:
+      Host: mitivpn---deb--s---mitivpn-3.global.ssl.fastly.net
+    path: '%2F---%40VPNine1---%40VPNine1%2F---%40VPNine1---%40VPNine1%2F---%40VPNine1---%40VPNine1%2Fdes---%40VPNine1---%40VPNine1%2F---%40VPNine1---%40VPNine1%2F---%40VPNine1---%40VPNine1'
 - alterId: 0
   cipher: auto
   name: 🇺🇸 美国|@ripaojiedian
@@ -65,34 +71,11 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- alterId: '2'
-  cipher: auto
-  name: 🇺🇸US_2|3.2MB/s
-  network: tcp
-  port: 30829
-  server: v29.hdacd.com
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-  xudp: true
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国 | USA
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (Telegram🇨🇳 @VPNine1)9f6b1e7:141612
-    mode: tls
-  port: 2377
-  server: 134.195.101.118
-  type: ss
-  udp: true
 - alpn:
   - ''
   alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 | USA #1'
+  name: '🇺🇸 美国 | USA #8'
   network: ws
   port: 80
   server: 188.114.96.19
@@ -105,34 +88,3 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.dns-look.space.
     path: /
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸 美国 | USA 6
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: (Telegram🇨🇳 @VPNine1)fa03bb5:137563
-    mode: tls
-  port: 2377
-  server: 134.195.101.117
-  type: ss
-  udp: true
-- name: 🇺🇸 美国 | USA 10
-  network: ws
-  password: '!!str 123456'
-  port: 2096
-  server: 104.18.35.86
-  skip-cert-verify: true
-  sni: 321dfbc6.uir-9i6.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 321dfbc6.uir-9i6.pages.dev
-    path: ''
-- name: '🇺🇸 美国 | USA #7'
-  password: '!!str 123456'
-  port: 2096
-  server: 104.18.35.86
-  skip-cert-verify: true
-  sni: 321dfbc6.uir-9i6.pages.dev
-  type: trojan
