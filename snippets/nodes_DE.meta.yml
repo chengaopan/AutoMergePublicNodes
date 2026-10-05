@@ -47,7 +47,7 @@ proxies:
     headers:
       Host: play.google.com
 - encryption: none
-  name: '🇳🇱[www.v2nodes.com] vless-NL-1... #16'
+  name: '🇳🇱[www.v2nodes.com] vless-NL-1... #17'
   network: ws
   port: 443
   server: 199.232.78.159
@@ -81,17 +81,25 @@ proxies:
   uuid: 5aae7d2d-c152-42cc-afb6-fe805fb94531
   ws-opts:
     path: /
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #14'
-  port: 40443
-  server: arcturus.yokkastars.com
-  tls: false
-  type: vless
-  uuid: bb0f1ed0-0298-40a1-adb1-1f5d6ab33d54
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ajv
+  name: 🇩🇪 德国 | DEU 7
+  network: grpc
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+  port: 443
+  server: 31.77.168.35
+  skip-cert-verify: true
+  sni: d3-de2.cloud-cdn.xyz
+  type: trojan
+  udp: true
 - alpn:
   - h2
   grpc-opts:
     grpc-service-name: ajv
-  name: 🇩🇪DE_4|1.9MB/s
+  name: 🇩🇪 德国 | DEU 12
   network: grpc
   password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
@@ -104,7 +112,7 @@ proxies:
   - h2
   grpc-opts:
     grpc-service-name: ajv
-  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
   network: grpc
   password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
@@ -112,37 +120,126 @@ proxies:
   skip-cert-verify: false
   sni: d3-de2.cloud-cdn.xyz
   type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
   password: UX82473651
   port: 443
   server: pleased-albacore.rooster465.autos
   skip-cert-verify: true
   sni: pleased-albacore.rooster465.autos
   type: trojan
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #1'
-  network: ws
+- name: 🇩🇪DE_4|2.9MB/s
   port: 443
-  server: 172.67.76.40
-  servername: ccc.010304.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /
-- name: 🇩🇪DE_5|2.8MB/s
-  password: None
-  port: 443
-  server: 149.36.50.1
+  server: 172.64.69.89
   skip-cert-verify: true
   tls: true
   type: http
+- name: 🇩🇪DE_5|1.7MB/s
+  port: 443
+  server: 37.203.35.28
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_6|3.2MB/s
+  port: 443
+  server: 87.106.223.158
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_7|1.2MB/s
+  password: None
+  port: 443
+  server: 149.36.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE_8|1.4MB/s
+  password: 69xKLopoiluvBwXtq4LMHHq-8XyPw4FP
+  port: 25342
+  server: irp.fluxzone.ir
+  type: ss
+  udp: true
+- name: '🇩🇪 德国 | DEU #2'
+  network: ws
+  port: 80
+  server: 146.75.119.82
+  tls: false
+  type: vless
+  udp: true
+  uuid: 430209fa-6f0f-4e1b-8283-5aceb7cb51ab
+  ws-opts:
+    headers:
+      Host: rb24.ir
+    path: /ws/?ed=2048/@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr@vpnserverrr/?2048
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 1000
+  name: 🇩🇪 德国 | DEU 3
+  port: 54177
+  protocol: udp
+  server: 5.83.129.90
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  up: 500
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #4'
+  network: ws
+  port: 443
+  server: saas.sin.fan
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+- name: '🇩🇪 德国 | DEU #5'
+  network: ws
+  port: 8880
+  server: 154.197.75.40
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime37.workers.dev
+    path: /
 - client-fingerprint: firefox
-  encryption: none
-  name: 🇩🇪DE_6|1.8MB/s
+  encryption: mlkem768x25519plus.native.0rtt.utmP6WzJcusvh2bhbu1aSLgzVMzmWQ_TklG3xFU4Jk0
+  name: '🇩🇪 德国 | DEU #7'
+  network: xhttp
+  port: 443
+  server: 199.232.77.187
+  servername: ssl.fastly.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5e2e35f9-512b-482e-ad12-bce69590f8d4
+  xhttp-opts:
+    host: ded1.global.ssl.fastly.net
+    mode: auto
+    path: /v2
+    x-padding-bytes: 100-1000
+- auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  name: '🇩🇪 德国 | DEU #8'
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  port: 8443
+  server: 162.249.127.145
+  skip-cert-verify: true
+  sni: hop-germany-september.dynuddns.com
+  tls: false
+  type: hysteria2
+- client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #10'
   network: xhttp
   port: 443
   server: 50.7.29.181
@@ -153,116 +250,36 @@ proxies:
   uuid: 24f9d11d-ceca-4f75-93ca-ad143ca18b28
   xhttp-opts:
     host: de.vmagnum.win
-    reuse-settings:
-      max-connections: '1'
-  xudp: true
-- auth: cf83b611-6cba-4535-adcb-8da06c6a9146
-  name: '🇩🇪 德国 | DEU #3'
-  password: cf83b611-6cba-4535-adcb-8da06c6a9146
-  port: 443
-  server: 144.31.212.253
+    path: /
+- auth: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  name: '🇩🇪 德国 | DEU #12'
+  password: 6a3fe9d0-0d68-4f29-ae99-5771d4217a45
+  port: 4433
+  server: de1.xiaoliyu.cyou
   skip-cert-verify: true
-  sni: vps155-edge.kermemehori.ru
+  sni: 127.0.0.1
   tls: false
   type: hysteria2
-- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  name: 🇩🇪 德国 | DEU 4
-  network: ws
-  port: 80
-  server: Kashgsgsiajsh.apple.gymyoga.ir
+- auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  name: '🇩🇪 德国 | DEU #14'
+  password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
+  port: 8443
+  server: 162.249.127.154
+  skip-cert-verify: true
+  sni: hop-germany-september.dynuddns.com
   tls: false
-  type: vless
-  udp: true
-  uuid: a55538b8-801e-4e45-80d6-d8a8eea31e4f
-  ws-opts:
-    headers:
-      Host: Kashgsgsiajsh.apple.gymyoga.ir
-    path: /
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: ajv
-  name: 🇩🇪 德国 | DEU 6
-  network: grpc
+  type: hysteria2
+- name: '🇩🇪 德国 | DEU #6'
   password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
   server: 31.77.168.35
   skip-cert-verify: true
   sni: d3-de2.cloud-cdn.xyz
   type: trojan
-  udp: true
-- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  name: '🇩🇪 德国 | DEU #7'
-  network: ws
-  port: 80
-  server: hshsvshshshs.g44.gymyoga.ir
-  tls: false
-  type: vless
-  udp: true
-  uuid: 03a7ce81-061b-4d22-a057-40a12aa48bae
-  ws-opts:
-    headers:
-      Host: Hshsvshshshs.G44.gymyoga.ir
-    path: /
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 1000
-  name: 🇩🇪 德国 | DEU 9
-  port: 54177
-  protocol: udp
-  server: 5.83.129.90
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 500
-- encryption: mlkem768x25519plus.native.0rtt.oEfFlk7NfA_QAF1u_5EXbuXfD_8q-oPbaHXmxAjLAS0
-  name: '🇩🇪 德国 | DEU #10'
-  network: ws
-  port: 80
-  server: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
-  servername: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
-  tls: false
-  type: vless
-  udp: true
-  uuid: a55538b8-801e-4e45-80d6-d8a8eea31e4f
-  ws-opts:
-    headers:
-      Host: support.zoom.us.kashgsgsiajsh.apple.gymyoga.ir
-    path: /
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '🇩🇪 德国 | DEU #13'
-  network: ws
-  port: 80
-  server: 188.114.96.19
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: c5965d47-45d6-45af-b619-3b2a6bf896a2
-  ws-opts:
-    headers:
-      Host: google.whatsapp.snapp.torob.basalam.dns-look.space.
-    path: /
-- name: '🇩🇪 德国 | DEU #4'
-  network: ws
-  port: 80
-  server: kashgsgsiajsh.apple.gymyoga.ir
-  tls: false
-  type: vless
-  uuid: a55538b8-801e-4e45-80d6-d8a8eea31e4f
-  ws-opts:
-    headers:
-      Host: Kashgsgsiajsh.apple.gymyoga.ir
-    path: /
-- name: '🇩🇪 德国 | DEU #6'
+- name: '🇩🇪 德国 | DEU #11'
   password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
-  server: 31.77.168.35
+  server: 31.77.168.21
   skip-cert-verify: true
   sni: d3-de2.cloud-cdn.xyz
   type: trojan

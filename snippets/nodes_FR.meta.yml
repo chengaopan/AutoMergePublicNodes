@@ -1,15 +1,5 @@
 proxies:
-- name: '@prrofile_purple | FaST 💚 #2'
-  obfs: salamander
-  obfs-password: ec66908dbc46e6920143d9b684adf277
-  password: ca78f919e6
-  port: 11592
-  server: 155.94.134.183
-  skip-cert-verify: false
-  sni: srv-3fc7c9.21freedom.net
-  tls: false
-  type: hysteria2
-- encryption: none
+- client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
   name: '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
@@ -17,20 +7,20 @@ proxies:
   port: 443
   server: 143.246.208.113
   servername: assets-fr4.pleiades.codes
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 0dca2cfe-98eb-4f9d-9a47-cf87510c558b
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #4'
+  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #6'
   network: ws
   port: 443
   server: 199.232.78.160
   servername: ssl.fastly.com
   tls: true
   type: vless
-  udp: true
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
@@ -181,7 +171,28 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: 🇫🇷FR_1|4.3MB/s
+- name: 🇫🇷FR_1|1.4MB/s
+  port: 443
+  server: 51.210.167.149
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: chrome
+  name: 🇫🇷FR_2|1.7MB/s
+  network: ws
+  password: humanity
+  port: 443
+  server: 162.159.36.20
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.100 Safari/537.36
+    path: /assignment
+- name: 🇫🇷 法国 | FRA
   password: github.com/Alvin9999-newpac/fanqiang
   port: 30099
   server: ip5.934618.xyz
@@ -189,32 +200,8 @@ proxies:
   sni: ip5.934618.xyz
   type: anytls
   udp: true
-- name: 🇫🇷FR_2|1.8MB/s
-  port: 443
-  server: 82.64.255.151
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: android
-  encryption: none
-  name: 🇫🇷FR_3|2.3MB/s
-  network: xhttp
-  port: 443
-  server: 50.7.216.172
-  servername: 24f9d11d.ferrin.uk
-  tls: true
-  type: vless
-  udp: true
-  uuid: 24f9d11d-ceca-4f75-93ca-ad143ca18b28
-  xhttp-opts:
-    host: api.ferrin.uk
-    path: /fr
-    reuse-settings:
-      h-max-reusable-secs: 1140-1260
-      max-connections: '3'
-  xudp: true
 - cipher: aes-256-cfb
-  name: '🇫🇷 法国 | FRA #2'
+  name: '🇫🇷 法国 | FRA #1'
   password: amazonskr05
   port: 443
   server: 15.237.255.137

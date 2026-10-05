@@ -1,18 +1,16 @@
 proxies:
-- client-fingerprint: chrome
-  name: '🇸🇬 新加坡 | SGP #1'
+- name: 🇸🇬[www.v2nodes.com] vless-SG
   network: ws
-  port: 443
-  server: cf.090227.xyz
-  servername: ccc.010304.xyz
-  tls: true
+  port: 80
+  server: 162.159.48.32
+  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  tls: false
   type: vless
-  udp: true
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
   ws-opts:
     headers:
-      Host: ccc.010304.xyz
-    path: /
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /?ed=2560security=tls
 - name: '🇸🇬[www.v2nodes.com] vless-SG #1'
   network: ws
   port: 8080
@@ -25,14 +23,13 @@ proxies:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
     path: /?ed=2560security=tls
 - client-fingerprint: chrome
-  name: '🇸🇬 新加坡 | SGP #2'
+  name: '🇸🇬[www.v2nodes.com] vless-SG #2'
   network: ws
   port: 443
-  server: cf.877774.xyz
+  server: cf.090227.xyz
   servername: ccc.010304.xyz
   tls: true
   type: vless
-  udp: true
   uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
@@ -84,7 +81,8 @@ proxies:
     headers:
       Host: free-server.techsonic.dev
     path: /free-server.techsonic.dev
-- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #4'
+- encryption: none
+  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #4'
   network: ws
   port: 80
   server: support.zoom.us
@@ -97,12 +95,15 @@ proxies:
     path: /shalana
 - client-fingerprint: chrome
   name: '🇸🇬[www.v2nodes.com] vless-SG-1... #5'
+  network: tcp
   port: 49289
   server: 129.150.51.127
   servername: www.microsoft.com
   tls: true
   type: vless
   uuid: 0590ab38-cb22-41d3-8312-6f396a5cec58
+  ws-opts:
+    path: /
 - name: '🇸🇬[www.v2nodes.com] vless-SG-1... #7'
   network: ws
   port: 8880
@@ -114,17 +115,22 @@ proxies:
     headers:
       Host: cnd.singapure.mygold.stream
     path: /cdn/assets/stream
+- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #12'
+  network: ws
+  port: 80
+  server: 162.159.0.53
+  tls: false
+  type: vless
+  uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
+  ws-opts:
+    headers:
+      Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+    path: /?ed=2560security=tls
 - cipher: chacha20-ietf-poly1305
   name: 🇸🇬[www.v2nodes.com] ss-SG-1581...
   password: 9epp3o9ng8ej59uv
   port: 14249
   server: 45.128.12.20
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇸🇬[www.v2nodes.com] ss-SG-1559...
-  password: qpSevKaUXYQKvSjp
-  port: 8388
-  server: 139.180.220.175
   type: ss
 - name: 🇸🇬[www.v2nodes.com] trojan-SG-...
   password: UX82473651
@@ -193,8 +199,10 @@ proxies:
   sni: m.ctrip.com
   type: trojan
 - client-fingerprint: chrome
+  encryption: none
   flow: xtls-rprx-vision
-  name: 🇸🇬SG_1|2.6MB/s
+  name: 🇸🇬SG_2|2.8MB/s
+  network: tcp
   port: 33102
   server: 112.49.63.11
   servername: sgg.knhqf.com
@@ -203,19 +211,68 @@ proxies:
   type: vless
   udp: true
   uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
-- flow: xtls-rprx-vision
-  name: 🇸🇬SG_2|1.3MB/s
-  port: 33102
-  server: 27.44.143.169
-  servername: sgg.knhqf.com
+  xudp: true
+- client-fingerprint: chrome
+  name: '🇸🇬 新加坡 | SGP #1'
+  network: ws
+  port: 443
+  server: 172.64.156.111
+  servername: cf.zhahui.de5.net
   tls: true
   type: vless
-  uuid: 0f47a872-b140-46f5-aef8-f46993f5fc01
-- auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  udp: true
+  uuid: 2d4b819d-6fa6-4db2-8434-61e7db0fe93c
+  ws-opts:
+    headers:
+      Host: cf.zhahui.de5.net
+    path: /
+- name: '🇸🇬 新加坡 | SGP #2'
+  network: ws
+  port: 8880
+  server: 154.194.12.40
+  servername: 154.194.12.40
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime35.workers.dev
+    path: /
+- client-fingerprint: chrome
   name: '🇸🇬 新加坡 | SGP #3'
+  network: ws
+  port: 443
+  server: 104.18.33.141
+  servername: kclx.eu.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
+  ws-opts:
+    headers:
+      Host: kclx.eu.org
+    path: /154.16.10.34-8080
+- alterId: 0
+  cipher: auto
+  name: '🇸🇬 新加坡 | SGP #5'
+  network: ws
+  port: 55002
+  server: 45.127.32.220
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b25731af-0428-4274-be5d-31a273a8d632
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: /b25731af-0428-4274-be5d-31a273a8d632-vm
+- auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  name: '🇸🇬 新加坡 | SGP #6'
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 443
-  server: 54.169.17.236
+  server: 13.212.109.205
   skip-cert-verify: true
   sni: www.bing.com
   tls: false

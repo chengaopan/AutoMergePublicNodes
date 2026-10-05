@@ -215,11 +215,11 @@ proxies:
   port: 777
   server: 45.149.114.171
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇰🇷[www.v2nodes.com] ss-KR-1587...
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  port: 8443
-  server: 43.201.103.218
+- cipher: aes-256-gcm
+  name: 🇮🇹[www.v2nodes.com] ss-IT-1549...
+  password: itzvpn@321
+  port: 8388
+  server: 57.131.48.45
   type: ss
 - cipher: aes-256-gcm
   name: 🇰🇷[www.v2nodes.com] ss-KR-1580...
@@ -228,22 +228,10 @@ proxies:
   server: 211.174.113.172
   type: ss
 - cipher: aes-256-gcm
-  name: 🇰🇷[www.v2nodes.com] ss-KR-1185...
-  password: TEzjfAYq2IjtuoS
-  port: 6679
-  server: 141.164.45.187
-  type: ss
-- cipher: aes-256-gcm
   name: 🇲🇽[www.v2nodes.com] ss-MX-1564...
   password: BWyPPTusFKhGgzKh
   port: 8388
   server: 64.177.90.30
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇳🇴[www.v2nodes.com] ss-NO-1220...
-  password: ARgvGZywA+gacgGV26Bvmu05+wZmRW/j+AdU+Z8Bt44=
-  port: 990
-  server: 185.213.23.63
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇷🇴[www.v2nodes.com] ss-RO-1298...
@@ -263,23 +251,11 @@ proxies:
   port: 14249
   server: 45.128.12.20
   type: ss
-- cipher: aes-256-gcm
-  name: 🇸🇬[www.v2nodes.com] ss-SG-1559...
-  password: qpSevKaUXYQKvSjp
-  port: 8388
-  server: 139.180.220.175
-  type: ss
 - cipher: aes-128-gcm
   name: 🇺🇸[www.v2nodes.com] ss-US-1587...
   password: 0b6091bbea4d8d0ab0e327902dcd3244
   port: 16444
   server: 103.214.109.197
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸[www.v2nodes.com] ss-US-1586...
-  password: 6c4993acd1ca7f12f0a18bdcb3c37c6c
-  port: 10272
-  server: 66.23.201.172
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇿🇦[www.v2nodes.com] ss-ZA-1534...
@@ -312,9 +288,23 @@ proxies:
   type: trojan
 - alpn:
   - h2
+  client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ajv
-  name: 🇩🇪DE_4|1.9MB/s
+  name: 🇩🇪 德国 | DEU 7
+  network: grpc
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+  port: 443
+  server: 31.77.168.35
+  skip-cert-verify: true
+  sni: d3-de2.cloud-cdn.xyz
+  type: trojan
+  udp: true
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: ajv
+  name: 🇩🇪 德国 | DEU 12
   network: grpc
   password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
@@ -327,7 +317,7 @@ proxies:
   - h2
   grpc-opts:
     grpc-service-name: ajv
-  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
   network: grpc
   password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
@@ -335,7 +325,7 @@ proxies:
   skip-cert-verify: false
   sni: d3-de2.cloud-cdn.xyz
   type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
   password: UX82473651
   port: 443
   server: pleased-albacore.rooster465.autos
@@ -487,9 +477,17 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
+- name: '🇭🇰 香港 | HKG #1'
+  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
+  port: 2052
+  server: 47.240.80.220
+  skip-cert-verify: true
+  sni: vpn.12169.top
+  type: trojan
+  udp: true
 - alpn:
   - http/1.1
-  name: 🇭🇰[www.v2nodes.com] trojan-HK-...
+  name: '🇭🇰[www.v2nodes.com] trojan-HK-... #1'
   network: ws
   password: Telegram_healer_config
   port: 443
@@ -623,16 +621,13 @@ proxies:
   skip-cert-verify: true
   sni: brief-glider.rooster465.autos
   type: trojan
-- client-fingerprint: chrome
-  name: '🇰🇷 韩国 | KOR #1'
-  network: tcp
+- name: 🇰🇷[www.v2nodes.com] trojan-KR-...
   password: UX82473651
   port: 443
   server: amazing-peacock.rooster465.autos
   skip-cert-verify: true
   sni: amazing-peacock.rooster465.autos
   type: trojan
-  udp: true
 - name: '🇰🇷[www.v2nodes.com] trojan-KR-... #1'
   password: UX82473651
   port: 443
@@ -700,6 +695,7 @@ proxies:
   password: 5931134d1cde66bf83a54acdfebe7ab2
   port: 443
   server: 47.250.84.25
+  sni: moltbot.doctoroyy.net
   type: trojan
 - alpn:
   - http/1.1
@@ -1054,38 +1050,180 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- cipher: aes-256-cfb
-  name: 🇺🇸US_2|3.1MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.95.209.183
-  type: ss
+- alterId: '2'
+  cipher: auto
+  name: 🇺🇸US_2|3.2MB/s
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: false
+  tls: false
+  type: vmess
   udp: true
-- cipher: aes-256-cfb
-  name: 🇺🇸US_7|2.8MB/s
-  password: amazonskr05
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- client-fingerprint: chrome
+  name: 🇫🇷FR_2|1.7MB/s
+  network: ws
+  password: humanity
   port: 443
-  server: 3.84.97.225
-  type: ss
-  udp: true
-- alpn:
-  - h2
-  grpc-opts:
-    grpc-service-name: ajv
-  name: 🇩🇪 德国 | DEU 6
-  network: grpc
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
-  port: 443
-  server: 31.77.168.35
-  skip-cert-verify: true
-  sni: d3-de2.cloud-cdn.xyz
+  server: 162.159.36.20
+  skip-cert-verify: false
+  sni: www.calmlunch.com
   type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.100 Safari/537.36
+    path: /assignment
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE_8|1.4MB/s
+  password: 69xKLopoiluvBwXtq4LMHHq-8XyPw4FP
+  port: 25342
+  server: irp.fluxzone.ir
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: ❓Other_1|1.5MB/s
+  password: 69xKLopoiluvBwXtq4LMHHq-8XyPw4FP
+  port: 25341
+  server: irp.fluxzone.ir
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇹🇷TR_1|1.4MB/s
+  password: 69xKLopoiluvBwXtq4LMHHq-8XyPw4FP
+  port: 25341
+  server: irl1.starzone.ir
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '🇫🇷 法国 | FRA #1'
+  password: amazonskr05
+  port: 443
+  server: 15.237.255.137
+  type: ss
   udp: true
 - alpn:
   - ''
   alterId: 0
   cipher: auto
-  name: '🇩🇪 德国 | DEU #13'
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    method: GET
+    path:
+    - /x
+  name: '🇭🇰 香港 | HKG #4'
+  network: http
+  port: 9999
+  server: 8.217.230.196
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 02dc4f5b-b87d-410d-b9d5-0c6f921d92f8
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #5'
+  network: ws
+  port: 443
+  server: ex1ogt73nzpqkac2.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: ex1ogt73nzpqkac2.v.3dns.vip
+    path: /ws-vmess
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #6'
+  network: ws
+  port: 44867
+  server: 47.244.120.197
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  ws-opts:
+    path: /arki
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #7'
+  network: ws
+  port: 443
+  server: 6JDvArazgU3qQR6Q.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: 6JDvArazgU3qQR6Q.v.3dns.vip
+    path: /ws-vmess
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #8'
+  network: ws
+  port: 23026
+  server: 47.244.120.197
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  ws-opts:
+    path: /arki
+- name: '🇷🇴 罗马尼亚 | ROU #1'
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  port: 4443
+  server: 77.74.123.106
+  skip-cert-verify: true
+  sni: grape-test-italy.dynuddns.net
+  type: trojan
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '🇸🇬 新加坡 | SGP #5'
+  network: ws
+  port: 55002
+  server: 45.127.32.220
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b25731af-0428-4274-be5d-31a273a8d632
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: /b25731af-0428-4274-be5d-31a273a8d632-vm
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 美国 | USA
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (Telegram🇨🇳 @VPNine1)9f6b1e7:141612
+    mode: tls
+  port: 2377
+  server: 134.195.101.118
+  type: ss
+  udp: true
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #1'
   network: ws
   port: 80
   server: 188.114.96.19
@@ -1098,76 +1236,48 @@ proxies:
     headers:
       Host: google.whatsapp.snapp.torob.basalam.dns-look.space.
     path: /
-- cipher: aes-256-cfb
-  name: '🇫🇷 法国 | FRA #2'
-  password: amazonskr05
-  port: 443
-  server: 15.237.255.137
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸 美国 | USA 6
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (Telegram🇨🇳 @VPNine1)fa03bb5:137563
+    mode: tls
+  port: 2377
+  server: 134.195.101.117
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #1'
+- name: 🇺🇸 美国 | USA 10
   network: ws
-  port: 443
-  server: i2psm3knof5qjjix.v.3dns.vip
-  servername: i2psm3knof5qjjix.v.3dns.vip
+  password: '123456'
+  port: 2096
+  server: 104.18.35.86
   skip-cert-verify: true
-  tls: true
-  type: vmess
+  sni: 321dfbc6.uir-9i6.pages.dev
+  type: trojan
   udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-    path: /ws-vmess
-- name: '🇭🇰 香港 | HKG #2'
-  password: tFjD2X1F6i9FfWp2GDU5Vbi1conuaChDKIYbw9zMFrqvMoSz
-  port: 2052
-  server: 47.240.80.220
-  skip-cert-verify: true
-  sni: vpn.12169.top
-  type: trojan
-  udp: true
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - sjskendn.dingtalk.com
-    method: GET
-    path:
-    - /x
-  name: '🇭🇰 香港 | HKG #5'
-  network: http
-  port: 800
-  server: 47.86.167.194
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: f2c67cae-c09d-4739-947d-f5302d87a3c0
-- name: '🇯🇵 日本 | JPN #1'
-  password: UX82473651
-  port: 443
-  server: prime-corgi.rooster465.autos
-  skip-cert-verify: true
-  sni: prime-corgi.rooster465.autos
-  type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: '🇺🇸 美国 | USA #5'
-  password: amazonskr05
-  port: 443
-  server: 54.208.227.172
-  type: ss
-  udp: true
+      Host: 321dfbc6.uir-9i6.pages.dev
+    path: ''
 - name: '🇩🇪 德国 | DEU #6'
   password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
   port: 443
   server: 31.77.168.35
   skip-cert-verify: true
   sni: d3-de2.cloud-cdn.xyz
+  type: trojan
+- name: '🇩🇪 德国 | DEU #11'
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+  port: 443
+  server: 31.77.168.21
+  skip-cert-verify: true
+  sni: d3-de2.cloud-cdn.xyz
+  type: trojan
+- name: '🇺🇸 美国 | USA #7'
+  password: '123456'
+  port: 2096
+  server: 104.18.35.86
+  skip-cert-verify: true
+  sni: 321dfbc6.uir-9i6.pages.dev
   type: trojan
