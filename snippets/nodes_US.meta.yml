@@ -7,34 +7,28 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #13'
-  network: ws
-  port: 8443
-  server: www.5199dy.com
-  servername: aaa.abcai.online
-  tls: true
-  type: vless
-  uuid: ce0cf224-1d6e-466e-a7e3-55aead76afed
-  ws-opts:
-    headers:
-      Host: aaa.abcai.online
-    path: /vless-argo
 - cipher: aes-128-gcm
   name: 🇺🇸[www.v2nodes.com] ss-US-1588...
   password: 89d3a0375a279f6e743fea76e72952a8
   port: 16995
   server: 66.23.204.210
   type: ss
-- cipher: aes-128-gcm
-  name: 🇺🇸[www.v2nodes.com] ss-US-1587...
-  password: 0b6091bbea4d8d0ab0e327902dcd3244
-  port: 16444
-  server: 103.214.109.197
-  type: ss
+- name: 🇺🇸[www.v2nodes.com] trojan-US-...
+  password: mitivpn
+  port: 443
+  server: 167.82.76.27
+  type: trojan
+  ws-opts:
+    path: '%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2FNLSus---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN%2F---%40MiTiVPN---%40MiTiVPN'
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
+  password: UX82473651
+  port: 443
+  server: ultimate-jaguar.rooster465.autos
+  sni: ultimate-jaguar.rooster465.autos
+  type: trojan
 - alpn:
   - http/1.1
-  name: 🇺🇸[www.v2nodes.com] trojan-US-...
+  name: '🇺🇸[www.v2nodes.com] trojan-US-... #2'
   network: ws
   password: mitivpn
   port: 443
@@ -92,29 +86,161 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇺🇸US_1|2.8MB/s
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_1|2.0MB/s
+  network: xhttp
+  port: 443
+  server: cdn8.alihapp.com
+  servername: cdn8.alihapp.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c4394e27-baeb-422d-8905-a93f8e01126f
+  xhttp-opts:
+    host: cdn8.alihapp.com
+    mode: auto
+    path: /
+  xudp: true
+- fingerprint: ''
+  name: 🇺🇸US_2|3.1MB/s
+  password: 9sK2mP8xQ7vL3nZ6
+  port: 443
+  server: awefd2313fefarg23fr24.pnuqcnp.cn
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  type: anytls
+  udp: true
+  username: 9sK2mP8xQ7vL3nZ6
+- name: 🇺🇸US_3|2.1MB/s
+  password: 'null'
+  port: 443
+  server: crosscards.site
+  sni: crosscards.site
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇺🇸US_4|3.3MB/s
   port: 8443
   server: 45.145.72.122
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: chrome
-  name: 🇺🇸US_2|2.4MB/s
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1002
-  server: qm5tw9xz.zf-mix.9999231.xyz
-  skip-cert-verify: true
-  sni: iosapps.itunes.apple.com
-  type: anytls
-  udp: true
-- name: 🇺🇸US_3|1.1MB/s
-  password: 'null'
+- name: 🇺🇸US_5|4.5MB/s
   port: 443
-  server: goedkoopgeluid.icu
+  server: 148.135.10.80
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_6|3.1MB/s
+  port: 443
+  server: 167.88.60.242
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_7|2.9MB/s
+  port: 443
+  server: 68.235.56.51
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_8|4.2MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.200
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_9|3.6MB/s
+  port: 443
+  server: crosscards.site
+  sni: crosscards.site
+  tls: true
+  type: http
+- name: 🇺🇸US_10|4.0MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.208
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_11|3.5MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.195
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_12|2.0MB/s
+  port: 9443
+  server: 198.44.138.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: US_speednode_0140
+  password: None
+  port: 443
+  server: purposebydesig.club
+  tls: true
+  type: http
+  udp: true
+- name: US_speednode_0143
+  port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- cipher: aes-256-cfb
+  name: 🇺🇸US_15|4.2MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.208.223.39
+  type: ss
+- name: 🇺🇸US_16|4.4MB/s
+  port: 9002
+  server: 138.199.35.204
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_17|4.1MB/s
+  password: 'null'
+  port: 9002
+  server: 138.199.35.197
   skip-cert-verify: true
   tls: true
   type: http
   username: 'null'
+- name: 🇺🇸US_18|2.3MB/s
+  port: 8443
+  server: 45.150.164.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_19|4.1MB/s
+  password: 'null'
+  port: 443
+  server: purecambogiasl.live
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇺🇸US_20|3.8MB/s
+  port: 9002
+  server: 138.199.35.196
+  skip-cert-verify: true
+  tls: true
+  type: http
+- cipher: aes-256-cfb
+  name: 🇺🇸US_21|3.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 23.22.158.187
+  type: ss
+  udp: true
 - client-fingerprint: chrome
   name: '🇺🇸 美国 | USA #1'
   network: ws
@@ -283,23 +409,9 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: US_speednode_0140
-  password: None
-  port: 443
-  server: purposebydesig.club
-  tls: true
-  type: http
-  udp: true
 - name: US_speednode_0141
   port: 443
   server: 38.28.193.188
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0143
-  port: 9002
-  server: 138.199.35.198
   skip-cert-verify: true
   tls: true
   type: http

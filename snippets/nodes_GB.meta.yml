@@ -1,25 +1,18 @@
 proxies:
-- encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
-  network: ws
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
   port: 443
   server: 199.232.78.159
-  servername: ssl.fastly.com
-  skip-cert-verify: false
-  tls: true
+  tls: false
   type: vless
   uuid: 8453bdb7-dd58-419d-b002-9456dd2e73d7
   ws-opts:
-    headers:
-      Host: pan2e.global.ssl.fastly.net
     path: /
-- encryption: none
-  grpc-opts:
+- grpc-opts:
     grpc-service-name: vless
   name: '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
   network: grpc
   port: 2083
-  server: 66.90.104.43
+  server: 66.90.104.42
   tls: true
   type: vless
   uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
@@ -36,7 +29,9 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
+  encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+  network: tcp
   port: 443
   server: 186.190.211.188
   servername: 186.190.211.188
@@ -50,6 +45,39 @@ proxies:
   port: 443
   server: 158.173.24.73
   type: ss
+- cipher: aes-256-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1292...
+  password: g5h5jleTRSyO3Rk4
+  port: 80
+  server: 149.102.132.184
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1289...
+  password: LXchLsIwtCeUAUgu
+  port: 443
+  server: 149.102.149.207
+  type: ss
+- name: 🇬🇧GB_1|2.9MB/s
+  password: None
+  port: 443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_2|1.3MB/s
+  password: None
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_3|2.6MB/s
+  password: None
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
 - auth: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
   name: '🇬🇧 英国 | GBR #2'
   password: 5d0a6445-a30d-4522-bb1f-94f1d3ad63be
