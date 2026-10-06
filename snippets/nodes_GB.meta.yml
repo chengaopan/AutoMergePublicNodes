@@ -1,5 +1,5 @@
 proxies:
-- name: '🇳🇱[www.v2nodes.com] vless-NL-1... #14'
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
   port: 443
   server: 199.232.78.159
   tls: false
@@ -29,9 +29,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  encryption: none
   name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
-  network: tcp
   port: 443
   server: 186.190.211.188
   servername: 186.190.211.188
@@ -39,6 +37,19 @@ proxies:
   tls: true
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
+  network: ws
+  port: 443
+  server: 57.128.177.198
+  servername: vp58.cc.cd
+  tls: true
+  type: vless
+  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
+  ws-opts:
+    headers:
+      Host: vp58.cc.cd
+    path: /Telegram🇨🇳+fp=chrome
 - cipher: aes-128-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
   password: shadowsocks
@@ -48,13 +59,13 @@ proxies:
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1292...
   password: g5h5jleTRSyO3Rk4
-  port: 80
+  port: 443
   server: 149.102.132.184
   type: ss
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1289...
   password: LXchLsIwtCeUAUgu
-  port: 80
+  port: 443
   server: 149.102.149.207
   type: ss
 - cipher: aes-256-gcm
@@ -63,3 +74,26 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
+- name: 🇬🇧GB_1|3.0MB/s
+  password: None
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_2|1.9MB/s
+  port: 443
+  server: 84.17.50.193
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_3|2.6MB/s
+  port: 9333
+  server: 176.58.117.154
+  type: http
+- name: 🇬🇧GB_4|1.9MB/s
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  tls: true
+  type: http
