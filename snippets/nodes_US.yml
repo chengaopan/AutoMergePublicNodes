@@ -78,33 +78,48 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- cipher: aes-256-cfb
-  name: 🇺🇸US_15|4.2MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.208.223.39
-  type: ss
-- cipher: aes-256-cfb
-  name: 🇺🇸US_21|3.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 23.22.158.187
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸US_34|2.2MB/s
+  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
+  plugin: obfs
+  plugin-opts:
+    host: (Telegram🇨🇳 @VPNine1)fa03bb5:137563
+    mode: tls
+  port: 2377
+  server: 134.195.101.119
   type: ss
   udp: true
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #8'
+- cipher: aes-256-gcm
+  name: '🇷🇺 俄罗斯 | RUS #1'
+  password: 4938e975724d0ed1
+  port: 10771
+  server: 194.87.196.13
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '🇷🇺 俄罗斯 | RUS #4'
+  password: 895b4b796a357570
+  port: 10771
+  server: 46.17.41.166
+  type: ss
+  udp: true
+- name: 🇺🇸 美国 | USA 5
   network: ws
-  port: 80
-  server: 188.114.96.19
+  password: trojan
+  port: 8443
+  server: 104.18.35.86
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: longwanghen.pages.dev
+  type: trojan
   udp: true
-  uuid: c5965d47-45d6-45af-b619-3b2a6bf896a2
   ws-opts:
     headers:
-      Host: google.whatsapp.snapp.torob.basalam.dns-look.space.
+      Host: longwanghen.pages.dev
     path: /
+- name: '🇺🇸 美国 | USA #3'
+  password: trojan
+  port: 8443
+  server: 104.18.35.86
+  skip-cert-verify: true
+  sni: longwanghen.pages.dev
+  type: trojan
