@@ -12,20 +12,18 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
-- alpn:
-  - http/1.1
+- encryption: none
   name: '🇸🇬[www.v2nodes.com] vless-SG #1'
   network: ws
-  port: 443
-  server: 104.25.178.92
-  servername: ikT-KKC25F27k-3Tehr8MC.ADE-1007.WOrKErS.DEV
-  tls: true
+  port: 2086
+  server: www.speedtest.net
+  tls: false
   type: vless
-  uuid: d9abc6e3-83bf-4c28-ae68-72465e2abe39
+  uuid: bba14c1d-f08c-4c9a-ac87-cf85d38d8aff
   ws-opts:
     headers:
-      Host: ikt-kkc25f27k-3tehr8mc.ade-1007.workers.dev
-    path: /vl/xQhNe7rLrdM0emZlaW5LMsNwcoIgnT?ed=2560fp=chrome
+      Host: tight-thunder-ce8e.hamid-r-aliakbari1379-0f0.workers.dev
+    path: /eyJqdW5rIjoiRGtvTEVIeGU4cXFaTVVZIiwicHJvdG9jb2wiOiJ2bCIsIm1vZGUiOiJwcmVmaXgiLCJwYW5lbElQcyI6WyJbMmEwMjo4OTg6MTQ2OjY0OjpdIl19
 - name: '🇸🇬[www.v2nodes.com] vless-SG #2'
   network: ws
   port: 2086
@@ -39,9 +37,8 @@ proxies:
     path: /vl/3k4QnDlh2r3IPLPNFGLAeMJ5df?ed=2560
 - name: '🇸🇬[www.v2nodes.com] vless-SG #3'
   network: ws
-  port: 2095
-  server: 162.159.43.187
-  servername: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
+  port: 8080
+  server: 172.64.53.55
   tls: false
   type: vless
   uuid: 47fcef29-ab4e-4aa6-932b-d95a18f28a4e
@@ -49,26 +46,23 @@ proxies:
     headers:
       Host: 8nj2r.2k8t.f88.hh.vavava.kdns.fr
     path: /?ed=2560security=tls
-- client-fingerprint: unsafe
+- encryption: none
   name: '🇸🇬[www.v2nodes.com] vless-SG #4'
   network: ws
-  port: 443
-  server: 172.67.73.213
-  servername: aio.eth0.dpdns.org
-  tls: true
+  port: 80
+  server: 104.25.122.72
+  tls: false
   type: vless
-  uuid: 8d42d29a-ed53-4684-a9ff-6b33826149de
+  uuid: 6cd78ec7-b715-471c-92b4-0c3842caea4b
   ws-opts:
     headers:
-      Host: aio.eth0.dpdns.org
-    path: /aioproxybot/94.23.144.99-2053
-- client-fingerprint: chrome
-  encryption: none
+      Host: billowing-cloud-d339.sospanel.workers.dev
+    path: /eyJqdW5rIjoiVXRIT2UwaDUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
+- encryption: none
   name: '🇸🇬[www.v2nodes.com] vless-SG #5'
   network: ws
   port: 2082
   server: 172.64.150.28
-  servername: hhlfy.twiladaphne.ndjp.net
   tls: false
   type: vless
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
@@ -134,14 +128,17 @@ proxies:
     headers:
       Host: onhit.shalana.shop
     path: /shalana
-- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #5'
-  port: 34249
+- client-fingerprint: chrome
+  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #5'
+  network: tcp
+  port: 49289
   server: 129.150.51.127
   servername: www.microsoft.com
-  skip-cert-verify: true
   tls: true
   type: vless
   uuid: 0590ab38-cb22-41d3-8312-6f396a5cec58
+  ws-opts:
+    path: /
 - name: '🇸🇬[www.v2nodes.com] vless-SG-1... #7'
   network: ws
   port: 8880
@@ -245,41 +242,26 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- down: ''
-  fingerprint: ''
-  name: 🇸🇬SG_1|4.5MB/s
-  obfs: ''
-  obfs-password: ''
-  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
-  port: 443
-  server: vpn-sg-001.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-sg-001.fastervpn.world
-  type: hysteria2
-  up: ''
-- name: 🇸🇬SG_2|2.0MB/s
-  port: 9090
-  server: 167.99.74.174
-  type: http
-- cipher: chacha20-ietf-poly1305
+- alpn:
+  - h2
+  - http/
+  client-fingerprint: chrome
   name: '🇸🇬 新加坡 | SGP #1'
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  port: 8443
-  server: 13.212.248.1
-  type: ss
+  network: ws
+  port: 443
+  server: 170.114.52.22
+  tls: true
+  type: vless
   udp: true
+  uuid: dd2e8c8c-abf4-48bf-9798-c8a9af94d99f
+  ws-opts:
+    headers:
+      Host: asia.csmaster.site
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: '🇸🇬 新加坡 | SGP #2'
-  password: 4c8fced0-8987-4504-b8cf-15aca9cbb82e
-  port: 35601
-  server: gw.lydwan.com
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 8443
+  server: 47.129.152.126
   type: ss
-  udp: true
-- name: 🇸🇬 新加坡 | SGP 3
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1015
-  server: 7a9a2v1f.zf-mix.9999231.xyz
-  skip-cert-verify: true
-  sni: id-house.9999231.xyz
-  type: anytls
   udp: true

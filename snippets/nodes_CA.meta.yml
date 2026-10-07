@@ -1,5 +1,7 @@
 proxies:
-- name: '🇨🇦[www.v2nodes.com] vless-CA-1... #1'
+- encryption: none
+  name: 🇨🇦[www.v2nodes.com] vless-CA-1...
+  network: tcp
   port: 8080
   server: milo.rubinaz.xyz
   tls: false
@@ -77,33 +79,17 @@ proxies:
   port: 445
   server: 51.222.12.127
   type: ss
-- name: 🇨🇦CA_1|2.4MB/s
+- client-fingerprint: chrome
+  name: '🇨🇦 加拿大 | CAN #1'
+  network: ws
   port: 443
-  server: 206.223.183.16
-  skip-cert-verify: true
+  server: 24.84.0.55
+  servername: cf3.schzyc.cc.cd
   tls: true
-  type: http
-- name: 🇨🇦CA_2|2.0MB/s
-  port: 9443
-  server: 23.169.224.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇨🇦CA_3|1.5MB/s
-  port: 9443
-  server: 198.44.157.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇨🇦CA_4|3.5MB/s
-  port: 9443
-  server: 198.44.157.19
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇨🇦CA_5|1.7MB/s
-  port: 443
-  server: 35.183.131.26
-  skip-cert-verify: true
-  tls: true
-  type: http
+  type: vless
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: cf3.schzyc.cc.cd
+    path: /proxyip=ProxyIP.CMLiussss.net
