@@ -27,8 +27,21 @@ proxies:
   sni: germany3.h2corp.local
   tls: false
   type: hysteria2
+- client-fingerprint: safari
+  name: 🇩🇪[www.v2nodes.com] vless-DE-1...
+  network: ws
+  port: 8443
+  server: 45.89.190.245
+  servername: de.gokonstantin.com
+  tls: true
+  type: vless
+  uuid: 053682f4-c584-46df-ad81-069dec5f64f0
+  ws-opts:
+    headers:
+      Host: de.gokonstantin.com
+    path: /cdnws
 - client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #5'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
   network: ws
   port: 443
   server: 167.179.103.224
@@ -44,7 +57,7 @@ proxies:
   - http/1.1
   client-fingerprint: random
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
   network: ws
   port: 443
   server: 91.215.43.80
@@ -57,7 +70,7 @@ proxies:
       Host: sand.api.downloader-pet.xyz
     path: /gateway/v1/ws/74c4d5e82a8e50ccf09fc628c17dc9be
 - encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
   network: tcp
   port: 8080
   server: 91.107.151.122
@@ -98,50 +111,65 @@ proxies:
   skip-cert-verify: true
   sni: d3-de2.cloud-cdn.xyz
   type: trojan
-- name: '🇩🇪 德国 | DEU #3'
-  network: ws
-  port: 2052
-  server: 172.64.229.129
-  tls: false
-  type: vless
-  udp: true
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  ws-opts:
-    headers:
-      Host: eu02.123450908.xyz
-    path: /rain1226
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_3|1.1MB/s
-  network: tcp
+- cipher: aes-256-cfb
+  name: '🇩🇪 德国 | DEU #11'
+  password: amazonskr05
   port: 443
-  server: 31.131.251.17
-  servername: quatro.lmstream.org
-  tls: true
-  type: vless
+  server: 63.177.230.112
+  type: ss
   udp: true
-  uuid: 9ea8b000-58ce-0050-b108-989dd4f248f1
-  xudp: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #1'
-  network: xhttp
+- name: 🇩🇪DE_2|1.6MB/s
   port: 443
-  server: 167.82.76.31
-  servername: speedtest.net
+  server: 172.64.68.89
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: http
+- cipher: aes-256-cfb
+  name: 🇩🇪DE_3|5.3MB/s
+  password: amazonskr05
+  port: 443
+  server: 18.196.88.40
+  type: ss
   udp: true
-  uuid: 08dd79b8-8eab-45e7-815b-29bb7ea35a61
-  xhttp-opts:
-    host: namne.global.ssl.fastly.net
-    mode: auto
-    path: /configure/services/vzQ6lbMCPkOKGnZN5uJR3e/versions/2/domains
+- name: 🇩🇪DE_4|2.9MB/s
+  port: 443
+  server: 87.249.132.97
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_5|2.5MB/s
+  port: 443
+  server: 149.36.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_6|2.9MB/s
+  port: 9002
+  server: 158.173.154.3
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_7|2.6MB/s
+  port: 9002
+  server: 158.173.154.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_8|2.1MB/s
+  password: None
+  port: 443
+  server: 149.36.50.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_9|2.6MB/s
+  port: 443
+  server: 87.106.223.158
+  skip-cert-verify: true
+  tls: true
+  type: http
 - auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  name: '🇩🇪 德国 | DEU #2'
+  name: '🇩🇪 德国 | DEU #1'
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   port: 8443
   server: 162.249.126.39
@@ -150,18 +178,94 @@ proxies:
   tls: false
   type: hysteria2
 - auth: d402d4c0b8354a90b70bb2566dce9a08
-  name: '🇩🇪 德国 | DEU #5'
+  name: '🇩🇪 德国 | DEU #2'
   password: d402d4c0b8354a90b70bb2566dce9a08
   port: 8443
-  server: i.wareznet.ru
+  server: 78.17.209.108
   skip-cert-verify: true
   sni: i.wareznet.ru
   tls: false
   type: hysteria2
-- cipher: aes-256-cfb
-  name: '🇩🇪 德国 | DEU #6'
-  password: amazonskr05
+- auth: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  name: '🇩🇪 德国 | DEU #3'
+  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
+  port: 8443
+  server: 103.126.51.46
+  skip-cert-verify: true
+  sni: ocober-romania-new.yyuyy.com
+  tls: false
+  type: hysteria2
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #5'
+  network: ws
   port: 443
-  server: 63.177.230.112
-  type: ss
+  server: saas.sin.fan
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
   udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+- client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #7'
+  network: xhttp
+  port: 33742
+  server: 193.223.106.13
+  servername: fi-966ffd3f4f.shamanapp.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
+  xhttp-opts:
+    host: fi-966ffd3f4f.shamanapp.online
+    mode: auto
+    path: /ShamanXHTTP2026
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #9'
+  network: xhttp
+  port: 443
+  server: xzfp.gsgg.electrocitymarket.ru
+  servername: xzfp.gsgg.electrocitymarket.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2519b5e-495e-462e-9703-bbf68011d2f3
+  xhttp-opts:
+    host: xzfp.gsgg.electrocitymarket.ru
+    mode: stream-up
+    path: /
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #10'
+  network: xhttp
+  port: 443
+  server: ijug.jffq.electrocitymarket.ru
+  servername: ijug.jffq.electrocitymarket.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: d2519b5e-495e-462e-9703-bbf68011d2f3
+  xhttp-opts:
+    host: ijug.jffq.electrocitymarket.ru
+    mode: stream-up
+    path: /
+- auth: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  name: '🇩🇪 德国 | DEU #12'
+  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
+  port: 8443
+  server: 77.74.123.107
+  skip-cert-verify: true
+  sni: grape-test-italy.dynuddns.net
+  tls: false
+  type: hysteria2
