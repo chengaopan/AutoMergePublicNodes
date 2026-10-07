@@ -1,18 +1,10 @@
 proxies:
-- name: 🇫🇷188762 | ⚡️Telegram = t.me/S...
+- name: 🇫🇷189112 | ⚡️Telegram = t.me/S...
   password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: 13.36.234.11
+  server: 51.44.167.227
   skip-cert-verify: true
   sni: vpn-fr-001.fastervpn.world
-  tls: false
-  type: hysteria2
-- name: 🇫🇷188763 | ⚡️Telegram = t.me/S...
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 13.38.44.64
-  skip-cert-verify: true
-  sni: 'off'
   tls: false
   type: hysteria2
 - client-fingerprint: firefox
@@ -28,22 +20,10 @@ proxies:
     headers:
       Host: fr2.vip-get.ru
     path: /api/download
-- encryption: none
-  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
-  network: tcp
-  port: 2045
-  server: am2d.lynch.ir
-  tls: false
-  type: vless
-  uuid: d7e99010-e7c3-4978-9d30-2e63882dcfbe
-  ws-opts:
-    headers:
-      Host: speedtest.net
-    path: /
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: cdn.v1.AssetService
-  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #5'
+  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #4'
   network: grpc
   port: 443
   server: 143.246.208.113
@@ -55,10 +35,10 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #9'
+  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #8'
   network: ws
   port: 443
-  server: 199.232.78.160
+  server: 199.232.78.170
   servername: ssl.fastly.com
   tls: true
   type: vless
@@ -97,11 +77,13 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #2'
+- alpn:
+  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
+  name: '🇫🇷[www.v2nodes.com] trojan-FR-... #2'
   network: ws
   password: humanity
-  port: 443
-  server: 45.87.41.18
+  port: 8443
+  server: 212.227.144.37
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
@@ -113,7 +95,8 @@ proxies:
   network: ws
   password: humanity
   port: 443
-  server: www.calmlunch.com
+  server: 45.87.41.18
+  skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
@@ -121,6 +104,17 @@ proxies:
       Host: www.calmlunch.com
     path: /assignment
 - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #4'
+  network: ws
+  password: humanity
+  port: 443
+  server: www.calmlunch.com
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #5'
   network: ws
   password: humanity
   port: 2053
@@ -132,7 +126,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #5'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
   network: ws
   password: humanity
   port: 443
@@ -144,18 +138,6 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
-  network: ws
-  password: humanity
-  port: 443
-  server: 185.220.100.168
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
 - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
   password: humanity
   port: 443
@@ -198,112 +180,17 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: 🇫🇷FR_1|3.2MB/s
-  port: 443
-  server: 82.65.162.76
+- name: 🇫🇷 法国 | FRA
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 30099
+  server: ip5.934618.xyz
   skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇫🇷FR_2|2.1MB/s
-  port: 9443
-  server: 213.139.9.142
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇫🇷FR_3|1.5MB/s
+  sni: ip5.934618.xyz
+  type: anytls
+  udp: true
+- name: 🇫🇷FR_2|1.2MB/s
   port: 9443
   server: 138.199.47.247
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇫🇷FR_4|2.2MB/s
-  port: 443
-  server: 13.37.226.59
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇫🇷FR_5|2.3MB/s
-  password: github.com/Alvin9999-newpac/fanqiang
-  port: 30099
-  server: ip5.934618.xyz
-  sni: ip5.934618.xyz
-  type: anytls
-  udp: true
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇷FR_6|1.7MB/s
-  network: ws
-  port: 2053
-  server: 8.47.69.0
-  servername: vless.api-music-fa.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9d672694-c146-422e-b3b5-3717a38a0fcc
-  ws-opts:
-    headers:
-      Host: fr.api-music-fa.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/48.0.2564.116 Safari/537.36
-    path: /api/voip/updates/static/fr2035
-  xudp: true
-- auth: github.com/Alvin9999-newpac/fanqiang
-  name: 🇫🇷FR_7|4.4MB/s
-  password: github.com/Alvin9999-newpac/fanqiang
-  port: 43115
-  server: 62.210.147.2
-  skip-cert-verify: true
-  sni: www.microsoft.com
-  type: hysteria2
-  udp: true
-- client-fingerprint: chrome
-  name: '🇫🇷 法国 | FRA #1'
-  network: ws
-  port: 443
-  server: 217.19.4.61
-  servername: bab-6.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  ws-opts:
-    headers:
-      Host: bab-6.site
-    path: /vws/
-- client-fingerprint: chrome
-  name: '🇫🇷 法国 | FRA #2'
-  network: ws
-  port: 443
-  server: 85.192.60.46
-  servername: bab-6.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: b585dc5e-55bf-4a8b-913a-27c9ccac05c3
-  ws-opts:
-    headers:
-      Host: bab-6.site
-    path: /vws/
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇫🇷 法国 | FRA #3'
-  network: ws
-  port: 443
-  server: 199.232.78.170
-  servername: ssl.fastly.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-    path: /
-- cipher: aes-256-cfb
-  name: '🇫🇷 法国 | FRA #4'
-  password: amazonskr05
-  port: 443
-  server: 13.36.178.160
-  type: ss
-  udp: true
