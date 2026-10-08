@@ -1,5 +1,18 @@
 proxies:
-- name: '🇳🇱[www.v2nodes.com] vless-NL-1... #14'
+- client-fingerprint: chrome
+  name: 🇮🇪[www.v2nodes.com] vless-IE-2...
+  network: ws
+  port: 8443
+  server: 23.95.225.10
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+- name: '🇳🇱[www.v2nodes.com] vless-NL-1... #13'
   port: 443
   server: 199.232.78.159
   tls: false
@@ -7,29 +20,10 @@ proxies:
   uuid: 8453bdb7-dd58-419d-b002-9456dd2e73d7
   ws-opts:
     path: /
-- grpc-opts:
-    grpc-service-name: vless
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
-  network: grpc
-  port: 2083
-  server: 66.90.104.42
-  tls: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
-- encryption: none
-  grpc-opts:
-    grpc-service-name: vless
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
-  network: grpc
-  port: 2083
-  server: 66.90.105.211
-  tls: true
-  type: vless
-  uuid: cd3bb7d9-7df3-4644-ac05-c260990ac277
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
   port: 443
   server: 186.190.211.188
   servername: 186.190.211.188
@@ -37,19 +31,6 @@ proxies:
   tls: true
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
-  network: ws
-  port: 443
-  server: 57.128.177.198
-  servername: vp58.cc.cd
-  tls: true
-  type: vless
-  uuid: 7b102311-43fd-4e8f-877e-8090623c101d
-  ws-opts:
-    headers:
-      Host: vp58.cc.cd
-    path: /Telegram🇨🇳+fp=chrome
 - cipher: aes-128-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
   password: shadowsocks
@@ -76,25 +57,38 @@ proxies:
   type: ss
 - name: 🇬🇧GB_1|2.6MB/s
   port: 443
-  server: 37.120.233.34
+  server: 212.102.63.1
   skip-cert-verify: true
   tls: true
   type: http
 - name: 🇬🇧GB_2|1.8MB/s
+  port: 9443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_3|1.1MB/s
+  password: None
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_4|1.9MB/s
   password: None
   port: 443
   server: 37.120.233.50
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_3|2.4MB/s
-  password: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
+- name: 🇬🇧GB_5|2.6MB/s
+  password: None
   port: 443
-  server: 5b33bfe4-tdups0-tf8z9r-1pr35.uk.oshuawei.com
+  server: 212.102.63.61
+  skip-cert-verify: true
   tls: true
   type: http
-  username: 6b7c1278-ff9d-11ee-84ca-f23c913c8d2b
-- name: 🇬🇧GB_4|2.3MB/s
+- name: 🇬🇧GB_6|3.0MB/s
   port: 443
   server: 212.102.63.31
   skip-cert-verify: true

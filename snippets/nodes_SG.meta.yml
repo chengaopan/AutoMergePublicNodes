@@ -1,14 +1,16 @@
 proxies:
-- name: 🇸🇬[www.v2nodes.com] vless-SG
+- client-fingerprint: chrome
+  name: 🇸🇬[www.v2nodes.com] vless-SG
   network: ws
-  port: 8880
-  server: 104.18.37.228
-  tls: false
+  port: 443
+  server: www.5199dy.com
+  servername: ccc.010304.xyz
+  tls: true
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
-      Host: vms.lifetime29.workers.dev
+      Host: ccc.010304.xyz
     path: /
 - encryption: none
   name: '🇸🇬[www.v2nodes.com] vless-SG #1'
@@ -58,15 +60,16 @@ proxies:
     path: /eyJqdW5rIjoiVXRIT2UwaDUiLCJwcm90b2NvbCI6InZsIiwibW9kZSI6InByZWZpeCIsInBhbmVsSVBzIjpbIlsyNjAyOmZjNTk6YjA6NjQ6Ol0iXX0=
 - name: '🇸🇬[www.v2nodes.com] vless-SG #5'
   network: ws
-  port: 8880
-  server: 8.34.70.30
+  port: 8080
+  server: 104.18.35.86
+  servername: hhlfy.twiladaphne.ndjp.net
   tls: false
   type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   ws-opts:
     headers:
-      Host: vms.lifetime09.workers.dev
-    path: /
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /sg-melbi
 - encryption: none
   name: '🇸🇬[www.v2nodes.com] vless-SG #6'
   network: ws
@@ -234,60 +237,28 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇸🇬SG_1|2.0MB/s
-  password: None
-  port: 9090
-  server: 104.248.151.93
-  type: http
-- alpn:
-  - h2
-  - http/
-  client-fingerprint: chrome
+- cipher: chacha20-ietf-poly1305
   name: '🇸🇬 新加坡 | SGP #1'
-  network: ws
-  port: 443
-  server: 170.114.52.22
-  tls: true
-  type: vless
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 8443
+  server: 13.229.58.5
+  type: ss
   udp: true
-  uuid: dd2e8c8c-abf4-48bf-9798-c8a9af94d99f
-  ws-opts:
-    headers:
-      Host: asia.csmaster.site
-    path: /
-- name: 🇸🇬 新加坡 | SGP 2
-  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
-  port: 1002
-  server: aw5fat9k.zf-mix.9999231.xyz
+- auth: WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0
+  name: '🇸🇬 新加坡 | SGP #3'
+  password: WvH8ooM9hom4KOOJHFJz1x5umE0aV4R0
+  port: 8443
+  server: 43.156.36.253
   skip-cert-verify: true
-  sni: iosapps.itunes.apple.com
-  type: anytls
-  udp: true
-- client-fingerprint: chrome
-  name: '🇸🇬 新加坡 | SGP #2'
-  network: ws
-  port: 443
-  server: cf.3666888.xyz
-  servername: cf-1rm.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
-  ws-opts:
-    headers:
-      Host: cf-1rm.pages.dev
-    path: /
-- client-fingerprint: random
+  sni: 43.156.36.253
+  tls: false
+  type: hysteria2
+- auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
   name: '🇸🇬 新加坡 | SGP #4'
-  network: ws
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 443
-  server: cf.3666888.xyz
-  servername: 20664.pages.dev
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9784bb19-3833-43ad-83b0-27ef8fc04ef2
-  ws-opts:
-    headers:
-      Host: 20664.pages.dev
-    path: /?ed=2048
+  server: 13.229.58.5
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2

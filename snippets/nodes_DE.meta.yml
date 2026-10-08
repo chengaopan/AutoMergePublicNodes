@@ -9,6 +9,19 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 🇩🇪189465 | ⚡️Telegram = t.me/S...
+  obfs: salamander
+  obfs-password: 1vwbgf5t1k61nxmi
+  password: 8d1729b01c1ad743179ed4558c8404b0
+  port: 8397
+  server: 193.42.11.245
+  sni: 193.42.11.245
+  tls: false
+  type: hysteria2
 - name: Telegram 🆔@cnetvpn 🇩🇪
   obfs: salamander
   obfs-password: 6cmj1dymhm79hopl
@@ -17,14 +30,6 @@ proxies:
   server: gift-catalog.aroonia.ir
   skip-cert-verify: false
   sni: gift-catalog.aroonia.ir
-  tls: false
-  type: hysteria2
-- name: 😊14@oneclickvpnkeys
-  password: mkL3AfdSZIpTWRB9TcWPn9vywPGN89MRHg3ToRDj
-  port: 443
-  server: 91.196.32.163
-  skip-cert-verify: true
-  sni: germany3.h2corp.local
   tls: false
   type: hysteria2
 - client-fingerprint: safari
@@ -41,7 +46,7 @@ proxies:
       Host: de.gokonstantin.com
     path: /cdnws
 - client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
   network: ws
   port: 443
   server: 167.179.103.224
@@ -69,18 +74,6 @@ proxies:
     headers:
       Host: sand.api.downloader-pet.xyz
     path: /gateway/v1/ws/74c4d5e82a8e50ccf09fc628c17dc9be
-- encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
-  network: tcp
-  port: 8080
-  server: 91.107.151.122
-  tls: false
-  type: vless
-  uuid: 39098241-9c6e-4fe7-abbd-7f6f6ed4512c
-  ws-opts:
-    headers:
-      Host: play.google.com
-    path: /
 - name: 🇩🇪[www.v2nodes.com] trojan-DE-...
   password: UX82473651
   port: 443
@@ -89,87 +82,82 @@ proxies:
   type: trojan
 - alpn:
   - h2
-  grpc-opts:
-    grpc-service-name: ajv
-  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
-  network: grpc
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_1|3.9MB/s
+  network: xhttp
   port: 443
-  server: 31.77.168.35
-  skip-cert-verify: true
-  sni: d3-de2.cloud-cdn.xyz
-  type: trojan
+  server: 104.26.5.45
+  servername: malekhartoaaakhund.kirpeople2sepahkosnaneh.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 647b4505-5549-4da6-b7e8-29df4df342de
+  xhttp-opts:
+    host: malekhartoaaakhund.kirpeople2sepahkosnaneh.org
+    mode: auto
+    path: /api/v1/cdn
+    x-padding-bytes: 100-1000
+  xudp: true
 - alpn:
   - h2
-  grpc-opts:
-    grpc-service-name: ajv
-  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
-  network: grpc
-  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇩🇪DE_2|2.0MB/s
+  network: ws
   port: 443
-  server: 31.77.168.21
-  skip-cert-verify: true
-  sni: d3-de2.cloud-cdn.xyz
-  type: trojan
-- cipher: aes-256-cfb
-  name: '🇩🇪 德国 | DEU #11'
-  password: amazonskr05
-  port: 443
-  server: 63.177.230.112
-  type: ss
+  server: 141.193.27.22
+  servername: bomb.pasta-makers.online
+  tls: true
+  type: vless
   udp: true
-- name: 🇩🇪DE_2|1.6MB/s
+  uuid: 0335d20a-ddde-4528-b135-dd21430e1690
+  ws-opts:
+    headers:
+      Host: bomb.pasta-makers.online
+      User-Agent: Mozilla/5.0 (Unknown; Linux) AppleWebKit/538.1 (KHTML, like Gecko)
+        Chrome/v1.0.0 Safari/538.1
+    path: /ws
+  xudp: true
+- name: 🇩🇪DE_3|1.8MB/s
   port: 443
   server: 172.64.68.89
   skip-cert-verify: true
   tls: true
   type: http
-- cipher: aes-256-cfb
-  name: 🇩🇪DE_3|5.3MB/s
-  password: amazonskr05
-  port: 443
-  server: 18.196.88.40
-  type: ss
-  udp: true
-- name: 🇩🇪DE_4|2.9MB/s
-  port: 443
-  server: 87.249.132.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_5|2.5MB/s
-  port: 443
-  server: 149.36.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_6|2.9MB/s
-  port: 9002
-  server: 158.173.154.3
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_7|2.6MB/s
-  port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_8|2.1MB/s
+- name: 🇩🇪DE_4|2.4MB/s
   password: None
   port: 443
   server: 149.36.50.1
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇩🇪DE_9|2.6MB/s
+- name: 🇩🇪DE_5|1.5MB/s
+  port: 443
+  server: 87.249.132.97
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_6|1.4MB/s
+  port: 9002
+  server: 158.173.154.4
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_7|4.4MB/s
+  port: 443
+  server: 213.109.163.119
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_8|1.9MB/s
   port: 443
   server: 87.106.223.158
   skip-cert-verify: true
   tls: true
   type: http
 - auth: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
-  name: '🇩🇪 德国 | DEU #1'
+  name: '🇩🇪 德国 | DEU #2'
   password: 9Me_Jx935gnHx13_Nx45M_NYXe037js_Be4z
   port: 8443
   server: 162.249.126.39
@@ -177,95 +165,47 @@ proxies:
   sni: hop-germany-september.dynuddns.com
   tls: false
   type: hysteria2
-- auth: d402d4c0b8354a90b70bb2566dce9a08
-  name: '🇩🇪 德国 | DEU #2'
-  password: d402d4c0b8354a90b70bb2566dce9a08
-  port: 8443
-  server: 78.17.209.108
-  skip-cert-verify: true
-  sni: i.wareznet.ru
-  tls: false
-  type: hysteria2
-- auth: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  name: '🇩🇪 德国 | DEU #3'
-  password: Jz40_mIJ934vK0_k9D3jz92_Vx48q_GHa1_sz0
-  port: 8443
-  server: 103.126.51.46
-  skip-cert-verify: true
-  sni: ocober-romania-new.yyuyy.com
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #5'
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #6'
   network: ws
   port: 443
-  server: saas.sin.fan
-  servername: snip.edgeoneai.cc.cd
+  server: 117.55.233.87
+  servername: s3ws.ragingbull.de5.net
   tls: true
   type: vless
   udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  uuid: f49d04d6-aaa7-4013-b323-bc35b78230db
   ws-opts:
     headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
-- client-fingerprint: firefox
+      Host: s3ws.ragingbull.de5.net
+    path: /wsrb7k2m
+- cipher: aes-256-cfb
   name: '🇩🇪 德国 | DEU #7'
-  network: xhttp
-  port: 33742
-  server: 193.223.106.13
-  servername: fi-966ffd3f4f.shamanapp.online
-  tls: true
-  type: vless
+  password: amazonskr05
+  port: 443
+  server: 63.177.230.112
+  type: ss
   udp: true
-  uuid: b3a11068-1a7e-4643-85de-7c82cce46943
-  xhttp-opts:
-    host: fi-966ffd3f4f.shamanapp.online
-    mode: auto
-    path: /ShamanXHTTP2026
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
+- auth: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
   name: '🇩🇪 德国 | DEU #9'
-  network: xhttp
-  port: 443
-  server: xzfp.gsgg.electrocitymarket.ru
-  servername: xzfp.gsgg.electrocitymarket.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2519b5e-495e-462e-9703-bbf68011d2f3
-  xhttp-opts:
-    host: xzfp.gsgg.electrocitymarket.ru
-    mode: stream-up
-    path: /
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #10'
-  network: xhttp
-  port: 443
-  server: ijug.jffq.electrocitymarket.ru
-  servername: ijug.jffq.electrocitymarket.ru
-  tls: true
-  type: vless
-  udp: true
-  uuid: d2519b5e-495e-462e-9703-bbf68011d2f3
-  xhttp-opts:
-    host: ijug.jffq.electrocitymarket.ru
-    mode: stream-up
-    path: /
-- auth: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  name: '🇩🇪 德国 | DEU #12'
-  password: s0_sdK93x9wer_D02Lz9cvK3_Sa014Oakl_C2z
-  port: 8443
-  server: 77.74.123.107
+  password: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
+  port: 9443
+  server: 87.251.17.11
   skip-cert-verify: true
-  sni: grape-test-italy.dynuddns.net
+  sni: onecloudstream.com
   tls: false
   type: hysteria2
+- cipher: aes-256-cfb
+  name: '🇩🇪 德国 | DEU #11'
+  password: amazonskr05
+  port: 443
+  server: 18.196.88.40
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '🇩🇪 德国 | DEU #12'
+  password: amazonskr05
+  port: 443
+  server: 3.66.88.253
+  type: ss
+  udp: true
