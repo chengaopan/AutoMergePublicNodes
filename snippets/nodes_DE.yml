@@ -5,24 +5,46 @@ proxies:
   server: meet-goshawk.rooster465.autos
   sni: meet-goshawk.rooster465.autos
   type: trojan
+- alpn:
+  - h2
+  grpc-opts:
+    grpc-service-name: ajv
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+  network: grpc
+  password: MDYVt6HgSqB7d537GPQXjk6Rk0E4RxWo
+  port: 443
+  server: 31.77.168.21
+  skip-cert-verify: true
+  sni: d3-de2.cloud-cdn.xyz
+  type: trojan
 - cipher: aes-256-cfb
-  name: '🇩🇪 德国 | DEU #7'
+  name: 🇩🇪DE_2|3.6MB/s
   password: amazonskr05
   port: 443
-  server: 63.177.230.112
+  server: 3.67.197.81
   type: ss
   udp: true
 - cipher: aes-256-cfb
-  name: '🇩🇪 德国 | DEU #11'
+  name: '🇩🇪 德国 | DEU #1'
   password: amazonskr05
   port: 443
-  server: 18.196.88.40
+  server: 3.75.231.76
   type: ss
   udp: true
-- cipher: aes-256-cfb
-  name: '🇩🇪 德国 | DEU #12'
-  password: amazonskr05
-  port: 443
-  server: 3.66.88.253
-  type: ss
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: '🇩🇪 德国 | DEU #5'
+  network: http
+  port: 43462
+  server: 5.75.204.152
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
+  uuid: 38dd079f-b778-44cf-8532-574c6ebc24d4
