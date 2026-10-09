@@ -1,4 +1,16 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸[www.v2nodes.com] ss-US-1591...
+  password: 792e0bdb-01db-450c-94c4-925151eb396e
+  port: 20006
+  server: ss.042.node-for-bigairport.win
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇺🇸[www.v2nodes.com] ss-US-1591... #1'
+  password: 618a13eda4b4d208a4bcdc85fcb8996df812d59dd48419f75ae3f5f5b46a94fb
+  port: 8393
+  server: 45.76.9.57
+  type: ss
 - alterId: 0
   cipher: auto
   name: 🇺🇸 美国|@ripaojiedian
@@ -45,23 +57,89 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇺🇸 美国 | USA 10
+- cipher: aes-256-gcm
+  name: '🇷🇺 俄罗斯 | RUS #1'
+  password: 895b4b796a357570
+  port: 50660
+  server: 46.17.41.166
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '🇺🇸 美国 | USA #1'
+  password: amazonskr05
+  port: 443
+  server: 3.80.84.187
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '🇺🇸 美国 | USA #2'
+  password: amazonskr05
+  port: 443
+  server: 54.83.117.150
+  type: ss
+  udp: true
+- cipher: aes-256-cfb
+  name: '🇺🇸 美国 | USA #3'
+  password: amazonskr05
+  port: 443
+  server: 54.221.120.243
+  type: ss
+  udp: true
+- name: 🇺🇸 美国 | USA 6
   network: ws
-  password: '!!str 123456'
-  port: 2096
-  server: 104.18.35.86
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  port: 443
+  server: us3-2.998998.best
   skip-cert-verify: true
-  sni: 321dfbc6.uir-9i6.pages.dev
+  sni: nat3.xxai.dpdns.org
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: 321dfbc6.uir-9i6.pages.dev
-    path: ''
-- name: '🇺🇸 美国 | USA #8'
-  password: '!!str 123456'
-  port: 2096
-  server: 104.18.35.86
+      Host: nat3.xxai.dpdns.org
+    path: /anyway
+- name: 🇺🇸 美国 | USA 7
+  network: ws
+  password: b792ffa6-7007-43a9-ae9f-46f68da52a6a
+  port: 8443
+  server: x.com
   skip-cert-verify: true
-  sni: 321dfbc6.uir-9i6.pages.dev
+  sni: avengers1.yang-1989.xyz
   type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: avengers1.yang-1989.xyz
+    path: /hm4m
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸 美国 | USA 10
+  port: 11267
+  server: goldcnmltyljgfwgov.vip67.wogcnmnnagfwgov.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da
+- name: '🇺🇸 美国 | USA #5'
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  port: 443
+  server: us3-2.998998.best
+  skip-cert-verify: true
+  sni: nat3.xxai.dpdns.org
+  type: trojan
+- name: '🇺🇸 美国 | USA #6'
+  password: b792ffa6-7007-43a9-ae9f-46f68da52a6a
+  port: 8443
+  server: x.com
+  skip-cert-verify: true
+  sni: avengers1.yang-1989.xyz
+  type: trojan
+- alterId: 2
+  cipher: auto
+  name: '🇺🇸 美国 | USA #9'
+  network: tcp
+  port: 11267
+  server: goldcnmltyljgfwgov.vip67.wogcnmnnagfwgov.com
+  tls: false
+  type: vmess
+  uuid: 605956ee-544d-308e-8b90-51e67c6ea8da

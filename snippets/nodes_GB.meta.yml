@@ -1,6 +1,5 @@
 proxies:
-- client-fingerprint: chrome
-  name: 🇮🇪[www.v2nodes.com] vless-IE-2...
+- name: '🇮🇪[www.v2nodes.com] vless-IE-2... #2'
   network: ws
   port: 8443
   server: 23.95.225.10
@@ -11,8 +10,8 @@ proxies:
   ws-opts:
     headers:
       Host: ccc.010304.xyz
-    path: /
-- name: '🇳🇱[www.v2nodes.com] vless-NL-1... #11'
+    path: /fp=chrome
+- name: '🇳🇱[www.v2nodes.com] vless-NL-1... #10'
   port: 443
   server: 199.232.78.159
   tls: false
@@ -20,10 +19,22 @@ proxies:
   uuid: 8453bdb7-dd58-419d-b002-9456dd2e73d7
   ws-opts:
     path: /
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
+  network: tcp
+  port: 8443
+  server: node-uk.connectsuite.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
+  encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+  network: tcp
   port: 443
   server: 186.190.211.188
   servername: 186.190.211.188
@@ -46,7 +57,7 @@ proxies:
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1289...
   password: LXchLsIwtCeUAUgu
-  port: 443
+  port: 80
   server: 149.102.149.207
   type: ss
 - cipher: aes-256-gcm
@@ -55,38 +66,51 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
-- name: 🇬🇧GB_1|1.0MB/s
+- name: 🇬🇧GB_1|2.3MB/s
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_2|3.2MB/s
+  port: 443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_3|2.8MB/s
   password: None
   port: 443
   server: 37.120.233.18
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_2|3.0MB/s
+- name: 🇬🇧GB_4|1.5MB/s
   port: 443
-  server: 212.102.63.31
+  server: 185.164.138.156
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_3|2.0MB/s
-  port: 443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_4|3.8MB/s
+- name: 🇬🇧GB_5|2.4MB/s
   port: 443
   server: 212.102.63.61
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_5|1.6MB/s
+- name: 🇬🇧GB_6|2.0MB/s
   port: 443
   server: 84.17.50.193
   skip-cert-verify: true
   tls: true
   type: http
-- name: '🇬🇧 英国 | GBR #1'
+- name: 🇬🇧GB_7|2.7MB/s
+  password: None
+  port: 443
+  server: 37.120.233.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: '🇬🇧 英国 | GBR #2'
   password: Trojan@82164024
   port: 443
   server: gb.tronsg.com

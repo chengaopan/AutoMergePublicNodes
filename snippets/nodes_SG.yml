@@ -43,9 +43,11 @@ proxies:
   sni: real-cardinal.rooster465.autos
   type: trojan
 - name: '🇸🇬[www.v2nodes.com] trojan-SG-... #6'
+  network: tcp
   password: UX82473651
   port: 443
-  server: glowing-marmoset.rooster465.autos
+  server: 18.143.92.167
+  skip-cert-verify: false
   sni: glowing-marmoset.rooster465.autos
   type: trojan
 - alterId: 0
@@ -86,10 +88,41 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
+- client-fingerprint: chrome
+  name: 🇸🇬SG_3|1.2MB/s
+  network: ws
+  password: ec1fa47d-4eac-4b3f-8cae-4a2982d43e2f
+  port: 8443
+  server: www.wto.org
+  skip-cert-verify: false
+  sni: jiangjc.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    path: /
+- name: '🇸🇬 新加坡 | SGP #2'
+  password: UX82473651
+  port: 443
+  server: real-werewolf.rooster465.autos
+  skip-cert-verify: true
+  sni: real-werewolf.rooster465.autos
+  type: trojan
+  udp: true
+- name: '🇸🇬 新加坡 | SGP #3'
+  password: UX82473651
+  port: 443
+  server: present-ram.rooster465.autos
+  skip-cert-verify: true
+  sni: present-ram.rooster465.autos
+  type: trojan
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: '🇸🇬 新加坡 | SGP #2'
+  name: '🇸🇬 新加坡 | SGP #4'
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 8443
-  server: 54.169.240.70
+  server: 13.212.141.33
   type: ss
   udp: true
