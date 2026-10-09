@@ -1,24 +1,23 @@
 proxies:
-- client-fingerprint: chrome
-  name: 🇮🇪[www.v2nodes.com] vless-IE-2...
+- name: '🇮🇪[www.v2nodes.com] vless-IE-3... #1'
   network: ws
   port: 8443
   server: 23.95.225.10
   servername: ccc.010304.xyz
-  tls: true
+  tls: false
   type: vless
   uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
       Host: ccc.010304.xyz
-    path: /
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
+    path: /fp=chromesecurity=tls
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #2'
   port: 2053
   server: 51.89.194.151
   tls: false
   type: vless
   uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
-- name: '🇳🇱[www.v2nodes.com] vless-NL-1... #10'
+- name: '🇳🇱[www.v2nodes.com] vless-NL-1... #9'
   port: 443
   server: 199.232.78.159
   tls: false
@@ -26,17 +25,9 @@ proxies:
   uuid: 8453bdb7-dd58-419d-b002-9456dd2e73d7
   ws-opts:
     path: /
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
-  network: tcp
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
   port: 8443
   server: node-uk.connectsuite.org
-  servername: node-uk.connectsuite.org
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
@@ -69,27 +60,21 @@ proxies:
   port: 80
   server: 149.102.149.207
   type: ss
-- cipher: aes-256-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1247...
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 94.156.250.148
-  type: ss
-- name: 🇬🇧GB_1|2.5MB/s
+- name: 🇬🇧GB_1|1.0MB/s
   port: 443
   server: 84.17.50.193
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_2|1.1MB/s
+- name: 🇬🇧GB_2|1014KB/s
   port: 443
   server: 185.164.138.156
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_3|1.3MB/s
-  port: 9443
-  server: 84.233.178.33
+- name: 🇬🇧GB_3|2.3MB/s
+  port: 443
+  server: 212.102.63.31
   skip-cert-verify: true
   tls: true
   type: http
