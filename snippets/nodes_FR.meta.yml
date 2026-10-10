@@ -36,12 +36,12 @@ proxies:
   port: 8388
   server: 51.255.13.232
   type: ss
-- name: 🇫🇷[www.v2nodes.com] trojan-FR-...
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
   network: ws
   password: humanity
   port: 443
-  server: 213.1.145.50
-  skip-cert-verify: true
+  server: 185.220.100.168
+  skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
@@ -151,13 +151,45 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: 🇫🇷FR_1|1.2MB/s
-  port: 9443
-  server: 138.199.47.247
+- client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #9'
+  network: ws
+  port: 995
+  server: 95.133.247.98
+  servername: love-paris.roxa.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: df275727-c25a-450b-99c3-29e4e6b0b6b9
+  ws-opts:
+    headers:
+      Host: love-paris.roxa.org
+    path: /api/v1
+- name: 🇫🇷FR_2|1.5MB/s
+  port: 443
+  server: 82.66.235.221
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇫🇷 法国 | FRA
+- name: 🇫🇷FR_3|3.5MB/s
+  port: 443
+  server: 82.64.255.151
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_4|2.4MB/s
+  port: 8081
+  server: 31.32.19.111
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_5|2.0MB/s
+  port: 443
+  server: 149.102.245.65
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷 法国 | FRA 2
   password: github.com/Alvin9999-newpac/fanqiang
   port: 30099
   server: ip5.934618.xyz
@@ -166,9 +198,9 @@ proxies:
   type: anytls
   udp: true
 - cipher: aes-256-cfb
-  name: '🇫🇷 法国 | FRA #1'
+  name: '🇫🇷 法国 | FRA #2'
   password: amazonskr05
   port: 443
-  server: 52.47.99.71
+  server: 51.44.86.16
   type: ss
   udp: true
