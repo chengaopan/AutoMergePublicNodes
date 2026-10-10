@@ -16,7 +16,9 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
+  encryption: none
   name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+  network: tcp
   port: 443
   server: 186.190.211.188
   servername: 186.190.211.188
@@ -33,7 +35,7 @@ proxies:
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1292...
   password: g5h5jleTRSyO3Rk4
-  port: 80
+  port: 443
   server: 149.102.132.184
   type: ss
 - cipher: aes-256-gcm
@@ -42,27 +44,54 @@ proxies:
   port: 80
   server: 149.102.149.207
   type: ss
-- name: 🇬🇧GB_1|2.7MB/s
+- cipher: aes-256-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1247...
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 94.156.250.148
+  type: ss
+- name: 🇬🇧GB_1|1.9MB/s
+  password: None
   port: 443
-  server: 84.17.50.193
+  server: 37.120.233.18
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_2|2.4MB/s
+- name: 🇬🇧GB_2|1.8MB/s
   port: 9443
-  server: 84.233.178.33
+  server: 84.17.50.129
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_3|1.7MB/s
+- name: 🇬🇧GB_3|1.2MB/s
   port: 443
   server: 212.102.63.61
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_4|1.6MB/s
-  port: 443
-  server: 212.102.63.31
-  skip-cert-verify: true
-  tls: true
-  type: http
+- cipher: aes-128-gcm
+  name: '🇬🇧 英国 | GBR #1'
+  password: 9c51ca33-a332-4de5-8677-5624e940097c
+  port: 35016
+  server: ruot.ayucloudservices.nl
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇬🇧 英国 | GBR #2'
+  password: bd962c9a-d6f2-4561-bd80-34206c4d5279
+  port: 22084
+  server: ruot.ayucloudservices.nl
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: '🇬🇧 英国 | GBR #4'
+  password: 9c51ca33-a332-4de5-8677-5624e940097c
+  port: 22034
+  server: ruot.ayucloudservices.nl
+  type: ss
+- cipher: aes-128-gcm
+  name: '🇬🇧 英国 | GBR #5'
+  password: 70a5c510-d56d-43e7-b150-9c00c969bd50
+  port: 35194
+  server: ruot.ayucloudservices.nl
+  type: ss
+  udp: true

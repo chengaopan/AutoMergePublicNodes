@@ -7,6 +7,14 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
+- client-fingerprint: chrome
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #5'
+  port: 10002
+  server: xjp111-2.vatilon.cc
+  servername: xjp111-2.vatilon.cc
+  tls: true
+  type: vless
+  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
 - cipher: chacha20-ietf-poly1305
   name: 🇺🇸[www.v2nodes.com] ss-US-1592...
   password: 792e0bdb-01db-450c-94c4-925151eb396e
@@ -21,12 +29,19 @@ proxies:
   type: ss
 - name: 🇺🇸[www.v2nodes.com] trojan-US-...
   password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  port: 10013
+  server: us2.australiacaregroup.site
+  skip-cert-verify: true
+  sni: us2.australiacaregroup.site
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
+  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
   port: 10003
   server: r627r8.vatilon.cc
   skip-cert-verify: true
   sni: r627r8.vatilon.cc
   type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #2'
   password: UX82473651
   port: 443
   server: alert-titmouse.rooster465.autos
@@ -79,12 +94,183 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇺🇸US_1|2.1MB/s
+- name: 🇺🇸US_1|2.0MB/s
   port: 443
-  server: 68.235.56.59
+  server: 148.135.10.80
   skip-cert-verify: true
   tls: true
   type: http
+- name: 🇺🇸US_2|2.0MB/s
+  port: 443
+  server: 167.88.60.242
+  skip-cert-verify: true
+  tls: true
+  type: http
+- auth: f317b5d6-d399-4d3d-a051-89d674ae953c
+  name: '🇷🇺 俄罗斯 | RUS #1'
+  password: f317b5d6-d399-4d3d-a051-89d674ae953c
+  port: 443
+  server: msk.frkn.org
+  skip-cert-verify: true
+  sni: msk.frkn.org
+  tls: false
+  type: hysteria2
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇷🇺 俄罗斯 | RUS #2'
+  network: xhttp
+  port: 2053
+  server: 78.159.246.85
+  servername: fitindoor.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d
+  xhttp-opts:
+    host: fitindoor.net
+    mode: auto
+    path: /api/v1/upload
+    x-padding-bytes: 100-1000
+    x-padding-obfs-mode: false
+- cipher: aes-256-gcm
+  name: '🇷🇺 俄罗斯 | RUS #3'
+  password: 6b39ae3234dfd68b
+  port: 20221
+  server: 46.17.42.141
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #1'
+  network: ws
+  port: 443
+  server: 199.232.78.170
+  servername: Speedtest.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
+- name: '🇺🇸 美国 | USA #2'
+  network: ws
+  port: 8880
+  server: cf3.466688.xyz
+  tls: false
+  type: vless
+  udp: true
+  uuid: 5659b42c-636f-4563-ac41-87d565d0dd1e
+  ws-opts:
+    headers:
+      Host: autumn-base-0eb9.116-d25.workers.dev
+    path: /pyip=ProxyIP.JP.autumniussss.net
+- name: 🇺🇸 美国 | USA 3
+  network: ws
+  password: humanity
+  port: 443
+  server: www.speedtest.net
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: '🇺🇸 美国 | USA #4'
+  network: ws
+  port: 8880
+  server: cf3.466688.xyz
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7111212b-6bc3-459a-85b4-3b13038a19f8
+  ws-opts:
+    headers:
+      Host: shrill-fog-67af.235-e6a.workers.dev
+    path: /pyip=ProxyIP.KR.CMLiussss.net@xijinpingdashabi
+- name: 🇺🇸 美国 | USA 6
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 19000
+  server: anytls2.864106.xyz
+  skip-cert-verify: true
+  sni: anytls2.864106.xyz
+  type: anytls
+  udp: true
+- client-fingerprint: unsafe
+  name: '🇺🇸 美国 | USA #6'
+  network: ws
+  port: 443
+  server: 104.21.0.87
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #7'
+  network: ws
+  port: 443
+  server: cf.130519.xyz
+  servername: cf-1rm.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5e610f80-fc6a-479d-8621-b672355b96a1
+  ws-opts:
+    headers:
+      Host: cf-1rm.pages.dev
+    path: /
+- name: '🇺🇸 美国 | USA #8'
+  network: ws
+  port: 2086
+  server: 104.25.194.196
+  tls: false
+  type: vless
+  udp: true
+  uuid: e3c7c198-2b02-42c2-b78f-22dfc078219c
+  ws-opts:
+    headers:
+      Host: uj-kn9gcgkzl0wmmy5wrkmalvhzdw62z.soltannatlos.workers.dev
+    path: /vl/3k4QnDlh2r3IPLPNFGLAeMJ5df?ed=2560
+- auth: Q3mAdf68GvbGEGqTAXkWjg
+  name: '🇺🇸 美国 | USA #9'
+  password: Q3mAdf68GvbGEGqTAXkWjg
+  port: 8443
+  server: 173.249.210.76
+  skip-cert-verify: true
+  tls: false
+  type: hysteria2
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #10'
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560#Telegram---bored_vpn
+- name: '🇺🇸 美国 | USA #3'
+  password: humanity
+  port: 443
+  server: www.speedtest.net
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
 - name: US_speednode_0131
   password: 'null'
   port: 9002
@@ -94,420 +280,6 @@ proxies:
   type: http
   udp: true
   username: 'null'
-- name: 🇺🇸US_3|1008KB/s|S001-260618
-  port: 8885
-  server: 38.79.114.43
-  skip-cert-verify: true
-  sub_tag: S001-260618
-  type: socks5
-  udp: true
-- name: 🇺🇸US_4|3.9MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇸US_5|1.4MB/s
-  port: 9002
-  server: 138.199.35.203
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_6|2.0MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.212
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇸US_7|4.0MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.195
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_8|1.7MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.214
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇸US_9|2.9MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.207
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_10|1.8MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.219
-  skip-cert-verify: true
-  sni: 138.199.35.219
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇺🇸US_11|2.4MB/s
-  port: 9002
-  server: 138.199.35.216
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_12|3.7MB/s
-  port: 443
-  server: 34.216.155.5
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_13|2.9MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.208
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_14|3.2MB/s
-  port: 443
-  server: 44.239.226.15
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_15|2.1MB/s
-  port: 9443
-  server: 198.44.135.19
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_16|1013KB/s
-  port: 443
-  server: 198.44.135.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_17|1.5MB/s
-  port: 9443
-  server: 149.88.21.140
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_18|1.5MB/s
-  port: 443
-  server: 45.63.38.134
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_19|4.0MB/s
-  port: 443
-  server: 148.135.10.80
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_20|2.8MB/s
-  port: 8443
-  server: 129.212.181.253
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_21|3.0MB/s
-  password: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
-  port: 443
-  server: 0cd5cc27-t9zts0-tazlv3-11p9g.se.oshuawei.com
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 384d1b42-655f-11ed-a8bf-f23c91cfbbc9
-- name: 🇺🇸US_22|2.3MB/s
-  password: 'null'
-  port: 9002
-  server: 138.199.35.200
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- auth: b42d90fa667942aebc734d60
-  name: 🇦🇺 澳大利亚 | AUS
-  obfs: salamander
-  obfs-password: b42d90fa667942aebc734d60
-  password: b42d90fa667942aebc734d60
-  port: 20000
-  ports: 20000-30000
-  server: 137.23.2.56
-  skip-cert-verify: true
-  sni: rmgyvpn.rest
-  type: hysteria2
-- name: '🇺🇸 美国 | USA #1'
-  network: ws
-  port: 8080
-  server: 104.18.35.86
-  servername: hhlfy.twiladaphne.ndjp.net
-  tls: false
-  type: vless
-  udp: true
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /sg-melbi
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #2'
-  network: tcp
-  port: 10002
-  server: rb1211-3.vatilon.cc
-  servername: rb1211-3.vatilon.cc
-  tls: true
-  type: vless
-  udp: true
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  ws-opts:
-    headers:
-      Host: rb1211-3.vatilon.cc
-    path: /
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 | USA 3
-  port: 23201
-  server: gz2.vatilon.cc
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- auth: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  name: '🇺🇸 美国 | USA #4'
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 10004
-  server: cn42.vatilon.cc
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #5'
-  network: tcp
-  port: 23202
-  server: gz2.vatilon.cc
-  servername: jp2.australiacaregroup.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  ws-opts:
-    headers:
-      Host: gz2.vatilon.cc
-    path: /
-- alterId: 2
-  cipher: auto
-  name: 🇺🇸 美国 | USA 6
-  port: 30829
-  server: v29.hdacd.com
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 | USA 7
-  port: 10001
-  server: xjp111-3.vatilon.cc
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- name: '🇺🇸 美国 | USA #8'
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 10003
-  server: jp121.vatilon.cc
-  skip-cert-verify: true
-  sni: jp121.vatilon.cc
-  type: trojan
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #9'
-  network: ws
-  port: 23801
-  server: gz1.polymarket.party
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  ws-opts:
-    headers:
-      Host: us4.australiacaregroup.site
-    path: /vmess
-- auth: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  name: '🇺🇸 美国 | USA #10'
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 23824
-  server: gz2.vatilon.cc
-  skip-cert-verify: true
-  sni: us4.australiacaregroup.site
-  tls: false
-  type: hysteria2
-- auth: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  name: '🇺🇸 美国 | USA #11'
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 10004
-  server: jp2.australiacaregroup.site
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- auth: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  name: '🇺🇸 美国 | USA #12'
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 10004
-  server: jp64.australiacaregroup.site
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- auth: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  name: '🇺🇸 美国 | USA #13'
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 10004
-  server: xjp111-3.vatilon.cc
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 | USA 14
-  port: 12330
-  server: p05.rghvf.sbs
-  servername: gb.uniquenames.net
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 68adffea-4146-4f92-b2f9-955cd634c274
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  encryption: mlkem768x25519plus.native.0rtt.W_AAdj50NNta1or9xzKAkUP0MVxlMK6TfvShgRm9who
-  name: '🇺🇸 美国 | USA #15'
-  network: xhttp
-  port: 443
-  server: 167.82.76.31
-  servername: default.ssl.fastly.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: e86d9264-a736-46c3-adcc-f5f0cc088a72
-  xhttp-opts:
-    host: Shhsheuq.global.ssl.fastly.net
-    mode: auto
-    path: /
-- client-fingerprint: unsafe
-  name: '🇺🇸 美国 | USA #16'
-  network: ws
-  port: 443
-  server: 104.18.0.181
-  servername: a.cwvps.eu.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: c4edb87e-8544-4fa4-bd1c-b0cda9a34b46
-  ws-opts:
-    headers:
-      Host: a.cwvps.eu.org
-    path: /ws
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 | USA 17
-  port: 36011
-  server: gz1.polymarket.party
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- auth: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  name: '🇺🇸 美国 | USA #18'
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 10004
-  server: jp-x2.vatilon.cc
-  skip-cert-verify: true
-  tls: false
-  type: hysteria2
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 | USA 19
-  port: 20401
-  server: gz1.polymarket.party
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #3'
-  network: tcp
-  port: 23201
-  server: gz2.vatilon.cc
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- alterId: 2
-  cipher: auto
-  name: '🇺🇸 美国 | USA #6'
-  network: tcp
-  port: 30829
-  server: v29.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #7'
-  network: tcp
-  port: 10001
-  server: xjp111-3.vatilon.cc
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #14'
-  network: tcp
-  port: 12330
-  server: p05.rghvf.sbs
-  tls: true
-  type: vmess
-  uuid: 68adffea-4146-4f92-b2f9-955cd634c274
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #17'
-  network: tcp
-  port: 36011
-  server: gz1.polymarket.party
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #19'
-  network: tcp
-  port: 20401
-  server: gz1.polymarket.party
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
 - name: US_speednode_0133
   port: 443
   server: fan.365747.xyz

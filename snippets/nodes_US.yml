@@ -13,12 +13,19 @@ proxies:
   type: ss
 - name: 🇺🇸[www.v2nodes.com] trojan-US-...
   password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  port: 10013
+  server: us2.australiacaregroup.site
+  skip-cert-verify: true
+  sni: us2.australiacaregroup.site
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
+  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
   port: 10003
   server: r627r8.vatilon.cc
   skip-cert-verify: true
   sni: r627r8.vatilon.cc
   type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #2'
   password: UX82473651
   port: 443
   server: alert-titmouse.rooster465.autos
@@ -71,147 +78,30 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 | USA 3
-  port: 23201
-  server: gz2.vatilon.cc
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+- cipher: aes-256-gcm
+  name: '🇷🇺 俄罗斯 | RUS #3'
+  password: 6b39ae3234dfd68b
+  port: 20221
+  server: 46.17.42.141
+  type: ss
   udp: true
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- alterId: 2
-  cipher: auto
-  name: 🇺🇸 美国 | USA 6
-  port: 30829
-  server: v29.hdacd.com
+- name: 🇺🇸 美国 | USA 3
+  network: ws
+  password: humanity
+  port: 443
+  server: www.speedtest.net
   skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 | USA 7
-  port: 10001
-  server: xjp111-3.vatilon.cc
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- name: '🇺🇸 美国 | USA #8'
-  password: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-  port: 10003
-  server: jp121.vatilon.cc
-  skip-cert-verify: true
-  sni: jp121.vatilon.cc
+  sni: www.calmlunch.com
   type: trojan
   udp: true
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #9'
-  network: ws
-  port: 23801
-  server: gz1.polymarket.party
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
   ws-opts:
     headers:
-      Host: us4.australiacaregroup.site
-    path: /vmess
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 | USA 14
-  port: 12330
-  server: p05.rghvf.sbs
-  servername: gb.uniquenames.net
+      Host: www.calmlunch.com
+    path: /assignment
+- name: '🇺🇸 美国 | USA #3'
+  password: humanity
+  port: 443
+  server: www.speedtest.net
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 68adffea-4146-4f92-b2f9-955cd634c274
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 | USA 17
-  port: 36011
-  server: gz1.polymarket.party
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸 美国 | USA 19
-  port: 20401
-  server: gz1.polymarket.party
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #3'
-  network: tcp
-  port: 23201
-  server: gz2.vatilon.cc
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- alterId: 2
-  cipher: auto
-  name: '🇺🇸 美国 | USA #6'
-  network: tcp
-  port: 30829
-  server: v29.hdacd.com
-  tls: false
-  type: vmess
-  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #7'
-  network: tcp
-  port: 10001
-  server: xjp111-3.vatilon.cc
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #14'
-  network: tcp
-  port: 12330
-  server: p05.rghvf.sbs
-  tls: true
-  type: vmess
-  uuid: 68adffea-4146-4f92-b2f9-955cd634c274
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #17'
-  network: tcp
-  port: 36011
-  server: gz1.polymarket.party
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #19'
-  network: tcp
-  port: 20401
-  server: gz1.polymarket.party
-  tls: false
-  type: vmess
-  uuid: aec8e5e3-bb81-4b22-8802-0b88c54997b3
+  sni: www.calmlunch.com
+  type: trojan
