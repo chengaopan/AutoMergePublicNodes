@@ -1,4 +1,10 @@
 proxies:
+- cipher: aes-128-gcm
+  name: 🇹🇷[www.v2nodes.com] ss-TR-1567...
+  password: l2NidZbckMu4PnIHsJTYJg
+  port: 1468
+  server: www.asamping.ir
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪[www.v2nodes.com] ss-DE-1592...
   password: NcAXc0UZI6yQJE1p8QmOv8
@@ -6,29 +12,35 @@ proxies:
   server: 57.129.113.16
   type: ss
 - name: 🇩🇪[www.v2nodes.com] trojan-DE-...
-  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
-  port: 443
-  server: ger2.fytpn.com
-  skip-cert-verify: false
-  type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
-  password: UX82473651
-  port: 443
-  server: meet-goshawk.rooster465.autos
-  sni: meet-goshawk.rooster465.autos
-  type: trojan
-- name: '🇩🇪 德国 | DEU #10'
   password: UX82473651
   port: 443
   server: cuddly-sheepdog.rooster465.autos
   skip-cert-verify: true
   sni: cuddly-sheepdog.rooster465.autos
   type: trojan
-  udp: true
-- cipher: aes-256-cfb
-  name: '🇩🇪 德国 | DEU #12'
-  password: amazonskr05
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+  password: gHncxmRjWEJ7apX5XuXsHw4kGexMH_gU
   port: 443
-  server: 3.67.197.81
-  type: ss
+  server: ger2.fytpn.com
+  skip-cert-verify: false
+  type: trojan
+- name: 🇩🇪 德国 | DEU 8
+  network: ws
+  password: humanity
+  port: 443
+  server: 45.80.111.7
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: '🇩🇪 德国 | DEU #8'
+  password: humanity
+  port: 443
+  server: 45.80.111.7
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan

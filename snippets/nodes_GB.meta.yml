@@ -1,5 +1,5 @@
 proxies:
-- name: '🇳🇱[www.v2nodes.com] vless-NL-1... #11'
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #2'
   port: 443
   server: 199.232.78.159
   tls: false
@@ -7,9 +7,13 @@ proxies:
   uuid: 8453bdb7-dd58-419d-b002-9456dd2e73d7
   ws-opts:
     path: /
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
+  network: tcp
   port: 8443
   server: node-uk.connectsuite.org
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
@@ -26,6 +30,19 @@ proxies:
   tls: true
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- client-fingerprint: chrome
+  name: '🏳[www.v2nodes.com] vless- #12'
+  network: ws
+  port: 443
+  server: 159.65.51.189
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
 - cipher: aes-128-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
   password: shadowsocks
@@ -35,14 +52,8 @@ proxies:
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1292...
   password: g5h5jleTRSyO3Rk4
-  port: 443
-  server: 149.102.132.184
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1289...
-  password: LXchLsIwtCeUAUgu
   port: 80
-  server: 149.102.149.207
+  server: 149.102.132.184
   type: ss
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1247...
@@ -50,48 +61,9 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
-- name: 🇬🇧GB_1|1.9MB/s
-  password: None
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_2|1.8MB/s
-  port: 9443
-  server: 84.17.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_3|1.2MB/s
-  port: 443
-  server: 212.102.63.61
-  skip-cert-verify: true
-  tls: true
-  type: http
-- cipher: aes-128-gcm
-  name: '🇬🇧 英国 | GBR #1'
-  password: 9c51ca33-a332-4de5-8677-5624e940097c
-  port: 35016
-  server: ruot.ayucloudservices.nl
+- cipher: chacha20-ietf-poly1305
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1135...
+  password: zRZNBszYyWo5
+  port: 8388
+  server: 51.77.225.200
   type: ss
-- cipher: aes-256-gcm
-  name: '🇬🇧 英国 | GBR #2'
-  password: bd962c9a-d6f2-4561-bd80-34206c4d5279
-  port: 22084
-  server: ruot.ayucloudservices.nl
-  type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: '🇬🇧 英国 | GBR #4'
-  password: 9c51ca33-a332-4de5-8677-5624e940097c
-  port: 22034
-  server: ruot.ayucloudservices.nl
-  type: ss
-- cipher: aes-128-gcm
-  name: '🇬🇧 英国 | GBR #5'
-  password: 70a5c510-d56d-43e7-b150-9c00c969bd50
-  port: 35194
-  server: ruot.ayucloudservices.nl
-  type: ss
-  udp: true
