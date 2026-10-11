@@ -10,19 +10,34 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
+  name: 🇸🇪[www.v2nodes.com] vless-SE-1...
+  network: ws
+  port: 2053
+  server: 5.189.254.168
+  servername: cf3.schzyc.cc.cd
+  tls: true
+  type: vless
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: cf3.schzyc.cc.cd
+    path: /proxyip=ProxyIP.CMLiussss.net
+- client-fingerprint: firefox
+  encryption: none
   grpc-opts:
     grpc-service-name: content.v1.Feed
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #3'
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #4'
   network: grpc
   port: 443
   server: 163.245.43.50
   servername: se-twitch.global-cdn.org
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 203d434a-2a92-45df-8973-ca80434ecf73
 - client-fingerprint: chrome
   encryption: none
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #6'
   network: ws
   port: 443
   server: sub.merky.top
@@ -35,49 +50,10 @@ proxies:
     headers:
       Host: sub.merky.top
     path: /merky-connect/de6/
-- name: 🇸🇪SE_1|2.3MB/s
-  port: 443
-  server: 79.142.77.63
+- name: 🇸🇪 瑞典 | SWE 2
+  password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  port: 1020
+  server: 06nn6kxv.zf-mix.9999231.xyz
   skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇸🇪SE_2|1.6MB/s
-  port: 443
-  server: 146.70.242.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇸🇪SE_3|1.1MB/s
-  port: 443
-  server: 146.70.242.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: content.v1.Feed
-  name: 🇸🇪 瑞典 | SWE
-  network: grpc
-  port: 443
-  server: 31.207.7.117
-  servername: se-twitch.global-cdn.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 524dd22d-9f8c-4cc4-9e12-f427f497dff4
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: ''
-  name: '🇸🇪 瑞典 | SWE #1'
-  network: grpc
-  port: 443
-  server: 31.207.7.117
-  servername: se-twitch.global-cdn.org
-  tls: true
-  type: vless
-  uuid: 524dd22d-9f8c-4cc4-9e12-f427f497dff4
+  sni: se-house.9999231.xyz
+  type: anytls

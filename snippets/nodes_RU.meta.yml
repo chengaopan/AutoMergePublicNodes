@@ -22,44 +22,16 @@ proxies:
   type: vless
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
 - client-fingerprint: random
+  encryption: none
   name: '🇷🇺[www.v2nodes.com] vless-RU-1... #2'
   network: ws
   port: 8443
   server: 194.87.143.165
-  skip-cert-verify: true
+  servername: wsru1.wba-pn.ru
   tls: true
   type: vless
   uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   ws-opts:
+    headers:
+      Host: 194.87.143.165
     path: /
-- name: 🇷🇺RU_2|2.9MB/s
-  port: 1446
-  server: 46.29.166.134
-  skip-cert-verify: true
-  tls: true
-  type: http
-- alpn:
-  - http/1.1
-  - h2
-  client-fingerprint: firefox
-  name: '🇷🇺 俄罗斯 | RUS #1'
-  network: xhttp
-  port: 2053
-  server: 78.159.246.85
-  servername: fitindoor.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6a2aff19-ff1f-4a13-96c8-a4d8986a9699
-  xhttp-opts:
-    host: fitindoor.net
-    mode: auto
-    path: /api/v1/upload
-    x-padding-bytes: 100-1000
-    x-padding-obfs-mode: false
-- name: 🇷🇺RU_4|2.5MB/s
-  port: 443
-  server: 178.219.43.226
-  skip-cert-verify: true
-  tls: true
-  type: http
