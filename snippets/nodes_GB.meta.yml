@@ -1,5 +1,22 @@
 proxies:
-- name: '🇮🇪[www.v2nodes.com] vless-IE-2... #3'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇬🇧[www.v2nodes.com] vless-GB-1...
+  network: ws
+  port: 443
+  server: vpn.kovira.site
+  servername: vpn.kovira.site
+  tls: true
+  type: vless
+  uuid: 22e6604e-0481-411f-8028-ffbd65f624b6
+  ws-opts:
+    headers:
+      Host: vpn.kovira.site
+    path: /ws-738d2d0c5eba7609f3c37de2
+- client-fingerprint: chrome
+  name: '🇮🇪[www.v2nodes.com] vless-IE-2... #2'
   network: ws
   port: 8443
   server: 23.95.225.10
@@ -10,13 +27,7 @@ proxies:
   ws-opts:
     headers:
       Host: ccc.010304.xyz
-    path: /fp=chrome
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
-  port: 8443
-  server: node-uk.connectsuite.org
-  tls: true
-  type: vless
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+    path: /
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -30,7 +41,20 @@ proxies:
   tls: true
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
+- client-fingerprint: chrome
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
+  network: ws
+  port: 443
+  server: 159.65.51.189
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
   network: ws
   port: 443
   server: 159.65.51.189
@@ -51,14 +75,8 @@ proxies:
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1292...
   password: g5h5jleTRSyO3Rk4
-  port: 443
+  port: 80
   server: 149.102.132.184
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1289...
-  password: LXchLsIwtCeUAUgu
-  port: 443
-  server: 149.102.149.207
   type: ss
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1247...
@@ -66,30 +84,52 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
-- name: 🇬🇧GB_1|1.0MB/s
+- name: 🇬🇧GB_1|1.6MB/s
   port: 443
   server: 185.164.138.156
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_2|1.9MB/s
+- name: 🇬🇧GB_2|1.8MB/s
   port: 9443
   server: 84.17.50.129
   skip-cert-verify: true
   tls: true
   type: http
-- http-opts:
-    headers:
-      Host:
-      - dns1.begzar.ir
-    method: GET
-    path:
-    - /
-  name: '🇬🇧 英国 | GBR #1'
-  network: http
+- name: 🇬🇧GB_3|2.5MB/s
   port: 443
-  server: 188.166.175.137
-  tls: false
-  type: vless
+  server: 37.120.233.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_4|2.2MB/s
+  port: 9443
+  server: 84.17.50.214
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_5|3.2MB/s
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_6|1.8MB/s
+  port: 9443
+  server: 84.233.178.33
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_7|1.7MB/s
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
+- cipher: aes-256-cfb
+  name: '🇬🇧 英国 | GBR #1'
+  password: amazonskr05
+  port: 443
+  server: 13.40.25.145
+  type: ss
   udp: true
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
