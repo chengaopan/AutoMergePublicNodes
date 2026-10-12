@@ -17,17 +17,13 @@ proxies:
   uuid: ff766b85-d50f-47b7-9b63-6ca4ea128f3f
   ws-opts:
     path: /wp-content4
-- encryption: none
-  grpc-opts:
-    grpc-service-name: vless
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #2'
-  network: grpc
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #2'
   port: 2085
   server: 206.245.146.248
-  tls: true
+  tls: false
   type: vless
   uuid: ec553e40-bd11-44fc-91ba-284fe7264706
-- name: '🇺🇸[www.v2nodes.com] vless-US-1... #11'
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #12'
   network: ws
   port: 443
   server: 47.253.251.184
@@ -39,8 +35,20 @@ proxies:
     headers:
       Host: edg-2oo.pages.dev
     path: /article/pages/archive?ed=2560fp=chrome
-- cipher: chacha20-ietf-poly1305
+- cipher: aes-128-gcm
   name: 🇺🇸[www.v2nodes.com] ss-US-1594...
+  password: 2607008ac896b3443be9419d73d544d9
+  port: 16619
+  server: 66.23.206.124
+  type: ss
+- cipher: aes-128-gcm
+  name: '🇺🇸[www.v2nodes.com] ss-US-1594... #1'
+  password: e72a793d634d99748cf908d21fd935c3
+  port: 19049
+  server: 205.209.126.205
+  type: ss
+- cipher: chacha20-ietf-poly1305
+  name: '🇺🇸[www.v2nodes.com] ss-US-1594... #2'
   password: 792e0bdb-01db-450c-94c4-925151eb396e
   port: 20006
   server: ss.042.node-for-bigairport.win
@@ -91,127 +99,145 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇺🇸US_1|1.3MB/s
-  port: 443
-  server: 12.202.180.10
+- name: 🇺🇸 美国 | USA 6
+  password: github.com/Alvin9999-newpac/fanqiang
+  port: 19000
+  server: anytls2.864106.xyz
   skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_2|1.0MB/s
-  password: None
+  sni: anytls2.864106.xyz
+  type: anytls
+  udp: true
+- name: 🇺🇸US_3|3.4MB/s
   port: 9002
-  server: 138.199.35.201
+  server: 138.199.35.211
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸US_3|4.3MB/s
-  port: 9002
-  server: 138.199.35.209
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_4|2.5MB/s
+- name: 🇺🇸US_4|1.8MB/s
   port: 9443
-  server: 198.44.135.19
+  server: 38.95.111.226
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸US_5|1.0MB/s
+  udp: true
+- name: 🇺🇸US_5|2.1MB/s
+  port: 443
+  server: 12.221.146.147
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_6|2.6MB/s
+  port: 443
+  server: 129.153.93.183
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_7|4.3MB/s
+  port: 443
+  server: 34.216.155.5
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_8|1.1MB/s
+  port: 8443
+  server: 44.248.167.117
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_9|2.3MB/s
   port: 443
   server: 12.202.180.118
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸US_6|1011KB/s
+- name: 🇺🇸US_10|1.1MB/s
   port: 443
-  server: 192.227.176.234
+  server: 198.44.135.27
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸US_7|1.1MB/s
+- name: 🇺🇸US_11|3.6MB/s
+  password: None
   port: 443
-  server: 68.235.56.59
+  server: 52.55.81.168
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸US_8|1.1MB/s
-  port: 443
-  server: 68.235.56.51
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_9|1.4MB/s
+- name: 🇺🇸US_12|1.1MB/s
   port: 443
   server: 149.88.21.140
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇺🇸US_10|2.2MB/s
+- name: 🇺🇸US_13|1.4MB/s|K001-260618
   port: 443
-  server: 45.63.38.134
+  server: 149.34.248.65
   skip-cert-verify: true
+  sub_tag: K001-260618
   tls: true
   type: http
-- name: 🇺🇸US_11|2.8MB/s
-  port: 443
-  server: 148.135.10.80
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_12|2.0MB/s
-  password: 1b609740-eec2-11ef-8543-f23c93136cb3
-  port: 443
-  server: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
-  sni: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
-  tls: true
-  type: http
-  username: 1b609740-eec2-11ef-8543-f23c93136cb3
-- name: 🇺🇸US_13|2.7MB/s
-  password: 1b609740-eec2-11ef-8543-f23c93136cb3
-  port: 5443
-  server: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
-  sni: 9420e530-te8ao0-tfnl0i-au6.fmtdc1.sghuawei.com
-  tls: true
-  type: http
-  username: 1b609740-eec2-11ef-8543-f23c93136cb3
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇺🇸US_14|1.2MB/s
-  network: ws
-  port: 443
-  server: 104.17.98.5
-  servername: newcf.3xxx.de5.net
-  tls: true
-  type: vless
   udp: true
-  uuid: 871f3020-6158-4829-88ed-81843bb956e1
-  ws-opts:
-    headers:
-      Host: newcf.3xxx.de5.net
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/45.0.2454.85 Safari/537.36
-    path: /
-  xudp: true
+- name: 🇺🇸US_14|2.4MB/s
+  port: 443
+  server: 162.244.227.36
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_15|2.2MB/s
+  port: 8443
+  server: 44.217.145.28
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_16|2.3MB/s
+  password: test123
+  port: 1080
+  server: 104.168.249.36
+  type: socks5
+  username: test123
+- name: 🇺🇸US_17|1.1MB/s
+  port: 8090
+  server: 184.188.139.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_18|1.2MB/s
+  port: 8090
+  server: 24.142.229.178
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_19|3.6MB/s
+  port: 1080
+  server: 52.128.241.109
+  skip-cert-verify: true
+  type: socks5
+- name: 🇺🇸US_20|2.5MB/s
+  port: 9002
+  server: 138.199.35.212
+  skip-cert-verify: true
+  tls: true
+  type: http
 - alpn:
-  - h2
   - http/1.1
+  - h2
   client-fingerprint: firefox
-  name: '🇷🇺 俄罗斯 | RUS #1'
+  name: '🇷🇺 俄罗斯 | RUS #3'
   network: xhttp
   port: 2053
-  server: 78.159.246.85
-  servername: fitindoor.net
+  server: 78.159.246.179
+  servername: randomquaint.net
   tls: true
   type: vless
   udp: true
-  uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d
+  uuid: 6a2aff19-ff1f-4a13-96c8-a4d8986a9699
   xhttp-opts:
-    host: fitindoor.net
+    host: randomquaint.net
     mode: auto
     path: /api/v1/upload
     x-padding-bytes: 100-1000
     x-padding-obfs-mode: false
-- name: '🇺🇸 美国 | USA #2'
+- name: '🇺🇸 美国 | USA #1'
   network: ws
   port: 8080
   server: 104.18.35.86
@@ -224,67 +250,14 @@ proxies:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
     path: /sg-melbi
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #3'
-  network: ws
+- name: '🇺🇸 美国 | USA #4'
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
   port: 443
-  server: whuiy.xyz
-  servername: whuiy.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: c64992bd-54aa-4d3d-8527-42da7d7e520a
-  ws-opts:
-    headers:
-      Host: whuiy.xyz
-    path: /vless-cdn
-- name: 🇺🇸 美国 | USA 4
-  password: github.com/Alvin9999-newpac/fanqiang
-  port: 19000
-  server: anytls2.864106.xyz
+  server: 23.106.44.14
   skip-cert-verify: true
-  sni: anytls2.864106.xyz
-  type: anytls
+  sni: sj6.freeguard.org
+  type: trojan
   udp: true
-- auth: https://xship.2fa.cat
-  name: 🇺🇸 美国 | USA 5
-  password: https://xship.2fa.cat
-  port: 443
-  server: starlink-ft.251313.xyz
-  skip-cert-verify: true
-  sni: xship.top
-  type: hysteria2
-  udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #4'
-  network: ws
-  port: 443
-  server: www.speedtest.net
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560#Telegram---bored_vpn
-- client-fingerprint: unsafe
-  name: '🇺🇸 美国 | USA #5'
-  network: ws
-  port: 443
-  server: 104.21.0.87
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
 - name: US_speednode_0131
   password: 'null'
   port: 9002

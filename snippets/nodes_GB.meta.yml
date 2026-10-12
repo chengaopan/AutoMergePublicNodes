@@ -3,7 +3,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: 🇬🇧[www.v2nodes.com] vless-GB-1...
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
   network: ws
   port: 443
   server: vpn.kovira.site
@@ -28,12 +28,28 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
+  port: 2053
+  server: 51.89.194.151
+  tls: false
+  type: vless
+  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
+  port: 8443
+  server: node-uk.connectsuite.org
+  servername: node-uk.connectsuite.org
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
-  network: tcp
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
   port: 443
   server: 186.190.211.188
   servername: 186.190.211.188
@@ -41,31 +57,20 @@ proxies:
   tls: true
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
+- encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #11'
   network: ws
   port: 443
   server: 159.65.51.189
   servername: ccc.010304.xyz
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
       Host: ccc.010304.xyz
-    path: /
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
-  network: ws
-  port: 443
-  server: 159.65.51.189
-  servername: ccc.010304.xyz
-  tls: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /fp=chrome
+    path: /fp
 - cipher: aes-128-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
   password: shadowsocks
@@ -79,57 +84,39 @@ proxies:
   server: 149.102.132.184
   type: ss
 - cipher: aes-256-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1289...
+  password: LXchLsIwtCeUAUgu
+  port: 443
+  server: 149.102.149.207
+  type: ss
+- cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1247...
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 94.156.250.148
   type: ss
-- name: 🇬🇧GB_1|1.6MB/s
+- name: 🇬🇧GB_1|2.8MB/s
+  password: None
   port: 443
-  server: 185.164.138.156
+  server: 37.120.233.34
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_2|1.8MB/s
-  port: 9443
-  server: 84.17.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_3|2.5MB/s
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_4|2.2MB/s
+- name: 🇬🇧GB_2|2.5MB/s
   port: 9443
   server: 84.17.50.214
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_5|3.2MB/s
+- name: 🇬🇧GB_3|2.3MB/s
   port: 443
-  server: 212.102.63.31
+  server: 84.17.50.193
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_6|1.8MB/s
-  port: 9443
-  server: 84.233.178.33
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_7|1.7MB/s
+- name: 🇬🇧GB_4|3.2MB/s
   port: 443
   server: 212.102.63.61
   skip-cert-verify: true
   tls: true
   type: http
-- cipher: aes-256-cfb
-  name: '🇬🇧 英国 | GBR #1'
-  password: amazonskr05
-  port: 443
-  server: 13.40.25.145
-  type: ss
-  udp: true
