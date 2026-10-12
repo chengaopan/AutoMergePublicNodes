@@ -22,7 +22,7 @@ proxies:
       Host: cf3.schzyc.cc.cd
     path: /proxyip=ProxyIP.CMLiussss.netfp=chrome
 - client-fingerprint: chrome
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #2'
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
   network: ws
   port: 2053
   server: 5.189.254.168
@@ -38,20 +38,21 @@ proxies:
   encryption: none
   grpc-opts:
     grpc-service-name: content.v1.Feed
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #6'
   network: grpc
   port: 443
   server: 163.245.43.50
   servername: se-twitch.global-cdn.org
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 203d434a-2a92-45df-8973-ca80434ecf73
 - client-fingerprint: chrome
   encryption: none
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #7'
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #8'
   network: ws
   port: 443
-  server: sub.merky.top
+  server: 94.143.231.146
   servername: sub.merky.top
   skip-cert-verify: false
   tls: true
@@ -61,22 +62,29 @@ proxies:
     headers:
       Host: sub.merky.top
     path: /merky-connect/de6/
-- name: 🇸🇪SE_1|1.1MB/s
+- name: 🇸🇪SE_1|2.6MB/s
+  password: None
   port: 443
-  server: 146.70.242.146
+  server: 79.142.77.63
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇸🇪SE_2|1.3MB/s
+- name: 🇸🇪SE_2|2.9MB/s
   password: None
   port: 443
   server: 149.50.216.65
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇸🇪SE_3|2.5MB/s
-  port: 443
-  server: 146.70.242.130
-  skip-cert-verify: true
+- client-fingerprint: random
+  name: '🇸🇪 瑞典 | SWE #1'
+  network: ws
+  port: 41826
+  server: 138.124.96.88
+  servername: sweden.homyak.app
   tls: true
-  type: http
+  type: vless
+  udp: true
+  uuid: 2eb3f6a0-df6e-49b6-994c-177acdd50a97
+  ws-opts:
+    path: /

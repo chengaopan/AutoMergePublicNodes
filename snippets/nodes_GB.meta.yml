@@ -1,4 +1,12 @@
 proxies:
+- name: 🇬🇧[www.v2nodes.com] vless-GB-1...
+  port: 443
+  server: 188.114.97.6
+  tls: false
+  type: vless
+  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
+  ws-opts:
+    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -28,6 +36,12 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+  port: 8443
+  server: node-uk.connectsuite.org
+  tls: true
+  type: vless
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -41,20 +55,31 @@ proxies:
   tls: true
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
   network: ws
   port: 443
   server: 159.65.51.189
   servername: ccc.010304.xyz
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
       Host: ccc.010304.xyz
-    path: /fp
+    path: /fp=chrome
+- client-fingerprint: chrome
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #11'
+  network: ws
+  port: 443
+  server: 159.65.51.189
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
 - cipher: aes-128-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
   password: shadowsocks
@@ -64,13 +89,13 @@ proxies:
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1292...
   password: g5h5jleTRSyO3Rk4
-  port: 80
+  port: 443
   server: 149.102.132.184
   type: ss
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1289...
   password: LXchLsIwtCeUAUgu
-  port: 80
+  port: 443
   server: 149.102.149.207
   type: ss
 - cipher: aes-256-gcm
@@ -79,68 +104,90 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
-- name: 🇬🇧GB_1|1.2MB/s
-  port: 9443
-  server: 84.17.50.214
+- name: 🇬🇧GB_1|3.1MB/s|R002-260618
+  password: None
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇬🇧GB_2|2.7MB/s
+  port: 443
+  server: 37.120.233.34
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_2|1009KB/s
+- name: 🇬🇧GB_3|1.5MB/s
+  port: 443
+  server: 37.120.233.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_4|3.3MB/s
+  port: 9443
+  server: 84.233.178.33
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_5|2.4MB/s
   port: 443
   server: 212.102.63.61
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_3|2.3MB/s
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_4|1.6MB/s
+- name: 🇬🇧GB_6|1.4MB/s
   port: 9443
-  server: 84.17.50.129
+  server: 84.17.50.214
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_5|1.6MB/s
-  port: 443
-  server: 212.102.63.1
+- alpn:
+  - h2
+  - http/1.1
+  name: 🇬🇧 英国 | GBR
+  password: dKn7hqgST668mj_8EgoMUd3_zPSxnTFQ
+  port: 8443
+  server: 194.55.239.121
   skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_6|2.1MB/s
-  port: 443
-  server: 84.17.50.193
-  skip-cert-verify: true
-  tls: true
-  type: http
-- http-opts:
-    headers:
-      Host:
-      - appmetrica.yandex.net
-    method: GET
-    path:
-    - /
-  name: '🇬🇧 英国 | GBR #1'
-  network: http
-  port: 443
-  server: 188.166.173.38
-  tls: false
-  type: vless
+  sni: api-v2.captaingold.app
+  type: trojan
   udp: true
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
-- cipher: aes-256-gcm
+- alterId: 0
+  cipher: auto
   name: '🇬🇧 英国 | GBR #2'
-  password: c2fe9024-d253-401a-b868-97421f6eb9e0
-  port: 22037
-  server: ruot.ayucloudservices.nl
-  type: ss
+  network: ws
+  port: 443
+  server: 172.67.142.177
+  skip-cert-verify: true
+  tls: true
+  type: vmess
   udp: true
-- cipher: aes-128-gcm
+  uuid: af4399b8-a152-486b-9cf6-acdd42d6c40c
+  ws-opts:
+    headers:
+      Host: uk.lovehk.xyz
+    path: /London3
+- alterId: 0
+  cipher: auto
   name: '🇬🇧 英国 | GBR #3'
-  password: edad69d9-ea99-4ce9-bae8-8fedc2afcbf4
-  port: 40040
-  server: ruot.ayucloudservices.nl
-  type: ss
+  network: ws
+  port: 443
+  server: 103.169.142.87
+  skip-cert-verify: true
+  tls: true
+  type: vmess
   udp: true
+  uuid: 31c3e8e7-f600-436a-87d4-9716143b0b0c
+  ws-opts:
+    headers:
+      Host: uk.lovehk.xyz
+    path: /London3
+- name: '🇬🇧 英国 | GBR #1'
+  password: dKn7hqgST668mj_8EgoMUd3_zPSxnTFQ
+  port: 8443
+  server: 194.55.239.121
+  skip-cert-verify: true
+  sni: api-v2.captaingold.app
+  type: trojan
