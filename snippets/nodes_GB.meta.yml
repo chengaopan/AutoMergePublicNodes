@@ -28,28 +28,12 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
-  port: 2053
-  server: 51.89.194.151
-  tls: false
-  type: vless
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
-  port: 8443
-  server: node-uk.connectsuite.org
-  servername: node-uk.connectsuite.org
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
+  encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
+  network: tcp
   port: 443
   server: 186.190.211.188
   servername: 186.190.211.188
@@ -58,7 +42,7 @@ proxies:
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
 - encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #11'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
   network: ws
   port: 443
   server: 159.65.51.189
@@ -86,7 +70,7 @@ proxies:
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1289...
   password: LXchLsIwtCeUAUgu
-  port: 443
+  port: 80
   server: 149.102.149.207
   type: ss
 - cipher: aes-256-gcm
@@ -95,28 +79,68 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
-- name: 🇬🇧GB_1|2.8MB/s
-  password: None
-  port: 443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_2|2.5MB/s
+- name: 🇬🇧GB_1|1.2MB/s
   port: 9443
   server: 84.17.50.214
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_3|2.3MB/s
-  port: 443
-  server: 84.17.50.193
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_4|3.2MB/s
+- name: 🇬🇧GB_2|1009KB/s
   port: 443
   server: 212.102.63.61
   skip-cert-verify: true
   tls: true
   type: http
+- name: 🇬🇧GB_3|2.3MB/s
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_4|1.6MB/s
+  port: 9443
+  server: 84.17.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_5|1.6MB/s
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_6|2.1MB/s
+  port: 443
+  server: 84.17.50.193
+  skip-cert-verify: true
+  tls: true
+  type: http
+- http-opts:
+    headers:
+      Host:
+      - appmetrica.yandex.net
+    method: GET
+    path:
+    - /
+  name: '🇬🇧 英国 | GBR #1'
+  network: http
+  port: 443
+  server: 188.166.173.38
+  tls: false
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+- cipher: aes-256-gcm
+  name: '🇬🇧 英国 | GBR #2'
+  password: c2fe9024-d253-401a-b868-97421f6eb9e0
+  port: 22037
+  server: ruot.ayucloudservices.nl
+  type: ss
+  udp: true
+- cipher: aes-128-gcm
+  name: '🇬🇧 英国 | GBR #3'
+  password: edad69d9-ea99-4ce9-bae8-8fedc2afcbf4
+  port: 40040
+  server: ruot.ayucloudservices.nl
+  type: ss
+  udp: true

@@ -17,6 +17,18 @@ proxies:
   port: 20006
   server: ss.042.node-for-bigairport.win
   type: ss
+- name: 🇺🇸[www.v2nodes.com] trojan-US-...
+  network: ws
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  port: 443
+  server: us3-2.998998.best
+  skip-cert-verify: true
+  sni: nat3.xxai.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nat3.xxai.dpdns.org
+    path: '%2Fanyway'
 - alterId: 0
   cipher: auto
   name: 🇺🇸 美国|@ripaojiedian
@@ -63,11 +75,54 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: '🇺🇸 美国 | USA #4'
-  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+- name: 🇺🇸 美国 | USA 4
+  network: ws
+  password: bpb-trojan
   port: 443
-  server: 23.106.44.14
+  server: 172.64.80.1
   skip-cert-verify: true
-  sni: sj6.freeguard.org
+  sni: vless.herogoing.top
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: vless.herogoing.top
+    path: /tr?ed=2560
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #10'
+  network: ws
+  port: 443
+  server: q3p3PWAUbM3fSE65.v.3dns.vip
+  servername: q3p3PWAUbM3fSE65.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: efe82ebc-46b3-4242-b612-b652b8fbc870
+  ws-opts:
+    headers:
+      Host: q3p3PWAUbM3fSE65.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #15'
+  network: ws
+  port: 443
+  server: Sie0DBBIEwsOAxzS.v.3dns.vip
+  servername: Sie0DBBIEwsOAxzS.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: efe82ebc-46b3-4242-b612-b652b8fbc870
+  ws-opts:
+    headers:
+      Host: Sie0DBBIEwsOAxzS.v.3dns.vip
+    path: /ws-vmess
+- name: '🇺🇸 美国 | USA #4'
+  password: bpb-trojan
+  port: 443
+  server: 172.64.80.1
+  skip-cert-verify: true
+  sni: vless.herogoing.top
+  type: trojan
