@@ -1,5 +1,5 @@
 proxies:
-- name: 🇬🇧[www.v2nodes.com] vless-GB-1...
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
   port: 443
   server: 188.114.97.6
   tls: false
@@ -11,7 +11,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #2'
   network: ws
   port: 443
   server: vpn.kovira.site
@@ -36,7 +36,7 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
   port: 8443
   server: node-uk.connectsuite.org
   tls: true
@@ -45,7 +45,9 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
+  encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
+  network: tcp
   port: 443
   server: 186.190.211.188
   servername: 186.190.211.188
@@ -66,17 +68,57 @@ proxies:
   server: 149.102.132.184
   type: ss
 - cipher: aes-256-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1289...
-  password: LXchLsIwtCeUAUgu
-  port: 80
-  server: 149.102.149.207
-  type: ss
-- cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1247...
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 94.156.250.148
   type: ss
+- name: 🇬🇧GB_1|2.1MB/s
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_2|2.2MB/s
+  port: 9443
+  server: 84.17.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_3|2.9MB/s
+  port: 443
+  server: 37.120.233.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_4|2.5MB/s|P002-260618
+  password: None
+  port: 443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇬🇧GB_5|2.2MB/s
+  port: 9443
+  server: 84.17.50.214
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: firefox
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇬🇧GB_6|2.3MB/s
+  network: tcp
+  port: 443
+  server: lagad17.api3-max.ru
+  servername: lagad17.api3-max.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
+  xudp: true
 - cipher: aes-256-cfb
   name: '🇬🇧 英国 | GBR #2'
   password: amazonskr05
