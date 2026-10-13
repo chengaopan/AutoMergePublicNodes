@@ -1,4 +1,10 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸[www.v2nodes.com] ss-US-1596...
+  password: 792e0bdb-01db-450c-94c4-925151eb396e
+  port: 20006
+  server: ss.043.node-for-bigairport.win
+  type: ss
 - cipher: aes-128-gcm
   name: 🇺🇸[www.v2nodes.com] ss-US-1594...
   password: 2607008ac896b3443be9419d73d544d9
@@ -76,38 +82,39 @@ proxies:
   sni: m.ctrip.com
   type: trojan
 - alpn:
-  - ''
-  alterId: '0'
+  - http/1.1
+  alterId: 0
   cipher: auto
-  name: 🇺🇸US_3|1.1MB/s
+  name: 🇺🇸 美国 | USA 5
   network: ws
-  port: 28167
-  server: 142.171.48.179
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: hadipowerplus.up.railway.app
+  servername: hadipowerplus.up.railway.app
+  skip-cert-verify: true
+  tls: true
   type: vmess
   udp: true
-  uuid: f949f286-b709-4617-8f26-2e0dfdd7ca6a
+  uuid: 242dc91e-061b-478d-9911-d81ea8672c10
   ws-opts:
     headers:
-      Host: gw.alicdn.com
-    path: /
-  xudp: true
-- alpn:
-  - ''
-  alterId: '0'
+      Host: hadipowerplus.up.railway.app
+    path: /cdn/2bd0b13f-2193-465d-8118-9d9de868261b/m
+- cipher: aes-128-gcm
+  name: '🇺🇸 美国 | USA #6'
+  password: 49b07b98-6b76-4c70-b046-39be88e75abf
+  port: 40022
+  server: ruot.ayucloudservices.nl
+  type: ss
+- alterId: 0
   cipher: auto
-  name: 🇺🇸US_12|2.0MB/s
+  name: '🇺🇸 美国 | USA #5'
   network: ws
-  port: 28167
-  server: 142.171.48.179
-  skip-cert-verify: false
-  tls: false
+  port: 443
+  server: hadipowerplus.up.railway.app
+  tls: true
   type: vmess
-  udp: true
-  uuid: eeb623e4-b27c-4031-bab6-51e068c7dc6a
+  uuid: 242dc91e-061b-478d-9911-d81ea8672c10
   ws-opts:
     headers:
-      Host: gw.alicdn.com
-    path: /
-  xudp: true
+      Host: hadipowerplus.up.railway.app
+    path: /cdn/2bd0b13f-2193-465d-8118-9d9de868261b/m
