@@ -17,12 +17,6 @@ proxies:
   port: 19049
   server: 205.209.126.205
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🇺🇸[www.v2nodes.com] ss-US-1594... #2'
-  password: 792e0bdb-01db-450c-94c4-925151eb396e
-  port: 20006
-  server: ss.042.node-for-bigairport.win
-  type: ss
 - name: 🇺🇸[www.v2nodes.com] trojan-US-...
   network: ws
   password: 5504eaa8-1395-402f-8e0e-75ecd762e627
@@ -81,23 +75,41 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇺🇸 美国 | USA 9
-  network: ws
-  password: trojan
-  port: 8443
-  server: 104.18.35.86
+- cipher: aes-256-gcm
+  name: '🇷🇺 俄罗斯 | RUS #2'
+  password: 4938e975724d0ed1
+  port: 50120
+  server: 194.87.196.107
+  type: ss
+  udp: true
+- name: '🇺🇸 美国 | USA #9'
+  password: ae7eb4dwyaz25pxwgq59
+  port: 59689
+  server: 66.23.203.21
   skip-cert-verify: true
-  sni: longwanghen.pages.dev
+  type: trojan
+  udp: true
+- alpn:
+  - h3
+  - h2
+  - http/1.1
+  name: 🇺🇸 美国 | USA 10
+  network: ws
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  port: 2053
+  server: 104.21.48.18
+  skip-cert-verify: true
+  sni: nimm.mpd.cc.cd
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: longwanghen.pages.dev
-    path: /
-- name: '🇺🇸 美国 | USA #9'
-  password: trojan
-  port: 8443
-  server: 104.18.35.86
+      Host: nimm.mpd.cc.cd
+    path: /0962
+- name: '🇺🇸 美国 | USA #10'
+  password: e309e031-991e-4656-9934-44d10deb8fd8
+  port: 2053
+  server: 104.21.48.18
   skip-cert-verify: true
-  sni: longwanghen.pages.dev
+  sni: nimm.mpd.cc.cd
   type: trojan
