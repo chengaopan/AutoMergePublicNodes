@@ -28,7 +28,7 @@ proxies:
   - h3
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #5'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #4'
   network: ws
   port: 443
   server: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
@@ -40,6 +40,12 @@ proxies:
     headers:
       Host: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
     path: /ws/b8e59255-d392-c427-535d-bc1f8f444c4e
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #5'
+  port: 16586
+  server: 154.29.149.140
+  tls: false
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
 - name: '🇺🇸[www.v2nodes.com] vless-US-1... #7'
   port: 41705
   server: 154.29.149.140
@@ -47,19 +53,9 @@ proxies:
   type: vless
   uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
 - encryption: none
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #8'
-  network: ws
-  port: 2052
-  server: mail.loyalsmile.net
-  tls: false
-  type: vless
-  uuid: ff766b85-d50f-47b7-9b63-6ca4ea128f3f
-  ws-opts:
-    path: /wp-content4
-- encryption: none
   grpc-opts:
     grpc-service-name: vless
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #9'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #8'
   network: grpc
   port: 2085
   server: 206.245.146.248
@@ -142,81 +138,48 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇺🇸US_1|1.1MB/s
-  port: 9443
-  server: 38.95.111.226
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- flow: xtls-rprx-vision
-  name: 🇺🇸US_2|1.0MB/s
-  port: 443
-  server: s880.gogocs.xyz
-  skip-cert-verify: true
-  tls: true
+- name: '🇺🇸 美国 | USA #1'
+  network: ws
+  port: 8080
+  server: 104.18.35.86
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: false
   type: vless
   udp: true
-  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
-- name: 🇺🇸US_3|1.0MB/s
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  ws-opts:
+    headers:
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /sg-melbi
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #2'
+  network: ws
   port: 443
-  server: 12.221.146.147
+  server: XSmlqR4AuuOPMsMN.v.3dns.vip
+  servername: XSmlqR4AuuOPMsMN.v.3dns.vip
   skip-cert-verify: true
   tls: true
-  type: http
-- name: 🇺🇸US_4|1.0MB/s
-  port: 443
-  server: 12.202.180.10
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_5|1.4MB/s
-  port: 443
-  server: 12.202.180.118
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_6|1.3MB/s
-  port: 443
-  server: 149.34.248.65
-  skip-cert-verify: true
-  sni: 149.34.248.65
-  tls: true
-  type: http
-- name: 🇺🇸US_7|4.2MB/s
-  port: 443
-  server: 148.135.10.80
-  skip-cert-verify: true
-  tls: true
-  type: http
-- alpn:
-  - http/1.1
-  - h2
-  client-fingerprint: firefox
-  name: '🇷🇺 俄罗斯 | RUS #1'
-  network: xhttp
-  port: 2053
-  server: 78.159.246.179
-  servername: randomquaint.net
-  tls: true
+  type: vmess
+  uuid: edd281f6-71e4-4c1e-ac6b-a1c52e2e1270
+  ws-opts:
+    headers:
+      Host: XSmlqR4AuuOPMsMN.v.3dns.vip
+    path: /ws-vmess
+- name: '🇺🇸 美国 | USA #3'
+  network: tcp
+  port: 30006
+  server: 104.207.132.12
+  tls: false
   type: vless
   udp: true
-  uuid: 6a2aff19-ff1f-4a13-96c8-a4d8986a9699
-  xhttp-opts:
-    host: randomquaint.net
-    mode: auto
-    path: /api/v1/upload
-- cipher: aes-256-gcm
-  name: '🇷🇺 俄罗斯 | RUS #2'
-  password: 4938e975724d0ed1
-  port: 50120
-  server: 194.87.196.107
-  type: ss
-  udp: true
+  uuid: 157bf3e0-9467-4600-9b76-71323f7ef14e
+  ws-opts:
+    path: /
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #3'
+  name: '🇺🇸 美国 | USA #5'
   network: ws
   port: 443
   server: www.speedtest.net
@@ -229,42 +192,39 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560#Telegram---bored_vpn
-- name: '🇺🇸 美国 | USA #6'
-  network: tcp
-  port: 30004
-  server: 104.207.132.12
-  tls: false
-  type: vless
-  uuid: 157bf3e0-9467-4600-9b76-71323f7ef14e
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #6'
+  network: ws
+  port: 443
+  server: 3kCf86Ufi0U5xBDA.v.3dns.vip
+  servername: 3kCf86Ufi0U5xBDA.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ad8685f2-5d17-411e-855c-1cc2ed5144a9
   ws-opts:
-    path: /
-- client-fingerprint: chrome
+    headers:
+      Host: 3kCf86Ufi0U5xBDA.v.3dns.vip
+    path: /ws-vmess
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
   name: '🇺🇸 美国 | USA #7'
   network: ws
   port: 443
-  server: 172.66.0.162
-  servername: ccc.010304.xyz
+  server: 162.159.135.234
+  servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
   udp: true
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   ws-opts:
     headers:
-      Host: ccc.010304.xyz
-    path: /
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
 - name: '🇺🇸 美国 | USA #8'
-  network: ws
-  port: 2052
-  server: eu02.123450908.xyz
-  tls: false
-  type: vless
-  udp: true
-  uuid: 5744e593-1cc8-48fa-b8ca-57cd494fe35b
-  ws-opts:
-    headers:
-      Host: eu02.123450908.xyz
-    path: /rain1226
-- name: '🇺🇸 美国 | USA #9'
   password: ae7eb4dwyaz25pxwgq59
   port: 59689
   server: 66.23.203.21
@@ -272,49 +232,58 @@ proxies:
   type: trojan
   udp: true
 - alpn:
-  - h3
-  - h2
   - http/1.1
-  name: 🇺🇸 美国 | USA 10
+  client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #11'
   network: ws
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  port: 2053
-  server: 104.21.48.18
-  skip-cert-verify: true
-  sni: nimm.mpd.cc.cd
-  type: trojan
+  port: 443
+  server: 188.114.98.0
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
   udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   ws-opts:
     headers:
-      Host: nimm.mpd.cc.cd
-    path: /0962
-- grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: vless
-  name: 🇺🇸 美国 | USA 11
-  network: grpc
-  port: 3090
-  server: 104.143.219.98
-  tls: true
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip
+- name: '🇺🇸 美国 | USA #12'
+  network: ws
+  port: 14430
+  server: 193.233.130.119
+  servername: 193.233.130.119
+  tls: false
   type: vless
   udp: true
-  uuid: 61d23a0c-9bb2-41c6-9ab2-a41c0e842e7c
-- name: '🇺🇸 美国 | USA #10'
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  port: 2053
-  server: 104.21.48.18
-  skip-cert-verify: true
-  sni: nimm.mpd.cc.cd
-  type: trojan
-- grpc-opts:
-    grpc-service-name: ''
-  name: '🇺🇸 美国 | USA #11'
-  network: grpc
-  port: 3090
-  server: 104.143.219.98
-  tls: true
+  uuid: 16f78e38-8df9-4658-93e8-e49feababf5b
+  ws-opts:
+    headers:
+      Host: 193.233.130.119
+    path: /vless
+- name: '🇺🇸 美国 | USA #13'
+  network: tcp
+  port: 10443
+  server: 193.233.130.119
+  servername: 193.233.130.119
+  tls: false
   type: vless
-  uuid: 61d23a0c-9bb2-41c6-9ab2-a41c0e842e7c
+  udp: true
+  uuid: 16f78e38-8df9-4658-93e8-e49feababf5b
+  ws-opts:
+    path: /
+- name: '🇺🇸 美国 | USA #14'
+  network: ws
+  port: 14430
+  server: 193.233.130.118
+  servername: 193.233.130.118
+  tls: false
+  type: vless
+  udp: true
+  uuid: dfc3077e-b013-4fcb-a500-df3e210e88b0
+  ws-opts:
+    headers:
+      Host: 193.233.130.118
+    path: /vless
 - name: US_speednode_0131
   password: 'null'
   port: 9002

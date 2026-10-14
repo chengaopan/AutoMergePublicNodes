@@ -75,41 +75,40 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- cipher: aes-256-gcm
-  name: '🇷🇺 俄罗斯 | RUS #2'
-  password: 4938e975724d0ed1
-  port: 50120
-  server: 194.87.196.107
-  type: ss
-  udp: true
-- name: '🇺🇸 美国 | USA #9'
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #2'
+  network: ws
+  port: 443
+  server: XSmlqR4AuuOPMsMN.v.3dns.vip
+  servername: XSmlqR4AuuOPMsMN.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: edd281f6-71e4-4c1e-ac6b-a1c52e2e1270
+  ws-opts:
+    headers:
+      Host: XSmlqR4AuuOPMsMN.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #6'
+  network: ws
+  port: 443
+  server: 3kCf86Ufi0U5xBDA.v.3dns.vip
+  servername: 3kCf86Ufi0U5xBDA.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: ad8685f2-5d17-411e-855c-1cc2ed5144a9
+  ws-opts:
+    headers:
+      Host: 3kCf86Ufi0U5xBDA.v.3dns.vip
+    path: /ws-vmess
+- name: '🇺🇸 美国 | USA #8'
   password: ae7eb4dwyaz25pxwgq59
   port: 59689
   server: 66.23.203.21
   skip-cert-verify: true
   type: trojan
   udp: true
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  name: 🇺🇸 美国 | USA 10
-  network: ws
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  port: 2053
-  server: 104.21.48.18
-  skip-cert-verify: true
-  sni: nimm.mpd.cc.cd
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: nimm.mpd.cc.cd
-    path: /0962
-- name: '🇺🇸 美国 | USA #10'
-  password: e309e031-991e-4656-9934-44d10deb8fd8
-  port: 2053
-  server: 104.21.48.18
-  skip-cert-verify: true
-  sni: nimm.mpd.cc.cd
-  type: trojan
