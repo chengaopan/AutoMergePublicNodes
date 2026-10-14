@@ -1,28 +1,18 @@
 proxies:
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
-  port: 443
-  server: 188.114.97.6
-  tls: false
-  type: vless
-  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
-  ws-opts:
-    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #2'
+- client-fingerprint: chrome
+  name: '🇸🇪 瑞典 | SWE #1'
   network: ws
   port: 443
-  server: vpn.kovira.site
-  servername: vpn.kovira.site
+  server: 16.171.118.250
+  servername: rnxq-1lpi3m.linmeisoft.com
   tls: true
   type: vless
-  uuid: 22e6604e-0481-411f-8028-ffbd65f624b6
+  udp: true
+  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
   ws-opts:
     headers:
-      Host: vpn.kovira.site
-    path: /ws-738d2d0c5eba7609f3c37de2
+      Host: rnxq-1lpi3m.linmeisoft.com
+    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
 - client-fingerprint: chrome
   name: '🇮🇪[www.v2nodes.com] vless-IE-2... #3'
   network: ws
@@ -36,15 +26,13 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
-  port: 2053
-  server: 51.89.194.151
-  tls: false
-  type: vless
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
+  network: tcp
   port: 8443
   server: node-uk.connectsuite.org
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
@@ -52,7 +40,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
   network: tcp
   port: 443
   server: 186.190.211.188
@@ -61,7 +49,7 @@ proxies:
   tls: true
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
   network: ws
   port: 443
   server: 159.65.51.189
@@ -73,6 +61,19 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /fp=chrome
+- client-fingerprint: chrome
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
+  network: ws
+  port: 443
+  server: 159.65.51.189
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
 - cipher: aes-128-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
   password: shadowsocks
@@ -91,6 +92,34 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
+- name: 🇬🇧GB_1|2.2MB/s
+  port: 443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_2|2.9MB/s
+  password: None
+  port: 443
+  server: 37.120.233.50
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_3|3.2MB/s
+  port: 9443
+  server: 84.233.178.33
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_4|1.4MB/s|R002-260618
+  password: None
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
 - encryption: mlkem768x25519plus.native.0rtt.JfNBPz0m2uCp_6xUfKujyff2m7RneA04mdyArprLvxU
   name: '🇬🇧 英国 | GBR #1'
   network: tcp

@@ -9,6 +9,32 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
+- name: '🇸🇪 瑞典 | SWE #5'
+  network: ws
+  port: 14430
+  server: 5.178.109.174
+  servername: 5.178.109.174
+  tls: false
+  type: vless
+  udp: true
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  ws-opts:
+    headers:
+      Host: 5.178.109.174
+    path: /vless
+- name: '🇸🇪 瑞典 | SWE #3'
+  network: ws
+  port: 14430
+  server: 193.188.21.253
+  servername: 193.188.21.253
+  tls: false
+  type: vless
+  udp: true
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  ws-opts:
+    headers:
+      Host: 193.188.21.253
+    path: /vless
 - name: 🇸🇪[www.v2nodes.com] vless-SE-9...
   network: ws
   port: 2053
@@ -22,7 +48,7 @@ proxies:
       Host: cf3.schzyc.cc.cd
     path: /proxyip=ProxyIP.CMLiussss.netfp=chrome
 - client-fingerprint: chrome
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #2'
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #4'
   network: ws
   port: 2053
   server: 5.189.254.168
@@ -40,7 +66,7 @@ proxies:
   encryption: none
   grpc-opts:
     grpc-service-name: content.v1.Feed
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #4'
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
   network: grpc
   port: 443
   server: 31.207.7.117
@@ -49,39 +75,52 @@ proxies:
   tls: true
   type: vless
   uuid: 524dd22d-9f8c-4cc4-9e12-f427f497dff4
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #6'
+  network: ws
+  port: 443
+  server: sub.merky.top
+  servername: sub.merky.top
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 6e05822a-e9da-4135-a9db-71aa07a944af
+  ws-opts:
+    headers:
+      Host: sub.merky.top
+    path: /merky-connect/de6/
 - cipher: aes-256-gcm
   name: 🇸🇪[www.v2nodes.com] ss-SE-1560...
   password: AxIYWtskJWIIaefW
   port: 8388
   server: 70.34.212.124
   type: ss
-- client-fingerprint: chrome
-  name: '🇸🇪 瑞典 | SWE #1'
-  network: ws
+- name: 🇸🇪SE_1|3.0MB/s
+  password: None
   port: 443
-  server: 16.171.118.250
-  servername: rnxq-1lpi3m.linmeisoft.com
+  server: 146.70.242.146
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
-  ws-opts:
-    headers:
-      Host: rnxq-1lpi3m.linmeisoft.com
-    path: /b0a100ee-c397-43f2-bdae-2adfb7a0d4e5
-- name: '🇸🇪 瑞典 | SWE #3'
-  network: ws
-  port: 14430
-  server: 193.188.21.253
-  servername: 193.188.21.253
-  tls: false
-  type: vless
-  udp: true
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  ws-opts:
-    headers:
-      Host: 193.188.21.253
-    path: /vless
+  type: http
+- name: 🇸🇪SE_2|1.3MB/s
+  port: 443
+  server: 146.70.242.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇸🇪SE_3|1.2MB/s
+  port: 443
+  server: 217.210.129.243
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇸🇪SE_4|3.1MB/s
+  port: 443
+  server: 79.142.77.63
+  skip-cert-verify: true
+  tls: true
+  type: http
 - auth: 8bd04756-3beb-4348-82c9-d35453df50ce
   name: '🇸🇪 瑞典 | SWE #4'
   password: 8bd04756-3beb-4348-82c9-d35453df50ce
@@ -90,16 +129,3 @@ proxies:
   skip-cert-verify: true
   tls: false
   type: hysteria2
-- name: '🇸🇪 瑞典 | SWE #5'
-  network: ws
-  port: 14430
-  server: 5.178.109.174
-  servername: 5.178.109.174
-  tls: false
-  type: vless
-  udp: true
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
-  ws-opts:
-    headers:
-      Host: 5.178.109.174
-    path: /vless

@@ -7,11 +7,45 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
+- name: '🇺🇸 美国 | USA #14'
+  network: ws
+  port: 14430
+  server: 193.233.130.118
+  servername: 193.233.130.118
+  tls: false
+  type: vless
+  udp: true
+  uuid: dfc3077e-b013-4fcb-a500-df3e210e88b0
+  ws-opts:
+    headers:
+      Host: 193.233.130.118
+    path: /vless
+- name: '🇺🇸 美国 | USA #13'
+  network: tcp
+  port: 10443
+  server: 193.233.130.119
+  servername: 193.233.130.119
+  tls: false
+  type: vless
+  udp: true
+  uuid: 16f78e38-8df9-4658-93e8-e49feababf5b
+  ws-opts:
+    path: /
+- name: '🇺🇸 美国 | USA #3'
+  network: tcp
+  port: 30006
+  server: 104.207.132.12
+  tls: false
+  type: vless
+  udp: true
+  uuid: 157bf3e0-9467-4600-9b76-71323f7ef14e
+  ws-opts:
+    path: /
 - alpn:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #6'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #9'
   network: ws
   port: 443
   server: 104.21.70.22
@@ -28,7 +62,7 @@ proxies:
   - h3
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #4'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #7'
   network: ws
   port: 443
   server: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
@@ -40,14 +74,8 @@ proxies:
     headers:
       Host: e8439083-5b1f-4a9a-8003-9c143de96941.fly.dev
     path: /ws/b8e59255-d392-c427-535d-bc1f8f444c4e
-- name: '🇺🇸[www.v2nodes.com] vless-US-1... #5'
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #8'
   port: 16586
-  server: 154.29.149.140
-  tls: false
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-- name: '🇺🇸[www.v2nodes.com] vless-US-1... #7'
-  port: 41705
   server: 154.29.149.140
   tls: false
   type: vless
@@ -55,7 +83,7 @@ proxies:
 - encryption: none
   grpc-opts:
     grpc-service-name: vless
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #8'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #11'
   network: grpc
   port: 2085
   server: 206.245.146.248
@@ -80,7 +108,14 @@ proxies:
   port: 19049
   server: 205.209.126.205
   type: ss
-- name: 🇺🇸[www.v2nodes.com] trojan-US-...
+- name: '🇺🇸 美国 | USA #8'
+  password: ae7eb4dwyaz25pxwgq59
+  port: 59689
+  server: 66.23.203.21
+  skip-cert-verify: true
+  type: trojan
+  udp: true
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
   network: ws
   password: 5504eaa8-1395-402f-8e0e-75ecd762e627
   port: 443
@@ -138,6 +173,153 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
+- name: US_speednode_0131
+  password: 'null'
+  port: 9002
+  server: 138.199.35.216
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
+- name: 🇺🇸US_3|2.8MB/s
+  port: 443
+  server: 129.153.93.183
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_4|1.2MB/s
+  port: 9443
+  server: 38.95.111.226
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_5|1017KB/s
+  port: 8443
+  server: 44.248.167.117
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_6|3.1MB/s
+  port: 8443
+  server: 44.229.69.166
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_7|1.0MB/s
+  port: 443
+  server: 193.239.236.134
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_8|3.6MB/s
+  port: 443
+  server: 23.133.176.14
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_9|3.0MB/s
+  port: 443
+  server: 68.235.56.59
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_10|2.6MB/s
+  port: 443
+  server: 167.88.60.242
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_11|2.9MB/s
+  port: 9443
+  server: 154.47.25.78
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_12|3.1MB/s
+  port: 9443
+  server: 198.44.138.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_13|2.2MB/s
+  port: 8443
+  server: 18.206.28.143
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_14|2.4MB/s
+  port: 443
+  server: 162.244.227.36
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_15|1.4MB/s
+  port: 8090
+  server: 24.142.229.178
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_16|1.1MB/s
+  port: 8090
+  server: 50.184.176.222
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_17|2.1MB/s
+  port: 443
+  server: 192.227.176.234
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_18|3.7MB/s
+  port: 443
+  server: 64.98.50.100
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_19|2.1MB/s
+  port: 443
+  server: 12.202.180.10
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_20|1.6MB/s
+  port: 443
+  server: 66.64.100.66
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_21|3.2MB/s
+  password: test123
+  port: 1080
+  server: 104.168.249.36
+  type: socks5
+  username: test123
+- name: 🇺🇸US_22|2.1MB/s
+  port: 9002
+  server: 138.199.35.204
+  skip-cert-verify: true
+  tls: true
+  type: http
+- alterId: 0
+  cipher: auto
+  name: 🇺🇸US_23|3.9MB/s
+  network: ws
+  port: 443
+  server: 0FN8ne0VXwJLjT6E.v.3dns.vip
+  servername: 0FN8ne0VXwJLjT6E.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 1d84e480-8fd2-4fae-96de-e46fe36ffe86
+  ws-opts:
+    headers:
+      Host: 0FN8ne0VXwJLjT6E.v.3dns.vip
+    path: /ws-vmess
+  xudp: true
 - name: '🇺🇸 美国 | USA #1'
   network: ws
   port: 8080
@@ -166,16 +348,6 @@ proxies:
     headers:
       Host: XSmlqR4AuuOPMsMN.v.3dns.vip
     path: /ws-vmess
-- name: '🇺🇸 美国 | USA #3'
-  network: tcp
-  port: 30006
-  server: 104.207.132.12
-  tls: false
-  type: vless
-  udp: true
-  uuid: 157bf3e0-9467-4600-9b76-71323f7ef14e
-  ws-opts:
-    path: /
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -224,13 +396,6 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- name: '🇺🇸 美国 | USA #8'
-  password: ae7eb4dwyaz25pxwgq59
-  port: 59689
-  server: 66.23.203.21
-  skip-cert-verify: true
-  type: trojan
-  udp: true
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -260,39 +425,6 @@ proxies:
     headers:
       Host: 193.233.130.119
     path: /vless
-- name: '🇺🇸 美国 | USA #13'
-  network: tcp
-  port: 10443
-  server: 193.233.130.119
-  servername: 193.233.130.119
-  tls: false
-  type: vless
-  udp: true
-  uuid: 16f78e38-8df9-4658-93e8-e49feababf5b
-  ws-opts:
-    path: /
-- name: '🇺🇸 美国 | USA #14'
-  network: ws
-  port: 14430
-  server: 193.233.130.118
-  servername: 193.233.130.118
-  tls: false
-  type: vless
-  udp: true
-  uuid: dfc3077e-b013-4fcb-a500-df3e210e88b0
-  ws-opts:
-    headers:
-      Host: 193.233.130.118
-    path: /vless
-- name: US_speednode_0131
-  password: 'null'
-  port: 9002
-  server: 138.199.35.216
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
 - name: US_speednode_0133
   port: 443
   server: fan.365747.xyz
