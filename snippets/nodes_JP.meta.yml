@@ -91,9 +91,11 @@ proxies:
   sni: warm-krill.rooster465.autos
   type: trojan
 - name: '🇯🇵[www.v2nodes.com] trojan-JP-... #7'
+  network: tcp
   password: UX82473651
   port: 443
   server: normal-macaque.rooster465.autos
+  skip-cert-verify: false
   sni: normal-macaque.rooster465.autos
   type: trojan
 - name: '🇯🇵[www.v2nodes.com] trojan-JP-... #8'
@@ -103,9 +105,11 @@ proxies:
   sni: optimal-penguin.rooster465.autos
   type: trojan
 - name: '🇯🇵[www.v2nodes.com] trojan-JP-... #9'
+  network: tcp
   password: UX82473651
   port: 443
   server: amazed-mako.rooster465.autos
+  skip-cert-verify: false
   sni: amazed-mako.rooster465.autos
   type: trojan
 - name: '🇯🇵[www.v2nodes.com] trojan-JP-... #10'
@@ -142,20 +146,13 @@ proxies:
 - name: '🇯🇵[www.v2nodes.com] trojan-JP-... #15'
   password: UX82473651
   port: 443
-  server: obliging-louse.rooster465.autos
-  sni: obliging-louse.rooster465.autos
+  server: 54.238.153.132
   type: trojan
 - name: '🇯🇵[www.v2nodes.com] trojan-JP-... #16'
   password: UX82473651
   port: 443
   server: winning-marten.rooster465.autos
   sni: winning-marten.rooster465.autos
-  type: trojan
-- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #17'
-  password: UX82473651
-  port: 443
-  server: concrete-aardvark.rooster465.autos
-  sni: concrete-aardvark.rooster465.autos
   type: trojan
 - alterId: 0
   cipher: auto
@@ -210,16 +207,15 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇯🇵JP_1|2.5MB/s
-  port: 1080
-  server: 150.129.137.105
-  skip-cert-verify: true
-  type: socks5
-- client-fingerprint: chrome
-  name: '🇯🇵 日本 | JPN #2'
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇯🇵JP_1|6.1MB/s
   network: ws
-  port: 8443
-  server: 166.88.2.248
+  port: 443
+  server: saas.sin.fan
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -228,4 +224,7 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/61.0.3163.100 Safari/537.36
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560
+  xudp: true

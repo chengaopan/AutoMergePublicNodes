@@ -23,9 +23,43 @@ proxies:
   server: 109.206.241.10
   sni: russiapower.accesscam.org
   type: trojan
-- name: 🇪🇪EE_1|3.2MB/s
+- name: 🇪🇪EE_1|1.2MB/s
+  port: 9443
+  server: 192.159.101.174
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇪🇪EE_2|3.3MB/s
   port: 9443
   server: 95.153.31.66
   skip-cert-verify: true
   tls: true
   type: http
+- alpn:
+  - h2
+  client-fingerprint: edge
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: lalibobi.orbit.v3.Connect
+  name: 🇪🇪 爱沙尼亚 | EST
+  network: grpc
+  port: 443
+  server: 188.225.38.216
+  servername: lalibobi.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30292475-4666-4c26-bcb2-338a0919958b
+- alpn:
+  - h2
+  client-fingerprint: edge
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇪🇪 爱沙尼亚 | EST #1'
+  network: grpc
+  port: 443
+  server: 188.225.38.216
+  servername: lalibobi.online
+  tls: true
+  type: vless
+  uuid: 30292475-4666-4c26-bcb2-338a0919958b

@@ -24,7 +24,7 @@ proxies:
       Host: vpn.kovira.site
     path: /ws-738d2d0c5eba7609f3c37de2
 - client-fingerprint: chrome
-  name: '🇮🇪[www.v2nodes.com] vless-IE-2... #2'
+  name: '🇮🇪[www.v2nodes.com] vless-IE-2... #3'
   network: ws
   port: 8443
   server: 23.95.225.10
@@ -36,9 +36,13 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+  network: tcp
   port: 8443
   server: node-uk.connectsuite.org
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
@@ -46,7 +50,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
   network: tcp
   port: 443
   server: 186.190.211.188
@@ -55,6 +59,18 @@ proxies:
   tls: true
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
+  network: ws
+  port: 443
+  server: 159.65.51.189
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp=chrome
 - cipher: aes-128-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
   password: shadowsocks
@@ -73,56 +89,33 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
-- name: 🇬🇧GB_1|2.1MB/s
-  port: 443
-  server: 212.102.63.31
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_2|2.2MB/s
-  port: 9443
-  server: 84.17.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_3|2.9MB/s
+- name: 🇬🇧GB_1|1.4MB/s
   port: 443
   server: 37.120.233.50
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_4|2.5MB/s|P002-260618
-  password: None
-  port: 443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇬🇧GB_5|2.2MB/s
+- name: 🇬🇧GB_2|2.6MB/s
   port: 9443
   server: 84.17.50.214
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: firefox
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇬🇧GB_6|2.3MB/s
-  network: tcp
+- name: 🇬🇧GB_3|3.4MB/s
   port: 443
-  server: lagad17.api3-max.ru
-  servername: lagad17.api3-max.ru
+  server: 185.164.138.156
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: b8254d35-1cb0-4b74-8f7f-d2bc985196a0
-  xudp: true
-- cipher: aes-256-cfb
-  name: '🇬🇧 英国 | GBR #2'
-  password: amazonskr05
+  type: http
+- name: 🇬🇧GB_4|2.7MB/s
   port: 443
-  server: 13.135.199.253
-  type: ss
-  udp: true
+  server: 84.17.50.193
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_5|2.3MB/s
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
