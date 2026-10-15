@@ -9,7 +9,7 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
+- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #2'
   network: ws
   port: 14430
   server: 5.178.109.174
@@ -21,20 +21,20 @@ proxies:
     headers:
       Host: 5.178.109.174
     path: /vless
-- name: 🇸🇪[www.v2nodes.com] vless-SE-9...
+- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #3'
   network: ws
-  port: 2053
-  server: 5.189.254.168
-  servername: cf3.schzyc.cc.cd
-  tls: true
+  port: 14430
+  server: 193.188.21.253
+  servername: 193.188.21.253
+  tls: false
   type: vless
-  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
   ws-opts:
     headers:
-      Host: cf3.schzyc.cc.cd
-    path: /proxyip=ProxyIP.CMLiussss.netfp=chrome
+      Host: 193.188.21.253
+    path: /vless
 - client-fingerprint: chrome
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #4'
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
   network: ws
   port: 2053
   server: 5.189.254.168
@@ -52,7 +52,7 @@ proxies:
   encryption: none
   grpc-opts:
     grpc-service-name: content.v1.Feed
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #6'
   network: grpc
   port: 443
   server: 31.207.7.117
@@ -63,7 +63,7 @@ proxies:
   uuid: 524dd22d-9f8c-4cc4-9e12-f427f497dff4
 - client-fingerprint: chrome
   encryption: none
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #6'
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #7'
   network: ws
   port: 443
   server: 94.143.231.146
@@ -76,6 +76,35 @@ proxies:
     headers:
       Host: sub.merky.top
     path: /merky-connect/de6/
+- name: 🇸🇪[www.v2nodes.com] vless-SE-9...
+  network: ws
+  port: 2053
+  server: 5.189.254.168
+  servername: cf3.schzyc.cc.cd
+  tls: true
+  type: vless
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: cf3.schzyc.cc.cd
+    path: /proxyip=ProxyIP.CMLiussss.netfp=chrome
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: '🇸🇪[www.v2nodes.com] vless-SE-9... #1'
+  network: ws
+  port: 443
+  server: 188.114.97.6
+  servername: lucasjow.us.ci
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
+  ws-opts:
+    headers:
+      Host: lucasjow.us.ci
+    path: /cart/docs/www/proxyip=108.160.132.132?ed#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
 - cipher: aes-256-gcm
   name: 🇸🇪[www.v2nodes.com] ss-SE-1560...
   password: AxIYWtskJWIIaefW
@@ -83,9 +112,8 @@ proxies:
   server: 70.34.212.124
   type: ss
 - name: 🇸🇪SE_1|2.1MB/s
-  password: None
   port: 443
-  server: 146.70.242.130
+  server: 146.70.242.146
   skip-cert-verify: true
   tls: true
   type: http

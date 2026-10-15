@@ -1,4 +1,10 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇸🇬[www.v2nodes.com] ss-SG-1598...
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 8443
+  server: 54.254.251.49
+  type: ss
 - cipher: aes-128-gcm
   name: 🇸🇬[www.v2nodes.com] ss-SG-1596...
   password: 85590bd2-807b-49b9-af20-1101c18b9eda
@@ -47,9 +53,11 @@ proxies:
   sni: moral-basilisk.rooster465.autos
   type: trojan
 - name: '🇸🇬[www.v2nodes.com] trojan-SG-... #5'
+  network: tcp
   password: UX82473651
   port: 443
-  server: brave-tomcat.rooster465.autos
+  server: 3.1.252.137
+  skip-cert-verify: false
   sni: brave-tomcat.rooster465.autos
   type: trojan
 - name: '🇸🇬[www.v2nodes.com] trojan-SG-... #6'
@@ -142,26 +150,6 @@ proxies:
   name: '🇸🇬 新加坡 | SGP #2'
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 8443
-  server: 54.254.251.49
+  server: 18.143.181.191
   type: ss
   udp: true
-- name: 🇸🇬 新加坡 | SGP 5
-  network: ws
-  password: '!!str 123456'
-  port: 2096
-  server: 104.18.35.86
-  skip-cert-verify: true
-  sni: 321dfbc6.uir-9i6.pages.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: 321dfbc6.uir-9i6.pages.dev
-    path: /
-- name: '🇸🇬 新加坡 | SGP #5'
-  password: '!!str 123456'
-  port: 2096
-  server: 104.18.35.86
-  skip-cert-verify: true
-  sni: 321dfbc6.uir-9i6.pages.dev
-  type: trojan
