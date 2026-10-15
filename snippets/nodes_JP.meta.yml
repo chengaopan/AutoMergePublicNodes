@@ -12,8 +12,14 @@ proxies:
     headers:
       Host: tn1r.eu.cc
     path: /id-pusat
+- name: 🇯🇵[www.v2nodes.com] vless-JP-1...
+  port: 27916
+  server: 39.109.110.80
+  tls: false
+  type: vless
+  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
 - client-fingerprint: chrome
-  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #2'
   network: ws
   port: 443
   server: 162.159.128.96
@@ -25,6 +31,12 @@ proxies:
     headers:
       Host: ws-japan-ga-01.xyy123.bid
     path: /
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #4'
+  port: 443
+  server: 160.16.139.182
+  tls: false
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
 - name: 🇯🇵[www.v2nodes.com] trojan-JP-...
   password: UX82473651
   port: 443
@@ -118,18 +130,6 @@ proxies:
   server: obliging-louse.rooster465.autos
   sni: obliging-louse.rooster465.autos
   type: trojan
-- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #15'
-  password: UX82473651
-  port: 443
-  server: winning-marten.rooster465.autos
-  sni: winning-marten.rooster465.autos
-  type: trojan
-- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #16'
-  password: UX82473651
-  port: 443
-  server: concrete-aardvark.rooster465.autos
-  sni: concrete-aardvark.rooster465.autos
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇯🇵 日本|@ripaojiedian
@@ -183,10 +183,16 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '🇯🇵 日本 | JPN #1'
-  password: 1f24d145bf7c877f7e3140b7918eb9cd804b1576a96596f9
+- client-fingerprint: chrome
+  name: '🇯🇵 日本 | JPN #3'
+  network: ws
   port: 443
-  server: 45.12.89.202
-  type: ss
+  server: 172.67.194.64
+  tls: true
+  type: vless
   udp: true
+  uuid: 3c5f522d-6695-474f-abcf-2b1a65d503fa
+  ws-opts:
+    headers:
+      Host: jp.lovehk.xyz
+    path: /Tokyo1
