@@ -1,30 +1,32 @@
 proxies:
 - client-fingerprint: chrome
+  encryption: none
   name: 🇫🇷[www.v2nodes.com] vless-FR-1...
   network: ws
+  port: 14430
+  server: 46.226.166.208
+  tls: false
+  type: vless
+  uuid: af827fd0-6381-426f-bc5e-dcd9a7baeaac
+  ws-opts:
+    path: /vless
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇫🇷 法国 | FRA #1'
+  network: ws
   port: 443
-  server: 199.232.78.170
-  servername: Speedtest.net
+  server: 140.248.186.45
+  servername: ssl.fastly.com
   tls: true
   type: vless
+  udp: true
   uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
       Host: Appxdn.global.ssl.fastly.net
     path: /
-- encryption: none
-  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
-  network: ws
-  port: 20016
-  server: 51.75.118.149
-  tls: false
-  type: vless
-  uuid: e558719d-e09b-442c-a0c4-f9471fcc3075
-  ws-opts:
-    headers:
-      Host: 51.75.118.149
-    path: /alibodama-ws
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #5'
   network: ws
   password: humanity
   port: 443
@@ -76,18 +78,6 @@ proxies:
 - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #4'
   network: ws
   password: humanity
-  port: 2053
-  server: 185.114.72.31
-  skip-cert-verify: false
-  sni: www.calmlunch.com
-  type: trojan
-  ws-opts:
-    headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #5'
-  network: ws
-  password: humanity
   port: 443
   server: 45.130.125.160
   skip-cert-verify: false
@@ -97,14 +87,14 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
   password: humanity
   port: 443
   server: 165.215.250.14
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #8'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #7'
   network: ws
   password: humanity
   port: 443
@@ -116,7 +106,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #9'
+- name: '🏳[www.v2nodes.com] trojan- #2'
   network: ws
   password: humanity
   port: 443
@@ -128,7 +118,7 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #11'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #9'
   network: ws
   password: humanity
   port: 443
@@ -139,19 +129,3 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇫🇷 法国 | FRA #1'
-  network: ws
-  port: 443
-  server: 140.248.186.45
-  servername: ssl.fastly.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-    path: /
