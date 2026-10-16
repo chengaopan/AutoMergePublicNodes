@@ -27,16 +27,26 @@ proxies:
   sni: gift-catalog.aroonia.ir
   tls: false
   type: hysteria2
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
-  port: 443
-  server: de2.balancer.vbuste-bot.com
-  tls: false
+- alpn:
+  - http/1.1
+  encryption: none
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
+  network: ws
+  port: 2087
+  server: hoert1rert.localip.ir
+  servername: hoert1rert.localip.ir
+  skip-cert-verify: false
+  tls: true
   type: vless
-  uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
+  ws-opts:
+    headers:
+      Host: hoert1rert.localip.ir
+    path: /hokm
 - alpn:
   - http/1.1
   client-fingerprint: random
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #6'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
   network: ws
   port: 2083
   server: 31.59.216.162
@@ -49,7 +59,7 @@ proxies:
 - alpn:
   - http/1.1
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
   network: ws
   port: 2087
   server: fert1qswdfegrthy.localip.ir
@@ -65,7 +75,7 @@ proxies:
 - alpn:
   - http/1.1
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
   network: ws
   port: 2087
   server: tuyiuoyuthgfdbf.localip.ir
@@ -81,12 +91,11 @@ proxies:
 - alpn:
   - http/1.1
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
   network: ws
   port: 2087
   server: fert6.localip.ir
   servername: fert6.localip.ir
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e5c0d
@@ -94,13 +103,13 @@ proxies:
     headers:
       Host: fert6.localip.ir
     path: /hokm
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
   port: 2443
   server: 144.31.238.115
   tls: false
   type: vless
   uuid: b8df3f50-ffef-4c7e-9ef3-d5b156a47c02
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
   port: 2083
   server: 140.225.208.50
   tls: false
@@ -108,144 +117,78 @@ proxies:
   uuid: e3c3b722-1264-4cdc-a97c-b0a1bb73cd67
   ws-opts:
     path: /vless-ws
-- client-fingerprint: unsafe
-  encryption: none
-  name: 🇩🇪DE_1|3.3MB/s
-  network: ws
+- name: 🇩🇪DE_2|1.3MB/s
   port: 443
-  server: 209.38.253.211
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-      User-Agent: Mozilla/5.0 (Windows NT 6.3; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/70.0.3538.67 Safari/537.36
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-  xudp: true
-- name: 🇩🇪DE_2|1.2MB/s
-  port: 443
-  server: 87.106.223.158
+  server: 79.127.156.177
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇩🇪DE_3|1.0MB/s
+- name: 🇩🇪DE_3|1.2MB/s
   port: 443
-  server: 193.233.75.115
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_4|3.6MB/s
-  port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_5|3.0MB/s
-  port: 9443
   server: 87.249.132.97
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇩🇪DE_6|4.4MB/s
-  port: 443
-  server: 213.109.163.119
+- name: 🇩🇪DE_4|1.2MB/s
+  port: 9002
+  server: 158.173.154.3
   skip-cert-verify: true
   tls: true
   type: http
+- name: 🇩🇪DE_5|2.5MB/s
+  port: 443
+  server: 152.233.20.206
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_6|2.0MB/s
+  password: None
+  port: 443
+  server: 149.36.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+- encryption: mlkem768x25519plus.native.0rtt.PdwZJuxIVUGHGbEzz3Q39ZoRqqxfF0lFg22yCLQvaWk
+  name: '🇩🇪 德国 | DEU #1'
+  network: ws
+  port: 8180
+  server: dnld.chaqalli.com
+  tls: false
+  type: vless
+  udp: true
+  uuid: 560ecca1-7e20-4b41-b4d6-781fb3bc179d
+  ws-opts:
+    headers:
+      Host: dnld.chaqalli.com
+    path: /
 - client-fingerprint: chrome
   name: '🇩🇪 德国 | DEU #2'
   network: ws
   port: 443
-  server: 162.159.130.234
-  servername: snip.edgeoneai.cc.cd
+  server: support.zoom.us.vltj.qzz.io
+  servername: support.zoom.us.vltj.qzz.io
   tls: true
   type: vless
   udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  uuid: 506e4a91-1d05-5683-b84c-2113f673cb19
   ws-opts:
     headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
-- name: '🇩🇪 德国 | DEU #3'
-  network: ws
-  port: 443
-  server: v.toe.dpdns.org
-  servername: pw.gams.dpdns.org
-  tls: true
-  type: vless
-  uuid: 1c11b130-085c-407a-9c54-c537eabf2681
-  ws-opts:
-    headers:
-      Host: pw.gams.dpdns.org
-    path: /vplaetshs
-- alpn:
-  - h3
-  - h2
-  client-fingerprint: chrome
+      Host: support.zoom.us.vltj.qzz.io
+    path: /id-pusat
+- auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
   name: '🇩🇪 德国 | DEU #4'
-  network: ws
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
   port: 443
-  server: saas.sin.fan
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
-- http-opts:
-    headers:
-      Host:
-      - aparat.com
-    method: GET
-    path:
-    - /
-  name: '🇩🇪 德国 | DEU #5'
-  network: http
-  port: 443
-  server: 167.71.48.226
+  server: 3.77.57.250
+  skip-cert-verify: true
+  sni: vpn-de-002.fastervpn.world
   tls: false
-  type: vless
-  udp: true
-  uuid: 40992c2a-513e-4837-9594-23411fd42afd
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #7'
-  network: ws
-  port: 443
-  server: 199.232.239.239
-  servername: speedtest.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: b3f3f34c-cbcd-427d-9894-5330738ac0da
-  ws-opts:
-    headers:
-      Host: mr_anonoijji.global.ssl.fastly.net
-    path: /?ed=2056?/RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS--@RK_VPS
-- name: '🇩🇪 德国 | DEU #9'
-  network: tcp
-  port: 10443
-  server: 77.221.157.213
-  servername: 77.221.157.213
-  tls: false
-  type: vless
-  udp: true
-  uuid: 1d006ad5-1de1-4520-a5f4-875dae1b0a5d
-  ws-opts:
-    path: /
+  type: hysteria2
 - alpn:
   - h3
   - h2
   client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #10'
+  name: '🇩🇪 德国 | DEU #5'
   network: ws
   port: 443
   server: 162.159.135.234
@@ -258,20 +201,11 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- auth: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  name: '🇩🇪 德国 | DEU #11'
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: vpn-de-002.fastervpn.world
-  skip-cert-verify: true
-  sni: vpn-de-002.fastervpn.world
-  tls: false
-  type: hysteria2
-- client-fingerprint: unsafe
-  name: '🇩🇪 德国 | DEU #12'
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #7'
   network: ws
   port: 443
-  server: 157.230.127.28
+  server: 162.159.130.234
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -280,4 +214,18 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443fp=chrome
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #8'
+  network: ws
+  port: 443
+  server: 103.71.23.244
+  servername: shin-ra.ccwu.cc
+  tls: true
+  type: vless
+  udp: true
+  uuid: 817b61c8-9bf0-4365-8a52-e43dfad274a6
+  ws-opts:
+    headers:
+      Host: shin-ra.ccwu.cc
+    path: /fp=unsafe

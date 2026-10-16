@@ -2,7 +2,7 @@ proxies:
 - alpn:
   - http/1.1
   encryption: none
-  name: '🇨🇦[www.v2nodes.com] vless-CA-1... #5'
+  name: '🇨🇦[www.v2nodes.com] vless-CA-1... #6'
   network: ws
   port: 443
   server: 104.21.70.22
@@ -15,9 +15,7 @@ proxies:
     headers:
       Host: brightlux.forum
     path: /raccoonwsvless
-- encryption: none
-  name: '🇨🇦[www.v2nodes.com] vless-CA-1... #6'
-  network: tcp
+- name: '🇨🇦[www.v2nodes.com] vless-CA-1... #7'
   port: 8080
   server: milo.rubinaz.xyz
   tls: false
@@ -26,20 +24,8 @@ proxies:
 - cipher: aes-128-gcm
   name: 🇨🇦[www.v2nodes.com] ss-CA-1588...
   password: 4efe1af272e7292139b889f6a63ee071
-  port: 18764
-  server: 64.74.163.67
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇨🇦[www.v2nodes.com] ss-CA-1559...
-  password: zDNVedRFPQexG9v
-  port: 445
-  server: 51.222.141.125
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇨🇦[www.v2nodes.com] ss-CA-1559... #1'
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 51.79.85.185
+  port: 18766
+  server: 64.74.163.69
   type: ss
 - cipher: aes-256-gcm
   name: 🇨🇦[www.v2nodes.com] ss-CA-1558...
@@ -55,12 +41,6 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   name: 🇨🇦[www.v2nodes.com] ss-CA-1546...
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 51.222.155.113
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇨🇦[www.v2nodes.com] ss-CA-1546... #1'
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 51.222.155.32
@@ -77,39 +57,45 @@ proxies:
   port: 8882
   server: 51.79.49.116
   type: ss
-- cipher: aes-256-gcm
-  name: 🇨🇦[www.v2nodes.com] ss-CA-1538...
-  password: zDNVedRFPQexG9v
-  port: 445
-  server: 51.222.12.127
-  type: ss
-- name: 🇨🇦CA_1|2.5MB/s
-  port: 9443
-  server: 198.44.157.19
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇨🇦CA_2|1.1MB/s
+- name: 🇨🇦CA_1|1.3MB/s
   port: 443
   server: 206.223.161.47
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇨🇦CA_3|1.7MB/s
+- name: 🇨🇦CA_2|1.9MB/s
   port: 9443
+  server: 198.44.157.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇨🇦CA_3|1.1MB/s
+  port: 9443
+  server: 198.44.157.19
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇨🇦CA_4|1.1MB/s
+  port: 443
+  server: 35.183.131.26
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇨🇦CA_5|1.6MB/s
+  port: 443
   server: 23.169.224.34
   skip-cert-verify: true
   tls: true
   type: http
-- cipher: aes-256-cfb
-  name: '🇨🇦 加拿大 | CAN #1'
-  password: amazonskr05
-  port: 443
-  server: 15.175.213.130
-  type: ss
-- cipher: aes-256-cfb
-  name: '🇨🇦 加拿大 | CAN #2'
-  password: amazonskr05
-  port: 443
-  server: 15.223.182.197
-  type: ss
+- name: '🇨🇦 加拿大 | CAN #1'
+  network: ws
+  port: 8880
+  server: 23.227.39.30
+  tls: false
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime17.workers.dev
+    path: /
