@@ -12,18 +12,18 @@ proxies:
     headers:
       Host: tn1r.eu.cc
     path: /id-pusat
-- name: 🇯🇵[www.v2nodes.com] vless-JP-1...
-  port: 27916
-  server: 39.109.110.80
-  tls: false
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
   port: 443
   server: 142.91.108.25
   tls: false
   type: vless
   uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #2'
+  port: 443
+  server: 160.16.139.182
+  tls: false
+  type: vless
+  uuid: b98d4c6e-6770-4a31-8256-a4750cdea0e7
 - cipher: aes-256-gcm
   name: 🇯🇵[www.v2nodes.com] ss-JP-1599...
   password: BeaUf9c0AEWH40Pu
@@ -31,13 +31,19 @@ proxies:
   server: 154.36.158.197
   type: ss
 - cipher: aes-256-gcm
-  name: '🇯🇵 日本 | JPN #2'
+  name: '🇯🇵[www.v2nodes.com] ss-JP-1599... #1'
   password: 499eb131-f2b8-46b5-8fd0-108c375ed525
   port: 40020
   server: ruot.ayucloudservices.nl
   type: ss
+- cipher: aes-256-gcm
+  name: 🇯🇵[www.v2nodes.com] ss-JP-1598...
+  password: JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv
+  port: 8388
+  server: 191.223.221.53
+  type: ss
 - cipher: aes-128-gcm
-  name: '🇯🇵 日本 | JPN #3'
+  name: 🇯🇵[www.v2nodes.com] ss-JP-1594...
   password: c855b71e-f3c2-442a-9429-0844eb4346c5
   port: 40018
   server: ruot.ayucloudservices.nl
@@ -63,16 +69,10 @@ proxies:
 - name: '🇯🇵[www.v2nodes.com] trojan-JP-... #3'
   password: UX82473651
   port: 443
-  server: stable-python.rooster465.autos
-  sni: stable-python.rooster465.autos
-  type: trojan
-- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #4'
-  password: UX82473651
-  port: 443
   server: warm-krill.rooster465.autos
   sni: warm-krill.rooster465.autos
   type: trojan
-- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #5'
+- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #4'
   network: tcp
   password: UX82473651
   port: 443
@@ -80,11 +80,17 @@ proxies:
   skip-cert-verify: false
   sni: normal-macaque.rooster465.autos
   type: trojan
-- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #6'
+- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #5'
   password: UX82473651
   port: 443
   server: amazed-mako.rooster465.autos
   sni: amazed-mako.rooster465.autos
+  type: trojan
+- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #6'
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 45.32.52.173
+  sni: 45.32.52.173
   type: trojan
 - name: '🇯🇵[www.v2nodes.com] trojan-JP-... #7'
   password: UX82473651
@@ -169,3 +175,22 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
+- alpn:
+  - h3
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  name: '🇩🇪 德国 | DEU #12'
+  network: ws
+  port: 443
+  server: saas.sin.fan
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+  xudp: true
