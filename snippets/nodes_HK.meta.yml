@@ -1,17 +1,11 @@
 proxies:
 - name: '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
-  port: 35193
-  server: 156.226.168.221
+  port: 32134
+  server: 3696b38bsg.murphyweb.sbs
   tls: false
   type: vless
-  uuid: 35cbae61-ee10-4cb9-abb8-4950b35e9851
-- name: '🇭🇰[www.v2nodes.com] vless-HK-1... #4'
-  port: 443
-  server: 82.29.36.250
-  tls: false
-  type: vless
-  uuid: 41a7af38-0bb1-4493-aa8d-634af0c2548b
-- name: '🇭🇰[www.v2nodes.com] vless-HK-1... #6'
+  uuid: 5b01dc2d-6892-49b8-8289-3f73a32e00e4
+- name: '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
   network: ws
   port: 443
   server: cf.090227.xyz
@@ -29,18 +23,10 @@ proxies:
   port: 40006
   server: ruot.ayucloudservices.nl
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇭🇰[www.v2nodes.com] ss-HK-1576...
-  password: 6qmp91myp2jj13dt
-  port: 1081
-  server: sth.free-outline.giize.com
-  type: ss
 - name: 🇭🇰[www.v2nodes.com] trojan-HK-...
   password: XuMweB2PWs
   port: 45464
   server: 2.27.109.179
-  skip-cert-verify: false
-  sni: 2.27.109.179.sslip.io
   type: trojan
 - alterId: 2
   cipher: auto
@@ -153,20 +139,53 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇭🇰HK_1|2.9MB/s
-  port: 10808
-  server: 121.46.226.221
-  skip-cert-verify: true
-  type: socks5
-- name: 🇭🇰HK_2|1.2MB/s
-  port: 3128
-  server: 119.28.24.235
-  skip-cert-verify: true
-  tls: true
-  type: http
 - alterId: 0
   cipher: auto
   name: '🇭🇰 香港 | HKG #1'
+  network: ws
+  port: 443
+  server: 47.76.57.83
+  servername: vah4urdzl3jdx5r2.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
+    path: /ws-vmess
+- client-fingerprint: chrome
+  name: '🇭🇰 香港 | HKG #2'
+  network: ws
+  port: 443
+  server: 209.33.161.104
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- client-fingerprint: chrome
+  name: '🇭🇰 香港 | HKG #3'
+  network: ws
+  port: 2053
+  server: 185.206.171.43
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #4'
   network: ws
   port: 443
   server: nycqg19zkwacpm1b.v.3dns.vip
@@ -179,54 +198,6 @@ proxies:
     headers:
       Host: NYcQg19zkwaCPM1B.v.3dns.vip
     path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #3'
-  network: ws
-  port: 443
-  server: 8.217.254.88
-  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #4'
-  network: ws
-  port: 443
-  server: vah4urdzl3jdx5r2.v.3dns.vip
-  servername: vah4urdzl3jdx5r2.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: VAH4URdZL3jDX5r2.v.3dns.vip
-    path: /ws-vmess
-- name: 🇭🇰 香港 | HKG 5
-  password: ec74bb6a86c2
-  port: 443
-  server: 56481.df6h451rh.xin
-  skip-cert-verify: true
-  sni: images.ctfassets.net
-  type: anytls
-  udp: true
-- name: 🇭🇰 香港 | HKG 6
-  password: 87c6ad7b-e450-44a8-8088-bc2234d43de1
-  port: 24318
-  server: svip.skycon808.com
-  skip-cert-verify: true
-  sni: hk08.jdddyy01.cc
-  type: anytls
-  udp: true
 - alterId: 0
   cipher: auto
   name: '🇭🇰 香港 | HKG #5'
@@ -242,3 +213,31 @@ proxies:
     headers:
       Host: qTKDR8jXE3wEFxJM.v.3dns.vip
     path: /ws-vmess
+- client-fingerprint: chrome
+  name: '🇭🇰 香港 | HKG #6'
+  network: ws
+  port: 8443
+  server: 191.223.210.79
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+- client-fingerprint: chrome
+  name: '🇭🇰 香港 | HKG #7'
+  network: ws
+  port: 443
+  server: 38.55.199.128
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
