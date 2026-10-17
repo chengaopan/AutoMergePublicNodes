@@ -15,7 +15,9 @@ proxies:
     headers:
       Host: brightlux.forum
     path: /raccoonwsvless
-- name: '🇨🇦[www.v2nodes.com] vless-CA-1... #6'
+- encryption: none
+  name: '🇨🇦[www.v2nodes.com] vless-CA-1... #6'
+  network: tcp
   port: 8080
   server: milo.rubinaz.xyz
   tls: false
@@ -32,12 +34,6 @@ proxies:
   password: zDNVedRFPQexG9v
   port: 445
   server: 51.222.141.125
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇨🇦[www.v2nodes.com] ss-CA-1559... #1'
-  password: cdBIDV42DCwnfIN
-  port: 8118
-  server: 51.79.85.185
   type: ss
 - cipher: aes-256-gcm
   name: 🇨🇦[www.v2nodes.com] ss-CA-1558...
@@ -81,20 +77,18 @@ proxies:
   port: 445
   server: 51.222.12.127
   type: ss
-- name: 🇨🇦CA_1|1.7MB/s
+- http-opts:
+    headers:
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '🇨🇦 加拿大 | CAN #1'
+  network: http
   port: 443
-  server: 206.223.183.13
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇨🇦CA_2|2.3MB/s
-  port: 9443
-  server: 198.44.157.19
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇨🇦CA_3|2.4MB/s
-  port: 1081
-  server: 149.248.18.106
-  skip-cert-verify: true
-  type: socks5
+  server: 3.96.144.137
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
