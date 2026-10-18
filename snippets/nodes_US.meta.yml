@@ -33,7 +33,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #7'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #9'
   network: ws
   port: 443
   server: 104.21.70.22
@@ -46,12 +46,6 @@ proxies:
     headers:
       Host: luminouspetal.cyou
     path: /raccoonwsvless
-- name: 🇺🇸[www.v2nodes.com] trojan-US-...
-  password: ae7eb4dwyaz25pxwgq59
-  port: 59689
-  server: 66.23.203.21
-  skip-cert-verify: true
-  type: trojan
 - alterId: 0
   cipher: auto
   name: 🇺🇸 美国|@ripaojiedian
@@ -108,19 +102,66 @@ proxies:
   skip-cert-verify: true
   sni: www.bing.com
   type: hysteria2
-- auth: 082f5694-9019-4110-b67b-8125dbb9bab8
-  name: '🇷🇺 俄罗斯 | RUS #1'
-  password: 082f5694-9019-4110-b67b-8125dbb9bab8
-  port: 54183
-  server: 189.74.114.37
+- alpn:
+  - http/1.1
+  - h2
+  client-fingerprint: firefox
+  name: '🇷🇺 俄罗斯 | RUS #2'
+  network: xhttp
+  port: 2053
+  server: 78.159.246.179
+  servername: randomquaint.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 6a2aff19-ff1f-4a13-96c8-a4d8986a9699
+  xhttp-opts:
+    host: randomquaint.net
+    mode: auto
+    path: /api/v1/upload
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #1'
+  network: ws
+  port: 8443
+  server: 45.61.149.205
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+- name: '🇺🇸 美国 | USA #2'
+  password: 1f8dc24373d4add7767beac448e32397
+  port: 8443
+  server: 38.150.35.208
   skip-cert-verify: true
-  sni: outh.yandex-cloud.org
-  tls: false
-  type: hysteria2
+  sni: www.apple.com
+  type: trojan
+  udp: true
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #1'
+  name: '🇺🇸 美国 | USA #3'
+  network: ws
+  packet-encoding: xudp
+  port: 443
+  server: bounded-crammed.video-streams.org
+  servername: bounded-crammed.video-streams.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 48f09fbe-7a6e-43d2-99a3-304c943f3bb4
+  ws-opts:
+    headers:
+      Host: bounded-crammed.video-streams.org
+    path: /ws
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #5'
   network: ws
   port: 443
   server: 104.17.147.22
@@ -133,75 +174,31 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /
-- encryption: mlkem768x25519plus.native.0rtt.bbZ_n5p4kMaHUMaX_eKVS7K_igesJC14PtiVSxm9qTI
-  name: '🇺🇸 美国 | USA #3'
-  network: ws
-  port: 2086
-  server: 104.21.43.200
-  tls: false
-  type: vless
-  udp: true
-  uuid: 732ec777-bf4a-4fee-835a-25d6a8b58563
-  ws-opts:
-    headers:
-      Host: trnewpnlszhp.p40.site
-    path: /pers
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #4'
-  network: ws
-  port: 443
-  server: cf05.nianyi.de5.net
-  servername: edge.nianyi.de5.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: ee475f7b-718b-4fd3-aa1f-49a381b9ad9d
-  ws-opts:
-    headers:
-      Host: edge.nianyi.de5.net
-    path: /?ed=2048
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #5'
-  network: ws
-  port: 443
-  server: 179.253.235.175
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /
-- client-fingerprint: chrome
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
   name: '🇺🇸 美国 | USA #6'
   network: ws
+  packet-encoding: xudp
   port: 443
-  server: 104.18.40.100
-  servername: ccc.010304.xyz
+  server: grimness-backlogs.cdn-content.com
+  servername: grimness-backlogs.cdn-content.com
   tls: true
   type: vless
   udp: true
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 48f09fbe-7a6e-43d2-99a3-304c943f3bb4
   ws-opts:
     headers:
-      Host: ccc.010304.xyz
-    path: /
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #7'
-  network: ws
+      Host: grimness-backlogs.cdn-content.com
+    path: /ws
+- name: '🇺🇸 美国 | USA #7'
+  password: f0eb8c92ce8946aaba856569cff1a16b
   port: 443
-  server: cf01.nianyi.de5.net
-  servername: edge.nianyi.de5.net
-  tls: true
-  type: vless
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: true
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  type: trojan
   udp: true
-  uuid: ee475f7b-718b-4fd3-aa1f-49a381b9ad9d
-  ws-opts:
-    headers:
-      Host: edge.nianyi.de5.net
-    path: /?ed=2048
 - client-fingerprint: chrome
   name: '🇺🇸 美国 | USA #8'
   network: ws
@@ -216,51 +213,46 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #10'
+- name: '🇺🇸 美国 | USA #9'
   network: ws
-  port: 443
-  server: 104.21.0.87
-  servername: jp3.yohototo.top
-  tls: true
+  port: 2082
+  server: 104.18.35.86
+  servername: hhlfy.twiladaphne.ndjp.net
+  tls: false
   type: vless
   udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
   ws-opts:
     headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
+      Host: hhlfy.twiladaphne.ndjp.net
+    path: /fp
+- client-fingerprint: chrome
   name: '🇺🇸 美国 | USA #11'
   network: ws
-  port: 80
-  server: 172.67.187.145
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 0cf6d970-3f1d-4aae-a989-92a8f76ae3db
-  ws-opts:
-    headers:
-      Host: vmess.lbw666.dpdns.org
-    path: /ws
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #12'
-  network: ws
   port: 443
-  server: cf02.nianyi.de5.net
-  servername: edge.nianyi.de5.net
+  server: 179.255.99.75
+  servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
   udp: true
-  uuid: ee475f7b-718b-4fd3-aa1f-49a381b9ad9d
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
   ws-opts:
     headers:
-      Host: edge.nianyi.de5.net
-    path: /?ed=2048
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+- name: 🇺🇸 美国 | USA 12
+  network: ws
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  port: 443
+  server: 104.18.65.57
+  skip-cert-verify: true
+  sni: nat3.xxai.dpdns.org
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: nat3.xxai.dpdns.org
+    path: /anyway
 - client-fingerprint: chrome
   name: '🇺🇸 美国 | USA #13'
   network: ws
@@ -281,7 +273,7 @@ proxies:
   name: '🇺🇸 美国 | USA #14'
   network: ws
   port: 443
-  server: 104.17.148.22
+  server: www.speedtest.net
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -290,39 +282,7 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
-    path: /
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #15'
-  network: ws
-  port: 443
-  server: 188.114.98.0
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #16'
-  network: ws
-  port: 443
-  server: 188.114.97.6
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560#Telegram---bored_vpn
 - name: '🇦🇺 澳大利亚 | AUS #1'
   obfs: salamander
   obfs-password: salamander
@@ -333,6 +293,13 @@ proxies:
   sni: www.bing.com
   tls: false
   type: hysteria2
+- name: '🇺🇸 美国 | USA #12'
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  port: 443
+  server: 104.18.65.57
+  skip-cert-verify: true
+  sni: nat3.xxai.dpdns.org
+  type: trojan
 - name: US_speednode_0131
   password: 'null'
   port: 9002

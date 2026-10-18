@@ -1,10 +1,30 @@
 proxies:
-- client-fingerprint: chrome
+- alpn:
+  - http/1.1
+  encryption: none
+  name: 🇬🇧[www.v2nodes.com] vless-GB-1...
+  network: ws
+  port: 443
+  server: reaza.localip.ir
+  servername: gbi.els1v0u3t31v.info
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: ed6c724c-435f-4f83-a781-f57579af320b
+  ws-opts:
+    headers:
+      Host: gbi.els1v0u3t31v.info
+    path: /9d9fdbc18c834cffab4276811501fbae
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
   encryption: none
   name: '🇬🇧[www.v2nodes.com] vless-GB-1... #2'
   network: tcp
   port: 8443
   server: node-uk.connectsuite.org
+  servername: node-uk.connectsuite.org
   skip-cert-verify: false
   tls: true
   type: vless
@@ -12,7 +32,9 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
+  encryption: none
   name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
+  network: tcp
   port: 443
   server: 186.190.211.188
   servername: 186.190.211.188
@@ -20,21 +42,24 @@ proxies:
   tls: true
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- client-fingerprint: chrome
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
   encryption: none
   name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
   network: ws
-  port: 52014
-  server: 57.129.130.57
-  servername: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
+  port: 443
+  server: 188.114.97.6
+  servername: lucasjow.us.ci
+  skip-cert-verify: false
   tls: true
   type: vless
-  uuid: 091ea5fd-4e8d-4459-90af-e4d10179efff
+  uuid: e6df2095-a73c-4043-8693-8d5a03686870
   ws-opts:
     headers:
-      Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
-    path: /@Marisa_kristi
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+      Host: lucasjow.us.ci
+    path: /?TELEGRAM-TOOTFFARANGI
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
   network: ws
   port: 52014
   server: 57.129.130.57
@@ -46,33 +71,13 @@ proxies:
     headers:
       Host: 5iv93opy8jus9z.bjo5si35c9i9ud4242fado49188obkoiermjuxj7zgxu.workers.dev
     path: /@Marisa_kristifp=chrome
-- encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
-  network: ws
-  port: 443
-  server: 159.65.51.189
-  servername: ccc.010304.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /fp=chrome
-- cipher: aes-128-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
-  password: shadowsocks
-  port: 443
-  server: 158.173.24.73
-  type: ss
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1247...
   password: RexnBgU7EV5ADxG
   port: 7001
   server: 94.156.250.148
   type: ss
-- name: '🇬🇧 英国 | GBR #1'
+- name: '🇬🇧 英国 | GBR #2'
   network: tcp
   port: 22222
   server: 13.135.33.165
@@ -82,7 +87,7 @@ proxies:
   uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   ws-opts:
     path: /
-- name: '🇬🇧 英国 | GBR #2'
+- name: '🇬🇧 英国 | GBR #3'
   network: tcp
   port: 22224
   server: 13.135.33.165
