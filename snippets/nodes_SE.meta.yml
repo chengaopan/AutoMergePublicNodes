@@ -31,20 +31,8 @@ proxies:
     headers:
       Host: 5.178.109.174
     path: /vless
-- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #4'
-  network: ws
-  port: 14430
-  server: 193.188.21.253
-  servername: 193.188.21.253
-  tls: false
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  ws-opts:
-    headers:
-      Host: 193.188.21.253
-    path: /vless
 - encryption: none
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #6'
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
   network: ws
   port: 443
   server: sub.merky.top
@@ -56,78 +44,49 @@ proxies:
     headers:
       Host: sub.merky.top
     path: /merky-connect/de6/
-- client-fingerprint: chrome
+- encryption: none
   grpc-opts:
-    grpc-service-name: ''
-  name: '🇸🇪 瑞典 | SWE #1'
+    grpc-service-name: swedenfeed
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #8'
   network: grpc
   port: 443
   server: edge-lab-b.10media.top
   servername: edge-lab-b.10media.top
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-- name: 🇸🇪SE_1|4.0MB/s
-  password: None
+- cipher: aes-256-gcm
+  name: 🇸🇪[www.v2nodes.com] ss-SE-1560...
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: hls-vod.iJxGWWENB3HP4nTjN8IcrA.1790085537.2512.0x5000039ce83a2b8d.2ac8ad72028049619c2fb844a825a.ca.mp4.segment-20-v1-a1.ts
+  name: 🇸🇪SE_1|2.1MB/s
+  network: grpc
   port: 443
-  server: 146.70.242.130
+  server: 87.242.117.59
+  servername: se1.my-cdn.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: c19ecc7f-8312-4d9d-90c9-1a997d82d3c5
+  xudp: true
+- name: 🇸🇪SE_2|1.6MB/s
+  port: 443
+  server: 79.142.77.63
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇸🇪SE_2|1.4MB/s
+- name: 🇸🇪SE_3|1.8MB/s
   port: 443
-  server: 217.210.129.243
+  server: 149.50.216.65
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: swedenfeed
-  name: 🇸🇪 瑞典 | SWE
-  network: grpc
-  port: 443
-  server: edge-lab-b.10media.top
-  servername: edge-lab-b.10media.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: swedenfeed
-  name: 🇸🇪 瑞典 | SWE 2
-  network: grpc
-  port: 443
-  server: 45.12.63.219
-  servername: edge-lab-b.10media.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-- client-fingerprint: chrome
-  name: '🇸🇪 瑞典 | SWE #3'
-  network: ws
-  port: 443
-  server: 121.127.37.211
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: ''
-  name: '🇸🇪 瑞典 | SWE #2'
-  network: grpc
-  port: 443
-  server: 45.12.63.219
-  servername: edge-lab-b.10media.top
-  tls: true
-  type: vless
-  uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890

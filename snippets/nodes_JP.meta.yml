@@ -23,18 +23,14 @@ proxies:
     headers:
       Host: platform117.halalkhor.info
     path: /platform117
-- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #6'
-  port: 27916
-  server: 39.109.110.80
-  tls: false
-  type: vless
-  uuid: 57beeeb0-03fc-4fc9-94da-7604488a7134
-- client-fingerprint: chrome
+- client-fingerprint: unsafe
+  encryption: none
   name: '🇯🇵[www.v2nodes.com] vless-JP-1... #9'
   network: ws
   port: 443
-  server: 104.16.10.234
+  server: 104.16.111.202
   servername: jp3.yohototo.top
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
@@ -42,7 +38,9 @@ proxies:
     headers:
       Host: jp3.yohototo.top
     path: /tyxyws
-- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #10'
+- encryption: none
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #10'
+  network: tcp
   port: 443
   server: 137.220.221.179
   tls: false
@@ -132,10 +130,10 @@ proxies:
   sni: m.ctrip.com
   type: trojan
 - client-fingerprint: chrome
-  name: '🇯🇵 日本 | JPN #1'
+  name: '🇯🇵 日本 | JPN #2'
   network: ws
   port: 443
-  server: 45.92.159.236
+  server: 45.192.206.187
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -146,33 +144,19 @@ proxies:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
 - client-fingerprint: chrome
-  name: '🇯🇵 日本 | JPN #2'
-  network: ws
-  port: 443
-  server: 103.27.187.148
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /
-- client-fingerprint: chrome
   name: '🇯🇵 日本 | JPN #3'
   network: ws
   port: 443
-  server: 60.130.209.253
-  servername: snip.edgeoneai.cc.cd
+  server: 104.21.0.87
+  servername: jp3.yohototo.top
   tls: true
   type: vless
   udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   ws-opts:
     headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /
+      Host: jp3.yohototo.top
+    path: /tyxyws
 - client-fingerprint: chrome
   name: '🇯🇵 日本 | JPN #4'
   network: ws
@@ -187,3 +171,17 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /
+- client-fingerprint: chrome
+  name: '🇯🇵 日本 | JPN #5'
+  network: ws
+  port: 443
+  server: 156.246.89.172
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443

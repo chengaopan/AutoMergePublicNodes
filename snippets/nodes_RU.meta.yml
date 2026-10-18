@@ -43,9 +43,24 @@ proxies:
   port: 5112
   server: 90.156.203.62
   type: ss
-- name: 🇷🇺RU_1|1.7MB/s
-  port: 1446
-  server: 46.29.166.134
+- name: 🇷🇺RU_1|2.6MB/s
+  port: 8443
+  server: 87.242.85.187
   skip-cert-verify: true
   tls: true
   type: http
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  encryption: none
+  flow: xtls-rprx-vision
+  name: 🇷🇺RU_2|2.9MB/s
+  network: tcp
+  port: 8443
+  server: rus.noooo.win
+  servername: id-6ad3c751.adhil.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: b3441cc7-1e5f-4eb6-8207-90788eeca21e
+  xudp: true
