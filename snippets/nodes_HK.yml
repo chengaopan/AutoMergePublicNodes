@@ -6,9 +6,19 @@ proxies:
   server: ruot.ayucloudservices.nl
   type: ss
 - name: 🇭🇰[www.v2nodes.com] trojan-HK-...
+  password: bad06c3525a6eaee1757b34776b83892
+  port: 12001
+  server: 4c2d5151.266nets.com
+  skip-cert-verify: true
+  sni: ixigua.com
+  type: trojan
+- name: '🇭🇰[www.v2nodes.com] trojan-HK-... #1'
+  network: tcp
   password: XuMweB2PWs
   port: 45464
   server: 2.27.109.179
+  skip-cert-verify: false
+  sni: 2.27.109.179.sslip.io
   type: trojan
 - alterId: 2
   cipher: auto
@@ -139,10 +149,10 @@ proxies:
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #6'
+  name: '🇭🇰 香港 | HKG #2'
   network: ws
   port: 443
-  server: nycqg19zkwacpm1b.v.3dns.vip
+  server: 8.217.254.88
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -150,13 +160,20 @@ proxies:
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
-      Host: NYcQg19zkwaCPM1B.v.3dns.vip
+      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
     path: /ws-vmess
-- name: '🇭🇰 香港 | HKG #8'
-  password: bad06c3525a6eaee1757b34776b83892
-  port: 12001
-  server: 4c2d5151.266nets.com
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #3'
+  network: ws
+  port: 443
+  server: 47.243.153.153
   skip-cert-verify: true
-  sni: ixigua.com
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+    path: /ws-vmess
