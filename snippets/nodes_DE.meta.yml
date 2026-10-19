@@ -17,10 +17,12 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- name: 🌍37@oneclickvpnkeys
+- auth: 36cd82d2-50b1-400d-b520-2acc9a8a6b40
+  name: '🇩🇪 德国 | DEU #2'
   password: 36cd82d2-50b1-400d-b520-2acc9a8a6b40
   port: 443
   server: de.northvale.cloud
+  skip-cert-verify: true
   sni: de.northvale.cloud
   tls: false
   type: hysteria2
@@ -34,7 +36,15 @@ proxies:
   sni: gift-catalog.aroonia.ir
   tls: false
   type: hysteria2
-- name: 🇩🇪[www.v2nodes.com] vless-DE-1...
+- encryption: none
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
+  network: tcp
+  port: 10000
+  server: connect.wecantos.site
+  tls: false
+  type: vless
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
   port: 443
   server: 146.75.59.186
   tls: false
@@ -43,7 +53,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: edge
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
   network: ws
   port: 443
   server: gpt.prem-ai.shop
@@ -55,7 +65,7 @@ proxies:
     headers:
       Host: gpt.prem-ai.shop
     path: /stream/v1/session/media
-- name: 🇪🇪[www.v2nodes.com] vless-EE-1...
+- name: '🇪🇪[www.v2nodes.com] vless-EE-1... #3'
   port: 443
   server: 77.110.105.122
   tls: false
@@ -74,30 +84,67 @@ proxies:
     headers:
       Host: copy_az_channel_NUFiLTER_3.global.ssl.fastly.net.
     path: /
-- encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #5'
+- alpn:
+  - /--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/NLSus--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/NLSus--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/NLSus--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/--@VPNine1--@VPNine1/1.1
+  client-fingerprint: chrome
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
+  network: ws
+  port: 443
+  server: cdn.topingr.ir
+  servername: cdn.topingr.ir
+  tls: true
+  type: vless
+  uuid: 497f5381-3533-4c6a-939c-66eb3a7de108
+  ws-opts:
+    headers:
+      Host: cdn.topingr.ir
+    path: /gropcdn
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
   network: ws
   port: 2083
   server: sino.bestsellers1.site
   servername: sino.bestsellers1.site
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 7858128a-6b5e-4f86-9bff-52c1f1e6439d
   ws-opts:
     path: /
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
+- encryption: none
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
+  network: ws
+  port: 443
+  server: 146.75.59.186
+  servername: firefox.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: eccc053a-7196-47cb-a4b5-f4b8bfd743d9
+  ws-opts:
+    headers:
+      Host: copy_az_channel_NUFiLTER_3i.global.ssl.fastly.net.
+    path: /
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
+  port: 2087
+  server: hoert1rert.localip.ir
+  tls: false
+  type: vless
+  uuid: a5db5ab5-8d28-49c0-ad55-0ad4724e4c0d
+  ws-opts:
+    path: /hokm
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
   port: 443
   server: de2.balancer.vbuste-bot.com
   tls: false
   type: vless
   uuid: 318c935d-c195-41d3-99ad-9bbcfdab3386
-- alpn:
-  - http/1.1
-  name: 🇩🇪[www.v2nodes.com] trojan-DE-...
+- name: 🇩🇪[www.v2nodes.com] trojan-DE-...
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de7.dedushka.top
-  skip-cert-verify: false
+  skip-cert-verify: true
   sni: de7.dedushka.top
   type: trojan
 - name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
@@ -107,40 +154,97 @@ proxies:
   sni: t.me/FuckTheWall
   type: trojan
 - alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇩🇪DE_1|1.5MB/s
+  network: ws
+  port: 443
+  server: 172.67.118.45
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/46.0.2490.80 Safari/537.36
+    path: /fdip#TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
+  xudp: true
+- name: DK_speednode_0002
+  port: 9002
+  server: 158.173.154.4
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇩🇪DE_3|2.2MB/s
+  port: 443
+  server: 149.36.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_4|1.1MB/s
+  port: 443
+  server: 87.106.223.158
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_5|3.9MB/s
+  port: 443
+  server: 213.109.163.119
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_6|2.2MB/s
+  password: None
+  port: 9443
+  server: 87.249.132.97
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_7|2.4MB/s
+  port: 443
+  server: 185.232.70.11
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_8|3.1MB/s
+  port: 3129
+  server: 89.58.42.118
+  skip-cert-verify: true
+  type: socks5
+- name: 🇩🇪 德国 | DEU
+  password: 21b60363-271b-49f0-975b-dbe315215164
+  port: 32186
+  server: 1sw-olo.wjwhi90.com
+  skip-cert-verify: true
+  sni: jsde.fe-9.top
+  type: anytls
+  udp: true
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #1'
+  network: ws
+  port: 443
+  server: 162.159.130.234
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+- alpn:
   - h3
   - h2
   client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪DE_1|3.1MB/s
-  network: ws
-  port: 443
-  server: 162.159.135.234
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
-    path: /
-  xudp: true
-- auth: 36cd82d2-50b1-400d-b520-2acc9a8a6b40
-  name: '🇩🇪 德国 | DEU #2'
-  password: 36cd82d2-50b1-400d-b520-2acc9a8a6b40
-  port: 443
-  server: fi.northvale.cloud
-  skip-cert-verify: true
-  sni: fi.northvale.cloud
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
   name: '🇩🇪 德国 | DEU #3'
   network: ws
   port: 443
-  server: 31.76.96.60
+  server: saas.sin.fan
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -149,4 +253,13 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443?ed=2560
+- name: DE_speednode_0001
+  password: e4b72b531a2d10900519
+  port: 443
+  server: 167.172.172.190
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  username: testuser1

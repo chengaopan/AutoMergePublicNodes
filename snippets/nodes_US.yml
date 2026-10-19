@@ -7,29 +7,10 @@ proxies:
   sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
   type: trojan
 - name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  port: 443
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: true
-  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #2'
   password: ae7eb4dwyaz25pxwgq59
   port: 59689
   server: 66.23.203.21
   type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #3'
-  network: ws
-  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  port: 443
-  server: us3-2.998998.best
-  skip-cert-verify: true
-  sni: nat3.xxai.dpdns.org
-  type: trojan
-  ws-opts:
-    headers:
-      Host: nat3.xxai.dpdns.org
-    path: '%2Fanyway'
 - alterId: 0
   cipher: auto
   name: 🇺🇸 美国|@ripaojiedian
@@ -76,20 +57,48 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: 🇺🇸US_5|1.7MB/s
-  network: ws
-  password: e7TTceggMwUMg+aFN:F4
-  port: 443
-  server: 172.66.47.18
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸US_4|3.4MB/s
+  network: tcp
+  port: 30829
+  server: v29.hdacd.com
+  servername: v29.hdacd.com
   skip-cert-verify: false
-  sni: APkD964o1oghlTghHt0L0Of.pAgeS.Dev
-  type: trojan
+  tls: false
+  type: vmess
   udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  xudp: true
+- alterId: 2
+  cipher: auto
+  name: 🇺🇸US_9|1.6MB/s
+  port: 30829
+  server: v29.hdacd.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+- alterId: 0
+  cipher: auto
+  name: '🇦🇺 澳大利亚 | AUS #1'
+  network: ws
+  port: 8443
+  server: 199.34.228.160
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 1c22bf94-702b-49ac-8f5e-24259beed2d8
   ws-opts:
     headers:
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; Moto C Build/NRD90M.059) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/69.0.3497.100 Mobile Safari/537.36
-    path: /tr/SIeRkg2QvR2Zcpu0SeEMow?ed=2560
+      Host: aus.frnhk.xyz
+    path: /Sydney3
+- cipher: rc4-md5
+  name: '🇺🇸 美国 | USA #5'
+  password: 14fFPrbezE3HDZzsMOr6
+  port: 8080
+  server: 98.98.79.198
+  type: ss
+  udp: true
