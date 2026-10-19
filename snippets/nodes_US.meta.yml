@@ -55,6 +55,13 @@ proxies:
       Host: luminouspetal.cyou
     path: /raccoonwsvless
 - name: 🇺🇸[www.v2nodes.com] trojan-US-...
+  password: f0eb8c92ce8946aaba856569cff1a16b
+  port: 443
+  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: true
+  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
   password: ae7eb4dwyaz25pxwgq59
   port: 59689
   server: 66.23.203.21
@@ -106,12 +113,143 @@ proxies:
   sni: m.ctrip.com
   type: trojan
 - alpn:
+  - h2
   - http/1.1
   client-fingerprint: chrome
-  name: 🇺🇸US_1|3.4MB/s
-  network: ws
+  encryption: mlkem768x25519plus.native.0rtt.100-111-1111.75-0-111.50-0-3333.ttdwtFfULlEfv_Y29gODrXqh0CarKTldMtmD3sdA4XA
+  name: 🇺🇸US_1|3.1MB/s
+  network: xhttp
   port: 443
-  server: 104.19.45.195
+  server: cdn-serverdl7.kgo.info
+  servername: cdn-serverdl7.kgo.info
+  tls: true
+  type: vless
+  udp: true
+  uuid: fc925934-fe0f-4d5d-bde4-ad37ae90682d
+  xhttp-opts:
+    mode: auto
+    path: /Download/Server/Route-32001/
+    x-padding-bytes: 100-1000
+    x-padding-header: Download
+    x-padding-key: _File
+    x-padding-method: tokenish
+    x-padding-placement: queryInHeader
+  xudp: true
+- name: 🇺🇸US_2|1.7MB/s
+  port: 9443
+  server: 38.95.111.226
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_3|2.8MB/s
+  port: 443
+  server: 193.239.236.134
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_4|2.8MB/s
+  port: 443
+  server: 68.235.56.51
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_5|3.2MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.205
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_6|3.4MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.219
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_7|1.6MB/s
+  password: 'null'
+  port: 9002
+  server: 138.199.35.213
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇺🇸US_8|1.9MB/s
+  port: 443
+  server: 12.221.146.147
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_9|2.0MB/s
+  port: 9443
+  server: 198.44.135.19
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_10|1.7MB/s
+  port: 9443
+  server: 154.47.25.78
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_11|2.9MB/s
+  port: 443
+  server: 148.135.10.80
+  skip-cert-verify: true
+  tls: true
+  type: http
+- auth: b42d90fa667942aebc734d60
+  name: 🇦🇺 澳大利亚 | AUS
+  obfs: salamander
+  obfs-password: b42d90fa667942aebc734d60
+  password: b42d90fa667942aebc734d60
+  port: 20000
+  ports: 20000-30000
+  server: 158.178.137.129
+  skip-cert-verify: true
+  sni: rmgyvpn.rest
+  type: hysteria2
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇷🇺 俄罗斯 | RUS #1'
+  network: xhttp
+  port: 8443
+  server: 78.159.246.179
+  servername: randomquaint.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 2c634977-584e-4e1f-b501-1b70c77a6743
+  xhttp-opts:
+    host: randomquaint.net
+    mode: auto
+    path: /api/v1/upload
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇷🇺 俄罗斯 | RUS #3'
+  network: xhttp
+  port: 2053
+  server: randomquaint.net
+  servername: randomquaint.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 95a608b6-bff1-4e10-bb61-0a39f221bb7d
+  xhttp-opts:
+    host: randomquaint.net
+    mode: auto
+    path: /api/v1/upload
+- client-fingerprint: chrome
+  name: '🇷🇺 俄罗斯 | RUS #4'
+  network: ws
+  port: 8443
+  server: 139.100.226.187
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -120,164 +258,25 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J710F Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /?TELEGRAM-TOOTFFARANGI
-  xudp: true
-- name: US_speednode_0131
-  password: 'null'
-  port: 9002
-  server: 138.199.35.216
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: 🇺🇸US_3|1000KB/s
-  password: None
-  port: 9002
-  server: 138.199.35.218
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_4|3.3MB/s
-  port: 9002
-  server: 138.199.35.214
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_5|3.3MB/s
-  port: 9002
-  server: 138.199.35.216
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_6|1.2MB/s
-  port: 9002
-  server: 138.199.35.217
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_7|2.9MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.215
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_8|2.6MB/s
-  password: None
-  port: 9002
-  server: 138.199.35.207
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_9|2.3MB/s
-  port: 9443
-  server: 38.95.111.226
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_10|1.8MB/s
-  port: 443
-  server: 121.127.34.82
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_11|2.7MB/s
-  port: 9002
-  server: 138.199.35.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_12|1.2MB/s
-  port: 443
-  server: 38.247.141.135
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_13|2.0MB/s
-  port: 443
-  server: 193.239.236.134
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_14|2.1MB/s
-  port: 443
-  server: 68.235.56.51
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_15|1.3MB/s
-  port: 9443
-  server: 149.88.21.140
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_18|2.4MB/s|K001-260618
-  port: 443
-  server: 149.34.248.65
-  skip-cert-verify: true
-  sni: 149.34.248.65
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇺🇸US_17|3.5MB/s
-  port: 8443
-  server: 18.206.28.143
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_19|3.0MB/s
-  port: 443
-  server: 66.64.100.66
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_20|1.3MB/s
-  port: 8090
-  server: 24.142.229.178
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_21|3.0MB/s
-  port: 8013
-  server: 146.190.60.147
-  skip-cert-verify: true
-  type: http
-- auth: 633bc3be486b646190661ac2387c150a
-  name: 🇦🇺 澳大利亚 | AUS
-  obfs: salamander
-  obfs-password: 850a3fb1cd33a28f12d837578ae1a2e7
-  password: 633bc3be486b646190661ac2387c150a
-  port: 443
-  server: 152.67.115.203
-  skip-cert-verify: true
-  sni: www.bing.com
-  type: hysteria2
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
 - alpn:
   - http/1.1
-  - h2
-  client-fingerprint: firefox
-  name: '🇷🇺 俄罗斯 | RUS #2'
-  network: xhttp
-  port: 2053
-  server: 78.159.246.179
-  servername: randomquaint.net
+  client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #1'
+  network: ws
+  port: 443
+  server: 104.17.148.22
+  servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
   udp: true
-  uuid: 6a2aff19-ff1f-4a13-96c8-a4d8986a9699
-  xhttp-opts:
-    host: randomquaint.net
-    mode: auto
-    path: /api/v1/upload
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
 - client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #1'
+  name: '🇺🇸 美国 | USA #2'
   network: ws
   port: 8443
   server: 45.61.149.205
@@ -290,35 +289,22 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- name: '🇺🇸 美国 | USA #2'
-  password: 1f8dc24373d4add7767beac448e32397
-  port: 8443
-  server: 38.150.35.208
-  skip-cert-verify: true
-  sni: www.apple.com
-  type: trojan
-  udp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #3'
+- name: '🇺🇸 美国 | USA #3'
   network: ws
-  packet-encoding: xudp
-  port: 443
-  server: bounded-crammed.video-streams.org
-  servername: bounded-crammed.video-streams.org
-  tls: true
+  port: 80
+  server: 104.18.109.147
+  tls: false
   type: vless
   udp: true
-  uuid: 48f09fbe-7a6e-43d2-99a3-304c943f3bb4
+  uuid: c29d39bd-92a4-45db-bb61-56013998617c
   ws-opts:
     headers:
-      Host: bounded-crammed.video-streams.org
-    path: /ws
+      Host: www.speedtest.net.www.1google.com.bing.com.visa.com.tls.xv98.ip-ddns.com
+    path: /Telegram-XV2ry2?ed=2048
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #5'
+  name: '🇺🇸 美国 | USA #4'
   network: ws
   port: 443
   server: 104.17.147.22
@@ -334,33 +320,10 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #6'
-  network: ws
-  packet-encoding: xudp
-  port: 443
-  server: grimness-backlogs.cdn-content.com
-  servername: grimness-backlogs.cdn-content.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 48f09fbe-7a6e-43d2-99a3-304c943f3bb4
-  ws-opts:
-    headers:
-      Host: grimness-backlogs.cdn-content.com
-    path: /ws
-- name: '🇺🇸 美国 | USA #7'
-  password: f0eb8c92ce8946aaba856569cff1a16b
-  port: 443
-  server: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: true
-  sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #8'
+  name: '🇺🇸 美国 | USA #5'
   network: ws
   port: 443
-  server: 179.255.123.130
+  server: 188.114.97.6
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -369,65 +332,51 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- name: '🇺🇸 美国 | USA #9'
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560#Telegram---PLANB_NET---PLANB_NET---PLANB_NET---PLANB_NET
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #6'
   network: ws
-  port: 2082
-  server: 104.18.35.86
-  servername: hhlfy.twiladaphne.ndjp.net
+  port: 443
+  server: cf.130519.xyz
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+- name: '🇺🇸 美国 | USA #7'
+  network: ws
+  port: 8880
+  server: 103.169.142.30
+  servername: 103.169.142.30
   tls: false
   type: vless
   udp: true
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
   ws-opts:
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /fp
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #11'
+      Host: vms.lifetime38.workers.dev
+    path: /
+- name: '🇺🇸 美国 | USA #8'
   network: ws
-  port: 443
-  server: 179.255.99.75
-  servername: snip.edgeoneai.cc.cd
-  tls: true
+  port: 8080
+  server: 104.19.173.68
+  servername: 104.19.173.68
+  tls: false
   type: vless
   udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  uuid: 2500e602-671c-4654-a602-c518b7282167
   ws-opts:
     headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- name: 🇺🇸 美国 | USA 12
-  network: ws
-  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  port: 443
-  server: 104.18.65.57
-  skip-cert-verify: true
-  sni: nat3.xxai.dpdns.org
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: nat3.xxai.dpdns.org
-    path: /anyway
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #13'
-  network: ws
-  port: 443
-  server: 43.174.195.1
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+      Host: 2639w-throbbing-band-3840.xphnn6jp.workers.dev
+    path: /
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #14'
+  name: '🇺🇸 美国 | USA #9'
   network: ws
   port: 443
   server: www.speedtest.net
@@ -440,23 +389,15 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560#Telegram---bored_vpn
-- name: '🇦🇺 澳大利亚 | AUS #1'
-  obfs: salamander
-  obfs-password: salamander
-  password: 633bc3be486b646190661ac2387c150a
-  port: 443
-  server: 152.67.115.203
+- name: US_speednode_0131
+  password: 'null'
+  port: 9002
+  server: 138.199.35.216
   skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: '🇺🇸 美国 | USA #12'
-  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
-  port: 443
-  server: 104.18.65.57
-  skip-cert-verify: true
-  sni: nat3.xxai.dpdns.org
-  type: trojan
+  tls: true
+  type: http
+  udp: true
+  username: 'null'
 - name: US_speednode_0133
   port: 443
   server: fan.365747.xyz
