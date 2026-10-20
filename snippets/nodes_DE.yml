@@ -9,6 +9,16 @@ proxies:
 - alpn:
   - http/1.1
   name: 🇩🇪[www.v2nodes.com] trojan-DE-...
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: de2.dedushka.top
+  skip-cert-verify: false
+  sni: de2.dedushka.top
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de6.dedushka.top
@@ -16,7 +26,7 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de8.dedushka.top
@@ -25,7 +35,8 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
+  network: tcp
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de4.dedushka.top
@@ -34,19 +45,54 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #4'
+  network: tcp
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: 188.241.241.236
   skip-cert-verify: false
   sni: de10.dedushka.top
   type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #4'
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #5'
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de7.dedushka.top
   sni: de7.dedushka.top
   type: trojan
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪DE_10|2.9MB/s
+  network: ws
+  port: 443
+  server: 22INLn9BmbA7RUmR.v.3dns.vip
+  servername: 22INLn9BmbA7RUmR.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a791985f-a4f9-410e-b2fa-8aca1e2424e1
+  ws-opts:
+    headers:
+      Host: 22INLn9BmbA7RUmR.v.3dns.vip
+    path: /ws-vmess
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇩🇪DE_11|2.8MB/s
+  network: ws
+  port: 443
+  server: 3E89CNW0HGtiFiDE.v.3dns.vip
+  servername: 3E89CNW0HGtiFiDE.v.3dns.vip
+  skip-cert-verify: false
+  tls: true
+  type: vmess
+  udp: true
+  uuid: a791985f-a4f9-410e-b2fa-8aca1e2424e1
+  ws-opts:
+    headers:
+      Host: 3E89CNW0HGtiFiDE.v.3dns.vip
+    path: /ws-vmess
+  xudp: true
 - alterId: 0
   cipher: auto
   http-opts:
