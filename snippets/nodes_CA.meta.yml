@@ -18,6 +18,12 @@ proxies:
   server: 51.79.85.185
   type: ss
 - cipher: aes-256-gcm
+  name: 🇨🇦[www.v2nodes.com] ss-CA-1558...
+  password: Y6R9pAtvxxzmGC
+  port: 5000
+  server: 51.222.200.165
+  type: ss
+- cipher: aes-256-gcm
   name: 🇨🇦[www.v2nodes.com] ss-CA-1557...
   password: kDWvXYZoTBcGkC4
   port: 8882
@@ -25,12 +31,6 @@ proxies:
   type: ss
 - cipher: aes-256-gcm
   name: 🇨🇦[www.v2nodes.com] ss-CA-1546...
-  password: Y6R9pAtvxxzmGC
-  port: 5601
-  server: 51.222.155.113
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇨🇦[www.v2nodes.com] ss-CA-1546... #1'
   password: g5MeD6Ft3CWlJId
   port: 5003
   server: 51.222.155.32
@@ -42,14 +42,38 @@ proxies:
   server: 51.79.64.198
   type: ss
 - cipher: aes-256-gcm
-  name: '🇨🇦[www.v2nodes.com] ss-CA-1545... #1'
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 51.79.49.116
-  type: ss
-- cipher: aes-256-gcm
   name: 🇨🇦[www.v2nodes.com] ss-CA-1538...
   password: zDNVedRFPQexG9v
   port: 445
   server: 51.222.12.127
   type: ss
+- http-opts:
+    headers:
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '🇨🇦 加拿大 | CAN #1'
+  network: http
+  port: 443
+  server: 35.182.112.77
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+- http-opts:
+    headers:
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '🇨🇦 加拿大 | CAN #2'
+  network: http
+  port: 443
+  server: 3.99.177.0
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
