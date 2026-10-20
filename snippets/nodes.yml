@@ -114,7 +114,7 @@ proxies:
   server: 51.79.85.185
   type: ss
 - cipher: aes-256-gcm
-  name: 🇨🇦[www.v2nodes.com] ss-CA-1558...
+  name: 🏳[www.v2nodes.com] ss-
   password: Y6R9pAtvxxzmGC
   port: 5000
   server: 51.222.200.165
@@ -162,10 +162,16 @@ proxies:
   server: 132.243.175.144
   type: ss
 - cipher: aes-128-gcm
-  name: 🏳[www.v2nodes.com] ss-
+  name: '🏳[www.v2nodes.com] ss- #1'
   password: 2bf536a4bd6008511734a505d248de2c
   port: 13261
   server: 86.106.84.194
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇨🇱[www.v2nodes.com] ss-CL-1564...
+  password: xBStBEVqvGwHPocc
+  port: 8388
+  server: 64.176.2.21
   type: ss
 - cipher: aes-256-gcm
   name: 🇨🇿[www.v2nodes.com] ss-CZ-1599...
@@ -186,7 +192,7 @@ proxies:
   server: 185.239.141.248
   type: ss
 - cipher: aes-128-gcm
-  name: '🏳[www.v2nodes.com] ss- #1'
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
   password: shadowsocks
   port: 443
   server: 158.173.24.73
@@ -220,18 +226,6 @@ proxies:
   password: JuD6MNgtX3nVpCzFzXYVYjDTZ7nsmaTv
   port: 8388
   server: 191.223.221.53
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇲🇽[www.v2nodes.com] ss-MX-1564...
-  password: BWyPPTusFKhGgzKh
-  port: 8388
-  server: 64.177.90.30
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: '🇳🇱[www.v2nodes.com] ss-NL-1599... #1'
-  password: y7KeRTzmH0vXT2kp
-  port: 443
-  server: c3.nastuh.link
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇳🇴[www.v2nodes.com] ss-NO-1220...
@@ -276,16 +270,16 @@ proxies:
   server: 90.156.203.62
   type: ss
 - cipher: aes-256-gcm
-  name: '🏳[www.v2nodes.com] ss- #3'
-  password: AxIYWtskJWIIaefW
+  name: 🇸🇬[www.v2nodes.com] ss-SG-1559...
+  password: qpSevKaUXYQKvSjp
   port: 8388
-  server: 70.34.212.124
+  server: 139.180.220.175
   type: ss
 - cipher: aes-256-gcm
   name: 🇹🇭[www.v2nodes.com] ss-TH-1591...
   password: sxajCTwrlK0zl+zmHpX0p0jXIfatnzlLzWlSQ950L1c=
   port: 52351
-  server: pphfree2.mvpnpvpn.de5.net
+  server: 103.107.52.106
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇿🇦[www.v2nodes.com] ss-ZA-1534...
@@ -311,22 +305,55 @@ proxies:
   network: tcp
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
-  server: de10.dedushka.top
+  server: de2.dedushka.top
+  skip-cert-verify: false
+  sni: de2.dedushka.top
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: de6.dedushka.top
+  skip-cert-verify: false
+  sni: de6.dedushka.top
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: de8.dedushka.top
+  skip-cert-verify: false
+  sni: de8.dedushka.top
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: de4.dedushka.top
+  skip-cert-verify: false
+  sni: de4.dedushka.top
+  type: trojan
+- alpn:
+  - http/1.1
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #4'
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: 188.241.241.236
   skip-cert-verify: false
   sni: de10.dedushka.top
   type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #5'
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de7.dedushka.top
-  skip-cert-verify: true
   sni: de7.dedushka.top
-  type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
-  password: happybirthdaydaniel
-  port: 25267
-  server: de-bots4.h1cloud.net
-  sni: t.me/FuckTheWall
   type: trojan
 - name: 🇪🇪[www.v2nodes.com] trojan-EE-...
   password: oiiaB38ywjEHCWRs_O_a_1113_Il_KeyyyHop_Bes1
@@ -472,8 +499,6 @@ proxies:
   password: XuMweB2PWs
   port: 45464
   server: 2.27.109.179
-  skip-cert-verify: false
-  sni: 2.27.109.179.sslip.io
   type: trojan
 - name: 🇯🇵[www.v2nodes.com] trojan-JP-...
   password: bad06c3525a6eaee1757b34776b83892
@@ -491,16 +516,6 @@ proxies:
   type: trojan
   ws-opts:
     path: /
-- client-fingerprint: chrome
-  name: '🇯🇵 日本 | JPN #2'
-  network: tcp
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 45.32.52.173
-  skip-cert-verify: true
-  sni: 45.32.52.173
-  type: trojan
-  udp: true
 - name: 🇲🇾[www.v2nodes.com] trojan-MY-...
   password: 5931134d1cde66bf83a54acdfebe7ab2
   port: 443
@@ -579,18 +594,11 @@ proxies:
 - name: '🇳🇱[www.v2nodes.com] trojan-NL-... #10'
   password: humanity
   port: 443
-  server: 185.22.172.249
+  server: 31.57.190.40
   type: trojan
   ws-opts:
     path: '%2Fassignment'
 - name: '🇳🇱[www.v2nodes.com] trojan-NL-... #11'
-  password: humanity
-  port: 443
-  server: 46.62.204.134
-  type: trojan
-  ws-opts:
-    path: '%2Fassignment'
-- name: '🇳🇱[www.v2nodes.com] trojan-NL-... #12'
   network: ws
   password: humanity
   port: 443
@@ -604,7 +612,7 @@ proxies:
     path: '%2Fassignment'
 - alpn:
   - http/1.1
-  name: '🇳🇱[www.v2nodes.com] trojan-NL-... #13'
+  name: '🇳🇱[www.v2nodes.com] trojan-NL-... #12'
   network: ws
   password: humanity
   port: 443
@@ -616,21 +624,54 @@ proxies:
     headers:
       Host: www.volumerOot.coM.
     path: /assignment
-- name: '🇸🇬 新加坡 | SGP #9'
+- alpn:
+  - http/1.1
+  name: '🇳🇱[www.v2nodes.com] trojan-NL-... #13'
+  network: ws
+  password: humanity
+  port: 443
+  server: 31.57.190.34
+  skip-cert-verify: false
+  sni: www.pleadcourt.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.pleadcourt.org
+    path: /assignment
+- name: '🇳🇱[www.v2nodes.com] trojan-NL-... #14'
+  password: humanity
+  port: 443
+  server: 185.22.172.249
+  type: trojan
+  ws-opts:
+    path: '%2Fassignment'
+- name: '🇳🇱[www.v2nodes.com] trojan-NL-... #15'
+  network: ws
+  password: humanity
+  port: 443
+  server: 31.57.190.34
+  skip-cert-verify: false
+  sni: www.volumeroot.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.volumeroot.com
+    path: '%2Fassignment'
+- name: 🇵🇱[www.v2nodes.com] trojan-PL-...
+  network: tcp
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: pl2.dedushka.top
+  skip-cert-verify: false
+  sni: pl2.dedushka.top
+  type: trojan
+- name: 🇸🇬[www.v2nodes.com] trojan-SG-...
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 139.180.146.200
   skip-cert-verify: true
-  sni: 139.180.146.200
   type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  port: 443
-  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: true
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #2'
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #4'
   password: f0eb8c92ce8946aaba856569cff1a16b
   port: 443
   server: resources.findlocaljobnetworkandbuildcommunityconnections.com
@@ -638,10 +679,29 @@ proxies:
   sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
   type: trojan
 - name: '🇺🇸[www.v2nodes.com] trojan-US-... #3'
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  port: 443
+  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: true
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #5'
   password: ae7eb4dwyaz25pxwgq59
   port: 59689
   server: 66.23.203.21
   type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #6'
+  network: ws
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  port: 443
+  server: us3-2.998998.best
+  skip-cert-verify: true
+  sni: nat3.xxai.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nat3.xxai.dpdns.org
+    path: '%2Fanyway'
 - cipher: aes-256-cfb
   name: 'tg频道:@ripaojiedian #1'
   password: amazonskr05
@@ -927,42 +987,52 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇦🇺 澳大利亚 | AUS #1'
-  network: ws
-  port: 8443
-  server: 66.235.200.145
+- name: '🇦🇷 阿根廷 | ARG #1'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 59019
+  server: fj3x.waimaosass.icu
   skip-cert-verify: true
-  tls: true
-  type: vmess
+  sni: iosapps.itunes.apple.com
+  type: trojan
   udp: true
-  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
-  ws-opts:
-    headers:
-      Host: aus.frnhk.xyz
-    path: /Sydney3
-- alterId: 0
-  cipher: auto
-  name: '🇬🇧 英国 | GBR #1'
-  network: ws
-  port: 8443
-  server: 206.238.239.109
+- name: '🇩🇪 德国 | DEU #6'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 59023
+  server: fj3x.waimaosass.icu
   skip-cert-verify: true
-  tls: true
-  type: vmess
+  sni: iosapps.itunes.apple.com
+  type: trojan
   udp: true
-  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
-  ws-opts:
-    headers:
-      Host: uk.frnhk.xyz
-    path: /London31
+- name: '🇩🇪 德国 | DEU #10'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 59024
+  server: fj3x.waimaosass.icu
+  skip-cert-verify: true
+  sni: iosapps.itunes.apple.com
+  type: trojan
+  udp: true
+- name: '🇬🇧 英国 | GBR #1'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 56007
+  server: fj3x.waimaosass.icu
+  skip-cert-verify: true
+  sni: iosapps.itunes.apple.com
+  type: trojan
+  udp: true
+- name: '🇭🇰 香港 | HKG #1'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 55046
+  server: pokemoniplc-02.waimaosass.icu
+  skip-cert-verify: true
+  sni: www.lamer.com.hk
+  type: trojan
+  udp: true
 - alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #4'
+  name: '🇭🇰 香港 | HKG #2'
   network: ws
   port: 443
-  server: ex1ogt73nzpqkac2.v.3dns.vip
+  server: 8.217.254.88
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -970,14 +1040,14 @@ proxies:
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
-      Host: ex1ogt73nzpqkac2.v.3dns.vip
+      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #7'
+  name: '🇭🇰 香港 | HKG #5'
   network: ws
   port: 443
-  server: 47.243.194.125
+  server: 8.218.195.61
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -985,27 +1055,85 @@ proxies:
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
+      Host: EX1oGt73NzPQKAc2.v.3dns.vip
     path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: '🇲🇾 马来西亚 | MYS #1'
-  network: ws
-  port: 8443
-  server: 2.58.104.11
+- name: '🇮🇹 意大利 | ITA #1'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 59028
+  server: fj3x.waimaosass.icu
   skip-cert-verify: true
-  tls: true
-  type: vmess
+  sni: iosapps.itunes.apple.com
+  type: trojan
   udp: true
-  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
-  ws-opts:
-    headers:
-      Host: my.frnhk.xyz
-    path: /KualaLumpur1
-- cipher: aes-256-gcm
-  name: '🇷🇺 俄罗斯 | RUS #1'
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  port: 18443
-  server: 176.32.33.143
-  type: ss
+- name: '🇰🇷 韩国 | KOR #1'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 59099
+  server: fj3x.waimaosass.icu
+  skip-cert-verify: true
+  sni: www.lamer.com.hk
+  type: trojan
+  udp: true
+- name: '🇰🇷 韩国 | KOR #2'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 59111
+  server: pokemoniplc-02.waimaosass.icu
+  skip-cert-verify: true
+  sni: www.apple.com.cn
+  type: trojan
+  udp: true
+- name: '🇳🇬 尼日利亚 | NGA #1'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 59014
+  server: fj3x.waimaosass.icu
+  skip-cert-verify: true
+  sni: iosapps.itunes.apple.com
+  type: trojan
+  udp: true
+- name: '🇳🇴 挪威 | NOR #1'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 50124
+  server: fj3x.waimaosass.icu
+  skip-cert-verify: true
+  sni: iosapps.itunes.apple.com
+  type: trojan
+  udp: true
+- name: '🇵🇪 PE_215 #1'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 59021
+  server: fj3x.waimaosass.icu
+  skip-cert-verify: true
+  sni: iosapps.itunes.apple.com
+  type: trojan
+  udp: true
+- name: '🇷🇴 罗马尼亚 | ROU #1'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 50136
+  server: fj3x.waimaosass.icu
+  skip-cert-verify: true
+  sni: iosapps.itunes.apple.com
+  type: trojan
+  udp: true
+- name: '🇸🇬 新加坡 | SGP #6'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 50125
+  server: fj3x.waimaosass.icu
+  skip-cert-verify: true
+  sni: iosapps.itunes.apple.com
+  type: trojan
+  udp: true
+- name: '🇸🇬 新加坡 | SGP #7'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 55016
+  server: fj3x.waimaosass.icu
+  skip-cert-verify: true
+  sni: www.lamer.com.sg
+  type: trojan
+  udp: true
+- name: '🇺🇸 美国 | USA #6'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 56019
+  server: pokemoniplc-02.waimaosass.icu
+  skip-cert-verify: true
+  sni: iosapps.itunes.apple.com
+  type: trojan
   udp: true

@@ -1,12 +1,5 @@
 proxies:
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
-  password: dba20dcb635e430fa4d3bfc303a149d2
-  port: 443
-  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  skip-cert-verify: true
-  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
-  type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #2'
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #4'
   password: f0eb8c92ce8946aaba856569cff1a16b
   port: 443
   server: resources.findlocaljobnetworkandbuildcommunityconnections.com
@@ -14,10 +7,29 @@ proxies:
   sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
   type: trojan
 - name: '🇺🇸[www.v2nodes.com] trojan-US-... #3'
+  password: dba20dcb635e430fa4d3bfc303a149d2
+  port: 443
+  server: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: true
+  sni: blog.findlocaljobnetworkandbuildcommunityconnections.com
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #5'
   password: ae7eb4dwyaz25pxwgq59
   port: 59689
   server: 66.23.203.21
   type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #6'
+  network: ws
+  password: 5504eaa8-1395-402f-8e0e-75ecd762e627
+  port: 443
+  server: us3-2.998998.best
+  skip-cert-verify: true
+  sni: nat3.xxai.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: nat3.xxai.dpdns.org
+    path: '%2Fanyway'
 - alterId: 0
   cipher: auto
   name: 🇺🇸 美国|@ripaojiedian
@@ -64,25 +76,11 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇦🇺 澳大利亚 | AUS #1'
-  network: ws
-  port: 8443
-  server: 66.235.200.145
+- name: '🇺🇸 美国 | USA #6'
+  password: 6e4ceae4-6d81-4d87-9802-759ea5c244e5
+  port: 56019
+  server: pokemoniplc-02.waimaosass.icu
   skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 6006c9a2-c0a2-4cda-80f2-405b0d790fc8
-  ws-opts:
-    headers:
-      Host: aus.frnhk.xyz
-    path: /Sydney3
-- cipher: aes-256-gcm
-  name: '🇷🇺 俄罗斯 | RUS #1'
-  password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
-  port: 18443
-  server: 176.32.33.143
-  type: ss
+  sni: iosapps.itunes.apple.com
+  type: trojan
   udp: true

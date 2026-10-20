@@ -5,18 +5,17 @@ proxies:
   server: 109.206.241.10
   sni: russiapower.accesscam.org
   type: trojan
-- name: 🇪🇪EE_1|2.2MB/s
-  port: 9443
-  server: 95.153.31.66
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  name: '🇪🇪 爱沙尼亚 | EST #1'
+  network: ws
+  port: 8443
+  server: 114.129.9.132
+  servername: snip.edgeoneai.cc.cd
   tls: true
-  type: http
-- name: 🇪🇪EE_2|3.0MB/s
-  password: 9jkvAVV-9ufV6IGd
-  port: 51320
-  server: chalo-ru.nexorcdn.com
-  skip-cert-verify: true
-  sni: chalo-ru.nexorcdn.com
-  tls: true
-  type: http
-  username: ef37886e2aacd6fa622e3de3810299c2
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
