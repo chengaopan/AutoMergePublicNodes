@@ -1,15 +1,20 @@
 proxies:
 - cipher: aes-256-gcm
-  name: '🇩🇪 德国 | DEU #1'
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1602...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 185.176.204.18
   type: ss
-  udp: true
+- name: 🇩🇪[www.v2nodes.com] trojan-DE-...
+  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
+  port: 443
+  server: it1.dedushka.top
+  skip-cert-verify: false
+  sni: it1.dedushka.top
+  type: trojan
 - alpn:
   - http/1.1
-  name: 🇩🇪[www.v2nodes.com] trojan-DE-...
-  network: tcp
+  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de2.dedushka.top
@@ -18,15 +23,8 @@ proxies:
   type: trojan
 - alpn:
   - http/1.1
-  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
-  password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
-  port: 443
-  server: de6.dedushka.top
-  sni: de6.dedushka.top
-  type: trojan
-- alpn:
-  - http/1.1
   name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
+  network: tcp
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de8.dedushka.top
@@ -59,55 +57,30 @@ proxies:
   server: de7.dedushka.top
   sni: de7.dedushka.top
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪DE_10|2.9MB/s
+- name: 🇩🇪 德国 | DEU 2
   network: ws
+  password: bpb-trojan
   port: 443
-  server: 22INLn9BmbA7RUmR.v.3dns.vip
-  servername: 22INLn9BmbA7RUmR.v.3dns.vip
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a791985f-a4f9-410e-b2fa-8aca1e2424e1
-  ws-opts:
-    headers:
-      Host: 22INLn9BmbA7RUmR.v.3dns.vip
-    path: /ws-vmess
-  xudp: true
-- alterId: 0
-  cipher: auto
-  name: 🇩🇪DE_11|2.8MB/s
-  network: ws
-  port: 443
-  server: 3E89CNW0HGtiFiDE.v.3dns.vip
-  servername: 3E89CNW0HGtiFiDE.v.3dns.vip
-  skip-cert-verify: false
-  tls: true
-  type: vmess
-  udp: true
-  uuid: a791985f-a4f9-410e-b2fa-8aca1e2424e1
-  ws-opts:
-    headers:
-      Host: 3E89CNW0HGtiFiDE.v.3dns.vip
-    path: /ws-vmess
-  xudp: true
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - gvt1.com
-    method: GET
-    path:
-    - /
-  name: '🇩🇪 德国 | DEU #9'
-  network: http
-  port: 80
-  server: turknew.net-flowa.com
+  server: russia.com
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  sni: 6982410.xyz
+  type: trojan
   udp: true
-  uuid: cd96479e-9c39-4a7f-ba0c-806a83af19ca
+  ws-opts:
+    headers:
+      Host: 6982410.xyz
+    path: /trh3
+- cipher: aes-256-gcm
+  name: '🇩🇪 德国 | DEU #8'
+  password: 62mngrv6rcq8if8a
+  port: 443
+  server: 45.89.223.16
+  type: ss
+  udp: true
+- name: '🇩🇪 德国 | DEU #2'
+  password: bpb-trojan
+  port: 443
+  server: russia.com
+  skip-cert-verify: true
+  sni: 6982410.xyz
+  type: trojan

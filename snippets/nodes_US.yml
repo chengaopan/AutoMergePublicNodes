@@ -1,39 +1,41 @@
 proxies:
 - cipher: aes-256-gcm
-  name: '🇺🇸 美国 | USA #15'
+  name: 🇺🇸[www.v2nodes.com] ss-US-1602...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 193.151.163.18
   type: ss
-  udp: true
 - cipher: aes-256-gcm
-  name: '🇺🇸 美国 | USA #14'
+  name: '🇺🇸[www.v2nodes.com] ss-US-1602... #1'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 45.86.51.18
   type: ss
-  udp: true
 - cipher: aes-256-gcm
-  name: '🇺🇸 美国 | USA #9'
+  name: '🇺🇸[www.v2nodes.com] ss-US-1602... #2'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 193.151.160.18
   type: ss
-  udp: true
 - cipher: aes-256-gcm
-  name: '🇺🇸 美国 | USA #2'
+  name: '🇺🇸[www.v2nodes.com] ss-US-1602... #3'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 185.215.132.9
   type: ss
-  udp: true
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
+- name: 🇺🇸[www.v2nodes.com] trojan-US-...
+  password: 600421cf-11d7-429f-a65b-c30397f1bc03
+  port: 443
+  server: 23.106.44.14
+  sni: sj6.freeguard.org
+  type: trojan
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #3'
   password: f0eb8c92ce8946aaba856569cff1a16b
   port: 443
   server: resources.findlocaljobnetworkandbuildcommunityconnections.com
   sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
   type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #5'
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #6'
   password: dba20dcb635e430fa4d3bfc303a149d2
   port: 443
   server: blog.findlocaljobnetworkandbuildcommunityconnections.com
@@ -86,19 +88,67 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: 🇺🇸US_2|3.5MB/s
+- alpn:
+  - http/1.1
+  name: 🇺🇸 美国 | USA 2
   network: ws
-  port: 8033
-  server: 120.232.202.14
-  skip-cert-verify: false
-  tls: false
-  type: vmess
+  password: humanity
+  port: 443
+  server: 172.67.139.14
+  skip-cert-verify: true
+  sni: www.volumeroot.com
+  type: trojan
   udp: true
-  uuid: 74499dd9-f4c0-4450-8a4a-e06c8b25b77d
   ws-opts:
     headers:
-      Host: tms.dingtalk.com
-    path: /3ff53f15-4c9a-45b0-99ad-c8dfa3825d8f
-  xudp: true
+      Host: www.volumeroot.com
+    path: /assignment
+- alpn:
+  - http/1.1
+  name: 🇺🇸 美国 | USA 3
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.16.85.85
+  skip-cert-verify: true
+  sni: www.volumeroot.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.volumeroot.com
+    path: /assignment
+- name: 🇺🇸 美国 | USA 10
+  network: ws
+  password: mitivpn
+  port: 443
+  server: b2n.ir
+  skip-cert-verify: true
+  sni: de.mitivpn.in.net
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: de.mitivpn.in.net
+    path: ''
+- name: '🇺🇸 美国 | USA #2'
+  password: humanity
+  port: 443
+  server: 172.67.139.14
+  skip-cert-verify: true
+  sni: www.volumeroot.com
+  type: trojan
+- name: '🇺🇸 美国 | USA #3'
+  password: humanity
+  port: 443
+  server: 104.16.85.85
+  skip-cert-verify: true
+  sni: www.volumeroot.com
+  type: trojan
+- name: '🇺🇸 美国 | USA #10'
+  password: mitivpn
+  port: 443
+  server: b2n.ir
+  skip-cert-verify: true
+  sni: de.mitivpn.in.net
+  type: trojan
