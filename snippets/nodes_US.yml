@@ -3,22 +3,28 @@ proxies:
   name: 🇺🇸[www.v2nodes.com] ss-US-1602...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 193.151.163.18
+  server: 95.215.201.18
   type: ss
 - cipher: aes-256-gcm
   name: '🇺🇸[www.v2nodes.com] ss-US-1602... #1'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 45.86.51.18
+  server: 193.151.163.18
   type: ss
 - cipher: aes-256-gcm
   name: '🇺🇸[www.v2nodes.com] ss-US-1602... #2'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 193.151.160.18
+  server: 45.86.51.18
   type: ss
 - cipher: aes-256-gcm
   name: '🇺🇸[www.v2nodes.com] ss-US-1602... #3'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 193.151.160.18
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇺🇸[www.v2nodes.com] ss-US-1602... #4'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 185.215.132.9
@@ -29,7 +35,7 @@ proxies:
   server: 23.106.44.14
   sni: sj6.freeguard.org
   type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #3'
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
   network: tcp
   password: f0eb8c92ce8946aaba856569cff1a16b
   port: 443
@@ -37,7 +43,7 @@ proxies:
   skip-cert-verify: false
   sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
   type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #6'
+- name: '🇺🇸[www.v2nodes.com] trojan-US-... #3'
   password: dba20dcb635e430fa4d3bfc303a149d2
   port: 443
   server: blog.findlocaljobnetworkandbuildcommunityconnections.com
@@ -90,72 +96,10 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- cipher: aes-256-gcm
-  name: '🇷🇺 俄罗斯 | RUS #1'
-  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
-  port: 18443
-  server: 176.32.34.253
+- cipher: aes-256-cfb
+  name: '🇺🇸 美国 | USA #1'
+  password: amazonskr05
+  port: 443
+  server: 3.15.220.122
   type: ss
   udp: true
-- alpn:
-  - http/1.1
-  name: 🇺🇸 美国 | USA
-  network: ws
-  password: bd85f5fe32d9446a8b1f59e4f710455b
-  port: 443
-  server: 104.21.82.155
-  skip-cert-verify: true
-  sni: BpB-PAnEL-62c3.mlM-eE9A3b83.wOrKErS.dev
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: BpB-PAnEL-62c3.mlM-eE9A3b83.wOrKErS.dev
-    path: /eyJqdW5rIjoibkN2cER2SDZIUTkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6IiIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed=2560
-- name: 🇺🇸 美国 | USA 2
-  network: ws
-  password: mitivpn
-  port: 443
-  server: b2n.ir
-  skip-cert-verify: true
-  sni: de.mitivpn.in.net
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: de.mitivpn.in.net
-    path: ''
-- name: 🇺🇸 美国 | USA 14
-  network: ws
-  password: 31794262-b429-4f35-8ffe-c1fa8a43b8d7
-  port: 2087
-  server: x.com
-  skip-cert-verify: true
-  sni: au3.yang-1989.xyz
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: au3.yang-1989.xyz
-    path: /9f81
-- name: '🇺🇸 美国 | USA #1'
-  password: bd85f5fe32d9446a8b1f59e4f710455b
-  port: 443
-  server: 104.21.82.155
-  skip-cert-verify: true
-  sni: BpB-PAnEL-62c3.mlM-eE9A3b83.wOrKErS.dev
-  type: trojan
-- name: '🇺🇸 美国 | USA #2'
-  password: mitivpn
-  port: 443
-  server: b2n.ir
-  skip-cert-verify: true
-  sni: de.mitivpn.in.net
-  type: trojan
-- name: '🇺🇸 美国 | USA #14'
-  password: 31794262-b429-4f35-8ffe-c1fa8a43b8d7
-  port: 2087
-  server: x.com
-  skip-cert-verify: true
-  sni: au3.yang-1989.xyz
-  type: trojan

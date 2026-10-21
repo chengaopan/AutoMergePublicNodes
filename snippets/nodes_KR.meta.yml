@@ -32,7 +32,7 @@ proxies:
   name: '🇰🇷 韩国 | KOR #1'
   network: ws
   port: 443
-  server: 146.56.151.92
+  server: 123.111.169.70
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -41,27 +41,26 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560fp=chrome
-- http-opts:
-    headers:
-      Host:
-      - play.googleapis.com
-    method: GET
-    path:
-    - /
+    path: /fp=chrome
+- client-fingerprint: chrome
   name: '🇰🇷 韩国 | KOR #2'
-  network: http
+  network: ws
   port: 443
-  server: 3.36.86.28
-  tls: false
+  server: 13.125.9.223
+  servername: snip.edgeoneai.cc.cd
+  tls: true
   type: vless
   udp: true
-  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
 - client-fingerprint: chrome
   name: '🇰🇷 韩国 | KOR #3'
   network: ws
-  port: 8443
-  server: 141.164.34.161
+  port: 443
+  server: 158.247.210.172
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -70,4 +69,4 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
+    path: /
