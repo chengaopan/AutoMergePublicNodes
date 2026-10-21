@@ -40,7 +40,7 @@ proxies:
     path: /download
 - client-fingerprint: chrome
   encryption: none
-  name: '🏳[www.v2nodes.com] vless- #8'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #2'
   network: ws
   port: 443
   server: wwww.qarvian.ir
@@ -68,12 +68,13 @@ proxies:
     headers:
       Host: alman.5f2vvtqh5syot.info
     path: /9d9fdbc18c834cffab4276811501fbae
-- client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
+- encryption: none
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
   network: ws
   port: 443
-  server: 146.75.59.189
+  server: 146.75.59.186
   servername: firefox.com
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: dc7d45c9-c942-41e3-b880-9a7fd5b64e2f
@@ -81,10 +82,18 @@ proxies:
     headers:
       Host: copy_az_channel_NUFiLTER_a1i.global.ssl.fastly.net.
     path: /
+- encryption: none
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
+  network: tcp
+  port: 10000
+  server: connect.wecantos.site
+  tls: false
+  type: vless
+  uuid: a05ecf37-c661-4247-ab09-4432cf0f3cc1
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: studiofeed
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
   network: grpc
   port: 443
   server: 45.12.63.96
@@ -92,7 +101,7 @@ proxies:
   tls: true
   type: vless
   uuid: 9cb8d71c-fe06-4402-a591-eaa1f173b890
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
   port: 443
   server: 146.75.59.186
   tls: false
@@ -130,14 +139,10 @@ proxies:
   server: de6.dedushka.top
   sni: de6.dedushka.top
   type: trojan
-- alpn:
-  - http/1.1
-  name: '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
-  network: tcp
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
   password: 4_VfP9fKaM-3LpSVvoZuc_WUzLoCdHaA
   port: 443
   server: de8.dedushka.top
-  skip-cert-verify: false
   sni: de8.dedushka.top
   type: trojan
 - alpn:
@@ -160,6 +165,59 @@ proxies:
   skip-cert-verify: false
   sni: de10.dedushka.top
   type: trojan
+- name: DE_speednode_0003
+  port: 443
+  server: 149.36.50.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: DE_speednode_0004
+  port: 443
+  server: 149.36.50.157
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇩🇪DE_3|3.8MB/s
+  port: 9002
+  server: 158.173.154.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_4|2.1MB/s
+  port: 443
+  server: 79.76.126.155
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_5|3.3MB/s
+  port: 9002
+  server: 158.173.154.5
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_6|3.5MB/s|R002-260618
+  password: None
+  port: 443
+  server: 87.249.132.97
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇩🇪DE_7|1.2MB/s
+  port: 9443
+  server: 213.177.229.161
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_8|3.2MB/s
+  port: 443
+  server: 79.127.156.177
+  skip-cert-verify: true
+  tls: true
+  type: http
 - client-fingerprint: chrome
   name: '🇩🇪 德国 | DEU #2'
   network: ws
@@ -208,20 +266,6 @@ proxies:
   password: None
   port: 9443
   server: 87.249.132.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: DE_speednode_0003
-  port: 443
-  server: 149.36.50.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: DE_speednode_0004
-  port: 443
-  server: 149.36.50.157
   skip-cert-verify: true
   tls: true
   type: http
