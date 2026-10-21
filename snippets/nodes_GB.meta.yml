@@ -1,7 +1,5 @@
 proxies:
-- encryption: none
-  name: 🇬🇧[www.v2nodes.com] vless-GB-1...
-  network: tcp
+- name: 🇬🇧[www.v2nodes.com] vless-GB-1...
   port: 10002
   server: connect.hondamotor.site
   tls: false
@@ -39,75 +37,42 @@ proxies:
   port: 443
   server: 158.173.24.73
   type: ss
-- name: 🇬🇧GB_1|2.7MB/s
-  password: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
+- cipher: aes-256-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1292...
+  password: g5h5jleTRSyO3Rk4
+  port: 80
+  server: 149.102.132.184
+  type: ss
+- name: 🇬🇧GB_1|2.4MB/s
   port: 443
-  server: b7342ec0-t9zts0-tnkuks-wujn.uk.oshuawei.com
-  tls: true
-  type: http
-  username: 51362ab6-b5e6-11ea-ad28-f23c913c8d2b
-- name: 🇬🇧GB_2|1.3MB/s
-  port: 443
-  server: 185.164.138.156
+  server: 212.102.63.31
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_3|2.1MB/s
-  port: 443
-  server: 84.17.50.193
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_4|2.7MB/s
-  password: None
-  port: 443
-  server: 37.120.233.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_5|1.8MB/s
-  port: 443
-  server: 212.102.63.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_6|2.8MB/s
-  port: 9443
-  server: 84.17.50.214
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_7|1.3MB/s
+- name: 🇬🇧GB_2|2.1MB/s
   port: 9443
   server: 84.17.50.129
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: chrome
-  name: 🇬🇧GB_8|1.5MB/s
-  network: ws
-  port: 2087
-  server: 194.55.166.65
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-      User-Agent: Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_6) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/61.0.3163.100 Safari/537.36
-    path: /
-  xudp: true
 - name: '🇬🇧 英国 | GBR #1'
-  network: ws
-  port: 8080
-  server: 23.81.36.148
+  network: tcp
+  port: 22223
+  server: 13.134.170.98
   tls: false
   type: vless
   udp: true
-  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  ws-opts:
+    path: /
+- name: '🇬🇧 英国 | GBR #2'
+  network: tcp
+  port: 22224
+  server: 13.134.170.98
+  tls: false
+  type: vless
+  udp: true
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
   ws-opts:
     path: /
 - name: GB_speednode_0009

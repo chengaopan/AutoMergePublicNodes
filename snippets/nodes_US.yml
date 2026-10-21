@@ -30,9 +30,11 @@ proxies:
   sni: sj6.freeguard.org
   type: trojan
 - name: '🇺🇸[www.v2nodes.com] trojan-US-... #3'
+  network: tcp
   password: f0eb8c92ce8946aaba856569cff1a16b
   port: 443
   server: resources.findlocaljobnetworkandbuildcommunityconnections.com
+  skip-cert-verify: false
   sni: resources.findlocaljobnetworkandbuildcommunityconnections.com
   type: trojan
 - name: '🇺🇸[www.v2nodes.com] trojan-US-... #6'
@@ -88,37 +90,29 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
+- cipher: aes-256-gcm
+  name: '🇷🇺 俄罗斯 | RUS #1'
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  port: 18443
+  server: 176.32.34.253
+  type: ss
+  udp: true
 - alpn:
   - http/1.1
-  name: 🇺🇸 美国 | USA 2
+  name: 🇺🇸 美国 | USA
   network: ws
-  password: humanity
+  password: bd85f5fe32d9446a8b1f59e4f710455b
   port: 443
-  server: 172.67.139.14
+  server: 104.21.82.155
   skip-cert-verify: true
-  sni: www.volumeroot.com
+  sni: BpB-PAnEL-62c3.mlM-eE9A3b83.wOrKErS.dev
   type: trojan
   udp: true
   ws-opts:
     headers:
-      Host: www.volumeroot.com
-    path: /assignment
-- alpn:
-  - http/1.1
-  name: 🇺🇸 美国 | USA 3
-  network: ws
-  password: humanity
-  port: 443
-  server: 104.16.85.85
-  skip-cert-verify: true
-  sni: www.volumeroot.com
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: www.volumeroot.com
-    path: /assignment
-- name: 🇺🇸 美国 | USA 10
+      Host: BpB-PAnEL-62c3.mlM-eE9A3b83.wOrKErS.dev
+    path: /eyJqdW5rIjoibkN2cER2SDZIUTkiLCJwcm90b2NvbCI6InRyIiwibW9kZSI6IiIsInBhbmVsSVBzIjoiWzJhMDI6ODk4OjE0Njo2NDo6XSJ9?ed=2560
+- name: 🇺🇸 美国 | USA 2
   network: ws
   password: mitivpn
   port: 443
@@ -131,24 +125,37 @@ proxies:
     headers:
       Host: de.mitivpn.in.net
     path: ''
+- name: 🇺🇸 美国 | USA 14
+  network: ws
+  password: 31794262-b429-4f35-8ffe-c1fa8a43b8d7
+  port: 2087
+  server: x.com
+  skip-cert-verify: true
+  sni: au3.yang-1989.xyz
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: au3.yang-1989.xyz
+    path: /9f81
+- name: '🇺🇸 美国 | USA #1'
+  password: bd85f5fe32d9446a8b1f59e4f710455b
+  port: 443
+  server: 104.21.82.155
+  skip-cert-verify: true
+  sni: BpB-PAnEL-62c3.mlM-eE9A3b83.wOrKErS.dev
+  type: trojan
 - name: '🇺🇸 美国 | USA #2'
-  password: humanity
-  port: 443
-  server: 172.67.139.14
-  skip-cert-verify: true
-  sni: www.volumeroot.com
-  type: trojan
-- name: '🇺🇸 美国 | USA #3'
-  password: humanity
-  port: 443
-  server: 104.16.85.85
-  skip-cert-verify: true
-  sni: www.volumeroot.com
-  type: trojan
-- name: '🇺🇸 美国 | USA #10'
   password: mitivpn
   port: 443
   server: b2n.ir
   skip-cert-verify: true
   sni: de.mitivpn.in.net
+  type: trojan
+- name: '🇺🇸 美国 | USA #14'
+  password: 31794262-b429-4f35-8ffe-c1fa8a43b8d7
+  port: 2087
+  server: x.com
+  skip-cert-verify: true
+  sni: au3.yang-1989.xyz
   type: trojan
