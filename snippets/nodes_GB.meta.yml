@@ -13,18 +13,42 @@ proxies:
   tls: false
   type: vless
   uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #2'
-  port: 2053
-  server: 51.89.194.151
-  tls: false
-  type: vless
-  uuid: 8e790f25-1d71-4601-9fb0-d503931dcfca
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
+  network: tcp
   port: 8443
   server: node-uk.connectsuite.org
+  servername: node-uk.connectsuite.org
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+- encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
+  network: ws
+  port: 443
+  server: 159.65.51.189
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fp
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
+  port: 443
+  server: 159.65.51.189
+  tls: false
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    path: /
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1602...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -43,48 +67,25 @@ proxies:
   port: 80
   server: 149.102.132.184
   type: ss
-- name: 🇬🇧GB_1|3.4MB/s
+- cipher: aes-256-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1247...
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 94.156.250.148
+  type: ss
+- name: 🇬🇧GB_1|1.0MB/s
   port: 443
-  server: 212.102.63.31
+  server: 84.17.50.193
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_2|2.2MB/s
+- name: 🇬🇧GB_2|2.0MB/s
   password: None
-  port: 443
-  server: 185.164.138.156
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_3|2.4MB/s
-  port: 443
-  server: 37.120.233.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_4|2.5MB/s
-  password: None
-  port: 443
-  server: 37.120.233.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_5|1.9MB/s
   port: 9443
-  server: 84.233.178.33
+  server: 84.17.50.214
   skip-cert-verify: true
   tls: true
   type: http
-- name: '🇬🇧 英国 | GBR #1'
-  network: tcp
-  port: 22224
-  server: 13.134.170.98
-  tls: false
-  type: vless
-  udp: true
-  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
-  ws-opts:
-    path: /
 - name: GB_speednode_0009
   password: None
   port: 443

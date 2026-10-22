@@ -29,10 +29,11 @@ proxies:
   sni: m.ctrip.com
   type: trojan
 - client-fingerprint: chrome
-  name: '🇰🇷 韩国 | KOR #1'
+  encryption: none
+  name: 🇰🇷KR_1|1.6MB/s
   network: ws
   port: 443
-  server: 123.111.169.70
+  server: 158.247.222.168
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -41,12 +42,29 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
-    path: /fp=chrome
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0.1; vivo 1603 Build/MMB29M) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/58.0.3029.83 Mobile Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: chrome
+  name: '🇰🇷 韩国 | KOR #1'
+  network: ws
+  port: 443
+  server: 52.79.49.235
+  servername: vp4.1145678.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  ws-opts:
+    headers:
+      Host: vp4.1145678.xyz
+    path: /blogs/go/posts
 - client-fingerprint: chrome
   name: '🇰🇷 韩国 | KOR #2'
   network: ws
   port: 443
-  server: 13.125.9.223
+  server: 193.123.236.206
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -60,7 +78,7 @@ proxies:
   name: '🇰🇷 韩国 | KOR #3'
   network: ws
   port: 443
-  server: 158.247.210.172
+  server: 146.56.151.92
   servername: snip.edgeoneai.cc.cd
   tls: true
   type: vless
@@ -69,4 +87,4 @@ proxies:
   ws-opts:
     headers:
       Host: snip.edgeoneai.cc.cd
-    path: /
+    path: /fdip=sstp://vpn:vpn@vpn748359672.opengw.net:1458?ed=2560fp=chrome
