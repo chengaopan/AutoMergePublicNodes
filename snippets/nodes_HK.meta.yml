@@ -1,14 +1,4 @@
 proxies:
-- name: 🇭🇰198215 | ⚡️Telegram = t.me/S...
-  obfs: salamander
-  obfs-password: 7M4RXPFcQyQEGbkxBPfXo4bilMhCW2U9
-  password: eBTe6Ax2pUts8oMEWoYVDfnSlHfkLffQ
-  port: 5010
-  server: 152.32.254.68
-  skip-cert-verify: false
-  sni: nas.aizhzo.com
-  tls: false
-  type: hysteria2
 - alpn:
   - http/1.1
   client-fingerprint: chrome
@@ -41,8 +31,21 @@ proxies:
     headers:
       Host: lucasjow.us.ci
     path: /cart/docs/www/proxyipfp=chrome
-- client-fingerprint: qq
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
   name: 🇭🇰[www.v2nodes.com] vless-HK-1...
+  network: tcp
+  port: 11907
+  server: 195.58.144.56
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+- client-fingerprint: qq
+  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
   network: ws
   port: 443
   server: cf.130519.xyz
@@ -54,20 +57,6 @@ proxies:
     headers:
       Host: lucasjow.us.ci
     path: /cart/docs/www/proxyip=108.160.132.132
-- client-fingerprint: chrome
-  name: '🇭🇰 香港 | HKG #5'
-  network: ws
-  port: 8443
-  server: 103.148.73.173
-  servername: ty986gfazs.cainiaohub.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  ws-opts:
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
 - name: 🇭🇰[www.v2nodes.com] trojan-HK-...
   password: XuMweB2PWs
   port: 45464
@@ -185,8 +174,56 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
+- name: '🇭🇰 香港 | HKG #1'
+  network: ws
+  port: 8443
+  server: 103.180.20.176
+  servername: tse1.mm.bing.net
+  tls: true
+  type: vless
+  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
+  ws-opts:
+    headers:
+      Host: tse1.mm.bing.net
+    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
 - client-fingerprint: chrome
-  name: '🇭🇰 香港 | HKG #1'
+  name: '🇭🇰 香港 | HKG #3'
+  network: ws
+  port: 443
+  server: 103.143.81.178
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /
+- name: 🇭🇰 香港 | HKG 4
+  password: 0324fbc29561
+  port: 443
+  server: 56481.df6h451rh.xin
+  skip-cert-verify: true
+  sni: images.ctfassets.net
+  type: anytls
+  udp: true
+- client-fingerprint: chrome
+  name: '🇭🇰 香港 | HKG #4'
+  network: ws
+  port: 8443
+  server: 45.152.65.137
+  servername: snip.edgeoneai.cc.cd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
+  ws-opts:
+    headers:
+      Host: snip.edgeoneai.cc.cd
+    path: /fp=chrome
+- client-fingerprint: chrome
+  name: '🇭🇰 香港 | HKG #5'
   network: ws
   port: 443
   server: 191.223.212.83
@@ -199,62 +236,3 @@ proxies:
     headers:
       Host: snip.edgeoneai.cc.cd
     path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- client-fingerprint: chrome
-  name: '🇭🇰 香港 | HKG #3'
-  network: ws
-  port: 443
-  server: 207.57.123.77
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fdip=sstp://vpn:vpn@public-vpn-200.opengw.net:443
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #4'
-  network: ws
-  port: 443
-  server: 47.243.153.153
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-    path: /ws-vmess
-- client-fingerprint: chrome
-  name: '🇭🇰 香港 | HKG #6'
-  network: ws
-  port: 443
-  server: 207.57.122.65
-  servername: snip.edgeoneai.cc.cd
-  tls: true
-  type: vless
-  udp: true
-  uuid: 495c7195-85b8-498a-bf20-2ea9ce9175b5
-  ws-opts:
-    headers:
-      Host: snip.edgeoneai.cc.cd
-    path: /fp=chrome
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #7'
-  network: ws
-  port: 443
-  server: 8.210.24.181
-  servername: 6jdvarazgu3qqr6q.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: 6jdvarazgu3qqr6q.v.3dns.vip
-    path: /ws-vmess
