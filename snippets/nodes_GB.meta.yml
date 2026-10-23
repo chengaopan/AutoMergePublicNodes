@@ -12,9 +12,7 @@ proxies:
     headers:
       Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.
     path: /
-- encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
-  network: tcp
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
   port: 10002
   server: connect.hondamotor.site
   tls: false
@@ -37,9 +35,13 @@ proxies:
   tls: false
   type: vless
   uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+  network: tcp
   port: 8443
   server: node-uk.connectsuite.org
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
@@ -55,77 +57,30 @@ proxies:
   port: 443
   server: 158.173.24.73
   type: ss
-- name: 🇬🇧GB_1|1.8MB/s
+- name: 🇬🇧GB_1|1.7MB/s
   port: 9443
   server: 84.17.50.129
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_2|2.6MB/s
-  port: 443
-  server: 84.17.50.193
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_3|1.1MB/s
-  port: 9443
-  server: 84.233.178.33
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_4|1.8MB/s
-  port: 443
-  server: 212.102.63.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_5|1.1MB/s
-  password: None
-  port: 443
-  server: 37.120.233.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_7|1.9MB/s
-  password: None
-  port: 443
-  server: 185.164.138.156
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_8|1.4MB/s
-  password: None
-  port: 9443
-  server: 84.17.50.214
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_9|2.1MB/s|P002-260618
+- name: 🇬🇧GB_2|2.0MB/s
   password: None
   port: 443
   server: 212.102.63.31
   skip-cert-verify: true
-  sub_tag: P002-260618
   tls: true
   type: http
-  udp: true
-- encryption: mlkem768x25519plus.native.0rtt.cvVZFxCx1D3ly-0N5EXakc6tYVadDChlE35mpu3MvwU
-  http-opts:
-    headers:
-      Host:
-      - netmeli.korluma.ir
-    method: GET
-    path:
-    - /
-  name: '🇬🇧 英国 | GBR #1'
-  network: http
-  port: 15088
-  server: vip-tun.korluma.ir
+- name: '🇬🇧 英国 | GBR #1'
+  network: tcp
+  port: 22223
+  server: 18.135.33.244
   tls: false
   type: vless
   udp: true
-  uuid: e7e1e726-b30f-477a-a308-3138e62a8d21
-- name: GB_speednode_0014
+  uuid: e4514801-0d5a-42ba-869f-39bd605aef9e
+  ws-opts:
+    path: /
+- name: GB_speednode_0009
   port: 8443
   server: 198.105.124.180
   skip-cert-verify: true
