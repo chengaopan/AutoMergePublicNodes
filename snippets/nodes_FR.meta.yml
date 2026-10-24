@@ -1,6 +1,5 @@
 proxies:
-- encryption: none
-  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
+- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
   network: ws
   port: 14430
   server: 138.124.70.41
@@ -12,11 +11,24 @@ proxies:
     headers:
       Host: 138.124.70.41
     path: /vless
+- client-fingerprint: chrome
+  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
+  network: ws
+  port: 443
+  server: 199.232.78.160
+  servername: cdn.akamai.steamstatic.com
+  tls: true
+  type: vless
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
 - name: 🇫🇷[www.v2nodes.com] trojan-FR-...
   network: ws
   password: humanity
   port: 443
-  server: 185.255.179.166
+  server: 185.225.68.232
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
@@ -24,11 +36,13 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #1'
+- alpn:
+  - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
+  name: '🇫🇷[www.v2nodes.com] trojan-FR-... #1'
   network: ws
   password: humanity
-  port: 443
-  server: 185.225.68.232
+  port: 8443
+  server: 212.227.144.37
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
@@ -126,46 +140,56 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: 🇫🇷FR_1|2.5MB/s
+- name: 🇫🇷FR_1|1.5MB/s
+  password: None
+  port: 9443
+  server: 213.139.9.142
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_2|3.0MB/s
+  password: None
+  port: 443
+  server: 149.102.245.65
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_3|1.8MB/s
   port: 9443
   server: 138.199.47.247
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇫🇷 法国 | FRA
-  network: ws
-  password: humanity
-  port: 443
-  server: 162.159.91.211
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
-  udp: true
-  ws-opts:
+- http-opts:
     headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- client-fingerprint: chrome
-  name: '🇫🇷 法国 | FRA #2'
-  network: ws
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '🇫🇷 法国 | FRA #1'
+  network: http
   port: 443
-  server: 199.232.78.160
-  servername: cdn.akamai.steamstatic.com
-  tls: true
+  server: 35.180.136.30
+  tls: false
   type: vless
   udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
+- http-opts:
     headers:
-      Host: Appxdn.global.ssl.fastly.net
-    path: /
-- name: '🇫🇷 法国 | FRA #1'
-  password: humanity
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '🇫🇷 法国 | FRA #2'
+  network: http
   port: 443
-  server: 162.159.91.211
-  skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
+  server: 15.188.73.123
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
 - name: FR_speednode_0005
   password: 'null'
   port: 23856
