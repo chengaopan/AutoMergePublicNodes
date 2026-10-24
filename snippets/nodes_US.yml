@@ -11,17 +11,17 @@ proxies:
   port: 12996
   server: 64.42.181.102
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   name: '🇺🇸[www.v2nodes.com] ss-US-1603... #2'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 185.230.230.18
+  password: gWXhRbGoI53aSRV8fv9alMwr
+  port: 443
+  server: 216.128.153.186
   type: ss
 - cipher: aes-256-gcm
   name: '🇺🇸[www.v2nodes.com] ss-US-1603... #3'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 185.215.132.18
+  server: 185.230.230.18
   type: ss
 - cipher: aes-256-gcm
   name: 🇺🇸[www.v2nodes.com] ss-US-1602...
@@ -80,11 +80,97 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: '🇺🇸 美国 | USA #7'
-  password: va3E77I9fZCnCVcGKkxBCfz5
+- alpn:
+  - http/1.1
+  name: 🇺🇸 美国 | USA 2
+  network: ws
+  password: humanity
   port: 443
-  server: vpn.liumr.top
+  server: 104.17.121.9
   skip-cert-verify: true
-  sni: vpn.liumr.top
+  sni: www.calmlunch.com
   type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #8'
+  network: ws
+  port: 8080
+  server: 23.254.194.215
+  servername: www.bing.com
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 3c75a551-81d6-46d0-876d-79519719bb22
+  ws-opts:
+    headers:
+      Host: www.bing.com
+    path: 3c75a551-81d6-46d0-876d-79519719bb22-vm
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #12'
+  network: ws
+  port: 443
+  server: US032018.ssgreen.org
+  servername: US032018.ssgreen.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: c0767dfc-c313-4faa-9053-5554c2a25260
+  ws-opts:
+    headers:
+      Host: US032018.ssgreen.org
+    path: /wes
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #14'
+  network: ws
+  port: 443
+  server: US032019.ssgreen.org
+  servername: US032019.ssgreen.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 93d321f8-922f-44c2-acc2-50f25503aa77
+  ws-opts:
+    headers:
+      Host: US032019.ssgreen.org
+    path: /wes
+- name: 🇺🇸 美国 | USA 24
+  network: ws
+  password: humanity
+  port: 443
+  server: 162.159.36.20
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
+- name: '🇺🇸 美国 | USA #2'
+  password: humanity
+  port: 443
+  server: 104.17.121.9
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
+- name: '🇺🇸 美国 | USA #24'
+  password: humanity
+  port: 443
+  server: 162.159.36.20
+  skip-cert-verify: true
+  sni: www.calmlunch.com
+  type: trojan
