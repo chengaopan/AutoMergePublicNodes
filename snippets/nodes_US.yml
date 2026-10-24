@@ -11,14 +11,20 @@ proxies:
   port: 12996
   server: 64.42.181.102
   type: ss
-- cipher: aes-256-gcm
+- cipher: chacha20-ietf-poly1305
   name: '🇺🇸[www.v2nodes.com] ss-US-1603... #2'
+  password: gWXhRbGoI53aSRV8fv9alMwr
+  port: 443
+  server: 216.128.153.186
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇺🇸[www.v2nodes.com] ss-US-1603... #3'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 185.230.230.18
   type: ss
 - cipher: aes-256-gcm
-  name: '🇺🇸[www.v2nodes.com] ss-US-1603... #3'
+  name: '🇺🇸[www.v2nodes.com] ss-US-1603... #4'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 185.215.132.18
@@ -29,31 +35,7 @@ proxies:
   port: 19999
   server: 95.215.201.18
   type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸[www.v2nodes.com] ss-US-1602... #1'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 193.151.163.18
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸[www.v2nodes.com] ss-US-1602... #2'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 45.86.51.18
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸[www.v2nodes.com] ss-US-1602... #3'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 193.151.160.18
-  type: ss
 - name: 🇺🇸[www.v2nodes.com] trojan-US-...
-  password: 600421cf-11d7-429f-a65b-c30397f1bc03
-  port: 443
-  server: 23.106.44.14
-  sni: sj6.freeguard.org
-  type: trojan
-- name: '🇺🇸[www.v2nodes.com] trojan-US-... #1'
   password: dba20dcb635e430fa4d3bfc303a149d2
   port: 443
   server: blog.findlocaljobnetworkandbuildcommunityconnections.com
@@ -104,10 +86,25 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- cipher: aes-256-gcm
-  name: '🇷🇺 俄罗斯 | RUS #1'
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  port: 18443
-  server: 195.133.5.194
-  type: ss
+- alpn:
+  - http/1.1
+  name: 🇺🇸 美国 | USA
+  network: ws
+  password: humanity
+  port: 443
+  server: 104.18.45.38
+  skip-cert-verify: true
+  sni: www.trusteeforward.com
+  type: trojan
   udp: true
+  ws-opts:
+    headers:
+      Host: www.trusteeforward.com
+    path: /assignment
+- name: '🇺🇸 美国 | USA #1'
+  password: humanity
+  port: 443
+  server: 104.18.45.38
+  skip-cert-verify: true
+  sni: www.trusteeforward.com
+  type: trojan
