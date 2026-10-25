@@ -32,11 +32,26 @@ proxies:
   type: vless
   uuid: c6362720-0931-4b91-b187-d8ecf3149734
 - alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+  network: ws
+  port: 443
+  server: vpn.kovira.site
+  servername: vpn.kovira.site
+  tls: true
+  type: vless
+  uuid: 22e6604e-0481-411f-8028-ffbd65f624b6
+  ws-opts:
+    headers:
+      Host: vpn.kovira.site
+    path: /ws-738d2d0c5eba7609f3c37de2
+- alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
-  network: tcp
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
   port: 8443
   server: node-uk.connectsuite.org
   servername: node-uk.connectsuite.org
@@ -49,55 +64,69 @@ proxies:
   port: 19999
   server: 185.176.206.9
   type: ss
-- alpn:
-  - h2
-  - http/1.1
-  - h3
-  client-fingerprint: chrome
-  name: 🇬🇧GB_2|1.6MB/s
-  network: ws
-  password: 8yup05o4lz0csoxb
-  port: 2083
-  server: 216.24.57.225
-  skip-cert-verify: true
-  sni: fin.netvia.ir
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/62.0.3202.94 Safari/537.36
-    path: /YaujaGsyr
-- name: 🇬🇧GB_6|2.9MB/s
+- cipher: aes-128-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
+  password: shadowsocks
+  port: 443
+  server: 158.173.24.73
+  type: ss
+- name: 🇬🇧GB_4|2.3MB/s
   password: None
   port: 443
   server: 212.102.63.61
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_4|1.7MB/s
+- name: 🇬🇧GB_5|2.4MB/s
   password: None
   port: 443
   server: 37.120.233.50
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_5|2.9MB/s
+- name: 🇬🇧GB_6|2.4MB/s
   port: 443
   server: 185.164.138.156
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_7|1.7MB/s
+- name: 🇬🇧GB_7|2.7MB/s
   password: None
   port: 443
   server: 212.102.63.1
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_8|2.7MB/s
+- name: 🇬🇧GB_8|1.7MB/s
   port: 443
   server: 84.17.50.193
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_9|1.1MB/s
+  password: None
+  port: 9443
+  server: 84.17.50.214
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_10|1.0MB/s
+  port: 9443
+  server: 84.233.178.33
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_11|1.3MB/s
+  password: None
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_12|1.6MB/s
+  password: None
+  port: 9443
+  server: 84.17.50.129
   skip-cert-verify: true
   tls: true
   type: http
