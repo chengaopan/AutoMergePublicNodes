@@ -1,5 +1,7 @@
 proxies:
-- name: '🇨🇦[www.v2nodes.com] vless-CA-1... #2'
+- encryption: none
+  name: '🇨🇦[www.v2nodes.com] vless-CA-1... #2'
+  network: tcp
   port: 8080
   server: milo.rubinaz.xyz
   tls: false
@@ -16,12 +18,6 @@ proxies:
   password: cdBIDV42DCwnfIN
   port: 8118
   server: 51.79.85.185
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇨🇦[www.v2nodes.com] ss-CA-1558...
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 51.222.200.165
   type: ss
 - cipher: aes-256-gcm
   name: 🇨🇦[www.v2nodes.com] ss-CA-1557...
@@ -59,17 +55,11 @@ proxies:
   port: 445
   server: 51.222.12.127
   type: ss
-- name: 🇨🇦CA_1|1.8MB/s
-  password: None
-  port: 9443
-  server: 149.88.98.81
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇨🇦CA_2|2.3MB/s
+- name: CA_speednode_0004
   password: None
   port: 443
-  server: 206.223.183.16
+  server: 206.223.183.21
   skip-cert-verify: true
   tls: true
   type: http
+  udp: true
