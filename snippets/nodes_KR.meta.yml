@@ -22,13 +22,15 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
+- auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
   name: '🇰🇷 韩国 | KOR #1'
-  password: bf5129f1-31f5-4edf-a07a-27ec31b26c1d
-  port: 2096
-  server: 43.201.148.241
-  type: ss
-  udp: true
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 443
+  server: 52.79.147.10
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
 - http-opts:
     headers:
       Host:
@@ -36,10 +38,10 @@ proxies:
     method: GET
     path:
     - /
-  name: '🇰🇷 韩国 | KOR #2'
+  name: '🇰🇷 韩国 | KOR #3'
   network: http
   port: 443
-  server: 54.180.133.191
+  server: 3.36.86.28
   tls: false
   type: vless
   udp: true
