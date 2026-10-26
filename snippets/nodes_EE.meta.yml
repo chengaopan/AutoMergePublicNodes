@@ -1,21 +1,28 @@
 proxies:
-- name: 🇪🇪[www.v2nodes.com] vless-EE-1...
-  port: 443
-  server: 93.89.220.37
-  tls: false
-  type: vless
-  uuid: 185e2bb3-2934-48d0-bbd5-dd20d16e83ee
+- name: 🇪🇪EE_1|2.1MB/s
+  port: 9443
+  server: 95.153.32.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇪🇪EE_2|3.3MB/s
+  password: None
+  port: 9443
+  server: 95.153.31.66
+  skip-cert-verify: true
+  tls: true
+  type: http
 - client-fingerprint: firefox
   name: '🇪🇪 爱沙尼亚 | EST #1'
   network: ws
   port: 8443
-  server: 13.143.239.69
-  servername: ee4.pad-sservice.lat
+  server: 179.254.126.223
+  servername: ee2.pad-sservice.lat
   tls: true
   type: vless
   udp: true
   uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   ws-opts:
     headers:
-      Host: ee4.pad-sservice.lat
-    path: /EE4W
+      Host: ee2.pad-service.com
+    path: /EE2W
