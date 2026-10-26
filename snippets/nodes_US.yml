@@ -1,22 +1,4 @@
 proxies:
-- cipher: aes-256-gcm
-  name: 🇺🇸[www.v2nodes.com] ss-US-1603...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 193.151.160.9
-  type: ss
-- cipher: aes-128-gcm
-  name: '🇺🇸[www.v2nodes.com] ss-US-1603... #1'
-  password: a7be96a98392ef40dab7693317a81cc0
-  port: 12996
-  server: 64.42.181.102
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸[www.v2nodes.com] ss-US-1603... #2'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 185.230.230.18
-  type: ss
 - alterId: 0
   cipher: auto
   name: 🇺🇸 美国|@ripaojiedian
@@ -63,23 +45,57 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇺🇸 美国 | USA 5
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #5'
   network: ws
-  password: humanity
   port: 443
-  server: 104.21.13.204
+  server: US032024.ssgreen.org
+  servername: US032024.ssgreen.org
   skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
+  uuid: f6fb24e5-310a-4c1e-b381-0e8ca2c7d2ea
   ws-opts:
     headers:
-      Host: www.calmlunch.com
-    path: /assignment
-- name: '🇺🇸 美国 | USA #5'
-  password: humanity
+      Host: US032024.ssgreen.org
+    path: /wes
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #8'
+  network: ws
   port: 443
-  server: 104.21.13.204
+  server: US032022.ssgreen.org
+  servername: US032022.ssgreen.org
   skip-cert-verify: true
-  sni: www.calmlunch.com
-  type: trojan
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 7fb0eca9-6455-4f6f-bba0-a10c612bbc10
+  ws-opts:
+    headers:
+      Host: US032022.ssgreen.org
+    path: /wes
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #9'
+  network: ws
+  port: 443
+  server: US122204.ssgreen.org
+  servername: US122204.ssgreen.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: e9ee0c17-ec4f-44e8-8b5d-205c601f8835
+  ws-opts:
+    headers:
+      Host: US122204.ssgreen.org
+    path: /wes
