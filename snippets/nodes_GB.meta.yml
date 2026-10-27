@@ -12,17 +12,11 @@ proxies:
     headers:
       Host: albaniaoijji.global.ssl.fastly.net
     path: /
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
-  port: 10002
-  server: connect.hondamotor.site
-  tls: false
-  type: vless
-  uuid: c6362720-0931-4b91-b187-d8ecf3149734
 - alpn:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
   network: ws
   port: 443
   server: vpn.kovira.site
@@ -34,11 +28,20 @@ proxies:
     headers:
       Host: vpn.kovira.site
     path: /ws-738d2d0c5eba7609f3c37de2
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
+  network: ws
+  port: 8080
+  server: 23.81.36.148
+  tls: false
+  type: vless
+  uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
+  ws-opts:
+    path: /
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #11'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
   network: tcp
   port: 8443
   server: node-uk.connectsuite.org
@@ -49,9 +52,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  encryption: none
   name: '🇬🇧[www.v2nodes.com] vless-GB-1... #12'
-  network: tcp
   port: 443
   server: 186.190.211.188
   servername: 186.190.211.188
@@ -60,12 +61,11 @@ proxies:
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
 - cipher: chacha20-ietf-poly1305
-  name: '🇬🇧 英国 | GBR #2'
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1605...
   password: uvKNudV-N8AUCrykPiyznA
   port: 56137
   server: 177.202.111.18
   type: ss
-  udp: true
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1602...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -78,63 +78,22 @@ proxies:
   port: 443
   server: 158.173.24.73
   type: ss
-- cipher: aes-256-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1247...
-  password: RexnBgU7EV5ADxG
-  port: 7001
-  server: 94.156.250.148
-  type: ss
-- name: 🇬🇧GB_1|1.1MB/s
-  port: 443
-  server: 212.102.63.61
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇬🇧GB_2|2.4MB/s
+- name: 🇬🇧GB_2|1.3MB/s
   password: None
   port: 443
   server: 185.164.138.156
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_3|3.4MB/s|R002-260618
-  password: None
-  port: 443
-  server: 37.120.233.18
+- auth: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
+  name: '🇬🇧 英国 | GBR #2'
+  password: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
+  port: 4443
+  server: 201.58.181.179
   skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇬🇧GB_4|2.8MB/s
-  password: None
-  port: 9443
-  server: 37.120.233.34
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_5|1.1MB/s
-  password: None
-  port: 9443
-  server: 84.233.178.33
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_6|2.0MB/s
-  password: None
-  port: 443
-  server: 212.102.63.31
-  skip-cert-verify: true
-  tls: true
-  type: http
-- cipher: chacha20-ietf-poly1305
-  name: '🇬🇧 英国 | GBR #1'
-  password: uvKNudV-N8AUCrykPiyznA
-  port: 56137
-  server: 87.236.166.166
-  type: ss
-  udp: true
+  sni: pl1.shvpn.ru
+  tls: false
+  type: hysteria2
 - cipher: chacha20-ietf-poly1305
   name: '🇬🇧 英国 | GBR #3'
   password: uvKNudV-N8AUCrykPiyznA
@@ -142,29 +101,33 @@ proxies:
   server: 177.202.111.19
   type: ss
   udp: true
-- name: '🇬🇧 英国 | GBR #4'
-  network: tcp
-  port: 41432
-  server: rabin.142.251.153.7.savfasf.ir
+- auth: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
+  name: '🇬🇧 英国 | GBR #4'
+  password: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
+  port: 4443
+  server: pl1.shvpn.ru
+  skip-cert-verify: true
+  sni: pl1.shvpn.ru
   tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  name: '🇬🇧 英国 | GBR #5'
+  network: xhttp
+  port: 443
+  server: 146.75.35.31
+  servername: accounts.fastly.com
+  tls: true
   type: vless
   udp: true
-  uuid: 09931b77-0f40-4734-9b36-5df6e2308e4e
-  ws-opts:
-    headers:
-      Host: rabin.142.251.153.7.savfasf.ir
+  uuid: f29bb776-4e2d-4884-b628-98d8907132be
+  xhttp-opts:
+    host: ovd13.global.ssl.fastly.net
+    mode: auto
     path: /
 - cipher: chacha20-ietf-poly1305
-  name: '🇬🇧 英国 | GBR #5'
+  name: '🇬🇧 英国 | GBR #6'
   password: uvKNudV-N8AUCrykPiyznA
   port: 56137
-  server: 87.236.166.220
+  server: 177.202.111.21
   type: ss
-  udp: true
-- name: '🇬🇧 英国 | GBR #6'
-  password: 5e4a2c58499345c3
-  port: 20022
-  server: ikuk204.zxom.eu.org
-  skip-cert-verify: true
-  type: trojan
   udp: true

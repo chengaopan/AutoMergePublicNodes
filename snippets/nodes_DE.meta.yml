@@ -31,13 +31,14 @@ proxies:
   - http/1.1
   client-fingerprint: random
   encryption: none
-  name: 🇩🇪[www.v2nodes.com] vless-DE-1...
+  name: '🇩🇪 德国 | DEU #1'
   network: ws
   port: 2083
   server: 64.188.83.188
   servername: speedtestmark.com
   tls: true
   type: vless
+  udp: true
   uuid: 75b517db-1f97-4bda-a479-863d988c31a0
   ws-opts:
     path: /vless-ws
@@ -54,21 +55,8 @@ proxies:
     headers:
       Host: looaloooibamoooijji.global.ssl.fastly.net.
     path: /
-- client-fingerprint: firefox
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
-  network: ws
-  port: 8443
-  server: 179.254.115.173
-  servername: de10.pad-sservice.lat
-  tls: true
-  type: vless
-  uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
-  ws-opts:
-    headers:
-      Host: de10.pad-service.com
-    path: /DE10W
 - client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #5'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
   network: ws
   port: 8443
   server: de4.pad-sservice.lat
@@ -81,7 +69,7 @@ proxies:
       Host: de4.pad-service.com
     path: /D14E
 - client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #6'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #5'
   network: ws
   port: 443
   server: de5.pad-sservice.lat
@@ -93,39 +81,77 @@ proxies:
     headers:
       Host: de5.pad-service.com
     path: /DE5W
-- client-fingerprint: chrome
-  name: 🇱🇰[www.v2nodes.com] vless-LK-7...
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #6'
   network: ws
-  port: 8443
-  server: centurylink.es
-  servername: free.sahanwickramasinghe.me
-  tls: true
+  port: 80
+  server: free.sahanwickramasinghe.me
+  tls: false
   type: vless
-  uuid: c136a12c-4260-48a7-a1e6-fbda83a11045
+  uuid: fcdb24e3-5e66-4c45-b89e-ac9441f4dcda
   ws-opts:
     headers:
       Host: free.sahanwickramasinghe.me
     path: /
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
+- encryption: none
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
+  network: tcp
   port: 27774
   server: 5.175.205.190
   tls: false
   type: vless
   uuid: 653137c6-474e-4a3d-9a20-5a5afb3d4a4f
-- name: '🇳🇱[www.v2nodes.com] trojan-NL-... #1'
+- cipher: aes-256-gcm
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1602...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.176.204.18
+  type: ss
+- name: 🇳🇱[www.v2nodes.com] trojan-NL-...
   password: happybirthdaydaniel
   port: 25267
   server: de-bots4.h1cloud.net
   skip-cert-verify: true
   sni: t.me/FuckTheWall
   type: trojan
-- name: 🇩🇪DE_3|1.7MB/s
-  password: None
-  port: 443
-  server: 152.233.20.206
+- auth: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
+  name: '🇩🇪 德国 | DEU #3'
+  password: c0242d1b-db7a-4dcf-95ff-e10a3ef1c1a3
+  port: 4443
+  server: 94.103.169.109
   skip-cert-verify: true
+  sni: de3.shvpn.ru
+  tls: false
+  type: hysteria2
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #5'
+  network: ws
+  port: 443
+  server: 199.232.239.239
+  servername: firefox.com
   tls: true
-  type: http
+  type: vless
+  udp: true
+  uuid: 36805edb-1e85-4199-a59f-117010b70017
+  ws-opts:
+    headers:
+      Host: mpkoe7ypcibr80p102020123.global.ssl.fastly.net
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel?ed=2056
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #6'
+  network: ws
+  port: 2096
+  server: 2.27.13.152
+  servername: st4834a.rumedia-cdn.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d1641bc6-3757-43db-815a-9b3f4d9b0d7e
+  ws-opts:
+    headers:
+      Host: st4834a.rumedia-cdn.com
+    path: /cdn/v3/live
 - name: DE_speednode_0004
   port: 443
   server: 213.109.163.119
@@ -133,64 +159,3 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 🇩🇪DE_5|1.4MB/s
-  password: None
-  port: 9002
-  server: 158.173.154.3
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_6|1.6MB/s
-  port: 9002
-  server: 158.173.154.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_7|1.4MB/s
-  password: None
-  port: 443
-  server: 149.36.50.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_8|3.6MB/s
-  port: 443
-  server: 87.106.223.158
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_9|2.0MB/s
-  password: None
-  port: 9443
-  server: 79.127.156.177
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_10|2.7MB/s
-  password: None
-  port: 9443
-  server: 87.249.132.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-- auth: 146d567c-6335-4e63-a8aa-7ec068642440
-  name: '🇩🇪 德国 | DEU #5'
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  port: 4443
-  server: nlll.obxodvpn.us
-  skip-cert-verify: true
-  sni: nl1.obxodvpn.us
-  tls: false
-  type: hysteria2
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #6'
-  network: xhttp
-  port: 443
-  server: 31.76.2.57
-  servername: 823bcb90.con.fernarchive.online
-  tls: true
-  type: vless
-  udp: true
-  uuid: abca037b-bee5-41cc-a888-0668e4c66176
-  xhttp-opts:
-    path: /conv4/stream/77dd2aeeb94331fbff325bb48850392b
