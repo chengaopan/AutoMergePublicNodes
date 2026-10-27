@@ -1,28 +1,37 @@
 proxies:
-- name: 🇪🇪EE_1|2.1MB/s
-  port: 9443
-  server: 95.153.32.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇪🇪EE_2|3.3MB/s
-  password: None
-  port: 9443
-  server: 95.153.31.66
-  skip-cert-verify: true
-  tls: true
-  type: http
 - client-fingerprint: firefox
-  name: '🇪🇪 爱沙尼亚 | EST #1'
+  name: 🇪🇪[www.v2nodes.com] vless-EE-1...
   network: ws
   port: 8443
   server: 179.254.126.223
   servername: ee2.pad-sservice.lat
   tls: true
   type: vless
-  udp: true
   uuid: 2b0e5676-fb62-4bf0-9607-6e7818421e8e
   ws-opts:
     headers:
       Host: ee2.pad-service.com
     path: /EE2W
+- name: 🇪🇪EE_1|2.7MB/s
+  password: None
+  port: 9443
+  server: 95.153.31.66
+  skip-cert-verify: true
+  tls: true
+  type: http
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇪🇪 爱沙尼亚 | EST #1'
+  network: ws
+  port: 8443
+  server: est.luxes.network
+  servername: est.luxes.network
+  tls: true
+  type: vless
+  udp: true
+  uuid: a9e5d7ed-ce1a-48eb-9767-4de54fcfaba7
+  ws-opts:
+    headers:
+      Host: est.luxes.network
+    path: /assets

@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
   network: ws
   port: 443
   server: wwww.qarvian.ir
@@ -12,8 +12,7 @@ proxies:
     headers:
       Host: albaniaoijji.global.ssl.fastly.net
     path: /
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #6'
-  network: tcp
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
   port: 10002
   server: connect.hondamotor.site
   tls: false
@@ -23,7 +22,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
   network: ws
   port: 443
   server: vpn.kovira.site
@@ -36,10 +35,22 @@ proxies:
       Host: vpn.kovira.site
     path: /ws-738d2d0c5eba7609f3c37de2
 - alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #11'
+  network: tcp
+  port: 8443
+  server: node-uk.connectsuite.org
+  servername: node-uk.connectsuite.org
+  tls: true
+  type: vless
+  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
+- alpn:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #12'
   network: tcp
   port: 443
   server: 186.190.211.188
@@ -48,25 +59,18 @@ proxies:
   tls: true
   type: vless
   uuid: 03fcc618-b93d-6796-6aed-8a38c975d581
-- encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #11'
-  network: ws
-  port: 443
-  server: 159.65.51.189
-  servername: ccc.010304.xyz
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /fp
 - cipher: chacha20-ietf-poly1305
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1605...
+  name: '🇬🇧 英国 | GBR #2'
   password: uvKNudV-N8AUCrykPiyznA
   port: 56137
   server: 177.202.111.18
+  type: ss
+  udp: true
+- cipher: aes-256-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1602...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.176.206.9
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
@@ -80,7 +84,21 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
-- name: 🇬🇧GB_1|3.1MB/s|R002-260618
+- name: 🇬🇧GB_1|1.1MB/s
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇬🇧GB_2|2.4MB/s
+  password: None
+  port: 443
+  server: 185.164.138.156
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_3|3.4MB/s|R002-260618
   password: None
   port: 443
   server: 37.120.233.18
@@ -89,39 +107,64 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 🇬🇧GB_2|3.0MB/s
+- name: 🇬🇧GB_4|2.8MB/s
   password: None
-  port: 443
-  server: 37.120.233.50
+  port: 9443
+  server: 37.120.233.34
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_3|2.8MB/s
+- name: 🇬🇧GB_5|1.1MB/s
   password: None
-  port: 443
-  server: 212.102.63.1
+  port: 9443
+  server: 84.233.178.33
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_4|2.2MB/s
+- name: 🇬🇧GB_6|2.0MB/s
   password: None
   port: 443
   server: 212.102.63.31
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_5|1.6MB/s
-  port: 9443
-  server: 84.17.50.214
-  skip-cert-verify: true
-  tls: true
-  type: http
-- auth: 70043bfa-d6fb-4980-b27e-773e9e8b2004
+- cipher: chacha20-ietf-poly1305
   name: '🇬🇧 英国 | GBR #1'
-  password: 70043bfa-d6fb-4980-b27e-773e9e8b2004
-  port: 443
-  server: 141.0.187.15
-  skip-cert-verify: true
-  sni: crt.onecloudstream.com
+  password: uvKNudV-N8AUCrykPiyznA
+  port: 56137
+  server: 87.236.166.166
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: '🇬🇧 英国 | GBR #3'
+  password: uvKNudV-N8AUCrykPiyznA
+  port: 56137
+  server: 177.202.111.19
+  type: ss
+  udp: true
+- name: '🇬🇧 英国 | GBR #4'
+  network: tcp
+  port: 41432
+  server: rabin.142.251.153.7.savfasf.ir
   tls: false
-  type: hysteria2
+  type: vless
+  udp: true
+  uuid: 09931b77-0f40-4734-9b36-5df6e2308e4e
+  ws-opts:
+    headers:
+      Host: rabin.142.251.153.7.savfasf.ir
+    path: /
+- cipher: chacha20-ietf-poly1305
+  name: '🇬🇧 英国 | GBR #5'
+  password: uvKNudV-N8AUCrykPiyznA
+  port: 56137
+  server: 87.236.166.220
+  type: ss
+  udp: true
+- name: '🇬🇧 英国 | GBR #6'
+  password: 5e4a2c58499345c3
+  port: 20022
+  server: ikuk204.zxom.eu.org
+  skip-cert-verify: true
+  type: trojan
+  udp: true
