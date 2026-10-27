@@ -1,6 +1,16 @@
 proxies:
+- name: 🇫🇷201543 | ⚡️Telegram = t.me/S...
+  obfs: salamander
+  obfs-password: 4klsymrb2lsncw50
+  password: bqkkvfp9zf051rsb
+  port: 31340
+  server: 136.244.114.108
+  skip-cert-verify: false
+  sni: wryyjy31.easyiran.org
+  tls: false
+  type: hysteria2
 - client-fingerprint: firefox
-  name: 🇫🇷[www.v2nodes.com] vless-FR-1...
+  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
   network: ws
   port: 8443
   server: 179.255.176.28
@@ -10,10 +20,12 @@ proxies:
   uuid: 69da3674-4941-468b-96f0-c17cf5b0a047
   ws-opts:
     path: /assets
-- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
+- encryption: none
+  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #4'
   network: ws
   port: 14430
   server: 138.124.70.41
+  servername: 138.124.70.41
   tls: false
   type: vless
   uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
@@ -21,18 +33,22 @@ proxies:
     headers:
       Host: 138.124.70.41
     path: /vless
-- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #5'
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇫🇷 法国 | FRA #2'
   network: ws
-  port: 80
-  server: ov-france1.09vpn.com
-  servername: ov-france1.09vpn.com
-  tls: false
+  port: 443
+  server: 199.232.78.170
+  servername: ssl.fastly.com
+  tls: true
   type: vless
-  uuid: f5c47e9c-914a-4a91-a81e-a5a77bc10fc1
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
   ws-opts:
     headers:
-      Host: ov-france1.09vpn.com
-    path: /vless/
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
 - name: 🇫🇷[www.v2nodes.com] trojan-FR-...
   network: ws
   password: humanity
@@ -45,18 +61,18 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #1'
   network: ws
   password: humanity
   port: 443
-  server: 185.220.100.168
+  server: 185.225.68.232
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
   ws-opts:
     headers:
       Host: www.calmlunch.com
-    path: '%2Fassignment'
+    path: /assignment
 - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #2'
   network: ws
   password: humanity
@@ -97,6 +113,18 @@ proxies:
   password: humanity
   port: 443
   server: 45.130.125.160
+  skip-cert-verify: false
+  sni: www.calmlunch.com
+  type: trojan
+  ws-opts:
+    headers:
+      Host: www.calmlunch.com
+    path: '%2Fassignment'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #6'
+  network: ws
+  password: humanity
+  port: 443
+  server: 185.220.100.168
   skip-cert-verify: false
   sni: www.calmlunch.com
   type: trojan
@@ -158,6 +186,39 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: /assignment
+- name: FR_speednode_0012
+  port: 443
+  server: 82.65.162.76
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇫🇷FR_2|2.1MB/s
+  port: 9443
+  server: 213.139.9.142
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_3|3.0MB/s
+  password: None
+  port: 9443
+  server: 138.199.47.247
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_4|1.7MB/s
+  port: 443
+  server: 84.235.228.156
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_5|2.2MB/s
+  password: None
+  port: 443
+  server: 149.102.245.65
+  skip-cert-verify: true
+  tls: true
+  type: http
 - auth: 4b1be712-774c-4b65-8491-a3339e124a70
   name: '🇫🇷 法国 | FRA #1'
   password: 4b1be712-774c-4b65-8491-a3339e124a70
@@ -167,22 +228,6 @@ proxies:
   sni: fr2-cl3.happy-glonaris.top
   tls: false
   type: hysteria2
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇫🇷 法国 | FRA #2'
-  network: ws
-  port: 443
-  server: 199.232.78.170
-  servername: ssl.fastly.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 88888888-8888-8888-8888-888888888888
-  ws-opts:
-    headers:
-      Host: Appxdn.global.ssl.fastly.net
-    path: /
 - name: FR_speednode_0008
   port: 19362
   server: 51.159.225.197
@@ -206,17 +251,3 @@ proxies:
   type: http
   udp: true
   username: 'null'
-- name: FR_speednode_0011
-  port: 23856
-  server: 51.159.225.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: FR_speednode_0012
-  port: 443
-  server: 82.65.162.76
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
