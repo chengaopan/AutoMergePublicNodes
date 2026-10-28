@@ -11,18 +11,19 @@ proxies:
   tls: true
   type: vless
   uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
-- client-fingerprint: random
-  encryption: none
-  grpc-opts:
-    grpc-service-name: grpc-ru
+- client-fingerprint: chrome
   name: '🇷🇺[www.v2nodes.com] vless-RU-1... #4'
-  network: grpc
+  network: ws
   port: 443
-  server: xsru1.ddnsfree.com
-  servername: xsru1.ddnsfree.com
+  server: 147.45.175.81
+  servername: xsru2.freeddns.org
   tls: true
   type: vless
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  ws-opts:
+    headers:
+      Host: xsru2.freeddns.org
+    path: /wsru
 - encryption: none
   name: '🇷🇺[www.v2nodes.com] vless-RU-1... #5'
   network: ws
@@ -34,3 +35,10 @@ proxies:
   uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   ws-opts:
     path: /
+- name: 🇷🇺RU_1|1.3MB/s
+  password: None
+  port: 1446
+  server: 46.29.166.134
+  skip-cert-verify: true
+  tls: true
+  type: http

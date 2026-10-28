@@ -9,17 +9,6 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: live.gpuwxc84nl.chunk-4022.m4s
-  name: 🇸🇪[www.v2nodes.com] vless-SE-1...
-  network: grpc
-  port: 443
-  server: 150.241.72.161
-  servername: b6i5po18lw.hat.onl
-  tls: true
-  type: vless
-  uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
 - client-fingerprint: random
   name: 🇸🇪[www.v2nodes.com] vless-SE-9...
   network: ws
@@ -33,12 +22,35 @@ proxies:
     headers:
       Host: free.cndyw.ggff.net
     path: pyip=bpb.yousef.isegaro.com
-- cipher: aes-256-gcm
-  name: 🇸🇪[www.v2nodes.com] ss-SE-1560...
-  password: AxIYWtskJWIIaefW
-  port: 8388
-  server: 70.34.212.124
-  type: ss
+- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
+  network: ws
+  port: 14430
+  server: 5.178.109.174
+  tls: false
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  ws-opts:
+    headers:
+      Host: 5.178.109.174
+    path: /vless
+- name: 🇸🇪SE_1|1.0MB/s
+  port: 443
+  server: 146.70.242.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇸🇪SE_2|1.5MB/s
+  port: 443
+  server: 149.50.216.65
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇸🇪SE_3|1.3MB/s
+  port: 443
+  server: 217.210.129.243
+  skip-cert-verify: true
+  tls: true
+  type: http
 - http-opts:
     headers:
       Host:
