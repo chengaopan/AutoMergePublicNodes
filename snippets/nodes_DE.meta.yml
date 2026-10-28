@@ -54,9 +54,9 @@ proxies:
   tls: false
   type: vless
   uuid: 653137c6-474e-4a3d-9a20-5a5afb3d4a4f
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
   port: 2112
-  server: 157.90.175.178
+  server: mci.amir12.ir
   tls: false
   type: vless
   uuid: 36c3dcc2-17b6-4478-b8a7-3978e6d5afe9
@@ -66,73 +66,17 @@ proxies:
   port: 19999
   server: 185.176.204.18
   type: ss
-- name: '🇩🇪 德国 | DEU #5'
+- name: 🇩🇪[www.v2nodes.com] trojan-DE-...
   password: happybirthdaydaniel
   port: 25267
   server: de-bots4.h1cloud.net
   skip-cert-verify: true
   sni: t.me/FuckTheWall
   type: trojan
-  udp: true
-- name: 🇩🇪DE_1|2.1MB/s
-  password: None
-  port: 443
-  server: 79.127.156.177
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_2|2.0MB/s
-  password: None
-  port: 443
-  server: 79.76.126.155
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_3|2.6MB/s|R002-260618
-  password: None
-  port: 443
-  server: 149.36.50.129
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-- name: 🇩🇪DE_4|1.1MB/s
-  password: None
-  port: 9443
-  server: 87.249.132.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_5|1.7MB/s
-  password: None
-  port: 443
-  server: 152.233.20.206
-  skip-cert-verify: true
-  tls: true
-  type: http
-- auth: 10be1dad-9952-4c5e-aa30-db435f69b727
-  name: '🇩🇪 德国 | DEU #1'
-  password: 10be1dad-9952-4c5e-aa30-db435f69b727
-  port: 4444
-  server: fl2.nexfile.net
-  skip-cert-verify: true
-  sni: fl2.nexfile.net
-  tls: false
-  type: hysteria2
-- auth: 10be1dad-9952-4c5e-aa30-db435f69b727
-  name: '🇩🇪 德国 | DEU #2'
-  password: 10be1dad-9952-4c5e-aa30-db435f69b727
-  port: 4444
-  server: 144.31.239.226
-  skip-cert-verify: true
-  sni: fl2.nexfile.net
-  tls: false
-  type: hysteria2
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: 🇩🇪 德国 | DEU 4
+  name: 🇩🇪 德国 | DEU 3
   network: ws
   port: 443
   server: lvi.su
@@ -145,10 +89,90 @@ proxies:
     headers:
       Host: lvi.su
     path: /vpn-relay?token=27fede42482b3c29d4c1c9640876c250&pool=whitelist2
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪 德国 | DEU #4'
+  network: ws
+  port: 443
+  server: wqHbVOk8YR9ZAfBY.v.3dns.vip
+  servername: wqHbVOk8YR9ZAfBY.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b664cc36-4896-454b-bb9c-1377c76176de
+  ws-opts:
+    headers:
+      Host: wqHbVOk8YR9ZAfBY.v.3dns.vip
+    path: /ws-vmess
+- client-fingerprint: qq
+  name: '🇩🇪 德国 | DEU #5'
+  network: xhttp
+  port: 443
+  server: 188.72.103.4
+  servername: cdn-1.frdmhere.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 3225c52d-bc6c-4b53-ba42-4747a37f4f12
+  xhttp-opts:
+    host: cdn-1.frdmhere.com
+    mode: packet-up
+    path: /api/v2/events/ingest
+    seq-key: x_seq
+    seq-placement: path
+    session-key: x_session
+    session-placement: path
+    uplink-data-key: X-Data
+    uplink-data-placement: header
+    uplink-http-method: GET
+    x-padding-bytes: 1-16
+    x-padding-header: Referer
+    x-padding-key: utm_source
+    x-padding-method: tokenish
+    x-padding-obfs-mode: true
+    x-padding-placement: queryInHeader
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪 德国 | DEU #6'
+  network: ws
+  port: 443
+  server: z0PQNWn0HY2FExTr.v.3dns.vip
+  servername: z0PQNWn0HY2FExTr.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  uuid: b664cc36-4896-454b-bb9c-1377c76176de
+  ws-opts:
+    headers:
+      Host: z0PQNWn0HY2FExTr.v.3dns.vip
+    path: /ws-vmess
+- auth: 10be1dad-9952-4c5e-aa30-db435f69b727
+  name: '🇩🇪 德国 | DEU #7'
+  password: 10be1dad-9952-4c5e-aa30-db435f69b727
+  port: 4444
+  server: 144.31.239.226
+  skip-cert-verify: true
+  sni: fl2.nexfile.net
+  tls: false
+  type: hysteria2
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #8'
+  network: xhttp
+  port: 443
+  server: 823bcb90.con.fernarchive.online
+  servername: 823bcb90.con.fernarchive.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: abca037b-bee5-41cc-a888-0668e4c66176
+  xhttp-opts:
+    host: 823bcb90.con.fernarchive.online
+    mode: auto
+    path: /conv4/stream/77dd2aeeb94331fbff325bb48850392b
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #4'
+  name: '🇩🇪 德国 | DEU #3'
   network: ws
   port: 443
   server: lvi.su

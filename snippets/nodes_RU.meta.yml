@@ -1,30 +1,27 @@
 proxies:
-- alpn:
-  - h2
-  client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: vlgrpc
-  name: 🇷🇺[www.v2nodes.com] vless-RU-1...
-  network: grpc
+- name: 🇷🇺[www.v2nodes.com] vless-RU-1...
+  port: 443
+  server: swz.proxyplankton.ru
+  tls: true
+  type: vless
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
+- name: '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
   port: 443
   server: 201.24.121.243
-  servername: kk-ru24a1.testkknegr.online
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
 - client-fingerprint: random
+  encryption: none
   grpc-opts:
-    grpc-mode: gun
     grpc-service-name: grpc-ru
-  name: 🇷🇺 俄罗斯 | RUS
+  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #4'
   network: grpc
   port: 443
   server: xsru1.ddnsfree.com
   servername: xsru1.ddnsfree.com
   tls: true
   type: vless
-  udp: true
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
 - encryption: none
   name: '🇷🇺[www.v2nodes.com] vless-RU-1... #5'
@@ -37,10 +34,3 @@ proxies:
   uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   ws-opts:
     path: /
-- name: 🇷🇺RU_1|1.5MB/s
-  password: None
-  port: 1446
-  server: 46.29.166.134
-  skip-cert-verify: true
-  tls: true
-  type: http

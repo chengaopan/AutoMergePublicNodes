@@ -20,34 +20,37 @@ proxies:
   tls: true
   type: vless
   uuid: 7f6adf9d-42f1-4fec-ab22-fb7f66bf3adc
-- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #3'
+- client-fingerprint: random
+  name: 🇸🇪[www.v2nodes.com] vless-SE-9...
   network: ws
-  port: 14430
-  server: 5.178.109.174
-  tls: false
+  port: 443
+  server: 157.22.128.7
+  servername: free.cndyw.ggff.net
+  tls: true
   type: vless
-  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  uuid: 04c808e2-0b59-47b0-a54b-32fc7ef1c902
   ws-opts:
     headers:
-      Host: 5.178.109.174
-    path: /vless
+      Host: free.cndyw.ggff.net
+    path: pyip=bpb.yousef.isegaro.com
 - cipher: aes-256-gcm
   name: 🇸🇪[www.v2nodes.com] ss-SE-1560...
   password: AxIYWtskJWIIaefW
   port: 8388
   server: 70.34.212.124
   type: ss
-- name: 🇸🇪SE_1|2.1MB/s
-  password: None
+- http-opts:
+    headers:
+      Host:
+      - play.googleapis.com
+    method: GET
+    path:
+    - /
+  name: '🇸🇪 瑞典 | SWE #1'
+  network: http
   port: 443
-  server: 146.70.242.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇸🇪SE_2|1.6MB/s
-  password: None
-  port: 443
-  server: 79.142.77.63
-  skip-cert-verify: true
-  tls: true
-  type: http
+  server: 51.20.192.255
+  tls: false
+  type: vless
+  udp: true
+  uuid: 7060231d-b9ba-495f-a218-bf427940cf3e
