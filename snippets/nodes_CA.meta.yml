@@ -1,12 +1,5 @@
 proxies:
-- name: 🇨🇦[www.v2nodes.com] vless-CA-1...
-  port: 2093
-  server: 213.152.165.203
-  tls: false
-  type: vless
-  uuid: 0b418782-e023-447e-ba99-e66b84ff118d
 - name: '🇨🇦[www.v2nodes.com] vless-CA-1... #3'
-  network: tcp
   port: 8080
   server: milo.rubinaz.xyz
   servername: milo.rubinaz.xyz
@@ -55,23 +48,31 @@ proxies:
   port: 8119
   server: 51.79.64.198
   type: ss
-- cipher: aes-256-cfb
-  name: 🇨🇦CA_1|4.0MB/s
-  password: amazonskr05
-  port: 443
-  server: 3.99.147.49
+- cipher: aes-256-gcm
+  name: 🇨🇦[www.v2nodes.com] ss-CA-1538...
+  password: zDNVedRFPQexG9v
+  port: 445
+  server: 51.222.12.127
   type: ss
-  udp: true
-- name: 🇨🇦CA_2|2.2MB/s
-  port: 443
-  server: 206.223.161.47
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇨🇦CA_3|1.2MB/s
+- name: 🇨🇦CA_1|1.2MB/s
   password: None
-  port: 443
-  server: 206.223.183.21
+  port: 9443
+  server: 198.44.157.27
   skip-cert-verify: true
   tls: true
   type: http
+- client-fingerprint: chrome
+  name: '🇨🇦 加拿大 | CAN #1'
+  network: tcp
+  port: 32355
+  server: ca001.zestapp778.com
+  servername: ca001.zestapp778.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  ws-opts:
+    headers:
+      Host: ca001.zestapp778.com
+    path: /
+  xudp: true

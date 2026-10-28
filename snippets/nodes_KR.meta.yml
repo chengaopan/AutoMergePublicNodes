@@ -1,8 +1,8 @@
 proxies:
 - cipher: aes-256-gcm
   name: 🇰🇷[www.v2nodes.com] ss-KR-1185...
-  password: PCnnH6SQSnfoS27
-  port: 8091
+  password: TEzjfAYq2IjtuoS
+  port: 6697
   server: 141.164.45.187
   type: ss
 - alterId: 0
@@ -30,36 +30,25 @@ proxies:
   type: trojan
 - alterId: 0
   cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 🇰🇷KR_1|1.0MB/s
-  network: http
-  port: 80
-  server: 43.155.199.22
-  tls: false
-  type: vmess
-  uuid: 3722ad16-f3e1-4406-b04a-929b529d8e0d
-- name: 🇰🇷KR_2|4.9MB/s
-  port: 1080
-  server: 144.24.94.153
-  skip-cert-verify: true
-  type: http
-- auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  fingerprint: 89:61:86:FE:B2:0C:B7:40:31:87:A4:5F:F3:BD:5D:DC:8B:FB:DD:41:9D:77:9D:55:D7:86:18:9D:36:73:1A:69
   name: '🇰🇷 韩国 | KOR #1'
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  network: ws
   port: 443
-  server: 52.78.45.69
+  server: UNhdjTDyIk9ro8lw.v.3dns.vip
+  servername: UNhdjTDyIk9ro8lw.v.3dns.vip
   skip-cert-verify: true
-  sni: www.bing.com
+  tls: true
+  type: vmess
+  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
+  ws-opts:
+    headers:
+      Host: UNhdjTDyIk9ro8lw.v.3dns.vip
+    path: /ws-vmess
+- name: '🇰🇷 韩国 | KOR #2'
+  network: ws
+  port: 25555
+  server: 152.69.226.63
   tls: false
-  type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: '🇰🇷 韩国 | KOR #2'
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  port: 8443
-  server: 52.78.45.69
-  type: ss
-  udp: true
+  type: vless
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  ws-opts:
+    path: /
