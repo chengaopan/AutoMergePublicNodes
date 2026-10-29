@@ -1,8 +1,26 @@
 proxies:
+- name: 🇫🇷FR-🚀@VPNine1
+  password: 1953e43b-605c-4262-83eb-41a80646b801
+  port: 443
+  server: 31.185.105.12
+  sni: fr.song69.fun
+  tls: false
+  type: hysteria2
+- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
+  network: ws
+  port: 14430
+  server: 138.124.70.41
+  tls: false
+  type: vless
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  ws-opts:
+    headers:
+      Host: 138.124.70.41
+    path: /vless
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
+  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #4'
   network: ws
   port: 443
   server: 199.232.78.170
@@ -39,12 +57,17 @@ proxies:
       Host: www.calmlunch.com
     path: /assignment
 - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #2'
+  network: ws
   password: humanity
   port: 443
   server: 45.87.41.18
+  skip-cert-verify: false
+  sni: www.calmlunch.com
   type: trojan
   ws-opts:
-    path: '%2Fassignment'
+    headers:
+      Host: www.calmlunch.com
+    path: /assignment
 - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #3'
   network: ws
   password: humanity
@@ -134,53 +157,73 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: 🇫🇷FR_3|1.3MB/s
+- name: FR_speednode_0012
+  port: 443
+  server: 82.65.162.76
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇫🇷FR_2|1.2MB/s
+  port: 443
+  server: 103.82.101.43
+  skip-cert-verify: true
+  sni: 76d1d3ecadca44efa2339867d7dfc9a1-8e928736d0f8dbdc.apache-iv.com
+  tls: true
+  type: http
+- name: 🇫🇷FR_3|1.9MB/s
+  port: 443
+  server: 103.82.101.44
+  skip-cert-verify: true
+  sni: f3a61d8406d537345747f99f8a281007-3f754ed5da1bba09.apache-iv.com
+  tls: true
+  type: http
+- name: 🇫🇷FR_4|1.6MB/s
+  password: None
+  port: 9443
+  server: 213.139.9.142
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_5|3.0MB/s
   password: None
   port: 9443
   server: 138.199.47.247
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇫🇷FR_4|2.1MB/s
+- name: 🇫🇷FR_6|3.5MB/s
+  password: None
+  port: 443
+  server: 82.66.235.221
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇫🇷FR_7|2.5MB/s
   password: None
   port: 443
   server: 149.102.245.65
   skip-cert-verify: true
   tls: true
   type: http
-- name: FR_speednode_0008
-  port: 19362
-  server: 51.159.225.197
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  name: '🇫🇷 法国 | FRA #1'
+  network: tcp
+  port: 28484
+  server: fr001.zestapp778.com
+  servername: fr001.zestapp778.com
   tls: true
-  type: http
+  type: vless
   udp: true
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+  ws-opts:
+    headers:
+      Host: fr001.zestapp778.com
+    path: /
+  xudp: true
 - name: FR_speednode_0009
   port: 8090
   server: 83.206.1.225
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: FR_speednode_0010
-  password: 'null'
-  port: 23856
-  server: 51.159.225.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-- name: FR_speednode_0011
-  port: 23856
-  server: 51.159.225.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: FR_speednode_0012
-  port: 443
-  server: 82.65.162.76
   skip-cert-verify: true
   tls: true
   type: http
