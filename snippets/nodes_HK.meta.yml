@@ -1,15 +1,19 @@
 proxies:
 - client-fingerprint: chrome
   name: 🇭🇰[www.v2nodes.com] vless-HK-1...
-  network: tcp
-  port: 59746
-  server: hk013.zestapp778.com
-  servername: hk013.zestapp778.com
-  tls: true
+  network: ws
+  port: 1443
+  server: 38.76.180.144
+  servername: 38.76.180.144
+  tls: false
   type: vless
-  uuid: 99fa1d27-b252-4cba-b04d-50c3d0873700
+  uuid: d98b67d4-024a-4bba-91e2-e6ebece6df11
+  ws-opts:
+    headers:
+      Host: 38.76.180.144
+    path: /vless-ws
 - client-fingerprint: chrome
-  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #4'
+  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #5'
   network: ws
   port: 443
   server: px2.5ibtc.cn
@@ -26,7 +30,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #5'
+  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #6'
   network: tcp
   port: 11907
   server: 195.58.144.56
@@ -34,19 +38,6 @@ proxies:
   tls: true
   type: vless
   uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-- client-fingerprint: chrome
-  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #6'
-  network: ws
-  port: 8443
-  server: 103.148.73.173
-  servername: ty986gfazs.cainiaohub.xyz
-  tls: true
-  type: vless
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  ws-opts:
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
 - name: 🇭🇰[www.v2nodes.com] trojan-HK-...
   password: 29086912-33e4-4e06-ba2b-60f1a195864f
   port: 24999
@@ -165,92 +156,25 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #1'
-  network: ws
+- name: 🇭🇰HK_1|1.4MB/s
+  port: 31343
+  server: 120.232.204.58
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇭🇰 香港 | HKG
+  password: 0324fbc29561
   port: 443
-  server: 47.243.153.153
+  server: 56481.df6h451rh.xin
   skip-cert-verify: true
-  tls: true
-  type: vmess
+  sni: images.ctfassets.net
+  type: anytls
   udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: i2psm3knof5qjjix.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #2'
-  network: ws
+- name: 🇭🇰 香港 | HKG 2
+  password: 0324fbc29561
   port: 443
-  server: 8.217.254.88
-  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
+  server: 654968169.df6h451rh.xin
   skip-cert-verify: true
-  tls: true
-  type: vmess
+  sni: images.ctfassets.net
+  type: anytls
   udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
-    path: /ws-vmess
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #3'
-  network: ws
-  port: 443
-  server: lcv8v9l7oyamxxfz.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
-  ws-opts:
-    headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
-    path: /ws-vmess
-- client-fingerprint: chrome
-  name: '🇭🇰 香港 | HKG #4'
-  network: ws
-  port: 8443
-  server: 103.180.20.108
-  servername: ty986gfazs.cainiaohub.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: c1c04450-bf71-4049-ad0c-9cf6d94d9f1f
-  ws-opts:
-    headers:
-      Host: ty986gfazs.cainiaohub.xyz
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb530
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #5'
-  network: ws
-  port: 36703
-  server: 47.244.120.197
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  ws-opts:
-    path: /arki
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #7'
-  network: ws
-  port: 443
-  server: euu1yalfmcqvljex.v.3dns.vip
-  servername: euu1yalfmcqvljex.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-  ws-opts:
-    headers:
-      Host: euu1yalfmcqvljex.v.3dns.vip
-    path: /ws-vmess

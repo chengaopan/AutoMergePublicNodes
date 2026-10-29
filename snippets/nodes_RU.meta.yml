@@ -1,18 +1,41 @@
 proxies:
-- name: 🇷🇺[www.v2nodes.com] vless-RU-1...
+- client-fingerprint: random
+  grpc-opts:
+    grpc-service-name: grpc-ru
+  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #3'
+  network: grpc
   port: 443
-  server: 201.24.121.243
+  server: xssite.webredirect.org
+  servername: xssite.webredirect.org
   tls: true
   type: vless
-  uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
-- encryption: none
-  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #3'
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇷🇺 俄罗斯 | RUS #2'
   network: ws
   port: 8443
   server: 194.87.143.165
   servername: wsru1.wba-pn.ru
   tls: true
   type: vless
+  udp: true
   uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
   ws-opts:
     path: /
+- cipher: aes-256-gcm
+  name: 🇷🇺[www.v2nodes.com] ss-RU-1607...
+  password: Lpq5UPVHtQYiuB9jEUNc2WkeIYCUH9DE
+  port: 18443
+  server: 195.58.49.167
+  type: ss
+- grpc-opts:
+    grpc-service-name: grpc-video-call
+  name: 🇷🇺 俄罗斯 | RUS 5
+  network: grpc
+  password: Pass-Client-1
+  port: 8446
+  server: 171.22.119.74
+  skip-cert-verify: true
+  type: trojan
+  udp: true
