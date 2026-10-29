@@ -19,12 +19,6 @@ proxies:
   tls: false
   type: vless
   uuid: c6362720-0931-4b91-b187-d8ecf3149734
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
-  port: 8443
-  server: node-uk.connectsuite.org
-  tls: true
-  type: vless
-  uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧[www.v2nodes.com] ss-GB-1605...
   password: uvKNudV-N8AUCrykPiyznA
@@ -37,35 +31,60 @@ proxies:
   port: 19999
   server: 185.176.206.9
   type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
-  password: shadowsocks
-  port: 443
-  server: 158.173.24.73
-  type: ss
-- name: 🇬🇧GB_1|3.2MB/s
+- name: 🇬🇧GB_1|1.6MB/s
   password: None
-  port: 9443
-  server: 84.17.50.214
+  port: 443
+  server: 212.102.63.61
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_2|3.0MB/s
-  password: None
-  port: 9443
-  server: 84.17.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: chrome
-  name: '🇬🇧 英国 | GBR #1'
-  network: xhttp
+- client-fingerprint: qq
+  name: 🇬🇧GB_2|1.7MB/s
+  network: ws
   port: 443
-  server: 144.31.213.229
-  servername: 6d160a52.con.fernarchive.online
+  server: 92.113.107.120
+  servername: indigostar.click
+  skip-cert-verify: false
+  sni: indigostar.click
   tls: true
   type: vless
   udp: true
-  uuid: abca037b-bee5-41cc-a888-0668e4c66176
+  uuid: dbda40e2-25b5-416c-8d35-56d07e8dcdbc
+  ws-opts:
+    path: /ws
+- name: 🇬🇧GB_3|2.5MB/s
+  password: None
+  port: 443
+  server: 84.17.50.193
+  skip-cert-verify: true
+  tls: true
+  type: http
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: edge
+  name: '🇬🇧 英国 | GBR #1'
+  network: xhttp
+  port: 9444
+  server: ru2.radiolumens.uk
+  servername: ru2.radiolumens.uk
+  tls: true
+  type: vless
+  udp: true
+  uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
   xhttp-opts:
-    path: /conv4/stream/77dd2aeeb94331fbff325bb48850392b
+    host: ru2.radiolumens.uk
+    mode: auto
+    path: /beru-uk
+- client-fingerprint: firefox
+  name: '🇬🇧 英国 | GBR #2'
+  network: ws
+  port: 443
+  server: 92.113.107.120
+  servername: indigostar.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: dbda40e2-25b5-416c-8d35-56d07e8dcdbc
+  ws-opts:
+    path: /ws
