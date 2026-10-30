@@ -9,14 +9,17 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: 🇸🇪[www.v2nodes.com] vless-SE-1...
+- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
   network: ws
   port: 14430
   server: 5.178.109.174
+  servername: 5.178.109.174
   tls: false
   type: vless
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   ws-opts:
+    headers:
+      Host: 5.178.109.174
     path: /vless
 - cipher: chacha20-ietf-poly1305
   name: 🇸🇪[www.v2nodes.com] ss-SE-1608...
@@ -24,6 +27,26 @@ proxies:
   port: 8388
   server: 159.194.251.76
   type: ss
+- cipher: aes-256-gcm
+  name: 🇸🇪[www.v2nodes.com] ss-SE-1560...
+  password: AxIYWtskJWIIaefW
+  port: 8388
+  server: 70.34.212.124
+  type: ss
+- name: 🇸🇪SE_1|1.1MB/s
+  password: None
+  port: 443
+  server: 217.210.129.243
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇸🇪SE_2|3.0MB/s
+  password: None
+  port: 443
+  server: 79.142.77.63
+  skip-cert-verify: true
+  tls: true
+  type: http
 - client-fingerprint: random
   name: '🇸🇪 瑞典 | SWE #2'
   network: ws
