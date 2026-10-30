@@ -13,7 +13,7 @@ proxies:
       Host: 38.76.180.144
     path: /vless-ws
 - client-fingerprint: chrome
-  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #5'
+  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #4'
   network: ws
   port: 443
   server: px2.5ibtc.cn
@@ -30,7 +30,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   encryption: none
-  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #6'
+  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #5'
   network: tcp
   port: 11907
   server: 195.58.144.56
@@ -38,12 +38,35 @@ proxies:
   tls: true
   type: vless
   uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #6'
+  network: ws
+  port: 2087
+  server: ggggoods.brand-netprime.com
+  servername: b5.dl-netprime.com
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 16571fd5-5c8a-44ae-99fa-a354565e500b
+  ws-opts:
+    headers:
+      Host: b5.dl-netprime.com
+    path: /ws-tls
 - name: 🇭🇰[www.v2nodes.com] trojan-HK-...
   password: 29086912-33e4-4e06-ba2b-60f1a195864f
   port: 24999
   server: tjflb.m2k699.com
   skip-cert-verify: true
   sni: www.itunes.com
+  type: trojan
+- name: '🇭🇰[www.v2nodes.com] trojan-HK-... #1'
+  password: XuMweB2PWs
+  port: 45464
+  server: 2.27.109.179
+  sni: 2.27.109.179.sslip.io
   type: trojan
 - alterId: 2
   cipher: auto
@@ -156,13 +179,63 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇭🇰HK_1|1.4MB/s
+- name: 🇭🇰HK_2|5.2MB/s
   port: 31343
   server: 120.232.204.58
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇭🇰 香港 | HKG
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #1'
+  network: ws
+  port: 23026
+  server: 47.244.120.197
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  ws-opts:
+    headers:
+      Host: 47.244.120.197
+    path: /arki
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #2'
+  network: ws
+  port: 443
+  server: i2psm3knof5qjjix.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: i2psm3knof5qjjix.v.3dns.vip
+    path: /ws-vmess
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - openai.com
+    method: GET
+    path:
+    - /QQqun-737805443
+  name: '🇭🇰 香港 | HKG #3'
+  network: http
+  port: 52080
+  server: 47.242.81.94
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e47b9f77-60e4-4738-8d53-772b6002e146
+- name: 🇭🇰 香港 | HKG 4
   password: 0324fbc29561
   port: 443
   server: 56481.df6h451rh.xin
@@ -170,11 +243,19 @@ proxies:
   sni: images.ctfassets.net
   type: anytls
   udp: true
-- name: 🇭🇰 香港 | HKG 2
-  password: 0324fbc29561
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #4'
+  network: ws
   port: 443
-  server: 654968169.df6h451rh.xin
+  server: 8.217.254.88
+  servername: 2b9hwy8ocx7q74nm.v.3dns.vip
   skip-cert-verify: true
-  sni: images.ctfassets.net
-  type: anytls
+  tls: true
+  type: vmess
   udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: 2b9hwy8ocx7q74nm.v.3dns.vip
+    path: /ws-vmess

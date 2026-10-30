@@ -13,17 +13,20 @@ proxies:
   tls: true
   type: vless
   uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
-- encryption: none
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
-  network: tcp
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
   port: 10002
   server: connect.hondamotor.site
   tls: false
   type: vless
   uuid: c6362720-0931-4b91-b187-d8ecf3149734
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #10'
+  network: tcp
   port: 8443
   server: 51.38.71.147
+  servername: node-uk.connectsuite.org
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
@@ -39,9 +42,15 @@ proxies:
   port: 19999
   server: 185.176.206.9
   type: ss
-- client-fingerprint: chrome
+- cipher: aes-128-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
+  password: shadowsocks
+  port: 443
+  server: 158.173.24.73
+  type: ss
+- client-fingerprint: firefox
   encryption: none
-  name: 🇬🇧GB_1|2.0MB/s
+  name: '🇬🇧 英国 | GBR #1'
   network: ws
   port: 443
   server: 92.113.107.120
@@ -51,56 +60,55 @@ proxies:
   udp: true
   uuid: dbda40e2-25b5-416c-8d35-56d07e8dcdbc
   ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Linux; Android 6.0; vivo 1606 Build/MMB29M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/53.0.2785.124 Mobile Safari/537.36
     path: /ws
   xudp: true
-- name: 🇬🇧GB_2|2.2MB/s
+- name: 🇬🇧GB_2|1.2MB/s
   port: 443
   server: 37.120.233.50
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_3|1.6MB/s
+- name: 🇬🇧GB_3|2.0MB/s
   port: 443
   server: 37.120.233.18
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_4|2.6MB/s
-  password: None
+- name: 🇬🇧GB_4|2.0MB/s
   port: 443
   server: 185.164.138.156
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_5|2.2MB/s|P002-260618
+- name: 🇬🇧GB_5|1.2MB/s
   password: None
   port: 443
-  server: 212.102.63.31
+  server: 84.17.50.193
   skip-cert-verify: true
-  sub_tag: P002-260618
   tls: true
   type: http
-  udp: true
-- name: 🇬🇧GB_6|1.2MB/s
+- name: 🇬🇧GB_6|1.1MB/s
+  password: None
+  port: 9443
+  server: 84.17.50.214
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_7|3.7MB/s
+  password: None
+  port: 9443
+  server: 84.17.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_8|3.8MB/s
   password: None
   port: 443
   server: 212.102.63.61
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_7|3.1MB/s
-  password: None
-  port: 443
-  server: 212.102.63.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_8|1.1MB/s
-  password: None
+- name: 🇬🇧GB_9|2.9MB/s
   port: 9443
   server: 84.233.178.33
   skip-cert-verify: true

@@ -9,8 +9,7 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- encryption: none
-  name: 🇸🇪[www.v2nodes.com] vless-SE-1...
+- name: 🇸🇪[www.v2nodes.com] vless-SE-1...
   network: ws
   port: 14430
   server: 5.178.109.174
@@ -21,28 +20,14 @@ proxies:
     headers:
       Host: 5.178.109.174
     path: /vless
-- name: 🇸🇪SE_1|1.1MB/s
-  port: 443
-  server: 217.210.129.243
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇸🇪SE_2|2.0MB/s
-  password: None
+- name: 🇸🇪SE_1|2.1MB/s
   port: 443
   server: 146.70.242.130
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇸🇪SE_3|3.1MB/s
-  password: None
-  port: 443
-  server: 79.142.77.63
-  skip-cert-verify: true
-  tls: true
-  type: http
 - client-fingerprint: chrome
-  name: '🇸🇪 瑞典 | SWE #1'
+  name: '🇸🇪 瑞典 | SWE #2'
   network: xhttp
   port: 33744
   server: 132.243.231.14
@@ -55,27 +40,12 @@ proxies:
     host: se-5060f39afb.shamanapp.online
     mode: stream-up
     path: /ShamanXHTTP2026
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: assets
-  name: 🇸🇪 瑞典 | SWE 3
-  network: grpc
-  port: 443
-  server: 193.233.252.100
-  servername: swe.qik-fin.uk
-  tls: true
-  type: vless
-  udp: true
-  uuid: 76ef5ab3-7075-4e23-b445-f3b1bd05d431
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: ''
+- auth: a0052f4f-4c63-0002-a16f-ab2d5d718cd3
   name: '🇸🇪 瑞典 | SWE #3'
-  network: grpc
+  password: a0052f4f-4c63-0002-a16f-ab2d5d718cd3
   port: 443
-  server: 193.233.252.100
-  servername: swe.qik-fin.uk
-  tls: true
-  type: vless
-  uuid: 76ef5ab3-7075-4e23-b445-f3b1bd05d431
+  server: 192.142.23.46
+  skip-cert-verify: true
+  sni: diffoscope.com
+  tls: false
+  type: hysteria2
