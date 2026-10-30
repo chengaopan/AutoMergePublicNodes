@@ -1,16 +1,12 @@
 proxies:
-- name: 🇸🇬[www.v2nodes.com] vless-SG
-  network: ws
+- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #10'
   port: 443
-  server: 172.64.152.241
-  servername: ccc.010304.xyz
-  tls: true
+  server: chatgpt.com
+  tls: false
   type: vless
   uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /fp=chromefp=chrome
+    path: /
 - name: '🇸🇬[www.v2nodes.com] vless-SG #1'
   network: ws
   port: 443
@@ -33,56 +29,38 @@ proxies:
     headers:
       Host: parsa-panel-u48we.wotic15356.workers.dev
     path: /pulsefp=chrome
-- encryption: none
-  name: '🇸🇬[www.v2nodes.com] vless-SG #3'
-  network: ws
-  port: 8880
-  server: 154.218.15.30
-  tls: false
-  type: vless
-  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
-  ws-opts:
-    headers:
-      Host: vms.lifetime47.workers.dev
-    path: /
 - client-fingerprint: chrome
   name: 🇸🇬[www.v2nodes.com] vless-SG-1...
   network: tcp
+  port: 56984
+  server: sg1.zestapp778.com
+  servername: sg1.zestapp778.com
+  tls: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+- client-fingerprint: firefox
+  encryption: none
+  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #1'
+  network: tcp
   port: 443
-  server: sg003.zestapp778.com
+  server: 45.77.40.28
   servername: sg003.zestapp778.com
   tls: true
   type: vless
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #1'
+- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #2'
   network: ws
   port: 443
   server: v2.drsachi.com
   tls: false
   type: vless
   uuid: 270c3fa5-0293-4d68-875c-6cdc3bdc5b84
-- encryption: none
-  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #6'
-  network: ws
-  port: 2096
-  server: 139.162.27.96
-  servername: free-server.techsonic.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
-  ws-opts:
-    headers:
-      Host: free-server.techsonic.dev
-    path: /free-server.techsonic.dev
-- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #11'
-  port: 443
-  server: chatgpt.com
+- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #9'
+  port: 19825
+  server: 146.235.16.130
   tls: false
   type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    path: /
+  uuid: 2d1ad594-80a4-4bfb-87a6-038e39701f51
 - encryption: none
   name: 🇸🇬[www.v2nodes.com] vless-SG-9...
   network: ws
@@ -95,11 +73,11 @@ proxies:
     headers:
       Host: bdfba-cool-tree-b580.v8fz4kbv.workers.dev
     path: /
-- encryption: none
-  name: '🇸🇬[www.v2nodes.com] vless-SG-9... #1'
+- name: '🇸🇬[www.v2nodes.com] vless-SG-9... #1'
   network: ws
   port: 2082
-  server: 172.64.150.28
+  server: 104.18.35.86
+  servername: hhlfy.twiladaphne.ndjp.net
   tls: false
   type: vless
   uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
@@ -107,10 +85,23 @@ proxies:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
     path: /fp
+- encryption: none
+  name: '🇸🇬[www.v2nodes.com] vless-SG-9... #2'
+  network: ws
+  port: 8880
+  server: 173.245.49.30
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime36.workers.dev
+    path: /
 - name: 🇸🇬[www.v2nodes.com] trojan-SG-...
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 139.180.146.200
+  sni: 139.180.146.200
   type: trojan
 - alterId: 0
   cipher: auto
@@ -149,4 +140,48 @@ proxies:
   server: 7d0a2gz0-7a0c.aws-agent.net
   skip-cert-verify: true
   sni: m.ctrip.com
+  type: trojan
+- name: 🇸🇬 新加坡 | SGP
+  network: ws
+  password: '!!str 123456'
+  port: 2096
+  server: 104.18.35.86
+  skip-cert-verify: true
+  sni: 321dfbc6.uir-9i6.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 321dfbc6.uir-9i6.pages.dev
+    path: /
+- client-fingerprint: chrome
+  name: '🇸🇬 新加坡 | SGP #3'
+  network: ws
+  port: 443
+  server: 104.18.41.86
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
+- auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  fingerprint: C1:FD:40:94:1F:91:9B:5C:78:96:24:40:97:F2:2D:9D:95:8E:62:5C:D9:58:B7:5F:34:CC:FA:42:18:1F:50:B2
+  name: '🇸🇬 新加坡 | SGP #4'
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 443
+  server: 54.169.179.101
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
+- name: '🇸🇬 新加坡 | SGP #1'
+  password: '!!str 123456'
+  port: 2096
+  server: 104.18.35.86
+  skip-cert-verify: true
+  sni: 321dfbc6.uir-9i6.pages.dev
   type: trojan

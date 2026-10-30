@@ -13,6 +13,52 @@ proxies:
   tls: true
   type: vless
   uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
+  port: 443
+  server: uk.2ul.top
+  tls: false
+  type: vless
+  uuid: 77479eaf-c35e-4088-ae47-a2beb88a7272
+- encryption: none
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
+  network: tcp
+  port: 10002
+  server: connect.hondamotor.site
+  tls: false
+  type: vless
+  uuid: c6362720-0931-4b91-b187-d8ecf3149734
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+  port: 443
+  server: 83.147.18.3
+  tls: false
+  type: vless
+  uuid: 9f61cdf4-810d-4052-bbc7-2da0c8e20104
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #8'
+  network: ws
+  port: 443
+  server: 159.65.51.189
+  servername: ccc.010304.xyz
+  skip-cert-verify: false
+  tls: false
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /fpsecurity=tls
+- client-fingerprint: chrome
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #9'
+  network: ws
+  port: 443
+  server: 159.65.51.189
+  servername: ccc.010304.xyz
+  tls: true
+  type: vless
+  uuid: d342d11e-d224-4463-b982-532309285094
+  ws-opts:
+    headers:
+      Host: ccc.010304.xyz
+    path: /
 - cipher: chacha20-ietf-poly1305
   name: 🇬🇧[www.v2nodes.com] ss-GB-1605...
   password: uvKNudV-N8AUCrykPiyznA
@@ -25,45 +71,12 @@ proxies:
   port: 19999
   server: 185.176.206.9
   type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
-  password: shadowsocks
-  port: 443
-  server: 158.173.24.73
+- cipher: aes-256-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1247...
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 94.156.250.148
   type: ss
-- name: 🇬🇧GB_1|1.8MB/s
-  port: 443
-  server: 37.120.233.50
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_2|1.7MB/s
-  port: 443
-  server: 212.102.63.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_3|1.1MB/s
-  password: None
-  port: 9443
-  server: 84.17.50.214
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_4|1.5MB/s
-  password: None
-  port: 9443
-  server: 84.17.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_5|1.0MB/s
-  password: None
-  port: 443
-  server: 212.102.63.61
-  skip-cert-verify: true
-  tls: true
-  type: http
 - name: '🇬🇧 英国 | GBR #1'
   password: 5t6i121em5lkmsmk
   port: 29813
@@ -72,15 +85,3 @@ proxies:
   sni: en001.zestapp778.com
   type: trojan
   udp: true
-- client-fingerprint: chrome
-  name: '🇬🇧 英国 | GBR #2'
-  network: xhttp
-  port: 443
-  server: 144.31.213.229
-  servername: 6d160a52.con.fernarchive.online
-  tls: true
-  type: vless
-  udp: true
-  uuid: abca037b-bee5-41cc-a888-0668e4c66176
-  xhttp-opts:
-    path: /conv4/stream/77dd2aeeb94331fbff325bb48850392b
