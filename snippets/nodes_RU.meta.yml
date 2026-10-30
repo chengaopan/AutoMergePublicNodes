@@ -1,23 +1,26 @@
 proxies:
-- name: 🇷🇺202915 | ⚡️Telegram = t.me/S...
-  password: 41edb44c8e
-  port: 11592
-  server: 103.88.243.142
-  skip-cert-verify: true
-  sni: 103.88.243.142
-  tls: false
-  type: hysteria2
+- client-fingerprint: firefox
+  name: 🇷🇺[www.v2nodes.com] vless-RU-1...
+  network: tcp
+  port: 443
+  server: 149.33.15.213
+  servername: swz.proxyplankton.ru
+  tls: true
+  type: vless
+  uuid: 054362fb-e485-4a3f-9568-4c5b0f60e074
 - alpn:
   - h2
   client-fingerprint: chrome
+  encryption: none
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: vlgrpc
-  name: 🇷🇺 俄罗斯 | RUS 3
+  name: 🇷🇺 俄罗斯 | RUS
   network: grpc
   port: 443
   server: 201.24.121.243
   servername: kk-ru24a1.testkknegr.online
+  skip-cert-verify: false
   tls: true
   type: vless
   udp: true
@@ -33,9 +36,20 @@ proxies:
   tls: true
   type: vless
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+- client-fingerprint: chrome
+  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #5'
+  network: ws
+  port: 8443
+  server: 194.87.143.165
+  servername: wsru1.wba-pn.ru
+  tls: true
+  type: vless
+  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
+  ws-opts:
+    path: /
 - grpc-opts:
     grpc-service-name: grpc-video-call
-  name: 🇷🇺 俄罗斯 | RUS 2
+  name: 🇷🇺 俄罗斯 | RUS 3
   network: grpc
   password: Pass-Client-1
   port: 8446
@@ -43,18 +57,3 @@ proxies:
   skip-cert-verify: true
   type: trojan
   udp: true
-- encryption: mlkem768x25519plus.native.0rtt.8th1uEEPtl2BhPfgxINwmVO_Kq6V1htSghiTMdjWkRM
-  name: 🇷🇺RU_1|1.5MB/s
-  network: ws
-  port: 443
-  server: 146.185.197.95
-  type: vless
-  udp: true
-  uuid: 9ea8b000-58ce-0005-b108-989dd4f248f1
-  ws-opts:
-    headers:
-      Host: ''
-      User-Agent: Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/53.0.2785.143 Safari/537.36
-    path: /live/ws2
-  xudp: true

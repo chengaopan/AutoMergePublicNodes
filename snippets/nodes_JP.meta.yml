@@ -12,12 +12,14 @@ proxies:
     headers:
       Host: tn1r.eu.cc
     path: /id-pusat
-- client-fingerprint: chrome
+- client-fingerprint: unsafe
+  encryption: none
   name: '🇯🇵[www.v2nodes.com] vless-JP-1... #4'
   network: ws
   port: 443
-  server: 104.16.10.234
+  server: 172.64.190.13
   servername: jp3.yohototo.top
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
@@ -25,23 +27,44 @@ proxies:
     headers:
       Host: jp3.yohototo.top
     path: /tyxyws
-- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #5'
+- encryption: none
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #5'
+  network: tcp
   port: 443
   server: 137.220.221.179
   tls: false
   type: vless
   uuid: a16a3336-c9ab-489f-9b85-c973f5e2cfa4
+- encryption: none
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #8'
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  servername: 152.69.195.67
+  tls: false
+  type: vless
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
+  name: '🇳🇱 荷兰 | NLD #2'
+  network: ws
+  port: 443
+  server: bro-per-bro.cc.cd
+  servername: mellow-pine-465b-4e9d050c.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4cf798ba-5c0a-40a8-a985-263e4c164f9c
+  ws-opts:
+    headers:
+      Host: mellow-pine-465b-4e9d050c.pages.dev
+    path: /e47f26811455/proxyip=146.190.100.44?u=dailydoseofvpn
 - cipher: aes-256-gcm
   name: 🇯🇵[www.v2nodes.com] ss-JP-1599...
   password: BeaUf9c0AEWH40Pu
   port: 8388
   server: 154.36.158.197
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇯🇵[www.v2nodes.com] ss-JP-1544...
-  password: 3eOFeNssde7PYYMv
-  port: 443
-  server: 84.247.155.196
   type: ss
 - cipher: aes-128-gcm
   name: 🇯🇵[www.v2nodes.com] ss-JP-5141...
@@ -117,17 +140,11 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇯🇵JP_1|2.9MB/s
-  password: None
-  port: 40583
-  server: 120.232.204.58
+- name: '🇯🇵 日本 | JPN #1'
+  password: 9646699a-18b0-4ebc-9f53-453cc1c8e637
+  port: 8443
+  server: 43.167.186.78
   skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇯🇵JP_2|1.3MB/s
-  password: None
-  port: 343
-  server: 133.18.200.207
-  skip-cert-verify: true
-  tls: true
-  type: http
+  sni: 43.167.186.78
+  type: trojan
+  udp: true
