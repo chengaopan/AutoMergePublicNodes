@@ -2,11 +2,9 @@ proxies:
 - alpn:
   - h2
   client-fingerprint: chrome
-  encryption: none
   grpc-opts:
-    grpc-mode: gun
     grpc-service-name: vlgrpc
-  name: 🇷🇺 俄罗斯 | RUS 3
+  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #2'
   network: grpc
   port: 443
   server: 201.24.121.243
@@ -14,12 +12,11 @@ proxies:
   skip-cert-verify: false
   tls: true
   type: vless
-  udp: true
   uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
 - client-fingerprint: random
   grpc-opts:
     grpc-service-name: grpc-ru
-  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #2'
+  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #3'
   network: grpc
   port: 443
   server: xsru1.ddnsfree.com
@@ -29,7 +26,7 @@ proxies:
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
 - client-fingerprint: chrome
   encryption: none
-  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #3'
+  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #4'
   network: ws
   port: 8443
   server: 194.87.143.165
@@ -40,19 +37,21 @@ proxies:
   ws-opts:
     path: /
 - cipher: aes-256-gcm
-  name: '🇷🇺 俄罗斯 | RUS #5'
+  name: 🇷🇺[www.v2nodes.com] ss-RU-1609...
   password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
   port: 18443
   server: 185.22.155.121
   type: ss
-  udp: true
-- grpc-opts:
-    grpc-service-name: grpc-video-call
-  name: 🇷🇺 俄罗斯 | RUS 4
-  network: grpc
-  password: Pass-Client-1
-  port: 8446
-  server: 171.22.119.74
+- name: 🇷🇺RU_1|2.4MB/s
+  password: None
+  port: 8443
+  server: 87.242.85.187
   skip-cert-verify: true
-  type: trojan
-  udp: true
+  tls: true
+  type: http
+- name: 🇷🇺RU_2|1.9MB/s
+  port: 1446
+  server: 46.29.166.134
+  skip-cert-verify: true
+  tls: true
+  type: http
