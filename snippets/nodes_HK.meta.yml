@@ -147,60 +147,12 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇭🇰HK_1|1.3MB/s
-  port: 1080
-  server: 34.150.120.78
-  type: socks5
-- alpn:
-  - ''
-  alterId: 0
+- alterId: 0
   cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - openai.com
-    method: GET
-    path:
-    - /QQqun-737805443
   name: '🇭🇰 香港 | HKG #1'
-  network: http
-  port: 52080
-  server: 47.242.81.94
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: e47b9f77-60e4-4738-8d53-772b6002e146
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #2'
   network: ws
   port: 443
-  server: 8.217.186.60
-  servername: euu1yalfmcqvljex.v.3dns.vip
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
-  ws-opts:
-    headers:
-      Host: euu1yalfmcqvljex.v.3dns.vip
-    path: /ws-vmess
-- name: 🇭🇰 香港 | HKG 3
-  password: 0324fbc29561
-  port: 443
-  server: 56481.df6h451rh.xin
-  skip-cert-verify: true
-  sni: images.ctfassets.net
-  type: anytls
-  udp: true
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #3'
-  network: ws
-  port: 443
-  server: 47.243.194.125
+  server: vah4urdzl3jdx5r2.v.3dns.vip
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -208,5 +160,62 @@ proxies:
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
-      Host: nycqg19zkwacpm1b.v.3dns.vip
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
     path: /ws-vmess
+- name: 🇭🇰 香港 | HKG 2
+  network: ws
+  password: humanity
+  port: 8443
+  server: 207.57.132.189
+  skip-cert-verify: true
+  sni: www.cordweave.com
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: www.cordweave.com
+    path: /assignment
+- alpn:
+  - h2
+  - http/1.1
+  name: 🇭🇰 香港 | HKG 3
+  password: c86efa7e-f7fb-47d6-b832-6b44cf5e8b71
+  port: 21101
+  server: hk02.dw.sh-cloudflare.sbs
+  skip-cert-verify: true
+  sni: hk02.shanhai.me
+  type: anytls
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #3'
+  network: ws
+  port: 443
+  server: 8.218.195.61
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: EX1oGt73NzPQKAc2.v.3dns.vip
+    path: /ws-vmess
+- alpn:
+  - h2
+  - http/1.1
+  name: 🇭🇰 香港 | HKG 5
+  password: c86efa7e-f7fb-47d6-b832-6b44cf5e8b71
+  port: 31101
+  server: hk03.dw.sh-cloudflare.sbs
+  skip-cert-verify: true
+  sni: hk03.shanhai.me
+  type: anytls
+  udp: true
+- name: '🇭🇰 香港 | HKG #2'
+  password: humanity
+  port: 8443
+  server: 207.57.132.189
+  skip-cert-verify: true
+  sni: www.cordweave.com
+  type: trojan

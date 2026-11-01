@@ -8,17 +8,9 @@ proxies:
   uuid: 5365cb12-83e2-4e12-8098-c9673ed7f540
   ws-opts:
     path: /bp-vless
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
-  network: tcp
+- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
   port: 2053
   server: w.geogame.ir
-  servername: w.geogame.ir
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: fbda2834-b1e7-4148-afb9-deda31036a30
@@ -26,7 +18,6 @@ proxies:
   network: ws
   port: 14430
   server: 138.124.70.41
-  servername: 138.124.70.41
   tls: false
   type: vless
   uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
@@ -34,9 +25,7 @@ proxies:
     headers:
       Host: 138.124.70.41
     path: /vless
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
+- client-fingerprint: chrome
   name: '🇫🇷[www.v2nodes.com] vless-FR-1... #4'
   network: ws
   port: 443
@@ -44,11 +33,17 @@ proxies:
   servername: ssl.fastly.com
   tls: true
   type: vless
-  uuid: 88888888-8888-8888-8888-888888888888
+  uuid: 49e29dba-814a-50b0-b4a9-deffe26ae624
   ws-opts:
     headers:
       Host: Appxdn.global.ssl.fastly.net
     path: /
+- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #6'
+  port: 51671
+  server: 152.228.139.33
+  tls: false
+  type: vless
+  uuid: 75cc7568-abb0-46a8-88be-8137d3c647d4
 - cipher: aes-256-gcm
   name: 🇫🇷[www.v2nodes.com] ss-FR-1609...
   password: lF3nRjH58koKTe-_VtABbg
@@ -78,7 +73,7 @@ proxies:
   ws-opts:
     headers:
       Host: www.calmlunch.com
-    path: '%2Fassignment'
+    path: /assignment
 - alpn:
   - v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus--v2rayNplus
   name: '🇫🇷[www.v2nodes.com] trojan-FR-... #2'
@@ -151,7 +146,7 @@ proxies:
   ws-opts:
     headers:
       Host: www.calmlunch.com
-    path: /assignment
+    path: '%2Fassignment'
 - name: '🇫🇷[www.v2nodes.com] trojan-FR-... #8'
   password: humanity
   port: 443
@@ -171,32 +166,38 @@ proxies:
     headers:
       Host: www.calmlunch.com
     path: '%2Fassignment'
-- name: 🇫🇷FR_1|2.5MB/s
-  port: 6103
-  server: 87.98.174.157
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇫🇷FR_2|1.0MB/s
-  port: 8090
-  server: 82.96.128.175
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇫🇷FR_3|1.8MB/s
-  password: None
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇫🇷 法国 | FRA #1'
+  network: ws
   port: 443
-  server: 149.102.245.65
-  skip-cert-verify: true
+  server: 199.232.78.170
+  servername: ssl.fastly.com
   tls: true
-  type: http
-- name: 🇫🇷FR_4|1.8MB/s
-  password: None
-  port: 8081
-  server: 31.32.19.111
-  skip-cert-verify: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇫🇷 法国 | FRA #2'
+  network: ws
+  port: 443
+  server: 199.232.78.160
+  servername: ssl.fastly.com
   tls: true
-  type: http
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
+  ws-opts:
+    headers:
+      Host: Appxdn.global.ssl.fastly.net
+    path: /
 - name: FR_speednode_0008
   port: 19362
   server: 51.159.225.197

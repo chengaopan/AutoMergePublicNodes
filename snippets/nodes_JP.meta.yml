@@ -1,30 +1,26 @@
 proxies:
-- client-fingerprint: chrome
-  name: 🇯🇵[www.v2nodes.com] vless-JP
-  network: ws
-  port: 443
-  server: 188.114.98.0
-  servername: tn1r.eu.cc
-  tls: true
-  type: vless
-  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
-  ws-opts:
-    headers:
-      Host: tn1r.eu.cc
-    path: /id-pusat
 - name: 🇯🇵[www.v2nodes.com] vless-JP-1...
   port: 443
   server: 31.76.91.98
   tls: false
   type: vless
   uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
-- client-fingerprint: chrome
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
+  port: 443
+  server: 142.91.108.25
+  tls: false
+  type: vless
+  uuid: ee18d188-14cc-417e-beb1-70e4add6d023
+- alpn:
+  - http/1.1
+  client-fingerprint: unsafe
   encryption: none
   name: '🇯🇵[www.v2nodes.com] vless-JP-1... #2'
   network: ws
   port: 443
-  server: 104.18.42.98
+  server: 188.114.98.0
   servername: jp3.yohototo.top
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
@@ -66,18 +62,6 @@ proxies:
     headers:
       Host: kclx.eu.org
     path: /154.16.10.34-8080
-- name: 🇯🇵[www.v2nodes.com] vless-JP-2...
-  network: ws
-  port: 443
-  server: 141.11.139.215
-  servername: ccc.010304.xyz
-  tls: true
-  type: vless
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /fp=chrome
 - cipher: aes-256-gcm
   name: 🇯🇵[www.v2nodes.com] ss-JP-1599...
   password: BeaUf9c0AEWH40Pu
@@ -87,7 +71,7 @@ proxies:
 - cipher: aes-256-gcm
   name: 🇯🇵[www.v2nodes.com] ss-JP-1544...
   password: 3eOFeNssde7PYYMv
-  port: 443
+  port: 80
   server: 84.247.155.196
   type: ss
 - cipher: aes-128-gcm
@@ -97,11 +81,17 @@ proxies:
   server: 149.22.87.204
   type: ss
 - name: 🇯🇵[www.v2nodes.com] trojan-JP-...
+  password: 9646699a-18b0-4ebc-9f53-453cc1c8e637
+  port: 8443
+  server: 43.167.186.78
+  sni: 43.167.186.78
+  type: trojan
+- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #1'
   password: d050aca3-9df2-4461-90ec-92373c1d7636
   port: 44184
   server: v2jp.k1.ssnss.live
   type: trojan
-- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #1'
+- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #2'
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 45.32.52.173
@@ -160,3 +150,10 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
+- name: 🇯🇵JP_1|1.4MB/s
+  password: None
+  port: 40583
+  server: 120.232.204.58
+  skip-cert-verify: true
+  tls: true
+  type: http

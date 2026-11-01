@@ -1,15 +1,49 @@
 proxies:
-- name: 🇪🇪EE_1|2.8MB/s
-  password: None
-  port: 9443
-  server: 95.153.32.2
-  skip-cert-verify: true
+- client-fingerprint: firefox
+  name: 🇪🇪[www.v2nodes.com] vless-EE-1...
+  network: tcp
+  port: 57043
+  server: 179.253.179.109
+  servername: 87.121.86.24
   tls: true
-  type: http
-- name: 🇪🇪EE_2|2.3MB/s
+  type: vless
+  uuid: da8fab8e-4a25-4eb0-b224-88ab96c753ce
+  ws-opts:
+    path: /
+- name: 🇪🇪EE_1|1.2MB/s
   password: None
   port: 9443
   server: 95.153.31.66
   skip-cert-verify: true
   tls: true
   type: http
+- name: 🇪🇪EE_2|1.1MB/s
+  port: 9443
+  server: 192.159.101.174
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: FoxSiberia103
+  name: 🇪🇪 爱沙尼亚 | EST
+  network: grpc
+  port: 8443
+  server: 188.225.62.72
+  servername: datacore-tech.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b25cbd7-30e3-4659-92be-05b33b53c9d1
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇪🇪 爱沙尼亚 | EST #1'
+  network: grpc
+  port: 8443
+  server: 188.225.62.72
+  servername: datacore-tech.ru
+  tls: true
+  type: vless
+  uuid: 0b25cbd7-30e3-4659-92be-05b33b53c9d1

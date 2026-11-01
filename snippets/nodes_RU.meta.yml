@@ -1,13 +1,12 @@
 proxies:
 - client-fingerprint: chrome
-  name: '🇷🇺 俄罗斯 | RUS #1'
+  name: 🇷🇺[www.v2nodes.com] vless-RU-1...
   network: ws
   port: 443
   server: 185.229.9.135
   servername: business.lesotorg-kirov.ru
   tls: true
   type: vless
-  udp: true
   uuid: 8f763a7f-4cda-4db1-90e3-9aeae0860dc0
   ws-opts:
     headers:
@@ -16,9 +15,10 @@ proxies:
 - alpn:
   - h2
   client-fingerprint: chrome
+  encryption: none
   grpc-opts:
     grpc-service-name: vlgrpc
-  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #3'
+  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #2'
   network: grpc
   port: 443
   server: 201.24.121.243
@@ -30,7 +30,7 @@ proxies:
 - client-fingerprint: random
   grpc-opts:
     grpc-service-name: grpc-ru
-  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #4'
+  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #3'
   network: grpc
   port: 443
   server: xsru1.ddnsfree.com
@@ -38,35 +38,9 @@ proxies:
   tls: true
   type: vless
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-- client-fingerprint: random
-  encryption: none
-  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #5'
-  network: ws
-  port: 8443
-  server: 194.87.143.165
-  servername: wsru1.wba-pn.ru
-  tls: true
-  type: vless
-  uuid: f9613819-d2fe-4b3a-a2e6-40c184c6854c
-  ws-opts:
-    headers:
-      Host: 194.87.143.165
-    path: /
-- cipher: aes-256-gcm
-  name: 🇷🇺[www.v2nodes.com] ss-RU-1609...
-  password: NTiHBg64fsY8u8DbGrtypD9gPGSL386p
-  port: 18443
-  server: 185.22.155.121
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇷🇺[www.v2nodes.com] ss-RU-1163...
   password: VVlAff77CnAU43Aoc5j15Y
   port: 5112
   server: 90.156.203.62
   type: ss
-- name: 🇷🇺RU_1|3.0MB/s
-  port: 1446
-  server: 46.29.166.134
-  skip-cert-verify: true
-  tls: true
-  type: http
