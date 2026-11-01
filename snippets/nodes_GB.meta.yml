@@ -14,8 +14,9 @@ proxies:
   type: vless
   uuid: 36cf792c-f07d-4500-97ea-a395e5178deb
 - name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
+  network: tcp
   port: 10002
-  server: connect.hondamotor.site
+  server: 178.83.45.226
   tls: false
   type: vless
   uuid: c6362720-0931-4b91-b187-d8ecf3149734
@@ -24,6 +25,7 @@ proxies:
   - http/1.1
   client-fingerprint: chrome
   name: '🇬🇧[www.v2nodes.com] vless-GB-1... #7'
+  network: tcp
   port: 8443
   server: node-uk.connectsuite.org
   servername: node-uk.connectsuite.org
@@ -76,17 +78,40 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
-- name: 🇬🇧[www.v2nodes.com] trojan-GB-...
-  password: 5t6i121em5lkmsmk
-  port: 29813
-  server: en001.zestapp778.com
+- name: 🇬🇧GB_1|1.7MB/s
+  password: None
+  port: 9443
+  server: 84.17.50.214
   skip-cert-verify: true
-  sni: en001.zestapp778.com
-  type: trojan
-- name: 🇬🇧GB_1|1.2MB/s
+  tls: true
+  type: http
+- name: 🇬🇧GB_2|1.1MB/s
   password: None
   port: 443
   server: 37.120.233.50
   skip-cert-verify: true
   tls: true
   type: http
+- name: 🇬🇧GB_3|1.1MB/s
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_4|2.6MB/s
+  password: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
+  port: 443
+  server: 3d329aa8-t9zts0-tpaqgu-1smhu.uk.oshuawei.com
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 62f2374c-891b-11ef-a3f6-f23c9164ca5d
+- name: 🇬🇧GB_5|1.2MB/s|R002-260618
+  password: None
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
