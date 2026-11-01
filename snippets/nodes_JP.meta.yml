@@ -1,34 +1,31 @@
 proxies:
 - name: 🇯🇵[www.v2nodes.com] vless-JP-1...
   port: 443
+  server: 31.76.91.238
+  tls: false
+  type: vless
+  uuid: a6be8b6d-3033-4a99-b9bd-75e2ab12cfd0
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
+  port: 443
   server: 31.76.91.98
   tls: false
   type: vless
   uuid: 7072eeba-94fd-4fb3-92f2-a4506dd84cd8
-- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #2'
   port: 443
   server: 142.91.108.25
   tls: false
   type: vless
   uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-- alpn:
-  - http/1.1
-  client-fingerprint: unsafe
-  encryption: none
-  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #2'
-  network: ws
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
   port: 443
-  server: 188.114.98.0
-  servername: jp3.yohototo.top
-  skip-cert-verify: false
-  tls: true
+  server: 104.16.111.102
+  tls: false
   type: vless
   uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
   ws-opts:
-    headers:
-      Host: jp3.yohototo.top
     path: /tyxyws
-- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #4'
   port: 443
   server: 137.220.221.179
   tls: false
@@ -49,19 +46,6 @@ proxies:
     headers:
       Host: mellow-pine-465b-4e9d050c.pages.dev
     path: /e47f26811455/proxyip=146.190.100.44?u=dailydoseofvpn
-- client-fingerprint: chrome
-  name: 🇯🇵[www.v2nodes.com] vless-JP-4...
-  network: ws
-  port: 443
-  server: kclx.eu.org
-  servername: kclx.eu.org
-  tls: true
-  type: vless
-  uuid: 0575005f-0ba9-4d6d-85e0-4a6a8cbafc1b
-  ws-opts:
-    headers:
-      Host: kclx.eu.org
-    path: /154.16.10.34-8080
 - cipher: aes-256-gcm
   name: 🇯🇵[www.v2nodes.com] ss-JP-1599...
   password: BeaUf9c0AEWH40Pu
@@ -71,7 +55,7 @@ proxies:
 - cipher: aes-256-gcm
   name: 🇯🇵[www.v2nodes.com] ss-JP-1544...
   password: 3eOFeNssde7PYYMv
-  port: 80
+  port: 443
   server: 84.247.155.196
   type: ss
 - cipher: aes-128-gcm
@@ -150,10 +134,63 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
-- name: 🇯🇵JP_1|1.4MB/s
-  password: None
-  port: 40583
-  server: 120.232.204.58
+- alterId: 1
+  cipher: auto
+  name: 🇯🇵 日本 | JPN
+  port: 28787
+  server: qdiysly-g05.jp06-jz-vm0.entry.fr0528.art
+  servername: qdiysly-g05.jp06-jz-vm0.entry.fr0528.art
   skip-cert-verify: true
   tls: true
-  type: http
+  type: vmess
+  udp: true
+  uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7
+- name: '🇯🇵 日本 | JPN #2'
+  password: ef95390a-0bcb-45b8-a2bc-3ab33bf0e297
+  port: 40014
+  server: zz.jp01.fogvip-zz.uk
+  skip-cert-verify: true
+  sni: ld.jp01.yuiuingkig.icu
+  type: trojan
+  udp: true
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇯🇵 日本 | JPN #3'
+  network: ws
+  port: 443
+  server: JP032008.ssgreen.org
+  servername: JP032008.ssgreen.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 9ddbe6b7-8ad5-43d5-b30a-35e35b633103
+  ws-opts:
+    headers:
+      Host: JP032008.ssgreen.org
+    path: /wes
+- client-fingerprint: random
+  name: '🇯🇵 日本 | JPN #4'
+  network: ws
+  port: 443
+  server: 13.230.191.90
+  servername: jp-osa.862400.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9c55c7eb-d53e-40fa-a0c9-e25d2a345073
+  ws-opts:
+    headers:
+      Host: jp-osa.862400.xyz
+    path: /announcement?ed=2048
+- alterId: 1
+  cipher: auto
+  name: '🇯🇵 日本 | JPN #1'
+  network: tcp
+  port: 28787
+  server: qdiysly-g05.jp06-jz-vm0.entry.fr0528.art
+  tls: true
+  type: vmess
+  uuid: 2ce005b4-e57a-3670-be88-60eeeb078bb7

@@ -1,5 +1,6 @@
 proxies:
-- name: 🇹🇼[www.v2nodes.com] vless-TW-1...
+- client-fingerprint: chrome
+  name: 🇹🇼[www.v2nodes.com] vless-TW-1...
   network: ws
   port: 8443
   server: n04.jinggai.online
@@ -8,6 +9,8 @@ proxies:
   type: vless
   uuid: 91ad30e9-ab06-4b4c-9fb9-1c2aa97d8b3a
   ws-opts:
+    headers:
+      Host: n04.jinggai.online
     path: /nvl-n04-ws/e0577fe8fd7c8823
 - client-fingerprint: chrome
   name: '🇹🇼[www.v2nodes.com] vless-TW-1... #1'
@@ -30,3 +33,19 @@ proxies:
   skip-cert-verify: true
   sni: m.ctrip.com
   type: trojan
+- name: '🇹🇼 🇨🇳 台湾 | TWN #1'
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  port: 45503
+  server: ench-snet-app.w-ctrip.cn
+  skip-cert-verify: true
+  sni: cm.g.doubleclick.net
+  type: trojan
+  udp: true
+- name: '🇹🇼 🇨🇳 台湾 | TWN #2'
+  password: b17e9b52db9623bd6c16eea3d7adb5b3
+  port: 47786
+  server: ench-snet-app.w-ctrip.cn
+  skip-cert-verify: true
+  sni: cm.g.doubleclick.net
+  type: trojan
+  udp: true
