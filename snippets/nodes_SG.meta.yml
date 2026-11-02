@@ -1,10 +1,9 @@
 proxies:
 - client-fingerprint: chrome
-  encryption: none
   name: 🇸🇬[www.v2nodes.com] vless-SG
   network: ws
   port: 443
-  server: 104.18.37.127
+  server: ccc.010304.xyz
   servername: ccc.010304.xyz
   tls: true
   type: vless
@@ -13,33 +12,26 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
-- client-fingerprint: chrome
+- alpn:
+  - http/1.1
+  client-fingerprint: ios
   name: '🇸🇬[www.v2nodes.com] vless-SG #1'
   network: ws
-  port: 443
-  server: 104.21.63.28
-  servername: youxuanku.kdns.fr
+  port: 2083
+  server: 104.18.1.1
+  servername: vlsovip.1d.mom
   tls: true
   type: vless
-  uuid: 4c0b7280-76bb-495c-9c8b-f05712ebf805
+  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
   ws-opts:
     headers:
-      Host: youxuanku.kdns.fr
-    path: /
+      Host: vlsovip.1d.mom
+    path: /socks5=888:888@hkip.1d.mom:1080
 - client-fingerprint: chrome
   name: 🇸🇬[www.v2nodes.com] vless-SG-1...
   port: 56984
   server: sg1.zestapp778.com
   servername: sg1.zestapp778.com
-  tls: true
-  type: vless
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-- client-fingerprint: firefox
-  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #1'
-  network: tcp
-  port: 443
-  server: 45.77.243.143
-  servername: sg003.zestapp778.com
   tls: true
   type: vless
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
@@ -56,12 +48,26 @@ proxies:
     headers:
       Host: free-server.techsonic.dev
     path: /free-server.techsonic.dev
-- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #8'
+- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #7'
   port: 12512
   server: 46.137.202.178
   tls: false
   type: vless
   uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #8'
+  network: ws
+  port: 443
+  server: 104.18.0.1
+  servername: all.speedtest03.ccwu.cc
+  tls: true
+  type: vless
+  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
+  ws-opts:
+    headers:
+      Host: all.speedtest03.ccwu.cc
+    path: /
 - name: 🇸🇬[www.v2nodes.com] vless-SG-9...
   port: 443
   server: 188.164.248.216
@@ -73,7 +79,7 @@ proxies:
 - name: '🇸🇬[www.v2nodes.com] vless-SG-9... #1'
   network: ws
   port: 8080
-  server: 104.16.0.1
+  server: 8.6.112.86
   servername: hhlfy.twiladaphne.ndjp.net
   tls: false
   type: vless
@@ -81,7 +87,13 @@ proxies:
   ws-opts:
     headers:
       Host: hhlfy.twiladaphne.ndjp.net
-    path: /
+    path: /sg-melbi
+- cipher: aes-256-gcm
+  name: 🇸🇬[www.v2nodes.com] ss-SG-1559...
+  password: qpSevKaUXYQKvSjp
+  port: 8388
+  server: 139.180.220.175
+  type: ss
 - name: 🇸🇬[www.v2nodes.com] trojan-SG-...
   password: b17e9b52db9623bd6c16eea3d7adb5b3
   port: 15589
@@ -95,12 +107,7 @@ proxies:
   server: 149.28.130.108
   sni: searchcreativejobsandshowcaseyourartistictalents.com
   type: trojan
-- name: '🇸🇬[www.v2nodes.com] trojan-SG-... #2'
-  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
-  port: 8886
-  server: 139.180.146.200
-  type: trojan
-- name: 🇸🇬SG_2|3.6MB/s
+- name: 新加坡1|@ripaojiedian
   network: tcp
   password: b17e9b52db9623bd6c16eea3d7adb5b3
   port: 47966
@@ -108,7 +115,6 @@ proxies:
   skip-cert-verify: true
   sni: cm.g.doubleclick.net
   type: trojan
-  udp: true
 - name: 新加坡2|@ripaojiedian
   network: tcp
   password: b17e9b52db9623bd6c16eea3d7adb5b3
@@ -117,7 +123,7 @@ proxies:
   skip-cert-verify: true
   sni: cm.g.doubleclick.net
   type: trojan
-- name: 🇸🇬SG_1|3.8MB/s
+- name: 新加坡3|@ripaojiedian
   network: tcp
   password: b17e9b52db9623bd6c16eea3d7adb5b3
   port: 37212
@@ -125,39 +131,27 @@ proxies:
   skip-cert-verify: true
   sni: cm.g.doubleclick.net
   type: trojan
-  udp: true
-- name: '🇸🇬 新加坡 | SGP #1'
-  network: ws
-  port: 8080
-  server: 104.18.35.86
-  servername: hhlfy.twiladaphne.ndjp.net
+- auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  fingerprint: C1:FD:40:94:1F:91:9B:5C:78:96:24:40:97:F2:2D:9D:95:8E:62:5C:D9:58:B7:5F:34:CC:FA:42:18:1F:50:B2
+  name: '🇸🇬 新加坡 | SGP #1'
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 443
+  server: 56.10.10.106
+  skip-cert-verify: true
+  sni: www.bing.com
   tls: false
-  type: vless
-  udp: true
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
-  ws-opts:
-    headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /sg-melbi
+  type: hysteria2
 - client-fingerprint: chrome
   name: '🇸🇬 新加坡 | SGP #2'
   network: ws
   port: 443
-  server: 104.18.32.47
-  servername: nuclear.us.kg
+  server: 104.18.41.86
+  servername: ccc.010304.xyz
   tls: true
   type: vless
   udp: true
-  uuid: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
-      Host: nuclear.us.kg
-    path: /free/1.226.227.169:50001
-- name: '🇸🇬 新加坡 | SGP #3'
-  password: b17e9b52db9623bd6c16eea3d7adb5b3
-  port: 12809
-  server: ench-snet-app.w-ctrip.cn
-  skip-cert-verify: true
-  sni: cm.g.doubleclick.net
-  type: trojan
-  udp: true
+      Host: ccc.010304.xyz
+    path: /

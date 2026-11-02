@@ -1,43 +1,27 @@
 proxies:
-- name: 🇭🇰[www.v2nodes.com] vless-HK-1...
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇭🇰[www.v2nodes.com] vless-HK-1...
+  network: tcp
   port: 31884
   server: 152.175.6.229
+  servername: hk010.zestapp778.com
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-- client-fingerprint: chrome
-  encryption: none
-  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
+- name: '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
   network: ws
-  port: 443
-  server: px2.5ibtc.cn
-  servername: px2.5ibtc.cn
-  tls: true
+  port: 1443
+  server: 38.76.180.144
+  tls: false
   type: vless
-  uuid: 326227e2-f2d1-4f43-8715-9da854f5f4c0
+  uuid: d98b67d4-024a-4bba-91e2-e6ebece6df11
   ws-opts:
     headers:
-      Host: px2.5ibtc.cn
-    path: /326227e2-f2d1-4f43-8715-9da854f5f4c0
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
-  network: tcp
-  port: 11907
-  server: 195.58.144.56
-  tls: true
-  type: vless
-  uuid: 07cb07b9-0c4d-46c1-a15a-b147511b6b07
-- name: 🇭🇰[www.v2nodes.com] trojan-HK-...
-  password: 778f5385b4254495
-  port: 20014
-  server: hik160.pacemakere.com
-  skip-cert-verify: true
-  sni: hik160.pacemakere.com
-  type: trojan
-- name: '🇭🇰 香港 | HKG #3'
+      Host: 38.76.180.144
+    path: /vless-ws
+- name: 香港2|@ripaojiedian
   network: tcp
   password: b17e9b52db9623bd6c16eea3d7adb5b3
   port: 44837
@@ -45,7 +29,6 @@ proxies:
   skip-cert-verify: true
   sni: cm.g.doubleclick.net
   type: trojan
-  udp: true
 - name: 香港1|@ripaojiedian
   network: tcp
   password: b17e9b52db9623bd6c16eea3d7adb5b3
@@ -78,64 +61,28 @@ proxies:
   skip-cert-verify: true
   sni: cm.g.doubleclick.net
   type: trojan
-- name: 🇭🇰HK_1|3.1MB/s
-  password: None
-  port: 31343
-  server: 120.232.204.58
-  skip-cert-verify: true
-  tls: true
-  type: http
 - alterId: 0
   cipher: auto
   name: '🇭🇰 香港 | HKG #1'
   network: ws
-  port: 23026
-  server: 47.244.120.197
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  ws-opts:
-    headers:
-      Host: 47.244.120.197
-    path: /arki
-- client-fingerprint: chrome
-  name: '🇭🇰 香港 | HKG #2'
-  network: tcp
-  port: 31884
-  server: hk010.zestapp778.com
-  servername: hk010.zestapp778.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
-  ws-opts:
-    headers:
-      Host: hk010.zestapp778.com
-    path: /
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #4'
-  network: ws
   port: 443
-  server: euu1yAlfmcqvLJEx.v.3dns.vip
+  server: rhhierkwrf6fhs2h.v.3dns.vip
+  servername: rhhierkwrf6fhs2h.v.3dns.vip
   skip-cert-verify: true
   tls: true
   type: vmess
   udp: true
-  uuid: d237ab38-1974-4b36-94a3-0665ce8587b9
+  uuid: 78b3f149-f037-465d-b2fb-11adb6f73ff8
   ws-opts:
     headers:
-      Host: euu1yAlfmcqvLJEx.v.3dns.vip
+      Host: rhhierkwrf6fhs2h.v.3dns.vip
     path: /ws-vmess
 - alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #5'
+  name: '🇭🇰 香港 | HKG #2'
   network: ws
   port: 443
-  server: 47.243.65.243
-  servername: lcv8v9l7oyamxxfz.v.3dns.vip
+  server: 47.243.194.125
   skip-cert-verify: true
   tls: true
   type: vmess
@@ -143,13 +90,13 @@ proxies:
   uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
   ws-opts:
     headers:
-      Host: lcv8v9l7oyamxxfz.v.3dns.vip
+      Host: nycqg19zkwacpm1b.v.3dns.vip
     path: /ws-vmess
 - alpn:
   - ''
   alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #6'
+  name: '🇭🇰 香港 | HKG #3'
   network: ws
   port: 443
   server: 47.243.167.44
@@ -163,3 +110,69 @@ proxies:
     headers:
       Host: rhHiErkwRf6fHs2H.v.3dns.vip
     path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #4'
+  network: ws
+  port: 36703
+  server: 47.244.120.197
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  ws-opts:
+    path: /arki
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #5'
+  network: ws
+  port: 23026
+  server: 47.244.120.197
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
+  ws-opts:
+    headers:
+      Host: 47.244.120.197
+    path: /arki
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #6'
+  network: ws
+  port: 443
+  server: vah4urdzl3jdx5r2.v.3dns.vip
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
+    path: /ws-vmess
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #7'
+  network: ws
+  port: 443
+  server: 47.76.57.83
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: f23bb427-c1f9-4373-876c-2f43e9f790f3
+  ws-opts:
+    headers:
+      Host: vah4urdzl3jdx5r2.v.3dns.vip
+    path: /ws-vmess
+- name: '🇭🇰 香港 | HKG #8'
+  password: 8dc86561-24f9-4bf7-99de-1373640859eb
+  port: 40024
+  server: zz.xgb.fogvip-zz.uk
+  skip-cert-verify: true
+  sni: ld.xghk03.yuiuingkig.icu
+  type: trojan
+  udp: true
