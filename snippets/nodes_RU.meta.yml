@@ -1,10 +1,4 @@
 proxies:
-- name: 🇷🇺[www.v2nodes.com] vless-RU-1...
-  port: 443
-  server: app-tw-113.statsmarket-wb.com
-  tls: false
-  type: vless
-  uuid: 07680ffb-0666-4836-b6ad-ec0de62bc38f
 - client-fingerprint: chrome
   name: '🇷🇺[www.v2nodes.com] vless-RU-1... #2'
   network: ws
@@ -49,10 +43,27 @@ proxies:
   port: 5112
   server: 90.156.203.62
   type: ss
-- name: 🇷🇺RU_1|3.2MB/s
-  password: None
-  port: 1446
-  server: 46.29.166.134
+- name: 🇷🇺RU_1|1.2MB/s
+  port: 8443
+  server: 87.242.85.187
   skip-cert-verify: true
   tls: true
   type: http
+- alpn:
+  - http/1.1
+  client-fingerprint: qq
+  encryption: none
+  name: '🇷🇺 俄罗斯 | RUS #1'
+  network: ws
+  port: 443
+  server: 185.229.9.135
+  servername: business.lesotorg-kirov.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4df3e06b-85e9-4b69-b38a-be37bad2fe9d
+  ws-opts:
+    headers:
+      Host: business.lesotorg-kirov.ru
+    path: /chws
+  xudp: true
