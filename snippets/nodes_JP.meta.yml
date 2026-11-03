@@ -5,12 +5,23 @@ proxies:
   tls: false
   type: vless
   uuid: ee18d188-14cc-417e-beb1-70e4add6d023
-- encryption: none
-  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
+- client-fingerprint: chrome
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #2'
+  network: ws
+  port: 443
+  server: 104.16.10.234
+  servername: jp3.yohototo.top
+  tls: true
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    headers:
+      Host: jp3.yohototo.top
+    path: /tyxyws
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #4'
   network: tcp
   port: 47878
   server: 152.69.195.67
-  servername: 152.69.195.67
   tls: false
   type: vless
   uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
@@ -27,7 +38,7 @@ proxies:
     headers:
       Host: kclx.eu.org
     path: /154.16.10.34-8080
-- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #4'
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #5'
   network: ws
   port: 443
   server: 104.21.221.158
@@ -49,7 +60,7 @@ proxies:
 - cipher: aes-256-gcm
   name: 🇯🇵[www.v2nodes.com] ss-JP-1544...
   password: 3eOFeNssde7PYYMv
-  port: 80
+  port: 443
   server: 84.247.155.196
   type: ss
 - cipher: aes-128-gcm
@@ -59,11 +70,17 @@ proxies:
   server: 149.22.87.204
   type: ss
 - name: 🇯🇵[www.v2nodes.com] trojan-JP-...
+  password: 9646699a-18b0-4ebc-9f53-453cc1c8e637
+  port: 8443
+  server: 43.167.186.78
+  sni: 43.167.186.78
+  type: trojan
+- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #1'
   password: d050aca3-9df2-4461-90ec-92373c1d7636
   port: 44184
   server: v2jp.k1.ssnss.live
   type: trojan
-- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #1'
+- name: '🇯🇵[www.v2nodes.com] trojan-JP-... #2'
   password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
   port: 8886
   server: 45.32.52.173
@@ -97,7 +114,7 @@ proxies:
   network: ws
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 172.238.29.97
+  server: 172.237.1.32
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
@@ -106,24 +123,28 @@ proxies:
     headers:
       Host: api.85s.me
     path: /
-- name: 🇯🇵 日本 | JPN 2
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇯🇵 日本 | JPN #2'
   network: ws
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 172.233.91.12
+  server: JP032001.ssgreen.org
   skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
+  uuid: 7a3625b3-4d7b-4115-b724-fb93f007f741
   ws-opts:
     headers:
-      Host: api.85s.me
-    path: /
+      Host: JP032001.ssgreen.org
+    path: /wes
 - name: 🇯🇵 日本 | JPN 3
   network: ws
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 172.237.1.32
+  server: 175.41.232.194
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
@@ -136,7 +157,7 @@ proxies:
   network: ws
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 154.19.187.190
+  server: 54.249.160.228
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
@@ -149,33 +170,7 @@ proxies:
   network: ws
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 172.238.22.178
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: api.85s.me
-    path: /
-- name: 🇯🇵 日本 | JPN 6
-  network: ws
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 54.249.160.228
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: api.85s.me
-    path: /
-- name: 🇯🇵 日本 | JPN 7
-  network: ws
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 13.158.86.30
+  server: 172.238.29.97
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
@@ -187,49 +182,28 @@ proxies:
 - name: '🇯🇵 日本 | JPN #1'
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 172.238.29.97
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-- name: '🇯🇵 日本 | JPN #2'
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 172.233.91.12
+  server: 172.237.1.32
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
 - name: '🇯🇵 日本 | JPN #3'
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 172.237.1.32
+  server: 175.41.232.194
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
 - name: '🇯🇵 日本 | JPN #4'
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 154.19.187.190
+  server: 54.249.160.228
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
 - name: '🇯🇵 日本 | JPN #5'
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 172.238.22.178
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-- name: '🇯🇵 日本 | JPN #6'
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 54.249.160.228
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-- name: '🇯🇵 日本 | JPN #7'
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 13.158.86.30
+  server: 172.238.29.97
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
