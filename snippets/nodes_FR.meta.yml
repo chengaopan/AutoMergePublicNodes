@@ -1,35 +1,17 @@
 proxies:
 - alpn:
-  - h3
-  name: 🇫🇷205188 | ⚡️Telegram = t.me/S...
-  obfs: salamander
-  obfs-password: ad7088dafb02115c
-  password: Vt-D1BUk4HLncS1rtf8mUZ8h
-  port: 20222
-  server: 51.75.118.5
-  skip-cert-verify: true
-  sni: www.bing.com
-  tls: false
-  type: hysteria2
-- name: 🇫🇷[www.v2nodes.com] vless-FR-1...
-  network: ws
-  port: 20155
-  server: 51.68.34.78
-  tls: false
-  type: vless
-  uuid: 5365cb12-83e2-4e12-8098-c9673ed7f540
-  ws-opts:
-    path: /bp-vless
-- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: 🇫🇷[www.v2nodes.com] vless-FR-1...
   network: tcp
   port: 2053
-  server: w.geogame.ir
+  server: 15.236.109.186
   servername: w.geogame.ir
   tls: true
   type: vless
   uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-- encryption: none
-  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
+- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
   network: ws
   port: 14430
   server: 138.124.70.41
@@ -37,8 +19,10 @@ proxies:
   type: vless
   uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
   ws-opts:
+    headers:
+      Host: 138.124.70.41
     path: /vless
-- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #5'
+- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
   port: 443
   server: 161.97.160.224
   tls: false
@@ -148,7 +132,7 @@ proxies:
   type: trojan
   ws-opts:
     path: '%2Fassignment'
-- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #9'
+- name: '🇫🇷[www.v2nodes.com] trojan-FR-... #12'
   network: ws
   password: humanity
   port: 443
