@@ -3,7 +3,7 @@ proxies:
   name: 🇸🇬[www.v2nodes.com] vless-SG
   network: ws
   port: 443
-  server: ccc.010304.xyz
+  server: 172.64.155.209
   servername: ccc.010304.xyz
   tls: true
   type: vless
@@ -12,21 +12,19 @@ proxies:
     headers:
       Host: ccc.010304.xyz
     path: /
-- alpn:
-  - http/1.1
-  client-fingerprint: ios
+- client-fingerprint: chrome
   name: '🇸🇬[www.v2nodes.com] vless-SG #1'
   network: ws
-  port: 2083
-  server: 104.18.1.1
-  servername: vlsovip.1d.mom
+  port: 443
+  server: 172.64.153.66
+  servername: ccc.010304.xyz
   tls: true
   type: vless
-  uuid: a1de0630-5786-48a0-84f6-dc6f2de10d6d
+  uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
-      Host: vlsovip.1d.mom
-    path: /socks5=888:888@hkip.1d.mom:1080
+      Host: ccc.010304.xyz
+    path: /
 - client-fingerprint: chrome
   name: 🇸🇬[www.v2nodes.com] vless-SG-1...
   port: 56984
@@ -35,8 +33,17 @@ proxies:
   tls: true
   type: vless
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
+- client-fingerprint: firefox
+  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #1'
+  network: tcp
+  port: 443
+  server: 45.77.243.143
+  servername: sg003.zestapp778.com
+  tls: true
+  type: vless
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
 - client-fingerprint: chrome
-  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #4'
+  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #5'
   network: ws
   port: 2096
   server: 139.162.27.96
@@ -48,46 +55,38 @@ proxies:
     headers:
       Host: free-server.techsonic.dev
     path: /free-server.techsonic.dev
-- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #7'
+- name: '🇸🇬[www.v2nodes.com] vless-SG-1... #9'
   port: 12512
   server: 46.137.202.178
   tls: false
   type: vless
   uuid: 2a6c617d-98e4-49c3-95ab-76f02fcf0150
 - client-fingerprint: chrome
-  encryption: none
-  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #8'
+  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #10'
   network: ws
   port: 443
-  server: 104.18.0.1
-  servername: all.speedtest03.ccwu.cc
+  server: 104.18.40.100
+  servername: ccc.010304.xyz
   tls: true
-  type: vless
-  uuid: 3ccba794-1c6d-48a8-acf2-f5caf0e69d86
-  ws-opts:
-    headers:
-      Host: all.speedtest03.ccwu.cc
-    path: /
-- name: 🇸🇬[www.v2nodes.com] vless-SG-9...
-  port: 443
-  server: 188.164.248.216
-  tls: false
   type: vless
   uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
+    headers:
+      Host: ccc.010304.xyz
     path: /fp=chrome
-- name: '🇸🇬[www.v2nodes.com] vless-SG-9... #1'
+- client-fingerprint: chrome
+  name: 🇸🇬[www.v2nodes.com] vless-SG-9...
   network: ws
-  port: 8080
-  server: 8.6.112.86
-  servername: hhlfy.twiladaphne.ndjp.net
-  tls: false
+  port: 443
+  server: 104.16.122.227
+  servername: ccc.010304.xyz
+  tls: true
   type: vless
-  uuid: e5cc16a6-ea42-46b2-82ae-ad2157e1641b
+  uuid: d342d11e-d224-4463-b982-532309285094
   ws-opts:
     headers:
-      Host: hhlfy.twiladaphne.ndjp.net
-    path: /sg-melbi
+      Host: ccc.010304.xyz
+    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
 - cipher: aes-256-gcm
   name: 🇸🇬[www.v2nodes.com] ss-SG-1559...
   password: qpSevKaUXYQKvSjp
@@ -107,6 +106,23 @@ proxies:
   server: 149.28.130.108
   sni: searchcreativejobsandshowcaseyourartistictalents.com
   type: trojan
+- name: '🇸🇬[www.v2nodes.com] trojan-SG-... #2'
+  password: e26a229d-e8f2-4ff9-8c7d-58a9d83ee437
+  port: 8886
+  server: 139.180.146.200
+  type: trojan
+- name: '🇸🇬[www.v2nodes.com] trojan-SG-... #3'
+  network: ws
+  password: 2bcfbfba-b446-4ad5-93ad-72af9e008f61
+  port: 443
+  server: blackshadow.dpdns.org
+  skip-cert-verify: false
+  sni: blackshadow.dpdns.org
+  type: trojan
+  ws-opts:
+    headers:
+      Host: blackshadow.dpdns.org
+    path: '%2F195.123.218.174-443'
 - name: 新加坡1|@ripaojiedian
   network: tcp
   password: b17e9b52db9623bd6c16eea3d7adb5b3
@@ -136,22 +152,8 @@ proxies:
   name: '🇸🇬 新加坡 | SGP #1'
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 443
-  server: 56.10.10.106
+  server: 54.255.211.102
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
   type: hysteria2
-- client-fingerprint: chrome
-  name: '🇸🇬 新加坡 | SGP #2'
-  network: ws
-  port: 443
-  server: 104.18.41.86
-  servername: ccc.010304.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: d342d11e-d224-4463-b982-532309285094
-  ws-opts:
-    headers:
-      Host: ccc.010304.xyz
-    path: /
