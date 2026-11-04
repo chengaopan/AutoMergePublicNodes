@@ -9,18 +9,18 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- name: 🍪42@oneclickvpnkeys
-  obfs: salamander
-  obfs-password: 7kydvvvn3bwt66ff
-  password: ripa841juk7gwn4t
-  port: 10005
-  server: 31.76.241.169
-  sni: de.c0d1xdev.xyz
+- alpn:
+  - h3
+  name: 🇩🇪206217 | ⚡️Telegram = t.me/L...
+  password: 80cbaaec-caff-4181-8539-ea6e51731007
+  port: 443
+  server: 45.88.12.119
+  sni: crt.onecloudstream.com
   tls: false
   type: hysteria2
 - client-fingerprint: unsafe
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #5'
   network: ws
   port: 443
   server: 31.12.75.64
@@ -33,7 +33,7 @@ proxies:
       Host: oizs5zecux0s.pouriayy1.workers.dev
     path: /stream/PANEL_ZEUS/15038a30cbef/loc-0
 - encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #6'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
   network: ws
   port: 80
   server: 104.27.88.172
@@ -48,7 +48,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
   network: ws
   port: 465
   server: hw14.roghanmo.com
@@ -60,64 +60,71 @@ proxies:
     headers:
       Host: hw14.roghanmo.com
     path: /
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+- name: '🇩🇪 德国 | DEU #2'
   password: happybirthdaydaniel
   port: 25267
   server: de-bots4.h1cloud.net
+  skip-cert-verify: true
   type: trojan
-- name: 🇩🇪 德国 | DEU
-  network: ws
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
+  udp: true
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 144.31.64.59
-  skip-cert-verify: true
-  sni: api.85s.me
+  server: 193.108.119.29
+  sni: blog.iloverussia2026.com
   type: trojan
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: VideoRenderer
+  name: 🇩🇪 德国 | DEU 3
+  network: grpc
+  port: 443
+  server: 89.169.47.96
+  servername: renderer-bridge-2-129.mirra.now
+  tls: true
+  type: vless
   udp: true
-  ws-opts:
-    headers:
-      Host: api.85s.me
-    path: /
-- name: 🇩🇪 德国 | DEU 4
-  network: ws
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 8443
-  server: 144.31.252.100
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: api.85s.me
-    path: /
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
 - alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 1000
-  name: 🇩🇪 德国 | DEU 5
-  port: 54177
-  protocol: udp
-  server: 5.83.129.90
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  up: 500
-- name: '🇩🇪 德国 | DEU #1'
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: VideoRenderer
+  name: 🇩🇪 德国 | DEU 8
+  network: grpc
   port: 443
-  server: 144.31.64.59
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-- name: '🇩🇪 德国 | DEU #4'
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 8443
-  server: 144.31.252.100
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
+  server: renderer-bridge-2-129.mirra.now
+  servername: renderer-bridge-2-129.mirra.now
+  tls: true
+  type: vless
+  udp: true
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪 德国 | DEU #3'
+  network: grpc
+  port: 443
+  server: 89.169.47.96
+  servername: renderer-bridge-2-129.mirra.now
+  tls: true
+  type: vless
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪 德国 | DEU #8'
+  network: grpc
+  port: 443
+  server: renderer-bridge-2-129.mirra.now
+  servername: renderer-bridge-2-129.mirra.now
+  tls: true
+  type: vless
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
 - name: DE_speednode_0004
   port: 443
   server: 213.109.163.119

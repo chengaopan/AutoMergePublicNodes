@@ -1,5 +1,19 @@
 proxies:
-- name: 🇷🇺[www.v2nodes.com] vless-RU-1...
+- encryption: none
+  name: 🇷🇺[www.v2nodes.com] vless-RU-1...
+  network: ws
+  port: 443
+  server: 217.19.122.156
+  servername: vzvt1tpiml.rucdncomp.pro
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: 40c4274f-3e4f-4c7b-ae5c-d87645a6e899
+  ws-opts:
+    headers:
+      Host: vzvt1tpiml.rucdncomp.pro
+    path: /service/telemetry/e6dc0bd08cb1/
+- name: '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
   port: 443
   server: app-tw-113.statsmarket-wb.com
   tls: false
@@ -8,7 +22,6 @@ proxies:
 - alpn:
   - h2
   client-fingerprint: chrome
-  encryption: none
   grpc-opts:
     grpc-service-name: vlgrpc
   name: '🇷🇺[www.v2nodes.com] vless-RU-1... #3'

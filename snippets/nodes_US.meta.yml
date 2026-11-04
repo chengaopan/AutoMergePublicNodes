@@ -8,20 +8,21 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #4'
+  name: '🇺🇸 美国 | USA #3'
   network: ws
   port: 443
   server: 199.232.78.160
   servername: community.fastly.steamstatic.com
   tls: true
   type: vless
+  udp: true
   uuid: afed9510-8648-49c6-9fbd-c2d4d8bdd417
   ws-opts:
     headers:
       Host: copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.
     path: /
 - client-fingerprint: firefox
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #1'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #2'
   port: 443
   server: us3.shtil.io
   servername: us3.shtil.io
@@ -29,7 +30,7 @@ proxies:
   type: vless
   uuid: 86a83d11-d751-4b60-aa4e-1dca5cff7028
 - client-fingerprint: chrome
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #3'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #4'
   network: ws
   port: 443
   server: 146.75.59.186
@@ -53,7 +54,7 @@ proxies:
   port: 28960
   server: 138.197.89.234
   type: ss
-- name: '🏳[www.v2nodes.com] trojan- #3'
+- name: '🏳[www.v2nodes.com] trojan- #1'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 167.88.61.193
@@ -107,11 +108,35 @@ proxies:
   skip-cert-verify: true
   sni: cm.g.doubleclick.net
   type: trojan
+- client-fingerprint: firefox
+  name: '🇷🇺 俄罗斯 | RUS #1'
+  network: xhttp
+  port: 443
+  server: 188.72.103.4
+  servername: ru.nnight.cfd
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9737cc16-7266-45ce-94d9-6e05a45e0b9c
+  xhttp-opts:
+    host: ru.nnight.cfd
+    mode: packet-up
+    path: /api/v4/media/session/poll
+    seq-key: offset
+    seq-placement: query
+    uplink-data-key: X-Playback-Token
+    uplink-data-placement: header
+    uplink-http-method: GET
+    x-padding-bytes: 48-320
+    x-padding-key: q
+    x-padding-method: tokenish
+    x-padding-obfs-mode: true
+    x-padding-placement: query
 - name: 🇺🇸 美国 | USA
   network: ws
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 216.38.170.103
+  server: 179.253.239.152
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
@@ -124,89 +149,7 @@ proxies:
   network: ws
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 104.21.0.7
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: api.85s.me
-    path: /
-- name: 🇺🇸 美国 | USA 3
-  network: ws
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 179.253.231.141
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: api.85s.me
-    path: /
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #4'
-  network: ws
-  port: 443
-  server: US122201.ssgreen.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 2991b1de-fc76-4357-8f79-75dad945cf5c
-  ws-opts:
-    headers:
-      Host: US122201.ssgreen.org
-    path: /wes
-- name: 🇺🇸 美国 | USA 5
-  network: ws
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 179.253.231.22
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: api.85s.me
-    path: /
-- name: 🇺🇸 美国 | USA 6
-  network: ws
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 104.18.0.1
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: api.85s.me
-    path: /
-- name: 🇺🇸 美国 | USA 7
-  network: ws
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 179.255.103.84
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: api.85s.me
-    path: /
-- name: 🇺🇸 美国 | USA 8
-  network: ws
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 179.255.141.59
+  server: 179.255.115.161
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
@@ -216,24 +159,24 @@ proxies:
       Host: api.85s.me
     path: /
 - client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #9'
+  name: '🇺🇸 美国 | USA #4'
   network: ws
   port: 443
-  server: 172.67.151.38
-  servername: ccc.010304.xyz
+  server: wwww.qarvian.ir
+  servername: cdn.akamai.steamstatic.com
   tls: true
   type: vless
   udp: true
-  uuid: d342d11e-d224-4463-b982-532309285094
+  uuid: 58d2fb1c-7ae2-42c8-8c0d-a393603ebc9f
   ws-opts:
     headers:
-      Host: ccc.010304.xyz
-    path: /?TELEGRAM--MARAMBASHI--MARAMBASHI--MARAMBASHI--MARAMBASHI?ed=2560
-- name: 🇺🇸 美国 | USA 10
+      Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.
+    path: /
+- name: 🇺🇸 美国 | USA 5
   network: ws
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 104.18.0.3
+  server: 179.253.255.213
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
@@ -242,11 +185,25 @@ proxies:
     headers:
       Host: api.85s.me
     path: /
-- name: 🇺🇸 美国 | USA 11
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #6'
+  network: ws
+  port: 443
+  server: www.speedtest.net
+  servername: wallweb5.pages.dev
+  tls: true
+  type: vless
+  udp: true
+  uuid: 85550ebf-fd43-42dd-9801-bda528fea2fc
+  ws-opts:
+    headers:
+      Host: wallweb5.pages.dev
+    path: /
+- name: 🇺🇸 美国 | USA 7
   network: ws
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 193.163.19.232
+  server: 47.75.104.211
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
@@ -254,12 +211,53 @@ proxies:
   ws-opts:
     headers:
       Host: api.85s.me
+    path: /
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #8'
+  network: ws
+  port: 443
+  server: 199.232.78.160
+  servername: community.fastly.steamstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 58d2fb1c-7ae2-42c8-8c0d-a393603ebc9f
+  ws-opts:
+    headers:
+      Host: copy_az_channel_NUFiLTER_10i.global.ssl.fastly.net.
+    path: /
+- name: 🇺🇸 美国 | USA 9
+  network: ws
+  password: 8deb189a-3aed-4865-843b-b72dae954c46
+  port: 443
+  server: 104.24.0.4
+  skip-cert-verify: true
+  sni: api.85s.me
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: api.85s.me
+    path: /
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #11'
+  network: ws
+  port: 443
+  server: 146.75.59.186
+  servername: community.fastly.steamstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: afed9510-8648-49c6-9fbd-c2d4d8bdd417
+  ws-opts:
+    headers:
+      Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.
     path: /
 - name: 🇺🇸 美国 | USA 12
   network: ws
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 179.253.255.184
+  server: 179.253.255.7
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
@@ -268,113 +266,59 @@ proxies:
     headers:
       Host: api.85s.me
     path: /
-- name: 🇺🇸 美国 | USA 13
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #13'
   network: ws
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 179.255.141.28
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
+  server: 146.75.59.186
+  servername: community.fastly.steamstatic.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 58d2fb1c-7ae2-42c8-8c0d-a393603ebc9f
   ws-opts:
     headers:
-      Host: api.85s.me
-    path: /
-- name: 🇺🇸 美国 | USA 14
-  network: ws
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 104.17.0.8
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: api.85s.me
+      Host: copy_az_channel_NUFiLTER_6i.global.ssl.fastly.net.
     path: /
 - name: '🇺🇸 美国 | USA #1'
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 216.38.170.103
+  server: 179.253.239.152
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
 - name: '🇺🇸 美国 | USA #2'
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 104.21.0.7
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-- name: '🇺🇸 美国 | USA #3'
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 179.253.231.141
+  server: 179.255.115.161
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
 - name: '🇺🇸 美国 | USA #5'
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 179.253.231.22
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-- name: '🇺🇸 美国 | USA #6'
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 104.18.0.1
+  server: 179.253.255.213
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
 - name: '🇺🇸 美国 | USA #7'
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 179.255.103.84
+  server: 47.75.104.211
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
-- name: '🇺🇸 美国 | USA #8'
+- name: '🇺🇸 美国 | USA #9'
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 179.255.141.59
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-- name: '🇺🇸 美国 | USA #10'
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 104.18.0.3
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-- name: '🇺🇸 美国 | USA #11'
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 193.163.19.232
+  server: 104.24.0.4
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
 - name: '🇺🇸 美国 | USA #12'
   password: 8deb189a-3aed-4865-843b-b72dae954c46
   port: 443
-  server: 179.253.255.184
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-- name: '🇺🇸 美国 | USA #13'
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 179.255.141.28
-  skip-cert-verify: true
-  sni: api.85s.me
-  type: trojan
-- name: '🇺🇸 美国 | USA #14'
-  password: 8deb189a-3aed-4865-843b-b72dae954c46
-  port: 443
-  server: 104.17.0.8
+  server: 179.253.255.7
   skip-cert-verify: true
   sni: api.85s.me
   type: trojan
