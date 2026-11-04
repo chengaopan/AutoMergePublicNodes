@@ -9,7 +9,20 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- name: 🇩🇪[www.v2nodes.com] vless-DE-1...
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: VideoRenderer
+  name: 🇷🇺 俄罗斯 | RUS 2
+  network: grpc
+  port: 443
+  server: 89.169.47.96
+  servername: renderer-bridge-2-129.mirra.now
+  tls: true
+  type: vless
+  udp: true
+  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
   port: 443
   server: 188.114.97.62
   tls: false
@@ -17,7 +30,7 @@ proxies:
   uuid: b15f187e-9b34-437c-8243-8651a8ada76c
   ws-opts:
     path: /stream/DEVCOP/8651a8ada76c/loc-1
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
   port: 465
   server: 91.107.244.35
   tls: false
@@ -25,9 +38,15 @@ proxies:
   uuid: a356fa77-7199-417a-80dd-0c0925789161
   ws-opts:
     path: /
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
+  port: 25362
+  server: 193.148.253.194
+  tls: false
+  type: vless
+  uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
 - client-fingerprint: unsafe
   encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
   network: ws
   port: 443
   server: 31.12.75.64
@@ -52,58 +71,22 @@ proxies:
     headers:
       Host: web-app-nr6wpa.app-tp57xz.workers.dev
     path: /api/ws
-- name: 🇩🇪[www.v2nodes.com] trojan-DE-...
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+  password: happybirthdaydaniel
+  port: 25267
+  server: de-bots4.h1cloud.net
+  type: trojan
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 193.108.119.29
   sni: blog.iloverussia2026.com
   type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 193.108.119.15
-  sni: courses.iloverussia2026.com
+  server: 193.108.119.78
   type: trojan
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #2'
-  network: ws
-  port: 443
-  server: goold.zovip2.ir
-  servername: goold.zovip2.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: d8dcb071-57db-4ed6-92af-bb4183a14168
-  ws-opts:
-    headers:
-      Host: goold.zovip2.ir
-    path: /api/v3/pulse
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: VideoRenderer
-  name: 🇩🇪 德国 | DEU 3
-  network: grpc
-  port: 443
-  server: 89.169.47.96
-  servername: renderer-bridge-2-129.mirra.now
-  tls: true
-  type: vless
-  udp: true
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: ''
-  name: '🇩🇪 德国 | DEU #3'
-  network: grpc
-  port: 443
-  server: 89.169.47.96
-  servername: renderer-bridge-2-129.mirra.now
-  tls: true
-  type: vless
-  uuid: 27653b37-603c-4c90-b1f5-25c4d23f8932
 - name: DE_speednode_0004
   port: 443
   server: 213.109.163.119
