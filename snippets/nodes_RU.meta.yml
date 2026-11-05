@@ -1,24 +1,10 @@
 proxies:
-- encryption: none
-  name: 🇷🇺[www.v2nodes.com] vless-RU-1...
-  network: ws
-  port: 443
-  server: 217.19.122.156
-  servername: vzvt1tpiml.rucdncomp.pro
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 40c4274f-3e4f-4c7b-ae5c-d87645a6e899
-  ws-opts:
-    headers:
-      Host: vzvt1tpiml.rucdncomp.pro
-    path: /service/telemetry/e6dc0bd08cb1/
 - alpn:
   - h2
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: vlgrpc
-  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
+  name: 🇷🇺[www.v2nodes.com] vless-RU-1...
   network: grpc
   port: 443
   server: 201.24.121.243
@@ -29,14 +15,16 @@ proxies:
   uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
 - client-fingerprint: random
   grpc-opts:
+    grpc-mode: gun
     grpc-service-name: grpc-ru
-  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #2'
+  name: 🇷🇺 俄罗斯 | RUS
   network: grpc
   port: 443
   server: xsru1.ddnsfree.com
   servername: xsru1.ddnsfree.com
   tls: true
   type: vless
+  udp: true
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
 - cipher: chacha20-ietf-poly1305
   name: 🇷🇺[www.v2nodes.com] ss-RU-1614...
@@ -50,7 +38,7 @@ proxies:
   port: 5112
   server: 90.156.203.62
   type: ss
-- name: 🇷🇺RU_1|1.8MB/s
+- name: 🇷🇺RU_1|2.0MB/s
   password: None
   port: 1446
   server: 46.29.166.134

@@ -9,10 +9,11 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
+- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #2'
   network: ws
   port: 14430
   server: 5.178.109.174
+  servername: 5.178.109.174
   tls: false
   type: vless
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -26,37 +27,41 @@ proxies:
   server: connect-se.mimowhat.online
   sni: connect-se.mimowhat.online
   type: trojan
-- name: 🇸🇪SE_1|1.6MB/s
-  port: 443
-  server: 146.70.242.130
-  skip-cert-verify: true
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: 138-124-86-230-sslip-io
+  name: 🇸🇪 瑞典 | SWE
+  network: grpc
+  port: 48115
+  server: 138.124.86.230
+  servername: 138-124-86-230.sslip.io
   tls: true
-  type: http
-- name: 🇸🇪SE_2|1.0MB/s
+  type: vless
+  udp: true
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+- name: 🇸🇪SE_2|2.1MB/s
   password: None
   port: 443
   server: 146.70.242.146
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇸🇪SE_3|1.9MB/s
+- name: 🇸🇪SE_3|1.2MB/s
   password: None
   port: 443
   server: 149.50.216.65
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: random
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
   name: '🇸🇪 瑞典 | SWE #1'
-  network: ws
-  port: 443
-  server: se-sto.862400.xyz
-  servername: se-sto.862400.xyz
+  network: grpc
+  port: 48115
+  server: 138.124.86.230
+  servername: 138-124-86-230.sslip.io
   tls: true
   type: vless
-  udp: true
-  uuid: ea81763f-e534-4700-aa28-9ac98156771b
-  ws-opts:
-    headers:
-      Host: se-sto.862400.xyz
-    path: /announcement?ed=2048
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
