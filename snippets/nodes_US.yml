@@ -11,6 +11,12 @@ proxies:
   port: 443
   server: 49.51.39.148
   type: ss
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸[www.v2nodes.com] ss-US-1612...
+  password: DZRy4Q3QH0jUGfKFl2jDCZ
+  port: 28960
+  server: 138.197.89.234
+  type: ss
 - name: 🇺🇸[www.v2nodes.com] trojan-US-...
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -29,10 +35,32 @@ proxies:
   skip-cert-verify: true
   sni: api.browseseniorrolesandenhanceyourcareertoday.com
   type: trojan
-- cipher: chacha20-ietf-poly1305
-  name: '🇺🇸 美国 | USA #4'
-  password: 9AUVPZfOeSHmVCMyLvIvrl1wVLvZf7Jv
-  port: 1080
-  server: 207.246.112.227
-  type: ss
+- client-fingerprint: chrome
+  name: 🇺🇸US_15|3.7MB/s
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.106.186.46
+  skip-cert-verify: false
+  sni: cdn.findlocaljobnetworkandbuildcommunityconnections.com
+  type: trojan
   udp: true
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    method: GET
+    path:
+    - /QQqun-737805443
+  name: '🇺🇸 美国 | USA #7'
+  network: http
+  port: 1288
+  server: 107.175.76.215
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 29a72eac-a4d1-4526-8fa0-d3ecc4e38b44

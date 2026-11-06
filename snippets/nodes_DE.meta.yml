@@ -9,7 +9,7 @@ proxies:
   sni: api.kermanshahi.org
   tls: false
   type: hysteria2
-- name: 🇩🇪[www.v2nodes.com] vless-DE-1...
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
   port: 443
   server: 188.114.97.62
   tls: false
@@ -17,14 +17,22 @@ proxies:
   uuid: b15f187e-9b34-437c-8243-8651a8ada76c
   ws-opts:
     path: /stream/DEVCOP/8651a8ada76c/loc-1
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
+  port: 465
+  server: 91.107.244.35
+  tls: false
+  type: vless
+  uuid: a356fa77-7199-417a-80dd-0c0925789161
+  ws-opts:
+    path: /
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #6'
   port: 25362
   server: 193.148.253.194
   tls: false
   type: vless
   uuid: 36fb6650-8a50-42b5-9f66-06538806f32c
 - encryption: none
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #5'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
   network: ws
   port: 80
   server: 104.27.88.172
@@ -41,90 +49,86 @@ proxies:
   port: 25267
   server: de-bots4.h1cloud.net
   type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #1'
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #5'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 193.108.119.29
   sni: blog.iloverussia2026.com
   type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #5'
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 193.108.119.78
   type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
+- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #4'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 193.108.119.15
   sni: courses.iloverussia2026.com
   type: trojan
-- name: 🇩🇪DE_1|2.2MB/s
-  password: None
-  port: 443
-  server: 152.233.20.206
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: DK_speednode_0006
-  port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇩🇪DE_3|2.8MB/s
-  password: None
-  port: 9002
-  server: 158.173.154.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_4|3.5MB/s
+- name: 🇩🇪DE_1|3.3MB/s
   password: None
   port: 9002
   server: 158.173.154.4
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇩🇪DE_5|2.2MB/s
-  password: None
-  port: 443
-  server: 149.36.50.1
+- name: DK_speednode_0005
+  port: 9002
+  server: 158.173.154.5
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇩🇪DE_6|2.8MB/s|R002-260618
+  udp: true
+- name: 🇩🇪DE_3|1.7MB/s
   password: None
   port: 443
   server: 87.249.132.97
   skip-cert-verify: true
-  sub_tag: R002-260618
   tls: true
   type: http
-  udp: true
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  encryption: mlkem768x25519plus.native.0rtt.gamsBJiUbGb-5RA4-tFL9_fkSCAAPnyduBmUDKIH_Fc
-  name: '🇩🇪 德国 | DEU #1'
-  network: xhttp
+- name: 🇩🇪DE_4|2.9MB/s
+  port: 9443
+  server: 213.177.229.161
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_5|2.1MB/s
+  password: None
   port: 443
-  server: 167.82.76.31
-  servername: cdn.akamai.steamstatic.com
+  server: 149.36.50.129
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_7|3.2MB/s
+  password: None
+  port: 443
+  server: 149.36.50.157
+  skip-cert-verify: true
+  tls: true
+  type: http
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #1'
+  network: ws
+  port: 443
+  server: latvia.zovip2.ir
+  servername: nova.zovip2.ir
   tls: true
   type: vless
   udp: true
-  uuid: 9e59c97f-fae2-4e24-9672-fb61f7292243
-  xhttp-opts:
-    host: Becker.global.ssl.fastly.net
-    mode: auto
-    path: /configure/services/vzQ6lbMCPkOKGnZN5uJR3e/versions/2/domains
+  uuid: 5a79e684-54c8-44c0-807a-225f9ea8c0ed
+  ws-opts:
+    headers:
+      Host: nova.zovip2.ir
+    path: /api/v3/pulse
 - alpn:
   - h3
   auth-str: dongtaiwang.com
   auth_str: dongtaiwang.com
   down: 1000
-  name: 🇩🇪 德国 | DEU 2
+  name: 🇩🇪 德国 | DEU 3
   port: 54177
   protocol: udp
   server: 5.83.129.90
@@ -132,26 +136,39 @@ proxies:
   sni: apple.com
   type: hysteria
   up: 500
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪 德国 | DEU #4'
+  network: ws
+  port: 16644
+  server: m.cnmjin.net
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  uuid: 545ee947-78b4-4c47-9c01-7a1d983273f8
+  ws-opts:
+    headers:
+      Host: 8b6efbd394b2946b0781661c2a1ba8f1.mobgslb.tbcache.com
+    path: /
 - alpn:
   - h2
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #3'
-  network: xhttp
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de1.v1
+  name: 🇩🇪 德国 | DEU 6
+  network: grpc
   port: 443
-  server: 78.17.39.129
-  servername: 78.17.39.129
+  server: falmero.store
+  servername: falmero.store
   tls: true
   type: vless
-  uuid: c04522c4-3d53-4eab-b5b5-25385d5f11b1
-  xhttp-opts:
-    host: 78.17.39.129
-    mode: packet-up
-    path: /assets/finvip02/
+  udp: true
+  uuid: 8fb19a9e-ca2b-433a-8469-e4c7796033b2
 - alpn:
   - h2
   client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #4'
+  name: '🇩🇪 德国 | DEU #6'
   network: xhttp
   port: 443
   server: 199.232.239.239
@@ -164,37 +181,6 @@ proxies:
     host: cloudnet2026.global.ssl.fastly.net
     mode: packet-up
     path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
-- client-fingerprint: random
-  name: '🇩🇪 德国 | DEU #5'
-  network: ws
-  port: 443
-  server: eu-central.862400.xyz
-  servername: eu-central.862400.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: ea81763f-e534-4700-aa28-9ac98156771b
-  ws-opts:
-    headers:
-      Host: eu-central.862400.xyz
-    path: /announcement?ed=2048
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '🇩🇪 德国 | DEU #6'
-  network: ws
-  port: 80
-  server: cd0.bmi.ir.kolman.com.de
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: b64d1d2c-4186-4265-a7a6-367ccdfffd74
-  ws-opts:
-    headers:
-      Host: bmi.ir.draft.co.impossible.com.ir.bmi.ir.com.iran.ir6.ifilmino.com
-    path: /f9bGbG7ZNy5L0tzXKZNxSX4q
 - client-fingerprint: firefox
   name: '🇩🇪 德国 | DEU #7'
   network: xhttp
@@ -210,20 +196,17 @@ proxies:
     path: /assets/twru01/
 - alpn:
   - h2
-  - http/1.1
-  client-fingerprint: ios
-  name: '🇩🇪 德国 | DEU #8'
-  network: xhttp
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪 德国 | DEU #5'
+  network: grpc
   port: 443
-  server: 193.160.208.240
-  servername: 193.160.208.240
+  server: falmero.store
+  servername: falmero.store
   tls: true
   type: vless
-  udp: true
-  uuid: c04522c4-3d53-4eab-b5b5-25385d5f11b1
-  xhttp-opts:
-    mode: packet-up
-    path: /assets/twru01/
+  uuid: 8fb19a9e-ca2b-433a-8469-e4c7796033b2
 - name: DE_speednode_0004
   port: 443
   server: 213.109.163.119

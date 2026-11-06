@@ -37,7 +37,6 @@ proxies:
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
 - client-fingerprint: firefox
   name: '🇸🇬[www.v2nodes.com] vless-SG-1... #1'
-  network: tcp
   port: 443
   server: 45.76.155.179
   servername: sg003.zestapp778.com
@@ -115,41 +114,34 @@ proxies:
   port: 8886
   server: 139.180.146.200
   type: trojan
-- name: 🇸🇬SG_1|1.3MB/s
-  password: None
-  port: 443
-  server: 156.146.56.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇸🇬SG_2|1.2MB/s
-  port: 9443
-  server: 149.88.99.209
-  skip-cert-verify: true
-  tls: true
-  type: http
+- name: 🇸🇬SG_1|1.4MB/s
+  network: ws
+  port: 8880
+  server: 172.64.150.28
+  type: vless
+  udp: true
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime29.workers.dev
+      User-Agent: Mozilla/5.0 (Windows NT 5.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/60.0.3112.90 Safari/537.36
+    path: /
+  xudp: true
+- cipher: chacha20-ietf-poly1305
+  name: '🇸🇬 新加坡 | SGP #2'
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 8443
+  server: 13.212.85.246
+  type: ss
   udp: true
 - auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
   fingerprint: C1:FD:40:94:1F:91:9B:5C:78:96:24:40:97:F2:2D:9D:95:8E:62:5C:D9:58:B7:5F:34:CC:FA:42:18:1F:50:B2
-  name: '🇸🇬 新加坡 | SGP #1'
+  name: '🇸🇬 新加坡 | SGP #3'
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 443
-  server: 54.251.78.89
+  server: 13.212.85.246
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
   type: hysteria2
-- client-fingerprint: random
-  name: '🇸🇬 新加坡 | SGP #3'
-  network: ws
-  port: 443
-  server: ap-south.862400.xyz
-  servername: ap-south.862400.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: ea81763f-e534-4700-aa28-9ac98156771b
-  ws-opts:
-    headers:
-      Host: ap-south.862400.xyz
-    path: /announcement?ed=2048
