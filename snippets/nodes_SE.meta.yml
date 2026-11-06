@@ -9,19 +9,24 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: 138-124-86-230-sslip-io
-  name: 🇸🇪 瑞典 | SWE 2
-  network: grpc
-  port: 48115
-  server: 138.124.86.230
-  servername: 138-124-86-230.sslip.io
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
+  network: tcp
+  port: 443
+  server: 194.104.94.141
+  servername: se3.shtil.io
   tls: true
   type: vless
-  udp: true
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+- cipher: aes-256-gcm
+  name: 🇸🇪[www.v2nodes.com] ss-SE-1615...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 138.199.55.243
+  type: ss
 - name: 🇸🇪[www.v2nodes.com] trojan-SE-...
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
@@ -34,34 +39,3 @@ proxies:
   server: connect-se.mimowhat.online
   sni: connect-se.mimowhat.online
   type: trojan
-- name: 🇸🇪SE_1|1.2MB/s
-  password: None
-  port: 443
-  server: 146.70.242.146
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇸🇪SE_2|2.3MB/s
-  port: 443
-  server: 146.70.242.130
-  skip-cert-verify: true
-  tls: true
-  type: http
-- cipher: aes-256-gcm
-  name: '🇸🇪 瑞典 | SWE #1'
-  password: FJo_V-KMvriDekN0CYkdNH0C
-  port: 1080
-  server: 201.8.87.11
-  type: ss
-  udp: true
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: ''
-  name: '🇸🇪 瑞典 | SWE #2'
-  network: grpc
-  port: 48115
-  server: 138.124.86.230
-  servername: 138-124-86-230.sslip.io
-  tls: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
