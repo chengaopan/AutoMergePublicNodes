@@ -29,12 +29,6 @@ proxies:
   server: 198.244.201.129
   type: ss
 - cipher: aes-256-gcm
-  name: '🇬🇧[www.v2nodes.com] ss-GB-1616... #1'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 198.244.202.215
-  type: ss
-- cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1615...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
@@ -70,10 +64,23 @@ proxies:
   port: 443
   server: 141.98.101.181
   type: ss
-- name: 🇬🇧GB_1|1.2MB/s
-  password: None
-  port: 443
-  server: 185.164.138.156
+- name: 🇬🇧GB_1|1.3MB/s
+  port: 9443
+  server: 84.17.50.129
   skip-cert-verify: true
   tls: true
   type: http
+- client-fingerprint: chrome
+  name: '🇬🇧 英国 | GBR #1'
+  network: ws
+  port: 443
+  server: 146.75.59.186
+  servername: cdn.akamai.steamstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: a953509f-af22-42d5-a34c-aa29405369b0
+  ws-opts:
+    headers:
+      Host: ukoijji.global.ssl.fastly.net
+    path: /
