@@ -9,14 +9,17 @@ proxies:
   sni: nas.aizhzo.com
   tls: false
   type: hysteria2
-- client-fingerprint: firefox
-  name: 🇭🇰[www.v2nodes.com] vless-HK-1...
+- client-fingerprint: chrome
+  encryption: none
+  name: '🇭🇰 香港 | HKG #1'
   network: tcp
   port: 31884
   server: 152.175.6.229
   servername: hk010.zestapp778.com
+  skip-cert-verify: false
   tls: true
   type: vless
+  udp: true
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   ws-opts:
     path: /
@@ -51,28 +54,32 @@ proxies:
     headers:
       Host: vms.lifetime11.workers.dev
     path: /
-- name: 🇭🇰HK_1|1.6MB/s
-  password: None
-  port: 31343
-  server: 120.232.204.58
-  skip-cert-verify: true
-  tls: true
-  type: http
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #1'
+- client-fingerprint: chrome
+  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #5'
   network: ws
-  port: 44867
-  server: 47.244.120.197
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
+  port: 443
+  server: 103.247.28.203
+  servername: parsa-panel-dy55x.railway1385-2a46.workers.dev
+  tls: true
+  type: vless
+  uuid: 64726966-0000-4000-8000-740000000000
   ws-opts:
-    path: /arki
+    headers:
+      Host: parsa-panel-dy55x.railway1385-2a46.workers.dev
+    path: /
+- client-fingerprint: chrome
+  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #6'
+  network: ws
+  port: 443
+  server: 188.114.98.0
+  servername: tn1r.eu.cc
+  tls: true
+  type: vless
+  uuid: 22424ee2-6fe3-42ca-9749-6d4c5a8acc82
+  ws-opts:
+    headers:
+      Host: tn1r.eu.cc
+    path: /id-pusat
 - alterId: 0
   cipher: auto
   name: '🇭🇰 香港 | HKG #2'
@@ -87,17 +94,4 @@ proxies:
   ws-opts:
     headers:
       Host: 47.244.120.197
-    path: /arki
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #3'
-  network: ws
-  port: 36703
-  server: 47.244.120.197
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  ws-opts:
     path: /arki

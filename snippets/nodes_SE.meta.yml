@@ -9,19 +9,28 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
+- client-fingerprint: chrome
+  encryption: none
   name: '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
   network: tcp
   port: 443
-  server: 194.104.94.141
+  server: se3.shtil.io
   servername: se3.shtil.io
   tls: true
   type: vless
   uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
-- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #2'
+  network: grpc
+  port: 48115
+  server: 138.124.86.230
+  servername: 138-124-86-230.sslip.io
+  tls: true
+  type: vless
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #4'
   network: ws
   port: 14430
   server: 5.178.109.174
@@ -33,35 +42,40 @@ proxies:
     headers:
       Host: 5.178.109.174
     path: /vless
+- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #5'
+  network: ws
+  port: 14430
+  server: 193.188.21.253
+  tls: false
+  type: vless
+  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
+  ws-opts:
+    headers:
+      Host: 193.188.21.253
+    path: /vless
+- cipher: aes-256-gcm
+  name: 🇸🇪[www.v2nodes.com] ss-SE-1615...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 138.199.55.243
+  type: ss
 - name: 🇸🇪[www.v2nodes.com] trojan-SE-...
-  network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 70.34.207.14
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   type: trojan
-- name: '🇸🇪[www.v2nodes.com] trojan-SE-... #1'
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  port: 443
-  server: connect-se.mimowhat.online
-  sni: connect-se.mimowhat.online
-  type: trojan
-- name: 🇸🇪SE_1|3.2MB/s
-  password: None
-  port: 443
-  server: 146.70.242.146
-  skip-cert-verify: true
+- client-fingerprint: chrome
+  name: '🇸🇪 瑞典 | SWE #1'
+  network: xhttp
+  port: 4443
+  server: swo2.nexfile.net
+  servername: swo2.nexfile.net
   tls: true
-  type: http
-- name: 🇸🇪SE_2|1.0MB/s
-  port: 443
-  server: 217.210.129.243
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇸🇪SE_3|2.1MB/s
-  port: 443
-  server: 79.142.77.63
-  skip-cert-verify: true
-  tls: true
-  type: http
+  type: vless
+  udp: true
+  uuid: a35c508f-4d5d-4531-842e-6e9d43c762c0
+  xhttp-opts:
+    host: swo2.nexfile.net
+    mode: auto
+    path: /api/v1/sync/
