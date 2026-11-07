@@ -9,20 +9,21 @@ proxies:
   port: 443
   server: 201.24.121.243
   servername: kk-ru24a1.testkknegr.online
-  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
 - client-fingerprint: chrome
   grpc-opts:
+    grpc-mode: gun
     grpc-service-name: grpc-ru
-  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
+  name: 🇷🇺 俄罗斯 | RUS
   network: grpc
   port: 443
   server: xssite.webredirect.org
   servername: xssite.webredirect.org
   tls: true
   type: vless
+  udp: true
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
 - cipher: chacha20-ietf-poly1305
   name: 🇷🇺[www.v2nodes.com] ss-RU-1614...
@@ -36,3 +37,15 @@ proxies:
   port: 5112
   server: 90.156.203.62
   type: ss
+- name: 🇷🇺RU_1|2.1MB/s
+  password: None
+  port: 1446
+  server: 46.29.166.134
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇷🇺RU_2|2.4MB/s
+  port: 10800
+  server: 46.8.158.144
+  skip-cert-verify: true
+  type: socks5

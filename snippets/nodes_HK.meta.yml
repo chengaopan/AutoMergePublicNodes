@@ -9,17 +9,17 @@ proxies:
   sni: nas.aizhzo.com
   tls: false
   type: hysteria2
-- name: 🇭🇰[www.v2nodes.com] vless-HK-1...
-  network: ws
-  port: 1443
-  server: 38.76.180.144
-  tls: false
+- client-fingerprint: firefox
+  name: 🇭🇰[www.v2nodes.com] vless-HK-1...
+  network: tcp
+  port: 31884
+  server: 152.175.6.229
+  servername: hk010.zestapp778.com
+  tls: true
   type: vless
-  uuid: d98b67d4-024a-4bba-91e2-e6ebece6df11
+  uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
   ws-opts:
-    headers:
-      Host: 38.76.180.144
-    path: /vless-ws
+    path: /
 - name: '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
   port: 443
   server: 188.114.98.0
@@ -40,31 +40,29 @@ proxies:
     headers:
       Host: fornewiran.ade-1000.workers.dev
     path: /vl/yLWNcuUuw1jlJpkDhGy?ed=2560
-- name: 🇭🇰HK_1|1.4MB/s
+- name: '🇭🇰[www.v2nodes.com] vless-HK-1... #4'
+  network: ws
+  port: 8080
+  server: 104.21.70.21
+  tls: false
+  type: vless
+  uuid: 6202b230-417c-4d8e-b624-0f71afa9c75d
+  ws-opts:
+    headers:
+      Host: vms.lifetime11.workers.dev
+    path: /
+- name: 🇭🇰HK_1|1.6MB/s
   password: None
   port: 31343
   server: 120.232.204.58
   skip-cert-verify: true
   tls: true
   type: http
-- alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #2'
-  network: ws
-  port: 36703
-  server: 47.244.120.197
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
-  ws-opts:
-    path: /arki
 - alpn:
   - ''
   alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #3'
+  name: '🇭🇰 香港 | HKG #1'
   network: ws
   port: 44867
   server: 47.244.120.197
@@ -77,7 +75,7 @@ proxies:
     path: /arki
 - alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #4'
+  name: '🇭🇰 香港 | HKG #2'
   network: ws
   port: 23026
   server: 47.244.120.197
@@ -89,4 +87,17 @@ proxies:
   ws-opts:
     headers:
       Host: 47.244.120.197
+    path: /arki
+- alterId: 0
+  cipher: auto
+  name: '🇭🇰 香港 | HKG #3'
+  network: ws
+  port: 36703
+  server: 47.244.120.197
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  ws-opts:
     path: /arki
