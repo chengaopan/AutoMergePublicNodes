@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: firefox
-  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #2'
+  name: 🇸🇬[www.v2nodes.com] vless-SG-1...
   port: 443
   server: 45.76.155.179
   servername: sg003.zestapp778.com
@@ -8,11 +8,13 @@ proxies:
   type: vless
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
 - client-fingerprint: chrome
-  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #7'
+  encryption: none
+  name: '🇸🇬[www.v2nodes.com] vless-SG-1... #5'
   network: ws
   port: 2096
   server: 139.162.27.96
   servername: free-server.techsonic.dev
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: 6e59d5c5-7aa3-4c36-a4c4-e3b899525ed2
@@ -62,9 +64,11 @@ proxies:
   server: 15.235.184.127
   type: trojan
 - name: '🇸🇬[www.v2nodes.com] trojan-SG-... #1'
+  network: tcp
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 149.28.130.108
+  skip-cert-verify: true
   sni: searchcreativejobsandshowcaseyourartistictalents.com
   type: trojan
 - name: '🇸🇬[www.v2nodes.com] trojan-SG-... #2'
@@ -72,6 +76,13 @@ proxies:
   port: 8886
   server: 139.180.146.200
   type: trojan
+- name: 🇸🇬SG_1|2.7MB/s|K001-260618
+  port: 9090
+  server: 159.223.41.216
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  type: http
+  udp: true
 - auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
   fingerprint: C1:FD:40:94:1F:91:9B:5C:78:96:24:40:97:F2:2D:9D:95:8E:62:5C:D9:58:B7:5F:34:CC:FA:42:18:1F:50:B2
   name: '🇸🇬 新加坡 | SGP #1'
