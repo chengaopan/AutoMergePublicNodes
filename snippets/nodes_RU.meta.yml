@@ -12,20 +12,19 @@ proxies:
   tls: true
   type: vless
   uuid: 32b5ca9b-3f81-4031-965d-e8b074216e8d
-- client-fingerprint: chrome
-  name: '🇷🇺 俄罗斯 | RUS #3'
-  network: ws
+- client-fingerprint: random
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-ru
+  name: 🇷🇺 俄罗斯 | RUS
+  network: grpc
   port: 443
-  server: xsru2.freeddns.org
-  servername: xsru2.freeddns.org
+  server: xsru1.ddnsfree.com
+  servername: xsru1.ddnsfree.com
   tls: true
   type: vless
   udp: true
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  ws-opts:
-    headers:
-      Host: xsru2.freeddns.org
-    path: /wsru
 - cipher: aes-128-gcm
   name: 🇷🇺[www.v2nodes.com] ss-RU-1617...
   password: 8722de56b6c0b3f6a4d01cf91c07e6aa
@@ -33,28 +32,14 @@ proxies:
   server: 38.60.223.125
   type: ss
 - cipher: aes-256-gcm
-  name: '🇷🇺 俄罗斯 | RUS #1'
+  name: 🇷🇺[www.v2nodes.com] ss-RU-1616...
   password: cCMJgJTA3BA489YUYrFq7XHXSiSpWlLa
   port: 18443
   server: 46.17.47.58
   type: ss
-  udp: true
 - cipher: chacha20-ietf-poly1305
   name: 🇷🇺[www.v2nodes.com] ss-RU-1163...
   password: VVlAff77CnAU43Aoc5j15Y
   port: 5112
   server: 90.156.203.62
   type: ss
-- name: 🇷🇺RU_1|4.1MB/s
-  password: None
-  port: 1446
-  server: 46.29.166.134
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇷🇺RU_2|1.1MB/s
-  port: 8443
-  server: 87.242.85.187
-  skip-cert-verify: true
-  tls: true
-  type: http

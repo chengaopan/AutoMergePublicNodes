@@ -9,23 +9,21 @@ proxies:
   sni: giftcard.gateway-stream.com
   tls: false
   type: hysteria2
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: 138-124-86-230-sslip-io
   name: '🇸🇪[www.v2nodes.com] vless-SE-1... #2'
-  network: tcp
-  port: 443
-  server: 194.104.94.141
-  servername: se3.shtil.io
+  network: grpc
+  port: 48115
+  server: 138.124.86.230
+  servername: 138-124-86-230.sslip.io
   tls: true
   type: vless
-  uuid: 6ba4ed2e-b42b-4880-8b3b-c7e2df2d02f6
+  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
 - name: '🇸🇪[www.v2nodes.com] vless-SE-1... #4'
   network: ws
   port: 14430
   server: 5.178.109.174
-  servername: 5.178.109.174
   tls: false
   type: vless
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
@@ -45,23 +43,9 @@ proxies:
   server: 70.34.207.14
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   type: trojan
-- name: 🇸🇪SE_1|1.5MB/s
+- name: 🇸🇪SE_1|2.6MB/s
   port: 443
-  server: 146.70.242.130
+  server: 79.142.77.63
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: chrome
-  name: '🇸🇪 瑞典 | SWE #1'
-  network: xhttp
-  port: 4443
-  server: swo2.nexfile.net
-  servername: swo2.nexfile.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: a35c508f-4d5d-4531-842e-6e9d43c762c0
-  xhttp-opts:
-    host: swo2.nexfile.net
-    mode: auto
-    path: /api/v1/sync/

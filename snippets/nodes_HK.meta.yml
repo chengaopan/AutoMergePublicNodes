@@ -15,13 +15,14 @@ proxies:
   tls: false
   type: vless
   uuid: 7852e4df-db54-4f75-a35e-3b8fbe89e56d
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   encryption: none
   name: '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
   network: tcp
   port: 31884
   server: 152.175.6.229
   servername: hk010.zestapp778.com
+  skip-cert-verify: false
   tls: true
   type: vless
   uuid: e9a8144e-5237-488a-afb1-9ca3d8d54c80
@@ -82,7 +83,7 @@ proxies:
     headers:
       Host: tn1r.eu.cc
     path: /id-pusat
-- name: 🇭🇰HK_1|2.2MB/s
+- name: 🇭🇰HK_1|1.2MB/s
   password: None
   port: 31343
   server: 120.232.204.58
@@ -102,24 +103,18 @@ proxies:
   uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
   ws-opts:
     path: /arki
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
+- auth: 526a1128-7487-11ee-9bca-f23c913c8d2b
   name: '🇭🇰 香港 | HKG #2'
-  network: ws
-  port: 44867
-  server: 47.244.120.197
+  password: 526a1128-7487-11ee-9bca-f23c913c8d2b
+  port: 443
+  server: aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com
   skip-cert-verify: true
+  sni: aecfea9b-tmm5c0-tpw4i4-1pckg.nw4.hyhuawei.com
   tls: false
-  type: vmess
-  udp: true
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  ws-opts:
-    path: /arki
+  type: hysteria2
 - alterId: 0
   cipher: auto
-  name: '🇭🇰 香港 | HKG #3'
+  name: '🇭🇰 香港 | HKG #5'
   network: ws
   port: 23026
   server: 47.244.120.197
