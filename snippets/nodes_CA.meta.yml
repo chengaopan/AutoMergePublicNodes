@@ -1,17 +1,11 @@
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇨🇦[www.v2nodes.com] vless-CA-1...
-  network: ws
+- name: 🇨🇦[www.v2nodes.com] vless-CA-1...
   port: 443
-  server: 172.64.145.94
-  servername: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
-  tls: true
+  server: 172.64.150.248
+  tls: false
   type: vless
   uuid: 5dc15e15-f285-4a9d-959b-0e4fbdd77b63
   ws-opts:
-    headers:
-      Host: powered-by-surena.configfarsi695fd01a94fe7.workers.dev
     path: /
 - client-fingerprint: chrome
   encryption: none
@@ -29,12 +23,11 @@ proxies:
     path: /pulse
 - alpn:
   - http/1.1
-  client-fingerprint: unsafe
-  encryption: none
+  client-fingerprint: chrome
   name: '🇨🇦[www.v2nodes.com] vless-CA-1... #2'
   network: ws
-  port: 443
-  server: 188.114.98.0
+  port: 2096
+  server: 104.25.0.1
   servername: rainfall0705.cc.cd
   tls: true
   type: vless
@@ -91,6 +84,12 @@ proxies:
   port: 8882
   server: 51.79.49.116
   type: ss
+- cipher: aes-256-gcm
+  name: 🇨🇦[www.v2nodes.com] ss-CA-1538...
+  password: zDNVedRFPQexG9v
+  port: 445
+  server: 51.222.12.127
+  type: ss
 - name: 🇨🇦[www.v2nodes.com] trojan-CA-...
   password: 5t6i121em5lkmsmk
   port: 46977
@@ -100,33 +99,37 @@ proxies:
 - name: '🇨🇦[www.v2nodes.com] trojan-CA-... #1'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 216.152.147.201
-  sni: resources.connectingpeoplewithgreatjobs.com
+  server: 216.152.147.85
   type: trojan
-- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #7'
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 216.152.147.152
-  type: trojan
-- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #3'
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #2'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 216.152.147.93
   sni: connectingpeoplewithgreatjobs.com
   type: trojan
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #3'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.201
+  sni: resources.connectingpeoplewithgreatjobs.com
+  type: trojan
 - name: '🇨🇦[www.v2nodes.com] trojan-CA-... #4'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 216.152.147.79
+  server: 216.152.147.89
   type: trojan
 - name: '🇨🇦[www.v2nodes.com] trojan-CA-... #5'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 216.152.147.85
+  server: 216.152.147.48
   type: trojan
 - name: '🇨🇦[www.v2nodes.com] trojan-CA-... #6'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 216.152.147.79
-  sni: blog.connectingpeoplewithgreatjobs.com
+  type: trojan
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #7'
+  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  port: 443
+  server: 216.152.147.74
   type: trojan
