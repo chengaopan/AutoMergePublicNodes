@@ -1,8 +1,12 @@
 proxies:
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
   name: '🇸🇪[www.v2nodes.com] vless-SE-1... #2'
+  network: tcp
   port: 443
-  server: se3.shtil.io
+  server: 194.104.94.141
   servername: se3.shtil.io
   tls: true
   type: vless
@@ -22,25 +26,12 @@ proxies:
   network: ws
   port: 14430
   server: 5.178.109.174
-  servername: 5.178.109.174
   tls: false
   type: vless
   uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
   ws-opts:
     headers:
       Host: 5.178.109.174
-    path: /vless
-- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #6'
-  network: ws
-  port: 14430
-  server: 193.188.21.253
-  servername: 193.188.21.253
-  tls: false
-  type: vless
-  uuid: 57f7772d-f5d6-4d8f-992d-5fa5e0d6da55
-  ws-opts:
-    headers:
-      Host: 193.188.21.253
     path: /vless
 - cipher: aes-256-gcm
   name: 🇸🇪[www.v2nodes.com] ss-SE-1615...
@@ -60,3 +51,17 @@ proxies:
   server: 70.34.207.14
   sni: searchhealthcarejobsandbuildmedicalcareerpathway.com
   type: trojan
+- name: 🇸🇪SE_1|3.2MB/s
+  password: None
+  port: 443
+  server: 146.70.242.146
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇸🇪SE_2|3.3MB/s
+  password: None
+  port: 443
+  server: 149.50.216.65
+  skip-cert-verify: true
+  tls: true
+  type: http

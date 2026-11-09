@@ -14,7 +14,7 @@ proxies:
   - h2
   - http/1.1
   client-fingerprint: chrome
-  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
+  name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
   network: tcp
   port: 8443
   server: node-uk.connectsuite.org
@@ -64,41 +64,75 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1020...
-  password: 4a2rfixophdjffa8KVA4Aa
-  port: 8080
-  server: 193.29.139.234
-  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-9184...
   password: shadowsocks
   port: 443
   server: 141.98.101.181
   type: ss
-- name: 🇬🇧GB_1|1.8MB/s
+- name: 🇬🇧GB_1|3.2MB/s
   password: None
   port: 9443
   server: 84.17.50.129
   skip-cert-verify: true
   tls: true
   type: http
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
+- name: 🇬🇧GB_2|1.6MB/s
+  password: None
+  port: 9443
+  server: 37.120.233.34
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_3|2.6MB/s
+  password: None
+  port: 9443
+  server: 84.17.50.214
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_4|1.8MB/s
+  password: None
+  port: 443
+  server: 212.102.63.61
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_5|1.7MB/s|P002-260618
+  password: None
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇬🇧GB_6|1.1MB/s
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_7|1.1MB/s
+  password: None
+  port: 443
+  server: 37.120.233.18
+  skip-cert-verify: true
+  tls: true
+  type: http
+- client-fingerprint: firefox
   name: '🇬🇧 英国 | GBR #1'
   network: xhttp
   port: 443
-  server: 46.33.8.253
-  servername: link.onecloudtraining.com
+  server: 46.33.8.254
+  servername: main.onecloudtraining.com
   tls: true
   type: vless
   udp: true
   uuid: 0ad875ef-b751-46e3-aa89-e1ae20e43bcc
   xhttp-opts:
     mode: stream-up
-    path: /static/v3/object/OqyozN63ao
+    path: /stream/v1/chunk/m6OfwfAj3W
 - alpn:
   - h2
   - http/1.1
@@ -106,14 +140,13 @@ proxies:
   name: '🇬🇧 英国 | GBR #2'
   network: xhttp
   port: 443
-  server: upload.onecloudtraining.com
+  server: 46.33.8.246
   servername: upload.onecloudtraining.com
   tls: true
   type: vless
   udp: true
   uuid: 0ad875ef-b751-46e3-aa89-e1ae20e43bcc
   xhttp-opts:
-    host: upload.onecloudtraining.com
     mode: stream-up
     path: /assets/v1/ingest/5y2XX8T5BC
 - alpn:
@@ -133,77 +166,19 @@ proxies:
     host: assets.onecloudtraining.com
     mode: stream-up
     path: /static/v1/blob/SUBAhgozTk
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: stats.v2.StreamService
-  name: 🇬🇧 英国 | GBR 4
-  network: grpc
-  port: 443
-  server: 80.47.13.182
-  servername: dl.megadrishto.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 95f85937-7b95-45c4-8d69-95da6a978569
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: firefox
-  name: '🇬🇧 英国 | GBR #5'
+  name: '🇬🇧 英国 | GBR #4'
   network: xhttp
   port: 443
-  server: download.onecloudtraining.com
-  servername: download.onecloudtraining.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0ad875ef-b751-46e3-aa89-e1ae20e43bcc
-  xhttp-opts:
-    host: download.onecloudtraining.com
-    mode: stream-up
-    path: /stream/v3/upload/KAawhnLCtp
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  name: '🇬🇧 英国 | GBR #6'
-  network: xhttp
-  port: 443
-  server: 46.33.8.246
-  servername: upload.onecloudtraining.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0ad875ef-b751-46e3-aa89-e1ae20e43bcc
-  xhttp-opts:
-    mode: stream-up
-    path: /assets/v1/ingest/5y2XX8T5BC
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  name: '🇬🇧 英国 | GBR #7'
-  network: xhttp
-  port: 443
-  server: link.onecloudtraining.com
+  server: 46.33.8.253
   servername: link.onecloudtraining.com
   tls: true
   type: vless
   udp: true
   uuid: 0ad875ef-b751-46e3-aa89-e1ae20e43bcc
   xhttp-opts:
-    host: link.onecloudtraining.com
     mode: stream-up
     path: /static/v3/object/OqyozN63ao
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: ''
-  name: '🇬🇧 英国 | GBR #4'
-  network: grpc
-  port: 443
-  server: 80.47.13.182
-  servername: dl.megadrishto.com
-  tls: true
-  type: vless
-  uuid: 95f85937-7b95-45c4-8d69-95da6a978569

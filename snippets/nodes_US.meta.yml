@@ -14,16 +14,22 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
-- name: 🇺🇸210637 | ⚡️Telegram = t.me/L...
-  password: bce6c821-200d-421f-bf3d-7159e5246ea0
-  port: 33333
-  server: hy2.123266.xyz
-  skip-cert-verify: false
-  sni: hy2.123266.xyz
-  tls: false
-  type: hysteria2
 - client-fingerprint: chrome
-  name: 🇺🇸[www.v2nodes.com] vless-US-1...
+  name: '🇺🇸 美国 | USA #1'
+  network: ws
+  port: 443
+  server: 146.75.57.7
+  servername: cdn.akamai.steamstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8fdeb819-df0c-456d-9a1d-e3a9950ece4d
+  ws-opts:
+    headers:
+      Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.
+    path: /
+- client-fingerprint: chrome
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #2'
   network: ws
   port: 8443
   server: 38.114.103.107
@@ -36,32 +42,17 @@ proxies:
       Host: cat.ilovezhenjiu.top
     path: /cgciws
 - client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #2'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #6'
   network: ws
   port: 443
   server: 199.232.78.160
   servername: cdn.akamai.steamstatic.com
   tls: true
   type: vless
-  udp: true
   uuid: 8fdeb819-df0c-456d-9a1d-e3a9950ece4d
   ws-opts:
     headers:
       Host: copy_az_channel_NUFiLTER_ss.global.ssl.fastly.net.
-    path: /
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #3'
-  network: ws
-  port: 443
-  server: 146.75.57.7
-  servername: cdn.akamai.steamstatic.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 8fdeb819-df0c-456d-9a1d-e3a9950ece4d
-  ws-opts:
-    headers:
-      Host: copy_az_channel_NUFiLTER_17i.global.ssl.fastly.net.
     path: /
 - cipher: aes-128-gcm
   name: 🇺🇸[www.v2nodes.com] ss-US-1619...
@@ -106,57 +97,285 @@ proxies:
       Host: speedtest.danfengno1.kdns.fr
     path: /danfeng-public-ng3zjr-qba1sq-5pqc-59s5q5st
 - client-fingerprint: chrome
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: grpc-ru
-  name: 🇷🇺 俄罗斯 | RUS 3
-  network: grpc
+  encryption: none
+  name: 🇺🇸US_2|3.8MB/s
+  network: xhttp
   port: 443
-  server: xssite.webredirect.org
-  servername: xssite.webredirect.org
+  server: 200.102.179.69
+  servername: dmbdnpctq8hjxx.hat.onl
   tls: true
   type: vless
   udp: true
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-- client-fingerprint: chrome
-  name: '🇷🇺 俄罗斯 | RUS #4'
-  network: ws
-  port: 443
-  server: xsru2.freeddns.org
-  servername: xsru2.freeddns.org
+  uuid: 7592ca5c-b352-4562-8856-a9c936a3331b
+  xhttp-opts:
+    host: dmbdnpctq8hjxx.hat.onl
+    mode: auto
+    path: /hls/014373eq/seg
+  xudp: true
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: '20'
+  name: 🇺🇸US_3|1.0MB/s
+  password: dongtaiwang.com
+  port: 20022
+  server: 137.175.82.43
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
   tls: true
-  type: vless
-  udp: true
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-  ws-opts:
-    headers:
-      Host: xsru2.freeddns.org
-    path: /wsru
-- name: 🇺🇸 美国 | USA
+  type: hysteria
+  up: '20'
+- name: 🇺🇸US_4|1.5MB/s
   password: 0324fbc29561
   port: 443
   server: sdf65h46wr.df6h451rh.xin
+  servername: images.ctfassets.net
   skip-cert-verify: true
   sni: images.ctfassets.net
+  tls: true
   type: anytls
-  udp: true
-- alpn:
-  - h3
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  auth_str: github.com/Alvin9999-newpac/fanqiang
-  down: 55
-  name: 🇺🇸 美国 | USA 6
-  port: 22335
-  protocol: none
-  server: 198.200.57.142
+- name: US_speednode_0040
+  port: 443
+  server: 38.247.141.135
   skip-cert-verify: true
-  sni: bing.com
-  type: hysteria
-  up: 11
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_6|2.6MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.195
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_7|2.2MB/s
+  port: 9002
+  server: 138.199.35.209
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_8|3.7MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.204
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_9|2.0MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.203
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_10|3.1MB/s
+  port: 443
+  server: 129.153.93.183
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_11|1.5MB/s
+  port: 9002
+  server: 138.199.35.220
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_12|2.3MB/s
+  password: None
+  port: 9002
+  server: 138.199.35.198
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_13|1.0MB/s
+  port: 443
+  server: 121.127.34.82
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_14|1.5MB/s
+  password: None
+  port: 443
+  server: 198.44.135.27
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_15|2.2MB/s
+  password: None
+  port: 443
+  server: 12.202.180.10
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_16|2.6MB/s
+  port: 443
+  server: 68.235.56.51
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_17|1.7MB/s|K001-260618
+  port: 443
+  server: 149.34.248.65
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+- name: 🇺🇸US_18|2.2MB/s
+  password: None
+  port: 9443
+  server: 154.47.25.78
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_19|3.1MB/s
+  password: None
+  port: 9443
+  server: 149.88.21.140
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_20|2.7MB/s
+  password: test123
+  port: 1080
+  server: 104.168.249.36
+  type: socks5
+  username: test123
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_23|2.3MB/s
+  network: xhttp
+  port: 443
+  server: cf-cname.xingpingcn.top
+  servername: 86f9dec4s478.kuback.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  xhttp-opts:
+    host: 86f9dec4s478.kuback.top
+    path: 48a0348bf803e0097405a138424f4890
+    x-padding-bytes: 100-1000
+    x-padding-header: X-Forwarded-Uri
+    x-padding-key: _
+    x-padding-method: tokenish
+    x-padding-obfs-mode: true
+    x-padding-placement: queryInHeader
+  xudp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇺🇸US_22|2.7MB/s
+  network: xhttp
+  port: 443
+  server: www.codex2api.com
+  servername: 86f9dec4s478.kuback.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  xhttp-opts:
+    host: 86f9dec4s478.kuback.top
+    path: 48a0348bf803e0097405a138424f4890
+    x-padding-bytes: 100-1000
+    x-padding-header: X-Forwarded-Uri
+    x-padding-key: _
+    x-padding-method: tokenish
+    x-padding-obfs-mode: true
+    x-padding-placement: queryInHeader
+  xudp: true
+- name: 🇺🇸US_24|3.1MB/s
+  password: 'null'
+  port: 9002
+  server: 138.199.35.216
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- client-fingerprint: random
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: grpc-ru
+  name: 🇷🇺 俄罗斯 | RUS
+  network: grpc
+  port: 443
+  server: xsru1.ddnsfree.com
+  servername: xsru1.ddnsfree.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+- alpn:
+  - h2
+  client-fingerprint: ios
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
+  name: 🇷🇺 俄罗斯 | RUS 2
+  network: grpc
+  port: 443
+  server: vps2.nemnogogo.com
+  servername: vps2.nemnogogo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 95f85937-7b95-45c4-8d69-95da6a978569
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #2'
+  network: ws
+  port: 443
+  server: US122202.ssgreen.org
+  servername: US122202.ssgreen.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 25a5a66f-5dd8-4661-9002-8a7870c62fef
+  ws-opts:
+    headers:
+      Host: US122202.ssgreen.org
+    path: /wes
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #3'
+  network: ws
+  port: 443
+  server: 5.253.38.69
+  servername: fs.qicai99.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #4'
+  network: ws
+  port: 443
+  server: 162.159.198.1
+  servername: fs.qicai99.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /
 - client-fingerprint: random
   grpc-opts:
     grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #2'
+  name: '🇷🇺 俄罗斯 | RUS #1'
   network: grpc
   port: 443
   server: xsru1.ddnsfree.com
@@ -164,27 +383,22 @@ proxies:
   tls: true
   type: vless
   uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  client-fingerprint: ios
   grpc-opts:
     grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #3'
+  name: '🇷🇺 俄罗斯 | RUS #2'
   network: grpc
   port: 443
-  server: xssite.webredirect.org
-  servername: xssite.webredirect.org
+  server: vps2.nemnogogo.com
+  servername: vps2.nemnogogo.com
   tls: true
   type: vless
-  uuid: c90395e6-2140-47ad-a54d-9b166729d3ef
+  uuid: 95f85937-7b95-45c4-8d69-95da6a978569
 - name: US_speednode_0039
   port: 8443
   server: 44.248.167.117
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: US_speednode_0040
-  port: 443
-  server: 38.247.141.135
   skip-cert-verify: true
   tls: true
   type: http
