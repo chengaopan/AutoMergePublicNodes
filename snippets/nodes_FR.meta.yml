@@ -1,16 +1,29 @@
 proxies:
-- client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇷[www.v2nodes.com] vless-FR-1...
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
   network: tcp
   port: 2053
-  server: w.geogame.ir
+  server: 15.236.109.186
   servername: w.geogame.ir
   tls: true
   type: vless
   uuid: fbda2834-b1e7-4148-afb9-deda31036a30
+- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
+  network: ws
+  port: 14430
+  server: 138.124.70.41
+  tls: false
+  type: vless
+  uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
+  ws-opts:
+    headers:
+      Host: 138.124.70.41
+    path: /vless
 - encryption: none
-  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #6'
+  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #8'
   network: ws
   port: 80
   server: ov-france1.09vpn.com
@@ -95,40 +108,32 @@ proxies:
   port: 19999
   server: 167.17.64.22
   type: ss
-- cipher: aes-256-cfb
-  name: '🇫🇷 法国 | FRA #1'
-  password: amazonskr05
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: '55'
+  name: 🇫🇷FR_2|1.1MB/s
+  password: dongtaiwang.com
+  port: 36699
+  server: 163.172.117.163
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tls: true
+  type: hysteria
+  up: '11'
+- name: 🇫🇷FR_4|2.0MB/s
   port: 443
-  server: 13.36.165.6
-  type: ss
-  udp: true
-- name: 🇫🇷FR_2|1.2MB/s
-  password: None
-  port: 9443
-  server: 213.139.9.142
+  server: 149.102.245.65
   skip-cert-verify: true
   tls: true
   type: http
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇫🇷FR_3|1.1MB/s
-  network: ws
-  port: 443
-  server: 3.169.9.125
-  servername: dkfsoyk9ju2as.cloudfront.net
+- name: 🇫🇷FR_5|1.7MB/s
+  port: 9443
+  server: 138.199.47.247
+  skip-cert-verify: true
   tls: true
-  type: vless
-  udp: true
-  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
-  ws-opts:
-    headers:
-      Host: dkfsoyk9ju2as.cloudfront.net
-      User-Agent: Mozilla/5.0 (Linux; Android 7.0; SM-J710F Build/NRD90M) AppleWebKit/537.36
-        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
-    path: /
-  xudp: true
+  type: http
 - alpn:
   - h3
   auth-str: dongtaiwang.com
@@ -142,6 +147,13 @@ proxies:
   sni: bing.com
   type: hysteria
   up: 11
+- cipher: aes-256-cfb
+  name: '🇫🇷 法国 | FRA #1'
+  password: amazonskr05
+  port: 443
+  server: 13.36.165.6
+  type: ss
+  udp: true
 - alpn:
   - h3
   client-fingerprint: edge
@@ -158,13 +170,6 @@ proxies:
     host: oh4.global.ssl.fastly.net
     mode: auto
     path: /
-- name: FR_speednode_0008
-  port: 19362
-  server: 51.159.225.197
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
 - name: FR_speednode_0009
   port: 8090
   server: 83.206.1.225
@@ -181,13 +186,6 @@ proxies:
   type: http
   udp: true
   username: 'null'
-- name: FR_speednode_0011
-  port: 23856
-  server: 51.159.225.196
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
 - name: FR_speednode_0012
   port: 443
   server: 82.65.162.76
