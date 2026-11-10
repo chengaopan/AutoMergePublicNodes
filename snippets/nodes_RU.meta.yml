@@ -1,10 +1,17 @@
 proxies:
+- name: 🇷🇺211060 | ⚡️Telegram = t.me/L...
+  password: kKd2watTl7WACOoIAjkzt4MW6ak6I3c1Un8c4-oNMtU
+  port: 5443
+  server: 84.252.100.138
+  sni: nl.vip-get.ru
+  tls: false
+  type: hysteria2
 - alpn:
   - h2
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: vlgrpc
-  name: 🇷🇺[www.v2nodes.com] vless-RU-1...
+  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #1'
   network: grpc
   port: 443
   server: 201.24.121.243
@@ -24,9 +31,27 @@ proxies:
   port: 18443
   server: 46.17.47.58
   type: ss
-- name: 🇷🇺RU_1|1.0MB/s
-  port: 8443
-  server: 87.242.85.187
-  skip-cert-verify: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇷🇺RU_2|3.1MB/s
+  network: xhttp
+  port: 443
+  server: cf.090227.xyz
+  servername: 88a79b35s394.kuback.top
   tls: true
-  type: http
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  xhttp-opts:
+    host: 88a79b35s394.kuback.top
+    path: 97d9472949ee4f4be023f97dfea13cfa
+    x-padding-bytes: 100-1000
+    x-padding-header: X-Forwarded-Uri
+    x-padding-key: _
+    x-padding-method: tokenish
+    x-padding-obfs-mode: true
+    x-padding-placement: queryInHeader
+  xudp: true
