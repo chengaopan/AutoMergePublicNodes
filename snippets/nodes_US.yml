@@ -1,4 +1,10 @@
 proxies:
+- cipher: chacha20-ietf-poly1305
+  name: 🇺🇸[www.v2nodes.com] ss-US-1620...
+  password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
+  port: 42878
+  server: 23.230.52.119
+  type: ss
 - name: 🇺🇸[www.v2nodes.com] trojan-US-...
   password: a75243d0f5c2e31bd6c8c118b4f6442f81ad
   port: 443
@@ -6,23 +12,41 @@ proxies:
   skip-cert-verify: true
   sni: www.cloudflare.com
   type: trojan
-- name: 🇺🇸 美国 | USA 2
+- alpn:
+  - http/1.1
+  alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 | USA 2
   network: ws
-  password: pH[]S[Bh:_:D6T4k
   port: 443
-  server: 104.19.45.195
+  server: ghcterweq-production.up.railway.app
+  servername: ghcterweq-production.up.railway.app
   skip-cert-verify: true
-  sni: AZaDneT-692.PagEs.DEv
-  type: trojan
+  tls: true
+  type: vmess
   udp: true
+  uuid: 1cb8f5b3-cd0a-40c3-8dfd-8e2a96533be0
   ws-opts:
     headers:
-      Host: AZaDneT-692.PagEs.DEv
-    path: /trsVu9Ualb1DOfGjpw
-- name: '🇺🇸 美国 | USA #2'
-  password: pH[]S[Bh
+      Host: ghcterweq-production.up.railway.app
+    path: /api/NN33zS
+- cipher: aes-256-cfb
+  name: '🇺🇸 美国 | USA #4'
+  password: amazonskr05
   port: 443
-  server: 104.19.45.195
-  skip-cert-verify: true
-  sni: AZaDneT-692.PagEs.DEv
-  type: trojan
+  server: 3.16.78.3
+  type: ss
+  udp: true
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #2'
+  network: ws
+  port: 443
+  server: ghcterweq-production.up.railway.app
+  tls: true
+  type: vmess
+  uuid: 1cb8f5b3-cd0a-40c3-8dfd-8e2a96533be0
+  ws-opts:
+    headers:
+      Host: ghcterweq-production.up.railway.app
+    path: /api/NN33zS
