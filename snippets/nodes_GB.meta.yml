@@ -68,48 +68,32 @@ proxies:
 - name: 🇬🇧GB_1|1.7MB/s
   password: None
   port: 9443
-  server: 84.17.50.214
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_5|2.8MB/s
-  password: None
-  port: 443
-  server: 212.102.63.61
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_3|1002KB/s
-  password: None
-  port: 443
-  server: 185.164.138.156
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇬🇧GB_4|1.4MB/s
-  password: None
-  port: 9443
   server: 37.120.233.34
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_6|1.6MB/s
-  port: 9443
-  server: 84.17.50.129
+- name: 🇬🇧GB_2|1.2MB/s
+  password: None
+  port: 443
+  server: 84.17.50.193
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇬🇧GB_7|3.0MB/s
-  port: 9443
-  server: 84.233.178.33
-  skip-cert-verify: true
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: '🇬🇧 英国 | GBR #1'
+  network: xhttp
+  port: 443
+  server: 151.101.36.235
+  servername: accounts.fastly.com
   tls: true
-  type: http
-- name: 🇬🇧 英国 | GBR
-  password: 66dff097-fa47-4ae1-8ed8-5e147e564f1c
-  port: 30000
-  server: uk1.fastfly.qzz.io
-  skip-cert-verify: true
-  sni: uk1.fastfly.qzz.io
-  type: anytls
+  type: vless
   udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  xhttp-opts:
+    host: ovd13.global.ssl.fastly.net
+    mode: auto
+    no-grpc-header: true
+    path: /
+    x-padding-bytes: 100-1000

@@ -6,15 +6,17 @@ proxies:
   name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
   network: tcp
   port: 2053
-  server: 15.236.109.186
+  server: w.geogame.ir
   servername: w.geogame.ir
   tls: true
   type: vless
   uuid: fbda2834-b1e7-4148-afb9-deda31036a30
-- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
+- encryption: none
+  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
   network: ws
   port: 14430
   server: 138.124.70.41
+  servername: 138.124.70.41
   tls: false
   type: vless
   uuid: 6cc745e3-4eb9-46c8-a4a1-85dee7b87edc
@@ -108,68 +110,158 @@ proxies:
   port: 19999
   server: 167.17.64.22
   type: ss
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  down: '55'
-  name: 🇫🇷FR_2|1.1MB/s
-  password: dongtaiwang.com
-  port: 36699
-  server: 163.172.117.163
-  servername: bing.com
-  skip-cert-verify: true
-  sni: bing.com
-  tls: true
-  type: hysteria
-  up: '11'
-- name: 🇫🇷FR_4|2.0MB/s
+- client-fingerprint: chrome
+  name: 🇫🇷FR_1|2.4MB/s
+  network: ws
   port: 443
-  server: 149.102.245.65
+  server: 3.169.9.125
+  servername: dkfsoyk9ju2as.cloudfront.net
   skip-cert-verify: true
+  sni: dkfsoyk9ju2as.cloudfront.net
   tls: true
-  type: http
-- name: 🇫🇷FR_5|1.7MB/s
-  port: 9443
-  server: 138.199.47.247
-  skip-cert-verify: true
-  tls: true
-  type: http
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55
-  name: 🇫🇷 法国 | FRA
-  port: 36699
-  protocol: none
-  server: 163.172.117.163
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria
-  up: 11
-- cipher: aes-256-cfb
-  name: '🇫🇷 法国 | FRA #1'
-  password: amazonskr05
-  port: 443
-  server: 13.36.165.6
-  type: ss
+  type: vless
   udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  ws-opts:
+    headers:
+      Host: dkfsoyk9ju2as.cloudfront.net
+    path: /
+- client-fingerprint: chrome
+  name: 🇫🇷FR_2|1.6MB/s
+  network: ws
+  port: 443
+  server: 3.169.9.125
+  servername: d14jyezfrcyf60.cloudfront.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  ws-opts:
+    headers:
+      Host: d14jyezfrcyf60.cloudfront.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/43.0.2357.65 Safari/537.36
+    path: /
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇷FR_3|1.6MB/s
+  network: ws
+  port: 443
+  server: 3.169.9.125
+  servername: d1aedflfr97jes.cloudfront.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  ws-opts:
+    headers:
+      Host: d1aedflfr97jes.cloudfront.net
+      User-Agent: Mozilla/5.0 (Windows NT 6.1) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/68.0.3440.106 Safari/537.36
+    path: /
+  xudp: true
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇷FR_4|1.9MB/s
+  network: ws
+  port: 443
+  server: 3.169.9.125
+  servername: d1m31xp31bswc2.cloudfront.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  ws-opts:
+    headers:
+      Host: d1m31xp31bswc2.cloudfront.net
+      User-Agent: Mozilla/5.0 (Windows NT 10.0) AppleWebKit/537.36 (KHTML, like Gecko)
+        Chrome/70.0.3538.102 Safari/537.36
+    path: /
+  xudp: true
+- client-fingerprint: firefox
+  name: '🇫🇷 法国 | FRA #1'
+  network: xhttp
+  port: 443
+  server: 194.226.169.66
+  servername: n1.kalitka.store
+  tls: true
+  type: vless
+  udp: true
+  uuid: 232fa5fc-f8af-4c96-a6cf-f69d3c60fa33
+  xhttp-opts:
+    host: n1.kalitka.store
+    path: /api/v1/sync
+- client-fingerprint: chrome
+  name: '🇫🇷 法国 | FRA #2'
+  network: ws
+  port: 443
+  server: 199.232.78.120
+  servername: cdn.akamai.steamstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 14fcb437-5561-413c-9eff-55424855e7d7
+  ws-opts:
+    headers:
+      Host: fraboijji.global.ssl.fastly.net.
+    path: /
 - alpn:
   - h3
   client-fingerprint: edge
-  name: '🇫🇷 法国 | FRA #2'
+  name: '🇫🇷 法国 | FRA #3'
   network: xhttp
   port: 443
-  server: 151.101.36.2
+  server: 151.101.36.246
   servername: accounts.fastly.com
   tls: true
   type: vless
   udp: true
   uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
   xhttp-opts:
-    host: oh4.global.ssl.fastly.net
+    host: ovd12.global.ssl.fastly.net
     mode: auto
     path: /
+- client-fingerprint: chrome
+  name: '🇫🇷 法国 | FRA #6'
+  network: xhttp
+  port: 443
+  server: 151.101.36.201
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  xhttp-opts:
+    host: oh6.global.ssl.fastly.net
+    mode: auto
+    path: /
+- alpn:
+  - h3
+  client-fingerprint: chrome
+  name: '🇫🇷 法国 | FRA #7'
+  network: xhttp
+  port: 443
+  server: 151.101.36.88
+  servername: accounts.fastly.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 67cd3349-f789-4cbb-8b91-4b6b1654ce7c
+  xhttp-opts:
+    host: ovd5.global.ssl.fastly.net
+    mode: auto
+    path: /
+- name: FR_speednode_0008
+  port: 19362
+  server: 51.159.225.197
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
 - name: FR_speednode_0009
   port: 8090
   server: 83.206.1.225
@@ -186,6 +278,13 @@ proxies:
   type: http
   udp: true
   username: 'null'
+- name: FR_speednode_0011
+  port: 23856
+  server: 51.159.225.196
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
 - name: FR_speednode_0012
   port: 443
   server: 82.65.162.76

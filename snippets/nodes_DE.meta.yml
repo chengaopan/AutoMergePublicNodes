@@ -1,13 +1,12 @@
 proxies:
 - client-fingerprint: firefox
-  name: '🇺🇸 美国 | USA #7'
+  name: 🇩🇪[www.v2nodes.com] vless-DE-1...
   network: ws
   port: 8443
   server: 188.114.99.157
   servername: moz.ar-marz.fun
   tls: true
   type: vless
-  udp: true
   uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
   ws-opts:
     headers:
@@ -91,297 +90,116 @@ proxies:
 - name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 193.108.119.96
-  sni: learn.iloverussia2026.com
+  server: 193.108.119.29
+  sni: blog.iloverussia2026.com
   type: trojan
 - name: '🇩🇪[www.v2nodes.com] trojan-DE-... #3'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
-  server: 193.108.119.29
-  sni: blog.iloverussia2026.com
+  server: 193.108.119.96
+  sni: learn.iloverussia2026.com
   type: trojan
-- client-fingerprint: firefox
-  name: 🇩🇪 德国｜06｜BGP
-  network: ws
-  port: 2053
-  server: cf01.564895.xyz
-  servername: de01.564895.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887
-  ws-opts:
-    headers:
-      Host: de01.564895.xyz
-    path: /asdasd
-- client-fingerprint: firefox
-  name: 🇩🇪 德国｜07｜BGP
-  network: ws
-  port: 2096
-  server: cf02.564895.xyz
-  servername: de01.564895.xyz
-  skip-cert-verify: true
-  tfo: false
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2f4c3fc5-8fa2-4576-a583-8f98a6026887
-  ws-opts:
-    headers:
-      Host: de01.564895.xyz
-    path: /asdasd
 - alpn:
-  - h2
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55
+  name: 🇩🇪 德国 | DEU
+  port: 54177
+  protocol: none
+  server: 5.83.129.90
+  skip-cert-verify: true
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 11
+- alpn:
   - http/1.1
-  client-fingerprint: edge
-  name: '🇩🇪 德国 | DEU #14'
-  network: xhttp
-  port: 443
-  server: 188.72.103.4
-  servername: cdnapi.tronglob5.net
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0000be2c-fb3a-5bce-a7d7-2105d461915b
-  xhttp-opts:
-    host: cdnapi.tronglob5.net
-    mode: packet-up
-    no-grpc-header: true
-    path: /api/account/orders/
-    seq-key: line
-    seq-placement: cookie
-    session-key: cart_sid
-    session-placement: cookie
-    uplink-data-key: X-Client-Trace
-    uplink-data-placement: header
-    uplink-http-method: GET
-    x-padding-bytes: 80-900
-    x-padding-header: X-Ab-Variant
-    x-padding-key: ab
-    x-padding-method: tokenish
-    x-padding-obfs-mode: true
-    x-padding-placement: queryInHeader
-- name: 🇩🇪DE_2|2.2MB/s
-  password: None
-  port: 443
-  server: 149.36.50.157
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_3|2.4MB/s
-  port: 443
-  server: 213.177.229.161
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: DK_speednode_0005
-  port: 9002
-  server: 158.173.154.5
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇩🇪DE_5|4.3MB/s
-  port: 443
-  server: 116.202.172.99
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_6|4.3MB/s
-  password: None
-  port: 9002
-  server: 158.173.154.4
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_7|1.6MB/s
-  password: None
-  port: 443
-  server: 87.249.132.97
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_8|2.4MB/s
-  port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_9|2.1MB/s
-  password: None
-  port: 443
-  server: 193.233.75.115
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_10|2.2MB/s
-  password: None
-  port: 443
-  server: 172.64.68.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_11|1.9MB/s
-  password: None
-  port: 443
-  server: 149.36.50.129
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: random
-  name: '🇩🇪 德国 | DEU #1'
-  network: ws
-  port: 443
-  server: 195.201.31.167
-  servername: eu-central.862400.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
-  ws-opts:
-    headers:
-      Host: eu-central.862400.xyz
-    path: /announcement?ed=2048
-- client-fingerprint: random
-  name: '🇩🇪 德国 | DEU #2'
-  network: ws
-  port: 443
-  server: 172.104.120.92
-  servername: eu-central.862400.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
-  ws-opts:
-    headers:
-      Host: eu-central.862400.xyz
-    path: /announcement?ed=2048
-- client-fingerprint: random
+  client-fingerprint: firefox
   name: '🇩🇪 德国 | DEU #3'
   network: ws
   port: 443
-  server: 188.164.248.143
-  servername: eu-central.862400.xyz
+  server: 188.225.37.175
+  servername: cryptoventura.online
   tls: true
   type: vless
   udp: true
-  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
   ws-opts:
     headers:
-      Host: eu-central.862400.xyz
-    path: /announcement?ed=2048
-- client-fingerprint: random
-  name: '🇩🇪 德国 | DEU #4'
+      Host: cryptoventura.online
+    path: /api/de3/live
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #5'
   network: ws
   port: 443
-  server: 43.174.195.1
-  servername: eu-central.862400.xyz
+  server: cryptoventura.online
+  servername: cryptoventura.online
   tls: true
   type: vless
   udp: true
-  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
   ws-opts:
     headers:
-      Host: eu-central.862400.xyz
-    path: /announcement?ed=2048
-- client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #5'
+      Host: cryptoventura.online
+    path: /api/de3/live
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.-ZWspL93deEZwwmwaLVu3_KYaQT81d3Ey1OFgJixPko
+  name: '🇩🇪 德国 | DEU #7'
   network: xhttp
   port: 443
-  server: 193.160.208.240
-  servername: 193.160.208.240
+  server: 146.75.59.186
+  servername: community.fastly.steamstatic.com
   tls: true
   type: vless
   udp: true
-  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
+  uuid: 93761b91-be43-4f3f-af40-65ea34d3eae2
   xhttp-opts:
+    host: Max9376JsoJishaihsju.global.ssl.fastly.net
     mode: auto
-    path: /assets/twru01/
-- cipher: 2022-blake3-aes-256-gcm
-  name: '🇩🇪 德国 | DEU #6'
-  password: L9F2GjYbyk6gICuLp2LFmHC0lKaEW7HOA32XTf29C6Y=:OvfxPVBCAsZFpN0pIx9AwgxwxV+U3A7XtRagdUwio+U=
-  port: 26412
-  server: oztq9osla2ad.dop15.com
-  type: ss
-  udp: true
-- client-fingerprint: random
-  name: '🇩🇪 德国 | DEU #7'
-  network: ws
-  port: 443
-  server: 139.162.26.8
-  servername: eu-central.862400.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
-  ws-opts:
-    headers:
-      Host: eu-central.862400.xyz
-    path: /announcement?ed=2048
-- client-fingerprint: random
-  name: '🇩🇪 德国 | DEU #8'
-  network: ws
-  port: 443
-  server: 139.162.61.198
-  servername: eu-central.862400.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
-  ws-opts:
-    headers:
-      Host: eu-central.862400.xyz
-    path: /announcement?ed=2048
-- grpc-opts:
+    path: /
+- client-fingerprint: firefox
+  grpc-opts:
     grpc-mode: gun
-    grpc-service-name: vless
+    grpc-service-name: cache.sync.v1
   name: 🇩🇪 德国 | DEU 9
   network: grpc
-  port: 2085
-  server: 104.143.223.236
-  tls: true
-  type: vless
-  udp: true
-  uuid: 6538f5c3-5b01-4956-a8e6-47688c01c42e
-- client-fingerprint: random
-  name: '🇩🇪 德国 | DEU #10'
-  network: ws
   port: 443
-  server: 188.255.156.209
-  servername: eu-central.862400.xyz
+  server: 188.225.73.41
+  servername: cadrin.wtf
   tls: true
   type: vless
   udp: true
-  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
-  ws-opts:
-    headers:
-      Host: eu-central.862400.xyz
-    path: /announcement?ed=2048
-- client-fingerprint: random
-  name: '🇩🇪 德国 | DEU #13'
-  network: ws
-  port: 443
-  server: 193.23.211.139
-  servername: eu-central.862400.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5b28a0c9-eda3-4c78-b07b-48cbd1670771
-  ws-opts:
-    headers:
-      Host: eu-central.862400.xyz
-    path: /announcement?ed=2048
-- grpc-opts:
-    grpc-service-name: ''
+  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+- client-fingerprint: chrome
   name: '🇩🇪 德国 | DEU #9'
-  network: grpc
-  port: 2085
-  server: 104.143.223.236
+  network: xhttp
+  port: 443
+  server: 185.22.172.249
+  servername: fortuna.golden-dragon.de5.net
   tls: true
   type: vless
-  uuid: 6538f5c3-5b01-4956-a8e6-47688c01c42e
+  udp: true
+  uuid: b7374077-9fdc-4d28-9fb1-5cbc262fb53d
+  xhttp-opts:
+    host: fortuna.golden-dragon.de5.net
+    mode: packet-up
+    path: /dragon-stream
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪 德国 | DEU #8'
+  network: grpc
+  port: 443
+  server: 188.225.73.41
+  servername: cadrin.wtf
+  tls: true
+  type: vless
+  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
 - name: DE_speednode_0004
   port: 443
   server: 213.109.163.119
