@@ -1,16 +1,25 @@
 proxies:
-- name: 🗼31@oneclickvpnkeys
-  password: a2c74ce7-5daa-4bee-a1eb-52863873b3c3
-  port: 443
-  server: 194.48.250.233
-  skip-cert-verify: true
-  sni: mol.ultimagamest.com
+- client-fingerprint: chrome
+  name: '🇵🇱[www.v2nodes.com] vless-PL-1... #3'
+  port: 2087
+  server: 2.26.6.1
+  servername: 2.26.6.1
+  skip-cert-verify: false
+  tls: true
+  type: vless
+  uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
+- encryption: none
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
+  network: tcp
+  port: 49313
+  server: 159.195.207.238
   tls: false
-  type: hysteria2
+  type: vless
+  uuid: 855c7aaa-e7d6-463e-971e-d36032744428
 - alpn:
   - http/1.1
   client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #12'
+  name: '🇷🇺 俄罗斯 | RUS #4'
   network: ws
   port: 443
   server: cryptoventura.online
@@ -23,23 +32,8 @@ proxies:
     headers:
       Host: cryptoventura.online
     path: /api/de3/live
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
-  network: ws
-  port: 14443
-  server: 5.42.107.38
-  servername: germ.onlineai.pro
-  tls: true
-  type: vless
-  uuid: 010be6fa-ab5f-404a-9edf-ab2db1f09f0c
-  ws-opts:
-    headers:
-      Host: germ.onlineai.pro
-    path: /api/generate
 - client-fingerprint: firefox
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #5'
   network: ws
   port: 8443
   server: 188.114.99.157
@@ -54,7 +48,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #6'
   network: ws
   port: 443
   server: n2.topingr.ir
@@ -69,7 +63,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: a9w9wmko0k2od14hv8v
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #5'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
   network: grpc
   port: 443
   server: 5.83.129.236
@@ -77,24 +71,6 @@ proxies:
   tls: true
   type: vless
   uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
-  network: ws
-  port: 80
-  server: 104.27.88.172
-  servername: web-app-nr6wpa.app-tp57xz.workers.dev
-  tls: false
-  type: vless
-  uuid: 50414e45-4c5f-5a45-5553-52108a2d5224
-  ws-opts:
-    headers:
-      Host: web-app-nr6wpa.app-tp57xz.workers.dev
-    path: /api/ws
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪[www.v2nodes.com] ss-DE-1621...
-  password: zZMNTGpPl38ASlbI1EKOBJ
-  port: 46303
-  server: 135.220.178.46
-  type: ss
 - cipher: aes-256-gcm
   name: 🇩🇪[www.v2nodes.com] ss-DE-1616...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -119,169 +95,107 @@ proxies:
   port: 19999
   server: 193.108.119.2
   type: ss
-- name: 🇩🇪[www.v2nodes.com] trojan-DE-...
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+- encryption: mlkem768x25519plus.native.0rtt.idIqJLbBRhVvjLcCi75qK-I68clo9tz132HIDrp6JVA
+  flow: xtls-rprx-vision
+  http-opts:
+    headers:
+      Host:
+      - tgju.org
+    path:
+    - /@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs---@TurboConfigs--@TurboConfigs---@TurboConfigs---@TurboConfigs---
+  name: 🇩🇪DE_2|4.4MB/s
+  network: http
+  port: 2091
+  server: 167.233.182.104
+  type: vless
+  udp: true
+  uuid: 3a667b02-3e6e-439e-9fdb-720ab7a5d306
+  xudp: true
+- name: 🇩🇪DE_3|3.3MB/s
+  password: None
   port: 443
-  server: 193.108.119.96
-  sni: learn.iloverussia2026.com
-  type: trojan
-- name: '🇩🇪[www.v2nodes.com] trojan-DE-... #2'
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
+  server: 149.36.50.157
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_4|2.4MB/s
   port: 443
-  server: 193.108.119.78
-  type: trojan
-- name: 🇩🇪DE_1|1013KB/s
+  server: 172.64.69.89
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_5|2.2MB/s
+  password: None
+  port: 443
+  server: 172.64.68.89
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_6|2.2MB/s
   password: None
   port: 443
   server: 152.233.20.206
   skip-cert-verify: true
   tls: true
   type: http
-- client-fingerprint: chrome
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
   name: '🇩🇪 德国 | DEU #1'
   network: ws
-  port: 443
-  server: 144.31.70.213
-  servername: v1n3.11676767.xyz
-  tls: true
-  type: vless
+  port: 80
+  server: bmi2.kolman.com.de
+  skip-cert-verify: true
+  tls: false
+  type: vmess
   udp: true
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
+  uuid: a564987a-380a-4c21-a462-a011863ca9be
   ws-opts:
     headers:
-      Host: v1n3.11676767.xyz
-    path: /picture/lessons
-- alpn:
-  - h3
-  - h2
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.Fy1WuRvH1VNIEda4AC61jAhcBFLzuYHcwbUO7mNjxwY
+      Host: zeo6-lylp.uti.realoslo-norg.maniyadg7shard.ir.
+    path: /f9bGbG7ZNy5L0tzXKZNxSX4q
+- client-fingerprint: firefox
   name: '🇩🇪 德国 | DEU #2'
   network: xhttp
-  port: 2087
-  server: www.hyby.ir
-  servername: www.hyby.ir
+  port: 443
+  server: 193.160.208.240
+  servername: 193.160.208.240
   tls: true
   type: vless
   udp: true
-  uuid: 423796d4-3a76-4fd9-8bda-6f4e3747e1d4
+  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
   xhttp-opts:
-    host: www.hyby.ir
     mode: auto
-    path: /
-- client-fingerprint: chrome
+    path: /assets/twru01/
+- client-fingerprint: firefox
   name: '🇩🇪 德国 | DEU #3'
   network: ws
   port: 443
-  server: 91.184.248.161
-  servername: v1n3.11676767.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  ws-opts:
-    headers:
-      Host: v1n3.11676767.xyz
-    path: /manhua/doujin
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #5'
-  network: ws
-  port: 443
-  server: 134.209.227.233
-  servername: v1n3.11676767.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  ws-opts:
-    headers:
-      Host: v1n3.11676767.xyz
-    path: /go.php/products
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #6'
-  network: ws
-  port: 443
-  server: 213.176.94.31
-  servername: v1n3.11676767.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  ws-opts:
-    headers:
-      Host: v1n3.11676767.xyz
-    path: /go.php/products
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #7'
-  network: ws
-  port: 2053
-  server: 83.147.254.59
-  servername: v1n3.11676767.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  ws-opts:
-    headers:
-      Host: v1n3.11676767.xyz
-    path: /picture/lessons
-- encryption: mlkem768x25519plus.native.0rtt.4ABzCb9yeBZzvV-bRT5Tqpb3kejYBGn4Vib4PJiSyUg
-  http-opts:
-    headers:
-      Host:
-      - docs.github.com
-    method: GET
-    path:
-    - /
-  name: '🇩🇪 德国 | DEU #8'
-  network: http
-  port: 2053
-  server: shh-hja-bbw.speedbluepanel.sbs
-  tls: false
-  type: vless
-  udp: true
-  uuid: b86451af-4c98-4b7d-96e5-16f2e9df1d46
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: cache.sync.v1
-  name: 🇩🇪 德国 | DEU 10
-  network: grpc
-  port: 443
-  server: 188.225.73.41
-  servername: cadrin.wtf
+  server: 188.225.37.43
+  servername: torvani.cyou
   tls: true
   type: vless
   udp: true
   uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
-- encryption: mlkem768x25519plus.native.0rtt.JOz04Neg9PDWwDsVd4DaTDB63yZZDX2FNbkadsv91gk
-  http-opts:
+  ws-opts:
     headers:
-      Host:
-      - ssh.webdade.com
-    method: GET
-    path:
-    - /
-  name: '🇩🇪 德国 | DEU #11'
-  network: http
-  port: 46132
-  server: edition.ativetechnology.ir
-  tls: false
-  type: vless
-  udp: true
-  uuid: b86451af-4c98-4b7d-96e5-16f2e9df1d46
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: ''
-  name: '🇩🇪 德国 | DEU #10'
-  network: grpc
+      Host: torvani.cyou
+    path: /api/boards/live
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #4'
+  network: ws
   port: 443
-  server: 188.225.73.41
-  servername: cadrin.wtf
+  server: 199.232.78.120
+  servername: cdn.akamai.steamstatic.com
   tls: true
   type: vless
-  uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
+  udp: true
+  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
+  ws-opts:
+    headers:
+      Host: finalnsdger.global.ssl.fastly.net.
+    path: /
 - name: DE_speednode_0004
   port: 443
   server: 213.109.163.119

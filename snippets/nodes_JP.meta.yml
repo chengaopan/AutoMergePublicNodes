@@ -1,5 +1,5 @@
 proxies:
-- name: 🇯🇵[www.v2nodes.com] vless-JP-1...
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
   network: ws
   port: 443
   server: 46.250.254.187
@@ -11,7 +11,7 @@ proxies:
     headers:
       Host: fs.qicai99.com
     path: /fp=chrome
-- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #2'
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #9'
   network: ws
   port: 443
   server: 207.148.115.152
@@ -23,12 +23,12 @@ proxies:
     headers:
       Host: vlso5.1d.mom
     path: /socks5=888:888@hkip.1d.mom:1080fp=chrome
-- client-fingerprint: unsafe
+- client-fingerprint: chrome
   encryption: none
-  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #4'
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #5'
   network: ws
   port: 443
-  server: 172.64.152.19
+  server: 104.18.42.98
   servername: jp3.yohototo.top
   tls: true
   type: vless
@@ -37,11 +37,39 @@ proxies:
     headers:
       Host: jp3.yohototo.top
     path: /tyxyws
+- encryption: none
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #8'
+  network: tcp
+  port: 47878
+  server: 152.69.195.67
+  servername: 152.69.195.67
+  tls: false
+  type: vless
+  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
+- client-fingerprint: chrome
+  name: 🇯🇵[www.v2nodes.com] vless-JP-2...
+  network: ws
+  port: 443
+  server: 46.250.254.187
+  servername: fs.qicai99.com
+  tls: true
+  type: vless
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /
 - cipher: aes-256-gcm
   name: 🇯🇵[www.v2nodes.com] ss-JP-1599...
   password: BeaUf9c0AEWH40Pu
   port: 8388
   server: 154.36.158.197
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇯🇵[www.v2nodes.com] ss-JP-1544...
+  password: 3eOFeNssde7PYYMv
+  port: 443
+  server: 84.247.155.196
   type: ss
 - cipher: aes-128-gcm
   name: 🇯🇵[www.v2nodes.com] ss-JP-5141...
@@ -49,37 +77,9 @@ proxies:
   port: 443
   server: 149.22.87.204
   type: ss
-- down: 100 Mbps
-  name: 🇯🇵JP_1|1.5MB/s
-  password: 30f5e94a-3e13-4270-9f90-60827bef6671
-  port: 443
-  ports: 443,8443
-  server: 141.147.160.26
+- name: 🇯🇵JP_1|3.8MB/s
+  port: 8443
+  server: 64.176.51.83
   skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: false
-  up: 30 Mbps
-  x-toolall-mihomo: true
-- down: 100 Mbps
-  name: 🇯🇵JP_2|2.6MB/s
-  password: 30f5e94a-3e13-4270-9f90-60827bef6671
-  port: 443
-  ports: 443,8443
-  server: 161.33.152.237
-  skip-cert-verify: true
-  sni: bing.com
-  type: hysteria2
-  udp: false
-  up: 30 Mbps
-  x-toolall-mihomo: true
-- fingerprint: ''
-  name: 🇯🇵JP_3|3.8MB/s
-  password: b80fb17e-082a-40ce-9e38-ee2f92c1a6ea
-  port: 36035
-  server: site.ddddd.site
-  skip-cert-verify: true
-  sni: virtual.ubuntu24.com
-  type: anytls
-  udp: true
-  username: b80fb17e-082a-40ce-9e38-ee2f92c1a6ea
+  tls: true
+  type: http

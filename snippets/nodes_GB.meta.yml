@@ -1,6 +1,5 @@
 proxies:
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
-  network: tcp
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
   port: 8443
   server: node-uk.connectsuite.org
   servername: node-uk.connectsuite.org
@@ -55,17 +54,37 @@ proxies:
   port: 443
   server: 141.98.101.181
   type: ss
-- client-fingerprint: chrome
-  name: '🇬🇧 英国 | GBR #2'
-  network: ws
-  port: 8443
-  server: 193.123.74.174
-  servername: v1n3.11676767.xyz
+- name: 🇬🇧GB_1|3.0MB/s
+  password: None
+  port: 9443
+  server: 37.120.233.34
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: http
+- name: 🇬🇧GB_2|1.1MB/s|P002-260618
+  password: None
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  sub_tag: P002-260618
+  tls: true
+  type: http
   udp: true
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  ws-opts:
-    headers:
-      Host: v1n3.11676767.xyz
-    path: /go.php/products
+- name: 🇬🇧GB_3|2.8MB/s
+  port: 443
+  server: 212.102.63.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇬🇧GB_4|2.8MB/s
+  port: 8888
+  server: 135.136.152.33
+  skip-cert-verify: true
+  type: http
+- cipher: chacha20-ietf-poly1305
+  name: '🇬🇧 英国 | GBR #1'
+  password: 8nrpt2il04ptci2j
+  port: 8080
+  server: 54.37.240.40
+  type: ss
+  udp: true

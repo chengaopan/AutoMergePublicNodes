@@ -1,6 +1,19 @@
 proxies:
 - alpn:
   - h2
+  client-fingerprint: ios
+  grpc-opts:
+    grpc-service-name: mobile.api.Event
+  name: 🇷🇺[www.v2nodes.com] vless-RU-1...
+  network: grpc
+  port: 443
+  server: vps2.nemnogogo.com
+  servername: vps2.nemnogogo.com
+  tls: true
+  type: vless
+  uuid: 95f85937-7b95-45c4-8d69-95da6a978569
+- alpn:
+  - h2
   client-fingerprint: firefox
   grpc-opts:
     grpc-mode: gun
@@ -19,7 +32,7 @@ proxies:
   client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: vlgrpc
-  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #2'
+  name: '🇷🇺[www.v2nodes.com] vless-RU-1... #4'
   network: grpc
   port: 443
   server: 201.24.121.243
@@ -45,3 +58,26 @@ proxies:
   port: 18443
   server: 46.17.47.58
   type: ss
+- name: 🇷🇺RU_1|2.1MB/s
+  password: None
+  port: 1446
+  server: 46.29.166.134
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇷🇺RU_2|2.6MB/s
+  password: 'null'
+  port: 1446
+  server: 46.29.166.134
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇷🇺RU_3|1.8MB/s
+  password: 'null'
+  port: 8443
+  server: 87.242.85.187
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
