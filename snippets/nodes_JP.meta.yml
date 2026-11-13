@@ -1,40 +1,6 @@
 proxies:
-- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #6'
-  network: ws
-  port: 443
-  server: 46.250.254.187
-  servername: fs.qicai99.com
-  tls: true
-  type: vless
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  ws-opts:
-    headers:
-      Host: fs.qicai99.com
-    path: /fp=chrome
 - client-fingerprint: chrome
-  encryption: none
-  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #2'
-  network: ws
-  port: 443
-  server: 104.18.42.98
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
-- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #5'
-  network: tcp
-  port: 47878
-  server: 152.69.195.67
-  servername: 152.69.195.67
-  tls: false
-  type: vless
-  uuid: eb8613e3-8393-4cff-a3ad-6501fd4adc63
-- client-fingerprint: chrome
-  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #7'
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #8'
   network: ws
   port: 443
   server: 46.250.248.210
@@ -46,8 +12,28 @@ proxies:
     headers:
       Host: fs.qicai99.com
     path: /
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #4'
+  port: 443
+  server: 104.16.10.234
+  tls: false
+  type: vless
+  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
+  ws-opts:
+    path: /tyxyws
+- name: '🇯🇵[www.v2nodes.com] vless-JP-1... #7'
+  network: ws
+  port: 443
+  server: 46.250.254.187
+  servername: fs.qicai99.com
+  tls: true
+  type: vless
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /fp=chrome
 - encryption: none
-  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #8'
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #9'
   network: ws
   port: 11424
   server: 38.47.96.220
@@ -80,19 +66,47 @@ proxies:
   server: 149.22.87.204
   type: ss
 - cipher: aes-128-gcm
-  name: 🇯🇵[www.v2nodes.com] ss-JP-1291...
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.240
-  type: ss
-- cipher: aes-128-gcm
   name: 🇯🇵[www.v2nodes.com] ss-JP-9223...
   password: shadowsocks
   port: 443
   server: 149.22.87.241
   type: ss
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  encryption: none
+  name: 🇯🇵JP_1|3.5MB/s
+  network: xhttp
+  port: 443
+  server: s2523.fuhuovps.xyz
+  servername: u695098u6b0550c8s2521.xxti.top
+  tls: true
+  type: vless
+  udp: true
+  uuid: 30e52776-55ac-3cb4-8d36-e2910f07e2c3
+  xhttp-opts:
+    host: 6b0550c8s2521.xxti.top
+    path: 356257a80f246d77bb43c7d9d7f98d05
+  xudp: true
+- name: 🇯🇵 日本 | JPN
+  password: 81a0f80f-760e-4dda-bbdb-196779814c79
+  port: 50000
+  server: 52.196.143.140
+  skip-cert-verify: true
+  sni: www.python.org
+  type: anytls
+  udp: true
+- name: 🇯🇵 日本 | JPN 3
+  password: 9922ea3a-7314-4af5-a4cb-eb68a9b94fca
+  port: 2052
+  server: forwarded.frnhk.xyz
+  skip-cert-verify: true
+  sni: jp2.gosthk.site
+  type: anytls
+  udp: true
 - cipher: chacha20-ietf-poly1305
-  name: 🇯🇵JP_1|5.1MB/s
+  name: 🇯🇵 日本 | JPN 4
   password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
   plugin: obfs
   plugin-opts:
@@ -101,12 +115,12 @@ proxies:
   port: 2377
   server: 13.231.100.94
   type: ss
-  x-toolall-mihomo: true
-- name: 🇯🇵 日本 | JPN 2
-  password: 9922ea3a-7314-4af5-a4cb-eb68a9b94fca
-  port: 2052
-  server: forwarded.frnhk.xyz
+  udp: true
+- name: '🇳🇬 尼日利亚 | NGA #1'
+  password: d9064589-74af-432a-9390-5d8a9da281bf
+  port: 20051
+  server: sclass-c2.catcat321.com
   skip-cert-verify: true
-  sni: jp2.gosthk.site
-  type: anytls
+  sni: hk.catxstar.com
+  type: trojan
   udp: true

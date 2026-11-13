@@ -1,14 +1,6 @@
 proxies:
-- name: 🫆92@oneclickvpnkeys
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  port: 443
-  server: 3.69.232.199
-  skip-cert-verify: true
-  sni: vpn-de-002.fastervpn.world
-  tls: false
-  type: hysteria2
 - client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #4'
+  name: '🇩🇪 德国 | DEU #2'
   network: ws
   port: 443
   server: 188.225.37.43
@@ -23,7 +15,6 @@ proxies:
     path: /api/boards/live
 - client-fingerprint: chrome
   name: '🇵🇱[www.v2nodes.com] vless-PL-1... #2'
-  network: tcp
   port: 2087
   server: 2.26.6.1
   servername: 2.26.6.1
@@ -37,34 +28,18 @@ proxies:
   tls: false
   type: vless
   uuid: 855c7aaa-e7d6-463e-971e-d36032744428
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
-  network: ws
-  port: 443
-  server: 188.225.37.175
-  servername: cryptoventura.online
-  tls: true
-  type: vless
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
-  ws-opts:
-    headers:
-      Host: cryptoventura.online
-    path: /api/de3/live
-- client-fingerprint: firefox
+- client-fingerprint: chrome
+  encryption: none
+  grpc-opts:
+    grpc-service-name: a9w9wmko0k2od14hv8v
   name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
-  network: ws
-  port: 8443
-  server: 188.114.99.157
-  servername: moz.ar-marz.fun
+  network: grpc
+  port: 443
+  server: 5.83.129.236
+  servername: host-de-upscale.cdn.cachefleet.com
   tls: true
   type: vless
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-  ws-opts:
-    headers:
-      Host: moz.ar-marz.fun
-    path: /man
+  uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪[www.v2nodes.com] ss-DE-1621...
   password: zZMNTGpPl38ASlbI1EKOBJ
@@ -95,7 +70,62 @@ proxies:
   port: 19999
   server: 193.108.119.2
   type: ss
-- name: 🇩🇪DE_1|1.2MB/s|R002-260618
+- client-fingerprint: chrome
+  encryption: none
+  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+  name: 🇩🇪DE_1|1016KB/s
+  network: xhttp
+  port: 443
+  server: 167.82.76.31
+  servername: cdn.akamai.steamstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: d5a5c345-e307-45ce-abf4-2bb8131adc86
+  xhttp-opts:
+    host: sammpolic.global.ssl.fastly.net
+    mode: auto
+    path: /setare
+    reuse-settings:
+      h-keep-alive-period: 20
+      h-max-request-times: 300-500
+      h-max-reusable-secs: 300-480
+      max-concurrency: 16-32
+    x-padding-bytes: 100-1000
+  xudp: true
+- client-fingerprint: chrome
+  encryption: none
+  fingerprint: CD6E838B9BFE31CAB8B3D5C858B0D6223FE84ECE236C1FDB281BE93C302E1E6E
+  name: 🇩🇪DE_2|1.4MB/s
+  network: ws
+  port: 443
+  server: 199.232.78.120
+  servername: cdn.akamai.steamstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8d2cbffd-43d0-458d-906b-7c54b7b51f38
+  ws-opts:
+    headers:
+      Host: finalnsdger.global.ssl.fastly.net.
+      User-Agent: Mozilla/5.0 (Linux; Android 6.0; MYA-L22 Build/HUAWEIMYA-L22) AppleWebKit/537.36
+        (KHTML, like Gecko) Chrome/62.0.3202.84 Mobile Safari/537.36
+    path: /
+  xudp: true
+- name: 🇩🇪DE_3|2.7MB/s
+  password: None
+  port: 443
+  server: 172.64.68.89
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_4|1.1MB/s
+  port: 443
+  server: 172.64.69.89
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_5|2.8MB/s|R002-260618
   port: 443
   server: 172.64.68.89
   skip-cert-verify: true
@@ -104,44 +134,94 @@ proxies:
   type: http
   udp: true
   x-toolall-mihomo: true
-- alpn:
-  - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55
-  name: 🇩🇪 德国 | DEU
-  port: 54177
-  protocol: none
-  server: 5.83.129.90
+- name: DE_speednode_0004
+  port: 443
+  server: 213.109.163.119
   skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
+  tls: true
+  type: http
   udp: true
-  up: 11
+- name: 🇩🇪DE_7|1.2MB/s|R002-260618
+  port: 443
+  server: 87.106.223.158
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇩🇪DE_8|3.1MB/s
+  port: 443
+  server: 213.177.229.161
+  skip-cert-verify: true
+  tls: true
+  type: http
+- encryption: mlkem768x25519plus.native.0rtt.w4VhnEPArk9nRWufTDpPfnv7b-aqjeULWesK74OpJE4
+  name: 🇩🇪DE_9|3.7MB/s
+  network: tcp
+  port: 1468
+  server: n8.hyby.ir
+  type: vless
+  udp: true
+  uuid: b6da1396-cfa7-421c-92b6-8bc947f0d308
+  xudp: true
+- name: 🇩🇪DE_10|4.3MB/s
+  port: 443
+  server: 159.69.94.125
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇩🇪DE_11|2.5MB/s
+  port: 9002
+  server: 158.173.154.3
+  skip-cert-verify: true
+  tls: true
+  type: http
 - alpn:
   - h2
   client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #1'
-  network: xhttp
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de3.v1
+  name: 🇩🇪 德国 | DEU
+  network: grpc
   port: 443
-  server: 199.232.239.239
-  servername: community.fastly.steamstatic.com
+  server: luminexorizon.ink
+  servername: luminexorizon.ink
   tls: true
   type: vless
   udp: true
-  uuid: 5a4db896-caab-4b9c-f747-52ce95b0f9ad
-  xhttp-opts:
-    host: cloudvpn2026-4.global.prod.fastly.net.global.prod.fastly.net
-    mode: packet-up
-    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
-- cipher: 2022-blake3-chacha20-poly1305
-  name: '🇩🇪 德国 | DEU #2'
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+- client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #3'
+  network: xhttp
   port: 443
-  server: 18.196.82.94
-  type: ss
+  server: 193.160.208.240
+  servername: 193.160.208.240
+  tls: true
+  type: vless
   udp: true
-- name: 🇩🇪 德国 | DEU 4
+  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
+  xhttp-opts:
+    mode: auto
+    path: /assets/twru01/
+- alpn:
+  - http/1.1
+  client-fingerprint: edge
+  name: '🇩🇪 德国 | DEU #4'
+  network: ws
+  port: 443
+  server: ws3.falmero.store
+  servername: falmero.store
+  tls: true
+  type: vless
+  udp: true
+  uuid: 820fa845-a1eb-4a83-b613-e6714cea8a1a
+  ws-opts:
+    headers:
+      Host: falmero.store
+    path: /api/de1/stream
+- name: 🇩🇪 德国 | DEU 6
   password: 9b24e5d0-62be-41df-b967-9b670cf90ff8
   port: 2086
   server: forwarded.frnhk.xyz
@@ -149,13 +229,31 @@ proxies:
   sni: de.gosthk.site
   type: anytls
   udp: true
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    method: GET
+    path:
+    - /QQqun-737805443
+  name: '🇩🇪 德国 | DEU #7'
+  network: http
+  port: 52080
+  server: 23.165.200.150
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 672cdade-bb05-4c86-b578-e5d09b79524a
 - alpn:
   - h3
   - h2
   - http/1.1
   client-fingerprint: chrome
   encryption: mlkem768x25519plus.native.0rtt.Fy1WuRvH1VNIEda4AC61jAhcBFLzuYHcwbUO7mNjxwY
-  name: '🇩🇪 德国 | DEU #3'
+  name: '🇩🇪 德国 | DEU #8'
   network: xhttp
   port: 2087
   server: www.hyby.ir
@@ -168,52 +266,16 @@ proxies:
     host: www.hyby.ir
     mode: auto
     path: /
-- alterId: 0
-  cipher: auto
-  http-opts:
-    headers:
-      Host:
-      - down-cdn.dingtalk.com
-    method: GET
-    path:
-    - /QQqun-737805443
-  name: '🇩🇪 德国 | DEU #5'
-  network: http
-  port: 52080
-  server: 23.165.200.150
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 672cdade-bb05-4c86-b578-e5d09b79524a
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: glush.de2.v1
-  name: 🇩🇪 德国 | DEU 8
-  network: grpc
-  port: 443
-  server: 188.225.56.133
-  servername: astronovalis.wtf
-  tls: true
-  type: vless
-  udp: true
-  uuid: 820fa845-a1eb-4a83-b613-e6714cea8a1a
-- client-fingerprint: firefox
+- alpn:
+  - h2
+  client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: ''
-  name: '🇩🇪 德国 | DEU #6'
+  name: '🇩🇪 德国 | DEU #1'
   network: grpc
   port: 443
-  server: 188.225.56.133
-  servername: astronovalis.wtf
+  server: luminexorizon.ink
+  servername: luminexorizon.ink
   tls: true
   type: vless
-  uuid: 820fa845-a1eb-4a83-b613-e6714cea8a1a
-- name: DE_speednode_0004
-  port: 443
-  server: 213.109.163.119
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6

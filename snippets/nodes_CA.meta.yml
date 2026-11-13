@@ -1,33 +1,41 @@
 proxies:
-- encryption: none
-  name: 🇨🇦[www.v2nodes.com] vless-CA-1...
-  network: ws
-  port: 8080
-  server: 104.21.70.21
-  servername: xstack.mahanfixe.workers.dev
+- name: '🇨🇦[www.v2nodes.com] vless-CA-1... #4'
+  port: 443
+  server: yx.l110.us.ci
   tls: false
   type: vless
-  uuid: a8b1d666-d3ba-4b17-90c4-ba7514c74f78
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   ws-opts:
-    headers:
-      Host: xstack.mahanfixe.workers.dev
-    path: /xiron
-- client-fingerprint: chrome
-  encryption: none
+    path: /
+- encryption: none
   name: '🇨🇦[www.v2nodes.com] vless-CA-1... #1'
   network: ws
-  port: 2083
-  server: 172.67.74.177
-  servername: wk1.f1w.de5.net
+  port: 443
+  server: fs.qicai99.com
+  servername: fs.qicai99.com
+  skip-cert-verify: false
   tls: true
   type: vless
-  uuid: d342d11e-d424-4583-b36e-524ab1f0afa4
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
   ws-opts:
     headers:
-      Host: wk1.f1w.de5.net
+      Host: fs.qicai99.com
     path: /
 - client-fingerprint: chrome
   name: '🇨🇦[www.v2nodes.com] vless-CA-1... #2'
+  network: ws
+  port: 443
+  server: 172.67.74.177
+  servername: fs.qicai99.com
+  tls: true
+  type: vless
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /
+- client-fingerprint: chrome
+  name: '🇨🇦[www.v2nodes.com] vless-CA-1... #3'
   network: ws
   port: 443
   server: 162.159.198.1
@@ -39,21 +47,6 @@ proxies:
     headers:
       Host: fs.qicai99.com
     path: /
-- client-fingerprint: chrome
-  encryption: none
-  name: '🇨🇦[www.v2nodes.com] vless-CA-1... #3'
-  network: ws
-  port: 2096
-  server: 188.164.248.151
-  servername: d39333476.pages.dev
-  skip-cert-verify: false
-  tls: true
-  type: vless
-  uuid: 9f534ac4-3c58-4a16-8b74-13dff09a0cf1
-  ws-opts:
-    headers:
-      Host: d39333476.pages.dev
-    path: /item/m
 - client-fingerprint: chrome
   encryption: none
   name: 🇨🇦[www.v2nodes.com] vless-CA
@@ -71,6 +64,12 @@ proxies:
   password: zDNVedRFPQexG9v
   port: 445
   server: 51.222.141.125
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇨🇦[www.v2nodes.com] ss-CA-1559... #1'
+  password: cdBIDV42DCwnfIN
+  port: 8118
+  server: 51.79.85.185
   type: ss
 - cipher: aes-256-gcm
   name: 🇨🇦[www.v2nodes.com] ss-CA-1558...
@@ -102,13 +101,7 @@ proxies:
   port: 8119
   server: 51.79.64.198
   type: ss
-- cipher: aes-256-gcm
-  name: '🇨🇦[www.v2nodes.com] ss-CA-1545... #1'
-  password: kDWvXYZoTBcGkC4
-  port: 8882
-  server: 51.79.49.116
-  type: ss
-- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #2'
+- name: 🇨🇦[www.v2nodes.com] trojan-CA-...
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 216.152.147.201
@@ -119,42 +112,40 @@ proxies:
   port: 443
   server: 216.152.147.201
   type: trojan
-- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #5'
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #3'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 216.152.147.93
   type: trojan
-- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #4'
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #6'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 216.152.147.79
   skip-cert-verify: false
   sni: blog.connectingpeoplewithgreatjobs.com
   type: trojan
-- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #6'
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #5'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 216.152.147.93
   sni: connectingpeoplewithgreatjobs.com
   type: trojan
-- name: 🇨🇦CA_1|1.0MB/s
-  password: None
-  port: 9443
-  server: 149.88.98.81
+- name: 🇨🇦CA_1|2.5MB/s|R002-260618
+  port: 443
+  server: 206.223.183.21
   skip-cert-verify: true
+  sub_tag: R002-260618
   tls: true
   type: http
-- client-fingerprint: chrome
-  name: '🇨🇦 加拿大 | CAN #1'
-  network: ws
-  port: 443
-  server: 23.227.38.221
-  servername: eeeccc.ttttlefjljl.xyz
-  tls: true
-  type: vless
   udp: true
-  uuid: b7795ce8-3863-4292-adfc-9c0a7b847774
-  ws-opts:
-    headers:
-      Host: eeeccc.ttttlefjljl.xyz
-    path: /images
+  x-toolall-mihomo: true
+- name: 🇨🇦CA_2|2.6MB/s|K001-260618
+  password: None
+  port: 443
+  server: 206.223.183.13
+  skip-cert-verify: true
+  sub_tag: K001-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
