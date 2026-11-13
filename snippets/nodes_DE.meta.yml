@@ -1,19 +1,28 @@
 proxies:
+- name: 🫆92@oneclickvpnkeys
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 3.69.232.199
+  skip-cert-verify: true
+  sni: vpn-de-002.fastervpn.world
+  tls: false
+  type: hysteria2
 - client-fingerprint: firefox
-  name: 🇩🇪[www.v2nodes.com] vless-DE-1...
+  name: '🇩🇪 德国 | DEU #6'
   network: ws
   port: 443
   server: 188.225.37.43
   servername: torvani.cyou
   tls: true
   type: vless
+  udp: true
   uuid: 4cabcd59-a405-4c00-96f5-03507e1e28fa
   ws-opts:
     headers:
       Host: torvani.cyou
     path: /api/boards/live
 - client-fingerprint: chrome
-  name: '🇵🇱[www.v2nodes.com] vless-PL-1... #1'
+  name: '🇵🇱[www.v2nodes.com] vless-PL-1... #2'
   network: tcp
   port: 2087
   server: 2.26.6.1
@@ -22,22 +31,30 @@ proxies:
   tls: true
   type: vless
   uuid: b9fdc03f-389b-4cda-9be4-155b623bee15
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
   port: 49313
   server: 159.195.207.238
   tls: false
   type: vless
   uuid: 855c7aaa-e7d6-463e-971e-d36032744428
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #5'
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #2'
+  network: ws
   port: 443
   server: 188.225.37.175
-  tls: false
+  servername: cryptoventura.online
+  tls: true
   type: vless
+  udp: true
   uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
   ws-opts:
+    headers:
+      Host: cryptoventura.online
     path: /api/de3/live
 - client-fingerprint: firefox
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #6'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
   network: ws
   port: 8443
   server: 188.114.99.157
@@ -52,7 +69,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
   network: ws
   port: 443
   server: n2.topingr.ir
@@ -67,7 +84,7 @@ proxies:
 - client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: a9w9wmko0k2od14hv8v
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
   network: grpc
   port: 443
   server: 5.83.129.236
@@ -87,46 +104,34 @@ proxies:
   port: 19999
   server: 193.108.119.3
   type: ss
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  encryption: none
-  name: 🇩🇪DE_1|2.0MB/s
-  network: ws
-  port: 1001
-  server: ir.li6nk.ir
-  servername: ir.li6nk.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 7b24b15b-4f09-4ace-867b-dcd2f5a08c4d
-  ws-opts:
-    headers:
-      Host: filimo.com
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
-        Gecko) Chrome/68.0.3440.1805 Safari/537.36 MVisionPlayer/1.0.0.0
-    path: /
-  xudp: true
-- name: 🇩🇪DE_2|1.3MB/s
+- cipher: aes-256-gcm
+  name: '🇩🇪[www.v2nodes.com] ss-DE-1615... #1'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 23.157.88.43
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇩🇪[www.v2nodes.com] ss-DE-1615... #2'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 193.108.119.2
+  type: ss
+- name: 🇩🇪DE_1|2.3MB/s
   port: 443
   server: 213.177.229.161
   skip-cert-verify: true
   tls: true
   type: http
-- name: 🇩🇪DE_3|3.5MB/s
+- name: 🇩🇪DE_2|2.6MB/s|R002-260618
   password: None
   port: 443
-  server: 172.64.68.89
+  server: 87.249.132.97
   skip-cert-verify: true
+  sub_tag: R002-260618
   tls: true
   type: http
-- name: 🇩🇪DE_4|1.4MB/s
-  password: None
-  port: 443
-  server: 149.36.50.157
-  skip-cert-verify: true
-  tls: true
-  type: http
+  udp: true
+  x-toolall-mihomo: true
 - name: DK_speednode_0005
   port: 9002
   server: 158.173.154.5
@@ -134,7 +139,14 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: 🇩🇪DE_6|3.3MB/s|R002-260618
+- name: DK_speednode_0006
+  port: 9002
+  server: 158.173.154.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇩🇪DE_5|3.3MB/s|R002-260618
   port: 443
   server: 87.106.223.158
   skip-cert-verify: true
@@ -143,37 +155,62 @@ proxies:
   type: http
   udp: true
   x-toolall-mihomo: true
-- alpn:
-  - h3
-  auth: 146d567c-6335-4e63-a8aa-7ec068642440
-  down: 200
-  name: 🇩🇪 德国 | DEU
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
-  port: 443
-  server: 177.202.66.212
+- name: 🇩🇪DE_6|2.2MB/s
+  port: 1080
+  server: 89.185.85.253
   skip-cert-verify: true
-  sni: de1.obxodvpn.us
-  type: hysteria2
-  udp: true
-  up: 100
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #2'
+  type: socks5
+- name: 🇩🇪DE_7|1.4MB/s
+  password: 'null'
+  port: 9002
+  server: 158.173.154.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇩🇪DE_8|3.3MB/s
+  password: 'null'
+  port: 443
+  server: 159.69.94.125
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇩🇪DE_9|3.1MB/s
+  password: 'null'
+  port: 9002
+  server: 158.173.154.5
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- name: 🇩🇪DE_10|1.2MB/s
+  password: 'null'
+  port: 9002
+  server: 158.173.154.2
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
+- client-fingerprint: chrome
+  name: 🇩🇪DE_11|2.0MB/s
   network: ws
   port: 443
-  server: 188.225.37.175
-  servername: cryptoventura.online
+  server: support.zoom.us.vltj.qzz.io
+  servername: support.zoom.us.vltj.qzz.io
   tls: true
   type: vless
   udp: true
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  uuid: 506e4a91-1d05-5683-b84c-2113f673cb19
   ws-opts:
     headers:
-      Host: cryptoventura.online
-    path: /api/de3/live
+      Host: support.zoom.us.vltj.qzz.io
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/64.0.3282.186 Safari/537.36
+    path: /id-pusat
+  xudp: true
 - client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #3'
+  name: '🇩🇪 德国 | DEU #1'
   network: xhttp
   port: 443
   server: 193.160.208.240
@@ -185,30 +222,60 @@ proxies:
   xhttp-opts:
     mode: auto
     path: /assets/twru01/
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #5'
-  network: ws
+- client-fingerprint: qq
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de1.v1
+  name: 🇩🇪 德国 | DEU 4
+  network: grpc
   port: 443
-  server: cryptoventura.online
-  servername: cryptoventura.online
+  server: 5.129.193.120
+  servername: astravellion.xyz
   tls: true
   type: vless
   udp: true
   uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
-  ws-opts:
-    headers:
-      Host: cryptoventura.online
-    path: /api/de3/live
-- name: '🇩🇪 德国 | DEU #1'
-  password: 146d567c-6335-4e63-a8aa-7ec068642440
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #5'
+  network: xhttp
   port: 443
-  server: 177.202.66.212
+  server: 199.232.239.239
+  servername: community.fastly.steamstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5a4db896-caab-4b9c-f747-52ce95b0f9ad
+  xhttp-opts:
+    host: cloudvpn2026-4.global.prod.fastly.net.global.prod.fastly.net
+    mode: packet-up
+    path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55
+  name: 🇩🇪 德国 | DEU 7
+  port: 54177
+  protocol: none
+  server: 5.83.129.90
   skip-cert-verify: true
-  sni: de1.obxodvpn.us
-  tls: false
-  type: hysteria2
+  sni: apple.com
+  type: hysteria
+  udp: true
+  up: 11
+- client-fingerprint: qq
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪 德国 | DEU #4'
+  network: grpc
+  port: 443
+  server: 5.129.193.120
+  servername: astravellion.xyz
+  tls: true
+  type: vless
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
 - name: DE_speednode_0004
   port: 443
   server: 213.109.163.119
