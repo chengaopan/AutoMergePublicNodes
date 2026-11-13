@@ -1,10 +1,4 @@
 proxies:
-- name: '🇭🇰[www.v2nodes.com] vless-HK-1... #1'
-  port: 39098
-  server: 209.33.160.122
-  tls: false
-  type: vless
-  uuid: 7852e4df-db54-4f75-a35e-3b8fbe89e56d
 - client-fingerprint: chrome
   name: '🇭🇰[www.v2nodes.com] vless-HK-1... #2'
   network: ws
@@ -18,8 +12,20 @@ proxies:
     headers:
       Host: fs.qicai99.com
     path: /
+- name: '🇭🇰[www.v2nodes.com] vless-HK-1... #3'
+  network: ws
+  port: 443
+  server: 23.156.153.40
+  servername: fs.qicai99.com
+  tls: true
+  type: vless
+  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
+  ws-opts:
+    headers:
+      Host: fs.qicai99.com
+    path: /fp=chrome
 - client-fingerprint: chrome
-  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #4'
+  name: '🇭🇰[www.v2nodes.com] vless-HK-1... #5'
   network: ws
   port: 443
   server: 23.156.153.40
@@ -43,45 +49,21 @@ proxies:
     headers:
       Host: fs.qicai99.com
     path: /fp=chrome
-- cipher: aes-256-gcm
-  name: 🇭🇰[www.v2nodes.com] ss-HK-1621...
-  password: AMok40FfaM+Ikwre16psBpVk6JHxsQZw
-  port: 8388
-  server: 209.248.57.105
-  type: ss
-- client-fingerprint: chrome
-  name: 🇭🇰HK_1|1.5MB/s
-  network: ws
-  port: 443
-  server: 103.42.180.146
-  servername: vip.freevpn.cloudns.biz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0bb8b560-b056-4245-8b9d-231a0a78c54b
-  ws-opts:
-    headers:
-      Host: vip.freevpn.cloudns.biz
-    path: /0bb8b560-b056-4245-8b9d-231a0a78c54b?ed=2048
 - cipher: aes-128-gcm
-  name: '🇭🇰 香港 | HKG #1'
+  name: 🇭🇰[www.v2nodes.com] ss-HK-1621...
   password: 3411b0af-589e-40f3-b8d5-d2e04ce19fa9
   port: 40011
   server: c17b957c5a76ec76.lebufflonfermegroup.us
   type: ss
-  udp: true
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '🇭🇰 香港 | HKG #2'
-  network: ws
-  port: 44867
-  server: 47.244.120.197
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 845e6b08-2919-4290-ade0-5dc7dcea59ca
-  ws-opts:
-    path: /arki
+- cipher: aes-256-gcm
+  name: '🇭🇰[www.v2nodes.com] ss-HK-1621... #1'
+  password: AMok40FfaM+Ikwre16psBpVk6JHxsQZw
+  port: 8388
+  server: 209.248.57.105
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇭🇰[www.v2nodes.com] ss-HK-1599...
+  password: 3411b0af-589e-40f3-b8d5-d2e04ce19fa9
+  port: 40010
+  server: c17b957c5a76ec76.lebufflonfermegroup.us
+  type: ss

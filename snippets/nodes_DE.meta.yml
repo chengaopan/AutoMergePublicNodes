@@ -8,7 +8,7 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #6'
+  name: '🇩🇪 德国 | DEU #4'
   network: ws
   port: 443
   server: 188.225.37.43
@@ -40,14 +40,13 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #2'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
   network: ws
   port: 443
   server: 188.225.37.175
   servername: cryptoventura.online
   tls: true
   type: vless
-  udp: true
   uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
   ws-opts:
     headers:
@@ -66,32 +65,12 @@ proxies:
     headers:
       Host: moz.ar-marz.fun
     path: /man
-- alpn:
-  - http/1.1
-  client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
-  network: ws
-  port: 443
-  server: n2.topingr.ir
-  servername: riga.zovip2.ir
-  tls: true
-  type: vless
-  uuid: d5748db0-0031-4b9e-b43c-6c3986a9b5ed
-  ws-opts:
-    headers:
-      Host: riga.zovip2.ir
-    path: /api/v3/pulse
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-service-name: a9w9wmko0k2od14hv8v
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
-  network: grpc
-  port: 443
-  server: 5.83.129.236
-  servername: host-de-upscale.cdn.cachefleet.com
-  tls: true
-  type: vless
-  uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1621...
+  password: zZMNTGpPl38ASlbI1EKOBJ
+  port: 46303
+  server: 135.220.178.46
+  type: ss
 - cipher: aes-256-gcm
   name: 🇩🇪[www.v2nodes.com] ss-DE-1616...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -116,129 +95,33 @@ proxies:
   port: 19999
   server: 193.108.119.2
   type: ss
-- name: 🇩🇪DE_1|2.3MB/s
+- name: 🇩🇪DE_1|1.2MB/s|R002-260618
   port: 443
-  server: 213.177.229.161
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_2|2.6MB/s|R002-260618
-  password: None
-  port: 443
-  server: 87.249.132.97
+  server: 172.64.68.89
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: DK_speednode_0005
-  port: 9002
-  server: 158.173.154.5
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 55
+  name: 🇩🇪 德国 | DEU
+  port: 54177
+  protocol: none
+  server: 5.83.129.90
   skip-cert-verify: true
-  tls: true
-  type: http
+  sni: apple.com
+  type: hysteria
   udp: true
-- name: DK_speednode_0006
-  port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇩🇪DE_5|3.3MB/s|R002-260618
-  port: 443
-  server: 87.106.223.158
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 🇩🇪DE_6|2.2MB/s
-  port: 1080
-  server: 89.185.85.253
-  skip-cert-verify: true
-  type: socks5
-- name: 🇩🇪DE_7|1.4MB/s
-  password: 'null'
-  port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇩🇪DE_8|3.3MB/s
-  password: 'null'
-  port: 443
-  server: 159.69.94.125
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇩🇪DE_9|3.1MB/s
-  password: 'null'
-  port: 9002
-  server: 158.173.154.5
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇩🇪DE_10|1.2MB/s
-  password: 'null'
-  port: 9002
-  server: 158.173.154.2
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- client-fingerprint: chrome
-  name: 🇩🇪DE_11|2.0MB/s
-  network: ws
-  port: 443
-  server: support.zoom.us.vltj.qzz.io
-  servername: support.zoom.us.vltj.qzz.io
-  tls: true
-  type: vless
-  udp: true
-  uuid: 506e4a91-1d05-5683-b84c-2113f673cb19
-  ws-opts:
-    headers:
-      Host: support.zoom.us.vltj.qzz.io
-      User-Agent: Mozilla/5.0 (Windows NT 6.1; Win64; x64) AppleWebKit/537.36 (KHTML,
-        like Gecko) Chrome/64.0.3282.186 Safari/537.36
-    path: /id-pusat
-  xudp: true
-- client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #1'
-  network: xhttp
-  port: 443
-  server: 193.160.208.240
-  servername: 193.160.208.240
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
-  xhttp-opts:
-    mode: auto
-    path: /assets/twru01/
-- client-fingerprint: qq
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: glush.de1.v1
-  name: 🇩🇪 德国 | DEU 4
-  network: grpc
-  port: 443
-  server: 5.129.193.120
-  servername: astravellion.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  up: 11
 - alpn:
   - h2
   client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #5'
+  name: '🇩🇪 德国 | DEU #1'
   network: xhttp
   port: 443
   server: 199.232.239.239
@@ -251,31 +134,82 @@ proxies:
     host: cloudvpn2026-4.global.prod.fastly.net.global.prod.fastly.net
     mode: packet-up
     path: /@CloudVPNchannel/@CloudVPNchannel/@CloudVPNchannel
+- cipher: 2022-blake3-chacha20-poly1305
+  name: '🇩🇪 德国 | DEU #2'
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 18.196.82.94
+  type: ss
+  udp: true
+- name: 🇩🇪 德国 | DEU 4
+  password: 9b24e5d0-62be-41df-b967-9b670cf90ff8
+  port: 2086
+  server: forwarded.frnhk.xyz
+  skip-cert-verify: true
+  sni: de.gosthk.site
+  type: anytls
+  udp: true
 - alpn:
   - h3
-  auth-str: dongtaiwang.com
-  auth_str: dongtaiwang.com
-  down: 55
-  name: 🇩🇪 德国 | DEU 7
-  port: 54177
-  protocol: none
-  server: 5.83.129.90
-  skip-cert-verify: true
-  sni: apple.com
-  type: hysteria
-  udp: true
-  up: 11
-- client-fingerprint: qq
-  grpc-opts:
-    grpc-service-name: ''
-  name: '🇩🇪 德国 | DEU #4'
-  network: grpc
-  port: 443
-  server: 5.129.193.120
-  servername: astravellion.xyz
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  encryption: mlkem768x25519plus.native.0rtt.Fy1WuRvH1VNIEda4AC61jAhcBFLzuYHcwbUO7mNjxwY
+  name: '🇩🇪 德国 | DEU #3'
+  network: xhttp
+  port: 2087
+  server: www.hyby.ir
+  servername: www.hyby.ir
   tls: true
   type: vless
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+  udp: true
+  uuid: b6da1396-cfa7-421c-92b6-8bc947f0d308
+  xhttp-opts:
+    host: www.hyby.ir
+    mode: auto
+    path: /
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    method: GET
+    path:
+    - /QQqun-737805443
+  name: '🇩🇪 德国 | DEU #5'
+  network: http
+  port: 52080
+  server: 23.165.200.150
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 672cdade-bb05-4c86-b578-e5d09b79524a
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de2.v1
+  name: 🇩🇪 德国 | DEU 8
+  network: grpc
+  port: 443
+  server: 188.225.56.133
+  servername: astronovalis.wtf
+  tls: true
+  type: vless
+  udp: true
+  uuid: 820fa845-a1eb-4a83-b613-e6714cea8a1a
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪 德国 | DEU #6'
+  network: grpc
+  port: 443
+  server: 188.225.56.133
+  servername: astronovalis.wtf
+  tls: true
+  type: vless
+  uuid: 820fa845-a1eb-4a83-b613-e6714cea8a1a
 - name: DE_speednode_0004
   port: 443
   server: 213.109.163.119
