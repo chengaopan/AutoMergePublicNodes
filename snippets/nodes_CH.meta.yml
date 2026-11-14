@@ -29,9 +29,18 @@ proxies:
   port: 443
   server: 208.69.78.158
   type: trojan
-- name: 🇨🇭CH_1|1.0MB/s
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇨🇭 瑞士 | CHE #1'
+  network: tcp
   port: 443
-  server: 31.7.62.50
-  skip-cert-verify: true
+  server: 194.87.109.106
+  servername: currant.asynchronous.site
   tls: true
-  type: http
+  type: vless
+  udp: true
+  uuid: d9274255-edf4-4944-bc62-6ef35cd2de40
+  ws-opts:
+    path: /
