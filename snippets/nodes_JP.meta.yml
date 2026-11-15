@@ -1,6 +1,6 @@
 proxies:
 - client-fingerprint: chrome
-  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #8'
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #6'
   network: ws
   port: 443
   server: 46.250.248.210
@@ -64,23 +64,25 @@ proxies:
   port: 443
   server: 149.22.87.240
   type: ss
-- cipher: aes-128-gcm
-  name: 🇯🇵[www.v2nodes.com] ss-JP-9223...
-  password: shadowsocks
-  port: 443
-  server: 149.22.87.241
-  type: ss
-- name: 🇯🇵JP_2|1.0MB/s
-  password: exaxgqkKkd0TAMrCxeonWg==
-  port: 443
-  server: jpgmo102-cdn-route.couldflare-cdn.com
-  tls: true
-  type: http
-  username: mrwdfNTD8M79LCukCieldrqZWqs=
-- name: 🇯🇵 日本 | JPN 2
-  password: 9922ea3a-7314-4af5-a4cb-eb68a9b94fca
-  port: 2052
-  server: forwarded.frnhk.xyz
+- name: 日本2|@ripaojiedian
+  network: tcp
+  password: d050aca3-9df2-4461-90ec-92373c1d7636
+  port: 44184
+  server: v2jp.k1.ssnss.live
   skip-cert-verify: true
-  sni: jp2.gosthk.site
-  type: anytls
+  type: trojan
+  udp: true
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  name: 🇯🇵JP_1|6.0MB/s
+  network: tcp
+  port: 443
+  server: 47.99.219.144
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 291b5d4a-19ee-4f22-91df-4dc43850b970
+  xudp: true
