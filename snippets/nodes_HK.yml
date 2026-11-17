@@ -1,4 +1,10 @@
 proxies:
+- cipher: aes-256-gcm
+  name: 🇭🇰[www.v2nodes.com] ss-HK-1621...
+  password: AMok40FfaM+Ikwre16psBpVk6JHxsQZw
+  port: 8388
+  server: 209.248.57.105
+  type: ss
 - name: 🇭🇰[www.v2nodes.com] trojan-HK-...
   password: '!!str 12012'
   port: 12012
@@ -10,14 +16,35 @@ proxies:
   cipher: auto
   name: '🇭🇰 香港 | HKG #2'
   network: ws
-  port: 23026
-  server: 47.244.120.197
+  port: 443
+  server: prozac-celebrities-inclusion-parallel.trycloudflare.com
+  servername: prozac-celebrities-inclusion-parallel.trycloudflare.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea
+  ws-opts:
+    headers:
+      Host: prozac-celebrities-inclusion-parallel.trycloudflare.com
+    path: /2a4d24bf-367a-4951-bfe6-50c7a0bdb5ea-vm
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - openai.com
+    method: GET
+    path:
+    - /QQqun-737805443
+  name: '🇭🇰 香港 | HKG #3'
+  network: http
+  port: 52080
+  server: 47.242.81.94
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: b9de1bc9-baa7-41ac-86f7-ccd59695cb21
-  ws-opts:
-    headers:
-      Host: 47.244.120.197
-    path: /arki
+  uuid: e47b9f77-60e4-4738-8d53-772b6002e146

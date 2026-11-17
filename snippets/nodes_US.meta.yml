@@ -66,117 +66,155 @@ proxies:
   sni: ssl.fastly.com
   type: trojan
   udp: true
-- name: 🇺🇸US_1|2.7MB/s
+- name: 🇺🇸US_1|3.5MB/s
+  port: 58764
+  server: 118.184.140.90
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: 🇺🇸US_2|1.1MB/s
   password: l1tlrdx52v
   port: 62000
   server: 66.253.2.69
   type: socks5
   username: u_rb1dba2
-- alpn:
-  - ''
-  alterId: '0'
+- alterId: 0
   cipher: auto
-  name: 🇺🇸US_2|1.4MB/s
-  network: ws
-  port: 80
-  server: www.speedtest.net
-  skip-cert-verify: false
+  http-opts:
+    method: GET
+    path:
+    - /ABCDE
+  name: 🇺🇸US_3|1.1MB/s
+  network: http
+  port: 52402
+  server: 104.225.148.201
   tls: false
   type: vmess
+  uuid: 0542f509-4368-4ee3-be54-0557fed80f6b
+  x-toolall-mihomo: true
+- name: 🇺🇸US_4|2.7MB/s
+  password: ozbqjztv
+  port: 8000
+  server: 192.220.47.85
+  type: http
+  username: ozbqjztv
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: 🇺🇸US_5|3.1MB/s
+  network: http
+  port: 44441
+  server: 192.220.47.85
+  tls: false
+  type: vmess
+  uuid: de4e0335-2a3b-4006-d746-c939fa85fdc3
+  x-toolall-mihomo: true
+- client-fingerprint: random
+  name: '🇦🇺 澳大利亚 | AUS #1'
+  network: ws
+  port: 443
+  server: 117.55.235.56
+  servername: us-lax.862400.xyz
+  tls: true
+  type: vless
   udp: true
-  uuid: 6fa9def2-edcb-4348-b012-6622c959a620
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
   ws-opts:
     headers:
-      Host: prairie-formats-holland-bundle.trycloudflare.com
-    path: /@ferdolans7
-  xudp: true
-- auth: b42d90fa667942aebc734d60
-  name: 🇦🇺 澳大利亚 | AUS
-  obfs: salamander
-  obfs-password: b42d90fa667942aebc734d60
-  password: b42d90fa667942aebc734d60
-  port: 20000
-  ports: 20000-30000
-  server: 159.13.55.48
-  skip-cert-verify: true
-  sni: hy2-au2.whuiy.xyz
-  type: hysteria2
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
-  name: 🇷🇺 俄罗斯 | RUS 2
-  network: grpc
-  port: 443
-  server: vps3.nemnogogo.com
-  servername: vps3.nemnogogo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+      Host: us-lax.862400.xyz
+    path: /announcement?ed=2048
 - client-fingerprint: chrome
-  name: '🇷🇺 俄罗斯 | RUS #3'
+  name: '🇷🇺 俄罗斯 | RUS #1'
   network: xhttp
   port: 443
-  server: 94.228.117.93
-  servername: login.alfatrud.ru
+  server: 201.34.142.108
   tls: true
   type: vless
   udp: true
-  uuid: ceab5251-eaa3-4a2f-bdd4-ce9df24d9edd
+  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
   xhttp-opts:
-    host: login.alfatrud.ru
-    mode: packet-up
-    path: /api/stream/
-- name: 🇺🇸 美国 | USA
-  password: 0324fbc29561
-  port: 443
-  server: sdf65h46wr.df6h451rh.xin
-  skip-cert-verify: true
-  sni: images.ctfassets.net
-  type: anytls
-  udp: true
-- name: '🇺🇸 美国 | USA #2'
-  password: HQGIuRN4S3
-  port: 59642
-  server: www.777064.xyz
-  skip-cert-verify: true
-  sni: www.777064.xyz
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  name: 🇺🇸 美国 | USA 4
-  password: HQGIuRN4S3
-  port: 59642
-  server: 64.186.234.24
-  skip-cert-verify: true
-  sni: www.777064.xyz
-  type: trojan
-  udp: true
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #2'
-  network: grpc
-  port: 443
-  server: vps3.nemnogogo.com
-  servername: vps3.nemnogogo.com
+    mode: auto
+    path: /assets/nlrelay01/
+- client-fingerprint: random
+  name: '🇺🇸 美国 | USA #1'
+  network: ws
+  port: 8443
+  server: 5.157.30.26
+  servername: us-lax.862400.xyz
   tls: true
   type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-- name: '🇺🇸 美国 | USA #3'
-  password: HQGIuRN4S3
-  port: 59642
-  server: 64.186.234.24
-  skip-cert-verify: true
-  sni: www.777064.xyz
-  type: trojan
+  udp: true
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: us-lax.862400.xyz
+    path: /announcement?ed=2048
+- client-fingerprint: random
+  name: '🇺🇸 美国 | USA #2'
+  network: ws
+  port: 443
+  server: 217.217.227.132
+  servername: jp-osa.862400.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: jp-osa.862400.xyz
+    path: /announcement?ed=2048
+- cipher: aes-256-cfb
+  name: '🇺🇸 美国 | USA #5'
+  password: amazonskr05
+  port: 443
+  server: 3.22.241.58
+  type: ss
+  udp: true
+- client-fingerprint: random
+  name: '🇺🇸 美国 | USA #6'
+  network: ws
+  port: 443
+  server: 172.67.67.89
+  servername: us-lax.862400.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: us-lax.862400.xyz
+    path: /announcement?ed=2048
+- client-fingerprint: random
+  name: '🇺🇸 美国 | USA #7'
+  network: ws
+  port: 443
+  server: 193.163.19.232
+  servername: us-lax.862400.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: us-lax.862400.xyz
+    path: /announcement?ed=2048
+- client-fingerprint: random
+  name: '🇺🇸 美国 | USA #8'
+  network: ws
+  port: 443
+  server: 109.248.18.169
+  servername: us-lax.862400.xyz
+  tls: true
+  type: vless
+  udp: true
+  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  ws-opts:
+    headers:
+      Host: us-lax.862400.xyz
+    path: /announcement?ed=2048
 - name: US_speednode_0039
   port: 8443
   server: 44.248.167.117

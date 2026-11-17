@@ -1,14 +1,6 @@
 proxies:
-- name: 🇩🇪216914 | ⚡️Telegram = t.me/L...
-  password: R1jGEIdkkdgxUmduZjeR1Pfi
-  port: 18888
-  server: 89.144.8.91
-  skip-cert-verify: false
-  sni: pic.bstarstatic.com
-  tls: false
-  type: hysteria2
 - client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
   network: ws
   port: 443
   server: ir2.cryptojakiro.com
@@ -20,20 +12,6 @@ proxies:
     headers:
       Host: ir2.cryptojakiro.com
     path: /
-- client-fingerprint: chrome
-  encryption: none
-  name: '🇮🇳[www.v2nodes.com] vless-IN-1... #1'
-  network: ws
-  port: 443
-  server: decdn-28.nome-rkp.net
-  servername: decdn-28.nome-rkp.net
-  tls: true
-  type: vless
-  uuid: c1208c5a-2350-0003-affd-fc41b4319286
-  ws-opts:
-    headers:
-      Host: decdn-28.nome-rkp.net
-    path: /media/ws/
 - alpn:
   - h2
   - http/1.1
@@ -51,20 +29,23 @@ proxies:
   tls: false
   type: vless
   uuid: 855c7aaa-e7d6-463e-971e-d36032744428
-- client-fingerprint: firefox
-  encryption: none
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: a9w9wmko0k2od14hv8v
   name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
-  network: ws
-  port: 8443
-  server: 103.31.4.160
-  servername: moz.ar-marz.fun
+  network: grpc
+  port: 443
+  server: 5.83.129.236
+  servername: host-de-upscale.cdn.cachefleet.com
   tls: true
   type: vless
-  uuid: 9443badf-414f-4b12-b19a-7cc2c7431163
-  ws-opts:
-    headers:
-      Host: moz.ar-marz.fun
-    path: /man
+  uuid: d86e6fda-e519-46ab-98eb-9ff9a9da5984
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1622...
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 47.254.143.251
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪[www.v2nodes.com] ss-DE-1621...
   password: zZMNTGpPl38ASlbI1EKOBJ
@@ -81,193 +62,28 @@ proxies:
   name: 🇩🇪[www.v2nodes.com] ss-DE-1615...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 23.157.88.43
+  server: 193.108.119.3
   type: ss
 - cipher: aes-256-gcm
   name: '🇩🇪[www.v2nodes.com] ss-DE-1615... #1'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
+  server: 23.157.88.43
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇩🇪[www.v2nodes.com] ss-DE-1615... #2'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
   server: 193.108.119.2
   type: ss
-- name: 🇩🇪DE_1|1.7MB/s
-  password: 'null'
-  port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 🇩🇪DE_2|4.0MB/s|R002-260618
-  port: 9002
-  server: 158.173.154.4
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 🇩🇪DE_3|1.0MB/s
+- name: 🇩🇪DE_1|1.3MB/s
   password: 'null'
   port: 443
   server: 172.64.68.89
   skip-cert-verify: true
   tls: true
   type: http
-  udp: true
   username: 'null'
-  x-toolall-mihomo: true
-- name: 🇩🇪DE_4|1.3MB/s
-  port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇩🇪DE_5|2.6MB/s|R002-260618
-  port: 443
-  server: 172.64.68.89
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 🇩🇪DE_6|1.2MB/s
-  password: 'null'
-  port: 443
-  server: 87.106.223.158
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.9ifdcMCsJ-bMvc9ealWuadeq1_iASTHy8hetUix-nTM
-  flow: xtls-rprx-vision
-  name: 🇩🇪DE_7|1.0MB/s
-  network: tcp
-  port: 29086
-  server: sv.fn.clients.fimrel.ir
-  servername: sv.fn.clients.fimrel.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: e7cbfd86-ae39-4ecc-852d-89754c8823e9
-  xudp: true
-- alpn:
-  - http/1.1
-  client-fingerprint: ios
-  name: '🇩🇪 德国 | DEU #1'
-  network: ws
-  port: 443
-  server: clover.filnex.baby
-  servername: clover.filnex.baby
-  tls: true
-  type: vless
-  udp: true
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  ws-opts:
-    headers:
-      Host: clover.filnex.baby
-    path: /api/de6/stream
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #4'
-  network: ws
-  port: 443
-  server: api.opencode.ai
-  servername: dietary-forms-begun-orientation.trycloudflare.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 2874e26b-45e3-4d12-9e01-3f5a1c6a7105
-  ws-opts:
-    headers:
-      Host: dietary-forms-begun-orientation.trycloudflare.com
-    path: /d9fb7b4f14c1
-- cipher: 2022-blake3-chacha20-poly1305
-  name: '🇩🇪 德国 | DEU #7'
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
-  port: 443
-  server: 47.254.175.2
-  type: ss
-  udp: true
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: glush.de3.v1
-  name: 🇩🇪 德国 | DEU 9
-  network: grpc
-  port: 443
-  server: luminexorizon.ink
-  servername: luminexorizon.ink
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt._qY1MWcrBsC4vR5V1hzkHjMTNsnMIRvvkwWc_FBCUCI
-  name: '🇩🇪 德国 | DEU #10'
-  network: ws
-  port: 443
-  server: www.binodes.com
-  servername: www.binodes.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 1af5253b-75e6-4e2c-8b9e-2b7b92dbb845
-  ws-opts:
-    headers:
-      Host: ded2http.samcdn.shop
-    path: /msn
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #11'
-  network: ws
-  port: 443
-  server: 185.253.7.22
-  servername: clover.filnex.baby
-  tls: true
-  type: vless
-  udp: true
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  ws-opts:
-    headers:
-      Host: clover.filnex.baby
-    path: /api/de6/stream
-- alpn:
-  - http/1.1
-  client-fingerprint: random
-  name: '🇩🇪 德国 | DEU #12'
-  network: ws
-  port: 443
-  server: reedbed.filnex.baby
-  servername: reedbed.filnex.baby
-  tls: true
-  type: vless
-  udp: true
-  uuid: 80a06811-f74b-4b82-ac99-7e66c2a98e1c
-  ws-opts:
-    headers:
-      Host: reedbed.filnex.baby
-    path: /api/de6/stream
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: ''
-  name: '🇩🇪 德国 | DEU #9'
-  network: grpc
-  port: 443
-  server: luminexorizon.ink
-  servername: luminexorizon.ink
-  tls: true
-  type: vless
-  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
 - name: DE_speednode_0004
   port: 443
   server: 213.109.163.119
