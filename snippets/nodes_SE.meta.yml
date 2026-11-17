@@ -1,21 +1,4 @@
 proxies:
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: 138-124-86-230-sslip-io
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
-  network: grpc
-  port: 48115
-  server: 138.124.86.230
-  servername: 138-124-86-230.sslip.io
-  tls: true
-  type: vless
-  uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
-- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #2'
-  port: 443
-  server: 150.241.79.124
-  tls: false
-  type: vless
-  uuid: 1fe01c8a-ab37-4e95-bbfc-95d4a608931e
 - cipher: chacha20-ietf-poly1305
   name: 🇸🇪[www.v2nodes.com] ss-SE-1620...
   password: 2e555e46dbc421452416834962fd014f
@@ -34,8 +17,17 @@ proxies:
   port: 8388
   server: 70.34.212.124
   type: ss
-- name: 🇸🇪[www.v2nodes.com] trojan-SE-...
-  password: FkQH0Q5EFneySv20Qj3yoArD2GSb2XZF
-  port: 443
-  server: 95.143.196.97
-  type: trojan
+- alpn:
+  - h3
+  down: ''
+  fingerprint: ''
+  name: 🇸🇪SE_1|1.3MB/s
+  obfs: salamander
+  obfs-password: vxvnmus9agdzduvz
+  password: Telegram--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X--CONFIG7X-
+  port: 26206
+  server: m1.config7x.kz.ci
+  skip-cert-verify: false
+  sni: config7x.de5.net
+  type: hysteria2
+  up: ''

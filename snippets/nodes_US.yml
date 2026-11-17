@@ -23,18 +23,47 @@ proxies:
   sni: ssl.fastly.com
   type: trojan
   udp: true
-- alterId: 64
+- alpn:
+  - ''
+  alterId: '0'
   cipher: auto
-  name: '🇺🇸 美国 | USA #4'
+  name: 🇺🇸US_2|1.4MB/s
   network: ws
-  port: 30004
-  server: 192.74.236.148
-  skip-cert-verify: true
-  tls: true
+  port: 80
+  server: www.speedtest.net
+  skip-cert-verify: false
+  tls: false
   type: vmess
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  uuid: 6fa9def2-edcb-4348-b012-6622c959a620
   ws-opts:
     headers:
-      Host: www.91334565.xyz
-    path: /path/1733477783705
+      Host: prairie-formats-holland-bundle.trycloudflare.com
+    path: /@ferdolans7
+  xudp: true
+- name: '🇺🇸 美国 | USA #2'
+  password: HQGIuRN4S3
+  port: 59642
+  server: www.777064.xyz
+  skip-cert-verify: true
+  sni: www.777064.xyz
+  type: trojan
+  udp: true
+- alpn:
+  - h2
+  - http/1.1
+  name: 🇺🇸 美国 | USA 4
+  password: HQGIuRN4S3
+  port: 59642
+  server: 64.186.234.24
+  skip-cert-verify: true
+  sni: www.777064.xyz
+  type: trojan
+  udp: true
+- name: '🇺🇸 美国 | USA #3'
+  password: HQGIuRN4S3
+  port: 59642
+  server: 64.186.234.24
+  skip-cert-verify: true
+  sni: www.777064.xyz
+  type: trojan
