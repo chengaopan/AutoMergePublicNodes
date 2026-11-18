@@ -15,8 +15,33 @@ proxies:
   sni: 192.255.152.147
   tls: false
   type: hysteria2
+- client-fingerprint: firefox
+  name: '🇺🇸 美国 | USA #4'
+  network: ws
+  port: 8443
+  server: 186.243.218.221
+  servername: cloudehouse24.ru
+  tls: true
+  type: vless
+  udp: true
+  uuid: fa937345-6d3e-4ff4-8127-1a836987a0db
+  ws-opts:
+    headers:
+      Host: cloudehouse24.ru
+    path: /v1/assets/7c3f9a2e6b4d8f10/us.js
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #1'
+  network: ws
+  port: 443
+  server: sajed.kdns.fr
+  tls: false
+  type: vless
+  uuid: 8e40cd7b-ce15-4887-8fe2-0af534a941a2
+  ws-opts:
+    headers:
+      Host: sajed.kdns.fr
+    path: /
 - client-fingerprint: chrome
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #10'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #7'
   network: ws
   port: 443
   server: 199.232.78.160
@@ -30,7 +55,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   encryption: none
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #7'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #8'
   network: ws
   port: 443
   server: wwww.qarvian.ir
@@ -47,12 +72,6 @@ proxies:
   password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
   port: 42878
   server: 23.230.52.119
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸[www.v2nodes.com] ss-US-1616...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 149.40.57.134
   type: ss
 - name: 美国4|@ripaojiedian
   network: tcp
@@ -72,134 +91,87 @@ proxies:
   sni: ssl.fastly.com
   type: trojan
   udp: true
-- name: 🇺🇸US_1|3.5MB/s
-  port: 58764
-  server: 118.184.140.90
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_2|1.1MB/s
-  password: l1tlrdx52v
-  port: 62000
-  server: 66.253.2.69
-  type: socks5
-  username: u_rb1dba2
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /ABCDE
-  name: 🇺🇸US_3|1.1MB/s
-  network: http
-  port: 52402
-  server: 104.225.148.201
-  tls: false
-  type: vmess
-  uuid: 0542f509-4368-4ee3-be54-0557fed80f6b
-  x-toolall-mihomo: true
-- name: 🇺🇸US_4|2.7MB/s
-  password: ozbqjztv
-  port: 8000
-  server: 192.220.47.85
-  type: http
-  username: ozbqjztv
-- alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: 🇺🇸US_5|3.1MB/s
-  network: http
-  port: 44441
-  server: 192.220.47.85
-  tls: false
-  type: vmess
-  uuid: de4e0335-2a3b-4006-d746-c939fa85fdc3
-  x-toolall-mihomo: true
-- client-fingerprint: chrome
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
-  name: 🇷🇺 俄罗斯 | RUS
-  network: grpc
+- down: ''
+  fingerprint: ''
+  name: 🇺🇸US_1|2.2MB/s
+  obfs: ''
+  obfs-password: ''
+  password: 3a17ce52-4547-45aa-9820-a7d03ad5faca
   port: 443
-  server: vps3.nemnogogo.com
-  servername: vps3.nemnogogo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-- alpn:
-  - h2
-  client-fingerprint: firefox
+  server: 45.86.74.193
+  skip-cert-verify: false
+  sni: media.embrofree.org
+  type: hysteria2
+  up: ''
+- client-fingerprint: firefox
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   name: 🇷🇺 俄罗斯 | RUS 3
   network: grpc
   port: 443
-  server: 201.51.12.98
+  server: 201.24.116.192
   servername: vps3.nemnogogo.com
   tls: true
   type: vless
   udp: true
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-- alterId: 64
-  cipher: auto
-  name: '🇺🇸 美国 | USA #1'
-  network: ws
-  port: 30004
-  server: 192.74.236.148
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.91334565.xyz
-    path: /path/1733477783705
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #6'
-  network: ws
-  port: 443
-  server: US122207.ssgreen.org
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 74d216a3-fdb8-4774-a9c3-35f9e5a46819
-  ws-opts:
-    headers:
-      Host: US122207.ssgreen.org
-    path: /wes
-- client-fingerprint: chrome
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: ios
   grpc-opts:
-    grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #1'
+    grpc-mode: gun
+    grpc-service-name: glush.de3.v1
+  name: 🇷🇺 俄罗斯 | RUS 4
   network: grpc
   port: 443
-  server: vps3.nemnogogo.com
+  server: 147.45.99.100
+  servername: luminexorizon.ink
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #9'
+  network: ws
+  port: 443
+  server: US122205.ssgreen.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 4e3618c7-e683-49dd-b678-166dcb6eccea
+  ws-opts:
+    headers:
+      Host: US122205.ssgreen.org
+    path: /wes
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇷🇺 俄罗斯 | RUS #3'
+  network: grpc
+  port: 443
+  server: 201.24.116.192
   servername: vps3.nemnogogo.com
   tls: true
   type: vless
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
 - alpn:
   - h2
-  client-fingerprint: firefox
+  - http/1.1
+  client-fingerprint: ios
   grpc-opts:
     grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #3'
+  name: '🇷🇺 俄罗斯 | RUS #4'
   network: grpc
   port: 443
-  server: 201.51.12.98
-  servername: vps3.nemnogogo.com
+  server: 147.45.99.100
+  servername: luminexorizon.ink
   tls: true
   type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  uuid: 4b50270b-5caf-4c34-b3da-17b4525604a6
 - name: US_speednode_0039
   port: 8443
   server: 44.248.167.117
