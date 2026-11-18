@@ -37,20 +37,18 @@ proxies:
     headers:
       Host: ov-france1.09vpn.com
     path: /vless/
-- client-fingerprint: chrome
-  encryption: none
-  name: '🇫🇷[www.v2nodes.com] vless-FR-1... #10'
-  network: ws
-  port: 443
-  server: 84.46.251.105
-  servername: fs.qicai99.com
-  tls: true
-  type: vless
-  uuid: 99c5b713-dedf-4a10-8070-916ff3f49b0e
-  ws-opts:
-    headers:
-      Host: fs.qicai99.com
-    path: /
+- cipher: chacha20-ietf-poly1305
+  name: 🇫🇷[www.v2nodes.com] ss-FR-1621...
+  password: 29irqk0paakcx19v
+  port: 8080
+  server: 51.83.61.102
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇫🇷[www.v2nodes.com] ss-FR-1616...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 23.162.152.22
+  type: ss
 - cipher: aes-256-gcm
   name: 🇫🇷[www.v2nodes.com] ss-FR-1615...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -81,6 +79,17 @@ proxies:
   port: 19999
   server: 167.17.64.22
   type: ss
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  auth_str: dongtaiwang.com
+  down: 50
+  name: 🇫🇷 法国 | FRA
+  port: 24667
+  server: 62.210.70.191
+  skip-cert-verify: true
+  type: hysteria
+  up: 10
 - name: FR_speednode_0008
   port: 19362
   server: 51.159.225.197

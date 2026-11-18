@@ -16,7 +16,7 @@ proxies:
   tls: false
   type: hysteria2
 - client-fingerprint: chrome
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #12'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #10'
   network: ws
   port: 443
   server: 199.232.78.160
@@ -30,7 +30,7 @@ proxies:
     path: /
 - client-fingerprint: chrome
   encryption: none
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #8'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #7'
   network: ws
   port: 443
   server: wwww.qarvian.ir
@@ -47,6 +47,12 @@ proxies:
   password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
   port: 42878
   server: 23.230.52.119
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸[www.v2nodes.com] ss-US-1616...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 149.40.57.134
   type: ss
 - name: 美国4|@ripaojiedian
   network: tcp
@@ -112,109 +118,88 @@ proxies:
   type: vmess
   uuid: de4e0335-2a3b-4006-d746-c939fa85fdc3
   x-toolall-mihomo: true
-- client-fingerprint: random
-  name: '🇦🇺 澳大利亚 | AUS #1'
-  network: ws
-  port: 443
-  server: 117.55.235.56
-  servername: us-lax.862400.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: us-lax.862400.xyz
-    path: /announcement?ed=2048
 - client-fingerprint: chrome
-  name: '🇷🇺 俄罗斯 | RUS #1'
-  network: xhttp
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
+  name: 🇷🇺 俄罗斯 | RUS
+  network: grpc
   port: 443
-  server: 201.34.142.108
+  server: vps3.nemnogogo.com
+  servername: vps3.nemnogogo.com
   tls: true
   type: vless
   udp: true
-  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
-  xhttp-opts:
-    mode: auto
-    path: /assets/nlrelay01/
-- client-fingerprint: random
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
+  name: 🇷🇺 俄罗斯 | RUS 3
+  network: grpc
+  port: 443
+  server: 201.51.12.98
+  servername: vps3.nemnogogo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+- alterId: 64
+  cipher: auto
   name: '🇺🇸 美国 | USA #1'
   network: ws
-  port: 8443
-  server: 5.157.30.26
-  servername: us-lax.862400.xyz
+  port: 30004
+  server: 192.74.236.148
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
   ws-opts:
     headers:
-      Host: us-lax.862400.xyz
-    path: /announcement?ed=2048
-- client-fingerprint: random
-  name: '🇺🇸 美国 | USA #2'
-  network: ws
-  port: 443
-  server: 217.217.227.132
-  servername: jp-osa.862400.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: jp-osa.862400.xyz
-    path: /announcement?ed=2048
-- cipher: aes-256-cfb
-  name: '🇺🇸 美国 | USA #5'
-  password: amazonskr05
-  port: 443
-  server: 3.22.241.58
-  type: ss
-  udp: true
-- client-fingerprint: random
+      Host: www.91334565.xyz
+    path: /path/1733477783705
+- alterId: 0
+  cipher: auto
   name: '🇺🇸 美国 | USA #6'
   network: ws
   port: 443
-  server: 172.67.67.89
-  servername: us-lax.862400.xyz
+  server: US122207.ssgreen.org
+  skip-cert-verify: true
   tls: true
-  type: vless
+  type: vmess
   udp: true
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
+  uuid: 74d216a3-fdb8-4774-a9c3-35f9e5a46819
   ws-opts:
     headers:
-      Host: us-lax.862400.xyz
-    path: /announcement?ed=2048
-- client-fingerprint: random
-  name: '🇺🇸 美国 | USA #7'
-  network: ws
+      Host: US122207.ssgreen.org
+    path: /wes
+- client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇷🇺 俄罗斯 | RUS #1'
+  network: grpc
   port: 443
-  server: 193.163.19.232
-  servername: us-lax.862400.xyz
+  server: vps3.nemnogogo.com
+  servername: vps3.nemnogogo.com
   tls: true
   type: vless
-  udp: true
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: us-lax.862400.xyz
-    path: /announcement?ed=2048
-- client-fingerprint: random
-  name: '🇺🇸 美国 | USA #8'
-  network: ws
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇷🇺 俄罗斯 | RUS #3'
+  network: grpc
   port: 443
-  server: 109.248.18.169
-  servername: us-lax.862400.xyz
+  server: 201.51.12.98
+  servername: vps3.nemnogogo.com
   tls: true
   type: vless
-  udp: true
-  uuid: 5bbbbf2c-9031-4511-8222-b6cecd5a5291
-  ws-opts:
-    headers:
-      Host: us-lax.862400.xyz
-    path: /announcement?ed=2048
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
 - name: US_speednode_0039
   port: 8443
   server: 44.248.167.117

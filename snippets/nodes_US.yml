@@ -5,6 +5,12 @@ proxies:
   port: 42878
   server: 23.230.52.119
   type: ss
+- cipher: aes-256-gcm
+  name: 🇺🇸[www.v2nodes.com] ss-US-1616...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 149.40.57.134
+  type: ss
 - name: 美国4|@ripaojiedian
   network: tcp
   password: MiTiVPN
@@ -51,10 +57,33 @@ proxies:
   type: vmess
   uuid: de4e0335-2a3b-4006-d746-c939fa85fdc3
   x-toolall-mihomo: true
-- cipher: aes-256-cfb
-  name: '🇺🇸 美国 | USA #5'
-  password: amazonskr05
-  port: 443
-  server: 3.22.241.58
-  type: ss
+- alterId: 64
+  cipher: auto
+  name: '🇺🇸 美国 | USA #1'
+  network: ws
+  port: 30004
+  server: 192.74.236.148
+  skip-cert-verify: true
+  tls: true
+  type: vmess
   udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.91334565.xyz
+    path: /path/1733477783705
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #6'
+  network: ws
+  port: 443
+  server: US122207.ssgreen.org
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 74d216a3-fdb8-4774-a9c3-35f9e5a46819
+  ws-opts:
+    headers:
+      Host: US122207.ssgreen.org
+    path: /wes
