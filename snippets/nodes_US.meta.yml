@@ -7,59 +7,11 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸[www.v2nodes.com] ss-US-1620...
-  password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
-  port: 42878
-  server: 23.230.52.119
-  type: ss
 - cipher: aes-256-gcm
   name: 🇺🇸[www.v2nodes.com] ss-US-1616...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 149.40.57.134
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸[www.v2nodes.com] ss-US-1616... #1'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 38.91.107.188
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸[www.v2nodes.com] ss-US-1616... #2'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 23.150.152.38
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸[www.v2nodes.com] ss-US-1616... #3'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 167.88.63.99
-  type: ss
-- cipher: aes-256-gcm
-  name: 🇺🇸[www.v2nodes.com] ss-US-1615...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 162.251.62.31
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸[www.v2nodes.com] ss-US-1615... #1'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 137.184.89.151
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇺🇸[www.v2nodes.com] ss-US-1615... #2'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 38.22.17.129
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇺🇸[www.v2nodes.com] ss-US-1612...
-  password: DZRy4Q3QH0jUGfKFl2jDCZ
-  port: 28960
-  server: 138.197.89.234
   type: ss
 - name: 美国4|@ripaojiedian
   network: tcp
@@ -81,7 +33,7 @@ proxies:
   udp: true
 - alterId: 64
   cipher: auto
-  name: '🇺🇸 美国 | USA #3'
+  name: '🇺🇸 美国 | USA #11'
   network: ws
   port: 30004
   server: 192.74.236.148
@@ -160,6 +112,19 @@ proxies:
   name: 🇷🇺 俄罗斯 | RUS
   network: grpc
   port: 443
+  server: 201.24.116.192
+  servername: vps3.nemnogogo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
+  name: 🇷🇺 俄罗斯 | RUS 2
+  network: grpc
+  port: 443
   server: 201.51.12.98
   servername: vps3.nemnogogo.com
   tls: true
@@ -167,12 +132,28 @@ proxies:
   udp: true
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
 - alpn:
+  - http/1.1
+  client-fingerprint: android
+  name: '🇷🇺 俄罗斯 | RUS #3'
+  network: ws
+  port: 443
+  server: 201.51.2.188
+  servername: sequoia.merlano.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
+  ws-opts:
+    headers:
+      Host: vellum.merlano.monster
+    path: /api/de1/stream
+- alpn:
   - h2
   client-fingerprint: firefox
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
-  name: 🇷🇺 俄罗斯 | RUS 2
+  name: 🇷🇺 俄罗斯 | RUS 5
   network: grpc
   port: 443
   server: vps3.nemnogogo.com
@@ -181,15 +162,91 @@ proxies:
   type: vless
   udp: true
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-- auth: https://xship.top
-  name: 🇺🇸 美国 | USA 2
-  password: https://xship.top
+- cipher: 2022-blake3-chacha20-poly1305
+  name: '🇺🇸 美国 | USA #1'
+  password: eV9qjQ6C+W+VrxIOfGutlA/g8a+Z+HUrIR80G0mtMCQ=
+  port: 56927
+  server: 129.221.217.100
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: '🇺🇸 美国 | USA #2'
+  password: a3PPcJa65qkdjt0mH9YBf5j1uAwMP21kNWRPTlI4nFc=
+  port: 50356
+  server: 137.131.48.233
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: '🇺🇸 美国 | USA #3'
+  password: EP/0kIjk18c43tfkqeJqdVQm8lGArteYkhhwgBJ3q70=
+  port: 50356
+  server: 161.153.38.61
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: '🇺🇸 美国 | USA #4'
+  password: 3NBsnBLanPfG6i3S2GTHineswr6EeSJPb0PCeMQoGoA=
   port: 443
-  server: starlink-ft.251313.xyz
+  server: 47.85.162.44
+  type: ss
+  udp: true
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #5'
+  network: ws
+  port: 2087
+  server: 172.64.153.205
+  tls: true
+  type: vless
+  udp: true
+  uuid: 51a0af77-a60c-4d9b-81a4-f50e1b38d90b
+  ws-opts:
+    headers:
+      Host: alphefedo7865.pages.dev
+    path: /
+- name: 🇺🇸 美国 | USA 9
+  network: ws
+  password: zhs000666
+  port: 443
+  server: 104.17.22.231
   skip-cert-verify: true
-  sni: xship.top
-  type: hysteria2
-- name: 🇺🇸 美国 | USA 3
+  sni: 666-4sd.pages.dev
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 666-4sd.pages.dev
+    path: /?ed=2560&proxyip=ts.hpc.tw
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /
+  name: '🇺🇸 美国 | USA #10'
+  network: http
+  port: 44441
+  server: 192.220.47.85
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: de4e0335-2a3b-4006-d746-c939fa85fdc3
+- alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #12'
+  network: ws
+  port: 443
+  server: US032012.westmgreen.com
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 5decdd8c-5790-4d16-9ce9-5cd7fb1934fc
+  ws-opts:
+    headers:
+      Host: US032012.westmgreen.com
+    path: /wes
+- name: 🇺🇸 美国 | USA 13
   password: 0324fbc29561
   port: 443
   server: sdf65h46wr.df6h451rh.xin
@@ -203,6 +260,17 @@ proxies:
   name: '🇷🇺 俄罗斯 | RUS #1'
   network: grpc
   port: 443
+  server: 201.24.116.192
+  servername: vps3.nemnogogo.com
+  tls: true
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇷🇺 俄罗斯 | RUS #2'
+  network: grpc
+  port: 443
   server: 201.51.12.98
   servername: vps3.nemnogogo.com
   tls: true
@@ -213,7 +281,7 @@ proxies:
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #2'
+  name: '🇷🇺 俄罗斯 | RUS #5'
   network: grpc
   port: 443
   server: vps3.nemnogogo.com
@@ -221,6 +289,13 @@ proxies:
   tls: true
   type: vless
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+- name: '🇺🇸 美国 | USA #9'
+  password: zhs000666
+  port: 443
+  server: 104.17.22.231
+  skip-cert-verify: true
+  sni: 666-4sd.pages.dev
+  type: trojan
 - name: US_speednode_0039
   port: 8443
   server: 44.248.167.117
