@@ -1,11 +1,5 @@
 proxies:
 - cipher: aes-256-gcm
-  name: 🇨🇭[www.v2nodes.com] ss-CH-1616...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 23.166.88.127
-  type: ss
-- cipher: aes-256-gcm
   name: 🇨🇭[www.v2nodes.com] ss-CH-1615...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
@@ -28,3 +22,23 @@ proxies:
   port: 443
   server: 208.69.78.158
   type: trojan
+- alpn:
+  - ''
+  alterId: '0'
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - down-cdn.dingtalk.com
+    path:
+    - /3x
+  name: 🇨🇭CH_2|1.1MB/s
+  network: http
+  port: 42831
+  server: 179.43.140.24
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: a925a98c-ad7a-40c6-9fdf-130a1de69416
+  xudp: true
