@@ -7,21 +7,6 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
-- name: 🇺🇸US-🚀@VPNine1
-  obfs: salamander
-  obfs-password: 0dRexOATy4t9J1ckKOLpPy9HrNoU5FmN
-  password: HPzKAhFXV5XgEmRSTM33DRuTHeFcB5ON
-  port: 443
-  server: 89.117.172.45
-  sni: eth.todsm.com
-  tls: false
-  type: hysteria2
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇺🇸[www.v2nodes.com] ss-US-1623...
-  password: EP/0kIjk18c43tfkqeJqdVQm8lGArteYkhhwgBJ3q70=
-  port: 50356
-  server: 161.153.38.61
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇺🇸[www.v2nodes.com] ss-US-1620...
   password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
@@ -46,63 +31,35 @@ proxies:
   sni: ssl.fastly.com
   type: trojan
   udp: true
-- alterId: 64
+- alpn:
+  - ''
+  alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 | USA #4'
-  network: ws
-  port: 30004
-  server: 192.74.236.148
-  skip-cert-verify: true
-  tls: true
+  name: '🇺🇸 美国 | USA #8'
+  network: tcp
+  port: 52843
+  server: 23.147.56.181
+  skip-cert-verify: false
+  tls: false
   type: vmess
   udp: true
-  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
-  ws-opts:
-    headers:
-      Host: www.91334565.xyz
-    path: /path/1733477783705
+  uuid: 88be793c-c368-4eb1-8809-057e5df96606
+  xudp: true
 - name: 🇺🇸US_2|1.3MB/s
   password: l1tlrdx52v
   port: 62000
   server: 66.253.2.69
   type: socks5
   username: u_rb1dba2
-- name: 🇺🇸US_3|2.2MB/s
-  password: test123
-  port: 1080
-  server: 104.168.249.36
-  type: socks5
-  username: test123
-- name: 🇺🇸US_4|3.1MB/s
-  port: 7777
-  server: 47.251.249.48
+- auth: 41edb44c8e
+  name: '🇷🇺 俄罗斯 | RUS #1'
+  password: 41edb44c8e
+  port: 11592
+  server: 103.88.243.142
   skip-cert-verify: true
-  type: socks5
-- name: 🇺🇸US_5|2.4MB/s
-  port: 9443
-  server: 152.233.50.145
-  skip-cert-verify: true
-  tls: true
-  type: http
-- name: 🇺🇸US_6|2.2MB/s
-  port: 9443
-  server: 76.164.193.18
-  skip-cert-verify: true
-  tls: true
-  type: http
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
-  name: 🇷🇺 俄罗斯 | RUS
-  network: grpc
-  port: 443
-  server: 201.24.116.192
-  servername: vps3.nemnogogo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+  sni: srv-17e124.21freedom.net
+  tls: false
+  type: hysteria2
 - auth: 41edb44c8e
   name: '🇷🇺 俄罗斯 | RUS #2'
   password: 41edb44c8e
@@ -112,15 +69,19 @@ proxies:
   sni: srv-17e124.21freedom.net
   tls: false
   type: hysteria2
-- auth: 41edb44c8e
-  name: '🇷🇺 俄罗斯 | RUS #3'
-  password: 41edb44c8e
-  port: 11592
-  server: 103.88.243.142
-  skip-cert-verify: true
-  sni: srv-17e124.21freedom.net
-  tls: false
-  type: hysteria2
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
+  name: 🇷🇺 俄罗斯 | RUS 3
+  network: grpc
+  port: 443
+  server: 201.24.116.192
+  servername: vps3.nemnogogo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
 - client-fingerprint: firefox
   grpc-opts:
     grpc-mode: gun
@@ -149,46 +110,104 @@ proxies:
   type: vless
   udp: true
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-- client-fingerprint: firefox
-  name: '🇷🇺 俄罗斯 | RUS #6'
-  network: xhttp
-  port: 443
-  server: 194.87.131.9
-  servername: sunstone.elvano.website
-  tls: true
-  type: vless
-  udp: true
-  uuid: 25ac78e7-6d1d-4c9a-a450-c01a4871769f
-  xhttp-opts:
-    host: driftwood.elvano.website
-    path: /api/de2/sync
-- client-fingerprint: firefox
-  name: '🇷🇺 俄罗斯 | RUS #7'
-  network: xhttp
+- auth: fce629d692a7b1ad71a17dae29d8b3c6
+  name: '🇺🇸 美国 | USA #1'
+  password: fce629d692a7b1ad71a17dae29d8b3c6
   port: 8443
-  server: plaindune.com
-  servername: plaindune.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 37af0181-5598-4aad-a040-d926bcb65757
-  xhttp-opts:
-    host: plaindune.com
-    mode: auto
-    path: /api/v1/upload
-- auth: 9a9f167d-b461-466f-be50-f0ffd598a6f8
-  name: '🇺🇸 美国 | USA #2'
-  password: 9a9f167d-b461-466f-be50-f0ffd598a6f8
-  port: 443
-  server: germanyafterpool.fun
+  server: 172.87.24.53
   skip-cert-verify: true
-  sni: germanyafterpool.fun
+  sni: hy2k2p.local
   tls: false
   type: hysteria2
+- alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /QQqun-737805443
+  name: '🇺🇸 美国 | USA #4'
+  network: http
+  port: 52080
+  server: 107.174.133.115
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: e7fb8bc6-5e0a-4e64-86cc-eb0ddd7ef4dd
+- alterId: 0
+  cipher: auto
+  http-opts:
+    headers:
+      Host:
+      - mmsc.vnet.mobi
+    method: GET
+    path:
+    - /3x
+  name: '🇺🇸 美国 | USA #5'
+  network: http
+  port: 52080
+  server: 192.204.58.87
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 700dc5c3-9b7b-4ac8-8ee5-010ca3d03789
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /3x
+  name: '🇺🇸 美国 | USA #6'
+  network: http
+  port: 2053
+  server: 192.204.58.87
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 286a45bc-f3aa-4a2d-8e6e-21fb824d9eeb
+- alterId: 64
+  cipher: auto
+  name: '🇺🇸 美国 | USA #7'
+  network: ws
+  port: 30004
+  server: 192.74.236.148
+  skip-cert-verify: true
+  tls: true
+  type: vmess
+  udp: true
+  uuid: 418048af-a293-4b99-9b0c-98ca3580dd24
+  ws-opts:
+    headers:
+      Host: www.91334565.xyz
+    path: /path/1733477783705
+- name: 🇺🇸 美国 | USA 8
+  password: 09cac7f2-2480-485f-affc-35aebdb21cb8
+  port: 50000
+  server: 212.189.31.45
+  skip-cert-verify: true
+  sni: www.amd.com
+  type: anytls
+  udp: true
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: 🇺🇸 美国 | USA 9
+  port: 52843
+  server: 23.147.56.181
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 88be793c-c368-4eb1-8809-057e5df96606
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #1'
+  name: '🇷🇺 俄罗斯 | RUS #3'
   network: grpc
   port: 443
   server: 201.24.116.192
