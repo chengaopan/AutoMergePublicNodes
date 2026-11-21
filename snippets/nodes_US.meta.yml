@@ -7,6 +7,12 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇺🇸[www.v2nodes.com] ss-US-1623...
+  password: EP/0kIjk18c43tfkqeJqdVQm8lGArteYkhhwgBJ3q70=
+  port: 50356
+  server: 161.153.38.61
+  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇺🇸[www.v2nodes.com] ss-US-1620...
   password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
@@ -31,37 +37,8 @@ proxies:
   sni: ssl.fastly.com
   type: trojan
   udp: true
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #8'
-  network: tcp
-  port: 52843
-  server: 23.147.56.181
-  skip-cert-verify: false
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 88be793c-c368-4eb1-8809-057e5df96606
-  xudp: true
-- name: 🇺🇸US_2|1.3MB/s
-  password: l1tlrdx52v
-  port: 62000
-  server: 66.253.2.69
-  type: socks5
-  username: u_rb1dba2
 - auth: 41edb44c8e
   name: '🇷🇺 俄罗斯 | RUS #1'
-  password: 41edb44c8e
-  port: 11592
-  server: 103.88.243.142
-  skip-cert-verify: true
-  sni: srv-17e124.21freedom.net
-  tls: false
-  type: hysteria2
-- auth: 41edb44c8e
-  name: '🇷🇺 俄罗斯 | RUS #2'
   password: 41edb44c8e
   port: 11592
   server: srv-17e124.21freedom.net
@@ -73,7 +50,7 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
-  name: 🇷🇺 俄罗斯 | RUS 3
+  name: 🇷🇺 俄罗斯 | RUS 2
   network: grpc
   port: 443
   server: 201.24.116.192
@@ -86,7 +63,7 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
-  name: 🇷🇺 俄罗斯 | RUS 4
+  name: 🇷🇺 俄罗斯 | RUS 3
   network: grpc
   port: 443
   server: 201.51.12.98
@@ -96,36 +73,52 @@ proxies:
   udp: true
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
 - alpn:
-  - h2
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
-  name: 🇷🇺 俄罗斯 | RUS 5
-  network: grpc
+  - http/1.1
+  client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #2'
+  network: ws
   port: 443
-  server: vps3.nemnogogo.com
-  servername: vps3.nemnogogo.com
+  server: 172.67.197.170
+  servername: o685y.save-node.com
   tls: true
   type: vless
   udp: true
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-- auth: fce629d692a7b1ad71a17dae29d8b3c6
-  name: '🇺🇸 美国 | USA #1'
-  password: fce629d692a7b1ad71a17dae29d8b3c6
-  port: 8443
-  server: 172.87.24.53
-  skip-cert-verify: true
-  sni: hy2k2p.local
+  uuid: 88e79aa6-f431-4453-8dcc-652a0c747198
+  ws-opts:
+    headers:
+      Host: o685y.save-node.com
+    path: /api/se1k2rfxlsuer3ry4u6e84kl8rqp721p
+- name: '🇺🇸 美国 | USA #5'
+  network: tcp
+  port: 443
+  server: 62.144.51.95
   tls: false
-  type: hysteria2
+  type: vless
+  udp: true
+  uuid: c657310e-d87c-4358-9cb7-200a0c3f35e8
+  ws-opts:
+    path: /
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #6'
+  network: ws
+  port: 443
+  server: sparkling-gadabout.quick-cdn.net
+  servername: sparkling-gadabout.quick-cdn.net
+  tls: true
+  type: vless
+  udp: true
+  uuid: ff3117a2-f6d6-45a5-b82a-9df9b24a1426
+  ws-opts:
+    headers:
+      Host: sparkling-gadabout.quick-cdn.net
+    path: /ws
 - alterId: 0
   cipher: auto
   http-opts:
     method: GET
     path:
     - /QQqun-737805443
-  name: '🇺🇸 美国 | USA #4'
+  name: '🇺🇸 美国 | USA #7'
   network: http
   port: 52080
   server: 107.174.133.115
@@ -134,6 +127,23 @@ proxies:
   type: vmess
   udp: true
   uuid: e7fb8bc6-5e0a-4e64-86cc-eb0ddd7ef4dd
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  http-opts:
+    method: GET
+    path:
+    - /3x
+  name: '🇺🇸 美国 | USA #8'
+  network: http
+  port: 2053
+  server: 192.204.58.87
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 286a45bc-f3aa-4a2d-8e6e-21fb824d9eeb
 - alterId: 0
   cipher: auto
   http-opts:
@@ -143,7 +153,7 @@ proxies:
     method: GET
     path:
     - /3x
-  name: '🇺🇸 美国 | USA #5'
+  name: '🇺🇸 美国 | USA #9'
   network: http
   port: 52080
   server: 192.204.58.87
@@ -152,26 +162,9 @@ proxies:
   type: vmess
   udp: true
   uuid: 700dc5c3-9b7b-4ac8-8ee5-010ca3d03789
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /3x
-  name: '🇺🇸 美国 | USA #6'
-  network: http
-  port: 2053
-  server: 192.204.58.87
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 286a45bc-f3aa-4a2d-8e6e-21fb824d9eeb
 - alterId: 64
   cipher: auto
-  name: '🇺🇸 美国 | USA #7'
+  name: '🇺🇸 美国 | USA #10'
   network: ws
   port: 30004
   server: 192.74.236.148
@@ -184,30 +177,44 @@ proxies:
     headers:
       Host: www.91334565.xyz
     path: /path/1733477783705
-- name: 🇺🇸 美国 | USA 8
-  password: 09cac7f2-2480-485f-affc-35aebdb21cb8
-  port: 50000
-  server: 212.189.31.45
-  skip-cert-verify: true
-  sni: www.amd.com
-  type: anytls
-  udp: true
 - alpn:
   - ''
   alterId: 0
   cipher: auto
-  name: 🇺🇸 美国 | USA 9
-  port: 52843
-  server: 23.147.56.181
+  name: '🇺🇸 美国 | USA #11'
+  network: ws
+  port: 16648
+  server: afzuv.xiaoyan.io
   skip-cert-verify: true
   tls: false
   type: vmess
   udp: true
-  uuid: 88be793c-c368-4eb1-8809-057e5df96606
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  ws-opts:
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+    path: /
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: '🇺🇸 美国 | USA #12'
+  network: ws
+  port: 16648
+  server: d1eyz.xiaoyan.io
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  ws-opts:
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+    path: /
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #3'
+  name: '🇷🇺 俄罗斯 | RUS #2'
   network: grpc
   port: 443
   server: 201.24.116.192
@@ -218,23 +225,10 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #4'
+  name: '🇷🇺 俄罗斯 | RUS #3'
   network: grpc
   port: 443
   server: 201.51.12.98
-  servername: vps3.nemnogogo.com
-  tls: true
-  type: vless
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #5'
-  network: grpc
-  port: 443
-  server: vps3.nemnogogo.com
   servername: vps3.nemnogogo.com
   tls: true
   type: vless

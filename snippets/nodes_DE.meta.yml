@@ -1,19 +1,6 @@
 proxies:
-- client-fingerprint: edge
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
-  network: ws
-  port: 2096
-  server: 144.31.215.233
-  servername: st46d76.rumedia-cdn.com
-  tls: true
-  type: vless
-  uuid: fbe22815-0718-4eae-816f-e91c67d15b54
-  ws-opts:
-    headers:
-      Host: st46d76.rumedia-cdn.com
-    path: /cdn/v3/live
 - client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #5'
   network: ws
   port: 443
   server: 46.243.205.192
@@ -27,15 +14,9 @@ proxies:
     path: /catalog/feed/H9eui7WsW3xS
 - cipher: 2022-blake3-chacha20-poly1305
   name: 🇩🇪[www.v2nodes.com] ss-DE-1623...
-  password: zpdYERRY+i9wkj3G766aELYAVoITvCv9kKrIGG8ykzY=
+  password: GmAn0fXarz+xB3bw2aCzwnZxcNuDx8xpqI+vGufI3jI=
   port: 59924
-  server: 129.159.0.53
-  type: ss
-- cipher: 2022-blake3-chacha20-poly1305
-  name: '🇩🇪[www.v2nodes.com] ss-DE-1623... #1'
-  password: FmB4HBM/+63LZr+sjxs5zkFIvZmB//5BPqdf8W+wntg=
-  port: 59924
-  server: 79.76.105.62
+  server: 92.5.114.103
   type: ss
 - cipher: 2022-blake3-chacha20-poly1305
   name: 🇩🇪[www.v2nodes.com] ss-DE-1622...
@@ -50,14 +31,14 @@ proxies:
   skip-cert-verify: true
   sni: alireza.karamoz1.ir
   type: trojan
-- name: 🇩🇪DE_1|2.5MB/s
+- name: 🇩🇪DE_1|1.2MB/s
   port: 443
   server: 172.64.68.89
   skip-cert-verify: true
   sni: 172.64.68.89
   tls: true
   type: http
-- name: 🇩🇪DE_2|1.3MB/s|P002-260618
+- name: 🇩🇪DE_2|1.1MB/s|P002-260618
   password: None
   port: 443
   server: 172.64.68.89
@@ -67,22 +48,24 @@ proxies:
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: 🇩🇪DE_3|1.6MB/s|R002-260618
+- name: 🇩🇪DE_3|1.0MB/s
+  password: 'null'
   port: 443
-  server: 152.233.20.206
+  server: 172.64.69.89
   skip-cert-verify: true
-  sub_tag: R002-260618
   tls: true
   type: http
+  username: 'null'
+- name: '🇩🇪 德国 | DEU #2'
+  network: tcp
+  port: 50955
+  server: 152.53.120.90
+  tls: false
+  type: vless
   udp: true
-  x-toolall-mihomo: true
-- cipher: 2022-blake3-chacha20-poly1305
-  name: '🇩🇪 德国 | DEU #1'
-  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
-  port: 443
-  server: 3.10.140.166
-  type: ss
-  udp: true
+  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
+  ws-opts:
+    path: /
 - client-fingerprint: firefox
   name: '🇩🇪 德国 | DEU #3'
   network: xhttp
@@ -96,6 +79,21 @@ proxies:
   xhttp-opts:
     mode: auto
     path: /assets/twru01/
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #4'
+  network: xhttp
+  port: 2085
+  server: mamad.ang-el.ir
+  servername: angelvpn.angelmh.cv
+  tls: true
+  type: vless
+  udp: true
+  uuid: fbe735da-3a62-4b98-844b-8db9e2ebaf95
+  xhttp-opts:
+    host: community.fastly.steamstatic.com
+    mode: stream-one
+    path: /api
+    x-padding-bytes: 100-1000
 - name: DE_speednode_0004
   port: 443
   server: 213.109.163.119
