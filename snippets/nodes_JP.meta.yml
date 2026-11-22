@@ -6,9 +6,17 @@ proxies:
   sni: www.microsoft.com
   tls: false
   type: hysteria2
+- encryption: none
+  name: 🇯🇵[www.v2nodes.com] vless-JP-1...
+  network: ws
+  port: 80
+  server: 172.67.192.49
+  tls: false
+  type: vless
+  uuid: 4808e2ce-14f4-4f5e-b8f4-59fb92fffa09
 - client-fingerprint: unsafe
   encryption: none
-  name: 🇯🇵[www.v2nodes.com] vless-JP-1...
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #1'
   network: ws
   port: 443
   server: 43.170.8.95
@@ -21,7 +29,7 @@ proxies:
       Host: jp3.yohototo.top
     path: /tyxyws
 - encryption: none
-  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #2'
+  name: '🇯🇵[www.v2nodes.com] vless-JP-1... #3'
   network: ws
   port: 11424
   server: 38.47.96.220
@@ -58,32 +66,11 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
-- name: 日本2|@ripaojiedian
-  network: tcp
-  password: d050aca3-9df2-4461-90ec-92373c1d7636
-  port: 44184
-  server: v2jp.k1.ssnss.live
-  skip-cert-verify: true
-  type: trojan
-  udp: true
-- client-fingerprint: chrome
-  encryption: none
-  flow: xtls-rprx-vision
-  name: 🇯🇵JP_1|2.4MB/s
-  network: tcp
-  port: 443
-  server: 23.27.11.86
-  servername: jp.burmy.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: e8a346c2-e14c-4f82-876f-367dc19ee541
-  xudp: true
 - alpn:
   - ''
   alterId: 0
   cipher: auto
-  name: '🇯🇵 日本 | JPN #1'
+  name: 🇯🇵JP_1|2.3MB/s
   network: ws
   port: 16617
   server: afzuv.xiaoyan.io
@@ -96,35 +83,45 @@ proxies:
     headers:
       Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
     path: /
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '🇯🇵 日本 | JPN #2'
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇯🇵JP_2|4.6MB/s
   network: ws
-  port: 16617
-  server: d1eyz.xiaoyan.io
-  skip-cert-verify: true
-  tls: false
-  type: vmess
+  port: 2083
+  server: 172.64.229.239
+  servername: cdn.lahjy.xyz
+  tls: true
+  type: vless
   udp: true
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  uuid: 5821f560-4156-4faf-80ec-9d798b128090
   ws-opts:
     headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+      Host: cdn.lahjy.xyz
+      User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML,
+        like Gecko) Chrome/63.0.3239.84 Safari/537.36
     path: /
-- name: 🇯🇵 日本 | JPN 3
-  password: e2413369-16de-4c90-97c5-b39b8d6b71cd
-  port: 443
-  server: im.frnhk.xyz
+  xudp: true
+- name: '🇯🇵 日本 | JPN #1'
+  password: LDSLDq9XlM4-92pvTPOUuklMb99BLOCrdyejsupEca4
+  port: 17443
+  server: 156.246.93.237
   skip-cert-verify: true
-  sni: im.frnhk.xyz
-  type: anytls
+  sni: jpk.wentibuxiaobuda.xyz
+  type: trojan
+- auth: 36187bef1c708c82fd4099b9d70116ffd8c0f1f5bfd19cbb319eeb67899714f6
+  name: '🇯🇵 日本 | JPN #2'
+  password: 36187bef1c708c82fd4099b9d70116ffd8c0f1f5bfd19cbb319eeb67899714f6
+  port: 443
+  server: jpk.wentibuxiaobuda.xyz
+  skip-cert-verify: true
+  sni: jpk.wentibuxiaobuda.xyz
+  tls: false
+  type: hysteria2
   udp: true
 - name: '🇳🇬 尼日利亚 | NGA #1'
-  password: d9064589-74af-432a-9390-5d8a9da281bf
-  port: 20103
-  server: sclass-00.catcat321.com
+  password: d7563108-615c-4338-a7bd-77f359869a4a
+  port: 20051
+  server: sclass-b1.catcat321.com
   skip-cert-verify: true
   sni: hk.catxstar.com
   type: trojan

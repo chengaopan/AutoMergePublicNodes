@@ -78,8 +78,23 @@ proxies:
   port: 443
   server: 141.98.101.181
   type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-8004...
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- name: 🇬🇧GB_1|2.3MB/s|R002-260618
+  port: 443
+  server: 84.17.50.193
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
 - client-fingerprint: chrome
-  name: '🇬🇧 英国 | GBR #1'
+  name: '🇬🇧 英国 | GBR #2'
   network: tcp
   port: 443
   server: 136.148.83.69
@@ -89,18 +104,4 @@ proxies:
   udp: true
   uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
   ws-opts:
-    path: /
-- client-fingerprint: chrome
-  name: '🇬🇧 英国 | GBR #3'
-  network: ws
-  port: 443
-  server: ipfast.kingmna.com
-  servername: community.fastly.steamstatic.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 414b00e3-cc5e-4378-a895-04242f27a757
-  ws-opts:
-    headers:
-      Host: snaanjaai.global.ssl.fastly.net
     path: /
