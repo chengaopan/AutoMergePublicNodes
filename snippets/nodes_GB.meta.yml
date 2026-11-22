@@ -43,16 +43,10 @@ proxies:
   server: 198.244.202.215
   type: ss
 - cipher: aes-256-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1615...
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1602...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 142.202.51.22
-  type: ss
-- cipher: aes-256-gcm
-  name: '🇬🇧[www.v2nodes.com] ss-GB-1615... #1'
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 38.114.120.221
+  server: 185.176.206.9
   type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
@@ -66,34 +60,24 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-9184...
-  password: shadowsocks
+- name: GB_speednode_0008
   port: 443
-  server: 141.98.101.181
-  type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-8004...
-  password: shadowsocks
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇬🇧GB_2|1.5MB/s|R002-260618
   port: 443
-  server: 141.98.101.178
-  type: ss
+  server: 84.17.50.193
+  skip-cert-verify: true
+  sub_tag: R002-260618
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
 - client-fingerprint: chrome
   name: '🇬🇧 英国 | GBR #1'
-  network: ws
-  port: 443
-  server: ipfast.kingmna.com
-  servername: community.fastly.steamstatic.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: b8b85757-b721-4f54-820f-545190cfa807
-  ws-opts:
-    headers:
-      Host: snaanjaai.global.ssl.fastly.net
-    path: /
-- client-fingerprint: chrome
-  name: '🇬🇧 英国 | GBR #2'
   network: tcp
   port: 443
   server: 136.148.83.69
@@ -104,60 +88,3 @@ proxies:
   uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
   ws-opts:
     path: /
-- alpn:
-  - h3
-  auth: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  down: 200
-  name: 🇬🇧 英国 | GBR 4
-  obfs: salamander
-  obfs-password: 8utjvetgzbiuwfa7
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 443
-  server: dg3yg.mateflora.com
-  skip-cert-verify: true
-  sni: dg3yg.mateflora.com
-  type: hysteria2
-  udp: true
-  up: 100
-- alpn:
-  - h3
-  auth: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  down: 200
-  name: 🇬🇧 英国 | GBR 5
-  obfs: salamander
-  obfs-password: 6fltjteoyab7fjf1
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 40055
-  server: 22egdg.mateflora.com
-  skip-cert-verify: true
-  sni: psstatic.cdn.bcebos.com
-  type: hysteria2
-  udp: true
-  up: 100
-- name: '🇬🇧 英国 | GBR #4'
-  obfs: salamander
-  obfs-password: salamander
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 443
-  server: dg3yg.mateflora.com
-  skip-cert-verify: true
-  sni: dg3yg.mateflora.com
-  tls: false
-  type: hysteria2
-- name: '🇬🇧 英国 | GBR #5'
-  obfs: salamander
-  obfs-password: salamander
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 40055
-  server: 22egdg.mateflora.com
-  skip-cert-verify: true
-  sni: psstatic.cdn.bcebos.com
-  tls: false
-  type: hysteria2
-- name: GB_speednode_0008
-  port: 443
-  server: 212.102.63.31
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true

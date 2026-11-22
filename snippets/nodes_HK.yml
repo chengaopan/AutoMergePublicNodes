@@ -5,18 +5,34 @@ proxies:
   port: 8388
   server: 209.248.57.105
   type: ss
-- alpn:
-  - ''
-  alterId: 0
+- alterId: 2
   cipher: auto
-  name: '🇭🇰 香港 | HKG #1'
+  name: 🇭🇰HK_1|3.2MB/s
   network: ws
-  port: 36703
-  server: 47.244.120.197
-  skip-cert-verify: true
+  port: 60852
+  server: hkgb707.ifastcdncache.com
+  skip-cert-verify: false
   tls: false
   type: vmess
   udp: true
-  uuid: 45b83519-9c4f-4052-a11b-02e017b636d4
+  uuid: f8eca8df-a1a5-4918-a194-d34112a3673f
   ws-opts:
-    path: /arki
+    headers: {}
+    path: /
+  xudp: true
+- alterId: 0
+  cipher: auto
+  name: 🇭🇰HK_3|3.8MB/s
+  network: ws
+  port: 16632
+  server: pdmv4.xiaoyan.io
+  skip-cert-verify: false
+  tls: false
+  type: vmess
+  udp: true
+  uuid: 904f0569-8695-466f-97cf-0de2face1b46
+  ws-opts:
+    headers:
+      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
+    path: /
+  xudp: true
