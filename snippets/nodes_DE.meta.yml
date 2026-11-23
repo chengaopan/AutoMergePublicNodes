@@ -1,21 +1,30 @@
 proxies:
+- name: 🇩🇪[www.v2nodes.com] vless-DE-1...
+  network: tcp
+  port: 837
+  server: 87.82.59.60
+  tls: false
+  type: vless
+  uuid: d8b42cd5-b149-4356-9e61-444444444444
+  ws-opts:
+    path: /
 - alpn:
-  - http/1.1
-  client-fingerprint: edge
-  name: 🇩🇪[www.v2nodes.com] vless-DE-1...
-  network: ws
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de7.v1
+  name: 🇩🇪 德国 | DEU 8
+  network: grpc
   port: 443
-  server: cabinet.filnex.baby
-  servername: claywick.elvano.website
+  server: birchbark.gerqix.online
+  servername: birchbark.gerqix.online
   tls: true
   type: vless
+  udp: true
   uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
-  ws-opts:
-    headers:
-      Host: cabinet.filnex.baby
-    path: /api/de7/stream
 - client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #8'
   network: ws
   port: 443
   server: 46.243.205.192
@@ -27,6 +36,12 @@ proxies:
     headers:
       Host: 46.243.205.192
     path: /catalog/feed/H9eui7WsW3xS
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1624...
+  password: DW0wW0DWgRaAr1uQT7T+gvWkAmxO9kXizNTG9fCFVLo=
+  port: 59924
+  server: 92.5.156.71
+  type: ss
 - name: 🇩🇪[www.v2nodes.com] trojan-DE-...
   password: poimnap
   port: 443
@@ -34,7 +49,28 @@ proxies:
   skip-cert-verify: true
   sni: alireza.karamoz1.ir
   type: trojan
-- name: 🇩🇪DE_1|3.4MB/s
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪DE_1|3.2MB/s
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 3.66.166.72
+  type: ss
+  udp: true
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪DE_2|1.9MB/s
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 47.254.128.109
+  type: ss
+  udp: true
+- cipher: chacha20-ietf-poly1305
+  name: 🇩🇪DE_3|3.9MB/s
+  password: PhILhWBzyd28Q2ngasMt5E6l1Os4uCjv
+  port: 443
+  server: P1.shoppingturbo.com
+  type: ss
+  udp: true
+- name: 🇩🇪DE_5|3.1MB/s
   password: 'null'
   port: 443
   server: 172.64.69.89
@@ -42,7 +78,7 @@ proxies:
   tls: true
   type: http
   username: 'null'
-- name: 🇩🇪DE_2|2.8MB/s
+- name: 🇩🇪DE_6|2.4MB/s
   password: 'null'
   port: 443
   server: 172.64.68.89
@@ -52,23 +88,6 @@ proxies:
   udp: true
   username: 'null'
   x-toolall-mihomo: true
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: edge
-  name: 🇩🇪DE_3|1.5MB/s
-  network: xhttp
-  port: 443
-  server: terrace.elvano.website
-  servername: terrace.elvano.website
-  tls: true
-  type: vless
-  udp: true
-  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
-  xhttp-opts:
-    host: terrace.elvano.website
-    mode: auto
-    path: /api/de5/sync
 - name: DE_speednode_0003
   password: None
   port: 443
@@ -84,14 +103,15 @@ proxies:
   tls: true
   type: http
   udp: true
-- name: US_speednode_0027
-  port: 443
-  server: 172.64.69.89
+- name: DK_speednode_0005
+  password: None
+  port: 9002
+  server: 158.173.154.4
   skip-cert-verify: true
   tls: true
   type: http
   udp: true
-- name: 🇩🇪DE_7|3.5MB/s|R002-260618
+- name: 🇩🇪DE_10|3.7MB/s|R002-260618
   password: 'null'
   port: 443
   server: 159.69.94.125
@@ -102,44 +122,16 @@ proxies:
   udp: true
   username: 'null'
   x-toolall-mihomo: true
-- name: 🇩🇪DE_8|1.3MB/s|K001-260618
-  password: None
-  port: 9002
-  server: 158.173.154.3
-  skip-cert-verify: true
-  sub_tag: K001-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 🇩🇪DE_9|1.8MB/s|R002-260618
-  port: 9002
-  server: 158.173.154.2
+- name: 🇩🇪DE_11|3.4MB/s|R002-260618
+  port: 443
+  server: 87.106.223.158
   skip-cert-verify: true
   sub_tag: R002-260618
   tls: true
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: 🇩🇪DE_10|1.6MB/s
-  password: 'null'
-  port: 443
-  server: 87.106.223.158
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  username: 'null'
-  x-toolall-mihomo: true
-- name: 🇩🇪DE_11|2.6MB/s
-  port: 443
-  server: 37.203.35.27
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 🇩🇪DE_12|2.7MB/s|P002-260618
+- name: 🇩🇪DE_12|4.2MB/s|P002-260618
   password: None
   port: 443
   server: 172.64.68.89
@@ -149,87 +141,83 @@ proxies:
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: 🇩🇪DE_13|2.2MB/s|R002-260618
-  port: 443
-  server: 152.233.20.206
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 🇩🇪DE_14|2.5MB/s
+- name: 🇩🇪DE_13|4.1MB/s|R002-260618
   password: 'null'
   port: 9002
-  server: 158.173.154.3
+  server: 158.173.154.4
   skip-cert-verify: true
+  sni: 158.173.154.4
+  sub_tag: R002-260618
   tls: true
   type: http
   udp: true
   username: 'null'
   x-toolall-mihomo: true
-- name: 🇩🇪DE_15|1.1MB/s|R002-260618
-  port: 443
-  server: 217.92.132.233
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 🇩🇪DE_16|3.4MB/s|P002-260618
-  password: None
-  port: 9002
-  server: 158.173.154.2
-  skip-cert-verify: true
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 🇩🇪DE_17|2.4MB/s
-  port: 443
-  server: 79.127.156.177
-  skip-cert-verify: true
-  tls: true
-  type: http
-- cipher: 2022-blake3-chacha20-poly1305
+- client-fingerprint: firefox
+  encryption: none
   name: '🇩🇪 德国 | DEU #2'
-  password: DW0wW0DWgRaAr1uQT7T+gvWkAmxO9kXizNTG9fCFVLo=
-  port: 59924
-  server: 92.5.156.71
-  type: ss
-  udp: true
-- name: '🇩🇪 德国 | DEU #5'
-  network: tcp
-  port: 837
-  server: 87.82.59.60
-  tls: false
+  network: ws
+  port: 443
+  server: 31.77.142.19
+  servername: calendarbaseline.lucheeebezlimitnoekino.stream
+  tls: true
   type: vless
   udp: true
-  uuid: d8b42cd5-b149-4356-9e61-444444444444
+  uuid: 58e22afd-bf74-4736-984d-63a8ca03d7f0
   ws-opts:
-    path: /
-- alpn:
-  - h3
-  auth: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  down: 200
-  name: 🇩🇪 德国 | DEU 6
-  obfs: salamander
-  obfs-password: pz7lyeav76a5wqzb
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 40120
-  server: dga1de.mateflora.com
-  skip-cert-verify: true
-  sni: psstatic.cdn.bcebos.com
-  type: hysteria2
+    path: /media/ws/
+  xudp: true
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: v4-clequinix-globalinetforallalwaysandneverbanyoubelieveme-com
+  name: 🇩🇪DE_15|1.0MB/s
+  network: grpc
+  port: 443
+  server: 109.248.17.252
+  servername: v4.clequinix.globalinetforallalwaysandneverbanyoubelieveme.com
+  tls: true
+  type: vless
   udp: true
-  up: 100
+  uuid: 9000a7f3-df2a-49a8-ae56-3e7777bd32f7
+  xudp: true
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: edge
+  name: '🇩🇪 德国 | DEU #1'
+  network: xhttp
+  port: 443
+  server: palette.merlano.monster
+  servername: palette.merlano.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  xhttp-opts:
+    host: palette.merlano.monster
+    mode: auto
+    path: /api/de7/sync
+- alpn:
+  - http/1.1
+  client-fingerprint: edge
+  name: '🇩🇪 德国 | DEU #4'
+  network: ws
+  port: 443
+  server: cabinet.filnex.baby
+  servername: claywick.elvano.website
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  ws-opts:
+    headers:
+      Host: cabinet.filnex.baby
+    path: /api/de7/stream
 - alpn:
   - h3
   auth: 57beeeb0-03fc-4fc9-94da-7604488a7134
   down: 200
-  name: 🇩🇪 德国 | DEU 8
+  name: 🇩🇪 德国 | DEU 5
   obfs: salamander
   obfs-password: ivnbamaxvp0dqblk
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
@@ -240,71 +228,160 @@ proxies:
   type: hysteria2
   udp: true
   up: 100
-- auth: GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb
-  name: '🇩🇪 德国 | DEU #11'
-  password: GIFCjtpiGVOsrCy2kgBmgndXX5lUP7Eb
-  port: 21
-  server: 94.141.102.196
-  skip-cert-verify: true
-  sni: fin9.cft-razor.online
-  tls: false
-  type: hysteria2
+- cipher: 2022-blake3-chacha20-poly1305
+  name: '🇩🇪 德国 | DEU #7'
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 47.254.167.157
+  type: ss
+  udp: true
 - alpn:
   - h2
-  client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #13'
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #9'
   network: xhttp
   port: 443
-  server: testvalikan.rovilo.ir
-  servername: cdn.akamai.steamstatic.com
+  server: grovewood.moltex.click
+  servername: grovewood.moltex.click
   tls: true
   type: vless
   udp: true
-  uuid: 93cdb4e7-ab65-44fa-91c8-f46e80806bca
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
   xhttp-opts:
-    host: grgermanspeedfasdta.global.ssl.fastly.net
+    host: grovewood.moltex.click
     mode: auto
-    path: /fast
-    x-padding-bytes: 100-1000
-- client-fingerprint: firefox
+    path: /api/de5/sync
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #10'
+  network: xhttp
+  port: 443
+  server: rainwater.elvano.website
+  servername: rainwater.elvano.website
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  xhttp-opts:
+    host: rainwater.elvano.website
+    mode: auto
+    path: /api/de6/sync
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: edge
+  name: '🇩🇪 德国 | DEU #12'
+  network: xhttp
+  port: 443
+  server: arbor.elvano.website
+  servername: arbor.elvano.website
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  xhttp-opts:
+    host: arbor.elvano.website
+    mode: auto
+    path: /api/de7/sync
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #13'
+  network: ws
+  port: 443
+  server: parchment.merlano.monster
+  servername: parchment.merlano.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  ws-opts:
+    headers:
+      Host: parchment.merlano.monster
+    path: /api/de7/stream
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: ios
   name: '🇩🇪 德国 | DEU #14'
   network: xhttp
   port: 443
-  server: 193.160.208.240
-  servername: 193.160.208.240
+  server: brookside.moltex.click
+  servername: brookside.moltex.click
   tls: true
   type: vless
   udp: true
-  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
   xhttp-opts:
+    host: brookside.moltex.click
     mode: auto
-    path: /assets/twru01/
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.F5LiR4Hs6W_x17I2LmxdFA8MUGvpHSaVuZ4zxTCAkmI
-  name: '🇩🇪 德国 | DEU #15'
-  network: ws
-  port: 27181
-  server: du5g.altheora.ir
-  servername: login.zanjanphone.ir
+    path: /api/de7/sync
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: ios
+  name: '🇩🇪 德国 | DEU #16'
+  network: xhttp
+  port: 443
+  server: fresco.merlano.monster
+  servername: fresco.merlano.monster
   tls: true
   type: vless
   udp: true
-  uuid: 5c683113-0abe-4d0b-aad9-0f198186b45a
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  xhttp-opts:
+    host: fresco.merlano.monster
+    mode: auto
+    path: /api/de4/sync
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de3.v1
+  name: 🇩🇪 德国 | DEU 17
+  network: grpc
+  port: 443
+  server: 5.129.252.33
+  servername: rookery.moltex.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+- client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #18'
+  network: ws
+  port: 443
+  server: 72.56.238.135
+  servername: parchment.merlano.monster
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
   ws-opts:
     headers:
-      Host: login.zanjanphone.ir
-    path: /user
-- name: '🇩🇪 德国 | DEU #6'
-  obfs: salamander
-  obfs-password: salamander
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 40120
-  server: dga1de.mateflora.com
-  skip-cert-verify: true
-  sni: psstatic.cdn.bcebos.com
-  tls: false
-  type: hysteria2
-- name: '🇩🇪 德国 | DEU #8'
+      Host: parchment.merlano.monster
+    path: /api/de7/stream
+- alpn:
+  - http/1.1
+  client-fingerprint: edge
+  name: '🇩🇪 德国 | DEU #19'
+  network: ws
+  port: 443
+  server: cedar.filnex.baby
+  servername: fieldstone.moltex.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+  ws-opts:
+    headers:
+      Host: cedar.filnex.baby
+    path: /api/de7/stream
+- name: '🇩🇪 德国 | DEU #5'
   obfs: salamander
   obfs-password: salamander
   password: 57beeeb0-03fc-4fc9-94da-7604488a7134
@@ -314,3 +391,29 @@ proxies:
   sni: a3de.supertoolify.com
   tls: false
   type: hysteria2
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪 德国 | DEU #8'
+  network: grpc
+  port: 443
+  server: birchbark.gerqix.online
+  servername: birchbark.gerqix.online
+  tls: true
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪 德国 | DEU #17'
+  network: grpc
+  port: 443
+  server: 5.129.252.33
+  servername: rookery.moltex.click
+  tls: true
+  type: vless
+  uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a

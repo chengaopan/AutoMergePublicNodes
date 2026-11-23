@@ -1,25 +1,12 @@
 proxies:
-- client-fingerprint: chrome
-  name: 🇬🇧[www.v2nodes.com] vless-GB-1...
-  network: ws
-  port: 443
-  server: xray-ckc68nno-swift-harbor-8.cloady.io
-  servername: xray-ckc68nno-swift-harbor-8.cloady.io
-  tls: true
-  type: vless
-  uuid: b004e898-f6cf-54a5-d281-f063d741ad53
-  ws-opts:
-    headers:
-      Host: xray-ckc68nno-swift-harbor-8.cloady.io
-    path: /3e0261245277336d
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
   port: 8443
   server: node-uk.connectsuite.org
   servername: node-uk.connectsuite.org
   tls: true
   type: vless
   uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #5'
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
   network: ws
   port: 80
   server: 57.129.132.223
@@ -43,6 +30,18 @@ proxies:
   server: 198.244.202.215
   type: ss
 - cipher: aes-256-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1615...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 142.202.51.22
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇬🇧[www.v2nodes.com] ss-GB-1615... #1'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 38.114.120.221
+  type: ss
+- cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1602...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
@@ -60,24 +59,58 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
-- name: GB_speednode_0008
+- cipher: aes-128-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-9184...
+  password: shadowsocks
   port: 443
-  server: 212.102.63.31
+  server: 141.98.101.181
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-8004...
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- encryption: none
+  http-opts:
+    headers:
+      Host:
+      - fast.com
+    method: GET
+    path:
+    - /
+  name: '🇬🇧 英国 | GBR #2'
+  network: http
+  port: 443
+  server: 64.227.41.219
+  tls: false
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+  xudp: true
+- name: 🇬🇧GB_2|1.2MB/s
+  port: 443
+  server: 37.120.233.18
   skip-cert-verify: true
   tls: true
   type: http
-  udp: true
-- name: 🇬🇧GB_2|1.5MB/s|R002-260618
-  port: 443
-  server: 84.17.50.193
-  skip-cert-verify: true
-  sub_tag: R002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- client-fingerprint: chrome
+- http-opts:
+    headers:
+      Host:
+      - fast.com
+    method: GET
+    path:
+    - /
   name: '🇬🇧 英国 | GBR #1'
+  network: http
+  port: 443
+  server: 167.99.203.0
+  tls: false
+  type: vless
+  udp: true
+  uuid: 40992c2a-513e-4837-9594-23411fd42afd
+- client-fingerprint: chrome
+  name: '🇬🇧 英国 | GBR #3'
   network: tcp
   port: 443
   server: 136.148.83.69
@@ -88,3 +121,10 @@ proxies:
   uuid: 7dff1be7-b930-0001-a8ad-dc7850168215
   ws-opts:
     path: /
+- name: GB_speednode_0008
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true

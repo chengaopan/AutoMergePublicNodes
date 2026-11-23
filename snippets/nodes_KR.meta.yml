@@ -1,41 +1,25 @@
 proxies:
-- name: 🇰🇷KR_1|4.1MB/s
-  port: 1090
-  server: 121.169.46.116
+- name: 🇰🇷[www.v2nodes.com] vless-KR-1...
+  network: ws
+  port: 25555
+  server: 152.69.226.63
+  tls: false
+  type: vless
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  ws-opts:
+    path: /
+- name: 🇰🇷KR_1|2.0MB/s
+  port: 8081
+  server: 43.166.21.97
   skip-cert-verify: true
-  type: socks5
-  username: T2clM0QlM0Q6
+  type: http
 - auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
   fingerprint: 89:61:86:FE:B2:0C:B7:40:31:87:A4:5F:F3:BD:5D:DC:8B:FB:DD:41:9D:77:9D:55:D7:86:18:9D:36:73:1A:69
   name: '🇰🇷 韩国 | KOR #1'
   password: 7e68e32f-8015-4f37-9082-70e8b0b58043
   port: 443
-  server: 3.35.138.10
+  server: 43.203.225.155
   skip-cert-verify: true
   sni: www.bing.com
   tls: false
   type: hysteria2
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  http-opts:
-    method: GET
-    path:
-    - /
-  name: '🇰🇷 韩国 | KOR #2'
-  network: http
-  port: 80
-  server: 43.155.199.22
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 3722ad16-f3e1-4406-b04a-929b529d8e0d
-- cipher: chacha20-ietf-poly1305
-  name: '🇰🇷 韩国 | KOR #3'
-  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
-  port: 8443
-  server: 3.35.138.10
-  type: ss
-  udp: true
