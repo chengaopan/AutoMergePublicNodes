@@ -1,4 +1,12 @@
 proxies:
+- name: 🇫🇷24@exclavevpn
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  port: 443
+  server: 13.36.234.11
+  skip-cert-verify: true
+  sni: vpn-fr-001.fastervpn.world
+  tls: false
+  type: hysteria2
 - name: 🇫🇷[www.v2nodes.com] vless-FR-1...
   network: ws
   port: 80
@@ -10,6 +18,27 @@ proxies:
     headers:
       Host: suh.cryptofront.uk
     path: /
+- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
+  network: ws
+  port: 2083
+  server: 54.36.102.152
+  tls: false
+  type: vless
+  uuid: 51a6ab93-e805-4b8b-89d1-d3ab85a118ce
+  ws-opts:
+    path: /vless-kulo
+- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #4'
+  network: ws
+  port: 80
+  server: ov-france1.09vpn.com
+  servername: ov-france1.09vpn.com
+  tls: false
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  ws-opts:
+    headers:
+      Host: ov-france1.09vpn.com
+    path: /vless/
 - cipher: aes-256-gcm
   name: 🇫🇷[www.v2nodes.com] ss-FR-1616...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -53,3 +82,15 @@ proxies:
   tls: true
   type: http
   udp: true
+- name: '🇫🇷 法国 | FRA #1'
+  network: ws
+  port: 4433
+  server: fr.fxhunter.ir
+  tls: false
+  type: vless
+  udp: true
+  uuid: a82b1829-003d-452f-8606-e17ab28c3330
+  ws-opts:
+    headers:
+      Host: fr.fxhuntet.ir
+    path: /Fredxhunter
