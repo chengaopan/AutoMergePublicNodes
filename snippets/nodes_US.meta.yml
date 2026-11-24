@@ -29,25 +29,74 @@ proxies:
     headers:
       Host: vless.cloudxzw2027.ccwu.cc
     path: /xzw
-- cipher: aes-256-gcm
-  name: 🇺🇸[www.v2nodes.com] ss-US-1624...
-  password: 5mKjXAGrliIAlYwWDeFzkCEMIgQdFQLe
-  port: 18443
-  server: 48.103.218.77
-  type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇺🇸[www.v2nodes.com] ss-US-1620...
   password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
   port: 42878
   server: 23.230.52.119
   type: ss
-- name: 🇺🇸[www.v2nodes.com] trojan-US-...
-  password: 57beeeb0-03fc-4fc9-94da-7604488a7134
-  port: 443
-  server: a2dgus.supertoolify.com
+- name: 🇺🇸US_1|3.0MB/s
+  password: l1tlrdx52v
+  port: 62000
+  server: 66.253.2.69
+  type: socks5
+  username: u_rb1dba2
+- name: 🇺🇸US_2|1.1MB/s
+  port: 9443
+  server: 38.95.111.226
   skip-cert-verify: true
-  sni: a2dgus.supertoolify.com
-  type: trojan
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸US_3|3.1MB/s
+  port: 9002
+  server: 138.199.35.201
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+  x-toolall-mihomo: true
+- name: 🇺🇸US_4|2.7MB/s
+  password: 75bPoRcB
+  port: 62000
+  server: 216.132.114.27
+  type: socks5
+  username: JzufiJ62
+- name: 🇺🇸US_5|1.5MB/s
+  port: 443
+  server: 149.34.248.65
+  skip-cert-verify: true
+  sni: 149.34.248.65
+  tls: true
+  type: http
+- name: NN_speednode_0023
+  password: exaxgqkKkd0TAMrCxeonWg==
+  port: 443
+  server: usgp1-cdn-route.couldflare-cdn.com
+  tls: true
+  type: http
+  udp: true
+  username: mrwdfNTD8M79LCukCieldrqZWqs=
+- name: 🇺🇸US_7|2.3MB/s
+  password: None
+  port: 38182
+  server: 69.55.49.177
+  skip-cert-verify: true
+  type: socks5
+- name: 🇺🇸US_8|3.1MB/s
+  port: 3128
+  server: 50.238.106.26
+  skip-cert-verify: true
+  type: http
+- name: 🇺🇸US_9|2.9MB/s
+  password: 'null'
+  port: 9002
+  server: 138.199.35.200
+  skip-cert-verify: true
+  tls: true
+  type: http
+  username: 'null'
 - client-fingerprint: firefox
   grpc-opts:
     grpc-mode: gun
@@ -55,6 +104,19 @@ proxies:
   name: 🇷🇺 俄罗斯 | RUS
   network: grpc
   port: 443
+  server: 201.24.116.192
+  servername: vps3.nemnogogo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
+  name: 🇷🇺 俄罗斯 | RUS 2
+  network: grpc
+  port: 443
   server: 201.51.12.98
   servername: vps3.nemnogogo.com
   tls: true
@@ -64,26 +126,13 @@ proxies:
 - alpn:
   - h2
   client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: mobile.api.Event
-  name: 🇷🇺 俄罗斯 | RUS 2
-  network: grpc
-  port: 443
-  server: vps3.nemnogogo.com
-  servername: vps3.nemnogogo.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-- client-fingerprint: firefox
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
   name: 🇷🇺 俄罗斯 | RUS 3
   network: grpc
   port: 443
-  server: 201.24.116.192
+  server: vps3.nemnogogo.com
   servername: vps3.nemnogogo.com
   tls: true
   type: vless
@@ -91,92 +140,64 @@ proxies:
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
 - alpn:
   - h2
-  - http/1.1
   client-fingerprint: chrome
-  name: '🇷🇺 俄罗斯 | RUS #4'
-  network: xhttp
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
+  name: 🇷🇺 俄罗斯 | RUS 4
+  network: grpc
   port: 443
-  server: heatherfield.moltex.click
-  servername: heatherfield.moltex.click
+  server: leviko-ru4448.shopingggg.ir
+  servername: vps3.nemnogogo.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+- client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #1'
+  network: ws
+  port: 443
+  server: ws.liuzedong.ltd
+  servername: ws.liuzedong.ltd
+  tls: true
+  type: vless
+  udp: true
+  uuid: FCEAD694-2E27-4EEB-8836-9D4ACF3E028B
+  ws-opts:
+    headers:
+      Host: ws.liuzedong.ltd
+    path: /ws
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇺🇸 美国 | USA #2'
+  network: ws
+  port: 443
+  server: 104.17.145.43
+  servername: estuary.gerqix.online
   tls: true
   type: vless
   udp: true
   uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
-  xhttp-opts:
-    host: heatherfield.moltex.click
-    mode: auto
-    path: /api/de6/sync
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #1'
-  network: ws
-  port: 16648
-  server: pdmv4.xiaoyan.io
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
   ws-opts:
     headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-    path: /
-- cipher: 2022-blake3-chacha20-poly1305
-  name: '🇺🇸 美国 | USA #2'
-  password: 011mfoSmYFVhBNbKk0V5DxqGs9PwrsqY+9EAhOll+58=
-  port: 50356
-  server: 129.146.200.49
-  type: ss
-  udp: true
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #3'
-  network: ws
-  port: 443
-  server: guessable-turnpikes.cdn-content.com
-  servername: guessable-turnpikes.cdn-content.com
-  tls: true
-  type: vless
-  udp: true
-  uuid: aaca0219-87e0-4cb8-b5c8-dd61f0dc4978
-  ws-opts:
-    headers:
-      Host: guessable-turnpikes.cdn-content.com
-    path: /ws
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #4'
-  network: ws
-  port: 16648
-  server: afzuv.xiaoyan.io
-  skip-cert-verify: true
-  tls: false
-  type: vmess
-  udp: true
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  ws-opts:
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-    path: /
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #5'
-  network: ws
-  port: 443
-  server: 104.18.37.127
-  servername: jp3.yohototo.top
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4e4f1f70-5e56-4a76-bb9d-db087f4690c4
-  ws-opts:
-    headers:
-      Host: jp3.yohototo.top
-    path: /tyxyws
+      Host: estuary.gerqix.online
+    path: /api/de7/stream
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: ''
   name: '🇷🇺 俄罗斯 | RUS #1'
+  network: grpc
+  port: 443
+  server: 201.24.116.192
+  servername: vps3.nemnogogo.com
+  tls: true
+  type: vless
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇷🇺 俄罗斯 | RUS #2'
   network: grpc
   port: 443
   server: 201.51.12.98
@@ -189,7 +210,7 @@ proxies:
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #2'
+  name: '🇷🇺 俄罗斯 | RUS #3'
   network: grpc
   port: 443
   server: vps3.nemnogogo.com
@@ -197,13 +218,15 @@ proxies:
   tls: true
   type: vless
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-- client-fingerprint: firefox
+- alpn:
+  - h2
+  client-fingerprint: chrome
   grpc-opts:
     grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #3'
+  name: '🇷🇺 俄罗斯 | RUS #4'
   network: grpc
   port: 443
-  server: 201.24.116.192
+  server: leviko-ru4448.shopingggg.ir
   servername: vps3.nemnogogo.com
   tls: true
   type: vless

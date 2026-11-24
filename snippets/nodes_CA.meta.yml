@@ -1,4 +1,28 @@
 proxies:
+- name: 🇸🇬[www.v2nodes.com] vless-SG-9...
+  network: ws
+  port: 8080
+  server: www.gov.se
+  servername: www.gov.se
+  tls: false
+  type: vless
+  uuid: 989d58b8-d2ea-4d28-b5ff-0f3cd078f2cf
+  ws-opts:
+    headers:
+      Host: sdf23g-billowing-moon-348e.mzm468gc.workers.dev
+    path: /
+- name: 🇸🇬[www.v2nodes.com] vless-SG-3...
+  network: ws
+  port: 8080
+  server: 104.26.13.31
+  servername: ip.sb
+  tls: false
+  type: vless
+  uuid: 3e06b1db-2efb-446e-ba2d-68850dfd2f9d
+  ws-opts:
+    headers:
+      Host: bdfba-cool-tree-b580.v8fz4kbv.workers.dev
+    path: /
 - cipher: aes-256-gcm
   name: 🇨🇦[www.v2nodes.com] ss-CA-1559...
   password: zDNVedRFPQexG9v
@@ -12,22 +36,10 @@ proxies:
   server: 51.79.85.185
   type: ss
 - cipher: aes-256-gcm
-  name: 🇨🇦[www.v2nodes.com] ss-CA-1558...
-  password: Y6R9pAtvxxzmGC
-  port: 5000
-  server: 51.222.200.165
-  type: ss
-- cipher: aes-256-gcm
   name: 🇨🇦[www.v2nodes.com] ss-CA-1557...
   password: kDWvXYZoTBcGkC4
   port: 8882
   server: 51.222.136.236
-  type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇨🇦[www.v2nodes.com] ss-CA-1555...
-  password: 575hiopq2h28yao6
-  port: 8080
-  server: 15.235.121.109
   type: ss
 - cipher: aes-256-gcm
   name: 🇨🇦[www.v2nodes.com] ss-CA-1546...
@@ -47,12 +59,12 @@ proxies:
   port: 445
   server: 51.222.12.127
   type: ss
-- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #3'
+- name: 🇨🇦[www.v2nodes.com] trojan-CA-...
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 216.152.147.152
   type: trojan
-- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #1'
+- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #3'
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 216.152.147.93
@@ -63,27 +75,25 @@ proxies:
   port: 443
   server: 216.152.147.74
   type: trojan
-- name: '🇨🇦[www.v2nodes.com] trojan-CA-... #6'
-  password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
-  port: 443
-  server: 216.152.147.79
-  skip-cert-verify: false
-  sni: blog.connectingpeoplewithgreatjobs.com
-  type: trojan
-- alpn:
-  - ''
-  alterId: 0
-  cipher: auto
-  name: '🇨🇦 加拿大 | CAN #2'
-  network: ws
-  port: 16641
-  server: p6-olduser.linuxlh.xin
+- name: 🇨🇦CA_1|3.1MB/s
+  port: 9443
+  server: 181.215.52.6
   skip-cert-verify: true
-  tls: false
-  type: vmess
+  tls: true
+  type: http
+- name: 🇨🇦 加拿大 | CAN
+  password: 26ba2310-31aa-4fe6-86b1-47fcd14cabb2
+  port: 443
+  server: im.lovehk.xyz
+  skip-cert-verify: true
+  sni: im.lovehk.xyz
+  type: anytls
   udp: true
-  uuid: 904f0569-8695-466f-97cf-0de2face1b46
-  ws-opts:
-    headers:
-      Host: f9309cc88637c26f552a1a64fb311cae.mobgslb.tbcache.com
-    path: /
+- name: 🇨🇦 加拿大 | CAN 2
+  password: d2e242fe-3a90-4d5c-b890-6089474faa39
+  port: 443
+  server: im.lovehk.xyz
+  skip-cert-verify: true
+  sni: im.lovehk.xyz
+  type: anytls
+  udp: true
