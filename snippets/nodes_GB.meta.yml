@@ -1,4 +1,17 @@
 proxies:
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_8|1.8MB/s
+  obfs: ''
+  obfs-password: ''
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  port: 13337
+  server: 128.254.186.57
+  skip-cert-verify: true
+  sni: mother-earth.fyi
+  tls: false
+  type: hysteria2
+  up: ''
 - name: 🇬🇧[www.v2nodes.com] vless-GB-1...
   port: 8443
   server: node-uk.connectsuite.org
@@ -7,15 +20,12 @@ proxies:
   type: vless
   uuid: c08f0056-7a6d-4931-813b-aaa3cdd00aed
 - name: '🇬🇧[www.v2nodes.com] vless-GB-1... #1'
-  network: ws
   port: 80
   server: 57.129.132.223
   tls: false
   type: vless
-  uuid: 9e20b04d-5a81-4e16-b421-01e502f0aac6
+  uuid: dbb78c94-9f87-4d7d-b945-2000b60352fd
   ws-opts:
-    headers:
-      Host: google.com
     path: /vless/
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1616...
@@ -29,6 +39,24 @@ proxies:
   port: 19999
   server: 198.244.202.215
   type: ss
+- cipher: aes-256-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1615...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 142.202.51.22
+  type: ss
+- cipher: aes-256-gcm
+  name: '🇬🇧[www.v2nodes.com] ss-GB-1615... #1'
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 38.114.120.221
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-1602...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 185.176.206.9
+  type: ss
 - cipher: aes-128-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
   password: shadowsocks
@@ -41,20 +69,32 @@ proxies:
   port: 7001
   server: 94.156.250.148
   type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-9184...
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.181
+  type: ss
+- cipher: aes-128-gcm
+  name: 🇬🇧[www.v2nodes.com] ss-GB-8004...
+  password: shadowsocks
+  port: 443
+  server: 141.98.101.178
+  type: ss
+- name: GB_speednode_0008
+  port: 443
+  server: 212.102.63.31
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇬🇧GB_2|1.2MB/s
+  port: 9052
+  server: 157.90.113.23
+  skip-cert-verify: true
+  type: socks5
 - client-fingerprint: qq
   name: '🇬🇧 英国 | GBR #2'
-  network: tcp
-  port: 443
-  server: 136.148.83.70
-  servername: aszbk-ru-78dc.my-fade.cloud
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-0001-0000-000000000000
-  ws-opts:
-    path: /
-- client-fingerprint: qq
-  name: '🇬🇧 英国 | GBR #3'
   network: tcp
   port: 443
   server: 136.148.83.71
@@ -65,18 +105,3 @@ proxies:
   uuid: 00000000-0000-0001-0000-000000000000
   ws-opts:
     path: /
-- name: '🇬🇧 英国 | GBR #1'
-  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-  port: 13337
-  server: uk-tube-01.stre4m.net
-  skip-cert-verify: true
-  sni: mother-earth.fyi
-  tls: false
-  type: hysteria2
-- name: GB_speednode_0008
-  port: 443
-  server: 212.102.63.31
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
