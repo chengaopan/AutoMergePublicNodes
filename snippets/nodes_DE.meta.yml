@@ -52,19 +52,13 @@ proxies:
   tls: true
   type: vless
   uuid: 9000a7f3-df2a-49a8-ae56-3e7777bd32f7
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #6'
-  port: 50955
-  server: 152.53.120.90
-  tls: false
-  type: vless
-  uuid: 5ab065b0-2c7a-45a0-829d-9af9af7d8e05
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: glush.de3.v1
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #9'
   network: grpc
   port: 443
   server: 5.129.253.99
@@ -75,7 +69,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: firefox
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #13'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
   network: ws
   port: 443
   server: cove.gerqix.online
@@ -87,18 +81,32 @@ proxies:
     headers:
       Host: cove.gerqix.online
     path: /api/de6/stream
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #11'
+  network: ws
+  port: 443
+  server: woodgrain.filnex.baby
+  servername: larchbank.elvano.website
+  tls: true
+  type: vless
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  ws-opts:
+    headers:
+      Host: woodgrain.filnex.baby
+    path: /api/de2/stream
 - cipher: 2022-blake3-chacha20-poly1305
-  name: '🇩🇪 德国 | DEU #2'
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1624...
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   port: 443
   server: 47.254.167.157
   type: ss
-  udp: true
-- cipher: aes-256-gcm
-  name: 🇩🇪[www.v2nodes.com] ss-DE-1616...
-  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
-  port: 19999
-  server: 57.129.83.85
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1608...
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 47.254.128.109
   type: ss
 - cipher: chacha20-ietf-poly1305
   name: 🇩🇪[www.v2nodes.com] ss-DE-1592...
@@ -112,32 +120,47 @@ proxies:
   port: 7001
   server: 213.202.208.199
   type: ss
-- auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-  name: '🇬🇧 英国 | GBR #1'
-  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-  port: 13337
-  server: 128.254.186.190
-  skip-cert-verify: true
-  sni: mother-earth.fyi
-  tls: false
-  type: hysteria2
-- alpn:
-  - h3
-  auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-  name: 🇬🇧 英国 | GBR 3
-  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-  port: 13337
-  server: uk-tube-01.stre4m.net
-  skip-cert-verify: true
-  sni: mother-earth.fyi
-  type: hysteria2
-- cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪DE_4|3.0MB/s
-  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+- client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #1'
+  network: xhttp
   port: 443
-  server: 47.254.128.109
+  server: 193.160.208.240
+  servername: 193.160.208.240
+  tls: true
+  type: vless
+  udp: true
+  uuid: 4777d90d-265b-4927-a0d1-63f36ed1421c
+  xhttp-opts:
+    mode: auto
+    path: /assets/twru01/
+- cipher: aes-256-gcm
+  name: '🇩🇪 德国 | DEU #2'
+  password: d98d7ec5-24d7-4ed8-8329-728b2c7ad1c5
+  port: 22084
+  server: 038b7750485a79a0.lebufflonfermegroup.us
   type: ss
   udp: true
+- alpn:
+  - ''
+  alterId: 0
+  cipher: auto
+  name: 🇩🇪 德国 | DEU 3
+  port: 28059
+  server: 194.110.210.41
+  skip-cert-verify: true
+  tls: false
+  type: vmess
+  udp: true
+  uuid: c38605a8-89ae-4e57-b9b0-35606df2e1a3
+- alterId: 0
+  cipher: auto
+  name: '🇩🇪 德国 | DEU #3'
+  network: tcp
+  port: 28059
+  server: 194.110.210.41
+  tls: false
+  type: vmess
+  uuid: c38605a8-89ae-4e57-b9b0-35606df2e1a3
 - name: DE_speednode_0003
   password: None
   port: 443
@@ -145,45 +168,4 @@ proxies:
   skip-cert-verify: true
   tls: true
   type: http
-  udp: true
-- name: US_speednode_0027
-  port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- name: 🇩🇪DE_7|3.3MB/s|P002-260618
-  port: 443
-  server: 172.64.68.89
-  skip-cert-verify: true
-  sni: 172.64.68.89
-  sub_tag: P002-260618
-  tls: true
-  type: http
-  udp: true
-  x-toolall-mihomo: true
-- name: 🇩🇪DE_8|1.8MB/s
-  password: 'null'
-  port: 443
-  server: 172.64.69.89
-  skip-cert-verify: true
-  tls: true
-  type: http
-  username: 'null'
-- name: 🇩🇪 德国 | DEU
-  password: 9e34ee67-c4dd-4c49-8e33-bbfac6efbc33
-  port: 443
-  server: signal.frnhk.xyz
-  skip-cert-verify: true
-  sni: signal.frnhk.xyz
-  type: anytls
-  udp: true
-- name: 🇩🇪 德国 | DEU 4
-  password: 9f662cd7-13d4-4571-82a6-9d8b613dad7c
-  port: 443
-  server: signal.frnhk.xyz
-  skip-cert-verify: true
-  sni: signal.frnhk.xyz
-  type: anytls
   udp: true
