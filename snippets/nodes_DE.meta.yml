@@ -5,15 +5,7 @@ proxies:
   tls: false
   type: vless
   uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
-- client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
-  port: 443
-  server: free-server.techsonic.dev
-  servername: aka.ms
-  tls: true
-  type: vless
-  uuid: 9afdc92d-4e88-4787-8d75-c95f7685d294
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
   port: 31652
   server: 195.110.15.216
   tls: false
@@ -22,7 +14,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: firefox
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
   network: ws
   port: 443
   server: 188.214.37.231
@@ -37,7 +29,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: firefox
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
   network: ws
   port: 443
   server: mintleaf.moltex.click
@@ -52,7 +44,7 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: v4-clequinix-globalinetforallalwaysandneverbanyoubelieveme-com
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #5'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
   network: grpc
   port: 443
   server: 109.248.17.252
@@ -60,7 +52,7 @@ proxies:
   tls: true
   type: vless
   uuid: 9000a7f3-df2a-49a8-ae56-3e7777bd32f7
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #7'
+- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #6'
   port: 50955
   server: 152.53.120.90
   tls: false
@@ -72,7 +64,7 @@ proxies:
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: glush.de3.v1
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #10'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #12'
   network: grpc
   port: 443
   server: 5.129.253.99
@@ -80,8 +72,23 @@ proxies:
   tls: true
   type: vless
   uuid: 0b6a7fe0-206b-4071-9f96-cd397d1ec01a
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #13'
+  network: ws
+  port: 443
+  server: cove.gerqix.online
+  servername: cove.gerqix.online
+  tls: true
+  type: vless
+  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
+  ws-opts:
+    headers:
+      Host: cove.gerqix.online
+    path: /api/de6/stream
 - cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪DE_3|2.0MB/s
+  name: '🇩🇪 德国 | DEU #2'
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   port: 443
   server: 47.254.167.157
@@ -98,6 +105,12 @@ proxies:
   password: NcAXc0UZI6yQJE1p8QmOv8
   port: 8388
   server: 57.129.113.16
+  type: ss
+- cipher: aes-256-gcm
+  name: 🇩🇪[www.v2nodes.com] ss-DE-1247...
+  password: RexnBgU7EV5ADxG
+  port: 7001
+  server: 213.202.208.199
   type: ss
 - auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
   name: '🇬🇧 英国 | GBR #1'
@@ -118,17 +131,29 @@ proxies:
   skip-cert-verify: true
   sni: mother-earth.fyi
   type: hysteria2
-- name: 🇩🇪DE_4|4.0MB/s|P002-260618
+- cipher: 2022-blake3-chacha20-poly1305
+  name: 🇩🇪DE_4|3.0MB/s
+  password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
+  port: 443
+  server: 47.254.128.109
+  type: ss
+  udp: true
+- name: DE_speednode_0003
   password: None
   port: 443
-  server: 172.64.68.89
+  server: 149.36.50.1
   skip-cert-verify: true
-  sub_tag: P002-260618
   tls: true
   type: http
   udp: true
-  x-toolall-mihomo: true
-- name: 🇩🇪DE_5|3.0MB/s|P002-260618
+- name: US_speednode_0027
+  port: 443
+  server: 172.64.69.89
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇩🇪DE_7|3.3MB/s|P002-260618
   port: 443
   server: 172.64.68.89
   skip-cert-verify: true
@@ -138,64 +163,27 @@ proxies:
   type: http
   udp: true
   x-toolall-mihomo: true
-- name: DE_speednode_0003
-  password: None
+- name: 🇩🇪DE_8|1.8MB/s
+  password: 'null'
   port: 443
-  server: 149.36.50.1
+  server: 172.64.69.89
   skip-cert-verify: true
   tls: true
   type: http
-  udp: true
-- name: DK_speednode_0004
-  port: 9002
-  server: 158.173.154.1
-  skip-cert-verify: true
-  tls: true
-  type: http
-  udp: true
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-mode: gun
-    grpc-service-name: wn-adaptcloud
-  name: 🇩🇪 德国 | DEU
-  network: grpc
-  port: 10469
-  server: mercedess-ie-ass-moi-interes.xrent.cloud
-  servername: wn-de2.static-s3.org
-  tls: true
-  type: vless
-  udp: true
-  uuid: 53d229e0-3d9a-4ca8-9e2d-9be298534773
-- cipher: chacha20-ietf-poly1305
-  name: '🇩🇪 德国 | DEU #2'
-  password: anmZLCkJfFh92CoS-fJC7P-Fli8XD_TK
+  username: 'null'
+- name: 🇩🇪 德国 | DEU
+  password: 9e34ee67-c4dd-4c49-8e33-bbfac6efbc33
   port: 443
-  server: P1.shoppingturbo.com
-  type: ss
+  server: signal.frnhk.xyz
+  skip-cert-verify: true
+  sni: signal.frnhk.xyz
+  type: anytls
   udp: true
-- cipher: aes-128-gcm
-  name: 🇩🇪 德国 | DEU 3
-  password: 78f30e05-8bbb-4460-a7e1-df58039d4282
-  plugin: obfs
-  plugin-opts:
-    host: f646e6bf4cb428c6cfaf5389d43d5e09.baidu.com
-    mode: http
-  port: 36611
-  server: dlyqv8kg.jhm.qwer123.net
-  type: ss
+- name: 🇩🇪 德国 | DEU 4
+  password: 9f662cd7-13d4-4571-82a6-9d8b613dad7c
+  port: 443
+  server: signal.frnhk.xyz
+  skip-cert-verify: true
+  sni: signal.frnhk.xyz
+  type: anytls
   udp: true
-- alpn:
-  - h2
-  client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: ''
-  name: '🇩🇪 德国 | DEU #1'
-  network: grpc
-  port: 10469
-  server: mercedess-ie-ass-moi-interes.xrent.cloud
-  servername: wn-de2.static-s3.org
-  tls: true
-  type: vless
-  uuid: 53d229e0-3d9a-4ca8-9e2d-9be298534773

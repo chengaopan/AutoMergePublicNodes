@@ -1,78 +1,67 @@
 proxies:
 - client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #4'
+  name: 🇰🇷[www.v2nodes.com] vless-KR-1...
+  port: 443
+  server: ifdmbpb.kdns.fr
+  servername: ifdmbpb.kdns.fr
+  tls: true
+  type: vless
+  uuid: 9a600801-e889-4705-9adb-bf9aeb366fc7
+- client-fingerprint: chrome
+  name: '🇰🇷[www.v2nodes.com] vless-KR-1... #1'
   network: ws
   port: 443
   server: 104.25.128.15
   servername: krc.80782636.xyz
   tls: true
   type: vless
-  udp: true
   uuid: db906786-8c49-4b17-9182-cea680ef954d
   ws-opts:
     headers:
       Host: krc.80782636.xyz
     path: /kw7x2mq9
-- cipher: chacha20-ietf-poly1305
-  name: '🇰🇷 韩国 | KOR #1'
-  password: wenz@1997
-  port: 8388
-  server: 8.220.208.78
-  type: ss
-  udp: true
+- name: '🇰🇷[www.v2nodes.com] vless-KR-1... #2'
+  network: ws
+  port: 25555
+  server: 152.69.226.63
+  tls: false
+  type: vless
+  uuid: 27c5483f-17f4-48ae-9a04-def53d88440d
+  ws-opts:
+    path: /
 - name: 🇰🇷KR_1|4.2MB/s
   port: 1080
   server: 59.11.209.162
   skip-cert-verify: true
   type: socks5
-- cipher: aes-256-gcm
-  name: '🇰🇷 韩国 | KOR #2'
-  password: dXP0rIi4TPrbqxR938oQDw==
-  port: 4434
-  server: 119.28.150.131
-  type: ss
-  udp: true
-- alpn:
-  - h2
-  - http/1.1
-  alterId: 0
-  cipher: auto
-  name: 🇰🇷 韩国 | KOR 3
-  port: 19283
-  server: kr.075661.xyz
-  servername: kr.075661.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 3153def6-eecb-414d-88aa-7e59ea525e5d
 - client-fingerprint: chrome
-  name: '🇰🇷 韩国 | KOR #4'
-  network: tcp
+  name: '🇰🇷 韩国 | KOR #1'
+  network: ws
   port: 443
-  server: ifdmbpb.kdns.fr
-  servername: ifdmbpb.kdns.fr
+  server: krd.80782636.xyz
+  servername: krd.80782636.xyz
   tls: true
   type: vless
   udp: true
-  uuid: 9a600801-e889-4705-9adb-bf9aeb366fc7
+  uuid: db906786-8c49-4b17-9182-cea680ef954d
   ws-opts:
     headers:
-      Host: ifdmbpb.kdns.fr
-    path: /
+      Host: krd.80782636.xyz
+    path: /kw7x2mq9
 - cipher: chacha20-ietf-poly1305
-  name: '🇰🇷 韩国 | KOR #5'
-  password: bf5129f1-31f5-4edf-a07a-27ec31b26c1d
-  port: 2096
-  server: 43.202.42.44
+  name: '🇰🇷 韩国 | KOR #2'
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 8443
+  server: 43.201.31.151
   type: ss
   udp: true
-- alterId: 0
-  cipher: auto
+- auth: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  fingerprint: 89:61:86:FE:B2:0C:B7:40:31:87:A4:5F:F3:BD:5D:DC:8B:FB:DD:41:9D:77:9D:55:D7:86:18:9D:36:73:1A:69
   name: '🇰🇷 韩国 | KOR #3'
-  network: tcp
-  port: 19283
-  server: kr.075661.xyz
-  tls: true
-  type: vmess
-  uuid: 3153def6-eecb-414d-88aa-7e59ea525e5d
+  password: 7e68e32f-8015-4f37-9082-70e8b0b58043
+  port: 443
+  server: 43.201.31.151
+  skip-cert-verify: true
+  sni: www.bing.com
+  tls: false
+  type: hysteria2
