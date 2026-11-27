@@ -1,4 +1,14 @@
 proxies:
+- name: 'Telegram@vpnjey #9'
+  obfs: salamander
+  obfs-password: Telegram@vpnjey
+  password: vpNJEy
+  port: 36264
+  server: 179.61.138.145
+  skip-cert-verify: true
+  sni: de2.jey.cc.cd
+  tls: false
+  type: hysteria2
 - alpn:
   - http/1.1
   client-fingerprint: firefox
@@ -20,10 +30,24 @@ proxies:
   tls: false
   type: vless
   uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
+- client-fingerprint: chrome
+  name: '🇳🇱 荷兰 | NLD #5'
+  network: tcp
+  port: 443
+  server: free-server.techsonic.dev
+  servername: aka.ms
+  tls: true
+  type: vless
+  udp: true
+  uuid: 9afdc92d-4e88-4787-8d75-c95f7685d294
+  ws-opts:
+    headers:
+      Host: free-server.techsonic.dev
+    path: /
 - alpn:
   - http/1.1
   client-fingerprint: firefox
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
   network: ws
   port: 443
   server: 188.214.37.231
@@ -38,7 +62,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: firefox
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
+  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
   network: ws
   port: 443
   server: mintleaf.moltex.click
@@ -50,63 +74,145 @@ proxies:
     headers:
       Host: mintleaf.moltex.click
     path: /api/de4/stream
-- client-fingerprint: firefox
-  grpc-opts:
-    grpc-service-name: v4-clequinix-globalinetforallalwaysandneverbanyoubelieveme-com
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #4'
-  network: grpc
-  port: 443
-  server: 109.248.17.252
-  servername: v4.clequinix.globalinetforallalwaysandneverbanyoubelieveme.com
-  tls: true
-  type: vless
-  uuid: 9000a7f3-df2a-49a8-ae56-3e7777bd32f7
 - cipher: 2022-blake3-chacha20-poly1305
-  name: '🇩🇪[www.v2nodes.com] ss-DE-1624... #1'
+  name: 🇩🇪DE_1|3.5MB/s
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   port: 443
   server: 47.254.167.157
   type: ss
+  udp: true
 - cipher: 2022-blake3-chacha20-poly1305
   name: 🇩🇪[www.v2nodes.com] ss-DE-1608...
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   port: 443
   server: 8.211.56.98
   type: ss
-- cipher: chacha20-ietf-poly1305
-  name: 🇩🇪[www.v2nodes.com] ss-DE-1592...
-  password: NcAXc0UZI6yQJE1p8QmOv8
-  port: 8388
-  server: 57.129.113.16
-  type: ss
-- name: '🏳[www.v2nodes.com] trojan- #2'
+- name: 🏳[www.v2nodes.com] trojan-
   password: 0ab6c98dae3b48e8b9c4a776b6c9c19a
   port: 443
   server: 193.108.119.78
   type: trojan
-- alpn:
-  - h3
-  auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-  name: 🇬🇧 英国 | GBR
+- encryption: mlkem768x25519plus.native.0rtt.7cEi3EYubZPwXl754zAXJkMQRhE95FMPVVhP8613QEA
+  name: 🇩🇪DE_2|3.2MB/s
+  network: ws
+  port: 2052
+  server: quirivoo.ir
+  type: vless
+  udp: true
+  uuid: dc780059-8b89-42d1-94eb-1c1d1bbbdd2f
+  ws-opts:
+    headers:
+      Host: quirivoo.ir
+      User-Agent: Mozilla/5.0 (Windows NT 6.1; WOW64) AppleWebKit/537.36 (KHTML, like
+        Gecko) Chrome/31.0.1650.57 Safari/537.36
+    path: /
+  xudp: true
+- name: US_speednode_0027
+  port: 443
+  server: 172.64.69.89
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: DK_speednode_0006
+  port: 9002
+  server: 158.173.154.5
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: DK_speednode_0005
+  password: None
+  port: 9002
+  server: 158.173.154.4
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- name: 🇩🇪DE_7|2.2MB/s
+  port: 10809
+  server: 91.107.179.68
+  skip-cert-verify: true
+  type: socks5
+- name: 🇩🇪DE_8|2.5MB/s
+  port: 9002
+  server: 158.173.154.3
+  skip-cert-verify: true
+  tls: true
+  type: http
+- name: DK_speednode_0004
+  port: 9002
+  server: 158.173.154.1
+  skip-cert-verify: true
+  tls: true
+  type: http
+  udp: true
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_10|4.0MB/s
+  obfs: ''
+  obfs-password: ''
+  password: lvu_3390f238bef4e3058ac47c87473755cf_07cd5acf7265adf5c1210040ca46facf:np2.1.HJjJucZ0-OZZUq5Njkl48v1gYx7ol9rXjxYXZUxrQdM
+  port: 443
+  server: n49.neproxy.net
+  skip-cert-verify: false
+  sni: ''
+  type: hysteria2
+  up: ''
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_11|2.9MB/s
+  obfs: ''
+  obfs-password: ''
   password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
   port: 13337
   server: uk-tube-01.stre4m.net
   skip-cert-verify: true
-  sni: mother-earth.fyi
+  sni: ''
   type: hysteria2
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #3'
-  network: ws
+  up: ''
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_12|4.4MB/s
+  obfs: ''
+  obfs-password: ''
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  port: 13337
+  server: uk-tube-01.stre4m.net
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+  up: ''
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #2'
+  network: xhttp
   port: 443
-  server: 77.90.63.17
-  servername: v4-77j.pages.dev
+  server: sunfield.moltex.click
+  servername: fennel.moltex.click
   tls: true
   type: vless
   udp: true
-  uuid: bf14dc50-e9f2-49fd-8642-620446edeafb
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  xhttp-opts:
+    host: sunfield.moltex.click
+    mode: auto
+    path: /api/de1/sync
+- client-fingerprint: chrome
+  name: '🇩🇪 德国 | DEU #3'
+  network: tcp
+  port: 443
+  server: ns2.irts.lol
+  servername: ns2.irts.lol
+  tls: true
+  type: vless
+  udp: true
+  uuid: ff1906a5-a446-44e4-8e72-4e2d61775fa0
   ws-opts:
     headers:
-      Host: v4-77j.pages.dev
+      Host: ns2.irts.lol
     path: /
 - name: DE_speednode_0003
   password: None

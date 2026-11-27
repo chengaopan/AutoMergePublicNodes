@@ -7,27 +7,21 @@ proxies:
   sni: vpn-fr-001.fastervpn.world
   tls: false
   type: hysteria2
-- name: 🇫🇷[www.v2nodes.com] vless-FR-1...
+- client-fingerprint: chrome
+  name: '🇫🇷 法国 | FRA #2'
   network: ws
-  port: 80
-  server: 188.114.99.137
-  tls: false
+  port: 443
+  server: ipfast.kingmna.com
+  servername: cdn.akamai.steamstatic.com
+  tls: true
   type: vless
-  uuid: c762af05-2e92-4133-bc30-8cf45dd40a28
+  udp: true
+  uuid: c6b0a7f0-4a4e-47aa-975a-35988278ab85
   ws-opts:
     headers:
-      Host: suh.cryptofront.uk
+      Host: fraboijji.global.ssl.fastly.net.
     path: /
 - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #1'
-  network: ws
-  port: 2083
-  server: 54.36.102.152
-  tls: false
-  type: vless
-  uuid: 51a6ab93-e805-4b8b-89d1-d3ab85a118ce
-  ws-opts:
-    path: /vless-kulo
-- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
   network: ws
   port: 80
   server: ov-france1.09vpn.com
@@ -39,7 +33,7 @@ proxies:
     headers:
       Host: ov-france1.09vpn.com
     path: /vless/
-- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
+- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
   port: 23576
   server: 62.210.91.2
   tls: false
@@ -81,6 +75,20 @@ proxies:
   port: 19999
   server: 167.17.64.22
   type: ss
+- alpn:
+  - h3
+  auth-str: dongtaiwang.com
+  down: '55'
+  name: 🇫🇷FR_1|1.7MB/s
+  password: dongtaiwang.com
+  port: 24667
+  server: 62.210.124.132
+  servername: bing.com
+  skip-cert-verify: true
+  sni: bing.com
+  tls: true
+  type: hysteria
+  up: '11'
 - name: FR_speednode_0007
   port: 6103
   server: 87.98.174.157
