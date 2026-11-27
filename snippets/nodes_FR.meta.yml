@@ -27,12 +27,30 @@ proxies:
   uuid: 51a6ab93-e805-4b8b-89d1-d3ab85a118ce
   ws-opts:
     path: /vless-kulo
+- name: '🇫🇷[www.v2nodes.com] vless-FR-1... #2'
+  network: ws
+  port: 80
+  server: ov-france1.09vpn.com
+  servername: ov-france1.09vpn.com
+  tls: false
+  type: vless
+  uuid: 25f86cb1-2140-4085-abcb-c3a0ea7a4be0
+  ws-opts:
+    headers:
+      Host: ov-france1.09vpn.com
+    path: /vless/
 - name: '🇫🇷[www.v2nodes.com] vless-FR-1... #3'
   port: 23576
   server: 62.210.91.2
   tls: false
   type: vless
   uuid: 48ff2b70-e180-582f-8866-d9a2edeed5f5
+- cipher: aes-256-gcm
+  name: 🇫🇷[www.v2nodes.com] ss-FR-1616...
+  password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
+  port: 19999
+  server: 23.162.152.22
+  type: ss
 - cipher: aes-256-gcm
   name: 🇫🇷[www.v2nodes.com] ss-FR-1615...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
@@ -63,13 +81,22 @@ proxies:
   port: 19999
   server: 167.17.64.22
   type: ss
-- cipher: aes-256-gcm
-  name: '🇫🇷 法国 | FRA #1'
-  password: d98d7ec5-24d7-4ed8-8329-728b2c7ad1c5
-  port: 21191
-  server: 038b7750485a79a0.lebufflonfermegroup.us
-  type: ss
+- client-fingerprint: chrome
+  encryption: none
+  name: 🇫🇷FR_1|2.6MB/s
+  network: xhttp
+  port: 443
+  server: 194.122.84.6
+  servername: fl1.internium.forum
+  tls: true
+  type: vless
   udp: true
+  uuid: e6d52328-2d60-4fcf-812c-9734493baf11
+  xhttp-opts:
+    host: fl1.internium.forum
+    mode: auto
+    path: /connect
+  xudp: true
 - name: FR_speednode_0007
   port: 6103
   server: 87.98.174.157

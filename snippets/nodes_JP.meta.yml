@@ -1,12 +1,13 @@
 proxies:
 - client-fingerprint: firefox
-  name: 🇯🇵[www.v2nodes.com] vless-JP-1...
+  name: '🇯🇵 日本 | JPN #1'
   network: ws
   port: 8463
   server: 213.183.41.31
   servername: share.plumstatic.com
   tls: true
   type: vless
+  udp: true
   uuid: eb62cabf-5901-403a-aa0c-b1d9ed1b346d
   ws-opts:
     path: /ws
@@ -28,10 +29,57 @@ proxies:
   port: 443
   server: 149.22.87.241
   type: ss
-- cipher: aes-256-gcm
-  name: '🇯🇵 日本 | JPN #1'
-  password: d98d7ec5-24d7-4ed8-8329-728b2c7ad1c5
-  port: 22069
-  server: 038b7750485a79a0.lebufflonfermegroup.us
-  type: ss
+- client-fingerprint: chrome
+  name: 🇯🇵 日本4|@ripaojiedian
+  network: ws
+  port: 8443
+  server: 166.88.14.71
+  servername: senflarelink-node-71i.pages.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  ws-opts:
+    headers:
+      Host: senflarelink-node-71i.pages.dev
+    path: /
+    v2ray-http-upgrade: false
+- client-fingerprint: chrome
+  name: 🇯🇵 日本5|@ripaojiedian
+  network: ws
+  port: 8443
+  server: 45.32.57.15
+  servername: senflarelink-node-nwz76h.pages.dev
+  skip-cert-verify: true
+  tfo: false
+  tls: true
+  type: vless
+  udp: true
+  uuid: b69cf773-da16-486e-afce-a45b94f998b3
+  ws-opts:
+    headers:
+      Host: senflarelink-node-nwz76h.pages.dev
+    path: /
+    v2ray-http-upgrade: false
+- client-fingerprint: firefox
+  encryption: none
+  name: 🇯🇵JP_1|1.1MB/s
+  network: tcp
+  port: 443
+  server: 50.7.159.242
+  servername: jp.reddotcorp.org
+  tls: true
+  type: vless
+  udp: true
+  uuid: 8840fac2-5361-4cb6-b887-cd1b95092394
+  xudp: true
+- name: 🇯🇵 日本 | JPN
+  password: c0e8e373-946f-4862-98e6-3aaf1db7b53c
+  port: 57180
+  server: media.gosthk.site
+  skip-cert-verify: true
+  sni: media.gosthk.site
+  type: anytls
   udp: true

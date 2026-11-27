@@ -1,6 +1,19 @@
 proxies:
-- client-fingerprint: firefox
+- client-fingerprint: chrome
   name: 🇸🇪[www.v2nodes.com] vless-SE-1...
+  network: ws
+  port: 2053
+  server: ws.dhafhdtjdti.site
+  servername: ws.dhafhdtjdti.site
+  tls: true
+  type: vless
+  uuid: 9f749472-c636-4c5a-af51-7f8feefaac81
+  ws-opts:
+    headers:
+      Host: ws.dhafhdtjdti.site
+    path: /
+- client-fingerprint: firefox
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
   network: ws
   port: 443
   server: 185.247.224.206
@@ -15,7 +28,7 @@ proxies:
 - client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: 138-124-86-230-sslip-io
-  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #1'
+  name: '🇸🇪[www.v2nodes.com] vless-SE-1... #2'
   network: grpc
   port: 48115
   server: 138.124.86.230
@@ -23,23 +36,20 @@ proxies:
   tls: true
   type: vless
   uuid: b2fe1fa4-6a79-4938-a3f4-63b54ae7f16b
+- name: '🇸🇪[www.v2nodes.com] vless-SE-1... #3'
+  network: ws
+  port: 14430
+  server: 5.178.109.174
+  tls: false
+  type: vless
+  uuid: 80de563a-cac8-40ea-8cb0-4cb082dd92f9
+  ws-opts:
+    headers:
+      Host: 5.178.109.174
+    path: /vless
 - cipher: aes-256-gcm
   name: 🇸🇪[www.v2nodes.com] ss-SE-1615...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
   server: 138.199.55.243
   type: ss
-- client-fingerprint: chrome
-  name: '🇸🇪 瑞典 | SWE #1'
-  network: ws
-  port: 2053
-  server: ws.dhafhdtjdti.site
-  servername: ws.dhafhdtjdti.site
-  tls: true
-  type: vless
-  udp: true
-  uuid: 9f749472-c636-4c5a-af51-7f8feefaac81
-  ws-opts:
-    headers:
-      Host: ws.dhafhdtjdti.site
-    path: /
