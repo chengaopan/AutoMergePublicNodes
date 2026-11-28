@@ -1,5 +1,5 @@
 proxies:
-- name: '@OutlineReleasedKey #4'
+- name: '@OutlineReleasedKey #5'
   password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
   port: 13337
   server: 128.254.186.57
@@ -7,7 +7,14 @@ proxies:
   sni: mother-earth.fyi
   tls: false
   type: hysteria2
-- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #3'
+- name: 🇬🇧[www.v2nodes.com] vless-GB-1...
+  port: 443
+  server: 82.152.18.32
+  servername: diyichongdi.us.ci
+  tls: true
+  type: vless
+  uuid: a61ce788-6cfe-4bbe-9f81-155ea8fa8e16
+- name: '🇬🇧[www.v2nodes.com] vless-GB-1... #4'
   port: 8443
   server: node-uk.connectsuite.org
   servername: node-uk.connectsuite.org
@@ -44,12 +51,6 @@ proxies:
   port: 19999
   server: 185.176.206.9
   type: ss
-- cipher: aes-128-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-1451...
-  password: shadowsocks
-  port: 443
-  server: 158.173.24.73
-  type: ss
 - cipher: aes-256-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-1247...
   password: RexnBgU7EV5ADxG
@@ -57,45 +58,41 @@ proxies:
   server: 94.156.250.148
   type: ss
 - cipher: aes-128-gcm
-  name: 🇬🇧[www.v2nodes.com] ss-GB-9184...
-  password: shadowsocks
-  port: 443
-  server: 141.98.101.181
-  type: ss
-- cipher: aes-128-gcm
   name: 🇬🇧[www.v2nodes.com] ss-GB-8004...
   password: shadowsocks
   port: 443
   server: 141.98.101.178
   type: ss
-- name: 🇬🇧GB_1|2.5MB/s
-  port: 9443
-  server: 84.17.50.214
+- name: 🇬🇧 英国 | GBR
+  network: ws
+  password: 531d9e93-53be-4f05-a9c1-33490d4da2f3
+  port: 443
+  server: eukhost.com
   skip-cert-verify: true
-  tls: true
-  type: http
+  sni: 0o3vr2n5k2.bpuk2026.top
+  type: trojan
+  udp: true
+  ws-opts:
+    headers:
+      Host: 0o3vr2n5k2.bpuk2026.top
+    path: /images
 - alpn:
   - h3
   auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
-  name: 🇬🇧 英国 | GBR
+  name: 🇬🇧 英国 | GBR 2
   password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
   port: 13337
   server: uk-tube-01.stre4m.net
   skip-cert-verify: true
   sni: mother-earth.fyi
   type: hysteria2
-- client-fingerprint: chrome
-  name: '🇬🇧 英国 | GBR #2'
-  network: tcp
+- name: '🇬🇧 英国 | GBR #1'
+  password: 531d9e93-53be-4f05-a9c1-33490d4da2f3
   port: 443
-  server: 136.148.83.70
-  servername: aszbk-ru-78dc.my-fade.cloud
-  tls: true
-  type: vless
-  udp: true
-  uuid: 00000000-0000-0001-0000-000000000000
-  ws-opts:
-    path: /
+  server: eukhost.com
+  skip-cert-verify: true
+  sni: 0o3vr2n5k2.bpuk2026.top
+  type: trojan
 - name: GB_speednode_0008
   port: 443
   server: 212.102.63.31
