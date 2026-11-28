@@ -71,40 +71,57 @@ proxies:
   name: 🇫🇷[www.v2nodes.com] ss-FR-1615...
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 38.109.228.110
+  server: 167.17.64.27
   type: ss
 - cipher: aes-256-gcm
   name: '🇫🇷[www.v2nodes.com] ss-FR-1615... #1'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 167.17.64.27
+  server: 172.99.189.142
   type: ss
 - cipher: aes-256-gcm
   name: '🇫🇷[www.v2nodes.com] ss-FR-1615... #2'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 172.99.189.142
+  server: 167.17.64.175
   type: ss
 - cipher: aes-256-gcm
   name: '🇫🇷[www.v2nodes.com] ss-FR-1615... #3'
   password: ZRpgaBeGxtENIXgvhpkZBKz9GnWRS2dYcx9O+a2iwN4=
   port: 19999
-  server: 167.17.64.175
+  server: 167.17.64.22
   type: ss
-- client-fingerprint: chrome
+- alpn:
+  - http/1.1
+  client-fingerprint: chrome
   name: '🇫🇷 法国 | FRA #1'
-  network: xhttp
+  network: ws
   port: 443
-  server: 87.120.126.127
-  servername: mama147.baklajann.ru
+  server: 108.158.198.2
+  servername: dkfsoyk9ju2as.cloudfront.net
   tls: true
   type: vless
   udp: true
   uuid: 7a42d986-f0b8-46e7-82cf-9516e168a613
+  ws-opts:
+    headers:
+      Host: dkfsoyk9ju2as.cloudfront.net
+    path: /
+- client-fingerprint: chrome
+  name: '🇫🇷 法国 | FRA #2'
+  network: xhttp
+  port: 443
+  server: 167.82.64.7
+  servername: cdn.akamai.steamstatic.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: 88888888-8888-8888-8888-888888888888
   xhttp-opts:
-    host: mama147.baklajann.ru
+    host: Wssmx.global.ssl.fastly.net
     mode: auto
     path: /
+    x-padding-bytes: 100-1000
 - name: FR_speednode_0007
   port: 6103
   server: 87.98.174.157

@@ -16,10 +16,12 @@ proxies:
   sni: de1-balance.rezproffx.ru
   tls: false
   type: hysteria2
-- name: '@VPsave'
+- auth: 6ac6d17d-040c-4fab-940e-8f5d72c3fed6
+  name: '🇩🇪 德国 | DEU #1'
   password: 6ac6d17d-040c-4fab-940e-8f5d72c3fed6
   port: 443
   server: 135.126.21.107
+  skip-cert-verify: true
   sni: de2-balance.rezproffx.ru
   tls: false
   type: hysteria2
@@ -31,27 +33,37 @@ proxies:
   sni: vk.com
   tls: false
   type: hysteria2
-- name: '🇺🇸 美国 | USA #7'
+- name: 🇺🇸[www.v2nodes.com] vless-US-1...
+  network: ws
+  port: 443
+  server: 23.227.38.76
+  servername: eeeccc.ttttlefjljl.xyz
+  tls: true
+  type: vless
+  uuid: 531d9e93-53be-4f05-a9c1-33490d4da2f3
+  ws-opts:
+    headers:
+      Host: eeeccc.ttttlefjljl.xyz
+    path: /images
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #1'
   network: ws
   port: 443
   server: uuafe56.cf.877774.xyz
   servername: uua01.gg9901.uk
   tls: true
   type: vless
-  udp: true
   uuid: 531d9e93-53be-4f05-a9c1-33490d4da2f3
   ws-opts:
     headers:
       Host: uua01.gg9901.uk
     path: /images
-- name: '🇺🇸 美国 | USA #4'
+- name: '🇺🇸[www.v2nodes.com] vless-US-1... #2'
   network: ws
   port: 443
   server: 23.227.38.48
   servername: uub01.gg9901.uk
   tls: true
   type: vless
-  udp: true
   uuid: 531d9e93-53be-4f05-a9c1-33490d4da2f3
   ws-opts:
     headers:
@@ -60,7 +72,7 @@ proxies:
 - alpn:
   - http/1.1
   client-fingerprint: unsafe
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #2'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #3'
   network: ws
   port: 443
   server: 188.114.98.0
@@ -73,7 +85,7 @@ proxies:
       Host: x.m-90.xyz
     path: t.me/TEAMNETGRATISCOL
 - client-fingerprint: chrome
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #3'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #4'
   network: ws
   port: 443
   server: h3.1free.us.ci
@@ -86,7 +98,7 @@ proxies:
       Host: h3.1free.us.ci
     path: /57252d2116d6439f
 - client-fingerprint: chrome
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #4'
+  name: '🇺🇸[www.v2nodes.com] vless-US-1... #5'
   network: ws
   port: 443
   server: xray-b8ct4r2f-sahdon-hosaindoost.cloady.io
@@ -98,19 +110,6 @@ proxies:
     headers:
       Host: xray-b8ct4r2f-sahdon-hosaindoost.cloady.io
     path: /ffad70ffdfc3bcda
-- client-fingerprint: chrome
-  name: '🇺🇸[www.v2nodes.com] vless-US-1... #5'
-  network: ws
-  port: 443
-  server: 172.66.213.98
-  servername: us5-cdn.xyn.lgbt
-  tls: true
-  type: vless
-  uuid: 366449c5-ac1e-4314-8142-27a6b1c8c0fb
-  ws-opts:
-    headers:
-      Host: us5-cdn.xyn.lgbt
-    path: /yn-lax-fb366a66e8526ebc4a311464
 - cipher: chacha20-ietf-poly1305
   name: 🇺🇸[www.v2nodes.com] ss-US-1620...
   password: ijoUwfdnkz7mX4pWdkSpmEixTZCt2TRm1JDr4BSaBAWkLxYGoXBHXadFKY5D5ZfoVTwqsx46jCmEUDnQUizJDYrM7B5anhnu
@@ -119,7 +118,7 @@ proxies:
   type: ss
 - alterId: 0
   cipher: auto
-  name: '🇺🇸 美国 | USA #8'
+  name: '🇺🇸 美国 | USA #5'
   network: ws
   port: 16648
   server: fctwi.xiaoyan.io
@@ -135,7 +134,7 @@ proxies:
   - h3
   auth-str: dongtaiwang.com
   down: '55'
-  name: 🇺🇸US_2|1.2MB/s
+  name: 🇺🇸US_2|1.0MB/s
   password: dongtaiwang.com
   port: 11008
   server: 38.6.222.132
@@ -145,44 +144,54 @@ proxies:
   tls: true
   type: hysteria
   up: '11'
-- fingerprint: cf7790610abd92e3c38d6bcf932d34ace22b8edfa9260d6a1270722359595502
-  name: 🇺🇸US_3|3.5MB/s
-  password: 531d9e93-53be-4f05-a9c1-33490d4da2f3
-  port: 50777
-  server: 108.181.9.242
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: false
-  sni: iosapps.itunes.apple.com
-  type: hysteria2
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
+  name: 🇷🇺 俄罗斯 | RUS
+  network: grpc
+  port: 443
+  server: 201.24.116.192
+  servername: vps3.nemnogogo.com
+  tls: true
+  type: vless
   udp: true
-- fingerprint: 5514b29f6a5ca46a1af05930aeb67aca1f265bbd01515e9a1271165e835e92f0
-  name: 🇺🇸US_4|3.9MB/s
-  password: 531d9e93-53be-4f05-a9c1-33490d4da2f3
-  port: 50448
-  server: 108.181.10.72
-  servername: iosapps.itunes.apple.com
-  skip-cert-verify: false
-  sni: iosapps.itunes.apple.com
-  type: hysteria2
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: mobile.api.Event
+  name: 🇷🇺 俄罗斯 | RUS 2
+  network: grpc
+  port: 443
+  server: 201.51.12.98
+  servername: vps3.nemnogogo.com
+  tls: true
+  type: vless
   udp: true
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
 - alpn:
-  - h3
-  auth-str: github.com/Alvin9999-newpac/fanqiang
-  down: '55'
-  name: 🇺🇸US_5|1.0MB/s
-  port: 22335
-  server: 198.200.57.142
-  skip-cert-verify: true
-  type: hysteria
-  up: '11'
-  x-toolall-mihomo: true
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de6.v1
+  name: 🇷🇺 俄罗斯 | RUS 3
+  network: grpc
+  port: 443
+  server: sandstone.gerqix.online
+  servername: sandstone.gerqix.online
+  tls: true
+  type: vless
+  udp: true
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
 - alpn:
   - h2
   client-fingerprint: firefox
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
-  name: 🇷🇺 俄罗斯 | RUS
+  name: 🇷🇺 俄罗斯 | RUS 4
   network: grpc
   port: 443
   server: vps3.nemnogogo.com
@@ -197,7 +206,7 @@ proxies:
   grpc-opts:
     grpc-mode: gun
     grpc-service-name: mobile.api.Event
-  name: 🇷🇺 俄罗斯 | RUS 2
+  name: 🇷🇺 俄罗斯 | RUS 5
   network: grpc
   port: 443
   server: leviko-ru0640.shopingggg.ir
@@ -206,7 +215,54 @@ proxies:
   type: vless
   udp: true
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-- name: 🇺🇸 美国 | USA
+- alpn:
+  - h3
+  auth: 216c50f9-37dc-457d-b3f5-90732791d10d
+  down: 200
+  name: 🇺🇸 美国 | USA
+  password: 216c50f9-37dc-457d-b3f5-90732791d10d
+  port: 443
+  server: 45.86.74.193
+  skip-cert-verify: true
+  sni: media.embrofree.org
+  type: hysteria2
+  udp: true
+  up: 100
+- alpn:
+  - h2
+  client-fingerprint: chrome
+  name: '🇺🇸 美国 | USA #2'
+  network: xhttp
+  port: 443
+  server: 109.172.87.68
+  servername: rusamicro67.richhoodfoc.com
+  tls: true
+  type: vless
+  udp: true
+  uuid: f4b08bf1-d9bd-4755-aa88-ba922282c608
+  xhttp-opts:
+    host: rusamicro67.richhoodfoc.com
+    mode: auto
+    path: /api/v2/telemetry/c3a474d77a
+- name: '🇺🇸 美国 | USA #4'
+  network: ws
+  port: 15555
+  server: 176.122.176.214
+  tls: false
+  type: vless
+  udp: true
+  uuid: 0fcced9f-7436-48e1-b268-f837be824506
+  ws-opts:
+    path: /ws
+- name: 🇺🇸 美国 | USA 6
+  password: e747a3a6-1759-4211-a759-75e0ef2ea52b
+  port: 443
+  server: signal.lovehk.xyz
+  skip-cert-verify: true
+  sni: signal.lovehk.xyz
+  type: anytls
+  udp: true
+- name: 🇺🇸 美国 | USA 7
   password: 934f37d8-efdc-4bb2-9cd3-d55ae5de6213
   port: 443
   server: signal.lovehk.xyz
@@ -214,121 +270,47 @@ proxies:
   sni: signal.lovehk.xyz
   type: anytls
   udp: true
-- name: '🇺🇸 美国 | USA #1'
-  network: ws
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇷🇺 俄罗斯 | RUS #1'
+  network: grpc
   port: 443
-  server: 34y35554.cloudflare.182682.xyz
-  servername: tw1.bbusxxxh.top
+  server: 201.24.116.192
+  servername: vps3.nemnogogo.com
   tls: true
   type: vless
-  udp: true
-  uuid: 531d9e93-53be-4f05-a9c1-33490d4da2f3
-  ws-opts:
-    headers:
-      Host: tw1.bbusxxxh.top
-    path: /images
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #3'
-  network: ws
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
+- client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇷🇺 俄罗斯 | RUS #2'
+  network: grpc
   port: 443
-  server: 134.122.0.192
-  servername: v1n4.11676767.xyz
+  server: 201.51.12.98
+  servername: vps3.nemnogogo.com
   tls: true
   type: vless
-  udp: true
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  ws-opts:
-    headers:
-      Host: v1n4.11676767.xyz
-    path: /pdf/out.html
-- name: 🇺🇸 美国 | USA 6
-  network: ws
-  password: 531d9e93-53be-4f05-a9c1-33490d4da2f3
-  port: 443
-  server: 44tgt5.cloudflare.182682.xyz
-  skip-cert-verify: true
-  sni: uuu-3-8uuu.ccc3cosmo.top
-  type: trojan
-  udp: true
-  ws-opts:
-    headers:
-      Host: uuu-3-8uuu.ccc3cosmo.top
-    path: /images
-- name: '🇺🇸 美国 | USA #6'
-  network: ws
-  port: 443
-  server: 23.227.38.76
-  servername: eeeccc.ttttlefjljl.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 531d9e93-53be-4f05-a9c1-33490d4da2f3
-  ws-opts:
-    headers:
-      Host: eeeccc.ttttlefjljl.xyz
-    path: /images
-- alterId: 0
-  cipher: auto
-  name: '🇺🇸 美国 | USA #9'
-  network: ws
-  port: 8443
-  server: 188.114.99.137
-  servername: v2ray1.dozapp.xyz
-  skip-cert-verify: true
-  tls: true
-  type: vmess
-  udp: true
-  uuid: 60441548-b68e-43b2-8191-e3b884be4b3c
-  ws-opts:
-    headers:
-      Host: v2ray1.dozapp.xyz
-    path: /lMnsZUN4/
-- client-fingerprint: chrome
-  name: '🇺🇸 美国 | USA #10'
-  network: ws
-  port: 443
-  server: 5.78.155.4
-  servername: v1n4.11676767.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  ws-opts:
-    headers:
-      Host: v1n4.11676767.xyz
-    path: /pdf/out.html
-- name: '🇺🇸 美国 | USA #11'
-  network: ws
-  port: 443
-  server: 23.227.38.171
-  servername: eeeccc.ttttlefjljl.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 531d9e93-53be-4f05-a9c1-33490d4da2f3
-  ws-opts:
-    headers:
-      Host: eeeccc.ttttlefjljl.xyz
-    path: /images
-- name: '🇺🇸 美国 | USA #12'
-  network: ws
-  port: 443
-  server: 23.227.38.221
-  servername: eeeccc.ttttlefjljl.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 531d9e93-53be-4f05-a9c1-33490d4da2f3
-  ws-opts:
-    headers:
-      Host: eeeccc.ttttlefjljl.xyz
-    path: /images
+  uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
 - alpn:
   - h2
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #1'
+  name: '🇷🇺 俄罗斯 | RUS #3'
+  network: grpc
+  port: 443
+  server: sandstone.gerqix.online
+  servername: sandstone.gerqix.online
+  tls: true
+  type: vless
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇷🇺 俄罗斯 | RUS #4'
   network: grpc
   port: 443
   server: vps3.nemnogogo.com
@@ -341,7 +323,7 @@ proxies:
   client-fingerprint: firefox
   grpc-opts:
     grpc-service-name: ''
-  name: '🇷🇺 俄罗斯 | RUS #2'
+  name: '🇷🇺 俄罗斯 | RUS #5'
   network: grpc
   port: 443
   server: leviko-ru0640.shopingggg.ir
@@ -349,13 +331,14 @@ proxies:
   tls: true
   type: vless
   uuid: 38308ff1-5aa9-494f-a25a-0f2870d56b3e
-- name: '🇺🇸 美国 | USA #5'
-  password: 531d9e93-53be-4f05-a9c1-33490d4da2f3
+- name: '🇺🇸 美国 | USA #1'
+  password: 216c50f9-37dc-457d-b3f5-90732791d10d
   port: 443
-  server: 44tgt5.cloudflare.182682.xyz
+  server: 45.86.74.193
   skip-cert-verify: true
-  sni: uuu-3-8uuu.ccc3cosmo.top
-  type: trojan
+  sni: media.embrofree.org
+  tls: false
+  type: hysteria2
 - name: US_speednode_0027
   port: 443
   server: 172.64.69.89

@@ -1,27 +1,6 @@
 proxies:
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  name: 🇩🇪[www.v2nodes.com] vless-DE-1...
-  network: ws
-  port: 443
-  server: 188.225.33.67
-  servername: e2.cdnwh.icu
-  tls: true
-  type: vless
-  uuid: b432a23a-acff-425c-bf69-70480cd6ed09
-  ws-opts:
-    headers:
-      Host: e2.cdnwh.icu
-    path: /stream/segment/3078a41dd7eb/
-- name: '🇩🇪[www.v2nodes.com] vless-DE-1... #1'
-  port: 9543
-  server: 146.103.43.70
-  tls: false
-  type: vless
-  uuid: 920b3cd9-4f82-4669-bbd2-d4a28b9052c6
 - client-fingerprint: chrome
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #2'
+  name: 🇩🇪[www.v2nodes.com] vless-DE-1...
   port: 443
   server: free-server.techsonic.dev
   servername: aka.ms
@@ -29,28 +8,22 @@ proxies:
   type: vless
   uuid: 9afdc92d-4e88-4787-8d75-c95f7685d294
 - alpn:
-  - http/1.1
+  - h2
   client-fingerprint: firefox
-  name: '🇩🇪[www.v2nodes.com] vless-DE-1... #3'
-  network: ws
+  grpc-opts:
+    grpc-mode: gun
+    grpc-service-name: glush.de5.v1
+  name: 🇩🇪 德国 | DEU 4
+  network: grpc
   port: 443
-  server: 188.214.37.231
-  servername: lagoon.gerqix.online
+  server: cobblestone.merlano.monster
+  servername: cobblestone.merlano.monster
   tls: true
   type: vless
-  uuid: 83706ae4-be2f-4b2b-8079-c3eb4e0b2e3e
-  ws-opts:
-    headers:
-      Host: lagoon.gerqix.online
-    path: /api/de5/stream
+  udp: true
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
 - cipher: 2022-blake3-chacha20-poly1305
-  name: 🇩🇪[www.v2nodes.com] ss-DE-1624...
-  password: Cg2Dw4OhdBZhqbeO9ZTA3g/Gk/AvsrYZGhAJeGnQIx4=
-  port: 443
-  server: 18.135.5.220
-  type: ss
-- cipher: 2022-blake3-chacha20-poly1305
-  name: '🇩🇪[www.v2nodes.com] ss-DE-1624... #2'
+  name: '🇩🇪[www.v2nodes.com] ss-DE-1624... #1'
   password: 8yO3ANWefuuGs1lRKXECQA1FEhxlWFV2ppQMcBaZo5Y=
   port: 443
   server: 47.254.167.157
@@ -72,136 +45,33 @@ proxies:
   port: 443
   server: 193.108.119.78
   type: trojan
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #1'
-  network: ws
-  port: 8443
-  server: 178.17.48.50
-  servername: v1n4.11676767.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  ws-opts:
-    headers:
-      Host: v1n4.11676767.xyz
-    path: /pdf/out.html
-- name: 🇩🇪 德国 | DEU 2
-  password: 69c9d0af-5370-4175-8cef-aa7e3b1a6381
-  port: 443
-  server: signal.frnhk.xyz
+- alpn:
+  - h3
+  auth: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  name: 🇬🇧 英国 | GBR 2
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  port: 13337
+  server: uk-tube-01.stre4m.net
   skip-cert-verify: true
-  sni: signal.frnhk.xyz
-  type: anytls
-  udp: true
+  sni: mother-earth.fyi
+  type: hysteria2
+- down: ''
+  fingerprint: ''
+  name: 🇩🇪DE_2|1.3MB/s
+  obfs: ''
+  obfs-password: ''
+  password: 900c8c92-1979-4c7c-8f2f-63e87d53d8fe
+  port: 13337
+  server: uk-tube-01.stre4m.net
+  skip-cert-verify: true
+  sni: 127.0.0.1
+  type: hysteria2
+  up: ''
 - alpn:
   - h2
   - http/1.1
   client-fingerprint: firefox
   name: '🇩🇪 德国 | DEU #2'
-  network: xhttp
-  port: 443
-  server: copperplate.gerqix.online
-  servername: copperplate.gerqix.online
-  tls: true
-  type: vless
-  udp: true
-  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
-  xhttp-opts:
-    host: copperplate.gerqix.online
-    mode: auto
-    path: /api/de6/sync
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #3'
-  network: ws
-  port: 8443
-  server: 77.91.86.194
-  servername: v1n4.11676767.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  ws-opts:
-    headers:
-      Host: v1n4.11676767.xyz
-    path: /pdf/out.html
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #5'
-  network: ws
-  port: 443
-  server: 84.22.150.47
-  servername: v1n4.11676767.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  ws-opts:
-    headers:
-      Host: v1n4.11676767.xyz
-    path: /pdf/out.html
-- client-fingerprint: chrome
-  encryption: mlkem768x25519plus.native.0rtt.7uOyrccvTH3o41kiN6Rqh7gb3jyvBhcLGhaXL2e1K3o
-  name: '🇩🇪 德国 | DEU #6'
-  network: ws
-  port: 42138
-  server: dl.zanjanphone.ir
-  servername: login.zanjanphone.ir
-  tls: true
-  type: vless
-  udp: true
-  uuid: 4fdf9cd1-b7cf-4989-9d3a-63e4efb2b4b3
-  ws-opts:
-    headers:
-      Host: login.zanjanphone.ir
-    path: /
-- encryption: mlkem768x25519plus.native.0rtt.7cEi3EYubZPwXl754zAXJkMQRhE95FMPVVhP8613QEA
-  name: '🇩🇪 德国 | DEU #7'
-  network: ws
-  port: 2052
-  server: quirivoo.ir
-  tls: false
-  type: vless
-  udp: true
-  uuid: dc780059-8b89-42d1-94eb-1c1d1bbbdd2f
-  ws-opts:
-    headers:
-      Host: quirivoo.ir
-    path: /
-- client-fingerprint: chrome
-  name: '🇩🇪 德国 | DEU #8'
-  network: ws
-  port: 443
-  server: 172.67.67.89
-  servername: v1n4.11676767.xyz
-  tls: true
-  type: vless
-  udp: true
-  uuid: 5d7b401c-78fa-4254-872e-6d42bf7e75ec
-  ws-opts:
-    headers:
-      Host: v1n4.11676767.xyz
-    path: /pdf/out.html
-- alpn:
-  - http/1.1
-  client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #9'
-  network: ws
-  port: 443
-  server: bookend.filnex.baby
-  servername: ferncrest.gerqix.online
-  tls: true
-  type: vless
-  udp: true
-  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
-  ws-opts:
-    headers:
-      Host: bookend.filnex.baby
-    path: /api/de1/stream
-- alpn:
-  - h2
-  - http/1.1
-  client-fingerprint: firefox
-  name: '🇩🇪 德国 | DEU #10'
   network: xhttp
   port: 443
   server: sunfield.moltex.click
@@ -214,6 +84,52 @@ proxies:
     host: sunfield.moltex.click
     mode: auto
     path: /api/de1/sync
+- alpn:
+  - h2
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #3'
+  network: xhttp
+  port: 443
+  server: prairie.moltex.click
+  servername: alderpond.moltex.click
+  tls: true
+  type: vless
+  udp: true
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  xhttp-opts:
+    host: prairie.moltex.click
+    mode: auto
+    path: /api/de2/sync
+- alpn:
+  - http/1.1
+  client-fingerprint: firefox
+  name: '🇩🇪 德国 | DEU #5'
+  network: ws
+  port: 443
+  server: woodgrain.filnex.baby
+  servername: larchbank.elvano.website
+  tls: true
+  type: vless
+  udp: true
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
+  ws-opts:
+    headers:
+      Host: woodgrain.filnex.baby
+    path: /api/de2/stream
+- alpn:
+  - h2
+  client-fingerprint: firefox
+  grpc-opts:
+    grpc-service-name: ''
+  name: '🇩🇪 德国 | DEU #4'
+  network: grpc
+  port: 443
+  server: cobblestone.merlano.monster
+  servername: cobblestone.merlano.monster
+  tls: true
+  type: vless
+  uuid: 749b1c56-e658-4bf5-94bd-5c3286a4aed1
 - name: DE_speednode_0003
   password: None
   port: 443
